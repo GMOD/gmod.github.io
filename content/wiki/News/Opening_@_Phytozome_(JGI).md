@@ -38,10 +38,9 @@ href="http://careers.crijob.com/lbnlcareers/detailsRedirect.asp?jid=24813&amp;p=
 class="external text" rel="nofollow">job posting</a> for more
 information on this position.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/19*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -42,7 +42,7 @@ testing, or to have common URLs for genome data, or to have common user
 interface aspects to aid biologists who surf many MODs.
 
 \[\*\]\] MOD in the generic sense of an organism/genome-related
-database,  
+database,
 defining the M as you would: Model, Many, or My organism.
 
 The common user interface topics for presenters to answer are
@@ -62,7 +62,7 @@ registration is approved. (Sorry for the hassle but comment spam had
 gotten out of control.) If you are already logged in, use the 'add new
 comment' link below.
 
-  
+
 
 - [Face Caucus ApiDB: User Studies and Impact on
   Development](Face_Caucus_ApiDB:_User_Studies_and_Impact_on_Development "Face Caucus ApiDB: User Studies and Impact on Development")

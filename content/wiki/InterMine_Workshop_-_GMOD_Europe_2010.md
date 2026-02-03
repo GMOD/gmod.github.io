@@ -34,7 +34,7 @@ Part of <a href="GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
 </tbody>
 </table>
 
-  
+
 
 [InterMine](InterMine "InterMine") is an open source system for building
 biological data warehouses with a powerful web interface and query

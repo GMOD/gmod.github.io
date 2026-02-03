@@ -43,7 +43,7 @@ width="200" height="171" alt="part of GMOD Europe 2010" /></a>
 </tbody>
 </table>
 
-  
+
 
   Participants](#Participants)
 - [Some
@@ -266,29 +266,29 @@ What model should be used for enabling and managing community
 annotation. Who do you give access to to, what types of access do they
 have, and what review mechanisms are in place?
 
-Wikipedia model - Last edit wins.  
+Wikipedia model - Last edit wins.
 Anyone can edit, with or without a login. Logins are available to anyone
 who requests it. Spam is automatically removed, but differences of
 opinion are resolved by *last edit wins* in most cases, and by
 increasing levels of control when that doesn't work.
-GMOD.org - All edits welcome, but you'll be watched.  
+GMOD.org - All edits welcome, but you'll be watched.
 Must have a login to edit, but anyone can create a login. Edits are
 loosely watched by GMOD staff.
 <a href="http://ecoliwiki.net" class="external text"
-rel="nofollow">EcoliWiki</a> - Vampire!  
+rel="nofollow">EcoliWiki</a> - Vampire!
 Logins given to trusted community members. Anyone with an existing login
 can create a login for someone else. Editors have full update access.
-[SGN](Category%253ASGN "Category%253ASGN") - Locus boss!  
+[SGN](Category%253ASGN "Category%253ASGN") - Locus boss!
 SGN locus pages list the set of community members who can update
 information about that locus. Every locus page includes "Request editor
 privileges" link. This model allows specific people to control and "own"
 particular loci data. Locus owners tend to be experts on that locus, and
 giving control to them (and listing their names) benefits both SGN and
 the locus editor.
-PomBase (so far) - Reviewed before posting.  
+PomBase (so far) - Reviewed before posting.
 Submissions are reviewed by staff at the online resource before being
 posted to the public resource.
-[ParameciumDB](ParameciumDB "ParameciumDB") - Vetting, followed by complete trust  
+[ParameciumDB](ParameciumDB "ParameciumDB") - Vetting, followed by complete trust
 ParameciumDB only give access to people who know how to annotate. These
 annotations are not reviewed before incorporation. They are incorporated
 automatically once a month if they are tagged as finished by the

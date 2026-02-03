@@ -87,7 +87,7 @@ class="external text" rel="nofollow">postgresql create table command</a>.
        <pubprop>
           ....
        </pubprop>
-    </pub> 
+    </pub>
 
 - column map to nested element
     <pub>
@@ -154,8 +154,8 @@ Wormbase to chado is as following:
      sub read_paper_pub {
        my $paper = shift;
        my %info;
-       $info{uniquename} = $paper->name; 
-       ........... 
+       $info{uniquename} = $paper->name;
+       ...........
        if (defined($paper->Page)) {
            my @pages = $paper->Page->row;
            if (scalar @pages == 1) {
@@ -186,7 +186,7 @@ Wormbase to chado is as following:
                                             accession => $accession,
                                             no_lookup => 1);
            $pub_el->appendChild($pd_el);
-       } 
+       }
        ........
        if (defined($paper->Abstract)) {
            my %abstract = ();
@@ -208,7 +208,7 @@ Wormbase to chado is as following:
            $pr{rtype} = 'published_in';
            if (defined($paper->In_book->at('Title'))) {
              $pr{uniquename} = $paper->In_book->at('Title')->right->name;
-           } else {........    
+           } else {........
            }
            my $pr_el = create_ch_pub_relationship(doc => $doc;
                                                   %pr);
@@ -242,10 +242,10 @@ this will connect database to validate the xml file
        1 -- ================================================
        2 -- TABLE: contactprop
        3 -- ================================================
-       4 
+       4
        5 -- contactprop models person/lab properties, such as email, phone, etc.
        6 -- the cvterms come from FOAF project, see the spec at http://xmlns.com/foaf/spec/
-       7 
+       7
        8 create table contactprop (
        9    contactprop_id serial not null,
       10    primary key (contactprop_id),
@@ -254,7 +254,7 @@ this will connect database to validate the xml file
       13    type_id int not null,
       14    foreign key (type_id) references cvterm (cvterm_id) on delete cascade,
       15    value text,
-      16 
+      16
       17    unique (contact_id, type_id, value)
       18 );
       19 create index contactprop_idx1 on contactprop (contactprop_id);

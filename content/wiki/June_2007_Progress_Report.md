@@ -134,7 +134,7 @@ Pathogens). A list of known GMOD users is at
 class="external free"
 rel="nofollow">http://gmod.org/wiki/index.php/GMOD_Users</a>.
 
-  
+
 Several GMOD projects submitted project reports to be included with the
 report and follow below.
 
@@ -150,16 +150,16 @@ generating public web pages as well as data for curation support.
       genetic/phenotypic data.
     - Continued work on integration of genetic/phenotypic data with
       genome data in chado.
-    - Published paper (Bioinformatics - In Press):  
-        
+    - Published paper (Bioinformatics - In Press):
+
       Title: A Chado Case Study: An Ontology-based Modular Schema for
-      Representing Genome-Associated Biological Information  
+      Representing Genome-Associated Biological Information
       Author(s): Christopher J Mungall, David B Emmert and The FlyBase
-      Consortium  
+      Consortium
       Suzanna Lewis will present this paper at ISMB/ECCB, July 21-25,
       2007, Vienna, Austria.
 2.  Perl module for generating chadoXML XML::DOM elements:
-    WriteChadoMac.pm  
+    WriteChadoMac.pm
     This module provides methods for writing chadoXML elements for most
     types of chado data, which can then be loaded using XORT.
 3.  XORT:
@@ -186,12 +186,12 @@ generating public web pages as well as data for curation support.
       testing by external testers to ensure that it works outside of FB
       environment.
 7.  Active chado databases at FlyBase:
-    Currently in chado  
+    Currently in chado
 
     - D. melanogaster genome, annotations, genetic & phenotypic data.
     - D. pseudoobscura genome and annotations
 
-    Additional genomes in the process of being implemented in chado at FlyBase  
+    Additional genomes in the process of being implemented in chado at FlyBase
 
     - D. simulans genome and annotations
     - D. sechelia genome and annotations
@@ -204,7 +204,7 @@ generating public web pages as well as data for curation support.
     - D. virilis genome and annotations
     - D. grimshawi genome and annotations
 8.  In development:
-    CHIA - Chado Interface Application  
+    CHIA - Chado Interface Application
     A java user interface integrating XORT dumper and loader
     functionality, pre-defined chado SQL query execution, ad hoc chado
     SQL queries execution, and simple reports of chado data.
@@ -353,14 +353,14 @@ during this period include the following.
   see the Regulatory Overview, go to
   <a href="http://biocyc.org/desktop-vs-web-mode.shtml#reg-ov#reg-ov"
   class="external free"
-  rel="nofollow">http://biocyc.org/desktop-vs-web-mode.shtml#reg-ov</a>.  
-    
+  rel="nofollow">http://biocyc.org/desktop-vs-web-mode.shtml#reg-ov</a>.
+
   The Regulatory Overview depends for its operation on an encoding of
   the organism's transcriptional regulatory network within a PGDB.
   Currently, EcoCyc is the only BioCyc PGDB that contains such a
   regulatory network. PGDB authors can define such a network manually
-  using the interactive editors within Pathway Tools.  
-    
+  using the interactive editors within Pathway Tools.
+
 - **Metabolite tracing.** A new metabolite tracing tool allows users to
   visually trace the path of substrates through the metabolic network
   within a PGDB, using the Cellular Overview diagram. To see an example
@@ -496,7 +496,7 @@ Our new work is focused on the following specific aims:
 The work will be done in collaboration with The Arabidopsis Information
 Resource (TAIR) at the Carnegie Institution.
 
-  
+
 
 ### Project Generated Resources
 
@@ -545,7 +545,7 @@ for a feature or region.
 - Added community annotation site (Mediawiki page) for each gene
 - Rewrote search engine and display code for website
 
-  
+
 
 ### Modware
 
@@ -654,7 +654,7 @@ rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/genogrid/</a>
   <a href="http://www.gmod.org/" class="external free"
   rel="nofollow">http://www.gmod.org/</a>
 
-  
+
 
 ## TAIR
 

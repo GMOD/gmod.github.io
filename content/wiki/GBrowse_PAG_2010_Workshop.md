@@ -28,7 +28,7 @@ San Diego, California, USA</td>
 </tbody>
 </table>
 
-  
+
 This page provides additional information about the
 <a href="http://www.intl-pag.org/18/18-gbrowse.html"
 class="external text" rel="nofollow">GBrowse workshop</a> at the
@@ -36,7 +36,7 @@ class="external text" rel="nofollow">GBrowse workshop</a> at the
 rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
 2010](PAG_2010 "PAG 2010")) held in San Diego on January 9-13, 2009.
 
-  
+
 
   Overview](#Overview)
 - [Tutorial
@@ -53,7 +53,7 @@ rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
   Presentations and
   Meetings](#Other_GMOD_Presentations_and_Meetings)
 
-  
+
 
 ## Overview
 

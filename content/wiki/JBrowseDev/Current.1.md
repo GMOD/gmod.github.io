@@ -3,9 +3,6 @@ title: "JBrowse Configuration Guide"
 ---
 # JBrowse Configuration Guide
 
-(Redirected from
-[JBrowseDev/Current](/mediawiki/index.php?title=JBrowseDev/Current&redirect=no "JBrowseDev/Current"))
-
 **This page has been replaced with this page (<a
 href="https://github.com/GMOD/jbrowse/wiki/JBrowse_Configuration_Guide"
 class="external free"
@@ -24,7 +21,7 @@ class="external text" rel="nofollow">Quick-start tutorial</a> first, and
 then consult this guide when you need information on specific things you
 want to do with your JBrowse.
 
-  
+
 Check out the new [JBrowse FAQ](/wiki/JBrowse_FAQ "JBrowse FAQ") page
 for more tips on setup and configuration
 <a href="http://gmod.org/wiki/JBrowse_FAQ" class="external free"
@@ -35,7 +32,7 @@ guide here
 <a href="http://gmod.org/wiki/JBrowse_Desktop" class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Desktop</a>
 
-  
+
 
   Installation](#Installation)
   - [Making a
@@ -404,7 +401,7 @@ Tutorial</a> provides a very basic step-by-step guide to formatting your
 own data, and in-depth configuration reference information can be found
 on this page.
 
-  
+
 Note: if there is an error installing the perl pre-requisites, and you
 get an error in your setup.log such as
 "/home.local/username/.cpanm/build.log: No such file or directory at
@@ -448,7 +445,7 @@ The JSON configuration format was the first format supported by JBrowse,
 and is easy for software programs to read and modify. Before version
 1.11.0, this was the only format supported by JBrowse.
 
-  
+
 
 As an example, the trackList.json file might have something like this.
 Here is an example of a BAM track
@@ -466,7 +463,7 @@ Here is an example of a BAM track
      ]
     }
 
-  
+
 The specifics of this config are not essential, we are specifying an
 array of tracks in a trackList.json style, and each track is an object
 that includes some parameters like the urlTemplate to refer to the
@@ -623,7 +620,7 @@ shown. The maximum number of reference sequences in the selector is set
 by the `refSeqSelectorMaxSize` configuration variable, and defaults to
 30.
 
-  
+
 
 ### Reference Sequence Display Order
 
@@ -700,7 +697,7 @@ Syntax used to import sequences with a config file:
 
     bin/prepare-refseqs.pl --conf <config file that references a database with sequence information> --[refs|refid] <reference sequences> [options]
 
-  
+
 Syntax used to import a indexed fasta(i.e. a fasta file where you run
 \`samtools faidx yourfile.fa\` which outputs yourfile.fa.fai)
 
@@ -717,7 +714,7 @@ This will copy yourfile.fa and yourfile.fa.fai to the data directory
 | refs | A comma-delimited list of the names of sequences to be imported as reference sequences. This option (or refid) is required when using the conf option. It is not required when the fasta or gff options are used, but it can be useful with these options, since it can be used to select which sequences JBrowse will import. |
 | refids | A comma-delimited list of the database identifiers of sequences to be imported as reference sequences. This option is useful when working with a <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database that contains data from multiple different species, and those species have at least one chromosome with the same name (e.g. chrX). In this case, the desired chromosome cannot be uniquely identified by name, so it is instead identified by ID. This ID can be found in the 'feature_id' column of 'feature' table in a Chado database. |
 
-  
+
 Note: the \`prepare-refseqs.pl --sizes chrom.sizes\` option is maybe
 underappreciated. You can technically run jbrowse without any sequence
 data loaded, simply a set of chromosomes and their sizes. The
@@ -808,7 +805,7 @@ Basic usage:
 
        bin/biodb-to-json.pl --conf <config file> [options]
 
-  
+
 For a full list of the options supported by biodb-to-json.pl, run it
 with the --help option, like:
 
@@ -920,15 +917,15 @@ rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Default 'black'. | `style
 
 `CanvasFeatures` track configuration options
 
-  
+
 Note: the "compact" displayMode for CanvasFeatures tracks uses
 style-\>height and multiplies it by 0.35 to create the compact view.
 Therefore, if you adjust style-\>height to a smaller default value, then
 you can create "ultra compact" visualizations.
 
-  
 
-  
+
+
 
 ### Customizing CanvasFeatures tracks with callbacks
 
@@ -961,8 +958,8 @@ you could set something like:
         }
         return false;
       }
-    style.color = function( feature, variableName, glyphObject, track ) { 
-        return track.config.variantIsHeterozygous(feature) ? 'red' : 'blue'; 
+    style.color = function( feature, variableName, glyphObject, track ) {
+        return track.config.variantIsHeterozygous(feature) ? 'red' : 'blue';
       }
 
 Note: the multiline callbacks are only enabled in the tracks.conf form.
@@ -978,7 +975,7 @@ about this format.
 
 `Generic track` configuration options
 
-  
+
 
 ## Customizing parts of the 'View details' Pop-ups with callbacks
 
@@ -988,7 +985,7 @@ that have the format fmtDetailValue\_\* or fmtDetailField\_\* to either
 change the value section of an attribute in the config, or the fieldname
 of an attribute in the config.
 
-  
+
 Here is an example in tracks.conf format for formatting the "Name" field
 by adding a link to it:
 
@@ -1010,7 +1007,7 @@ Note: It is also easy to specify these methods in trackList.json format.
      "fmtDetailValue_Name": "function(name) { return '<a href=\"http://www.example.com?featurename='+name+'\">'+name+'</a>'; }"
     }
 
-  
+
 Addendum: If the field has multiple values (e.g. multiple DBXrefs or GO
 terms), then the callback will receive an array as it's argument, and
 then you can also return an array which indicates that each element will
@@ -1057,7 +1054,7 @@ tracks (both HTMLFeatures and CanvasFeatures) is highly configurable. To
 make something happen when left-clicking features on a track, add an
 onClick option to the feature track's configuration.
 
-  
+
 In the example configuration below, left-clicks on features will open an
 embedded popup window showing the results of searching for that
 feature's name in NCBI's global search, and "search at NCBI" will show
@@ -1094,11 +1091,11 @@ In JBrowse 1.11.6, the onClick-\>label attribute was extended further to
 allow the mouse-over description to be customized using callbacks and
 template strings.
 
-  
+
 Example for CanvasFeatures, allows full HTML tooltips. Here the {name}
 template is automatically filled in with the feature info:
 
-  
+
 
 ``` de1
     "onClick": {
@@ -1120,11 +1117,11 @@ mouseover).
     }
 ```
 
-  
+
 Example using a callback (for either HTMLFeatures or CanvasFeatures),
 using this.feature to access the feature details
 
-  
+
 
 ``` de1
     "onClick": {
@@ -1134,7 +1131,7 @@ using this.feature to access the feature details
     }
 ```
 
-  
+
 Note: on CanvasFeatures, the action "defaultDialog" isn't necessary, but
 it is necessary for HTMLFeatures to keep the default dialog (as of
 writing, 1.11.6).
@@ -1157,7 +1154,7 @@ the store's feature density divided by `maxFeatureScreenDensity`). This
 is often used for BAM coverage on Alignments2 tracks using the
 `histograms.urlTemplate` and `histograms.storeClass` arguments.
 
-  
+
 Example track
 
     [ tracks.mytrack ]
@@ -1298,7 +1295,7 @@ needed. The third, fourth, fifth and sixth arguments are optional a)
 output filename b) output width c) output height and d) zoom factor to
 make it higher resolution
 
-  
+
 
 # External Links
 
@@ -1306,6 +1303,5 @@ make it higher resolution
   class="external text" rel="nofollow">JBrowse: A Next Generation Genome
   Browser</a> paper
 
-:
 
 - [JBrowse](/wiki/Category%253AJBrowse "Category%253AJBrowse")

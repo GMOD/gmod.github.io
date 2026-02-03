@@ -433,11 +433,11 @@ feature.
 ```de1
 IMPORT reverse_complement(TEXT) FROM 'sequtil';
 IMPORT get_feature_relationship_type_id(TEXT) FROM 'sequence-cv-helper';
- 
+
 -----------------------------------
 -- basic subsequencing functions --
 -----------------------------------
- 
+
 DECLARE FUNCTION subsequence(
 srcfeature_id  INT REFERENCES feature(feature_id),
 fmin  INT,
@@ -445,7 +445,7 @@ fmax  INT,
 strandINT
 )
  RETURNS TEXT;
- 
+
 COMMENT ON FUNCTION subsequence(INT,INT,INT,INT) IS 'extracts a
 subsequence from a feature referenced by srcfeature_id, within the
 interbase boundaries determined by fmin and fmax, reverse

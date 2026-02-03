@@ -3,7 +3,7 @@ title: "GBrowse syn Tutorial new"
 ---
 # GBrowse syn Tutorial new
 
-  
+
 
 ## Further Reading
 

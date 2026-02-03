@@ -33,7 +33,7 @@ If you are too shy to edit this page, then please add your suggested
 terms or comments on the [talk
 page](Talk%253AStock_Relationship_Ontology "Talk:Stock Relationship Ontology").
 
-  
+
 
 ## stock types
 

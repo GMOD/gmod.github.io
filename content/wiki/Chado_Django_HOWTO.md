@@ -139,7 +139,7 @@ will be generated or regenerated automatically. Any model specific
 functionality is attached to the model classes in such a way that the
 models can be upgraded independently without breaking the website code.
 
-  
+
 
 ### Our Goal
 
@@ -270,7 +270,7 @@ command:
 
       example /home/gmod/projects/microgear/manage.py startapp gmod
 
-  
+
 This will create a directory inside your project directory named `gmod`
 and contains all file scaffolds we will need later.
 
@@ -295,7 +295,7 @@ using a model method with the following name:
 
       model.relatedmodelname_field_set.(queryfilters)
 
-  
+
 
       example: Feature.featureset_feature.filter(srcfeature_exact='NC_004567')
 
@@ -308,7 +308,7 @@ one through the field 'feature' and the other through the field
 are referenced by featureloc records that have 'NC_004567' as source
 feature value.
 
-  
+
 The code will also create an `admin.py` file for linking the models to
 the admin site (handy for smaller size tables like the
 [organism](Chado_Organism_Module#Table:_organism "Chado Organism Module"),
@@ -373,12 +373,12 @@ class="external text" rel="nofollow">package</a> in Python
     #
     #The line below imports all the Chado models
     from <project>.<app>.models import *
- 
+
     #this is a generic method definition for model, returning the value of the field called 'name'
     def unicode_name(self):
         return self.name
- 
- 
+
+
     # this is a method definition for the 'Organism' model, returning the value of the field called
     # 'common_name'
     def unicode_common_name(self):
@@ -394,14 +394,14 @@ class="external text" rel="nofollow">package</a> in Python
     #
     # import the model method definitions
     from <project>.<app>.modeldefs import *
- 
+
     setattr(Organism, '__unicode__', unicode_common_name)
- 
+
     setattr(Cv, '__unicode__', unicode_name)
     setattr(Db, '__unicode__', unicode_name)
     setattr(Cvterm, '__unicode__', unicode_name)
     setattr(Feature, '__unicode__', unicode_name)
- 
+
     setattr(Featureloc, '__unicode__', location)
 ```
 

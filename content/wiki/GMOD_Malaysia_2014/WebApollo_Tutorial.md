@@ -32,7 +32,7 @@ href="http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pdf"
 class="external free"
 rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pdf</a>
 
-  
+
 
   Prerequisites](#Prerequisites)
 - [Database
@@ -71,26 +71,26 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
 ## Database Setup
 
 - Create PostgreSQL user with proper permissions for WebApollo to use
-    $ sudo su postgres 
-    $ createuser -P web_apollo_users_admin 
-    Enter password for new role:  
-    Enter it again:  
-    Shall the new role be a superuser? (y/n) n 
-    Shall the new role be allowed to create databases? (y/n) y 
-    Shall the new role be allowed to create more new roles? (y/n) n 
+    $ sudo su postgres
+    $ createuser -P web_apollo_users_admin
+    Enter password for new role:
+    Enter it again:
+    Shall the new role be a superuser? (y/n) n
+    Shall the new role be allowed to create databases? (y/n) y
+    Shall the new role be allowed to create more new roles? (y/n) n
 
 - Create a database for managing the WebApollo users
     $ createdb -U web_apollo_users_admin web_apollo_users
     $ exit
 
 - Populate the database with the WebApollo User schema
-     cd /data/dataHome/WebApollo2/WebApollo-2013-05-16/tools/user 
+     cd /data/dataHome/WebApollo2/WebApollo-2013-05-16/tools/user
      psql -U web_apollo_users_admin web_apollo_users < \
-      user_database_postgresql.sql 
+      user_database_postgresql.sql
 
 - Create a user with access to WebApollo
      ./add_user.pl -D web_apollo_users -U web_apollo_users_admin -P \
-      web_apollo_users_admin -u web_apollo_admin -p web_apollo_admin 
+      web_apollo_users_admin -u web_apollo_admin -p web_apollo_admin
 
 - The database is ready and has an initial user, which we will use as an
   administrator.
@@ -133,12 +133,12 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
   /var/lib/tomcat7/conf/server.xml
 - The final file should look like the example below:
     $ less /var/lib/tomcat7/conf/server.xml
-    <Host name="localhost" appBase="webapps" 
-          unpackWARs="true" autoDeploy="true" 
+    <Host name="localhost" appBase="webapps"
+          unpackWARs="true" autoDeploy="true"
           errorReportValveClass="org.bbop.apollo.web.ErrorReportValve">
     </Host>
 
-  
+
 
 - At this point the server should be ready for WebApollo.
 
@@ -148,10 +148,10 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
      sudo mkdir /var/lib/tomcat7/webapps/WebApollo2
      cd /var/lib/tomcat7/webapps/WebApollo2
 
-  
+
 
 - Deploy servlet
-     sudo jar xvf ~/dataHome/WebApollo2/WebApollo-2013-05-16/war/WebApollo.war 
+     sudo jar xvf ~/dataHome/WebApollo2/WebApollo-2013-05-16/war/WebApollo.war
 
 - Change ownership of the base WebApollo directory
      sudo mkdir /var/lib/tomcat7/webapps/WebApollo2/tmp
@@ -168,14 +168,14 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
 
 - Create ancillary directories for the new instance
      cd /data/dataHome/WebApollo2
-     mkdir Pyu Pyu/Blat Pyu/Blat/tmp Pyu/Annotations Pyu/data 
+     mkdir Pyu Pyu/Blat Pyu/Blat/tmp Pyu/Annotations Pyu/data
 
 - Change ownership to user tomcat7
      sudo chown -R tomcat7:tomcat7 /data/dataHome/WebApollo2/Pyu/Annotations
      sudo chown -R tomcat7:tomcat7 /data/dataHome/WebApollo2/Pyu/Blat/tmp
 
 - Set up the JBrowse instance
-     cd /var/lib/tomcat7/webapps/WebApollo2/jbrowse 
+     cd /var/lib/tomcat7/webapps/WebApollo2/jbrowse
 
 - Create a symbolic link to the large disk where the browser data will
   be stored
@@ -185,14 +185,14 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
   directory
      sudo ln -s /data/dataHome/WebApollo2/pyu_data .
 
-  
+
 
 - WebApollo uses two special tracks, one to display annotations, and one
   for sequence alterations. We need to copy those from the original
   downloaded location to the data directory
      cp /data/dataHome/WebApollo2/WebApollo-2013-05-16/json/* ./data/
 
-  
+
 
 - Process the data in preparation for loading
      cd /var/lib/tomcat7/webapps/WebApollo2/jbrowse/pyu_data
@@ -220,7 +220,7 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
      sudo chmod +x bin/*
 
 - Load the reference sequence(s)
-     bin/prepare-refseqs.pl --fasta pyu_data/scf1117875582023.fa 
+     bin/prepare-refseqs.pl --fasta pyu_data/scf1117875582023.fa
 
 - Load the Maker track
     bin/flatfile-to-json.pl --gff pyu_data/scratch/split_gff/maker.gff \
@@ -229,7 +229,7 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
     --cssClass container-16px --type mRNA --trackLabel maker \
     --webApollo --renderClassName gray-center-20pct
 
-  
+
 
 - This is a bash script to automate loading the non-Maker tracks. You
   can either paste it into the command prompt or use it to build a shell
@@ -244,7 +244,7 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
        --webApollo --renderClassName gray-center-20pct
      done
 
-  
+
 
     ### Output
     #Processing blastn
@@ -272,7 +272,7 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
 
 - Load the BigWig track
      bin/add_bw_track.pl --bw_url bigwig/simulated-sorted.coverage.bw \
-     --label simulated_bw --key "simulated BigWig"  
+     --label simulated_bw --key "simulated BigWig"
 
 - The data for this instance should now be all loaded.
 
@@ -291,48 +291,48 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
 - Next, edit the user section to connect this instance to the database
   back end. The database will handle
 - user accounts, including login authentication and account permissions.
-     <url>ENTER_USER_DATABASE_JDBC_URL</url>   
+     <url>ENTER_USER_DATABASE_JDBC_URL</url>
 
 - For this instance, we need to set it to:
     <url>jdbc:postgresql://localhost/web_apollo_users</url>
 
-  
+
 
      <username>ENTER_USER_DATABASE_USERNAME</username>
 
 - For this instance, we need to set it to:
     <username>web_apollo_users_admin</username>
 
-  
+
 
      <password>ENTER_USER_DATABASE_PASSWORD</password>
 
 - For this instance, we need to set it to:
     <password>web_apollo_users_admin</password>
 
-  
+
 
      <refseqs>ENTER_PATH_TO_REFSEQS_JSON_FILE</refseqs>
 
 - For this instance, we need to set it to:
     <refseqs>/var/lib/tomcat7/webapps/WebApollo2/jbrowse/data/refSeqs.json</refseqs>
 
-  
+
 
     <organism>ENTER_ORGANISM</organism>
 
 - For this instance, we need to set it to:
     <organism>Pythium ultimum</organism>
 
-  
 
-    <sequence_type>ENTER_CVTERM_FOR_SEQUENCE</sequence_type> 
+
+    <sequence_type>ENTER_CVTERM_FOR_SEQUENCE</sequence_type>
 
 - This is formatted “CV:term”, and may change depending on your
   reference assembly.
-    <sequence_type>sequence:contig</sequence_type> 
+    <sequence_type>sequence:contig</sequence_type>
 
-  
+
 
 - Edit the blat_config.xml file for this instance
     <blat_bin>ENTER_PATH_TO_BLAT_BINARY</blat_bin>
@@ -340,23 +340,23 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
 - For this instance, we need to set it to:
     <blat_bin>/opt/bin/blat</blat_bin>
 
-  
+
 
      <tmp_dir>ENTER_PATH_FOR_TEMPORARY_DATA</tmp_dir>
 
 - For this instance, we need to set it to:
     <tmp_dir>/data/dataHome/WebApollo2/Pyu/Blat/tmp</tmp_dir>
 
-  
+
 
     <database>ENTER_PATH_TO_BLAT_DATABASE</database>
 
 - For this instance, we need to set it to:
     <database>/data/dataHome/WebApollo2/Pyu/Blat/Pyu.2bit</database>
 
-  
 
-    <blat_options>ENTER_ANY_BLAT_OPTIONS</blat_options> 
+
+    <blat_options>ENTER_ANY_BLAT_OPTIONS</blat_options>
 
 - For this instance, we need to set it to:
     <blat_options>-minScore=100 -minIdentity=60</blat_options>
@@ -382,25 +382,25 @@ release. If you'd like to use an included style, replace the subfeature
 section with the style name:
 
     whatever-80pct
-    green-80pct 
-    blue-80pct 
-    purple-80pct 
-    springgreen-80pct 
-    blueviolet-80pct 
-    mediumpurple-80pct 
-    orange-80pct 
+    green-80pct
+    blue-80pct
+    purple-80pct
+    springgreen-80pct
+    blueviolet-80pct
+    mediumpurple-80pct
+    orange-80pct
     darkorange-60pct
 
 For example, to style a match type track with light green, adjust the
 load command like this:
 
-    --subfeatureClasses "{\"match_part\": \"darkblue-80pct\"}" 
+    --subfeatureClasses "{\"match_part\": \"darkblue-80pct\"}"
 
 Becomes:
 
     --subfeatureClasses "{\"match_part\": \"springgreen-80pct\"}"
 
-  
+
 These styles are located in the custom_track_styles.css file:
 
     jbrowse/plugins/WebApollo2/css/custom_track_styles.css
@@ -410,7 +410,6 @@ styles are located in
 
     jbrowse/data/trackList.json
 
-:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 

@@ -231,20 +231,20 @@ installation is required.
 ### Tutorials
 
 <a href="../JBrowse_Tutorial" class="mw-redirect"
-title="JBrowse Tutorial">JBrowse Tutorial</a> covering installation and configuration  
+title="JBrowse Tutorial">JBrowse Tutorial</a> covering installation and configuration
 part of the [2013 GMOD Summer
 School](../2013_GMOD_Summer_School "2013 GMOD Summer School")
 
 <a href="http://jbrowse.org/code/latest-release/docs/tutorial/"
 class="external text" rel="nofollow">Getting Started with JBrowse
-Tutorial</a>  
+Tutorial</a>
 part of the JBrowse documentation
 
 <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/Exploring_structural_variation_in_the_tomato_clade_using_JBrowse.pdf"
 class="internal"
 title="Exploring structural variation in the tomato clade using JBrowse.pdf">Exploration
-of structural variation in the tomato clade using JBrowse</a>  
+of structural variation in the tomato clade using JBrowse</a>
 Tutorial explaining how to browse structural variants from the
 <a href="http://www.tomatogenome.net" class="external text"
 rel="nofollow">150+ tomato genome resequencing project</a> using JBrowse

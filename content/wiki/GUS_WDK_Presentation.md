@@ -9,9 +9,9 @@ title: "GUS WDK Presentation"
 - [The GUS
   WDK](#The_GUS_WDK)
 
-  
 
-  
+
+
 
 #### Overview
 
@@ -79,14 +79,14 @@ Here is a sample specification of an ArrayElement entity:
 ``` de1
 <wdkModel>
 <recordClass idPrefix="" name="ArrayElementRecordClass" type="Array Element">
- 
+
   <attributeQueryRef ref="ArrayElementAttributes.ProviderAndOrganism">
      <columnAttribute name="provider" displayName="Provider"/>
      <columnAttribute name="genus_species" displayName="genus_species"/>
      <columnAttribute name="organism" displayName="Organism"/>
      <columnAttribute name="sequence" displayName="Sequence"/>
   </attributeQueryRef>
- 
+
   <table name="GenomicLocations" displayName="Genomic Locations"
                queryRef="ArrayElementTables.GenomicLocations">
     <columnAttribute name="source_id" internal="true"/>
@@ -108,7 +108,7 @@ Here is a sample specification of an ArrayElement entity:
       </url>
     </linkAttribute>
   </table>
- 
+
   <table name="Genes" displayName="Mapped Genes" queryRef="ArrayElementTables.Genes">
      <columnAttribute name="source_id" internal="true"/>
      <linkAttribute name="gene" displayName="Gene" visible="$$source_id$$">
@@ -118,7 +118,7 @@ Here is a sample specification of an ArrayElement entity:
      </linkAttribute>
   </table>
 </recordClass>
- 
+
 <querySet name="ArrayElementAttributes">
   <sqlQuery name="ProviderAndOrganism" isCacheable="false">
       <paramRef ref="params.primaryKey"/>

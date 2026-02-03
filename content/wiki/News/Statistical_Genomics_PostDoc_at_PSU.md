@@ -53,6 +53,6 @@ check(s) in accordance with University policies. Penn State is committed
 to affirmative action, equal opportunity, and the diversity of its
 workforce.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/09/09*

@@ -75,7 +75,7 @@ using the topoview track for RNASeq data at:
 
 GBrowse 2.56 with topoview track - ami-c2d677bf
 
-  
+
 
 ## Data format
 
@@ -91,19 +91,19 @@ some positioning data (two-column format, without runlength
 specification, without omission of zero values). This is the only format
 which glyph is able to handle.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-    # subset =BS107_all_unique chromosome =2LHet                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-    -200000 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    0       0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    19955   1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    19959   0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    19967   2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    19972   0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    19977   2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    20027   0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    20031   2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    20035   0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    20043   1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+    # subset =BS107_all_unique chromosome =2LHet
+    -200000 0
+    0       0
+    19955   1
+    19959   0
+    19967   2
+    19972   0
+    19977   2
+    20027   0
+    20031   2
+    20035   0
+    20043   1
 
 ## Accessory scripts
 
@@ -118,15 +118,15 @@ calculate the average read coverage for a user-specified window size
 WIG/BED4, which is the format used by the coverage_to_topoview.pl
 script.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-    Usage: bam_coverage_windows.pl -b bamfile -n 10_000_000 -w 25 | gzip -c > bamfile.wig.gz                                                                                                                                                                                                                                                                                                                                                                                                
-        -b name of bam file to read REQUIRED                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-        -w window size (default 25)                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-        -n normalized read number -- if you will be comparing multiple bam files                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                     select the read number to normalize against.                                                                                                                                                                                                                                                                                                                                                                                                                
-                                     All counts will be adjusted by a factor of:                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                     actual read count/normalized read count                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
+    Usage: bam_coverage_windows.pl -b bamfile -n 10_000_000 -w 25 | gzip -c > bamfile.wig.gz
+        -b name of bam file to read REQUIRED
+        -w window size (default 25)
+        -n normalized read number -- if you will be comparing multiple bam files
+                                     select the read number to normalize against.
+                                     All counts will be adjusted by a factor of:
+                                     actual read count/normalized read count
+
 
 The output of this script looks like (note the
 <a href="http://genomewiki.ucsc.edu/index.php/Coordinate_Transforms"
@@ -156,11 +156,11 @@ coverage_to_topoview.pl converts a list of coverage files (WIG/BED4) to
 the indexed format used by this glyph. It specifically expects the BED4
 format produced by the bam_coverage_windows.pl script
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-    Usage: coverage_to_topoview.pl [-o output_dir] [-h] [-l] file1.wig.gz file2.wig.gz                                                                                                                                                                                                                                                                                                                                                                                                      
-        -o output directory (default 'topoview')                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-        -l use log2 for read counts (recommended)                                                                                                                                                                                                                                                                                                                                                                                                                                                
-        -h this help message                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+    Usage: coverage_to_topoview.pl [-o output_dir] [-h] [-l] file1.wig.gz file2.wig.gz
+        -o output directory (default 'topoview')
+        -l use log2 for read counts (recommended)
+        -h this help message
 
 #### Log transformations
 
@@ -204,25 +204,25 @@ option below.
 
 ### Example config stanza
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-    [TOPOVIEWLOG2]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-    feature       = region                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-    glyph         = topoview                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-    autoscale     = local                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-    height        = 200                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-    datadir       = /home/ubuntu/data/bam/log2                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-    subset order  = SRR1810778.25  FF9966                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                    SRR1810779.25  FF6633                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                    SRR1810780.25  FF0000                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                    SRR1810781.25  00CC66                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                    SRR1810782.25  009933                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                    SRR1810783.25  006600                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-    key           = TopHat: Normalized Read Coverage (log2)                                                                                                                                                                                                                                                                                                                                                                                                                                      
-    show max      = 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-    x_step        = 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-    y_step        = 8                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+    [TOPOVIEWLOG2]
+    feature       = region
+    glyph         = topoview
+    autoscale     = local
+    height        = 200
+    datadir       = /home/ubuntu/data/bam/log2
+    subset order  = SRR1810778.25  FF9966
+                    SRR1810779.25  FF6633
+                    SRR1810780.25  FF0000
+                    SRR1810781.25  00CC66
+                    SRR1810782.25  009933
+                    SRR1810783.25  006600
+    key           = TopHat: Normalized Read Coverage (log2)
+    show max      = 0
+    x_step        = 2
+    y_step        = 8
     fill opacity  = 0.8
-    edge color    = black                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    edge color    = black
 
 ### Options
 
@@ -253,31 +253,31 @@ Glyph-specific options
 Setting the 'subset order' is mandatory. It specifies the subplots and
 the order in which they will be displayed.
 
-There are three ways to represent the subsets:  
+There are three ways to represent the subsets:
 
 Ordered subsets with no color specified. Random colors will be assigned.
 Hope you are feeling lucky.
 
-                                                                                                                                                                                                                                             
-    subset order  = SRR1810778.25                                                                                                                                                                                                                 
-                    ...                                                                                                                                                                                                                           
+
+    subset order  = SRR1810778.25
+                    ...
 
 Ordered subsets with color specified (use either web colors or hex
 colors with the '#' omitted)
 
-                                                                                                                                                                                                                                             
-    subset order  = SRR1810778.25  red                                                                                                                                                                                                        
-                    SRR1810779.25  FF6633                                                                                                                                                                                                        
-                    ...                                                                                                                                                                                                                           
+
+    subset order  = SRR1810778.25  red
+                    SRR1810779.25  FF6633
+                    ...
 
 Ordered subsets with color and opacity set. Not that the global 'fill
 opacity' option affects all subsets. Specifying individual opacity is
 optional.
 
-                                                                                                                                                                                                                                             
-    subset order  = SRR1810778.25  FF9966 0.8                                                                                                                                                                                                     
-                    SRR1810779.25  FF6633 0.7                                                                                                                                                                                                     
-                    ...                                                                                                                                                                                                                           
+
+    subset order  = SRR1810778.25  FF9966 0.8
+                    SRR1810779.25  FF6633 0.7
+                    ...
 
 ## Installation Troubleshooting
 

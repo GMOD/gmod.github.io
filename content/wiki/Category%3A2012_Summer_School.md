@@ -5,7 +5,7 @@ title: "Category%253A2012 Summer School"
 
 Information on and tutorials from the 2012 GMOD Summer School.
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/32/Summer-school-splash.jpg/600px-Summer-school-splash.jpg"

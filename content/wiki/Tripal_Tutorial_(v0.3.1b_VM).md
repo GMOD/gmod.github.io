@@ -55,7 +55,7 @@ This tutorial is the same as that for the full tutorial for Tripal
 v0.3.1b but we can skip large sections as the VM has already been
 prepared. For this tutorial, follow these steps:
 
-Step 1  
+Step 1
 The virtual machine comes pre-installed with the Apache webserver,
 PostgreSQL database server, Drupal, Tripal and Chado. It is not
 necessary to perform these tasks, but it recommend to review these steps
@@ -67,13 +67,13 @@ At a minimum, please review from the point that Tripal is installed: <a
 href="http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Tripal_Installation#Tripal_Installation"
 class="external free"
 rel="nofollow">http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Tripal_Installation</a>
-Step 2  
+Step 2
 Perform the "Theme Configuration" section of the tutorial at this link
 (only do this section):
 <a href="Tripal_Tutorial_(v0.3.1b)#Theme_Configuration"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/Tripal_Tutorial_(v0.3.1b)#Theme_Configuration</a>
-Step 3  
+Step 3
 Start using Tripal by following all remaining sections of the tutorial
 from this point: <a
 href="http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Creating_Organism_Pages#Creating_Organism_Pages"

@@ -194,13 +194,13 @@ needed parents) will be created at install time.
 
 The configuration options are:
 
-apachemodules  
+apachemodules
 The directory in which Apache's loadable modules are located. This is
 only needed to run a demo GBrowse site before formal installation. If
 you do not know the location of this directory and you do not want to
 run the demo, you can safely ignore this option.
 
-cgibin  
+cgibin
 The directory in which Apache's executable CGI scripts are located, for
 example */usr/lib/cgi-bin*. This directory is set up for you when Apache
 is installed, and you must have the path correct in order for Build to
@@ -208,38 +208,38 @@ install GBrowse's CGI scripts in the right place. GBrowse will be
 installed into the "gb2" subdirectory, so its path will be
 "/usr/lib/cgi-bin/gb2/gbrowse".
 
-conf  
+conf
 The location of GBrowse's configuration files. The default is to place
 them in */etc/gbrowse2*. This is where you will go to customize GBrowse
 and add new data sources.
 
-databases  
+databases
 The default location for GBrowse's in memory databases, and the place
 where the example databases will be stored. The default is to place this
 into a subdirectory of the same directory in which GBrowse places its
 static files, such as */var/www/gbrowse2/databases*.
 
-htdocs  
+htdocs
 The directory in which to install GBrowse's Javascript libraries, static
 HTML pages and stylesheets. You can choose any location for this
 directory and it will be added to Apache's document tree. The default is
 to place the directory under the default document tree, such as
 */var/www/gbrowse2*.
 
-portdemo  
+portdemo
 The internet port on which the demo will run. The demo launches a new
 instance of Apache running under your user privileges. Because port 80
 will usually already be taken by the system Apache, Build will choose an
 unused port like 8000 or 8080. You may manually select the port if you
 wish.
 
-tmp  
+tmp
 The directory in which GBrowse will store its working data, including
 users' session information (such as preferred tracks), uploaded data
 files, and temporary image files. The default is to place these files
 into */var/tmp/gbrowse2*.
 
-wwwuser  
+wwwuser
 The account under which the system Apache runs, often "nobody",
 "www-data" or "httpd." If you do not know, you can find out by running
 *ps aux \| grep -i apache* on a system that has Apache already running.
@@ -263,7 +263,7 @@ The options passed on the command line will become the defaults for
 *./Build config* will be used during installation, and will also become
 the defaults if you later run *./Build config* or *./Build reconfig*.
 
-  
+
 Here is an example of a 'non-standard' install, that allows you to
 install and run GB as a non-root user (assuming you have Perl's
 local-lib working properly):
@@ -278,7 +278,7 @@ local-lib working properly):
     ./Build test
     ./Build install
 
-  
+
 Note that we still need to tweak \$HOME/httpd/conf/gbrowse2/GBrowse.conf
 to set the 'url_base' from '/gbrowse2' to '/potato/gbrowse2' in this
 case.
@@ -361,7 +361,7 @@ Copy configure information to the end of
        </Location>
     </IfModule>
 
-  
+
 
 ### Running the GBrowse Demo (optional)
 

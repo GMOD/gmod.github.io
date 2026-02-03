@@ -11,11 +11,11 @@ well as significant data updates and website changes.
 
 Selected highlights of the Pathway Tools update:
 
-Mac OS 10.8  
+Mac OS 10.8
 Pathway Tools 16.5 works under MacOS 10.8; previous versions of Pathway
 Tools do not.
 
-Phenotype Microarrays and Other Growth Data  
+Phenotype Microarrays and Other Growth Data
 The displays of growth media, growth observations, and phenotype
 microarray data has been substantially revised. Tables for growth
 observation data on gene and growth medium pages now include aerobicity
@@ -26,7 +26,7 @@ available. This page includes a new option to generate a heatmap to, for
 example, show how gene knockouts affect growth on different nutrient
 sources.
 
-Atom Mappings  
+Atom Mappings
 Atom mappings define the correspondence between atoms in the reactants
 of a chemical reaction, and the atoms in the products of that reaction.
 MetaCyc now contains atom mapping data for thousands of reactions.

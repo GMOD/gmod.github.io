@@ -25,10 +25,9 @@ getting this new News page and feed set up.
 
 [Scott Cain](../User%253AScott "User%253AScott")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/02/03*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

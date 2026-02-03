@@ -50,10 +50,9 @@ rel="nofollow">OpenFlyData web site</a>.
 [Jun Zhou](../User%253AJunZhao "User%253AJunZhao") and [Dave
 Clements](../User%253AClements "User%253AClements")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/23*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -49,13 +49,13 @@ see the
 <a href="../PAG" class="mw-redirect" title="PAG">PAG page on this
 wiki</a>.
 
-  
+
 There is still time to register for PAG if you haven't done so; full
 details are available
 <a href="http://www.intlpag.org/2013/" class="external text"
 rel="nofollow">on the PAG website</a>. We hope to see plenty of you
 there!
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/01/01*

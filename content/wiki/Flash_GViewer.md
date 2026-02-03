@@ -7,7 +7,7 @@ title: "Flash GViewer"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Flash_gviewer_title.jpg" width="650"
 height="100" alt="Flash GViewer Logo" />
 
-  
+
 Flash GViewer is a **customizable Flash movie** that can be easily
 inserted into a web page to display each chromosome in a genome along
 with the locations of individual features on the chromosomes. It is

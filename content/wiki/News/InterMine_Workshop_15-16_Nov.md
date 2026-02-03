@@ -18,7 +18,7 @@ just attend either one.
 
 <a
 href="http://www.biomed.cam.ac.uk/gradschool/skills/intermine-developers.html"
-class="external text" rel="nofollow">Day One - InterMine Developers</a>  
+class="external text" rel="nofollow">Day One - InterMine Developers</a>
 Building an InterMine data warehouse and deploying the web application.
 This will use the new MineManager GUI to set up an example InterMine,
 load data and write a new parser to add custom data, deploy and
@@ -26,7 +26,7 @@ configure the webapp including the new full text search.
 <a
 href="http://www.biomed.cam.ac.uk/gradschool/skills/intermine-users.html"
 class="external text" rel="nofollow">Day Two (morning only) - InterMine
-Users</a>  
+Users</a>
 Advanced querying. A brief tour of creating custom queries, creating
 your own templates and using the web service API to build and run
 queries from Perl or Java code.
@@ -51,10 +51,9 @@ accounts for saving user data.
 
 [Richard Smith](../User%253ARsmith "User%253ARsmith")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/13*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

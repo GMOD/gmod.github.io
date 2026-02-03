@@ -49,7 +49,7 @@ uses some denormalisations of the Chado model, explained below. In our
 view these two formats are complementary. Conversions between the
 formats should be trivial.
 
-  
+
 
 ## The Chaos Model
 
@@ -75,7 +75,7 @@ indicate the left and right coordinates, chaos use nbeg/nend to indicate
 the five prime (natural start) and three prime (natural end)
 coordinates.
 
-  
+
 
 ## Library Contents
 
@@ -108,7 +108,7 @@ You can browse the perl modules in the `chaos-xml/lib/` directory. To
 install, download the chaos-xml library and follow the instructions in
 the `chaos-xml/INSTALL` file.
 
-  
+
 
 ## Converting between Chaos-XML and Chado-XML
 
@@ -121,7 +121,7 @@ this distribution (see the `chaos-xml/bin/` directory)
 - cx-chaos2chadoxml.pl
 - cx-chadoxml2chaos.pl
 
-  
+
 
 ## Future Extensions
 

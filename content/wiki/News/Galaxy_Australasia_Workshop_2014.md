@@ -78,6 +78,6 @@ href="https://wiki.galaxyproject.org/Events/GAW2014#Organising#Organising"
 class="external text" rel="nofollow">Committee GAW 2014 Organising
 Committee</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on yyyy/mm/dd*

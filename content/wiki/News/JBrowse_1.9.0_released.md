@@ -40,10 +40,9 @@ Happy browsing!
 ([talk](../User_talk%253ARobertBuels "User talk:RobertBuels")) 10:09, 17
 April 2013 (EDT)
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/16*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

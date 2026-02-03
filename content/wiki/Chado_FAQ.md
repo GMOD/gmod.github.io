@@ -37,7 +37,7 @@ title: "Chado FAQ"
     Ontologies takes forever! There has to be a better
     way?](#Loading_Ontologies_takes_forever.21_There_has_to_be_a_better_way.3F)
 
-  
+
 
 ## About this FAQ
 

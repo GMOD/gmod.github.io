@@ -23,10 +23,9 @@ We'll keep you informed as the site's features evolve.
 
 Greg Von Kuster
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/08*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

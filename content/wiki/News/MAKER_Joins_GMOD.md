@@ -27,10 +27,9 @@ rel="nofollow">University of Utah</a>.
 See [MAKER](../MAKER.1 "MAKER") for more on how you can use it to
 automatically annotate your genomic data.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/05/16*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

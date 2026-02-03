@@ -45,7 +45,7 @@ title: "GBrowse/Uploading Wiggle Tracks"
 
 <a href="../File:Fly_12pt_spen.png" class="image"></a>
 
-  
+
 
 ## Making a Wiggle Track Permanent
 
@@ -80,7 +80,7 @@ neat trick is to use a relative path for the wigfile attribute, as in:
 You can then use the **basedir** track option to tell the glyph which
 directory contains the wigfile:
 
-  
+
 
     [TEST WIG]
     feature = example
@@ -119,7 +119,7 @@ how to generate the .gff3 files for subsequent uploading:
         > ${STUDY}_$t.gff3
     done
 
-  
+
 
 ## Email Threads
 

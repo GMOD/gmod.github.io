@@ -126,7 +126,7 @@ three
 The outcomes for each group are summarized below.
 
 <a href="https://www.nescent.org/wg_gmodevohackathon/GMatchbox"
-class="external text" rel="nofollow">GMatchbox</a>  
+class="external text" rel="nofollow">GMatchbox</a>
 Worked on establishing a common database backend and
 [JSON](Glossary#JSON "Glossary")-based API for comparative genomics
 data, using several visualization tools (including
@@ -134,7 +134,7 @@ data, using several visualization tools (including
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn")) as targets. Will enable
 sharing of comparative data in multiple tools from multiple sources.
 <a href="https://www.nescent.org/wg_gmodevohackathon/GBrowse_syn2"
-class="external text" rel="nofollow">GBrowse_syn2</a>  
+class="external text" rel="nofollow">GBrowse_syn2</a>
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is built on and takes
 advantage of the [GBrowse](GBrowse.1 "GBrowse") genome browser code and
 config files. However, it did not work well with GBrowse2, due to
@@ -145,14 +145,14 @@ Designer](PrimerDesigner.pm "PrimerDesigner.pm"), ...) to be ported to
 GBrowse2 as well. Two participants also became core GBrowse_syn
 developers.
 <a href="https://www.nescent.org/wg_gmodevohackathon/JBrowse_syn"
-class="external text" rel="nofollow">JBrowse_syn</a>  
+class="external text" rel="nofollow">JBrowse_syn</a>
 This group set out to extend [JBrowse](JBrowse.1 "JBrowse") to be a
 comparative genomics browser. The group removed the existing "single
 genome" assumption from the code and successfully displayed several
 genomes in parallel. Several participants also became familiar with
 JBrowse code and architecture.
 <a href="https://www.nescent.org/wg_gmodevohackathon/PhyloBox"
-class="external text" rel="nofollow">PhyloBox</a>  
+class="external text" rel="nofollow">PhyloBox</a>
 <a href="http://phylobox.appspot.com/" class="external text"
 rel="nofollow">PhyloBox</a> is a flexible and fast web based tree
 visualization program. At the hackathon the PhyloBox team extended
@@ -161,7 +161,7 @@ other widgets. PhyloBox documentation was also created.
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/Comparative_Genomics_Visualization:Phylobox_JBrowse"
 class="external text" rel="nofollow">Integration PhyloBox JBrowse
-Integration</a>  
+Integration</a>
 The group is the perfect example of the interaction that can happen at a
 hackathon. They worked with the
 <a href="https://www.nescent.org/wg_gmodevohackathon/JBrowse_syn"
@@ -175,7 +175,7 @@ getting teams to work together.
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup"
 class="external text" rel="nofollow">Natural Diversity and Phenotypes in
-Chado</a>  
+Chado</a>
 This group focused on two outcomes, both relating to
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>. The first
 was a prototype Rails application that provided a web interface to the
@@ -187,7 +187,7 @@ understanding, slight refactoring, and updated documentation for Chado's
 phenotype module.
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/Galaxy_and_HyPhy_Subgroup"
-class="external text" rel="nofollow">Galaxy + HyPhy</a>  
+class="external text" rel="nofollow">Galaxy + HyPhy</a>
 [Galaxy](Galaxy.1 "Galaxy") is both a workflow system and a means of
 persisting computational pipelines and results. This group worked on
 improving Galaxy's ability to integrate interactive tools, using
@@ -196,7 +196,7 @@ rel="nofollow">HyPhy</a> as the prototype application. The Galaxy and
 HyPhy code bases were modified to support this.
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/BioPerl_Enhancements_Subgroup"
-class="external text" rel="nofollow">BioPerl</a>  
+class="external text" rel="nofollow">BioPerl</a>
 This subgroup worked on improving tree handling in
 [BioPerl](BioPerl "BioPerl"). Specifically, they addressed the handling
 of very large trees or large numbers of small trees. BioPerl now
@@ -405,7 +405,7 @@ this satellite (or any other satellite). If you have an interest in
 extending GMOD and will be in the area or at GMOD Americas 2011, then
 you are strongly encouraged to participate.*
 
-  
+
 
 | Name | Email | Particular Interest? |
 |----|----|----|

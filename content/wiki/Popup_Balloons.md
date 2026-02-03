@@ -388,7 +388,7 @@ shadow if substituted is IE version \< 7 is detected.
 
 If you have saved the balloon images in a location other than the
 default relative URL '/images/balloons', you need to tell the balloon
-object about it or your popups will not have the balloon image.  
+object about it or your popups will not have the balloon image.
 **There are two ways to do this:**
 
 1\) Set the variable balloon.images to the relative url for balloon
@@ -469,9 +469,9 @@ alt="The actual script is at http://mckay.cshl.edu/balloon" />
 Sample output. The program will draw either a sample of what the final
 product will look like or all of the necessary image components.
 
-| :-: | <img 
-    src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Balloon_sample.png" width="411"    
-                             height="402"                            
+| :-: | <img
+    src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Balloon_sample.png" width="411"
+                             height="402"
  alt="The actual script is at http://mckay.cshl.edu/balloon" /> |
 
 The CGI script will also generate the necessary javascript code to use
@@ -1152,7 +1152,7 @@ create subdirectories, 'test' for example, the URL for path for the
 contents of 'test' would be /test/\*, e.g. '/test/images', '/test/js',
 etc.
 
-library locations  
+library locations
 Your web browser needs to know where the javascript files are. Make sure
 the \<script src=... lines in your page header point to the actual
 location of the javascript files on your web server. If you do not put
@@ -1161,7 +1161,7 @@ lines in your HTML accordingly. For example, lets say you put the whole
 works under /test relative to your web servers document root. The the
 correct URL for your js files is '/test/js'.
 
-image locations  
+image locations
 Your web browser needs to know where the image files are. By default,
 image files are located in /images/balloons (relative to the document
 root) under GBubble, GPlain, etc. This is specified in the
@@ -1171,7 +1171,7 @@ example, lets say you put the whole works under /test relative to your
 web servers document root. The the correct URL for your js files is
 '/test/images/balloons'
 
-typos  
+typos
 These take many forms but almost all are fatal. JavaScript is
 case-sensitive and bear in mind that you are editing Javascript code,
 which will only work if it is **exactly** right. For example:

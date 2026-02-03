@@ -4,7 +4,7 @@ title: "PubSearch"
 # PubSearch
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
 PubSearch is a web-based literature curation tool to allow curators to
@@ -16,7 +16,7 @@ modifying, and adding gene, gene-annotation, and literature information.
 See the <a href="http://pubsearch.org" class="external text"
 rel="nofollow">PubSearch home page</a> for more information.
 
-  
+
 
   Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
@@ -36,7 +36,7 @@ version. The user name is *demo* and the password is *demo*.
 A Java servlet engine satisfying the Servlet 2.3 and JSP 1.2 specs -
 Tomcat 4.0 is an example of a supporting servlet engine.
 
-  
+
 
 ## Documentation
 
@@ -45,7 +45,7 @@ Tomcat 4.0 is an example of a supporting servlet engine.
 - <a href="http://tesuque.stanford.edu/pubsearch.org/pubsearchFrame.html"
   class="external text" rel="nofollow">Online documentation</a>
 
-  
+
 
 ## Contact
 
@@ -56,7 +56,7 @@ Please submit bug reports to the SourceForge: <a
 href="http://sourceforge.net/tracker/?func=add&amp;group_id=27707&amp;atid=511475"
 class="external text" rel="nofollow">bug tracker</a>
 
-  
+
 
 ## Downloads
 

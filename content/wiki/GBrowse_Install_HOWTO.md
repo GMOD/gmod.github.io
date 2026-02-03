@@ -24,7 +24,7 @@ See also the following OS-specific instructions:
   system](GBrowse_Gentoo_HOWTO "GBrowse Gentoo HOWTO")
 - **Source Code Install (for other Linux systems)**
 
-  
+
 
   NetInstaller</span>](#The_NetInstaller)
 - [Prerequisites](#Prerequisites)
@@ -133,7 +133,7 @@ GBrowse runs on top of several software packages. These must be
 installed and configured before you can run GBrowse. Most preconfigured
 Linux systems will have some of these packages installed already.
 
-  
+
 
 ## Apache
 
@@ -217,29 +217,29 @@ The following Perl modules are not needed for a functional GBrowse
 install. We recommend that you install them as needed to obtain
 additional features.
 
-XML::Parser, XML::Writer, XML::Twig, XML::DOM  
+XML::Parser, XML::Writer, XML::Twig, XML::DOM
 If these modules are present, the "Sequence Dumper" plugin will be able
 to produce GAME and BSML output. They can be downloaded from CPAN.
-LWP  
+LWP
 To load remote 3d party annotations. Available from CPAN.
-Bio::Das  
+Bio::Das
 To display remote annotations using the [Distributed Annotation
 System](Distributed_Annotation_System "Distributed Annotation System").
 The current version is available at CPAN:
 <a href="http://search.cpan.org/~lds/Bio-Das/" class="external free"
 rel="nofollow">http://search.cpan.org/~lds/Bio-Das/</a> and can be
 installed from the cpan shell.
-BioMOBY  
+BioMOBY
 Needed by gbrowse_moby to fetch and display data from BioMOBY providers.
 Available from biomoby.org; obtain via anonymous cvs until it is
 released. Directions are at
 <a href="http://www.biomoby.org/GettingTheCode.html"
 class="external free"
 rel="nofollow">http://www.biomoby.org/GettingTheCode.html</a>.
-GD::SVG  
+GD::SVG
 To save images as publication-quality editable images in Scalar Vector
 Graphics format. Available from CPAN.
-Bio::SCF File::Temp io-lib(v1.7+)  
+Bio::SCF File::Temp io-lib(v1.7+)
 Needed by the sequencing trace glyph to parse SCF files and display the
 trace graph. The io-lib library can be downloaded from <a
 href="https://sourceforge.net/project/showfiles.php?group_id=100316&amp;package_id=108243"
@@ -248,10 +248,10 @@ rel="nofollow">https://sourceforge.net/project/showfiles.php?group_id=100316&amp
 which is part of the Staden Package
 <a href="https://sourceforge.net/projects/staden/" class="external free"
 rel="nofollow">https://sourceforge.net/projects/staden/</a>.
-Math::FFT Statistics::Descriptive  
+Math::FFT Statistics::Descriptive
 Needed by the Spectrogram plugin to calculate Fast Fourier Transforms.
 This module is available from CPAN.
-Bio::PrimerDesigner, Math::Round, primer3  
+Bio::PrimerDesigner, Math::Round, primer3
 Needed by the PrimerDesigner plugin. The perl modules are available from
 CPAN. The linux primer3 binary is packaged with the Bio::PrimerDesigner
 distribution. The binary (or source code) can also be obtained from
@@ -274,7 +274,7 @@ DBD::mysql version at
 <a href="http://search.cpan.org/~capttofu/DBD-mysql-2.9007/"
 class="external text" rel="nofollow">CPAN</a>.
 
-  
+
 
 # Basic Installation
 
@@ -330,7 +330,7 @@ controlled by the following installation options:
 | LIB | The system wide Perl library path | The Perl modules that are part of GBrowse are created under this location. This location will be added to Perl's INC path, telling GBrowse where to look for these Perl modules. **Note**, if you see errors like "Can't locate Bio/Graphics.pm in @INC (@INC contains: ...", you probably need to set the servers \$PERL5LIB to match the one you used at install time. |
 | BIN | ? | Perl executable scripts directory - but I don't know what that means! |
 
-  
+
 Some additional configuration settings include:
 
 | Setting | Default | Description |
@@ -340,7 +340,7 @@ Some additional configuration settings include:
 | DO_XS | 1 | Compile fast alignment algorithm (XS C extension). If you have a C compiler and wish to compile the XS extensions, set DO_XS=1. Currently all this does is to speed up the multiple alignment plugin. |
 | SELINUX | 0 | Avoid the message to warn you about SELinux that appears when SELinux could be a problem. |
 
-  
+
 You can manually set these locations by passing Makefile.PL one or more
 NAME=VALUE pairs, like so:
 
@@ -572,18 +572,18 @@ loading the database from a tab-delimited file containing the genomic
 annotations in [GFF](GFF "GFF") format. The [BioPerl](BioPerl "BioPerl")
 distribution comes with three tools for loading Bio::DB::GFF databases:
 
-bp_load_gff.pl  
+bp_load_gff.pl
 This will incrementally load a database, optionally initializing it if
 it does not already exist. This script will work correctly even if the
 [MySQL](MySQL "MySQL") server is located on another host.
-bp_bulk_load_gff.pl  
+bp_bulk_load_gff.pl
 This Perl script will initialize a new Bio::DB::GFF database with a
 fresh schema, deleting anything that was there before. It will then load
 the file. Only suitable for use the very first time you create a
 database, or when you want to start from scratch! The bulk loader is as
 much as 10x faster than bp_load_gff.pl, but does not work in the
 situation in which the MySQL database is running on a remote host.
-bp_fast_load_gff.pl  
+bp_fast_load_gff.pl
 This will incrementally load a database. On UNIX systems, it will
 activate a fast loader that makes the speed almost the same as the bulk
 loader. Be careful, though, because this software relies on features
@@ -678,18 +678,18 @@ Go to the individual model organism database's web sites to find the
 [GFF3](GFF3 "GFF3") (or [GFF2](GFF2 "GFF2")) format files you need. A
 few notable sites are:
 
-WormBase (C. elegans and related nematodes)  
+WormBase (C. elegans and related nematodes)
 <a
 href="ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz"
 class="external free"
 rel="nofollow">ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz</a>
 
-SGD (S. cerevisiae)  
+SGD (S. cerevisiae)
 <a href="ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/"
 class="external free"
 rel="nofollow">ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/</a>
 
-FlyBase (D. melanogaster)  
+FlyBase (D. melanogaster)
 <a
 href="ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/"
 class="external free"

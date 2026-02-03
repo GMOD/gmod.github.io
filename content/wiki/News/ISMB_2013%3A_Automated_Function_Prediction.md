@@ -69,6 +69,6 @@ rel="nofollow">BioFunctionPrediction.org</a>.
 Contact: <a href="mailto:afp.cafa.2013@gmail.com" class="external text"
 rel="nofollow">afp.cafa.2013@gmail.com</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/18*

@@ -199,92 +199,92 @@ Working Group</a></li>
 
 The following 4 files are in this category, out of 4 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/GCC2014Logo.png/120px-GCC2014Logo.png"
   width="120" height="50" alt="GCC2014Logo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2014Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GCC2014Logo.png "File:GCC2014Logo.png")  
-  19 KB  
 
-  
 
-  
 
-- 
+  [GCC2014Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GCC2014Logo.png "File:GCC2014Logo.png")
+  19 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Common gene page.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [Common gene
-  page.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/80/Common_gene_page.ppt "File:Common gene page.ppt")  
-  81 KB  
+  page.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/80/Common_gene_page.ppt "File:Common gene page.ppt")
+  81 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Gmod meeting 7 2008.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [Gmod meeting 7
-  2008.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Gmod_meeting_7_2008.ppt "File:Gmod meeting 7 2008.ppt")  
-  103 KB  
+  2008.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Gmod_meeting_7_2008.ppt "File:Gmod meeting 7 2008.ppt")
+  103 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6a/July2008Logo.png/120px-July2008Logo.png"
   width="120" height="108" alt="July2008Logo.png" />
 
-  
 
-  
 
-  
 
-  [July2008Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/July2008Logo.png "File:July2008Logo.png")  
+
+
+
+  [July2008Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/July2008Logo.png "File:July2008Logo.png")
   204 KB

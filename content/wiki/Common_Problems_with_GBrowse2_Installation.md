@@ -5,13 +5,13 @@ title: "Common Problems with GBrowse2 Installation"
 
 Here are some common problems.
 
-GBrowse loads, but the fonts and colors are wrong, and none of the click or drag options works.  
+GBrowse loads, but the fonts and colors are wrong, and none of the click or drag options works.
 This happens when GBrowse can't find its css and/or javascript files. To
 confirm, check the server error log. You will see messages about missing
 .css and .js files. Check and correct the **url_base** setting in
 GBrowse.conf. This can sometimes happen when you tell the installer to
 put GBrowse's htdocs files in a non-standard location.
-When upgrading from an earlier version of GBrowse2, you get an "Internal Server Error" message and the server error log complains about a "Deparse" error.  
+When upgrading from an earlier version of GBrowse2, you get an "Internal Server Error" message and the server error log complains about a "Deparse" error.
 This is caused by the GBrowse2 config file parsing and caching system,
 which speeds up loading of large config files. Perl can't correctly
 cache certain complex callbacks. To fix this problem, try to isolate

@@ -43,7 +43,7 @@ Traffic to the GMOD website, gmod.org, has been tracked since November
 2007, first through AWStats and then using Google Analytics. No data is
 available for the period between January 2011 and July 2012.
 
-  
+
 
 ### 2012 onwards
 
@@ -293,7 +293,7 @@ SourceForge page. See [SourceForge Download
 Statistics](SourceForge_Download_Statistics "SourceForge Download Statistics")
 for the raw data.
 
-  
+
 
 ### [GBrowse](GBrowse.1 "GBrowse")
 
@@ -313,7 +313,7 @@ See the
 <a href="http://galaxyproject.org/wiki/Galaxy%20Project/Statistics"
 class="external text" rel="nofollow">Galaxy Project Statistics</a> page.
 
-  
+
 
 ### Community Surveys
 

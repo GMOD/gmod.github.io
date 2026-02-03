@@ -44,7 +44,7 @@ variety of projects:
 - The Chromosome 7 Annotation Project
 - Human Genome Segmental Duplication Database
 
-  
+
 
 Publications
 
@@ -82,9 +82,9 @@ Publications
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
     named `PMID:12914656`**</span>
 
-  
 
-Contact info  
+
+Contact info
 Email: junjun.zhang \<at\> oicr.on.ca
 
 Phone: 416-673-8517

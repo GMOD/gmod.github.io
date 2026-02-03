@@ -54,7 +54,7 @@ Some of the current features and other improvements
   always just pick up where it left off...
 - optional web base GUI for a local MAKER installation
 
-  
+
 There will also be a
 <a href="http://www.k-state.edu/agc/symp2010/seminar.html"
 class="external text" rel="nofollow">workshop on MAKER</a> on June 12 at
@@ -63,14 +63,13 @@ class="external text" rel="nofollow">4th Annual Arthropod Genomics
 Symposium</a> in Kansas City. If you are attending AGS and are
 interested in genome annotation, please consider attending.
 
-  
-Thanks,  
+
+Thanks,
 [Carson Holt](../User%253ACarsonholt "User%253ACarsonholt")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/06/01*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

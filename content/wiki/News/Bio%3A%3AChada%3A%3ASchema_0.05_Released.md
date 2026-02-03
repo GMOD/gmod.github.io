@@ -25,13 +25,12 @@ wiki page for more on what
 [Bio%253A%253AChado%253A%253ASchema](../Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema") is and
 what it's for.
 
-[Rob Buels](../User%253ARobertBuels "User%253ARobertBuels")  
+[Rob Buels](../User%253ARobertBuels "User%253ARobertBuels")
 [SGN](../Category%253ASGN "Category%253ASGN")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/08*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

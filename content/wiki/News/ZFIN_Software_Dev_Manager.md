@@ -38,10 +38,9 @@ class="external text" rel="nofollow">full job posting</a> for duties and
 responsibilities, minimum and preferred qualifications, and how to
 apply.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/03/14*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

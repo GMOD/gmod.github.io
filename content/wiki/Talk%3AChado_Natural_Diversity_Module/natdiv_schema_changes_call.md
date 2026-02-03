@@ -13,7 +13,7 @@ does not address well post-composing terms.
 
     2. The phenotype (the descriptor) is the cvterm
 
-    3. Post composing cvterms can be done now in the phenotype table (using observable_id and attr_id), but we cannot reuse it 
+    3. Post composing cvterms can be done now in the phenotype table (using observable_id and attr_id), but we cannot reuse it
     since it is tied with a specific value.
 
 - To break this postcomposed phenotype - value connection can we use

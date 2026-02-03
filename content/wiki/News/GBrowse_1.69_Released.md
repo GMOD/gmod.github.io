@@ -53,10 +53,9 @@ Thank you and happy GBrowsing,
 
 GMOD Project Coordinator
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/08/22*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

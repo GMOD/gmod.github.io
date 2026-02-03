@@ -251,582 +251,582 @@ title="WebGBrowse/tool data">WebGBrowse/tool data</a></li>
 
 The following 25 files are in this category, out of 25 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="ChoosingAGenomeBrowser.pdf" />
 
-  
 
-  
 
-  
 
-  [ChoosingAGenomeBrowser...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/ChoosingAGenomeBrowser.pdf "File:ChoosingAGenomeBrowser.pdf")  
-  103 KB  
 
-  
 
-  
 
-- 
+  [ChoosingAGenomeBrowser...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/ChoosingAGenomeBrowser.pdf "File:ChoosingAGenomeBrowser.pdf")
+  103 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="CosmicGBrowseSept2010.pdf" />
 
-  
 
-  
 
-  
 
-  [CosmicGBrowseSept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/CosmicGBrowseSept2010.pdf "File:CosmicGBrowseSept2010.pdf")  
-  800 KB  
 
-  
 
-  
 
-- 
+  [CosmicGBrowseSept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/CosmicGBrowseSept2010.pdf "File:CosmicGBrowseSept2010.pdf")
+  800 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="1599-1.pdf" />
 
-  
 
-  
 
-  
 
-  [1599-1.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/1599-1.pdf "File:1599-1.pdf")  
-  881 KB  
 
-  
 
-  
 
-- 
+  [1599-1.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/1599-1.pdf "File:1599-1.pdf")
+  881 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Aug2009GBrowse2ImplPersp.pdf" />
 
-  
 
-  
 
-  
 
-  [Aug2009GBrowse2ImplPer...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/Aug2009GBrowse2ImplPersp.pdf "File:Aug2009GBrowse2ImplPersp.pdf")  
-  624 KB  
 
-  
 
-  
 
-- 
+  [Aug2009GBrowse2ImplPer...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/Aug2009GBrowse2ImplPersp.pdf "File:Aug2009GBrowse2ImplPersp.pdf")
+  624 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Aug2009GBrowseOrg.pdf" />
 
-  
 
-  
 
-  
 
-  [Aug2009GBrowseOrg.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/18/Aug2009GBrowseOrg.pdf "File:Aug2009GBrowseOrg.pdf")  
-  9.25 MB  
 
-  
 
-  
 
-- 
+  [Aug2009GBrowseOrg.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/18/Aug2009GBrowseOrg.pdf "File:Aug2009GBrowseOrg.pdf")
+  9.25 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="CMapGBrowseSMBE2009.pdf" />
 
-  
 
-  
 
-  
 
-  [CMapGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/CMapGBrowseSMBE2009.pdf "File:CMapGBrowseSMBE2009.pdf")  
-  2.51 MB  
 
-  
 
-  
 
-- 
+  [CMapGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/CMapGBrowseSMBE2009.pdf "File:CMapGBrowseSMBE2009.pdf")
+  2.51 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="CpGIslandAnnotator.pm" />
 
-  
 
-  
 
-  
 
-  [CpGIslandAnnotator.pm](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/ff/CpGIslandAnnotator.pm "File:CpGIslandAnnotator.pm")  
-  4 KB  
 
-  
 
-  
 
-- 
+  [CpGIslandAnnotator.pm](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/ff/CpGIslandAnnotator.pm "File:CpGIslandAnnotator.pm")
+  4 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Flybase topoview.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Flybase
-  topoview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Flybase_topoview.pdf "File:Flybase topoview.pdf")  
-  102 KB  
+  topoview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Flybase_topoview.pdf "File:Flybase topoview.pdf")
+  102 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GBrowse 2.20 Poster.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GBrowse 2.20
-  Poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/37/GBrowse_2.20_Poster.pdf "File:GBrowse 2.20 Poster.pdf")  
-  549 KB  
+  Poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/37/GBrowse_2.20_Poster.pdf "File:GBrowse 2.20 Poster.pdf")
+  549 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Gbrowse Color Palette.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Gbrowse Color
-  Palette.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ae/Gbrowse_Color_Palette.pdf "File:Gbrowse Color Palette.pdf")  
-  54 KB  
+  Palette.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ae/Gbrowse_Color_Palette.pdf "File:Gbrowse Color Palette.pdf")
+  54 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GBrowse nextgen poster.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GBrowse nextgen
-  poster...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GBrowse_nextgen_poster.pdf "File:GBrowse nextgen poster.pdf")  
-  572 KB  
+  poster...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GBrowse_nextgen_poster.pdf "File:GBrowse nextgen poster.pdf")
+  572 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Gbrowse update may 2003.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [Gbrowse update may
-  200...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/Gbrowse_update_may_2003.ppt "File:Gbrowse update may 2003.ppt")  
-  1.05 MB  
+  200...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/Gbrowse_update_may_2003.ppt "File:Gbrowse update may 2003.ppt")
+  1.05 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Gbrowse update sept 12 2003.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [Gbrowse update sept
-  12...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/Gbrowse_update_sept_12_2003.ppt "File:Gbrowse update sept 12 2003.ppt")  
-  376 KB  
+  12...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/Gbrowse_update_sept_12_2003.ppt "File:Gbrowse update sept 12 2003.ppt")
+  376 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Gbrowse-050516.ppt" />
 
-  
 
-  
 
-  
 
-  [Gbrowse-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/Gbrowse-050516.ppt "File:Gbrowse-050516.ppt")  
-  1.07 MB  
 
-  
 
-  
 
-- 
+  [Gbrowse-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/Gbrowse-050516.ppt "File:Gbrowse-050516.ppt")
+  1.07 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/120px-GBrowseLogo.png"
   width="120" height="28" alt="GBrowseLogo.png" />
 
-  
 
-  
 
-  
 
-  [GBrowseLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/GBrowseLogo.png "File:GBrowseLogo.png")  
-  56 KB  
 
-  
 
-  
 
-- 
+  [GBrowseLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/GBrowseLogo.png "File:GBrowseLogo.png")
+  56 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMODGBrowseSMBE2009.pdf" />
 
-  
 
-  
 
-  
 
-  [GMODGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/GMODGBrowseSMBE2009.pdf "File:GMODGBrowseSMBE2009.pdf")  
-  18.41 MB  
 
-  
 
-  
 
-- 
+  [GMODGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/GMODGBrowseSMBE2009.pdf "File:GMODGBrowseSMBE2009.pdf")
+  18.41 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Jan2009WebBrowse.pdf" />
 
-  
 
-  
 
-  
 
-  [Jan2009WebBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Jan2009WebBrowse.pdf "File:Jan2009WebBrowse.pdf")  
-  2.89 MB  
 
-  
 
-  
 
-- 
+  [Jan2009WebBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Jan2009WebBrowse.pdf "File:Jan2009WebBrowse.pdf")
+  2.89 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="NGSWithGMODWorkshop.pdf" />
 
-  
 
-  
 
-  
 
-  [NGSWithGMODWorkshop.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/NGSWithGMODWorkshop.pdf "File:NGSWithGMODWorkshop.pdf")  
-  11.08 MB  
 
-  
 
-  
 
-- 
+  [NGSWithGMODWorkshop.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/NGSWithGMODWorkshop.pdf "File:NGSWithGMODWorkshop.pdf")
+  11.08 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="OCCBio GBrowse NGS.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [OCCBio GBrowse
-  NGS.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/OCCBio_GBrowse_NGS.pdf "File:OCCBio GBrowse NGS.pdf")  
-  979 KB  
+  NGS.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/OCCBio_GBrowse_NGS.pdf "File:OCCBio GBrowse NGS.pdf")
+  979 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="STRAnnotator.pm" />
 
-  
 
-  
 
-  
 
-  [STRAnnotator.pm](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cc/STRAnnotator.pm "File:STRAnnotator.pm")  
-  4 KB  
 
-  
 
-  
 
-- 
+  [STRAnnotator.pm](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cc/STRAnnotator.pm "File:STRAnnotator.pm")
+  4 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="ISGAWebGBrowseSept2010.pdf" />
 
-  
 
-  
 
-  
 
-  [ISGAWebGBrowseSept2010...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/ISGAWebGBrowseSept2010.pdf "File:ISGAWebGBrowseSept2010.pdf")  
-  4.16 MB  
 
-  
 
-  
 
-- 
+  [ISGAWebGBrowseSept2010...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/ISGAWebGBrowseSept2010.pdf "File:ISGAWebGBrowseSept2010.pdf")
+  4.16 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="MaizeGDBGBrowseISMB2010.pdf" />
 
-  
 
-  
 
-  
 
-  [MaizeGDBGBrowseISMB201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/75/MaizeGDBGBrowseISMB2010.pdf "File:MaizeGDBGBrowseISMB2010.pdf")  
-  2.52 MB  
 
-  
 
-  
 
-- 
+  [MaizeGDBGBrowseISMB201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/75/MaizeGDBGBrowseISMB2010.pdf "File:MaizeGDBGBrowseISMB2010.pdf")
+  2.52 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="MohellibiGrapevine PAG2015.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [MohellibiGrapevine
-  PAG...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/MohellibiGrapevine_PAG2015.pdf "File:MohellibiGrapevine PAG2015.pdf")  
-  3.15 MB  
+  PAG...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/MohellibiGrapevine_PAG2015.pdf "File:MohellibiGrapevine PAG2015.pdf")
+  3.15 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="PeanutBase PAG2015 Poster.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [PeanutBase PAG2015
-  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")  
-  3.35 MB  
+  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")
+  3.35 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="ZFNGenomeGBrowseISMB2010.pdf" />
 
-  
 
-  
 
-  
 
-  [ZFNGenomeGBrowseISMB20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/ZFNGenomeGBrowseISMB2010.pdf "File:ZFNGenomeGBrowseISMB2010.pdf")  
+
+
+
+  [ZFNGenomeGBrowseISMB20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/ZFNGenomeGBrowseISMB2010.pdf "File:ZFNGenomeGBrowseISMB2010.pdf")
   324 KB

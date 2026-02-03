@@ -30,7 +30,7 @@ Example values:
 - Automated literature annotation
 - Manual literature annotation
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Tool functionality or classification"

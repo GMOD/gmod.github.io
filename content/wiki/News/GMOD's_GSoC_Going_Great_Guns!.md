@@ -29,6 +29,6 @@ them along to
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">the
 GMOD helpdesk</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/07/09*

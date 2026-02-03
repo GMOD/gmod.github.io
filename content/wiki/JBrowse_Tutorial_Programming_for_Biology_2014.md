@@ -189,11 +189,11 @@ In this case, we have specified all of our track configurations in
 
 ``` de1
 ...
- 
+
   "TRACK DEFAULTS": {
     "class": "feature"
   },
- 
+
  "tracks": [
     {
       "track": "Genes",
@@ -383,7 +383,7 @@ inject the track configuration:
            "type" : "HTMLVariants"
          } ' | bin/add-track-json.pl data/trackList.json
 
-  
+
 
 ### Faceted Track Selection
 

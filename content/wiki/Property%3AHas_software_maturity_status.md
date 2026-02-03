@@ -14,7 +14,7 @@ The allowed values for this property are:
 - release candidate
 - mature - software released; development active or inactive
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Has software maturity status"

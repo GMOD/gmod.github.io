@@ -14,7 +14,7 @@ is being assembled for this purpose. The team will be responsible for
 implementing a Sequence Read Archive (SRA) Library and computational
 biology analytics tools within HIVE cloud.
 
-  
+
 Bioinformatician tasks will include programming of computational biology
 tools, development of new algorithms, adapting existing tools to the
 HIVE cloud.
@@ -54,15 +54,14 @@ HIVE cloud.
   understand and translate requirements into computationally executable
   tasks
 
-  
+
 Please contact
 <a href="mailto:Vahan.Simonyan@fda.hhs.gov" class="external text"
 rel="nofollow">Vahan Simonyan</a> to apply, or if you have questions.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/04/25*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

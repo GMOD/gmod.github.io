@@ -101,7 +101,7 @@ The basic structure is that some number of people make a pitch for a
 thing to work on, and hope that people will nucleate around that and
 form working groups, and work for 5 days or however long.
 
-  
+
 
 ### Hilmar - mechanics of putting together a proposal
 
@@ -131,7 +131,7 @@ Ideally, all the participants and invitations are known 2 months in
 advance. It's possible to violate that to some extent, but you don't
 want to stretch it too much.
 
-  
+
 
 ### Discussion
 
@@ -180,7 +180,7 @@ offline quite a bit and iterating very fast on the whitepaper. For the
 mechanics, I think it would be good to set up a google doc and a google
 group mailing list
 
-  
+
 
 ### Personal Wishlists
 
@@ -200,7 +200,7 @@ HL: Chado natural diversity module, handling taxonomies well, handling
 phylogenies. Subgroup sizes of 4 to 5 in working groups are by far the
 best.
 
-  
+
 
 ### Action Items
 
@@ -303,7 +303,7 @@ Please add/change items.
   - Hilmar: general edits
   - Rob: general edits
 
-  
+
 
 ## 2010/05/05 conference call, 5PM EST
 

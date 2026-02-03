@@ -57,19 +57,19 @@ programming skills. There is no cost to attend this optional workshop,
 but registration is requested.
 
 **Comparative genomics with the generic synteny browser
-([GBrowse_syn](/wiki/GBrowse_syn "GBrowse syn")): Configuration and
+([GBrowse_syn](/wiki/GBrowse_syn.1 "GBrowse syn")): Configuration and
 display of various co-linearity data types.**
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/140px-GBrowse_syn_logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/210px-GBrowse_syn_logo.png 1.5xhttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/280px-GBrowse_syn_logo.png 2x"
-width="140" height="45" alt="GBrowse syn logo.png" />](/wiki/GBrowse_syn "GBrowse syn")
+width="140" height="45" alt="GBrowse syn logo.png" />](/wiki/GBrowse_syn.1 "GBrowse syn")
 
 Saturday, June 11, 10:30-12:00pm, [Sheldon
 McKay](/wiki/User%253AMckays "User%253AMckays")
 
 How to configure and use the example multiple sequence alignment data
-set installed with [GBrowse_syn](/wiki/GBrowse_syn "GBrowse syn") as
+set installed with [GBrowse_syn](/wiki/GBrowse_syn.1 "GBrowse syn") as
 well as other, more complex data sets from a MERCATOR alignment
 pipeline. Non-sequence alignment data derived from co-linear protein
 orthologs will also be presented. There is no cost to attend this
@@ -87,7 +87,7 @@ please add it here.
 This lists posters that we know about. If you have an additional one,
 please add it here.
 
-| Poster \#                                                                 | Title                                                                                                                  | Presenter                                                        | Components                                                                                                                                                          | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 4                                                                         | _The_ Heliconius melpomene _genome project: the complete genomic sequencing of the long-wing passion-flower butterfly_ | James R. Walters                                                 | [MAKER](/wiki/MAKER "MAKER")                                                                                                                                        | 31                                                                        | _ArthropodaCyc: a BioCyc database powered by CycADS to study and compare the metabolism of arthropods_                 | Stefano Colella                                                  | [Pathway Tools](/wiki/Pathway_Tools "Pathway Tools")                                                                                                                | 37                                                                        | _A community-centric bioinformatic infrastructure for new genome consortia_                                            | [Alexie Papanicolaou](/wiki/User%253AAlpapan "User%253AAlpapan") | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [est2assembly](/wiki/Est2assembly "Est2assembly"), <a href="/wiki/Gmod_dbsf" class="mw-redirect" | title="Gmod dbsf">gmod_dbsf</a>, [genes4all](/wiki/Genes4all "Genes4all") |
+| Poster \#                                                                 | Title                                                                                                                  | Presenter                                                        | Components                                                                                                                                                          | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 4                                                                         | _The_ Heliconius melpomene _genome project: the complete genomic sequencing of the long-wing passion-flower butterfly_ | James R. Walters                                                 | [MAKER](/wiki/MAKER.1 "MAKER")                                                                                                                                        | 31                                                                        | _ArthropodaCyc: a BioCyc database powered by CycADS to study and compare the metabolism of arthropods_                 | Stefano Colella                                                  | [Pathway Tools](/wiki/Pathway_Tools.1 "Pathway Tools")                                                                                                                | 37                                                                        | _A community-centric bioinformatic infrastructure for new genome consortia_                                            | [Alexie Papanicolaou](/wiki/User%253AAlpapan "User%253AAlpapan") | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [est2assembly](/wiki/Est2assembly "Est2assembly"), <a href="/wiki/Gmod_dbsf" class="mw-redirect" | title="Gmod dbsf">gmod_dbsf</a>, [genes4all](/wiki/Genes4all "Genes4all") |
 
 ## Brochure
 
@@ -95,6 +95,5 @@ Download
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/AGS2011Brochure.pdf" class="internal"
 title="AGS2011Brochure.pdf">conference brochure</a>.
 
-:
 
 - [Conferences](/wiki/Category%253AConferences "Category%253AConferences")

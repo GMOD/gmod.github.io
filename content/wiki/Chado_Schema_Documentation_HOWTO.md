@@ -182,15 +182,15 @@ On the GMOD web server create this script:
 # ===================
 #
 # Upload all the table templates to the GMOD wiki.
- 
+
 IMPORT_TEXT_FILE_PATH = "/var/www/html/w/maintenance/importTextFile.php"
 TABLES_DIR = "Tables"
 MW_USERNAME = "Your gmod.org MediaWiki Username.  e.g., 'Clements'"
 COMMENT = "Table definition  for Chado Version a.b on yyyy/mm/dd"
- 
+
 import glob
 import os
- 
+
 for tablePath in glob.glob(TABLES_DIR + "/*.wiki"):
     tableFile = os.path.split(tablePath)[1]
     tableName = tableFile.split(".")[0]

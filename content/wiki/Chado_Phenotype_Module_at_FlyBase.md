@@ -8,8 +8,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="Under Construction" />
 
 <span style="font-size: 140%">This page or section is under
-construction.</span>  
-  
+construction.</span>
+
 Should be done before Jan 1, 2011
 
 The [Chado Phenotype
@@ -258,7 +258,7 @@ examples:
 
 There are 1473 of these (every one of them unspecified).
 
-  
+
 
 ``` de1
 SELECT COUNT(*), c.name
@@ -280,7 +280,7 @@ SELECT COUNT(*), c.name
         1 | SO
     (6 rows)
 
-  
+
 
 #### attr_id and assay_id
 
@@ -289,7 +289,7 @@ attribute, character) - drawn from PATO." but is not.
 
 assay_id is supposed to be "Evidence type" but it is not.
 
-  
+
 At FlyBase, in all rows (except the null one) both of these point to
 cvterm "unspecified"
 
@@ -479,7 +479,7 @@ What makes two G/E/P pairs comparable?
 | **Table:** | **`phenotype_cvterm`** |
 | **Module:** | **[Phenotype](Chado_Phenotype_Module "Chado Phenotype Module")** |
 
-  
+
 
 <table class="wikitable chadotable">
 <caption><strong><code>phenotype_cvterm</code></strong>
@@ -978,7 +978,7 @@ Definition:
 | **Table:** | **`environment_cvterm`** |
 | **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
 
-  
+
 
 <table class="wikitable chadotable">
 <caption><strong><code>environment_cvterm</code></strong>
@@ -1152,7 +1152,7 @@ Definition:
 | **Table:** | **`feature_genotype`** |
 | **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
 
-  
+
 
 <table class="wikitable chadotable">
 <caption><strong><code>feature_genotype</code></strong>

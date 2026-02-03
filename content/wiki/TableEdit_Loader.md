@@ -88,10 +88,10 @@ a basic script which will:
 
 ``` de1
 <?php
-/* 
+/*
     Example loader script for TableEdit.
 */
- 
+
 // Setup to use the wiki from the command line
 $options = getopt('w:');
 if(isset($options['w'])){
@@ -103,19 +103,19 @@ if(isset($options['w'])){
 } else {
     die("Please use the -w flag to set a path to the wiki.\n");
 }
- 
+
 // Instantiate the object
     $loader = new TableEdit_Loader;
- 
+
 // set some options
     $loader->setVerbose();
     $loader->setUser()
     $loader->printInfo();
- 
- 
+
+
 // load pretty much anything into tables from either an *.ifalt file.
     $loader->loadFromFile(array_pop($argv));
- 
+
 ?>
 ```
 
@@ -138,7 +138,7 @@ type of command:
 
     (php5 loader.sample.php > load.out) >& load.err
 
-  
+
 
 ## I/O
 
@@ -156,7 +156,7 @@ The loader currently will accept one type of input:
 On the commandline the loader will tell you what page it's working on.
 It will print any error messages to STDERR.
 
-  
+
 
 ## Notes
 
@@ -285,34 +285,34 @@ They are disjoint.</p></td>
 ``` de1
 public function do_misc_features( $array ){
     foreach ($array as $name => $feature) {
- 
-        // Here is where you can add code to define what to do for things in the 7th column.  
+
+        // Here is where you can add code to define what to do for things in the 7th column.
         if ($name == 'row_style')    $this->new_row->row_style = trim($feature);
- 
+
         print "added row style";
         return true;
     }
 }
 ```
 
-  
+
 
 #### appendRow
 
 ``` de1
 public function appendRow($new_row_obj){
     $this->box_obj->rows[] = $new_row_obj;
-    if ($this->verbose) print "\tappended row, \n";     
+    if ($this->verbose) print "\tappended row, \n";
     return;
 }
 ```
 
-  
+
 
 #### mergeRows
 
 ``` de1
-public function mergeRows($new_row_obj){ 
+public function mergeRows($new_row_obj){
     // compare the new row to each of the existing rows
     $results = array();
     foreach ($this->box_obj->rows as $old_row) {
@@ -338,7 +338,7 @@ public function mergeRows($new_row_obj){
 }
 ```
 
-  
+
 
 #### clearOldRows
 

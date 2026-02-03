@@ -7,7 +7,7 @@ title: "ParameciumDB"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/60/ParameciumDBLogo.png" width="221"
 height="70" alt="ParameciumDBLogo.png" />
 
-  
+
 ParameciumDB
 (<a href="http://paramecium.cgm.cnrs-gif.fr" class="external free"
 rel="nofollow">http://paramecium.cgm.cnrs-gif.fr</a>) is a model
@@ -35,7 +35,7 @@ uses GMOD, and what challenges they faced.
   <a href="http://nar.oxfordjournals.org/" class="external text"
   rel="nofollow"><em>Nucleic Acids Research</em></a>.
 
-  
+
 
   Biology</span>](#Paramecium_Biology)
   - [*Paramecium tetraurelia*
@@ -68,7 +68,7 @@ uses GMOD, and what challenges they faced.
 - [Related
   Reading](#Related_Reading)
 
-  
+
 
 # Paramecium Biology
 
@@ -208,7 +208,7 @@ store these ontologies:
 - Paramecium Anatomy Ontology
 - Paramecium Assay Ontology
 
-  
+
 The last two were developed at ParameciumDB to enable phenotypes to be
 modeled using the Entity-Quality model. The quality terms are provided
 by PATO. The anatomy ontology was developed for the Entity terms, since
@@ -269,7 +269,7 @@ ParameciumDB does not have paid curators. It currently relies on the
 community for annotation of the gene models. They use
 [Apollo](Apollo.1 "Apollo") as their genome annotation editor.
 
-  
+
 **See also:**
 
 - <a

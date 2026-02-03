@@ -8,7 +8,7 @@ title: "User%253ARobinHouston"
 Software development group leader, Pathogen Genomics, Wellcome Trust
 Sanger Institute
 
-Contact info  
+Contact info
 Email: rh11@sanger.ac.uk
 
 Phone: +44 1223 834244, extension 2217

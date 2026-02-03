@@ -37,10 +37,9 @@ also be required. See the
 class="external text" rel="nofollow">position announcement</a> for
 details.
 
-  
+
 
 *Posted to the [GMOD News](../../GMOD_News "GMOD News") on 2010/09/03*
 
-:
 
 - [News Items](../../Category%253ANews_Items "Category%253ANews Items")

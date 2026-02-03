@@ -21,7 +21,7 @@ class="external free"
 rel="nofollow">http://mail.fruitfly.org/mailman/listinfo/apollo</a>_
 --[Scott](User%253AScott "User%253AScott") 16:21, 29 January 2008 (EST)
 
-Ah, thanks Scott  
+Ah, thanks Scott
 I also was under the impression it was in the
 <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 spec</a>.

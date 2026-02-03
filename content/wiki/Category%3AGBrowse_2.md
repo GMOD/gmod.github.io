@@ -118,115 +118,115 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 
 The following 5 files are in this category, out of 5 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="AGA NGS 2009.pdf" />
 
-  
 
-  
 
-  
 
-  [AGA NGS 2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/AGA_NGS_2009.pdf "File:AGA NGS 2009.pdf")  
-  17.08 MB  
 
-  
 
-  
 
-- 
+  [AGA NGS 2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/AGA_NGS_2009.pdf "File:AGA NGS 2009.pdf")
+  17.08 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Aug2009GBrowse2ImplPersp.pdf" />
 
-  
 
-  
 
-  
 
-  [Aug2009GBrowse2ImplPer...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/Aug2009GBrowse2ImplPersp.pdf "File:Aug2009GBrowse2ImplPersp.pdf")  
-  624 KB  
 
-  
 
-  
 
-- 
+  [Aug2009GBrowse2ImplPer...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/Aug2009GBrowse2ImplPersp.pdf "File:Aug2009GBrowse2ImplPersp.pdf")
+  624 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GBrowse nextgen poster.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GBrowse nextgen
-  poster...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GBrowse_nextgen_poster.pdf "File:GBrowse nextgen poster.pdf")  
-  572 KB  
+  poster...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GBrowse_nextgen_poster.pdf "File:GBrowse nextgen poster.pdf")
+  572 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="OCCBio GBrowse NGS.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [OCCBio GBrowse
-  NGS.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/OCCBio_GBrowse_NGS.pdf "File:OCCBio GBrowse NGS.pdf")  
-  979 KB  
+  NGS.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/OCCBio_GBrowse_NGS.pdf "File:OCCBio GBrowse NGS.pdf")
+  979 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Jan2010GBrowseCancerGenome.pdf" />
 
-  
 
-  
 
-  
 
-  [Jan2010GBrowseCancerGe...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Jan2010GBrowseCancerGenome.pdf "File:Jan2010GBrowseCancerGenome.pdf")  
+
+
+
+  [Jan2010GBrowseCancerGe...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Jan2010GBrowseCancerGenome.pdf "File:Jan2010GBrowseCancerGenome.pdf")
   296 KB

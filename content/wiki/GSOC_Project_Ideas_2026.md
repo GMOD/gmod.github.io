@@ -79,11 +79,11 @@ self-motivation are great traits for open-source programmers.
   interfaces for computationally accessing the curated biological pathways,
   including analysis tools and a chat interface React-to-Me. A Reactome MCP would
   make the website more computationally accessible by providing access to the tools
-  through React-to-Me and other LLM based chat interfaces. 
+  through React-to-Me and other LLM based chat interfaces.
 - *Expected results:* expected outcomes include the application's
   ability to run Reactome analysis tools through the React-to-Me chat interface.
   Other features of Reactome, including our REST APIs, should be made accessible
-  to LLMs through the MCP. 
+  to LLMs through the MCP.
 - *Project Home Page URL:*
   <a href="https://reactome.org/chat" class="external text"
   rel="nofollow">React-to-Me</a>

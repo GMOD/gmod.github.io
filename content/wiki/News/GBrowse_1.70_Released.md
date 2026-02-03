@@ -60,10 +60,9 @@ Changes from 1.69 to 1.70:
 
 [Scott](../User%253AScott "User%253AScott")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/24*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

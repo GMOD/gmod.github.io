@@ -45,10 +45,9 @@ of additional GMOD tools. See the links for more details.
 
 [Eric Ganko](../User%253AEric.ganko "User%253AEric.ganko")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/21*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

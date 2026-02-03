@@ -29,7 +29,7 @@ Items that are working:
 - A CGI that takes a chromosomal range and creates GAME-XML and jnlp
   files and a link to download and run Apollo WebStart.
 
-  
+
 Items that need to be addressed soon are:
 
 - Make networking generic again (currently it is hard coded to run at

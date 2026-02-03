@@ -86,7 +86,7 @@ It is now maintained as a
 title="wp:Wiki">Wiki</a> on this site. You can help maintain it by
 adding questions and answers.
 
-  
+
 
 ## General Questions
 
@@ -101,7 +101,7 @@ quantitative data such as microarray expression levels.
 Another good way to get an overview of the features GBrowse offers is to
 read the documentation at the [GBrowse](GBrowse.1 "GBrowse") Wiki page.
 
-  
+
 
 ### What platforms does GBrowse run on?
 
@@ -109,14 +109,14 @@ GBrowse is a web-server application that is implemented in the Perl
 programming language. It will run on any machine that runs Perl,
 including Windows, Macintosh OS X, and most versions of Linux and UNIX.
 
-  
+
 
 ### How is GBrowse distributed?
 
 GBrowse is distributed as source code for Macintosh OS X, UNIX and Linux
 platforms, and as pre-packaged binaries for Windows machines.
 
-  
+
 
 ### What are the terms of use for GBrowse?
 
@@ -125,7 +125,7 @@ unrestricted use and distribution, including commercial use and resale.
 You may modify and distribute modified versions of GBrowse provided that
 you credit the original authors for their contribution.
 
-  
+
 
 ### I have a problem. What do I do?
 
@@ -200,7 +200,7 @@ hide the track when the display exceeds a certain size:
                 [6_frame_translation:50000]
                 hide = 1
 
-  
+
 
 ### How to add an outgoing link to a text on the feature detail page in Gbrowse?
 
@@ -210,7 +210,7 @@ Add a line to the appropriate \*.conf file using *link*. For example:
  link = http://www.ncbi.nih.gov/SNP/snp_ref.cgi?rs=$name
 ```
 
-  
+
 
 ### I have a multi-segmented feature (such as a multi-exon transcript). It looks fine at low power, but when I zoom in the connecting lines between segments disappear. Help!
 
@@ -283,7 +283,7 @@ The answer is to do something like this:
 
 Note that you'll need GBrowse version 1.63 or higher for this to work.
 
-  
+
 
 ### How do I show circular genomes?
 

@@ -66,7 +66,7 @@ href="Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
 <td class="smwprops">Genome annotation ,
-Workflow management 
+Workflow management
 and Tool integration </td>
 </tr>
 <tr class="even row-even">
@@ -82,7 +82,7 @@ subobject</a></span><span class="smwttcontent">This property is a
 special property in this wiki.</span></span></td>
 <td class="smwspecs"><a
 href="DIYA#https:.2F.2Fgithub.com.2Fbioteam.2FDIYA"
-title="DIYA">DIYA#https://github.com/bioteam/DIYA</a> 
+title="DIYA">DIYA#https://github.com/bioteam/DIYA</a>
 and <a href="DIYA#_b8d8e90ce8e883d5ee6b571c9f48e1bb"
 title="DIYA">DIYA</a> </td>
 </tr>

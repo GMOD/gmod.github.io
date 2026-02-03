@@ -9,7 +9,7 @@ Working Group** was established with the aim of getting the Chado
 Natural Diversity Module into the production version of
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
 
-  
+
 
   Discussion](#Discussion)
 - [History](#History)
@@ -31,7 +31,7 @@ discussion settle, a summary of decisions will appear here.
 - See <a href="http://www.ncbi.nlm.nih.gov/pubmed/22120662"
   class="external text" rel="nofollow">the publication</a>.
 
-  
+
 
 # History
 
@@ -59,7 +59,7 @@ presentation](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawi
   class="external text" rel="nofollow">beta natural diversity module</a>
   is in <a href="http://sourceforge.net/projects/heliconiusdb/develop"
   class="external text" rel="nofollow">Soureforge</a>.
-  
+
 
 # Stock Relationship Ontology
 

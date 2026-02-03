@@ -28,7 +28,7 @@ project which is a generic ORM/website code generation tool.
 - <a href="http://search.cpan.org/perldoc?Class::DBI"
   class="external text" rel="nofollow">Class::DBI</a>
 
-  
+
 
 ## Documentation
 
@@ -37,7 +37,7 @@ project which is a generic ORM/website code generation tool.
 - [GMOD Middleware](GMOD_Middleware "GMOD Middleware") - discusses
   different packages, contains section on Chado%253A%253AAutoDBI
 
-  
+
 
 ## Contact
 

@@ -15,7 +15,6 @@ This tutorial uses the AWS AMI ' ***named '*** in the '
 
 .
 
-:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [GBrowse](../Category%253AGBrowse "Category%253AGBrowse")

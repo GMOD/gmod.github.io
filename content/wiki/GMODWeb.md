@@ -4,7 +4,7 @@ title: "GMODWeb"
 # GMODWeb
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
 GMODWeb is a Web application that uses
@@ -36,12 +36,12 @@ underlying architectural details. For more detailed information see the
 <a href="http://genome.ucla.edu/turnkey/" class="external text"
 rel="nofollow">Turnkey home page</a>.
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Turnkey.png" width="552" height="335"
 alt="Turnkey.png" />
 
-  
+
 
 ## Installation
 
@@ -56,12 +56,12 @@ rel="nofollow">http://sourceforge.net/projects/turnkey</a>.
 
 <a href="http://genomebiology.com/2008/9/6/R102" class="external text"
 rel="nofollow">GMODWeb: a web framework for the generic model organism
-database</a>,  
+database</a>,
 by Brian D O'Connor, Allen Day, [Scott Cain](User%253AScott "User%253AScott"),
 Olivier Arnaiz, [Linda Sperling](User%253ASperling "User%253ASperling") and
 [Lincoln D Stein](User%253ALstein "User%253ALstein"), Genome Biology 2008,
 9:R102. The publication describing GMODWeb
 
-[GMODWeb and Package Management](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/Jan2009GMODWebAndPackages.pdf "File:Jan2009GMODWebAndPackages.pdf")  
+[GMODWeb and Package Management](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/Jan2009GMODWebAndPackages.pdf "File:Jan2009GMODWebAndPackages.pdf")
 presentation by Brian O'Connor at the [January 2009 GMOD
 Meeting](January_2009_GMOD_Meeting#GMODWeb_and_Package_Management "January 2009 GMOD Meeting").

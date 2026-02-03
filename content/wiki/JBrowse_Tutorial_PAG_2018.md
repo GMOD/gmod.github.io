@@ -200,11 +200,11 @@ In this case, we have specified all of our track configurations in
 
 ``` de1
 ...
- 
+
   "TRACK DEFAULTS": {
     "class": "feature"
   },
- 
+
  "tracks": [
     {
       "track": "Genes",
@@ -586,7 +586,7 @@ now the Genes track has relatively "boring" glyphs composed of pink
 rectangles connected by black lines. To turn on NeatHTMLFeatures, just
 add
 
-       "plugins": [ 
+       "plugins": [
           'NeatHTMLFeatures'
        ],
 

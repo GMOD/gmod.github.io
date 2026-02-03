@@ -69,7 +69,7 @@ common GBrowse glyphs not currently reproducible in JBrowse:
   gaps within individual reads
 - Glyph/image.pm (associates images with seqfeatures)
 
-  
+
 General JBrowse feature requests:
 
 - "no data" screen a la GBrowse

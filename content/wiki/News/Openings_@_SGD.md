@@ -27,10 +27,9 @@ information.
 Viewer](../BLAST_Graphic_Viewer.1 "BLAST Graphic Viewer")) and GMOD
 user.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/05*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

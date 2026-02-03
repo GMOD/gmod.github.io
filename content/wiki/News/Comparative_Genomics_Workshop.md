@@ -34,10 +34,9 @@ openings for qualified candidates. There are also some openings in the
 class="external text" rel="nofollow">Workshop on Molecular Evolution</a>,
 being held immediately after.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/11/03*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -26,10 +26,9 @@ class="external text" rel="nofollow">job posting</a>.
 
 Dave Emmert
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/09*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

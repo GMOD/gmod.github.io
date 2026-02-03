@@ -2,502 +2,6 @@
 title: "JBrowse Configuration Guide"
 ---
 # JBrowse Configuration Guide
-
-(Redirected from [JBrowseDev/General
-Usage](JBrowseDev/General_Usage)
-
-**This page has been replaced with this page (<a
-href="https://github.com/GMOD/jbrowse/wiki/JBrowse_Configuration_Guide"
-class="external free"
-rel="nofollow">https://github.com/GMOD/jbrowse/wiki/JBrowse_Configuration_Guide</a>)
-at github. Please don't edit this page as changes will be discarded.**
-
-This page provides a comprehensive reference guide for configuring
-JBrowse. If you find something that is missing or inaccurate, please
-feel very free to edit it!
-
-Note: this is a **reference guide**. It is not meant to be read from
-beginning to end. If this is your first time setting up JBrowse, you
-probably want to read the <a
-href="http://jbrowse.org/code/latest-release/docs/tutorial/index.html"
-class="external text" rel="nofollow">Quick-start tutorial</a> first, and
-then consult this guide when you need information on specific things you
-want to do with your JBrowse.
-
-  
-Check out the new [JBrowse FAQ](../JBrowse_FAQ "JBrowse FAQ") page for
-more tips on setup and configuration
-<a href="../JBrowse_FAQ" class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_FAQ</a>
-
-Also see the [JBrowse Desktop](../JBrowse_Desktop "JBrowse Desktop")
-guide here <a href="../JBrowse_Desktop" class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_Desktop</a>
-
-  
-
-  Installation](#Installation)
-  - [Making a
-    New JBrowse](#Making_a_New_JBrowse)
-  - [Upgrading
-    an Existing JBrowse](#Upgrading_an_Existing_JBrowse)
-  - [Configuration Loading, Files, and
-    Formats](#Configuration_Loading.2C_Files.2C_and_Formats)
-    - [JavaScript Object Notation (JSON)
-      Configuration Format
-      (.json)](#JavaScript_Object_Notation_.28JSON.29_Configuration_Format_.28.json.29)
-      - [Considerations for the JSON
-        format](#Considerations_for_the_JSON_format)
-    - [Text
-      Configuration Format
-      (.conf)](#Text_Configuration_Format_.28.conf.29)
-      - [Considerations for the text-based .conf
-        format](#Considerations_for_the_text-based_.conf_format)
-      - [Callback-function specific considerations
-        for the text-based .conf
-        format](#Callback-function_specific_considerations_for_the_text-based_.conf_format)
-    - [Configuration loading
-      details](#Configuration_loading_details)
-- [Reference
-  Sequences](#Reference_Sequences)
-  - [Reference
-    Sequence Selector
-    Configuration](#Reference_Sequence_Selector_Configuration)
-    - [Reference Sequence Display
-      Order](#Reference_Sequence_Display_Order)
-    - [Explicitly Specifying a Reference Sequence
-      List](#Explicitly_Specifying_a_Reference_Sequence_List)
-  - [prepare-refseqs.pl](#prepare-refseqs.pl)
-- [Formatting
-  Feature Data](#Formatting_Feature_Data)
-  - [flatfile-to-json.pl](#flatfile-to-json.pl)
-  - [biodb-to-json.pl](#biodb-to-json.pl)
-  - [ucsc-to-json.pl](#ucsc-to-json.pl)
-- [Feature Tracks
-  (HTMLFeatures and
-  CanvasFeatures)](#Feature_Tracks_.28HTMLFeatures_and_CanvasFeatures.29)
-  - [HTMLFeatures Configuration
-    Options](#HTMLFeatures_Configuration_Options)
-  - [CanvasFeatures Configuration
-    Options](#CanvasFeatures_Configuration_Options)
-    - [Customizing CanvasFeatures tracks with
-      callbacks](#Customizing_CanvasFeatures_tracks_with_callbacks)
-  - [Generic
-    Track Configuration
-    Options](#Generic_Track_Configuration_Options)
-  - [Customizing parts of the 'View details'
-    Pop-ups with
-    callbacks](#Customizing_parts_of_the_.27View_details.27_Pop-ups_with_callbacks)
-    - [Additional customizations to the pop-up
-      boxes](#Additional_customizations_to_the_pop-up_boxes)
-  - [Customizing Left-click
-    Behavior](#Customizing_Left-click_Behavior)
-  - [Customizing Mouse-over
-    behavior](#Customizing_Mouse-over_behavior)
-  - [Configuring Summary
-    Histograms](#Configuring_Summary_Histograms)
-  - [Customizing Right-click Context
-    Menus](#Customizing_Right-click_Context_Menus)
-  - [Click
-    Configuration Options](#Click_Configuration_Options)
-  - [Using
-    callbacks to customize feature
-    tracks](#Using_callbacks_to_customize_feature_tracks)
-- [Alignment
-  Tracks (BAM)](#Alignment_Tracks_.28BAM.29)
-  - [Alignments2](#Alignments2)
-    - [Alignments2 coloring
-      schemes](#Alignments2_coloring_schemes)
-  - [SNPCoverage](#SNPCoverage)
-    - [Example SNPCoverage
-      Configuration](#Example_SNPCoverage_Configuration)
-  - [Alignments](#Alignments)
-  - [BAM Data
-    Configuration Options](#BAM_Data_Configuration_Options)
-  - [Example
-    BAM Alignments2 track
-    configuration](#Example_BAM_Alignments2_track_configuration)
-  - [Apache
-    Configuration Note](#Apache_Configuration_Note)
-- [Wiggle/BigWig
-  Tracks (XYPlot,
-  Density)](#Wiggle.2FBigWig_Tracks_.28XYPlot.2C_Density.29)
-  - [Example
-    BigWig-based Wiggle XY-Plot Track
-    Configuration](#Example_BigWig-based_Wiggle_XY-Plot_Track_Configuration)
-  - [Example
-    BigWig-based Wiggle Color Density Track
-    Configuration](#Example_BigWig-based_Wiggle_Color_Density_Track_Configuration)
-  - [Wiggle
-    track configuration
-    options](#Wiggle_track_configuration_options)
-  - [BigWig
-    File Compatibility](#BigWig_File_Compatibility)
-- [Variant Tracks
-  (VCF)](#Variant_Tracks_.28VCF.29)
-  - [Example
-    VCF-based Variant Track
-    Configuration](#Example_VCF-based_Variant_Track_Configuration)
-    - [Using
-      VCF Filters in
-      configuration](#Using_VCF_Filters_in_configuration)
-- [Feature
-  Coverage Tracks](#Feature_Coverage_Tracks)
-  - [Example
-    Feature Coverage Track Configuration for a BAM
-    file](#Example_Feature_Coverage_Track_Configuration_for_a_BAM_file)
-- [Sequence
-  track](#Sequence_track)
-- [Pre-rendered
-  Image Tracks](#Pre-rendered_Image_Tracks)
-  - [wig-to-json.pl](#wig-to-json.pl)
-    - [Basic
-      usage](#Basic_usage)
-    - [System-specific tips for building
-      wig2png](#System-specific_tips_for_building_wig2png)
-      - [Apple OS X](#Apple_OS_X)
-      - [Ubuntu / Debian
-        Linux](#Ubuntu_.2F_Debian_Linux)
-      - [Red Hat/CentOS/Fedora
-        Linux](#Red_Hat.2FCentOS.2FFedora_Linux)
-  - [draw-basepair-track.pl](#draw-basepair-track.pl)
-    - [Basic
-      usage](#Basic_usage_2)
-- [Name
-  Searching and
-  Autocompletion](#Name_Searching_and_Autocompletion)
-  - [Autocompletion
-    Configuration](#Autocompletion_Configuration)
-  - [generate-names.pl](#generate-names.pl)
-- [Removing
-  Tracks](#Removing_Tracks)
-- [Authentication and Access
-  Control](#Authentication_and_Access_Control)
-  - [HTTP
-    Basic LDAP under Nginx](#HTTP_Basic_LDAP_under_Nginx)
-- [Cross-origin
-  resource sharing (CORS): showing data on multiple
-  servers](#Cross-origin_resource_sharing_.28CORS.29:_showing_data_on_multiple_servers)
-- [Compressing
-  data on the server](#Compressing_data_on_the_server)
-- [Controlling
-  JBrowse with the URL Query
-  String](#Controlling_JBrowse_with_the_URL_Query_String)
-  - [Overview
-    of URL Query String
-    params](#Overview_of_URL_Query_String_params)
-  - [data](#data)
-  - [loc](#loc)
-  - [tracks](#tracks)
-  - [highlight](#highlight)
-  - [addFeatures](#addFeatures)
-  - [addTracks](#addTracks)
-  - [addStores](#addStores)
-  - [addBookmarks](#addBookmarks)
-  - [Embedded
-    mode](#Embedded_mode)
-- [Data
-  Export](#Data_Export)
-  - [Data
-    Formats](#Data_Formats)
-  - [Export
-    Configuration](#Export_Configuration)
-- [Data from a
-  SPARQL Endpoint](#Data_from_a_SPARQL_Endpoint)
-  - [Example
-    SPARQL Configuration](#Example_SPARQL_Configuration)
-  - [Variable
-    Interpolation](#Variable_Interpolation)
-- [Track
-  Metadata](#Track_Metadata)
-  - [Embedding
-    Track Metadata in JBrowse
-    Configuration](#Embedding_Track_Metadata_in_JBrowse_Configuration)
-  - [Loading
-    Track Metadata from
-    Files](#Loading_Track_Metadata_from_Files)
-    - [Example](#Example)
-    - [Track
-      metadata options](#Track_metadata_options)
-- [Faceted Track
-  Selector](#Faceted_Track_Selector)
-  - [Example
-    Faceted Track Selector
-    Configuration](#Example_Faceted_Track_Selector_Configuration)
-- [Hierarchical
-  Track Selector](#Hierarchical_Track_Selector)
-- [General
-  configuration options](#General_configuration_options)
-  - [General
-    track configuration
-    options](#General_track_configuration_options)
-- [Dataset
-  Selector](#Dataset_Selector)
-  - [Example
-    Dataset Switching
-    Configuration](#Example_Dataset_Switching_Configuration)
-- [Anonymous
-  Usage Statistics](#Anonymous_Usage_Statistics)
-- [Plugins](#Plugins)
-  - [Installing
-    Plugins](#Installing_Plugins)
-  - [Activating
-    Plugins](#Activating_Plugins)
-- [Advanced
-  Topics](#Advanced_Topics)
-  - [Using
-    JBrowse with Existing
-    Databases](#Using_JBrowse_with_Existing_Databases)
-    - [Extract data and
-      reformat](#Extract_data_and_reformat)
-      - [Example
-        Configuration](#Example_Configuration)
-  - [Configure
-    a Loading Page](#Configure_a_Loading_Page)
-  - [Milestone
-    functions](#Milestone_functions)
-  - [Configuring track locations with
-    Apache](#Configuring_track_locations_with_Apache)
-  - [Feature
-    API and Feature Store
-    API](#Feature_API_and_Feature_Store_API)
-    - [Other
-      useful classes](#Other_useful_classes)
-  - [Using
-    JBrowse with Existing Web
-    Services](#Using_JBrowse_with_Existing_Web_Services)
-    - [Example custom JBrowse store
-      class](#Example_custom_JBrowse_store_class)
-  - [Writing
-    JBrowse-compatible Web
-    Services](#Writing_JBrowse-compatible_Web_Services)
-    - [JBrowse REST Feature Store
-      API](#JBrowse_REST_Feature_Store_API)
-      - [GET
-        (base)/stats/global](#GET_.28base.29.2Fstats.2Fglobal)
-      - [GET
-        (base)/stats/region/(refseq_name)?start=123&end=456](#GET_.28base.29.2Fstats.2Fregion.2F.28refseq_name.29.3Fstart.3D123.26end.3D456)
-      - [GET
-        (base)/stats/regionFeatureDensities/(refseq_name)?start=123&end=456&basesPerBin=20000](#GET_.28base.29.2Fstats.2FregionFeatureDensities.2F.28refseq_name.29.3Fstart.3D123.26end.3D456.26basesPerBin.3D20000)
-      - [GET
-        (base)/features/(refseq_name)?start=234&end=5678](#GET_.28base.29.2Ffeatures.2F.28refseq_name.29.3Fstart.3D234.26end.3D5678)
-    - [Configuring Tracks to Use a REST Feature
-      Store](#Configuring_Tracks_to_Use_a_REST_Feature_Store)
-    - [Other
-      Dynamically-Servable
-      Formats](#Other_Dynamically-Servable_Formats)
-      - [trackList.json
-        format](#trackList.json_format)
-      - [refSeqs.json
-        format](#refSeqs.json_format)
-      - [Sequence data
-        format](#Sequence_data_format)
-    - [JBrowse REST Names
-      API](#JBrowse_REST_Names_API)
-      - [GET
-        (url)?equals=Apple1](#GET_.28url.29.3Fequals.3DApple1)
-      - [GET
-        (url)?startswith=Ap](#GET_.28url.29.3Fstartswith.3DAp)
-    - [Configuring JBrowse to Use REST Name
-      Lookup](#Configuring_JBrowse_to_Use_REST_Name_Lookup)
-  - [Publishing and Subscribing to JBrowse
-    Events](#Publishing_and_Subscribing_to_JBrowse_Events)
-  - [Writing
-    JBrowse Plugins](#Writing_JBrowse_Plugins)
-    - [Plugin
-      Components](#Plugin_Components)
-      - [Example main.js](#Example_main.js)
-      - [Example plugin directory
-        contents](#Example_plugin_directory_contents)
-      - [Distributing a plugin via
-        npm](#Distributing_a_plugin_via_npm)
-    - [Plugin build
-      notes](#Plugin_build_notes)
-  - [Data
-    Format Specification: JSON LazyNCList Feature
-    Store](#Data_Format_Specification:_JSON_LazyNCList_Feature_Store)
-    - [Array Representation
-      (ArrayRepr)](#Array_Representation_.28ArrayRepr.29)
-    - [Lazy
-      Nested-Containment Lists
-      (LazyNCList)](#Lazy_Nested-Containment_Lists_.28LazyNCList.29)
-  - [Data
-    Format Specification: Fixed-Resolution Tiled Image
-    Store](#Data_Format_Specification:_Fixed-Resolution_Tiled_Image_Store)
-  - [Including external files and functions in
-    trackList.json](#Including_external_files_and_functions_in_trackList.json)
-  - [Rendering high resolution screenshots using
-    PhantomJS](#Rendering_high_resolution_screenshots_using_PhantomJS)
-    - [Export as SVG](#Export_as_SVG)
-    - [Using pageres wrapper for PNG
-      output](#Using_pageres_wrapper_for_PNG_output)
-    - [Other links](#Other_links)
-  - [Rendering high resolution screenshots using
-    Puppeteer](#Rendering_high_resolution_screenshots_using_Puppeteer)
-- [External
-  Links](#External_Links)
-
-# Installation
-
-At the most basic level, setting up JBrowse consists of:
-
-- Placing a copy of the JBrowse directory somewhere in the web-servable
-  part of your server's file system (often `/var/www` by default)
-- Running the JBrowse setup script to install a few server-side
-  dependencies
-- Running one or more server-side scripts to create a directory
-  containing a JBrowse-formatted copy of your data.
-
-Both the JBrowse code and these data files must be in a location where
-the web server can serve them to users. Then, a user pointing their web
-browser at the appropriate URL for the index.html file in the JBrowse
-directory will see the JBrowse interface, including sequence and feature
-tracks reflecting the data source.
-
-Reference sequence data should be added first (using
-`prepare-refseqs.pl`\`), followed by annotation data. Once all of
-annotation data has been added, use `generate-names.pl` to make the
-feature names searchable.
-
-## Making a New JBrowse
-
-0\. Install build prerequisites, plus make and a C compiler. On Ubuntu,
-you could do this with:
-
-     sudo apt-get install zlib1g-dev libpng-dev libgd2-noxpm-dev build-essential
-
-Some other things that sometimes need to be manually installed if your
-setup.sh is failing includes these
-
-     sudo apt-get install libexpat-dev libxml2-dev libdb-dev
-
-If you need a web server you can add apache2 to the list
-
-1\. <a href="http://jbrowse.org/install/" class="external text"
-rel="nofollow">Download JBrowse</a> onto your web server.
-
-2\. Unpack JBrowse into a directory that is served by your web browser.
-On many systems, this defaults to `/var/www` or `/var/www/html` for
-apache2
-
-       cd /var/www/html
-       unzip JBrowse-*.zip
-
-**Make sure you have permissions to write to the contents of the
-jbrowse/ directory you have just created.**
-
-3\. Run the automated-setup script, `./setup.sh`, which will attempt to
-install all of JBrowse's (modest) prerequisites for you in the
-`jbrowse/` directory itself. Note that `setup.sh` should not be run as
-root or with `sudo`.
-
-4\. Visit <a
-href="http://your.machine.address/jbrowse/index.html?data=sample_data/json/volvox"
-class="external free"
-rel="nofollow">http://your.machine.address/jbrowse/index.html?data=sample_data/json/volvox</a>.
-If you can see the included Volvox example data, you are ready to
-configure JBrowse to show your own data! The
-<a href="http://jbrowse.org/code/latest-release/docs/tutorial/"
-class="external text" rel="nofollow">Getting Started with JBrowse
-Tutorial</a> provides a very basic step-by-step guide to formatting your
-own data, and in-depth configuration reference information can be found
-on this page.
-
-  
-Note: if there is an error installing the perl pre-requisites, and you
-get an error in your setup.log such as
-"/home.local/username/.cpanm/build.log: No such file or directory at
-/loader/0x10b108f0/App/cpanminus/script.pm line 224."
-
-Then you can clear out your users locallib with `rm -rf ~/.cpanm` and
-re-run setup.sh. Only do this if you are not concerned about your
-personal cpanm folder in the first place. Otherwise, you can use your
-system's cpanm to install jbrowse pre-requisites with "cpanm ." inside
-the jbrowse directory.
-
-## Upgrading an Existing JBrowse
-
-To upgrade an existing JBrowse (1.3.0 or later) to the latest version,
-simply move its data directory (and `jbrowse_conf.json` if you are using
-it) into the directory of a newer JBrowse, and the new JBrowse will
-display that data.
-
-To upgrade a 1.2.x JBrowse, copy its data directory into the new JBrowse
-directory, and point your browser at compat_121.html in the new JBrowse
-directory, instead of index.html. Or, if desired, you could simply
-overwrite index.html with compat_121.html.
-
-If you are upgrading from a version of JBrowse older than 1.2.0, a fresh
-installation is required.
-
-## Configuration Loading, Files, and Formats
-
-JBrowse supports **two configuration formats**, a JSON-based format and
-a GBrowse-like textual format that is easier to edit and maintain by
-hand than JSON. Sites can use either format, or a mixture of both. The
-default shipped configuration of JBrowse uses both: jbrowse.conf in the
-main JBrowse directory for global settings, and trackList.json in each
-data directory for dataset-specific configuration in JSON, and
-tracks.conf in the data directory for dataset-specific configuration in
-.conf format.
-
-### JavaScript Object Notation (JSON) Configuration Format (.json)
-
-The JSON configuration format was the first format supported by JBrowse,
-and is easy for software programs to read and modify. Before version
-1.11.0, this was the only format supported by JBrowse.
-
-  
-
-As an example, the trackList.json file might have something like this.
-Here is an example of a BAM track
-
-    {
-     "tracks": [
-       {
-         "urlTemplate" : "volvox-sorted.bam",
-         "storeClass"  : "JBrowse/Store/SeqFeature/BAM",
-         "type"        : "JBrowse/View/Track/Alignments2",
-         "label"       : "BAM_track",
-         "key"         : "My BAM track"
-         "style": { "color": "red" }
-       }
-     ]
-    }
-
-  
-The specifics of this config are not essential, we are specifying an
-array of tracks in a trackList.json style, and each track is an object
-that includes some parameters like the urlTemplate to refer to the
-location of the BAM file on the server relative to the data directory,
-the color of the features, etc.
-
-#### Considerations for the JSON format
-
-- Nested objects are specified using typical JSON format, using curly
-  brackets
-- Booleans and numbers should remain unquoted
-- Functions do remain quoted however e.g. "style": { "color":
-  "function() { /\* your code here \*/ }" }
-- JSON strings should not contain line breaks (see Text .conf format for
-  info on multiline callbacks)
-- Configuration values can be stored in both jbrowse_conf.json or in
-  trackList.json (or conf files) i.e. the trackList.json does not only
-  have to contain tracks, can contain other config entries
-
-### Text Configuration Format (.conf)
-
-JBrowse 1.11.0 introduced support for a new text-based configuration
-format that users of GBrowse will find very familiar, since its design
-borrows heavily from GBrowse’s configuration syntax. It is fairly
-comfortable to hand-edit, but rather inconvenient for automated tools to
-work with. To get the best of both worlds, JBrowse supports both
-formats.
-
-This text configuration format can be used to specify
-
-- general configuration options (i.e. jbrowse.conf
-  [\[1\]](#General_configuration_options))
 - track-specific options (i.e. tracks.conf
   [\[2\]](#Example_SNPCoverage_Configuration))
 - standalone files with extra code (i.e. functions.conf
@@ -622,7 +126,7 @@ shown. The maximum number of reference sequences in the selector is set
 by the `refSeqSelectorMaxSize` configuration variable, and defaults to
 30.
 
-  
+
 
 ### Reference Sequence Display Order
 
@@ -699,7 +203,7 @@ Syntax used to import sequences with a config file:
 
     bin/prepare-refseqs.pl --conf <config file that references a database with sequence information> --[refs|refid] <reference sequences> [options]
 
-  
+
 Syntax used to import a indexed fasta(i.e. a fasta file where you run
 \`samtools faidx yourfile.fa\` which outputs yourfile.fa.fai)
 
@@ -716,7 +220,7 @@ This will copy yourfile.fa and yourfile.fa.fai to the data directory
 | refs | A comma-delimited list of the names of sequences to be imported as reference sequences. This option (or refid) is required when using the conf option. It is not required when the fasta or gff options are used, but it can be useful with these options, since it can be used to select which sequences JBrowse will import. |
 | refids | A comma-delimited list of the database identifiers of sequences to be imported as reference sequences. This option is useful when working with a <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> database that contains data from multiple different species, and those species have at least one chromosome with the same name (e.g. chrX). In this case, the desired chromosome cannot be uniquely identified by name, so it is instead identified by ID. This ID can be found in the 'feature_id' column of 'feature' table in a Chado database. |
 
-  
+
 Note: the \`prepare-refseqs.pl --sizes chrom.sizes\` option is maybe
 underappreciated. You can technically run jbrowse without any sequence
 data loaded, simply a set of chromosomes and their sizes. The
@@ -807,7 +311,7 @@ Basic usage:
 
        bin/biodb-to-json.pl --conf <config file> [options]
 
-  
+
 For a full list of the options supported by biodb-to-json.pl, run it
 with the --help option, like:
 
@@ -919,15 +423,15 @@ rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Default 'black'. | `style
 
 `CanvasFeatures` track configuration options
 
-  
+
 Note: the "compact" displayMode for CanvasFeatures tracks uses
 style-\>height and multiplies it by 0.35 to create the compact view.
 Therefore, if you adjust style-\>height to a smaller default value, then
 you can create "ultra compact" visualizations.
 
-  
 
-  
+
+
 
 ### Customizing CanvasFeatures tracks with callbacks
 
@@ -960,8 +464,8 @@ you could set something like:
         }
         return false;
       }
-    style.color = function( feature, variableName, glyphObject, track ) { 
-        return track.config.variantIsHeterozygous(feature) ? 'red' : 'blue'; 
+    style.color = function( feature, variableName, glyphObject, track ) {
+        return track.config.variantIsHeterozygous(feature) ? 'red' : 'blue';
       }
 
 Note: the multiline callbacks are only enabled in the tracks.conf form.
@@ -977,7 +481,7 @@ about this format.
 
 `Generic track` configuration options
 
-  
+
 
 ## Customizing parts of the 'View details' Pop-ups with callbacks
 
@@ -987,7 +491,7 @@ that have the format fmtDetailValue\_\* or fmtDetailField\_\* to either
 change the value section of an attribute in the config, or the fieldname
 of an attribute in the config.
 
-  
+
 Here is an example in tracks.conf format for formatting the "Name" field
 by adding a link to it:
 
@@ -1009,7 +513,7 @@ Note: It is also easy to specify these methods in trackList.json format.
      "fmtDetailValue_Name": "function(name) { return '<a href=\"http://www.example.com?featurename='+name+'\">'+name+'</a>'; }"
     }
 
-  
+
 Addendum: If the field has multiple values (e.g. multiple DBXrefs or GO
 terms), then the callback will receive an array as it's argument, and
 then you can also return an array which indicates that each element will
@@ -1056,7 +560,7 @@ tracks (both HTMLFeatures and CanvasFeatures) is highly configurable. To
 make something happen when left-clicking features on a track, add an
 onClick option to the feature track's configuration.
 
-  
+
 In the example configuration below, left-clicks on features will open an
 embedded popup window showing the results of searching for that
 feature's name in NCBI's global search, and "search at NCBI" will show
@@ -1093,11 +597,11 @@ In JBrowse 1.11.6, the onClick-\>label attribute was extended further to
 allow the mouse-over description to be customized using callbacks and
 template strings.
 
-  
+
 Example for CanvasFeatures, allows full HTML tooltips. Here the {name}
 template is automatically filled in with the feature info:
 
-  
+
 
 ``` de1
     "onClick": {
@@ -1119,11 +623,11 @@ mouseover).
     }
 ```
 
-  
+
 Example using a callback (for either HTMLFeatures or CanvasFeatures),
 using this.feature to access the feature details
 
-  
+
 
 ``` de1
     "onClick": {
@@ -1133,7 +637,7 @@ using this.feature to access the feature details
     }
 ```
 
-  
+
 Note: on CanvasFeatures, the action "defaultDialog" isn't necessary, but
 it is necessary for HTMLFeatures to keep the default dialog (as of
 writing, 1.11.6).
@@ -1156,7 +660,7 @@ the store's feature density divided by `maxFeatureScreenDensity`). This
 is often used for BAM coverage on Alignments2 tracks using the
 `histograms.urlTemplate` and `histograms.storeClass` arguments.
 
-  
+
 Example track
 
     [ tracks.mytrack ]
@@ -1297,7 +801,7 @@ needed. The third, fourth, fifth and sixth arguments are optional a)
 output filename b) output width c) output height and d) zoom factor to
 make it higher resolution
 
-  
+
 
 # External Links
 
@@ -1305,6 +809,5 @@ make it higher resolution
   class="external text" rel="nofollow">JBrowse: A Next Generation Genome
   Browser</a> paper
 
-:
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")

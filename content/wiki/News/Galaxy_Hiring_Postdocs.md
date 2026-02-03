@@ -9,7 +9,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/83/PointingFinger.png/255px-PointingFinger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/83/PointingFinger.png 2x"
 width="170" height="175" alt="Galaxy wants YOU, damnit" /></a>
 
-  
+
 
 <a href="http://galaxyproject.org/wiki/GalaxyIsHiring" rel="nofollow"
 title="The Galaxy Project is hiring"><img
@@ -17,7 +17,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/255px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/340px-GalaxyLogoBigger.png 2x"
 width="170" height="60" alt="The Galaxy Project is hiring" /></a>
 
-  
+
 
 <a href="http://galaxyproject.org/wiki/GalaxyIsHiring"
 class="external text" rel="nofollow">Wants You!</a>
@@ -70,10 +70,9 @@ on setting trends in modern data-driven life-sciences.
 Please send your CV and names/e-mail addresses of three references to
 jobs@galaxyproject.org.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/08/03*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

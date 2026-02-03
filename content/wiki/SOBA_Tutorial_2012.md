@@ -8,7 +8,7 @@ Summer School](2012_GMOD_Summer_School "2012 GMOD Summer School") and
 the [2013 GMOD Summer
 School](2013_GMOD_Summer_School "2013 GMOD Summer School").
 
-  
+
 
   SOBA</span>](#About_SOBA)
 - [SOBA Web

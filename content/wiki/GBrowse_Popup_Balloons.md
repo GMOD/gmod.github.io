@@ -311,7 +311,7 @@ alt="Orf stanza" />
 # Popups in Gbrowse 2.0
 
 The upcoming release of GBrowse 2.0 will have some changes to popup
-balloons.  
+balloons.
 Some key differences are:
 
 ### Tooltip Styles
@@ -377,13 +377,13 @@ dynamically (actually, this is true of all balloon tooltips).
 - You can also use is anywhere else in Gbrowse using the '\[GBox\]'
   name.
 
-An example track configuration box  
+An example track configuration box
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4a/GBox.png" class="thumbborder" width="672"
 height="343" alt="The GBox style" />
 
 An example showing a box resized to stay onscreen, despite a small
-window.  
+window.
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/RidiculouslySmallWindow.png"
 class="thumbborder" width="447" height="504"
@@ -585,12 +585,12 @@ init_code =
     $chr .= ':' . $f->start . '..' . $f->end;
     my $retval = qq([GBox] <table>);
     $retval   .= qq(<tr><th style="color:white;background:blue;margin:-2px" colspan=2>$name ($chr)</th></tr>);
- 
+
     for my $tag (sort @tags) {
       my ($val) = $f->get_tag_values($tag);
       $retval .= qq(<tr valign=TO><td><b>$tag</b></td><td>$val</td>);
     }
- 
+
     return $retval . "</table>";
   }
 ```

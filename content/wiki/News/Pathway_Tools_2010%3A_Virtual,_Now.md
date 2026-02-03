@@ -33,13 +33,12 @@ rel="nofollow">PTools Support &lt;ptools-support@ai.sri.com&gt;</a>
 
 Best regards,
 
-Tomer Altman  
+Tomer Altman
 Pathway Tools Workshop Coordinator
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/24*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

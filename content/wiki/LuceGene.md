@@ -165,5 +165,5 @@ rel="nofollow">http://eugenes.org/gmod/lucegene/</a>
 
 ## Contact
 
-- email: lucegene AT eugenes.org  
+- email: lucegene AT eugenes.org
   Current developers: Don Gilbert, Paul Poole, and others

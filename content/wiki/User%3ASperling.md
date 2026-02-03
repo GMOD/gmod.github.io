@@ -7,12 +7,12 @@ title: "User%253ASperling"
 (<a href="http://paramecium.cgm.cnrs-gif.fr" class="external free"
 rel="nofollow">http://paramecium.cgm.cnrs-gif.fr</a>) is maintained at
 the Centre de Génétique Moléculaire of the CNRS, Gif-sure-Yvette,
-France.  
+France.
 This new MOD includes sequence data from
 <a href="http://www.genoscope.cns.fr" class="external text"
 rel="nofollow">Genoscope</a> and genetic data from the Paramecium
-community.  
-  
+community.
+
 Available to the public since August 2005, ParameciumDB is built with
 GMOD tools (<a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 schema, [GMODWeb](GMODWeb "GMODWeb"), [GBrowse](GBrowse.1 "GBrowse") and

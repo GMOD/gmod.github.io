@@ -6,7 +6,7 @@ title: "Property:Written in language"
 This is a property of type
 .
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Written in language"

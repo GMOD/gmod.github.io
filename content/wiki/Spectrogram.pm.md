@@ -23,7 +23,7 @@ examples of which are coding DNA and repeat sequences.
   class="external text" rel="nofollow">background reading of digital
   signal processing of DNA</a></span>
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Spec1.png" class="thumbborder" width="858"
 height="450" alt="Spec1.png" />
@@ -66,7 +66,7 @@ binary indicator sequences:
             T 0 0 1 0 0 1 0 1 0 0 1 1 0 0 0 0
             C 0 0 0 1 1 0 1 0 0 0 0 0 1 1 0 0
 
-  
+
 The magnitude of the discrete fourier transform (DFT) is calculated
 separately for each of the four indicator sequences. The algorithm used
 is the fast fourier transform (FFT; via Math::FFT), which is much faster

@@ -26,7 +26,7 @@ June 9-12</p></td>
 </tbody>
 </table>
 
-  
+
 This is the wiki page for the *Genome Project 101 Workshop* presented at
 [Arthropod Genomics
 2011](../Arthropod_Genomics_2011 "Arthropod Genomics 2011").
@@ -34,7 +34,7 @@ This is the wiki page for the *Genome Project 101 Workshop* presented at
 This page serves as the slides for the workshop. It will be tidied up
 within a week of the end of the workshop.
 
-  
+
 
   URL</span>](#The_One_True_URL)
 - [VMware
@@ -90,7 +90,7 @@ within a week of the end of the workshop.
 - [Remember
   ...](#Remember_...)
 
-  
+
 
 # The One True URL
 
@@ -227,7 +227,7 @@ The SO type is in column 4 in BED.
 
 Repeat with CDS.
 
-  
+
 
 ### 4. See what is in the exon set that is not in the CDS set
 

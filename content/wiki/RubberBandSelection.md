@@ -167,7 +167,7 @@ or hex code is accepted.</p></td>
              </tr>
            </table>
 
-  
+
 Configuration for submitter plugin (used in above menu).
 
 - the key/value pairs can be anything (that corresponds to the remote

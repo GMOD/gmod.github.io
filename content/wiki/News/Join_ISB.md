@@ -22,13 +22,12 @@ US\$100 for principal investigators from industry.
 
 Please consider this investment,
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/06/25*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

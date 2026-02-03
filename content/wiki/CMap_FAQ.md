@@ -174,29 +174,29 @@ The following are notes from a CMap administrator for using the
 installer to help perform this task which were sent to the CMap mailing
 list. (edited for display and reprinted by permission)
 
-1.  Edit CMapBuilder.pm and change the line  
-      
-    my \$to_cgi = catfile( \$self-\>notes('CGIBIN'), 'cmap' );  
-      
-    into  
-      
-    my \$to_cgi = catfile( \$self-\>notes('CGIBIN'), 'cmap-1' );  
+1.  Edit CMapBuilder.pm and change the line
+
+    my \$to_cgi = catfile( \$self-\>notes('CGIBIN'), 'cmap' );
+
+    into
+
+    my \$to_cgi = catfile( \$self-\>notes('CGIBIN'), 'cmap-1' );
 2.  perl Build.PL PREFIX=/var/www/cmap CONF=/etc/cmap/cmap-1.conf
     CGIBIN=/usr/lib/cgi-bin/ WEB_DOCUMENT_ROOT=/var/www
-    HTDOCS=/var/www/cmap  
-      
-    ./Build  
-      
-    ./Build install  
-3.  Make a copy of index.html (say, cmap-1.html)  
+    HTDOCS=/var/www/cmap
+
+    ./Build
+
+    ./Build install
+3.  Make a copy of index.html (say, cmap-1.html)
 4.  Edit cmap-1.html and replace all the occurrences of /cgi-bin/cmap by
-    /cgi-bin/cmap-1  
-      
+    /cgi-bin/cmap-1
+
     The first CMap db will be available at
-    www.mysite.org/cmap/cmap-1.html.  
-      
-    Then, for each additional data source:  
-      
+    www.mysite.org/cmap/cmap-1.html.
+
+    Then, for each additional data source:
+
     - make a new conf directory (e.g., mkdir /etc/cmap/cmap-2.conf);
     - go through step 1-2 (where any occurrence of 'cmap-1' is replaced
       by 'cmap-2'), but \*without\* installing.

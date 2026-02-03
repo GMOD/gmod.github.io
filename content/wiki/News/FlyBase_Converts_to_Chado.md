@@ -23,10 +23,9 @@ PostgreSQL dumps of FlyBase-chado are available at
 class="external free"
 rel="nofollow">ftp://ftp.flybase.net/releases/current/psql/</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/09/01*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

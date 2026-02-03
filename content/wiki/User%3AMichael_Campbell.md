@@ -16,7 +16,7 @@ I am fascinated by the natural world. My favorite moments in genome
 science are after I have finished an analysis and I know something about
 an organism that no one else in the world knows.
 
-  
+
 
 ## Background
 
@@ -39,7 +39,7 @@ Education
 - BIS Nutrition, Chemistry, Technical Writing, Weber State University
   (2007)
 
-  
+
 
 ## Selected Publications
 

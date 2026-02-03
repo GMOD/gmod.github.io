@@ -6,7 +6,7 @@ title: "A Brief Guide to Databases"
 A database provides infrastructure for storing, managing, and retrieving
 information.
 
-  
+
 
   Records, and Attributes</span>](#Tables.2C_Records.2C_and_Attributes)
   - [Example](#Example)
@@ -44,7 +44,7 @@ publication date, and whether a Kindle version is available.
 
 book
 
-  
+
 
 ## Keys
 
@@ -62,7 +62,7 @@ In a relational database, tables are linked together by using the
 primary key from one table in a related table. The primary key then
 becomes a **foreign** key.
 
-  
+
 
 ### Example
 
@@ -81,7 +81,7 @@ be a good long term strategy.
 
 book
 
-  
+
 If we now imagine a second table with book prices in it:
 
 | ISBN       | Format    | Price (\$) |

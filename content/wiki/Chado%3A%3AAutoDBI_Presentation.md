@@ -77,12 +77,12 @@ To:
 
 ``` de1
 use base qw(Class::DBI::Pg);
- 
+
 my ($dsn, $name, $pass);
 $dsn = "dbi:Pg:host=localhost;dbname=chado;port=5432";
 $name = "postgres";
 $pass = "";
- 
+
 Turnkey::Model::DBI->set_db('Main', $dsn, $name, $pass, {AutoCommit => 1});
 ```
 
@@ -93,13 +93,13 @@ Turnkey::Model::DBI->set_db('Main', $dsn, $name, $pass, {AutoCommit => 1});
 ``` de1
 package Turnkey::Model::Feature;
 use base 'Turnkey::Model::DBI';
- 
+
 Turnkey::Model::Feature->set_up_table('feature');
- 
+
 #
 # Primary key accessors
 #
- 
+
 sub id { shift->feature_id }
 sub feature { shift->feature_id }
 ```
@@ -126,11 +126,11 @@ sub cvterm { return shift->type_id; }
 #
 # has_many
 #
-Turnkey::Model::Feature->has_many('feature_synonym_feature_id', 
+Turnkey::Model::Feature->has_many('feature_synonym_feature_id',
            'Turnkey::Model::Feature_Synonym' => 'feature_id');
 sub feature_synonyms { return shift->feature_synonym_feature_id; }
- 
-Turnkey::Model::Feature->has_many('featureprop_feature_id', 
+
+Turnkey::Model::Feature->has_many('featureprop_feature_id',
            'Turnkey::Model::Featureprop' => 'feature_id');
 sub featureprops { return shift->featureprop_feature_id; }
 ```
@@ -171,7 +171,7 @@ Turnkey::Model::Feature->has_many( synonyms2 =>
     # A commit will occur at the exit of this block automatically,
     # when the local AutoCommit goes out of scope.
     local $class->db_Main->{ AutoCommit };
- 
+
     # Execute the required code inside the transaction.
     eval { $code->() };
     if ( $@ ) {
@@ -206,16 +206,16 @@ Turnkey::Model::Feature->set_up_table('feature');
 
 ``` de1
 # now create mRNA feature
- 
+
 my $feature = Turnkey::Model::Feature->find_or_create({
                        organism_id => $organism,
                    name => 'xfile', uniquename => 'xfile',
                    type_id => $mrna_cvterm,
                    is_analysis => 'f', is_obsolete => 'f'
                    });
- 
+
 # create description
- 
+
 my $featureprop = Turnkey::Model::Featureprop->find_or_create({
                            value => 'A test gene for GMOD meeting',
                            feature_id => $feature,
@@ -231,15 +231,15 @@ my $featureprop = Turnkey::Model::Featureprop->find_or_create({
 
 ``` de1
 # objects for global use
- 
+
 # the organism for our new feature
 my $organism = Turnkey::Model::Organism->search(abbreviation => "S.cerevisiae")->next;
- 
+
 # the cvterm for a "Note"
 my $note_cvterm = Turnkey::Model::Cvterm->retrieve(2);
- 
+
 # searching name by wildcard
- 
+
 my @results = Turnkey::Model::Feature->search_like(name => 'x-%');
 ```
 
@@ -249,7 +249,7 @@ my @results = Turnkey::Model::Feature->search_like(name => 'x-%');
 
 ``` de1
 # update the xfile gene name
- 
+
 $feature->name("x-file");
 $feature->update();
 ```
@@ -258,7 +258,7 @@ $feature->update();
 
 ``` de1
 # now delete the x-file feature
- 
+
 $feature->delete();
 ```
 
@@ -277,7 +277,7 @@ $feature->delete();
 Note that speed is relative: one can find bad performance using the
 wrong SQL and Chado%253A%253AAutoDBI approach will be speedier.
 
-  
+
 
 ##### For More Information
 

@@ -50,10 +50,9 @@ will help improve.
 If you would like more info on either position please get in touch with
 the database director, Jeff Bowes bowes \[at\] ucalgary.ca
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/04/09*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

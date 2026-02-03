@@ -41,7 +41,7 @@ rel="nofollow">vote for your favorite three topics.</a>\*
 Your votes will determine not only the topics that are offered, but also
 which topics should be offered more than once, assigned to which rooms,
 and which ones should not be scheduled at the same time.  Your vote
-matters.  
+matters.
 
 Once voting
 <a href="http://wiki.galaxyproject.org/Events/GCC2013/KeyDates"
@@ -51,7 +51,7 @@ contact possible instructors and publish a Training Day schedule before
 class="external text" rel="nofollow">registration opens on 22
 February</a>.
 
-  
+
 As always, please let me know if you have any questions.
 
 Thanks,
@@ -60,12 +60,11 @@ Thanks,
 
 |----| \* You don't have to vote for exactly three topics. You can vote for fewer topics and have each vote count for more, or you can vote for more topics and have each vote count for less. |
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/01/28*
 
 Category%253AGalaxy
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

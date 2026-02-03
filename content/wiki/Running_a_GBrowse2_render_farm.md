@@ -151,7 +151,7 @@ the same prerequisites as the master server, including Bio::Perl, GD,
 CGI::Session, JSON, etc. However, an Apache server is **not** needed to
 run a slave.
 
-  
+
 
 ### Running the Render Slave Daemon
 
@@ -182,7 +182,7 @@ of Linux distributions (it has not yet been tested on MacOSX - please
 edit this if you are able to confirm that it works or doesn't). The
 script will not work with Windows as it requires the bash shell.
 
-To start the slave  
+To start the slave
     sudo /etc/init.d/gbrowse-slave start
 
 If successful, you will see a message that three slave renderers have
@@ -190,7 +190,7 @@ been started on ports 8101, 8102 and 8103. The slaves will log their
 activities to /var/log/gbrowse/gbrowse_slave, and write their process
 IDs to /var/run/gbrowse/
 
-To stop the slave  
+To stop the slave
     sudo /etc/init.d/gbrowse-slave stop
 
 The number of slave servers to launch, the network ports they listen on,

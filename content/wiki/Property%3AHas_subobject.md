@@ -9,7 +9,7 @@ but can be used just like any other
 <a href="https://www.semantic-mediawiki.org/wiki/Property"
 class="external text" rel="nofollow">user-defined property</a>.
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Has subobject"
@@ -328,4 +328,4 @@ title="XORT">XORT</a>  </td>
 </table>
 
 Retrieved from
-"[http://gmod.org/wiki/Property%253AHas_subobject#SMWResults](/wiki/Property%253AHas_subobject#SMWResults)"
+"http://gmod.org/wiki/Property%253AHas_subobject#SMWResults"

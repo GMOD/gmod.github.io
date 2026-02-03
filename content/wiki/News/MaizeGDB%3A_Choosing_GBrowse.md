@@ -55,13 +55,12 @@ class="external text" rel="nofollow">3<sup>rd</sup> International
 Biocuration Conference</a>. *Database* is an open access publication,
 making it an even better match for GMOD.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/04/19*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

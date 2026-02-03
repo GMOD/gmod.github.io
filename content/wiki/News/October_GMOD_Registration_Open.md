@@ -19,10 +19,9 @@ the meeting is limited to 40 people.
 
 [Scott Cain](../User%253AScott "User%253AScott")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/08/12*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

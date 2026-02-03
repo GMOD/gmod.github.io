@@ -23,7 +23,7 @@ mean is that I don't want to start cutting and hacking away before I
 know what I am doing. --[DanBolser](User%253ADanBolser "User%253ADanBolser")
 12:21, 28 October 2008 (UTC)
 
-  
+
 
 ## Question about gbrowse_netinstall.pl
 
@@ -34,14 +34,14 @@ href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/Generic-Genome-Browser/bin
 class="external free"
 rel="nofollow">http://gmod.cvs.sourceforge.net/*checkout*/gmod/Generic-Genome-Browser/bin/gbrowse_netinstall.pl</a>
 
-  
+
 I wonder if its possible to install 'non-root' using this PL? Seems like
 appropriate use of the '--install_param_str' could allow a non-root
 install via this package... would it be something like
 
     perl gbrowse_netinstall.pl --install_param_str PREFIX=~/build
 
-  
+
 
 At least part of the answer to this question is: "Yes, you can use
 gbrowse_netinstall.pl as 'non-root', however, you should have your cpan
@@ -50,7 +50,7 @@ user. It seems that mostly gbrowse_netinstall.pl uses cpan, so lets
 see... --[DanBolser](User%253ADanBolser "User%253ADanBolser") 15:00, 28 October
 2008 (UTC)
 
-  
+
 
 I found this error so far... Using the following command:
 

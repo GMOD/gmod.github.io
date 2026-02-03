@@ -50,11 +50,11 @@ configuration file
 
 ``` de1
 <property name="JDBC.Driver" value="org.postgresql.Driver"/>
- 
+
 <property name="JDBC.ConnectionURL” value="jdbc:postgresql://${chado}"/>
- 
+
 <property name="JDBC.Username" value="${username}"/>
- 
+
 <property name="JDBC.Password" value="${password}"/>
 ```
 
@@ -79,20 +79,20 @@ Creating a gene
 
 ``` de1
 genes[0] = new Feature(ORG, GENE, "xfile", false, false, now, now);
- 
+
 genes[0].setSeqLen(1029);
 sequenceDao.persist(genes[0]);
- 
+
 FeatureLoc loc = new FeatureLoc(SOURCE_FEATURE, genes[0], 13691, false, 14720, false, (short)1, 0, 0 ,0);
- 
+
 sequenceDao.persist(loc);
- 
+
 addFeatureProp(genes[0], "description", "A test gene for GMOD meeting");
- 
+
 addSynonymsToFeature(genes[0], "mulder", "scully");
- 
+
 createExon("exon1", genes[0], 13691, 13767, now, 0);
- 
+
 createExon("exon2", genes[0], 14687, 14720, now, 1);
 ```
 
@@ -107,25 +107,25 @@ Update a gene
 
 ``` de1
 genes[0].setUniqueName("x-file");
- 
+
 sequenceDao.merge(genes[0]);
 ```
 
-  
+
 
 ``` de1
 private Feature createExon(String name, Feature gene, int min, int max, Timestamp now, int rank) {
- 
+
         Feature exon = new Feature(ORG, EXON, name, false, false, now, now);
         exon.setSeqLen(max-min);
         sequenceDao.persist(exon);
- 
+
         FeatureLoc loc = new FeatureLoc(SOURCE_FEATURE, exon, min, false, max, false,
                                       (short)1, 0, 0 ,0);
         sequenceDao.persist(loc);
- 
+
         return exon;
- 
+
 }
 ```
 
@@ -145,7 +145,7 @@ hideIfEmpty="true">
   </db:synonym>
   <dt><b>Type:</b></dt>
   <dd>${feature.cvTerm.name}</dd>
- 
+
 <st:section name="Exons" collapsed="false" collapsible="true" hideIfEmpty="true">
             <display:table name="exons" uid="tmp" pagesize="30" class="simple" cellspacing="0"
 cellpadding="4">
@@ -154,7 +154,7 @@ cellpadding="4">
                  <display:column property="featureLocsForSrcFeatureId.fmax" title="end"/>
             </display:table>
 </st:section>
- 
+
 <st:section name="cds" collapsible="true">
             <b>${feature.residues}</b>
 </st:section>

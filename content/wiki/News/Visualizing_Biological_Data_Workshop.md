@@ -30,10 +30,9 @@ slide). To apply to join the workshop, please
 an abstract and image</a> related to your work. Submissions close on 16
 November 2009.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/21*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

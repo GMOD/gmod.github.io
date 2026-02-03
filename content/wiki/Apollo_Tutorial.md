@@ -1,83 +1,7 @@
 ---
 title: "Apollo Tutorial 2011"
 ---
-# Apollo Tutorial 2011
-
-(Redirected from [Apollo
-Tutorial](/wiki/Apollo_Tutorial)
-
-  
-
-<img
-src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/250px-ApolloLogo.png"
-srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/375px-ApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/500px-ApolloLogo.png 2x"
-width="250" height="91" alt="Apollo" />
-
-This [Apollo](Apollo.1 "Apollo") tutorial was presented by [Ed
-Lee](User%253AElee "User%253AElee") at the [2011 GMOD Spring
-Training](2011_GMOD_Spring_Training "2011 GMOD Spring Training"), Spring
-2011. The most recent Apollo tutorial can be found at the
-<a href="Apollo_Tutorial" class="mw-redirect"
-title="Apollo Tutorial">Apollo Tutorial</a> page.
-
-  
-
-  Introduction](#Introduction)
-  - [Overview](#Overview)
-  - [Architecture](#Architecture)
-    - [Presentation
-      Layer](#Presentation_Layer)
-    - [Logic
-      Layer](#Logic_Layer)
-    - [Data
-      Layer](#Data_Layer)
-- [Installation](#Installation)
-  - [Pre-built
-    Installers](#Pre-built_Installers)
-  - [Checking
-    Out the Code From SVN](#Checking_Out_the_Code_From_SVN)
-- [Using
-  Apollo](#Using_Apollo)
-- [Configuring
-  Apollo](#Configuring_Apollo)
-  - [apollo.cfg](#apollo.cfg)
-  - [data_source.style](#data_source.style)
-  - [data_source.tiers](#data_source.tiers)
-- [Setting Up
-  Custom Chado
-  Configurations](#Setting_Up_Custom_Chado_Configurations)
-  - [chado-adapter.xml](#chado-adapter.xml)
-    - [chadoInstance
-      Element](#chadoInstance_Element)
-    - [chadodb Element](#chadodb_Element)
-- [Setting Up a
-  Custom WebStart
-  Instance](#Setting_Up_a_Custom_WebStart_Instance)
-- [Writing Custom
-  Data Adapters](#Writing_Custom_Data_Adapters)
-
-## Introduction
-
-### Overview
-
-Once we have a sequence assembled, we need to annotate that sequence:
-that is, add features such as genes, pseudogenes, ncRNAs, etc. Otherwise
-we just have sequence and can't make much sense of the data.
-Computational analysis, such as Genscan, FGeneSH, and tRNAscanSE are a
-great way to start the annotation process, as they help us localize
-regions of interest. However, these automated tools are far from perfect
-and the results often require manual updating from expert biologists.
-That is where Apollo comes in. Apollo is a sequence annotation editor
-and will allow you to create and edit annotations.
-
-<img
-src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7c/Annotation-workflow.jpg" width="585"
-height="196" alt="Annotation workflow" />
-
-### Architecture
-
-Apollo is setup in a 3-tier architecture, with a presentation
-([GUI](Glossary#GUI "Glossary")), logic and data layer. It is highly
+# Apollo Tutorial 2011, logic and data layer. It is highly
 configurable, with most users configuring the presentation and data
 layers.
 
@@ -158,7 +82,7 @@ based command line SVN clients for an anonymous checkout.
 If you're using an IDE, chances are that your IDE will have SVN support
 (or have a plugin available).
 
-  
+
 
 ## Using Apollo
 
@@ -363,7 +287,7 @@ click, and choose `Merge exons`.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Merge-exons-popup-menu.jpg" width="516"
 height="225" alt="Merge exons popup menu" />
 
-  
+
 Alright, it does what we'd expect it to do.
 
 <img
@@ -624,10 +548,10 @@ like this:
 
 ``` de1
 <chadoInstance id="gmodSummerSchoolInstance" default="true">
- 
+
   <!-- associated Java class with this instance -->
   <clsName>apollo.dataadapter.chado.jdbc.RiceChadoInstance</clsName>
- 
+
   <!-- database fields corresponding to top-level entries - will appear in the pulldown menu -->
   <sequenceTypes>
     <type>gene</type>
@@ -641,18 +565,18 @@ like this:
       <isTopLevel>true</isTopLevel>
     </type>
   </sequenceTypes>
- 
+
   <!-- CV information stored in the Chado instance -->
   <partOfCvTerm>part_of</partOfCvTerm>
   <featureCV>sequence</featureCV>
   <relationshipCV>relationship</relationshipCV>
   <propertyTypeCV>feature_property</propertyTypeCV>
- 
+
   <!-- list of gene predictions to retrieve -->
   <genePredictionPrograms>
     <program>maker</program>
   </genePredictionPrograms>
- 
+
   <!-- list of search hits to retrieve -->
   <searchHitPrograms>
     <program>blastn</program>
@@ -668,10 +592,10 @@ like this:
     <program>snap</program>
     <program>snap_masked</program>
   </searchHitPrograms>
- 
+
   <!-- will most likely be set to true; exists for backward support for non-standard Chado -->
   <searchHitsHaveFeatLocs>true</searchHitsHaveFeatLocs>
- 
+
   <!-- list of one-level annotations to retrieve -->
   <oneLevelAnnotTypes>
     <type>promoter</type>
@@ -679,7 +603,7 @@ like this:
     <type>remark</type>
     <type>repeat_region</type>
   </oneLevelAnnotTypes>
- 
+
   <!-- list of three-level annotations to retrieve -->
   <threeLevelAnnotTypes>
     <type>gene</type>
@@ -691,7 +615,7 @@ like this:
     <type>rRNA</type>
     <type>miRNA</type>
   </threeLevelAnnotTypes>
- 
+
 </chadoInstance>
 ```
 
@@ -705,31 +629,31 @@ ones). The XML will look something like this:
 
 ``` de1
 <chadodb>
- 
+
   <!-- label that will appear in the dropdown list of databases -->
   <name>GMOD Summer School</name>
- 
+
   <!-- the Apollo class to use for your database -->
   <adapter>apollo.dataadapter.chado.jdbc.PostgresChadoAdapter</adapter>
- 
+
   <!-- the URL for the database server -->
   <url>jdbc:postgresql://localhost:5432/chado</url>
- 
+
   <!-- database name -->
   <dbName>chado</dbName>
- 
+
   <!-- database user / login -->
   <dbUser>gmod</dbUser>
- 
+
   <!-- identifies the type of Chado database -->
   <dbInstance>gmodSummerSchoolInstance</dbInstance>
- 
+
   <!-- style configuration for this database -->
   <style>gmod_summer_school.style</style>
- 
+
   <!-- if set to true, will be database used when launching Apollo using command line arguments -->
   <default-command-line-db>true</default-command-line-db>
- 
+
 </chadodb>
 ```
 
@@ -777,7 +701,7 @@ template XML file that is used for this script.
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <webstart>
- 
+
   <!-- all this stuff is required for signing jars, shouldn't take too long to run -->
   <jarsigner>
     <alias>apollo</alias>
@@ -798,7 +722,7 @@ template XML file that is used for this script.
     <!-- you might want to put your organization's country -->
     <country>USA</country>
   </jarsigner>
- 
+
   <!-- now we need to populate our jnlp information -->
   <jnlp spec="1.0+">
     <information>

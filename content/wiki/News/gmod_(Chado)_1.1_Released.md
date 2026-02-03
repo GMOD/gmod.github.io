@@ -51,10 +51,9 @@ Thanks for your continued support of the GMOD project,
 
 [Scott](../User%253AScott "User%253AScott")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/24*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

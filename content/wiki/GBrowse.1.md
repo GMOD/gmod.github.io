@@ -35,7 +35,7 @@ Resources
 <tr class="even row-even">
 <td class="smwpropname"><a href="/wiki/Property%253AHas_input_format"
 title="Property:Has input format">Has input format</a></td>
-<td class="smwprops">GFF3 
+<td class="smwprops">GFF3
 and GFF2 </td>
 <td></td>
 </tr>
@@ -123,25 +123,25 @@ href="/wiki/Property%253AHas_subobject" title="Property:Has subobject">Has
 subobject</a></span><span class="smwttcontent">This property is a
 special property in this wiki.</span></span></td>
 <td class="smwspecs"><a
-href="/wiki/GBrowse#http:.2F.2Fsourceforge.net.2Fprojects.2Fgmod.2Ffiles.2FGeneric_Genome_Browser.2F"
+href="/wiki/GBrowse.1#http:.2F.2Fsourceforge.net.2Fprojects.2Fgmod.2Ffiles.2FGeneric_Genome_Browser.2F"
 title="GBrowse">GBrowse#http://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/
 <span class="smwsearch"><span>+</span></span>,</a> <a
-href="/wiki/GBrowse#https:.2F.2Fgithub.com.2FGMOD.2FGBrowse"
+href="/wiki/GBrowse.1#https:.2F.2Fgithub.com.2FGMOD.2FGBrowse"
 title="GB#https:.2F.2Fgithub.com.2FGMOD.2FGBrowse">GBrowse#https://github.com/GMOD/GBrowse</a>
 ,
-<a href="/wiki/GBrowse#http:.2F.2Fgbrowse.org"
+<a href="/wiki/GBrowse.1#http:.2F.2Fgbrowse.org"
 title="GBrowse">GBrowse#http://gbrowse.org</a> ,
 <a
-href="/wiki/GBrowse#http:.2F.2Fwww.wormbase.org.2Ftools.2Fgenome.2Fgbrowse.2Fc_elegans.2F"
+href="/wiki/GBrowse.1#http:.2F.2Fwww.wormbase.org.2Ftools.2Fgenome.2Fgbrowse.2Fc_elegans.2F"
 title="GBrowse">GBrowse#http://www.wormbase.org/tools/genome/gb#http://www.wormbase.org/tools/genome/gbrowse/c_elegans/</a>
 ,
 <a
-href="/wiki/GBrowse#http:.2F.2Fflybase.org.2Fcgi-bin.2Fgbrowse.2Fdmel"
+href="/wiki/GBrowse.1#http:.2F.2Fflybase.org.2Fcgi-bin.2Fgbrowse.2Fdmel"
 title="GBrowse">GBrowse#http:#http:.2F.2Fflybase.org.2Fcgi-bin.2Fgbrowse.2Fdmel"
 title="GBrowse"&gt;GBrowse#http://flybase.org/cgi-bin/gbrowse/dmel</a>
 
 and <a
-href="/wiki/GBrowse#http:.2F.2Fhapmap.ncbi.nlm.nih.gov.2Fcgi-perl.2Fgbrowse.2Fgbrowse"
+href="/wiki/GBrowse.1#http:.2F.2Fhapmap.ncbi.nlm.nih.gov.2Fcgi-perl.2Fgbrowse.2Fgbrowse"
 title="GBrowse">GBrowse#http://hapmap.ncbi.nlm.nih.gov/cgi-pe#http://hapmap.ncbi.nlm.nih.gov/cgi-perl/gbrowse/gbrowse</a>
 </td>
 <td></td>

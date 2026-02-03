@@ -15,7 +15,7 @@ phenotypes using ontologies. It provides an interface to record
 genotype-phenotype pairs, together with the provenance for the
 annotation.
 
-  
+
 
   Requirements](#Requirements)
 - [Documentation](#Documentation)

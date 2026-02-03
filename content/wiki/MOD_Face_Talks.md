@@ -6,9 +6,9 @@ title: "MOD Face Talks"
 <a href="http://www.gmod.org/user-interface-caucus/"
 class="external text" rel="nofollow">MOD User InterFace Caucus</a> ,
 <a href="http://www.gmod.org/january_2007_meeting" class="external text"
-rel="nofollow">GMOD Meeting, January 2007</a>  
+rel="nofollow">GMOD Meeting, January 2007</a>
 
-  
+
 
 | Time | Slides | Talk |
 |----|----|----|

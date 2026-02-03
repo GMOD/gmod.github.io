@@ -28,6 +28,6 @@ updates, or email the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 help desk</a> for more information.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/12/28*

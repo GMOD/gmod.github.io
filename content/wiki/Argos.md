@@ -90,7 +90,7 @@ Evaluation of RPM, pacman, cluster-backup/mirror tools, grid packaging
 tools found none were quite right, so a 'quick hack' perl installation
 program has been built.
 
-  
+
 
 ## Developer notes
 
@@ -128,7 +128,7 @@ A slide set outlines Argos/FlyBase-NG:
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/Flybase-ng-may03.pdf" class="internal"
 title="Flybase-ng-may03.pdf">flybase-ng-may03.pdf</a>
 
-  
+
 
 ### Flybase Servers
 
@@ -194,7 +194,7 @@ These are overviews of FlyBase's server system structures.
      eugenes/
      daphnia/
 
-  
+
 
     -- segregate common infrastructure from project-specific parts
 
@@ -220,7 +220,7 @@ These are overviews of FlyBase's server system structures.
        -- fixed unix path currently is used to solve configuration needs
        -- need install/update script to allow path choices, auto-restart servers
 
-  
+
 
     -- current structure details
     /bio/biodb:
@@ -279,7 +279,7 @@ These are overviews of FlyBase's server system structures.
 
        rsync.exclude
 
-  
+
 
        myorg:
      -- template folder
@@ -297,7 +297,7 @@ These are overviews of FlyBase's server system structures.
             webapps:
             rsync.exclude.local
 
-  
+
 
        daphnia:
       -- another genome organism
@@ -360,7 +360,7 @@ These are overviews of FlyBase's server system structures.
                 transmolmaps:
                 transseq:
 
-  
+
 
            indices:
             -- data search/database files (? add postgres/mysql data here)
@@ -400,7 +400,7 @@ These are overviews of FlyBase's server system structures.
                 tmp
                 transposons:
 
-  
+
 
                webapps:
             -- standard web Servlet programs
@@ -450,7 +450,7 @@ href="http://gmod.svn.sourceforge.net/viewvc/gmod/argos/trunk/install/README.txt
 class="external text" rel="nofollow">Argos README</a> for installation
 instructions.
 
-  
+
 
 #### Summary of steps to installation of an Argos server system
 
@@ -471,7 +471,7 @@ instructions.
 7.  Run `/usr/local/biodb/install/installng.pl -update ` to update
     server periodically.
 
-  
+
 
 ## Downloads
 

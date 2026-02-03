@@ -15,10 +15,9 @@ applications is 21st November 2013; for more details, see the
 <a href="http://www.jobs.qmul.ac.uk/4313" class="external text"
 rel="nofollow">job description</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/11/12*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

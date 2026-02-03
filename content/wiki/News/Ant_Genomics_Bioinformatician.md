@@ -29,11 +29,10 @@ and application procedure
 Informal enquiries to yannick.wurm \at\\ until.ch or laurent.falquet
 \at\\ isb-sib.ch
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/15,
 updated 2009/09/27*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

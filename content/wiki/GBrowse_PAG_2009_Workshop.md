@@ -28,7 +28,7 @@ San Diego, California, USA</td>
 </tbody>
 </table>
 
-  
+
 
 This page provides additional information about the
 <a href="http://www.intl-pag.org/17/17-gbrowse.html"

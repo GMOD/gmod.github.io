@@ -54,7 +54,7 @@ here. Eventually, as we settle on specific outcomes, those outcomes will
 be posted to the main page, and eventually reflected in the Chado
 schema.
 
-  
+
 At this time (January 2010), most of this discussion is about making
 changes relative to the version that was created in 2007 with
 *Heliconius* in mind. This is referred to below as ***HDB***.
@@ -105,7 +105,7 @@ Rob points out that this might also be a good test case for establishing
 a formal process making backwards-incompatible updates to production
 Chado.
 
-  
+
 
 ## Schema Design Tools / Visualization
 
@@ -169,7 +169,7 @@ The Chado Stock module is about keeping track of lines in your
 lab/community. Someone needs to take a look at it and determine how the
 natural diversity module should interact with it.
 
-  
+
 
 ### Observational Taxonomy Proposal
 
@@ -253,7 +253,7 @@ defined in the [General
 Module](Chado_General_Module "Chado General Module"). The HDB design
 links to it extensively. However, other modules hardly use it at all.
 
-  
+
 The GDR group needs to the ability to more robustly define
 projects/studies, and to introduce substudies/project hierarchy, as
 well.
@@ -283,7 +283,7 @@ users, then I would like to look into
 1.  reimplementing phenotypes in Chado, and
 2.  providing migration paths for what users we do have.
 
-  
+
 
 #### HDB Design
 
@@ -300,7 +300,7 @@ table](Chado_CV_Module#Table:_cvterm "Chado CV Module"):
 
 Any of these 4 columns can be null.
 
-  
+
 There is also a [phenotype_cvterm
 table](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module")
 to hold CV terms that don't fit cleanly into the 4 CV term columns in
@@ -359,7 +359,7 @@ HDB includes support for images and assays. We should probably have a
 general purpose solution that is usable for all images and assays, not
 just those in the natural diversity module.
 
-  
+
 
 ## Action Items
 
@@ -438,11 +438,11 @@ stock instead of stocksample
 If we need current crossexperiment table, we could name this new set of
 tables using cross- instead of crossexperiment-
 
-  
+
 
 - Adding diversityexperiment.collection_date
 
-  
+
 
 # simplified schema (ND tables only)
 

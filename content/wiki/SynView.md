@@ -7,7 +7,7 @@ title: "SynView"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/SynView_Icon.gif" width="173" height="66"
 alt="SynView Icon.gif" />
 
-  
+
 
   Documentation](#Documentation)
   - [Publications](#Publications)
@@ -28,7 +28,7 @@ in the gbrowse/contrib/ directory. Also included in the SynView contrib
 directory is a GUSdb adaptor for GBrowse, but that is not required for
 making SynView work.
 
-  
+
 
 ## Documentation
 

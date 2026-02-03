@@ -61,67 +61,67 @@ title="September 2010 GMOD Meeting">September 2010 GMOD Meeting</a></li>
 
 The following 3 files are in this category, out of 3 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="DAS Sept2010.pdf" />
 
-  
 
-  
 
-  
 
-  [DAS Sept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/DAS_Sept2010.pdf "File:DAS Sept2010.pdf")  
-  1.16 MB  
 
-  
 
-  
 
-- 
+  [DAS Sept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/DAS_Sept2010.pdf "File:DAS Sept2010.pdf")
+  1.16 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Aug2009DASUpdate.pdf" />
 
-  
 
-  
 
-  
 
-  [Aug2009DASUpdate.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a7/Aug2009DASUpdate.pdf "File:Aug2009DASUpdate.pdf")  
-  664 KB  
 
-  
 
-  
 
-- 
+  [Aug2009DASUpdate.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a7/Aug2009DASUpdate.pdf "File:Aug2009DASUpdate.pdf")
+  664 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Das.ppt" />
 
-  
 
-  
 
-  
 
-  [Das.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Das.ppt "File:Das.ppt")  
+
+
+
+  [Das.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Das.ppt "File:Das.ppt")
   132 KB

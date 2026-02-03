@@ -4,7 +4,7 @@ title: "JavaSEAN"
 # JavaSEAN
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
 The javaSEAN tool is a standalone Java application which was developed
@@ -16,7 +16,7 @@ tether various types of mappable data to a genomic sequence, including
 gene structure, mutation sites, polymorphic sites, insertion sites,
 regulatory elements, and rescue fragments.
 
-  
+
 
   Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
@@ -39,7 +39,7 @@ haiyan@morgan.harvard.edu
 <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gmod/javaSean/"
 class="external text" rel="nofollow">From CVS</a>
 
-  
+
 
 <a href="http://www.gmod.org/files/Architecture.gif"
 class="external text" rel="nofollow">Architecture.gif</a>

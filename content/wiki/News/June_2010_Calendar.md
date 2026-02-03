@@ -24,19 +24,18 @@ rel="nofollow">InCoB</a> (Tokyo in September), and
 class="external text" rel="nofollow">Genome Informatics</a> (Hinxton in
 September).
 
-  
+
 If you know of any other events or deadlines that the GMOD community
 would be interested in, please send them to me.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/24*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

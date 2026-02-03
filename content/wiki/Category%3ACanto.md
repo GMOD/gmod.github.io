@@ -3,7 +3,7 @@ title: "Category%253ACanto"
 ---
 # Category%253ACanto
 
-There is currently no text in this page. You can 
+There is currently no text in this page. You can
 in other pages
 
 ## Pages in category "Canto"

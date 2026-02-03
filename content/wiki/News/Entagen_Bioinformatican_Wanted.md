@@ -46,11 +46,10 @@ color, age, religion and/or national origin.
 **Note: Please re-apply if you sent an email to the info@entagen.com
 address. This address wasn't routing correctly.**
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/04/22,
 updated 2011/05/03*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

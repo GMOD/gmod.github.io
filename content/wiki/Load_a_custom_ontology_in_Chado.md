@@ -86,7 +86,7 @@ load the following ontology.
     name: intersection_of
     definition: Indicates that a term is the intersection of several others [OBO:defs]
 
-  
+
 The name of the file should match the database that will go in the db
 table (although I'm not sure about that). I've named this file as
 internal_go_lib.

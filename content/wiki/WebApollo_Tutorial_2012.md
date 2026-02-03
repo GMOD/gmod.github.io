@@ -49,7 +49,7 @@ the tool.**
 href="https://docs.google.com/presentation/pub?id=17jkEV0jJ3gl_B-cRK5lrG8jbQPULPAnEcPo9Acu7CCU&amp;start=false&amp;loop=false&amp;delayms=3000"
 class="external text" rel="nofollow">WebApollo Presentation</a>
 
-  
+
 
 ## Using WebApollo
 
@@ -81,7 +81,7 @@ We want to change it to:
            "sourceUrl" : "data/",
 
 Point your browser to
-`http://ec2-##-##-##-##.compute-1.amazonaws.com:8080/WebApolloDemo`.  
+`http://ec2-##-##-##-##.compute-1.amazonaws.com:8080/WebApolloDemo`.
 (e.g.,
 `http://ec2-184-73-92-243.compute-1.amazonaws.com:8080/WebApolloDemo`).
 
@@ -272,7 +272,7 @@ We need to deploy the WAR file in the war directory from the unpacked
 tarball. We need to go into the `webapps` directory in our Tomcat
 installation. Tomcat's installed in `/usr/local/tomcat/tomcat7/`.
 
-    $ cd /usr/local/tomcat/tomcat7/webapps 
+    $ cd /usr/local/tomcat/tomcat7/webapps
 
 Next we need to create the directory that will contain the application.
 Note that you'll need to use `sudo` for this, since only root has access
@@ -286,7 +286,7 @@ into it.
     $ cd WebApollo
     $ sudo jar -xvf ~/WebApollo/war/WebApollo.war
 
-  
+
 That’s it! We’re done installing WebApollo. Now we need to move on to
 configuring the application.
 
@@ -305,86 +305,86 @@ take a look at the file.
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <server_configuration>
- 
+
     <!-- mapping configuration for GBOL data structures -->
     <gbol_mapping>/config/mapping.xml</gbol_mapping>
- 
+
     <!-- directory where JE database will be created -->
     <datastore_directory>ENTER_DATASTORE_DIRECTORY_HERE</datastore_directory>
- 
+
     <!-- minimum size for introns created -->
     <default_minimum_intron_size>1</default_minimum_intron_size>
- 
+
     <!-- size of history for each feature - setting to 0 means unlimited history -->
     <history_size>0</history_size>
- 
+
     <!-- overlapping strategy for adding transcripts to genes -->
     <overlapper_class>org.bbop.apollo.web.overlap.OrfOverlapper</overlapper_class>
- 
+
     <!-- class for comparing track names (used for sorting in lists) -->
     <track_name_comparator_class>org.bbop.apollo.web.track.DefaultTrackNameComparator</track_name_comparator_class>
- 
+
     <!-- user authentication/permission configuration -->
     <user>
- 
+
         <!-- database configuration -->
         <database>
- 
+
             <!-- driver for user database -->
             <driver>org.postgresql.Driver</driver>
- 
+
             <!-- JDBC URL for user database -->
             <url>ENTER_USER_DATABASE_JDBC_URL</url>
- 
+
             <!-- username for user database -->
             <username>ENTER_USER_DATABASE_USERNAME</username>
- 
+
             <!-- password for user database -->
             <password>ENTER_USER_DATABASE_PASSWORD</password>
- 
+
         </database>
- 
+
         <!-- class for generating user authentication page (login page) -->
         <authentication_class>org.bbop.apollo.web.user.localdb.LocalDbUserAuthentication</authentication_class>
- 
+
     </user>
- 
+
     <tracks>
- 
+
         <!-- path to JBrowse refSeqs.json file -->
         <refseqs>ENTER_PATH_TO_REFSEQS_JSON_FILE</refseqs>
- 
+
         <!-- annotation track name the current convention is to append
      the genomic region id to the the name of the annotation track
      e.g., if the annotation track is called "Annotations" and the
      genomic region is chr2L, the track name will be
      "Annotations-chr2L".-->
         <annotation_track_name>Annotations</annotation_track_name>
- 
+
         <!-- organism being annotated -->
         <organism>ENTER_ORGANISM</organism>
- 
+
         <!-- CV term for the genomic sequences - should be in the form
      of "CV:TERM".  This applies to all sequences -->
         <sequence_type>ENTER_CVTERM_FOR_SEQUENCE</sequence_type>
- 
+
     </tracks>
- 
+
     <!-- path to file containing canned comments XML -->
     <canned_comments>/config/canned_comments.xml</canned_comments>
- 
+
     <!-- tool to be used for sequence searching.  This is optional.
  If this is not setup, WebApollo will not have sequence search support -->
     <sequence_search_tool>
- 
+
         <!-- class for handling search -->
         <class>org.bbop.apollo.tools.seq.search.blat.BlatCommandLine</class>
- 
+
         <!-- configuration for search tool -->
         <config>/config/blat_config.xml</config>
- 
+
     </sequence_search_tool>
- 
+
 </server_configuration>
 ```
 
@@ -470,27 +470,27 @@ user authentication and permission handling.
 ``` de1
     <!-- user authentication/permission configuration -->
     <user>
- 
+
         <!-- database configuration -->
         <database>
- 
+
             <!-- driver for user database -->
             <driver>org.postgresql.Driver</driver>
- 
+
             <!-- JDBC URL for user database -->
             <url>ENTER_USER_DATABASE_JDBC_URL</url>
- 
+
             <!-- username for user database -->
             <username>ENTER_USER_DATABASE_USERNAME</username>
- 
+
             <!-- password for user database -->
             <password>ENTER_USER_DATABASE_PASSWORD</password>
- 
+
         </database>
- 
+
         <!-- class for generating user authentication page (login page) -->
         <authentication_class>org.bbop.apollo.web.user.localdb.LocalDbUserAuthentication</authentication_class>
- 
+
     </user>
 ```
 
@@ -560,24 +560,24 @@ for the genomic sequences.
 
 ``` de1
     <tracks>
- 
+
         <!-- path to JBrowse refSeqs.json file -->
         <refseqs>ENTER_PATH_TO_REFSEQS_JSON_FILE</refseqs>
- 
+
         <!-- annotation track name the current convention is to append
      the genomic region id to the the name of the annotation track
      e.g., if the annotation track is called "Annotations" and the
      genomic region is chr2L, the track name will be
      "Annotations-chr2L".-->
         <annotation_track_name>Annotations</annotation_track_name>
- 
+
         <!-- organism being annotated -->
         <organism>ENTER_ORGANISM</organism>
- 
+
         <!-- CV term for the genomic sequences - should be in the form
      of "CV:TERM".  This applies to all sequences -->
         <sequence_type>ENTER_CVTERM_FOR_SEQUENCE</sequence_type>
- 
+
     </tracks>
 ```
 
@@ -635,13 +635,13 @@ comments.
     <!-- tool to be used for sequence searching.  This is optional.
  If this is not setup, WebApollo will not have sequence search support -->
     <sequence_search_tool>
- 
+
         <!-- class for handling search -->
         <class>org.bbop.apollo.tools.seq.search.blat.BlatCommandLine</class>
- 
+
         <!-- configuration for search tool -->
         <config>/config/blat_config.xml</config>
- 
+
     </sequence_search_tool>
 ```
 
@@ -684,13 +684,13 @@ Let’s take a look at the configuration file.
 
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
- 
+
 <canned_comments>
     <!-- one <comment> element per comment.
  it must contain the attribute "feature_type" that defines
  the type of feature this comment will apply to.
  must be be in the form of "cv:cvterm" (e.g., "sequence:gene")
- 
+
  <comment feature_type="sequence:gene">This is a comment for sequence:gene</comment>
  -->
 </canned_comments>
@@ -723,23 +723,23 @@ Let’s take a look at the configuration file:
 
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
- 
+
 <!-- configuration file for setting up command line Blat support -->
- 
+
 <blat_config>
- 
+
     <!-- path to Blat binary →
  <blat_bin>ENTER_PATH_TO_BLAT_BINARY</blat_bin>
- 
+
  <!-- path to where to put temporary data -->
     <tmp_dir>ENTER_PATH_FOR_TEMPORARY_DATA</tmp_dir>
- 
+
     <!-- path to Blat database -->
     <database>ENTER_PATH_TO_BLAT_DATABASE</database>
- 
+
     <!-- any Blat options (directly passed to Blat) e.g., -minMatch -->
     <blat_options>ENTER_ANY_BLAT_OPTIONS</blat_options>
- 
+
 </blat_config>
 ```
 
@@ -890,7 +890,7 @@ We need to symlink the `data/seq/refSeqs.json` file in `data/seq`.
     $ ln -sf seq/refSeqs.json
     $ cd ..
 
-  
+
 
 ### Static data generation
 
@@ -1136,8 +1136,8 @@ Here's how the updated JSON should look like.
       "tracks" : [
          {
            "type" : "BamFeatureTrack",
-           "label" : "simulated_bam", 
-           "data_url" : "bam/scf1117875582023.bam", 
+           "label" : "simulated_bam",
+           "data_url" : "bam/scf1117875582023.bam",
            "index_url" : "bam/scf1117875582023.bam.bai",
            "sourceUrl" : "data/",
             "config" : {
@@ -1169,7 +1169,7 @@ You should now have a `simulated BAM` track now available.
 
 You can download the updated `trackList.json` file here (you'll need to
 put the file in your virtual machine and unzip it in
-`/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/data`):  
+`/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/data`):
 <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/83/Web_apollo_2012_tutorial_track_list_json.zip"
 class="internal"
@@ -1184,7 +1184,7 @@ WebApollo (since they're both using the same dataset).
 Congratulations, you're done configuring WebApollo.
 
 Let's test out our installation. Point your browser to
-`http://ec2-##-##-##-##.compute-1.amazonaws.com:8080/WebApollo`  
+`http://ec2-##-##-##-##.compute-1.amazonaws.com:8080/WebApollo`
 (e.g.,
 `http://ec2-184-73-92-243.compute-1.amazonaws.com:8080/WebApollo`).
 

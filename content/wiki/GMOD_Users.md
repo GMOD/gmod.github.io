@@ -14,7 +14,7 @@ Check out the
 <a href="../worldwide.html" class="external text" rel="nofollow">map of
 GMOD users around the world</a>!
 
-  
+
 
 <table class="wikitable sortable">
 <colgroup>

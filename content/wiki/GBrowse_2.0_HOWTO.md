@@ -467,7 +467,7 @@ the word *true*).
 
 #### Paths and Directories
 
-config_base, htdocs_base, url_base, db_base, tmp_base  
+config_base, htdocs_base, url_base, db_base, tmp_base
 The first six options describe the location of GBrowse's configuration
 and support files. **config_base** is the location of GBrowse's
 datasource-specific configuration files, typically */etc/gbrowse2*.
@@ -487,14 +487,14 @@ GBROWSE_CONF. This variable is set when Apache starts up, and can be
 found in */etc/apache2/conf.d/gbrowse2.conf*, */etc/httpd/conf.d*, or
 */etc/apache/conf.d*, depending on how your system is laid out.
 
-buttons, balloons, gbrowse_help, js  
+buttons, balloons, gbrowse_help, js
 These four configuration options tell GBrowse where to find the images
 for its navigation buttons, popup balloons, help pages, and javascript
 libraries. Ordinarily you will not need to change these locations. The
 default locations are subdirectories of **htdocs_base**. If you specify
 a relative path, they will be taken as relative to **htdocs_base** (in
 filesystem space) and **url_base** (in URL space).
-plugin_path, language_path, templates_path, moby_path  
+plugin_path, language_path, templates_path, moby_path
 These configuration options specify where
 [plugins](GBrowse_Plugins "GBrowse Plugins"), language translation
 files, templates and
@@ -529,16 +529,16 @@ another instance of it is working on session data in order to avoid
 another process from clobbering the same session. This option controls
 the type of locking to perform. Valid values are:
 
-flock  
+flock
 Use standard file locking. This works fine in most cases, but can cause
 GBrowse to get very slow if its temporary directory is mounted on a
 shared NFS filesystem.
-nfs  
+nfs
 Use the File::NFSLock module for locking. This is fast and works across
 NFS, but requires you to install the
 <a href="http://search.cpan.org/perldoc?File::NFSLock"
 class="external text" rel="nofollow">File::NFSLock</a> module from CPAN.
-mysql  
+mysql
 Use the locking in the [MySQL](MySQL "MySQL") database. It is handy if
 you already have a MySQL database up and running. The full format of
 this value is:
@@ -566,17 +566,17 @@ use the feature, set it to a false (zero) value:
 
      renderfarm = 0
 
-slave_timeout  
+slave_timeout
 When [running a GBrowse2 render
 farm](Running_a_GBrowse2_render_farm "Running a GBrowse2 render farm"),
 this option controls how long the master server will wait for one of its
 slaves before it times out and considers the slave "down". The units are
 seconds, 45 seconds by default.
-global_timeout  
+global_timeout
 If a database query, search or plugin takes longer than the number of
 seconds given by this option, GBrowse will time out and return an error
 to the user. The default is 60 seconds.
-allow remote callbacks  
+allow remote callbacks
 If this option is set to a true (non-zero) value, then uploaded and
 remote track files will be able to contain configuration stanzas with
 Perl callbacks. The callbacks will be executed if and only if the Perl
@@ -606,7 +606,7 @@ per-datasource basis in datasource-specific configuration files simply
 by inserting the option into the \[GENERAL\] section of the
 datasource-specific config file.
 
-autocomplete  
+autocomplete
 This is a true/false option. If true, then any databases that have the
 "autocomplete" option set will be searched when the user types three or
 more letters into the GBrowse search field. Proposed matches will be
@@ -619,11 +619,11 @@ database for public tracks via autocomplete. See
 [GBrowse_Configuration/Authentication](GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication")
 for more information on the user account database.
 
-balloon tips  
+balloon tips
 This is a true/false option. If true, popup balloons are activated such
 that when the user mouses over a feature, additional information about
 that feature appears in a balloon.
-titles are balloons  
+titles are balloons
 This is a true/false option. If true, popup balloons are automatically
 populated by default information about the feature unless a track has a
 **balloon hover** option that overrides the content. If false, then you
@@ -648,18 +648,18 @@ stylesheet, as in the following example:
                   http://www.example.com/hires.css(paper,projection)
                   http://www.example.com/audio.css(audio)
 
-truecolor  
+truecolor
 If set to a true value, then the tracks will be rendered as full-color
 24-bit images, improving appearance at the cost of larger images. The
 effect may be noticeable on a slow internet connection.
-truetype  
+truetype
 If set to a true value, then the fonts in track images will be rendered
 using truetype fonts installed on the server. A value of "1" selects a
 safe default font. A string value can be used to select a particular
 font, such as "Droid Sans" or "Helvetica-9". This option only works on
 versions of GBrowse from 2.55 onward, and only if Bio::Graphics 2.33 or
 higher is installed.
-plugins  
+plugins
 This option selects which, if any, of the GBrowse plugins to offer to
 the user. It is a space-delimited list of plugin names. Plugins are Perl
 .pm modules that can be found in the plugins subdirectory of the
@@ -667,7 +667,7 @@ GBrowse2 configuration directory. Select the ones you wish to activate,
 and put their in this configuration directive, minus the ".pm"
 extension. See GBrowse2
 Plugins for a description of what each plugin does.
-overview grid, region grid, detail grid  
+overview grid, region grid, detail grid
 These three options control whether the background grid should be
 displayed in the overview, region, and detail panels by default. They
 are either true (1) or false (0) values. The user can later turn the
@@ -687,55 +687,55 @@ pixels, but offers the user a menu of five widths ranging from 450 to
     image widths    = 450 640 800 1024 1280
     default width   = 1024
 
-pad_left, pad_right  
+pad_left, pad_right
 These options control how much additional whitespace (in pixels) to
 surround the detail panel with on the left and the right. This is
 sometimes necessary for glyphs that need extra space to the left or
 right for additional information. An example of this is the [UCSC
 multiple alignment
 glyph](GBrowse_UCSC_Plugin_Install_HOWTO "GBrowse UCSC Plugin Install HOWTO").
-too many landmarks  
+too many landmarks
 This option controls the maximum number of results to return when the
 user performs a wildcard search on the database. The default is 100.
-hilite fill  
+hilite fill
 This option controls the interior color of the selection rectangle that
 appears when the user clicks and drags on a scalebar, as well as the
 highlighted region of the currently selected region. It accepts a
 [Bio::Graphics color
 value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options"), such
 as "beige:0.8" for a beige background at 80% opacity.
-hilite outline  
+hilite outline
 This option controls the outline color of the selection rectangle that
 appears when the user clicks and drags on a scalebar, as well as the
 highlighted region of the currently selected region. It accepts a
 [Bio::Graphics color
 value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options"), such
 as "red:0.8".
-hilite height  
+hilite height
 This option controls the height of the draggable region marker, which
 highlights the currently selected region
-overview bgcolor, region bgcolor, detail bgcolor  
+overview bgcolor, region bgcolor, detail bgcolor
 These three options control the background colors of the overview,
 region and detail panels respectively. They each accept [Bio::Graphics
 color
 value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options").
-grid color, grid major color  
+grid color, grid major color
 These options control the appearance of the grid lines in the overview,
 region and detail panels. The first controls the color of the minor grid
 lines, and the second controls the color of the major grid lines. They
 each accept a [Bio::Graphics color
 value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options").
-show sources  
+show sources
 Ordinarily GBrowse generates a popup menu showing all configured data
 sources; the user can change the datasource by selecting from this menu.
 To inhibit generation of this menu, set **show sources** to zero.
-instructions section, upload_tracks section, search section, overview section, region section, detail section, tracks section, display_settings section  
+instructions section, upload_tracks section, search section, overview section, region section, detail section, tracks section, display_settings section
 These options control whether a section is toggled open initially
 ("open"), or toggled closed ("closed"). In addition, for the "overview
 section", "region section" and "detail section", you can specify a value
 of "hide" in which case the section isn't shown at all. Generally this
 only makes sense for the region section.
-category default state  
+category default state
 As described in the track configuration section, a track can be placed
 in a category or subcategory. The categories can be toggled open and
 closed. The "category state" option, described next, allows you to
@@ -769,7 +769,7 @@ the details tracks back and forth to instantly see more of the image.
 Extra wide images are preloaded from the server to accomplish this, so
 it may affect the initial image load time.
 
-details multiplier  
+details multiplier
 How much extra image data to load. A value of 3.0 means that three times
 the viewable image width will be loaded. The default is 1.0, which means
 that fast track panning is turned off and GBrowse behaves as usual.
@@ -780,18 +780,18 @@ These settings are used by the
 [gbrowse_clean.pl](Gbrowse_clean.pl "Gbrowse clean.pl") script to remove
 stale temporary files of various sorts.
 
-expire cache  
+expire cache
 How long generated tracks will be cached before they are regenerated.
 This speeds up page load speed for frequently-accessed pages. The format
 is a number followed by a time unit, where units are **s** for second,
 **m** for minute, **h** for hour, **d** for day, **w** for week, and
 **M** for month. The default is "2h", or two hours.
-expire sessions  
+expire sessions
 This option controls how long the user's track configuration, which
 includes which tracks are turned on and their customized settings, will
 be remembered in his or her session. The format is the same as **expire
 cache** and is set to one month by default.
-expire uploads  
+expire uploads
 This option controls controls how long to keep user uploaded data for
 custom tracks on disk. It makes sense to keep it on disk for as long or
 longer than the session. Even if the user’s session expires, he can
@@ -808,7 +808,7 @@ DBI drivers installed on the system. See [Configuring the Uploaded Track
 Database](GBrowse_2.0_Install_HOWTO/Advanced#Configuring_the_Uploaded_Track_Database "GBrowse 2.0 Install HOWTO/Advanced")
 for detailed configuration information.
 
-upload_db_adaptor  
+upload_db_adaptor
 Which database backend to use for custom tracks. Valid options are
 "DBI::SQLite", "DBI::mysql", "berkeleydb" and "memory". The SQLite
 database backend combines great performance with little or no
@@ -821,23 +821,23 @@ The <a href="http://search.cpan.org/perldoc?DBI::mysql"
 class="external text" rel="nofollow">DBI::mysql</a> backend has the best
 performance, but needs additional configuration in order to make it
 possible for GBrowse to create and drop databases dynamically.
-upload_db_host  
+upload_db_host
 When using the DBI::mysql backend, this specifies the host on which the
 mysql DBMS is running. (Default "localhost").
-upload_db_user  
+upload_db_user
 When using the DBI::mysql backend, this specifies the user that has
 access to the mysql server. This user must have database create/drop
 privileges for databases beginning with the string "userdata\_".
 (Default "gbrowse").
-upload_db_pass  
+upload_db_pass
 When using the DBI::mysql backend, this specifies the password for the
 user named by **upload_db_user**. (Default no password).
-admin_account  
+admin_account
 The name of the administrator account that has privileges to upload and
 configure public tracks. See [The Admin
 Interface](GBrowse_2.0_Install_HOWTO/Advanced#The_Admin_Interface "GBrowse 2.0 Install HOWTO/Advanced")
 for more details.
-admin_dbs  
+admin_dbs
 The path used to store data files uploaded by the administrator named in
 **admin_account**. See [The Admin
 Interface](GBrowse_2.0_Install_HOWTO/Advanced#The_Admin_Interface "GBrowse 2.0 Install HOWTO/Advanced")
@@ -852,15 +852,15 @@ fix bugs. Their values are either 0 (no debugging messages) or 1
 will appear in the Apache error log, typically
 /var/log/apache2/error_log.
 
-debug  
+debug
 This turns on messages about general GBrowse operations.
-debug_external  
+debug_external
 This turns on messages concerning the uploading and processing of
 user-supplied tracks, as well as tracks fetched from remote sources via
 the
 <a href="http://www.biodas.org" class="external text" rel="nofollow">DAS
 protocol</a>.
-debug_plugins  
+debug_plugins
 This turns on debugging messages concerning the operation of GBrowse's
 user-contributed [plugins](GBrowse_Plugins "GBrowse Plugins").
 
@@ -892,7 +892,7 @@ header, footer
 
 These two options place HTML at the top or bottom of the page. Example:
 
-     header = 
+     header =
 
 You can create an unlimited number of subtracks within a single major
 track in order to group a series of datasets that are logically linked,
@@ -1193,7 +1193,7 @@ default formatting of these features. You can modify this with a
 callback that word-wraps the value into lines of at most 60 characters,
 and puts the whole thing in a \<pre\> section.
 
-  
+
 
     [gene:details]
     Translation = sub {
@@ -1296,18 +1296,18 @@ formatted like this one:
 The **metadata** option has multiple suboptions (note the required
 leading whitespace in front of them):
 
-**-description**  
+**-description**
 A free text description of the data source. It can span multiple lines.
 
-**-maintainer**  
+**-maintainer**
 An email address for the person or mailing list to contact concerning
 issues with the data source.
 
-**-created**,**-modified**  
+**-created**,**-modified**
 The creation and modification date of the resource, in the format
 YYYY-MM-DD.
 
-**-authority**,**-coordinates_version** and **-coordinates**  
+**-authority**,**-coordinates_version** and **-coordinates**
 These fields establish the genome build and build version. The authority
 is a short prefix indicating the organization that is responsible for
 the build, such as "NCBI" (human), "WS" (WormBase), or SGD (Yeast), and
@@ -1320,14 +1320,14 @@ registered <a href="http://www.dasregistry.org/help_coordsys.jsp"
 class="external text" rel="nofollow">at the DAS registry</a>; you may
 register a new one if needed.
 
-**-source**  
+**-source**
 This describes the type of coordinate system used, either "Chromosome"
 or "Contig".
 
-**-testrange**  
+**-testrange**
 This provides an example range for new users to look at.
 
-**-species**,**-taxid**  
+**-species**,**-taxid**
 These indicate the species name (in long binomial format) and the
 <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/" class="external text"
 rel="nofollow">NCBI taxon id</a>.

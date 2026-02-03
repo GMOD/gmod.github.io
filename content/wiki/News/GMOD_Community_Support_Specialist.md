@@ -51,10 +51,9 @@ information for three references, to Hilmar Lapp, Assistant Director of
 Informatics, NESCent, at hlapp@nescent.org. Inquiries may be addressed
 to H. Lapp by email or by phone at 919.668.5288.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/02/23*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -7,7 +7,7 @@ The more bugs, the better the project! <a
 href="http://producingoss.com/en/getting-started.html#vc-and-bug-tracker-access#vc-and-bug-tracker-access"
 class="external autonumber" rel="nofollow">[1]</a>
 
-  
+
 
 - <a href="http://sourceforge.net/tracker/?group_id=27707&amp;atid=391291"
   class="external text" rel="nofollow">Browse the list of GMOD bugs</a>
@@ -15,7 +15,7 @@ class="external autonumber" rel="nofollow">[1]</a>
   <a href="http://sourceforge.net/projects/gmod/" class="external text"
   rel="nofollow">the GMOD SourceForge project</a>.
 
-  
+
 
 *The importance of a bug tracking system lies not only in its usefulness
 to developers, but in what it signifies for project observers. For many

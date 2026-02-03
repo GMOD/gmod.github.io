@@ -12,36 +12,36 @@ has been fully adopted.
 ``` de1
 #!/usr/bin/perl -w
 =head1 NAME
- 
+
 print-wiki-tables.pl
- 
+
 =head1 SYNOPSIS
- 
+
 Examples:
- 
+
   >print-wiki-tables.pl -m cv > cv.wiki
- 
+
 or
- 
+
   >print-wiki-tables.pl -all > allmodules.wiki
- 
+
 =head1 DESCRIPTION
- 
+
 The postgresql_autodoc script will create an HTML schema diagram. For example:
- 
+
  >postgresql_autodoc -f chado -u user -d chado --password=passwd -l .
- 
+
 This creates a "chado.html" file when the argument to "-f" is set to "chado" as
 in the example above. The HTML can be customized by modifying the
 html.tmpl file from the postgresql_autodoc package. Use the "-l" argument
 if you need to tell postgresql_autodoc where your custom html.tmpl file is.
- 
+
 The script prints out Wiki text for the tables in these modules, taken
 from chado.html. Run this script in the same directory as "chado.html" and
 pass the script the name of one or more Chado modules.
- 
+
 =cut
- 
+
 my $tables = {
 companalysis => [qw(
 analysis
@@ -110,7 +110,7 @@ phylonode_relationship
 phylonodeprop
 phylotree
 phylotree_pub)],
- 
+
 </pub => [qw(
 pub
 pub_dbxref
@@ -220,27 +220,27 @@ nd_experiment_dbxref
 nd_experiment_contact
 )],
 };
- 
+
 my ($help,@modules,$all);
- 
+
 GetOptions( "m=s" => \@modules,
             "h"   => \$help,
                            "all" => \$all );
 @modules = split(/,/,join(',',@modules));
 @modules = keys %$tables if ($all);
- 
+
 usage() if ($help | !@modules);
- 
+
 my $file = "chado.html";
- 
+
 my $wc = HTML::WikiConverter->new(dialect => 'MediaWiki');
- 
+
 my $html = extract($file);
- 
+
 my $wikitext = $wc->html2wiki($html);
- 
+
 my @tables = split /^(?===\s*Table:.+)/m, $wikitext;
- 
+
 for my $module (@modules) {
         print "No such module: $module\n" if (!exists $tables->{$module});
         for my $table (@tables) {
@@ -249,7 +249,7 @@ for my $module (@modules) {
                 }
         }
 }
- 
+
 sub extract {
         my $file = shift;
         local $/ = undef;
@@ -257,11 +257,11 @@ sub extract {
         my $str = <MYIN>;
         $str;
 }
- 
+
 sub usage {
         exec('perldoc',$0);
         exit(0);
 }
- 
+
 __END__
 ```

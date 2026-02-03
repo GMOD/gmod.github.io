@@ -106,7 +106,7 @@ addition of new modules for new data types. The existing modules are:
   biological collections
 - [WWW](Chado_WWW_Module "Chado WWW Module") -
 
-  
+
 
 ## Installation
 
@@ -121,13 +121,13 @@ choosing Unix. (See [Databases and
 GMOD](Databases_and_GMOD "Databases and GMOD") for more discussion.)
 Once you've installed your RDBMS you can install Chado.
 
-  
+
 
 ### Download a Stable Release of Chado
 
 See [Downloads](Downloads "Downloads")
 
-  
+
 
 ### Chado From SVN
 

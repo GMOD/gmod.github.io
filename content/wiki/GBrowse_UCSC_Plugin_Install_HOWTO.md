@@ -13,7 +13,7 @@ display them. It assumes that you already have a working installation of
 <a href="http://www.mysql.com/" class="external text"
 rel="nofollow">MySQL</a>.
 
-  
+
 
   Prerequisites](#Prerequisites)
 - [UCSC naming
@@ -194,7 +194,7 @@ Assembly databases are described by the dbDb table in the central
 database, hgcentral. Each assembly database contains a trackDb table
 that describes all tracks in that database.
 
-  
+
 
 ## Installation Overview
 
@@ -207,7 +207,7 @@ that describes all tracks in that database.
     glyph modules
 4.  Install and configure plugin(s).
 
-  
+
 
 ## Installation Details
 
@@ -263,7 +263,7 @@ multiz<em>N</em>waySummary, phastCons<em>N</em>way*</td>
 </tbody>
 </table>
 
-  
+
 
 ### Download mysql dump files from UCSC
 
@@ -508,7 +508,7 @@ data in the current region; try viewing a region that contains an exon
 or gene. Or the error log may contain a message that indicates what is
 missing.
 
-  
+
 
 ## Performance tweaks
 
@@ -523,7 +523,7 @@ and loading into MySQL.
     rsync -navP rsync://hgdownload.cse.ucsc.edu/mysql/$DB/$TABLE.\* \
       /var/lib/mysql/$DB/
 
-  
+
 
 ## Bug Reports and Support Requests
 
@@ -534,7 +534,7 @@ specifically about fetching data from hgdownload.cse.ucsc.edu, send to
 <a href="mailto:genome_mirror@soe.ucsc.edu" class="external free"
 rel="nofollow">mailto:genome_mirror@soe.ucsc.edu</a>.
 
-  
+
 
 ## AUTHORS
 

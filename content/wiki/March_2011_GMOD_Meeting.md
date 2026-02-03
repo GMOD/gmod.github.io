@@ -8,13 +8,13 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b7/March2011GMODMeetingLogo.png/900px-March2011GMODMeetingLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b7/March2011GMODMeetingLogo.png 2x"
 width="600" height="238" alt="March 2011 GMOD Community Meeting" />
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/17/March2011GMODMeeting.jpg/300px-March2011GMODMeeting.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/17/March2011GMODMeeting.jpg/450px-March2011GMODMeeting.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/17/March2011GMODMeeting.jpg/600px-March2011GMODMeeting.jpg 2x"
 width="300" height="153" alt="March2011GMODMeeting.jpg" />
 
-  
+
 This [GMOD community meeting](Meetings "Meetings") was held March 5-6
 2011, at <a href="http://www.nescent.org/" class="external text"
 rel="nofollow">NESCent</a> in Durham, North Carolina, as part of [GMOD
@@ -47,7 +47,7 @@ rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> in
 Toronto, Canada. OICR is the current home of both
 [GBrowse](GBrowse.1 "GBrowse") and [BioMart](BioMart "BioMart").
 
-  
+
 
   GMOD</span>](#About_GMOD)
 - [Registration](#Registration)
@@ -252,9 +252,9 @@ Assistant Professor of
 <a href="http://www4.ncsu.edu/~eastone2/" class="external text"
 rel="nofollow">Genetics</a> and
 <a href="http://www.stat.ncsu.edu/people/stone/" class="external text"
-rel="nofollow">Statistics</a>  
+rel="nofollow">Statistics</a>
 <a href="http://statgen.ncsu.edu/brcwebsite/home.php"
-class="external text" rel="nofollow">Bioinformatics Research Center</a>  
+class="external text" rel="nofollow">Bioinformatics Research Center</a>
 <a href="http://www.ncsu.edu/" class="external text"
 rel="nofollow">North Carolina State University</a>
 
@@ -275,7 +275,7 @@ to that much data. As sequencing prices continue to drop, many GMOD
 users may be doing similarly large projects in the not too distant
 future.
 
-  
+
 
 ## Friday: Introduction to GMOD
 
@@ -388,7 +388,7 @@ others**
 - Yes for newcomers, those with new developments that are relevant, and
   for those looking for potential help/collaboration
 
-  
+
 **Q: Please rate the meeting(s) using the following scale: 1 (not at
 all) to 3 (reasonably) to 5 (exceptionally).**
 
@@ -397,7 +397,7 @@ all) to 3 (reasonably) to 5 (exceptionally).**
 | How useful was the meeting? | 0% | 0% | 5% | 33% | 62% |
 | Was the meeting well run and organized? | 0% | 0% | 14% | 38% | 48% |
 
-  
+
 **Q: Was the meeting what you expected?**
 
 | No  | Somewhat | Yes | Other |
@@ -431,7 +431,7 @@ Longer responses:
 meet your expectations? (possible answers: Exceed, Met, Almost, No, and
 an explanation box.*
 
-  
+
 **Q: Which [presentations and sessions](#Agenda) at this meeting were
 the most useful or interesting?**
 
@@ -480,7 +480,7 @@ the most useful or interesting?**
   presentations by Scott Cain and Dave Emmert were especially
   interesting to me
 
-  
+
 **Q: Do you have suggestions for improving GMOD meetings in the
 future?**
 

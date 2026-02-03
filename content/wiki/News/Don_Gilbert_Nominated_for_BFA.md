@@ -37,13 +37,12 @@ your vote.* If you are not already a member you will need to
 class="external text" rel="nofollow">join</a>, but basic membership is
 free.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/04/01*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

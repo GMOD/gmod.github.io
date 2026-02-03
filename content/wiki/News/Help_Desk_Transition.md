@@ -43,14 +43,13 @@ well. It's a great job and there is no better community to work with.
 
 Thanks for everything. It's been a great three years.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk") (for one more
 month)
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/02*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

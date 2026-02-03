@@ -15,7 +15,7 @@ see the changes.
 
 ``` css
 /** CSS placed here will be applied to all skins */
- 
+
 /* making scraping a little easier */
 #ca-nstab-user { display: none !important; }
 #ca-talk { display: none !important; }
@@ -26,12 +26,12 @@ see the changes.
 #ca-formedit { display: none !important; }
 #ca-history { display: none !important;}
 #ca-viewsource { display: none !important; }
- 
+
 /* Don't display Main Page on main page.  Code from the MediaWiki Manual FAQ. */
-body.page-Main_Page .firstHeading { 
-  display:none; 
+body.page-Main_Page .firstHeading {
+  display:none;
 }
- 
+
 /* some hacks to get the floating logos to look nice */
 .logos .thumb, .componentBox .thumb { display: inline-block; width: 260px; text-align: center; }
 .logos .thumb { margin: 0 10px }
@@ -39,29 +39,29 @@ body.page-Main_Page .firstHeading {
 .logos .thumbimage, .componentBox .thumbimage { border: 1px solid transparent; }
 .logos .thumbinner .magnify, .componentBox .thumbinner .magnify { display: none; }
 .logos .thumbinner .thumbcaption, .componentBox .thumbinner .thumbcaption { text-align: center; }
- 
+
 html, body { font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; }
 tt, pre, .enter {
     font-family: "Lucida Console", Monaco,"Courier New", Courier, monospace;
 }
- 
+
 .floatL { float: left; }
 .clearL { clear: left; }
 .floatR { float: right; }
 .clearR { clear: right; }
 .clear { clear: both }
- 
+
 .C { text-align: center; }
 .R, .R td { text-align: right; }
 .noborder { border: 0 none;}
 .zero { margin: 0; padding: 0; border: 0 none; }
- 
+
 blockquote {
 margin-left: 2em;
 border-left: #aaa solid .25em;
 padding-left: 2em;
 }
- 
+
 /* Used in Site Guidelines page to highlight guidelines */
 .guideline {
   background: #eeffee;  /* light green */
@@ -69,8 +69,8 @@ padding-left: 2em;
   border: 1px solid #9999ff;
   padding: 0.5em;
 }
- 
- 
+
+
 /* Adding wikitable and prettytable from wikipedia. */
 /* wikitable/prettytable class for skinning normal tables
 .wikitable {
@@ -79,63 +79,63 @@ padding-left: 2em;
     border: 1px #aaa solid;
     border-collapse: collapse;
 }
- 
+
 .wikitable th, .wikitable td {
     border: 1px #aaa solid;
     padding: 0.2em 0.4em;
 }
- 
+
 .wikitable th {
     background: #f2f2f2;
     text-align: center;
 }
- 
+
 .wikitable caption {
     margin-left: inherit;
     margin-right: inherit;
     font-weight: bold;
 } */
- 
+
 .prettytable code {
     background-color: transparent;
 }
- 
+
 /* ======================================================= */
 /* Special settings for Chado table descriptions, themselves
  * shown in mediawiki tables. */
- 
+
 .chadotable {
     background: #ffddbb;
 }
- 
+
 .chadotable th {
     background: #ffccaa;
 }
- 
- 
+
+
 /* ======================================================= */
 /* Highlight parts of shell script interactions */
- 
+
 /* Highlight text that needs to be typed by the user. */
 div.enter {
 padding: 1em;
 border: 1px dashed #2F6FAB;
 background-color: #F9F9F9;
 }
- 
+
 .enter {
     font-weight: bold;
     color: #004444;
 }
- 
+
 /* Highlight commands that users should not do. */
 .dont {
     background-color: #ffff77;
 }
- 
+
 /* ========================================================= */
 /* Tutorial Headers */
- 
+
 .tutorialheader {
     font-size: 160%;
     margin: 0px auto; /* center it */
@@ -147,11 +147,11 @@ background-color: #F9F9F9;
 .tutorialheader td {
     padding: 1em;
 }
- 
- 
+
+
 /* ========================================================= */
 /* Styles for the WikiCategoryTagCloud extension. */
- 
+
 .tagcloud {
 /*        width: 98%; */
         text-align: center;
@@ -166,53 +166,53 @@ background-color: #F9F9F9;
  }
 /* ========================================================== */
 /* Indent a whole section, without any other emphasis. */
- 
+
 .indent {
     margin: 0 2em;
 }
- 
+
 /* ========================================================== */
 /* Emphasize a whole section
  * Details of this may change over time as other types of boxes are added.
  * For example, font size may be increased, or the border color changed.
  */
- 
+
 .emphasisbox {
     margin: 2em 10%;
     padding: 1em;
     border: 2px #004040 solid;
     background-color: #ffffdd;
 }
- 
+
 /* ========================================================== */
 /* Quote box
  * Less emphasis than, well, an emphasis box!
  */
- 
+
 .quotebox {
     margin: 1em;
     padding: .5em 1em;
     border-left: 3px #cccccc solid;
 }
- 
+
 /* ========================================================== */
-/* Image cloud at bottom of home page (and maybe elsewhere?) 
+/* Image cloud at bottom of home page (and maybe elsewhere?)
  */
- 
+
 .imagecloud img {
     padding-bottom: 0.5em;
     padding-right: 0.5em;
 }
- 
+
 /* ========================================================== */
 /* Get rid of the default MediaWiki book. We are not an encyclopedia.  To restore it, comment out the body statement below.
 */
 body { background: #f3f3f3; }
- 
+
 /* ========================================================== */
 /* Floating links box on the component pages */
 .componentBox {
-    float: right; 
+    float: right;
     margin-left: 1em;
     margin-bottom: 1em;
     padding-left: 0.5em;
@@ -223,15 +223,15 @@ body { background: #f3f3f3; }
     text-align: center;
     width: 150px;
 }
- 
+
 .componentBox li a { /* display: block; */ }
 .componentBox ul, .componentBox ol { list-style-type: none; list-style-image: none; margin: 0 }
 .componentBox .compBoxHdr { margin-top: 0.5em; color: #000; background: #ADD8E6; padding: 0.5em; font-weight: bold; clear: left; }
- 
+
 .componentBox img {
 max-width: 100%;
 }
- 
+
 .page-Main_Page .componentBox {
     text-align: left;
     width: 20em;
@@ -246,29 +246,29 @@ max-width: 100%;
         width: 50%;
     }
 }
- 
+
 .page-Main_Page .compBoxHdr {
 text-align: center;
 }
 .page-Main_Page .componentBox ul {
 font-weight: bold;
 }
- 
+
 .page-Main_Page .componentBox .rss li {
 font-weight: normal;
 }
- 
+
 .page-Main_Page .componentBox ul ul {
 font-weight: normal;
 padding-left: 1em;
 }
- 
-/* 
+
+/*
 .small {
 font-size: 10px;
 line-height: 19px;
 }
- 
+
 pre, .enter {
 line-height: 19px;
 }
@@ -276,13 +276,13 @@ line-height: 19px;
 /* niceCategoryList lame css
 table.category_link td { padding-left: 1 em; padding-right: 1 em; }
 */
- 
+
 .RSSReader-head {
   text-align: center;
   padding: 0.2em;
   border-bottom: 0.1em solid #aaa;
 }
- 
+
 div.rss {
     margin: 0 0 20px 0;
     padding: 5px;
@@ -294,11 +294,11 @@ div.rss h3 {
     margin: 0;
 }
 #content .rss h3 a { color: #4E507F }
- 
+
 cite { font-style: normal; }
 .hcite .journal { font-style: italic; }
 .hcite .volume { font-weight: bold; }
- 
+
 /* class for news footer items. Adding clear */
 .newsfooter {
 font-size: .9em;
@@ -309,13 +309,13 @@ padding-left: 1em;
 padding-right: 1em;
 clear: both;
 }
- 
+
 .intro { font-size: 1.25em; }
- 
+
 .impactstory-embed, .altmetric-embed { float: right; margin-left: 1em; }
 .impactstory-embed ul, .altmetric-embed ul { list-style-image: none; }
 .references>li { clear: right; padding: .5em 0; border-top: 1px solid #ccc }
- 
+
 .sponsorbox {
 clear: right;
 float: right;
@@ -326,7 +326,7 @@ float: left;
 width: 140px;
 margin-top: 1.5em;
 }
- 
+
 .img-div-r .floatright {
 min-height: 50px;
 }

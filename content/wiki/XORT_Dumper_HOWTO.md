@@ -291,7 +291,7 @@ under feature_relationship XORT knows to join the gene feature to
 feature_relationship via object_id and then follow the subject_id back
 to the feature table to fetch the CDS.
 
-  
+
 
 ## More Information
 

@@ -242,7 +242,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" /> | A free VMware player is available for [Microsoft Windows](Category%253AWindows "Category%253AWindows") and [Linux](Category%253ALinux "Category%253ALinux") [operating systems](Glossary#Operating_System "Glossary") from <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it. There are multiple versions. Be sure to download a version that can run on your laptop. |
 
-  
+
 
 ### VMware on Mac OS X
 

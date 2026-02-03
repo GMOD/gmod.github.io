@@ -4,7 +4,7 @@ title: "CMAE"
 # CMAE
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
 Work on CMAE was started, but never completed.

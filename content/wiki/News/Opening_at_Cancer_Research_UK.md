@@ -40,13 +40,12 @@ A <a href="http://webapps.qmul.ac.uk/hr/vacancies/jobs.php?id=2039"
 class="external text" rel="nofollow">related position</a> in the same
 group is also open. Applications close 12 November.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/25*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -79,327 +79,327 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 
 The following 14 files are in this category, out of 14 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="2007 11 05 CMap GMOD.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [2007 11 05 CMap
-  GMOD.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/2007_11_05_CMap_GMOD.ppt "File:2007 11 05 CMap GMOD.ppt")  
-  127 KB  
+  GMOD.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/2007_11_05_CMap_GMOD.ppt "File:2007 11 05 CMap GMOD.ppt")
+  127 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="BenFaga GMOD June 2006.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [BenFaga GMOD June
-  2006...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/BenFaga_GMOD_June_2006.ppt "File:BenFaga GMOD June 2006.ppt")  
-  160 KB  
+  2006...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/BenFaga_GMOD_June_2006.ppt "File:BenFaga GMOD June 2006.ppt")
+  160 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Cain GI poster.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Cain GI
-  poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/Cain_GI_poster.pdf "File:Cain GI poster.pdf")  
-  522 KB  
+  poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/Cain_GI_poster.pdf "File:Cain GI poster.pdf")
+  522 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="CMap Overview.pdf" />
 
-  
 
-  
 
-  
 
-  [CMap Overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/CMap_Overview.pdf "File:CMap Overview.pdf")  
-  3.03 MB  
 
-  
 
-  
 
-- 
+  [CMap Overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/CMap_Overview.pdf "File:CMap Overview.pdf")
+  3.03 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Cmap update sept 03.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [Cmap update sept
-  03.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/be/Cmap_update_sept_03.ppt "File:Cmap update sept 03.ppt")  
-  18 KB  
+  03.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/be/Cmap_update_sept_03.ppt "File:Cmap update sept 03.ppt")
+  18 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Cmap-050516.pdf" />
 
-  
 
-  
 
-  
 
-  [Cmap-050516.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/Cmap-050516.pdf "File:Cmap-050516.pdf")  
-  201 KB  
 
-  
 
-  
 
-- 
+  [Cmap-050516.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/Cmap-050516.pdf "File:Cmap-050516.pdf")
+  201 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="CMapGBrowseSMBE2009.pdf" />
 
-  
 
-  
 
-  
 
-  [CMapGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/CMapGBrowseSMBE2009.pdf "File:CMapGBrowseSMBE2009.pdf")  
-  2.51 MB  
 
-  
 
-  
 
-- 
+  [CMapGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/CMapGBrowseSMBE2009.pdf "File:CMapGBrowseSMBE2009.pdf")
+  2.51 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="CMapGenomeInformatics2009.pdf" />
 
-  
 
-  
 
-  
 
-  [CMapGenomeInformatics2...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/CMapGenomeInformatics2009.pdf "File:CMapGenomeInformatics2009.pdf")  
-  393 KB  
 
-  
 
-  
 
-- 
+  [CMapGenomeInformatics2...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/CMapGenomeInformatics2009.pdf "File:CMapGenomeInformatics2009.pdf")
+  393 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/103px-CMapLogo.png"
   width="103" height="120" alt="CMapLogo.png" />
 
-  
 
-  
 
-  
 
-  [CMapLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/33/CMapLogo.png "File:CMapLogo.png")  
-  40 KB  
 
-  
 
-  
 
-- 
+  [CMapLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/33/CMapLogo.png "File:CMapLogo.png")
+  40 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120"
   alt="GMODToolsForComparativeGenomicsIGERTPoster.pdf" />
 
-  
 
-  
 
-  
 
-  [GMODToolsForComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf "File:GMODToolsForComparativeGenomicsIGERTPoster.pdf")  
-  714 KB  
 
-  
 
-  
 
-- 
+  [GMODToolsForComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf "File:GMODToolsForComparativeGenomicsIGERTPoster.pdf")
+  714 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Gramene-cmap-pag-poster-2005.pdf" />
 
-  
 
-  
 
-  
 
-  [Gramene-cmap-pag-poste...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Gramene-cmap-pag-poster-2005.pdf "File:Gramene-cmap-pag-poster-2005.pdf")  
-  505 KB  
 
-  
 
-  
 
-- 
+  [Gramene-cmap-pag-poste...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Gramene-cmap-pag-poster-2005.pdf "File:Gramene-cmap-pag-poster-2005.pdf")
+  505 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="PAG2010CMap3D.pdf" />
 
-  
 
-  
 
-  
 
-  [PAG2010CMap3D.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/PAG2010CMap3D.pdf "File:PAG2010CMap3D.pdf")  
-  2.96 MB  
 
-  
 
-  
 
-- 
+  [PAG2010CMap3D.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/PAG2010CMap3D.pdf "File:PAG2010CMap3D.pdf")
+  2.96 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120"
   alt="ISyIPGMODforComparativeGenomics.pdf" />
 
-  
 
-  
 
-  
 
-  [ISyIPGMODforComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf "File:ISyIPGMODforComparativeGenomics.pdf")  
-  14.44 MB  
 
-  
 
-  
 
-- 
+  [ISyIPGMODforComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf "File:ISyIPGMODforComparativeGenomics.pdf")
+  14.44 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="PeanutBase PAG2015 Poster.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [PeanutBase PAG2015
-  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")  
+  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")
   3.35 MB

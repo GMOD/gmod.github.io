@@ -14,7 +14,7 @@ know if you'd like to make changes now.
 - add type_id to genotype (can be null)
 - add genotypeprop
 
-  
+
 **Phenotype module**
 
 - phenotype table
@@ -74,7 +74,7 @@ some of the columns in the phenotype table, if we go ahead and separate
 the actual phenotype (EQ model, or anything else) from the measurement
 (the value that would remain in the phenotype table)
 
-  
+
 
 ------------------------------------------------------------------------
 
@@ -82,7 +82,7 @@ the actual phenotype (EQ model, or anything else) from the measurement
 which requires adding a cvalue_id , and also raises the question if this
 is a good place for it.
 
-  
+
 **Suggestion**
 
 - add a type_id to phenotype_cvterm (solve the post-composed terms

@@ -93,7 +93,7 @@ The first CPAN release is expected to be early next year.
   class="external text"
   rel="nofollow">gmod-ware-users@lists.sourceforge.net</a>.
 
-  
+
 
 ## Feedback Wanted
 
@@ -111,7 +111,7 @@ feature requests, questions, and comments to
 <a href="mailto:gmod-ware-users@sourceforge.net" class="external text"
 rel="nofollow">gmod-ware-users@sourceforge.net</a>.
 
-  
+
 
 ## Acknowledgments
 
@@ -119,7 +119,7 @@ This software was developed for dictyBase at the Center for Genetic
 Medicine at Northwestern University, which is funded by NIH Grants
 GM64426 and HG0022.
 
-  
+
 
 ## Support
 

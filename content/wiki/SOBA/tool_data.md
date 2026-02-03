@@ -114,7 +114,7 @@ A README and INSTALL document are also included with SOBAcl. \| papers =
 \| presentations = \| tutorials =
 
 <a href="../SOBA_Tutorial" class="mw-redirect"
-title="SOBA Tutorial">SOBA Tutorial</a>  
+title="SOBA Tutorial">SOBA Tutorial</a>
 taught as part of the [2013 GMOD Summer
 School](../2013_GMOD_Summer_School "2013 GMOD Summer School")
 

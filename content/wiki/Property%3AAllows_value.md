@@ -9,7 +9,7 @@ but can be used just like any other
 <a href="https://www.semantic-mediawiki.org/wiki/Property"
 class="external text" rel="nofollow">user-defined property</a>.
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Allows value"
@@ -93,4 +93,4 @@ source code  ,
 </table>
 
 Retrieved from
-"[http://gmod.org/wiki/Property%253AAllows_value#SMWResults](/wiki/Property%253AAllows_value#SMWResults)"
+"http://gmod.org/wiki/Property%253AAllows_value#SMWResults"

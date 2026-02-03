@@ -8,7 +8,7 @@ for implementing GMOD components at your organization. Requirements for
 specific components can be found on [each component's
 page](GMOD_Components "GMOD Components").
 
-  
+
 
   Administrator</span>](#GMOD_Systems_Administrator)
   - [Qualifications and
@@ -50,7 +50,7 @@ have. In addition, we recommend having one of your computing support
 staff interview your candidates. They are best suited to determine if a
 candidate has the technical qualifications or not.
 
-  
+
 **Installing and Configuring Software**
 
 Most GMOD software relies on well-established programming languages and
@@ -64,7 +64,7 @@ ways of installing these packages; your sysadmin should be familiar with
 how to install software and how to diagnose and fix a failed
 installation.
 
-  
+
 **Backups**
 
 The importance of backing up is too often a lesson that is learned after
@@ -80,7 +80,7 @@ Some painfully-learned advice: if you do not have a protocol to follow,
 **document the steps involved in setting up software**, and **make a
 backup when you have the system working**.
 
-  
+
 **Finding and Fixing Problems**
 
 Computers are complex systems and diagnosing problems is part science
@@ -90,7 +90,7 @@ have had enough experience to know, for example, that many technologies
 support debuggers and logging, two things that are enormously helpful
 when investigating problems.
 
-  
+
 **Communication**
 
 Your sys admin needs good written and oral communication skills. They
@@ -118,7 +118,7 @@ tweaks had to be done to get things to work.
 A good candidate will believe in the value of documentation, and will
 write *and* maintain it.
 
-  
+
 **Credentials and Professionalism**
 
 Does a sysadmin need a degree in Computer Science? **No.**
@@ -143,7 +143,7 @@ What does a *professional attitude* mean in this context?
   users your project may have, your organization's sys admins, and the
   larger GMOD community.
 
-  
+
 
 ## Hardware and Software
 
@@ -173,7 +173,7 @@ started with GMOD software without the bother of installation.
 Cost-wise, cloud computing compares very favourably to hosting your own
 hardware, and in terms of flexibility, it cannot be beaten.
 
-  
+
 
 ### Operating System
 
@@ -190,7 +190,7 @@ on your personal computer is less important.
 A discussion of the pros and cons of using different operating systems
 in GMOD follows.
 
-  
+
 
 #### Unix, Linux, and Mac OS
 
@@ -202,7 +202,7 @@ is a Unix variant with the MacOS GUI on top of it.
 Sometimes they include Linux and/or MacOS and sometimes they don't. All
 definitions of Unix include Unix variants that are not Linux or Mac OS.
 
-**Linux**   
+**Linux**
 ***Linux is the default operating system for GMOD and you are strongly
 encouraged to use Linux for your GMOD implementation.***
 
@@ -211,7 +211,7 @@ GMOD implementations use Linux as their operating system. If you need
 help with something and you are running on Linux, then the majority of
 the GMOD community can potentially help you with your problem. This is
 much less true if you are running on a different operating system.
-Which Linux?   
+Which Linux?
 The official
 <a href="http://en.wikipedia.org/wiki/Linux_distribution" class="extiw"
 title="wp:Linux distribution">Linux distributions</a> of GMOD are
@@ -230,7 +230,7 @@ to pick CentOS or Ubuntu, and if you are new to Linux, you will likely
 find Ubuntu easier to use. If you already have another version of Linux
 running and you don't want to switch then you can probably use that
 distribution without problems.
-Mac OS   
+Mac OS
 <a href="http://www.apple.com/macosx/" class="external text"
 rel="nofollow">Mac OS</a> from
 <a href="http://www.apple.com" class="external text"
@@ -242,7 +242,7 @@ roots, the difference between MacOS and a typical Linux distribution is
 greater than the difference between any two Linux distributions. If you
 run GMOD on Apples, you will need to do more work to set things up then
 if you were running on Linux.
-Other Unix   
+Other Unix
 This category covers any non-Linux, non-Mac OS version of Unix. This
 includes operating systems like Solaris, HP-UX, AIX, FreeBSD, and a
 multitude of others as well. These systems are all Unix based but are

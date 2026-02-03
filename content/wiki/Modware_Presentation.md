@@ -122,11 +122,11 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
       -file       => "../data/fake_chromosome.txt",
       -format => 'fasta'
    );
- 
+
    # Bio::SeqIO will return a Bio::Seq object which
    # Modware uses as its representation
    my $seq = $seq_io->next_seq();
- 
+
    my $reference_feature = new Modware::Feature(
       -type              => 'chromosome',
       -bioperl          => $seq,
@@ -134,12 +134,12 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
       -name            => 'Fake',
       -source          => 'GMOD 2007 Demo'
    );
- 
+
    # Inserts chromosome into database
    $reference_feature->insert();
 ```
 
-  
+
 
 ##### Problem 1 - Create and Insert a Gene
 
@@ -210,10 +210,10 @@ my $gene_feature = new Modware::Feature(
     -description  => 'A test gene for GMOD meeting',
     -source         => 'GMOD 2007 Demo'
 );
- 
+
 $gene_feature->add_synonym( 'mulder' );
 $gene_feature->add_synonym( 'scully' );
- 
+
 # inserts object into database
 $gene_feature->insert();
 print 'Inserted gene with feature_id:'.$gene_feature->feature_id()."\n";
@@ -241,17 +241,17 @@ my $exon_1   = new Bio::SeqFeature::Gene::Exon (
    -strand      => 1,
    -is_coding => 1
 );
- 
+
 my $exon_2   = new Bio::SeqFeature::Gene::Exon (
    -start         => 14687,
    -end          => 14720,
    -strand      => 1,
    -is_coding => 1
 );
- 
+
 # Next, create transcript feature to 'hold' exons (using Bioperl)
 my $bioperl_mrna = new Bio::SeqFeature::Gene::Transcript();
- 
+
 # Add exons to transcript (using Bioperl)
 $bioperl_mrna->add_exon( $exon_1 );
 $bioperl_mrna->add_exon( $exon_2 );
@@ -271,10 +271,10 @@ the chromosome.
          -source            => 'GMOD 2007 Demo',
          -reference_feature => $reference_feature
      );
- 
+
      # Associate mRNA to gene (required for insertion)
      $mrna_feature->gene( $gene_feature );
- 
+
     # inserts object into database
      $mrna_feature->insert();
 ```
@@ -301,7 +301,7 @@ Modware and Bioperl methods.
 ``` de1
 use Modware::Gene;
 use GMODWriter;
- 
+
 my $xfile_gene = new Modware::Gene( -name => 'xfile' );
 GMODWriter->Write_gene_report( $xfile_gene );
 ```
@@ -321,7 +321,7 @@ package GMODWriter;
 sub Write_gene_report {
 my ($self, $gene)      = @_;
 my $symbol = $gene->name();
- 
+
 my @synonyms = @{ $gene->synonyms() };
 my $syn_string  = join ",", @synonyms;
 my $description = $gene->description();
@@ -337,14 +337,14 @@ print "symbol: $symbol\n";
 print "synonyms: $syn_string\n";
 print "description: $description\n";
 print "type: $type\n";
- 
+
 my $count = 0;
 foreach my $exon (@exons ) {
    $count++;
    print "exon${count} start: ".$exon->start()."\n";
- 
+
    print "exon${count} end: ".$exon->end()."\n";
- 
+
   }
   print "$fasta";
 }
@@ -360,23 +360,23 @@ the changed record. Regenerate gene report
  use Modware::Gene;
  use Modware::DBH;
  use GMODWriter;
- 
+
  eval{
- 
+
     # get xfile gene
     my $xfile_gene = new Modware::Gene( -name => 'xfile' );
- 
+
     # change the name
     $xfile_gene->name( 'x-file' );
      # write changes to database
     $xfile_gene->update();
- 
+
     # we can use the original object if we want, but instead
     # we refetch from the database to 'prove' the name has been changed
     my $xfile_gene2 = new Modware::Gene( -name => 'x-file' );
     # use our GMODWriter package to write report for x-file
     GMODWriter->Write_gene_report( $xfile_gene2 );
- 
+
  };
  if ($@){
     warn $@;
@@ -384,7 +384,7 @@ the changed record. Regenerate gene report
  }
 ```
 
-  
+
 
 ##### Problem 4 - Search and Display Results
 
@@ -399,15 +399,15 @@ results produce the following simple result list (organism will vary):
      use Modware::Gene;
      use Modware::DBH;
      use GMODWriter;
- 
+
      # find genes starting with 'x-'
      my $results = Modware::Search::Gene->Search_by_name( 'x-*' );
- 
+
      # write the search results
      GMODWriter->Write_search_results( $results )
 ```
 
-  
+
 
 ##### Problem 4 - Search and Display Results
 
@@ -418,7 +418,7 @@ results produce the following simple result list (organism will vary):
        1324    x-men   Xenopus laevis
        1325    x-ray   Xenopus laevis
 
-  
+
 
 ``` de1
 sub Write_search_results {
@@ -442,24 +442,24 @@ sub Write_search_results {
 ``` de1
  # get the xray gene
  my $xray = new Modware::Gene( -name => 'x-ray' );
- 
+
 # set is_deleted = 1, this will 'hide' the gene from searches,
 # also sets the is_available to 0, the gene is no longer visible
 # to a search.
- 
+
  $xray->is_deleted(1);
- 
+
  # write change to database
  $xray->update();
- 
+
  # find genes starting with 'x-'
  my $results = Modware::Search::Gene->Search_by_name( 'x-*' );
- 
+
  # write the search results
  GMODWriter->Write_search_results( $results )
 ```
 
-  
+
 
 ##### Other Modware Highlights
 
@@ -503,7 +503,7 @@ sub Write_search_results {
   - Possible: trade-off between simplicity and functionality
 - Send us your ideas!
 
-  
+
 
 ##### Discussion
 

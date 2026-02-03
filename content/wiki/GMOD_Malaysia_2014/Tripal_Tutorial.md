@@ -3967,7 +3967,6 @@ rel="nofollow">https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel</a
 and try to attend one of the monthly developer's meetings to discuss the
 desired extensions.
 
-:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [Tripal](../Category%253ATripal "Category%253ATripal")

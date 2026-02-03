@@ -46,7 +46,7 @@ width="200" height="171" alt="Part of GMOD Europe 2010" /></a>
 </tbody>
 </table>
 
-  
+
 
 How are we going to visualize and exploit (or even cope with) the world
 three years from now, when small labs may be able to fully sequence 500
@@ -120,11 +120,11 @@ in a number of ways:
 The discussion went on for over three hours. It is divided into two
 sections here:
 
-[Conceptual](#Conceptual)  
+[Conceptual](#Conceptual)
 How does our conceptual model of the information change in this new
 world.
 
-[Towards Solutions](#Towards_Solutions)  
+[Towards Solutions](#Towards_Solutions)
 Some ideas on how we might tackle this new world with software.
 
 ### Conceptual

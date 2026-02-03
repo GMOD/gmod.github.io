@@ -20,7 +20,7 @@ href="http://storify.com/gmodproject/2013-gmod-meeting-and-biocuration"
 class="external text" rel="nofollow">Archived tweets from the
 meeting</a>
 
-  
+
 
   Agenda](#Agenda)
   - [Friday 5th
@@ -171,7 +171,7 @@ rel="nofollow">Demeter</a>: A data-harvester for biological sources**
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2a/GMOD2013_BananaGenomeHub.pdf"
   class="internal" title="GMOD2013 BananaGenomeHub.pdf">Slides</a>
 
-  
+
 **<a href="http://wiki.galaxyproject.org/CloudMan" class="external text"
 rel="nofollow">Galaxy CloudMan</a> Workshop** ([Dave
 Clements](User%253AClements "User%253AClements"))
@@ -183,7 +183,7 @@ href="https://meetings.webex.com/collabs/#/meetings/detail?uuid=IAGLKVBIA8I661U6
 class="external free"
 rel="nofollow">https://meetings.webex.com/collabs/#/meetings/detail?uuid=IAGLKVBIA8I661U6ZAQFISZNV2-9RCJ</a>
 
-  
+
 
 ## Meeting Assessment
 

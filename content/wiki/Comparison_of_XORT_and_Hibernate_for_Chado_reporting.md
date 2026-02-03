@@ -8,13 +8,13 @@ that it is no longer relevant given the technological changes that have
 occurred with the databases and ORM technologies discussed herein. It is
 left here for historical purposes.</span>
 
-  
+
 **Comparison of [XORT](XORT.1 "XORT") and
 <a href="http://www.hibernate.org/" class="external text"
 rel="nofollow">Hibernate</a> for Chado reporting** - written by Josh
 Goodman, FlyBase - Indiana University
 
-**Introduction**  
+**Introduction**
 At <a href="http://flybase.org/" class="external text"
 rel="nofollow">FlyBase</a> we are currently in the process of migrating
 all our existing data into Chado. In order to deal with data in this new
@@ -56,7 +56,7 @@ experience can prove to be useful in this respect.
 - <a href="http://www.postgresql.org/" class="external text"
   rel="nofollow">Postgres 8.0</a>
 
-**Setting up Hibernate**  
+**Setting up Hibernate**
 In order to use Hibernate you need two things, the Hibernate XML mapping
 files and java code to set up the objects that will be populated.
 Hibernate mapping files are usually set up by hand but the JBOSS Eclipse
@@ -79,14 +79,14 @@ Once this was fixed, the JBOSS hibernate plugin expertly read our
 schema, generated all of our XML mapping files, and the necessary java
 code.
 
-**Setting up XORT**  
+**Setting up XORT**
 Setting up XORT is fairly simple if you've installed perl modules
 before. The trickiest part is making sure that the ddl.properties file
 that describes your schema matches the actual schema that is in the
 database. Once that is done all you need to do is write a dumpspec to
 dump the data you want.
 
-**Results**  
+**Results**
 The test plan was fairly simple, it consisted of first working with a
 single table and adding linked table information one by one to see how
 each system scaled. The hub table we started with was the pub table with
@@ -158,7 +158,7 @@ certain areas where Hibernate can make your head spin. Other groups who
 aren't concerned with committing your group to maintaining Java code in
 the long term should definitely give it a look.
 
-**Conclusion**  
+**Conclusion**
 In conclusion, we chose XORT over Hibernate because it provides a
 language neutral interface and has good performance when dealing with a
 realistic amount of tables compared to Hibernate. Hibernate's forte is

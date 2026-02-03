@@ -198,18 +198,18 @@ loading the database from a tab-delimited file containing the genomic
 annotations in [GFF](GFF "GFF") format. The [BioPerl](BioPerl "BioPerl")
 distribution comes with three tools for loading Bio::DB::GFF databases:
 
-bp_load_gff.pl  
+bp_load_gff.pl
 This will incrementally load a database, optionally initializing it if
 it does not already exist. This script will work correctly even if the
 [MySQL](MySQL "MySQL") server is located on another host.
-bp_bulk_load_gff.pl  
+bp_bulk_load_gff.pl
 This Perl script will initialize a new Bio::DB::GFF database with a
 fresh schema, deleting anything that was there before. It will then load
 the file. Only suitable for use the very first time you create a
 database, or when you want to start from scratch! The bulk loader is as
 much as 10x faster than bp_load_gff.pl, but does not work in the
 situation in which the MySQL database is running on a remote host.
-bp_fast_load_gff.pl  
+bp_fast_load_gff.pl
 This will incrementally load a database. On UNIX systems, it will
 activate a fast loader that makes the speed almost the same as the bulk
 loader. Be careful, though, because this software relies on features

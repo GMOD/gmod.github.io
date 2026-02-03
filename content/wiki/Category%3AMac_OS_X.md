@@ -33,67 +33,67 @@ The following 4 pages are in this category, out of 4 total.
 
 The following 3 files are in this category, out of 3 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/09/AppleBootCampLogo.jpg" width="96"
   height="120" alt="AppleBootCampLogo.jpg" />
 
-  
 
-  
 
-  
 
-  [AppleBootCampLogo.jpg](File:AppleBootCampLogo.jpg "File:AppleBootCampLogo.jpg")  
-  1 KB  
 
-  
 
-  
 
-- 
+  [AppleBootCampLogo.jpg](File:AppleBootCampLogo.jpg "File:AppleBootCampLogo.jpg")
+  1 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="120" height="120"
   alt="AppleSmall.gif" />
 
-  
 
-  
 
-  
 
-  [AppleSmall.gif](File:AppleSmall.gif "File:AppleSmall.gif")  
-  2 KB  
 
-  
 
-  
 
-- 
+  [AppleSmall.gif](File:AppleSmall.gif "File:AppleSmall.gif")
+  2 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/51/ParallelsDesktopLogo.gif" width="120"
   height="120" alt="ParallelsDesktopLogo.gif" />
 
-  
 
-  
 
-  
 
-  [ParallelsDesktopLogo.gif](File:ParallelsDesktopLogo.gif "File:ParallelsDesktopLogo.gif")  
+
+
+
+  [ParallelsDesktopLogo.gif](File:ParallelsDesktopLogo.gif "File:ParallelsDesktopLogo.gif")
   2 KB

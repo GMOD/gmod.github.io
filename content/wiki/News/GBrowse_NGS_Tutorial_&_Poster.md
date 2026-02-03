@@ -32,13 +32,12 @@ A
 (by [Scott Cain](../User%253AScott "User%253AScott")) demonstrating how to use
 the adaptor with *GBrowse 1 and GBrowse 2* is also available.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/04*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

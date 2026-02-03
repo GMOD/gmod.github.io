@@ -32,6 +32,6 @@ whether your idea is sufficiently GMOD-related--please feel free to
 email <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">help@gmod.org</a> for advice!
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/01/22*

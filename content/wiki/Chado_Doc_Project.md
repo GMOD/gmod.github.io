@@ -58,7 +58,7 @@ work that needs to be done on Chado so that the largest number of people
 can benefit from it. [Bosborne](User%253ABosborne "User%253ABosborne") 11:24, 8
 May 2007 (EDT)
 
-  
+
 
 ## Work Packages
 

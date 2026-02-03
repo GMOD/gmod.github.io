@@ -61,11 +61,11 @@ database. This database currently contains Plasmodium genomes; more
 organisms will be added during 2008. This is currently a pre-release
 database, which may change or disappear without warning.
 
-**hostname:** db.genedb.org  
-**port:** 5432  
-**username:** genedb_ro  
-**password:** no password  
-**database name:** snapshot  
+**hostname:** db.genedb.org
+**port:** 5432
+**username:** genedb_ro
+**password:** no password
+**database name:** snapshot
 
 e.g.
 

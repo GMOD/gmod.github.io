@@ -3,7 +3,7 @@ title: "News/GMOD Paper Cuts, Nov 22nd, 2013"
 ---
 # News/GMOD Paper Cuts, Nov 22nd, 2013
 
-  
+
 
 **GMOD Paper Cuts is a periodic selection of choice cuts from the
 scientific literature featuring interesting, exciting, or otherwise
@@ -20,7 +20,7 @@ GMOD-related publications,
 <a href="http://mnd.ly/WwRe8F" class="external text" rel="nofollow">join
 our Mendeley group</a>.
 
-  
+
 **The Genome Database for Rosaceae (GDR): year 10 update**
 <sup>[\[1\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1012-1)</sup>
 
@@ -37,7 +37,7 @@ Tools](../Pathway_Tools.1 "Pathway Tools") data, and has integrated
 syn](../GBrowse_syn.1 "GBrowse syn") instances for sequence and synteny
 viewing respectively.
 
-  
+
 **FlyBase 102—advanced approaches to interrogating FlyBase**
 <sup>[\[2\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1092-2)</sup>
 
@@ -57,7 +57,7 @@ updates on new features and functionality at FlyBase. FlyBase use the
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> database
 schema and users can query the database directly.
 
-  
+
 **PATRIC, the bacterial bioinformatics database and analysis resource**
 <sup>[\[4\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1099-4)</sup>
 
@@ -76,7 +76,7 @@ details the resources provided, including their
 View, which integrates data on pathogens, genes, diseases, and
 geolocation of disease reports. Very cool!
 
-  
+
 **Identical sets of methylated and nonmethylated genes in Ciona
 intestinalis sperm and muscle cells**
 <sup>[\[5\]](#cite_note-DOI:10.1186.2F1756-8935-6-38-5)</sup>
@@ -90,7 +90,7 @@ intestinalis sperm and muscle cells**
 Some interesting results from studies of gene body methylation in the
 sea squirt *Ciona intestinalis* during development.
 
-  
+
 **Large-Scale Collection and Analysis of Full-Length cDNAs from
 *Brachypodium distachyon* and Integration with Pooideae Sequence
 Resources**
@@ -109,10 +109,10 @@ is a new resource of *Brachypodium* full length cDNA clones and other
 resources; it includes [GBrowse](../GBrowse.1 "GBrowse") for exploring
 the *B. distachyon* genome and its annotations further.
 
-  
+
 Happy reading!
 
-  
+
 
 1.  <span id="cite_note-DOI:10.1093.2Fnar.2Fgkt1012"><span class="mw-cite-backlink">[↑](#cite_ref-DOI:10.1093.2Fnar.2Fgkt1012_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
@@ -138,6 +138,6 @@ entertainment and edification only. Inclusion does not imply an
 endorsement of the material or any association between the authors and
 the GMOD project.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/11/22*

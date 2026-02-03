@@ -57,7 +57,7 @@ uncommitted code changes should commit them to CVS.** After September
 with SVN. We'll provide doc on how to do this. We will send out exact
 details on the move a few days before it happens.
 
-  
+
 Please let Rob and Dave know if you have any questions. We'll send out a
 reminder and additional info a few days before the conversion.
 
@@ -66,10 +66,9 @@ Thanks,
 [Dave Clements](../User%253AClements "User%253AClements") and [Rob
 Buels](../User%253ARobertBuels "User%253ARobertBuels")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/26*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

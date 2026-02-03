@@ -5,7 +5,7 @@ title: "October 2005 GMOD Meeting"
 
 Generic Model Organism Database Construction Set
 
-  
+
 
   7</span>](#Meeting_7)
 - [Agenda](#Agenda)
@@ -20,18 +20,18 @@ Generic Model Organism Database Construction Set
 
 Thursday, October 27, 2005 Gerry Conference Room, Marks Building, CSHL
 
-  
+
 
 ## Agenda
 
 9:10am
 
-Introductions  
+Introductions
 Scott Cain, GMOD coordinator
 
 9:30
 
-GMOD/chado 0.003 and roadmap, including:  
+GMOD/chado 0.003 and roadmap, including:
 
 - improvements for next release
 - standardizing chado use across orgs
@@ -40,11 +40,11 @@ GMOD/chado 0.003 and roadmap, including:
 
 10:30
 
-Break  
+Break
 
 10:45
 
-Top ten things a MOD provides  
+Top ten things a MOD provides
 more on the road map; how Chado, GBrowse, Turnkey and Apollo fit in and
 where the holes are
 

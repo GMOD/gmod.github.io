@@ -31,7 +31,7 @@ height="256" alt="GMOD Europe 2009" /></a></td>
 </tbody>
 </table>
 
-  
+
 This [GMOD Community Meeting](Meetings "Meetings") was held 6-7 August,
 2009, in Oxford UK. The meeting was a part of ***[GMOD Europe
 2009](GMOD_Europe_2009 "GMOD Europe 2009")***, a week long event that
@@ -48,7 +48,7 @@ previous [meetings](Meetings "Meetings") were the [January
 meetings are an excellent way to meet GMOD developers and users, and to
 learn (and affect) what's coming in the project.
 
-  
+
 
   Schedule](#Schedule)
 - [Presentations](#Presentations)
@@ -176,7 +176,7 @@ Heng Li
 <a href="http://www.sanger.ac.uk" class="external text"
 rel="nofollow">Wellcome Trust Sanger Institute</a>
 
-  
+
 
 <a href="http://www.sanger.ac.uk/Users/lh3/" class="external text"
 rel="nofollow">Dr Heng Li</a> of the Sanger Institute was the special
@@ -243,6 +243,6 @@ href="#GMOD_Project_Talks">Summary</a></td>
 <tr class="odd">
 <td>14:30-15:00</td>
 <td style="text-align: center;"><a href="User%253AClements"
-title="User%253AClements">Dave Clements</a> 
+title="User%253AClements">Dave Clements</a>
 - [Semantic web](Category%253ASemantic_web "Category%253ASemantic web")
 - [JBrowse](Category%253AJBrowse "Category%253AJBrowse")

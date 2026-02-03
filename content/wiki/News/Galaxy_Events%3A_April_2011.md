@@ -33,13 +33,12 @@ going on this month:
   rel="nofollow">2011 Galaxy Community Conference</a>, April 24.
   Register early and save 20%.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [Galaxy](../Galaxy.1 "Galaxy") Project
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/04/04*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

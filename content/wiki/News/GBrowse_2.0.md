@@ -67,10 +67,9 @@ On behalf of the GMOD team,
 
 [Lincoln Stein](../User%253ALstein "User%253ALstein")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/28*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

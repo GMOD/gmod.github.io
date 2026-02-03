@@ -6,7 +6,7 @@ title: "Chado Natural Diversity Module/natdiv schema changes call"
 Conference call to resolve the latest proposed changes to [natdiv
 module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
 
-  
+
 
   notes</span>](#Meeting_notes)
 - [Participants](#Participants)

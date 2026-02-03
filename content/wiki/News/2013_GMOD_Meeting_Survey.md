@@ -23,10 +23,9 @@ this
 <a href="http://www.surveymonkey.com/s/CPC25P5" class="external text"
 rel="nofollow">survey</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/05/02*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

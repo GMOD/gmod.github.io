@@ -47,10 +47,9 @@ class="external text" rel="nofollow">isga-users mailing list</a>.
 
 [Chris Hemmerich](../User%253AChemmeri "User%253AChemmeri")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/06/07*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

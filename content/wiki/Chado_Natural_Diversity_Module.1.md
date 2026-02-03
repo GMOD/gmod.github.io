@@ -150,8 +150,8 @@ experiments that are done on or gave rise to 'stocks' include, but are
 not restricted to, cross, field collection, sample treatment,
 phenotyping and genotyping experiments. Any cvterm may be used but it
 was designed with terms such as: \[phenotype_assay, genotype_assay,
-field_collection, cross_experiment, sample_treatment\] in mind.  
-  
+field_collection, cross_experiment, sample_treatment\] in mind.
+
 
 For experiments of type 'phenotype_assay' or 'genotype_assay', each
 nd_experiment generally give rise to a single genotype or phenotype.
@@ -161,8 +161,8 @@ exception to one-to-one relationship would include the genotype of
 heterozygotes where the genotype of each allele is stored in a distinct
 row of genotype table. One record of phenotype and genotype can be
 linked to multiple experiments since multiple stock entries can produce
-same phenotype and/or genotype.  
-  
+same phenotype and/or genotype.
+
 
 Each nd_experiment of type 'phenotype_assay' or 'genotype_assay' should
 be linked to a single stock entry via nd_experiment_stock table. So when
@@ -173,10 +173,10 @@ treatment that are performed to generate a sample from a
 line/accession/strain can be stored in a separate row of nd_experiment
 of type 'sample_treatment'. Collections of assays that relate to each
 other can be linked via the same record in the 'project' table and/or
-same record in 'stock' table.  
-  
+same record in 'stock' table.
 
-  
+
+
 For experiments of type 'field_collection' and 'cross_experiment', the
 appropriate stock entries that are used or generated from the experiment
 can be linked by nd_experiment_stock table. In cross experiment, the
@@ -185,8 +185,8 @@ roles in cross can be recorded using an appropriate cvterm for
 nd_experiment_stock.type_id. The progeny of a cross and the stocks
 collected from a field collection can be stored in 'stock' table as a
 population or as an individual line/accession/strain/sample and then be
-linked to nd_experiment appropriately.  
-  
+linked to nd_experiment appropriately.
+
 
 The detailed protocols of experiments can be described via one or more
 protocols. Reagents used in protocol can be stored in nd_reagent table.
@@ -370,7 +370,7 @@ Each plant can be scored for a large number of phenotypic traits, and
 genotyped with an array of genetic markers (see 'SGN Genotyping
 experiment bellow).
 
-  
+
 Each phenotyping and genotyping experiment is also tied to a geolocation
 (nd_geolocation table). Metadata of experiments, such as date,
 environmental conditions, and person recording the data, are stored as
@@ -410,7 +410,7 @@ each individual assay that is undertaken (nb this is usually \*not\* an
 entire experiment). Each nd_experiment should give rise to a single
 genotype or phenotype and be described via 1 (or more) protocols.
 Collections of assays that relate to each other should be linked to the
-same record in the *project* table.  
+same record in the *project* table.
 Experiment.type is a cvterm that will define which records are expected
 for other tables. Any CV may be used but it was designed with terms such
 as: \[phenotype_assay, genotype_assay, field_collection,
@@ -468,7 +468,7 @@ public.nd_experiment_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_experiment_genotype
 
@@ -537,7 +537,7 @@ public.nd_experiment_protocol Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_experiment_pub
 
@@ -553,7 +553,7 @@ public.nd_experiment_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_experiment_stock
 
@@ -618,7 +618,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_experiment_stock_dbxref
 
@@ -634,7 +634,7 @@ public.nd_experiment_stock_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_experiment_stockprop
 
@@ -707,7 +707,7 @@ public.nd_experiment_stockprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_experimentprop
 
@@ -814,7 +814,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_geolocationprop
 
@@ -885,7 +885,7 @@ public.nd_geolocationprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_protocol
 
@@ -935,7 +935,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_protocol_reagent
 
@@ -950,7 +950,7 @@ public.nd_protocol_reagent Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_protocolprop
 
@@ -1022,7 +1022,7 @@ public.nd_protocolprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_reagent
 
@@ -1095,7 +1095,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_reagent_relationship
 
@@ -1168,7 +1168,7 @@ public.nd_reagent_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: nd_reagentprop
 

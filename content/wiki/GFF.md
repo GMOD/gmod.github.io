@@ -197,30 +197,30 @@ field is not required.
 
 Column 9 tags have predefined meanings:
 
-ID  
+ID
 Indicates the unique identifier of the feature. IDs must be unique
 within the scope of the GFF file.
-Name  
+Name
 Display name for the feature. This is the name to be displayed to the
 user. Unlike IDs, there is no requirement that the Name be unique within
 the file.
-Alias  
+Alias
 A secondary name for the feature. It is suggested that this tag be used
 whenever a secondary identifier for the feature is needed, such as locus
 names and accession numbers. Unlike ID, there is no requirement that
 Alias be unique within the file.
-Parent  
+Parent
 Indicates the parent of the feature. A parent ID can be used to group
 exons into transcripts, transcripts into genes, and so forth. A feature
 may have multiple parents. Parent can \*only\* be used to indicate a
 partof relationship.
-Target  
+Target
 Indicates the target of a nucleotide-to-nucleotide or
 protein-to-nucleotide alignment. The format of the value is "target_id
 start end \[strand\]", where strand is optional and may be "+" or "-".
 If the target_id contains spaces, they must be escaped as hex
 escape %20.
-Gap  
+Gap
 The alignment of the feature to the target if the two are not collinear
 (e.g. contain gaps). The alignment format is taken from the CIGAR format
 described in the Exonerate documentation. <a
@@ -230,21 +230,21 @@ rel="nofollow">http://cvsweb.sanger.ac.uk/cgi-bin/cvsweb.cgi/exonerate?cvsroot=E
 See the <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for more
 information.
-Derives_from  
+Derives_from
 Used to disambiguate the relationship between one feature and another
 when the relationship is a temporal one rather than a purely structural
 "part of" one. This is needed for polycistronic genes. See the
 <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for more
 information.
-Note  
+Note
 A free text note.
-Dbxref  
+Dbxref
 A database cross reference. See the
 <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for more
 information.
-Ontology_term  
+Ontology_term
 A cross reference to an ontology term. See the
 <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for more

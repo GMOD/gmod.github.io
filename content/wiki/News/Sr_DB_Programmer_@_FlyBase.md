@@ -17,10 +17,9 @@ activities. See the <a
 href="https://sjobs.brassring.com/1033/asp/tg/cim_jobdetail.asp?partnerID=25240&amp;siteID=5341&amp;AReq=22617BR"
 class="external text" rel="nofollow">job posting</a> for details.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/07*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

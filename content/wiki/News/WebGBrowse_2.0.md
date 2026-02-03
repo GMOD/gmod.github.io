@@ -33,15 +33,14 @@ rel="nofollow">http://webgbrowse.cgb.indiana.edu</a>. Here is some of
 
 Thanks,
 
-Ram Podicheti  
+Ram Podicheti
 <a href="http://cgb.indiana.edu/" class="external text"
 rel="nofollow">Center for Genomics and Bioinformatics<br />
 Indiana University</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/25*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

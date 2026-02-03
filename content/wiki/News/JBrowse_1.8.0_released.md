@@ -51,15 +51,14 @@ plugin, contact the gmod-ajax mailing list, or contact me directly.
 
 Happy browsing.  ;-)
 
-Robert Buels  
-Lead Developer  
+Robert Buels
+Lead Developer
 JBrowse - <a href="http://jbrowse.org" class="external free"
 rel="nofollow">http://jbrowse.org</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/01/31*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

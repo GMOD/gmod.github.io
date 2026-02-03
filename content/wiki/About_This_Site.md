@@ -18,7 +18,7 @@ page or create a new one. To request a login visit the
 click on  in
 the upper right hand corner of any page.
 
-  
+
 The [Site Guidelines](Site_Guidelines "Site Guidelines") page contains
 policies and advice for creating and updating content in this web site.
 

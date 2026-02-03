@@ -10,14 +10,14 @@ authentication system. The entire module's code looks like this:
  package Bio::Graphics::Browser2::Plugin::TestAuthenticator;
  use strict;
  use base 'Bio::Graphics::Browser2::Plugin::AuthPlugin';
- 
+
  sub authenticate {
     my $self = shift;
     my ($name,$password) = $self->credentials;
     return unless $name eq 'lincoln' && $password eq 'foobar';
     return ($name,'Lincoln Stein');  # username, fullname
  }
- 
+
  1;
 ```
 

@@ -53,13 +53,12 @@ class="external text" rel="nofollow">here</a> or send your CV to
 <a href="mailto:yann-francois.bizouerne@bayer.com" class="external text"
 rel="nofollow">Yann-Francois Bizouerne</a>
 
-[Erick Antezana](../User%253AErickAntezana "User%253AErickAntezana")  
+[Erick Antezana](../User%253AErickAntezana "User%253AErickAntezana")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/04/14,
 updated 2011/04/15*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

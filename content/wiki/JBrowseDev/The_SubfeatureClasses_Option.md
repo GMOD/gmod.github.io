@@ -16,7 +16,7 @@ might look something like '{ "CDS" : "transcript-CDS", "UTR" :
 
     '{
        "CDS" : "transcript-CDS",
-       "UTR" : "transcript-UTR"  
+       "UTR" : "transcript-UTR"
      }'
 
 This second format makes the JSON structure more obvious, but the first
@@ -27,6 +27,5 @@ format is easier to use as a command line argument.
 - <a href="General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
-:
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")

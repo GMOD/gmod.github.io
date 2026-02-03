@@ -19,7 +19,7 @@ This tutorial uses the AWS AMI ' ***named '*** in the '
 <a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
 class="external text" rel="nofollow">Get MAKER Bling!</a>
 
-  
+
 
   MAKER</span>](#About_MAKER)
 - [Introduction
@@ -212,7 +212,7 @@ Examples:
 
 <a href="../File:Structural.png" class="image"></a>
 
-  
+
 To use this feature, you must have MPICH2 installed with the the
 `--enable-sharedlibs` flag set during installation (See MPICH2
 Installer's Guide). Or openmpi and allow shared libraries by adding a
@@ -232,7 +232,7 @@ Say Yes that we want to build for MPI support
  ./Build install
 ```
 
-  
+
 Set values in maker configuration files.
 
 ``` enter
@@ -264,7 +264,7 @@ You should see the following.
      MPD_SECRETWORD=mr45-j9z
     into the file. (Of course use some other secret word than mr45-j9z.)
 
-  
+
 Follow the instructions to set this file up, and start the mpi
 environment with `mpdboot`. Then run `maker` through the MPI manager
 `mpiexec`.
@@ -406,7 +406,6 @@ Scripts:
   TopHat into GFF3 format for use with MAKER.
      tophat2gff3 <junctions.bed>
 
-:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")

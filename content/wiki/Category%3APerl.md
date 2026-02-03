@@ -102,45 +102,45 @@ Sherlock</a></li>
 
 The following 2 files are in this category, out of 2 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="AutoDBI.pdf" />
 
-  
 
-  
 
-  
 
-  [AutoDBI.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/AutoDBI.pdf "File:AutoDBI.pdf")  
-  288 KB  
 
-  
 
-  
 
-- 
+  [AutoDBI.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/AutoDBI.pdf "File:AutoDBI.pdf")
+  288 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="DasI middleware.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [DasI
-  middleware.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/DasI_middleware.pdf "File:DasI middleware.pdf")  
+  middleware.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/DasI_middleware.pdf "File:DasI middleware.pdf")
   740 KB

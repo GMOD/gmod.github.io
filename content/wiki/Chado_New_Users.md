@@ -108,7 +108,7 @@ coding). What happens if software tries to write a feature record as a
 gene without creating these? Presumably the gene feature has to be
 entered first in order to have an object_id for feature_relationship.
 
-  
+
 
 #### mRNA
 

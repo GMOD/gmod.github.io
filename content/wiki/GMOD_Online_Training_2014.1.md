@@ -58,7 +58,7 @@ alt="WebApollo: browser-based annotation editor" />](WebApollo.1 "WebApollo: bro
 
 **Monday 19th May - Friday 23rd May 2014**
 
-  
+
 GMOD Online Training offers an introduction to, and training in, the
 bioinformatics software offered by the Generic Model Organism Database
 project. Over five days, participants will learn about GMOD's free,
@@ -91,7 +91,7 @@ attendees successfully complete.
 Applications for the course have now closed. We hope to run another
 online training course in late 2014 or early 2015.
 
-  
+
 
 ## Details
 
@@ -103,7 +103,7 @@ Venue: online only
 
 Cost and registration: \$50 (to be confirmed)
 
-  
+
 
 ### Course Prerequisites
 

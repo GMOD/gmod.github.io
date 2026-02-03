@@ -57,7 +57,7 @@ class="external text" rel="nofollow">Training Day</a> + main meeting)
 starting at ~ €95 for post-docs and students.  Registering early also
 assures you a spot in the Training Day workshops you want to attend.
  Once a Training Day session becomes full, it will be closed to new
-registrations.  Early registration closes 24 May. 
+registrations.  Early registration closes 24 May.
 
 **<a href="http://galaxyproject.org/vents/GCC2013/Abstracts"
 class="external text" rel="nofollow">Abstract submission</a>** for oral
@@ -74,6 +74,6 @@ PS: And please help
 <a href="http://galaxyproject.org/events/GCC2013/Promotion"
 class="external text" rel="nofollow">get the word out</a>!
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/02/24*

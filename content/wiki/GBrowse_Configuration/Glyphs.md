@@ -16,7 +16,7 @@ GBrowse.
   class="external text" rel="nofollow">The Glyph Gallery</a> at
   webgbrowse.*
 
-  
+
 
 ## Glyphs and Glyph Options
 
@@ -112,7 +112,7 @@ A more definitive list of glyph options can be found in the
 Bio::Graphics manual pages. Consult the manual pages for the following
 modules:
 
-  
+
 The "perldoc" command is handy for reading the documentation from the
 Unix command line. For example:
 

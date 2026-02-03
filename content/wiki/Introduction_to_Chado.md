@@ -77,7 +77,7 @@ title: "Introduction to Chado"
 - An integrated database
 - A database that is generic enough to use for any organism
 
-  
+
 
 ## Chado - the way of tea
 
@@ -85,12 +85,12 @@ Why the reference to tea? According to ancient GMOD lore, legend has it
 that creators Chris Mungall and Dave Emmert were drinking tea in a tea
 house when they developed the first design that eventually became Chado.
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/Chado.jpg" width="417" height="273"
 alt="Chado.jpg" />
 
-  
+
 
 ## What Documentation Exists for chado?
 
@@ -101,7 +101,7 @@ are more useful pages in the Wiki:
 - [Chado Manual](Chado_Manual "Chado Manual")
 - [Best Practices](Chado_Best_Practices "Chado Best Practices")
 
-  
+
 
 ## A Modular Schema
 
@@ -174,12 +174,12 @@ One way of representing ontologies is through a graph model, with nodes
 representing concepts and edges representing *relationship types*
 between the concepts.
 
-**Simplified Sequence Ontology**  
+**Simplified Sequence Ontology**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/So-slim-example.png" width="705"
-height="558" alt="So-slim-example.png" />  
+height="558" alt="So-slim-example.png" />
 
-**is_a**: subtypes, specialisation/generalization  
+**is_a**: subtypes, specialisation/generalization
 **part_of**: compositional
 
 ### Some other feature types
@@ -192,7 +192,7 @@ height="558" alt="So-slim-example.png" />
 - regulatory region
 - variation features: insertions, deletions, SNPs
 
-  
+
 
 ## Feature Graphs
 
@@ -219,16 +219,16 @@ positional or spatial relationships - we will get to that later. For
 more on representing genes also see [Chado Best
 Practices](Chado_Best_Practices "Chado Best Practices").
 
-**Basic Central Dogma Example**  
+**Basic Central Dogma Example**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/62/Basic-central-dogma.png" width="350"
-height="376" alt="Basic-central-dogma.png" />  
+height="376" alt="Basic-central-dogma.png" />
 One gene, one transcript, one exon, one protein
 
-**Alternate Splicing**  
+**Alternate Splicing**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a0/Alt-splicing.png" width="494" height="376"
-alt="Alt-splicing.png" />  
+alt="Alt-splicing.png" />
 
 **Dicistronic Gene**
 
@@ -247,50 +247,50 @@ the database - one for each of the two non-overlapping genes, and one
 for the gene cassette.
 
 Dicistronic genes make it difficult to have a formal definition of gene
-that corresponds nicely with how biologists use the term.  
+that corresponds nicely with how biologists use the term.
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/da/Dicistronic-gene.png" width="449"
-height="472" alt="Dicistronic-gene.png" />  
+height="472" alt="Dicistronic-gene.png" />
 
-**Trans-splicing**  
+**Trans-splicing**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/67/Transsplicing.png" width="646"
-height="376" alt="Transsplicing.png" />  
+height="376" alt="Transsplicing.png" />
 
 Other cases of trans-splicing may involve spatially distributed primary
 transcripts.
 
 ## Feature Graph Transformations
 
-**CDS boundaries + exons IMPLIES CDS exons**  
+**CDS boundaries + exons IMPLIES CDS exons**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f1/Inferred_cds_exons.png" width="653"
-height="376" alt="Inferred cds exons.png" />  
+height="376" alt="Inferred cds exons.png" />
 
-**exons IMPLIES introns**  
+**exons IMPLIES introns**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b7/Inferred_introns.png" width="665"
-height="376" alt="Inferred introns.png" />  
+height="376" alt="Inferred introns.png" />
 
 ## Representing Graphs in a Relational Database
 
 A graph can be defined as a collection of **Edges** (arcs) and
 **Vertices** (nodes).
 
-  
-**Two table structure required for representing graphs**  
+
+**Two table structure required for representing graphs**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/54/Rel-graph.png" width="236" height="138"
-alt="Rel-graph.png" />  
+alt="Rel-graph.png" />
 
 ## Representing Ontology Graphs in Chado
 
-**cvterms (controlled vocabulary terms) connected by cvrelationships**  
+**cvterms (controlled vocabulary terms) connected by cvrelationships**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/Chado-ont.png" width="363" height="138"
-alt="Chado-ont.png" />  
+alt="Chado-ont.png" />
 
-  
+
 The relationship type is a controlled term in itself. Each
 cvrelationship can be thought of as a SUBJECT PREDICATE OBJECT statement
 (eg "GPCR *is-a* transmembrane_receptor).
@@ -302,25 +302,25 @@ advanced ontological concepts.
 
 ## Representing Feature Graphs in Chado
 
-**features are the nodes - feature_relationships are the arcs**  
+**features are the nodes - feature_relationships are the arcs**
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9d/Fgraph.png" width="597" height="138"
-alt="Fgraph.png" />  
+alt="Fgraph.png" />
 
 Note: the different classes of features could be modeled relationally;
 the principle is to keep the stable stuff modeled relationally, and the
 fluid/extensible stuff modeled in an ontology that sits in a generic
 database structure.
 
-  
+
 
 ### Features are typed
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Chado-feat.png" width="260" height="98"
-alt="Chado-feat.png" />  
+alt="Chado-feat.png" />
 
 ## Querying Graphs
 
@@ -332,20 +332,20 @@ genes find all snoRNA genes ...etc eek!
 
 **Solution: pre-compute
 <a href="http://en.wikipedia.org/wiki/Transitive_closure"
-class="external text" rel="nofollow"><em>transitive closure</em></a>**  
+class="external text" rel="nofollow"><em>transitive closure</em></a>**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/89/Chado-Go.png" width="625" height="366"
-alt="Chado-Go.png" />  
+alt="Chado-Go.png" />
 GO Ontology subgraph
 
-**Transitive closure of graph:**  
+**Transitive closure of graph:**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/Transitive_closure.png" width="741"
-height="532" alt="Transitive closure.png" />  
+height="532" alt="Transitive closure.png" />
 Solid lines represent the actual relationships. The collection of dotted
 lines is the closure of the relationships.
 
-  
+
 
     forall x      ALWAYS TRUE:     x R* x
 
@@ -389,16 +389,16 @@ The chado relational model defines a fixed set of attributes for a
 | type_id | yes | <a href="http://sequenceontology.org" class="external text" |
 rel="nofollow">Sequence Ontology</a> feature type (foreign key) |
 
-  
+
 What happens if we want to include other attributes specific to certain
 projects, or specific to certain feature types? We can use an extensible
 feature property paradigm:
 
-  
-**We can attach any properties we like to feature:**  
+
+**We can attach any properties we like to feature:**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/ff/Fprop.png" width="500" height="129"
-alt="Fprop.png" />  
+alt="Fprop.png" />
 
 ## Localising Features in Sequence Coordinates
 
@@ -408,10 +408,10 @@ A feature can have multiple locations - however, "split" locations are
 **not** used (for an example of a split location, look at how Genbank
 represents a transcript).
 
-**Any feature can have 0 to many locations:**  
+**Any feature can have 0 to many locations:**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/42/Floc.png" width="479" height="137"
-alt="Floc.png" />  
+alt="Floc.png" />
 Each location is relative to another feature (the **srcfeature**)
 
 The **featureloc** table includes the following attributes:
@@ -440,14 +440,14 @@ subtracting the starting coordinate from the ending coordinate, without
 the need for an off-by-1 addition required by other coordinate systems.
 (In general, much mathematical utility is enabled by the number zero.)
 
-**Interbase coordinates (top) and base-oriented (below)**  
-  
+**Interbase coordinates (top) and base-oriented (below)**
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a0/Interbase.png" width="352" height="296"
-alt="Interbase.png" />  
-  
+alt="Interbase.png" />
+
 The position of the ATG in interbase is \[3, 6\] (between the 3rd and
-6th gaps)  
+6th gaps)
 The position of the ATG in base coordinates is \[4, 6\] (between 4th and
 6th bases inclusive)
 
@@ -461,10 +461,10 @@ circular chromosomes.
 
 ## Basic example - with locations
 
-**Central dogma - with exons and CDSs localised**  
+**Central dogma - with exons and CDSs localised**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Bcd-loc.png" width="314" height="403"
-alt="Bcd-loc.png" />  
+alt="Bcd-loc.png" />
 Using the principle of minimal storage (do not store anything that does
 not increase the *information content* of the database - i.e. nothing
 redundant), we store only exon and CDS boundary localisations. In the
@@ -480,10 +480,10 @@ taken for the genes that break central dogma rules.
 
 ## Locations can be nested
 
-**A repeat localised to a contig, itself on a chromosome arm**  
+**A repeat localised to a contig, itself on a chromosome arm**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/Nested-loc.png" width="188" height="323"
-alt="Nested-loc.png" />  
+alt="Nested-loc.png" />
 **featureloc**s are represented by dashed lines.
 
 Note that the position of the repeat on the chromosome arm is implicit,
@@ -497,10 +497,10 @@ like for a feature. We use an extra attribute called **locgroup** to
 distinguish locations. locgroup=0 is conventionally used for the
 non-redundant location.
 
-**The repeat feature now has two locations**  
+**The repeat feature now has two locations**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Nested-loc-redundant.png" width="260"
-height="323" alt="Nested-loc-redundant.png" />  
+height="323" alt="Nested-loc-redundant.png" />
 If you look at the underlying data, you will see that the featureloc
 that locates the repeat on the arm has a locgroup values of **1**.
 
@@ -515,10 +515,10 @@ title="bp:Genscan">Genscan</a> predicts CDSs and CDS exons (not genes in
 the Sequence Ontology sense). A typical Genscan prediction may look like
 this:
 
-**Genscan 3-exon 'gene' prediction**  
+**Genscan 3-exon 'gene' prediction**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/Genscan.png" width="589" height="206"
-alt="Genscan.png" />  
+alt="Genscan.png" />
 
 ## Computational analysis: Similarity results
 
@@ -528,10 +528,10 @@ CLUSTAL) are represented differently.
 Pairwise alignments produce **HSP**s. HSPs are scored features with two
 locations - one on the query, one on the subject.
 
-**Blast hit with 3 HSPs**  
+**Blast hit with 3 HSPs**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Blast.png" width="904" height="206"
-alt="Blast.png" />  
+alt="Blast.png" />
 Each HSP has two featurelocs. featureloc has an attribute *rank* to
 order the locations; by convention 0 is the query rank and 1 is the
 subject rank.
@@ -541,14 +541,14 @@ subject rank.
 These are treated analagously to pairwise alignments - just add more
 locations.
 
-  
+
 
 ## Variation features
 
 Variation features (e.g. SNPs, insertions, deletions) are treated in a
 similar fashion to pairwise alignments.
 
-  
+
 
 ## Bioperl and chado mapping
 
@@ -582,7 +582,7 @@ multiple locations.
 - Mark Yandell
 - Aubrey de Grey
 
-  
+
 
 ## About this Page
 

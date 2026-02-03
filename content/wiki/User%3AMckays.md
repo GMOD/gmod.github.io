@@ -20,15 +20,15 @@ preclinical research and is science and discovery focused.
 
 ## More Information
 
-- Click on a section title below to open:  
+- Click on a section title below to open:
 
-Research  
+Research
 Evolutionary genetics
 
 Functional and comparative genomics
 
 Scientific software development
-Computational  
+Computational
 Object Oriented Perl; Perl/CGI, Perl/DBI
 
 JavaScript; AJAX; CSS
@@ -51,7 +51,7 @@ Digital signal processing of DNA
 
 The Mediawiki extension that opens and closes these sections
 
-Email: sheldon.mckay@gmail.com  
+Email: sheldon.mckay@gmail.com
 
 - Active in the <span class="pops">[GMOD](Main_Page "Main Page")</span>
   and

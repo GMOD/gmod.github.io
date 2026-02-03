@@ -3,7 +3,7 @@ title: "GBrowse NGS Tutorial"
 ---
 # GBrowse NGS Tutorial
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/250px-GBrowseLogo.png"
@@ -16,7 +16,7 @@ was presented by [Dave Clements](User%253AClements "User%253AClements") at the
 The most recent GBrowse tutorial can be found at the [GBrowse
 Tutorial](GBrowse_Tutorial "GBrowse Tutorial") page.
 
-  
+
 This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
 through how to configure the [GBrowse](GBrowse.1 "GBrowse") genome
 browser to display [Next Generation
@@ -25,7 +25,7 @@ Sequencing](Next_Generation_Sequencing "Next Generation Sequencing")
 <a href="http://samtools.sourceforge.net" class="external text"
 rel="nofollow">SAMtools</a> GBrowse adaptor, Bio::DB::Sam.
 
-  
+
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -91,7 +91,7 @@ rel="nofollow">SAMtools</a> GBrowse adaptor, Bio::DB::Sam.
     - [Showing Paired End
       Reads](#Showing_Paired_End_Reads)
 
-  
+
 
 ## VMware
 
@@ -138,7 +138,7 @@ over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
 
-  
+
 
 ## Introduction
 
@@ -344,13 +344,13 @@ with Mac OS X and most of the modern Linux/Unix distributions. If you do
 not have this library installed, you can still compile the rest of
 SAMtools by manually modifying one line in Makefile.
 
-  
+
 Compilation
 
 Type \`make' to compile samtools. If you have zlib \>= 1.2.2.1, you can
 compile razip with \`make razip'.
 
-  
+
 Installation
 
 Simply copy \`samtools' and other executables/scripts in \`misc' to a
@@ -379,7 +379,7 @@ Make got a few warnings, but no errors. So, it appears to have made.
 bam.h and libbam.a are both in the
 home/gmod/BA2009/SAMtools/samtools-0.1.6 directory.
 
-  
+
 
 #### Bio::DB::Sam Adaptor
 
@@ -576,7 +576,7 @@ the GFF3 for human chromosomes 2 and 3 available, and he did:
   image.
 - Now we start doing things.
 
-  
+
 Past experience has taught that whenever you get a GFF3 file from
 elsewhere it is a darn fine idea to check that the reference sequence
 that all features are positioned on is defined at the top of the file.
@@ -610,7 +610,7 @@ tabs:
 
     chr20 Ensembl chromosome 1 62435964 . . . Name=chr20
 
-  
+
 
 ##### Gene Definitions in these GFF3 Files
 
@@ -783,7 +783,7 @@ Lets go over some of the more important sections.
 - What region and tracks GBrowse will show when it first comes up.
 - What example regions will be displayed as hot links.
 
-  
+
 
     [annotations:database]
     db_adaptor     = Bio::DB::SeqFeature::Store
@@ -795,7 +795,7 @@ Lets go over some of the more important sections.
   - GBrowse has lots of adaptors; we'll use 2 in this example
 - Which DBMS (MySQL) and database ("human") to get data from.
 
-  
+
 
     # Default glyph settings
     [TRACK DEFAULTS]
@@ -813,7 +813,7 @@ Lets go over some of the more important sections.
 - Glyph determine how data is shown
   - as a box, linked boxes, xyplot, ...
 
-  
+
 
     [DNA]
     glyph          = dna
@@ -843,7 +843,7 @@ Lets go over some of the more important sections.
   - They use semantic zooming to display information in different ways
     at high zoom and low zoom.
 
-  
+
 
     [PredictedGenes]
     feature        = mRNA
@@ -868,7 +868,7 @@ this track.
 GBrowse scans column 3 (the Sequence Ontology term) and only displays
 items with this feature type.
 
-  
+
 Our example gene definition from the GFF3
 
     chr20 Ensembl mRNA 56701315 56724307 . + . ID=NPEPL1;Name=NPEPL1; ...
@@ -876,7 +876,7 @@ Our example gene definition from the GFF3
     chr20 Ensembl exon 56702200 56702385 . + . ID=ENSE00001542440;Parent=NPEPL1
     ...
 
-  
+
 The file also contains information on popups and hovering. This is
 leftover from the original yeast file. I'm not going to talk about it,
 but we'll leave it there because it is nice to have.
@@ -1059,35 +1059,35 @@ Create a file called `relocate.py` and populate it with this code:
 """
 SAMtools comes with example data from human chromosomes 2 and 20, but it
 has been relocated from its place in those chroms to start at position 1.
- 
+
 This script moves it back.
 """
 import sys
- 
+
 CHR2_OFFSET = 2043965
 CHR20_OFFSET = 67966
- 
+
 # ------------------------------------------------------------------
 # MAIN
 # ------------------------------------------------------------------
- 
+
 config = {
     "SAM_INPUT_FILE":    "/home/gmod/BA2009/SAMtools/samtools-0.1.6/examples/ex1.sam",
     "SAM_OUTPUT_FILE":   "ex1.sam"
 }
- 
+
 # File has 12 or 17 tab separate columns.  Update 3 of them.
- 
+
 samIn  = open(config["SAM_INPUT_FILE"], "r")
 samOut = open(config["SAM_OUTPUT_FILE"], "w")
- 
+
 line = samIn.readline()
 while (line):
     # split it by tabs
     cols = line.split("\t")
     if len(cols) != 17 and len(cols) != 12:  # sanity check
         print "Warning: Line has " + str(len(cols)) + " columns\n" + line + "\n"
- 
+
     # Fix sequence name
     if cols[2] == "seq1":
         cols[2] = "chr2"
@@ -1096,7 +1096,7 @@ while (line):
     else:
         print "unknown seq: " + cols[2] + "\n"
         sys.exit(0)
- 
+
     # Fix Pos & mate pos
     if cols[2] == "chr2":
         cols[3] = str(int(cols[3]) + CHR2_OFFSET)
@@ -1104,12 +1104,12 @@ while (line):
     else:
         cols[3] = str(int(cols[3]) + CHR20_OFFSET)
         cols[7] = str(int(cols[7]) + CHR20_OFFSET)
- 
+
     # all happy now.
     outLine = "\t".join(cols)
     samOut.write(outLine)
     line = samIn.readline()
- 
+
 sys.exit(0)
 ```
 

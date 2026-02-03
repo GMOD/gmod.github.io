@@ -56,7 +56,7 @@ title="Property:Link type">Link type</a></td>
 <td class="smwprops">website , demo
 server ,
 download ,
-documentation 
+documentation
 and wild URL </td>
 </tr>
 <tr class="even row-even">
@@ -70,7 +70,7 @@ href="Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
 <td class="smwprops">literature curation ,
-functional annotation 
+functional annotation
 and community annotation </td>
 </tr>
 <tr class="even row-even">
@@ -97,7 +97,7 @@ title="Canto">Canto#https://github.com/pombase/canto/blob/master/documentation/c
 <a href="Canto#http:.2F.2Fcuration.pombase.org.2Fpombe"
 title="Canto">Canto#http://curation.pombase.org/pombe</a> ,
 <a href="Canto#http:.2F.2Fcuration.pombase.org.2Funiprot"
-title="Canto">Canto#http://curation.pombase.org/uniprot</a> 
+title="Canto">Canto#http://curation.pombase.org/uniprot</a>
 and <a href="Canto#_564f9c71bf2847fc3c542a7b9ac7927f"
 title="Canto">Canto</a> </td>
 </tr>

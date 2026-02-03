@@ -144,15 +144,15 @@ region (there may not be any).
 Clicking on one of the AMIs listed above will start an instance launch
 wizard. Here is guidance on how to configure the instance:
 
-Instance Type  
+Instance Type
 GBrowse will run even on the tiny *t1.micro* instance type, but this is
 only recommended for the purposes of kicking the tires. For production
 use, we recommend *m1.medium* or larger. High-CPU and high I/O
 performance instance types generally provide better performance than
 high-memory instances.
-Key Pair  
+Key Pair
 Use your default SSH keypair.
-Firewall  
+Firewall
 Use or create a security group that allows both incoming SSH and HTTP
 connections. The former will allow you to log into the GBrowse server
 for administrative purposes, while the latter gives you access to the
@@ -182,11 +182,11 @@ any command as root, you may use *sudo* without providing a password.
 You may take advantage of Amazon's spot instances to load balance
 GBrowse at modest cost. The two scripts needed are:
 
-gbrowse_sync_aws_slave.pl  
+gbrowse_sync_aws_slave.pl
 This script will synchronize the databases on the master VM to a data
 snapshot that can be accessed by the load balancing slave machines.
 
-gbrowse_aws_balancer.pl  
+gbrowse_aws_balancer.pl
 This script runs the balancer daemon on the master VM. It monitors load
 on the master instance and launches slave instances to handle increased
 load.
@@ -253,16 +253,16 @@ The filesystem layout of both VMs is similar. The root filesystem at "/"
 consists of a generic Ubuntu bootable disk. Almost all GBrowse-related
 software has been installed in /opt/gbrowse:
 
-/opt/gbrowse/etc  
+/opt/gbrowse/etc
 GBrowse configuration files, including GBrowse.conf and datasource .conf
 files.
-/opt/gbrowse/databases  
+/opt/gbrowse/databases
 GBrowse databases
-/opt/gbrowse/htdocs  
+/opt/gbrowse/htdocs
 GBrowse Javascript and static HTML files.
-/opt/gbrowse/bin  
+/opt/gbrowse/bin
 Various command-line tools from the GBrowse and BioPerl distributions.
-/opt/gbrowse/lib  
+/opt/gbrowse/lib
 Perl and non-Perl libraries used by GBrowse.
 
 The system PATH includes /opt/gbrowse/bin, and the PERL5LIB environment

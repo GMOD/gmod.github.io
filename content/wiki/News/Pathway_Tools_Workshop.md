@@ -19,10 +19,9 @@ presentations by these GMOD [member databases](../MOD "MOD") that use
 
 Early registration is available until February 22, 2008
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/01/28*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

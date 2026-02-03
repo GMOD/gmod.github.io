@@ -11,7 +11,7 @@ The gene examples are not a valid GFF3 files
     ...
     ctg123 example three_prime_UTR 7609 9000 . + . Parent=EDEN.1
 
-  
+
 "Index" is not a application defined attribute, the GFF3 specification
 states:
 

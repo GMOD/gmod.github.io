@@ -5,7 +5,7 @@ title: "PAG2025 bash script"
 
     #!/bin/bash
 
-    jbrowse create public_html --force 
+    jbrowse create public_html --force
 
     cd public_html
 

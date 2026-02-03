@@ -33,7 +33,7 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 </tbody>
 </table>
 
-  
+
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"

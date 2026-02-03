@@ -1498,5 +1498,5 @@ Please follow these guidelines when adding a news item.
       feed. If you do need to update an item later on, you may do so,
       but please also update the NewsItem line:
 
-    
+
         NewsItem|yyyy/mm/dd, updated yyyy/mm/dd

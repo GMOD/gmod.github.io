@@ -14,7 +14,7 @@ title="GMOD T Shirt"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bd/TShirtThumb.jpg" width="150"
 height="150" alt="GMOD T Shirt" /></a>
 
-  
+
 
 Win this shirt!
 
@@ -46,14 +46,13 @@ Remember: *If no one beta tests, everyone beta tests.*
 
 Thanks,
 
-[Ben Faga](../User%253AFaga "User%253AFaga"),  
+[Ben Faga](../User%253AFaga "User%253AFaga"),
 <a href="mailto:faga.cshl@gmail.com" class="external text"
 rel="nofollow">faga.cshl@gmail.com</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/11*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

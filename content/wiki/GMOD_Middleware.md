@@ -42,7 +42,7 @@ their middleware interface to Chado, and that the implementors of
 Java-based tools collaborate to create a Java API that parallels
 Modwares.
 
-  
+
 
   Summary</span>](#Executive_Summary)
 - [Middleware for
@@ -120,7 +120,7 @@ Modwares.
     - [Background](#Background)
     - [Technical
       Overview](#Technical_Overview)
-    - 
+    -
       - [Comparing Hibernate &
         XORT](#Comparing_Hibernate_.26_XORT)
     - [Limitations](#Limitations)
@@ -130,7 +130,7 @@ Modwares.
     - [Background](#Background_2)
     - [Technical
       Overview](#Technical_Overview_2)
-    - 
+    -
     - [Limitations](#Limitations_2)
     - [Presentation by Brian
       O'Connor](#Presentation_by_Brian_O.27Connor)
@@ -138,7 +138,7 @@ Modwares.
     - [Background](#Background_3)
     - [Technical
       Overview](#Technical_Overview_3)
-    - 
+    -
     - [Limitations](#Limitations_3)
     - [Presentation by Eric
       Just](#Presentation_by_Eric_Just)
@@ -147,7 +147,7 @@ Modwares.
     - [Background](#Background_4)
     - [Technical
       Overview](#Technical_Overview_4)
-    - 
+    -
     - [Limitations](#Limitations_4)
     - [Presentation by Scott
       Cain](#Presentation_by_Scott_Cain)
@@ -156,7 +156,7 @@ Modwares.
     - [Background](#Background_5)
     - [Technical
       Overview](#Technical_Overview_5)
-    - 
+    -
     - [Limitations](#Limitations_5)
     - [Presentation by Jeff
       Bowes](#Presentation_by_Jeff_Bowes)
@@ -222,7 +222,7 @@ discuss the presentations and to develop a consensus statement. This
 document represents the consensus of the workshop and shows the
 individual presentations.
 
-  
+
 
 ### Introduction
 
@@ -271,7 +271,7 @@ This reference will contain platform- and language-specific information
 as well as descriptions of the strengths and weaknesses of the packages
 that can be used by GMOD developers when considering middleware.
 
-  
+
 
 #### General Evaluation Criteria
 
@@ -284,7 +284,7 @@ working with their own database. It was understood that not all software
 would be able to handle all aspects of the sample problems and this
 demonstration was not intended to be *live*.
 
-  
+
 
 ##### Problem 1
 
@@ -390,7 +390,7 @@ resembling the following:
     1323    x-file     Xenopus laevis
     1324    x-men   Xenopus laevis
 
-  
+
 
 ##### Problem Results
 
@@ -402,7 +402,7 @@ carry out the edit/ delete tasks. Clearly one can see many differences
 between packages in how the the problems were solved, please see the
 presentations themselves for these details.
 
-  
+
 
 ## The Middleware Packages
 
@@ -491,7 +491,7 @@ require Postgres but could be extended to other platforms that support
 the 'Explain' used by the query optimiser. Apart from Java and pilot
 Perl APIs, a variant of OQL, IQL, is provided.
 
-  
+
 
 #### Java Middleware
 
@@ -511,7 +511,7 @@ additional work to get a package to automatically create and relate
 subsets of data based on "join tables" like feature_relationship
 property. This mostly has to do with the circular nature of the schema.
 
-  
+
 
 ##### Hibernate
 
@@ -563,7 +563,7 @@ Create-Retrieve-Update-Delete (CRUD) and transaction functionality.
 Hibernate is a popular and well-supported tool with extensive
 documentation.
 
-  
+
 
 ##### iBatis
 
@@ -612,7 +612,7 @@ The following general steps are performed:
 iBatis is a popular and well-supported tool with extensive
 documentation.
 
-  
+
 
 ##### InterMine
 
@@ -672,7 +672,7 @@ instructions for setting up a new instance are provided at
 <a href="http://trac.flymine.org" class="external free"
 rel="nofollow">http://trac.flymine.org</a>
 
-  
+
 
 #### Perl Middleware
 
@@ -683,7 +683,7 @@ speaking, *middleware* but has proven to be very useful in bulk
 operations using the Chado schema and Chado XML though in principle it
 can be used with any relational schema.
 
-  
+
 
 ##### Chado%253A%253AAutoDBI
 
@@ -763,7 +763,7 @@ BioPerl-style documentation at
 rel="nofollow">http://gmod-ware.sourceforge.net/doc/</a>, written for
 POD for all methods.
 
-  
+
 
 ##### [GBrowse](GBrowse.1 "GBrowse") (DasI)
 
@@ -803,7 +803,7 @@ This package needs no configuration, it is pre-configured for Chado.
 The DasI interface is well-documented, about a dozen methods and three
 classes, all documented.
 
-  
+
 
 ##### The Bio::Chado API
 
@@ -844,7 +844,7 @@ Also see
 <a href="http://en.wikipedia.org/wiki/Object-relational_mapping"
 class="external text" rel="nofollow">ORM (Wikipedia)</a>.
 
-  
+
 
 ##### Outline
 
@@ -932,11 +932,11 @@ $term_dbobj = Chado::Cvterm->create({
                         });
 ## Retrieve
 $term_dbobj = Chado::Cvterm->retrieve(2);
- 
+
 ## Update
 $term_dbobj->name( $term->name() );
 $term_dbobj->definition( $term->definition );
- 
+
 ## Delete
 $term_dbobj->delete();
 ```
@@ -1027,7 +1027,7 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
 
 [XORT Presentation](XORT_Presentation "XORT Presentation")
 
-  
+
 
 ### [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI")
 
@@ -1061,11 +1061,11 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
 
 ``` de1
 # Add the add_constructor for looking for name lengths
- 
+
 __PACKAGE__ ->add_constructor(long_names => qq{ length(name) > 15 });
- 
+
 # Custom SQL
- 
+
 __PACKAGE__->set_sql(xfiles => qq{
        SELECT FEATURE_ID
        FROM FEATURE
@@ -1077,7 +1077,7 @@ __PACKAGE__->set_sql(xfiles => qq{
 [Chado%253A%253AAutoDBI
 Presentation](Chado%253A%253AAutoDBI_Presentation "Chado%253A%253AAutoDBI Presentation")
 
-  
+
 
 ### Modware
 
@@ -1107,17 +1107,17 @@ worrying about the complex details of the schema on a day-to-day basis.
 - Transaction support: Transactions are fully supported. The database
   handle is available as a singleton through Modware::DBH. To rollback
   at any time, simply insert
-  
 
-  
+
+
 
   ``` de1
   new Modware::DBH->rollback()
   ```
 
-  
 
-  
+
+
 
   into script.
 - Code generation: No automatic code generation.
@@ -1194,7 +1194,7 @@ for use with [GBrowse](GBrowse.1 "GBrowse").
 [GBrowse (DasI) Adaptor
 Presentation](/wiki/GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
 
-  
+
 
 ### iBatis and Abator
 
@@ -1229,7 +1229,7 @@ Presentation](/wiki/GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
 
 [iBatis Presentation](IBatis_Presentation "IBatis Presentation")
 
-  
+
 
 ### Hibernate
 
@@ -1260,7 +1260,7 @@ Presentation](/wiki/GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
 [Hibernate
 Presentation](Hibernate_Presentation "Hibernate Presentation")
 
-  
+
 
 ### PSU Chado Interface
 
@@ -1290,7 +1290,7 @@ We're using a common interface with two different implementations: an
 iBatis and a Hibernate one. This gives us the ability to choose either
 implementation depending upon the requirements of the application.
 
-  
+
 
 #### iBatis
 
@@ -1392,7 +1392,7 @@ hand-edited
 
 [GUS WDK Presentation](GUS_WDK_Presentation "GUS WDK Presentation")
 
-  
+
 
 ### InterMine
 
@@ -1434,7 +1434,7 @@ hand-edited
 [InterMine
 Presentation](InterMine_Presentation "InterMine Presentation")
 
-  
+
 
 ## Wiki Authors
 

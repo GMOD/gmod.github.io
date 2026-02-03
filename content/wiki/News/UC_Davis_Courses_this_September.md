@@ -22,10 +22,9 @@ Space is limited (an NGS analysis course is already full).
 
 [Dave Clements](../User%253AClements "User%253AClements")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/09*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

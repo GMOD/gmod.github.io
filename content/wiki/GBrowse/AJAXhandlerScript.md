@@ -27,7 +27,7 @@ provide a built-in ajax handler for Gbrowse**
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Sample1b.png" width="492" height="239"
 alt="Sample1b.png" /></a>
 
-  
+
 
 - A sticky balloon with contents generated from gbrowse-details (via an
   \<iframe\> element) and the ***default*** callback shown below.
@@ -41,7 +41,7 @@ alt="Sample2b.png" /></a>
 - A new CGI parameter to invoke the AJAX-handling behavior
     my $rmt   = param('remote');
 
-  
+
 
 - A response is triggered after the feature(s) are defined but before
   ***PrintTop*** is called.
@@ -91,7 +91,7 @@ alt="Sample2b.png" /></a>
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/92/Callbacks" width="687" height="408"
 alt="Callbacks" /></a>
 
-  
+
 
 - The \[ORF\] configuration stanza used to generate the images above.
   The relevant section is highlighted

@@ -59,29 +59,29 @@ title="Using AWS S3 For JBrowse">Using AWS S3 For JBrowse</a></li>
 
 This category contains only the following file.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="JBrowse PAG 2017.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [JBrowse PAG
-  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf "File:JBrowse PAG 2017.pdf")  
-  2.4 MB  
+  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf "File:JBrowse PAG 2017.pdf")
+  2.4 MB
 
-  
 
-  
+
+
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253ATutorial](/wiki/Category%253ATutorial)"

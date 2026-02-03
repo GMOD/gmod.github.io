@@ -96,7 +96,7 @@ These projects can use a broad set of skills, technologies, and domains,
 such as GUIs, database integration, and algorithms. Students are also
 encouraged to propose their own ideas related to our projects. If you
 have strong computer skills and have an interest in biology or
-bioinformatics, you should definitely apply!  
+bioinformatics, you should definitely apply!
 **Do not hesitate to propose your own project idea: some of the best
 applications we see are by students who go this route.** As long as it
 is relevant to one of our projects, we will give it serious

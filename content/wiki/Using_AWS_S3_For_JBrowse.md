@@ -199,7 +199,7 @@ will cause problems with the range requests. As a result, the command
 for transferring these sorts of indexed files should look something like
 this:
 
-     aws s3 cp --recursive --acl public-read  binary_directory s3://bucketname/WormBase/worm/tracks/binary_directory 
+     aws s3 cp --recursive --acl public-read  binary_directory s3://bucketname/WormBase/worm/tracks/binary_directory
 
 Where binary_directory is the local directory containing binary indexed
 files, which can have subdirectories.

@@ -21,12 +21,11 @@ Please see the
 class="external text" rel="nofollow">Pathway Tools Tutorial page</a> for
 a detailed schedule, registration information, and other details.
 
-Peter Karp  
+Peter Karp
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/08/07*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

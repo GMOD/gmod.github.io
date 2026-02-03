@@ -51,68 +51,68 @@ data</a></li>
 
 The following 3 files are in this category, out of 3 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Chado-and-XML.pdf" />
 
-  
 
-  
 
-  
 
-  [Chado-and-XML.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Chado-and-XML.pdf "File:Chado-and-XML.pdf")  
-  262 KB  
 
-  
 
-  
 
-- 
+  [Chado-and-XML.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Chado-and-XML.pdf "File:Chado-and-XML.pdf")
+  262 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="XORT.pdf" />
 
-  
 
-  
 
-  
 
-  [XORT.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf "File:XORT.pdf")  
-  155 KB  
 
-  
 
-  
 
-- 
+  [XORT.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf "File:XORT.pdf")
+  155 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="XORTSpecification 0.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [XORTSpecification
-  0.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/XORTSpecification_0.pdf "File:XORTSpecification 0.pdf")  
+  0.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/XORTSpecification_0.pdf "File:XORTSpecification 0.pdf")
   226 KB

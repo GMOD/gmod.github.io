@@ -120,7 +120,7 @@ rel="nofollow">http://httpd.apache.org/docs/2.2/mod/mod_status.html</a>).
 This is the recommended configuration:
 
     <IfModule mod_status.c>
-       ExtendedStatus on 
+       ExtendedStatus on
        <Location /server-status>
                SetHandler server-status
                Order deny,allow
@@ -206,13 +206,13 @@ Note that the server load includes both GBrowse requests and all other
 requests on the web server. If this is a problem, you may wish to run
 GBrowse on a separate Apache port or virtual host.
 
-  
+
 ***\[MASTER\]***
 
 The options in this sections configure the master GBrowse instance.
 Three options are recognized:
 
-external_ip (optional)  
+external_ip (optional)
 This controls the externally-visible IP address of the GBrowse master,
 which is needed by the firewall rule for master/slave communications.
 This option can usually be left blank: when the master is running on
@@ -222,11 +222,11 @@ service. It is only in the rare case that this lookup is incorrect that
 you will need to configure this option yourself. The external IP that
 the balancer script finds can be seen in a log message when verbosity is
 2 or higher.
-poll_interval (required)  
+poll_interval (required)
 This is the interval, in minutes, that the balancer script will
 periodically check the Apache load and adjust the number of slave
 instances. The suggested value is 0.5 (30s intervals).
-server_status_url (required)  
+server_status_url (required)
 This is the URL to call to fetch the server load from Apache's
 server_status module.
 
@@ -235,33 +235,33 @@ server_status module.
 The options in this section apply to the render slaves launched by the
 balancer.
 
-instance_type (required)  
+instance_type (required)
 This is the EC2 instance type. Faster instances give better performance.
 High-IO instances give the best performance, but cost more.
-spot_bid (required)  
+spot_bid (required)
 This is the maximum, in US dollars, that you are willing to pay per hour
 to run a slave spot instance. Typically you will pay less than the bid
 price. If the spot price increases beyond the maximum bid, then the spot
 instances will be terminated and the balancer will wait until the spot
 price decreases below the maximum bid before launching additional
 slaves.
-ports (required)  
+ports (required)
 This is a space-delimited list of TCP port numbers on which the render
 slaves should listen for incoming render requests from the master.
 Generally it is only necessary to listen on a single port; multiple
 ports were supported for performance reasons in earlier single-threaded
 versions of the slave.
-region (required for local masters)  
+region (required for local masters)
 The Amazon region in which to launch slaves. When the master is running
 in EC2, this is automatically chosen to be the same as the master's
 region and can be left blank.
-image_id (required for local masters)  
+image_id (required for local masters)
 This is the name or ID of the AMI that will be used to launch slaves.
 When the master is running on an EC2 instance, then the image ID used to
 launch the master will be used. Otherwise, this option should contain
 the AMI ID of a GBrowse image in the desired region, or a partial name
 that will be used to find the correct AMI.
-data_snapshots  
+data_snapshots
 Before launching the slave, attach EBS volumes created from one or more
 volume snapshots listed in this option. :Multiple snapshots can be
 attached by providing a space-delimited list:
@@ -270,18 +270,18 @@ data_snapshots = snap-12345 snap-abcdef
 
 Ordinarily, this option is updated by the gbrowse_sync_aws_slave.pl
 script and should not be manually edited!
-availability_zone (optional)  
+availability_zone (optional)
 This option will force the slave into the named availability zone. If
 not specified, an availability zone in the current region will be chosen
 at random.
-subnet (optional)  
+subnet (optional)
 If you are in a VPC (virtual private cloud) environment, then this
 option will force the slave into the named subnet. Ordinarily the
 balancer script will launch slaves into non-VPC instances if the master
 is running on local hardware or a non-VPC EC2 instance. The balancer
 will launch slaves into the same VPC subnet as the master if the master
 is running on a VPC instance.
-security_group (optional)  
+security_group (optional)
 This specifies the security group to assign the slaves to. If not
 specified, a properly-configured security group will be created as
 needed and destroyed when the balancer script exits. If you choose to
@@ -289,7 +289,7 @@ manage the security group manually, be sure to configure the firewall
 ingress rule to allow access to the slave port(s) (see the "ports"
 option) from the master's group or IP address.
 
-  
+
 
 ### Configuring AWS Credentials
 

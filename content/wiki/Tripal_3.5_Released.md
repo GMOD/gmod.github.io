@@ -20,6 +20,6 @@ standard Drupal updating procedures to update. Changes in this version:
 5.  Bug fixes in web services
 6.  Bug fixes in the OBO loader for ontologies that won't import.
 
-  
+
 
 *Posted to the [GMOD News](GMOD_News "GMOD News") on 2021/02/08*

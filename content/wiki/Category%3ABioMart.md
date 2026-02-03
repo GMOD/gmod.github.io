@@ -63,92 +63,92 @@ title="User%253ASyedHaider">User%253ASyedHaider</a></li>
 
 The following 4 files are in this category, out of 4 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="How to load chado to biomart.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [How to load chado to
-  b...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/How_to_load_chado_to_biomart.pdf "File:How to load chado to biomart.pdf")  
-  767 KB  
+  b...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/How_to_load_chado_to_biomart.pdf "File:How to load chado to biomart.pdf")
+  767 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Jan2009BioMart.pdf" />
 
-  
 
-  
 
-  
 
-  [Jan2009BioMart.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Jan2009BioMart.pdf "File:Jan2009BioMart.pdf")  
-  3.42 MB  
 
-  
 
-  
 
-- 
+  [Jan2009BioMart.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Jan2009BioMart.pdf "File:Jan2009BioMart.pdf")
+  3.42 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Kasprzyk 040526.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [Kasprzyk
-  040526.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Kasprzyk_040526.ppt "File:Kasprzyk 040526.ppt")  
-  781 KB  
+  040526.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Kasprzyk_040526.ppt "File:Kasprzyk 040526.ppt")
+  781 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Kasprzyk-050516.ppt" />
 
-  
 
-  
 
-  
 
-  [Kasprzyk-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3c/Kasprzyk-050516.ppt "File:Kasprzyk-050516.ppt")  
+
+
+
+  [Kasprzyk-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3c/Kasprzyk-050516.ppt "File:Kasprzyk-050516.ppt")
   1.48 MB

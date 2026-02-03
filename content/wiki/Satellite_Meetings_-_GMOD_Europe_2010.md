@@ -48,16 +48,16 @@ width="200" height="171" alt="Part of GMOD Europe 2010" /></a>
 </tbody>
 </table>
 
-  
 
-  
+
+
 The [Satellite
 Meetings](January_2010_GMOD_Meeting#Satellite_Meetings "January 2010 GMOD Meeting")
 at the [January 2010 GMOD
 Meeting](January_2010_GMOD_Meeting "January 2010 GMOD Meeting") proved
 so popular that we decided to hold them again.
 
-  
+
 
   Topics</span>](#Satellite_Topics)
 - [Participants](#Participants)

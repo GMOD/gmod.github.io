@@ -40,15 +40,14 @@ class="external text" rel="nofollow">careers page</a> to apply.
 
 many thanks !
 
-Konstantinos (Ntino) Krampis, Ph.D.  
-Bioinformatics Engineer  
+Konstantinos (Ntino) Krampis, Ph.D.
+Bioinformatics Engineer
 <a href="http://www/jcvi.org" class="external text"
 rel="nofollow">J.Craig Venter Institute</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/11/18*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

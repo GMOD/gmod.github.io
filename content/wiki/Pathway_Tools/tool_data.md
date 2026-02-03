@@ -86,12 +86,12 @@ biology</a> <sup>[\[1\]](#cite_note-PMID:19955237-1)</sup> \| papers =
 \| presentations = \| tutorials =
 
 <a href="http://bioinformatics.ai.sri.com/ptools/" class="external text"
-rel="nofollow">Pathway Tools slides</a>  
+rel="nofollow">Pathway Tools slides</a>
 General information about Pathway Tools, including slides from tutorials
 and user guides
 
 <a href="http://bioinformatics.ai.sri.com/ptools/tutorial/"
-class="external text" rel="nofollow">Upcoming Events</a>  
+class="external text" rel="nofollow">Upcoming Events</a>
 Pathway Tools tutorials and workshops
 
 \| wild_urls = There are a large number of PGDBs available via the
@@ -119,5 +119,5 @@ Genbank format; SBML; BioPAX \| see_also = See the
 <a href="http://biocyc.org/samples.shtml" class="external text"
 rel="nofollow">samples section</a> of the BioCyc website for details of
 the types of data that are stored in a PGDB. \| demo_server = \|
-survey_link = Pathway_Tools \|release date=1999  
+survey_link = Pathway_Tools \|release date=1999
 **Cite error: `<ref>` tags exist, but no `<references/>` tag was found**

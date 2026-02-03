@@ -107,7 +107,7 @@ an entire datasource, create a \<Location\> section in httpd.conf. The
 \<Location\> section should look like this:
 
 ``` de1
- 
+
  <Location /cgi-bin/gb2/gbrowse/your_datasource>
         Order deny,allow
         deny from all
@@ -130,7 +130,7 @@ main screen or any of the configuration screens. To set this up, add a
 "restrict" option to the track you wish to make off-limits:
 
 ``` de1
- 
+
        [PROPRIETARY]
         feature = etc
         glyph   = etc
@@ -194,7 +194,7 @@ suppress this display:
     will be able to see and select the datasource. For example:
 
 ``` de1
- 
+
  [yeast]
  description = Yeast Chromosomes 1+2
  path        = yeast_simple.conf
@@ -208,7 +208,7 @@ prefer to modify the GBrowse conf file rather than Apache's conf file.
 For example, if Apache's config file contains this section:
 
 ``` de1
- 
+
     <Location /cgi-bin/gb2/gbrowse/yeast>
         Order deny,allow
         deny from all
@@ -224,7 +224,7 @@ be able to get in. You can further restrict access by adding the
 following to the \[GENERAL\] section of yeast_simple.conf:
 
 ``` de1
- 
+
   [GENERAL]
    # .... other stuff ...
    restrict  = require user fred joseph andrew vivian
@@ -285,10 +285,10 @@ The following is a GBrowse.conf configuration file with all the bells
 and whistles turned on:
 
 ``` de1
- 
+
  [GENERAL]
  # ...lots of stuff...
- 
+
  # Login Settings
  user_accounts               = 1
  user_accounts_registration  = 1
@@ -319,7 +319,7 @@ Only SQLite and MySQL databases are usable at the current time. For
 MySQL databases, the full form of the option is:
 
 ``` de1
- 
+
   DBI:mysql:database=gbrowse_login;host=mysql.oicr.on.ca;user=gbrowse;password=gbrowse
 ```
 
@@ -331,13 +331,13 @@ The GBrowse application will use the username "gbrowse" and the password
 For SQLite databases, the format is:
 
 ``` de1
- 
+
   DBI:SQLite:/var/www/gbrowse2/databases/users.sqlite
 ```
 
 The latter part of the description is a path to the database file.
 
-user_accounts, user_accounts_registration, user_accounts_openid  
+user_accounts, user_accounts_registration, user_accounts_openid
 These options turn on and off user accounts, new users' ability to
 register themselves and OpenID support, respectively. Pass a true value
 (usually "1" to turn the feature on). Pass a false value ("0" or just
@@ -350,7 +350,7 @@ users and to communicate track sharing information one user to another.
 The full format is:
 
 ``` de1
- 
+
  <smtp.server.com>:<port>:<encryption>:<username>:<password>
 ```
 
@@ -369,14 +369,14 @@ is Gmail. Here, for example, is how to route mail through a user account
 at GMail:
 
 ``` de1
- 
+
   smtp_gateway           = smtp.gmail.com:465:ssl:john.doe:open_sesame
 ```
 
 Replace "john.doe" and "open_sesame" with the appropriate username and
 password for the service.
 
-application_name, application_name_long, email_address  
+application_name, application_name_long, email_address
 These options control the "From" address that users will see when they
 receive their account registration confirmations. The defaults should
 work fine, but you may want to customize them for your site (e.g.
@@ -448,7 +448,7 @@ For example in yeast_simple.conf, you could have:
  # lots of other stuff...
  restrict = require valid-user
  ...
- 
+
  [5_prime_RACE]
  glyph    = generic
  feature  = RACE:5_prime

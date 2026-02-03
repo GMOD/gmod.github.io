@@ -49,13 +49,13 @@ This survey provides the first comprehensive view of the GMOD user
 community, what it is using and happy with, as well as what needs
 improvement and what priorities for the future are.
 
-  
+
 **Note:** See the [2009 GMOD Community
 Survey](2009_GMOD_Community_Survey "2009 GMOD Community Survey") for the
 following year's survey, which focused on genome and comparative
 genomics visualization.
 
-  
+
 
 ## Survey Links
 
@@ -147,7 +147,7 @@ link in this list.
 - <a href="../extras/2008GMODCommunitySurvey.html#Final_Comments"
   class="external text" rel="nofollow">Final Comments</a>
 
-  
+
 
 ## GMOD Components
 
@@ -159,16 +159,16 @@ were the most popular responses:
 |  % Using | Component |
 |---------:|----------------------------------------------------------------|
 | 70.8% | <a href="../extras/2008GMODCommunitySurvey.html#GBrowse" |
-            class="external text" rel="nofollow">GBrowse</a>                |    36.0% | <a href="../extras/2008GMODCommunitySurvey.html#Chado"         
-            class="external text" rel="nofollow">Chado</a>                  |    30.3% | <a href="../extras/2008GMODCommunitySurvey.html#Apollo"        
-            class="external text" rel="nofollow">Apollo</a>                 |    21.3% | <a href="../extras/2008GMODCommunitySurvey.html#BioMart"       
-            class="external text" rel="nofollow">BioMart</a>                |    13.5% | <a href="../extras/2008GMODCommunitySurvey.html#Pathway_Tools" 
-            class="external text" rel="nofollow">Pathway Tools</a>          |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#CMap"          
-            class="external text" rel="nofollow">CMap</a>                   |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#GMODTools"     
-            class="external text" rel="nofollow">GMODTools</a>              |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#InterMine"     
+            class="external text" rel="nofollow">GBrowse</a>                |    36.0% | <a href="../extras/2008GMODCommunitySurvey.html#Chado"
+            class="external text" rel="nofollow">Chado</a>                  |    30.3% | <a href="../extras/2008GMODCommunitySurvey.html#Apollo"
+            class="external text" rel="nofollow">Apollo</a>                 |    21.3% | <a href="../extras/2008GMODCommunitySurvey.html#BioMart"
+            class="external text" rel="nofollow">BioMart</a>                |    13.5% | <a href="../extras/2008GMODCommunitySurvey.html#Pathway_Tools"
+            class="external text" rel="nofollow">Pathway Tools</a>          |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#CMap"
+            class="external text" rel="nofollow">CMap</a>                   |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#GMODTools"
+            class="external text" rel="nofollow">GMODTools</a>              |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#InterMine"
             class="external text" rel="nofollow">InterMine</a>              |
 
-  
+
 
 ### Popular Combinations
 
@@ -301,7 +301,7 @@ Recurring responses were:
 | 3 | Training |
 | 3 | Improve what we already have. |
 
-  
+
 
 ## GMOD Help Desk
 
@@ -369,7 +369,7 @@ had more than one response:
 *Note: We will investigate possible locations and interest in a GMOD
 Course in Asia/Pacific during the last half of 2009 and during 2010.*
 
-  
+
 
 ## Survey Participants and Organizations
 
@@ -379,7 +379,7 @@ class="external text" rel="nofollow">survey respondents</a> and
 <a href="../extras/2008GMODCommunitySurvey.html#Your_Organization"
 class="external text" rel="nofollow">their organizations</a>.
 
-  
+
 Questions included:
 
 - Do you consider yourself to be a GMOD user, GMOD Developer, or both?
@@ -391,7 +391,7 @@ Questions included:
   that you are planning or hoping to use GMOD to manage, visualize, or
   annotate. (Summarized below)
 
-  
+
 
 ### User or Developer
 

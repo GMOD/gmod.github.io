@@ -177,7 +177,7 @@ internal users, e.g.:
 CHIA is being designed to be extensible for adding new functionality as
 needed.
 
-  
+
 
 ##### Documentation
 

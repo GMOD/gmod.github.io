@@ -38,10 +38,9 @@ information and registration details.
 
 [Jonathan Warren](../User%253AJWarren "User%253AJWarren")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/21*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

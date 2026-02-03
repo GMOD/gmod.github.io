@@ -38,13 +38,12 @@ If you use or are considering using
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>, please
 take a look at [Tripal](../Tripal.1 "Tripal").
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/28*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

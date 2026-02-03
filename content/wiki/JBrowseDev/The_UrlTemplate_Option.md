@@ -73,6 +73,5 @@ any of the other columns, e.g.:
 - <a href="General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
-:
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")

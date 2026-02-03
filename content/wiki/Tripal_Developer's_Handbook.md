@@ -223,7 +223,7 @@ directory:
 
 Where \[drupal dir\] is the location where Drupal is installed.
 
-  
+
 Inside of the Tripal theme are the following files:
 
 - **tripal.info**: a file required by Drupal to identify the theme and
@@ -239,7 +239,7 @@ Inside of the Tripal theme are the following files:
   correspond to the same content types available when creating new
   content in Drupal.
 
-  
+
 Inside of the Tripal theme are the following directories:
 
 - **tripal\_\[content type\]**: a series of directories with sub
@@ -251,7 +251,7 @@ Inside of the Tripal theme are the following directories:
 - **images**: a directory for storing images referenced by any of the
   template files.
 
-  
+
 
 ### Theming Content Types
 
@@ -335,7 +335,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/54/TripalDevHB-ThemeLayout.png/1200px-TripalDevHB-ThemeLayout.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/54/TripalDevHB-ThemeLayout.png 2x"
 width="800" height="655" alt="TripalDevHB-ThemeLayout.png" />
 
-  
+
 In the screen shot above, there are two distinct regions added by the
 Tripal templates. The first is the large content section on the
 left-hand side of the screen. This section provides a display of the
@@ -401,7 +401,7 @@ In the template file, each of these sections is defined by **div** tags
 with special CSS class names. First is the details section:
 
 ``` enter
-  
+
 
    <!-- Basic Details Theme -->
    <?php print theme('tripal_feature_base',$node); ?>
@@ -417,20 +417,20 @@ with special CSS class names. First is the details section:
 
    <!-- Synonyms -->
    <?php print theme('tripal_feature_synonyms', $node); ?>
-   
+
    <!-- Phenotypes -->
    <?php print theme('tripal_feature_phenotypes', $node); ?>
-   
-   <!-- Maps -->   
+
+   <!-- Maps -->
    <?php print theme('tripal_feature_featurepos', $node); ?>
 
-   <!-- Sequence --> <?php 
-   if(strcmp($feature->type_id->name,'scaffold')!=0 and 
+   <!-- Sequence --> <?php
+   if(strcmp($feature->type_id->name,'scaffold')!=0 and
       strcmp($feature->type_id->name,'chromosome')!=0 and
       strcmp($feature->type_id->name,'supercontig')!=0 and
       strcmp($feature->type_id->name,'pseudomolecule')!=0)
    {
-      print theme('tripal_feature_sequence', $node); 
+      print theme('tripal_feature_sequence', $node);
    } ?>
 
    <!-- Formatted Sequences -->
@@ -438,17 +438,17 @@ with special CSS class names. First is the details section:
 
    <!-- Relationships -->
    <?php print theme('tripal_feature_relationships', $node); ?>
-   
-   <!-- Feature locations --> <?php 
-   if(strcmp($feature->type_id->name,'scaffold')!=0 and 
+
+   <!-- Feature locations --> <?php
+   if(strcmp($feature->type_id->name,'scaffold')!=0 and
       strcmp($feature->type_id->name,'chromosome')!=0 and
       strcmp($feature->type_id->name,'supercontig')!=0 and
       strcmp($feature->type_id->name,'pseudomolecule')!=0)
    {
-      print theme('tripal_feature_alignments', $node); 
+      print theme('tripal_feature_alignments', $node);
    } ?>
-     
-  
+
+
    <!-- Resource Blocks CCK elements --><?php
    for($i = 0; $i < count($node->field_resource_titles); $i++){
      if($node->field_resource_titles[$i]['value']){ ?>
@@ -458,7 +458,7 @@ with special CSS class names. First is the details section:
        <?php
      }
    }?>
-   
+
    <!-- Let modules add more content -->
    <?php print $content ?>
 
@@ -509,7 +509,7 @@ node templates. The code is as follows:
 
    Resources
    <ul id="tripal_feature_toc_list" class="tripal_toc_list">
-   
+
      <!-- Resource Links CCK elements --><?php
      for($i = 0; $i < count($node->field_resource_links); $i++){
        if($node->field_resource_links[$i]['value']){
@@ -517,7 +517,7 @@ node templates. The code is as follows:
          <li><a href="<?php print $matches[1] ?>" target="_blank"><?php print $matches[0] ?></a></li><?php
        }
      }?>
-     
+
      <?php // ADD CUSTOMIZED <li> LINKS HERE ?>
    </ul>
 
@@ -636,7 +636,7 @@ the following subtemplates are available:
 - tripal_feature_teaser.tpl.php
 - tripal_feature_terms.tpl.php
 
-  
+
 Each of these subtemplates adds to the details section of the page a
 specific category of data. For example, the
 **tripal_feature_synonyms.tpl.php** template will add a listing of
@@ -679,7 +679,7 @@ elements descrbibed above:
 ``` enter
 
   <?php print $feature->type_id->name ?> Details
-  
+
   [.... additional content here ....]
 
 ```
@@ -825,7 +825,7 @@ $feature  = $variables['node']->feature;
 ?>
 
   <?php print $feature->type_id->name ?> Details
-  
+
 
    <?php if(strcmp($feature->is_obsolete,'t')==0){ ?>
       This feature is obsolete
@@ -983,11 +983,11 @@ create a pager we have to provide some options to the
 $featuremap = $variables['node']->featuremap;
 
 // specify the number of features to show by default and the unique pager ID
-$num_results_per_page = 25; 
+$num_results_per_page = 25;
 $featurepos_pager_id = 0;
 
 // set the options for expanding the featurepos table
-$options = array(  
+$options = array(
   'return_array' => 1,
   'order_by' => array('map_feature_id' => 'ASC'),
   'pager' => array('limit' => $num_results_per_page, 'element' => $featurepos_pager_id),
@@ -1009,7 +1009,7 @@ $options = array(
 $featuremap = tripal_core_expand_chado_vars($featuremap, 'table', 'featurepos', $options);
 $feature_positions = $featuremap->featurepos;
 
-// create the pager.  
+// create the pager.
 global $pager_total_items;
 $featurepos_pager = theme('pager', array(), $num_results_per_page, $featurepos_pager_id, array('block' => 'featurepos'));
 $total_features = $pager_total_items[$featurepos_pager_id];
@@ -1057,7 +1057,7 @@ href="http://tripal.gmod-dev.oicr.on.ca/1.1/node/3637?block=featurepos&amp;block
 class="external free"
 rel="nofollow">http://tripal.gmod-dev.oicr.on.ca/1.1/node/3637?block=featurepos&amp;block=featurepos</a>
 
-  
+
 
 ##### Accessing Drupal Node Information
 
@@ -1102,7 +1102,7 @@ should have the following skills:
 It is best to have a basic understanding of Drupal module development to
 help understand the remainder of this document.
 
-  
+
 
 ### Brief Introduction to Drupal Module Development
 
@@ -1120,7 +1120,7 @@ rel="nofollow">one of the Drupal books for sale</a>.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. Before proceeding with Tripal module development, it is recommended to have a general understanding of the Drupal API. It is possible to add functionality to Drupal without strictly using the API. However, inappropriate use of the API can cause problems in the future when integrating with other modules or for upgrading. It is important to become familiar with the coding standards suggested by Drupal to ensure readable, re-usable code. |
 
-  
+
 
 ### Components of the Tripal API
 
@@ -1144,7 +1144,7 @@ The Tripal API documentation can be found here:
 class="external free"
 rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/index.html</a>
 
-  
+
 
 #### Materialized Views API
 
@@ -1197,7 +1197,7 @@ href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__mviews_
 class="external free"
 rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__mviews__api.html</a>
 
-  
+
 
 #### Controlled Vocabularies API
 
@@ -1226,7 +1226,7 @@ href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__core__c
 class="external free"
 rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__core__cv__api.html</a>
 
-  
+
 
 #### Jobs Management API
 
@@ -1246,7 +1246,7 @@ href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__jobs__a
 class="external free"
 rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__jobs__api.html</a>
 
-  
+
 
 #### Chado API
 
@@ -1273,7 +1273,7 @@ href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__chado__
 class="external free"
 rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__chado__api.html</a>
 
-  
+
 
 #### Chado Schema API
 
@@ -1290,7 +1290,7 @@ href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__schema_
 class="external free"
 rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__schema__api.html</a>
 
-  
+
 
 #### Analysis API
 
@@ -1311,14 +1311,14 @@ documented. Therefore a brief description of the necessary function
 calls are provided below. See the example module files below for
 examples of useful API functions and appropriate places to use them.
 
-  
+
 
 #### Modules API
 
 Each Tripal module may provide a set of functions as an API. See the API
 documentation for the functions exposed by each module.
 
-  
+
 
 #### Views API
 
@@ -1331,7 +1331,7 @@ queries and views of the data in Chado or a Materialized View without
 using SQL or PHP programming. Filters for such queries can be exposed on
 a page and used to create custom search pages for a site.
 
-  
+
 
 ### The Anatomy of a Tripal Module
 
@@ -1423,7 +1423,7 @@ content. An example menu item has been provided in the code below.</li>
 </tbody>
 </table>
 
-  
+
 The following code creates a new module with the project name
 'example_module'.
 

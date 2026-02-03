@@ -6,12 +6,12 @@ title: "News/January 2010 GMOD Meeting"
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/39/Jan2010MtgLogo170.png" width="170"
 height="162" alt="January 2010 GMOD Meeting" />](../January_2010_GMOD_Meeting "January 2010 GMOD Meeting")
 
-  
+
 
 [Register for the January 2010 GMOD
 Meeting](../January_2010_GMOD_Meeting "January 2010 GMOD Meeting")
 
-  
+
 I am pleased to announce that the [January GMOD
 meeting](../January_2010_GMOD_Meeting "January 2010 GMOD Meeting") will
 be taking place on January 14 and 15, 2010 in San Diego at the [Best
@@ -42,10 +42,9 @@ Thanks and I look forward to seeing you in San Diego!
 
 [Scott](../User%253AScott "User%253AScott")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/13*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

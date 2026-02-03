@@ -14,7 +14,7 @@ evolve at IGS.
 I developed papyrus pipelines (later called ergatis-workflow pipelines)
 at TIGR (2003-2006) and JCVI (2006-2009).
 
-  
+
 **Employment History**
 
     Senior Bioinformatics Engineer (8/2009 – present)
@@ -46,7 +46,7 @@ at TIGR (2003-2006) and JCVI (2006-2009).
     M.Sc. Computer Science with concentration in Software Engineering (2004-2007)
     The Johns Hopkins University
     Baltimore/Rockville, MD
-        
+
     B.Sc. Biology and Computer Science (1998-2001)
     Concordia University
     Montreal, Canada

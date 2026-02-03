@@ -4,12 +4,12 @@ title: "Citrina"
 # Citrina
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
 See [Status](#Status) below for more information.
 
-  
+
 
   Status](#Status)
 - [Description](#Description)
@@ -31,7 +31,7 @@ rel="nofollow">http://biomaj.genouest.org/</a>). This is a fork of
 Citrina 0.5.1 and it looks like they have done a nice job tweaking and
 reinventing it based on the feature list.
 
-Cheers,  
+Cheers,
 Josh
 
 ## Description
@@ -51,7 +51,7 @@ via Ant's SQL tasks. Ant can also execute external scripts so Citrina
 can take advantage of any existing processing tools that you have
 already developed.
 
-  
+
 
 ## Requirements
 
@@ -80,14 +80,14 @@ Citrina has only been tested on Redhat Linux 9, Solaris 2.8, and SuSe
 been tested. It will not run on Windows due to its unique use of
 symbolic links.
 
-  
+
 
 ## Documentation
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3b/Citrina-userguide.pdf"
 class="internal" title="Citrina-userguide.pdf">Citrina-userguide.pdf</a>
 
-  
+
 
 ## Downloads
 
@@ -99,7 +99,7 @@ class="external text" rel="nofollow">citrina-0.5.1.tar.gz</a>
 href="http://prdownloads.sourceforge.net/gmod/citrina-0.5.1-src.tar.gz?download"
 class="external text" rel="nofollow">citrina-0.5.1-src.tar.gz</a>
 
-  
+
 
 ## Mailing List
 
@@ -107,7 +107,7 @@ class="external text" rel="nofollow">citrina-0.5.1-src.tar.gz</a>
 href="http://sourceforge.net/mailarchive/forum.php?forum=gmod-citrina"
 class="external text" rel="nofollow">Citrina discussion list</a>
 
-  
+
 
 ## Contact
 

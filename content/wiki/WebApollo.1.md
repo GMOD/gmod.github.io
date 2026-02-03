@@ -3,12 +3,12 @@ title: "WebApollo"
 ---
 # WebApollo
 
-  
+
 
 ------------------------------------------------------------------------
 
 ```
-NOTE:  This document is provided for versions of Web Apollo 2014-04-03 and older. 
+NOTE:  This document is provided for versions of Web Apollo 2014-04-03 and older.
 ```
 
 Newer documentation can be found at the
@@ -22,7 +22,7 @@ rel="nofollow">Github</a>.
 
 ------------------------------------------------------------------------
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/400px-WebApolloLogo.png"
@@ -35,7 +35,7 @@ Status
 - Development: active
 - Support: active
 
-  
+
 
 <a href="http://opensource.org/" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/66/Osi_symbol.png/40px-Osi_symbol.png"
@@ -77,7 +77,7 @@ title="Property:Is open source">Is open source</a></td>
 title="Property:Link type">Link type</a></td>
 <td class="smwprops">website ,
 source code ,
-demo server 
+demo server
 and download </td>
 </tr>
 <tr class="odd row-odd">
@@ -90,13 +90,13 @@ title="Property:Release date">Release date</a></td>
 href="Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
-<td class="smwprops">Community annotation 
+<td class="smwprops">Community annotation
 and Sequence annotation </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
-<td class="smwprops">Javascript 
+<td class="smwprops">Javascript
 and Java </td>
 </tr>
 <tr class="even row-even">
@@ -122,7 +122,7 @@ href="WebApollo.1#http:.2F.2Fgenomearchitect.org.2Fwebapollo.2Freleases.2F"
 title="WebApollo">WebApollo#http://genomearchitect.org/webapollo/releases/</a>
 ,
 <a href="WebApollo.1#_0d2bc0e8d059cba6cefd439a084fc7c8"
-title="WebApollo">WebApollo</a> 
+title="WebApollo">WebApollo</a>
 and <a href="WebApollo.1#_e25e09b3c3c15a82835f7fa1b510fe42"
 title="WebApollo">WebApollo</a> </td>
 </tr>

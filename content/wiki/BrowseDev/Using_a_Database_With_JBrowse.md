@@ -1215,6 +1215,5 @@ make it higher resolution
   class="external text" rel="nofollow">JBrowse: A Next Generation Genome
   Browser</a> paper
 
-:
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")

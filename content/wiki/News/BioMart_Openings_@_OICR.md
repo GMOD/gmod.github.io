@@ -8,7 +8,7 @@ rel="nofollow" title="4 openings at OICR"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/OICRlogo.png" width="158" height="53"
 alt="4 openings at OICR" /></a>
 
-  
+
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/130px-Biomart250.png"
@@ -41,13 +41,12 @@ developed at <a href="http://www.oicr.on.ca/" class="external text"
 rel="nofollow">OICR</a>. Please see the job postings for additional
 details.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/09/12*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

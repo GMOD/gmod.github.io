@@ -27,6 +27,6 @@ curation.
 
 We will have more information closer to the time.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/03/25*

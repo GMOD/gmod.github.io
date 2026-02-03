@@ -3,7 +3,7 @@ title: "Tripal Tutorial 2010"
 ---
 # Tripal Tutorial 2010
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png"
@@ -171,7 +171,7 @@ over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
 
-  
+
 
 ## Important Information
 
@@ -651,7 +651,7 @@ Administration - Site Building
   - Add the "Who's Online" block to the left sidebar.
   - Add a search box to the left sidebar as well.
 
-  
+
 
 - Site Building → Menu
   - Add a 'Home' link
@@ -668,7 +668,7 @@ Administration - Site Building
   - Navigate to Drupal.org and click on 'Themes'. Review the wealth of
     public themes.
 
-  
+
 
 Administration - User Management
 
@@ -1015,7 +1015,7 @@ Now add the following to the `pixture_reloaded.info`
 Now, navigate to the **Administer → Site Building → Themes** directory
 and enable the Tripal theme but do not set as default.
 
-  
+
 Return to the organism page and refresh. Now the content is available.
 
 #### Organize the Blocks
@@ -1153,7 +1153,7 @@ this navigate to **Administer → Tripal Management → DB**. The page with
 
 Now return to the feature page and the reference should be clickable
 
-  
+
 
 ### Review Permissions
 
@@ -1287,7 +1287,7 @@ the form that appears provide the following details:
 8.  Parameters: <span class="enter">'iprscan -cli -i JYalpha.fasta -o
     JYalpha.fasta.ipr.html -format html -goterms -ipr'</span>
 
-  
+
 Save the Analysis and run the new job:
 
 ``` enter
@@ -1353,7 +1353,7 @@ this, we need to reindex the features.
 
 How to reindex all content
 
-  
+
 Navigate to **Administer &rar; Tripal Management → Features** and click
 the **Reindex all feature nodes** button. This will add a Job to Tripal.
 
@@ -1460,9 +1460,9 @@ Concepts
     with Tripal.
 2.  Drupal API provide the rest
 
-  
 
-Anatomy of a Drupal module  
+
+Anatomy of a Drupal module
 
 1.  module name (directory name)
 2.  a .info file describing the module
@@ -1472,9 +1472,9 @@ Anatomy of a Drupal module
 5.  templates: the look-and-feel should be separated from the code if
     possible.
 
-  
 
-Example `.info` file  
+
+Example `.info` file
 `tripal_feature.info`
     ; $Id: tripal_feature.info,v 1.4 2009/10/01 17:52:24 ccheng Exp $
     name = Tripal Chado Feature
@@ -1489,12 +1489,12 @@ Example `.info` file
     dependencies[] = tripal_cv
     version = "6.x-0.2b-m0.2"
 
-Example `.install file`  
+Example `.install file`
 `tripal_feature.install`
 
 Drupal hooks: {node}\_{hook_name} or {module}\_{hook_name}
 
-  
+
 The important functions:
 
 - function *tripal_feature_install()*: actions to do on install
@@ -1505,9 +1505,9 @@ The important functions:
 
 See the code here: `/var/www/sites/all/modules/tripal_feature`
 
-  
 
-Example `.module` file  
+
+Example `.module` file
 `tripal_feature.module`
 
 The important module-centric functions:
@@ -1549,7 +1549,7 @@ The important node-centric functions:
 
 Tripal provides the following functions for integrating with Tripal:
 
-  
+
 
 *tripal_create_moddir(\$module_name)*
 
@@ -1584,7 +1584,7 @@ argument is as follows:
 argument to the callback function. Therefore all callback functions
 should have a jobid argument first.
 
-  
+
 
 *tripal_job_set_progress(\$job_id,\$percentage)*
 
@@ -1592,14 +1592,14 @@ Allows the callback function for the job to set the progress of the job.
 The first argument is the job id that get's passed into the callback by
 Tripal and the percentage is a value between 0 and 100.
 
-  
+
 
 *tripal_get_module_active_jobs (\$modulename)*
 
 Allows a module to see if it has any active jobs currently executing. A
 list of jobs is returned.
 
-  
+
 
 *tripal_add_cvterms (\$name,\$definition,\$cv_name =
 'tripal',\$db_name='tripal'*
@@ -1610,7 +1610,7 @@ database in Chado. This function allows modules to create cvterms
 behind-the-scenes to support the data management they provide. This
 function is particularly useful in \_install hooks of .install files.
 
-  
+
 
 *function tripal_add_mview
 (\$name,\$modulename,\$mv_table,\$mv_specs,\$indexed,\$query,\$special_index)*
@@ -1636,7 +1636,7 @@ comes with chado 1.0, although the outcome is the same. Any materialized
 views created with Tripal are not compatible with the Chado scripts for
 updating materialized views.
 
-  
+
 
 Adding a new analysis method
 
@@ -1648,7 +1648,7 @@ finalized analysis API coming soon.
 
 #### Setup
 
-Step 1  
+Step 1
 Add a publication to Chado
 
 Let's create a very simple module that will place publications on a
@@ -1667,27 +1667,27 @@ Now execute the following SQL statements
 
 ``` de1
    INSERT INTO cv (NAME) VALUES ('pub_demo');
- 
+
    INSERT INTO db (NAME) VALUES ('pub_demo');
- 
+
    INSERT INTO dbxref (db_id,accession,version,description)
    VALUES ((SELECT db_id FROM db WHERE NAME = 'pub_demo'),
            'pub0001',' ','demo publication accession');
- 
+
    INSERT INTO cvterm (cv_id,name,dbxref_id)
    VALUES ((SELECT cv_id FROM cv WHERE NAME = 'pub_demo'),
            'journal',
            (SELECT dbxref_id FROM dbxref WHERE accession = 'pub0001'));
- 
+
    INSERT INTO pub (title,volumetitle,volume,issue,pyear,pages,uniquename,type_id)
    VALUES ('Multiple SET methyltransferases are required to maintain normal heterochromatin domains in the genome of Drosophila melanogaster',
            'Genetics','181','4','2009','1303-1319','demo_pub',
            (SELECT cvterm_id FROM cvterm CVT INNER JOIN CV ON CVT.cv_id = CV.cv_id
             WHERE CV.name = 'pub_demo' AND CVT.name = 'journal'));
- 
+
    INSERT INTO pubauthor (pub_id,rank,surname,givennames)
    VALUES ((SELECT pub_id FROM pub WHERE uniquename = 'demo_pub'),0,'Browser-Toland','et al.');
- 
+
    INSERT INTO feature_pub (feature_id,pub_id)
    VALUES ((SELECT feature_id FROM feature WHERE uniquename = 'FBgn0040037'),
            (SELECT pub_id FROM pub WHERE uniquename = 'demo_pub'));
@@ -1700,7 +1700,7 @@ These statements do the following:
 2.  Adds a publication and author
 3.  Associates the publication with the feature YAL061W.
 
-Step 2  
+Step 2
 create the module directory
 
 Change directories to our Drupal install directory where we installed
@@ -1752,20 +1752,20 @@ so that in the future if we do want to add code to these modules we can.
 ``` de1
 <?php
    //$Id:
- 
+
    /*******************************************************************************
    * Implementation of hook_install().
    */
    function tripal_pubs_install() {
    }
- 
- 
+
+
    /*******************************************************************************
    * Implementation of hook_uninstall().
    */
    function tripal_pubs_uninstall() {
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_schema().
    */
@@ -1786,14 +1786,14 @@ We'll discuss each function...
 
 ``` de1
 <?php
- 
+
    /*******************************************************************************
    * Implementation of hook_init()
    */
    function tripal_pubs_init() {
- 
+
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_perm()
    */
@@ -1805,7 +1805,7 @@ We'll discuss each function...
          'edit chado_publication content',
       );
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_node_info()
    */
@@ -1822,7 +1822,7 @@ We'll discuss each function...
       );
       return $nodes;
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_block()
    */
@@ -1831,7 +1831,7 @@ We'll discuss each function...
          case 'list':
             $blocks[0]['info'] = t('Publications');
             return $blocks;
- 
+
          case 'view':
             if(user_access('access chado_publication content')){
                $items[] = t("This block is not yet setup.");
@@ -1842,13 +1842,13 @@ We'll discuss each function...
             return $block;
       }
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_menu()
    */
    function tripal_pubs_menu() {
       $items = array();
- 
+
       $items['publications'] = array(
          'menu_name' => ('primary-links'), //Enable the 'Publications' primary link
          'title' => t('Publications'),
@@ -1867,45 +1867,45 @@ We'll discuss each function...
       );
       return $items;
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_admin()
    */
    function tripal_pubs_admin () {
       // provide a form for administrative settings
       $form = array();
- 
+
       return system_settings_form($form);
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_admin_validate()
    */
    function tripal_pubs_admin_validate($form, &$form_state) {
       // validate the admin form submission
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_insert()
    */
    function chado_publication_insert($node){
       // add publication to chado database
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_delete()
    */
    function chado_publication_delete($node){
       // remove publication from chado database
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_update()
    */
    function chado_publication_update($node){
       // update a publication record in the chado database
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_access()
    */
@@ -1913,7 +1913,7 @@ We'll discuss each function...
       if ($op == 'create') {
          return user_access('create chado_publication content', $account);
       }
- 
+
       if ($op == 'update') {
          if (user_access('edit chado_publication content', $account)) {
             return TRUE;
@@ -1931,13 +1931,13 @@ We'll discuss each function...
       }
       return FALSE;
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_form()
    */
    function chado_publication_form ($node, $param){
       $form = array();
- 
+
       $form['title']= array(
          '#type' => 'textfield',
          '#title' => t('Publication Title'),
@@ -1947,13 +1947,13 @@ We'll discuss each function...
          '#weight' => 1,
          '#maxlength' => 255
       );
- 
+
       // add additional fields to the form that are needed to populate the
       // chado tables
- 
+
       return $form;
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_load()
    */
@@ -1963,13 +1963,13 @@ We'll discuss each function...
              "FROM pub P ";
       $pubs = db_fetch_object(db_query($sql));
       db_set_active($previous_db);  // now use drupal database
- 
+
       $additions->pubs = $pubs;
- 
+
       // we would additionally want to pull out the authors for the publication
       // as well
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_view()
    */
@@ -1977,14 +1977,14 @@ We'll discuss each function...
       // this function provides instructions for establishing the way the
       // publication page will look.
    }
- 
+
    /*******************************************************************************
    * Callback for the 'publications' menu item
    */
    function tripal_pubs_page(){
       return 'This is where custom content would go if we needed it.';
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_nodeapi()
    */
@@ -1995,7 +1995,7 @@ We'll discuss each function...
          if (strcmp($node->type,'chado_feature') != 0) {
             break;
          }
- 
+
          // Add pubs to the content item if it's not a teaser
          if (!$teaser && $node->feature->feature_id) {
             $node->content['tripal_pubs_form'] = array(
@@ -2005,7 +2005,7 @@ We'll discuss each function...
          }
       }
    }
- 
+
    /*******************************************************************************
    * Implementation of hook_theme()
    */
@@ -2016,13 +2016,13 @@ We'll discuss each function...
           )
        );
    }
- 
+
    /*******************************************************************************
    * The theme function that sets the content to be added
    */
    function theme_tripal_pubs_feature_pub_list ($node) {
       $feature = $node->feature;
- 
+
       // get the list of publications that are associated with this
       // feature
       $sql = "SELECT * ".
@@ -2039,7 +2039,7 @@ We'll discuss each function...
                   "".
                   "<h3>Publications</h3>".
                   "feature_id\">";
- 
+
       // iterate through the publications, get the authors and print
       // the references
       while($pub = db_fetch_object($pubs)){
@@ -2053,7 +2053,7 @@ We'll discuss each function...
          $content .= "$pub->title. <em>$pub->volumetitle</em> $pub->pyear $pub->volume($pub->issue):$pub->pages<br>";
       }
       $content .= "<br>";
- 
+
       return $content;
    }
 ```

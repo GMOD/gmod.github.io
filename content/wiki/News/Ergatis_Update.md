@@ -41,10 +41,9 @@ biologists with specific pipeline needs.
 
 [Joshua Orvis](../User%253AJorvis "User%253AJorvis")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/20*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

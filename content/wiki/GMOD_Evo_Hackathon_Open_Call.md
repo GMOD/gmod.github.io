@@ -29,7 +29,7 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA<br />
 </tbody>
 </table>
 
-  
+
 
   Apply</span>](#How_To_Apply)
 - [About
@@ -94,7 +94,7 @@ to develop working code that is of utility to the community as a whole.
 The mix of people will include domain experts and computer-savvy
 end-users.
 
-  
+
 Sincerely,
 
 The [GMOD EvoHack](GMOD_Evo_Hackathon "GMOD Evo Hackathon") Organizing

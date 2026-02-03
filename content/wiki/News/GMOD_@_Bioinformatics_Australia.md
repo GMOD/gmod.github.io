@@ -29,13 +29,12 @@ Please see the [workshop page](../BA2009 "BA2009") or
 <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">contact the GMOD Help Desk</a> for more information.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/01*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

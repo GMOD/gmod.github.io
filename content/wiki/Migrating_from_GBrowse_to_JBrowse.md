@@ -20,7 +20,7 @@ title: "Migrating from GBrowse to JBrowse"
   - [Mapping
     out GBrowse to JBrowse
     configuration](#Mapping_out_GBrowse_to_JBrowse_configuration)
-    - 
+    -
 - [Dealing with
   binary data](#Dealing_with_binary_data)
 - [Where to get

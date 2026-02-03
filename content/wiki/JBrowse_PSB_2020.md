@@ -3,7 +3,7 @@ title: "JBrowse PSB 2020"
 ---
 # JBrowse PSB 2020
 
-  
+
 
 ## Overview
 
@@ -29,7 +29,7 @@ rendered DOM is a function of application state. Many new features are
 available in JBrowse 2 and this part of the workshop will introduce them
 for the first time.
 
-  
+
 
 #### Intended Audience
 

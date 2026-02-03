@@ -27,7 +27,7 @@ title="August 2009 GMOD Meeting">Community Meeting</a></span></p></td>
 </tbody>
 </table>
 
-  
+
 The ***2009 GMOD Summer School - Europe*** was held 3-6 August in
 Oxford, UK. Like the [2008 GMOD Summer
 School](2008_GMOD_Summer_School "2008 GMOD Summer School"), this course
@@ -364,7 +364,7 @@ systems](Glossary#Operating_System "Glossary") from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
 
-  
+
 
 VMware on Mac OS X
 
@@ -379,7 +379,7 @@ There is no free VMware player that runs *directly* under [Mac OS
 X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
 other options, *all of which require an Intel Mac*:
 
-  
+
 
 VMware Fusion
 
@@ -393,7 +393,7 @@ images, Windows and Linux under Mac OS. **We recommend this option for
 Mac users. There is a fully functional, 30 day free trial version of
 VMware Fusion available for download.**
 
-  
+
 
 Mac OS 10.5 (Leopard) and Boot Camp
 
@@ -456,13 +456,13 @@ rel="nofollow">Computational Biology Research Group (CBRG)</a> at the
 University of Oxford for hosting and financially supporting the week's
 events.
 
-  
+
 
 ## Feedback
 
 19 of 25 students provided feedback on the course.
 
-  
+
 **Q: Would you recommend
 <a href="GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> to others?**
@@ -471,7 +471,7 @@ title="GMOD Summer School">GMOD Summer School</a> to others?**
 |-----|------------------------|-----|------------|
 | 0% | 16% | 84% | 0% |
 
-  
+
 **Q: Please rate the quality of the sessions overall, from 1 (very poor)
 to 3 (average) to 5 (very good), or N.A. if you have no opinion.**
 

@@ -67,6 +67,6 @@ title="Daphnia-genepage.png">daphnia gene page</a> and
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/96/Daphnia-genepage-xml.png"
 class="internal" title="Daphnia-genepage-xml.png">gene page xml</a>.
 
-  
+
 [Dongilbert](User%253ADongilbert "User%253ADongilbert") 16:23, 4 September 2007
 (EDT)

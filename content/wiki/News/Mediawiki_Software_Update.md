@@ -31,10 +31,9 @@ easier; that should happen some time this week as well.
 The planned down time for the wiki at gmod.org will start at 2:00 PM EDT
 and hopefully will not last very long at all (less than an hour).
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/05/09*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

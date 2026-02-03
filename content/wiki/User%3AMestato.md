@@ -6,12 +6,12 @@ title: "User%253AMestato"
 <a href="http://hardwoodgenomics.org" class="external text"
 rel="nofollow">Hardwood Genomics Project</a>
 
-  
+
 Margaret Staton
 
 University of Tennessee, Knoxville
 
-  
+
 I am developing genetic and genomic tools for a variety of important
 North American hardwood tree species. These resources enable elucidation
 of the molecular basis of tree response to stresses including heat,
@@ -20,7 +20,7 @@ interested in American chestnut, black walnut and oak species, all of
 which have critical diseases with major economic and ecological
 implications.
 
-  
+
 I am also interested in the public dissemination of research data
 through online knowledge databases, particularly in increasing
 communication from scientists to the general public. I developed and

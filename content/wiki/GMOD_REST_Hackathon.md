@@ -33,7 +33,7 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 </tbody>
 </table>
 
-  
+
 
   Committee</span>](#Organizing_Committee)
 - [Attendees](#Attendees)
@@ -47,7 +47,7 @@ REST API</a>. It will be a very low key event with no official reserved
 location or catered goodies. We will probably congregate pool side, in a
 hotel room, or in the New England themed bar at the Seven Seas hotel.
 
-  
+
 
 ## Organizing Committee
 

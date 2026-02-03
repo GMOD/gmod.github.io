@@ -100,7 +100,7 @@ have the latest copy.
 After restarting Galaxy, Trackster will now know about the size of all
 chromosomes for many genome builds.
 
-  
+
 
 ## Adding a new tool
 
@@ -127,15 +127,15 @@ create `tools/gmod_2012/sam_filter.py` containing:
 
 ``` de1
 #!/usr/bin/env python
- 
+
 """
 Usage: sam_filter.py input_file output_file flag value
 """
- 
+
 import sys
- 
+
 out = open( sys.argv[2], "w" )
- 
+
 for line in open( sys.argv[1] ):
     # Strip end of line and split on tabs
     fields = line.rstrip( "\r\n" ).split( "\t" )
@@ -158,13 +158,13 @@ Next, we need to create the tool configuration. Edit the file
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
     <command interpreter="python">
- 
+
     </command>
     <inputs>
- 
+
     </inputs>
     <outputs>
- 
+
     </outputs>
 </tool>
 ```
@@ -175,10 +175,10 @@ First, let's define the output. This tool has a single output, of type
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
     <command interpreter="python">
- 
+
     </command>
     <inputs>
- 
+
     </inputs>
     <outputs>
         <data name="output1" format="sam" />
@@ -199,7 +199,7 @@ The resulting configuration:
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
     <command interpreter="python">
- 
+
     </command>
     <inputs>
         <param type="data" format="sam" name="input1" label="File to filter"/>
@@ -280,7 +280,7 @@ only reads that mapped exactly to the reference.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/97/GalaxyExtras_SamFilter_2.png" width="1059"
 height="510" alt="GalaxyExtras SamFilter 2.png" />
 
-  
+
 
 ## Configuring Galaxy (2)
 
@@ -325,7 +325,7 @@ and then start Galaxy
 
 Having made these changes and restarted Galaxy, access it at Template:YourUrlGalaxy.
 
-  
+
 You will notice that your history has been lost. This is the result of
 moving to Postgres. On startup, Galaxy will again have created a new
 database from scratch.

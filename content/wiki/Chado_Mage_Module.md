@@ -126,12 +126,12 @@ key tables.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/41/Rad-query-1.png" width="1103" height="365"
 alt="Rad-query-1.png" />
 
-  
+
 Red is for the *mage* tables, Yellow is for *companalysis* tables, Gray
 is for *organism* tables, Blue is for *sequence* tables, and Green is
 for the *cv* tables.
 
-  
+
 
 ### Loading
 
@@ -175,7 +175,7 @@ The researcher would load the data into the database in this order:
     which ultimately links back to the sample. Experimental result data
     is stored here.
 
-  
+
 You can store a boolean for 'expressed' or 'not expressed', or you could
 store the quantitative data and have some algorithm that determines from
 those data what is or is not expressed. Obviously the latter is less
@@ -230,7 +230,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: acquisition_relationship
 
@@ -250,7 +250,7 @@ acquisition_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: acquisitionprop
 
@@ -268,7 +268,7 @@ acquisitionprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: arraydesign
 
@@ -300,7 +300,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: arraydesignprop
 
@@ -318,7 +318,7 @@ arraydesignprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: assay
 
@@ -349,7 +349,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: assay_biomaterial
 
@@ -369,7 +369,7 @@ assay_biomaterial Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: assay_project
 
@@ -385,7 +385,7 @@ assay_project Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: assayprop
 
@@ -403,7 +403,7 @@ assayprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterial
 
@@ -432,7 +432,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterial_dbxref
 
@@ -446,7 +446,7 @@ biomaterial_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterial_relationship
 
@@ -464,7 +464,7 @@ biomaterial_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterial_treatment
 
@@ -483,7 +483,7 @@ biomaterial_treatment Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterialprop
 
@@ -501,7 +501,7 @@ biomaterialprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: channel
 
@@ -523,7 +523,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: control
 
@@ -541,7 +541,7 @@ control Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: element
 
@@ -563,7 +563,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: element_relationship
 
@@ -584,7 +584,7 @@ element_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: elementresult
 
@@ -607,7 +607,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: elementresult_relationship
 
@@ -628,7 +628,7 @@ elementresult_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: magedocumentation
 
@@ -644,7 +644,7 @@ magedocumentation Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: mageml
 
@@ -665,7 +665,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: protocol
 
@@ -692,7 +692,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: protocolparam
 
@@ -712,7 +712,7 @@ protocolparam Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: quantification
 
@@ -738,7 +738,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: quantification_relationship
 
@@ -756,7 +756,7 @@ quantification_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: quantificationprop
 
@@ -775,7 +775,7 @@ quantificationprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: study
 
@@ -794,7 +794,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: study_assay
 
@@ -808,7 +808,7 @@ study_assay Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: studydesign
 
@@ -825,7 +825,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: studydesignprop
 
@@ -841,7 +841,7 @@ studydesignprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: studyfactor
 
@@ -859,7 +859,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: studyfactorvalue
 
@@ -875,7 +875,7 @@ studyfactorvalue Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: treatment
 

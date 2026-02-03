@@ -73,7 +73,7 @@ system image with MAKER prerequisite software already installed will be
 made available on this page. You can use this image to walk through the
 material presented at this workshop.
 
-  
+
 
 ## Other GMOD Presentations and Meetings
 

@@ -18,6 +18,6 @@ Attendees: Gregg, Nomi, Chris C., Ed, Jay
 - When \*is\* John Day-Richter visiting Berkeley?
   - Suzi: please try contacting John again.
 
-  
+
 
 ## Status reports

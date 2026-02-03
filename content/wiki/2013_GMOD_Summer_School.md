@@ -13,9 +13,9 @@ Dates: Friday July 19th - Tuesday July 23rd 2013
 Venue: <a href="http://nescent.org" class="external text"
 rel="nofollow">NESCent, North Carolina</a>
 
-  
 
-  
+
+
 <a href="http://gmodsummerschool2013.wikispaces.com/"
 class="external text" rel="nofollow">GMOD 2013 Summer School wiki</a>
 (contents available to course participants only)

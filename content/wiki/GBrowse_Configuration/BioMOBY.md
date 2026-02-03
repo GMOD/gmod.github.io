@@ -27,7 +27,7 @@ some VERY simple code-editing, and small modifications to your
 XX.organism.conf configuration file. These are described in detail
 below:
 
-SYNOPSIS  
+SYNOPSIS
 In 0X.organism.conf, for example:
     [ORIGIN]
     link         = http://yoursite.com/cgi-bin/gbrowse_moby?source=$source&name=$name&class=$class&method=$method&ref=$ref&description=$description
@@ -62,7 +62,7 @@ the GFF source (column 2) to a MOBY namespace:
 
      $source2namespace{$source} = moby_namespace
 
-REQUIRED LIBRARIES  
+REQUIRED LIBRARIES
 This script requires libraries from the BioMOBY project. Currently these
 are only available from the [CVS](../Glossary#CVS "Glossary"). Anonymous
 checkout of the BioMOBY project can be accomplished as follows:
@@ -79,7 +79,7 @@ You will then need to enter the moby-live/Perl folder and run
 
 to install the MOBY libraries into your system.
 
-USAGE  
+USAGE
 gbrowse_moby understands the following variables, some of which (\*) may
 be passed from Gbrowse through a mouse-click into the GET string:
     * $source    - converted into a MOBY namespace by parsing
@@ -99,7 +99,7 @@ Note that you MUST at least pass a namespace-type variable
 (source/namespace) and an id-type variable (name/id) in order to have a
 successful MOBY call.
 
-EXAMPLES  
+EXAMPLES
 Simple GFF: If your GFF were:
          A22344  Genbank  origin  1000  2000  87  +  .
 
@@ -170,7 +170,7 @@ handle the Genbank GFF source as before:
                'Genbank'       =>      'NCBI_Acc',
          );
 
-HINTS  
+HINTS
 -The full listing of valid MOBY namespaces is available at:
        http://mobycentral.cbr.nrc.ca/cgi-bin/types/Namespaces
 
@@ -178,7 +178,7 @@ HINTS
 Global_Keyword namespace. This will trigger discovery of MedLine
 searches for papers about that organism.
 
-  
+
 
 ## BioMOBY Services
 
@@ -188,10 +188,10 @@ architecture.
 
 To enable these, simply do the following:
 
-. Set-up and fill your database  
+. Set-up and fill your database
 as per the normal Gbrowse instructions
 
-. Edit the moby.conf file  
+. Edit the moby.conf file
 in the /\$CONFIG/gbrowse.conf/MobyServices folder. It should be set up
 as follows:
 
@@ -226,7 +226,7 @@ TAIR_Locus identifiers in-hand to discover your service and request
 information about that locus from your database. You may add as many
 Namespace-\>Class mappings as you wish; one per line.
 
-. REGISTERING SERVICES  
+. REGISTERING SERVICES
 To register your services with the MOBY Central web service registry
 simply run the `register_moby_services.pl` script, located in the
 `Generic-Genome-Browser/bin` folder. The script documentation can be
@@ -244,7 +244,7 @@ services if you wish to do so. To deregister, simply run:
 If your .dat file is not available, cleaning your services will be
 unsuccessful.
 
-. Service script  
+. Service script
 Your services are served by the script `moby_server` in your
 `cgi-bin folder`. This is auto-configured by the register_services step
 above, so generally speaking you do not need to edit this script.

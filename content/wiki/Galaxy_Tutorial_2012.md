@@ -69,29 +69,29 @@ Before we get started, let's highlight some Galaxy resources that may be
 useful to us along the way.
 
 <a href="http://galaxyproject.org" class="external free"
-rel="nofollow">http://galaxyproject.org</a>  
+rel="nofollow">http://galaxyproject.org</a>
 The Galaxy Project home page
 <a href="https://wiki.galaxyproject.org/" class="external text"
-rel="nofollow">GalaxyWiki</a>  
+rel="nofollow">GalaxyWiki</a>
 All things Galaxy.
 <a href="http://usegalaxy.org/" class="external free"
-rel="nofollow">http://usegalaxy.org/</a>  
+rel="nofollow">http://usegalaxy.org/</a>
 The Galaxy project's free public server.
 <a href="http://galaxyproject.org/search/" class="external text"
-rel="nofollow">Galaxy Search</a>  
+rel="nofollow">Galaxy Search</a>
 Integrated searches of all online Galaxy resources. Available searches:
 <a href="http://galaxyproject.org/search/web" class="external text"
-rel="nofollow">Pan-Galactic Web Search</a>  
+rel="nofollow">Pan-Galactic Web Search</a>
 Search everything
 <a href="http://galaxyproject.org/search/mailinglists"
-class="external text" rel="nofollow">Galaxy Mailing Lists Search</a>  
+class="external text" rel="nofollow">Galaxy Mailing Lists Search</a>
 Search the (Nabble-powered) mailing list archives
 <a href="http://galaxyproject.org/search/usegalaxy"
-class="external text" rel="nofollow">Using Galaxy Search</a>  
+class="external text" rel="nofollow">Using Galaxy Search</a>
 Search online resources related to *using* Galaxy
 <a href="http://galaxyproject.org/search/getgalaxy"
 class="external text" rel="nofollow">Galaxy Admin and Development
-Search</a>  
+Search</a>
 Search online resources related to *deploying and developing* Galaxy
 
 Results from searches are often further broken down into categories
@@ -109,23 +109,23 @@ Results from searches are often further broken down into categories
 This is all implemented using Google Custom Search.
 
 <a href="https://wiki.galaxyproject.org/PublicGalaxyServers"
-class="external text" rel="nofollow">Public Galaxy Servers</a>  
+class="external text" rel="nofollow">Public Galaxy Servers</a>
 Current list of know publicly accessible Galaxy servers.
 <a href="https://wiki.galaxyproject.org/Mailing%20Lists"
 class="external text" rel="nofollow">Mailing Lists</a> and <a href="http://galaxyproject.org/search/mailinglists"
-class="external text" rel="nofollow">Mailing Lists Search</a>  
+class="external text" rel="nofollow">Mailing Lists Search</a>
 Galaxy has several mailing lists, some of which are
 <a href="https://wiki.galaxyproject.org/Statistics"
 class="external text" rel="nofollow">very active</a>
 <a href="https://wiki.galaxyproject.org/Learn/Screencasts"
-class="external text" rel="nofollow">Screencasts</a>, lots of them.  
+class="external text" rel="nofollow">Screencasts</a>, lots of them.
 Slides, and sometimes videos, from past
 <a href="https://wiki.galaxyproject.org/Events" class="external text"
 rel="nofollow">Galaxy-related events and presentations</a>.
 <a href="https://wiki.galaxyproject.org/CiteULike" class="external text"
 rel="nofollow">Galaxy CiteULike group</a> (<a href="http://www.citeulike.org/group/16008/order/to_read,desc,"
 class="external text" rel="nofollow">@ CiteULike</a>) and <a href="http://www.mendeley.com/groups/1710745/" class="external text"
-rel="nofollow">Mendeley mirror</a>  
+rel="nofollow">Mendeley mirror</a>
 Eight different <a href="http://www.citeulike.org/group/16008/tags"
 class="external text" rel="nofollow">tags/categories</a>.
 
@@ -193,7 +193,7 @@ and update it:
     $ cp universe_wsgi.ini.sample universe_wsgi.ini
     $ pico universe_wsgi.ini
 
-  
+
 Change the port from
 
     #port = 8080
@@ -217,7 +217,7 @@ to:
 
 This makes Galaxy visible to remote hosts, such as your laptop
 
-  
+
 Set the *brand* to make it obvious that you are working on your Galaxy
 instance
 
@@ -562,7 +562,7 @@ produce a more useful dataset that we can visualize right now.
 The original exon dataset downloaded from UCSC had a meaningless score
 column. Let's replace that with the repeat count.
 
-  
+
 First, bring the original exon information together with the counts.
 
 *Select* **Tools → Join, Subtract and Group → Join two Datasets**. *Set*
@@ -585,7 +585,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/Galaxy_JoinOnExonNameResults.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/Galaxy_JoinOnExonNameResults.png 2x"
 width="900" height="249" alt="Galaxy JoinOnExonNameResults.png" />
 
-  
+
 Now, use the **Cut** tool to reshuffle these 8 columns into a valid 6
 column BED file with the repeat count in column 5, the score column.
 

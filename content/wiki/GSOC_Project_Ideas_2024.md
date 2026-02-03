@@ -22,7 +22,7 @@ are by students that go this route. As long as it is relevant to one of
 our projects, we will give it serious consideration. Creativity and
 self-motivation are great traits for open-source programmers.
 
-  
+
 
   project ideas for 2024</span>](#Proposed_project_ideas_for_2024)
   - [MP-BioPath

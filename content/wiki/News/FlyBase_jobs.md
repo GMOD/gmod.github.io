@@ -18,10 +18,9 @@ information and submission instructions.
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/08/24*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

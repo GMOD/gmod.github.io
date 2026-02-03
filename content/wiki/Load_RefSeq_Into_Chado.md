@@ -100,7 +100,7 @@ Please send questions to the GMOD developers list:
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
 rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
-  
+
 
 ## Authors
 

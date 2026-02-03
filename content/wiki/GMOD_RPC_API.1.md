@@ -157,7 +157,7 @@ currently in the proposal stage and have no been implemented at any
 - Richard Smith -
   <a href="http://www.intermine.org" class="external text"
   rel="nofollow">InterMine</a>
-- Giles Velarde 
+- Giles Velarde
 
 ## Services
 
@@ -846,7 +846,7 @@ FASTA
 - http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591/SO:0000316.fasta -
   Download all CDS features of the gene FBgn0097591
 
-  
+
 
 ##### FASTA Result:
 

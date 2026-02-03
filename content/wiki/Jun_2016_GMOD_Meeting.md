@@ -39,7 +39,7 @@ rel="nofollow">@gmodproject</a>
 </tbody>
 </table>
 
-  
+
 GMOD will be holding a community meeting on June 30th and July 1st in
 Bloomington, IN, immediately after the
 <a href="https://gcc2016.iu.edu/" class="external text"
@@ -50,7 +50,7 @@ Meetings](Meetings "Meetings") are a mix of
 and are a great place to find out what is happening in the project,
 what's coming up, and what others are doing.
 
-  
+
 Please register online at Eventbrite by June 20th 2016. **Early bird
 registration ends May 21.**
 
@@ -100,7 +100,7 @@ data integration, management, and querying, and
 <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
 [ISGA](ISGA "ISGA")) for data analysis.
 
-  
+
 
 ## Registration
 
@@ -177,7 +177,7 @@ Please put your travel times <a
 href="https://docs.google.com/spreadsheets/d/1sBD74e9DTldNshPgZzRNQspts1f9pASjMww105-m-5s/edit#gid=0#gid=0"
 class="external text" rel="nofollow">here</a>.
 
-  
+
 
 "It's tempting to see bioinformatics as a collection of potential
 problems. Being at a GMOD meeting helps us see bioinformatics as a

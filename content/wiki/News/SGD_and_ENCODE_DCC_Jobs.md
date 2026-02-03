@@ -14,10 +14,9 @@ Analyst), and Python Software Engineer for UI construction. Please see
 <a href="http://goo.gl/m90gf" class="external text" rel="nofollow">the
 job advertisement (PDF)</a> for more information.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/3/30*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

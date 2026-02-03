@@ -24,7 +24,7 @@ more information. Chado 1.23 can be
 <a href="https://sourceforge.net/projects/gmod/files/gmod/chado-1.23/"
 class="external text" rel="nofollow">downloaded from SourceForge</a>.
 
-  
+
 Here are the changes from the last release:
 
 - Added \$VERSION to Bio%253A%253AGMOD::DB::Config so that when installing
@@ -38,6 +38,6 @@ Here are the changes from the last release:
   GMOD_ROOT environment variable (that is, everything goes in PREFIX,
   except what goes in GMOD_ROOT).
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/12/13*

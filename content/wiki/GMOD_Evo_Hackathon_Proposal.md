@@ -29,7 +29,7 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span></td>
 </tbody>
 </table>
 
-  
+
 
 This proposal was submitted to, and then approved and
 [funded](GMOD_Evo_Hackathon#Sponsorship "GMOD Evo Hackathon") by

@@ -11,7 +11,7 @@ The allowed values for this property are:
 - active
 - inactive
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Has support status"

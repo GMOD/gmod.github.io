@@ -3,7 +3,7 @@ title: "Apollo Tutorial 2011"
 ---
 # Apollo Tutorial 2011
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/250px-ApolloLogo.png"
@@ -17,7 +17,7 @@ Training](2011_GMOD_Spring_Training "2011 GMOD Spring Training"), Spring
 <a href="Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo Tutorial</a> page.
 
-  
+
 
   Introduction](#Introduction)
   - [Overview](#Overview)
@@ -155,7 +155,7 @@ based command line SVN clients for an anonymous checkout.
 If you're using an IDE, chances are that your IDE will have SVN support
 (or have a plugin available).
 
-  
+
 
 ## Using Apollo
 
@@ -360,7 +360,7 @@ click, and choose `Merge exons`.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Merge-exons-popup-menu.jpg" width="516"
 height="225" alt="Merge exons popup menu" />
 
-  
+
 Alright, it does what we'd expect it to do.
 
 <img
@@ -621,10 +621,10 @@ like this:
 
 ``` de1
 <chadoInstance id="gmodSummerSchoolInstance" default="true">
- 
+
   <!-- associated Java class with this instance -->
   <clsName>apollo.dataadapter.chado.jdbc.RiceChadoInstance</clsName>
- 
+
   <!-- database fields corresponding to top-level entries - will appear in the pulldown menu -->
   <sequenceTypes>
     <type>gene</type>
@@ -638,18 +638,18 @@ like this:
       <isTopLevel>true</isTopLevel>
     </type>
   </sequenceTypes>
- 
+
   <!-- CV information stored in the Chado instance -->
   <partOfCvTerm>part_of</partOfCvTerm>
   <featureCV>sequence</featureCV>
   <relationshipCV>relationship</relationshipCV>
   <propertyTypeCV>feature_property</propertyTypeCV>
- 
+
   <!-- list of gene predictions to retrieve -->
   <genePredictionPrograms>
     <program>maker</program>
   </genePredictionPrograms>
- 
+
   <!-- list of search hits to retrieve -->
   <searchHitPrograms>
     <program>blastn</program>
@@ -665,10 +665,10 @@ like this:
     <program>snap</program>
     <program>snap_masked</program>
   </searchHitPrograms>
- 
+
   <!-- will most likely be set to true; exists for backward support for non-standard Chado -->
   <searchHitsHaveFeatLocs>true</searchHitsHaveFeatLocs>
- 
+
   <!-- list of one-level annotations to retrieve -->
   <oneLevelAnnotTypes>
     <type>promoter</type>
@@ -676,7 +676,7 @@ like this:
     <type>remark</type>
     <type>repeat_region</type>
   </oneLevelAnnotTypes>
- 
+
   <!-- list of three-level annotations to retrieve -->
   <threeLevelAnnotTypes>
     <type>gene</type>
@@ -688,7 +688,7 @@ like this:
     <type>rRNA</type>
     <type>miRNA</type>
   </threeLevelAnnotTypes>
- 
+
 </chadoInstance>
 ```
 
@@ -702,31 +702,31 @@ ones). The XML will look something like this:
 
 ``` de1
 <chadodb>
- 
+
   <!-- label that will appear in the dropdown list of databases -->
   <name>GMOD Summer School</name>
- 
+
   <!-- the Apollo class to use for your database -->
   <adapter>apollo.dataadapter.chado.jdbc.PostgresChadoAdapter</adapter>
- 
+
   <!-- the URL for the database server -->
   <url>jdbc:postgresql://localhost:5432/chado</url>
- 
+
   <!-- database name -->
   <dbName>chado</dbName>
- 
+
   <!-- database user / login -->
   <dbUser>gmod</dbUser>
- 
+
   <!-- identifies the type of Chado database -->
   <dbInstance>gmodSummerSchoolInstance</dbInstance>
- 
+
   <!-- style configuration for this database -->
   <style>gmod_summer_school.style</style>
- 
+
   <!-- if set to true, will be database used when launching Apollo using command line arguments -->
   <default-command-line-db>true</default-command-line-db>
- 
+
 </chadodb>
 ```
 
@@ -774,7 +774,7 @@ template XML file that is used for this script.
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <webstart>
- 
+
   <!-- all this stuff is required for signing jars, shouldn't take too long to run -->
   <jarsigner>
     <alias>apollo</alias>
@@ -795,7 +795,7 @@ template XML file that is used for this script.
     <!-- you might want to put your organization's country -->
     <country>USA</country>
   </jarsigner>
- 
+
   <!-- now we need to populate our jnlp information -->
   <jnlp spec="1.0+">
     <information>

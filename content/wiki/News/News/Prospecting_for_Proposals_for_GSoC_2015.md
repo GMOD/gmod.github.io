@@ -36,6 +36,5 @@ rel="nofollow">robin.haw@oicr.on.ca</a> and
 <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">help@gmod.org</a> for advice!
 
-:
 
 - [GSoC](../../Category%253AGSoC "Category%253AGSoC")

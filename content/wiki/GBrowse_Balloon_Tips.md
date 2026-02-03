@@ -30,7 +30,7 @@ See also:
   href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/htdocs/tutorial/tutorial.html"
   class="external text" rel="nofollow">Administrators Tutorial</a>.
 
-  
+
 
 ## Configuring Balloon Tooltips
 
@@ -185,7 +185,7 @@ named as follows:
 Tips for creating these images can be found on [Popup
 Balloons](Popup_Balloons "Popup Balloons").
 
-  
+
 
 #### Delay time!
 

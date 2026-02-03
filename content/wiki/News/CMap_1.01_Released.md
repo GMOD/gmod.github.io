@@ -39,10 +39,9 @@ If you are updating from an older version, see the documentation in the
 
 [Ben](../User%253AFaga "User%253AFaga")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/01*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

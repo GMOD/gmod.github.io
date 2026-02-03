@@ -1,585 +1,24 @@
 ---
 title: "GBrowse 2.0 HOWTO"
 ---
-# GBrowse 2.0 HOWTO
-
-(Redirected from [GBrowse 2.0 Configuration
-HOWTO](/wiki/GBrowse_2.0_Configuration_HOWTO)
-
-GBrowse 2.0 is a complete rewrite of the original GBrowse version. In
-addition to making the code base more maintainable, GBrowse 2.0 adds the
-following major features:
-
-- **User Interface:** The user interface uses
-  [AJAX](Glossary#AJAX "Glossary") to provide a smoother user
-  experience. Tracks turn on and off immediately, and updates affect
-  only the tracks that have changed.
-- **More rational configuration:** Most configuration options have been
-  moved into a single shared configuration file. This allows data
-  source-specific files to be shorter and more concise. This also
-  increases the performance for sites that use hundreds of configuration
-  files to display annotations on multiple species because only the
-  global configuration file and the source-specific configuration file
-  need to be read.
-- **Multiple database support:** You can now declare multiple databases
-  for each data source and attach them to different tracks. This allows
-  you to add and remove genome annotation data sets far more easily than
-  in earlier versions.
-- **Slave renderer support:** If you have a multi-CPU processor, or
-  access to several machines, you can distribute the tasks of reading
-  the databases and rendering tracks across multiple processes and
-  machines via a series of "slave" renderers. This greatly increases
-  performance.
-
-This document describes how to install and configure GBrowse 2.0 on your
-system. Readers familiar with GBrowse 1.70 or earlier should start with
-the next section, which is a quick summary of what is different. Readers
-who have not installed or configured GBrowse before should skip to
-[GBrowse Installation](#GBrowse_Installation).
-
-  Installation</span>](#GBrowse_Installation)
-  - [GBrowse
-    Virtual Machines](#GBrowse_Virtual_Machines)
-  - [Ubuntu
-    11.10 and higher Binary
-    Installs](#Ubuntu_11.10_and_higher_Binary_Installs)
-  - [Debian
-    "sid" Binary Installs](#Debian_.22sid.22_Binary_Installs)
-  - [Debian
-    "wheezy" Binary
-    Installs](#Debian_.22wheezy.22_Binary_Installs)
-  - [Installation on Older Ubuntu and Debian
-    Systems](#Installation_on_Older_Ubuntu_and_Debian_Systems)
-  - [Installation on RedHat, CentOS and other RPM
-    Systems](#Installation_on_RedHat.2C_CentOS_and_other_RPM_Systems)
-  - [Installation on MacOSX
-    Systems](#Installation_on_MacOSX_Systems)
-  - [Installation from Source
-    Code](#Installation_from_Source_Code)
-  - [Users of
-    GBrowse 1.X](#Users_of_GBrowse_1.X)
-- [Configuring
-  GBrowse](#Configuring_GBrowse)
-  - [GBrowse.conf](#GBrowse.conf)
-    - [The
-      GBrowse.conf \[GENERAL\]
-      Section](#The_GBrowse.conf_.5BGENERAL.5D_Section)
-      - [Paths and
-        Directories](#Paths_and_Directories)
-      - [Session
-        Settings](#Session_Settings)
-      - [Performance
-        Settings](#Performance_Settings)
-      - [Appearance
-        Settings](#Appearance_Settings)
-      - [Fast Track Panning (new in version
-        2.20)](#Fast_Track_Panning_.28new_in_version_2.20.29)
-      - [Cleanup
-        Settings](#Cleanup_Settings)
-      - [Upload Database
-        Settings](#Upload_Database_Settings)
-      - [Debug Settings](#Debug_Settings)
-      - [Configuring Genomic
-        Regions](#Configuring_Genomic_Regions)
-      - [HTML Customization
-        Settings](#HTML_Customization_Settings)
-    - [Configured Data Source
-      Sections](#Configured_Data_Source_Sections)
-    - [Themes](#Themes)
-  - [Data
-    Source Configuration Files](#Data_Source_Configuration_Files)
-    - [The
-      GENERAL Section](#The_GENERAL_Section)
-    - [Database
-      Definitions](#Database_Definitions)
-      - [Database Search
-        Options](#Database_Search_Options)
-    - [Track
-      Definitions](#Track_Definitions)
-      - [Database and Rendering Backend
-        Options](#Database_and_Rendering_Backend_Options)
-      - [Glyph and Appearance
-        Options](#Glyph_and_Appearance_Options)
-      - [Track Table
-        Options](#Track_Table_Options)
-      - [Linking Options](#Linking_Options)
-      - [Grouping
-        Options](#Grouping_Options)
-      - [Subtrack Creation
-        Options](#Subtrack_Creation_Options)
-    - [Adding
-      Tracks to the Overview and Region
-      Panels](#Adding_Tracks_to_the_Overview_and_Region_Panels)
-    - [Semantic Zooming](#Semantic_Zooming)
-    - [Summary Mode (new in version
-      2.09)](#Summary_Mode_.28new_in_version_2.09.29)
-      - [Install the development version of
-        BioPerl](#Install_the_development_version_of_BioPerl)
-      - [Upgrade preexisting
-        Bio::DB::SeqFeature::Store
-        databases](#Upgrade_preexisting_Bio::DB::SeqFeature::Store_databases)
-      - [Enable summary mode in your datasource
-        configuration
-        file(s)](#Enable_summary_mode_in_your_datasource_configuration_file.28s.29)
-    - [Creating Subtracks (new in version
-      2.09)](#Creating_Subtracks_.28new_in_version_2.09.29)
-- [Advanced
-  Datasource Configuration
-  Topics](#Advanced_Datasource_Configuration_Topics)
-  - [Computed
-    Options](#Computed_Options)
-    - [Named
-      Subroutine References](#Named_Subroutine_References)
-    - [Using
-      Pipes in the GBrowse.conf Data Source
-      Name](#Using_Pipes_in_the_GBrowse.conf_Data_Source_Name)
-  - [Controlling the gbrowse_details
-    page](#Controlling_the_gbrowse_details_page)
-  - [Linking
-    out from gbrowse_details](#Linking_out_from_gbrowse_details)
-  - [Restricting Access to Data Sources and Tracks
-    with Usernames and
-    Passwords](#Restricting_Access_to_Data_Sources_and_Tracks_with_Usernames_and_Passwords)
-  - [Configuring Balloon
-    Tooltips](#Configuring_Balloon_Tooltips)
-  - [Generating
-    Static Images: PNGs, SVGs and
-    PDFs](#Generating_Static_Images:_PNGs.2C_SVGs_and_PDFs)
-  - [Describing
-    a GBrowse data source using structured
-    meta-data](#Describing_a_GBrowse_data_source_using_structured_meta-data)
-- [Advanced
-  Configuration Topics](#Advanced_Configuration_Topics)
-  - [Maintaining the User Accounts
-    Database](#Maintaining_the_User_Accounts_Database)
-  - [Removing
-    Unused Sessions, Uploads and Cached
-    Images](#Removing_Unused_Sessions.2C_Uploads_and_Cached_Images)
-  - [Other
-    Advanced Topics](#Other_Advanced_Topics)
-- [The GBrowse2
-  REST API](#The_GBrowse2_REST_API)
-
-# GBrowse Installation
-
-This section describes the various ways to get GBrowse up and running.
-
-## GBrowse Virtual Machines
-
-The easiest way to get started using GBrowse2 is to use one of the
-pre-packaged virtual machines with all libraries, tools and other
-dependencies preinstalled. There are two standard GBrowse VMs, one for
-running on your desktop using
-<a href="http://www.virtualbox.org" class="external text"
-rel="nofollow">VirtualBox</a>, and the other for running on
-<a href="http://aws.amazon.com" class="external text"
-rel="nofollow">Amazon Web Services</a>.
-
-Please see [GBrowse2 VMs](GBrowse2_VMs "GBrowse2 VMs") for a list of the
-VMs that are available to use, plus a quick start guide to using these
-virtual machines.
-
-## Ubuntu 11.10 and higher Binary Installs
-
-In Ubuntu versions 11.10 and higher, you can install GBrowse2 and all
-its dependencies from the Software Center or from the command line. From
-the Software Center, search for "gbrowse" and click the "install"
-button. You may also wish to install the "gbrowse_data" package, which
-includes example data files and tutorials.
-
-From the command line, run the following:
-
-    > apt-get install gbrowse gbrowse_data
-
-## Debian "sid" Binary Installs
-
-In Debian and Debian-related systems, run the following command:
-
-    >aptitude install gbrowse gbrowse_data
-
-You might also wish to browse the
-<a href="http://packages.debian.org/source/sid/gbrowse"
-class="external text" rel="nofollow">GBrowse Debian package pages.</a>
-
-The current version in the Debian package is 2.39, which is a bit old
-but quite stable. The package will be updated at some point in the
-not-so-distant future.
-
-## Debian "wheezy" Binary Installs
-
-In Debian and Debian-related systems, run the following command:
-
-\>aptitude install gbrowse gbrowse-data gbrowse-calign
-
-You might also wish to browse the
-<a href="http://packages.debian.org/source/wheezy/gbrowse"
-class="external text" rel="nofollow">GBrowse Debian package pages.</a>
-
-## Installation on Older Ubuntu and Debian Systems
-
-First install prerequisites following the instructions at
-[GBrowse_2.0_Prerequisites#DEB Systems
-(apt)](GBrowse_2.0_Prerequisites#DEB_Systems_.28apt.29 "GBrowse 2.0 Prerequisites").
-Then perform the last steps manually as described in
-[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell "GBrowse 2.0 Install HOWTO").
-
-## Installation on RedHat, CentOS and other RPM Systems
-
-First install prerequisites following the instructions at
-[GBrowse_2.0_Prerequisites#RPM Systems
-(yum)](GBrowse_2.0_Prerequisites#RPM_Systems_.28yum.29 "GBrowse 2.0 Prerequisites").
-Then perform the last steps using the CPAN shell as described in
-[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell "GBrowse 2.0 Install HOWTO").
-
-## Installation on MacOSX Systems
-
-Install the prerequisites following the instructions at
-[GBrowse_2.0_Prerequisites#MacOSX](GBrowse_2.0_Prerequisites#MacOSX "GBrowse 2.0 Prerequisites").
-Then perform the last steps using the CPAN shell as described in
-[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell "GBrowse 2.0 Install HOWTO")
-and
-[GBrowse_2.0_Install_HOWTO#Configure_in_Mac_OS_X_10.6.6](GBrowse_2.0_Install_HOWTO.1#Configure_in_Mac_OS_X_10.6.6 "GBrowse 2.0 Install HOWTO").
-
-## Installation from Source Code
-
-Installation from source code is described in
-[GBrowse_2.0_Install_HOWTO#Installing_Manually](GBrowse_2.0_Install_HOWTO.1#Installing_Manually "GBrowse 2.0 Install HOWTO").
-
-## Users of GBrowse 1.X
-
-GBrowse 2.0 is largely backward compatible with GBrowse 1.X, but you
-will need to do some modest work in order to port existing sources to
-the new system. Please see [Migrating from GBrowse 1.X to
-2.X](Migrating_from_GBrowse_1.X_to_2.X "Migrating from GBrowse 1.X to 2.X")
-for a guide to the process.
-
-For GBrowse 1.X configuration, see:
-<a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
-title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a>.
-
-# Configuring GBrowse
-
-GBrowse is controlled by a set of text configuration files. You will log
-into the web server machine and edit these files using a text editor.
-Alternatively you can use
-<a href="http://webgbrowse.cgb.indiana.edu" class="external text"
-rel="nofollow">WebGBrowse</a>, which is a web-based system for
-initializing, configuring and customizing GBrowse databases. It is an
-add-on to GBrowse and should only be installed after GBrowse is up and
-running.
-
-This section discusses manual editing of GBrowse's configuration files.
-
-GBrowse's options are controlled by a master config file, *GBrowse.conf*
-which contains site-specific options that apply to all data sources, and
-one or more *Data source-specific* configuration files that define the
-options needed to create a specific genome browser.
-
-## GBrowse.conf
-
-When you installed GBrowse, it created an initial **GBrowse.conf**
-configuration file in the directory you specified at configure time. The
-default location of this directory is /etc/gbrowse2. This file contains
-two types of information:
-
-1.  Global configuration options to apply to all data sources that you
-    want to make available to users.
-2.  A list of the data sources, including their names and their
-    source-specific configuration files.
-
-Here is the default **GBrowse.conf**:
-
-    # This is the global configuration for gbrowse
-    # It contains setting common to all data sources as well
-    # as the various constants formerly scattered amongst scripts and libraries
-
-    [GENERAL]
-    config_base            = /etc/gbrowse2   # overridden by environment variable GBROWSE_CONF
-    htdocs_base            = /var/www/gbrowse2
-    url_base               = /gbrowse2
-    db_base                = /var/www/gbrowse2/databases
-    tmp_base               = /var/tmp/gbrowse2
-
-    # These paths are relative to the url base
-    buttons       = images/buttons
-    balloons      = images/balloons
-    gbrowse_help  = .
-    js            = js
-
-    # These paths are relative to the config base
-    plugin_path    = plugins
-    language_path  = languages
-    templates_path = templates
-    moby_path      = MobyServices
-
-    # session settings
-    session lock type = default
-    session driver = driver:file;serializer:default
-    session args   = Directory /var/tmp/gbrowse2/sessions
-
-    # to use the berkeley DB driver comment out the previous
-    # line and uncomment these two
-    #session driver = driver:db_file;serializer:default
-    #session args   = FileName /var/tmp/gbrowse2/sessions.db
-
-    # Debug settings
-    debug                  = 0
-    debug_external         = 0
-    debug_plugins          = 0
-
-    # Performance settings
-    renderfarm             = 1
-    slave_timeout          = 45
-    global_timeout         = 60
-
-    # Clean up settings (used by the gbrowse_clean script)
-    expire session  = 1M  # expire unused sessions after a month
-    expire cache    = 2h  # expire cached data if unmodified for >2 hours
-    expire uploads  = 6w  # expire uploaded data if unused for >6 weeks
-
-    # Appearance settings
-    truecolor     =  1    # better appearance at the expense of larger image files
-    #truetype      = 1    # use truetype fonts for rendering tracks; disabled by default.
-
-    # The #include line following this one defines a transparent theme.
-    # Replace "transparent_colors" with "solid_gray_colors"
-    # or "warm_colors" for different themes.
-
-    #include "themes/transparent_colors"
-
-    balloon tips        = 1
-    titles are balloons = 1
-    plugins             = FastaDumper RestrictionAnnotator SequenceDumper TrackDumper
-    overview grid       = 0
-    region grid         = 0
-    detail grid         = 1
-    image widths        = 450 640 800 1024
-    default width       = 800
-    pad_left            = 60
-    pad_right           = 30
-    too many landmarks  = 100
-
-    instructions section   = open
-    upload_tracks section  = closed
-    search section         = open
-    overview section       = open
-    region section         = open
-    detail section         = open
-    tracks section         = open
-    display_settings section = closed
-
-    # where to link to when user clicks in detailed view
-    link          = AUTO
-
-    # HTML to insert inside the <head></head> section
-    head =
-
-    # At the top of the HTML...
-    header =
-
-    # At the footer
-    footer = <hr />
-             <p style="font-size:small">Generic Genome Browser version 1.99. For questions about the data
-             at this site, please contact its webmaster. For support of the
-             browser software <i>only</i>, send email to
-             <a href="mailto:gmod-gbrowse@lists.sourceforge.net">gmod-gbrowse@lists.sourceforge.net</a>
-             or visit the <a href="http://www.gmod.org">GMOD Project</a> web pages.
-             </p>
-
-    # Various places where you can insert your own HTML -- see configuration docs
-    html1 =
-    html2 =
-    html3 =
-    html4 =
-    html5 =
-    html6 =
-
-    # Limits on genomic regions (can be overridden in datasource config files)
-    region segment         = 200000
-    max segment            = 5000000
-    default segment        = 5000
-    zoom levels            = 100 200 1000 2000 5000 10000 20000 50000 100000 200000 5000000 1000000
-    region sizes           = 1000 5000 10000 20000
-    default region         = 5000
-    fine zoom              = 10%
-
-    # keyword search maxima
-    max keyword results    = 1000
-
-    ###############################################################################################
-    #
-    # One stanza for each configured data source
-    #
-    ###############################################################################################
-    default source = yeast
-
-    [yeast]
-    description   = Yeast chromosomes 1+2 (basic)
-    path          = yeast_simple.conf
-
-    [yeast_advanced]
-    description   = Yeast chromosomes 1+2 (advanced)
-    path          = yeast_chr1+2.conf
-
-    [renderfarm]
-    description  = Renderfarm demo (gbrowse_slave must be running!)
-    path         = yeast_renderfarm.conf
-
-**GBrowse.conf** consists of several sections. The \[GENERAL\] section
-is the largest, and describes options that apply to GBrowse globally.
-Below this are one or more source-specific sections with short
-descriptive names like \[yeast\]. Each of these short sections describes
-a genome datasource which you will make available for browsing.
-
-There are two **include** directives that allow you to break up GBrowse
-configuration files into smaller logically-related bits. The directive:
-
-     #include "path/to/file"
-
-will import the file at the named path into the configuration file.
-Relative path names are treated as relative to the location of the
-configuration file. Wildcards are also allowed. For example *\#include
-"/etc/gbrowse2/conf.d/\*.conf" will include all files that match the
-wildcard pattern. This mechanism is currently used to defined a variety
-of GBrowse "themes" that set page background patterns and colors.*
-
-The directive:
-
-    #exec "/usr/bin/script_to_execute"
-
-will cause the command "script_to_execute" to be executed each time the
-configuration file is loaded. The output of this script will be included
-into the configuration file.
-
-### The GBrowse.conf \[GENERAL\] Section
-
-The \[GENERAL\] section defines a large number of options, most of which
-you will never need to change. The format of an option is the option
-name, an equals sign, and the value of the option. There may be
-whitespace before and after the equals sign. To continue long option
-values across multiple lines, begin the second and subsequent lines with
-one or more spaces or tabs; the additional whitespace will be treated as
-a single space. Lines beginning with the hash (#) symbol are comments.
-Please note that for historical reasons, some options separate words by
-underscores ("remember_settings_time") and others separate words by
-spaces ("cache time"). The two forms are not interchangeable.
-
-Several options take true/false values. A false value is numeric 0. A
-true value is numeric 1, or indeed any other non-zero value (including
-the word *true*).
-
-#### Paths and Directories
-
-config_base, htdocs_base, url_base, db_base, tmp_base  
-The first six options describe the location of GBrowse's configuration
-and support files. **config_base** is the location of GBrowse's
-datasource-specific configuration files, typically */etc/gbrowse2*.
-**htdocs_base** specifies the location of GBrowse's static HTML files,
-stylesheets and javascript libraries. **url_base** is similar to
-**htdocs_base** and gives the location of same HTML files, stylesheets
-and javascript libraries in URL form. So, for example, if GBrowse's
-static files are located in /var/www/html/GBrowse and this maps in URL
-space to http://your.site/GBrowse, then **htdocs_base** will be
-*/var/www/html/GBrowse* and **url_base** will be */GBrowse*. **db_base**
-describes the default location of in-memory databases. **tmp_base**
-points to the directory used for user sessions, uploads and other
-temporary files.
-
-The **config_base** directive is overridden by the environment variable
-GBROWSE_CONF. This variable is set when Apache starts up, and can be
-found in */etc/apache2/conf.d/gbrowse2.conf*, */etc/httpd/conf.d*, or
-*/etc/apache/conf.d*, depending on how your system is laid out.
-
-buttons, balloons, gbrowse_help, js  
-These four configuration options tell GBrowse where to find the images
-for its navigation buttons, popup balloons, help pages, and javascript
-libraries. Ordinarily you will not need to change these locations. The
-default locations are subdirectories of **htdocs_base**. If you specify
-a relative path, they will be taken as relative to **htdocs_base** (in
-filesystem space) and **url_base** (in URL space).
-plugin_path, language_path, templates_path, moby_path  
-These configuration options specify where
-[plugins](GBrowse_Plugins "GBrowse Plugins"), language translation
-files, templates and
-<a href="http://www.biomoby.org" class="external text"
-rel="nofollow">MOBY</a> configuration files are located. If relative
-paths are given here, they are taken relative to the **config_base**.
-The default is to place them in subdirectories of **config_base**.
-
-#### Session Settings
-
-session driver, session args
-
-These two options pass settings to the
-<a href="http://search.cpan.org/perldoc?CGI::Session"
-class="external text" rel="nofollow">CGI::Session</a> module, which is
-responsible for GBrowse's persistent user settings. As described in the
-<a href="http://search.cpan.org/perldoc?CGI::Session"
-class="external text" rel="nofollow">CGI::Session</a> documentation,
-**session driver** selects the driver to be used for storing and
-retrieving user session information, and **session args** passes
-additional arguments to the selected driver. The default is to use the
-standard "file" driver. To use the faster (but not universally
-available) DB_File driver, the options might look like this:
-
-     session driver = driver:db_file;serializer:default
-     session args   = FileName /var/tmp/gbrowse2/sessions.db
-
-session lock type
-
-Since GBrowse runs several processes in parallel, it needs to flag when
-another instance of it is working on session data in order to avoid
-another process from clobbering the same session. This option controls
-the type of locking to perform. Valid values are:
-
-flock  
-Use standard file locking. This works fine in most cases, but can cause
-GBrowse to get very slow if its temporary directory is mounted on a
-shared NFS filesystem.
-nfs  
-Use the File::NFSLock module for locking. This is fast and works across
-NFS, but requires you to install the
-<a href="http://search.cpan.org/perldoc?File::NFSLock"
-class="external text" rel="nofollow">File::NFSLock</a> module from CPAN.
-mysql  
-Use the locking in the [MySQL](MySQL "MySQL") database. It is handy if
-you already have a MySQL database up and running. The full format of
-this value is:
-
-    session lock type = mysql:dbi:mysql:my_db;host=hostname;port=portnum;user=user;password=pass
-
-for simplicity, you can leave off the initial "mysql:".
-
-A value of **default** will choose the File::NFSLock module if it is
-available, and otherwise fall back onto standard flock.
-
-#### Performance Settings
-
-This section contains a variety of performance-related settings that you
-may want to change in order to tune GBrowse for your needs.
-
-renderfarm
-
-This configuration directive turns on and off GBrowse's support for a
-rendering farm (see [Running a GBrowse2 Render
-Farm](Running_a_GBrowse2_render_farm "Running a GBrowse2 render farm")).
+# GBrowse 2.0 HOWTO.
 By default this support is enabled, but there no particular performance
 penalty if you choose not to take advantage of it. If you plan never to
 use the feature, set it to a false (zero) value:
 
      renderfarm = 0
 
-slave_timeout  
+slave_timeout
 When [running a GBrowse2 render
 farm](Running_a_GBrowse2_render_farm "Running a GBrowse2 render farm"),
 this option controls how long the master server will wait for one of its
 slaves before it times out and considers the slave "down". The units are
 seconds, 45 seconds by default.
-global_timeout  
+global_timeout
 If a database query, search or plugin takes longer than the number of
 seconds given by this option, GBrowse will time out and return an error
 to the user. The default is 60 seconds.
-allow remote callbacks  
+allow remote callbacks
 If this option is set to a true (non-zero) value, then uploaded and
 remote track files will be able to contain configuration stanzas with
 Perl callbacks. The callbacks will be executed if and only if the Perl
@@ -609,7 +48,7 @@ per-datasource basis in datasource-specific configuration files simply
 by inserting the option into the \[GENERAL\] section of the
 datasource-specific config file.
 
-autocomplete  
+autocomplete
 This is a true/false option. If true, then any databases that have the
 "autocomplete" option set will be searched when the user types three or
 more letters into the GBrowse search field. Proposed matches will be
@@ -622,11 +61,11 @@ database for public tracks via autocomplete. See
 [GBrowse_Configuration/Authentication](GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication")
 for more information on the user account database.
 
-balloon tips  
+balloon tips
 This is a true/false option. If true, popup balloons are activated such
 that when the user mouses over a feature, additional information about
 that feature appears in a balloon.
-titles are balloons  
+titles are balloons
 This is a true/false option. If true, popup balloons are automatically
 populated by default information about the feature unless a track has a
 **balloon hover** option that overrides the content. If false, then you
@@ -651,18 +90,18 @@ stylesheet, as in the following example:
                   http://www.example.com/hires.css(paper,projection)
                   http://www.example.com/audio.css(audio)
 
-truecolor  
+truecolor
 If set to a true value, then the tracks will be rendered as full-color
 24-bit images, improving appearance at the cost of larger images. The
 effect may be noticeable on a slow internet connection.
-truetype  
+truetype
 If set to a true value, then the fonts in track images will be rendered
 using truetype fonts installed on the server. A value of "1" selects a
 safe default font. A string value can be used to select a particular
 font, such as "Droid Sans" or "Helvetica-9". This option only works on
 versions of GBrowse from 2.55 onward, and only if Bio::Graphics 2.33 or
 higher is installed.
-plugins  
+plugins
 This option selects which, if any, of the GBrowse plugins to offer to
 the user. It is a space-delimited list of plugin names. Plugins are Perl
 .pm modules that can be found in the plugins subdirectory of the
@@ -670,7 +109,7 @@ GBrowse2 configuration directory. Select the ones you wish to activate,
 and put their in this configuration directive, minus the ".pm"
 extension. See GBrowse2
 Plugins for a description of what each plugin does.
-overview grid, region grid, detail grid  
+overview grid, region grid, detail grid
 These three options control whether the background grid should be
 displayed in the overview, region, and detail panels by default. They
 are either true (1) or false (0) values. The user can later turn the
@@ -690,55 +129,55 @@ pixels, but offers the user a menu of five widths ranging from 450 to
     image widths    = 450 640 800 1024 1280
     default width   = 1024
 
-pad_left, pad_right  
+pad_left, pad_right
 These options control how much additional whitespace (in pixels) to
 surround the detail panel with on the left and the right. This is
 sometimes necessary for glyphs that need extra space to the left or
 right for additional information. An example of this is the [UCSC
 multiple alignment
 glyph](GBrowse_UCSC_Plugin_Install_HOWTO "GBrowse UCSC Plugin Install HOWTO").
-too many landmarks  
+too many landmarks
 This option controls the maximum number of results to return when the
 user performs a wildcard search on the database. The default is 100.
-hilite fill  
+hilite fill
 This option controls the interior color of the selection rectangle that
 appears when the user clicks and drags on a scalebar, as well as the
 highlighted region of the currently selected region. It accepts a
 [Bio::Graphics color
 value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options"), such
 as "beige:0.8" for a beige background at 80% opacity.
-hilite outline  
+hilite outline
 This option controls the outline color of the selection rectangle that
 appears when the user clicks and drags on a scalebar, as well as the
 highlighted region of the currently selected region. It accepts a
 [Bio::Graphics color
 value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options"), such
 as "red:0.8".
-hilite height  
+hilite height
 This option controls the height of the draggable region marker, which
 highlights the currently selected region
-overview bgcolor, region bgcolor, detail bgcolor  
+overview bgcolor, region bgcolor, detail bgcolor
 These three options control the background colors of the overview,
 region and detail panels respectively. They each accept [Bio::Graphics
 color
 value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options").
-grid color, grid major color  
+grid color, grid major color
 These options control the appearance of the grid lines in the overview,
 region and detail panels. The first controls the color of the minor grid
 lines, and the second controls the color of the major grid lines. They
 each accept a [Bio::Graphics color
 value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options").
-show sources  
+show sources
 Ordinarily GBrowse generates a popup menu showing all configured data
 sources; the user can change the datasource by selecting from this menu.
 To inhibit generation of this menu, set **show sources** to zero.
-instructions section, upload_tracks section, search section, overview section, region section, detail section, tracks section, display_settings section  
+instructions section, upload_tracks section, search section, overview section, region section, detail section, tracks section, display_settings section
 These options control whether a section is toggled open initially
 ("open"), or toggled closed ("closed"). In addition, for the "overview
 section", "region section" and "detail section", you can specify a value
 of "hide" in which case the section isn't shown at all. Generally this
 only makes sense for the region section.
-category default state  
+category default state
 As described in the track configuration section, a track can be placed
 in a category or subcategory. The categories can be toggled open and
 closed. The "category state" option, described next, allows you to
@@ -772,7 +211,7 @@ the details tracks back and forth to instantly see more of the image.
 Extra wide images are preloaded from the server to accomplish this, so
 it may affect the initial image load time.
 
-details multiplier  
+details multiplier
 How much extra image data to load. A value of 3.0 means that three times
 the viewable image width will be loaded. The default is 1.0, which means
 that fast track panning is turned off and GBrowse behaves as usual.
@@ -783,18 +222,18 @@ These settings are used by the
 [gbrowse_clean.pl](Gbrowse_clean.pl "Gbrowse clean.pl") script to remove
 stale temporary files of various sorts.
 
-expire cache  
+expire cache
 How long generated tracks will be cached before they are regenerated.
 This speeds up page load speed for frequently-accessed pages. The format
 is a number followed by a time unit, where units are **s** for second,
 **m** for minute, **h** for hour, **d** for day, **w** for week, and
 **M** for month. The default is "2h", or two hours.
-expire sessions  
+expire sessions
 This option controls how long the user's track configuration, which
 includes which tracks are turned on and their customized settings, will
 be remembered in his or her session. The format is the same as **expire
 cache** and is set to one month by default.
-expire uploads  
+expire uploads
 This option controls controls how long to keep user uploaded data for
 custom tracks on disk. It makes sense to keep it on disk for as long or
 longer than the session. Even if the user’s session expires, he can
@@ -811,7 +250,7 @@ DBI drivers installed on the system. See [Configuring the Uploaded Track
 Database](GBrowse_2.0_Install_HOWTO/Advanced#Configuring_the_Uploaded_Track_Database "GBrowse 2.0 Install HOWTO/Advanced")
 for detailed configuration information.
 
-upload_db_adaptor  
+upload_db_adaptor
 Which database backend to use for custom tracks. Valid options are
 "DBI::SQLite", "DBI::mysql", "berkeleydb" and "memory". The SQLite
 database backend combines great performance with little or no
@@ -824,23 +263,23 @@ The <a href="http://search.cpan.org/perldoc?DBI::mysql"
 class="external text" rel="nofollow">DBI::mysql</a> backend has the best
 performance, but needs additional configuration in order to make it
 possible for GBrowse to create and drop databases dynamically.
-upload_db_host  
+upload_db_host
 When using the DBI::mysql backend, this specifies the host on which the
 mysql DBMS is running. (Default "localhost").
-upload_db_user  
+upload_db_user
 When using the DBI::mysql backend, this specifies the user that has
 access to the mysql server. This user must have database create/drop
 privileges for databases beginning with the string "userdata\_".
 (Default "gbrowse").
-upload_db_pass  
+upload_db_pass
 When using the DBI::mysql backend, this specifies the password for the
 user named by **upload_db_user**. (Default no password).
-admin_account  
+admin_account
 The name of the administrator account that has privileges to upload and
 configure public tracks. See [The Admin
 Interface](GBrowse_2.0_Install_HOWTO/Advanced#The_Admin_Interface "GBrowse 2.0 Install HOWTO/Advanced")
 for more details.
-admin_dbs  
+admin_dbs
 The path used to store data files uploaded by the administrator named in
 **admin_account**. See [The Admin
 Interface](GBrowse_2.0_Install_HOWTO/Advanced#The_Admin_Interface "GBrowse 2.0 Install HOWTO/Advanced")
@@ -855,15 +294,15 @@ fix bugs. Their values are either 0 (no debugging messages) or 1
 will appear in the Apache error log, typically
 /var/log/apache2/error_log.
 
-debug  
+debug
 This turns on messages about general GBrowse operations.
-debug_external  
+debug_external
 This turns on messages concerning the uploading and processing of
 user-supplied tracks, as well as tracks fetched from remote sources via
 the
 <a href="http://www.biodas.org" class="external text" rel="nofollow">DAS
 protocol</a>.
-debug_plugins  
+debug_plugins
 This turns on debugging messages concerning the operation of GBrowse's
 user-contributed [plugins](GBrowse_Plugins "GBrowse Plugins").
 
@@ -895,7 +334,7 @@ header, footer
 
 These two options place HTML at the top or bottom of the page. Example:
 
-     header = 
+     header =
 
 You can create an unlimited number of subtracks within a single major
 track in order to group a series of datasets that are logically linked,
@@ -1196,7 +635,7 @@ default formatting of these features. You can modify this with a
 callback that word-wraps the value into lines of at most 60 characters,
 and puts the whole thing in a \<pre\> section.
 
-  
+
 
     [gene:details]
     Translation = sub {
@@ -1299,18 +738,18 @@ formatted like this one:
 The **metadata** option has multiple suboptions (note the required
 leading whitespace in front of them):
 
-**-description**  
+**-description**
 A free text description of the data source. It can span multiple lines.
 
-**-maintainer**  
+**-maintainer**
 An email address for the person or mailing list to contact concerning
 issues with the data source.
 
-**-created**,**-modified**  
+**-created**,**-modified**
 The creation and modification date of the resource, in the format
 YYYY-MM-DD.
 
-**-authority**,**-coordinates_version** and **-coordinates**  
+**-authority**,**-coordinates_version** and **-coordinates**
 These fields establish the genome build and build version. The authority
 is a short prefix indicating the organization that is responsible for
 the build, such as "NCBI" (human), "WS" (WormBase), or SGD (Yeast), and
@@ -1323,14 +762,14 @@ registered <a href="http://www.dasregistry.org/help_coordsys.jsp"
 class="external text" rel="nofollow">at the DAS registry</a>; you may
 register a new one if needed.
 
-**-source**  
+**-source**
 This describes the type of coordinate system used, either "Chromosome"
 or "Contig".
 
-**-testrange**  
+**-testrange**
 This provides an example range for new users to look at.
 
-**-species**,**-taxid**  
+**-species**,**-taxid**
 These indicate the species name (in long binomial format) and the
 <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/" class="external text"
 rel="nofollow">NCBI taxon id</a>.

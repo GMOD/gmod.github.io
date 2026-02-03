@@ -12,7 +12,7 @@ The allowed values for this property are:
 - No
 - Caveats apply
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Is open source"

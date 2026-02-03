@@ -51,14 +51,13 @@ class="external text" rel="nofollow">a tutorial</a>,
 class="external text" rel="nofollow">FAQ</a>, and a [user and support
 mailing list](../WebGBrowse.1#Mailing_Lists "WebGBrowse").
 
-[Ram Podicheti](../User%253AMnrusimh "User%253AMnrusimh")  
+[Ram Podicheti](../User%253AMnrusimh "User%253AMnrusimh")
 <a href="http://cgb.indiana.edu/" class="external text"
 rel="nofollow">Center for Genomics and Bioinformatics</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/10*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

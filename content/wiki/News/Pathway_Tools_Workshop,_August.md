@@ -59,11 +59,10 @@ Please check the following
 <a href="http://brg.ai.sri.com/ptools09/" class="external text"
 rel="nofollow">website</a> for updates.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/04/07,
 updated 2009/04/24*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

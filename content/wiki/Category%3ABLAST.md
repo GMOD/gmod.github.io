@@ -61,22 +61,22 @@ Tutorial</a></span></li>
 
 This category contains only the following file.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Stajich GMOD 2006-06-30.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Stajich GMOD
-  2006-06-3...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Stajich_GMOD_2006-06-30.pdf "File:Stajich GMOD 2006-06-30.pdf")  
+  2006-06-3...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Stajich_GMOD_2006-06-30.pdf "File:Stajich GMOD 2006-06-30.pdf")
   2.36 MB

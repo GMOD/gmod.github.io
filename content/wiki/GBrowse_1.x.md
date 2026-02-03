@@ -15,7 +15,7 @@ GBrowse 1.X to
 use since 2002. It is recommended for applications which use a single
 database only and which must support legacy browsers.
 
-  
+
 
   Downloads](#Downloads)
   - [GitHub](#GitHub)
@@ -38,7 +38,7 @@ get the stable branch:
      cd GBrowse
      git checkout -t -b stable origin/stable
 
-  
+
 
 ### Net-based Installer Script
 
@@ -49,7 +49,7 @@ GBrowse GitHub repository</a> will automatically download and install
 GBrowse 1.70 (**NOT GBrowse2** and its Perl libraries for you. See
 [Installation](#Installation) for details on using this script.
 
-  
+
 
 ## Installation
 
@@ -61,13 +61,13 @@ GBrowse 1.70 (**NOT GBrowse2** and its Perl libraries for you. See
 - [Ubuntu](GBrowse_Ubuntu_HOWTO "GBrowse Ubuntu HOWTO")
 - [Windows](GBrowse_Windows_HOWTO "GBrowse Windows HOWTO")
 
-  
+
 
 ## Configuration
 
 - <a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
   title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a>
 
-  
+
 See **[Category%253AGBrowse](Category%253AGBrowse "Category%253AGBrowse")** for more
 GBrowse documentation.

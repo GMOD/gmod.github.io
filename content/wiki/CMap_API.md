@@ -185,14 +185,14 @@ Purging inside your program is simple. Use a Bio%253A%253AGMOD::CMap::Admin
 object (see "Importing Data" for creating this object) to call the
 purge_cache method.
 
-  
+
 
        $admin->purge_cache( );
 
 A cache level can be specified. See the section below on cache levels
 for more information.
 
-  
+
 
        $admin->purge_cache( $cache_level );
 
@@ -201,7 +201,7 @@ for more information.
 To purge the cache on the command line use cmap/bin/cmap_admin.pl. You
 can either use the menu system or by command line:
 
-  
+
 
      $ cmap_admin.pl [-d data_source] [--cache_level level] --action purge_query_cache
 
@@ -214,17 +214,17 @@ purged.
 
 When one layer is purged all of the layers below it are purged.
 
-\- Cache Level 1 Purge All   
+\- Cache Level 1 Purge All
 Purge all when a map set or species has been added or modified. A change
 to map sets or species has potential to impact all of the data.
 
-\- Cache Level 2 (purge map info on down)   
+\- Cache Level 2 (purge map info on down)
 Level 2 should be purged when map information is changed.
 
-\- Cache Level 3 (purge feature info on down)   
+\- Cache Level 3 (purge feature info on down)
 Level 3 should be purged when feature information is changed.
 
-\- Cache Level 4 (purge correspondence info on down)   
+\- Cache Level 4 (purge correspondence info on down)
 Level 4 should be purged when correspondence information is changed.
 
 ### CMap Assembly Editor Plug-ins
@@ -241,7 +241,7 @@ To create data in the CMap database, a CMap admin object needs to be
 created. In the following example, \$data_source stores the data source
 name that identifies which configuration file to use.
 
-  
+
 
        use Bio%253A%253AGMOD::CMap::Admin;
 
@@ -262,17 +262,17 @@ name that identifies which configuration file to use.
 
 #### Parameters
 
-\- species_full_name (Required)   
+\- species_full_name (Required)
 Full name of the species, such as "Homo Sapiens".
 
-\- species_common_name (Required)   
+\- species_common_name (Required)
 Short name of the species, such as "Human".
 
-\- display_order   
+\- display_order
 The number representing where in the order that this species will be
 displayed in species lists.
 
-\- species_acc   
+\- species_acc
 See "Accession IDs" for more information about accession IDs.
 
 ### Creating a Map Set
@@ -295,41 +295,41 @@ See "Accession IDs" for more information about accession IDs.
 
 #### Parameters
 
-\- map_set_name (Required)   
+\- map_set_name (Required)
 Name of the map set being created
 
-\- map_set_acc (Required)   
+\- map_set_acc (Required)
 See "Accession IDs" for more information about accession IDs.
 
-\- map_type_acc (Required)   
+\- map_type_acc (Required)
 The accession id of a map type that is defined in the config file.
 
-\- species_id (Required)   
+\- species_id (Required)
 The species ID that this map set belongs to. This can be retrieved after
 creating the species, "Creating a Species" or by querying the database
 for the species id, "Getting Species Information".
 
-\- width   
+\- width
 Pixel width of the map
 
-\- is_relational_map   
+\- is_relational_map
 Relational Maps do not show up in the initial map selection lists since
 they are only used in relation to another map.
 
-\- published_on   
+\- published_on
 Data the map set was published
 
-\- map_set_short_name   
+\- map_set_short_name
 Shorter name for the map set
 
-\- display_order   
+\- display_order
 The number representing where in the order that this map set will be
 displayed in map set lists.
 
-\- color   
+\- color
 The color of the maps
 
-\- shape   
+\- shape
 The shape of the maps. This can be "I-beam", "box" or "dumbbell".
 
 ### Creating a Map
@@ -347,24 +347,24 @@ The shape of the maps. This can be "I-beam", "box" or "dumbbell".
 
 #### Parameters
 
-\- map_name (Required)   
+\- map_name (Required)
 Name of the map being created
 
-\- map_set_id (Required)   
+\- map_set_id (Required)
 The map set ID that this map set belongs to. This can be retrieved after
 creating the map set, "Creating a Map Set" or by querying the database
 for the map set id, "Getting Map Set Information".
 
-\- map_acc   
+\- map_acc
 See "Accession IDs" for more information about accession IDs.
 
-\- map_start (Required)   
+\- map_start (Required)
 Beginning point of the map.
 
-\- map_stop (Required)   
+\- map_stop (Required)
 End point of the map.
 
-\- display_order   
+\- display_order
 The number representing where in the order that this map will be
 displayed in map lists.
 
@@ -386,34 +386,34 @@ displayed in map lists.
 
 #### Parameters
 
-\- map_id (Required)   
+\- map_id (Required)
 The map ID that this map belongs to. This can be retrieved after
 creating the map "Creating a Map" or by querying the database for the
 map id, "Getting Map Information".
 
-\- feature_name (Required)   
+\- feature_name (Required)
 The name of the feature
 
-\- feature_acc   
+\- feature_acc
 See "Accession IDs" for more information about accession IDs.
 
-\- feature_start (Required)   
+\- feature_start (Required)
 Location on the map where this feature begins.
 
-\- feature_stop   
+\- feature_stop
 Location on the map where this feature ends. This will be set to
 feature_start if not given.
 
-\- is_landmark   
+\- is_landmark
 Declares the feature to be a landmark.
 
-\- feature_type_acc (Required)   
+\- feature_type_acc (Required)
 The accession id of a feature type that is defined in the config file.
 
-\- direction   
+\- direction
 The direction the feature points in relation to the map.
 
-\- gclass   
+\- gclass
 The gclass that the feature will have. This only relates to using CMap
 integrated with GBrowse and should not be used otherwise.
 
@@ -444,39 +444,39 @@ play around with it.
 To finish creating the correspondences in the queue, simply run the
 method again with no arguments.
 
-  
+
 
      $admin->feature_correspondence_create();
 
 #### Parameters
 
-\- feature_id1 (Required unless feature_acc1 is given)   
+\- feature_id1 (Required unless feature_acc1 is given)
 The feature_id of the first feature in the correspondence.
 
-\- feature_id2 (Required unless feature_acc2 is given)   
+\- feature_id2 (Required unless feature_acc2 is given)
 The feature_id of the second feature in the correspondence.
 
-\- feature_acc1 (Required unless feature_id1 is given)   
+\- feature_acc1 (Required unless feature_id1 is given)
 The feature_acc of the first feature in the correspondence.
 
-\- feature_acc2 (Required unless feature_id2 is given)   
+\- feature_acc2 (Required unless feature_id2 is given)
 The feature_acc of the second feature in the correspondence.
 
-\- is_enabled   
+\- is_enabled
 
-\- evidence_type_acc (Required unless correspondence_evidence is given)   
+\- evidence_type_acc (Required unless correspondence_evidence is given)
 The accession id of a evidence type that is defined in the config file.
 
-\- score   
+\- score
 The score can be used if evidence_type_acc is being used, otherwise it
 is stored in the correspondence_evidence object.
 
-\- correspondence_evidence (Required unless evidence_typ_acc is given)   
+\- correspondence_evidence (Required unless evidence_typ_acc is given)
 List of evidence hashes that correspond to the evidence types that this
 correspondence should have. The hashes must have a "evidence_type_acc"
 key. It can also have a "score" value.
 
-  
+
 
        my $evidences = [
            {   evidence_type_acc => $evidence_type_acc,
@@ -484,10 +484,10 @@ key. It can also have a "score" value.
            },
        ];
 
-\- feature_correspondence_acc   
+\- feature_correspondence_acc
 See "Accession IDs" for more information about accession IDs.
 
-\- threshold   
+\- threshold
 See the Threshold section above.
 
 ### Creating an Attribute
@@ -508,23 +508,23 @@ complicated) version.
 
 #### Parameters
 
-\- object_id (Required)   
+\- object_id (Required)
 The primary key of the object.
 
-\- attribute_name (Required)   
+\- attribute_name (Required)
 The name of this attribute
 
-\- attribute_value (Required)   
+\- attribute_value (Required)
 The value stored in this attribute
 
-\- object_type (Required)   
+\- object_type (Required)
 The type of object being attributed, such as map, feature, map_set, etc.
 
-\- display_order   
+\- display_order
 The number representing where in the order that this attribute will be
 displayed in attribute lists.
 
-\- is_public   
+\- is_public
 If 1 (default), the attribute will be displayed on the CMap web page.
 
 ### Creating an External Reference
@@ -545,19 +545,19 @@ complicated) version.
 
 #### Parameters
 
-\- object_id (Required)   
+\- object_id (Required)
 The primary key of the object.
 
-\- xref_name (Required)   
+\- xref_name (Required)
 The name of this xref
 
-\- xref_url (Required)   
+\- xref_url (Required)
 The url stored in this xref
 
-\- object_type (Required)   
+\- object_type (Required)
 The type of object being xrefd, such as map, feature, map_set, etc.
 
-\- display_order   
+\- display_order
 The number representing where in the order that this xref will be
 displayed in xref lists.
 
@@ -574,16 +574,16 @@ displayed in xref lists.
 
 #### Parameters
 
-\- map_id (Required unless map_acc is given)   
+\- map_id (Required unless map_acc is given)
 Identifier of the map to be linked.
 
-\- map_acc (Required unless map_id is given)   
+\- map_acc (Required unless map_id is given)
 Accession of the map to be linked.
 
-\- feature_id (Required unless feature_acc is given)   
+\- feature_id (Required unless feature_acc is given)
 Identifier of the feature to be linked.
 
-\- feature_acc (Required unless feature_id is given)   
+\- feature_acc (Required unless feature_id is given)
 Accession of the feature to be linked.
 
 ## Querying the CMap Database
@@ -593,7 +593,7 @@ To query the data, another object is needed which we will call the
 the following examble, we'll use the \$cmap_admin object from the
 "Importing Data" section.
 
-  
+
 
      my $sql_object = $cmap_admin->sql();
 
@@ -612,14 +612,14 @@ results.
 If no parameters are provided, it will return all species in the
 database.
 
-\- Species ID (species_id)   
+\- Species ID (species_id)
 
-\- List of Species Accessions (species_accs)   
+\- List of Species Accessions (species_accs)
 
-\- Boolean  
+\- Boolean
 is this a relational map (is_relational_map) :
 
-\- Boolean  
+\- Boolean
 Is this enabled (is_enabled) :
 
 #### Structure Returned
@@ -644,29 +644,29 @@ results.
 If no parameters are provided, it will return all map sets in the
 database.
 
-\- Species ID (species_id)   
+\- Species ID (species_id)
 
-\- List of Species IDs (species_ids)   
+\- List of Species IDs (species_ids)
 
-\- Species Accession (species_acc)   
+\- Species Accession (species_acc)
 
-\- Map Set ID (map_set_id)   
+\- Map Set ID (map_set_id)
 
-\- List of Map Set IDs (map_set_ids)   
+\- List of Map Set IDs (map_set_ids)
 
-\- Map Set Accession (map_set_acc)   
+\- Map Set Accession (map_set_acc)
 
-\- List of Map Set Accessions (map_set_accs)   
+\- List of Map Set Accessions (map_set_accs)
 
-\- Map Type Accession (map_type_acc)   
+\- Map Type Accession (map_type_acc)
 
-\- Boolean  
+\- Boolean
 is this a relational map (is_relational_map) :
 
-\- Boolean  
+\- Boolean
 Is this enabled (is_enabled) :
 
-\- Boolean count_maps (count_maps)   
+\- Boolean count_maps (count_maps)
 Add a map count to the return object
 
 #### Structure Returned
@@ -712,33 +712,33 @@ results.
 
 If no parameters are provided, it will return all maps in the database.
 
-\- Map ID (map_id)   
+\- Map ID (map_id)
 
-\- List of Map IDs (map_ids)   
+\- List of Map IDs (map_ids)
 
-\- List of Map Accessions (map_accs)   
+\- List of Map Accessions (map_accs)
 
-\- Map Set ID (map_set_id)   
+\- Map Set ID (map_set_id)
 
-\- Map Set Accession (map_set_acc)   
+\- Map Set Accession (map_set_acc)
 
-\- List of Map Set Accessions (map_set_accs)   
+\- List of Map Set Accessions (map_set_accs)
 
-\- Map Name (map_name)   
+\- Map Name (map_name)
 
-\- Map Length (map_length)   
+\- Map Length (map_length)
 
-\- Map Type Accession (map_type_acc)   
+\- Map Type Accession (map_type_acc)
 
-\- Species Accession (species_acc)   
+\- Species Accession (species_acc)
 
-\- Boolean  
+\- Boolean
 is this a relational map (is_relational_map) :
 
-\- Boolean  
+\- Boolean
 Is this enabled (is_enabled) :
 
-\- Boolean count_features (count_features)   
+\- Boolean count_features (count_features)
 Add a feature count to the return object
 
 #### Structure Returned
@@ -796,43 +796,43 @@ feature_id will be used because the map_id is a more broad search.
 If no parameters are provided, it will return all features in the
 database.
 
-\- Feature ID (feature_id)   
+\- Feature ID (feature_id)
 
-\- Feature Accession (feature_acc)   
+\- Feature Accession (feature_acc)
 
-\- Feature Name (feature_name)   
+\- Feature Name (feature_name)
 
-\- Map ID (map_id)   
+\- Map ID (map_id)
 
-\- map_acc (map_acc)   
+\- map_acc (map_acc)
 
-\- Map Set ID (map_set_id)   
+\- Map Set ID (map_set_id)
 
-\- List of Map Set IDs (map_set_ids)   
+\- List of Map Set IDs (map_set_ids)
 
-\- feature_start (feature_start)   
+\- feature_start (feature_start)
 
-\- feature_stop (feature_stop)   
+\- feature_stop (feature_stop)
 
-\- Direction (direction)   
+\- Direction (direction)
 
-\- Allowed feature types (feature_type_accs)   
+\- Allowed feature types (feature_type_accs)
 
-\- Species ID (species_id)   
+\- Species ID (species_id)
 
-\- List of Species IDs (species_ids)   
+\- List of Species IDs (species_ids)
 
-\- List of Species Accessions (species_accs)   
+\- List of Species Accessions (species_accs)
 
-\- Map Start and Map Stop (map_start,map_stop)   
+\- Map Start and Map Stop (map_start,map_stop)
 These must both be defined in order to to be used. If defined the method
 will return only features that overlap that region.
 
-\- Aliases get own rows (aliases_get_rows)   
+\- Aliases get own rows (aliases_get_rows)
 Value that dictates if aliases that match get there own rows. This is
 mostly useful for feature_name searches.
 
-\- Don't get aliases (ignore_aliases)   
+\- Don't get aliases (ignore_aliases)
 Value that dictates if aliases are ignored. The default is to get
 aliases.
 
@@ -888,33 +888,33 @@ Note: If not supplying evidence type information, the
 disregard_evidence_type parameter must be set to true, otherwise, no
 data will be returned.
 
-\- feature_correspondence_id (feature_correspondence_id)   
+\- feature_correspondence_id (feature_correspondence_id)
 
-\- feature_id1 (feature_id1)   
+\- feature_id1 (feature_id1)
 
-\- feature_id2 (feature_id2)   
+\- feature_id2 (feature_id2)
 
-\- map_set_id2 (map_set_id2)   
+\- map_set_id2 (map_set_id2)
 
-\- map_set_acc2 (map_set_acc2)   
+\- map_set_acc2 (map_set_acc2)
 
-\- map_id1 (map_id1)   
+\- map_id1 (map_id1)
 
-\- map_id2 (map_id2)   
+\- map_id2 (map_id2)
 
-\- map_acc2 (map_acc2)   
+\- map_acc2 (map_acc2)
 
-\- disregard_evidence_type (disregard_evidence_type)   
+\- disregard_evidence_type (disregard_evidence_type)
 If not supplying evidence type information, the disregard_evidence_type
 parameter must be set to true, otherwise, no data will be returned.
 
-\- Included Evidence Types Accessions (included_evidence_type_accs)   
+\- Included Evidence Types Accessions (included_evidence_type_accs)
 
-\- Ev. types that must be less than score (less_evidence_type_accs)   
+\- Ev. types that must be less than score (less_evidence_type_accs)
 
-\- Ev. types that must be greater than score (greater_evidence_type_accs)   
+\- Ev. types that must be greater than score (greater_evidence_type_accs)
 
-\- Scores for comparing to evidence types (evidence_type_score)   
+\- Scores for comparing to evidence types (evidence_type_score)
 
 #### Structure Returned
 
@@ -966,21 +966,21 @@ results.
 If no parameters are provided, it will return all features in the
 database.
 
-\- Object type such as feature or map_set (object_type)   
+\- Object type such as feature or map_set (object_type)
 
-\- Object ID (object_id)   
+\- Object ID (object_id)
 
-\- attribute_id (attribute_id)   
+\- attribute_id (attribute_id)
 
-\- is_public (is_public)   
+\- is_public (is_public)
 
-\- attribute_name (attribute_name)   
+\- attribute_name (attribute_name)
 
-\- attribute_value (attribute_value)   
+\- attribute_value (attribute_value)
 
-\- Order by clause (order_by)   
+\- Order by clause (order_by)
 
-\- Get All Flag (get_all)   
+\- Get All Flag (get_all)
 Boolean value. If set to 1, return all without regard to whether
 object_id is null. This will allow retrieval of attributes given
 generally to all of a type.Specifying an object_id overrides this.
@@ -1010,17 +1010,17 @@ results.
 If no parameters are provided, it will return all features in the
 database.
 
-\- Object type such as feature or map_set (object_type)   
+\- Object type such as feature or map_set (object_type)
 
-\- Object ID (object_id)   
+\- Object ID (object_id)
 
-\- xref_id (xref_id)   
+\- xref_id (xref_id)
 
-\- xref_name (xref_name)   
+\- xref_name (xref_name)
 
-\- xref_url (xref_url)   
+\- xref_url (xref_url)
 
-\- Order by clause (order_by)   
+\- Order by clause (order_by)
 
 #### Structure Returned
 
@@ -1045,13 +1045,13 @@ results.
 If no parameters are provided, it will return all features in the
 database.
 
-\- Map ID (map_id)   
+\- Map ID (map_id)
 
-\- Map Accession (map_acc)   
+\- Map Accession (map_acc)
 
-\- Feature ID (feature_id)   
+\- Feature ID (feature_id)
 
-\- Feature Accession (feature_acc)   
+\- Feature Accession (feature_acc)
 
 #### Structure Returned
 

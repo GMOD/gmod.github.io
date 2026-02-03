@@ -112,12 +112,12 @@ rel="nofollow">here</a>
 
     got this warning:
 
-    > NOTICE: \*\* You do not have XML::Parser::PerlSAX installed \*\*  
-    >   
+    > NOTICE: \*\* You do not have XML::Parser::PerlSAX installed \*\*
+    >
     > This module is not required for go-perl, but it is required if you
     > wish to parse Obo-XML files. It is also required by the go-db-perl
-    > library for loading the GO Database.  
-    >   
+    > library for loading the GO Database.
+    >
     > If you do not intend to use either Obo-XML or go-db-perl, then you
     > may continue. Even if you do care about these, you may continue
     > and install XML::Parser::PerlSAX at some future time.
@@ -175,7 +175,7 @@ Forge ahead anyway.
 
 #### A few more prereq issues
 
-     perl Makefile.PL 
+     perl Makefile.PL
     ************************************************************************
     The following environment variables not detected:
       GMOD_ROOT
@@ -185,8 +185,8 @@ Forge ahead anyway.
 
 Oops. Went back and edited .profile
 
-    export GMOD_ROOT="/usr/local/gmod" 
-    export CHADO_DB_NAME="chado_trial" 
+    export GMOD_ROOT="/usr/local/gmod"
+    export CHADO_DB_NAME="chado_trial"
 
 also did these on command line, since .profile settings don't refresh
 until opening a new Terminal (I think).
@@ -201,10 +201,10 @@ Lots of output. Failed. Possible culprits:
     ----------------------------------------------------------
 
     Extracting /Users/jimhu/schema/chado/bin/../lib/Chado/AutoDBI.pm (with variable substitutions)
-    Can't locate LWP/Simple.pm in @INC (@INC contains: lib /System/Library/Perl/5.8.6/darwin-thread-multi-2level /System/Library/Perl/5.8.6 /Library/Perl/5.8.6/darwin-thread-multi-2level /  
+    Can't locate LWP/Simple.pm in @INC (@INC contains: lib /System/Library/Perl/5.8.6/darwin-thread-multi-2level /System/Library/Perl/5.8.6 /Library/Perl/5.8.6/darwin-thread-multi-2level /
     Library/Perl/5.8.6 /Library/Perl /Network/Library/Perl/5.8.6/darwin-thread-multi-2level /Network/Library/Perl/5.8.6 /Network/Library/Perl /System/Library/Perl/Extras/5.8.6/darwin-
     thread- multi-2level /System/Library/Perl/Extras/5.8.6 /Library/Perl/5.8.1 .) at lib/Chado/Builder.pm line 15.
-    BEGIN failed--compilation aborted at lib/Chado/Builder.pm line 15. 
+    BEGIN failed--compilation aborted at lib/Chado/Builder.pm line 15.
     Compilation failed in require at load/Build.PL line 3.
     BEGIN failed--compilation aborted at load/Build.PL line 3.
     sh: line 1: ./Build: No such file or directory
@@ -217,7 +217,7 @@ and I must have missed it earlier).
 
 I assume this was set up during install of GO::Parser??
 
-    cpan>install LWP::Simple 
+    cpan>install LWP::Simple
 
 failed tests. I think these are based on failing to connect to localhost
 via apache...it may reflect something about OSX that should be set in
@@ -248,7 +248,7 @@ Do the Makefile.pl again. End of output is
       1. make              (creates necessary build files)
       2. sudo make install (creates $GMOD_ROOT and subdirectories)
     -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*WARNING-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-            STEP 3 WILL DELETE ANY DATA IN A DATABASE WITH THE 
+            STEP 3 WILL DELETE ANY DATA IN A DATABASE WITH THE
                DATABASE NAME YOU PROVIDED!
     -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*WARNING-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
       3. make load_schema (loads SQL schema into database)
@@ -396,7 +396,7 @@ cd to my downloads directory and do
 gmod_bulk_load_gff3.pl was installed in /usr/bin, so it can be run from
 anywhere. Messages during load (with comments/questions):
 
-    (Re)creating the uniquename cache in the database... 
+    (Re)creating the uniquename cache in the database...
     Creating table...
 
 What table is being created? Chado installation already created a
@@ -407,8 +407,8 @@ zillion tables.
     Preparing data for inserting into the chado_trial database
     (This may take a while ...)
 
-    This GFF file has CDS and/or UTR features that do not belong to a 
-    'central dogma' gene (ie, gene/transcript/CDS).  The features of 
+    This GFF file has CDS and/or UTR features that do not belong to a
+    'central dogma' gene (ie, gene/transcript/CDS).  The features of
     this type are being stored in the database as is.
 
 Should be interesting to look at these.

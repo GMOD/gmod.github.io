@@ -63,136 +63,136 @@ wormbase migration</a></li>
 
 The following 6 files are in this category, out of 6 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="ChoosingAGenomeBrowser.pdf" />
 
-  
 
-  
 
-  
 
-  [ChoosingAGenomeBrowser...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/ChoosingAGenomeBrowser.pdf "File:ChoosingAGenomeBrowser.pdf")  
-  103 KB  
 
-  
 
-  
 
-- 
+  [ChoosingAGenomeBrowser...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/ChoosingAGenomeBrowser.pdf "File:ChoosingAGenomeBrowser.pdf")
+  103 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Cain-050516.ppt" />
 
-  
 
-  
 
-  
 
-  [Cain-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt "File:Cain-050516.ppt")  
-  818 KB  
 
-  
 
-  
 
-- 
+  [Cain-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt "File:Cain-050516.ppt")
+  818 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Gkl776.pdf" />
 
-  
 
-  
 
-  
 
-  [Gkl776.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/Gkl776.pdf "File:Gkl776.pdf")  
-  235 KB  
 
-  
 
-  
 
-- 
+  [Gkl776.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/Gkl776.pdf "File:Gkl776.pdf")
+  235 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Gkl777.pdf" />
 
-  
 
-  
 
-  
 
-  [Gkl777.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/Gkl777.pdf "File:Gkl777.pdf")  
-  401 KB  
 
-  
 
-  
 
-- 
+  [Gkl777.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/Gkl777.pdf "File:Gkl777.pdf")
+  401 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Just-050516.ppt" />
 
-  
 
-  
 
-  
 
-  [Just-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Just-050516.ppt "File:Just-050516.ppt")  
-  218 KB  
 
-  
 
-  
 
-- 
+  [Just-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Just-050516.ppt "File:Just-050516.ppt")
+  218 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="MaizeGDBGBrowseISMB2010.pdf" />
 
-  
 
-  
 
-  
 
-  [MaizeGDBGBrowseISMB201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/75/MaizeGDBGBrowseISMB2010.pdf "File:MaizeGDBGBrowseISMB2010.pdf")  
+
+
+
+  [MaizeGDBGBrowseISMB201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/75/MaizeGDBGBrowseISMB2010.pdf "File:MaizeGDBGBrowseISMB2010.pdf")
   2.52 MB

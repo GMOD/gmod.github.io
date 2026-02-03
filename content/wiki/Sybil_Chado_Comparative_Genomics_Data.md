@@ -54,11 +54,11 @@ picture would look like this:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/95/ChadoSybilComparative_new.png" width="604"
 height="398" alt="ChadoSybilComparative new.png" />
 
-  
 
-  
 
-  
+
+
+
 
 ------------------------------------------------------------------------
 

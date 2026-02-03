@@ -3,9 +3,9 @@ title: "MOD Face Summary"
 ---
 # MOD Face Summary
 
-### Meeting Report 
+### Meeting Report
 
-Model Organism Database User Interface Caucus  
+Model Organism Database User Interface Caucus
 
 GMOD Meeting, January 18, 2007, San Diego, CA, USA
 
@@ -42,8 +42,8 @@ and graphical summaries can help manage information. Interactive
 auto-complete of words typed in search boxes gives users immediate
 feedback. Google can be harnessed to aid, but is not solely sufficient
 for, searching MOD data. Providing "server snapshots" is a useful
-mechanism for keeping older database versions available.  
-  
+mechanism for keeping older database versions available.
+
 
   Model Organism Database User Interface Caucus GMOD Meeting, January
   18, 2007, San Diego, CA,
@@ -191,7 +191,7 @@ explored.
 
 easy exploration by novices).
 
-  
+
 
 - Reliable results are important.
 - Fast results are good.
@@ -211,7 +211,7 @@ easy exploration by novices).
   frequent, small changes and additions can be useful to community (if
   clearly explained)
 
-  
+
 
 - Support for User preferences/sessions/configurations (e.g. "MyNCBI",
   FlyMine's "MyMine")
@@ -489,7 +489,7 @@ should be sure to include:
 ## General Discussion
 
 - Steps in developing good MOD Faces
-  Consensus  
+  Consensus
   help links everywhere are useful. Examples on input fields are easy to
   add, and very useful.
 
@@ -525,7 +525,7 @@ should be sure to include:
       image replaces expression information.
     - Word or string completion as user asks questions is useful UI
       technique (see Javascript and AJAX below)
-- Common UIs across MODs?  
+- Common UIs across MODs?
   Not discussed (sigh :()
 
 ## Implementation Techniques
@@ -548,7 +548,7 @@ should be sure to include:
 - An XML representation of an "entry" makes a "diff" or change easy to
   assess, and reliable alerts could be constructed.
 
-  
+
 
 # References
 

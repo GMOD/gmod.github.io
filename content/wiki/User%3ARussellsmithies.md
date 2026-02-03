@@ -11,16 +11,16 @@ width="220" height="170" />
 
 Russell Smithies
 
-Bioinformatics Applications Developer  
-T +64 3 489 9085  
+Bioinformatics Applications Developer
+T +64 3 489 9085
 E
 <a href="mailto:russell.smithies@agresearch.co.nz" class="external text"
-rel="nofollow">russell.smithies@agresearch.co.nz</a>  
+rel="nofollow">russell.smithies@agresearch.co.nz</a>
 
-Invermay Research Centre  
-Puddle Alley,  
-Mosgiel,  
-New Zealand  
-T +64 3 489 3809  
-F +64 3 489 9174  
+Invermay Research Centre
+Puddle Alley,
+Mosgiel,
+New Zealand
+T +64 3 489 3809
+F +64 3 489 9174
 www.agresearch.co.nz

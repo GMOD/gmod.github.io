@@ -12,7 +12,7 @@ The allowed values for this property are:
 - maintenance
 - inactive
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Has development status"

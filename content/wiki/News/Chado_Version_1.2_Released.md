@@ -53,10 +53,9 @@ Changes in Chado 1.2:
 - Removed cell_type ontology from 'make ontologies' list as it wasn't
   loading via stag_storenode.pl at release time (Scott)
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/22*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

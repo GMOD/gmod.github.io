@@ -30,7 +30,7 @@ an implementation which is in use at
 rel="nofollow">FlyBase</a>. The SQL used at Flybase is
 `chado/modules/audit/audit_tables.sql`.
 
-  
+
 
 ### Audit Policy
 
@@ -63,7 +63,7 @@ Where *transaction_type* value is one of:
 - u (update)
 - d (deletion)
 
-  
+
 Thus an chado db instance chado.1 containing a table *gene*, for
 example:
 
@@ -96,7 +96,7 @@ shadow audit table, *gene_audit*:
     );
 ```
 
-  
+
 
 ### Transaction Use Cases
 
@@ -121,7 +121,7 @@ in chado, the existing chado record is copied to the corresponding
 shadow audit table, with the corrent timestamp and *transaction_type* =
 'd'. The delete transaction is then executed in chado.
 
-  
+
 
 ### Implementation Issues
 

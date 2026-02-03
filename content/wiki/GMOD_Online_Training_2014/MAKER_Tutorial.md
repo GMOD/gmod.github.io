@@ -6,7 +6,7 @@ title: "GMOD Online Training 2014/MAKER Tutorial"
 <a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
 class="external text" rel="nofollow">Get MAKER Bling!</a>
 
-  
+
 
   MAKER</span>](#About_MAKER)
 - [Introduction
@@ -193,7 +193,7 @@ Examples:
 
 <a href="../File:Structural.png" class="image"></a>
 
-  
+
 To use this feature, you must have MPICH2 installed with the the
 `--enable-sharedlibs` flag set during installation (See MPICH2
 Installer's Guide). I have installed this for you. So let's set up
@@ -210,7 +210,7 @@ Say Yes that we want to build for MPI support
  ./Build install
 ```
 
-  
+
 Set values in maker configuration files.
 
 ``` enter
@@ -242,7 +242,7 @@ You should see the following.
      MPD_SECRETWORD=mr45-j9z
     into the file. (Of course use some other secret word than mr45-j9z.)
 
-  
+
 Follow the instructions to set this file up, and start the mpi
 environment with `mpdboot`. Then run `maker` through the MPI manager
 `mpiexec`.
@@ -285,7 +285,7 @@ if you like the convenience of the MWAS user interface, you can
 optionally install the interface on top of a locally installed version
 of MAKER for use in your own lab.
 
-  
+
 First under the `maker` directory there is a subdirectory called `MWAS`.
 `MWAS` contains all the needed files to build the MAKER web interface.
 The `maker/MWAS/bin/mwas_server` file is used to setup and run this web

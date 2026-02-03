@@ -11,7 +11,7 @@ width="150" height="150" alt="March 2011 GMOD Meeting" />](../March_2011_GMOD_Me
 [Register for the March 2011 GMOD
 Meeting](../March_2011_GMOD_Meeting#Registration "March 2011 GMOD Meeting")
 
-  
+
 [Registration](../March_2011_GMOD_Meeting "March 2011 GMOD Meeting") is
 now open for the [March 2011 GMOD
 Meeting](../March_2011_GMOD_Meeting "March 2011 GMOD Meeting"). This
@@ -59,13 +59,12 @@ This meeting, and all [GMOD Americas
 2011](../GMOD_Americas_2011 "GMOD Americas 2011") events, are jointly
 sponsored by NESCent and the [Galaxy](../Galaxy.1 "Galaxy") Project.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [Galaxy](../Galaxy.1 "Galaxy") Project
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/01/31*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

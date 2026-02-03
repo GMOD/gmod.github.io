@@ -37,10 +37,9 @@ See you in Kansas City!
 Clements](../User%253AClements "User%253AClements"), and [Sheldon
 McKay](../User%253AMckays "User%253AMckays")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/06/02*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

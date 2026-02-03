@@ -1510,42 +1510,42 @@ class="external text" rel="nofollow">ZFIN: Figure: <em>Lai et al.</em>,
 Expression could include a lot of different things, and what it includes
 depends on the community:
 
-Gene, or Transcript, or Protein, or ...  
+Gene, or Transcript, or Protein, or ...
 What are we measuring?
 
-Stage  
+Stage
 Store single stages, or stage windows?
 
 What do stage windows or adjacent stages mean: throughout window, or we
 aren't sure on the stage (high-throughput)
 
-Strain / Genotype  
+Strain / Genotype
 What geneotype did we see this on.
 
-Anatomy  
+Anatomy
 Does "expressed in brain" mean expressed in all, most, or somewhere in
 brain?
 
-Assay  
+Assay
 ISN, antibody, probe, ...
 
-Source  
+Source
 Publication, high-throughput screen, lab, project, ...
 
 Genotype
 
 Environment
 
-Pattern  
+Pattern
 Do you want to keep track of homogeneous, graded, spotty
 
-Not Expressed  
+Not Expressed
 Do you keep track of absence? If so, what does it mean? (not _detected_)
 
-Image  
+Image
 Is an image required or optional?
 
-Strength  
+Strength
 What do strengths mean across different experiments?
 
 ### How does Chado deal with this variety?

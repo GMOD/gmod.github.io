@@ -98,44 +98,44 @@ title="Training and Outreach">Training and Outreach</a></li>
 
 The following 2 files are in this category, out of 2 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="GMODAmericas2011Flier.ppt" />
 
-  
 
-  
 
-  
 
-  [GMODAmericas2011Flier.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/GMODAmericas2011Flier.ppt "File:GMODAmericas2011Flier.ppt")  
-  2.7 MB  
 
-  
 
-  
 
-- 
+  [GMODAmericas2011Flier.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/GMODAmericas2011Flier.ppt "File:GMODAmericas2011Flier.ppt")
+  2.7 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="SummerSchoolPoster2008.pdf" />
 
-  
 
-  
 
-  
 
-  [SummerSchoolPoster2008...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/75/SummerSchoolPoster2008.pdf "File:SummerSchoolPoster2008.pdf")  
+
+
+
+  [SummerSchoolPoster2008...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/75/SummerSchoolPoster2008.pdf "File:SummerSchoolPoster2008.pdf")
   130 KB

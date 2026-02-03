@@ -45,10 +45,9 @@ rel="nofollow">Alexie Papanicolaou</a>, and
 <a href="mailto:flegeai@rennes.inra.fr" class="external text"
 rel="nofollow">Fabrice Legeai</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/18*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

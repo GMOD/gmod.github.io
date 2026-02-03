@@ -42,10 +42,9 @@ class="external text" rel="nofollow">Early registration</a> and
 class="external text" rel="nofollow">poster abstract submissions</a> are
 both open until February 29.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/01/21*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

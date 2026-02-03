@@ -6,7 +6,7 @@ title: "Property:Has output format"
 This is a property of type
 .
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Has output format"

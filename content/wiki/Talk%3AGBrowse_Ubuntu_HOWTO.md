@@ -26,7 +26,7 @@ I'm tempted to add everything here (other than lynx) to the package list
 on the page, but I suspect it might include more packages than are
 really necessary.
 
-  
+
 
 ------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ the error message as follows;
 
     *** Installing BioPerl ***
     Downloading bioperl-live...
-    Failed to get nightly bioperl-live file: 
+    Failed to get nightly bioperl-live file:
 
 The reason of the error is the typo in a line of the
 gbrowse_netinstall.pl script

@@ -50,14 +50,13 @@ up-to-date code from the GMOD
 
 Best Regards,
 
-[Stephen Ficklin](../User%253ASficklin "User%253ASficklin")  
+[Stephen Ficklin](../User%253ASficklin "User%253ASficklin")
 <a href="http://www.genome.clemson.edu/" class="external text"
 rel="nofollow">Clemson University Genomics Institute</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/23*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

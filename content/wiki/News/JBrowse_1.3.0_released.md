@@ -28,15 +28,14 @@ Please see the
 <a href="http://jbrowse.org/jbrowse-1-3-0/" class="external text"
 rel="nofollow">blog post</a> for the full list of new features.
 
-Robert Buels  
-Lead Developer  
+Robert Buels
+Lead Developer
 JBrowse - <a href="http://jbrowse.org" class="external free"
-rel="nofollow">http://jbrowse.org</a>  
+rel="nofollow">http://jbrowse.org</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/04/13*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

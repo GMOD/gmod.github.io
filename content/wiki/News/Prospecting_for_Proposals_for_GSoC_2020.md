@@ -36,6 +36,6 @@ rel="nofollow">robin.haw@oicr.on.ca</a> and
 <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">help@gmod.org</a> for advice!
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2020/02/03*

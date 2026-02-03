@@ -31,7 +31,7 @@ width="150" height="150" alt="Bilardi.png" /></p></td>
 </tbody>
 </table>
 
-Background  
+Background
 Bioinformatics analyses <sup>[\[2\]](#cite_note-PMID:19218350-2)</sup>
 
 Gene regulation and mRNA secondary structure prediction (PhD thesys)

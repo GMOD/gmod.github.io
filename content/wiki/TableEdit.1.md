@@ -122,7 +122,7 @@ Here is a code snippet from a wrapper script
 foreach ($genes as $gene){
         $gene_count++;
         $gene_name = $gene['feature_name'];
- 
+
         # require something that finds the desired page and table and edits it
         require "$bot_dir/colimod_colipedia/modify_tables/test_modify.php";
          if ($box){

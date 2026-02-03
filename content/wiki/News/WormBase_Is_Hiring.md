@@ -70,10 +70,9 @@ Please send resumes and vitaes to **Todd Harris (todd@wormbase.org)**.
   href="https://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=663696"
   class="external text" rel="nofollow">official job posting at OICR</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/10/20*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

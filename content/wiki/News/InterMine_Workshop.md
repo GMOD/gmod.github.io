@@ -40,10 +40,9 @@ details and registration information. The workshop is free to attend.
 
 Richard Smith
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/09/11*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

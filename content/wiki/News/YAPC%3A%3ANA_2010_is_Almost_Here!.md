@@ -34,14 +34,13 @@ I hope to see you all at
 <a href="http://conferences.mongueurs.net/yn2010/" class="external text"
 rel="nofollow">YAPC: NA 2010</a> in beautiful Columbus, Ohio.
 
-Heath Bair  
+Heath Bair
 <a href="http://conferences.mongueurs.net/yn2010/" class="external text"
 rel="nofollow">YAPC: NA 2010</a> Conference Chairman
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/04/13*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

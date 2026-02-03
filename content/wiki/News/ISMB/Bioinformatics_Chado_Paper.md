@@ -20,10 +20,9 @@ The paper describes the overall
 <a href="../../Chado" class="mw-redirect" title="Chado">Chado</a>
 philosophy and the 5 core Chado modules.
 
-  
+
 
 *Posted to the [GMOD News](../../GMOD_News "GMOD News") on 2007/07/13*
 
-:
 
 - [News Items](../../Category%253ANews_Items "Category%253ANews Items")

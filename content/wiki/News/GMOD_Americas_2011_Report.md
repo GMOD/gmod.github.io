@@ -50,10 +50,9 @@ See you in October,
 [Scott Cain](../User%253AScott "User%253AScott") and [Dave
 Clements](../User%253AClements "User%253AClements")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/03/17*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -32,10 +32,9 @@ Any bugs/feature requests should be addressed on the
 <a href="https://sourceforge.net/tracker/?group_id=148765"
 class="external text" rel="nofollow">Sourceforge site</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/29*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -14,7 +14,7 @@ Status
 - Development: active
 - Support: active
 
-  
+
 
 <a href="http://opensource.org/" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/66/Osi_symbol.png/40px-Osi_symbol.png"
@@ -53,7 +53,7 @@ title="Property:Is open source">Is open source</a></td>
 title="Property:Link type">Link type</a></td>
 <td class="smwprops">website ,
 source code ,
-demo server 
+demo server
 and download </td>
 </tr>
 <tr class="odd row-odd">
@@ -66,13 +66,13 @@ title="Property:Release date">Release date</a></td>
 href="Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
-<td class="smwprops">Community annotation 
+<td class="smwprops">Community annotation
 and Sequence annotation </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
-<td class="smwprops">Javascript 
+<td class="smwprops">Javascript
 and Java </td>
 </tr>
 <tr class="even row-even">
@@ -93,7 +93,7 @@ title="WebApollo2">WebApollo2#http://icebox.lbl.gov/Apollo2/annotator/index</a>
 title="WebApollo2">WebApollo2#https://github.com/GMOD/Apollo/releases</a>
 ,
 <a href="WebApollo2#_7aa3d428be4e2b3632dc7e1d8733182f"
-title="WebApollo2">WebApollo2</a> 
+title="WebApollo2">WebApollo2</a>
 and <a href="WebApollo2#_4c9d71480131ff10bde93a00dd874b38"
 title="WebApollo2">WebApollo2</a> </td>
 </tr>

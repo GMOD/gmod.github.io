@@ -35,10 +35,9 @@ date for applications is 24 September 2010.
 
 [Richard Smith](../../User%253ARsmith "User%253ARsmith")
 
-  
+
 
 *Posted to the [GMOD News](../../GMOD_News "GMOD News") on 2010/09/16*
 
-:
 
 - [News Items](../../Category%253ANews_Items "Category%253ANews Items")

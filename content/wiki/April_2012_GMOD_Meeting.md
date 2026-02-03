@@ -320,7 +320,7 @@ Reiss Science Building, Georgetown University</td>
 <a href="http://aws.amazon.com/" rel="nofollow"
 title="Amazon Web Services"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/AmazonWebServicesLogo.png" width="200"
-height="102" alt="Amazon Web Services" /></a>  
+height="102" alt="Amazon Web Services" /></a>
 This workshop is generously supported by an
 <a href="http://aws.amazon.com/education/" class="external text"
 rel="nofollow">AWS in Education</a> grant award

@@ -7,7 +7,7 @@ Meeting Report [Model Organism Database User Interface
 Caucus](MOD_User_Interface_Caucus "MOD User Interface Caucus") January
 18, 2007 Town and Country Hotel, San Diego, CA, USA
 
-  
+
 The user interface (UI) is the most visible aspect of a MOD, and
 arguably has the most direct impact on the satisfaction of its users. On
 the first day of the [January 2007 GMOD
@@ -27,7 +27,7 @@ MOD in concert with other MODs.
 The MOD user interface session brought to light some very useful topics
 that many MODs (new and old) can benefit from discussing.
 
-General UI Lessons  
+General UI Lessons
 
 - In all cases, it should be clear what actions are required from the
   user and what results those actions will produce.
@@ -39,7 +39,7 @@ General UI Lessons
 - Developing good UIs takes sustained work, including feedback and
   community testing.
 
-Complexity is an inherent problem  
+Complexity is an inherent problem
 
 - MODs deal with rich, complex data that is constantly expanding and
   changing. It is critical to recognize that this complexity "comes with
@@ -54,7 +54,7 @@ Complexity is an inherent problem
   - Engineering of site infrastructure
   - User education and documentation
 
-Ideas for future development  
+Ideas for future development
 
 - More dynamic web content options and graphical summaries to help
   manage information.
@@ -113,11 +113,11 @@ Ideas for future development
 
 \- attendance list
 
-#  [Individual Presentations](MOD_Face_Talks "MOD Face Talks") 
+#  [Individual Presentations](MOD_Face_Talks "MOD Face Talks")
 
 Slides and text summaries of individual presentations.
 
-  
+
 
 # Detailed Report
 
@@ -391,7 +391,7 @@ should be sure to include:
 ## General Discussion
 
 - Steps in developing good MOD Faces
-  Consensus  
+  Consensus
   help links everywhere are useful. Examples on input fields are easy to
   add, and very useful.
 
@@ -427,7 +427,7 @@ should be sure to include:
       image replaces expression information.
     - Word or string completion as user asks questions is useful UI
       technique (see Javascript and AJAX below)
-- Common UIs across MODs?  
+- Common UIs across MODs?
   Not discussed (sigh :()
 
 ## Implementation Techniques

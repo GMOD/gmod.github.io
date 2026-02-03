@@ -3,7 +3,7 @@ title: "Publications"
 ---
 # Publications
 
-  
+
 The following is a partial listing of publications/references describing
 GMOD components or databases and applications built using GMOD
 components. For a list of databases see [GMOD
@@ -323,9 +323,9 @@ rel="nofollow">COiNs bibliographic data</a>.
   <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/1599-1.pdf" class="internal"
   title="1599-1.pdf">PDF</a>
 
-  
 
-  
+
+
 
 ## Adding Citations
 
@@ -337,5 +337,5 @@ Example:
 
      <ref name=PMID:15752432/>
 
-  
+
 **Cite error: `<ref>` tags exist, but no `<references/>` tag was found**

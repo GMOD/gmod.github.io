@@ -14,7 +14,7 @@ to get syntenic data into that database.
   class="external text" rel="nofollow">GMOD FTP site</a>; the sample
   data are for two rice species (courtesy of Bonnie Hurwitz)
 
-  
+
 
   Alignment Data</span>](#Example_Alignment_Data)
   - [Note on
@@ -95,21 +95,21 @@ is essential:
 
 The general format is species-refseq(strand)/start-end
 
-species  
+species
 name of species, genome, strain, etc (string with no '-' characters)
 
-sequence  
+sequence
 name of reference sequence (string with no '/' characters)
 
-(strand)  
+(strand)
 orientation of the alignment (relative to the reference sequence; + or
 -)
 
-start  
+start
 start coordinate of the alignment relative to the reference sequence
 (integer)
 
-end  
+end
 end coordinate of the alignment relative to the reference sequence
 (integer)
 
@@ -118,7 +118,7 @@ Examples:
        c_elegans-I(+)/1..2300
        myco_bovis-chr1(-)/15000..25000
 
-  
+
 
 # Loading the alignment database
 
@@ -130,7 +130,7 @@ MySQL command:
 
     mysql -uroot -ppassword -e 'create database my_database'
 
-  
+
 
 ## Loading from multiple sequence alignments
 
@@ -150,7 +150,7 @@ simple multiple sequence alignments with clustalw.
 - See the GBrowse_syn page for more on [whole genome alignment
   approaches](GBrowse_syn.1#See_also "GBrowse syn")
 
-  
+
 
 ## Loading from other sources
 
@@ -167,7 +167,7 @@ Any features that have start end and strand information can be used.
 - More information on
   [load_alignment_database.pl](GBrowse_syn_Scripts#load_alignment_database.pl "GBrowse syn Scripts")
 
-  
+
 
 ### Data loading format
 
@@ -182,7 +182,7 @@ reciprocal alignment is also created during database loading.
     c_briggsae      chrI    1583997 1590364 +       .       c_remanei       Crem_Contig24   631879  634679  -       .       \
     1584000 634676  1584100 634584  (truncated...)  |     631900  1590333 632000  1590233  (truncated ...)
 
-  
+
 
 # GBrowse_syn Database Schema
 
@@ -194,7 +194,7 @@ reciprocal alignment is also created during database loading.
   reconstruction of the alignment within
   [GBrowse_syn](GBrowse_syn.1 "GBrowse syn").
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/GBS_Schema.png" class="thumbborder"

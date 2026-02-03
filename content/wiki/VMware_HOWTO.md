@@ -20,7 +20,7 @@ VMware images are used in several places in GMOD:
 - Many GMOD [tutorials](Category%253ATutorials "Category%253ATutorials") use
   VMware images as starting points.
 
-  
+
 
   Players</span>](#VMware_Players)
 - [Getting the
@@ -56,7 +56,7 @@ rel="nofollow">VMware</a>. You will need to register to download it.
 There are multiple versions. Be sure to download a version that can run
 on your laptop.
 
-  
+
 
 VMware on Mac OS X
 
@@ -70,7 +70,7 @@ There is no free VMware player that runs *directly* under [Mac OS
 X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
 other options, **all of which require an Intel Mac**:
 
-  
+
 
 VMware Fusion
 
@@ -88,7 +88,7 @@ VMware images (as well as Windows and Linux) under Mac OS. **We
 recommend this option for Mac users. There is a fully functional, 30 day
 free trial version of VMware Fusion available for download.**
 
-  
+
 
 VirtualBox
 

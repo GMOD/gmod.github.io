@@ -122,13 +122,13 @@ public class BakeOff {
         q.setConstraint(sc);
         System.err.println("query: " + q);
         Results res = os.execute(q);
- 
+
         // a Results object is a List of Lists
         List rr = (List) res.get(0);
         Gene gene = (Gene) rr.get(0);
- 
+
         System.err.println ("symbol: " + gene.getIdentifier());
- 
+
         // a BioEntity in FlyMine has a collection of Synonym objects -
         // we need Synonym.value for each Synonym
         System.err.print ("synonyms: ");
@@ -137,27 +137,27 @@ public class BakeOff {
             Synonym syn = (Synonym) synIter.next();
             System.err.print (syn.getValue() + ' ');
         }
- 
+
         System.err.println ("description: " + gene.getDescription());
- 
+
         // get the class name, but we already know that the gene is a Gene
         System.err.println ("type: " + gene.getClass().getName());
- 
+
         // make a List from a the Set of exons for this Gene
         List exons = new ArrayList(gene.getExons());
         Exon exon1 = (Exon) exons.get(0);
         Exon exon2 = (Exon) exons.get(1);
- 
+
         // get the start and end via the Location object
         System.err.println ("exon1 start: " + exon1.getChromosomeLocation().getStart());
         System.err.println ("exon1 end: " + exon1.getChromosomeLocation().getEnd());
         System.err.println ("exon2 start: " + exon2.getChromosomeLocation().getStart());
         System.err.println ("exon2 end: " + exon2.getChromosomeLocation().getEnd());
- 
+
         // write out the first cds
         List cdss = new ArrayList(gene.getCDSs());
         FlyMineSequence flymineSequence = FlyMineSequenceFactory.make((CDS) cdss.get(0));
- 
+
         // use BioJava to output the sequence
         Annotation annotation = flymineSequence.getAnnotation();
         annotation.setProperty(FastaFormat.PROPERTY_DESCRIPTIONLINE,
@@ -176,9 +176,9 @@ public class BakeOff {
   QueryClass qcObj = new QueryClass(Gene.class);
   q.addFrom(qcObj);
   q.addToSelect(qcObj);
- 
+
   QueryField qf = new QueryField(qcObj, "identifier");
- 
+
   SimpleConstraint sc = new SimpleConstraint(qf, ConstraintOp.MATCHES, new QueryValue("x-%"));
   q.setConstraint(sc);
 ```

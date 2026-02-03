@@ -23,9 +23,9 @@ Plans/Architecture for the PHP tools for implementing gmod-rpc
 
 Use mod_rewrite so that gmod-rpc URLs all go to this script
 
-    <IfModule mod_rewrite.c>   
-    RewriteEngine on  
-    RewriteRule ^/gmod-rpc/.*$ /gmod-rpc/index.php  
+    <IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^/gmod-rpc/.*$ /gmod-rpc/index.php
     </IfModule>
 
 index.php looks for a version directory based on the URL.

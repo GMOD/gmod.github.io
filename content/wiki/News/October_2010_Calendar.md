@@ -8,7 +8,7 @@ height="35" alt="GMOD Calendar" />](../Calendar "GMOD Calendar")
 
 October is calmer than September, but is still relatively full:
 
-Deadlines  
+Deadlines
 
 - SWAT4LS: Semantic Web Applications for Life Sciences abstracts
 - Rocky '10 Bionformatics Conference abstracts
@@ -27,19 +27,18 @@ Conferences, Meetings, and Courses
 - Automated Functional Annotation and Data Mining course
 - VisWeek 2010
 
-  
+
 If you know of any upcoming events that are not on the calendar, please
 send them to me.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/09/23*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -59,7 +59,7 @@ available with GBrowse, and we'll get the sample Chado file:
 
      wget http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/contrib/conf_files/07.chado.conf -O pythium.conf
 
-  
+
 
 Some simple tweaks and additions:
 
@@ -175,7 +175,7 @@ available when we want it.
     height         = 5
     label density  = 50
     bump           = fast
-    key            = Reads 
+    key            = Reads
 
     [Pair]
     feature       = read_pair

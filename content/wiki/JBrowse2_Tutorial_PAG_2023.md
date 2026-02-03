@@ -106,19 +106,19 @@ Installed using the instructions on <a
 href="https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions#debian-and-ubuntu-based-linux-distributions"
 class="external text" rel="nofollow">Nodejs.org</a>:
 
-     
+
      Don't do:
      $ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&sudo apt-get install -y nodejs
-     
+
 
 - A web server (Apache2 in this instance, but any will do). I enabled
   the "userdir" mod so we could all use the same machine for the
   tutorial:
-     
+
      Don't do:
      $ sudo a2enmod userdir
      $ sudo service apache2 start
-     
+
 
 ### Things done just for this tutorial
 
@@ -146,18 +146,18 @@ this tutorial, tutorialpag30.jbrowse.org. Do this with the user name and
 password you got from one of us (we have 50 users configured--hopefully
 that will be enough!):
 
-     
+
      ssh username@tutorialpag30.jbrowse.org
-     
+
 
 and supply the password. When you log in, you'll be in your user's home
 directory, where there is nothing but a public_html directory. We'll use
 the JBrowse CLI to initialize a new JBrowse instance:
 
-     
+
      jbrowse create public_html --force
      cd public_html
-     
+
 
 Note that the "--force" is necessary here because the public_html
 directory isn't empty and the create script doesn't want to accidentally
@@ -179,7 +179,7 @@ but not configured:
 rel="nofollow">http://tutorialpag30.jbrowse.org/~userXX</a>. (Of course,
 substitute in your username in the URL)
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8c/New_jbrowse_page.png/800px-New_jbrowse_page.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8c/New_jbrowse_page.png/1200px-New_jbrowse_page.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8c/New_jbrowse_page.png/1600px-New_jbrowse_page.png 2x"
@@ -196,22 +196,22 @@ To create this indexed reference sequence, the fasta was downloaded from
 the WormBase ftp site, and after uncompressing it, it was bgzipped and
 then indexed with SAMTools:
 
-     
+
      Don't do:
      bgzip c_elegans.PRJNA13758.WS286.genomic.fa
      samtools faidx c_elegans.PRJNA13758.WS286.genomic.fa.gz
-     
+
 
 To tell JBrowse about the new assembly, we can use the `jbrowse` CLI:
 
-     
+
      jbrowse add-assembly data/c_elegans.PRJNA13758.WS286.genomic.fa.gz \
              --displayName "C. elegans N2" \
              --name c_elegans_PRJNA13758 \
              --type bgzipFasta \
              --load inPlace \
              --refNameAliases test_data/ce_aliases.txt
-     
+
 
 The command will probably generate some warnings about the locations of
 the files, but the apache server is configured to use them where they
@@ -260,10 +260,10 @@ chromosome name, in column 1) and then by the starting coordinate
 (colunn 4). Here is a magic incantation for doing that on the Linux
 command line (sort and then pipe the result to bgzip):
 
-     
+
      Don't do:
      sort -t"`printf '\t'`" -k1,1 -k4,4n c_elegans.genes.gff3 |bgzip > c_elegans.genes.sorted.gff3.gz
-     
+
 
 Note that this command, while it will work, is perhaps a little over
 simplistic. See the <a
@@ -273,21 +273,21 @@ information on preparring GFF3 files</a>.
 
 Then tabix index it:
 
-     
+
      Don't do:
      tabix c_elegans.genes.sorted.gff3.gz
-     
+
 
 To save time, we placed both the bgzipped GFF and tabix index files in
 your public_html directory as well. To use the CLI to add a GFF track,
 do this:
 
-     
+
      jbrowse add-track data/c_elegans.genes.sorted.gff3.gz \
              --name Genes \
              --description "Curated genes from WormBase" \
-             --load inPlace 
-     
+             --load inPlace
+
 
 Where the options are the same as before, with the `--description`
 option to provide information about what the track is. Reload the page
@@ -305,9 +305,9 @@ that is somewhat more complicated and out of scope for this tutorial. We
 can create a searchable index for the Genes track we created. To do
 that, on the command line in the public_html directory, run the command
 
-     
+
      jbrowse text-index --attributes=Name,ID,locus --tracks c_elegans.genes.sorted.gff3
-     
+
 
 The default value for the attributes flag are "Name,ID" so it will index
 the GFF attributes that have those tags. For this command, we add the
@@ -335,11 +335,11 @@ to as NCList (Nested Containment List). At WormBase there is a JBrowse 1
 instance with many such tracks. We'll use one of those as an example
 here to load a track that has just protein coding genes:
 
-     
+
      jbrowse add-track https://s3.amazonaws.com/agrjbrowse/MOD-jbrowses/WormBase/WS286/c_elegans_PRJNA13758/tracks/Curated%20Genes%20\(protein%20coding\)/{refseq}/trackData.jsonz \
        --name "Protein coding genes" \
-       --description "Only protein coding genes from WormBase" 
-     
+       --description "Only protein coding genes from WormBase"
+
 
 Note that the --load option isn't required for URLs.
 
@@ -426,10 +426,10 @@ rel="nofollow">http://elegansvariation.org/</a>) as well. Adding it is
 very simple, just supplying the URL of the file and a name for the
 track:
 
-     
+
      jbrowse add-track https://storage.googleapis.com/elegansvariation.org/releases/current/WI.current.soft-filtered.vcf.gz \
              --name Variants
-     
+
 
 The result up to this point looks something like this:
 
@@ -447,17 +447,17 @@ across several species to predict what reading frame is being used in an
 exon. Using the link for the frame one prediction, we can write a
 command that is again very similar to the previous commands:
 
-     
+
      jbrowse add-track https://data.broadinstitute.org/compbio1/PhyloCSFtracks/ce11/latest/PhyloCSF+1.bw \
        --name "Frame 1 usage"
-     
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/87/Frameusage_bigwig.png/800px-Frameusage_bigwig.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/87/Frameusage_bigwig.png/1200px-Frameusage_bigwig.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/87/Frameusage_bigwig.png/1600px-Frameusage_bigwig.png 2x"
 width="800" height="237" alt="Frameusage bigwig.png" />
 
-  
+
 
 ### The need for alias files
 
@@ -527,9 +527,9 @@ and pasted the resulting config here. To use this with the JBrowse CLI,
 we just need to make it "command line friendly" (ie, put it all on one
 line and put it in single quotes):
 
-     
+
      jbrowse add-track-json '{"type":"MultiQuantitativeTrack","trackId":"multiwiggle_phylo","name":"Forward PhyloCSF","assemblyNames":["c_elegans_PRJNA13758"],"adapter":{"type":"MultiWiggleAdapter", "bigWigs":["https://data.broadinstitute.org/compbio1/PhyloCSFtracks/ce11/latest/PhyloCSF+1.bw", "https://data.broadinstitute.org/compbio1/PhyloCSFtracks/ce11/latest/PhyloCSF+2.bw", "https://data.broadinstitute.org/compbio1/PhyloCSFtracks/ce11/latest/PhyloCSF+3.bw"]}, "displays":[{"type": "MultiLinearWiggleDisplay","displayId": "multiwiggle_phylo-MultiLinearWiggleDisplay"}]}'
-     
+
 
 Yes, that is a ridiculously long command. The result with all three
 bigwigs in one track looks like this:
@@ -552,13 +552,13 @@ elegans*. For this tutorial, we'll use *C. briggsae*. As before, we
 create a new assembly in JBrowse with the indexed fasta files provided
 on the tutorial machine:
 
-     
+
     jbrowse add-assembly data/c_briggsae.PRJNA10731.WS287.genomic.fa.gz \
             --displayName "C. briggsae" \
             --name c_briggsae_PRJNA10731 \
             --type bgzipFasta \
-            --load inPlace 
-     
+            --load inPlace
+
 
 Next we need some analysis result that compares the two genomes. The
 tool minimap2 is a fairly lightweight application that will do a fast
@@ -567,23 +567,23 @@ include anchors files from MScanX, out files from MashMap, and delta
 files from Mummer). I ran this command ahead of time and put the result
 in the public_html directory:
 
-     
+
      Don't do:
      minimap2 -c data/c_elegans.PRJNA13758.WS286.genomic.fa.gz data/c_briggsae.PRJNA10731.WS287.genomic.fa.gz > c_elegans.c_briggsae.paf
-     
+
 
 Note the use of the -c flag: that adds CIGAR information to each of the
 match lines, which JBrowse will use to improve the display with
 insertion and deletion data. Once we have the paf file, we can add a new
 track configuration for these data:
 
-     
+
      jbrowse add-track data/c_elegans.c_briggsae.paf \
          --assemblyNames c_briggsae_PRJNA10731,c_elegans_PRJNA13758 \
          --description "A minimap2 comparison of C. elegans and C. briggsae" \
          --load inPlace \
-         --name "C. elegans/C. briggsae Synteny" 
-     
+         --name "C. elegans/C. briggsae Synteny"
+
 
 A new flag for this command is --assemblyNames; in previous commands
 adding a track, the assembly that was being used was inferred to be the
@@ -602,12 +602,12 @@ To make the synteny display a little more informative, we'll also add a
 gene track for the *C. briggsae* assembly (so we can see what's being
 compared):
 
-     
+
      jbrowse add-track https://s3.amazonaws.com/agrjbrowse/MOD-jbrowses/WormBase/WS287/c_briggsae_PRJNA10731/tracks/Curated_Genes/{refseq}/trackData.jsonz \
          --assemblyNames c_briggsae_PRJNA10731 \
          --name "C. briggsae Genes" \
          --trackId c_briggsae_genes
-     
+
 
 ### Opening a synteny display
 
@@ -711,19 +711,19 @@ To make full use of this view, though, we need two tracks: one for the
 source BAM file and one for the predictions VCF. To get them, run these
 load-track commands:
 
-     
+
      jbrowse add-track https://s3.amazonaws.com/wormbase-modencode/test/maroilley/candidateSV.vcf.gz \
            --name "Structural Variant Candidates VCF" \
            --assemblyNames c_elegans_PRJNA13758 \
            --category "Structural Variants"
-     
 
-     
+
+
      jbrowse add-track https://s3.amazonaws.com/wormbase-modencode/test/maroilley/VC109_Het_trim_bwaMEM_sort.bam \
            --name "VC109 BAM" \
            --assemblyNames c_elegans_PRJNA13758 \
            --category "Structural Variants"
-     
+
 
 Note that these load commands have a option we haven't seen yet:
 `--category`, which will put the newly created tracks in a separate
@@ -823,11 +823,11 @@ write a statement at the uses the ternery operator (i.e., if the thing
 before the ? is true, do the first thing, otherwise do the second thing)
 that looks like this:
 
-  
+
 
      get(feature,'strand')>0?'red':'grey'
 
-  
+
 Enter that in the field where goldenrod used to be, and see the genes
 change to either red or grey depending on which strand they are on.
 
@@ -850,11 +850,11 @@ like to change it. In addition to switching to using the feature's
 gene's name is), we'll also add a text label to make it clear that's
 where we got it. To do this, we can enter
 
-  
+
 
      'Locus: '+get(feature,'locus')
 
-  
+
 where the "name" JEXL was. This tells JBrowse to get the feature's
 "locus" attribute and then prepend it with "Locus: " in the tooltip.
 
@@ -865,8 +865,8 @@ width="600" height="385" alt="Jexl change mouseover.png" />
 
 # Using the admin-server
 
-     NOTE: This section will not be done in the live tutorial for a variety reasons, including 
-     that we don't have the ports open to run the admin server. This section is here to introduce 
+     NOTE: This section will not be done in the live tutorial for a variety reasons, including
+     that we don't have the ports open to run the admin server. This section is here to introduce
      the concept should you arrive at this page when not doing the tutorial.
 
 We can also run the JBrowse admin-server, which looks just like JBrowse
@@ -876,9 +876,9 @@ so if you leave it up, somebody might start messing with your site. To
 start the admin server, we change to the directory where JBrowse will be
 served from (`public_html`) and run the `jbrowse` command to start it:
 
-     
+
      jbrowse admin-server
-     
+
 
 When we execute that command, we get a message in the terminal that it
 started up and gives us some URLs to use to access the server. It will
@@ -895,7 +895,7 @@ looks like this:
 class="external free"
 rel="nofollow">http://tutorialpag30.jbrowse.org:9090?adminKey=yourkey</a>
 
-  
+
 
 ## Using the admin-server to add an assembly
 
@@ -906,7 +906,7 @@ already one prepared and on the web server for *C. elegans* and it is at
      http://tutorialpag30.jbrowse.org/~ubuntu/data/c_elegans.PRJNA13758.WS286.genomic.fa.gz.fai
      http://tutorialpag30.jbrowse.org/~ubuntu/data/c_elegans.PRJNA13758.WS286.genomic.fa.gz.gzi
 
-  
+
 
 To add this as a reference sequence to JBrowse, click on the "Start a
 new session" and then on the resulting page, select "Open assembly
@@ -925,15 +925,15 @@ Copy and paste those URLs in to the appropriate fields and then click
 "Save new assembly."
 
 ``` dont
-  Note: this is one place where the web version of JBrowse with the admin server is slightly 
+  Note: this is one place where the web version of JBrowse with the admin server is slightly
   different from the Desktop version: if we were using the desktop version, the above dialog
-  would have also given the option for finding the files on a local hard drive rather than 
+  would have also given the option for finding the files on a local hard drive rather than
   only allowing URLs.
 
-  Another note: In order for the above URLs to work with a web instance of JBrowse that 
-  isn't on the "same" server (where different ports == a different server), CORS (cross 
-  origin resource sharing) had to be enabled for the web server (in this case apache). 
-  If you want to do the same thing for a server you control, google "enable CORS <your 
+  Another note: In order for the above URLs to work with a web instance of JBrowse that
+  isn't on the "same" server (where different ports == a different server), CORS (cross
+  origin resource sharing) had to be enabled for the web server (in this case apache).
+  If you want to do the same thing for a server you control, google "enable CORS <your
   server software name>" to find directions.
 ```
 
@@ -942,13 +942,13 @@ Copy and paste those URLs in to the appropriate fields and then click
      http://tutorialpag30.jbrowse.org/~ubuntu/data/c_elegans.genes.sorted.gff3.gz
      http://tutorialpag30.jbrowse.org/~ubuntu/data/c_elegans.genes.sorted.gff3.gz.tbi
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/05/Add_track_dialog.png/400px-Add_track_dialog.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/05/Add_track_dialog.png/600px-Add_track_dialog.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Add_track_dialog.png 2x"
 width="400" height="603" alt="Add track dialog.png" />
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d1/Genes_track.png/800px-Genes_track.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d1/Genes_track.png/1200px-Genes_track.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d1/Genes_track.png/1600px-Genes_track.png 2x"
@@ -958,7 +958,7 @@ width="800" height="224" alt="Genes track.png" />
 
      http://tutorialpag30.jbrowse.org/c_elegans.c_brenneri.paf
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/79/Dotplot_config.png/800px-Dotplot_config.png"

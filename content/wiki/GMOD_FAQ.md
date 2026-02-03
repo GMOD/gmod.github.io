@@ -9,7 +9,7 @@ specific [GMOD Components](GMOD_Components "GMOD Components"). See the
 [Glossary](Glossary "Glossary") for definitions of commonly used terms
 in GMOD.
 
-  
+
 
   FAQ</span>](#About_this_FAQ)
   - [What is
@@ -38,7 +38,7 @@ It is now maintained as a
 title="wp:Wiki">Wiki</a> on this site. You can help maintain it by
 adding questions and answers.
 
-  
+
 
 ## About GMOD
 

@@ -11,10 +11,9 @@ MediaWiki that is powering the site. If you notice any problems with
 gmod.org, please send an email to help at gmod dot org to let us know
 what's going on.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2016/09/29*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

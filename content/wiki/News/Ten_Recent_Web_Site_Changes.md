@@ -54,14 +54,13 @@ As always, please let us know if you have any questions or comments.
 
 Thanks,
 
-Dave Clements, [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")  
+Dave Clements, [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">help@gmod.org</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/02/13*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

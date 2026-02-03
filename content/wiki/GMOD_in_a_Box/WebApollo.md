@@ -77,7 +77,7 @@ data.
 
     $ sudo setup_webapollo.sh
     Enter location of GFF3: ~/sample_data/pyu_data/scf1117875582023.gff
-    Enter location of genomic FASTA (leave empty to use GFF3): 
+    Enter location of genomic FASTA (leave empty to use GFF3):
     Enter organism name (genus species): Pythium ultimum
     Enter SO term for genomic sequences (e.g., contig): contig
 
@@ -110,7 +110,7 @@ data.
     Creating search database
 
     Restarting Tomcat (enter the password used to login to the VM if prompted)
-    * Stopping Tomcat servlet engine tomcat7                                  [ OK ] 
+    * Stopping Tomcat servlet engine tomcat7                                  [ OK ]
     * Starting Tomcat servlet engine tomcat7                                  [ OK ]
 
     Your WebApollo instance is ready for use.

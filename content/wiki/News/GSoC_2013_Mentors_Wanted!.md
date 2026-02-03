@@ -39,6 +39,6 @@ More information is also available on the
 <a href="https://groups.google.com/group/genome-informatics"
 class="external text" rel="nofollow">Genome Informatics mailing list</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/15*

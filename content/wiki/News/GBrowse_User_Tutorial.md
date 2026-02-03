@@ -61,10 +61,9 @@ use GBrowse better.
 
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/05*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

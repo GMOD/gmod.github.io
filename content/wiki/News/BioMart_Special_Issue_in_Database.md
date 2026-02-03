@@ -13,7 +13,7 @@ href="http://www.oxfordjournals.org/our_journals/databa/biomart_virtual_issue.ht
 class="external free"
 rel="nofollow">http://www.oxfordjournals.org/our_journals/databa/biomart_virtual_issue.html</a>
 
-  
+
 [BioMart](../BioMart "BioMart") is a unique open source data federation
 technology that provides unified access to distributed databases storing
 a wide range of data. This DATABASE issue recognizes BioMart's
@@ -27,11 +27,10 @@ I would like to thank and congratulate the BioMart community on this
 impressive achievement. This issue would have not been possible without
 their dedication, expertise, passion and enthusiasm.
 
-  
+
 Arek Kasprzyk
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/18*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

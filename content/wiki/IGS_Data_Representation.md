@@ -115,7 +115,7 @@ their relationships. The example query is for a transcript feature
           JOIN cvterm c ON fr.type_id = c.cvterm_id
      WHERE f1.uniquename = 'hsn.transcript.39176.1'
         OR f2.uniquename = 'hsn.transcript.39176.1';
- 
+
     +-------------------------+--------------+------------------------+
     | subject                 | relationship | object                 |
     +-------------------------+--------------+------------------------+
@@ -153,7 +153,7 @@ SELECT f.uniquename, product.VALUE AS product, sym.VALUE AS symbol
  WHERE cvt.name = 'gene_product_name'
    AND cvt2.name = 'gene_product_name_source'
    AND f.uniquename = 'hsn.transcript.39176.1';
- 
+
     +------------------------+--------------------+-----------+
     | uniquename             | product            | symbol    |
     +------------------------+--------------------+-----------+
@@ -202,7 +202,7 @@ function, component)? For this example I'll use the single 'GO' entry:
     SELECT *
       FROM cv
      WHERE name = 'GO';
- 
+
     +-------+------+------------+
     | cv_id | name | definition |
     +-------+------+------------+
@@ -222,7 +222,7 @@ GO:NNNNNNNN value. Instead, we can look it up by the name:
       FROM cvterm
      WHERE cv_id = 10
        AND name = 'cytidine deaminase activity';
- 
+
     +-----------+-----------------------------+----------------------------+-----------+-------------+
     | cvterm_id | name                        | SUBSTRING(definition,1,20) | dbxref_id | is_obsolete |
     +-----------+-----------------------------+----------------------------+-----------+-------------+
@@ -237,7 +237,7 @@ in last query):
     SELECT *
       FROM dbxref
      WHERE dbxref_id = 12389;
- 
+
     +-----------+-------+------------+---------+-------------+
     | dbxref_id | db_id | accession  | version | description |
     +-----------+-------+------------+---------+-------------+
@@ -251,7 +251,7 @@ Which, of course, means there's a GO entry in the 'db' table too:
     SELECT *
       FROM db
      WHERE name = 'GO';
- 
+
     +-------+------+-------------+-----------+------+
     | db_id | name | description | urlprefix | url  |
     +-------+------+-------------+-----------+------+
@@ -266,7 +266,7 @@ So, reviewing, to get the basic annotation for a GO term:
       FROM cvterm cvt
         JOIN dbxref dbx ON cvt.dbxref_id = dbx.dbxref_id
      WHERE dbx.accession = 'GO:0004126';
- 
+
     +------------+-----------------------------+---------------------------------------------------------------------------+
     | accession  | name                        | definition                                                                |
     +------------+-----------------------------+---------------------------------------------------------------------------+
@@ -295,7 +295,7 @@ to get all assigned GO terms for a given transcript, with evidence.
         JOIN cvtermsynonym cs ON c2.cvterm_id = cs.cvterm_id
     WHERE f.uniquename = 'hsn.transcript.39176.1'
       AND cv.name = 'GO';
- 
+
     +------------------------+-------------+-------------------------------------+---------------+-----------+
     | uniquename             | ROLE id     | evidence TYPE                       | evidence code | VALUE     |
     +------------------------+-------------+-------------------------------------+---------------+-----------+

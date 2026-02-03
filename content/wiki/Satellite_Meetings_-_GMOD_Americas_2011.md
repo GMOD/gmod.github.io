@@ -3,14 +3,14 @@ title: "Satellite Meetings - GMOD Americas 2011"
 ---
 # Satellite Meetings - GMOD Americas 2011
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/600px-2011GMODAmericasSatellitesLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/900px-2011GMODAmericasSatellitesLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/2011GMODAmericasSatellitesLogo.png 2x"
 width="600" height="238" alt="GMOD Americas 2011" />
 
-  
+
 The [March 2011 GMOD
 Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting") will be
 followed with a day of *Satellite Meetings.* Satellite meetings are

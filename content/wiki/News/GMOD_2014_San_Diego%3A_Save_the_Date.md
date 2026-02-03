@@ -24,6 +24,6 @@ covering many of the actively-developed GMOD components.
 More details on both the GMOD community meeting and GMOD at PAG will be
 posted on the wiki closer to the time.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013-09-10*

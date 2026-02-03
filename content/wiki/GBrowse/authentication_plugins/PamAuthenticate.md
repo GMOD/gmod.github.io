@@ -91,7 +91,7 @@ dialog that prompts you for your login username and password. If all is
 configured correctly, then you'll be able to log in using your Unix
 username and password.
 
-  
+
 
 # Customizing the Plugin
 
@@ -105,18 +105,18 @@ login dialog box by setting configuration options in the
     if you have lost your  password.
     pam service name = gbrowse
 
-login hint  
+login hint
 This is the message that appears at the top of the dialog box, and is
 intended to be used to tell the user what credentials he is to supply.
 For example, you can change it to read "your Acme username and
 Cryptocard password".
 
-login help  
+login help
 This is the message that appears at the bottom of the dialog box and is
 intended to provide contact information for the user if he cannot
 remember his password. It can contain HTML links if desired.
 
-pam service name  
+pam service name
 This is the name of the pam.d service for gbrowse. You can place any
 defined service name in this option. For example, to use the PAM
 configuration for the login service, simply change the value to "login"
@@ -130,7 +130,6 @@ to create your own customized authentication plugin, please see
 [Creating GBrowse
 Plugins](../../Creating_GBrowse_Plugins "Creating GBrowse Plugins").
 
-:
 
 - [GBrowse
   Plugins](../../Category%253AGBrowse_Plugins "Category%253AGBrowse Plugins")

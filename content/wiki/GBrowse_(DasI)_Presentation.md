@@ -59,14 +59,14 @@ Gene inserted as GFF3 using a standard bulk loader:
 
 ``` de1
 use Bio::DB::Das::Chado;
- 
+
 my $chado = Bio::DB::Das::Chado->new(
       -dsn => "dbi:Pg:dbname=test",
       -user=> "scott",
       -pass=> "" ) | die "no new chado";
- 
+
 my $gene_name = 'xfile';
- 
+
 my ($gene_fo) = $chado->get_features_by_name($gene_name);
 ```
 
@@ -77,10 +77,10 @@ print "symbol: "      .  $gene_fo->display_name."\n";
 print "synonyms: "  .  join(', ',$gene_fo->synonyms)."\n";
 print "description: " . $gene_fo->notes."\n";
 print "type: "        .     $gene_fo->type."\n";
- 
+
 my ($mRNA) = $gene_fo->sub_SeqFeature();
 my @exons  = $mRNA->sub_SeqFeature();
- 
+
 for my $exon (@exons) {
     next unless ($exon->type->method eq 'exon');
     $exon_count++;
@@ -94,11 +94,11 @@ for my $exon (@exons) {
 
 ``` de1
  my $gene_name = 'x-*';
- 
+
  my @genes = $chado->get_features_by_name(
                  -name => $gene_name,
                  -class=> 'gene' );
- 
+
  for my $gene (@genes) {
      print join("\t",
                 $gene->feature_id,
@@ -116,7 +116,7 @@ Or see your report in [GBrowse](GBrowse.1 "GBrowse")
 - Uses 'familiar' BioPerl idioms, very similar to widely used
   Bio::DB::GFF (though with fewer methods)
 
-  
+
 
 ##### Conclusion
 

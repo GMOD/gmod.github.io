@@ -54,10 +54,9 @@ href="https://itsapps.unc.edu/RAMS4/details.do?reqId=1102082&amp;type=S"
 class="external text" rel="nofollow">the UNC HR website</a>. Inquiries
 may be addressed to H. Lapp at by email or by phone at 919.668.5288.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/02/21*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

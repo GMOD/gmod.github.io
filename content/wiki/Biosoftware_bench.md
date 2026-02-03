@@ -91,7 +91,7 @@ It has a number of attractive features:
 - A <a href="http://www.scivee.tv/node/20325" class="external text"
   rel="nofollow">screencast on how to install it</a>
 
-  
+
 
 # License
 

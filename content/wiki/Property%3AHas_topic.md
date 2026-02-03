@@ -6,15 +6,15 @@ title: "Property:Has topic"
 This is a property of type
 .
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Has topic"
 
 Showing 25 pages using this property.
 
-(previous 25) ([next
-25](/wiki/Property%253AHas_topic)
+(previous 25) (next
+25
 
 <table style="width: 100%; ">
 <colgroup>
@@ -209,8 +209,8 @@ title="JBrowse">JBrowse</a>  </td>
 </tbody>
 </table>
 
-(previous 25) ([next
-25](/wiki/Property%253AHas_topic)
+(previous 25) (next
+25
 
 </span>
 

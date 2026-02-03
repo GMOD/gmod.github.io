@@ -41,13 +41,12 @@ We hope to see you at the upcoming [August 2009 GMOD
 Meeting](../August_2009_GMOD_Meeting "August 2009 GMOD Meeting"), in
 Oxford UK (and our first meeting in Europe).
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/09*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

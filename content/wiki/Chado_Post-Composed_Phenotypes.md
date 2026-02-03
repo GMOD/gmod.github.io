@@ -35,7 +35,7 @@ pre-composed cvterms. These changes require only adding a new table,
 phenotype_clause, and a number of new rows in phenotype_cvterm. We will
 attempt to introduce these changes in Chado v1.3
 
-  
+
 **Update, Mar 2015:** After running a trial on option 2 below, we found
 that the group table greatly increased the complexity of loading and
 querying the data, so we decided that rather than permitting an
@@ -50,7 +50,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 width="1101" height="806"
 alt="Chado phenotype proposal.clause.jpg" />
 
-  
+
 
 ## New and Modified Tables in Phenotype Module
 
@@ -81,9 +81,9 @@ alt="Chado phenotype proposal.clause.jpg" />
       );
      COMMENT ON TABLE phenotype_clause IS "Used to group phenotype_cvterm records into clauses, as are used in EQ statements where, for example, the primary entity may be a clause constructed with up to 3 terms";
 
-     ALTER TABLE phenotype_cvterm 
+     ALTER TABLE phenotype_cvterm
        ADD COLUMN type_id INT NOT NULL,
-          FOREIGN KEY type_id 
+          FOREIGN KEY type_id
             REFERENCES cvterm (cvterm_id) ON DELETE CASCADE INITIALLY DEFERRED,
        ADD COLUMN phenotypeclause_id INT,
           FOREIGN KEY (grp_id) REFERENCES grp (grp_id) ON DELETE CASCADE INITIALLY DEFERRED,
@@ -91,14 +91,14 @@ alt="Chado phenotype proposal.clause.jpg" />
      COMMENT ON COLUMN type_id IS "Name of this cvterm's role in a post-composed term";
      COMMENT ON COLUMN phenotypeclause_id IS "If this term is part of a clause within a statement, this field identifies the clause.";
 
-  
+
 
 ## Recommended Deprecated Fields
 
-     COMMENT ON TABLE phenotype IS 'Columns observable_id, assay_id 
+     COMMENT ON TABLE phenotype IS 'Columns observable_id, assay_id
      are deprecated to break the connection between the phenotype value and the
-     trait. The phenotype table should be used to store precomposed terms and the 
-     phenotype value. Use tables phenotype_cvterm to store the trait(s) associated 
+     trait. The phenotype table should be used to store precomposed terms and the
+     phenotype value. Use tables phenotype_cvterm to store the trait(s) associated
      with the phenotype.';
 
 ## Controlled Vocabularies
@@ -107,20 +107,20 @@ The parts of a post-composed statement will need to be described in a
 cv. This could go into a new cv for each type of statement, or go into a
 general, post-composed_term cv.
 
-**For EQ statements:**  
-Primary Entity  
-Primary Entity 1  
-Primary Entity 1 Relationship  
-Primary Entity 2  
-Quality  
-Qualifier  
-Secondary Entity  
-Secondary Entity 1  
-Secondary Entity 1 Relationship  
-Secondary Entity 2  
-...  
+**For EQ statements:**
+Primary Entity
+Primary Entity 1
+Primary Entity 1 Relationship
+Primary Entity 2
+Quality
+Qualifier
+Secondary Entity
+Secondary Entity 1
+Secondary Entity 1 Relationship
+Secondary Entity 2
+...
 
-  
+
 
 ## Older proposals
 

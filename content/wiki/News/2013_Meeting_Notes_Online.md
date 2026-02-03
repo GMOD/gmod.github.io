@@ -9,6 +9,6 @@ slides and archived tweets from the meeting are now online. See the
 Meeting](../April_2013_GMOD_Meeting "April 2013 GMOD Meeting") page for
 the material.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/30*

@@ -4,14 +4,14 @@ title: "Restriction Graphic Viewer"
 # Restriction Graphic Viewer
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
 The Restriction Graphic Viewer is a simple Web-based restriction site
 analysis tool. It is a component of the Generic Model Organism Systems
 Database project.
 
-  
+
 
   Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
@@ -23,7 +23,7 @@ Database project.
 <a href="http://seq.yeastgenome.org/cgi-bin/GMOD/RestGraph.pl"
 class="external text" rel="nofollow">Demo at Stanford</a>
 
-  
+
 
 ## Requirements
 
@@ -36,7 +36,7 @@ class="external text" rel="nofollow">Demo at Stanford</a>
 - <a href="http://bioperl.org" class="external text"
   rel="nofollow">Bioperl</a>
 
-  
+
 
 ## Contact
 

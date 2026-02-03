@@ -50,10 +50,10 @@ Minimum qualifications:
 
 Send resume with names and phone numbers of 3 references to
 
-Eva Quinby  
-Institute of Neuroscience  
-1254 University of Oregon  
-Eugene, OR  
+Eva Quinby
+Institute of Neuroscience
+1254 University of Oregon
+Eugene, OR
 97403-1254
 
 Or FAX to 541-346-4548. The UO is an AA/EO/ADA institution committed to
@@ -61,10 +61,9 @@ cultural diversity. Candidates who promote and enhance diversity are
 strongly desired. Applications received by November 10, 2011 receive
 first consideration. The position will remain open until filled.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/10/30*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

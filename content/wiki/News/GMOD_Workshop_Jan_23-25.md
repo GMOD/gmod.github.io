@@ -44,10 +44,9 @@ application as well.
 
 [Scott Cain](../User%253AScott "User%253AScott")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/17*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

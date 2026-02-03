@@ -16,7 +16,7 @@ via user authentication.
 - *See also: [GBrowse Install
   HOWTO](../GBrowse_Install_HOWTO "GBrowse Install HOWTO").*
 
-  
+
 
   GBrowse under FastCGI</span>](#Running_GBrowse_under_FastCGI)
 - [Running
@@ -153,19 +153,19 @@ send outgoing email, which nowadays frequently requires authentication
 between the GBrowse web server host and the mail hub. The following
 additional libraries and modules are required for basic functionality:
 
-**Digest::SHA**  
+**Digest::SHA**
 For creating and storing passwords. Available from
 <a href="http://www.cpan.org" class="external text"
 rel="nofollow">CPAN</a> or as Debian package or as Debian package
 libdigest-sha-perl.
-**Crypt::SSLeay**  
+**Crypt::SSLeay**
 For OpenID authentication. Available from
 <a href="http://www.cpan.org" class="external text"
 rel="nofollow">CPAN</a> or as Debian package libcrypt-ssleay-perl. This
 module in turn requires the
 <a href="http://www.openssl.org/" class="external text"
 rel="nofollow">OpenSSL package</a>, Debian package *libssl-dev*.
-**Math::BigInt::Pari** or **Math::BigInt::GMP**  
+**Math::BigInt::Pari** or **Math::BigInt::GMP**
 These libraries speed up Net::OpenID::Consumer, and in particular reduce
 the time needed to run the Net::OpenID::Consumer tests. To use the Pari
 module you will first need to install libpari
@@ -174,7 +174,7 @@ rel="nofollow">http://pari.math.u-bordeaux.fr/).To</a> use GMP install
 libGMP (<a href="http://gmplib.org/" class="external free"
 rel="nofollow">http://gmplib.org/</a>). Debian users can simply install
 *libmath-bigint-gmp-perl*.
-**Net::OpenID::Consumer**  
+**Net::OpenID::Consumer**
 For OpenID authentication. Available from
 <a href="http://www.cpan.org" class="external text"
 rel="nofollow">CPAN</a> or as Debian package
@@ -183,11 +183,11 @@ rel="nofollow">CPAN</a> or as Debian package
 If your preferred mail server requires user authentication to forward
 outgoing mail, then you will also need the following two modules:
 
-**Net::SMTP::SSL**  
+**Net::SMTP::SSL**
 Encrypted connections to mail servers. Available from
 <a href="http://www.cpan.org" class="external text"
 rel="nofollow">CPAN</a> or as Debian package *libnet-smtp-ssl-perl*.
-**Authen::SASL**  
+**Authen::SASL**
 Handle the authentication between mail client and server. Available from
 <a href="http://www.cpan.org" class="external text"
 rel="nofollow">CPAN</a> or as Debian package *libauthen-sasl-per*l.
@@ -305,16 +305,16 @@ registrations by issuing the SQL command "delete from users".
 There are several customization options in the user accounts section
 that you may wish to change. These are:
 
-**application_name**  
+**application_name**
 When the registration confirmation email arrives, it will appear to have
 been sent from a user named "GBrowse". You can change this value via
 this option.
 
-**application_name_long**  
+**application_name_long**
 The registration confirmation also includes a longer description of the
 e-mail sender. You may wish to change this as well.
 
-**email_address**  
+**email_address**
 This value will change the reply-to address on the confirmation email.
 
 Here is a fully worked example:

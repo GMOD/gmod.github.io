@@ -202,7 +202,7 @@ results of the following query:
      syntenic_region | tblastn
      match           | twinscan
 
-  
+
 
 # Tables
 
@@ -323,7 +323,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: analysisfeature
 
@@ -429,7 +429,7 @@ analysisfeature Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: analysisprop
 

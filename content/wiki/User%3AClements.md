@@ -10,7 +10,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/Clements.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/Clements.jpg 2x"
 width="175" height="131" alt="Dave Clements looking cheeky" />
 
-  
+
 
 I work on the [Galaxy](Galaxy.1 "Galaxy") Project for Johns Hopkins
 University, where I organize meetings and courses, prepare training
@@ -40,7 +40,7 @@ also at Oregon.
 
 |--------|-------------------------------------------------------------------|
 | E-mail | <a href="mailto:clements@galaxyproject.org" class="external text" |
-          rel="nofollow">clements@galaxyprojet.org</a>                       | URL    | <a href="https://galaxyproject.org/people/dave-clements/"         
+          rel="nofollow">clements@galaxyprojet.org</a>                       | URL    | <a href="https://galaxyproject.org/people/dave-clements/"
           class="external text" rel="nofollow">My home page</a>              |
 
 ## Background
@@ -100,7 +100,7 @@ See the current list at my
 <a href="http://wiki.galaxyproject.org/DaveClements"
 class="external text" rel="nofollow">Galaxy home page</a>.
 
-  
+
 
 ## GMOD Era Presentations, Tutorials, Workshops, Demos and Posters
 

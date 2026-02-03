@@ -8,7 +8,7 @@ submit the selected sequence to external websites such as NCBI BLAST,
 etc. It is an invisible plugin, in the sense that it is not displayed in
 the "Reports and Analysis" menu in GBrowse.
 
-  
+
 
 # Usage
 

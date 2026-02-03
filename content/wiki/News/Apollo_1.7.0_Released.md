@@ -47,10 +47,9 @@ and a half long hiatus). So please [let us
 know](../Apollo.1#Contact "Apollo") if you find any bugs and they will
 be addressed and put into a new release as soon as possible.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/01/11*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

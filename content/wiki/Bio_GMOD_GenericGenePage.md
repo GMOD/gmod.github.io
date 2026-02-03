@@ -64,7 +64,7 @@ See the discussion page for issues arising.
 Methods below should be overridden by each GenericGenePage
 implementation.
 
-  
+
 
      name
          Usage: my $name = $genepage->name();

@@ -27,6 +27,6 @@ through online bookings.
 If you have any questions or comments, please feel free to contact the
 GMOD helpdesk on help@gmod.org!
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/10/25*

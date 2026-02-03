@@ -3,7 +3,7 @@ title: "GBrowse syn PAG 2009 Workshop"
 ---
 # GBrowse syn PAG 2009 Workshop
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/250px-GBrowse_syn_logo.png"
@@ -22,7 +22,7 @@ most recent GBrowse syn tutorial can be found at the
 <a href="GBrowse_syn_Tutorial" class="mw-redirect"
 title="GBrowse syn Tutorial">GBrowse syn Tutorial</a> page.
 
-  
+
 This page provides additional information about the
 <a href="http://www.intl-pag.org/17/17-gbrowse2.html"
 class="external text" rel="nofollow">GBrowse_syn workshop</a> at the
@@ -134,7 +134,7 @@ rel="nofollow">VMware</a>. You will need to register to download it.
 There are multiple versions. Be sure to download a version that can run
 on your laptop.
 
-  
+
 
 VMware on Mac OS X
 
@@ -148,7 +148,7 @@ There is no free VMware player that runs *directly* under [Mac OS
 X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
 other options, **all of which require an Intel Mac**:
 
-  
+
 
 VMware Fusion
 
@@ -166,7 +166,7 @@ VMware images (as well as Windows and Linux) under Mac OS. **We
 recommend this option for Mac users. There is a fully functional, 30 day
 free trial version of VMware Fusion available for download.**
 
-  
+
 
 VirtualBox
 

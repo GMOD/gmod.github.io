@@ -21,10 +21,9 @@ GMOD software projects like [Tripal](../Tripal.1 "Tripal"),
 
 Please consider giving a talk and sharing your experience and ideas!
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2016/11/04*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

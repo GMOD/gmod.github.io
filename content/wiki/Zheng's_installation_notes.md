@@ -139,7 +139,7 @@ class="external text" rel="nofollow">DBD::Pg</a> (1.49 or better)
 you can also install it by
 
     yum install perl-DBD-Pg
-        
+
 
 <a href="http://search.cpan.org/~gaas/Digest-MD5-2.36/MD5.pm"
 class="external text" rel="nofollow">Digest::MD5</a> (GBrowse)

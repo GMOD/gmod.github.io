@@ -19,10 +19,9 @@ please visit
 <a href="http://novartis.avature.net/NGDX" class="external free"
 rel="nofollow">http://novartis.avature.net/NGDX</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/29*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -72,6 +72,5 @@ meetings. I am personally responsible for much of the core query
 features, interface design and the web-services layers. I enjoy working
 with a diverse range of technologies and tools.
 
-:
 
 - [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")

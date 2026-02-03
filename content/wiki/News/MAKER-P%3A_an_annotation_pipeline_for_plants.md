@@ -14,7 +14,7 @@ extended and optimised to allow the annotation of plant species:
 > faster and more transparent for large groups with more experience and
 > resources. The MAKER-P pipeline generates species-specific repeat
 > libraries, as well as structural annotations of protein coding genes,
-> non-coding RNAs, and pseudogenes.  
+> non-coding RNAs, and pseudogenes.
 >
 > —Michael Campbell, MAKER development team
 
@@ -24,6 +24,6 @@ extended and optimised to allow the annotation of plant species:
   and quality control of plant genome annotations</a>
 - Download and install [MAKER and MAKER-P](../MAKER.1 "MAKER").
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/12/16*

@@ -40,19 +40,19 @@ the "cgi-bin" \<Directory\> section as follows:
 Other environment variables that can be set in the Apache configuration
 file include:
 
-**GBROWSE_DOCS**  
+**GBROWSE_DOCS**
 Location of GBrowse's static HTML files and images in the file system
 (e.g. "/var/www/gbrowse2")
 
-**GBROWSE_ROOT**  
+**GBROWSE_ROOT**
 Location of GBrowse's static HTML files and images in URL space (e.g.
 "/gbrowse2")
 
-**GBROWSE_MASTER**  
+**GBROWSE_MASTER**
 Name of the GBrowse master configuration file located in the
 configuration directory, "GBrowse.conf" by default.
 
-**PERL5LIB**  
+**PERL5LIB**
 Colon-delimited list of directories to search for Perl modules. Useful
 if some modules, such as bioperl, are installed in non-standard
 locations.

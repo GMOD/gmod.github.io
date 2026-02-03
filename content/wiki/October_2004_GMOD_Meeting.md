@@ -83,7 +83,7 @@ Huang Yecheng, Gingle Lab, University of Georgia</td>
 </tbody>
 </table>
 
-  
+
 
 #### October 5, Gerry Conference room, Marks Laboratory
 

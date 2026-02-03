@@ -12,7 +12,7 @@ width="200" height="47" alt="GBrowse 2.13 Released" />](../GBrowse.1 "GBrowse 2.
 is a maintenance update to 2.12. GBrowse 2.13 and 2.12 include these
 changes:
 
-New features & enhancements  
+New features & enhancements
 
 - The <a href="../DAS" class="mw-redirect" title="DAS">DAS</a> server
   and client are now functional. You will need
@@ -68,10 +68,9 @@ class="external text" rel="nofollow">feature requests</a>.
 
 [Lincoln Stein](../User%253ALstein "User%253ALstein")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/13*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

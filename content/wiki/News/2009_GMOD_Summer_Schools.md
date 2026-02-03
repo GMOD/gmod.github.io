@@ -88,14 +88,13 @@ meeting](../Meetings "Meetings") will be held outside of North America.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/03/15,
 updated 2009/04/06, 2008/04/27*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

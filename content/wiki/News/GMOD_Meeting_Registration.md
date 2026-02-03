@@ -27,10 +27,9 @@ rel="nofollow">help@gmod.org</a>. See the [notes from previous
 meetings](../Category%253AMeetings "Category%253AMeetings") for an idea of what
 is discussed at GMOD meetings.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/06/09*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

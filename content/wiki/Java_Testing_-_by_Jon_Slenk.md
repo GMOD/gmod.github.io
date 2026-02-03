@@ -85,7 +85,7 @@ means that testing of one set of particular decisions might not have
 exercised another. Coverage tools assist one in determining how much of
 the system is actually being exercised. (Code coverage Clover \[13\]).
 
-  
+
 **References**
 
 <a href="http://www.internetnews.com/ent-news/article.php/1450161"

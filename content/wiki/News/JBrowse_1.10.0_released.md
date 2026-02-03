@@ -18,10 +18,9 @@ documentation on how to use the new features.
 [RobertBuels](../User%253ARobertBuels "User%253ARobertBuels")
 ([talk](../User_talk%253ARobertBuels "User talk:RobertBuels"))
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/07/30*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

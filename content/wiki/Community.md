@@ -23,7 +23,7 @@ also include a job board that allows users to create and manage job
 postings. Furthermore, the community module can act as a central
 management point for MOD user accounts.
 
-  
+
 
 ## Technology
 
@@ -39,6 +39,6 @@ management point for MOD user accounts.
 - The Struts framework provides strong support for internationalization
   (e.g., making interfaces available in several different languages).
 
-  
+
 
 ## Demo & Screenshot

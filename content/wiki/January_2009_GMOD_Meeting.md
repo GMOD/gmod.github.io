@@ -34,7 +34,7 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 </tbody>
 </table>
 
-  
+
 This [GMOD community meeting](Meetings "Meetings") was held January
 15-16, 2009, in San Diego, immediately following [Plant and Animal
 Genome (PAG 2009)](PAG_2009 "PAG 2009"). There were over [50
@@ -44,7 +44,7 @@ participants](#Meeting_Participants) at the meeting.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2009Meeting.JPG" width="319"
 height="100" alt="Jan 2009 Meeting" />
 
-  
+
 
   Agenda](#Agenda)
   - [Thursday,
@@ -108,7 +108,7 @@ height="100" alt="Jan 2009 Meeting" />
 - [Next Meeting:
   August 2009 at Oxford](#Next_Meeting:_August_2009_at_Oxford)
 
-  
+
 
 ## Agenda
 

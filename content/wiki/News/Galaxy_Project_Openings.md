@@ -37,9 +37,9 @@ rel="nofollow">any of us</a>, know if you have any questions.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [Galaxy](../Galaxy.1 "Galaxy") Training and Outreach
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/01/25*

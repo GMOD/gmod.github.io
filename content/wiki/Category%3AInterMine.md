@@ -70,210 +70,210 @@ title="September 2010 GMOD Meeting">September 2010 GMOD Meeting</a></li>
 
 The following 9 files are in this category, out of 9 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="BovineMine PAG2015.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [BovineMine
-  PAG2015.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/09/BovineMine_PAG2015.pdf "File:BovineMine PAG2015.pdf")  
-  3.77 MB  
+  PAG2015.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/09/BovineMine_PAG2015.pdf "File:BovineMine PAG2015.pdf")
+  3.77 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="InterMine middleware.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [InterMine
-  middleware.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/InterMine_middleware.pdf "File:InterMine middleware.pdf")  
-  5 MB  
+  middleware.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/InterMine_middleware.pdf "File:InterMine middleware.pdf")
+  5 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="IntermineGMOD2008.pdf" />
 
-  
 
-  
 
-  
 
-  [IntermineGMOD2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/IntermineGMOD2008.pdf "File:IntermineGMOD2008.pdf")  
-  940 KB  
 
-  
 
-  
 
-- 
+  [IntermineGMOD2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/IntermineGMOD2008.pdf "File:IntermineGMOD2008.pdf")
+  940 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/120px-InterMineLogo.png"
   width="120" height="15" alt="InterMineLogo.png" />
 
-  
 
-  
 
-  
 
-  [InterMineLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/13/InterMineLogo.png "File:InterMineLogo.png")  
-  4 KB  
 
-  
 
-  
 
-- 
+  [InterMineLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/13/InterMineLogo.png "File:InterMineLogo.png")
+  4 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Jan2010InterMine.pdf" />
 
-  
 
-  
 
-  
 
-  [Jan2010InterMine.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4e/Jan2010InterMine.pdf "File:Jan2010InterMine.pdf")  
-  495 KB  
 
-  
 
-  
 
-- 
+  [Jan2010InterMine.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4e/Jan2010InterMine.pdf "File:Jan2010InterMine.pdf")
+  495 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b6/MetabolicMineLogoWide.png/120px-MetabolicMineLogoWide.png"
   width="120" height="26" alt="MetabolicMineLogoWide.png" />
 
-  
 
-  
 
-  
 
-  [MetabolicMineLogoWide.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/MetabolicMineLogoWide.png "File:MetabolicMineLogoWide.png")  
-  44 KB  
 
-  
 
-  
 
-- 
+  [MetabolicMineLogoWide.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/MetabolicMineLogoWide.png "File:MetabolicMineLogoWide.png")
+  44 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="MohellibiGrapevine PAG2015.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [MohellibiGrapevine
-  PAG...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/MohellibiGrapevine_PAG2015.pdf "File:MohellibiGrapevine PAG2015.pdf")  
-  3.15 MB  
+  PAG...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/MohellibiGrapevine_PAG2015.pdf "File:MohellibiGrapevine PAG2015.pdf")
+  3.15 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Wheat3bMineDemo PAG2015.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Wheat3bMineDemo
-  PAG201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9f/Wheat3bMineDemo_PAG2015.pdf "File:Wheat3bMineDemo PAG2015.pdf")  
-  472 KB  
+  PAG201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9f/Wheat3bMineDemo_PAG2015.pdf "File:Wheat3bMineDemo PAG2015.pdf")
+  472 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Wheat3bMinePoster PAG2015.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Wheat3bMinePoster
-  PAG2...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/Wheat3bMinePoster_PAG2015.pdf "File:Wheat3bMinePoster PAG2015.pdf")  
+  PAG2...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/Wheat3bMinePoster_PAG2015.pdf "File:Wheat3bMinePoster PAG2015.pdf")
   894 KB

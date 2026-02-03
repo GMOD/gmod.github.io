@@ -43,6 +43,5 @@ As of JBrowse v1.2.1, these classes are available:
 
 # External Links
 
-:
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")

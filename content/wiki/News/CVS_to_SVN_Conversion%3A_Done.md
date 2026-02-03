@@ -43,10 +43,9 @@ Buels](../User%253ARobertBuels "User%253ARobertBuels") of Cornell /
 
 [Dave Clements](../User%253AClements "User%253AClements")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/15*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

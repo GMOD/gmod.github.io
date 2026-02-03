@@ -90,17 +90,16 @@ Cain](../User%253AScott "User%253AScott")
 [GBrowse](../GBrowse.1 "GBrowse"), ...) will be attending PAG this year.
 Please seek each other out.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [Galaxy Project](../Galaxy.1 "Galaxy")
 
 PS: In addition, three of the GMOD developers (Dan, Mitch, Scott) are
 also [available to visit organizations in the San Diego
 area](#GMOD_Roadshow_in_San_Diego) during the meeting.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/01/08*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

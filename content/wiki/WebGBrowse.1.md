@@ -154,13 +154,13 @@ title="Property:Release date">Release date</a></td>
 href="Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
-<td class="smwprops">Genome Visualization and Editing 
+<td class="smwprops">Genome Visualization and Editing
 and Tool Integration </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
-<td class="smwprops">Perl 
+<td class="smwprops">Perl
 and GBrowse config file </td>
 </tr>
 <tr class="odd row-odd">

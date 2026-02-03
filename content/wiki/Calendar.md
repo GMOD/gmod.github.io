@@ -41,7 +41,7 @@ available as RSS feeds:
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/47/RSSIcon16x16.gif" width="16" height="16"
   alt="Galaxy Calendar Feed" />
 
-  
+
 
 ## Other Calendars
 

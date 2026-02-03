@@ -178,7 +178,7 @@ Tables](FlyBase_Field_Mapping_Tables "FlyBase Field Mapping Tables")
 shows some example SQL that queries the FlyBase Chado database. (Caveat:
 FlyBase sometimes uses Chado in ways that no other organizations do.)
 
-  
+
 **Will SQL be on the test?**
 
 No, we aren't going to teach in-depth SQL in this course but we will use
@@ -199,7 +199,7 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - **Widely used**
   - [FlyBase](Category%253AFlyBase "Category%253AFlyBase") - Chado started here,
     large diverse dataset and organization
-  
+
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>

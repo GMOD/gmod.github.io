@@ -3,7 +3,7 @@ title: "News/GMOD Paper Cuts, Dec 6th, 2013"
 ---
 # News/GMOD Paper Cuts, Dec 6th, 2013
 
-  
+
 
 **GMOD Paper Cuts is a periodic selection of choice cuts from the
 scientific literature featuring interesting, exciting, or otherwise
@@ -20,7 +20,7 @@ GMOD-related publications,
 <a href="http://mnd.ly/WwRe8F" class="external text" rel="nofollow">join
 our Mendeley group</a>.
 
-  
+
 **The king cobra genome reveals dynamic gene evolution and adaptation in
 the snake venom system**
 <sup>[\[1\]](#cite_note-DOI:10.1073.2Fpnas.1314702110-1)</sup>
@@ -40,7 +40,7 @@ Burmese python has also been recently been sequenced
 both projects using [MAKER](../MAKER.1 "MAKER") for automated
 annotation.
 
-  
+
 **PortEco: a resource for exploring bacterial biology through
 high-throughput data and analysis tools**
 <sup>[\[3\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1203-3)</sup>
@@ -60,7 +60,7 @@ management. PortEco is currently testing a
 [JBrowse](../JBrowse.1 "JBrowse") installation with the view to
 migrating over to JBrowse from their current GBrowse sequence browser.
 
-  
+
 
 **The Mouse Genome Database: integration of and access to knowledge
 about the laboratory mouse**
@@ -79,7 +79,7 @@ An update on the resources available at
 rel="nofollow">Mouse Genome Database (MGD)</a>, one of the groups
 involved in GMOD since the very beginning of the project.
 
-  
+
 
 **NECTAR: a database of codon-centric missense variant annotations**
 <sup>[\[5\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1245-5)</sup>
@@ -96,7 +96,7 @@ ClinVar, and includes [GBrowse](../GBrowse.1 "GBrowse")-able disease
 variants, function annotations, and paralogue annotations and a DAS
 server. Sweet!
 
-  
+
 
 **Identification of a 31-bp Deletion in the RELN Gene Causing
 Lissencephaly with Cerebellar Hypoplasia in Sheep**
@@ -117,10 +117,10 @@ provided at
 <a href="http://www.livestockgenomics.csiro.au/" class="external text"
 rel="nofollow">CSIRO's Livestock Genomics website</a>.
 
-  
+
 Happy reading!
 
-  
+
 
 1.  <span id="cite_note-DOI:10.1073.2Fpnas.1314702110"><span class="mw-cite-backlink">[↑](#cite_ref-DOI:10.1073.2Fpnas.1314702110_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
@@ -146,6 +146,6 @@ entertainment and edification only. Inclusion does not imply an
 endorsement of the material or any association between the authors and
 the GMOD project.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/12/06*

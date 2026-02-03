@@ -10,7 +10,7 @@ There's a lot going on in the next 5 weeks that is of interest to the
 GMOD community. September will be one of our busier months. Upcoming
 events include:
 
-Deadlines  
+Deadlines
 
 - Apply to participate in the [GMOD Evo
   Hackathon](../GMOD_Evo_Hackathon "GMOD Evo Hackathon") (August 25)
@@ -43,20 +43,19 @@ Training
 
 - Bioinformatics Short Course, Ensembl Developers Workshop
 
-  
 
-  
+
+
 If you aren't going to something in September, then you aren't trying!
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/23*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

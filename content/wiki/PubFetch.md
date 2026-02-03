@@ -4,7 +4,7 @@ title: "PubFetch"
 # PubFetch
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
 PubFetch is part of the
@@ -35,13 +35,13 @@ and protocols will be used/supported wherever possible.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/Pubfetch_overview.jpg" width="496"
 height="370" alt="Pubfetch overview.jpg" />
 
-  
+
 **Figure 1 - Overview diagram of PubFetch showing how the PubFetch
 module will provide a generic literature access interface to PubMed and
 Agricola which could be expanded to other literature sources as
 desired.**
 
-  
+
 The codebase will be developed initially in perl by adapting existing
 RGD perl modules designed to retrieve data from PubMed in a standard XML
 format. This code will be reviewed and adapted to create the main
@@ -49,16 +49,16 @@ PubFetch module and appropriate database interface modules. Figure 2
 below is a schematic diagram of the existing RGD literature download
 modules.
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/Existing_PubMed_flow.jpg" width="400"
 height="197" alt="Existing PubMed flow.jpg" />
 
-  
+
 **Figure 2- Current RGD literature download process showing perl modules
 used to interact with PubMed, create XML data and load into RGD.**
 
-  
+
 The fundamental actions required of PubFetch are:
 
 - Search LitDb for articles matching certain query criteria (eg.
@@ -71,7 +71,7 @@ The fundamental actions required of PubFetch are:
   <a href="http://www.ncbi.nlm.nih.gov/pubmed/12345?dopt=Abstract"
   class="external mw-magiclink-pmid" rel="nofollow">PMID 12345</a>*)
 
-  
+
 
 ### PubFetch as a BioMOBY webservice
 
@@ -87,7 +87,7 @@ in existing formats (raw data from the LitDb, a BioPerl-compatible
 format, etc) in addition to a simple XML format that is not dependent on
 other codebases
 
-  
+
 
 ## Downloads
 

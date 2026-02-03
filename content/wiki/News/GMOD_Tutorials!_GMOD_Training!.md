@@ -59,7 +59,7 @@ The [tutorials](../Category%253ATutorials "Category%253ATutorials") are:
   title="Tripal Tutorial">Tripal Tutorial</a>** - by [Stephen
   Ficklin](../User%253ASficklin "User%253ASficklin")
 
-  
+
 There is also a plethora of GMOD related [training and
 outreach](../Training_and_Outreach "Training and Outreach") going on in
 the next few months. Here's what I know about:
@@ -169,13 +169,12 @@ pipeline</a></strong></td>
 </tbody>
 </table>
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/02*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

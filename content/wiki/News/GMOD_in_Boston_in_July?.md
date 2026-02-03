@@ -39,14 +39,13 @@ list of what else is going on in July.
 
 Thanks,
 
-[Dave C.](../User%253AClements "User%253AClements")  
+[Dave C.](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/21,
 updated 2010/05/25*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

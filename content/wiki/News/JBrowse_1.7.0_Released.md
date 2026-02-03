@@ -52,6 +52,6 @@ rel="nofollow">1.7.0 release information</a> on the
 <a href="http://jbrowse.org/" class="external text"
 rel="nofollow">JBrowse website</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/11/05*

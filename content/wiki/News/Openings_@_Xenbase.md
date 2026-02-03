@@ -28,14 +28,13 @@ Calgary.
 
 Please see the job postings for further details.
 
-Jeff Bowes  
+Jeff Bowes
 <a href="http://xenbase.org" class="external text"
 rel="nofollow">Xenbase</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/01/10*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

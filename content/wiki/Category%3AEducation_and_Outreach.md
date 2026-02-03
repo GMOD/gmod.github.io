@@ -101,21 +101,21 @@ title="Training and Outreach">Training and Outreach</a></li>
 
 This category contains only the following file.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMODatAGS2008.pdf" />
 
-  
 
-  
 
-  
 
-  [GMODatAGS2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/GMODatAGS2008.pdf "File:GMODatAGS2008.pdf")  
+
+
+
+  [GMODatAGS2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/GMODatAGS2008.pdf "File:GMODatAGS2008.pdf")
   351 KB

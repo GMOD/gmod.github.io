@@ -3,7 +3,7 @@ title: "GMOD News Archives"
 ---
 # GMOD News Archives
 
-[Recent News Only](GMOD_News "GMOD News")  
+[Recent News Only](GMOD_News "GMOD News")
 [Add a news item](GMOD_News#Adding_a_News_Item "GMOD News")
 
 ---

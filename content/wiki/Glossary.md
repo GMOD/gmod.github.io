@@ -66,7 +66,7 @@ This glossary explains terms that
 
 This glossary does **not** define biology terms.
 
-  
+
 
 ### AJAX
 

@@ -71,183 +71,183 @@ Presentation</a></li>
 
 The following 8 files are in this category, out of 8 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="A Chado Case Study.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [A Chado Case
-  Study.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/A_Chado_Case_Study.pdf "File:A Chado Case Study.pdf")  
-  304 KB  
+  Study.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/A_Chado_Case_Study.pdf "File:A Chado Case Study.pdf")
+  304 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e0/Fly_logo.png/120px-Fly_logo.png"
   width="120" height="29" alt="Fly logo.png" />
 
-  
 
-  
 
-  
 
-  [Fly logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e0/Fly_logo.png "File:Fly logo.png")  
-  22 KB  
 
-  
 
-  
 
-- 
+  [Fly logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e0/Fly_logo.png "File:Fly logo.png")
+  22 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Flybase-ng-may03.pdf" />
 
-  
 
-  
 
-  
 
-  [Flybase-ng-may03.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/Flybase-ng-may03.pdf "File:Flybase-ng-may03.pdf")  
-  584 KB  
 
-  
 
-  
 
-- 
+  [Flybase-ng-may03.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/Flybase-ng-may03.pdf "File:Flybase-ng-may03.pdf")
+  584 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/38/FlyBaseMainPageIcon.png/120px-FlyBaseMainPageIcon.png"
   width="120" height="29" alt="FlyBaseMainPageIcon.png" />
 
-  
 
-  
 
-  
 
-  [FlyBaseMainPageIcon.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/FlyBaseMainPageIcon.png "File:FlyBaseMainPageIcon.png")  
-  22 KB  
 
-  
 
-  
 
-- 
+  [FlyBaseMainPageIcon.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/FlyBaseMainPageIcon.png "File:FlyBaseMainPageIcon.png")
+  22 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Mod-face-07jan-FlyBase.pdf" />
 
-  
 
-  
 
-  
 
-  [Mod-face-07jan-FlyBase...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/Mod-face-07jan-FlyBase.pdf "File:Mod-face-07jan-FlyBase.pdf")  
-  1.89 MB  
 
-  
 
-  
 
-- 
+  [Mod-face-07jan-FlyBase...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/Mod-face-07jan-FlyBase.pdf "File:Mod-face-07jan-FlyBase.pdf")
+  1.89 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Smutniak-050516.ppt" />
 
-  
 
-  
 
-  
 
-  [Smutniak-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e9/Smutniak-050516.ppt "File:Smutniak-050516.ppt")  
-  343 KB  
 
-  
 
-  
 
-- 
+  [Smutniak-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e9/Smutniak-050516.ppt "File:Smutniak-050516.ppt")
+  343 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="XORT.pdf" />
 
-  
 
-  
 
-  
 
-  [XORT.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf "File:XORT.pdf")  
-  155 KB  
 
-  
 
-  
 
-- 
+  [XORT.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf "File:XORT.pdf")
+  155 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Zhang-050517.ppt" />
 
-  
 
-  
 
-  
 
-  [Zhang-050517.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/Zhang-050517.ppt "File:Zhang-050517.ppt")  
+
+
+
+  [Zhang-050517.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/Zhang-050517.ppt "File:Zhang-050517.ppt")
   745 KB

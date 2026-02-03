@@ -15,10 +15,9 @@ Cheers,
 
 [Ed Lee](../User%253AElee "User%253AElee")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/07*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

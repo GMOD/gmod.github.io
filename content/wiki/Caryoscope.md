@@ -40,14 +40,14 @@ provide user support.
 <a href="http://caryoscope.stanford.edu/screenshots.html"
 class="external text" rel="nofollow">Screenshots</a>
 
-  
+
 
 ## Requirements
 
 <a href="http://caryoscope.stanford.edu/dependencies.html"
 class="external text" rel="nofollow">Dependencies page</a>
 
-  
+
 
 ## Documentation
 

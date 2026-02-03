@@ -63,7 +63,7 @@ Sincerely,
 
 the HIP (Hackathons, Interoperability and Phylogenies) Leadership Team
 
-  
+
 **HOW TO APPLY**
 
 Before 16 November, 2012 at midnight, EST,
@@ -79,7 +79,7 @@ rel="nofollow">complete the online form</a>. Note that:
   participation in the event. Funds and space are limited: we may not be
   able to sponsor every individual who is qualified to participate.
 
-  
+
 **LEADERSHIP TEAM**
 
 - <a href="mailto:karen.cranston@nescent.org" class="external text"
@@ -101,10 +101,9 @@ rel="nofollow">complete the online form</a>. Note that:
 - <a href="mailto:nmatasci@iplantcollaborative.org" class="external text"
   rel="nofollow">Naim Matasci</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/10/30*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

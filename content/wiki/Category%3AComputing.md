@@ -97,21 +97,21 @@ The following 5 pages are in this category, out of 5 total.
 
 This category contains only the following file.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Aug2009Sam.pdf" />
 
-  
 
-  
 
-  
 
-  [Aug2009Sam.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/Aug2009Sam.pdf "File:Aug2009Sam.pdf")  
+
+
+
+  [Aug2009Sam.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/Aug2009Sam.pdf "File:Aug2009Sam.pdf")
   582 KB

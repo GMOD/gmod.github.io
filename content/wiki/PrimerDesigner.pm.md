@@ -235,7 +235,7 @@ To configure the plugin, add a stanza like this at the end of your
     method  = local
     ispcr   = http://genome.ucsc.edu/cgi-bin/hgPcr?db=cb3
 
-binpath  
+binpath
 The default value is '/usr/local/bin'
 
 Use this option to specify where the primer3 binary is located, if not
@@ -244,7 +244,7 @@ in the default '/usr/local/bin'
 If you are using a remote URL (primer3 is installed on another server),
 specify a URL instead.
 
-method  
+method
 The default value is 'local'
 
 Recognized options are 'local' (primer3 installed on the same server as
@@ -255,20 +255,20 @@ beginning with
 
 'http://'
 
-default size  
+default size
 The default value is 10_000
 
 This option specifies the default segment size to show in the
 PrimerDesigner image
 
-max range  
+max range
 The default value is 300
 
 This option species the degree to which the PCR product size can depart
 from the optimal size, as determined by the size of the selected target
 area for PCR primers.
 
-ispcr  
+ispcr
 This option can be set to a URL that point to the UCSC in silico PCR
 sight.
 

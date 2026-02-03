@@ -8,8 +8,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="Under Construction" />
 
 <span style="font-size: 140%">This page or section is under
-construction.</span>  
-  
+construction.</span>
+
 This page is a working area for updating the revised genetic module that
 came out of the [GMOD Evo
 Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"). Please edit the
@@ -60,7 +60,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: environment_cvterm
 
@@ -74,7 +74,7 @@ public.environment_cvterm Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_genotype
 
@@ -157,7 +157,7 @@ public.feature_genotype Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: genotype
 
@@ -225,9 +225,9 @@ Tables referencing this one via Foreign Key Constraints:
 - [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
 - [stock_genotype](Chado_Tables#Table:_stock_genotype "Chado Tables")
 
-  
 
-Discussion  
+
+Discussion
 
 OPEN QUESTION: for multicopy transgenes, should we include a 'n_copies'
 column as well? -- [Brain Osborne](User%253ABosborne "User%253ABosborne"), Feb
@@ -253,7 +253,7 @@ public.phendesc Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phenotype_comparison
 
@@ -280,7 +280,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phenstatement
 

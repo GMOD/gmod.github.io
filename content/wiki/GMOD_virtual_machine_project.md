@@ -4,7 +4,7 @@ title: "GMOD virtual machine project"
 # GMOD virtual machine project
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
 The people who created and maintained these VMware images have moved on

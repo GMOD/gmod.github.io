@@ -84,7 +84,7 @@ rel="nofollow">Hazwani Sharif (h8552-sl2@accor.com)</a>, to book your
 room and mention that you are attending the GMOD training course to
 secure the discounted rate.
 
-  
+
 
 ## Participants
 

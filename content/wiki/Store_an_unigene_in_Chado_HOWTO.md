@@ -46,7 +46,7 @@ the transcribed_cluster feature.
 Let's store an unigene in the database:
 
     transcribed_cluster
-    EST1       --------->     (EST) 
+    EST1       --------->     (EST)
     EST2           <--------- (EST)
     consensus  -------------> (stored in the transcribed_cluster residues)
 

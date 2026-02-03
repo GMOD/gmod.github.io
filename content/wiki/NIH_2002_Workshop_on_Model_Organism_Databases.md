@@ -17,7 +17,7 @@ Databases**
 
 National Human Genome Research Institute Bethesda, Md. April 29-30, 2002
 
-  
+
 
   Participants](#Participants)
 - [Executive
@@ -158,7 +158,7 @@ attendees were united in recommending that funding agencies bear in mind
 the need to maintain existing MODs and to establish new MODs in order to
 keep pace with the expansion of genomic research.
 
-  
+
 
 ## Detailed Report
 
@@ -348,7 +348,7 @@ using grid technologies. These technologies may also permit the
 different research communities to ask complex queries over the data
 contained within a number of MODs.
 
-  
+
 
 ### A Framework for Assessing Computational Interoperability
 
@@ -359,7 +359,7 @@ and the degree to which a MOD had succeeded in meeting its objectives of
 providing this service. Under this framework, computational
 interoperability is represented as seven levels of compliance.
 
-  
+
 
 #### Level -1: Web linking, data dumps to FTP site
 
@@ -370,7 +370,7 @@ conversion of ad hoc data files dumped to the MODs FTP site or by
 "screen scraping" the MODs Web site. The structure of the Web pages or
 the format of the FTP dumps can change without warning.
 
-  
+
 
 #### Level 0: Published API
 
@@ -382,14 +382,14 @@ Web site and transfer information in a described format. The API may
 change without warning, and there is no requirement that the same API
 may be shared among more than one MOD.
 
-  
+
 
 #### Level 1: Published API with a test suite
 
 Level 1 is the same as level 0, with the added requirement that the MOD
 publish a test suite to ensure that it is compliant with its own API.
 
-  
+
 
 #### Level 2: Published "effectively stable" API with a test suite
 
@@ -398,7 +398,7 @@ features may be added to the API over time, but the changes will not
 break backward compatibility with scripts written to run off earlier
 versions of the API.
 
-  
+
 
 #### Level 3: Shared API
 
@@ -409,7 +409,7 @@ be effectively stable and have a test suite, as per earlier levels, but
 there is no restriction on the type of API, data formats or transport
 protocols.
 
-  
+
 
 #### Level 4: Shared API based on a standard API "flavor."
 
@@ -418,7 +418,7 @@ have been approved by a MOD interoperability working group. A flavor
 typically consists of a data format and transport protocol such as
 SOAP/XML.
 
-  
+
 
 #### Level 5: Adopt an approved preexisting API
 
@@ -436,7 +436,7 @@ make recommendations as to acceptable shared APIs. The workshop series
 proposed in the next section would provide a mechanism for bringing such
 a group together.
 
-  
+
 
 ### Moving Towards Generic Components
 
@@ -596,7 +596,7 @@ tax-payer money. Not only academics, but also industry has contributed
 to taxes. Thus, I see here no reason to treat commercial users
 differently from academic users.
 
-  
+
 
 #### Appendix B: Minority opinion on IP from Peter Karp
 
@@ -627,5 +627,5 @@ bioinformatics grant applications. ISCB recommends one of those
 definitions as a minimal requirement of software availability that
 funding agencies should require.
 
-  
+
 *Last Reviewed: April 2006*

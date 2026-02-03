@@ -5,7 +5,7 @@ title: "Property:Has download URL"
 
 This is a property of type .
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Has download URL"

@@ -13,7 +13,7 @@ alt="Information Systems for Insect Pests" /></a>
 <a href="http://colloque.inra.fr/isyip" class="external text"
 rel="nofollow">1st International Workshop</a>
 
-16-17th November 2009  
+16-17th November 2009
 INRIA Rennes-Bretagne-Atlantique
 
 Given the development of cheaper high throughput sequencing
@@ -53,10 +53,9 @@ class="external text" rel="nofollow">this website</a> and will be
 limited to 40 participants. A statement of interest is needed. A 10
 minute presentation may be asked.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/07/20*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

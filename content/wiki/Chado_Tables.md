@@ -293,7 +293,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: dbxref
 
@@ -384,7 +384,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: project
 
@@ -403,7 +403,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: tableinfo
 
@@ -426,7 +426,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: cv
 
@@ -487,7 +487,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: cvterm
 
@@ -725,7 +725,7 @@ cvterm_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: cvterm_relationship
 
@@ -798,7 +798,7 @@ cvterm_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: cvtermpath
 
@@ -875,7 +875,7 @@ cvtermpath Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: cvtermprop
 
@@ -947,7 +947,7 @@ cvtermprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: cvtermsynonym
 
@@ -1006,7 +1006,7 @@ cvtermsynonym Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: dbxrefprop
 
@@ -1026,7 +1026,7 @@ dbxrefprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuser
 
@@ -1055,7 +1055,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuser_cvterm
 
@@ -1072,7 +1072,7 @@ wwwuser_cvterm Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuser_expression
 
@@ -1089,7 +1089,7 @@ wwwuser_expression Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuser_feature
 
@@ -1106,7 +1106,7 @@ wwwuser_feature Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuser_genotype
 
@@ -1123,7 +1123,7 @@ wwwuser_genotype Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuser_organism
 
@@ -1140,7 +1140,7 @@ wwwuser_organism Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuser_phenotype
 
@@ -1157,7 +1157,7 @@ wwwuser_phenotype Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuser_project
 
@@ -1174,7 +1174,7 @@ wwwuser_project Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuser_pub
 
@@ -1191,7 +1191,7 @@ wwwuser_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: wwwuserrelationship
 
@@ -1402,7 +1402,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_cvterm
 
@@ -1478,7 +1478,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_cvterm_dbxref
 
@@ -1503,7 +1503,7 @@ feature_cvterm_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_cvterm_pub
 
@@ -1523,7 +1523,7 @@ feature_cvterm_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_cvtermprop
 
@@ -1599,7 +1599,7 @@ feature_cvtermprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_dbxref
 
@@ -1657,7 +1657,7 @@ feature_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_pub
 
@@ -1678,7 +1678,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_pubprop
 
@@ -1696,7 +1696,7 @@ feature_pubprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_relationship
 
@@ -1794,7 +1794,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_relationship_pub
 
@@ -1811,7 +1811,7 @@ feature_relationship_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_relationshipprop
 
@@ -1893,7 +1893,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_relationshipprop_pub
 
@@ -1909,7 +1909,7 @@ feature_relationshipprop_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_synonym
 
@@ -1990,7 +1990,7 @@ feature_synonym Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: featureloc
 
@@ -2198,7 +2198,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: featureloc_pub
 
@@ -2215,7 +2215,7 @@ featureloc_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: featureprop
 
@@ -2296,7 +2296,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: featureprop_pub
 
@@ -2313,7 +2313,7 @@ featureprop_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: synonym
 
@@ -2381,7 +2381,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phylonode
 
@@ -2488,7 +2488,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phylonode_dbxref
 
@@ -2506,7 +2506,7 @@ phylonode_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phylonode_organism
 
@@ -2560,7 +2560,7 @@ phylonode_organism Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phylonode_pub
 
@@ -2574,7 +2574,7 @@ phylonode_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phylonode_relationship
 
@@ -2595,7 +2595,7 @@ phylonode_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phylonodeprop
 
@@ -2657,7 +2657,7 @@ phylonodeprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phylotree
 
@@ -2732,7 +2732,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phylotree_pub
 
@@ -2749,7 +2749,7 @@ phylotree_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: library
 
@@ -2819,7 +2819,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: library_cvterm
 
@@ -2838,7 +2838,7 @@ library_cvterm Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: library_feature
 
@@ -2856,7 +2856,7 @@ library_feature Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: library_pub
 
@@ -2870,7 +2870,7 @@ library_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: library_synonym
 
@@ -2949,7 +2949,7 @@ library_synonym Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: libraryprop
 
@@ -2965,7 +2965,7 @@ libraryprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: contact
 
@@ -3031,7 +3031,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: contact_relationship
 
@@ -3095,7 +3095,7 @@ contact_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock
 
@@ -3202,7 +3202,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_cvterm
 
@@ -3220,7 +3220,7 @@ stock_cvterm Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_dbxref
 
@@ -3278,7 +3278,7 @@ stock_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_genotype
 
@@ -3296,7 +3296,7 @@ stock_genotype Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_pub
 
@@ -3313,7 +3313,7 @@ stock_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_relationship
 
@@ -3397,7 +3397,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_relationship_pub
 
@@ -3414,7 +3414,7 @@ stock_relationship_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockcollection
 
@@ -3487,7 +3487,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockcollection_stock
 
@@ -3504,7 +3504,7 @@ stockcollection_stock Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockcollectionprop
 
@@ -3568,7 +3568,7 @@ stockcollectionprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockprop
 
@@ -3594,7 +3594,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockprop_pub
 
@@ -3611,7 +3611,7 @@ stockprop_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: environment
 
@@ -3632,7 +3632,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: environment_cvterm
 
@@ -3646,7 +3646,7 @@ environment_cvterm Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_genotype
 
@@ -3725,7 +3725,7 @@ feature_genotype Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: genotype
 
@@ -3795,7 +3795,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phendesc
 
@@ -3815,7 +3815,7 @@ phendesc Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phenotype_comparison
 
@@ -3838,7 +3838,7 @@ phenotype_comparison Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phenstatement
 
@@ -3860,7 +3860,7 @@ phenstatement Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: acquisition
 
@@ -3884,7 +3884,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: acquisition_relationship
 
@@ -3904,7 +3904,7 @@ acquisition_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: acquisitionprop
 
@@ -3922,7 +3922,7 @@ acquisitionprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: arraydesign
 
@@ -3954,7 +3954,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: arraydesignprop
 
@@ -3972,7 +3972,7 @@ arraydesignprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: assay
 
@@ -4003,7 +4003,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: assay_biomaterial
 
@@ -4023,7 +4023,7 @@ assay_biomaterial Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: assay_project
 
@@ -4039,7 +4039,7 @@ assay_project Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: assayprop
 
@@ -4057,7 +4057,7 @@ assayprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterial
 
@@ -4086,7 +4086,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterial_dbxref
 
@@ -4100,7 +4100,7 @@ biomaterial_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterial_relationship
 
@@ -4118,7 +4118,7 @@ biomaterial_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterial_treatment
 
@@ -4137,7 +4137,7 @@ biomaterial_treatment Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: biomaterialprop
 
@@ -4155,7 +4155,7 @@ biomaterialprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: channel
 
@@ -4177,7 +4177,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: control
 
@@ -4195,7 +4195,7 @@ control Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: element
 
@@ -4217,7 +4217,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: element_relationship
 
@@ -4238,7 +4238,7 @@ element_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: elementresult
 
@@ -4261,7 +4261,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: elementresult_relationship
 
@@ -4282,7 +4282,7 @@ elementresult_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: magedocumentation
 
@@ -4298,7 +4298,7 @@ magedocumentation Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: mageml
 
@@ -4319,7 +4319,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: protocol
 
@@ -4346,7 +4346,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: protocolparam
 
@@ -4366,7 +4366,7 @@ protocolparam Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: quantification
 
@@ -4392,7 +4392,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: quantification_relationship
 
@@ -4410,7 +4410,7 @@ quantification_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: quantificationprop
 
@@ -4429,7 +4429,7 @@ quantificationprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: study
 
@@ -4463,7 +4463,7 @@ study_assay Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: studydesign
 
@@ -4480,7 +4480,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: studydesignprop
 
@@ -4496,7 +4496,7 @@ studydesignprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: studyfactor
 
@@ -4514,7 +4514,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: studyfactorvalue
 
@@ -4530,7 +4530,7 @@ studyfactorvalue Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: treatment
 
@@ -4552,7 +4552,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: featuremap
 
@@ -4571,7 +4571,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: featuremap_pub
 
@@ -4585,7 +4585,7 @@ featuremap_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: featurepos
 
@@ -4646,7 +4646,7 @@ featurepos Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: featurerange
 
@@ -4729,7 +4729,7 @@ featurerange Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: analysis
 
@@ -4849,7 +4849,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: analysisfeature
 
@@ -4953,7 +4953,7 @@ analysisfeature Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: analysisprop
 
@@ -4968,7 +4968,7 @@ analysisprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: eimage
 
@@ -5028,7 +5028,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: expression
 
@@ -5052,7 +5052,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: expression_cvterm
 
@@ -5072,7 +5072,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: expression_image
 
@@ -5086,7 +5086,7 @@ expression_image Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: expression_pub
 
@@ -5100,7 +5100,7 @@ expression_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_expression
 
@@ -5119,7 +5119,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_phenotype
 
@@ -5133,7 +5133,7 @@ feature_phenotype Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phenotype
 
@@ -5227,7 +5227,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phenotype_cvterm
 
@@ -5241,7 +5241,7 @@ phenotype_cvterm Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: pub
 
@@ -5400,7 +5400,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: pub_dbxref
 
@@ -5418,7 +5418,7 @@ pub_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: pub_relationship
 
@@ -5438,7 +5438,7 @@ pub_relationship Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: pubauthor
 
@@ -5522,7 +5522,7 @@ pubauthor Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: pubprop
 
@@ -5540,7 +5540,7 @@ pubprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: organism
 
@@ -5626,7 +5626,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: organism_dbxref
 
@@ -5640,7 +5640,7 @@ organism_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: organismprop
 

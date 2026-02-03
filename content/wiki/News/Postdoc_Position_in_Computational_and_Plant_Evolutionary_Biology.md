@@ -28,6 +28,6 @@ If interested, please contact
 <a href="mailto:steven.cannon@ars.usda.gov" class="external text"
 rel="nofollow">Steven Cannon</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/1/24*

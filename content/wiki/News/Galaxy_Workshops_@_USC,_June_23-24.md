@@ -8,8 +8,8 @@ title="Galaxy Workshops at University of Southern California"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/USC_logo.png/100px-USC_logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/USC_logo.png/150px-USC_logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/USC_logo.png/200px-USC_logo.png 2x"
 width="100" height="125"
-alt="Galaxy Workshops at University of Southern California" /></a>  
-  
+alt="Galaxy Workshops at University of Southern California" /></a>
+
 <a href="../File:GalaxyLogoBigger.png" class="image"
 title="Galaxy Workshops at University of Southern California"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/100px-GalaxyLogoBigger.png"
@@ -61,10 +61,9 @@ an analysis and also intent, context, and narrative. Based on
 experiences with Galaxy, Jeremy will discuss some open problems that
 might be addressed using artificial intelligence methods and techniques.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/06/17*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -62,32 +62,32 @@ This will return a plain text tab-delimited document like the following:
 
 Each row is a data source. The fields are:
 
-Name  
+Name
 Data source name to use in subsequent calls to gbrowse.
 
-Description  
+Description
 Human readable text describing the data source
 
-Species (optional)  
+Species (optional)
 Human readable species name.
 
-TaxID (optional)  
+TaxID (optional)
 NCBI taxon ID.
 
-CoordinateType (optional)  
+CoordinateType (optional)
 Description of the type of coordinate, such as "Chromosome" or "Contig"
 
-BuildAuthority (optional)  
+BuildAuthority (optional)
 The group that maintains the coordinate system. See
 <a href="http://www.dasregistry.org/help_coordsys.jsp"
 class="external free"
 rel="nofollow">http://www.dasregistry.org/help_coordsys.jsp</a> for a
 list of codes.
 
-BuildVersion (optional)  
+BuildVersion (optional)
 Version of the build.
 
-BuildURL (optional)  
+BuildURL (optional)
 URL that will provide information about the build (can also be used as a
 unique ID for the build).
 
@@ -142,21 +142,21 @@ This will return a text/plain document similar to the following:
 Each \[stanza\] contains the track name, and is followed by zero or more
 option=value pairs. The possible options that can be returned are:
 
-key  
+key
 The human-readable track title.
 
-citation  
+citation
 The human-readable track citation.
 
-data source  
+data source
 The value of the **data source** option, which can be used to identify
 where the track data originated.
 
-track source  
+track source
 The value of the **track source** option, which can be used to identify
 a mirrored track.
 
-select  
+select
 A space-delimited list of subtrack selection names. These can be used to
 selectively turn on particular subtracks using the syntax described in
 [\#Selecting Tracks and Subtracks](#Selecting_Tracks_and_Subtracks).
@@ -210,7 +210,7 @@ gbrowse_img:
 
      $HOST/gb2/gbrowse_img/SOURCE/?ARGS
 
-SOURCE  
+SOURCE
 The data source, such as
 
 ## Focusing on a Region

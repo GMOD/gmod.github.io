@@ -26,10 +26,9 @@ feature requests, questions, and comments to
 <a href="mailto:gmod-ware-users@sourceforge.net" class="external text"
 rel="nofollow">gmod-ware-users@sourceforge.net</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/12/11*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

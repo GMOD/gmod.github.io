@@ -38,10 +38,9 @@ let's have a great, productive summer of code!
 <a href="http://open-bio.org/wiki/Google_Summer_of_Code"
 class="external text" rel="nofollow">OBF GSoC 2010 Administrator</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/21*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

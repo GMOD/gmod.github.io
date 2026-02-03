@@ -25,11 +25,11 @@ courses are taught by the tool developers, and there will be evening
 sessions for those who want to work on their own data or troubleshoot
 issues with the developers.
 
-  
+
 **[More information and online application
 form](../2013_GMOD_Summer_School "2013 GMOD Summer School")**
 
-  
+
 Applications are competitive, so we encourage you to apply well before
 the deadline, June 10th.
 

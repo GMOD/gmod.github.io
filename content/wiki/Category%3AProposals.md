@@ -64,21 +64,21 @@ title="Stock Relationship Ontology">Stock Relationship Ontology</a></li>
 
 This category contains only the following file.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Day-050517.ppt" />
 
-  
 
-  
 
-  
 
-  [Day-050517.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Day-050517.ppt "File:Day-050517.ppt")  
+
+
+
+  [Day-050517.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Day-050517.ppt "File:Day-050517.ppt")
   253 KB

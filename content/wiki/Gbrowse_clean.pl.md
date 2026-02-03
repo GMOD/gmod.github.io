@@ -9,7 +9,7 @@ title: "Gbrowse clean.pl"
 
 gbrowse_clean.pl - Clean up sessions and other temporary gbrowse2 files
 
-  
+
 
 ------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ server user that contains a line like the following:
     # m h  dom mon dow   command
     5 0  *  *  * /usr/bin/gbrowse_clean.pl >>/var/log/gbrowse2/gbrowse_clean.log
 
-  
+
 
 ------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ server user that contains a line like the following:
     -help   : Print a brief help message and exits.
     -man    : Prints the manual page and exits.
 
-  
+
 
 ------------------------------------------------------------------------
 
@@ -96,7 +96,7 @@ same user account as the web server; otherwise the script will be unable
 to delete the files created by the web server user during gbrowse
 execution. **Do not run this script as root.**
 
-  
+
 
 ------------------------------------------------------------------------
 
@@ -109,7 +109,7 @@ This script is available under either the GNU General Public License or
 the Perl Artistic License version 2.0. See LICENSE in the GBrowse source
 code distribution for details.
 
-  
+
 
 ------------------------------------------------------------------------
 

@@ -3,11 +3,11 @@ title: "Apollo/tool data"
 ---
 # Apollo/tool data
 
-  
+
 This page stores the data that populates the
 [Apollo](../Apollo.1 "Apollo") wiki page.
 
-  
+
 \| name = Apollo \| full_name = \| status = mature \|
 dev = inactive \| support = active \| platform = linux, os x, unix, win
 \| logo = ApolloLogo.png \| home =
@@ -85,16 +85,16 @@ Meeting](../November_2007_GMOD_Meeting "November 2007 GMOD Meeting").
 
 \| tutorials =
 
-[Apollo Tutorial 2011](../Apollo_Tutorial_2011 "Apollo Tutorial 2011")  
+[Apollo Tutorial 2011](../Apollo_Tutorial_2011 "Apollo Tutorial 2011")
 The Apollo session from the [2011 GMOD Spring
 Training](../2011_GMOD_Spring_Training "2011 GMOD Spring Training")
 
-[Apollo Tutorial 2010](../Apollo_Tutorial_2010 "Apollo Tutorial 2010")  
+[Apollo Tutorial 2010](../Apollo_Tutorial_2010 "Apollo Tutorial 2010")
 The Apollo session from the [2010 GMOD Summer School -
 Americas](../2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas").
 
 Apollo tutorials at the <a href="http://dynamicgene.dnalc.org" class="external text"
-rel="nofollow">Dynamic Gene</a> web site.  
+rel="nofollow">Dynamic Gene</a> web site.
 Flash based tutorials on how to use Apollo, using rice as an example.
 Sections of particular interest are
 
@@ -105,7 +105,7 @@ Sections of particular interest are
   class="external text" rel="nofollow">Resources</a> - how to download
   sample data and install Apollo on an MS Windows system.
 <a href="http://apollo.berkeleybop.org/current/userguide.html"
-class="external text" rel="nofollow">Apollo user guide</a>  
+class="external text" rel="nofollow">Apollo user guide</a>
 The current user guide, which has comprehensive instructions for
 installation and usage of Apollo.
 
@@ -135,5 +135,5 @@ the focus has shifted to [WebApollo](../WebApollo.1 "WebApollo"), a
 web-based version of the tool.
 
 \| contact_email = \| input = \| output = \| see_also = \| demo_server =
-\|release date=2002 \| survey_link = Apollo   
+\|release date=2002 \| survey_link = Apollo
 **Cite error: `<ref>` tags exist, but no `<references/>` tag was found**

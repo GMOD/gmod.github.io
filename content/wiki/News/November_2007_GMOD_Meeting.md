@@ -11,10 +11,9 @@ meeting. See [November 2007 GMOD
 Meeting](../November_2007_GMOD_Meeting "November 2007 GMOD Meeting") for
 a list of presentations and a summary of the meeting.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/11/08*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

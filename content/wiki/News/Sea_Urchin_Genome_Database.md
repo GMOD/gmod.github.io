@@ -26,12 +26,11 @@ and extend the sea urchin sequence and annotations.
 Visit us at <a href="http://spbase.org" class="external text"
 rel="nofollow">SpBase</a>.
 
-Andy Cameron  
+Andy Cameron
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/04/08*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -22,10 +22,9 @@ The closing date for applications is 2nd April 2010.
 
 The [InterMine](../InterMine "InterMine") Team.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/19*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -61,13 +61,12 @@ University of Oxford</a> for hosting and financially supporting [GMOD
 Europe 2009](../GMOD_Europe_2009 "GMOD Europe 2009"). We could not have
 done this without you.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/29*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

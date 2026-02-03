@@ -12,10 +12,9 @@ Update: the upgrade is complete, bar a few minor modifications. Please
 contact the GMOD helpdesk at help@gmod.org if you discover any problems.
 Thanks!
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/09/26*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

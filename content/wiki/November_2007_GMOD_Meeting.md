@@ -135,7 +135,7 @@ href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;time=&amp;date=
 class="external text" rel="nofollow">Woodbury building</a>, which is not
 on the main CSHL campus.
 
-  
+
 
 ## Attendees
 
@@ -240,7 +240,7 @@ agenda.
     - Lightweight annotation
       <a href="http://www.yandell-lab.org/maker/index.html"
       class="external text" rel="nofollow">MAKER pipeline</a> from Mark
-      Yandell  
+      Yandell
       (*2008/05/13: [MAKER](MAKER.1 "MAKER") has since been folded in to
       GMOD.*)
   - MicroArrays
@@ -288,7 +288,7 @@ agenda.
 
 - Sheldon McKay - gbrowse_syn
 
-  
+
 
 5:30 Shuttle from Woodbury to Grace Auditorium
 
@@ -306,7 +306,7 @@ agenda.
 
 12:00 Shuttle from Woodbury to Grace Auditorium
 
-  
+
 
 ## Presentations
 
@@ -361,7 +361,7 @@ sections:
 
 We had several discussions about *the big picture.*
 
-  
+
 
 #### GMOD's Role
 
@@ -390,7 +390,7 @@ NCBI is wonderful at consolidation, they won't have quality curation.
 GMOD sits right there, supporting curation. So, we doubt that Ensembl or
 NCBI will swallow us whole.
 
-  
+
 
 #### Releases and Bundles
 
@@ -404,7 +404,7 @@ of the future? Believe that binary packages are generally not going to
 work for GMOD unless someone is willing to put a lot of time into
 maintaining them.
 
-  
+
 
 #### Comparative Genomics
 
@@ -422,7 +422,7 @@ establishing a document that defines how to store comparative genomes.
 
 Talks on synteny are spread throughout this document.
 
-  
+
 
 ### GMOD Components / Functions
 
@@ -469,7 +469,7 @@ probably move to Crabtree.
 
 As you may have noticed, those notes disagree.
 
-  
+
 
 #### BioPerl, GFF
 
@@ -486,7 +486,7 @@ supported format.
 
 6 to 8 people are currently contributing to BioPerl.
 
-  
+
 [GFF3](GFF3 "GFF3") has an ID field. ID is not clear in earlier
 versions. [GFF2](GFF2 "GFF2") supports arbitrary feature types. GFF3
 requires SO types (but you can always ignore that). Keep detailed
@@ -494,9 +494,9 @@ alignment data in a separate database, not in GFF3. Indicate in GFF3
 that data is stored elsewhere. Could store cigar strings in GFF3 and
 spec supports that.
 
-  
 
-  
+
+
 
 #### Chado
 
@@ -520,7 +520,7 @@ belief was that it does not.
 Jason Stajich wants a better idea of who is responsible for what in
 terms of Chado modules. Dave C will take this on.
 
-  
+
 
 ##### Chado Documentation
 
@@ -530,7 +530,7 @@ Goodman is thinking of providing a mapping from Chado DB columns to
 FlyBase report columns. Mike Caudy pointed out we should have multiple
 examples of implementation, not just FlyBase.
 
-  
+
 
 ##### Chado Validator
 
@@ -544,7 +544,7 @@ consensus that no one was willing to volunteer to write it.
 Ben suggested that if and when we do this, we use the
 [GFF3](GFF3 "GFF3") to Chado validator as a starting point.
 
-  
+
 
 ##### DBMS Choice
 
@@ -552,7 +552,7 @@ There was a request to make to Chado be more database neutral, rather
 than Postgres-specific. Someone also asked if there was an SQLite
 adapter for GBrowse.
 
-  
+
 
 ##### Postgres Performance
 
@@ -567,7 +567,7 @@ Some bits:
 - Allen's FRange functions are in the DB, but aren't used by default
   queries.
 
-  
+
 
 #### CMap
 
@@ -588,7 +588,7 @@ scale assembly, to test CMap for doing assembly correction.
 
 This was a popular motif in the meeting.
 
-  
+
 
 ##### Community Annotation at ParameciumDB
 
@@ -625,7 +625,7 @@ annotations. Anyone can promote any gene model, but they can't delete
 other models. Use the Wikipedia model: Whoever annotates last is
 correct.
 
-  
+
 
 ##### Community Annotation at SGN
 
@@ -678,7 +678,7 @@ performance hit is caused by virtualization.
 An online trial version of the Community Annotation Server was requested
 and was already on the way.
 
-  
+
 
 #### Distributed Annotation System/2 (DAS/2)
 
@@ -762,7 +762,7 @@ a Slim version that is up to 70% faster.
 Browser speed was also the number one issue (with all browsers) at the
 Genome Browsers Birds-of-a-Feather meeting at Genome Informatics.
 
-  
+
 
 #### Genome Grid
 
@@ -826,9 +826,9 @@ makes it easier to update tables in MediaWiki, by presenting a nicer
 interface for altering wiki tables. Secondly, it supports synchronizing
 MediaWiki tables from database tables and vice versa.
 
-  
 
-  
+
+
 
 #### Turnkey, GMODweb, DrupalFly
 
@@ -851,15 +851,15 @@ full time programmer. Lincoln will talk with Brian about
 [GMODWeb](GMODWeb "GMODWeb")'s future. We will put something on web site
 asking for volunteers to take on GMODweb.
 
-  
 
-  
+
+
 
 ### GMOD Participating Organizations
 
 A number of organizations talked about their recent work.
 
-  
+
 
 #### ApiDB
 
@@ -874,7 +874,7 @@ They have a database adapter link from GBrowse to GUS. It is based on
 the Chado adapter. They use materialized views in Oracle 10G and it is
 still relatively slow.
 
-  
+
 
 ##### Synteny at ApiDB
 
@@ -893,7 +893,7 @@ which has about 5000 popups in it.
 ApiDB has a release cycle. They discard and recalculate synteny with
 every new release.
 
-  
+
 
 #### Berkeley National Labs
 
@@ -915,7 +915,7 @@ schema](Glossary#Database_Schema "Glossary"). FlyBase uses:
 - [Apollo](Apollo.1 "Apollo")
 - [BioMart](BioMart "BioMart")
 
-  
+
 
 ##### Synteny at FlyBase
 
@@ -952,13 +952,13 @@ Using GMOD to support a fungal sequencing project. Using:
 - GBrowse
 - Apollo
 
-  
+
 
 #### JCVI (nee TIGR)
 
 Using Chado as database schema.
 
-  
+
 
 #### MaizeGDB
 
@@ -981,7 +981,7 @@ Use GMOD for almost everything:
 - Turnkey
 - GBrowse
 
-  
+
 Paramecium is an odd critter (unicellular eukaryote, ciliate clade):
 
 - 72 Mbp
@@ -1003,9 +1003,9 @@ triggers). See Community Annotation above for more.
 
 Riken uses GBrowse.
 
-  
 
-  
+
+
 
 #### University of Maryland Medical Center
 
@@ -1030,7 +1030,7 @@ Harris](User%253ATharris "User%253ATharris")
 Wormbase is migrating to Chado slowly. There is currently very little
 Chado there.
 
-  
+
 
 ##### GBrowse_Syn
 
@@ -1046,7 +1046,7 @@ is to have a *sequence* alignment viewer that can look at more than two
 species at a time. GBrowse_syn is based purely on sequence alignments.
 It does not know about genes or orthologs per se.
 
-  
+
 Used PECAN for the alignments. Maps are precomputed in a very
 CPU-intensive step.
 

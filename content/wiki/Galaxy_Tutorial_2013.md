@@ -108,35 +108,35 @@ Before we get started, let's highlight some Galaxy resources that may be
 useful to us along the way.
 
 <a href="http://galaxyproject.org" class="external free"
-rel="nofollow">http://galaxyproject.org</a>  
+rel="nofollow">http://galaxyproject.org</a>
 The Galaxy Project home page
 <a href="https://wiki.galaxyproject.org/" class="external text"
-rel="nofollow">GalaxyWiki</a>  
+rel="nofollow">GalaxyWiki</a>
 All things Galaxy.
 <a href="http://getgalaxy.org/" class="external free"
-rel="nofollow">http://getgalaxy.org/</a>  
+rel="nofollow">http://getgalaxy.org/</a>
 Hub page for installing and managing your own Galaxy instance.
 <a href="http://usegalaxy.org/" class="external free"
-rel="nofollow">http://usegalaxy.org/</a>  
+rel="nofollow">http://usegalaxy.org/</a>
 The Galaxy project's free public server.
 <a href="https://wiki.galaxyproject.org/PublicGalaxyServers"
-class="external text" rel="nofollow">Public Galaxy Servers</a>  
+class="external text" rel="nofollow">Public Galaxy Servers</a>
 Current list of know publicly accessible Galaxy servers.
 <a href="http://galaxyproject.org/search/" class="external text"
-rel="nofollow">Galaxy Search</a>  
+rel="nofollow">Galaxy Search</a>
 Integrated searches of all online Galaxy resources. Available searches:
 <a href="http://galaxyproject.org/search/web" class="external text"
-rel="nofollow">Pan-Galactic Web Search</a>  
+rel="nofollow">Pan-Galactic Web Search</a>
 Search everything
 <a href="http://galaxyproject.org/search/mailinglists"
-class="external text" rel="nofollow">Galaxy Mailing Lists Search</a>  
+class="external text" rel="nofollow">Galaxy Mailing Lists Search</a>
 Search the (Nabble-powered) mailing list archives
 <a href="http://galaxyproject.org/search/usegalaxy"
-class="external text" rel="nofollow">Using Galaxy Search</a>  
+class="external text" rel="nofollow">Using Galaxy Search</a>
 Search online resources related to *using* Galaxy
 <a href="http://galaxyproject.org/search/getgalaxy"
 class="external text" rel="nofollow">Galaxy Admin and Development
-Search</a>  
+Search</a>
 Search online resources related to *deploying and developing* Galaxy
 
 Results from searches are often further broken down into categories
@@ -155,16 +155,16 @@ This is all implemented using Google Custom Search.
 
 <a href="https://wiki.galaxyproject.org/Mailing%20Lists"
 class="external text" rel="nofollow">Mailing Lists</a> and <a href="http://galaxyproject.org/search/mailinglists"
-class="external text" rel="nofollow">Mailing Lists Search</a>  
+class="external text" rel="nofollow">Mailing Lists Search</a>
 Galaxy has several mailing lists, some of which are
 <a href="https://wiki.galaxyproject.org/Statistics"
 class="external text" rel="nofollow">very active</a>
 <a href="https://wiki.galaxyproject.org/Learn" class="external text"
-rel="nofollow">Learning hub page</a>  
+rel="nofollow">Learning hub page</a>
 Start here to learn how to use Galaxy.
 <a href="https://wiki.galaxyproject.org/CiteULike" class="external text"
 rel="nofollow">Galaxy CiteULike group</a> (<a href="http://www.citeulike.org/group/16008/order/to_read,desc,"
-class="external text" rel="nofollow">@ CiteULike</a>)  
+class="external text" rel="nofollow">@ CiteULike</a>)
 Seventeen different <a href="http://www.citeulike.org/group/16008/tags"
 class="external text" rel="nofollow">tags/categories</a> on *1066+
 publications*
@@ -250,7 +250,7 @@ and update it:
     $ cp universe_wsgi.ini.sample universe_wsgi.ini
     $ nano universe_wsgi.ini
 
-  
+
 Change the port from
 
     #port = 8080
@@ -274,7 +274,7 @@ to:
 
 This makes Galaxy visible to remote hosts, such as your laptop
 
-  
+
 Set the *brand* to make it obvious that you are working on your Galaxy
 instance
 
@@ -308,13 +308,13 @@ databases are known to work. Postgres is already installed on our AMI
 Update `universe_wsgi.ini` file to use Postgres. Update the
 `database_connection` in your Galaxy config file to look like:
 
-    # -- Database                                                                                                                             
-     
-    # By default, Galaxy uses a SQLite database at 'database/universe.sqlite'.  You                                                           
-    # may use a SQLAlchemy connection string to specify an external database                                                                   
-    # instead.  This string takes many options which are explained in detail in the                                                          
-    # config file documentation.                                                                                                              
-    #database_connection = sqlite:///./database/universe.sqlite?isolation_level=IMMEDIATE                                                     
+    # -- Database
+
+    # By default, Galaxy uses a SQLite database at 'database/universe.sqlite'.  You
+    # may use a SQLAlchemy connection string to specify an external database
+    # instead.  This string takes many options which are explained in detail in the
+    # config file documentation.
+    #database_connection = sqlite:///./database/universe.sqlite?isolation_level=IMMEDIATE
     database_connection = postgres://ubuntu:@localhost:5432/galaxydb
 
 Save the file.
@@ -428,7 +428,7 @@ We are going to use the URL option. *Cut and paste* these URLs into the
 
     http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.TFBs.bed
     http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.sequence.fasta
-    http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.wholegene.bed 
+    http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.wholegene.bed
 
 and *click* **Execute**.
 
@@ -476,7 +476,7 @@ databases. Select **Tools → Join, Subtract, and Group → Group**.
 
 Then *click* **Add new operation** and then *set* **Type** to **Count**.
 
-  
+
 This tells Galaxy to walk through the dataset, create a group for each
 different value of column 4 (the gene name), and then count the number
 of records that were in that group (i.e. the number of records that had
@@ -504,7 +504,7 @@ produce a more useful dataset that we can visualize right now.
 The original gene dataset downloaded from UCSC had a meaningless score
 column. Let's replace that with the repeat count.
 
-  
+
 First, bring the original gene information together with the counts.
 
 *Select* **Tools → Join, Subtract and Group → Join two Datasets**. *Set*
@@ -514,18 +514,18 @@ the original **Genes** dataset.
 *Join* them using column **c1** and column **c4**, which are the gene
 names in both datasets.
 
-  
+
 This produces and a dataset with the gene repeat counts in the first two
 columns and the gene information in the rightmost columns.
 
-  
+
 Now, use the **Cut** tool to reshuffle these columns into a valid 6
 column BED file with the repeat count in column 5, the score column.
 
 *Select* **Tools → Text Manipulation → Cut**. *Enter*
 `c3,c4,c5,c6,c2,c8`
 
-  
+
 Finally, note that even though we now have what is a valid 6 column bed
 file, Galaxy doesn't know that. We need to tell it. We should also give
 the dataset a better name. *Click* on the datasets' **pencil icon** and
@@ -560,7 +560,7 @@ instance's administrators. Most Galaxy servers know about widely used
 assemblies, and if our datasets were for mm9 or mm10 (or any of many
 other choices), we (as users) could just tell Galaxy that and be done.
 
-  
+
 However, these datasets aren't from a common assembly - they are from
 your sequencing center and are for some novel archaea that was pulled
 out of a mudflat (that is a bald-faced lie; it is actually *<a
@@ -585,7 +585,7 @@ every time you log into this server in the future, Galaxy will know
 about this assembly. No click on the final datasets visualization icon
 again.
 
-  
+
 And ...
 
 Our hopes are crushed:
@@ -598,7 +598,7 @@ UCSC, where you can download it and install it.
 
     cd ~/Galaxy
     curl http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bedGraphToBigWig > bedGraphToBigWig
-    chmod 555 bedGraphToBigWig 
+    chmod 555 bedGraphToBigWig
     sudo cp bedGraphToBigWig /usr/bin/
 
 *Click* **Try again**. *Voillà.*
@@ -610,11 +610,11 @@ UCSC, where you can download it and install it.
 On the command line, stop Galaxy by entering \<ctrl-c\>. Then edit
 `universe_wsgi.ini` file and add yourself as an administrator:
 
-    # users (email addresses).  These users will have access to the Admin section                                                                                                                                                        
-    # of the server, and will have access to create users, groups, roles,                                                                                                                                                                
-    # libraries, and more.  For more information, see:                                                                                                                                                                                   
-    # http://wiki.g2.bx.psu.edu/Admin/Interface                                                                                                                                                                                          
-    #admin_users = None            
+    # users (email addresses).  These users will have access to the Admin section
+    # of the server, and will have access to create users, groups, roles,
+    # libraries, and more.  For more information, see:
+    # http://wiki.g2.bx.psu.edu/Admin/Interface
+    #admin_users = None
     admin_users = your@email.adr
 
 ### 2. Enable Tool Shed
@@ -624,13 +624,13 @@ the Galaxy Tool Shed.
 
 Define:
 
-    # Tool config files, defines what tools are available in Galaxy.                                                                                                                                                                     
-    # Tools can be locally developed or installed from Galaxy tool sheds.                                                                                                                                                                
+    # Tool config files, defines what tools are available in Galaxy.
+    # Tools can be locally developed or installed from Galaxy tool sheds.
     #tool_config_file = tool_conf.xml,shed_tool_conf.xml
     tool_config_file = tool_conf.xml,shed_tool_conf.xml
-     
-    # Default path to the directory containing the tools defined in tool_conf.xml.                                                                                                                                                       
-    # Other tool config files must include the tool_path as an attribute in the <toolbox> tag.                                                                                                                                           
+
+    # Default path to the directory containing the tools defined in tool_conf.xml.
+    # Other tool config files must include the tool_path as an attribute in the <toolbox> tag.
     #tool_path = tools
     tool_path = tools
 

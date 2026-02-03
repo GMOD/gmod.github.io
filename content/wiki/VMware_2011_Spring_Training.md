@@ -366,7 +366,7 @@ This will result in a new file (actually a directory) called
 Once you have unpacked the image, open it by double clicking on it. This
 should automatically launch VMware.
 
-  
+
 
 ## Did you move or copy the image?
 
@@ -377,7 +377,7 @@ Yes you did.
 VMware then asks you if you moved or copied this image. Tell it you
 **moved it**. Doing anything else is bad.
 
-  
+
 
 ## Logging In and other useful things
 
@@ -450,7 +450,7 @@ screen
 
 For example,
 
-    $ xrandr -s 1280x960 
+    $ xrandr -s 1280x960
 
 works well on my 15" MacBook Pro.
 

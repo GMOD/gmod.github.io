@@ -88,13 +88,13 @@ Thursday 8:40 Meet in the lobby of the hotel to walk over to NU
 
 ## Location
 
-Center For Genetic Medicine Northwestern University Chicago Campus  
-in **Downtown Chicago**, IL  
-Lurie Building Room 6-127 (6th floor)  
-303 E Superior St  
+Center For Genetic Medicine Northwestern University Chicago Campus
+in **Downtown Chicago**, IL
+Lurie Building Room 6-127 (6th floor)
+303 E Superior St
 <a
 href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=303+E.+Superior+St.+Chicago,+IL&amp;sll=37.0625,-95.677068&amp;sspn=53.300127,102.919922&amp;ie=UTF8&amp;z=16&amp;iwloc=addr&amp;om=1"
-class="external text" rel="nofollow">Google Map of Location</a>  
+class="external text" rel="nofollow">Google Map of Location</a>
 
 Elevators are located on the south side of the lobby. There is a
 security guard who may stop you on the way to the elevator, you will
@@ -153,7 +153,7 @@ least expensive hotels in the area, but it is clean, secure, and very
 close to the Hackathon venue. We blocked 5 doubles (so people can room
 share if they like) and 5 kings at a rate of \$109 and \$119. **When you
 are booking, please mention that you are with the 'HACKATHON' group in
-order to get our group rate.** (code:b281hack)  
+order to get our group rate.** (code:b281hack)
 
 If you are interested in other hotels, there are a couple of very
 conveniently located hotels:

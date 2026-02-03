@@ -60,7 +60,7 @@ same as in the main search field:
 
       http://www.your.site/cgi-bin/gbrowse/yeast?q=Gene:NAB2:1..5000
 
-  
+
 **ref, start, stop, end**
 
 Together the "ref," "start" and "stop" arguments specify the reference

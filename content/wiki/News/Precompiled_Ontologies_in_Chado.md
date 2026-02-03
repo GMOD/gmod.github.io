@@ -42,6 +42,6 @@ conf files are not created in GMOD_ROOT. For remote access (e.g., via
 Artemis), and tools that do not make use of GMOD_ROOT locally, this is
 not a problem.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/02/20*

@@ -48,7 +48,7 @@ at the [January 2009 GMOD
 Meeting](../January_2009_GMOD_Meeting "January 2009 GMOD Meeting") for
 some details on how they are used.)
 
-  
+
 <span style="font-size: 120%">**Gramene**</span>
 
 <a href="http://news.gramene.org/" rel="nofollow"
@@ -75,10 +75,9 @@ projects. Gramene is a long-time GMOD user and is the home of the
 See <a href="http://news.gramene.org/?p=392" class="external text"
 rel="nofollow">the position announcement</a> for full details.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/02*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

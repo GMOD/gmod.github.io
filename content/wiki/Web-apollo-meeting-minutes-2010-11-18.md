@@ -3,10 +3,10 @@ title: "Web-apollo-meeting-minutes-2010-11-18"
 ---
 # Web-apollo-meeting-minutes-2010-11-18
 
-**date:** 4:49 PM 11/18/2010  
-**participants:** Nomi, Gregg, Jay, Ed, Suzie, Mitch  
-**topic:** meeting minutes  
-**agenda:** none  
+**date:** 4:49 PM 11/18/2010
+**participants:** Nomi, Gregg, Jay, Ed, Suzie, Mitch
+**topic:** meeting minutes
+**agenda:** none
 
 Topics discussed:
 
@@ -24,7 +24,7 @@ Topics discussed:
 10. Suzie and Nomi would like to receive SVN commit notification emails.
 
 There was discussion regarding Google query(?) (I apologize- audio was
-not good).  
+not good).
 Ed and Gregg require more information from Suzie before they can
 comment/offer feedback.
 

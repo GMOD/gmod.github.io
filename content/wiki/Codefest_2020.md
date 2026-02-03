@@ -7,12 +7,12 @@ title: "Codefest 2020"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/df/Palms.jpg" width="1052" height="218"
 alt="Palms.jpg" />
 
-  
+
 
 <a href="https://sd.handlery.com/" class="external text"
-rel="nofollow">Handlery Hotel in the Balboa room</a>  
-(down the street from the Town and Country Hotel)  
-San Diego, California  
+rel="nofollow">Handlery Hotel in the Balboa room</a>
+(down the street from the Town and Country Hotel)
+San Diego, California
 January 9-10, 2020
 
 Immediately before
@@ -23,7 +23,7 @@ rel="nofollow">Plant and Animal Genome XXVIII (PAG 2020)</a>
 href="https://docs.google.com/spreadsheets/d/1Kp-fGI0U88PtsbryP1j-BUGA4cduYvC2ojW9Mk0jwxU/edit#gid=0#gid=0"
 class="external text" rel="nofollow">Participant list now available</a>**
 
-  
+
 There will be a GMOD codefest occurring before the Plant and Animal
 Genomes meeting in San Diego. The codefest will be at the Town and
 Country hotel on January 9 and 10. If you would like to suggest a
@@ -70,6 +70,6 @@ Friday:
 - Note: the Tripal steering committee will meet on Friday from 12:00 -
   3:00 pm at the Postcard Bistro in the Handlery.
 
-  
+
 
 *Posted to the [GMOD News](GMOD_News "GMOD News") on 2020/01/08*

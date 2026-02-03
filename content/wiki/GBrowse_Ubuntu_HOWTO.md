@@ -19,7 +19,7 @@ To install GBrowse on a recent Ubuntu distribution, just do this:
      sudo a2enmod headers
      sudo a2enmod cgid
      sudo service apache2 restart
-     
+
 
 And then point your browser at
 <a href="http://localhost/gbrowse2" class="external free"
@@ -27,7 +27,7 @@ rel="nofollow">http://localhost/gbrowse2</a>.
 
 The content below will be left in place for older distributions.
 
-  
+
 
 - If you plan to use a MySQL database, you may need to install mysql
     sudo apt-get install mysql-server
@@ -52,30 +52,30 @@ You'll get a list of all of the required packages that GBrowse wants to
 install, like this (**but hit N when asked if you want to continue!**):
 
      amap-align bedtools bioperl bioperl-run bowtie bwa
-     infernal javascript-common kalign libace-perl libalgorithm-c3-perl 
-     libalgorithm-munkres-perl libapache-dbi-perl libapache2-mod-perl2 
-     libapache2-reload-perl libarray-compare-perl libb-hooks-endofscope-perl 
-     libbio-asn1-entrezgene-perl libbio-graphics-perl libbio-perl-perl 
-     libbio-perl-run-perl libbio-scf-perl libbit-vector-perl libbsd-resource-perl 
+     infernal javascript-common kalign libace-perl libalgorithm-c3-perl
+     libalgorithm-munkres-perl libapache-dbi-perl libapache2-mod-perl2
+     libapache2-reload-perl libarray-compare-perl libb-hooks-endofscope-perl
+     libbio-asn1-entrezgene-perl libbio-graphics-perl libbio-perl-perl
+     libbio-perl-run-perl libbio-scf-perl libbit-vector-perl libbsd-resource-perl
      libcarp-clan-perl libcgi-session-perl libclass-c3-perl libclass-c3-xs-perl
-     libclass-load-perl libclass-load-xs-perl libconvert-binary-c-perl 
-     libdata-optlist-perl libdata-stag-perl libdate-calc-perl libdate-calc-xs-perl 
-     libdate-manip-perl libdbd-sqlite3-perl libdevel-globaldestruction-perl 
-     libdevel-partialdump-perl libdevel-symdump-perl libeval-closure-perl 
-     libfreezethaw-perl libgd-svg-perl libgraph-perl libgraphviz-perl 
-     libheap-perl libjcode-pm-perl libjs-prototype libjs-scriptaculous 
-     liblist-moreutils-perl libmath-derivative-perl libmath-spline-perl 
+     libclass-load-perl libclass-load-xs-perl libconvert-binary-c-perl
+     libdata-optlist-perl libdata-stag-perl libdate-calc-perl libdate-calc-xs-perl
+     libdate-manip-perl libdbd-sqlite3-perl libdevel-globaldestruction-perl
+     libdevel-partialdump-perl libdevel-symdump-perl libeval-closure-perl
+     libfreezethaw-perl libgd-svg-perl libgraph-perl libgraphviz-perl
+     libheap-perl libjcode-pm-perl libjs-prototype libjs-scriptaculous
+     liblist-moreutils-perl libmath-derivative-perl libmath-spline-perl
      libmldbm-perl libmodule-runtime-perl libmoose-perl libmro-compat-perl
      libnamespace-clean-perl libole-storage-lite-perl libpackage-deprecationmanager-perl
-     libpackage-stash-perl libpackage-stash-xs-perl libparams-classify-perl 
+     libpackage-stash-perl libpackage-stash-xs-perl libparams-classify-perl
      libparams-util-perl libparse-recdescent-perl libpostscript-perl libset-scalar-perl
      libsort-naturally-perl libspreadsheet-parseexcel-perl libspreadsheet-writeexcel-perl
-     libstaden-read1 libstatistics-descriptive-perl libsub-exporter-perl 
-     libsub-identify-perl libsub-install-perl libsvg-graph-perl libsvg-perl 
-     libtree-dagnode-perl libtry-tiny-perl libunicode-map-perl libvariable-magic-perl 
-     libxml-dom-perl libxml-dom-xpath-perl libxml-filter-buffertext-perl 
+     libstaden-read1 libstatistics-descriptive-perl libsub-exporter-perl
+     libsub-identify-perl libsub-install-perl libsvg-graph-perl libsvg-perl
+     libtree-dagnode-perl libtry-tiny-perl libunicode-map-perl libvariable-magic-perl
+     libxml-dom-perl libxml-dom-xpath-perl libxml-filter-buffertext-perl
      libxml-libxml-perl libxml-libxslt-perl libxml-perl libxml-regexp-perl
-     libxml-sax-writer-perl libxml-xpathengine-perl libyaml-syck-perl samtools 
+     libxml-sax-writer-perl libxml-xpathengine-perl libyaml-syck-perl samtools
      sim4 wise wwwconfig-common libjson-perl libterm-readkey-perl libcapture-tiny-perl
      libmodule-build-perl apache2 build-essential
 

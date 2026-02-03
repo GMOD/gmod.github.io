@@ -35,7 +35,7 @@ Example query:
 
 Gives:
 
-    name  | dbxref_id | db_id | accession | version | description | feature_dbxref_id | feature_id | dbxref_id | is_current 
+    name  | dbxref_id | db_id | accession | version | description | feature_dbxref_id | feature_id | dbxref_id | is_current
     -------+-----------+-------+-----------+---------+-------------+-------------------+------------+-----------+------------
     COX2  |     42435 |     2 | landmark  | 1       |             16241 |      16241 |     42435 | t
     COB   |     42435 |     2 | landmark  | 1       |             16176 |      16176 |     42435 | t
@@ -50,7 +50,7 @@ Gives:
 
 Note that all have the same dbxref_id.
 
-  
+
 Conclusions
 
 - bulk loaded sample yeast gff3 may not create canonical chado data.

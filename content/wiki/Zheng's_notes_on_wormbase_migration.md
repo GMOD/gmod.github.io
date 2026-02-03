@@ -108,7 +108,7 @@ gmod-bulk-load-gff3.
     (This may take a while ...)
     Unable to find srcfeature IV in the database.
 
-  
+
 sort it so that Parent of a feature (column 9 tag Parent) comes before
 the feature line in file. sorted it by:
 

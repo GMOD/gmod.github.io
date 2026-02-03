@@ -86,183 +86,183 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 
 The following 8 files are in this category, out of 8 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6b/Cugi_logo6.5.jpg/120px-Cugi_logo6.5.jpg.png"
   width="120" height="68" alt="Cugi logo6.5.jpg" />
 
-  
 
-  
 
-  
 
-  [Cugi logo6.5.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/Cugi_logo6.5.jpg "File:Cugi logo6.5.jpg")  
-  85 KB  
 
-  
 
-  
 
-- 
+  [Cugi logo6.5.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/Cugi_logo6.5.jpg "File:Cugi logo6.5.jpg")
+  85 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/01/CUGILogoHomePage.png" width="120"
   height="68" alt="CUGILogoHomePage.png" />
 
-  
 
-  
 
-  
 
-  [CUGILogoHomePage.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/01/CUGILogoHomePage.png "File:CUGILogoHomePage.png")  
-  11 KB  
 
-  
 
-  
 
-- 
+  [CUGILogoHomePage.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/01/CUGILogoHomePage.png "File:CUGILogoHomePage.png")
+  11 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="PAG2010GDRinDrupal.pdf" />
 
-  
 
-  
 
-  
 
-  [PAG2010GDRinDrupal.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/PAG2010GDRinDrupal.pdf "File:PAG2010GDRinDrupal.pdf")  
-  2.2 MB  
 
-  
 
-  
 
-- 
+  [PAG2010GDRinDrupal.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/PAG2010GDRinDrupal.pdf "File:PAG2010GDRinDrupal.pdf")
+  2.2 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/120px-TripalLogo.jpg"
   width="120" height="36" alt="TripalLogo.jpg" />
 
-  
 
-  
 
-  
 
-  [TripalLogo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg "File:TripalLogo.jpg")  
-  30 KB  
 
-  
 
-  
 
-- 
+  [TripalLogo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg "File:TripalLogo.jpg")
+  30 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/120px-TripalLogo.png"
   width="120" height="36" alt="TripalLogo.png" />
 
-  
 
-  
 
-  
 
-  [TripalLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png "File:TripalLogo.png")  
-  14 KB  
 
-  
 
-  
 
-- 
+  [TripalLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png "File:TripalLogo.png")
+  14 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="TripalUsersGuideJan2010.pdf" />
 
-  
 
-  
 
-  
 
-  [TripalUsersGuideJan201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/TripalUsersGuideJan2010.pdf "File:TripalUsersGuideJan2010.pdf")  
-  1.44 MB  
 
-  
 
-  
 
-- 
+  [TripalUsersGuideJan201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/TripalUsersGuideJan2010.pdf "File:TripalUsersGuideJan2010.pdf")
+  1.44 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="TripalUsersGuideJune2009.pdf" />
 
-  
 
-  
 
-  
 
-  [TripalUsersGuideJune20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/TripalUsersGuideJune2009.pdf "File:TripalUsersGuideJune2009.pdf")  
-  1.4 MB  
 
-  
 
-  
 
-- 
+  [TripalUsersGuideJune20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/TripalUsersGuideJune2009.pdf "File:TripalUsersGuideJune2009.pdf")
+  1.4 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="PeanutBase PAG2015 Poster.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [PeanutBase PAG2015
-  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")  
+  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")
   3.35 MB

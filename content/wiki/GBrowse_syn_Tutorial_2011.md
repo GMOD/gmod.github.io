@@ -17,7 +17,7 @@ the standard GBrowse package (version 1.69 and later).
   href="http://dev.wormbase.org/db/seq/gbrowse_syn/compara?search_src=Cele;name=X:1050001..1150000"
   class="external text" rel="nofollow">WormBase</a></span>.
 
-  
+
 
   GBrowse_syn</span>](#Installing_GBrowse_syn)
 - [Setting up the
@@ -67,7 +67,7 @@ Now point your browser to
 <a href="http://localhost/cgi-bin/gb2/gbrowse_syn" class="external free"
 rel="nofollow">http://localhost/cgi-bin/gb2/gbrowse_syn</a>
 
-  
+
 
 # Further Reading
 

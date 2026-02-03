@@ -21,13 +21,12 @@ before then as well.)
 
 Happy searching,
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/13*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

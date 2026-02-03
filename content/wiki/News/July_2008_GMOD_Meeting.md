@@ -24,14 +24,13 @@ rel="nofollow">help@gmod.org</a>. See the [notes from previous
 meetings](../Meetings "Meetings") for an idea of what is discussed at
 GMOD meetings.
 
-Thanks,  
-[Dave Clements](../User%253AClements "User%253AClements")  
+Thanks,
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/25*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

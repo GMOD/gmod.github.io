@@ -3,7 +3,7 @@ title: "Galaxy Tutorial 2010"
 ---
 # Galaxy Tutorial 2010
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/250px-GalaxyLogoBigger.png"
@@ -612,7 +612,7 @@ And the ` sh ./run.sh` fails. Type this magic:
 
 We don't know why.
 
-  
+
 You will notice that your history has been lost. This is the result of
 moving to Postgres. On startup, Galaxy will again have created a new
 database from scratch.
@@ -683,15 +683,15 @@ containing:
 
 ``` de1
 #!/usr/bin/env python
- 
+
 """
 Usage: sam_filter.py input_file output_file flag value
 """
- 
+
 import sys
- 
+
 out = open( sys.argv[2], "w" )
- 
+
 for line in open( sys.argv[1] ):
     # Strip end of line and split on tabs
     fields = line.rstrip( "\r\n" ).split( "\t" )
@@ -714,13 +714,13 @@ Next, we need to create the tool configuration. Edit the file
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
     <command interpreter="python">
- 
+
     </command>
     <inputs>
- 
+
     </inputs>
     <outputs>
- 
+
     </outputs>
 </tool>
 ```
@@ -731,10 +731,10 @@ First, let's define the output. This tool has a single output, of type
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
     <command interpreter="python">
- 
+
     </command>
     <inputs>
- 
+
     </inputs>
     <outputs>
         <data name="output1" format="sam" />
@@ -755,7 +755,7 @@ The resulting configuration:
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
     <command interpreter="python">
- 
+
     </command>
     <inputs>
         <param type="data" format="sam" name="input1" label="File to filter"/>

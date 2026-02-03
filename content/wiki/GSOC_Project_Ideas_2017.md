@@ -25,7 +25,7 @@ self-motivation are great traits for open source programmers.
   - *Mentors:* name + contact details of the lead mentor, name + contact
     details of backup mentor.
 
-  
+
 Here is a list of the proposed project ideas for 2017:
 
 - **1. Project Publication Reference Tracking (Galaxy/Reactome)**
@@ -51,7 +51,7 @@ Here is a list of the proposed project ideas for 2017:
     clements@galaxyproject.org, Robin Haw, Reactome, Ontario Institute
     for Cancer Research.
 
-  
+
 
 - **Project Idea 2: Reactome Diagrams WebGL (Reactome)**
   - *Brief explanation:* Implementing WebGL support in the renderer
@@ -71,7 +71,7 @@ Here is a list of the proposed project ideas for 2017:
   - *Mentor:* Antonio Fabregat (fabregat@ebi.ac.uk) (lead mentor),
     Kostas Sidiropoulos (ksidiro@ebi.ac.uk) (backup mentor)
 
-  
+
 
 - **Project Idea 3: iOS InterMine App (InterMine)**
   - *Brief explanation:* InterMine already has an Android application
@@ -104,7 +104,7 @@ Here is a list of the proposed project ideas for 2017:
     class="external free"
     rel="nofollow">https://intermineorg.wordpress.com/2017/02/28/google-summer-of-code-at-intermine/</a>
 
-  
+
 
 - **Project Idea 4: Similarity project (InterMine)**
   - *Brief explanation:* InterMine is a large graph (matrix) of entities
@@ -131,12 +131,12 @@ Here is a list of the proposed project ideas for 2017:
     class="external free"
     rel="nofollow">https://intermineorg.wordpress.com/2017/02/28/google-summer-of-code-at-intermine/</a>
 
-  
+
 
 - **Project Idea 5: ElasticSearch and InterMine: (InterMine)**
   - *Brief explanation:* (Project no longer available).
 
-  
+
 
 - **Project Idea 6: Create a set of exciting bioinformatics R demos
   using the InterMineR package (InterMine)**
@@ -165,7 +165,7 @@ Here is a list of the proposed project ideas for 2017:
     class="external free"
     rel="nofollow">https://intermineorg.wordpress.com/2017/02/28/google-summer-of-code-at-intermine/</a>
 
-  
+
 
 - **Project Idea 7: InterMine Registry (InterMine)**
   - *Brief explanation:* Currently there are 29 different instances of
@@ -191,7 +191,7 @@ Here is a list of the proposed project ideas for 2017:
     class="external free"
     rel="nofollow">https://intermineorg.wordpress.com/2017/02/28/google-summer-of-code-at-intermine/</a>
 
-  
+
 
 - **Project Idea 8: Query Visualiser: (InterMine)**
   - *Brief explanation:* InterMine’s biological data warehouse has an
@@ -219,7 +219,7 @@ Here is a list of the proposed project ideas for 2017:
     class="external free"
     rel="nofollow">https://intermineorg.wordpress.com/2017/02/28/google-summer-of-code-at-intermine/</a>
 
-  
+
 
 - **Project Idea 9: Prototype a new RESTFull API querying Neo4j database
   (InterMine)**
@@ -250,7 +250,7 @@ Here is a list of the proposed project ideas for 2017:
     class="external free"
     rel="nofollow">https://intermineorg.wordpress.com/2017/02/28/google-summer-of-code-at-intermine/</a>
 
-  
+
 
 - **Project Idea 10: Use Galaxy to run Reactome analysis and processes
   on genomic data (Reactome)**
@@ -273,7 +273,7 @@ Here is a list of the proposed project ideas for 2017:
   - *Skill level:* Medium
   - *Mentor:* Joel Weiser (joel.weiser@oicr.on.ca)
 
-  
+
 
 - **Project Idea 11: Stand-alone Reactome server in a Docker image
   (Reactome)**
@@ -294,7 +294,7 @@ Here is a list of the proposed project ideas for 2017:
   - *Skill level:* Medium
   - *Mentor:* Solomon Shorser (solomon.shorser@oicr.on.ca)
 
-  
+
 
 - **Project Idea 12: Pan-Genome Module for the Genome Context Viewer
   (GMOD)**
@@ -336,7 +336,7 @@ Here is a list of the proposed project ideas for 2017:
     Information System, US Department of Agriculture Agricultural
     Research Service.
 
-  
+
 
 - **Project Idea 13: Performance and user-centric improvements to Afra's
   annotation editor**
@@ -386,7 +386,7 @@ Here is a list of the proposed project ideas for 2017:
     Wurm (<a href="https://wurmlab.github.io" class="external text"
     rel="nofollow">Wurmlab</a>, Queen Mary University of London)
 
-  
+
 
 - **Project Idea 14: activedriverdb.org (Reimand Lab)**
   - *Brief explanation:*activedriverdb.org is a newly developed

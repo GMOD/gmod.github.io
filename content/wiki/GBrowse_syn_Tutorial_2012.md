@@ -3,11 +3,11 @@ title: "GBrowse syn Tutorial 2012"
 ---
 # GBrowse syn Tutorial 2012
 
-If you are 2013 GMOD Summer School, you are on the wrong tutorial.  
+If you are 2013 GMOD Summer School, you are on the wrong tutorial.
 Use
 [GBrowse_syn_Tutorial_2013](GBrowse_syn_Tutorial_2013 "GBrowse syn Tutorial 2013").
 
-  
+
 This tutorial on [GBrowse syn](GBrowse_syn.1 "GBrowse syn") was taught
 by [Sheldon McKay](User%253AMckays "User%253AMckays") as part of the [2013 GMOD
 Summer School](2013_GMOD_Summer_School "2013 GMOD Summer School").
@@ -21,7 +21,7 @@ how to get this AMI.
 - If you are not using the Amazon EC2 instance, the system paths may
   vary from those described below.
 
- 
+
 
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
 [GBrowse](GBrowse.1 "GBrowse")-based

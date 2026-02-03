@@ -24,13 +24,13 @@ applications).
 
 This workshop is aimed at:
 
-IT and Bioinformatics staff  
+IT and Bioinformatics staff
 [Galaxy](../Galaxy.1 "Galaxy") is an easy to use, web-based tool that
 enables your researchers to perform data integration and analysis, in
 house, without handholding from you. This workshop will teach you how to
 install your own instance of Galaxy, either on your local compute
 infrastructure, or on the cloud.
-Bioinformatics tool developers  
+Bioinformatics tool developers
 [Galaxy](../Galaxy.1 "Galaxy") provides mechanisms for integrating your
 own tools and the tools of others into Galaxy instances. This workshop
 will cover how to define your tools in Galaxy, and how to then make
@@ -57,11 +57,10 @@ class="external text" rel="nofollow">2012 Galaxy Community
 Conference</a> are coming along nicely. Dates are July 25-27 in Chicago,
 Illinois.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/11,
 updated 2011/12/16*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

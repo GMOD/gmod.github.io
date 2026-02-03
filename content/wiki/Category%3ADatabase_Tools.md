@@ -92,21 +92,21 @@ views</a></li>
 
 This category contains only the following file.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Gmod-argos-sep03.pdf" />
 
-  
 
-  
 
-  
 
-  [Gmod-argos-sep03.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Gmod-argos-sep03.pdf "File:Gmod-argos-sep03.pdf")  
+
+
+
+  [Gmod-argos-sep03.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Gmod-argos-sep03.pdf "File:Gmod-argos-sep03.pdf")
   5.22 MB

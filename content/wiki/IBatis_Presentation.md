@@ -87,7 +87,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
         password=“*******">
       <classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />
     </jdbcConnection>
- 
+
     <javaModelGenerator
    targetPackage="org.gmod.architecture.framework.bakeoff.abator.model"
    targetProject="gene" />
@@ -111,7 +111,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
         password=“*******">
       <classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />
     </jdbcConnection>
- 
+
     <javaModelGenerator
    targetPackage="org.gmod.architecture.framework.bakeoff.abator.model"
    targetProject="gene" />
@@ -127,7 +127,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
 ##### Abator Example
 
 ``` de1
- <table schema="db2inst1" tableName="synonym"></nowiki> 
+ <table schema="db2inst1" tableName="synonym"></nowiki>
       <generatedKey column="synonym_id" sqlStatement="VALUES PREVVAL FOR
              synonym_seq" identity="true" />
       <columnOverride column="CREATED_BY" jdbcType="INTEGER" />
@@ -135,7 +135,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
  </table>
 ```
 
-  
+
 
 ##### Abator
 
@@ -168,7 +168,7 @@ Works as:
             #md5checksum:CHAR#, #typeId:INTEGER#,
             #isAnalysis:SMALLINT#,  #isObsolete:SMALLINT#,
            #createdBy:INTEGER#)
- 
+
     <selectKey resultClass="java.lang.Integer" keyProperty="featureId">
         VALUES PREVVAL FOR feature_seq
     </selectKey>
@@ -189,7 +189,7 @@ Works as:
             #md5checksum:CHAR#, #typeId:INTEGER#,
             #isAnalysis:SMALLINT#,  #isObsolete:SMALLINT#,
                        #createdBy:INTEGER#)
- 
+
     <selectKey resultClass="java.lang.Integer" keyProperty="featureId">
         VALUES PREVVAL FOR feature_seq
     </selectKey>
@@ -210,7 +210,7 @@ Works as:
             #md5checksum:CHAR#, #typeId:INTEGER#,
             #isAnalysis:SMALLINT#,  #isObsolete:SMALLINT#,
            #createdBy:INTEGER#)
- 
+
     <selectKey resultClass="java.lang.Integer" keyProperty="featureId">
         VALUES PREVVAL FOR feature_seq
     </selectKey>
@@ -310,7 +310,7 @@ Account for cycles or recursion in Master Detail Report.
       <result column="TYPE_ID" property="typeId" jdbcType="INTEGER" />
       <result property="exons" resultMap = "gene.SelectExonResults"/>
   </resultMap>
- 
+
  <resultMap id="SelectExonResults"
    class="org.gmod.architecture.framework.bakeoff.Exon">
      <result column="EXON_ID" property="id" jdbcType="INTEGER"/>
@@ -336,7 +336,7 @@ Account for cycles or recursion in Master Detail Report.
       <result column="TYPE_ID" property="typeId" jdbcType="INTEGER" />
       <result property="exons" resultMap = "gene.SelectExonResults"/>
   </resultMap>
- 
+
  <resultMap id="SelectExonResults"
    class="org.gmod.architecture.framework.bakeoff.Exon">
      <result column="EXON_ID" property="id" jdbcType="INTEGER"/>
@@ -382,7 +382,7 @@ Becomes:
                  compareValue="true">
         GENE_SYMBOLS s
      </isEqual>
-      
+
      <isEqual prepend=","
     property="searchNcbi"
     compareValue="true">

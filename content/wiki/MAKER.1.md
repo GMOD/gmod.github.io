@@ -3,7 +3,7 @@ title: "MAKER"
 ---
 # MAKER
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/400px-MAKERLogo.png"
@@ -18,7 +18,7 @@ Status
 
 Licence
 
-  
+
 <a href="http://opensource.org/licenses/gpl-license"
 class="external text" rel="nofollow">GNU GPL (for academics)</a>,
 <a href="http://opensource.org/licenses/artistic-license-2.0"
@@ -44,7 +44,7 @@ Resources
 <td class="smwpropname"><a href="Property%253AAvailable_on_platform"
 title="Property:Available on platform">Available on platform</a></td>
 <td class="smwprops">linux ,
-os x 
+os x
 and unix </td>
 </tr>
 <tr class="even row-even">
@@ -138,7 +138,7 @@ MAKER comes with sample data for testing purposes. See the
 directory in the download. , Review article on
 eukaryotic genome annotation from the MAKER team. ,
 MAKER with additional software for plant genome annotation ,
-online version of the MAKER tool 
+online version of the MAKER tool
 and The ant genomes were annotated using MAKER. </td>
 </tr>
 <tr class="even row-even">
@@ -149,7 +149,7 @@ title="Property:Has development status">Has development status</a></td>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_input_format"
 title="Property:Has input format">Has input format</a></td>
-<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a> 
+<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a>
 and <a href="Glossary#FASTA" title="Glossary">FASTA</a> </td>
 </tr>
 <tr class="even row-even">
@@ -160,7 +160,7 @@ href="http://opensource.org/licenses/gpl-license" class="external text"
 rel="nofollow">GNU GPL (for academics)</a> ,
 <a href="http://opensource.org/licenses/artistic-license-2.0"
 class="external text" rel="nofollow">Artistic License 2.0 (for
-academics)</a> 
+academics)</a>
 and custom license for commercial usage </td>
 </tr>
 <tr class="odd row-odd">
@@ -171,7 +171,7 @@ title="Property:Has logo">Has logo</a></td>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_output_format"
 title="Property:Has output format">Has output format</a></td>
-<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a> 
+<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a>
 and <a href="Glossary#FASTA" title="Glossary">FASTA</a> </td>
 </tr>
 <tr class="odd row-odd">
@@ -191,7 +191,7 @@ title="Property:Has title">Has title</a></td>
 <td class="smwprops">A beginner's guide to eukaryotic genome annotation
 ,
 MAKER-P ,
-MAKER Web Annotation Server 
+MAKER Web Annotation Server
 and Ant Genomes Portal </td>
 </tr>
 <tr class="even row-even">

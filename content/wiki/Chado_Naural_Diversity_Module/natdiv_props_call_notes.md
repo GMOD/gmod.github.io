@@ -7,7 +7,7 @@ title: "Chado Naural Diversity Module/natdiv props call notes"
 
 June 1st 2011, 12PM EST
 
-  
+
 
 ## participants
 
@@ -20,7 +20,7 @@ June 1st 2011, 12PM EST
 - Sook (first 30 min)
 - Lukas (first 30 min)
 
-  
+
 
 ## Notes
 
@@ -78,7 +78,7 @@ or they are not aware this is an option. I'm inclined to do nothing for
 now, but Yuri should send the email because there are now more Chado
 users.
 
-  
+
 
 ------------------------------------------------------------------------
 
@@ -142,7 +142,7 @@ we have here 2 fundamental issues: 1. how do we break the
 value-phenotype connection in the phenotype module 2. how do we use the
 prop tables? (and cvalue_id, is this needed?)
 
-  
+
 --Yuri:
 
 looked at postcomposition in the phenotype_cvterm table - we need the

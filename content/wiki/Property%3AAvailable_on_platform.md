@@ -16,7 +16,7 @@ The allowed values for this property are:
 - vm
 - cloud
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Available on platform"

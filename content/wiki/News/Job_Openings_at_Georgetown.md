@@ -37,10 +37,9 @@ Contact Chris Elsik:
 <a href="mailto:chris.elsik@gmail.com" class="external text"
 rel="nofollow">chris.elsik@gmail.com</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/01/15*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

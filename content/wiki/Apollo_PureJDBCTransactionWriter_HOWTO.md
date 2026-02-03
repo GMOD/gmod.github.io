@@ -10,7 +10,7 @@ the chado/JDBC adapter that allows Apollo to save changes directly to a
 JDBC, without having to install any stored procedures or triggers in the
 target database.
 
-  
+
 
   Background](#Background)
 - [Prerequisites](#Prerequisites)

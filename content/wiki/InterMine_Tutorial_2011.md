@@ -297,7 +297,7 @@ directory is:
              + -- webapp/
              + -- project.xml
              + -- default.intermine.webapp.properties
-             + -- default.intermine.integrate.properties 
+             + -- default.intermine.integrate.properties
 
 The four sub directories are each separate Java projects that manage the
 different stages of building and running a mine, pretty much in the
@@ -523,7 +523,7 @@ We will
     1.  Create a data item for each gene in the file, linked to the
         pathway items made earlier
 
-  
+
 
 #### Adding The Source
 
@@ -537,16 +537,16 @@ Click on **open parser to edit** and paste in the script below:
 
 ``` de1
 #!/usr/bin/perl
- 
+
 use warnings;
 use strict;
 use InterMine::Model;
 use InterMine::Item::Document;
- 
+
 @ARGV == 4 or die "Bad arguments: we need four arguments\n$0 model-file output-file pathways-file gene-mappings-file\n";
- 
+
 my ( $model_file, $out_file, $pathway_file, $gene_mappings_file ) = @ARGV;
- 
+
 # Create the writing apparatus
 my $model = InterMine::Model->new( file => $model_file );
 my $document = InterMine::Item::Document->new(
@@ -554,35 +554,35 @@ my $document = InterMine::Item::Document->new(
     output     => $out_file,
     auto_write => 1,
 );
- 
+
 my $data_source = 'Kegg';
 my $taxon_id = 36329;
 my %pathway_with;
- 
+
 # Create data items for the data source, data set, and organism
- 
+
 my $datasource_item = $document->add_item(
     'DataSource',
     'name' => $data_source,
 );
- 
+
 my $dataset_item = $document->add_item(
     'DataSet',
     name       => $data_source . ' data set for taxon id: ' . $taxon_id,
     dataSource => $datasource_item,
 );
- 
+
 my $org_item = $document->add_item(
     'Organism',
     taxonId  => $taxon_id,
 );
- 
+
 # Read in the pathways file
 open(my $pathways, '<', $pathway_file) or die "Could not open $pathway_file, $!";
 for (<$pathways>) {
     chomp;
     my ($id, $title) = split(/\t/);
- 
+
     ## Create a data item for each pathway in the file
     ## Remember which item was made for each id
     $pathway_with{$id} = $document->add_item(
@@ -592,7 +592,7 @@ for (<$pathways>) {
     );
 }
 close $pathways or die "Could not close $pathway_file, $!";
- 
+
 # Read in the gene mappings file
 open(my $gene_mappings, '<', $gene_mappings_file) or die "Couldn't open $gene_mappings_file, $!";
 for (<$gene_mappings>) {
@@ -600,7 +600,7 @@ for (<$gene_mappings>) {
     my ($gene_id, $pathway_string) = split(/\t/);
     my @pathway_ids = split(/\s/, $pathway_string);
     my $pathway_items = [@pathway_with{@pathway_ids}];
- 
+
     ## Create a data item for each gene in the file, linked to the pathway items made earlier
     $document->add_item('Gene',
        primaryIdentifier => $gene_id,
@@ -610,10 +610,10 @@ for (<$gene_mappings>) {
     );
 }
 close $gene_mappings or die "Could not close $gene_mappings_file, $!";
- 
+
 # Close the document
 $document->close();
- 
+
 exit;
 ```
 
@@ -778,7 +778,7 @@ Tomcat is the webserver we use to serve InterMine webapps. Start Tomcat
 with this command:
 
 ``` enter
- cd ~/Documents/Software/tomcat6 
+ cd ~/Documents/Software/tomcat6
  bin/startup.sh
 ```
 
@@ -910,11 +910,11 @@ Queries in the webapp are created and run using the *QueryBuilder*
 interface, which helps you build queries using the data model as a
 guide.
 
-1.  Click on the **QueryBuilder** tab  
+1.  Click on the **QueryBuilder** tab
     <img
     src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Query-builder-tab.png" width="486"
     height="102" alt="Query-builder-tab.png" />
-2.  Select **gene** as the type of object we want to query for  
+2.  Select **gene** as the type of object we want to query for
     <img
     src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bb/Query-select-gene.png" width="493"
     height="258" alt="Query-select-gene.png" />
@@ -924,7 +924,7 @@ guide.
     2.  Click **constrain** next to **name**
     3.  Type in **p** into the value box in the pop-up
     4.  Select **Pentose Phosphate Pathway** from the autocomplete
-        drop-down  
+        drop-down
         <img
         src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Query-built-query.png" width="822"
         height="654" alt="Query-built-query.png" />
@@ -1026,13 +1026,13 @@ Here the different parts are:
 
 <a href="http://preview.flymine.org/preview/service"
 class="external free"
-rel="nofollow">http://preview.flymine.org/preview/service</a>  
+rel="nofollow">http://preview.flymine.org/preview/service</a>
 The base url for this service
 
-template/results  
+template/results
 The resource path (in this case, results for templates)
 
-?name=Gene_Protein&constraint1=Gene&op1=LOOKUP&value1=big&extra1=&size=10&format=jsonobjects  
+?name=Gene_Protein&constraint1=Gene&op1=LOOKUP&value1=big&extra1=&size=10&format=jsonobjects
 The query string, a URL-encoded name-value pair set that tells the
 resource what we want to do
 
@@ -1076,8 +1076,8 @@ height="82" alt="Getting-query-xml.png" />
 Which in the case of our pathways query would look like this:
 
 ``` de1
-<query name="" model="genomic" view="Pathway.identifier Pathway.name Pathway.genes.primaryIdentifier Pathway.genes.symbol" 
-  longDescription="For a specified KEGG, REACTOME or FlyReactome pathway, list all the genes that are involved for a particular organism" 
+<query name="" model="genomic" view="Pathway.identifier Pathway.name Pathway.genes.primaryIdentifier Pathway.genes.symbol"
+  longDescription="For a specified KEGG, REACTOME or FlyReactome pathway, list all the genes that are involved for a particular organism"
   sortOrder="Pathway.identifier asc" constraintLogic="B and C and A">
   <pathDescription pathString="Pathway.genes" description="Gene"/>
   <constraint path="Pathway.name" code="A" op="=" value="Pentose phosphate pathway"/>
@@ -1154,21 +1154,21 @@ The following is the complete code you would get by clicking on the
 
 ``` de1
 use Webservice::InterMine 0.9412 'http://www.flymine.org/release-27.0/service';
- 
+
 # This is an automatically generated script to run the FlyMine template
 # You should install the Webservice::InterMine modules to run this example, e.g. sudo cpan Webservice::InterMine
- 
+
 # template name - Pathway_Genes
 # template description - For a specified KEGG, REACTOME or FlyReactome pathway, list all the genes that are involved for a particular organism
- 
+
 my $template = Webservice::InterMine->template('Pathway_Genes')
     or die 'Could not find template';
- 
+
 # You can edit the constraint values below
 # A    Pathway.name    Show genes in pathway:
 # B    Pathway.dataSets.name    From dataset (KEGG, Reactome or FlyReactome):
 # C    Pathway.genes.organism.name    For organism:
- 
+
 my $results = $template->results_with(
     opA    => '=',
     valueA => 'Pentose phosphate pathway',
@@ -1178,7 +1178,7 @@ my $results = $template->results_with(
     valueC => 'Drosophila melanogaster',
     as     => 'string',
 );
- 
+
 print $results."\n";
 ```
 
@@ -1186,14 +1186,14 @@ The equivalent **Java** query would look like this:
 
 ``` de1
 package flymine;
- 
+
 import java.util.ArrayList;
 import java.util.List;
- 
+
 import org.intermine.webservice.client.core.ServiceFactory;
 import org.intermine.webservice.client.services.TemplateService;
 import org.intermine.webservice.client.template.TemplateParameter;
- 
+
 /**
  * This is an automatically generated Java program to run the FlyMine template.
  * template name - Pathway_Genes
@@ -1205,16 +1205,16 @@ import org.intermine.webservice.client.template.TemplateParameter;
 public class TemplatePathwayGenes
 {
     private static String serviceRootUrl = "http://www.flymine.org/release-27.0/service";
- 
+
     /**
      * @param args command line arguments
      */
     public static void main(String[] args) {
- 
+
         TemplateService service = new ServiceFactory(serviceRootUrl, "TemplateService").getTemplateService();
- 
+
         List<TemplateParameter> parameters = new ArrayList<TemplateParameter>();
- 
+
         // You can edit the constraint values below
         // Constraint description - Show genes in pathway:
         parameters.add(new TemplateParameter("Pathway.name", "eq", "Pentose phosphate pathway"));
@@ -1222,10 +1222,10 @@ public class TemplatePathwayGenes
         parameters.add(new TemplateParameter("Pathway.dataSets.name", "eq", "KEGG pathways data set"));
         // Constraint description - For organism:
         parameters.add(new TemplateParameter("Pathway.genes.organism.name", "eq", "Drosophila melanogaster"));
- 
+
         // Name of a public template, private templates are not supported at the moment
         String templateName = "Pathway_Genes";
- 
+
         // Number of results are fetched
         int maxCount = 10000;
         List<List<String>> result = service.getResult(templateName, parameters, maxCount);
@@ -1247,14 +1247,14 @@ query service would look like this:
 
 ``` de1
 use Webservice::InterMine 0.9412 'http://www.flymine.org/release-27.0/service';
- 
+
 # This is an automatically generated script to run the FlyMine query
 # You should install the Webservice::InterMine modules to run this example, e.g. sudo cpan Webservice::InterMine
- 
+
 # query description - For a specified KEGG, REACTOME or FlyReactome pathway, list all the genes that are involved for a particular organism
- 
+
 my $query = Webservice::InterMine->new_query;
- 
+
 # The view specifies the output columns
 $query->add_view(qw/
     Pathway.identifier
@@ -1262,10 +1262,10 @@ $query->add_view(qw/
     Pathway.genes.primaryIdentifier
     Pathway.genes.symbol
 /);
- 
+
 # Sort by
 $query->set_sort_order('Pathway.identifier' => 'ASC');
- 
+
 # You can edit the constraint values below
 $query->add_constraint(
     path  => 'Pathway.name',
@@ -1273,24 +1273,24 @@ $query->add_constraint(
     value => 'Pentose phosphate pathway',
     code => 'A',
 );
- 
+
 $query->add_constraint(
     path  => 'Pathway.dataSets.name',
     op    => '=',
     value => 'KEGG pathways data set',
     code => 'B',
 );
- 
+
 $query->add_constraint(
     path  => 'Pathway.genes.organism.name',
     op    => '=',
     value => 'Drosophila melanogaster',
     code => 'C',
 );
- 
+
 # Constraint Logic
 $query->logic('B and C and A');
- 
+
 print $query->results(as => 'string')."\n";
 ```
 
@@ -1298,10 +1298,10 @@ The equivalent **Java** would look like this:
 
 ``` de1
 package flymine;
- 
+
 import java.io.IOException;
 import java.util.List;
- 
+
 import org.intermine.metadata.Model;
 import org.intermine.webservice.client.core.ServiceFactory;
 import org.intermine.webservice.client.services.ModelService;
@@ -1309,7 +1309,7 @@ import org.intermine.webservice.client.services.QueryService;
 import org.intermine.pathquery.PathQuery;
 import org.intermine.pathquery.OrderDirection;
 import org.intermine.pathquery.Constraints;
- 
+
 /**
  * This is an automatically generated Java program to run the FlyMine query.
  *
@@ -1319,7 +1319,7 @@ import org.intermine.pathquery.Constraints;
 public class QueryClient
 {
     private static String serviceRootUrl = "http://www.flymine.org/release-27.0/service";
- 
+
     /**
      * @param args command line arguments
      * @throws IOException
@@ -1329,26 +1329,26 @@ public class QueryClient
             new ServiceFactory(serviceRootUrl, "QueryService").getQueryService();
         Model model = getModel();
         PathQuery query = new PathQuery(model);
- 
+
         // Add views
         query.addViews("Pathway.identifier",
                 "Pathway.name",
                 "Pathway.genes.primaryIdentifier",
                 "Pathway.genes.symbol");
- 
+
         // Add orderby
         query.addOrderBy("Pathway.identifier", OrderDirection.ASC);
- 
+
         // Add constraints and you can edit the constraint values below
         query.addConstraint(Constraints.eq("Pathway.name", "Pentose phosphate pathway"), "A");
- 
+
         query.addConstraint(Constraints.eq("Pathway.dataSets.name", "KEGG pathways data set"), "B");
- 
+
         query.addConstraint(Constraints.eq("Pathway.genes.organism.name", "Drosophila melanogaster"), "C");
- 
+
         // Add constraintLogic
         query.setConstraintLogic("B and C and A");
- 
+
         // Number of results are fetched
         int maxCount = 10000;
         List<List<String>> result = service.getResult(query, maxCount);
@@ -1360,7 +1360,7 @@ public class QueryClient
             System.out.print("\n");
         }
     }
- 
+
     private static Model getModel() {
         ModelService service = new ServiceFactory(serviceRootUrl, "ModelService").getModelService();
         return service.getModel();
@@ -1375,18 +1375,18 @@ but there are other formats we can request:
 
 ### Row Based Formats
 
-tab  
+tab
 The default format - simple tab separated values
 
-csv  
+csv
 As above, but comma separated, and double quoted
 
-jsonrows  
+jsonrows
 Row based json format:
 <a href="http://intermine.org/wiki/JSONRowFormat" class="external free"
 rel="nofollow">http://intermine.org/wiki/JSONRowFormat</a>
 
-xml  
+xml
 Structured data format with the structure
 
 ``` de1
@@ -1430,7 +1430,7 @@ can see an example of the results in this format below:
         {
           "primaryAccession":  "Q3UNQ3",
           "primaryIdentifier": "Q3UNQ3_MOUSE",
-          "objectId":          1719447174, 
+          "objectId":          1719447174,
           "class":             "Protein"
         }
       ]
@@ -1455,30 +1455,30 @@ example is included below as a demonstration:
 ``` de1
  <head>
     <!-- jQuery is hosted by Google -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
         type="text/javascript">
     </script>
     <!-- jquery-jsonp is likewise available from an online repository -->
-    <script src="http://jquery-jsonp.googlecode.com/files/jquery.jsonp-2.1.4.min.js" 
+    <script src="http://jquery-jsonp.googlecode.com/files/jquery.jsonp-2.1.4.min.js"
         type="text/javascript">
     </script>
     <!-- Similarly imbedding.js is hosted on intermine.org -->
-    <script src="http://www.intermine.org/lib/imbedding/0.1/imbedding.min.js" 
+    <script src="http://www.intermine.org/lib/imbedding/0.1/imbedding.min.js"
         type="text/javascript">
     </script>
  </head>
- 
+
  <script type="text/javascript">
     IMBedding.setBaseUrl("http://preview.flymine.org/preview");
     IMBedding.loadTemplate(
         {
             name:           "Gene_RegionOverlappingTFbindingsite",
- 
+
             constraint1:    "Gene",
             op1:            "LOOKUP",
             value1:         "CG2328",
             code1:          "A",
-        },            
+        },
         '#some-placeholder',
     );
  </script>

@@ -89,10 +89,9 @@ structure in global gene expression, development, and differentiation.
 See the <a href="http://bx.mathcs.emory.edu/joining/postdocs/"
 class="external text" rel="nofollow">announcement</a> for full details.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/08/29*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

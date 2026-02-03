@@ -30,7 +30,7 @@ Components](GMOD_Components "GMOD Components") are used, see the [2008
 GMOD Community
 Survey](2008_GMOD_Community_Survey "2008 GMOD Community Survey").*
 
-  
+
 
 ## Which components have you used?
 
@@ -135,7 +135,7 @@ karyotype</a></td>
 </tbody>
 </table>
 
-  
+
 
 ## Documentation
 
@@ -195,7 +195,7 @@ title="GBrowse syn Tutorial">GBrowse_syn Tutorial</a>, ...
 </tbody>
 </table>
 
-  
+
 **End user Documentation** - *e.g.*
 <a href="http://www.openhelix.com/gbrowse" class="external text"
 rel="nofollow">GBrowse User Tutorial</a>,
@@ -250,7 +250,7 @@ class="external text" rel="nofollow">CMap Tutorial</a>, ...
 </tbody>
 </table>
 
-  
+
 **Overview Documentation** - *e.g.* [Comparative
 Genomics](Comparative_Genomics "Comparative Genomics"),
 [Overview](Overview "Overview"), ...

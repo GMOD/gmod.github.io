@@ -7,7 +7,7 @@ title: "2012 GMOD Summer School"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Summer-school-splash.jpg" width="779"
 height="395" alt="2012 Summer School splash screen" />
 
-  
+
 The GMOD Summer School is a five day course that covers the use of
 several widely used GMOD components in the context of a organism or
 clade database. The course is taught by members of the projects'

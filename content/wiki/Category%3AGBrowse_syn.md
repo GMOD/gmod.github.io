@@ -92,211 +92,211 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 
 The following 9 files are in this category, out of 9 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Aug2009GBrowse syn.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Aug2009GBrowse
-  syn.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/Aug2009GBrowse_syn.pdf "File:Aug2009GBrowse syn.pdf")  
-  2.91 MB  
+  syn.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/Aug2009GBrowse_syn.pdf "File:Aug2009GBrowse syn.pdf")
+  2.91 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Cain GI poster.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Cain GI
-  poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/Cain_GI_poster.pdf "File:Cain GI poster.pdf")  
-  522 KB  
+  poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/Cain_GI_poster.pdf "File:Cain GI poster.pdf")
+  522 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/120px-GBrowse_syn_logo.png"
   width="120" height="38" alt="GBrowse syn logo.png" />
 
-  
 
-  
 
-  
+
+
+
 
   [GBrowse syn
-  logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/GBrowse_syn_logo.png "File:GBrowse syn logo.png")  
-  113 KB  
+  logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/GBrowse_syn_logo.png "File:GBrowse syn logo.png")
+  113 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Gbrowse syn.pdf" />
 
-  
 
-  
 
-  
 
-  [Gbrowse syn.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Gbrowse_syn.pdf "File:Gbrowse syn.pdf")  
-  2.05 MB  
 
-  
 
-  
 
-- 
+  [Gbrowse syn.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Gbrowse_syn.pdf "File:Gbrowse syn.pdf")
+  2.05 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GBrowse synSMBE2009.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GBrowse
-  synSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GBrowse_synSMBE2009.pdf "File:GBrowse synSMBE2009.pdf")  
-  5 MB  
+  synSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GBrowse_synSMBE2009.pdf "File:GBrowse synSMBE2009.pdf")
+  5 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GBS PAG10.pdf" />
 
-  
 
-  
 
-  
 
-  [GBS PAG10.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/GBS_PAG10.pdf "File:GBS PAG10.pdf")  
-  5.01 MB  
 
-  
 
-  
 
-- 
+  [GBS PAG10.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/GBS_PAG10.pdf "File:GBS PAG10.pdf")
+  5.01 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120"
   alt="GMODToolsForComparativeGenomicsIGERTPoster.pdf" />
 
-  
 
-  
 
-  
 
-  [GMODToolsForComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf "File:GMODToolsForComparativeGenomicsIGERTPoster.pdf")  
-  714 KB  
 
-  
 
-  
 
-- 
+  [GMODToolsForComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf "File:GMODToolsForComparativeGenomicsIGERTPoster.pdf")
+  714 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/cf/WGA_data.png/120px-WGA_data.png"
   width="120" height="69" alt="WGA data.png" />
 
-  
 
-  
 
-  
 
-  [WGA data.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/WGA_data.png "File:WGA data.png")  
-  86 KB  
 
-  
 
-  
 
-- 
+  [WGA data.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/WGA_data.png "File:WGA data.png")
+  86 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120"
   alt="ISyIPGMODforComparativeGenomics.pdf" />
 
-  
 
-  
 
-  
 
-  [ISyIPGMODforComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf "File:ISyIPGMODforComparativeGenomics.pdf")  
+
+
+
+  [ISyIPGMODforComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf "File:ISyIPGMODforComparativeGenomics.pdf")
   14.44 MB

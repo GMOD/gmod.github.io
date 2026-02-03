@@ -60,10 +60,9 @@ Hope to see you in Chicago,
 href="http://galaxyproject.org/wiki/Events/GCC2012/Organizing%20Committee"
 class="external text" rel="nofollow">GCC2012 Organizing Committee</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/07/10*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

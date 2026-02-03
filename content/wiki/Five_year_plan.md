@@ -54,13 +54,13 @@ help desk aims:
 - help desk more focused on community outreach and training
   - jbrowse workshops?
 
-  
+
 iteroperability hackathons:
 
 - maker
 - galaxy
 
-  
+
 Three development aims, one support aim:
 
 - one novel

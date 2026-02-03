@@ -3,7 +3,7 @@ title: "SOBA"
 ---
 # SOBA
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b6/SOBA_Header.jpg/400px-SOBA_Header.jpg"
@@ -22,9 +22,9 @@ Resources
   href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
   class="external text" rel="nofollow">Home page</a>
 
-  
 
-  
+
+
 
   Ontology Bioinformatics Analysis
   (SOBA)</span>](#About_Sequence_Ontology_Bioinformatics_Analysis_.28SOBA.29)
@@ -78,13 +78,13 @@ genome paper; SOBA would help those developing annotation tools to
 quickly evaluate updates to their tool; SOBA assists comparative
 genomics analyses by providing a high-level overview of the genome of
 multiple organisms. SOBA complements genome browsers by providing a
-summary of all the features annotated in the genome.  
-  
+summary of all the features annotated in the genome.
+
 Visit the <a
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
 class="external text" rel="nofollow">SOBA website</a>.
 
-  
+
 
 ## Downloads
 
@@ -93,9 +93,9 @@ class="external text" rel="nofollow">SOBA website</a>.
   rel="nofollow">Subversion</a>) from:
      svn co svn://topaz.genetics.utah.edu/SOBA/trunk SOBA
 
-  
 
-  
+
+
 
 ## Using SOBA
 
@@ -170,11 +170,11 @@ A README and INSTALL document are also included with SOBAcl.
 ### Tutorials
 
 <a href="SOBA_Tutorial" class="mw-redirect" title="SOBA Tutorial">SOBA
-Tutorial</a>  
+Tutorial</a>
 taught as part of the [2013 GMOD Summer
 School](2013_GMOD_Summer_School "2013 GMOD Summer School")
 
-  
+
 
 ## Contacts and Mailing Lists
 
@@ -183,21 +183,21 @@ SOBA is supported by the
 class="external text" rel="nofollow">Sequence Ontology Developers
 Mailing list</a>.
 
-  
 
-  
 
-  
+
+
+
 
 ## More on SOBA
 
 See [Category%253ASOBA](Category%253ASOBA "Category%253ASOBA")
 
-  
 
-  
 
-  
+
+
+
 Raw tool data at [SOBA/tool data](SOBA/tool_data "SOBA/tool data")
 
 <span class="smwfactboxhead">Facts about

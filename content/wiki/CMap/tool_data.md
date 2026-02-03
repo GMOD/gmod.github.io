@@ -19,65 +19,65 @@ rel="nofollow">Gramene Project</a>. See also
 <a href="http://www.gramene.org/cmap/entry.html" class="external text"
 rel="nofollow">other Gramene views</a>.
 
-- 
+-
 
-  
 
-  
+
+
 
   <a href="../File:Cmap_sample1.jpg" class="image"><img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Cmap_sample1.jpg/89px-Cmap_sample1.jpg"
   width="89" height="120" alt="Cmap sample1.jpg" /></a>
 
-  
 
-  
 
-  
 
-  
 
-  
 
-- 
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <a href="../File:Cmap_sample2.jpg" class="image"><img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f1/Cmap_sample2.jpg/169px-Cmap_sample2.jpg"
   width="169" height="120" alt="Cmap sample2.jpg" /></a>
 
-  
 
-  
 
-  
 
-  
 
-  
 
-- 
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <a href="../File:Cmap_sample3.jpg" class="image"><img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/12/Cmap_sample3.jpg/131px-Cmap_sample3.jpg"
   width="131" height="120" alt="Cmap sample3.jpg" /></a>
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
 
 \| public_server =
 <a href="http://www.gramene.org/cmap" class="external free"
@@ -253,5 +253,5 @@ several years. Future development at Gramene.org hopes to replace CMap
 with a lighter, Javascript version. \| contact_email = Ken Youens-Clark
 \<kclark@cshl.edu\> \| input = \| output = \| see_also =
 [CMap3D](../CMap3D "CMap3D") \| demo_server = \| survey_link = CMap \|
-release date = 2002 \| more_info =  
+release date = 2002 \| more_info =
 **Cite error: `<ref>` tags exist, but no `<references/>` tag was found**

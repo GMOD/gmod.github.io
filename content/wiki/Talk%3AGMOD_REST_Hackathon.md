@@ -47,7 +47,7 @@ Additional documentation/discussion at
 - Plugin layer for data models
 - View layer for rending XML, JSON, etc...
 
-  
+
 
 ## Misc Info
 
@@ -107,7 +107,7 @@ REST compliance. I just wonder if the label \*might\* cause problems in
 a future publication or more importantly its takeup amongst purists. But
 REST is such a overused term that maybe this doesn't matter.
 
-  
+
 
 - A small general problem for us is the use of NCBI taxonomy ids. Our
 
@@ -121,7 +121,7 @@ relaxation in the spec. (I'll also repeat my comment from the Oxford
 workshop that it seems slightly odd that the 2 GMOD URL-related specs
 use different methods of identifying organisms)
 
-  
+
 
 - Biggest point - the URLs are all constructed to avoid using query
 
@@ -154,7 +154,7 @@ completely compatible with REST principles. The implementation point
 obviously isn't that important as it's a one-off cost but the I think
 the naturalness is. What do other people think?
 
-  
+
 
 - The final issue I see here is that the Organism XML page is a bit
 

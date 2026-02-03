@@ -40,10 +40,9 @@ rel="nofollow">release notes</a> for full details.
 
 [Mitch Skinner](../User%253AMitchSkinner "User%253AMitchSkinner")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/09/12*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

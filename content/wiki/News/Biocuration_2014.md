@@ -51,20 +51,20 @@ WEBSITE:
 class="external text" rel="nofollow">7th International Biocuration
 Conference</a>
 
-  
+
 REGISTRATION:
 
 <a
 href="http://biocuration2014.events.oicr.on.ca/biocuration-registration-and-abstract-submission"
 class="external text" rel="nofollow">Online registration is now open</a>
 
-  
+
 ABSTRACT SUBMISSION:
 
 <a href="https://www.easychair.org/conferences/?conf=isb2014"
 class="external text" rel="nofollow">Submit your abstract for
 presentation (poster or talks only)</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/01/17*

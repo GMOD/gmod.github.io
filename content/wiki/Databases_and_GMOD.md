@@ -8,7 +8,7 @@ This introduces the broad topic of databases in GMOD. It introduces some
 databases. It also covers how databases are implemented and used in
 GMOD, and what database management system choices are available.
 
-  
+
 
   Terminology</span>](#Database_Terminology)
   - [What's a

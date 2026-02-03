@@ -71,230 +71,230 @@ Automated Function Prediction</a></li>
 
 The following 10 files are in this category, out of 10 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMODatISMB2010.pdf" />
 
-  
 
-  
 
-  
 
-  [GMODatISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/GMODatISMB2010.pdf "File:GMODatISMB2010.pdf")  
-  358 KB  
 
-  
 
-  
 
-- 
+  [GMODatISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/GMODatISMB2010.pdf "File:GMODatISMB2010.pdf")
+  358 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="AGS2011Brochure.pdf" />
 
-  
 
-  
 
-  
 
-  [AGS2011Brochure.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/AGS2011Brochure.pdf "File:AGS2011Brochure.pdf")  
-  1.02 MB  
 
-  
 
-  
 
-- 
+  [AGS2011Brochure.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/AGS2011Brochure.pdf "File:AGS2011Brochure.pdf")
+  1.02 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/ee/Biocuration2010Logo.png/120px-Biocuration2010Logo.png"
   width="120" height="31" alt="Biocuration2010Logo.png" />
 
-  
 
-  
 
-  
 
-  [Biocuration2010Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ee/Biocuration2010Logo.png "File:Biocuration2010Logo.png")  
-  61 KB  
 
-  
 
-  
 
-- 
+  [Biocuration2010Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ee/Biocuration2010Logo.png "File:Biocuration2010Logo.png")
+  61 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a5/GCC2011Logo.png/120px-GCC2011Logo.png"
   width="120" height="62" alt="GCC2011Logo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2011Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/GCC2011Logo.png "File:GCC2011Logo.png")  
-  797 KB  
 
-  
 
-  
 
-- 
+  [GCC2011Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/GCC2011Logo.png "File:GCC2011Logo.png")
+  797 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/65/GCC2011LogoShort.png/120px-GCC2011LogoShort.png"
   width="120" height="52" alt="GCC2011LogoShort.png" />
 
-  
 
-  
 
-  
 
-  [GCC2011LogoShort.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/GCC2011LogoShort.png "File:GCC2011LogoShort.png")  
-  544 KB  
 
-  
 
-  
 
-- 
+  [GCC2011LogoShort.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/GCC2011LogoShort.png "File:GCC2011LogoShort.png")
+  544 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMODatAGS2008.pdf" />
 
-  
 
-  
 
-  
 
-  [GMODatAGS2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/GMODatAGS2008.pdf "File:GMODatAGS2008.pdf")  
-  351 KB  
 
-  
 
-  
 
-- 
+  [GMODatAGS2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/GMODatAGS2008.pdf "File:GMODatAGS2008.pdf")
+  351 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMODatISMB2008.pdf" />
 
-  
 
-  
 
-  
 
-  [GMODatISMB2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GMODatISMB2008.pdf "File:GMODatISMB2008.pdf")  
-  97 KB  
 
-  
 
-  
 
-- 
+  [GMODatISMB2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GMODatISMB2008.pdf "File:GMODatISMB2008.pdf")
+  97 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMODatPAG2011.pdf" />
 
-  
 
-  
 
-  
 
-  [GMODatPAG2011.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a6/GMODatPAG2011.pdf "File:GMODatPAG2011.pdf")  
-  140 KB  
 
-  
 
-  
 
-- 
+  [GMODatPAG2011.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a6/GMODatPAG2011.pdf "File:GMODatPAG2011.pdf")
+  140 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="JBrowse PAG 2017.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [JBrowse PAG
-  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf "File:JBrowse PAG 2017.pdf")  
-  2.4 MB  
+  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf "File:JBrowse PAG 2017.pdf")
+  2.4 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="JBrowse PAG 2018.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [JBrowse PAG
-  2018.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/JBrowse_PAG_2018.pdf "File:JBrowse PAG 2018.pdf")  
+  2018.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/JBrowse_PAG_2018.pdf "File:JBrowse PAG 2018.pdf")
   725 KB

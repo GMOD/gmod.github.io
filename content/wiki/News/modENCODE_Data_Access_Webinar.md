@@ -24,10 +24,9 @@ rel="nofollow">http://wiki.modencode.org/project/index.php/DCC_Usability_webinar
 
 Peter Ruzanov
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/21*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

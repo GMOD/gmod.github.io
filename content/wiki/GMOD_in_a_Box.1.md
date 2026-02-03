@@ -3,7 +3,7 @@ title: "GMOD in a Box"
 ---
 # GMOD in a Box
 
-  
+
 GMOD in a Box is a [GMOD virtual
 server](Category%253AGMOD_virtual_server "Category%253AGMOD virtual server")
 equipped with a suite of preconfigured GMOD components, including a
@@ -16,7 +16,7 @@ installation; for longer-term uses, the virtual server can be kept
 running as long as required, and data can easily be moved when new
 versions of GMOD in a Box are released.
 
-  
+
 
   in a Box</span>](#What.27s_in_GMOD_in_a_Box)
 - [Where to find
@@ -75,7 +75,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="200" height="55" alt="WebApollo logo" />](WebApollo.1 "WebApollo")
 11/22/2013
 
-  
+
 
 ## Where to find GMOD in a Box
 
@@ -127,7 +127,7 @@ Networking is set up to use **bridged networking**; the virtual machine
 will try to connect to your DHCP server to get an IP address. You can
 then use that IP address to access the machine via ssh.
 
-  
+
 
 ### Directory Structure
 
@@ -206,7 +206,7 @@ the Chado schema before the public schema; this account should be used
 for tools that interact with Chado (e.g. GBrowse, Tripal, and any
 command line tools from GMOD).
 
-  
+
 
 ### Drupal
 
@@ -228,7 +228,7 @@ you will get the Drupal home page.
 New modules can be added at `/data/var/www/sites/default/modules` and
 new themes can be added at `/data/var/www/sites/default/themes`.
 
-  
+
 
 ### Tripal
 
@@ -238,7 +238,7 @@ Source: [Tripal](Tripal.1 "Tripal") svn
 
 Installation dir: `/var/www/sites/all/modules/tripal`
 
-  
+
 
 ### Chado
 
@@ -262,7 +262,7 @@ installation method for Perl modules
 (`perl Makefile.PL; make; sudo make install`). This checkout can be
 updated with "svn update" like the Tripal svn checkout.
 
-  
+
 
 ### GBrowse2
 
@@ -284,7 +284,7 @@ GBrowse at
 
        http://your-ip-address/cgi-bin/gb2/gbrowse/yeast
 
-  
+
 
 ### JBrowse
 
@@ -310,7 +310,7 @@ jbrowse_conf.json file as described in the [JBrowse configuration
 guide](JBrowse_Configuration_Guide#Dataset_Selector "JBrowse Configuration Guide").
 This file is at `/data/var/www/jbrowse/jbrowse_conf.json`.
 
-  
+
 
 ### WebApollo
 

@@ -26,10 +26,9 @@ A major aim of the new project is to provide stronger links and cross
 organism querying between the MODs involved and to make query APIs
 available to bioinformaticians.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/21*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

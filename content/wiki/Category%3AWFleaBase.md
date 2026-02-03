@@ -68,44 +68,44 @@ title="September 2003 GMOD Meeting">September 2003 GMOD Meeting</a></li>
 
 The following 2 files are in this category, out of 2 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4d/Daphnia-wfleabase2.png/120px-Daphnia-wfleabase2.png"
   width="120" height="120" alt="Daphnia-wfleabase2.png" />
 
-  
 
-  
 
-  
 
-  [Daphnia-wfleabase2.png](File:Daphnia-wfleabase2.png "File:Daphnia-wfleabase2.png")  
-  17 KB  
 
-  
 
-  
 
-- 
+  [Daphnia-wfleabase2.png](File:Daphnia-wfleabase2.png "File:Daphnia-wfleabase2.png")
+  17 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/15/WFleaBaseMainPageIcon.png" width="120"
   height="90" alt="WFleaBaseMainPageIcon.png" />
 
-  
 
-  
 
-  
 
-  [WFleaBaseMainPageIcon.png](File:WFleaBaseMainPageIcon.png "File:WFleaBaseMainPageIcon.png")  
+
+
+
+  [WFleaBaseMainPageIcon.png](File:WFleaBaseMainPageIcon.png "File:WFleaBaseMainPageIcon.png")
   24 KB

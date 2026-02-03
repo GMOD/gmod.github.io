@@ -9,7 +9,7 @@ but can be used just like any other
 <a href="https://www.semantic-mediawiki.org/wiki/Property"
 class="external text" rel="nofollow">user-defined property</a>.
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Has type"
@@ -202,4 +202,4 @@ class="smwbrowse"></span></td>
 </table>
 
 Retrieved from
-"[http://gmod.org/wiki/Property%253AHas_type#SMWResults](/wiki/Property%253AHas_type#SMWResults)"
+"http://gmod.org/wiki/Property%253AHas_type#SMWResults"

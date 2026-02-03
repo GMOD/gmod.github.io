@@ -43,10 +43,9 @@ class="external text" rel="nofollow">schema mailing list</a>,
 
 [Scott Cain](../User%253AScott "User%253AScott")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/06*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

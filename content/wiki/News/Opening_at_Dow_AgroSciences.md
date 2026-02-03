@@ -35,10 +35,9 @@ Interested candidates please send a resume to Mindi Dippold at
 <a href="mailto:mdippold@dow.com" class="external text"
 rel="nofollow">mdippold@dow.com</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/03*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

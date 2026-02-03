@@ -30,70 +30,70 @@ The following 4 pages are in this category, out of 4 total.
 
 The following 3 files are in this category, out of 3 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="PubFetch Vijay.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [PubFetch
-  Vijay.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f8/PubFetch_Vijay.ppt "File:PubFetch Vijay.ppt")  
-  1.27 MB  
+  Vijay.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f8/PubFetch_Vijay.ppt "File:PubFetch Vijay.ppt")
+  1.27 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="PubSearch 09062003.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [PubSearch
-  09062003.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/PubSearch_09062003.ppt "File:PubSearch 09062003.ppt")  
-  2.09 MB  
+  09062003.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/PubSearch_09062003.ppt "File:PubSearch 09062003.ppt")
+  2.09 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="PubSearch update CSHL.ppt" />
 
-  
 
-  
 
-  
+
+
+
 
   [PubSearch update
-  CSHL.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8c/PubSearch_update_CSHL.ppt "File:PubSearch update CSHL.ppt")  
+  CSHL.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8c/PubSearch_update_CSHL.ppt "File:PubSearch update CSHL.ppt")
   94 KB

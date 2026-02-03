@@ -14,7 +14,7 @@ today, so if you would like to register at the lower rate, please head
 over to <a href="http://gmod2013.eventbrite.com" class="external text"
 rel="nofollow">Eventbrite</a> ASAP!
 
-  
+
 The meeting agenda is shaping up nicely, with some interesting guest
 speakers including Dr. Jane Lomax from the
 <a href="http://geneontology.org" class="external text"
@@ -27,13 +27,13 @@ Drupal at the <a href="http://www.ebi.ac.uk" class="external text"
 rel="nofollow">European Bioinformatics Institute</a>, as well as updates
 on GMOD components like Galaxy, JBrowse, and Tripal.
 
-  
+
 If you would like to give a lightning talk or a longer presentation,
 please email the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 help desk</a> and let us know!
 
-  
+
 We are assessing demand for remote attendance, so if you want to join in
 from the comfort of your own office (or home, car, etc.), please add
 your name to the [Remote
@@ -42,6 +42,6 @@ list or email
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 help desk</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/21*

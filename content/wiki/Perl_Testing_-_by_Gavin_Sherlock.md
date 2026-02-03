@@ -64,8 +64,8 @@ The easiest way to create and use a test suite is to take advantage of
 Perl's inbuilt mechanisms and modules. If your code comes with a
 Makefile, and is installed using the typical:
 
-    perl Makefile.PL 
-    make 
+    perl Makefile.PL
+    make
     make install
 
 You need to insert a `make test` step between `make` and `make install`.
@@ -126,26 +126,26 @@ as:
 ``` de1
 #!/usr/bin/perl -w
 use Test::Simple tests => 2;
- 
-use Mylib qw (function1); 
-ok (function1() >= 1); 
+
+use Mylib qw (function1);
+ok (function1() >= 1);
 ok (function1() <= 100);
 ```
 
 when you run this, you should get something like:
 
-    1..2 
+    1..2
     ok 1
     ok 2
 
 If for some reason you introduce a bug, and function1() now starts
 producing values greater than 100, you might get:
 
-    1..2 
-    ok 1 
+    1..2
+    ok 1
     not ok 2
 
-    Failed test (test.t at line 9) 
+    Failed test (test.t at line 9)
     Looks like you failed 1 tests of 2.
 
 It's now pretty easy to track down your regression. At some point, you
@@ -154,17 +154,17 @@ some useful descriptive text for them too:
 
 ``` de1
 #!/usr/bin/perl -w
-use Test::Simple tests => 2; 
-use Mylib qw (function1); 
- 
+use Test::Simple tests => 2;
+use Mylib qw (function1);
+
 ok (function1() >= 1, "function1()'s return value is greater than or equal to 1");
 ok (function1() >= 100, "and it's less than or equal to 100");
 ```
 
 which will now give:
 
-    1..2 
-    ok 1 - function1()'s return value is greater than or equal to 1 
+    1..2
+    ok 1 - function1()'s return value is greater than or equal to 1
     ok 2 - and it's less than or equal to 100
 
 which makes it even easier for you to maintain your test-suite.
@@ -184,14 +184,14 @@ checks for pod coverage in your distribution, and is trivial to use.
 Just create a .t file with the following content:
 
 ``` de1
-use Test::More; 
-eval "use Test::Pod::Coverage 1.00"; 
+use Test::More;
+eval "use Test::Pod::Coverage 1.00";
 plan skip_all => "This is not an error, Test::Pod::Coverage 1.00 required for testing POD coverage" if $@;
- 
-my @modules = Test::Pod::Coverage::all_modules(); 
-plan tests => scalar(@modules); 
-for my $module (@modules) { 
- pod_coverage_ok($module); 
+
+my @modules = Test::Pod::Coverage::all_modules();
+plan tests => scalar(@modules);
+for my $module (@modules) {
+ pod_coverage_ok($module);
 }
 ```
 
@@ -202,9 +202,9 @@ rel="nofollow">http://search.cpan.org/dist/Test-Pod/</a>), which again
 can be easily used, with a .t file containing:
 
 ``` de1
-use Test::More; 
-eval "use Test::Pod 1.00"; 
-plan skip_all => "This is not an error, Test::Pod 1.00 is required for testing POD" if $@; 
+use Test::More;
+eval "use Test::Pod 1.00";
+plan skip_all => "This is not an error, Test::Pod 1.00 is required for testing POD" if $@;
 all_pod_files_ok();
 ```
 
@@ -224,8 +224,8 @@ rel="nofollow">http://search.cpan.org/dist/Devel-Cover/</a>) provides
 code coverage metrics for Perl, and can be used in conjunction with a
 test-suite, like:
 
-    cover -delete 
-    HARNESS_PERL_SWITCHES=-MDevel::Cover make test 
+    cover -delete
+    HARNESS_PERL_SWITCHES=-MDevel::Cover make test
     cover
 
 You can see the author's coverage analysis of a large number of modules

@@ -142,7 +142,7 @@ about netinstaller.
 
 # Installing GBrowse with Source File
 
-Download GBrowse Source from  
+Download GBrowse Source from
      http://prdownloads.sourceforge.net/gmod
 
 You should be uncompressed and unpacked the source files.

@@ -30,10 +30,9 @@ the next releases.
 
 The InterMine team.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/23*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -6,7 +6,7 @@ title: "Property:Interaction type"
 This is a property of type
 .
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Interaction type"

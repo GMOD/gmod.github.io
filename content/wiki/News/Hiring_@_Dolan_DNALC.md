@@ -34,10 +34,9 @@ For more information, go to the
 <a href="http://www.cshl.edu/hr/jobs.html" class="external text"
 rel="nofollow">CSHL jobs site</a> and search for Job ID 934.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/14*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

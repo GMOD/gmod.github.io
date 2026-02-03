@@ -40,7 +40,7 @@ title="Property:Interacts with">Interacts with</a></td>
 <td class="smwprops"><a href="GBrowse.1" title="GBrowse">GBrowse</a>
 ,
 <a href="CMap.1" title="CMap">CMap</a> , <a
-href="Galaxy.1" title="Galaxy">Galaxy</a> 
+href="Galaxy.1" title="Galaxy">Galaxy</a>
 and <a href="Chado" class="mw-redirect" title="Chado">Chado</a> </td>
 </tr>
 <tr class="odd row-odd">
@@ -59,14 +59,14 @@ href="Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
 <td class="smwprops">Database (Chado) web front ends ,
-Database tools 
+Database tools
 and Development Platform (has API) </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
 <td class="smwprops">PHP ,
-Javascript 
+Javascript
 and HTML </td>
 </tr>
 <tr class="odd row-odd">
@@ -86,7 +86,7 @@ title="Tripal">Tripal</a> ,
 <a href="Tripal.1#_8904ca0c9942fceca83d1637dceaa4e9"
 title="Tripal">Tripal</a> ,
 <a href="Tripal.1#_780a3bd63980716b96e285070f997e2a"
-title="Tripal">Tripal</a> 
+title="Tripal">Tripal</a>
 and <a href="Tripal.1#_c5e2b05d4750eb0951eb1ad5fced6761"
 title="Tripal">Tripal</a> </td>
 </tr>

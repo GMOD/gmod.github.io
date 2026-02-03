@@ -19,7 +19,7 @@ You only have to know how to retrieve it from a DAS server.
 See the <a href="http://www.biodas.org/" class="external text"
 rel="nofollow">BioDas web site</a> for a full explanation of DAS
 
-  
+
 
   DAS/2</span>](#DAS.2F1_and_DAS.2F2)
   - [Preserving
@@ -51,7 +51,7 @@ weaknesses.
 - [IGB](IGB "IGB") - reference client for DAS2. Integrated Genome
   Browser
 
-  
+
 
 ## DAS in GMOD
 

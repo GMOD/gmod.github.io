@@ -16,7 +16,7 @@ The starting image for this tutorial is **2013 GMOD start day 4
 - If you are not using the Amazon EC2 instance, the system paths may
   vary from those described below.
 
- 
+
 
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
 [GBrowse](GBrowse.1 "GBrowse")-based

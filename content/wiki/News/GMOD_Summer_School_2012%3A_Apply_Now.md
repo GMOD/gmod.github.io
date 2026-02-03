@@ -30,7 +30,7 @@ These components will be covered at the school:
 - [MAKER](../MAKER.1 "MAKER") - genome annotation pipeline
 - [Tripal](../Tripal.1 "Tripal") - web front end to Chado databases
 
-  
+
 **The deadline for applying is the end of July 9, 2012. Admission is
 competitive and is based on the strength of the application, especially
 the statement of interest.** The [2011
@@ -45,12 +45,11 @@ day). There will be a limited number of scholarships available.
 
 Thanks,
 
-[Scott Cain](../User%253AScott "User%253AScott")  
+[Scott Cain](../User%253AScott "User%253AScott")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/6/14*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

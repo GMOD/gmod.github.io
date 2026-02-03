@@ -8,7 +8,7 @@ height="35" alt="GMOD Calendar" />](../Calendar "GMOD Calendar")
 
 November has a number of deadlines and meetings:
 
-Deadlines  
+Deadlines
 
 - **[PAG 2011](../PAG_2011 "PAG 2011") abstract deadline for posters and
   demos - November 1**
@@ -35,19 +35,18 @@ Conferences, Meetings, and Courses
 - BioInfoSummer 2010
 - NETTAB Workshop on Bio-wikis
 
-  
+
 If you know of any upcoming events that are not on the calendar, please
 send them to me.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/22*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

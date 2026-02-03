@@ -10,7 +10,7 @@ Diego](../Jan_2014_GMOD_Meeting "Jan 2014 GMOD Meeting"), GMOD Paper
 Cuts is back with a selection of scholarly publications for your reading
 pleasure.
 
-  
+
 
 **GMOD Paper Cuts is a periodic selection of choice cuts from the
 scientific literature featuring interesting, exciting, or otherwise
@@ -27,7 +27,7 @@ GMOD-related publications,
 <a href="http://mnd.ly/WwRe8F" class="external text" rel="nofollow">join
 our Mendeley group</a>.
 
-  
+
 **CoryneBase: *Corynebacterium* Genomic Resources and Analysis Tools at
 Your Fingertips**
 <sup>[\[1\]](#cite_note-DOI:10.1371.2Fjournal.pone.0086318-1)</sup>
@@ -60,7 +60,7 @@ user-friendly genome browser that allows rapid and seamless browsing of
 the huge genomic data will be a major advantage to the research
 communities.*
 
-  
+
 
 **The Genome Sequence of the Fungal Pathogen *Fusarium virguliforme*
 That Causes Sudden Death Syndrome in Soybean**
@@ -80,7 +80,7 @@ genome sequence can be
 <a href="http://fvgbrowse.agron.iastate.edu/" class="external text"
 rel="nofollow">browsed online using GBrowse</a>.
 
-  
+
 
 <a href="http://arxiv.org/abs/1401.2286" class="external text"
 rel="nofollow"><strong>Palaeosymbiosis revealed by genomic fossils of
@@ -111,7 +111,7 @@ A fascinating study that uses genetic techniques to dig into the history
 of a host-parasite relationship. The D. viviparus genome was annotated
 using the [MAKER](../MAKER.1 "MAKER") pipeline.
 
-  
+
 **Genome of the human hookworm *Necator americanus***
 <sup>[\[3\]](#cite_note-DOI:10.1038.2Fng.2875-3)</sup>
 
@@ -142,10 +142,10 @@ rel="nofollow">Nematode.net</a> and
 <a href="http://wormbase.org" class="external text"
 rel="nofollow">Wormbase</a>.
 
-  
+
 Happy reading!
 
-  
+
 
 1.  <span id="cite_note-DOI:10.1371.2Fjournal.pone.0086318"><span class="mw-cite-backlink">[↑](#cite_ref-DOI:10.1371.2Fjournal.pone.0086318_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
@@ -162,6 +162,6 @@ entertainment and edification only. Inclusion does not imply an
 endorsement of the material or any association between the authors and
 the GMOD project.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/01/24*

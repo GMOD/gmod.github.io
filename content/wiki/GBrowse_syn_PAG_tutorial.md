@@ -3,7 +3,7 @@ title: "GBrowse syn PAG tutorial"
 ---
 # GBrowse syn PAG tutorial
 
-  
+
 
 This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
 through how to install and configure the
@@ -17,7 +17,7 @@ Schools](GMOD_Schools "GMOD Schools") -
 The notes and [VMware image](#VMware) used on this page are from the
 Europe course.
 
-  
+
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -68,7 +68,7 @@ Europe course.
 - [Optional
   Advanced Section](#Optional_Advanced_Section)
 
-  
+
 
 # VMware
 

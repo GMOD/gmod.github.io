@@ -35,10 +35,9 @@ and in <a
 href="http://ergatis.sourceforge.net/documentation/install_guide.html"
 class="external text" rel="nofollow">web form</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/01/27*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

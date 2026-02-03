@@ -19,13 +19,12 @@ and requirements, and a link to an application form.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/03*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

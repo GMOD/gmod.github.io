@@ -11,7 +11,7 @@ to implement and/or improve GMOD interfaces for
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
 databases.
 
-  
+
 
 1st Position: IRISA
 
@@ -49,7 +49,7 @@ The job should start on the first of September 2008
 <a href="mailto:fabrice.legeai@rennes.inra.fr" class="external text"
 rel="nofollow">fabrice.legeai@rennes.inra.fr</a>
 
-  
+
 
 2nd Position: INRA-URGI
 
@@ -93,7 +93,7 @@ Answers expected before September the 5th. The job should start on the
 
 *update october 2008: position for the first year now assigned.*
 
-  
+
 Stéphanie Sidibe-Bocs, the PI of GnpAnnot, will be at BOSC and ISMB this
 week and is available to discuss the project and these openings. You can
 e-mail Stéphanie at
@@ -101,10 +101,9 @@ e-mail Stéphanie at
 rel="nofollow">stephanie.sidibe-bocs@cirad.fr</a>, or just introduce
 yourself when you see her.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/17*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

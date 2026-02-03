@@ -10,7 +10,6 @@ using JBrowse VERSION
 
 This tutorial uses the AWS AMI **ID** named **NAME** in the AWS REGION.
 
-:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [InterMine](../Category%253AInterMine "Category%253AInterMine")

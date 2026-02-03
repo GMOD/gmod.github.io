@@ -48,10 +48,9 @@ See also here:
 <a href="http://bytesizebio.net/index.php/2012/03/27/you-want-this-job/"
 class="external autonumber" rel="nofollow">[1]</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/03/27*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

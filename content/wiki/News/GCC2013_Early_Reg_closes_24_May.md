@@ -48,6 +48,6 @@ class="external text" rel="nofollow">GCC2013 Organizing Committee</a>
 PS: And <a href="http://wiki.galaxyproject.org/Events/GCC2013/Promotion"
 class="external text" rel="nofollow">please help get the word out!</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/05/20*

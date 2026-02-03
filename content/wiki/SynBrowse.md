@@ -7,13 +7,13 @@ title: "SynBrowse"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/SynBrowse_logo.png" width="460"
 height="104" alt="SynBrowse logo.png" />
 
-  
+
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
-  
+
 
   Status](#Status)
 - [Demo](#Demo)

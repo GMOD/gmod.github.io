@@ -372,7 +372,7 @@ tracked by Galaxy, and the `files` directory which contains the raw
 datasets. First let's look at the database using the SQLite command line
 interface:
 
-    gmod@ubuntu:~/work/galaxy-dist$ sqlite3 database/universe.sqlite 
+    gmod@ubuntu:~/work/galaxy-dist$ sqlite3 database/universe.sqlite
     SQLite version 3.6.16
     Enter ".help" for instructions
     Enter SQL statements terminated with a ";"
@@ -438,7 +438,7 @@ which tools are loaded by a given instance:
    <section name="Get Data" id="getext">
      <tool file="data_source/upload.xml"/>
      <tool file="data_source/ucsc_tablebrowser.xml" />
-     <tool file="data_source/ucsc_tablebrowser_test.xml" /> 
+     <tool file="data_source/ucsc_tablebrowser_test.xml" />
      <tool file="data_source/ucsc_tablebrowser_archaea.xml" />
      <tool file="data_source/bx_browser.xml" />
      <tool file="data_source/microbial_import.xml" />
@@ -479,7 +479,7 @@ Let's examine the **Get Flanks** tool by looking at the file
       <option value="Downstream">Downstream</option>
       <option value="Both">Both</option>
     </param>
-    <param name="offset" size="10" type="integer" value="0" label="Offset" 
+    <param name="offset" size="10" type="integer" value="0" label="Offset"
            help="Use positive values to offset co-ordinates in the direction of transcription and negative values to offset in the opposite direction."/>
     <param name="size" size="10" type="integer" value="50" label="Length of the flanking region(s)" help="Use non-negative value for length"/>
   </inputs>
@@ -489,7 +489,7 @@ Let's examine the **Get Flanks** tool by looking at the file
   <tests>
     ...
   </tests>
- <help> 
+ <help>
 ...
 </help>
  </tool>
@@ -514,7 +514,7 @@ find each type's metadata elements, search for `MetadataElement`:
 class Interval( Tabular ):
     """Tab delimited data containing interval information"""
     file_ext = "interval"
- 
+
     """Add metadata elements"""
     MetadataElement( name="chromCol", default=1, desc="Chrom column", param=metadata.ColumnParameter )
     MetadataElement( name="startCol", default=2, desc="Start column", param=metadata.ColumnParameter )
@@ -722,15 +722,15 @@ create `tools/gmod_2011/sam_filter.py` containing:
 
 ``` de1
 #!/usr/bin/env python
- 
+
 """
 Usage: sam_filter.py input_file output_file flag value
 """
- 
+
 import sys
- 
+
 out = open( sys.argv[2], "w" )
- 
+
 for line in open( sys.argv[1] ):
     # Strip end of line and split on tabs
     fields = line.rstrip( "\r\n" ).split( "\t" )
@@ -741,7 +741,7 @@ for line in open( sys.argv[1] ):
         if flag == sys.argv[3] and value == sys.argv[4]:
             write_line = True
     # If any optional field matched, keep the read
-    if write_line:        
+    if write_line:
         out.write( line )
 ```
 
@@ -753,13 +753,13 @@ Next, we need to create the tool configuration. Edit the file
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
     <command interpreter="python">
- 
+
     </command>
     <inputs>
- 
+
     </inputs>
     <outputs>
- 
+
     </outputs>
 </tool>
 ```
@@ -770,10 +770,10 @@ First, let's define the output. This tool has a single output, of type
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
     <command interpreter="python">
- 
+
     </command>
     <inputs>
- 
+
     </inputs>
     <outputs>
         <data name="output1" format="sam" />
@@ -794,7 +794,7 @@ The resulting configuration:
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
     <command interpreter="python">
- 
+
     </command>
     <inputs>
         <param type="data" format="sam" name="input1" label="File to filter"/>
@@ -1043,7 +1043,7 @@ height="683" alt="Galaxy Fetch 3.png" />
 Terminate Galaxy with `Control-C`. Edit `universe_wsgi.ini` again and in
 the section `[app:main]` add two lines:
 
-    # enable_tracks = True 
+    # enable_tracks = True
     enable_pages = True
 
 Restart Galaxy with `run.sh`

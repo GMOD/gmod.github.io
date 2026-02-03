@@ -175,275 +175,275 @@ title="Web-apollo-meeting-2011-3-21">Web-apollo-meeting-2011-3-21</a></li>
 
 The following 12 files are in this category, out of 12 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e2/Basepair-options.png/120px-Basepair-options.png"
   width="120" height="41" alt="Basepair-options.png" />
 
-  
 
-  
 
-  
 
-  [Basepair-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/Basepair-options.png "File:Basepair-options.png")  
-  32 KB  
 
-  
 
-  
 
-- 
+  [Basepair-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/Basepair-options.png "File:Basepair-options.png")
+  32 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/cd/Flatfile-options.png/120px-Flatfile-options.png"
   width="120" height="77" alt="Flatfile-options.png" />
 
-  
 
-  
 
-  
 
-  [Flatfile-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/Flatfile-options.png "File:Flatfile-options.png")  
-  60 KB  
 
-  
 
-  
 
-- 
+  [Flatfile-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/Flatfile-options.png "File:Flatfile-options.png")
+  60 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="HelpDeskSept2010.pdf" />
 
-  
 
-  
 
-  
 
-  [HelpDeskSept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf "File:HelpDeskSept2010.pdf")  
-  10.54 MB  
 
-  
 
-  
 
-- 
+  [HelpDeskSept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf "File:HelpDeskSept2010.pdf")
+  10.54 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Aug2009JBrowse.pdf" />
 
-  
 
-  
 
-  
 
-  [Aug2009JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/Aug2009JBrowse.pdf "File:Aug2009JBrowse.pdf")  
-  823 KB  
 
-  
 
-  
 
-- 
+  [Aug2009JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/Aug2009JBrowse.pdf "File:Aug2009JBrowse.pdf")
+  823 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GBrowse3GMOD2008.pdf" />
 
-  
 
-  
 
-  
 
-  [GBrowse3GMOD2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/GBrowse3GMOD2008.pdf "File:GBrowse3GMOD2008.pdf")  
-  194 KB  
 
-  
 
-  
 
-- 
+  [GBrowse3GMOD2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/GBrowse3GMOD2008.pdf "File:GBrowse3GMOD2008.pdf")
+  194 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMODCourse2010-JBrowseIntro.pdf" />
 
-  
 
-  
 
-  
 
-  [GMODCourse2010-JBrowse...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/GMODCourse2010-JBrowseIntro.pdf "File:GMODCourse2010-JBrowseIntro.pdf")  
-  507 KB  
 
-  
 
-  
 
-- 
+  [GMODCourse2010-JBrowse...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/GMODCourse2010-JBrowseIntro.pdf "File:GMODCourse2010-JBrowseIntro.pdf")
+  507 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Jan2009JBrowse.pdf" />
 
-  
 
-  
 
-  
 
-  [Jan2009JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/ca/Jan2009JBrowse.pdf "File:Jan2009JBrowse.pdf")  
-  354 KB  
 
-  
 
-  
 
-- 
+  [Jan2009JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/ca/Jan2009JBrowse.pdf "File:Jan2009JBrowse.pdf")
+  354 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d0/Jbrowse_arch.png/93px-Jbrowse_arch.png"
   width="93" height="120" alt="Jbrowse arch.png" />
 
-  
 
-  
 
-  
 
-  [Jbrowse arch.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d0/Jbrowse_arch.png "File:Jbrowse arch.png")  
-  99 KB  
 
-  
 
-  
 
-- 
+  [Jbrowse arch.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d0/Jbrowse_arch.png "File:Jbrowse arch.png")
+  99 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="PAG2010JBrowse.pdf" />
 
-  
 
-  
 
-  
 
-  [PAG2010JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/PAG2010JBrowse.pdf "File:PAG2010JBrowse.pdf")  
-  270 KB  
 
-  
 
-  
 
-- 
+  [PAG2010JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/PAG2010JBrowse.pdf "File:PAG2010JBrowse.pdf")
+  270 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="JBrowse PAG 2017.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [JBrowse PAG
-  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf "File:JBrowse PAG 2017.pdf")  
-  2.4 MB  
+  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf "File:JBrowse PAG 2017.pdf")
+  2.4 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a9/JBrowseUI.png/120px-JBrowseUI.png"
   width="120" height="39" alt="JBrowseUI.png" />
 
-  
 
-  
 
-  
 
-  [JBrowseUI.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a9/JBrowseUI.png "File:JBrowseUI.png")  
-  41 KB  
 
-  
 
-  
 
-- 
+  [JBrowseUI.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a9/JBrowseUI.png "File:JBrowseUI.png")
+  41 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/26/Wiggle-options.png/120px-Wiggle-options.png"
   width="120" height="35" alt="Wiggle-options.png" />
 
-  
 
-  
 
-  
 
-  [Wiggle-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Wiggle-options.png "File:Wiggle-options.png")  
+
+
+
+  [Wiggle-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Wiggle-options.png "File:Wiggle-options.png")
   37 KB

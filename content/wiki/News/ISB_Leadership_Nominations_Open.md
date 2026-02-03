@@ -41,14 +41,13 @@ Thanks,
 
 [Dave Clements](../User%253AClements "User%253AClements")
 
-on behalf of the ISB Nominating Committee:  
+on behalf of the ISB Nominating Committee:
 Maria Costanzo, Dave Clements, Dawn Field, Mike Livstone, and Michele
 Magrane
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/08/26*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

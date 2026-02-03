@@ -73,7 +73,7 @@ Then you should be able to run the plugin!
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Select.png" class="thumbborder"
 width="389" height="112" alt="Select.png" />
 
-  
+
 
 ## MotifFinder Parameters
 
@@ -87,7 +87,7 @@ width="389" height="112" alt="Select.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/da/Parameter.png" width="428" height="289"
 alt="boarder" />
 
-  
+
 
 ## Position Frequency Matrices
 

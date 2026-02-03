@@ -162,21 +162,21 @@ Scott Cain</td>
 
 Terrace Room
 
-1:30 Jennifer Wortman (The Institute for Genomic Research)  
+1:30 Jennifer Wortman (The Institute for Genomic Research)
 1:50 Shannon Schlueter (Arabidopsis thaliana Plant Genome Database, Iowa
-State University)  
+State University)
 2:10 Aniko Sabo (Genome Sequencing Center, Washington University School
-of Medicine)  
-2:30 Break  
-2:50 Madeline Crosby (FlyBase, Harvard University)  
+of Medicine)
+2:30 Break
+2:50 Madeline Crosby (FlyBase, Harvard University)
 3:10 Kim Worley (Human Genome Sequencing Center, Baylor College of
-Medicine)  
-3:30 Astrid Terry (Joint Genome Institute)  
-3:50 Break4:10Chinnappa Kodira (Broad Institute)  
-4:30 Michele Clamp (Broad Institute)  
-4:50 Break  
-5:00 Group discussion  
-6:00 Dinner (on your own-see above)  
+Medicine)
+3:30 Astrid Terry (Joint Genome Institute)
+3:50 Break4:10Chinnappa Kodira (Broad Institute)
+4:30 Michele Clamp (Broad Institute)
+4:50 Break
+5:00 Group discussion
+6:00 Dinner (on your own-see above)
 
 ### April 27, Developer section
 

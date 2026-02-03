@@ -4,7 +4,7 @@ title: "Bioperl Pipeline"
 # Bioperl Pipeline
 
 > The item described in this page is not (or is no longer) supported by
-> the GMOD project.  
+> the GMOD project.
 > This page is included only for reference purposes.
 
 See <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
@@ -65,14 +65,14 @@ class="external text" rel="nofollow">Bioperl CVS</a>
 
     cvs -d :pserver:cvs@cvs.open-bio.org:/home/repository/bioperl co bioperl-pipeline
 
-  
+
 
 ## Mailing List
 
 <a href="http://bioperl.org/mailman/listinfo/bioperl-pipeline"
 class="external text" rel="nofollow">Mailing list</a>
 
-  
+
 
 ## Affiliated projects
 

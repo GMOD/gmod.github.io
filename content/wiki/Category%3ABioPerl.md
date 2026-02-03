@@ -62,69 +62,69 @@ title="Wiki linking style guide">Wiki linking style guide</a></li>
 
 The following 3 files are in this category, out of 3 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="04-Stajich NESCENT GMOD.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [04-Stajich NESCENT
-  GMO...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf "File:04-Stajich NESCENT GMOD.pdf")  
-  1.66 MB  
+  GMO...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf "File:04-Stajich NESCENT GMOD.pdf")
+  1.66 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5d/BioPerl_logo.jpg/90px-BioPerl_logo.jpg"
   width="90" height="120" alt="BioPerl logo.jpg" />
 
-  
 
-  
 
-  
 
-  [BioPerl logo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/BioPerl_logo.jpg "File:BioPerl logo.jpg")  
-  3 KB  
 
-  
 
-  
 
-- 
+  [BioPerl logo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/BioPerl_logo.jpg "File:BioPerl logo.jpg")
+  3 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Stajich GMOD 2006-06-30.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Stajich GMOD
-  2006-06-3...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Stajich_GMOD_2006-06-30.pdf "File:Stajich GMOD 2006-06-30.pdf")  
+  2006-06-3...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Stajich_GMOD_2006-06-30.pdf "File:Stajich GMOD 2006-06-30.pdf")
   2.36 MB

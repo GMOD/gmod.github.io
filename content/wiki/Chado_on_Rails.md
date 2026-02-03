@@ -63,15 +63,15 @@ The development trunk can be downloaded here:
 
 ## Features
 
-easy MVC development for bioinformatics web applications  
+easy MVC development for bioinformatics web applications
 sophisticated caching for improved performance of applications that use
-Chado db  
-out of the box support for standard Chado and Flybase  
+Chado db
+out of the box support for standard Chado and Flybase
 got a non-standard Chado schema? CoR can \[automatically create Rails
 objects and unit tests for your schema using magic chado, a component of
-CoR\].  
-thousands of free Ruby and RoR gems  
-great support from Ruby and RoR community  
+CoR\].
+thousands of free Ruby and RoR gems
+great support from Ruby and RoR community
 
 ## Installation
 

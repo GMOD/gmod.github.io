@@ -5,7 +5,7 @@ title: "Talk%253AGBrowse Configuration/DAS"
 
 Test transclusion
 
-  
+
 
 # Using DAS (Distributed Annotation System) Databases
 
@@ -48,9 +48,9 @@ this script as the basis for the tracks to configure.
 
 ``` de1
  #!/usr/bin/perl
- 
+
  use strict;
- 
+
  use Bio::Das;
  my $db = Bio::Das->new('http://localhost/cgi-bin/das'=>'dicty');
  print join "\n",$db->types;

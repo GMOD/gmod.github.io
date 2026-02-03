@@ -18,7 +18,7 @@ space. If you would like a copy of a presentation, please contact
 <a href="mailto:cain@cshl.edu" class="external text"
 rel="nofollow">Scott Cain</a>.
 
-  
+
 
 - [GBrowse](GBrowse.1 "GBrowse") update
 - [CMap](CMap.1 "CMap") update

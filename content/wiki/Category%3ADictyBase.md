@@ -36,90 +36,90 @@ The following 4 pages are in this category, out of 4 total.
 
 The following 4 files are in this category, out of 4 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="DictyBase-phenotypes.pdf" />
 
-  
 
-  
 
-  
 
-  [DictyBase-phenotypes.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/DictyBase-phenotypes.pdf "File:DictyBase-phenotypes.pdf")  
-  1.01 MB  
 
-  
 
-  
 
-- 
+  [DictyBase-phenotypes.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/DictyBase-phenotypes.pdf "File:DictyBase-phenotypes.pdf")
+  1.01 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/DictyLogo.png/120px-DictyLogo.png"
   width="120" height="70" alt="DictyLogo.png" />
 
-  
 
-  
 
-  
 
-  [DictyLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/69/DictyLogo.png "File:DictyLogo.png")  
-  12 KB  
 
-  
 
-  
 
-- 
+  [DictyLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/69/DictyLogo.png "File:DictyLogo.png")
+  12 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/DictyMainPageLogo.png" width="120"
   height="77" alt="DictyMainPageLogo.png" />
 
-  
 
-  
 
-  
 
-  [DictyMainPageLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/DictyMainPageLogo.png "File:DictyMainPageLogo.png")  
-  22 KB  
 
-  
 
-  
 
-- 
+  [DictyMainPageLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/DictyMainPageLogo.png "File:DictyMainPageLogo.png")
+  22 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Just-050516.ppt" />
 
-  
 
-  
 
-  
 
-  [Just-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Just-050516.ppt "File:Just-050516.ppt")  
+
+
+
+  [Just-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Just-050516.ppt "File:Just-050516.ppt")
   218 KB

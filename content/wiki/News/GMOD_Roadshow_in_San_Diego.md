@@ -32,13 +32,12 @@ rel="nofollow">Mitch</a> and
 <a href="mailto:scott@scottcain.net" class="external text"
 rel="nofollow">Scott</a> directly.
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [Galaxy Project](../Galaxy.1 "Galaxy")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/01/05*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

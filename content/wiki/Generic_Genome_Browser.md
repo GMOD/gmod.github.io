@@ -62,7 +62,7 @@ class="external free"
 rel="nofollow">http://www.wormbase.org/tools/genome/gbrowse/c_elegans/</a>
 ,
 <a href="http://flybase.org/cgi-bin/gbrowse/dmel" class="external free"
-rel="nofollow">http://flybase.org/cgi-bin/gbrowse/dmel</a> 
+rel="nofollow">http://flybase.org/cgi-bin/gbrowse/dmel</a>
 and <a href="http://hapmap.ncbi.nlm.nih.gov/cgi-perl/gbrowse/gbrowse"
 class="external free"
 rel="nofollow">http://hapmap.ncbi.nlm.nih.gov/cgi-perl/gbrowse/gbrowse</a>
@@ -122,7 +122,7 @@ title="Property:Has development status">Has development status</a></td>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_input_format"
 title="Property:Has input format">Has input format</a></td>
-<td class="smwprops">GFF3 
+<td class="smwprops">GFF3
 and GFF2 </td>
 </tr>
 <tr class="odd row-odd">

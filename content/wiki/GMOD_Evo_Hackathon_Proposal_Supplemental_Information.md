@@ -3,7 +3,7 @@ title: "GMOD Evo Hackathon Proposal Supplemental Information"
 ---
 # GMOD Evo Hackathon Proposal Supplemental Information
 
-  
+
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
@@ -31,7 +31,7 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span></td>
 </tbody>
 </table>
 
-  
+
 On this page you will find additional information related to the [GMOD
 Evo Hackathon
 Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal").
@@ -102,7 +102,7 @@ currently support phylogenies, phenotypes, expression, or natural
 diversity data. We could extend it to evolutionary data types as part of
 the hackathon.
 
-  
+
 
 #### Support for pangenomes and core genomes
 
@@ -226,7 +226,7 @@ regulatory networks and their architecture, and phenotypes. This
 objective, with the exception of gene regulatory networks, overlaps with
 several others.
 
-  
+
 
 ### Tree / Graph Visualization
 

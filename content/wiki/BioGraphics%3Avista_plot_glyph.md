@@ -15,7 +15,7 @@ The "vista_plot" glyph
 
 The **vista_plot** glyph.
 
-  
+
 
 ------------------------------------------------------------------------
 
@@ -42,8 +42,8 @@ See the Bio::Graphics::Glyph::vista_plot manual page for full details.
 To experiment with this glyph's options, use the glyph_help.pl script
 with either the -v or -p switch. Run "glyph_help -help" for details.
 
-  
-  
+
+
 
 ------------------------------------------------------------------------
 

@@ -77,67 +77,67 @@ title="Java Testing - by Jon Slenk">Java Testing - by Jon Slenk</a></li>
 
 The following 3 files are in this category, out of 3 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Aug2009Gobol.pdf" />
 
-  
 
-  
 
-  
 
-  [Aug2009Gobol.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/Aug2009Gobol.pdf "File:Aug2009Gobol.pdf")  
-  292 KB  
 
-  
 
-  
 
-- 
+  [Aug2009Gobol.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/Aug2009Gobol.pdf "File:Aug2009Gobol.pdf")
+  292 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="HibernateChadoAPI.pdf" />
 
-  
 
-  
 
-  
 
-  [HibernateChadoAPI.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/HibernateChadoAPI.pdf "File:HibernateChadoAPI.pdf")  
-  92 KB  
 
-  
 
-  
 
-- 
+  [HibernateChadoAPI.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/HibernateChadoAPI.pdf "File:HibernateChadoAPI.pdf")
+  92 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="IBatis.pdf" />
 
-  
 
-  
 
-  
 
-  [IBatis.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/IBatis.pdf "File:IBatis.pdf")  
+
+
+
+  [IBatis.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/IBatis.pdf "File:IBatis.pdf")
   6.59 MB

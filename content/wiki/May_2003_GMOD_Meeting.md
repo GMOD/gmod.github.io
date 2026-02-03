@@ -13,7 +13,7 @@ The second GMOD working group meeting was held in Cold Spring Harbor
 Laboratory on May 6-7 preceding the Genome Informatics meeting. Below
 are the presentations given by the groups represented.
 
-  
+
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Apollo.GMOD.May2003.ppt"
   class="internal"

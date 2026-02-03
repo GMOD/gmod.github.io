@@ -338,7 +338,7 @@ please add it below.
   (
   to edit this section.)
 
-  
+
 
 <a
 href="http://www.bestwesterncalifornia.com/hotels/best-western-seven-seas/"
@@ -371,7 +371,7 @@ The *maybe* response was:
 
 very technical so only to the right audience
 
-  
+
 **Q: Please rate the meeting(s) using the following scale: 1 (not at
 all) to 3 (reasonably) to 5 (exceptionally).**
 
@@ -385,7 +385,7 @@ However, that person was absolutely positive on all other questions. So,
 it's *possible* they didn't pay attention to if 1 was good or if 5 was
 good.
 
-  
+
 **Q: Was the meeting what you expected?**
 
 | No. | Yes. | Other |
@@ -405,7 +405,7 @@ Longer responses:
   NoSQL and ontologies.
 - More than I expected.
 
-  
+
 **Q: Which [presentations and sessions](#Presentations) at this meeting
 were the most useful or interesting?**
 
@@ -468,7 +468,7 @@ were the most useful or interesting?**
   session was also a great idea.
 - TableEdit by Daniel Renfro, Jim Hu, Tripal by Stephen Ficklin
 
-  
+
 **Q: Do you have suggestions for improving GMOD meetings in the
 future?**
 
@@ -505,7 +505,7 @@ future?**
   short) time limit.
 - If possible, to have the complete presentation agenda earlier.
 
-  
+
 **Additional feedback, suggestions, criticism, and praise.**
 
 - Interoperability needs to be emphasized for some of the sets of

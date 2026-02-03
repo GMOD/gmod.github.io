@@ -17,10 +17,9 @@ See the <a href="http://www.intl-pag.org/16/16-gbrowse.html"
 class="external text" rel="nofollow">PAG tutorial page</a> for
 additional information.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/12/27*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

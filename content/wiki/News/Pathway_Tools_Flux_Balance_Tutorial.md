@@ -32,10 +32,9 @@ Tomer Altman
 
 Pathway Tools Training Coordinator
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/05/04*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

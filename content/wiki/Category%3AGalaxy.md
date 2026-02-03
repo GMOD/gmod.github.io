@@ -114,689 +114,689 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 
 The following 35 files are in this category, out of 35 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="2011 10 Galaxy.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [2011 10
-  Galaxy.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf "File:2011 10 Galaxy.pdf")  
-  9.33 MB  
+  Galaxy.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf "File:2011 10 Galaxy.pdf")
+  9.33 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="April2012 CommunityBuilding.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [April2012
-  CommunityBui...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/79/April2012_CommunityBuilding.pdf "File:April2012 CommunityBuilding.pdf")  
-  3.06 MB  
+  CommunityBui...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/79/April2012_CommunityBuilding.pdf "File:April2012 CommunityBuilding.pdf")
+  3.06 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120"
   alt="April2012GalaxyCloudManWorkshop.pdf" />
 
-  
 
-  
 
-  
 
-  [April2012GalaxyCloudMa...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/April2012GalaxyCloudManWorkshop.pdf "File:April2012GalaxyCloudManWorkshop.pdf")  
-  1.05 MB  
 
-  
 
-  
 
-- 
+  [April2012GalaxyCloudMa...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/April2012GalaxyCloudManWorkshop.pdf "File:April2012GalaxyCloudManWorkshop.pdf")
+  1.05 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="April2012GalaxyUpdate.pdf" />
 
-  
 
-  
 
-  
 
-  [April2012GalaxyUpdate.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/April2012GalaxyUpdate.pdf "File:April2012GalaxyUpdate.pdf")  
-  2.23 MB  
 
-  
 
-  
 
-- 
+  [April2012GalaxyUpdate.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/April2012GalaxyUpdate.pdf "File:April2012GalaxyUpdate.pdf")
+  2.23 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Dave Clements 2014.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Dave Clements
-  2014.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d2/Dave_Clements_2014.pdf "File:Dave Clements 2014.pdf")  
-  2.61 MB  
+  2014.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d2/Dave_Clements_2014.pdf "File:Dave Clements 2014.pdf")
+  2.61 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="DeployingGalaxyCloudBOSC2010.pdf" />
 
-  
 
-  
 
-  
 
-  [DeployingGalaxyCloudBO...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/DeployingGalaxyCloudBOSC2010.pdf "File:DeployingGalaxyCloudBOSC2010.pdf")  
-  6.05 MB  
 
-  
 
-  
 
-- 
+  [DeployingGalaxyCloudBO...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/DeployingGalaxyCloudBOSC2010.pdf "File:DeployingGalaxyCloudBOSC2010.pdf")
+  6.05 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a6/GalaxyIsHiringWordCloud.png/120px-GalaxyIsHiringWordCloud.png"
   width="120" height="80" alt="GalaxyIsHiringWordCloud.png" />
 
-  
 
-  
 
-  
 
-  [GalaxyIsHiringWordClou...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a6/GalaxyIsHiringWordCloud.png "File:GalaxyIsHiringWordCloud.png")  
-  44 KB  
 
-  
 
-  
 
-- 
+  [GalaxyIsHiringWordClou...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a6/GalaxyIsHiringWordCloud.png "File:GalaxyIsHiringWordCloud.png")
+  44 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GalaxyNGSISMB2010.pdf" />
 
-  
 
-  
 
-  
 
-  [GalaxyNGSISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/GalaxyNGSISMB2010.pdf "File:GalaxyNGSISMB2010.pdf")  
-  159 KB  
 
-  
 
-  
 
-- 
+  [GalaxyNGSISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/GalaxyNGSISMB2010.pdf "File:GalaxyNGSISMB2010.pdf")
+  159 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GalaxyWorkshop0 2011 10.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GalaxyWorkshop0 2011
-  1...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GalaxyWorkshop0_2011_10.pdf "File:GalaxyWorkshop0 2011 10.pdf")  
-  7.51 MB  
+  1...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GalaxyWorkshop0_2011_10.pdf "File:GalaxyWorkshop0 2011 10.pdf")
+  7.51 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GalaxyWorkshop1 2011 10.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GalaxyWorkshop1 2011
-  1...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/GalaxyWorkshop1_2011_10.pdf "File:GalaxyWorkshop1 2011 10.pdf")  
-  4.33 MB  
+  1...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/GalaxyWorkshop1_2011_10.pdf "File:GalaxyWorkshop1 2011 10.pdf")
+  4.33 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GalaxyWorkshop2 2011 10.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GalaxyWorkshop2 2011
-  1...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/GalaxyWorkshop2_2011_10.pdf "File:GalaxyWorkshop2 2011 10.pdf")  
-  4.01 MB  
+  1...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/GalaxyWorkshop2_2011_10.pdf "File:GalaxyWorkshop2 2011 10.pdf")
+  4.01 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GalaxyWorkshop3 2011 10.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GalaxyWorkshop3 2011
-  1...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/GalaxyWorkshop3_2011_10.pdf "File:GalaxyWorkshop3 2011 10.pdf")  
-  51 KB  
+  1...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/GalaxyWorkshop3_2011_10.pdf "File:GalaxyWorkshop3 2011 10.pdf")
+  51 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/16/GAW2014Logo.png/120px-GAW2014Logo.png"
   width="120" height="58" alt="GAW2014Logo.png" />
 
-  
 
-  
 
-  
 
-  [GAW2014Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/GAW2014Logo.png "File:GAW2014Logo.png")  
-  167 KB  
 
-  
 
-  
 
-- 
+  [GAW2014Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/GAW2014Logo.png "File:GAW2014Logo.png")
+  167 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2e/GCC2012TrainingDayLogo.png/120px-GCC2012TrainingDayLogo.png"
   width="120" height="67" alt="GCC2012TrainingDayLogo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2012TrainingDayLogo...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GCC2012TrainingDayLogo.png "File:GCC2012TrainingDayLogo.png")  
-  16 KB  
 
-  
 
-  
 
-- 
+  [GCC2012TrainingDayLogo...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GCC2012TrainingDayLogo.png "File:GCC2012TrainingDayLogo.png")
+  16 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c3/GCC2013Logo.png/120px-GCC2013Logo.png"
   width="120" height="80" alt="GCC2013Logo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2013Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c3/GCC2013Logo.png "File:GCC2013Logo.png")  
-  207 KB  
 
-  
 
-  
 
-- 
+  [GCC2013Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c3/GCC2013Logo.png "File:GCC2013Logo.png")
+  207 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/db/GCC2013TrainingDayLogo.png/120px-GCC2013TrainingDayLogo.png"
   width="120" height="61" alt="GCC2013TrainingDayLogo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2013TrainingDayLogo...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/db/GCC2013TrainingDayLogo.png "File:GCC2013TrainingDayLogo.png")  
-  142 KB  
 
-  
 
-  
 
-- 
+  [GCC2013TrainingDayLogo...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/db/GCC2013TrainingDayLogo.png "File:GCC2013TrainingDayLogo.png")
+  142 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/GCC2014Logo.png/120px-GCC2014Logo.png"
   width="120" height="50" alt="GCC2014Logo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2014Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GCC2014Logo.png "File:GCC2014Logo.png")  
-  19 KB  
 
-  
 
-  
 
-- 
+  [GCC2014Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GCC2014Logo.png "File:GCC2014Logo.png")
+  19 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/43/GCC2014TDLogo.png/80px-GCC2014TDLogo.png"
   width="80" height="120" alt="GCC2014TDLogo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2014TDLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/GCC2014TDLogo.png "File:GCC2014TDLogo.png")  
-  47 KB  
 
-  
 
-  
 
-- 
+  [GCC2014TDLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/GCC2014TDLogo.png "File:GCC2014TDLogo.png")
+  47 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1c/GCC2016Logo.png/120px-GCC2016Logo.png"
   width="120" height="80" alt="GCC2016Logo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2016Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1c/GCC2016Logo.png "File:GCC2016Logo.png")  
-  19 KB  
 
-  
 
-  
 
-- 
+  [GCC2016Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1c/GCC2016Logo.png "File:GCC2016Logo.png")
+  19 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/ed/GCC2019Logo.png/120px-GCC2019Logo.png"
   width="120" height="55" alt="GCC2019Logo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2019Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/GCC2019Logo.png "File:GCC2019Logo.png")  
-  13 KB  
 
-  
 
-  
 
-- 
+  [GCC2019Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/GCC2019Logo.png "File:GCC2019Logo.png")
+  13 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMOD2013 CommunityBuilding.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GMOD2013
-  CommunityBuil...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b8/GMOD2013_CommunityBuilding.pdf "File:GMOD2013 CommunityBuilding.pdf")  
-  6.41 MB  
+  CommunityBuil...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b8/GMOD2013_CommunityBuilding.pdf "File:GMOD2013 CommunityBuilding.pdf")
+  6.41 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMOD2013 GalaxyUpdate.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GMOD2013
-  GalaxyUpdate.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/GMOD2013_GalaxyUpdate.pdf "File:GMOD2013 GalaxyUpdate.pdf")  
-  4.23 MB  
+  GalaxyUpdate.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/GMOD2013_GalaxyUpdate.pdf "File:GMOD2013 GalaxyUpdate.pdf")
+  4.23 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GMOD2016 Galaxy.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [GMOD2016
-  Galaxy.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GMOD2016_Galaxy.pdf "File:GMOD2016 Galaxy.pdf")  
-  1.61 MB  
+  Galaxy.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GMOD2016_Galaxy.pdf "File:GMOD2016 Galaxy.pdf")
+  1.61 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/120px-GalaxyLogoBigger.png"
   width="120" height="42" alt="GalaxyLogoBigger.png" />
 
-  
 
-  
 
-  
 
-  [GalaxyLogoBigger.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c7/GalaxyLogoBigger.png "File:GalaxyLogoBigger.png")  
-  56 KB  
 
-  
 
-  
 
-- 
+  [GalaxyLogoBigger.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c7/GalaxyLogoBigger.png "File:GalaxyLogoBigger.png")
+  56 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7d/GalaxyLogoBoxed.png/120px-GalaxyLogoBoxed.png"
   width="120" height="42" alt="GalaxyLogoBoxed.png" />
 
-  
 
-  
 
-  
 
-  [GalaxyLogoBoxed.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png "File:GalaxyLogoBoxed.png")  
-  43 KB  
 
-  
 
-  
 
-- 
+  [GalaxyLogoBoxed.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png "File:GalaxyLogoBoxed.png")
+  43 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/GalaxyLogoSmall.png" width="120"
   height="115" alt="GalaxyLogoSmall.png" />
 
-  
 
-  
 
-  
 
-  [GalaxyLogoSmall.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/GalaxyLogoSmall.png "File:GalaxyLogoSmall.png")  
-  961 B  
 
-  
 
-  
 
-- 
+  [GalaxyLogoSmall.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/GalaxyLogoSmall.png "File:GalaxyLogoSmall.png")
+  961 B
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a5/GCC2011Logo.png/120px-GCC2011Logo.png"
   width="120" height="62" alt="GCC2011Logo.png" />
 
-  
 
-  
 
-  
 
-  [GCC2011Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/GCC2011Logo.png "File:GCC2011Logo.png")  
-  797 KB  
 
-  
 
-  
 
-- 
+  [GCC2011Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/GCC2011Logo.png "File:GCC2011Logo.png")
+  797 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/65/GCC2011LogoShort.png/120px-GCC2011LogoShort.png"
   width="120" height="52" alt="GCC2011LogoShort.png" />
 
-  
 
-  
 
-  
 
-  [GCC2011LogoShort.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/GCC2011LogoShort.png "File:GCC2011LogoShort.png")  
-  544 KB  
 
-  
 
-  
 
-- 
+  [GCC2011LogoShort.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/GCC2011LogoShort.png "File:GCC2011LogoShort.png")
+  544 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="MalaysiaGalaxyTutorialSlides.pdf" />
 
-  
 
-  
 
-  
 
-  [MalaysiaGalaxyTutorial...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/MalaysiaGalaxyTutorialSlides.pdf "File:MalaysiaGalaxyTutorialSlides.pdf")  
-  5.1 MB  
 
-  
 
-  
 
-- 
+  [MalaysiaGalaxyTutorial...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/MalaysiaGalaxyTutorialSlides.pdf "File:MalaysiaGalaxyTutorialSlides.pdf")
+  5.1 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <a
   href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/Oqtans_Online_Quantitative_Transcriptome_AnalysisISMB2010.pdf"
@@ -805,131 +805,131 @@ The following 35 files are in this category, out of 35 total.
   width="120" height="120"
   alt="Oqtans Online Quantitative Transcriptome AnalysisISMB2010.pdf" /></a>
 
-  
 
-  
 
-  
+
+
+
 
   [Oqtans Online
-  Quantita...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/Oqtans_Online_Quantitative_Transcriptome_AnalysisISMB2010.pdf "File:Oqtans Online Quantitative Transcriptome AnalysisISMB2010.pdf")  
-  2.24 MB  
+  Quantita...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/Oqtans_Online_Quantitative_Transcriptome_AnalysisISMB2010.pdf "File:Oqtans Online Quantitative Transcriptome AnalysisISMB2010.pdf")
+  2.24 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Pag 2011 galaxy talk.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [Pag 2011 galaxy
-  talk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ad/Pag_2011_galaxy_talk.pdf "File:Pag 2011 galaxy talk.pdf")  
-  4.69 MB  
+  talk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ad/Pag_2011_galaxy_talk.pdf "File:Pag 2011 galaxy talk.pdf")
+  4.69 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120"
   alt="PAG 2011 poster Nathalie.Choisne.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [PAG 2011 poster
-  Nathal...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/89/PAG_2011_poster_Nathalie.Choisne.pdf "File:PAG 2011 poster Nathalie.Choisne.pdf")  
-  1.33 MB  
+  Nathal...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/89/PAG_2011_poster_Nathalie.Choisne.pdf "File:PAG 2011 poster Nathalie.Choisne.pdf")
+  1.33 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="PAG2012GalaxyIntroTalk.pdf" />
 
-  
 
-  
 
-  
 
-  [PAG2012GalaxyIntroTalk...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/51/PAG2012GalaxyIntroTalk.pdf "File:PAG2012GalaxyIntroTalk.pdf")  
-  3.48 MB  
 
-  
 
-  
 
-- 
+  [PAG2012GalaxyIntroTalk...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/51/PAG2012GalaxyIntroTalk.pdf "File:PAG2012GalaxyIntroTalk.pdf")
+  3.48 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="PAG2012MAPHiTSTalk.pdf" />
 
-  
 
-  
 
-  
 
-  [PAG2012MAPHiTSTalk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/PAG2012MAPHiTSTalk.pdf "File:PAG2012MAPHiTSTalk.pdf")  
-  8.13 MB  
 
-  
 
-  
 
-- 
+  [PAG2012MAPHiTSTalk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/PAG2012MAPHiTSTalk.pdf "File:PAG2012MAPHiTSTalk.pdf")
+  8.13 MB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="PAG2014 GalaxyCloudMan.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [PAG2014
-  GalaxyCloudMan...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1d/PAG2014_GalaxyCloudMan.pdf "File:PAG2014 GalaxyCloudMan.pdf")  
+  GalaxyCloudMan...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1d/PAG2014_GalaxyCloudMan.pdf "File:PAG2014 GalaxyCloudMan.pdf")
   4.03 MB

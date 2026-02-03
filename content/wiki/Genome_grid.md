@@ -58,7 +58,7 @@ analyses) on available cyberinfrastructure. One emphasis here is on
 simplified use of grids and genome tools, to make it feasible for new
 genome projects to take advantage of these readily.
 
-  
+
 
 # Target customer and tasks
 

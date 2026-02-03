@@ -8,8 +8,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="Under Construction" />
 
 <span style="font-size: 140%">This page or section is under
-construction.</span>  
-  
+construction.</span>
+
 This page is a working area for updating the revised phenotype module
 that came out of the [GMOD Evo
 Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"). Please edit the
@@ -72,7 +72,7 @@ public.feature_phenotype Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phenotype
 
@@ -180,7 +180,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phenotype_cvterm
 
@@ -197,7 +197,7 @@ public.phenotype_cvterm Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: phenotypeprop
 

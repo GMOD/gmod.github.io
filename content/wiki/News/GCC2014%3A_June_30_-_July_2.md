@@ -29,10 +29,9 @@ class="external text" rel="nofollow">the GCC2013 web site</a> for an
 idea of what happens at a Galaxy Community Conference. The GCC2013 site
 includes links to slides and videos for all accepted talks.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/10/02*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

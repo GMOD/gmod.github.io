@@ -20,7 +20,7 @@ any installation; for longer-term uses, the virtual server can be kept
 running as long as required, and data can easily be moved when new
 versions of GMOD in the Cloud are released.
 
-  
+
 
   in the Cloud</span>](#What.27s_in_GMOD_in_the_Cloud)
 - [Where to find
@@ -133,7 +133,7 @@ should be kept in the `data` partition to make backup and updates easy.
 Step-by-step instructions for starting up GMOD in the Cloud can be found
 at the [GMOD Cloud Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial").
 
-  
+
 
 ### Directory Structure
 
@@ -226,7 +226,7 @@ the Chado schema before the public schema; this account should be used
 for tools that interact with Chado (e.g. GBrowse, Tripal, and any
 command line tools from GMOD).
 
-  
+
 
 ### Drupal
 
@@ -248,7 +248,7 @@ you will get the Drupal home page.
 New modules can be added at `/data/var/www/sites/default/modules` and
 new themes can be added at `/data/var/www/sites/default/themes`.
 
-  
+
 
 ### Tripal
 
@@ -258,7 +258,7 @@ Source: [Tripal](Tripal.1 "Tripal") svn
 
 Installation dir: `/var/www/sites/all/modules/tripal`
 
-  
+
 
 ### Chado
 
@@ -282,7 +282,7 @@ installation method for Perl modules
 (`perl Makefile.PL; make; sudo make install`). This checkout can be
 updated with "svn update" like the Tripal svn checkout.
 
-  
+
 
 ### GBrowse2
 
@@ -304,7 +304,7 @@ GBrowse at
 
        ec2-##-##-##-##.compute-1.amazonaws.com/cgi-bin/gb2/gbrowse/yeast
 
-  
+
 
 ### JBrowse
 
@@ -330,7 +330,7 @@ jbrowse_conf.json file as described in the [JBrowse configuration
 guide](JBrowse_Configuration_Guide#Dataset_Selector "JBrowse Configuration Guide").
 This file is at `/data/var/www/jbrowse/jbrowse_conf.json`.
 
-  
+
 
 ### WebApollo
 

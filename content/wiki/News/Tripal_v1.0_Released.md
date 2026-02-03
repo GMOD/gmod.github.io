@@ -42,6 +42,6 @@ Please feel free to provide any feedback on the
 class="external text" rel="nofollow">Tripal mailing list</a>! Thank you
 to those who have done so already and have helped make Tripal better.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/08*

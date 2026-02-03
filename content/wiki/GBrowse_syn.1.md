@@ -34,7 +34,7 @@ Please refer to the following paper when citing GBrowse_syn:
 ### Tutorials
 
 <a href="GBrowse_syn_Tutorial" class="mw-redirect"
-title="GBrowse syn Tutorial">GBrowse syn Tutorial</a>  
+title="GBrowse syn Tutorial">GBrowse syn Tutorial</a>
 Installing and configuring GBrowse_syn; from the [2013 GMOD Summer
 School](2013_GMOD_Summer_School "2013 GMOD Summer School")
 

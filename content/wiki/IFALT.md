@@ -86,7 +86,7 @@ rel="nofollow">parse_str</a> function man page.</p></td>
 </tbody>
 </table>
 
-  
+
 
 ## update types
 
@@ -112,6 +112,6 @@ rel="nofollow">parse_str</a> function man page.</p></td>
     lacZ:Gene_Product(s)    Product GO_table_product     |GO:0005575| | | | | |Seeded from EcoCyc 11.6 <ref name = 'LIB:EcoCyc11.6'/>
     lacZ:Gene_Product(s)    Product GO_table_product     |GO:0003617| | | | | |Seeded from EcoCyc 11.6 <ref name = 'LIB:EcoCyc11.6'/>
 
-  
-` `<span style="color:#ff9700">`lacZ:Gene`</span>` `<span style="color:#aaff00">`Gene`</span>` `<span style="color:#00ffe1">`Gene_sequence_features_table`</span>` `<span style="color:#1d6fff">`a|b|c`</span>` `<span style="color:#ff2022">`metadata for the row`</span>` `<span style="color:#da37e0">`append`</span>` key=value&arr[]=foo+bar`  
+
+` `<span style="color:#ff9700">`lacZ:Gene`</span>` `<span style="color:#aaff00">`Gene`</span>` `<span style="color:#00ffe1">`Gene_sequence_features_table`</span>` `<span style="color:#1d6fff">`a|b|c`</span>` `<span style="color:#ff2022">`metadata for the row`</span>` `<span style="color:#da37e0">`append`</span>` key=value&arr[]=foo+bar`
 <span style="color:#ff9700">`lacZ:Gene`</span>` `<span style="color:#aaff00">`Gene`</span>` `<span style="color:#00ffe1">`Gene_sequence_features_table`</span>` `<span style="color:#1d6fff">`1|2|3`</span>` `<span style="color:#ff2022">`more metadata`</span>` `<span style="color:#da37e0">`append`</span>` key2=value2 `

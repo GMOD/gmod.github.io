@@ -108,7 +108,7 @@ additional development or documentation is done.
 To become a part of the [GMOD suite](GMOD_Components "GMOD Components"),
 software has to meet several requirements:
 
-Meets a Common Need  
+Meets a Common Need
 First, the program must meet a common need in biological research. A
 tool that is only useful with organisms that are two-dimensional (think
 butterfly wings), is probably not a good match for GMOD. Tools must be
@@ -119,7 +119,7 @@ expression](Category%253AExpression "Category%253AExpression"),
 [phenotypes](Category%253APhenotypes "Category%253APhenotypes"), or [comparative
 genomics](Comparative_Genomics "Comparative Genomics") are good examples
 of broadly applicable tools.
-Useful Over Time  
+Useful Over Time
 GMOD Components should be applicable and useful for at least several
 years. For example, GMOD tends to avoid *analysis* tools because this
 area of bioinformatics is constantly changing. However, the need to
@@ -127,7 +127,7 @@ connect different analysis tools into reusable pipelines (see
 <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> and
 [Galaxy](Galaxy.1 "Galaxy") for examples), is a common and longstanding
 need that will outlive any particular too.
-Configurable and Extensible  
+Configurable and Extensible
 GMOD tools should be usable in a wide variety of situations. Different
 user environments will require different configurations of the software.
 GMOD components should make it easy for users to do this tailoring in
@@ -136,19 +136,19 @@ source code itself to get what they want. Another (complementary) way to
 achieve this is to have an extensible architecture where computer-savvy
 users can write plugins/extensions for tasks such as input/output using
 custom/local data sources and formats.
-Open Source License for All Users  
+Open Source License for All Users
 New GMOD software must have an
 <a href="http://www.opensource.org/licenses" class="external text"
 rel="nofollow">Open Source Initiative (OSI) approved license</a>, and
 that license must be free to all users. The GMOD project is committed to
 <a href="http://www.opensource.org/docs/osd" class="external text"
 rel="nofollow">open source principles</a>.
-Interoperable With Other [GMOD Components](GMOD_Components "GMOD Components")  
+Interoperable With Other [GMOD Components](GMOD_Components "GMOD Components")
 New GMOD software must be interoperable with other [GMOD
 Components](GMOD_Components "GMOD Components"). Usually this means that
 the software can export and/or import [GFF](GFF "GFF"), or that it can
 connect to <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
-Commitment of Support  
+Commitment of Support
 The developers of the software must be willing to make a good faith
 commitment to support the new component for at least 2 years after
 joining GMOD. This commitment includes setting up email lists,
@@ -160,11 +160,11 @@ GMOD community contributing code and other support to the new component.
 This *open development* model contributes to the long-term viability of
 the open source model.
 
-Users and Support Mailing List(s)  
+Users and Support Mailing List(s)
 Newly added software components must have user/support [mailing
 list(s)](GMOD_Mailing_Lists "GMOD Mailing Lists") and those lists must
 be publicly archived.
-Public repository  
+Public repository
 The software component, including code, documentation and other
 supporting files need to be stored in a publicly accessible code
 repository. This repository must also enable the addition of new

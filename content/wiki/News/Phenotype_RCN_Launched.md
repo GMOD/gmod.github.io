@@ -41,10 +41,9 @@ Hope to hear from you soon,
 
 Paula, Andy, Eva, and Suzanna
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/03*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

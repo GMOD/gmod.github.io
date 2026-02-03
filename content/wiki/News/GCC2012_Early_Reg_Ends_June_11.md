@@ -22,7 +22,7 @@ class="external text" rel="nofollow">discounted conference lodging</a>
 <a href="http://wiki.g2.bx.psu.edu/Events/GCC2012/Register"
 class="external text" rel="nofollow">Register now</a>.
 
-  
+
 <a href="http://galaxyproject.org/wiki/Events/GCC2012"
 class="external text" rel="nofollow">GCC2012</a> is about integrating,
 analyzing, and sharing the diverse and very large datasets that are now
@@ -62,10 +62,9 @@ Hope to see you in Chicago,
 href="http://galaxyproject.org/wiki/Events/GCC2012/Organizing%20Committee"
 class="external text" rel="nofollow">GCC2012 Organizing Committee</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/06/04*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

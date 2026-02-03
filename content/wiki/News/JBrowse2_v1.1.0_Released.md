@@ -167,10 +167,9 @@ core
 - Robert Buels (@rbuels)
 - Teresa Martinez (@teresam856)
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2021/03/30*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

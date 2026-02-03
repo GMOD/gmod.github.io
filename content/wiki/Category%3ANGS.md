@@ -20,50 +20,50 @@ The following 2 pages are in this category, out of 2 total.
 
 The following 2 files are in this category, out of 2 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="GalaxyNGSISMB2010.pdf" />
 
-  
 
-  
 
-  
 
-  [GalaxyNGSISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/GalaxyNGSISMB2010.pdf "File:GalaxyNGSISMB2010.pdf")  
-  159 KB  
 
-  
 
-  
 
-- 
+  [GalaxyNGSISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/GalaxyNGSISMB2010.pdf "File:GalaxyNGSISMB2010.pdf")
+  159 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="NGSTranscriptomeISGAErgatis.pdf" />
 
-  
 
-  
 
-  
 
-  [NGSTranscriptomeISGAEr...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf "File:NGSTranscriptomeISGAErgatis.pdf")  
-  2.8 MB  
 
-  
 
-  
+
+  [NGSTranscriptomeISGAEr...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf "File:NGSTranscriptomeISGAErgatis.pdf")
+  2.8 MB
+
+
+
+
 
 Retrieved from "[http://gmod.org/wiki/Category%253ANGS](/wiki/Category%253ANGS)"

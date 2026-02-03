@@ -50,7 +50,7 @@ text of progress reports they submitted.
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Turnkey_sept_2003.ppt"
   class="internal" title="Turnkey sept 2003.ppt">Turnkey_sept_2003.ppt</a>
 
-  
+
 
 ## Progress Report
 

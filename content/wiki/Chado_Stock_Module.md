@@ -155,7 +155,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_cvterm
 
@@ -173,7 +173,7 @@ stock_cvterm Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_dbxref
 
@@ -233,7 +233,7 @@ stock_dbxref Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_genotype
 
@@ -251,7 +251,7 @@ stock_genotype Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_pub
 
@@ -268,7 +268,7 @@ stock_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_relationship
 
@@ -289,7 +289,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stock_relationship_pub
 
@@ -306,7 +306,7 @@ stock_relationship_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockcollection
 
@@ -381,7 +381,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockcollection_stock
 
@@ -398,7 +398,7 @@ stockcollection_stock Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockcollectionprop
 
@@ -418,7 +418,7 @@ stockcollectionprop Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockprop
 
@@ -444,7 +444,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: stockprop_pub
 

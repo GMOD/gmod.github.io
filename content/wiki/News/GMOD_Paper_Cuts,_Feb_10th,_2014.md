@@ -3,7 +3,7 @@ title: "News/GMOD Paper Cuts, Feb 10th, 2014"
 ---
 # News/GMOD Paper Cuts, Feb 10th, 2014
 
-  
+
 
 **GMOD Paper Cuts is a periodic selection of choice cuts from the
 scientific literature featuring interesting, exciting, or otherwise
@@ -20,7 +20,7 @@ GMOD-related publications,
 <a href="http://mnd.ly/WwRe8F" class="external text" rel="nofollow">join
 our Mendeley group</a>.
 
-  
+
 **Finding the missing honey bee genes: lessons learned from a genome
 upgrade** <sup>[\[1\]](#cite_note-DOI:10.1186.2F1471-2164-15-86-1)</sup>
 
@@ -63,7 +63,7 @@ annotation, [JBrowse](../JBrowse.1 "JBrowse") and
 [GBrowse](../GBrowse.1 "GBrowse") for sequence browsing, and
 [WebApollo](../WebApollo.1 "WebApollo") for community genome annotation.
 
-  
+
 
 **Highly Specific and Efficient CRISPR/Cas9-Catalyzed Homology-Directed
 Repair in Drosophila**
@@ -103,7 +103,7 @@ more information, see the
 <a href="http://flycrispr.molbio.wisc.edu/" class="external text"
 rel="nofollow">flyCRISPR website</a>.
 
-  
+
 
 **Analysis of Global Gene Expression in *Brachypodium distachyon*
 Reveals Extensive Network Plasticity in Response to Abiotic Stress**
@@ -135,7 +135,7 @@ rel="nofollow">Brachypodium web genome browser</a> and other resources
 on the new <a href="http://brachypodium.org" class="external text"
 rel="nofollow">Brachypodium website</a>!
 
-  
+
 
 **Analyses of Hypomethylated Oil Palm Gene
 Space**<sup>[\[4\]](#cite_note-DOI:10.1371.2Fjournal.pone.0086728-4)</sup>
@@ -177,7 +177,7 @@ is one of a number of genomics projects taking off in Malaysia at the
 moment. Perfect timing for a [GMOD
 workshop](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014")!
 
-  
+
 
 **Production of a reference transcriptome and transcriptomic database
 (<a href="http://cnidarians.bu.edu/EdwardBase/cgi-bin/index.cgi"
@@ -215,10 +215,10 @@ searched according to contig ID, gene ontology, protein family motif
 reads to the contigs can also be visualized via
 [JBrowse](../JBrowse.1 "JBrowse").
 
-  
+
 Happy reading!
 
-  
+
 
 1.  <span id="cite_note-DOI:10.1186.2F1471-2164-15-86"><span class="mw-cite-backlink">[↑](#cite_ref-DOI:10.1186.2F1471-2164-15-86_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
@@ -241,6 +241,6 @@ entertainment and edification only. Inclusion does not imply an
 endorsement of the material or any association between the authors and
 the GMOD project.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/02/10*

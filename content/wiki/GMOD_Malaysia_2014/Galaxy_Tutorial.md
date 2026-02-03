@@ -15,7 +15,7 @@ This tutorial uses the AWS AMI ' ***named '*** in the '
 
 .
 
-  
+
 This tutorial will introduce Galaxy and then walk through a hands-on NGS
 analysis example highlighting different aspects of Galaxy. We will use
 shared servers provided by the Galaxy Project for this part of the
@@ -24,7 +24,6 @@ server on the Amazon cloud.
 
 - [File:MalaysiaGalaxyTutorialSlides.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/MalaysiaGalaxyTutorialSlides.pdf "File:MalaysiaGalaxyTutorialSlides.pdf")
 
-:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [Galaxy](../Category%253AGalaxy "Category%253AGalaxy")

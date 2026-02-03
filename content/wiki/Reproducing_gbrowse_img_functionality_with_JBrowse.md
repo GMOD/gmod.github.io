@@ -80,19 +80,19 @@ The first thing to do is to fetch JBrowse into a div using an html
 object tag with the URL that you need to fetch in the "data" attribute
 of the object tag. In practice, the result looks like this:
 
-    
-      <object id="innerJBrowse" 
-             type="text/html" 
-             style="pointer-events: none; position: relative; top: -1px; left: 0px; width: 100%; height: 1273px; overflow: hidden;" 
+
+      <object id="innerJBrowse"
+             type="text/html"
+             style="pointer-events: none; position: relative; top: -1px; left: 0px; width: 100%; height: 1273px; overflow: hidden;"
              data="/tools/genome/jbrowse-simple/full.html?overview=0&tracks=Curated_Genes%2CClassical_alleles%2CYACs_Fosmids_Cosmids&loc=II%253A158247..173104&data=data%2Fc_elegans_simple&nav=0&tracklist=0">
       </object>
-    
+
 
 But the trick is that the object tag gets created dynamically when the
 page is loaded, using some simple JavaScript like this:
 
     <script type="text/javascript">
-        var preembedURL = "full.html?tracks=Curated_Genes%2CClassical_alleles%2CYACs_Fosmids_Cosmids&loc=X%253A12392257..12418393&data=data%2Fc_elegans_simple"; 
+        var preembedURL = "full.html?tracks=Curated_Genes%2CClassical_alleles%2CYACs_Fosmids_Cosmids&loc=X%253A12392257..12418393&data=data%2Fc_elegans_simple";
         var embed_part = "&nav=0&tracklist=0&overview=0";
         $("#jbrowse-view-iframe").html('<object id="innerJBrowse" type="text/html" style="pointer-events: none; position: relative; top: -1px; left: 0px; width: 100%; height: 14px; overflow: hidden;" data="'+preembedURL+embed_part+'"></object>');
     </script>

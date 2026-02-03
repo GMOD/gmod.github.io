@@ -3,7 +3,7 @@ title: "News/Software Developer - Phytozome"
 ---
 # News/Software Developer - Phytozome
 
-**Software Developer 3/4 - Phytozome - 74226**  
+**Software Developer 3/4 - Phytozome - 74226**
 **Organization: GN-Genomics**
 
 The DOE Joint Genome Institute (JGI) in Walnut Creek, CA (a division of
@@ -128,10 +128,9 @@ follow the instructions to complete the application process.
 Berkeley Lab is an affirmative action/equal opportunity employer
 committed to the development of a diverse workforce.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/05/16*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -13,7 +13,7 @@ arbitrary levels. GFF2 also does not require that column 3, the feature
 type, be part of the sequence ontology. It can be any string. This often
 led to quality control and data exchange problems.
 
-  
+
 
   Deprecated!</span>](#GFF2_is_Deprecated.21)
   - [Why GFF2
@@ -86,49 +86,49 @@ looks like this:
 
 The 9 columns are as follows:
 
-reference sequence  
+reference sequence
 This is the ID of the sequence that is used to establish the coordinate
 system of the annotation. In the example above, the reference sequence
 is "Chr1".
 
-source  
+source
 The source of the annotation. This field describes how the annotation
 was derived. In the example above, the source is "curated" to indicate
 that the feature is the result of human curation. The names and versions
 of software programs are often used for the source field, as in
 "tRNAScan-SE/1.2".
 
-method  
+method
 The annotation method, also known as type. This field describes the type
 of the annotation, such as "CDS". Together the method and source
 describe the annotation type.
 
-start position  
+start position
 The start of the annotation relative to the reference sequence.
 
-stop position  
+stop position
 The stop of the annotation relative to the reference sequence. Start is
 always less than or equal to stop.
 
-score  
+score
 For annotations that are associated with a numeric score (for example, a
 sequence similarity), this field describes the score. The score units
 are completely unspecified, but for sequence similarities, it is
 typically percent identity. Annotations that do not have a score can use
 "."
 
-strand  
+strand
 For those annotations which are strand-specific, this field is the
 strand on which the annotation resides. It is "+" for the forward
 strand, "-" for the reverse strand, or "." for annotations that are not
 stranded.
 
-phase  
+phase
 For annotations that are linked to proteins, this field describes the
 phase of the annotation on the codons. It is a number from 0 to 2, or
 "." for features that have no phase.
 
-group  
+group
 GFF provides a simple way of generating annotation hierarchies ("is
 composed of" relationships) by providing a group field. The group field
 contains the class and ID of an annotation which is the logical parent
@@ -261,7 +261,7 @@ Bio::DB::GFF module when no more specific class is requested. If you use
 a different class name, then be sure to indicate that fact with the
 "reference class" option (see below).
 
-  
+
 
 ### Sequence alignments
 
@@ -299,7 +299,7 @@ Chr1 are composed of LINK_H06O01 from bp 1 to bp 254826. The region of
 LINK_H0601 between 32386 and 64122 is, in turn, composed of the bases 5
 to 31742 of cosmid F49B2.
 
-  
+
 
 ### Dense quantitative data
 
@@ -357,17 +357,17 @@ In addition to the standard aggregators that are distributed with
 [BioPerl](BioPerl "BioPerl"), [GBrowse](GBrowse.1 "GBrowse") distributes
 several experimental and/or special-purpose aggregators:
 
-match_gap  
+match_gap
 This aggregator is used for GFF3 style gapped alignments, in which there
 is a single feature of method 'match' with a 'Gap' attribute. This
 aggregator was contributed by Dmitri Bichko.
 
-orf  
+orf
 This aggregator aggregates raw "ORF" features into "coding" features. It
 is basically identical to the "coding" aggregator, except that it looks
 for features of type "ORF" rather than "cds".
 
-reftranscript  
+reftranscript
 This aggregator was written to make the compound feature,
 "reftranscript" for use with GBrowse editing software developed outside
 of the GMOD development group. It can be used to aggregate
@@ -379,7 +379,7 @@ for annotations added using [GBrowse](GBrowse.1 "GBrowse") for feature
 compound feature, "reftranscript", can be done by adding to the
 "part_names" call (i.e. "refCDS").
 
-waba_alignment  
+waba_alignment
 This aggregator handles the type of alignments produced by Jim Kent's
 WABA program, and was written to be compatible with the *C. elegans*
 GFF2 files. It aggregates the following feature types into an aggregate
@@ -388,7 +388,7 @@ type of "waba_alignment":
 - nucleotide_match:waba_weak
 - nucleotide_match:waba_strong
 - nucleotide_match:waba_coding
-wormbase_gene  
+wormbase_gene
 This aggregator was written to be compatible with the *C. elegans* GFF2
 files distributed by the Sanger Institute. It aggregates raw "CDS",
 "5'UTR", "3'UTR", "polyA" and "TSS" features into "transcript" features.

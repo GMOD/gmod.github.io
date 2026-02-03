@@ -44,10 +44,9 @@ Clements](../User%253AClements "User%253AClements"), [Hilmar
 Lapp](../User%253AHlapp "User%253AHlapp"), and [Sheldon
 McKay](../User%253AMckays "User%253AMckays")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/01*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -31,7 +31,7 @@ Part of <a href="GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
 </tbody>
 </table>
 
-  
+
 
   Mining genomic data</span>](#BioMart:_Mining_genomic_data)
 - [Instructors](#Instructors)

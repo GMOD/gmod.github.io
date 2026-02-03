@@ -29,7 +29,7 @@ Durham, NC, USA</span><br />
 </tbody>
 </table>
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6e/2010GMODSummerSchoolAmParticipants.jpg/500px-2010GMODSummerSchoolAmParticipants.jpg"
@@ -37,7 +37,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="500" height="149"
 alt="2010GMODSummerSchoolAmParticipants.jpg" />
 
-  
+
 The ***2010 GMOD Summer School - Americas*** was held 6-9 May at the
 <a href="http://www.nescent.org/" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
@@ -53,7 +53,7 @@ for 25 participants, and admission was competitive.
 website, where they are available as [Online
 Tutorials](Training_and_Outreach#Online_Tutorials "Training and Outreach").**
 
-  
+
 
   Applications](#Applications)
 - [Program](#Program)
@@ -380,7 +380,7 @@ rel="nofollow">VMware</a>. You will need to register to download it.
 There are multiple versions. Be sure to download a version that can run
 on your laptop.
 
-  
+
 
 ### VMware on Mac OS X
 

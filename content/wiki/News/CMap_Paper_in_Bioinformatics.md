@@ -36,13 +36,12 @@ covered in the <a href="http://www.intl-pag.org/18/18-gramene.html"
 class="external text" rel="nofollow">Gramene workshop</a> and in a
 poster at [PAG 2010](../PAG_2010 "PAG 2010").
 
-[Dave Clements](../User%253AClements "User%253AClements")  
+[Dave Clements](../User%253AClements "User%253AClements")
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/14*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

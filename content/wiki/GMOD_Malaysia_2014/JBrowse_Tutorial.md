@@ -148,7 +148,7 @@ There are four basic steps to setting up an instance of JBrowse:
 3.  Configure direct-access tracks
 4.  Index feature names
 
-  
+
 
 ### Features from a directory of files
 
@@ -200,11 +200,11 @@ In this case, we have specified all of our track configurations in
 
 ``` de1
 ...
- 
+
   "TRACK DEFAULTS": {
     "class": "feature"
   },
- 
+
  "tracks": [
     {
       "track": "Genes",
@@ -394,7 +394,7 @@ inject the track configuration:
            "type" : "HTMLVariants"
          } ' | bin/add-track-json.pl data/trackList.json
 
-  
+
 
 ### Faceted Track Selection
 
@@ -489,7 +489,6 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
   class="external free"
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
 
-:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")

@@ -210,7 +210,7 @@ twobit ,
 txt ,
 vcf ,
 velvet ,
-wig 
+wig
 and xml </td>
 </tr>
 <tr class="even row-even">
@@ -245,7 +245,7 @@ title="Property:Has support status">Has support status</a></td>
 title="Property:Has title">Has title</a></td>
 <td class="smwprops">Galaxy source code documentation ,
 Galaxy publication library ,
-ully supported, publicly accessible platforms for using Galaxy 
+ully supported, publicly accessible platforms for using Galaxy
 and List of Galaxy Produced Software </td>
 </tr>
 <tr class="even row-even">
@@ -267,7 +267,7 @@ documentation ,
 website ,
 social media ,
 other , public
-server 
+server
 and wild URL </td>
 </tr>
 <tr class="odd row-odd">
@@ -282,13 +282,13 @@ title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
 <td class="smwprops">Genome Visualization and Editing ,
 Workflow Management ,
-Tool Integration 
+Tool Integration
 and Analysis </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
-<td class="smwprops">Python 
+<td class="smwprops">Python
 and XML </td>
 </tr>
 <tr class="even row-even">

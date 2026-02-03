@@ -20,7 +20,7 @@ Meetings](../Meetings "Meetings") are a mix of
 presentations, and are a great place to find out what is happening in
 the project, what's coming up, and what others are doing.
 
-  
+
 **<a href="https://gmod2016.eventbrite.com" class="external text"
 rel="nofollow">Please register online at Eventbrite by June 20th
 2016</a>.** Early bird registration ends May 21.
@@ -34,10 +34,9 @@ the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 help desk</a>.
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2016/04/04*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

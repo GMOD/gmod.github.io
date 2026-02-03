@@ -36,7 +36,7 @@ rel="nofollow">http://insects.eugenes.org/genome/</a> | Twelve *Drosophila* inse
 
 **Genome datasets available through the GMOD common URL**
 
-  
+
 
 # About GMOD Standard URL
 
@@ -54,7 +54,7 @@ these common URLs are two-fold:
   parsable data URL, with no guesswork on spelling, and defined data
   formats.
 
-  
+
 
 | Standard URL | Description |
 |----|----|
@@ -69,7 +69,7 @@ these common URLs are two-fold:
 
 Other names for this: Common download URL, Common URL, Standard URL
 
-  
+
 *Note: MODs may optionally provide URLs in the short form of G_species
 (eg C_elegans) as a convenience for users. This should be supplied in
 addition to the full Binomial_name standard.*

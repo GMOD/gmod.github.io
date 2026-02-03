@@ -19,7 +19,7 @@ The allowed values for this property are:
 - social media
 - other
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Link type"

@@ -100,113 +100,113 @@ title="Introduction to Chado">Introduction to Chado</a></li>
 
 The following 5 files are in this category, out of 5 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="Chado pub.ppt" />
 
-  
 
-  
 
-  
 
-  [Chado pub.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/71/Chado_pub.ppt "File:Chado pub.ppt")  
-  45 KB  
 
-  
 
-  
 
-- 
+  [Chado pub.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/71/Chado_pub.ppt "File:Chado pub.ppt")
+  45 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/cf/ChadoModules.png/120px-ChadoModules.png"
   width="120" height="94" alt="ChadoModules.png" />
 
-  
 
-  
 
-  
 
-  [ChadoModules.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/ChadoModules.png "File:ChadoModules.png")  
-  71 KB  
 
-  
 
-  
 
-- 
+  [ChadoModules.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/ChadoModules.png "File:ChadoModules.png")
+  71 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon.png" width="120"
   height="120" alt="ChadoModules.ppt" />
 
-  
 
-  
 
-  
 
-  [ChadoModules.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/ChadoModules.ppt "File:ChadoModules.ppt")  
-  60 KB  
 
-  
 
-  
 
-- 
+  [ChadoModules.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/ChadoModules.ppt "File:ChadoModules.ppt")
+  60 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b5/ChadoModulesCV.png/120px-ChadoModulesCV.png"
   width="120" height="88" alt="ChadoModulesCV.png" />
 
-  
 
-  
 
-  
 
-  [ChadoModulesCV.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/ChadoModulesCV.png "File:ChadoModulesCV.png")  
-  69 KB  
 
-  
 
-  
 
-- 
+  [ChadoModulesCV.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/ChadoModulesCV.png "File:ChadoModulesCV.png")
+  69 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Emmert 040526.pdf" />
 
-  
 
-  
 
-  
 
-  [Emmert 040526.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Emmert_040526.pdf "File:Emmert 040526.pdf")  
+
+
+
+  [Emmert 040526.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Emmert_040526.pdf "File:Emmert 040526.pdf")
   213 KB

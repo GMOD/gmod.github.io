@@ -15,10 +15,9 @@ class="external text" rel="nofollow">GMOD Schema mailing list</a>.
 --[RobertBuels](../User%253ARobertBuels "User%253ARobertBuels") 22:10, 29 August
 2009 (UTC)
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/29*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

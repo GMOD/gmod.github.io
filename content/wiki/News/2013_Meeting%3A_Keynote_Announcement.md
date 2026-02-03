@@ -34,6 +34,6 @@ More information and media coverage of OADB:
   href="http://blogs.biomedcentral.com/gigablog/2013/02/13/open-science-versus-ash-dieback-and-the-tweenome-revisited/"
   class="external text" rel="nofollow">Open Science versus Ash Dieback</a>
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/25*

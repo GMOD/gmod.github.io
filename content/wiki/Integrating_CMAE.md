@@ -77,7 +77,7 @@ are being served off another machine.
 
 Download CMap from the SourceForge CVS repository
 
-  
+
 
      $ cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod login
      $ cvs -z3 -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co -P cmap
@@ -95,7 +95,7 @@ can be downloaded from CPAN.
 A bundle can be used to install most of these at once. To use this
 bundle, run:
 
-  
+
 
      $ sudo perl -MCPAN -e "install Bundle::CMap"
 
@@ -123,7 +123,7 @@ class="external free"
 rel="nofollow">http://www.tkzinc.org/tkzinc/pmwiki.php?n=Main.Download</a>
 .
 
-  
+
 
 ### Install CMap
 
@@ -133,7 +133,7 @@ linux system those should be easily answered.
 
 The install process is simply:
 
-  
+
 
      $ perl Build.PL
      $ ./Build
@@ -170,35 +170,35 @@ API.
 
 Using the API, the following data types will need to be created:
 
-\- Species   
+\- Species
 Each species that maps in the data set belong to must be entered into
 the database.
 
-\- Map Sets   
+\- Map Sets
 A map set is a collection of maps. The maps are of the same type
 (sequence, FPC, etc) and are usually from the same analysis set. For
 instance, the contigs from a particular assembly run would be in a set.
 
-\- Maps   
+\- Maps
 Maps can represent many different data types, sequence, physical,
 genetic, etc. Simply put, a map is any type of data that can be
 represented as a line with features on it.
 
-\- Features   
+\- Features
 Features can be placed on maps. They provide the anchor points for
 correspondences such as a read is one anchor for a line between read
 pairs. There are also other types of features that can be used to create
 banding patterns or heat maps.
 
-\- Map_to_Features   
+\- Map_to_Features
 In order to place a map underneath another map, CMAE requires a link
 between the child map and a feature on the parent. That feature
 represents the exact placement of the child.
 
-\- Correspondences   
+\- Correspondences
 Correspondences are links between features.
 
-\- Attributes and External References (xrefs)   
+\- Attributes and External References (xrefs)
 CMap also allows for assigning attributes and external references to
 it's objects (features, maps, etc). These can be useful for adding
 descriptions or providing data for an external script to work on an

@@ -104,27 +104,27 @@ Adaptors](GBrowse_Adaptors "GBrowse Adaptors") that use databases:
     databases - These are significantly slower than the GFF databases,
     but are feature-rich.
 
-  
+
 Here is the sequence of steps for creating new GBrowse databases:
 
 1.  Make a GFF3 file for your genome (i.e. from a GenBank download that
-    ends in .gb) - On the command line:  
-    `bp_genbank2gff3.pl -noCDS -s antgenome.gb`  
+    ends in .gb) - On the command line:
+    `bp_genbank2gff3.pl -noCDS -s antgenome.gb`
     This will result in the creation of a file ("antgenome.gb.gff" in
     the example)
 2.  Create a database in your MySQL database (e.g. antgenome) and grant
     the www user SELECT privileges on that database. This would be
     "nobody" on most systems. On Ubuntu Linux the user would be
-    "www-data". Also, grant your own user privileges on that database.  
-    `mysql -uroot -prootpassword`  
-    `mysql> create database antgenome;`  
-    `mysql> GRANT SELECT ON antgenome to 'www-data'@'localhost';`  
-    `mysql> GRANT ALL PRIVILEGES ON antgenome TO 'myuser'@'localhost';`  
-    `mysql>quit`  
+    "www-data". Also, grant your own user privileges on that database.
+    `mysql -uroot -prootpassword`
+    `mysql> create database antgenome;`
+    `mysql> GRANT SELECT ON antgenome to 'www-data'@'localhost';`
+    `mysql> GRANT ALL PRIVILEGES ON antgenome TO 'myuser'@'localhost';`
+    `mysql>quit`
 3.  Copy an existing configuration file (database_name.conf) and adjust
-    the paths to your new database and rename accordingly.  
+    the paths to your new database and rename accordingly.
     `sudo cp mysillygenome.conf /etc/gbrowse2/antgenome.conf`
-4.  Load the .GFF file into the database - On the command line:  
+4.  Load the .GFF file into the database - On the command line:
     `bp_seqfeature_load.pl -c --dsn "dbi:mysql:antgenome" --user "myuser" --password "my password" antgenome.gb.gff`
     - If you want to change things easily in your database to display
       new tracks, I found it easiest to edit the .gb file. I would copy
@@ -229,7 +229,7 @@ All \[GENERAL\] options are listed below, grouped together by function.
 to a data source. A config file specifies exactly one adaptor. Adaptor
 options specify which adaptor to use and what parameters to use with it.
 
-db_adaptor  
+db_adaptor
 Tells GBrowse what database adaptor to use. By using different adaptors
 you can attach GBrowse to a variety of different databases. Available
 options are listed on the [GBrowse
@@ -283,11 +283,11 @@ The indicated directory should contain one or more [GFF](GFF "GFF") and
 [FASTA](Glossary#FASTA "Glossary") files, distinguished by the filename
 extensions `.gff` and `.fa` respectively.
 
-user  
+user
 The user name for the gbrowse script to log in under if you are not
 using `nobody`. This is exactly the same as providing the `-user` option
 to `db_args`, and is deprecated.
-pass  
+pass
 The password to use if the database is password protected. This is the
 same as providing the `-pass` option to `db_args`, and is deprecated.
 
@@ -299,23 +299,23 @@ Options](#Behavior_Options), which determines how GBrowse responds to
 the user. Search both this and the Behavior options sections for options
 that don't fall cleanly into one category or the other.
 
-description  
+description
 The description of the database. This will appear in the popup menu that
 allows users to select the data source and in the header of the page.
 Don't make it as long as the previous example! (You will want to change
 this.)
-hilite fill, hilite outline  
+hilite fill, hilite outline
 These options control the color of the selection rectangles that appear
 in the overview and regionview when you are zoomed into a region. The
 hilite fill controls the color of the rectangle interior, and the hilite
 outline controls the color of the rectangle outline. Colors can be
 specified by name (e.g. "pink"), or in HTML \#RRGGBB format.
-image widths  
+image widths
 The image widths option controls the set of image sizes to offer the
 user. Its value is a space-delimited list of pixel widths. The default
 is probably fine. Note that the height of the image depends on the
 number of tracks and features, and cannot be controlled.
-default width  
+default width
 The default width is the image width to start off with when the user
 invokes the browser for the first time. The default is 800.
 
@@ -344,13 +344,13 @@ Example:
 
           initial landmark = Chr1
 
-truecolor  
+truecolor
 If this option is present and true, then GBrowse will create 24-bit
 (truecolor) images. This is mainly useful when using the "image" glyph,
 which allows you to paste arbitrary images onto the genome map. Do not
 use this option unless you need it, because it slows down drawing and
 makes the images much larger.
-units, unit_divider  
+units, unit_divider
 The units option allows GBrowse to display units on an alternate scale
 (for example, (centi)Morgans), and the `unit_divider` provides the
 conversion factor between base pair units (which is what must be
@@ -367,7 +367,7 @@ each level, in bp. For example:
 
          zoom levels = 1000 2000 5000 10000 20000 40000 100000 200000
 
-region segment  
+region segment
 If this configuration option is set, a new "region panel" will appear
 that is intermediate in size between the overview and the detail panel.
 The value of this option becomes the size of the region panel in base
@@ -390,18 +390,18 @@ this option defaults to `1` (true).
 Note that all data sources will need to have this option defined in
 order for it to take effect across all databases.
 
-default varying  
+default varying
 The track selection table will be sorted alphabetically, by default;
 setting this variable to true will cause the tracks to appear in the
 same order as they appear in the configuration file.
-overview units  
+overview units
 This option controls the units that will be used on the scale for the
 birds-eye view display. Possible values are "bp" (base pairs), "k"
 (kilobases), "M" (megabases), and "G" (gigabases). If this option is
 omitted, the browser will guess the most appropriate unit.
-overview bgcolor  
+overview bgcolor
 This is the color for the background of the birds-eye view.
-detailed bgcolor  
+detailed bgcolor
 This is the color for the background of the detailed view.
 
 header
@@ -694,11 +694,11 @@ activated.
 
 It is off by default for compatibility with older browsers.
 
-disable wildcards  
+disable wildcards
 Ordinarily a user can type in "YAL\*" to find all features with names
 beginning with "YAL". This option, if set to a true value, disables
 wildcard searching.
-merge searches  
+merge searches
 If this is set to true (the default), then features with the same name,
 chromosome and type will be merged into one feature during searches. If
 this is set to false (zero), then no merging will occur. Set this to
@@ -720,12 +720,12 @@ If the user tries to view a segment smaller than the `min segment`
 option, then the segment will be resized to be this size. The default is
 20 bp.
 
-default segment  
+default segment
 The default segment option sets the width of the segment (bp) that will
 be displayed when the user clicks on the birds-eye view without
 previously having set a desired magnification. You may want to adjust
 this value.
-keyword search max  
+keyword search max
 By default, GBrowse will limit the number of keyword search results to
 1,000. The order in which the 1,000 hits are returned depends on how the
 database was loaded, and so you may see odd patterns, such as only hits
@@ -758,13 +758,13 @@ Example:
 
       version = 1.1
 
-request timeout  
+request timeout
 This is the timeout value for requests. If a user requests a large
 region and the request takes more than the indicated number of seconds,
 then the request will timeout and the user will be advised to choose a
 smaller region. The default is 60 seconds (one minute). You can make the
 timeout longer or shorter than this.
-head  
+head
 This is content to insert into the HTML \<head\>\</head\> section. It is
 the appropriate place to stick JavaScript code, etc. It can be a code
 reference if you wish.
@@ -804,7 +804,7 @@ Otherwise, the browser will proceed to a full text search of all the
 comment fields.
 
 search attributes (<a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store"
-class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> [adaptor](GBrowse_Adaptors "GBrowse Adaptors") only)  
+class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> [adaptor](GBrowse_Adaptors "GBrowse Adaptors") only)
 When the browser has searched the name and alias of features without
 success, it will do a whole database keyword search by calling the
 database's `search_notes()` method. By default this will search the text
@@ -823,7 +823,7 @@ to true. The user will still be able to search the database by appending
 
              no search = 1
 
-no autosearch  
+no autosearch
 If this option is set to a true value, then users' previous search will
 not be automatically re-executed the next time they visit GBrowse.
 Instead, the previous search will be pasted into the "Landmark or
@@ -917,11 +917,11 @@ The default value is 1 month.
 
 See the CGI manual page for more information on the time format.
 
-remember cookie time  
+remember cookie time
 This is the length of time before the user's session cookie will stay on
 disk before it expires. It should be significantly longer than
 `remember settings time`. The default is 12 months.
-remember source time  
+remember source time
 **Deprecated.** Use `remember cookie time` instead.
 
 msie hack
@@ -936,7 +936,7 @@ request when it detects MSIE in use. This will fix the "Back" button
 issue, but will put very long URLs in the Location box. It is your
 choice which of these is more annoying to your users.
 
-suppress_menu  
+suppress_menu
 This option will cause the browser to ignore your configuration file
 when building the source menu. Your sources will still be accessible by
 URL using the `gbrowse/yourSource` or `gbrowse?src=yourSource` syntax.
@@ -1004,7 +1004,7 @@ NOTE: The path argument is ignored if gbrowse is running under modperl,
 because modperl allows the URL to be translated into a physical
 directory programmatically.
 
-  
+
 
 ### Plugin Options
 
@@ -1013,7 +1013,7 @@ GBrowse without changing its core source code. Plugins are stored in the
 GBrowse configuration directory under the `plugins` subdirectory. See
 <a href="Plugins" class="mw-redirect" title="Plugins">plugins</a>.
 
-  
+
 
 - **plugins**
 
@@ -1066,7 +1066,7 @@ default is:
 
       galaxy outgoing = http://main.g2.bx.psu.edu/tool_runner?tool_id=TOOL_ID
 
-  
+
 Without this option, GBrowse will be able to receive and process queries
 from Galaxy servers, but will not be able to initiate a connection.
 (Note, this option used to be named "galaxy", which still works for
@@ -1417,7 +1417,7 @@ same vertical scaling. Example:
 
 (this feature is under refinement and may change in the future)
 
-restrict  
+restrict
 This option allows you to restrict who is allowed to view the current
 track by host name, IP address or username/password. See [Authentication
 & Authorization](#Authentication_.26_Authorization) for details.
@@ -1460,7 +1460,7 @@ See the <a href="http://cloud.gmod.org/gbrowse2/tutorial/tutorial.html"
 class="external text" rel="nofollow">GBrowse2 Admin Tutorial</a> for
 more details.
 
-das category, das landmark, das flatten, das subparts, das superparts, das glyph, das type  
+das category, das landmark, das flatten, das subparts, das superparts, das glyph, das type
 All these options pertain to exporting the GBrowse database as a DAS
 data source. Please see DAS_HOWTO for more information.
 
@@ -1504,7 +1504,7 @@ Similarly, you can make a track appear in the region panel by appending
     height        = 20
     key           = SNP Density
 
-  
+
 
 ## Semantic Zooming
 
@@ -1565,7 +1565,7 @@ hide the track when the display exceeds a certain size:
      [6_frame_translation:50000]
      hide = 1
 
-  
+
 
 ## Computed Options
 
@@ -1848,7 +1848,7 @@ It is entirely possible to create an invalid regular expression, in
 which case gbrowse will crash until you comment out the offending
 option.
 
-  
+
 
 ## Controlling the gbrowse_details page
 
@@ -1879,7 +1879,7 @@ specify a feature_type of "default" to control the formatting for all
 features (more specific formatting rules will override less specific
 ones).
 
-  
+
 
 A formatting rule can be a string with (possible) substitution values,
 or a callback. If a string, it can contain one or more of the
@@ -1916,7 +1916,7 @@ default formatting of these features. You can modify this with a
 callback that word-wraps the value into lines of at most 60 characters,
 and puts the whole thing in a \<pre\> section.
 
-  
+
 
     [gene:details]
     Translation = sub {
@@ -1969,7 +1969,7 @@ value of the tag looks like an NCBI GI number:
            return;
          }
 
-  
+
 
 ## Configuring Balloon Tooltips
 
@@ -2022,7 +2022,7 @@ all coordinates by 100. GBrowse will automatically display the scale
 using the most appropriate units, so the displayed map will typically be
 drawn using cM units.
 
-  
+
 
 # Changing the Location of the Configuration Files
 
@@ -2054,7 +2054,7 @@ For example:
       PerlSetVar      GBrowseConf /etc/gbrowse.conf
     </Directory>
 
-  
+
 
 # Using DAS (Distributed Annotation System) Databases
 
@@ -2111,7 +2111,7 @@ on the primary_tag
                     }
      key          = RefSeq Signal Peptide
 
-  
+
 
 # Invoking GBrowse URLs
 

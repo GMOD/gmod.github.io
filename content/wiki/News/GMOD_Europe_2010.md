@@ -6,18 +6,18 @@ title: "News/GMOD Europe 2010"
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/160px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/240px-GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 2x"
-width="160" height="137" alt="GMOD Europe 2010" />](../GMOD_Europe_2010 "GMOD Europe 2010")  
-  
+width="160" height="137" alt="GMOD Europe 2010" />](../GMOD_Europe_2010 "GMOD Europe 2010")
+
 <a href="../InterMine_Workshop_-_GMOD_Europe_2010" rel="nofollow"
 title="InterMine Workshop"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/150px-InterMineLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/225px-InterMineLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/300px-InterMineLogo.png 2x"
-width="150" height="19" alt="InterMine Workshop" /></a>  
+width="150" height="19" alt="InterMine Workshop" /></a>
 <a href="../BioMart_Workshop_-_GMOD_Europe_2010" rel="nofollow"
 title="BioMart Workshop"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/170px-Biomart250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 2x"
-width="170" height="67" alt="BioMart Workshop" /></a>  
+width="170" height="67" alt="BioMart Workshop" /></a>
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/150px-Sept2010MtgLogo300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/225px-Sept2010MtgLogo300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 2x"
@@ -118,10 +118,9 @@ rel="nofollow">contact us</a>. We are also looking for [guest speaker
 nominations](../September_2010_GMOD_Meeting#Guest_Speaker_Nominations "September 2010 GMOD Meeting")
 for the meeting.*
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/04*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

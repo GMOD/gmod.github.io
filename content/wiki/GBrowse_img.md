@@ -84,7 +84,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 class="thumbborder" width="890" height="510"
 alt="Gbrowse img example1.png" />
 
-  
+
 
 ### Listing Sources
 
@@ -147,7 +147,7 @@ options have one-letter aliases that can be used to reduce URL lengths.
 
 The arguments are explained in more detail here:
 
-name / q  
+name / q
 This argument specifies the region of the genome to be displayed.
 Several forms are recognized:
 
@@ -169,14 +169,14 @@ Several forms are recognized:
 If you use multiple **name** options, then this script will generate an
 overview image showing the position of each landmark. The alias "q" can
 be used to shorten the length of the URL.
-dbid  
+dbid
 If the data source contains multiple defined databases, this argument is
 required to uniquely identify landmarks that may appear in multiple
 databases under different names. If not present, the standard search
 algorithm is used. Use the symbolic database name indicated in the
 source configuration file. For example if the database stanza is
 "\[scaffolds:database\]" then pass "dbid=scaffolds".
-type /t  
+type /t
 This argument lists the feature types to display. The value of this
 argument is a list of track names separated by spaces ("+" characters
 when L-escaped). For example:
@@ -190,9 +190,9 @@ the URL.
 If the track name has a space in it, put quotes around the name:
 
     type="microbe tRNA"+NG+WABA+CG+ESTB
-width / w  
+width / w
 Width of the desired image, in pixels.
-options / o  
+options / o
 A space-delimited list ("+" characters when URL-escaped) of
 mnemonic/option pairs describing how features should be formatted.
 Options are integers from 0 to 3, where 0=auto, 1=compact, 2=expanded,
@@ -203,7 +203,7 @@ should be compact, use:
     options=tRNA+3+NG+3+WABA+1
 
 The alias "o" can be used to shorten the length of the URL.
-add / a  
+add / a
 Superimpose one or more additional features on top of the view. Features
 are specified as space ("+") delimited lists in the following format:
 
@@ -228,7 +228,7 @@ where XX is an integer. This allows for a very simple feature line:
 
 Multiple *add=* arguments are allowed. The alias "a" can be used to
 shorten the length of the URL.
-style  
+style
 The style argument can be used to control the rendering of additional
 features added with "add". It is a flattened version of the style
 configuration sections described in
@@ -238,27 +238,27 @@ you have added a "Blast Hit" annotation, then you can tell the renderer
 to use a red arrow for this glyph in this way:
 
     style=%22Blast%20Hit%22+glyph=arrow+fgcolor=red
-keystyle / k  
+keystyle / k
 Controls the positioning of the track key. One of "right", "left",
 "between" (default) or "bottom"
-overview  
+overview
 Ordinarily the image will show the detail panel if the query region
 corresponds to a single region, and the overview panel if multiple
 regions match (or if a region that is too large to show matches).
 Setting overview=1 will force the overview to be shown in all cases.
-flip / f  
+flip / f
 Flip the image left to right. Arguments are 0=don't flip (default), and
 1=flip.
-embed  
+embed
 Generate image and a corresponding HTML imagemap in a form suitable for
 embedding into a frame.
 
-  
 
-format  
+
+format
 Specify the format for the image file. Either "GD" (the default) or
 "GD::SVG" for scalable vector graphics.
-list  
+list
 If this argument is present, it will cause the script to dump out
 various types of information in plain text form. Currently the two
 values for this argument are *sources*, to dump out the list of data
@@ -273,14 +273,14 @@ follows:
 
 The third column contains the word "default" if the track will be shown
 by default when no *type* argument is provided.
-source  
+source
 This argument specifies the data source for the images. The list of
 sources can be found using *list=sources*. See also the
 [GBrowse_2.0_HOWTO#Configured_Data_Source_Sections configured data
 source
 sections](GBrowse_2.0_HOWTO#Configured_Data_Source_Sections_configured_data_source_sections "GBrowse 2.0 HOWTO")
 in the GBrowse 2 guide.
-h_feat  
+h_feat
 The name of a feature to highlight in the format
 *feature_name*@*color_name*
 
@@ -291,7 +291,7 @@ Example:
 You may omit "@color", in which case the highlight will default to
 yellow. You can specify multiple h_feat arguments in order to highlight
 several features with distinct colors.
-h_region  
+h_region
 The name of a region to highlight in a solid background color, in the
 format *sequence_name*:*start*..*end*@*color_name*
 
@@ -331,7 +331,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 class="thumbborder" width="872" height="314"
 alt="Gbrowse img location v1.jpg" />
 
-  
+
 
 ### Gbrowse v2.x
 
@@ -343,7 +343,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 class="thumbborder" width="623" height="349"
 alt="Gbrowse img location v2.jpg" />
 
-  
+
 
 ## Known Bugs
 

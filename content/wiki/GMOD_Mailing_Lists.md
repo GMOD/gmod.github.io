@@ -43,8 +43,8 @@ Mailing lists about specific [GMOD Components](/wiki/GMOD_Components).
 | [JBrowse](/wiki/JBrowse.1) | [jbrowse-dev](https://calmail.berkeley.edu/manage/list/listinfo/jbrowse-dev@lists.berkeley.edu) | JBrowse development discussions | [Nabble](http://gmod.827538.n3.nabble.com/JBrowse-Development-f3296666.html) |
 | [MAKER](/wiki/MAKER.1) | [maker-devel](http://box290.bluehost.com/mailman/listinfo/maker-devel_yandell-lab.org) | MAKER developers and users list | [Google](http://groups.google.com/group/maker-devel?lnk=srg), [Nabble](http://gmod.827538.n3.nabble.com/MAKER-f815929.html) |
 | [Pathway Tools](/wiki/Pathway_Tools.1) | ptools-users@ai.sri.com | To subscribe, send request to ptools-support@ai.sri.com | |
-| [Sybil](/wiki/Sybil) | [sybil-info](https://lists.sourceforge.net/lists/listinfo/sybil-info) | Sybil mailing list | [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=sybil-info) |
-| [Textpresso](/wiki/Textpresso) | textpresso@caltech.edu | Email for support questions | |
+| [Sybil](/wiki/Sybil.1) | [sybil-info](https://lists.sourceforge.net/lists/listinfo/sybil-info) | Sybil mailing list | [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=sybil-info) |
+| [Textpresso](/wiki/Textpresso.1) | textpresso@caltech.edu | Email for support questions | |
 | [Tripal](/wiki/Tripal.1) | [gmod-tripal](https://lists.sourceforge.net/lists/listinfo/gmod-tripal) | Tripal announcements, questions, and help | [Nabble](http://gmod.827538.n3.nabble.com/Tripal-User-f815950.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-tripal) |
 | [Tripal](/wiki/Tripal.1) | [gmod-tripal-devel](https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel) | Tripal development list | [Nabble](http://gmod.827538.n3.nabble.com/Tripal-Development-f2471283.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-tripal-devel) |
 
@@ -68,13 +68,13 @@ These lists have not had postings in the past 12 months (as of May 2016).
 | [Bio::Graphics](http://search.cpan.org/perldoc?Bio::Graphics) | [gmod-biographics-commits](https://lists.sourceforge.net/lists/listinfo/gmod-biographics-commits) | Code updates | [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-biographics-commits) |
 | [CMap](/wiki/CMap.1) | [gmod-cmap](https://lists.sourceforge.net/lists/listinfo/gmod-cmap) | Discussion of CMap development, installation, etc. | [Nabble](http://gmod.827538.n3.nabble.com/CMap-f815601.html), [Sourceforge](https://lists.sourceforge.net/lists/listinfo/gmod-cmap) |
 | [CMap](/wiki/CMap.1) | [gmod-cmap-commits](https://lists.sourceforge.net/lists/listinfo/gmod-cmap-commits) | SVN activity notifications | [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cmap-commits) |
-| [DIYA](/wiki/DIYA) | [diyg-pub-l](https://lists.sourceforge.net/mailman/listinfo/diyg-pub-l) | General discussion and support | [Nabble](http://gmod.827538.n3.nabble.com/DIYA-f835548.html) |
-| [DIYA](/wiki/DIYA) | [diyg-dev-l](https://lists.sourceforge.net/mailman/listinfo/diyg-dev-l) | Developer discussion | |
+| [DIYA](/wiki/DIYA.1) | [diyg-pub-l](https://lists.sourceforge.net/mailman/listinfo/diyg-pub-l) | General discussion and support | [Nabble](http://gmod.827538.n3.nabble.com/DIYA-f835548.html) |
+| [DIYA](/wiki/DIYA.1) | [diyg-dev-l](https://lists.sourceforge.net/mailman/listinfo/diyg-dev-l) | Developer discussion | |
 | [Ergatis](/wiki/Ergatis) | [ergatis-users](https://lists.sourceforge.net/lists/listinfo/ergatis-users) | Users mailing list | [Nabble](http://gmod.827538.n3.nabble.com/Ergatis-Users-f815632.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-users) |
 | [Ergatis](/wiki/Ergatis) | [announcement](https://lists.sourceforge.net/lists/listinfo/ergatis-announce) | Announcements | [Nabble](http://gmod.827538.n3.nabble.com/Ergatis-Announcements-f815639.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-announce) |
 | [Ergatis](/wiki/Ergatis) | [ergatis-devel](https://lists.sourceforge.net/lists/listinfo/ergatis-devel) | Developers | [Nabble](http://gmod.827538.n3.nabble.com/Ergatis-Development-f815854.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-devel) |
-| [ISGA](/wiki/ISGA) | [isga-users](https://lists.sourceforge.net/lists/listinfo/isga-users) | Support, development, and announcements | [Nabble](http://gmod.827538.n3.nabble.com/ISGA-Users-f1031703.html) |
-| [Modware](/wiki/Modware) | [gmod-ware-users](https://lists.sourceforge.net/lists/listinfo/gmod-ware-users) | Support and developer mailing list | [Nabble](http://gmod.827538.n3.nabble.com/Modware-f887754.html), [Sourceforge](https://sourceforge.net/mailarchive/forum.php?forum_name=gmod-ware-users) |
+| [ISGA](/wiki/ISGA.1) | [isga-users](https://lists.sourceforge.net/lists/listinfo/isga-users) | Support, development, and announcements | [Nabble](http://gmod.827538.n3.nabble.com/ISGA-Users-f1031703.html) |
+| [Modware](/wiki/Modware.1) | [gmod-ware-users](https://lists.sourceforge.net/lists/listinfo/gmod-ware-users) | Support and developer mailing list | [Nabble](http://gmod.827538.n3.nabble.com/Modware-f887754.html), [Sourceforge](https://sourceforge.net/mailarchive/forum.php?forum_name=gmod-ware-users) |
 | [WebGBrowse](/wiki/WebGBrowse.1) | [gmod-webgbrowse](https://lists.sourceforge.net/lists/listinfo/gmod-webgbrowse) | Questions, announcements, and development | [Nabble](http://gmod.827538.n3.nabble.com/WebGBrowse-f947412.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-webgbrowse) |
 
 ### As of August 2008
@@ -90,12 +90,12 @@ These lists have not had postings in the past 12 months (as of August 2008).
 | [gmod-das2-cmts](https://lists.sourceforge.net/lists/listinfo/gmod-das2-cmts) | DAS mailing list. Last commit June 2007. |
 | [gmod-gene-page](https://lists.sourceforge.net/lists/listinfo/gmod-gene-page) | Last post December 2005. Topic now on gmod-devel. |
 | [gmod-ontol-sw-dev](https://lists.sourceforge.net/lists/listinfo/gmod-ontol-sw-dev) | Coordination of software and architecture for ontologies |
-| [gmod-pubsearch-dv](https://lists.sourceforge.net/lists/listinfo/gmod-pubsearch-dv) | [PubSearch](/wiki/PubSearch) mailing list |
+| [gmod-pubsearch-dv](https://lists.sourceforge.net/lists/listinfo/gmod-pubsearch-dv) | [PubSearch](/wiki/PubSearch.1) mailing list |
 | [gmod-resources](https://lists.sourceforge.net/lists/listinfo/gmod-resources) | Last post July 2005 |
 | [gmod-web-cmts](https://lists.sourceforge.net/lists/listinfo/gmod-web-cmts) | Last post December 2004 |
-| [turnkey-users](https://lists.sourceforge.net/lists/listinfo/turnkey-users) | [Turnkey](/wiki/Turnkey) user list. Last post 2008. |
-| [turnkey-devel](https://lists.sourceforge.net/lists/listinfo/turnkey-devel) | [Turnkey](/wiki/Turnkey) development list. Last post 2008. |
-| [turnkey-cmts](https://lists.sourceforge.net/lists/listinfo/turnkey-cmts) | [Turnkey](/wiki/Turnkey) code updates |
+| [turnkey-users](https://lists.sourceforge.net/lists/listinfo/turnkey-users) | [Turnkey](/wiki/Turnkey.1) user list. Last post 2008. |
+| [turnkey-devel](https://lists.sourceforge.net/lists/listinfo/turnkey-devel) | [Turnkey](/wiki/Turnkey.1) development list. Last post 2008. |
+| [turnkey-cmts](https://lists.sourceforge.net/lists/listinfo/turnkey-cmts) | [Turnkey](/wiki/Turnkey.1) code updates |
 
 ## A Few Non-GMOD Lists
 

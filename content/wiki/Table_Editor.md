@@ -4,7 +4,7 @@ title: "TableEdit"
 # TableEdit
 
 (Redirected from [Table
-Editor](/wiki/Table_Editor)
+Editor](/wiki/Table_Editor.1)
 
   community annotation with a MediaWiki
   wiki</span>](#Genome_community_annotation_with_a_MediaWiki_wiki)
@@ -125,7 +125,7 @@ Here is a code snippet from a wrapper script
 foreach ($genes as $gene){
         $gene_count++;
         $gene_name = $gene['feature_name'];
- 
+
         # require something that finds the desired page and table and edits it
         require "$bot_dir/colimod_colipedia/modify_tables/test_modify.php";
          if ($box){

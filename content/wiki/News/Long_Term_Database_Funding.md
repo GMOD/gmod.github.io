@@ -70,10 +70,9 @@ resource" link on your site.
 
 [Dave Clements](../User%253AClements "User%253AClements")
 
-  
+
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/06*
 
-:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -5,14 +5,14 @@ title: "June 2006 GMOD Meeting"
 
 GMOD Generic Model Organism Database
 
-  
+
 
 ## Meeting 8
 
 June 29-30 <a href="http://nescent.org" class="external text"
 rel="nofollow">NESCent</a>, Durham, NC
 
-  
+
 
 ## Presentations
 
@@ -66,23 +66,23 @@ rel="nofollow">NESCent</a>, Durham, NC
 
 12:00 Lunch
 
-1:15 SynBrowse--What's new and obtaining/creating data for use.  
+1:15 SynBrowse--What's new and obtaining/creating data for use.
 Xiaokang Pan, Iowa State University
 
 1:45 gmodj06-genomegrid-dgg.pdf GMODTools, gff2biomart, and genome grid
-tools  
+tools
 Don Gilbert, Indiana University
 
-2:15 BioMart  
+2:15 BioMart
 Arek Kasprzyk, EBI
 
 2:45 Coffee
 
-3:00 biocyc-GMOD-2006.ppt Pathway Tools  
+3:00 biocyc-GMOD-2006.ppt Pathway Tools
 Suzanne Mercer Paley, SRI
 
 3:30 GMOD Architecture Working Group - GMOD_Architecture.ppt Finding
-requirements for a 'toy' application for testing middleware  
+requirements for a 'toy' application for testing middleware
 Scott Cain as a proxy for Eric Just, DictyBase
 
 4:30 GMOD organizational stuff

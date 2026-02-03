@@ -135,7 +135,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: expression
 
@@ -159,7 +159,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: expression_cvterm
 
@@ -179,7 +179,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: expression_image
 
@@ -193,7 +193,7 @@ expression_image Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: expression_pub
 
@@ -207,7 +207,7 @@ expression_pub Structure
 
 ------------------------------------------------------------------------
 
-  
+
 
 ## Table: feature_expression
 

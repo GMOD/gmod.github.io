@@ -6,15 +6,15 @@ title: "Property%253ALinktitle"
 This is a property of type
 .
 
-  
+
 <span id="SMWResults"></span>
 
 ## Pages using the property "Linktitle"
 
 Showing 25 pages using this property.
 
-(previous 25) ([next
-25](/wiki/Property%253ALinktitle)
+(previous 25) (next
+25
 
 <table style="width: 100%; ">
 <colgroup>
@@ -215,8 +215,8 @@ class="smwbrowse"></span></td>
 </tbody>
 </table>
 
-(previous 25) ([next
-25](/wiki/Property%253ALinktitle)
+(previous 25) (next
+25
 
 </span>
 

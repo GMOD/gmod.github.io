@@ -30,7 +30,7 @@ title: "Mage FAQ"
     the source of the data stored in the pub
     table?](#How_do_you_create_a_reference_from_the_results_of_a_microarray_experiment_to_the_source_of_the_data_stored_in_the_pub_table.3F)
 
-  
+
 
 ## About this FAQ
 

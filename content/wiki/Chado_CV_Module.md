@@ -522,20 +522,20 @@ terms of the number of triples we use:
     <subject_id>GO:0008345</subject_id>
     <object_id>GO:0030537</object_id>
   </cvterm_relationship>
- 
+
   <!-- Genus/generic term -->
   <cvterm_relationship>
     <type_id>intersection_of</type_id>
     <subject_id>GO:0008345</subject_id>
     <object_id>GO:0007626</object_id> <!-- locomotory behavior -->
   </cvterm_relationship>
- 
+
   <!-- Discriminating characteristics -->
   <cvterm_relationship>
     <type_id>intersection_of</type_id>
     <subject_id>GO:0008345</subject_id>
     <object_id>
- 
+
       <!-- anonymous term representing  during(larval stage) -->
       <cvterm>
         <dbxref_id>
@@ -544,7 +544,7 @@ terms of the number of triples we use:
             <accession>restriction--OBOL:during--GO:0008345</accession>
           </dbxref>
         </dbxref_id>
- 
+
         <!-- note: as this is an anon term, the name will never
              be shown to a user -->
         <name>restriction--OBOL:during--GO:0008345</name>
@@ -559,7 +559,7 @@ terms of the number of triples we use:
           <object_id>FBdv:00005336</object_id>
         </cvterm_relationship>
       </cvterm>
- 
+
     </object_id>
   </cvterm_relationship>
 ```
@@ -697,13 +697,13 @@ definition as above.
     <subject_id>anon_1</subject_id>
     <object_id>GO__plasma_membrane</object_id>
   </cvterm_relationship>
- 
+
   <!-- Discriminating characteristics -->
   <cvterm_relationship>
     <type_id>intersection_of</type_id>
     <subject_id>anon_1</subject_id>
     <object_id>
- 
+
       <!-- anonymous term representing  part_of(spermatocyte) -->
       <cvterm>
         <dbxref_id>
@@ -712,7 +712,7 @@ definition as above.
             <accession>restriction--part_of--spermatocyte</accession>
           </dbxref>
         </dbxref_id>
- 
+
         <!-- note: as this is an anon term, the name will never
              be shown to a user -->
         <name>restriction--part_of--spermatocyte</name>
@@ -727,7 +727,7 @@ definition as above.
           <object_id>CL__spermatocyte</object_id>
         </cvterm_relationship>
       </cvterm>
- 
+
     </object_id>
   </cvterm_relationship>
 ```

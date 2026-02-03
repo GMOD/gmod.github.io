@@ -59,7 +59,7 @@ width="50" height="50"
 alt="It&#39;s a bird! It&#39;s a plane! It&#39;s the GMOD project on Twitter!" /></a>
 
 <a href="http://twitter.com/gmodproject" class="external text"
-rel="nofollow">Follow <strong>The Tweet of GMOD</strong></a>  
+rel="nofollow">Follow <strong>The Tweet of GMOD</strong></a>
 <a href="http://twitter.com/gmodproject" class="external text"
 rel="nofollow">@gmodproject</a>
 

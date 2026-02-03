@@ -3,7 +3,7 @@ title: "Tripal Tutorial v1.1"
 ---
 # Tripal Tutorial v1.1
 
-  
+
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png"
@@ -33,7 +33,7 @@ class="external text" rel="nofollow">Tripal mailing List</a> or adding a
 bug report on the <a href="https://drupal.org/project/issues/1337878"
 class="external text" rel="nofollow">Tripal issues tracker</a>.
 
-  
+
 
   Tripal</span>](#What_is_Tripal)
 - [Content
@@ -332,7 +332,7 @@ modules. It contains
 - Functions for managing module specific CV terms
 - Functions for interfacing with Chado.
 
-  
+
 The Chado-centric modules provide:
 
 - Edit/Update/Delete for Chado modules.
@@ -340,14 +340,14 @@ The Chado-centric modules provide:
 - Basic visualizations for data in Chado specific for the module
 - An API for easily accessing Chado.
 
-  
+
 Analysis modules provide
 
 - Custom visualization for specific analyses (e.g. Blast, KEGG,
   InterProScan, Unigene construction)
 - Uses the API from the Tripal Analysis (Chado-centric) module.
 
-  
+
 Applications:
 
 - These are full blown applications that use Tripal, Drupal and Chado
@@ -413,7 +413,7 @@ support and community interaction!!
 Funding for Tripal v1.0 has been provided through various grants from
 various sources.
 
-  
+
 
 ### Publications
 
@@ -440,7 +440,7 @@ server, PHP5 and several configuration options to make it all work.
 However, once these prerequisites are met, working with Drupal and
 Tripal are quite easy.
 
-  
+
 There are four ways you could get a Tripal/Drupal/Chado database web
 server available for your site
 
@@ -463,7 +463,7 @@ server available for your site
     cloud</a> Amazon AWS image created by GMOD. It is also accompanied
     by other GMOD tools such as GBrowse2, JBrowse, Apollo and WebApollo.
 
-  
+
 After selection of one of the options above you can arrange your
 database/webserver in the following ways:
 
@@ -475,7 +475,7 @@ database/webserver in the following ways:
     different servers. This provides dedicated resources to each service
     (i.e. web and database).
 
-  
+
 **Selection of an appropriate machine**
 
 Databases are typically bottle-necked by RAM and disk speed. Selection
@@ -484,7 +484,7 @@ important and dependent on the size of the data. The best advice is to
 consult an IT professional who can recommend a server installation
 tailored for the expected size of your data.
 
-  
+
 **Note**: Tripal does require command-line access to the web server with
 adequate local file storage for loading of large data files. Be sure to
 check with your service provider to make sure command-line access is
@@ -494,14 +494,14 @@ possible.
 
 Depending on your needs, you may need additional Technical support....
 
-  
+
 **Tripal already supports my data, what personnel to I need to maintain
 it?**
 
 - Someone to install/setup the IT infrastructure
 - Someone who understands the data to load it properly
 
-  
+
 **Tripal does not yet support all of my data, but I want to use what's
 been done and expand on it....?**
 
@@ -509,7 +509,7 @@ been done and expand on it....?**
 - Someone who understands the data to load it properly
 - PHP/HTML/CSS/JavaScript programmer(s) to write your custom extensions
 
-  
+
 
 ### Why Use Tripal
 
@@ -672,7 +672,7 @@ exceed physical memory, be conservative but not too much so):
 
       memory_limit = 2048M;
 
-  
+
 Now, restart the webserver:
 
       sudo /etc/init.d/apache2 restart
@@ -754,14 +754,14 @@ PostgreSQL so that is what we will use for both Drupal and Chado. We
 need to create the Drupal database. The following command can be used to
 create a new database user and database.
 
-  
+
 First, become the 'postgres' user:
 
 ``` enter
 sudo su - postgres
 ```
 
-  
+
 Next, create the new 'drupal' user account. This account will not be a
 "superuser' nor allowed to create new roles, but should be allowed to
 create a database.
@@ -772,15 +772,15 @@ createuser -P drupal
 
 When requested, enter an appropriate password:
 
-      
+
       Enter password for new role: *********
       Enter it again:  *********
       Shall the new role be a superuser? (y/n) n
       Shall the new role be allowed to create databases? (y/n) y
       Shall the new role be allowed to create more new roles? (y/n) n
-      
 
-  
+
+
 
 Finally, create the new database:
 
@@ -788,7 +788,7 @@ Finally, create the new database:
 createdb drupal -O drupal
 ```
 
-  
+
 We no longer need to be the postgres user so exit
 
 ``` enter
@@ -838,7 +838,7 @@ uncompress the software:
   tar -zxvf drupal-6.28.tar.gz
 ```
 
-  
+
 Notice that we now have a `drupal-6.28` directory with all of the Drupal
 files. We want the Drupal files to be in our document root, not in a
 'drupal-6.28' subdirectory. So, we'll move the contents of the directory
@@ -850,7 +850,7 @@ mv drupal-6.28/.htaccess ./
 mv index.html index.html.orig
 ```
 
-  
+
 **Note:** It is extremely important the the hidden file `.htaccess` is
 also moved (note the second 'mv' command above. Check to make sure this
 file is there
@@ -871,14 +871,14 @@ Next, we need to tell Drupal how to connect to our database. To do this
 we have to setup a configuration file. Drupal comes with an example
 configuration file which we can borrow.
 
-  
+
 First navigate to the location where the configuration file should go:
 
 ``` enter
   cd /var/www/sites/default/
 ```
 
-  
+
 Next, copy the example configuration that already exists in the
 directory to be our actual configuration file by renaming it to
 `settings.php`.
@@ -887,7 +887,7 @@ directory to be our actual configuration file by renaming it to
   cp default.settings.php settings.php
 ```
 
-  
+
 Now, we need to edit the configuration file to tell Drupal how to
 connect to our database server. To do this we'll use an easy to use text
 editor **gedit**
@@ -896,7 +896,7 @@ editor **gedit**
   gedit settings.php
 ```
 
-  
+
 Find the variable \$db_url and set it to this
 
 ``` enter
@@ -918,17 +918,17 @@ Finally, we need to create three new directories. The first is the
   sudo chmod g+rw files
 ```
 
-  
+
 The above command creates the directory but sets the group to be the web
 server (i.e. www) with read/write permissions. This way the web server
 can write to the directory but so can we.
 
-  
+
 Also, we need to create two new directories, one for storing module
 files we'll be installing and another for themes which we'll also be
 installing later:
 
-  
+
 Now create the modules and themes directory
 
 ``` enter
@@ -967,7 +967,7 @@ rel="nofollow">http://localhost/install.php</a>
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/800px-Install1.png" width="800"
 height="475" alt="800px-Install1.png" />
 
-  
+
 Click the link in the middle section that reads **Install Drupal in
 English**
 
@@ -975,7 +975,7 @@ English**
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/51/800px-Tripal_Install2.png" width="800"
 height="475" alt="800px-Tripal Install2.png" />
 
-  
+
 When the progress bar shows completing the page will switch to a
 configuration page with some final settings.
 
@@ -983,7 +983,7 @@ configuration page with some final settings.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/53/800px-Tripal-install3.png" width="800"
 height="475" alt="800px-Tripal-install3.png" />
 
-  
+
 Set the following
 
 - Site Name: Tripal Demo
@@ -995,7 +995,7 @@ Set the following
 - Clean URLs: enabled
 - Update Notification: check for updates automatically
 
-  
+
 Now, click the **Save and Continue** button. You will see a message
 about unable to send an email. This is safe to ignore as email
 capabilities are not fully enabled on this VMWare image. Now, your site
@@ -1022,14 +1022,14 @@ cron launch the crontab editor:
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
 
-  
+
 Add this line to the crontab
 
 ``` enter
   0,30 * * * * /usr/bin/wget -O - -q http://localhost/cron.php > /dev/null
 ```
 
-  
+
 Now save the changes. We have now added a UNIX cron job that will occur
 every 30 minutes that will execute the `cron.php` script and cause
 Drupal to perform housekeeping tasks.
@@ -1089,7 +1089,7 @@ following:
   drush
 ```
 
-  
+
 
 ## Explore Drupal
 
@@ -1114,7 +1114,7 @@ link on the left sidebar.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/800px-ExplorDrupal2.png" width="800"
 height="475" alt="800px-ExplorDrupal2.png" />
 
-  
+
 You'll see two content types that come default with Drupal: Page and
 Story. Here is where a user can add simple new pages to the website
 without knowledge of HTML or CSS. Click the **Page** content type to see
@@ -1124,7 +1124,7 @@ the interface for creating a new page:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/800px-ExploreDrupal3.png" width="800"
 height="475" alt="800px-ExploreDrupal3.png" />
 
-  
+
 You'll notice at the top a **Title** field and a **Body** text box. All
 pages require a title and typically have some sort of content entered in
 the body. Additionally, there are other options that allow someone to
@@ -1135,7 +1135,7 @@ history and to set authoring and publishing information.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fc/800px-ExploreDrupal4.png" width="800"
 height="475" alt="800px-ExploreDrupal4.png" />
 
-  
+
 For practice, try to create two new pages. A **Home** page and an
 **About** page for our site. First create the home page and second
 create the about page. Add whatever text you like for the body.
@@ -1152,7 +1152,7 @@ content, manage users and view reports.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/800px-DrupalAdmin1.png" width="800"
 height="633" alt="800px-DrupalAdmin1.png" />
 
-  
+
 We will not explore all of the options here but will visit a few of the
 more important ones for this tutorial. First, click the **Content
 Management** link on the left sidebar. You'll see different options.
@@ -1161,7 +1161,7 @@ Management** link on the left sidebar. You'll see different options.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/88/800px-DrupalAdminContent.png" width="800"
 height="633" alt="800px-DrupalAdminContent.png" />
 
-  
+
 Click the **Content** link. The page shows all content available on the
 site. You will see the "About" and "Home" pages you created previously:
 
@@ -1169,7 +1169,7 @@ site. You will see the "About" and "Home" pages you created previously:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/800px-DrupalContent.png" width="800"
 height="633" alt="800px-DrupalContent.png" />
 
-  
+
 You'll also notice a set of drop down boxes for filtering the content.
 For sites with many different content types and pages this helps to find
 content. You can use this list to click to view each page or to edit.
@@ -1186,7 +1186,7 @@ Modules and Themes. First click **Modules**
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/800px-AdminModules.png" width="800"
 height="633" alt="800px-AdminModules.png" />
 
-  
+
 Here is where you will see the various modules that make up Drupal. Take
 a minute to scroll through the list of these and read some of the
 descriptions. The modules you see here are core modules that come with
@@ -1196,12 +1196,12 @@ additional modules that are not yet installed. Locate the modules
 **Path** and **Search** and check the box next to each of those. Scroll
 to the bottom and click 'Save configuration'.
 
-  
+
 The Path and Search modules are now installed. The Search module enables
 site-wide searching capabilities for our site and the Path module
 enables alternative naming of page URLs (we will discuss later).
 
-  
+
 
 ##### Themes
 
@@ -1212,7 +1212,7 @@ on the left sidebar.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1a/800px-DrupalThemes.png" width="800"
 height="633" alt="800px-DrupalThemes.png" />
 
-  
+
 Here, you'll see a list of themes that come with Drupal by default. If
 you scroll down you'll see that one theme named **Garland** is enabled
 and set as default. The current look of the site is using the Garland
@@ -1224,7 +1224,7 @@ them. Change the them by checking the **Enable** checkbox and the
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/800px-DrupalThemes2.png" width="800"
 height="522" alt="800px-DrupalThemes2.png" />
 
-  
+
 
 ##### Blocks
 
@@ -1243,7 +1243,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/77/Drupal_blocks1.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/77/Drupal_blocks1.png 2x"
 width="800" height="708" alt="Drupal blocks1.png" />
 
-  
+
 Take time to turn on and off blocks to see where they appear. Re-arrange
 blocks by dragging and dropping the cross-hairs beside each one. Be sure
 to leave the blocks in the configuration shown in the image below
@@ -1268,7 +1268,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2a/Drupal_menus1.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2a/Drupal_menus1.png 2x"
 width="800" height="613" alt="Drupal menus1.png" />
 
-  
+
 Select the menu **Primary links**. You'll see it currently has no item.
 
 <img
@@ -1276,7 +1276,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/81/Drupal_menus2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/81/Drupal_menus2.png 2x"
 width="800" height="613" alt="Drupal menus2.png" />
 
-  
+
 As a demonstration for working with menus we'll add two menu items for
 the Home and About pages we created earlier. To do so, click the **Add
 item** tab. You will see a form for providing information about the menu
@@ -1310,7 +1310,7 @@ Returning to our tab where we are adding a menu item, enter the path
 - Parent item: \<primary links\>
 - Weight: 0
 
-  
+
 The settings above will give the menu link a title of **Home** and put
 it on the **Primary Links** menu. We now have a **Home** menu item in
 the top just under the header, and our **Home** menu item now appears in
@@ -1321,7 +1321,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/73/Druapl_menus4.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/73/Druapl_menus4.png 2x"
 width="800" height="613" alt="Druapl menus4.png" />
 
-  
+
 Using the instructions above to add a second menu item for our about page
 and arrange. Use the 'weight' value so that our Home link appears first
 and the About link appears second.
@@ -1333,7 +1333,7 @@ As mentioned previously, the URL paths for our pages have `node/1` and
 Earlier we enabled the **Path** module. This module will allow us to set
 a more human-readable path for our pages.
 
-  
+
 To set a path, click on our new **About** page in the new menu link at
 the top and click the **Edit** tab. Scroll to the bottom of the edit
 page and you'll see a section titled **URL path setting**. click to open
@@ -1344,7 +1344,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ad/Drupal_url.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ad/Drupal_url.png 2x"
 width="800" height="336" alt="Drupal url.png" />
 
-  
+
 Since this is our about page, we simply want the URL to be
 <a href="http://localhost/about" class="external free"
 rel="nofollow">http://localhost/about</a>. To do this, just add the word
@@ -1356,7 +1356,7 @@ rel="nofollow">http://localhost/node/2</a> but now
 rel="nofollow">http://localhost/about</a>. Although, both links will
 still get you to our About page.
 
-  
+
 Now, use the instructions described above to set a path of 'home' for
 our home page.
 
@@ -1371,7 +1371,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/Drupal_config.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/Drupal_config.png 2x"
 width="800" height="613" alt="Drupal config.png" />
 
-  
+
 Here you will find the configuration options we set when installing the
 site. You can change the site name, add a slogan, mission and footer
 text to the. Towards the bottom there is a text box titled **Default
@@ -1383,7 +1383,7 @@ home page. We must use the node number here and not our new URL path of
 **Tripal demo** to **My Community Genome Database** and add a slogan:
 **Resources for Community Genomics**.
 
-  
+
 Now, click the **Save configuration** button at the bottom. You'll see
 our site name has changed at the top. Also, if we click the logo image
 at the top of the site and it will take you to the front page with our
@@ -1426,7 +1426,7 @@ utility to download the theme
   drush pm-download sky
 ```
 
-  
+
 This should unpack the theme for us. Now, navigate to **Administer** →
 **Site Building** → **Themes** and enable the 'Sky' theme and set it as
 default:
@@ -1435,7 +1435,7 @@ default:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/800px-DrupalThemes3.png" width="800"
 height="522" alt="800px-DrupalThemes3.png" />
 
-  
+
 The sky theme was obtained at this address:
 <a href="http://drupal.org/project/sky" class="external free"
 rel="nofollow">http://drupal.org/project/sky</a>
@@ -1447,7 +1447,7 @@ are available to help customize the theme for your site. These can be
 found by navigating to the **Administer** → **Site Building** →
 **Themes** page and clicking the **Configure** tab near the top.
 
-  
+
 Appearing under the **Configure** link will be small menu with a listing
 of every theme we have enabled. You should see the **Sky** theme at the
 end of this list. Click that theme because that is the one we are using
@@ -1457,7 +1457,7 @@ and want to configure:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d5/800px-DrupalSkyTheme.png" width="800"
 height="477" alt="800px-DrupalSkyTheme.png" />
 
-  
+
 Here you can turn on and off the presence of the logo, site name,
 slogan, mission statement, etc. For this particular theme we can also
 adjust background colors and images, link colors, font style and size,
@@ -1465,7 +1465,7 @@ and more. Notice when we added a slogan in a previous step but it did
 not appear anywhere on the site. To make it appear, check the box next
 to **Slogan**.
 
-  
+
 Also set the following for the theme:
 
 - Set the 'Custom Layout Width' to be 90% to give us more room
@@ -1487,7 +1487,7 @@ these steps:
 4.  Return the the Drupal **Administer** → **Site Building** →
     **Modules** page and enable the module.
 
-  
+
 For an example, let's install the **Views** module needed for this
 workshop. The Views module can be found here:
 <a href="http://drupal.org/project/views" class="external free"
@@ -1499,7 +1499,7 @@ current version as of the writing of this tutorial:
   drush pm-download views
 ```
 
-  
+
 Check the README for additional installation instructions
 
 ``` enter
@@ -1511,17 +1511,17 @@ Check the README for additional installation instructions
 *Use the space-bar to scroll through the README.txt file. Hit the 'q'
 key to quit*
 
-  
+
 There are no other installation steps besides what we've done. So return
 to the **Administer** → **Site Building** → **Modules** page and enable
 the Views module.
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/03/800px-DrupalViews.png" width="800"
 height="491" alt="800px-DrupalViews.png" />
 
-  
+
 Notice that the Views package provided three different related modules
 and they all appear under a **Views** category.
 
@@ -1531,7 +1531,7 @@ Alternatively, you can enable the module using another drush command:
   drush pm-enable views views_ui views_export
 ```
 
-  
+
 for this Tutorial, CCK, Views, Views Data Export, JQuery update, and
 CKEditor should also be downloaded and installed following the same
 instructions above
@@ -1571,7 +1571,7 @@ CCK and CKEditor modules can be enabled with the following
    drush pm-enable ckeditor
 ```
 
-  
+
 For reference, the modules installed above can be found here:
 
 - Views: <a href="http://drupal.org/project/views" class="external free"
@@ -1606,7 +1606,7 @@ appears, we want to expand the 'Visibility Settings' and switch the
 radio button from 'Exclude' to 'Include'. Then clear all of the entries
 in the textbox named 'Fields to exclude/include':
 
-  
+
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5b/Tripal-v1.1_ckeditor2.png/800px-Tripal-v1.1_ckeditor2.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5b/Tripal-v1.1_ckeditor2.png/1200px-Tripal-v1.1_ckeditor2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/Tripal-v1.1_ckeditor2.png 2x"
@@ -1673,12 +1673,12 @@ a git commands to obtain these.
 
 ``` enter
 git clone http://git.drupal.org/sandbox/spficklin/1578226.git tripal_blast_analysis
-cd tripal_blast_analysis 
+cd tripal_blast_analysis
 git checkout 6.x-1.1-tripal_v1.1
 cd ../
 
 git clone http://git.drupal.org/sandbox/spficklin/1578234.git tripal_kegg_analysis
-cd tripal_kegg_analysis 
+cd tripal_kegg_analysis
 git checkout 6.x-1.1-tripal_v1.1
 cd ../
 
@@ -1688,7 +1688,7 @@ git checkout 6.x-1.1-tripal_v1.1
 cd ../
 
 git clone http://git.drupal.org/sandbox/spficklin/1578230.git tripal_go_analysis
-cd tripal_go_analysis 
+cd tripal_go_analysis
 git checkout 6.x-1.1-tripal_v1.1
 cd ../
 
@@ -1777,14 +1777,14 @@ need to add a second cron entry:
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
 
-  
+
 Add this line to the crontab
 
 ``` enter
    0,15,30,45 * * * * (cd /var/www; drush trpjob-run administrator ) > /dev/null
 ```
 
-  
+
 This entry will run the Tripal cron every 15 minutes as the
 administrator user. For this tutorial we do not want to wait 15 minutes
 at the most to execute our jobs. So, we will run the jobs manually.
@@ -1809,7 +1809,7 @@ that the installation of Chado was successful:
     Install of Chado v1.2 (Step 2 of 2) Successful.
     Installation Complete
 
-  
+
 
 Also, we see that the job has completed when refreshing the jobs
 management page:
@@ -1834,7 +1834,7 @@ drush pm-enable tripal_feature
 drush pm-enable tripal_views
 ```
 
-  
+
 Now, enable the remaining Tripal extension modules
 
 ``` enter
@@ -1860,7 +1860,7 @@ sudo chown -R ubuntu:www-data /var/www/sites/default/files
 sudo chmod -R g+rw /var/www/sites/default/files
 ```
 
-  
+
 The last component we need to enable is the Tripal base theme. This
 theme provides the necessary look-and-feel to the data presented by
 Tripal. Installation is the same as for modules:
@@ -1895,7 +1895,7 @@ If you do not wish to use the Sky theme, you simply need to find the
 corresponding .info file for your default theme and add the same line to
 the file.
 
-  
+
 Tripal is now installed!
 
 ### Controlled Vocabularies: Installing CVs
@@ -1912,7 +1912,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/fa/Tripal-LoadOntology.png/1200px-Tripal-LoadOntology.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/Tripal-LoadOntology.png 2x"
 width="800" height="581" alt="Tripal-LoadOntology.png" />
 
-  
+
 The Ontology loader will allow you to select a pre-defined ontology from
 the drop down list or allow you to provide your own to be loaded. If you
 provide your own, you give the remote URL of the OBO file or provide the
@@ -1932,7 +1932,7 @@ Do so by selecting one and clicking the **Submit** button. Repeat this
 process for each of the three ontologies. You'll notice each time that a
 job is added to the jobs subsystem.
 
-  
+
 Now manually launch these jobs
 
 ``` enter
@@ -1940,7 +1940,7 @@ cd /var/www
 drush trpjob-run administrator
 ```
 
-  
+
 **Note:** Loading the Gene Ontology will take several hours.
 
 ### Setting Perimssions
@@ -1960,7 +1960,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1e/Triapl-Permissions.png/1200px-Triapl-Permissions.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1e/Triapl-Permissions.png 2x"
 width="800" height="489" alt="Triapl-Permissions.png" />
 
-  
+
 Scroll through the list of permissions and set the following for both
 anonymous and authenticated users:
 
@@ -1999,7 +1999,7 @@ do this navigate to **Administer** -\> **Tripal Management** →
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/800px-TripalOrganisms.png" width="800"
 height="485" alt="800px-TripalOrganisms.png" />
 
-  
+
 This configuration page has several different options. We will discuss
 two of these here. The first is the top section labeled **Sync
 Organisms**. In this section is a list of organisms. These are the
@@ -2017,7 +2017,7 @@ cd /var/www
 drush trpjob-run administrator
 ```
 
-  
+
 Now that our organism is synced we should have a new page for
 *Drosophila melenogaster*. To find the page, click the **Organisms**
 menu item in the left side bar under **Search Biological Data**. This
@@ -2031,7 +2031,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/bf/TripalOrganismList.png/1200px-TripalOrganismList.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/TripalOrganismList.png 2x"
 width="800" height="409" alt="TripalOrganismList.png" />
 
-  
+
 Now if we click the 'fruitfly' link it should take us to our new
 organism page:
 
@@ -2051,7 +2051,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/82/TripalOrganismFruitFly2.png/1200px-TripalOrganismFruitFly2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/TripalOrganismFruitFly2.png 2x"
 width="800" height="448" alt="TripalOrganismFruitFly2.png" />
 
-  
+
 For the description add the following text (taken from wikipedia:
 <a href="http://en.wikipedia.org/wiki/Drosophila_melanogaster"
 class="external free"
@@ -2072,7 +2072,7 @@ sex determination. Although the Y chromosome is entirely
 heterochromatic, it contains at least 16 genes, many of which are
 thought to have male-related functions."
 
-  
+
 For the image, download this image below and upload it using the
 interface on the page.
 
@@ -2081,7 +2081,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/Dmel.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/Dmel.jpg 2x"
 width="200" height="157" alt="Dmel.jpg" />
 
-  
+
 Save the page. Now we have a more informative page:
 
 <img
@@ -2104,7 +2104,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/20/Tripal-Create_content.png/1200px-Tripal-Create_content.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/Tripal-Create_content.png 2x"
 width="800" height="448" alt="Tripal-Create content.png" />
 
-  
+
 To add a new organism simply click the **Organism** link and and fill in
 the fields with these values:
 
@@ -2198,7 +2198,7 @@ source of your data. For this tutorial, enter the following:
     We aligned the sweet orange EST sequences using Brian Haas's PASA pipeline which aligns ESTs to the best place in the genome via gmap, then filters hits to ensure proper splice boundaries.</p>
 ```
 
-  
+
 **Note:**: Above we entered HTML. This is not the easiest way to enter
 text, but makes it simple for this tutorial. When the **ckeditor**
 module is installed and properly setup the user is provided with editor
@@ -2259,7 +2259,7 @@ SwissProt:
   <a href="http://www.ncbi.nlm.nih.gov/protein/" class="external free"
   rel="nofollow">http://www.ncbi.nlm.nih.gov/protein/</a>
 
-  
+
 
 - Name: ExPASy Swiss-Prot
 - Description: A curated protein sequence database which strives to

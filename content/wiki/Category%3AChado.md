@@ -249,139 +249,139 @@ HOWTO</a></li>
 
 The following 6 files are in this category, out of 6 total.
 
-- 
+-
 
-  
 
-  
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="CRAWL Sept2010.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [CRAWL
-  Sept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/CRAWL_Sept2010.pdf "File:CRAWL Sept2010.pdf")  
-  9.35 MB  
+  Sept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/CRAWL_Sept2010.pdf "File:CRAWL Sept2010.pdf")
+  9.35 MB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="How to load chado to biomart.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [How to load chado to
-  b...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/How_to_load_chado_to_biomart.pdf "File:How to load chado to biomart.pdf")  
-  767 KB  
+  b...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/How_to_load_chado_to_biomart.pdf "File:How to load chado to biomart.pdf")
+  767 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="A Chado Case Study.pdf" />
 
-  
 
-  
 
-  
+
+
+
 
   [A Chado Case
-  Study.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/A_Chado_Case_Study.pdf "File:A Chado Case Study.pdf")  
-  304 KB  
+  Study.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/A_Chado_Case_Study.pdf "File:A Chado Case Study.pdf")
+  304 KB
 
-  
 
-  
 
-- 
 
-  
 
-  
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Aug2009LinkedData.pdf" />
 
-  
 
-  
 
-  
 
-  [Aug2009LinkedData.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Aug2009LinkedData.pdf "File:Aug2009LinkedData.pdf")  
-  829 KB  
 
-  
 
-  
 
-- 
+  [Aug2009LinkedData.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Aug2009LinkedData.pdf "File:Aug2009LinkedData.pdf")
+  829 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Chado-manual.pdf" />
 
-  
 
-  
 
-  
 
-  [Chado-manual.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Chado-manual.pdf "File:Chado-manual.pdf")  
-  345 KB  
 
-  
 
-  
 
-- 
+  [Chado-manual.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Chado-manual.pdf "File:Chado-manual.pdf")
+  345 KB
 
-  
 
-  
+
+
+
+-
+
+
+
+
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120" alt="Chado-XML-overview.pdf" />
 
-  
 
-  
 
-  
 
-  [Chado-XML-overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Chado-XML-overview.pdf "File:Chado-XML-overview.pdf")  
+
+
+
+  [Chado-XML-overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Chado-XML-overview.pdf "File:Chado-XML-overview.pdf")
   19 KB

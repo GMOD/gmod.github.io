@@ -27,8 +27,8 @@ CREATE VIEW exon AS
     feature.*
   FROM
     feature INNER JOIN cvterm ON (feature.type_id = cvterm.cvterm_id)
-  WHERE cvterm.name = 'coding_exon' OR 
-        cvterm.name = 'noncoding_exon' OR 
+  WHERE cvterm.name = 'coding_exon' OR
+        cvterm.name = 'noncoding_exon' OR
         cvterm.name = 'interior_exon' OR
         cvterm.name = 'exon_of_single_exon_gene' OR
         cvterm.name = 'interior_coding_exon' OR
