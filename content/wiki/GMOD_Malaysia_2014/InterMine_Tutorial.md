@@ -14,9 +14,3 @@ This tutorial uses the AWS AMI **ID** named **NAME** in the AWS REGION.
 - [Tutorials](../Category%253ATutorials)
 - [InterMine](../Category%253AInterMine)
 - [GMOD Schools](../Category%253AGMOD_Schools)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](../Property%253AHas_topic) | [InterMine](../InterMine) |

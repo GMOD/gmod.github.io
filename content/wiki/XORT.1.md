@@ -15,12 +15,6 @@ Status
 
 Resources
 
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Available on platform](/wiki/Property%253AAvailable_on_platform) | linux  and unix |
-| [Has URL](/wiki/Property%253AHas_URL) | <a href="http://sourceforge.net/projects/gmod/files/OldFiles/" |
 class="external free"
 rel="nofollow">http://sourceforge.net/projects/gmod/files/OldFiles/</a>  | [Has description](/wiki/Property%253AHas_description) | XORT is a utility written in Perl that can<span class="smw-highlighter" data-type="2" state="persistent" data-title="Information"><span class="smwtext"> … </span><span class="smwttcontent">XORT is a utility written in Perl that can be used to read to and write from a [relational](/wiki/Glossary#Relational) [schema](/wiki/Glossary#Schema) using [XML](/wiki/Glossary#XML) as an interchange format. In GMOD XORT is frequently used to transfer data to and from <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. XORT’s three major elements are an XML-database schema mapping specification, an XORT language for both data retrieval and data construction, and a collection of tools that are based on the specification to facilitate the mapping and data exchange. The mapping specification specifies the schema requirement, mapping, operation, and object reference mechanism; the XORT language is used to construct the dump specification; the tool collections comprise the data validation, data input, data output and data debug system. Because it originates from the <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database, we denote the corresponding XML "Chado XML."</span></span> denote the corresponding XML "Chado XML."  | [Has development status](/wiki/Property%253AHas_development_status) | maintenance  | [Has download URL](/wiki/Property%253AHas_download_URL) | <a href="http://sourceforge.net/projects/gmod/files/OldFiles/"
 class="external free"

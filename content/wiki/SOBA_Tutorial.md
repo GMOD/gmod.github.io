@@ -115,9 +115,3 @@ SOBAcl --columns file   --rows type --data length --data_type mean \
     mRNA             1085   70187.8202764977
     ncRNA            72 24089.3611111111
     three_prime_UTR  1385   569.969675090253
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [SOBA](/wiki/SOBA.1) |

@@ -17,9 +17,3 @@ background reading is listed below:
 
 - [GMOD Components](/wiki/Category%253AGMOD_Components)
 - [GBrowse syn](/wiki/Category%253AGBrowse_syn)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [GBrowse syn](/wiki/GBrowse_syn.1) |

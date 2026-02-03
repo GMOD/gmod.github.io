@@ -205,9 +205,3 @@ See the [list of GMOD related PAG 2009
 presentations](/wiki/PAG_2009) for more. The [January 2009 GMOD
 Meeting](/wiki/January_2009_GMOD_Meeting) was held
 in San Diego, immediately after PAG 2009.
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [GBrowse syn](/wiki/GBrowse_syn.1) |

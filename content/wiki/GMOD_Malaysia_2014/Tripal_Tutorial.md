@@ -3971,8 +3971,3 @@ desired extensions.
 - [Tutorials](../Category%253ATutorials)
 - [Tripal](../Category%253ATripal)
 - [GMOD Schools](../Category%253AGMOD_Schools)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](../Property%253AHas_topic) | [Tripal](../Tripal.1)  |

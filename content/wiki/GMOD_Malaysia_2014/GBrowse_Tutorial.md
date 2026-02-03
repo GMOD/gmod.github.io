@@ -19,9 +19,3 @@ This tutorial uses the AWS AMI ' ***named '*** in the '
 - [Tutorials](../Category%253ATutorials)
 - [GBrowse](../Category%253AGBrowse)
 - [GMOD Schools](../Category%253AGMOD_Schools)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](../Property%253AHas_topic) | [GBrowse](../GBrowse.1) |

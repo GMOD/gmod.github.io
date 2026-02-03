@@ -493,9 +493,3 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
 - [Tutorials](../Category%253ATutorials)
 - [JBrowse](../Category%253AJBrowse)
 - [GMOD Schools](../Category%253AGMOD_Schools)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](../Property%253AHas_topic) | [JBrowse](../JBrowse.1) |

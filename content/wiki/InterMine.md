@@ -25,12 +25,6 @@ rel="nofollow">LGPL</a>
 
 Resources
 
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Available on platform](/wiki/Property%253AAvailable_on_platform) | web |
-| [Has URL](/wiki/Property%253AHas_URL) | <a href="https://github.com/intermine/intermine.git" |
 class="external free"
 rel="nofollow">https://github.com/intermine/intermine.git</a> , <a href="http://www.intermine.org" class="external free"
 rel="nofollow">http://www.intermine.org</a> , <a href="http://www.flymine.org" class="external free"

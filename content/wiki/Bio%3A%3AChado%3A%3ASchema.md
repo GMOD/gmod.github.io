@@ -82,11 +82,3 @@ class="external text" rel="nofollow">Nabble (old)</a>, <a href="http://gmod.8275
 class="external text" rel="nofollow">Nabble (new, 2010/05+)</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema"
 class="external text" rel="nofollow">Sourceforge</a> |
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">Schema</span>"</span><span class="smwrdflink"><span class="rdflink">RDF
-feed</span></span>
-
-|----|----|
-| Chado | Schema |
-| Talk:Bio | Schema |

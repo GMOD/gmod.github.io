@@ -2278,9 +2278,3 @@ being loading genomic data. For this tutorial only a single gene from
 sweet orange will be loaded into the database. This is to ensure we can
 move through the tutorial rather quickly. The following datasets will be
 used for this tutorial:
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [Tripal](/wiki/Tripal.1) |

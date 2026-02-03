@@ -199,10 +199,3 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - **Widely used**
   - [FlyBase](/wiki/Category%253AFlyBase) - Chado started here,
     large diverse dataset and organization
-
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> |

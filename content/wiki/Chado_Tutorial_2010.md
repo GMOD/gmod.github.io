@@ -1863,8 +1863,3 @@ diversity data.
   class="internal" title="A Chado Case Study.pdf">A Chado case study: an
   ontology-based modular schema for representing genome-associated
   biological information</a>_
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](/wiki/Property%253AHas_topic) | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>  |

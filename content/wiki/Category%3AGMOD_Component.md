@@ -106,9 +106,3 @@ title="Using the topoview Glyph">Using the topoview Glyph</a></li>
 </tr>
 </tbody>
 </table>
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has default form](/wiki/Property%253AHas_default_form)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [Tool data](/wiki/Form%253ATool_data) |

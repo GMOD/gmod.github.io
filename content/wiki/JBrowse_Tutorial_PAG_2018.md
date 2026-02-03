@@ -660,9 +660,3 @@ running the `setup.sh` script.
 
 This leaves two command in the home directory: `jb_setup.sh` and
 `jb_run.sh`.
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [JBrowse](/wiki/JBrowse.1) |

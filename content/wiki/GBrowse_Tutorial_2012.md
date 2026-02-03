@@ -319,9 +319,3 @@ text searching, by adding this to the Chado database stanza:
 
 Now we can search for "`gene 0.27`" and we'll find our gene (plus its
 mRNA and exons) and we can click on the gene to see it in GBrowse.
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [GBrowse](/wiki/GBrowse.1) |

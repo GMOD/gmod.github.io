@@ -1212,9 +1212,3 @@ We only see one reference sequence to annotate since we're only working
 with one contig. Click on the `Edit` button.
 
 Now have fun annotating!!!
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [WebApollo](/wiki/WebApollo.1) |

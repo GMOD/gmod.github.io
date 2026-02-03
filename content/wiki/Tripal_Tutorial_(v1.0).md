@@ -3275,9 +3275,3 @@ class="external free"
 rel="nofollow">https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel</a>
 and try to attend one of the monthly developer's meetings to discuss the
 desired extensions.
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">"Special%253ABrowse/Tripal-20Tutorial-20(v1.0)")</span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [Tripal](/wiki/Tripal.1) |

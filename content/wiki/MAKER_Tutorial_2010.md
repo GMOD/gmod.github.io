@@ -289,9 +289,3 @@ Scripts:
 - *split_fasta* - Splits multi-fasta files into the number of files
   specified by the user. Useful for breaking up MAKER jobs.
     split_fasta [count] <input_fasta>
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [MAKER](/wiki/MAKER.1) |

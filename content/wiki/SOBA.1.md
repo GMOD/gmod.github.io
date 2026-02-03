@@ -200,11 +200,6 @@ See [Category%253ASOBA](/wiki/Category%253ASOBA)
 
 Raw tool data at [SOBA/tool data](/wiki/SOBA/tool_data)
 
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has website](/wiki/Property%253AHas_website) | <a |
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
 class="external free"
 rel="nofollow">http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis</a>  |

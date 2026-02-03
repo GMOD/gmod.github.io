@@ -205,9 +205,3 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - [Chado](/wiki/Category%253AChado)
 - [2011 Spring
   Training](/wiki/Category%253A2011_Spring_Training)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> |

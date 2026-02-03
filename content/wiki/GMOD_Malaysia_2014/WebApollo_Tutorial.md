@@ -412,9 +412,3 @@ styles are located in
 
 
 - [Tutorials](../Category%253ATutorials)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](../Property%253AHas_topic) | [WebApollo](../WebApollo.1) |

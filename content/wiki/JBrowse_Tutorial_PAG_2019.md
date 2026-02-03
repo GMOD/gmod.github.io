@@ -693,9 +693,3 @@ running the `setup.sh` script.
 - DIV test: <a href="http://jbrowse.org/test/boatdiv/boat.html"
   class="external free"
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [JBrowse](/wiki/JBrowse.1) |

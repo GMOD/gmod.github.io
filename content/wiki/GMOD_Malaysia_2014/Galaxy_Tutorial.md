@@ -28,9 +28,3 @@ server on the Amazon cloud.
 - [Tutorials](../Category%253ATutorials)
 - [Galaxy](../Category%253AGalaxy)
 - [GMOD Schools](../Category%253AGMOD_Schools)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](../Property%253AHas_topic) | [Galaxy](../Galaxy.1) |

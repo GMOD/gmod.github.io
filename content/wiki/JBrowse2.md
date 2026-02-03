@@ -26,12 +26,6 @@ class="external text" rel="nofollow">Apache 2</a>
 
 Resources
 
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Available on platform](/wiki/Property%253AAvailable_on_platform) | web |
-| [Has URL](/wiki/Property%253AHas_URL) | <a href="https://jbrowse.org/jb2/docs/quickstart_web" |
 class="external free"
 rel="nofollow">https://jbrowse.org/jb2/docs/quickstart_web</a> , <a href="http://jbrowse.org" class="external free"
 rel="nofollow">http://jbrowse.org</a> , <a href="http://twitter.com/usejbrowse" class="external free"

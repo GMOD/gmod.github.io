@@ -1867,8 +1867,3 @@ these links:
   Training](/wiki/Category%253A2011_Spring_Training)
 - [Tripal](/wiki/Category%253ATripal)
 - [Needs Editing](/wiki/Category%253ANeeds_Editing)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](/wiki/Property%253AHas_topic) | [Tripal](/wiki/Tripal.1)  |

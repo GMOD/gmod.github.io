@@ -1703,8 +1703,3 @@ Chado module based on the
 <a href="http://www.maizegenetics.net/gdpdm/" class="external text"
 rel="nofollow">GDPDM</a>, that will added robust support for natural
 diversity data.
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](../Property%253AHas_topic) | <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>  |

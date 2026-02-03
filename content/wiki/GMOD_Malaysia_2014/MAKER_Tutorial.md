@@ -410,9 +410,3 @@ Scripts:
 - [Tutorials](../Category%253ATutorials)
 - [GMOD Schools](../Category%253AGMOD_Schools)
 - [MAKER](../Category%253AMAKER)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](../Property%253AHas_topic) | [MAKER](../MAKER.1) |

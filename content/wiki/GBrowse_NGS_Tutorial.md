@@ -1321,9 +1321,3 @@ pairings add this stanza at the end of the config file:
     category      = Reads
 
 Reset GBrowse and test this.
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [GBrowse](/wiki/GBrowse.1) |

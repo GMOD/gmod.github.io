@@ -1730,8 +1730,3 @@ diversity data.
 - [Tutorials](../Category%253ATutorials)
 - [Chado](../Category%253AChado)
 - [GMOD Schools](../Category%253AGMOD_Schools)
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](../Property%253AHas_topic) | <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>  |

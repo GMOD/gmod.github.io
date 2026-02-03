@@ -20,13 +20,6 @@ Resources
 
 - [GMOD Components](/wiki/Category%253AGMOD_Components)
 
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">TermFinder</span>"</span><span class="smwrdflink"><span class="rdflink">RDF
-feed</span></span>
-
-|----|----|
-| [Available on platform](/wiki/Property%253AAvailable_on_platform) | linux , os x , unix  and web |
-| [Has URL](/wiki/Property%253AHas_URL) | <a href="http://search.cpan.org/dist/GO-TermFinder/" |
 class="external free"
 rel="nofollow">http://search.cpan.org/dist/GO-TermFinder/</a>  and <a href="http://go.princeton.edu/cgi-bin/GOTermFinder/GOTermFinder"
 class="external free"

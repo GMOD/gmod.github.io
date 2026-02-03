@@ -51,12 +51,6 @@ School](/wiki/2013_GMOD_Summer_School)
   Genomics](/wiki/Category%253AComparative_Genomics)
 - [WormBase](/wiki/Category%253AWormBase)
 
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Available on platform](/wiki/Property%253AAvailable_on_platform) | web |
-| [Has URL](/wiki/Property%253AHas_URL) | <a href="https://github.com/GMOD/GBrowse" class="external free" |
 rel="nofollow">https://github.com/GMOD/GBrowse</a> , <a
 href="http://mckay.cshl.edu/cgi-bin/gbrowse_syn/mercator/?search_src=Cbri%3Bname=chrX:620000..670000"
 class="external free"

@@ -2059,9 +2059,3 @@ We'll discuss each function...
 **Note**... fix the \< div\> and \< h3\>tags in the function immediately
 above and remove the spaces. Mediawiki was giving problems with these so
 they should be fixed.
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [Tripal](/wiki/Tripal.1) |

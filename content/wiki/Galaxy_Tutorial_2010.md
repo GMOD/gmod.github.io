@@ -1046,9 +1046,3 @@ are some pointers for learning more:
 - <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/Home"
   class="external text" rel="nofollow">You can find even more at the
   Galaxy wiki</a>
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [Galaxy](/wiki/Galaxy.1) |

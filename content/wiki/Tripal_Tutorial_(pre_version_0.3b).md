@@ -2834,9 +2834,3 @@ height="495" alt="800px-TripalGBrowseImg.png" />
 
 - how to remove the organism menu
 - permissions
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">"Special%253ABrowse/Tripal-20Tutorial-20(pre-20version-200.3b)")</span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [Tripal](/wiki/Tripal.1) |

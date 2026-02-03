@@ -22,12 +22,6 @@ Resources
 - [GMOD Components](/wiki/Category%253AGMOD_Components)
 - [SGD](/wiki/Category%253ASGD)
 
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Available on platform](/wiki/Property%253AAvailable_on_platform) | web |
-| [Has URL](/wiki/Property%253AHas_URL) | <a href="http://sourceforge.net/projects/gmod/files/blastGraphic/" |
 class="external free"
 rel="nofollow">http://sourceforge.net/projects/gmod/files/blastGraphic/</a>  and <a href="http://www.yeastgenome.org/cgi-bin/blast-sgd.pl"
 class="external free"

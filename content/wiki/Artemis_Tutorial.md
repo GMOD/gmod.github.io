@@ -119,9 +119,3 @@ class="external text" rel="nofollow">artemis-user</a>.
 - <a
   href="http://www.sanger.ac.uk/Software/Artemis/v11/database/chado.practical.guide.pdf"
   class="external text" rel="nofollow">User Practical Guide</a>
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [Artemis](/wiki/Artemis) |

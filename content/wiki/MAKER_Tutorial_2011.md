@@ -481,9 +481,3 @@ Scripts:
 - *tophat2gff3* - This script converts the juctions file produced by
   TopHat into GFF3 format for use with MAKER.
      tophat2gff3 <junctions.bed>
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [MAKER](/wiki/MAKER.1) |

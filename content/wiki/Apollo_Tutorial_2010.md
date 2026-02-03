@@ -941,9 +941,3 @@ It's located in `$APOLLO_ROOT/doc/html/dataadapter_cookbook.html`. You
 can also view the
 <a href="http://apollo.berkeleybop.org/current/javadoc"
 class="external text" rel="nofollow">Apollo Javadoc API</a>.
-
-<span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse"></span>"</span>
-
-|----|----|
-| [Has topic](/wiki/Property%253AHas_topic) | [Apollo](/wiki/Apollo.1) |
