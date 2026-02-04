@@ -167,7 +167,6 @@ class="external text" rel="nofollow">TAIR PLAIN</a>** (Bob Muller)
 
 **<a href="http://wiki.galaxyproject.org/CloudMan" class="external text"
 
-
 ## Remote Attendance
 
 Saturday 6th April: <a

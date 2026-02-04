@@ -3,9 +3,6 @@ title: "Standard URL"
 ---
 # Standard URL
 
-(Redirected from [Common Download
-URL](/wiki/Common_Download_URL)
-
 In order to simplify the retrieval of common datasets, the Generic Model
 Organisms Database (GMOD) community has recommended a series of standard
 URLs, or a common download URL. Each participating MOD has an index page

@@ -3,10 +3,7 @@ title: "TableEdit"
 ---
 # TableEdit
 
-(Redirected from [Table
-Editor](/wiki/Table_Editor.1)
-
- community annotation with a MediaWiki
+community annotation with a MediaWiki
  wiki</span>](#Genome_community_annotation_with_a_MediaWiki_wiki)
 - [Table
  Edit](#Table_Edit)

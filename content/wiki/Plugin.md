@@ -3,9 +3,6 @@ title: "GBrowse Plugins"
 ---
 # GBrowse Plugins
 
-(Redirected from
-[Plugin](/wiki/Plugin)
-
 Plugins extend GBrowse
 
 For details on how to configure plugins, see

@@ -3,10 +3,7 @@ title: "GMOD RPC API"
 ---
 # GMOD RPC API
 
-(Redirected from [GMOD REST
-API](/wiki/GMOD_REST_API)
-
- Status</span>](#Document_Status)
+Status</span>](#Document_Status)
 - [Background](#Background)
 - [Members](#Members)
 - [Goals](#Goals)

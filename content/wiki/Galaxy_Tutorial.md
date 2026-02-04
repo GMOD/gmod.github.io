@@ -3,9 +3,6 @@ title: "Galaxy Tutorial 2013"
 ---
 # Galaxy Tutorial 2013
 
-(Redirected from [Galaxy
-Tutorial](/wiki/Galaxy_Tutorial)
-
 This walks you through setting up and running a
 [Galaxy](/wiki/Galaxy) server. This tutorial will be taught by
 Dave Clements at the [2013 GMOD Summer

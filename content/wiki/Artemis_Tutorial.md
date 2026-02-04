@@ -3,9 +3,6 @@ title: "Artemis-Chado Integration Tutorial"
 ---
 # Artemis-Chado Integration Tutorial
 
-(Redirected from [Artemis
-Tutorial](/wiki/Artemis_Tutorial)
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c3/Artemis_logo.gif" width="250" height="159"
 alt="Artemis" />

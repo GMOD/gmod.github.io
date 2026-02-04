@@ -3,9 +3,6 @@ title: "GMOD Schools"
 ---
 # GMOD Schools
 
-(Redirected from [GMOD Summer
-School](/wiki/GMOD_Summer_School)
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6f/Gmod-online-training.png/150px-Gmod-online-training.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6f/Gmod-online-training.png/225px-Gmod-online-training.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6f/Gmod-online-training.png/300px-Gmod-online-training.png 2x"

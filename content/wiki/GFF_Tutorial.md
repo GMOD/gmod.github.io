@@ -3,9 +3,6 @@ title: "GFF Tutorial 2012"
 ---
 # GFF Tutorial 2012
 
-(Redirected from [GFF
-Tutorial](/wiki/GFF_Tutorial)
-
 This tutorial on [GFF](/wiki/GFF) was given by Scott
 Cain at the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School).

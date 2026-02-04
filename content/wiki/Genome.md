@@ -3,9 +3,6 @@ title: "Standard URL"
 ---
 # Standard URL
 
-(Redirected from
-[Genome](/wiki/Genome)
-
 In order to simplify the retrieval of common datasets, the Generic Model
 Organisms Database (GMOD) community has recommended a series of standard
 URLs, or a common download URL. Each participating MOD has an index page

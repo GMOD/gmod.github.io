@@ -3,7 +3,7 @@ title: "Chado - Getting Started"
 ---
 # Chado - Getting Started
 
-(Redirected from [Chado](/wiki/Chado))
+)
 
 Status
 

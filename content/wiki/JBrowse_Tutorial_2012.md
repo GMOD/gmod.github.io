@@ -3,9 +3,6 @@ title: "JBrowse Tutorial 2013"
 ---
 # JBrowse Tutorial 2013
 
-(Redirected from [JBrowse Tutorial
-2012](/wiki/JBrowse_Tutorial_2012)
-
 This [JBrowse](/wiki/JBrowse) tutorial was presented by Robert
 Buels at the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School) in July 2013

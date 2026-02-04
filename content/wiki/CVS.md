@@ -3,9 +3,6 @@ title: "Version Control System Access"
 ---
 # Version Control System Access
 
-(Redirected from
-[CVS](/wiki/CVS)
-
 *Subversion* (often abbreviated *SVN* is the *source code control*
 system used by most of GMOD. Source code control systems, also known as
 *revision control* or *version control* systems are used to record

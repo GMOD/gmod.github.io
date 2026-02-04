@@ -3,9 +3,6 @@ title: "WebApollo Tutorial 2013"
 ---
 # WebApollo Tutorial 2013
 
-(Redirected from [WebApollo
-Tutorial](/wiki/WebApollo_Tutorial)
-
 These are the steps I took to install WebApollo on the prebuilt AWS
 image. Some steps need only be performed once, such as installing the
 custom valves in Tomcat or installing BLAT, to ensure that the system is

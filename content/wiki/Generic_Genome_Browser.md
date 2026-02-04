@@ -3,9 +3,6 @@ title: "GBrowse"
 ---
 # GBrowse
 
-(Redirected from [Generic Genome
-Browser](/wiki/Generic_Genome_Browser)
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/400px-GBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/600px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/800px-GBrowseLogo.png 2x"

@@ -3,9 +3,6 @@ title: "Comparative Genomics"
 ---
 # Comparative Genomics
 
-(Redirected from
-[Synteny](/wiki/Synteny)
-
 GMOD includes several components for managing and visualizing
 
 data.

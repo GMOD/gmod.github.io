@@ -3,9 +3,6 @@ title: "PAG 2015"
 ---
 # PAG 2015
 
-(Redirected from
-[PAG](/wiki/PAG)
-
 <a href="http://www.intlpag.org/2015/" rel="nofollow"
 title="Plant and Animal Genomes 2015 (PAG XXIII"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/24/PAGLogo300.png/150px-PAGLogo300.png"

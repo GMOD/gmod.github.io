@@ -3,9 +3,6 @@ title: "GBrowse syn Tutorial 2013"
 ---
 # GBrowse syn Tutorial 2013
 
-(Redirected from [GBrowse syn
-Tutorial](/wiki/GBrowse_syn_Tutorial)
-
 This tutorial on [GBrowse syn](/wiki/GBrowse_syn) was taught
 by Sheldon McKay as part of the [2013 GMOD
 Summer School](/wiki/2013_GMOD_Summer_School).

@@ -3,9 +3,6 @@ title: "Chado Tutorial 2013"
 ---
 # Chado Tutorial 2013
 
-(Redirected from [Chado
-Tutorial](/wiki/Chado_Tutorial)
-
 This <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 tutorial was presented by Scott Cain as part
 of the [2013 GMOD Summer

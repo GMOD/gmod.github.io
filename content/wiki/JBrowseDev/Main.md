@@ -3,9 +3,6 @@ title: "JBrowse"
 ---
 # JBrowse
 
-(Redirected from
-[JBrowseDev/Main](/wiki/JBrowseDev/Main)
-
 <a href="../File:JBrowseLogo.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/400px-JBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/600px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/JBrowseLogo.png 2x"

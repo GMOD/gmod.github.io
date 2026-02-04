@@ -3,10 +3,7 @@ title: "Gmod-dbsf"
 ---
 # Gmod-dbsf
 
-(Redirected from [Gmod
-dbsf](/wiki/Gmod_dbsf)
-
- Overview](#Overview)
+Overview](#Overview)
 - [Dependencies](#Dependencies)
 - [Features](#Features)
 - [Examples](#Examples)

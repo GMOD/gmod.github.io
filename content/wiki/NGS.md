@@ -3,9 +3,6 @@ title: "Next Generation Sequencing"
 ---
 # Next Generation Sequencing
 
-(Redirected from
-[NGS](/wiki/NGS)
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/WorkInProgressTools.gif" width="48"
 height="48" alt="WorkInProgressTools.gif" /> This page is under

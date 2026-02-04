@@ -3,9 +3,6 @@ title: "MAKER Tutorial 2013"
 ---
 # MAKER Tutorial 2013
 
-(Redirected from [MAKER
-Tutorial](/wiki/MAKER_Tutorial)
-
 <a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
 class="external text" rel="nofollow">Get MAKER Bling!</a>
 

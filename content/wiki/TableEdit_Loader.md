@@ -201,7 +201,7 @@ new = a | b | c | d | e</code></pre></td>
 <li>merge the two rows, keeping the <em>old row</em> data and adding-in
 the <em>new row</em> data to the blank fields.</li>
 <li>append the <em>new row</em></li>
-<li>throw a [[Category%253ANeedsManualCuration]]</li>
+<li>throw a </li>
 </ol></td>
 <td><p>A is a subset of B</p></td>
 <td><p>$new_row_obj</p></td>
@@ -232,7 +232,7 @@ old = a | g | h | e</code></pre></td>
 <li>append
 <ul>
 <li>this is a better solution, and can be made to through a
-[[Category%253ANeeds Manual Curation]] tag</li>
+ tag</li>
 </ul></li>
 </ol></td>
 <td><p>A ∩ B = ø<br />

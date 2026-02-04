@@ -3,9 +3,6 @@ title: "Next Generation Sequencing"
 ---
 # Next Generation Sequencing
 
-(Redirected from [Next generation
-sequencing](/wiki/Next_generation_sequencing)
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/WorkInProgressTools.gif" width="48"
 height="48" alt="WorkInProgressTools.gif" /> This page is under

@@ -3,9 +3,6 @@ title: "TIGR-Workflow / Ergatis"
 ---
 # TIGR-Workflow / Ergatis
 
-(Redirected from
-[Ergatis](/wiki/Ergatis)
-
 Status
 
 - **Mature** release

@@ -3,9 +3,6 @@ title: "PostgreSQL"
 ---
 # PostgreSQL
 
-(Redirected from
-[Postgres](/wiki/Postgres)
-
 PostgreSQL, more commonly known as Postgres, is an open source
 relational database management system (RDBMS or DBMS) that is the
 default DBMS for the Chado database schema. See [Databases and

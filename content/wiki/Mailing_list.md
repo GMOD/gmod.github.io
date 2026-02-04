@@ -3,10 +3,7 @@ title: "GMOD Mailing Lists"
 ---
 # GMOD Mailing Lists
 
-(Redirected from [Mailing
-list](/wiki/Mailing_list)
-
- Email Lists</span>](#Searching_Email_Lists)
+Email Lists</span>](#Searching_Email_Lists)
 - [Posting to and
  Membership in Email
  Lists](#Posting_to_and_Membership_in_Email_Lists)

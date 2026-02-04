@@ -3,9 +3,6 @@ title: "Main Page"
 ---
 # Main Page
 
-(Redirected from
-[GMOD:About](/wiki/GMOD_About)
-
 GMOD is Social
 
 <a href="http://twitter.com/gmodproject" rel="nofollow"

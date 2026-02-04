@@ -3,9 +3,6 @@ title: "IFALT"
 ---
 # IFALT
 
-(Redirected from
-[TableEdit/IFALT](/wiki/TableEdit/IFALT)
-
 ## specifications
 
 Each field is **tab delimited**, and each new row is separated by a

@@ -3,9 +3,6 @@ title: "GMOD in a Box"
 ---
 # GMOD in a Box
 
-(Redirected from
-[Box](/wiki/Box)
-
 GMOD in a Box is a
 equipped with a suite of preconfigured GMOD components, including a
 **Chado** database, **GBrowse2**, **JBrowse**, **Tripal**, and **Apollo

@@ -3,9 +3,6 @@ title: "January 2010 GMOD Meeting"
 ---
 # January 2010 GMOD Meeting
 
-(Redirected from [January 2010 GMOD Meeting
-Registration](/wiki/January_2010_GMOD_Meeting_Registration)
-
 <table
 style="font-size: 180%; vertical-align: middle; border: 2px solid #A6A6BC; line-height: 120%"
 data-cellpadding="10">

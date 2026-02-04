@@ -3,9 +3,6 @@ title: "Distributed Annotation System"
 ---
 # Distributed Annotation System
 
-(Redirected from
-[DAS](/wiki/DAS)
-
 <a href="http://www.biodas.org/" rel="nofollow"
 title="Distributed Annotation System"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Das_logo_64x64.jpg" width="64" height="64"
