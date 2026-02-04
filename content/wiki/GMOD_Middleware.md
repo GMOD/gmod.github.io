@@ -42,163 +42,163 @@ their middleware interface to Chado, and that the implementors of
 Java-based tools collaborate to create a Java API that parallels
 Modwares.
 
-  Summary</span>](#Executive_Summary)
+ Summary</span>](#Executive_Summary)
 - [Middleware for
-  Chado databases](#Middleware_for_Chado_databases)
-  - [Participants](#Participants)
-  - [Introduction](#Introduction)
-    - [General Evaluation
-      Criteria](#General_Evaluation_Criteria)
-      - [Problem 1](#Problem_1)
-      - [Problem 2](#Problem_2)
-      - [Problem 3](#Problem_3)
-      - [Problem 4](#Problem_4)
-      - [Problem 5](#Problem_5)
-      - [Problem Results](#Problem_Results)
+ Chado databases](#Middleware_for_Chado_databases)
+ - [Participants](#Participants)
+ - [Introduction](#Introduction)
+ - [General Evaluation
+ Criteria](#General_Evaluation_Criteria)
+ - [Problem 1](#Problem_1)
+ - [Problem 2](#Problem_2)
+ - [Problem 3](#Problem_3)
+ - [Problem 4](#Problem_4)
+ - [Problem 5](#Problem_5)
+ - [Problem Results](#Problem_Results)
 - [The Middleware
-  Packages](#The_Middleware_Packages)
-  - [Java
-    Middleware](#Java_Middleware)
-    - [Hibernate](#Hibernate)
-      - [Abstraction](#Abstraction)
-      - [Performance](#Performance)
-      - [Configuration](#Configuration)
-      - [Documentation](#Documentation)
-    - [iBatis](#iBatis)
-      - [Abstraction](#Abstraction_2)
-      - [Performance](#Performance_2)
-      - [Configuration](#Configuration_2)
-      - [Documentation](#Documentation_2)
-    - [InterMine](#InterMine)
-      - [Abstraction](#Abstraction_3)
-      - [Performance](#Performance_3)
-      - [Configuration](#Configuration_3)
-      - [Documentation](#Documentation_3)
-  - [Perl
-    Middleware](#Perl_Middleware)
-    - [Chado::AutoDBI](#Chado::AutoDBI)
-      - [Abstraction](#Abstraction_4)
-      - [Performance](#Performance_4)
-      - [Configuration](#Configuration_4)
-      - [Documentation](#Documentation_4)
-    - [Modware](#Modware)
-      - [Abstraction](#Abstraction_5)
-      - [Performance](#Performance_5)
-      - [Configuration](#Configuration_5)
-      - [Documentation](#Documentation_5)
-    - [GBrowse (DasI)](#GBrowse_.28DasI.29)
-      - [Abstraction](#Abstraction_6)
-      - [Performance](#Performance_6)
-      - [Configuration](#Configuration_6)
-      - [Documentation](#Documentation_6)
-    - [The
-      Bio::Chado API](#The_Bio::Chado_API)
-  - [Getting
-    More Information](#Getting_More_Information)
+ Packages](#The_Middleware_Packages)
+ - [Java
+ Middleware](#Java_Middleware)
+ - [Hibernate](#Hibernate)
+ - [Abstraction](#Abstraction)
+ - [Performance](#Performance)
+ - [Configuration](#Configuration)
+ - [Documentation](#Documentation)
+ - [iBatis](#iBatis)
+ - [Abstraction](#Abstraction_2)
+ - [Performance](#Performance_2)
+ - [Configuration](#Configuration_2)
+ - [Documentation](#Documentation_2)
+ - [InterMine](#InterMine)
+ - [Abstraction](#Abstraction_3)
+ - [Performance](#Performance_3)
+ - [Configuration](#Configuration_3)
+ - [Documentation](#Documentation_3)
+ - [Perl
+ Middleware](#Perl_Middleware)
+ - [Chado::AutoDBI](#Chado::AutoDBI)
+ - [Abstraction](#Abstraction_4)
+ - [Performance](#Performance_4)
+ - [Configuration](#Configuration_4)
+ - [Documentation](#Documentation_4)
+ - [Modware](#Modware)
+ - [Abstraction](#Abstraction_5)
+ - [Performance](#Performance_5)
+ - [Configuration](#Configuration_5)
+ - [Documentation](#Documentation_5)
+ - [GBrowse (DasI)](#GBrowse_.28DasI.29)
+ - [Abstraction](#Abstraction_6)
+ - [Performance](#Performance_6)
+ - [Configuration](#Configuration_6)
+ - [Documentation](#Documentation_6)
+ - [The
+ Bio::Chado API](#The_Bio::Chado_API)
+ - [Getting
+ More Information](#Getting_More_Information)
 - [Object-Relational Mapping
-  Principles](#Object-Relational_Mapping_Principles)
-  - [Presentation by Sohel
-    Merchant](#Presentation_by_Sohel_Merchant)
-    - [Outline](#Outline)
-    - [The
-      Problem](#The_Problem)
-    - [Solutions](#Solutions)
-    - [ORM](#ORM)
-    - [Perl -
-      Class::DBI](#Perl_-_Class::DBI)
-    - [Class::DBI](#Class::DBI)
-    - [Class::DBI -
-      CRUD](#Class::DBI_-_CRUD)
-    - [Java -
-      Hibernate](#Java_-_Hibernate)
-    - [Java -
-      iBatis](#Java_-_iBatis)
-    - [Summary](#Summary)
-  - [XORT](#XORT)
-    - [Background](#Background)
-    - [Technical
-      Overview](#Technical_Overview)
-    -
-      - [Comparing Hibernate &
-        XORT](#Comparing_Hibernate_.26_XORT)
-    - [Limitations](#Limitations)
-    - [Presentation by Pinglei Zhou and Josh
-      Goodman](#Presentation_by_Pinglei_Zhou_and_Josh_Goodman)
-  - [Chado::AutoDBI](#Chado::AutoDBI_2)
-    - [Background](#Background_2)
-    - [Technical
-      Overview](#Technical_Overview_2)
-    -
-    - [Limitations](#Limitations_2)
-    - [Presentation by Brian
-      O'Connor](#Presentation_by_Brian_O.27Connor)
-  - [Modware](#Modware_2)
-    - [Background](#Background_3)
-    - [Technical
-      Overview](#Technical_Overview_3)
-    -
-    - [Limitations](#Limitations_3)
-    - [Presentation by Eric
-      Just](#Presentation_by_Eric_Just)
-  - [GBrowse
-    (DasI) Adaptor](#GBrowse_.28DasI.29_Adaptor)
-    - [Background](#Background_4)
-    - [Technical
-      Overview](#Technical_Overview_4)
-    -
-    - [Limitations](#Limitations_4)
-    - [Presentation by Scott
-      Cain](#Presentation_by_Scott_Cain)
-  - [iBatis and
-    Abator](#iBatis_and_Abator)
-    - [Background](#Background_5)
-    - [Technical
-      Overview](#Technical_Overview_5)
-    -
-    - [Limitations](#Limitations_5)
-    - [Presentation by Jeff
-      Bowes](#Presentation_by_Jeff_Bowes)
-  - [Hibernate](#Hibernate_2)
-    - [Background](#Background_6)
-    - [Technical
-      Overview](#Technical_Overview_6)
-    - [Limitations](#Limitations_6)
-    - [Presentation by Robert
-      Bruggner](#Presentation_by_Robert_Bruggner)
-  - [PSU Chado
-    Interface](#PSU_Chado_Interface)
-    - [Background](#Background_7)
-    - [Overview](#Overview)
-    - [iBatis](#iBatis_2)
-      - [Technical
-        Overview](#Technical_Overview_7)
-      - [Advantages](#Advantages)
-      - [Limitations](#Limitations_7)
-    - [Hibernate](#Hibernate_3)
-      - [Technical
-        Overview](#Technical_Overview_8)
-      - [Advantages](#Advantages_2)
-      - [Limitations](#Limitations_8)
-    - [Presentation by Chinmay
-      Patel](#Presentation_by_Chinmay_Patel)
-  - [GUS Web
-    Development Kit (WDK)](#GUS_Web_Development_Kit_.28WDK.29)
-    - [Background](#Background_8)
-    - [Technical
-      Overview](#Technical_Overview_9)
-    - [Advantages](#Advantages_3)
-    - [Limitations](#Limitations_9)
-    - [Presentation by Steve
-      Fischer](#Presentation_by_Steve_Fischer)
-  - [InterMine](#InterMine_2)
-    - [Background](#Background_9)
-    - [Technical
-      Overview](#Technical_Overview_10)
-    - [Limitations](#Limitations_10)
-    - [Presentation by Gos
-      Micklem](#Presentation_by_Gos_Micklem)
+ Principles](#Object-Relational_Mapping_Principles)
+ - [Presentation by Sohel
+ Merchant](#Presentation_by_Sohel_Merchant)
+ - [Outline](#Outline)
+ - [The
+ Problem](#The_Problem)
+ - [Solutions](#Solutions)
+ - [ORM](#ORM)
+ - [Perl -
+ Class::DBI](#Perl_-_Class::DBI)
+ - [Class::DBI](#Class::DBI)
+ - [Class::DBI -
+ CRUD](#Class::DBI_-_CRUD)
+ - [Java -
+ Hibernate](#Java_-_Hibernate)
+ - [Java -
+ iBatis](#Java_-_iBatis)
+ - [Summary](#Summary)
+ - [XORT](#XORT)
+ - [Background](#Background)
+ - [Technical
+ Overview](#Technical_Overview)
+ -
+ - [Comparing Hibernate &
+ XORT](#Comparing_Hibernate_.26_XORT)
+ - [Limitations](#Limitations)
+ - [Presentation by Pinglei Zhou and Josh
+ Goodman](#Presentation_by_Pinglei_Zhou_and_Josh_Goodman)
+ - [Chado::AutoDBI](#Chado::AutoDBI_2)
+ - [Background](#Background_2)
+ - [Technical
+ Overview](#Technical_Overview_2)
+ -
+ - [Limitations](#Limitations_2)
+ - [Presentation by Brian
+ O'Connor](#Presentation_by_Brian_O.27Connor)
+ - [Modware](#Modware_2)
+ - [Background](#Background_3)
+ - [Technical
+ Overview](#Technical_Overview_3)
+ -
+ - [Limitations](#Limitations_3)
+ - [Presentation by Eric
+ Just](#Presentation_by_Eric_Just)
+ - [GBrowse
+ (DasI) Adaptor](#GBrowse_.28DasI.29_Adaptor)
+ - [Background](#Background_4)
+ - [Technical
+ Overview](#Technical_Overview_4)
+ -
+ - [Limitations](#Limitations_4)
+ - [Presentation by Scott
+ Cain](#Presentation_by_Scott_Cain)
+ - [iBatis and
+ Abator](#iBatis_and_Abator)
+ - [Background](#Background_5)
+ - [Technical
+ Overview](#Technical_Overview_5)
+ -
+ - [Limitations](#Limitations_5)
+ - [Presentation by Jeff
+ Bowes](#Presentation_by_Jeff_Bowes)
+ - [Hibernate](#Hibernate_2)
+ - [Background](#Background_6)
+ - [Technical
+ Overview](#Technical_Overview_6)
+ - [Limitations](#Limitations_6)
+ - [Presentation by Robert
+ Bruggner](#Presentation_by_Robert_Bruggner)
+ - [PSU Chado
+ Interface](#PSU_Chado_Interface)
+ - [Background](#Background_7)
+ - [Overview](#Overview)
+ - [iBatis](#iBatis_2)
+ - [Technical
+ Overview](#Technical_Overview_7)
+ - [Advantages](#Advantages)
+ - [Limitations](#Limitations_7)
+ - [Hibernate](#Hibernate_3)
+ - [Technical
+ Overview](#Technical_Overview_8)
+ - [Advantages](#Advantages_2)
+ - [Limitations](#Limitations_8)
+ - [Presentation by Chinmay
+ Patel](#Presentation_by_Chinmay_Patel)
+ - [GUS Web
+ Development Kit (WDK)](#GUS_Web_Development_Kit_.28WDK.29)
+ - [Background](#Background_8)
+ - [Technical
+ Overview](#Technical_Overview_9)
+ - [Advantages](#Advantages_3)
+ - [Limitations](#Limitations_9)
+ - [Presentation by Steve
+ Fischer](#Presentation_by_Steve_Fischer)
+ - [InterMine](#InterMine_2)
+ - [Background](#Background_9)
+ - [Technical
+ Overview](#Technical_Overview_10)
+ - [Limitations](#Limitations_10)
+ - [Presentation by Gos
+ Micklem](#Presentation_by_Gos_Micklem)
 - [Wiki
-  Authors](#Wiki_Authors)
+ Authors](#Wiki_Authors)
 
 ## Middleware for Chado databases
 
@@ -230,10 +230,10 @@ goals:
 - To facilitate discussion on the best methods
 - To guide GMOD to a uniform Middleware layer
 - To generate this central reference document for Middleware projects,
-  including:
-  - Platform information
-  - Strengths & weaknesses of different Middleware packages
-  - Specific examples of how one would use a given middleware package
+ including:
+ - Platform information
+ - Strengths & weaknesses of different Middleware packages
+ - Specific examples of how one would use a given middleware package
 
 One of the key characteristics of the GMOD software project is the
 variety of approaches and components that it supports. This applies to
@@ -290,43 +290,43 @@ Note:
 - Use the `organism_id` for your organism
 - Store description in the chado table `featureprop`
 - A sequence in fasta format (see [Fake
-  Chromosome](/wiki/FakeChromosome)) should be loaded as
-  genomic sequence, either chromosome or contig -- this will be used as
-  a `srcfeature` in `featureloc`
+ Chromosome](/wiki/FakeChromosome)) should be loaded as
+ genomic sequence, either chromosome or contig -- this will be used as
+ a `srcfeature` in `featureloc`
 
 Gene descriptions:
 
-    symbol: xfile
-    synonyms: mulder, scully
-    description: A test gene for GMOD meeting
-    mRNA Feature
-         exon_1:
-           start: 13691
-           end: 13767
-           strand: 1
-           srcFeature_id: Id of genomic sample
-         exon_2:
-           start: 14687
-           end: 14720
-           strand: 1
-           srcFeature_id: Id of genomic sample
+ symbol: xfile
+ synonyms: mulder, scully
+ description: A test gene for GMOD meeting
+ mRNA Feature
+ exon_1:
+ start: 13691
+ end: 13767
+ strand: 1
+ srcFeature_id: Id of genomic sample
+ exon_2:
+ start: 14687
+ end: 14720
+ strand: 1
+ srcFeature_id: Id of genomic sample
 
-    symbol: x-men
-    synonyms: wolverine
-      mRNA Feature
-         exon_1:
-           start: 12648
-           end: 13136
-           strand: 1
-           srcFeature_id: Id of genomic sample
+ symbol: x-men
+ synonyms: wolverine
+ mRNA Feature
+ exon_1:
+ start: 12648
+ end: 13136
+ strand: 1
+ srcFeature_id: Id of genomic sample
 
-    symbol: x-ray
-    synonyms: none
-         exon:
-           start: 1703
-           end: 1900
-           strand: 1
-           srcFeature_id: Id of genomic sample
+ symbol: x-ray
+ synonyms: none
+ exon:
+ start: 1703
+ end: 1900
+ strand: 1
+ srcFeature_id: Id of genomic sample
 
 ##### Problem 2
 
@@ -334,17 +334,17 @@ Retrieve and print the following report for gene **xfile** (the coding
 sequence and exon coordinates are derived from the associated mRNA
 feature). The results should resemble the following:
 
-    symbol: xfile
-    synonyms: mulder, scully
-    description: A test gene for GMOD meeting
-    type: gene
-    exon1 start: 13691
-    exon1 end: 13767
-    exon2 start: 14687
-    exon2 end: 14720
-    >xfile cds
-    ATGGCGTTAGTATTCATGGTTACTGGTTTCGCTACTGATATCACCCAGCGTGTAGGCTGT
-    GGAATCGAACACTGGTATTGTATAAATGTTTGTGAATACACTGAGAAATAA
+ symbol: xfile
+ synonyms: mulder, scully
+ description: A test gene for GMOD meeting
+ type: gene
+ exon1 start: 13691
+ exon1 end: 13767
+ exon2 start: 14687
+ exon2 end: 14720
+ >xfile cds
+ ATGGCGTTAGTATTCATGGTTACTGGTTTCGCTACTGATATCACCCAGCGTGTAGGCTGT
+ GGAATCGAACACTGGTATTGTATAAATGTTTGTGAATACACTGAGAAATAA
 
 ##### Problem 3
 
@@ -352,26 +352,26 @@ Update the gene **xfile**: change the name symbol to **x-file** and
 retrieve the changed record. Regenerate the report from Problem 1. The
 results should resemble the following:
 
-    symbol: x-file
-    synonyms: mulder, scully
-    description: A test gene for GMOD meeting
-    type: gene
-    exon1 start: 13691
-    exon1 end: 13767
-    exon2 start: 14687
-    exon2 end: 14720
-    >x-file cds
-    ATGGCGTTAGTATTCATGGTTACTGGTTTCGCTACTGATATCACCCAGCGTGTAGGCTGT
-    GGAATCGAACACTGGTATTGTATAAATGTTTGTGAATACACTGAGAAATAA
+ symbol: x-file
+ synonyms: mulder, scully
+ description: A test gene for GMOD meeting
+ type: gene
+ exon1 start: 13691
+ exon1 end: 13767
+ exon2 start: 14687
+ exon2 end: 14720
+ >x-file cds
+ ATGGCGTTAGTATTCATGGTTACTGGTTTCGCTACTGATATCACCCAGCGTGTAGGCTGT
+ GGAATCGAACACTGGTATTGTATAAATGTTTGTGAATACACTGAGAAATAA
 
 ##### Problem 4
 
 Search for all genes with symbols starting with *x-*. With the results
 produce the following simple result list (organism will vary):
 
-    1323    x-file     Xenopus laevis
-    1324    x-men   Xenopus laevis
-    1325    x-ray     Xenopus laevis
+ 1323 x-file Xenopus laevis
+ 1324 x-men Xenopus laevis
+ 1325 x-ray Xenopus laevis
 
 ##### Problem 5
 
@@ -379,8 +379,8 @@ Delete the gene **x-ray** using the `geneId`. Run the search and report
 in Problem 4 again to show the delete has taken place, with a result
 resembling the following:
 
-    1323    x-file     Xenopus laevis
-    1324    x-men   Xenopus laevis
+ 1323 x-file Xenopus laevis
+ 1324 x-men Xenopus laevis
 
 ##### Problem Results
 
@@ -577,14 +577,14 @@ No pairwise comparisons made between iBatis and Hibernate.
 
 The following general steps are performed:
 
-1.  Create an XML file of tables the developer wants to create objects
-    for
-    - Including specifying the method for retrieving auto-generated
-      sequence values from inserts
-    - This file could also be easily auto-generated
-2.  Make some type adjustments for some variables
-    - For example, iBatis mapped some things to Java strings that should
-      have been Integers
+1. Create an XML file of tables the developer wants to create objects
+ for
+ - Including specifying the method for retrieving auto-generated
+ sequence values from inserts
+ - This file could also be easily auto-generated
+2. Make some type adjustments for some variables
+ - For example, iBatis mapped some things to Java strings that should
+ have been Integers
 
 ###### Documentation
 
@@ -782,8 +782,8 @@ able to give a presentation on this API, more information can be found
 here:
 
 - <a href="http://paramecium.cgm.cnrs-gif.fr/chadoapi/"
-  class="external free"
-  rel="nofollow">http://paramecium.cgm.cnrs-gif.fr/chadoapi/</a>
+ class="external free"
+ rel="nofollow">http://paramecium.cgm.cnrs-gif.fr/chadoapi/</a>
 
 ### Getting More Information
 
@@ -820,25 +820,25 @@ class="external text" rel="nofollow">ORM (Wikipedia)</a>.
 ##### The Problem
 
 - Developers need to perform Create, Retrieve, Update, Delete (aka CRUD)
-  operations on data inside an application.
+ operations on data inside an application.
 - The real world objects represented using a programming language needs
-  to be stored in databases
+ to be stored in databases
 - Using relational databases to store object-oriented data leads to a
-  semantic gap
+ semantic gap
 - RDBMS have fixed types, but OO can have more complicated user defined
-  types.
+ types.
 
 ##### Solutions
 
 - Data Access Object (DAO)
 - Developer writes a class which contains one attribute for each field
-  in the table
+ in the table
 - Methods for CRUD typically contains JDBC/DBI code with the necessary
-  SQL statements.
+ SQL statements.
 - Object Relational Mapping ([ORM](/wiki/Glossary#ORM)), WikiPedia:
-  - “ORM is a programming technique that links databases to
-    object-oriented language concepts, creating (in effect) a virtual
-    object database.“
+ - “ORM is a programming technique that links databases to
+ object-oriented language concepts, creating (in effect) a virtual
+ object database.“
 - Developer needs to configure the ORM
 - Less amount of manual coding
 - CRUD methods are automatically generated by the ORM layer
@@ -848,17 +848,17 @@ class="external text" rel="nofollow">ORM (Wikipedia)</a>.
 [ORM](/wiki/Glossary#ORM) solutions
 
 - Perl
-  - Class::DBI
+ - Class::DBI
 - Java
-  - EJB
-  - Hibernate
-  - JDO
-  - iBatis
+ - EJB
+ - Hibernate
+ - JDO
+ - iBatis
 
 ##### Perl - Class::DBI
 
 - Provides a simple interfaces for wrapping Perl classes around a
-  database tables
+ database tables
 - Tables are mapped directly to objects
 - The table column name are mapped to the get/set methods
 - Can be used with transactions
@@ -869,12 +869,12 @@ Defining a class in <a href="http://search.cpan.org/perldoc?Class::DBI"
 class="external text" rel="nofollow">Class::DBI</a> to represent a
 table:
 
-      CVTERM
-      cvterm_id
-      cv_id
-      name
-      definition
-      dbxref_id
+ CVTERM
+ cvterm_id
+ cv_id
+ name
+ definition
+ dbxref_id
 
 Corresponding code:
 
@@ -889,10 +889,10 @@ Chado::Cvterm->set_up_table('Cvterm');
 ``` de1
 ## Create
 $term_dbobj = Chado::Cvterm->create({
-                               name      => ”DUMMY TERM”,
-                               cv_id     => 1,
-                               dbxref_id => 125
-                        });
+ name => ”DUMMY TERM”,
+ cv_id => 1,
+ dbxref_id => 125
+ });
 ## Retrieve
 $term_dbobj = Chado::Cvterm->retrieve(2);
 
@@ -921,39 +921,39 @@ $term_dbobj->delete();
 ##### Summary
 
 - [ORM](/wiki/Glossary#ORM) provides painless roundtrip of data
-  between the application and database.
+ between the application and database.
 - Reduces the amount of SQL code and allows a programmatic style
-  interface to the RDBMS
+ interface to the RDBMS
 - Choice of ORM solution depends on the type of project
 - Flybase examined iBatis and Hibernate, both use XML configuration
-  files
-  - Hibernate is better if you're building schema from scratch
-  - Both auto-configure given a schema.
-  - Both have strengths and weaknesses.
+ files
+ - Hibernate is better if you're building schema from scratch
+ - Both auto-configure given a schema.
+ - Both have strengths and weaknesses.
 - Is Hibernate better when you're in the process of designing a schema?
-  - Hibernate can assist you in making a *Hibernate-compatible* schema.
+ - Hibernate can assist you in making a *Hibernate-compatible* schema.
 
 ### [XORT](/wiki/XORT)
 
 #### Background
 
 - Source:
-  <a href="http://sourceforge.net/project/showfiles.php?group_id=27707"
-  class="external free"
-  rel="nofollow">http://sourceforge.net/project/showfiles.php?group_id=27707</a>
+ <a href="http://sourceforge.net/project/showfiles.php?group_id=27707"
+ class="external free"
+ rel="nofollow">http://sourceforge.net/project/showfiles.php?group_id=27707</a>
 - Language: Perl
 - Authors: Pinglei Zhou
 - Users: Flybase
 - Support: Pinglei Zhou
 - Third party code: Uses
-  <a href="http://search.cpan.org/perldoc?XML::Parser::PerlSAX"
-  class="external text" rel="nofollow">XML::Parser::PerlSAX</a>,
-  <a href="http://search.cpan.org/perldoc?Unicode::String"
-  class="external text" rel="nofollow">Unicode::String</a>,
-  <a href="http://search.cpan.org/perldoc?XML::DOM" class="external text"
-  rel="nofollow">XML::DOM</a>, and
-  <a href="http://search.cpan.org/perldoc?DBI" class="external text"
-  rel="nofollow">DBI</a> from Perl (CPAN)
+ <a href="http://search.cpan.org/perldoc?XML::Parser::PerlSAX"
+ class="external text" rel="nofollow">XML::Parser::PerlSAX</a>,
+ <a href="http://search.cpan.org/perldoc?Unicode::String"
+ class="external text" rel="nofollow">Unicode::String</a>,
+ <a href="http://search.cpan.org/perldoc?XML::DOM" class="external text"
+ rel="nofollow">XML::DOM</a>, and
+ <a href="http://search.cpan.org/perldoc?DBI" class="external text"
+ rel="nofollow">DBI</a> from Perl (CPAN)
 
 #### Technical Overview
 
@@ -979,11 +979,11 @@ Reporting](/wiki/Comparison_of_XORT_and_Hibernate_for_Chado_reporting).
 #### Limitations
 
 - Database schemas need to follow certain rules
-  - All must have internal int primary key
-  - All must have unique key(s)
+ - All must have internal int primary key
+ - All must have unique key(s)
 - It may take a long path to retrieve certain type of data
-  - Example: gene-\>allele-\>genotype-\>phenotype via
-    feature_relationship
+ - Example: gene-\>allele-\>genotype-\>phenotype via
+ feature_relationship
 - Structure not stored in memory, you flush out data as it goes
 
 #### Presentation by Pinglei Zhou and Josh Goodman
@@ -995,8 +995,8 @@ Reporting](/wiki/Comparison_of_XORT_and_Hibernate_for_Chado_reporting).
 #### Background
 
 - Source:
-  <a href="http://sourceforge.net/projects/gmod/" class="external free"
-  rel="nofollow">http://sourceforge.net/projects/gmod/</a>
+ <a href="http://sourceforge.net/projects/gmod/" class="external free"
+ rel="nofollow">http://sourceforge.net/projects/gmod/</a>
 - Language: Perl
 - Authors: Allen Day, Scott Cain, Brian O'Connor, & others
 - Users:
@@ -1016,8 +1016,8 @@ Reporting](/wiki/Comparison_of_XORT_and_Hibernate_for_Chado_reporting).
 #### Limitations
 
 - Performance
-  - Can one read thousands of objects into memory? You could do this but
-    it's not suited to bulk operations
+ - Can one read thousands of objects into memory? You could do this but
+ it's not suited to bulk operations
 - Joins & complex queries
 
 ``` de1
@@ -1028,9 +1028,9 @@ __PACKAGE__ ->add_constructor(long_names => qq{ length(name) > 15 });
 # Custom SQL
 
 __PACKAGE__->set_sql(xfiles => qq{
-       SELECT FEATURE_ID
-       FROM FEATURE
-       WHERE NAME = 'xfiles' });
+ SELECT FEATURE_ID
+ FROM FEATURE
+ WHERE NAME = 'xfiles' });
 ```
 
 #### Presentation by Brian O'Connor
@@ -1047,50 +1047,50 @@ worrying about the complex details of the schema on a day-to-day basis.
 #### Background
 
 - Source:
-  <a href="http://gmod-ware.sourceforge.net" class="external free"
-  rel="nofollow">http://gmod-ware.sourceforge.net</a>
+ <a href="http://gmod-ware.sourceforge.net" class="external free"
+ rel="nofollow">http://gmod-ware.sourceforge.net</a>
 - Language: Perl
 - Authors: Sohel Merchant, Eric Just
 - Contact: e-just \[at\] northwestern.edu
 - Users: dictyBase
 - Support: Fully supported by authors. Sourceforge infrastructure (bug
-  reports, mailing lists)
+ reports, mailing lists)
 - Third party code: GMOD, BioPerl
 
 #### Technical Overview
 
 - Database connectivity: Uses the
-  [Chado::AutoDBI](/wiki/Chado_AutoDBI) connection from
-  GMOD. No connection configuration necessary since Modware is built on
-  top of GMOD and the connection is configured on GMOD install.
+ [Chado::AutoDBI](/wiki/Chado_AutoDBI) connection from
+ GMOD. No connection configuration necessary since Modware is built on
+ top of GMOD and the connection is configured on GMOD install.
 - Transaction support: Transactions are fully supported. The database
-  handle is available as a singleton through Modware::DBH. To rollback
-  at any time, simply insert
+ handle is available as a singleton through Modware::DBH. To rollback
+ at any time, simply insert
 
-  ``` de1
-  new Modware::DBH->rollback()
-  ```
+ ``` de1
+ new Modware::DBH->rollback()
+ ```
 
-  into script.
+ into script.
 - Code generation: No automatic code generation.
 
 #### Special topics
 
 - Features in Modware map to familiar Bioperl
-  (<a href="http://search.cpan.org/perldoc?Bio::Seq" class="external text"
-  rel="nofollow">Bio::Seq</a> and
-  <a href="http://search.cpan.org/perldoc?Bio::SeqFeature"
-  class="external text" rel="nofollow">Bio::SeqFeature</a>) objects that
-  can be accessed through a 'bioperl' method.
+ (<a href="http://search.cpan.org/perldoc?Bio::Seq" class="external text"
+ rel="nofollow">Bio::Seq</a> and
+ <a href="http://search.cpan.org/perldoc?Bio::SeqFeature"
+ class="external text" rel="nofollow">Bio::SeqFeature</a>) objects that
+ can be accessed through a 'bioperl' method.
 - Modware internally links Bio::SeqFeature objects to the proper
-  Bio::Seq objects to provide maximum functionality from the BioPerl
-  libraries.
+ Bio::Seq objects to provide maximum functionality from the BioPerl
+ libraries.
 - Modware's API documentation is complete and easily browsed at
-  <a href="http://gmod-ware.sourceforge.net/doc/" class="external free"
-  rel="nofollow">http://gmod-ware.sourceforge.net/doc/</a>
+ <a href="http://gmod-ware.sourceforge.net/doc/" class="external free"
+ rel="nofollow">http://gmod-ware.sourceforge.net/doc/</a>
 - Plenty of other documentation (quick starts with simple use cases) at
-  <a href="http://gmod-ware.sourceforge.net" class="external free"
-  rel="nofollow">http://gmod-ware.sourceforge.net</a>
+ <a href="http://gmod-ware.sourceforge.net" class="external free"
+ rel="nofollow">http://gmod-ware.sourceforge.net</a>
 
 #### Limitations
 
@@ -1109,16 +1109,16 @@ worrying about the complex details of the schema on a day-to-day basis.
 #### Background
 
 - Source: <a
-  href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=34513&amp;release_id=433523"
-  class="external free"
-  rel="nofollow">http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=34513&amp;release_id=433523</a>
+ href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=34513&amp;release_id=433523"
+ class="external free"
+ rel="nofollow">http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=34513&amp;release_id=433523</a>
 - Language: Perl
 - Authors: Scott Cain
 - Users: Several through GBrowse, none that I know of as a scripting
-  tool.
+ tool.
 - Support:
-  <a href="http://lists.sourceforge.net/lists/listinfo/gmod-gbrowse"
-  class="external text" rel="nofollow">GBrowse mailing list</a>
+ <a href="http://lists.sourceforge.net/lists/listinfo/gmod-gbrowse"
+ class="external text" rel="nofollow">GBrowse mailing list</a>
 - Third party code: None.
 
 #### Technical Overview
@@ -1138,7 +1138,7 @@ for use with [GBrowse](/wiki/GBrowse).
 - Read-only
 - Not generic middleware but if you use Chado and GBrowse may be useful
 - Incomplete implementation of Bio::DasI; just enough to make GBrowse
-  work
+ work
 - Also, despite the name, has never been tested with a Das server.
 
 #### Presentation by Scott Cain
@@ -1151,7 +1151,7 @@ Presentation](/wiki/GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
 #### Background
 
 - Source: <a href="http://ibatis.apache.org/" class="external free"
-  rel="nofollow">http://ibatis.apache.org/</a>
+ rel="nofollow">http://ibatis.apache.org/</a>
 - Language: Java
 - Authors: Apache group
 - Users:
@@ -1184,7 +1184,7 @@ Presentation](/wiki/GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
 #### Background
 
 - Source: <a href="http://www.hibernate.org" class="external free"
-  rel="nofollow">http://www.hibernate.org</a>
+ rel="nofollow">http://www.hibernate.org</a>
 - Language: Java
 - Authors: JBoss group
 - Users: VectorBase
@@ -1213,20 +1213,20 @@ Presentation](/wiki/Hibernate_Presentation)
 *I think this eventually became what is described in the [Artemis-Chado
 Integration
 Tutorial](/wiki/Artemis-Chado_Integration_Tutorial).
-[Dave C.](/wiki/User:Clements)*
+Dave C.*
 
 #### Background
 
 - Source:
-  <a href="http://www.sanger.ac.uk/pathogens" class="external text"
-  rel="nofollow">Pathogen Sequencing Unit</a>, Sanger Institute
+ <a href="http://www.sanger.ac.uk/pathogens" class="external text"
+ rel="nofollow">Pathogen Sequencing Unit</a>, Sanger Institute
 - Language: Java
 - Authors: Chinmay Patel, Adrian Tivey, Tim Carver
 - Users: In the future this will be freely available and used by
-  <a href="http://www.genedb.org" class="external text"
-  rel="nofollow">GeneDB</a> and
-  <a href="http://www.sanger.ac.uk/Software/Artemis" class="external text"
-  rel="nofollow">Artemis</a>
+ <a href="http://www.genedb.org" class="external text"
+ rel="nofollow">GeneDB</a> and
+ <a href="http://www.sanger.ac.uk/Software/Artemis" class="external text"
+ rel="nofollow">Artemis</a>
 - Support: In development
 - Third party code: iBatis and Spring/Hibernate
 
@@ -1286,7 +1286,7 @@ hand-edited
 ##### Advantages
 
 - Complete coverage of core schema (except [Phenotype
-  module](/wiki/Chado_Phenotype_Module))
+ module](/wiki/Chado_Phenotype_Module))
 - Choice of writing in either object-level query language or SQL
 
 ##### Limitations
@@ -1303,28 +1303,28 @@ hand-edited
 #### Background
 
 - Source: <a href="http://www.gusdb.org/WDK" class="external free"
-  rel="nofollow">http://www.gusdb.org/WDK</a>
+ rel="nofollow">http://www.gusdb.org/WDK</a>
 - Language: XML/Java/JSP
 - Authors: GUS WDK development team
 - Users: PlasmoDB/ApiDB/CryptoDB/ToxoDB, others under development
 - Support: GUS WDK development team
 - Third party code: Struts/JSP/Ajax/Axis
 - Platform requirements: any Oracle, PostgreSQL or MySQL database;
-  Linux; Tomcat
+ Linux; Tomcat
 
 #### Technical Overview
 
 - Database connectivity: JDBC
 - Transaction support: read-only presentation layer object model
 - Code generation: java classes generated from detailed object
-  specification in XML
+ specification in XML
 
 #### Advantages
 
 - Configurable coarse grained layer tailored for the presentation layer
 - Configurable in XML by non-programmers
 - Seamless integration with front-end query engine and web page
-  generator
+ generator
 
 #### Limitations
 
@@ -1341,7 +1341,7 @@ hand-edited
 #### Background
 
 - Source: <a href="http://www.intermine.org" class="external free"
-  rel="nofollow">http://www.intermine.org</a>
+ rel="nofollow">http://www.intermine.org</a>
 - Language: Java
 - Authors: FlyMine/InterMine development team
 - Users: FlyMine, StemCellMine, others under development
@@ -1352,23 +1352,23 @@ hand-edited
 
 - Database connectivity: JDBC
 - Transaction support: basic during build (doesn't support concurrent
-  writes) as database is optimised for high read-only query performance
+ writes) as database is optimised for high read-only query performance
 - Code generation: extensive use of automatic code generation
 
 #### Limitations
 
 - slow, but improving, build times (loads and integrates ~25m objects in
-  ~36 hours)
+ ~36 hours)
 - configuration complicated but being simplified
 - deals well with overlapping features, but currently limited support
-  for querying locations in DNA or protein sequences
+ for querying locations in DNA or protein sequences
 - export still limited to tab or comma-delimited or FASTA formats though
-  great flexibility in choice of output columns and their order
+ great flexibility in choice of output columns and their order
 - sequences not handled very well
-  - e.g. each chromosome sequence is stored in one big text field in
-    PostgreSQL
+ - e.g. each chromosome sequence is stored in one big text field in
+ PostgreSQL
 - can't yet do queries involving sizes of collections of things
-  - e.g. find the genes with only 1 transcript
+ - e.g. find the genes with only 1 transcript
 - doesn't yet support left outer join behaviour (under development)
 
 #### Presentation by Gos Micklem
@@ -1380,14 +1380,14 @@ Presentation](/wiki/InterMine_Presentation)
 
 - Jeff Bowes, XenBase
 - Robert Bruggner, VectorBase
-- [Scott Cain](/wiki/User:Scott), GMOD
-- [Steve Fischer](/wiki/User:Stevef), PlasmoDB/GUS
-- [Josh Goodman](/wiki/User:Jogoodma),
+- Scott Cain, GMOD
+- Steve Fischer, PlasmoDB/GUS
+- Josh Goodman,
 
 - Eric Just,
 - Sohel Merchant, DictyBase
 - Brian O'Connor, UCLA
-- [Brian Osborne](/wiki/User:Bosborne), GMOD
+- Brian Osborne, GMOD
 - Chinmay Patel, GeneDB
 - Pinglei Zhou, FlyBase
 - Gos Micklem, FlyMine/InterMine

@@ -20,9 +20,9 @@ expression data in a whole-genome context.
 
 <a href="http://caryoscope.stanford.edu" class="external text"
 
-  Status](#Status)
+ Status](#Status)
 - [Demo &
-  Screenshots](#Demo_.26_Screenshots)
+ Screenshots](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Publications](#Publications)

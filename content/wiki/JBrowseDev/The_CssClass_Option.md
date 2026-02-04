@@ -39,7 +39,7 @@ As of JBrowse v1.2.1, these classes are available:
 | Identical to transcript-exon. | triangle | No # See also |
 
 - <a href="/wiki/General_Usage" class="mw-redirect"
-  title="JBrowseDev/General Usage">General Usage Notes</a>
+ title="JBrowseDev/General Usage">General Usage Notes</a>
 
 # External Links
 

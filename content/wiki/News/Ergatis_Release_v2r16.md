@@ -15,18 +15,18 @@ class="external text" rel="nofollow">CHANGELOG</a>.
 Highlighted changes from the CHANGELOG:
 
 - Several new components
-  - genbank2fasta, nucmer-detla-filter, nucmer-show-snps,
-    snp-add-gene-info, blast_lgt_finder, btab2taxon,
-    insert_pmarks_in_scaffolds
+ - genbank2fasta, nucmer-detla-filter, nucmer-show-snps,
+ snp-add-gene-info, blast_lgt_finder, btab2taxon,
+ insert_pmarks_in_scaffolds
 - Prokaryotic Pipeline Updates
-  - Blastable databases are automatically generated during loading
-    steps.
-  - PFunc: added more rules for cleaning common names post-annotation
-  - run_prok_pipeline.pl script now automatically adds pipeline comments
-    when used
+ - Blastable databases are automatically generated during loading
+ steps.
+ - PFunc: added more rules for cleaning common names post-annotation
+ - run_prok_pipeline.pl script now automatically adds pipeline comments
+ when used
 - Added scripts to util to download various types of sequence files
-  (genbank, pep, seq, etc) from
-  <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> DB.
+ (genbank, pep, seq, etc) from
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> DB.
 
 Any bugs/feature requests should be addressed on the
 <a href="https://sourceforge.net/tracker/?group_id=148765"

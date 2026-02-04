@@ -8,74 +8,74 @@ _... formerly titled "GMOD for the Biologist"._
 This page provides an overview of the GMOD project. It does not assume
 any particular background in computing.
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [What is a
-  GMOD?](#What_is_a_GMOD.3F)
-  - [Is It Just
-    for _Model_ Organisms?](#Is_It_Just_for_Model_Organisms.3F)
+ GMOD?](#What_is_a_GMOD.3F)
+ - [Is It Just
+ for _Model_ Organisms?](#Is_It_Just_for_Model_Organisms.3F)
 - [Technologies](#Technologies)
 - [The Components
-  of GMOD](#The_Components_of_GMOD)
-  - [What is
-    GBrowse?](#What_is_GBrowse.3F)
-    - [JBrowse](#JBrowse)
-  - [Relational
-    Databases](#Relational_Databases)
-    - [Chado
-      and BioSQL](#Chado_and_BioSQL)
-    - [GFF
-      Databases](#GFF_Databases)
-  - [What are
-    WebApollo and Apollo?](#What_are_WebApollo_and_Apollo.3F)
-  - [What are
-    MAKER and DIYA?](#What_are_MAKER_and_DIYA.3F)
-  - [What is
-    Pathway Tools?](#What_is_Pathway_Tools.3F)
-  - [What is
-    CMap?](#What_is_CMap.3F)
-    - [And
-      SynView? or Sybil? or
-      GBrowse_Syn?](#And_SynView.3F_or_Sybil.3F_or_GBrowse_Syn.3F)
-  - [What is
-    Tripal?](#What_is_Tripal.3F)
-  - [What is
-    Modware?](#What_is_Modware.3F)
-  - [What is
-    BioPerl?](#What_is_BioPerl.3F)
-  - [And What
-    Else is in GMOD?](#And_What_Else_is_in_GMOD.3F)
+ of GMOD](#The_Components_of_GMOD)
+ - [What is
+ GBrowse?](#What_is_GBrowse.3F)
+ - [JBrowse](#JBrowse)
+ - [Relational
+ Databases](#Relational_Databases)
+ - [Chado
+ and BioSQL](#Chado_and_BioSQL)
+ - [GFF
+ Databases](#GFF_Databases)
+ - [What are
+ WebApollo and Apollo?](#What_are_WebApollo_and_Apollo.3F)
+ - [What are
+ MAKER and DIYA?](#What_are_MAKER_and_DIYA.3F)
+ - [What is
+ Pathway Tools?](#What_is_Pathway_Tools.3F)
+ - [What is
+ CMap?](#What_is_CMap.3F)
+ - [And
+ SynView? or Sybil? or
+ GBrowse_Syn?](#And_SynView.3F_or_Sybil.3F_or_GBrowse_Syn.3F)
+ - [What is
+ Tripal?](#What_is_Tripal.3F)
+ - [What is
+ Modware?](#What_is_Modware.3F)
+ - [What is
+ BioPerl?](#What_is_BioPerl.3F)
+ - [And What
+ Else is in GMOD?](#And_What_Else_is_in_GMOD.3F)
 - [Case
-  Studies](#Case_Studies)
-  - [A Simple
-    Sequence Browser](#A_Simple_Sequence_Browser)
-    - [Recommendation](#Recommendation)
-  - [A Simple
-    Sequence Browser plus a Sequence
-    Annotator](#A_Simple_Sequence_Browser_plus_a_Sequence_Annotator)
-    - [Recommendation](#Recommendation_2)
-  - [A Browser
-    for a Stock Collection](#A_Browser_for_a_Stock_Collection)
-    - [Recommendation](#Recommendation_3)
-  - [A Browser
-    for Microarray Data](#A_Browser_for_Microarray_Data)
-    - [Recommendation](#Recommendation_4)
-  - [A Browser
-    for Map Data](#A_Browser_for_Map_Data)
-    - [Recommendation](#Recommendation_5)
+ Studies](#Case_Studies)
+ - [A Simple
+ Sequence Browser](#A_Simple_Sequence_Browser)
+ - [Recommendation](#Recommendation)
+ - [A Simple
+ Sequence Browser plus a Sequence
+ Annotator](#A_Simple_Sequence_Browser_plus_a_Sequence_Annotator)
+ - [Recommendation](#Recommendation_2)
+ - [A Browser
+ for a Stock Collection](#A_Browser_for_a_Stock_Collection)
+ - [Recommendation](#Recommendation_3)
+ - [A Browser
+ for Microarray Data](#A_Browser_for_Microarray_Data)
+ - [Recommendation](#Recommendation_4)
+ - [A Browser
+ for Map Data](#A_Browser_for_Map_Data)
+ - [Recommendation](#Recommendation_5)
 - [Computing](#Computing)
-  - [Personnel,
-    Hardware and Operating
-    System](#Personnel.2C_Hardware_and_Operating_System)
-  - [Software](#Software)
-    - [Databases](#Databases)
-    - [Programming
-      Languages](#Programming_Languages)
-      - [Perl](#Perl)
-      - [Java](#Java)
-    - [Apache, the Web
-      Server](#Apache.2C_the_Web_Server)
-  - [Glossary](#Glossary)
-  - [Licenses](#Licenses)
+ - [Personnel,
+ Hardware and Operating
+ System](#Personnel.2C_Hardware_and_Operating_System)
+ - [Software](#Software)
+ - [Databases](#Databases)
+ - [Programming
+ Languages](#Programming_Languages)
+ - [Perl](#Perl)
+ - [Java](#Java)
+ - [Apache, the Web
+ Server](#Apache.2C_the_Web_Server)
+ - [Glossary](#Glossary)
+ - [Licenses](#Licenses)
 
 ## Introduction
 
@@ -289,14 +289,14 @@ and does almost all of its work directly in the user's web browser, with
 minimal requirements for the server. JBrowse's features include:
 
 - Fast, smooth scrolling and zooming. Explore your genome with
-  unparalleled speed.
+ unparalleled speed.
 - Scales easily to multi-gigabase genomes and deep-coverage sequencing.
 - Supports GFF3, BED, FASTA, Wiggle, BigWig, BAM, VCF (with tabix),
-  REST, and more. BAM, BigWig, and VCF data are displayed directly from
-  the compressed binary file with no conversion needed.
+ REST, and more. BAM, BigWig, and VCF data are displayed directly from
+ the compressed binary file with no conversion needed.
 - Very light server resource requirements. JBrowse has no back-end
-  server code, just tools for formatting data files to be read directly
-  over HTTP. Serve huge datasets from a single low-cost cloud instance.
+ server code, just tools for formatting data files to be read directly
+ over HTTP. Serve huge datasets from a single low-cost cloud instance.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/JBrowse_alignment_and_coverage.png/600px-JBrowse_alignment_and_coverage.png"
@@ -348,11 +348,11 @@ but one can say that the designer may think about some of these general
 concerns:
 
 - The degree of data abstraction, which is related to a database concept
-  called <a href="http://en.wikipedia.org/wiki/Database_normalization"
-  class="extiw" title="wp:Database normalization">normalization</a> and
-  to the flexibility of the schema
+ called <a href="http://en.wikipedia.org/wiki/Database_normalization"
+ class="extiw" title="wp:Database normalization">normalization</a> and
+ to the flexibility of the schema
 - The legibility of the schema, which has to do with the ease of using
-  it
+ it
 - The breadth of the schema, in terms of the data types it could contain
 
 From the scientific perspective one can ask related questions:
@@ -360,7 +360,7 @@ From the scientific perspective one can ask related questions:
 - How flexible is a given schema?
 - Can it handle my data now and in the future?
 - Will using a given schema be easier or harder to use than some other
-  schema?
+ schema?
 
 This last question relates mostly to the degree of abstraction of the
 schema, not to the actual programming languages used.
@@ -380,7 +380,7 @@ the results.
 See also:
 
 - [A Brief Guide to
-  Databases](/wiki/A_Brief_Guide_to_Databases)
+ Databases](/wiki/A_Brief_Guide_to_Databases)
 - [Databases and GMOD](/wiki/Databases_and_GMOD)
 
 #### Chado and BioSQL
@@ -412,39 +412,39 @@ Chado's focus is broader. Its tables are broken down into groups called
 _modules_; the modules are the following:
 
 - [Audit](/wiki/Chado_Audit_Module) - for database audit
-  trails
+ trails
 - [Companalysis](/wiki/Chado_Companalysis_Module) -
-  for data from computational analysis
+ for data from computational analysis
 - [Contact](/wiki/Chado_Contact_Module) - for people,
-  groups, and organizations
+ groups, and organizations
 - [Controlled Vocabulary (cv)](/wiki/Chado_CV_Module) - for
-  controlled vocabularies and ontologies
+ controlled vocabularies and ontologies
 - [Expression](/wiki/Chado_Expression_Module) - for
-  summaries of RNA and protein expression
+ summaries of RNA and protein expression
 - [General](/wiki/Chado_General_Module) - for
-  identifiers
+ identifiers
 - [Genetic](/wiki/Chado_Genetic_Module) - for genetic
-  data and genotypes
+ data and genotypes
 - [Library](/wiki/Chado_Library_Module) - for
-  descriptions of molecular libraries
+ descriptions of molecular libraries
 - [Mage](/wiki/Chado_Mage_Module) - for microarray data
 - [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](/wiki/Chado_Natural_Diversity_Module) -
-  for multiple experiments, such as phenotyping and genotyping
+ (ND)](/wiki/Chado_Natural_Diversity_Module) -
+ for multiple experiments, such as phenotyping and genotyping
 - [Organism](/wiki/Chado_Organism_Module) - for
-  taxonomic data
+ taxonomic data
 - [Phenotype](/wiki/Chado_Phenotype_Module) - for
-  phenotypic data
+ phenotypic data
 - [Phylogeny](/wiki/Chado_Phylogeny_Module) - for
-  organisms and phylogenetic trees
+ organisms and phylogenetic trees
 - [Publication
-  (pub)](/wiki/Chado_Publication_Module) - for
-  publications and references
+ (pub)](/wiki/Chado_Publication_Module) - for
+ publications and references
 - [Sequence](/wiki/Chado_Sequence_Module) - for
-  sequences and sequence features
+ sequences and sequence features
 - [Stock](/wiki/Chado_Stock_Module) - for specimens and
-  biological collections
+ biological collections
 - [WWW](/wiki/Chado_WWW_Module) -
 
 It is also possible to _add_ modules to Chado. For instance, in early
@@ -532,7 +532,7 @@ rejected by an administrator before being saved. WebApollo shares
 JBrowse's fast, flexible browsing interface, and users require only a
 web browser to use it.
 
-[Apollo](/wiki/Apollo) is a standalone  for manual sequence
+[Apollo](/wiki/Apollo) is a standalone for manual sequence
 annotation, and is the predecessor of WebApollo. Apollo can read and
 write to Chado databases, but lacks the instant updates that WebApollo
 features. We recommend using [WebApollo](/wiki/WebApollo) as it
@@ -786,35 +786,35 @@ the required work.
 ### A Simple Sequence Browser
 
 - The data: sequence (genomic DNA or ESTs or proteins or cDNAs or some
-  combination of these or ...)
+ combination of these or ...)
 - The goal: create a browser to query and view sequence and sequence
-  annotations
+ annotations
 - The core software: [GBrowse](/wiki/GBrowse), Apache Web server,
-  and <a href="http://bioperl.org" class="external text"
-  rel="nofollow">Bioperl</a>
+ and <a href="http://bioperl.org" class="external text"
+ rel="nofollow">Bioperl</a>
 - The hardware: a server running Unix (Linux or Mac) or Windows
 
-1.  Figure out what the annotations should be (i.e. gene coordinates,
-    motif matches, oligonucleotide matches, etc. You can try using
-    annotation pipelines like [MAKER](/wiki/MAKER) to automatically
-    build these.)
-2.  Install core software
-3.  Create or gather the annotations (BLAST results or HMMER results or
-    GenBank files or ...)
-4.  Transform all the annotations into a format suitable for loading
-    ([GFF](/wiki/GFF) format)
-5.  Load GFF into the GFF database
-6.  Configure GBrowse
+1. Figure out what the annotations should be (i.e. gene coordinates,
+ motif matches, oligonucleotide matches, etc. You can try using
+ annotation pipelines like [MAKER](/wiki/MAKER) to automatically
+ build these.)
+2. Install core software
+3. Create or gather the annotations (BLAST results or HMMER results or
+ GenBank files or ...)
+4. Transform all the annotations into a format suitable for loading
+ ([GFF](/wiki/GFF) format)
+5. Load GFF into the GFF database
+6. Configure GBrowse
 
 Possible challenge: Step 4, converting all the annotations to
 [GFF](/wiki/GFF) (scripts may available to perform all the conversions,
 or you may have to write some of the conversion code yourselves)
 
 - Skills needed: basic command-line competence, perhaps basic Perl
-  competence if you have to write any custom conversion code
+ competence if you have to write any custom conversion code
 - Resources available: documentation at GMOD.org, the [GMOD Help
-  Desk](/wiki/GMOD_Help_Desk), the [GMOD Mailing
-  Lists](/wiki/GMOD_Mailing_Lists)
+ Desk](/wiki/GMOD_Help_Desk), the [GMOD Mailing
+ Lists](/wiki/GMOD_Mailing_Lists)
 
 #### Recommendation
 
@@ -827,30 +827,30 @@ can even get GBrowse running nicely on a laptop.
 ### A Simple Sequence Browser plus a Sequence Annotator
 
 - The data: sequence (genomic DNA or ESTs or cDNAs or some combination
-  of these or ...)
+ of these or ...)
 - The goal: create a browser to query and view sequence and sequence
-  annotations along with an editor to manually annotate the sequences
+ annotations along with an editor to manually annotate the sequences
 - The core software: [GBrowse](/wiki/GBrowse),
-  [Apollo](/wiki/Apollo),
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> (plus
-  [relational
-  database](/wiki/Glossary#Relational_Database_Management_System)),
-  Apache Web server, and [BioPerl](/wiki/BioPerl)
+ [Apollo](/wiki/Apollo),
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> (plus
+ [relational
+ database](/wiki/Glossary#Relational_Database_Management_System)),
+ Apache Web server, and [BioPerl](/wiki/BioPerl)
 - The [hardware](/wiki/Computing_Requirements): a
-  server running [Unix](/wiki/Glossary#Unix) (Linux or Mac) or
-  Windows
+ server running [Unix](/wiki/Glossary#Unix) (Linux or Mac) or
+ Windows
 
-1.  Figure out what the annotations should be (gene coordinates or motif
-    matches or oligonucleotide matches or hand-made annotations or some
-    combination of these or ...)
-2.  Install core software
-3.  Create or gather the annotations (BLAST results or HMMER results or
-    GenBank files or ...)
-4.  Transform all the annotations into a format suitable for loading
-    ([GFF](/wiki/GFF) format)
-5.  Load GFF into the Chado database
-6.  Install and configure Gbrowse
-7.  Install and configure Apollo
+1. Figure out what the annotations should be (gene coordinates or motif
+ matches or oligonucleotide matches or hand-made annotations or some
+ combination of these or ...)
+2. Install core software
+3. Create or gather the annotations (BLAST results or HMMER results or
+ GenBank files or ...)
+4. Transform all the annotations into a format suitable for loading
+ ([GFF](/wiki/GFF) format)
+5. Load GFF into the Chado database
+6. Install and configure Gbrowse
+7. Install and configure Apollo
 
 A challenge: Step 2, installing core software (with more components you
 have a more complex system and more potential pitfalls, and Chado and
@@ -877,33 +877,33 @@ system.
 ### A Browser for a Stock Collection
 
 - The data: the stock collection data in some structured form (Excel or
-  Word or ...)
+ Word or ...)
 - The goal: create a browser to query and view your laboratory's stock
-  collection
+ collection
 - The core software:
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> (and its
-  relational database), Apache Web server, and
-  [Turnkey](/wiki/Turnkey)
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> (and its
+ relational database), Apache Web server, and
+ [Turnkey](/wiki/Turnkey)
 - The hardware: a server running the Unix (Linux or Mac) or Windows
-  [operating system](/wiki/Glossary#Operating_System).
+ [operating system](/wiki/Glossary#Operating_System).
 
-1.  Install core software
-2.  Load stock collection data into the Chado database
-3.  Create a [Tripal](/wiki/Tripal)-based Web site
+1. Install core software
+2. Load stock collection data into the Chado database
+3. Create a [Tripal](/wiki/Tripal)-based Web site
 
 Challenges:
 
 - Possible challenge: Step 1, installing core software (Chado and its
-  relational database is a fairly detailed install)
+ relational database is a fairly detailed install)
 - A challenge: Step 2, loading the stock collection data into Chado
-  (scripts will not be available to perform this loading, you will have
-  to create the code yourselves)
+ (scripts will not be available to perform this loading, you will have
+ to create the code yourselves)
 - Possible challenge: Step 2, loading the data. The Chado schema may not
-  be properly configured for your data and may need to be modified.
+ be properly configured for your data and may need to be modified.
 - Possible challenge: Step 3, running Turnkey to automatically create
-  your browser. Turnkey is a new tool. It has been used successfully in
-  testing and at [ParameciumDB](/wiki/ParameciumDB) but not all
-  possibilities have been tested.
+ your browser. Turnkey is a new tool. It has been used successfully in
+ testing and at [ParameciumDB](/wiki/ParameciumDB) but not all
+ possibilities have been tested.
 
 Skills needed: General IT expertise (Turnkey automates the creation of
 Web sites but it is an expert's tool) Basic programming competence to
@@ -923,7 +923,7 @@ be fairly straightforward for the expert, or could be challenging.
 
 - The data: microarray data in Affymetrix format
 - The goal: create a browser to query and view your laboratory's
-  microarray
+ microarray
 - The core software: Chado, Apache Web server, and ...
 - The hardware: a server running Unix (Linux or Mac) or Windows
 
@@ -945,16 +945,16 @@ connectors are built.
 ### A Browser for Map Data
 
 - The data: map data (genetic map data or physical map data or visual
-  map data or some combination of these)
+ map data or some combination of these)
 - The goal: create a browser to query and view your maps, within a
-  species or across species
+ species or across species
 - The core software: GBrowse, Apache Web server, and CMap or SynView or
-  Sybil.
+ Sybil.
 - The hardware: a server running Unix (Linux or Mac) or Windows
 
-1.  Choose the right map software, based on your map data and resources.
-2.  Install core software.
-3.  Load map data.
+1. Choose the right map software, based on your map data and resources.
+2. Install core software.
+3. Load map data.
 
 Possible challenge: Step 2, the installation. This may tricky if you
 choose one of the more fully featured packages ([CMap](/wiki/CMap) or

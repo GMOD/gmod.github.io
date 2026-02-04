@@ -10,20 +10,20 @@ Status
 - **Active** support
 
 - <a href="http://isga.cgb.indiana.edu/" class="external text"
-  rel="nofollow">Home Page</a>
+ rel="nofollow">Home Page</a>
 - <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
 - <a href="http://isga.cgb.indiana.edu/Help/Tutorial"
-  class="external text" rel="nofollow">Tutorials</a>
+ class="external text" rel="nofollow">Tutorials</a>
 - <a href="http://isga.cgb.indiana.edu/Help/FAQ" class="external text"
-  rel="nofollow">FAQ</a>
+ rel="nofollow">FAQ</a>
 - [Mailing List](/wiki/ISGA#Mailing_List)
 - <a
-  href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/8/1122"
-  class="external text" rel="nofollow">Paper</a>
+ href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/8/1122"
+ class="external text" rel="nofollow">Paper</a>
 - <a href="http://cgb.indiana.edu/downloads/6" class="external text"
-  rel="nofollow">Download</a>
+ rel="nofollow">Download</a>
 - <a href="http://sourceforge.net/projects/isga/develop"
-  class="external text" rel="nofollow">Source</a>
+ class="external text" rel="nofollow">Source</a>
 
 <a href="http://isga.cgb.indiana.edu/" rel="nofollow"
 title="ISGA at the Center for Genomics and Bioinformatics"><img
@@ -56,41 +56,41 @@ used for prokarytic annotation and assembly.
 ## Documentation
 
 - <a href="http://isga.cgb.indiana.edu/" class="external text"
-  rel="nofollow">Home Page</a>
+ rel="nofollow">Home Page</a>
 - <a href="http://isga.cgb.indiana.edu/Help/Tutorial"
-  class="external text" rel="nofollow">Tutorials</a>
+ class="external text" rel="nofollow">Tutorials</a>
 - <a href="http://isga.cgb.indiana.edu/Help/FAQ" class="external text"
-  rel="nofollow">FAQ</a>
+ rel="nofollow">FAQ</a>
 - <a
-  href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/8/1122"
-  class="external text" rel="nofollow">"An Ergatis-based prokaryotic
-  genome annotation web server"</a> in
-  *<a href="http://bioinformatics.oxfordjournals.org/"
-  class="external text" rel="nofollow">Bioinformatics</a>*
--  and
+ href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/8/1122"
+ class="external text" rel="nofollow">"An Ergatis-based prokaryotic
+ genome annotation web server"</a> in
+ *<a href="http://bioinformatics.oxfordjournals.org/"
+ class="external text" rel="nofollow">Bioinformatics</a>*
+- and
 
-  - [Automated Annotation of NGS Transcriptome Data using ISGA and
-    Ergatis](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf),
-    presented by [Chris Hemmerich](/wiki/User:Chemmeri) at
-    [BOSC 2010](/wiki/ISMB_2010)
-  - [Integrative Services for Genomic Analysis (ISGA) - An Intuitive Web
-    Server for Prokaryotic Genome Annotation and Other
-    Analyses](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/ISGAISMB2010Poster.pdf),
-    poster by [Chris Hemmerich](/wiki/User:Chemmeri), Aaron
-    Buechlein, Ram Podicheti, and Jeong-Hyeon Choi, presented at [ISMB
-    2010](/wiki/ISMB_2010).
-  - [Web-Based Bioinformatics Pipelines For Biologists: Integrative
-    Services for Genomic Analysis
-    (ISGA)](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2010ErgatisForBiologists.pdf),
-    presented by [Chris Hemmerich](/wiki/User:Chemmeri) at the
-    [January 2010 GMOD
-    Meeting](/wiki/January_2010_GMOD_Meeting).
+ - [Automated Annotation of NGS Transcriptome Data using ISGA and
+ Ergatis](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf),
+ presented by Chris Hemmerich at
+ [BOSC 2010](/wiki/ISMB_2010)
+ - [Integrative Services for Genomic Analysis (ISGA) - An Intuitive Web
+ Server for Prokaryotic Genome Annotation and Other
+ Analyses](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/ISGAISMB2010Poster.pdf),
+ poster by Chris Hemmerich, Aaron
+ Buechlein, Ram Podicheti, and Jeong-Hyeon Choi, presented at [ISMB
+ 2010](/wiki/ISMB_2010).
+ - [Web-Based Bioinformatics Pipelines For Biologists: Integrative
+ Services for Genomic Analysis
+ (ISGA)](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2010ErgatisForBiologists.pdf),
+ presented by Chris Hemmerich at the
+ [January 2010 GMOD
+ Meeting](/wiki/January_2010_GMOD_Meeting).
 
 ## Mailing List
 
 |
 |----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| **ISGA** | <a href="https://lists.sourceforge.net/lists/listinfo/isga-users" |  |  |
+| | Mailing List Link | Description | Archive(s) |
+| **ISGA** | <a href="https://lists.sourceforge.net/lists/listinfo/isga-users" | | |
 class="external text" rel="nofollow">isga-users</a> | **ISGA** support, development, and announcements mailing list | <a href="http://gmod.827538.n3.nabble.com/ISGA-Users-f1031703.html"
 class="external text" rel="nofollow">Nabble</a> |

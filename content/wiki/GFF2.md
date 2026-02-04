@@ -13,42 +13,42 @@ arbitrary levels. GFF2 also does not require that column 3, the feature
 type, be part of the sequence ontology. It can be any string. This often
 led to quality control and data exchange problems.
 
-  Deprecated!</span>](#GFF2_is_Deprecated.21)
-  - [Why GFF2
-    is harmful to your
-    health](#Why_GFF2_is_harmful_to_your_health)
+ Deprecated!</span>](#GFF2_is_Deprecated.21)
+ - [Why GFF2
+ is harmful to your
+ health](#Why_GFF2_is_harmful_to_your_health)
 - [The GFF2 File
-  Format](#The_GFF2_File_Format)
-  - [Creating a
-    GFF2 table](#Creating_a_GFF2_table)
-    - [Using
-      the Group field for simple
-      features](#Using_the_Group_field_for_simple_features)
-    - [Using
-      the Group field to group features that belong
-      together](#Using_the_Group_field_to_group_features_that_belong_together)
-    - [Using
-      the Group field to add a
-      note](#Using_the_Group_field_to_add_a_note)
-    - [Using
-      the Group field to add an alternative
-      name](#Using_the_Group_field_to_add_an_alternative_name)
-  - [Identifying the reference
-    sequence](#Identifying_the_reference_sequence)
-  - [Sequence
-    alignments](#Sequence_alignments)
-  - [Dense
-    quantitative data](#Dense_quantitative_data)
-  - [Loading
-    the GFF file into the
-    database](#Loading_the_GFF_file_into_the_database)
-  - [Aggregators](#Aggregators)
+ Format](#The_GFF2_File_Format)
+ - [Creating a
+ GFF2 table](#Creating_a_GFF2_table)
+ - [Using
+ the Group field for simple
+ features](#Using_the_Group_field_for_simple_features)
+ - [Using
+ the Group field to group features that belong
+ together](#Using_the_Group_field_to_group_features_that_belong_together)
+ - [Using
+ the Group field to add a
+ note](#Using_the_Group_field_to_add_a_note)
+ - [Using
+ the Group field to add an alternative
+ name](#Using_the_Group_field_to_add_an_alternative_name)
+ - [Identifying the reference
+ sequence](#Identifying_the_reference_sequence)
+ - [Sequence
+ alignments](#Sequence_alignments)
+ - [Dense
+ quantitative data](#Dense_quantitative_data)
+ - [Loading
+ the GFF file into the
+ database](#Loading_the_GFF_file_into_the_database)
+ - [Aggregators](#Aggregators)
 - [Converting
-  GFF2 to GFF3](#Converting_GFF2_to_GFF3)
-  - [Column 3:
-    Feature Type](#Column_3:_Feature_Type)
-  - [Column 9:
-    Group / Attributes](#Column_9:_Group_.2F_Attributes)
+ GFF2 to GFF3](#Converting_GFF2_to_GFF3)
+ - [Column 3:
+ Feature Type](#Column_3:_Feature_Type)
+ - [Column 9:
+ Group / Attributes](#Column_9:_Group_.2F_Attributes)
 
 ## GFF2 is Deprecated!
 
@@ -80,7 +80,7 @@ The GFF format is a flat tab-delimited file, each line of which
 corresponds to an annotation, or feature. Each line has nine columns and
 looks like this:
 
-    Chr1  curated  CDS 365647  365963  .  +  1  Transcript "R119.7"
+ Chr1 curated CDS 365647 365963 . + 1 Transcript "R119.7"
 
 The 9 columns are as follows:
 
@@ -157,7 +157,7 @@ The first 8 fields of the GFF2 format are easy to understand. The group
 field is a challenge. It is used in several distinct ways:
 
 - to group together a single sequence feature that spans a discontinuous
-  range, such as a gapped alignment.
+ range, such as a gapped alignment.
 - to name a feature, allowing it to be retrieved by name.
 - to add one or more notes to the annotation.
 - to add an alternative name
@@ -168,7 +168,7 @@ For a simple feature that spans a single continuous range, choose a name
 and class for the object and give it a line in the GFF2 file that refers
 to its start and stop positions.
 
-    Chr3   giemsa heterochromatin  4500000 6000000 . . .   Band 3q12.1
+ Chr3 giemsa heterochromatin 4500000 6000000 . . . Band 3q12.1
 
 #### Using the Group field to group features that belong together
 
@@ -177,10 +177,10 @@ transcript, choose a name and class for the object. Give each segment a
 separate line in the GFF2 file but use the same name for each line. For
 example:
 
-    IV     curated exon    5506900 5506996 . + .   Transcript B0273.1
-    IV     curated exon    5506026 5506382 . + .   Transcript B0273.1
-    IV     curated exon    5506558 5506660 . + .   Transcript B0273.1
-    IV     curated exon    5506738 5506852 . + .   Transcript B0273.1
+ IV curated exon 5506900 5506996 . + . Transcript B0273.1
+ IV curated exon 5506026 5506382 . + . Transcript B0273.1
+ IV curated exon 5506558 5506660 . + . Transcript B0273.1
+ IV curated exon 5506738 5506852 . + . Transcript B0273.1
 
 These four lines refer to a biological object of class "Transcript" and
 name B0273.1. Each of its parts uses the method "exon", source
@@ -192,13 +192,13 @@ omitted.
 You can extend the idiom for objects that have heterogeneous parts, such
 as a transcript that has 5' and 3' UTRs
 
-    IV     curated  mRNA   5506800 5508917 . + .   Transcript B0273.1; Note "Zn-Finger"
-    IV     curated  5'UTR  5506800 5508999 . + .   Transcript B0273.1
-    IV     curated  exon   5506900 5506996 . + .   Transcript B0273.1
-    IV     curated  exon   5506026 5506382 . + .   Transcript B0273.1
-    IV     curated  exon   5506558 5506660 . + .   Transcript B0273.1
-    IV     curated  exon   5506738 5506852 . + .   Transcript B0273.1
-    IV     curated  3'UTR  5506852 5508917 . + .   Transcript B0273.1
+ IV curated mRNA 5506800 5508917 . + . Transcript B0273.1; Note "Zn-Finger"
+ IV curated 5'UTR 5506800 5508999 . + . Transcript B0273.1
+ IV curated exon 5506900 5506996 . + . Transcript B0273.1
+ IV curated exon 5506026 5506382 . + . Transcript B0273.1
+ IV curated exon 5506558 5506660 . + . Transcript B0273.1
+ IV curated exon 5506738 5506852 . + . Transcript B0273.1
+ IV curated 3'UTR 5506852 5508917 . + . Transcript B0273.1
 
 In this example, there is a single feature with method "mRNA" that spans
 the entire range. It is grouped with subparts of type 5'UTR, 3'UTR and
@@ -219,11 +219,11 @@ vertebrate genome. For these, just leave the Group field empty.
 The group field can be used to add one or more notes to an annotation.
 To do this, place a semicolon after the group name and add a Note field:
 
-    Chr3 giemsa heterochromatin 4500000 6000000 . . . Band 3q12.1 ; Note "Marfan's syndrome"
+ Chr3 giemsa heterochromatin 4500000 6000000 . . . Band 3q12.1 ; Note "Marfan's syndrome"
 
 You can add multiple Notes. Just separate them by semicolons:
 
-     Band 3q12.1 ; Note "Marfan's syndrome" ; Note "dystrophic dysplasia"
+ Band 3q12.1 ; Note "Marfan's syndrome" ; Note "dystrophic dysplasia"
 
 The Note should come AFTER the group type and name.
 
@@ -233,7 +233,7 @@ If you want the feature to be quickly searchable by an alternative name,
 you can add one or more Alias tags. A feature can have multiple aliases,
 and multiple features can share the same alias:
 
-    Chr3 giemsa heterochromatin 4500000 6000000 . . . Band 3q12.1 ; Alias MFX
+ Chr3 giemsa heterochromatin 4500000 6000000 . . . Band 3q12.1 ; Alias MFX
 
 Searches for aliases will be both faster and more reliable than searches
 for keywords in notes, since the latter relies on whole-text search
@@ -247,7 +247,7 @@ is necessary so that the length of the reference sequence is known.
 For example, if "Chr1" is used as a reference sequence, then the GFF
 file should have an entry for it similar to this one:
 
-    Chr1 assembly chromosome 1 14972282 . + . Sequence Chr1
+ Chr1 assembly chromosome 1 14972282 . + . Sequence Chr1
 
 This indicates that the reference sequence named "Chr1" has length
 14972282 bp, method "chromosome" and source "assembly". In addition, as
@@ -270,7 +270,7 @@ larger sequence is built up from one or more smaller ones.
 Both cases are indicated by using the Target tag in the group field. For
 example, a typical similarity hit will look like this:
 
-    Chr1 BLASTX similarity 76953 77108 132 + 0 Target Protein:SW:ABLE_DROME 493 544
+ Chr1 BLASTX similarity 76953 77108 132 + 0 Target Protein:SW:ABLE_DROME 493 544
 
 Here, the group field contains the Target tag, followed by an identifier
 for the biological object. The GFF format uses the notation Class:Name
@@ -287,8 +287,8 @@ SW:ABLE_DROME starting at position 493 and extending to position 544.
 A similar notation is used for sequence assembly information as shown in
 this example:
 
-    Chr1        assembly Link   10922906 11177731 . . . Target Sequence:LINK_H06O01 1 254826
-    LINK_H06O01 assembly Cosmid 32386    64122    . . . Target Sequence:F49B2       6 31742
+ Chr1 assembly Link 10922906 11177731 . . . Target Sequence:LINK_H06O01 1 254826
+ LINK_H06O01 assembly Cosmid 32386 64122 . . . Target Sequence:F49B2 6 31742
 
 This indicates that the region between bases 10922906 and 11177731 of
 Chr1 are composed of LINK_H06O01 from bp 1 to bp 254826. The region of
@@ -314,7 +314,7 @@ example, if your database is a MySQL database on the local host named
 "dicty", you can load it into an empty database using
 `bp_bulk_load_gff.pl` like this:
 
-     bp_bulk_load_gff.pl -c -d dicty my_data.gff
+ bp_bulk_load_gff.pl -c -d dicty my_data.gff
 
 To update existing databases, use either `bp_load_gff.pl` or
 `bp_fast_load_gff.pl`. The latter is somewhat experimental, so use with

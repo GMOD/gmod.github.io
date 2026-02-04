@@ -3,23 +3,23 @@ title: "2009 GMOD Community Survey"
 ---
 # 2009 GMOD Community Survey
 
-  components have you used?</span>](#Which_components_have_you_used.3F)
+ components have you used?</span>](#Which_components_have_you_used.3F)
 - [Documentation](#Documentation)
 - [Use
-  Cases](#Use_Cases)
+ Cases](#Use_Cases)
 - [Features](#Features)
-  - [Expansion
-    / Clarification](#Expansion_.2F_Clarification)
-  - [Other High
-    Priority Features](#Other_High_Priority_Features)
-  - [Other
-    Medium Priority Features](#Other_Medium_Priority_Features)
-  - [Other Low
-    Priority Features](#Other_Low_Priority_Features)
+ - [Expansion
+ / Clarification](#Expansion_.2F_Clarification)
+ - [Other High
+ Priority Features](#Other_High_Priority_Features)
+ - [Other
+ Medium Priority Features](#Other_Medium_Priority_Features)
+ - [Other Low
+ Priority Features](#Other_Low_Priority_Features)
 - [Other Feedback
-  on Visualization Tools](#Other_Feedback_on_Visualization_Tools)
+ on Visualization Tools](#Other_Feedback_on_Visualization_Tools)
 - [Other
-  Feedback](#Other_Feedback)
+ Feedback](#Other_Feedback)
 
 The 2009 GMOD Community Survey focused on genome and comparative
 genomics [visualization](/wiki/Visualization). The survey was
@@ -1354,36 +1354,36 @@ If you want to explain/expand any of your answers above, please do so
 here.
 
 - Geolocation within genomic space would be interesting but not so
-  interested in ecological applications quite yet.
+ interested in ecological applications quite yet.
 - I think basic elements like speed to load a region in
-  [GBrowse](/wiki/GBrowse) and documentation of track
-  configuration and additional data type adding are core requirements
-  that could be made better. Although I haven't used  it sounds like the
-  performance element is being addressed.
-- User  Tutorial?
+ [GBrowse](/wiki/GBrowse) and documentation of track
+ configuration and additional data type adding are core requirements
+ that could be made better. Although I haven't used it sounds like the
+ performance element is being addressed.
+- User Tutorial?
 - part of my job takes place on an academic expression platform. I have
-  to deal with expression microarray analyzes coming from 2 colors
-  arrays and also from RNA-Seq and ChIP-Seq experiments. We use to give
-  our users text files (in the time of small format arrays) but now,
-  with tiling arrays, our users, who are big fans of bioinformatics
-  skills, they cannot open their files with conventional text tools. we
-  intend to give them [GFF3](/wiki/GFF3) files so that they can
-  visualize the data on [GBrowse](/wiki/GBrowse) locally or on our
-  platform. The problem is that we have to ensure the confidentiality of
-  their data. That's the reason I am very interested in a better User
-  management.
+ to deal with expression microarray analyzes coming from 2 colors
+ arrays and also from RNA-Seq and ChIP-Seq experiments. We use to give
+ our users text files (in the time of small format arrays) but now,
+ with tiling arrays, our users, who are big fans of bioinformatics
+ skills, they cannot open their files with conventional text tools. we
+ intend to give them [GFF3](/wiki/GFF3) files so that they can
+ visualize the data on [GBrowse](/wiki/GBrowse) locally or on our
+ platform. The problem is that we have to ensure the confidentiality of
+ their data. That's the reason I am very interested in a better User
+ management.
 - Perl callbacks are not difficult to use when well documented. It's the
-  major problem of bioperl to me. There are many modules but not enough
-  documentation with concrete examples. So a big YES for ""Allow browser
-  admin to write their own code to adjust how a feature is shown"" with
-  better doc.
+ major problem of bioperl to me. There are many modules but not enough
+ documentation with concrete examples. So a big YES for ""Allow browser
+ admin to write their own code to adjust how a feature is shown"" with
+ better doc.
 - It would be great to merge two of the questions: the comparison
-  feature but with single NGS reads. It might be something like AMOS'
-  hawkeye, but by web! I think the current engine can be adapted to
-  support this, and it would be great to be able to manually curate some
-  sequence with weird features (for example, an unexpected stop codon)
-  based in both the summarised quality (already supported by
-  quantitative tracks) and the original reads.
+ feature but with single NGS reads. It might be something like AMOS'
+ hawkeye, but by web! I think the current engine can be adapted to
+ support this, and it would be great to be able to manually curate some
+ sequence with weird features (for example, an unexpected stop codon)
+ based in both the summarised quality (already supported by
+ quantitative tracks) and the original reads.
 - no
 
 ### Other High Priority Features
@@ -1392,28 +1392,28 @@ Are there other high priority features you would like to see that are
 not in the list above?
 
 - Ability to curate features that are not genes. The majority of genomes
-  are not composed of genes, and the weakness of most browsers is their
-  inability to display features that are not genes. I would especially
-  like better support for the display and curation of of Transposable
-  Elements.
+ are not composed of genes, and the weakness of most browsers is their
+ inability to display features that are not genes. I would especially
+ like better support for the display and curation of of Transposable
+ Elements.
 - Support for displaying/summarizing alignments in BAM format.
 - About 'support next generation sequencing individual reads', it is
-  beautiful if SAM (or other format) has got an 'attributes' field.
+ beautiful if SAM (or other format) has got an 'attributes' field.
 - bridging interface between the different tools, (common data format?)
 - Improve the chado examples for different use cases.
 - More customization of data tracks by end user, not just by the admin.
-  For example, in [GBrowse](/wiki/GBrowse) (v1.69) XY data plots,
-  generic track attributes may be adjusted by the end user, but not
-  specific XY plot attributes, such as min and max values, etc.
+ For example, in [GBrowse](/wiki/GBrowse) (v1.69) XY data plots,
+ generic track attributes may be adjusted by the end user, but not
+ specific XY plot attributes, such as min and max values, etc.
 - The previous answer also counts for this one. *The previous answer
-  was:*
-  - It would be great to merge two of the questions: the comparison
-    feature but with single NGS reads. It might be something like AMOS'
-    hawkeye, but by web! I think the current engine can be adapted to
-    support this, and it would be great to be able to manually curate
-    some sequence with weird features (for example, an unexpected stop
-    codon) based in both the summarised quality (already supported by
-    quantitative tracks) and the original reads.
+ was:*
+ - It would be great to merge two of the questions: the comparison
+ feature but with single NGS reads. It might be something like AMOS'
+ hawkeye, but by web! I think the current engine can be adapted to
+ support this, and it would be great to be able to manually curate
+ some sequence with weird features (for example, an unexpected stop
+ codon) based in both the summarised quality (already supported by
+ quantitative tracks) and the original reads.
 - not really
 
 ### Other Medium Priority Features
@@ -1422,12 +1422,12 @@ Are there other medium priority features you would like to see that are
 not in the list above?
 
 - Ability to generate heatmap color bin from a set of different
-  algorithms (equal interval, quantiles ..).
+ algorithms (equal interval, quantiles ..).
 - Native <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-  database connection instead of adapter type chado connection (although
-  the latter may be more flexible, speed is an issue)
+ database connection instead of adapter type chado connection (although
+ the latter may be more flexible, speed is an issue)
 - A much more difficult one, but nice enough to mention: sequence and/or
-  annotation editing capabilities.
+ annotation editing capabilities.
 - not really
 
 ### Other Low Priority Features
@@ -1447,37 +1447,37 @@ you try to use any of them, but couldn't get them to work?
 
 - I have always enjoyed working with the GMOD tools
 - <a href="/wiki/Gbrowse.1" class="mw-redirect" title="Gbrowse">Gbrowse</a>
-  has been very useful for our visualization needs.
-  [JBrowse](/wiki/JBrowse) looks promising too and I hope to work
-  with it more.
+ has been very useful for our visualization needs.
+ [JBrowse](/wiki/JBrowse) looks promising too and I hope to work
+ with it more.
 - Installation of [GBrowse](/wiki/GBrowse) was relatively easy,
-  [BioPerl](/wiki/BioPerl) was not that straightforward and I
-  resorted to installing one module at a time. Some errors I couldn't
-  figure out but they aren't relevant to GBrowse. It would be nice if
-  the BioPerl core install could be made simpler like BioRuby (I know
-  GMOD doesn't produce BioPerl but they are intimately tied).
+ [BioPerl](/wiki/BioPerl) was not that straightforward and I
+ resorted to installing one module at a time. Some errors I couldn't
+ figure out but they aren't relevant to GBrowse. It would be nice if
+ the BioPerl core install could be made simpler like BioRuby (I know
+ GMOD doesn't produce BioPerl but they are intimately tied).
 - used [CMap](/wiki/CMap) in the past and found it useful. currently
-  use [GBrowse](/wiki/GBrowse) and find it very useful
+ use [GBrowse](/wiki/GBrowse) and find it very useful
 - [GBrowse](/wiki/GBrowse) is overall a useful visualization tool,
-  although not a replacement for other tools which offer a "higher
-  resolution" view of a genomic region (as [Apollo](/wiki/Apollo)
-  does, although it is an editor). We've found Apollo to be very useful
-  and is part of our core annotation work.
+ although not a replacement for other tools which offer a "higher
+ resolution" view of a genomic region (as [Apollo](/wiki/Apollo)
+ does, although it is an editor). We've found Apollo to be very useful
+ and is part of our core annotation work.
 - I have used [GBrowse](/wiki/GBrowse) and
-  [GBrowse_syn](/wiki/GBrowse_syn) , they are just great , but
-  proper tutorial for gbrowse_syn should be there having all the minor
-  details which may cause problem for beginners .
+ [GBrowse_syn](/wiki/GBrowse_syn) , they are just great , but
+ proper tutorial for gbrowse_syn should be there having all the minor
+ details which may cause problem for beginners .
 - It's great, I only tried a couple (or three?) and I always find great
-  admin documentation. I hope to be in a GMOD meeting to unlock the
-  complete power of GMOD for my lab.
+ admin documentation. I hope to be in a GMOD meeting to unlock the
+ complete power of GMOD for my lab.
 - We still have problems installing and configuring the tools (*i.e.*
-  [CMap](/wiki/CMap) and [GBrowse](/wiki/GBrowse))
-  documentation could be improved.
+ [CMap](/wiki/CMap) and [GBrowse](/wiki/GBrowse))
+ documentation could be improved.
 - I would like [JBrowse](/wiki/JBrowse) to be better supported and
-  developed... I think this will be the future way of browser, although
-  it looks a little clunky at the moment...
+ developed... I think this will be the future way of browser, although
+ it looks a little clunky at the moment...
 - Help desk seems to be very active. I am very happy with that. Thanks
-  for your time and consideration.
+ for your time and consideration.
 
 ## Other Feedback
 
@@ -1485,47 +1485,47 @@ If you have any additional feedback, questions, or information you would
 like to provide, please tell us here.
 
 - Please better documentation and support for additional glyphs in
-  [Apollo](/wiki/Apollo).
+ [Apollo](/wiki/Apollo).
 - The [GBrowse](/wiki/GBrowse) mailing list has been very helpful
-  and questions are usually answered very quickly, thanks!
+ and questions are usually answered very quickly, thanks!
 - Well... I really wish there was better integration between
-  [BioMart](/wiki/BioMart) and [GBrowse](/wiki/GBrowse).
-  1.  I'd like to use [BioMart](/wiki/BioMart) to filter a set of
-      features which are displayed in a [GBrowse](/wiki/GBrowse)
-      track. What I envisage is a BioMart plugin with a configuration
-      button which gives the full BioMart web interface Filter page. So
-      I could have a GBrowse track showing *e.g.* Affy probesets with a
-      certain *p* value in a particular statistical analysis. All the
-      statistical data would be stored in a mart and the cutoff could be
-      changed easily in the plugin configuration. Currently I store such
-      things in a [GFF](/wiki/GFF) database and have a fixed cutoff for
-      display which I can't (easily) change.
-  2.  I'd like to be able to jump from a [GBrowse](/wiki/GBrowse)
-      panel to a [BioMart](/wiki/BioMart) query in which the genomic
-      location has automatically been added as filters. (Actually this
-      is not too hard to implement but maybe there's a neat way to do
-      it)
+ [BioMart](/wiki/BioMart) and [GBrowse](/wiki/GBrowse).
+ 1. I'd like to use [BioMart](/wiki/BioMart) to filter a set of
+ features which are displayed in a [GBrowse](/wiki/GBrowse)
+ track. What I envisage is a BioMart plugin with a configuration
+ button which gives the full BioMart web interface Filter page. So
+ I could have a GBrowse track showing *e.g.* Affy probesets with a
+ certain *p* value in a particular statistical analysis. All the
+ statistical data would be stored in a mart and the cutoff could be
+ changed easily in the plugin configuration. Currently I store such
+ things in a [GFF](/wiki/GFF) database and have a fixed cutoff for
+ display which I can't (easily) change.
+ 2. I'd like to be able to jump from a [GBrowse](/wiki/GBrowse)
+ panel to a [BioMart](/wiki/BioMart) query in which the genomic
+ location has automatically been added as filters. (Actually this
+ is not too hard to implement but maybe there's a neat way to do
+ it)
 - [CMap](/wiki/CMap) installation instructions sucks.
 - I love the fact that GMOD cares - for end users and programmers.
-  Whenever I have had problems I have experienced very helpful advice
-  and quick response times. Just the fact that you \*do\* this survey
-  shows that you guys care. I would love to see more funding for generic
-  programming in the bioinformatics sector.
+ Whenever I have had problems I have experienced very helpful advice
+ and quick response times. Just the fact that you \*do\* this survey
+ shows that you guys care. I would love to see more funding for generic
+ programming in the bioinformatics sector.
 - [GBrowse](/wiki/GBrowse) prerequisites should be in form of
-  compact package.
+ compact package.
 - Having only recently come on board in using
-  [GBrowse](/wiki/GBrowse), I have found it really difficult to
-  set up in particular, but also to use in correctly visualising data in
-  [GFF3](/wiki/GFF3) format. I have found that it appears to
-  misinterpret a few key aspects of the GFF3 format, specifically I have
-  found that it's reading the different fields of the GFF3 file is
-  interrupted by spaces where it doesn't appear in the GFF3
-  documentation that this should, as well as not being able to read
-  fields separated by more than one tab. These features should be fairly
-  easy to write into the parser in the back-end and would make the user
-  experience far easier in my opinion.
+ [GBrowse](/wiki/GBrowse), I have found it really difficult to
+ set up in particular, but also to use in correctly visualising data in
+ [GFF3](/wiki/GFF3) format. I have found that it appears to
+ misinterpret a few key aspects of the GFF3 format, specifically I have
+ found that it's reading the different fields of the GFF3 file is
+ interrupted by spaces where it doesn't appear in the GFF3
+ documentation that this should, as well as not being able to read
+ fields separated by more than one tab. These features should be fairly
+ easy to write into the parser in the back-end and would make the user
+ experience far easier in my opinion.
 - Most of the GMOD-based packages are not really cute (very useful, very
-  easy to use, but not exactly cute), why?
+ easy to use, but not exactly cute), why?
 - not really, but [CMap](/wiki/CMap) is brilliant!
 - Thank you VERY MUCH for [GBrowse](/wiki/GBrowse)!!! It is a
-  fantastic tool that helped us making important discoveries!
+ fantastic tool that helped us making important discoveries!

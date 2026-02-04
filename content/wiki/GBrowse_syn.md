@@ -27,7 +27,7 @@ to the number of species that can be displayed.
 Please refer to the following paper when citing GBrowse_syn:
 
 - Using the Generic Synteny Browser (GBrowse_syn)
-  <sup>[\[1\]](#cite_note-PMID:20836076-1)</sup>
+ <sup>[\[1\]](#cite_note-PMID:20836076-1)</sup>
 
 ### Tutorials
 

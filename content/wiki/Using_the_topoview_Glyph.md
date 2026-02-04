@@ -31,40 +31,40 @@ coordinated behavior of the expression profiles of different subsets.
 See the note below about normalizing the expression profiles across the
 whole experiment.
 
-  Demonstration](#Demonstration)
+ Demonstration](#Demonstration)
 - [Data
-  format](#Data_format)
+ format](#Data_format)
 - [Accessory
-  scripts](#Accessory_scripts)
-  - [Converting
-    BAM alignment files to WIG coverage
-    files](#Converting_BAM_alignment_files_to_WIG_coverage_files)
-    - [NOTE:
-      Normalization](#NOTE:_Normalization)
-  - [Converting
-    coverage WIG to indexed data for
-    topoview](#Converting_coverage_WIG_to_indexed_data_for_topoview)
-    - [Log
-      transformations](#Log_transformations)
-    - [Subsets
-      (subplots)](#Subsets_.28subplots.29)
-    - [Output
-      directories](#Output_directories)
+ scripts](#Accessory_scripts)
+ - [Converting
+ BAM alignment files to WIG coverage
+ files](#Converting_BAM_alignment_files_to_WIG_coverage_files)
+ - [NOTE:
+ Normalization](#NOTE:_Normalization)
+ - [Converting
+ coverage WIG to indexed data for
+ topoview](#Converting_coverage_WIG_to_indexed_data_for_topoview)
+ - [Log
+ transformations](#Log_transformations)
+ - [Subsets
+ (subplots)](#Subsets_.28subplots.29)
+ - [Output
+ directories](#Output_directories)
 - [Configuration](#Configuration)
-  - [Example
-    config stanza](#Example_config_stanza)
-  - [Options](#Options)
-    - [Subsets](#Subsets)
+ - [Example
+ config stanza](#Example_config_stanza)
+ - [Options](#Options)
+ - [Subsets](#Subsets)
 - [Installation
-  Troubleshooting](#Installation_Troubleshooting)
-  - [Track has
-    a red error message](#Track_has_a_red_error_message)
-  - [Track is
-    present but has no data](#Track_is_present_but_has_no_data)
-  - [Some other
-    kind of error](#Some_other_kind_of_error)
-  - [Ask for
-    help](#Ask_for_help)
+ Troubleshooting](#Installation_Troubleshooting)
+ - [Track has
+ a red error message](#Track_has_a_red_error_message)
+ - [Track is
+ present but has no data](#Track_is_present_but_has_no_data)
+ - [Some other
+ kind of error](#Some_other_kind_of_error)
+ - [Ask for
+ help](#Ask_for_help)
 
 ## Demonstration
 
@@ -88,18 +88,18 @@ some positioning data (two-column format, without runlength
 specification, without omission of zero values). This is the only format
 which glyph is able to handle.
 
-    # subset =BS107_all_unique chromosome =2LHet
-    -200000 0
-    0       0
-    19955   1
-    19959   0
-    19967   2
-    19972   0
-    19977   2
-    20027   0
-    20031   2
-    20035   0
-    20043   1
+ # subset =BS107_all_unique chromosome =2LHet
+ -200000 0
+ 0 0
+ 19955 1
+ 19959 0
+ 19967 2
+ 19972 0
+ 19977 2
+ 20027 0
+ 20031 2
+ 20035 0
+ 20043 1
 
 ## Accessory scripts
 
@@ -114,28 +114,28 @@ calculate the average read coverage for a user-specified window size
 WIG/BED4, which is the format used by the coverage_to_topoview.pl
 script.
 
-    Usage: bam_coverage_windows.pl -b bamfile -n 10_000_000 -w 25 | gzip -c > bamfile.wig.gz
-        -b name of bam file to read REQUIRED
-        -w window size (default 25)
-        -n normalized read number -- if you will be comparing multiple bam files
-                                     select the read number to normalize against.
-                                     All counts will be adjusted by a factor of:
-                                     actual read count/normalized read count
+ Usage: bam_coverage_windows.pl -b bamfile -n 10_000_000 -w 25 | gzip -c > bamfile.wig.gz
+ -b name of bam file to read REQUIRED
+ -w window size (default 25)
+ -n normalized read number -- if you will be comparing multiple bam files
+ select the read number to normalize against.
+ All counts will be adjusted by a factor of:
+ actual read count/normalized read count
 
 The output of this script looks like (note the
 <a href="http://genomewiki.ucsc.edu/index.php/Coordinate_Transforms"
 class="external text" rel="nofollow">zero-based, half-open</a>
 coordinates):
 
-    track type=wiggle_0 name="root-R1" description="read coverage for bam/root-R1.bam (window size 25)"
-    1   3625    3650    0.7617701464
-    1   3650    3675    9.3417075848
-    1   3675    3700    18.5230425072
-    1   3700    3725    26.5817687928
-    1   3725    3750    35.682917384
-    1   3750    3775    40.494097256
-    1   3775    3800    45.0246249688
-    1   3800    3825    52.2413947768
+ track type=wiggle_0 name="root-R1" description="read coverage for bam/root-R1.bam (window size 25)"
+ 1 3625 3650 0.7617701464
+ 1 3650 3675 9.3417075848
+ 1 3675 3700 18.5230425072
+ 1 3700 3725 26.5817687928
+ 1 3725 3750 35.682917384
+ 1 3750 3775 40.494097256
+ 1 3775 3800 45.0246249688
+ 1 3800 3825 52.2413947768
 
 #### NOTE: Normalization
 
@@ -150,10 +150,10 @@ coverage_to_topoview.pl converts a list of coverage files (WIG/BED4) to
 the indexed format used by this glyph. It specifically expects the BED4
 format produced by the bam_coverage_windows.pl script
 
-    Usage: coverage_to_topoview.pl [-o output_dir] [-h] [-l] file1.wig.gz file2.wig.gz
-        -o output directory (default 'topoview')
-        -l use log2 for read counts (recommended)
-        -h this help message
+ Usage: coverage_to_topoview.pl [-o output_dir] [-h] [-l] file1.wig.gz file2.wig.gz
+ -o output directory (default 'topoview')
+ -l use log2 for read counts (recommended)
+ -h this help message
 
 #### Log transformations
 
@@ -177,18 +177,18 @@ If you do not specify an output directory name, the default name
 example, if you are making two tracks, one using raw counts and the
 other using log2 transformed counts:
 
-    coverage_to_topoview.pl -o raw file1.wig.gz file2.wig.gz
+ coverage_to_topoview.pl -o raw file1.wig.gz file2.wig.gz
 
-    coverage_to_topoview.pl -o log2 -l  file1.wig.gz file2.wig.gz
+ coverage_to_topoview.pl -o log2 -l file1.wig.gz file2.wig.gz
 
 ..will yield:
 
-    ├── log2
-    │   ├── data.cat
-    │   └── index.bdbhash
-    └── raw
-        ├── data.cat
-        └── index.bdbhash
+ ├── log2
+ │   ├── data.cat
+ │   └── index.bdbhash
+ └── raw
+ ├── data.cat
+ └── index.bdbhash
 
 The absolute path of these directories will be used in the ***datadir***
 option below.
@@ -197,48 +197,48 @@ option below.
 
 ### Example config stanza
 
-    [TOPOVIEWLOG2]
-    feature       = region
-    glyph         = topoview
-    autoscale     = local
-    height        = 200
-    datadir       = /home/ubuntu/data/bam/log2
-    subset order  = SRR1810778.25  FF9966
-                    SRR1810779.25  FF6633
-                    SRR1810780.25  FF0000
-                    SRR1810781.25  00CC66
-                    SRR1810782.25  009933
-                    SRR1810783.25  006600
-    key           = TopHat: Normalized Read Coverage (log2)
-    show max      = 0
-    x_step        = 2
-    y_step        = 8
-    fill opacity  = 0.8
-    edge color    = black
+ [TOPOVIEWLOG2]
+ feature = region
+ glyph = topoview
+ autoscale = local
+ height = 200
+ datadir = /home/ubuntu/data/bam/log2
+ subset order = SRR1810778.25 FF9966
+ SRR1810779.25 FF6633
+ SRR1810780.25 FF0000
+ SRR1810781.25 00CC66
+ SRR1810782.25 009933
+ SRR1810783.25 006600
+ key = TopHat: Normalized Read Coverage (log2)
+ show max = 0
+ x_step = 2
+ y_step = 8
+ fill opacity = 0.8
+ edge color = black
 
 ### Options
 
 Glyph-specific options
 
 - **feature:** The full-length feature for the track. This would usually
-  be the feature type you configured for your chromosomes or scaffolds.
-  You don't need to add more GFF data for this track
+ be the feature type you configured for your chromosomes or scaffolds.
+ You don't need to add more GFF data for this track
 - **database:** The same database as you used for the chromosomes
 - **autoscale:** options are 'local' and 'global'. local scales to the
-  on-screen max value, global scales to the global max
+ on-screen max value, global scales to the global max
 - **datadir:** location of the indexed coverage data (absolute path)
 - **show max:** show an extra subset corresponding to the maximum
-  coverage across all subsets
+ coverage across all subsets
 - **x_step:** the horizontal offset (pixels) of each plotted subset (can
-  not be zero)
+ not be zero)
 - **y_step:** the vertical offset (pixels) of each plotted subset (can
-  not be zero)
+ not be zero)
 - **fill opacity:** the degree of transparency of each plotted subset.
-  Translucency aids in the comparison.
+ Translucency aids in the comparison.
 - **edge color:** the outline color for the plots (default: charcoal
-  gray)
+ gray)
 - **subset order** the order and color of each subset (subplot) in the
-  graph (see below)
+ graph (see below)
 
 #### Subsets
 
@@ -250,23 +250,23 @@ There are three ways to represent the subsets:
 Ordered subsets with no color specified. Random colors will be assigned.
 Hope you are feeling lucky.
 
-    subset order  = SRR1810778.25
-                    ...
+ subset order = SRR1810778.25
+ ...
 
 Ordered subsets with color specified (use either web colors or hex
 colors with the '#' omitted)
 
-    subset order  = SRR1810778.25  red
-                    SRR1810779.25  FF6633
-                    ...
+ subset order = SRR1810778.25 red
+ SRR1810779.25 FF6633
+ ...
 
 Ordered subsets with color and opacity set. Not that the global 'fill
 opacity' option affects all subsets. Specifying individual opacity is
 optional.
 
-    subset order  = SRR1810778.25  FF9966 0.8
-                    SRR1810779.25  FF6633 0.7
-                    ...
+ subset order = SRR1810778.25 FF9966 0.8
+ SRR1810779.25 FF6633 0.7
+ ...
 
 ## Installation Troubleshooting
 
@@ -280,13 +280,13 @@ The glyph uses the Perl interface to BerkeleyDB. If you see a red error
 message in where the track should be, this might be why. In an
 Ubuntu/debian system, try:
 
-    sudo apt-get install libdb5.3 libdb5.3-dev libberkeleydb-perl
+ sudo apt-get install libdb5.3 libdb5.3-dev libberkeleydb-perl
 
 You may need to use apt-cache search to find other version of the above
 Debian packages.
 
 - For redhat based systems, such as centOS, use yum to search for
-  equivalent packages.
+ equivalent packages.
 
 ### Track is present but has no data
 
@@ -300,15 +300,15 @@ feature as the chromosomes in your scaffolds database
 For example: If you were using the chromosome GFF below, you would set
 your topoview feature to 'region':
 
-    ##gff-version 3
+ ##gff-version 3
 
-    V   ce10    region  1   20924149    .   .   .   ID=V;Name=V
-    X   ce10    region  1   17718866    .   .   .   ID=X;Name=X
-    IV  ce10    region  1   17493793    .   .   .   ID=IV;Name=IV
-    II  ce10    region  1   15279345    .   .   .   ID=II;Name=II
-    I   ce10    region  1   15072423    .   .   .   ID=I;Name=I
-    III ce10    region  1   13783700    .   .   .   ID=III;Name=III
-    M   ce10    region  1   13794   .   .   .   ID=M;Name=M
+ V ce10 region 1 20924149 . . . ID=V;Name=V
+ X ce10 region 1 17718866 . . . ID=X;Name=X
+ IV ce10 region 1 17493793 . . . ID=IV;Name=IV
+ II ce10 region 1 15279345 . . . ID=II;Name=II
+ I ce10 region 1 15072423 . . . ID=I;Name=I
+ III ce10 region 1 13783700 . . . ID=III;Name=III
+ M ce10 region 1 13794 . . . ID=M;Name=M
 
 ### Some other kind of error
 

@@ -4,7 +4,7 @@ title: "Spectrogram.pm"
 # Spectrogram.pm
 
 Spectrogram.pm is a [GBrowse](/wiki/GBrowse) plugin written by
-[Sheldon McKay](/wiki/User:Mckays). It draws DNA spectrograms of
+Sheldon McKay. It draws DNA spectrograms of
 DNA of digitized DNA sequences using techniques borrowed from the
 digital signal processing world. Graphical rendering is accomplished
 using the HSV color space. The color of the spot on the spectrogram
@@ -14,14 +14,14 @@ spectrograms reveal non-random sequence composition, the two most common
 examples of which are coding DNA and repeat sequences.
 
 - Coding DNA has a signal due the the non-random occurrence of
-  nulceotides in codons and appear as a line in the spectrogram with a
-  period of 3.
+ nulceotides in codons and appear as a line in the spectrogram with a
+ period of 3.
 - Repeats have a characteristic ladder like appearance in the
-  spectrogram.
+ spectrogram.
 - Follow this link for
-  <span class="pops"><a href="http://www.hindawi.com/journals/asp/2004/790248.abs.html"
-  class="external text" rel="nofollow">background reading of digital
-  signal processing of DNA</a></span>
+ <span class="pops"><a href="http://www.hindawi.com/journals/asp/2004/790248.abs.html"
+ class="external text" rel="nofollow">background reading of digital
+ signal processing of DNA</a></span>
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Spec1.png" class="thumbborder" width="858"
@@ -59,11 +59,11 @@ DNA at period 3.
 The DNA sequence is converted from analog to digital by creating four
 binary indicator sequences:
 
-              G A T C C T C T G A T T C C A A
-            G 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
-            A 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 1
-            T 0 0 1 0 0 1 0 1 0 0 1 1 0 0 0 0
-            C 0 0 0 1 1 0 1 0 0 0 0 0 1 1 0 0
+ G A T C C T C T G A T T C C A A
+ G 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+ A 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 1
+ T 0 0 1 0 0 1 0 1 0 0 1 1 0 0 0 0
+ C 0 0 0 1 1 0 1 0 0 0 0 0 1 1 0 0
 
 The magnitude of the discrete fourier transform (DFT) is calculated
 separately for each of the four indicator sequences. The algorithm used

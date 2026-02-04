@@ -12,7 +12,7 @@ to explore clustered experiments involving large sets of experiments or
 genes. Java TreeView is not specific to microarray data and has been
 used to display the results of clustering sequence motifs.
 
-  Screenshots</span>](#Demo_.26_Screenshots)
+ Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)

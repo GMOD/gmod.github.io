@@ -3,22 +3,22 @@ title: "Chado Expression Module"
 ---
 # Chado Expression Module
 
-  Introduction](#Introduction)
-  - [Mage and
-    Expression](#Mage_and_Expression)
+ Introduction](#Introduction)
+ - [Mage and
+ Expression](#Mage_and_Expression)
 - [Tables](#Tables)
-  - [Table:
-    eimage](#Table:_eimage)
-  - [Table:
-    expression](#Table:_expression)
-  - [Table:
-    expression_cvterm](#Table:_expression_cvterm)
-  - [Table:
-    expression_image](#Table:_expression_image)
-  - [Table:
-    expression_pub](#Table:_expression_pub)
-  - [Table:
-    feature_expression](#Table:_feature_expression)
+ - [Table:
+ eimage](#Table:_eimage)
+ - [Table:
+ expression](#Table:_expression)
+ - [Table:
+ expression_cvterm](#Table:_expression_cvterm)
+ - [Table:
+ expression_image](#Table:_expression_image)
+ - [Table:
+ expression_pub](#Table:_expression_pub)
+ - [Table:
+ feature_expression](#Table:_feature_expression)
 
 # Introduction
 
@@ -47,15 +47,15 @@ following cvterms to the expression using
 [expression_cvterm](#Table:_expression_cvterm):
 
 - *embryonic stage 13* where the cvterm_type would be stage and the
-  rank=0
+ rank=0
 - *embryonic stage 14* where the cvterm_type would be stage and the
-  rank=1
+ rank=1
 - *embryonic stage 15* where the cvterm_type would be stage and the
-  rank=1
+ rank=1
 - *cephalic segment* where the cvterm_type would be anatomy and the
-  rank=0
+ rank=0
 - *in situ hybridization* where the cvterm_type would be assay and the
-  rank=0
+ rank=0
 
 Note that we would change the *cvterm_type* column to *cvterm_type_id*
 and use a *cvterm_id* for a particular expression slot (i.e. stage,
@@ -138,12 +138,12 @@ Tables referencing this one via Foreign Key Constraints:
 
 The expression table is essentially a bridge table.
 
-| F-Key | Name          | Type          | Description |
+| F-Key | Name | Type | Description |
 |-------|---------------|---------------|-------------------|
-|  | expression_id | serial | *PRIMARY KEY* |
-|  | uniquename | text | *UNIQUE NOT NULL* |
-|  | md5checksum | character(32) | description |
-| text          expression Structure |  |  |  |
+| | expression_id | serial | *PRIMARY KEY* |
+| | uniquename | text | *UNIQUE NOT NULL* |
+| | md5checksum | character(32) | description |
+| text expression Structure | | | |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -160,10 +160,10 @@ Tables referencing this one via Foreign Key Constraints:
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | expression_cvterm_id | serial | *PRIMARY KEY* |
+| | expression_cvterm_id | serial | *PRIMARY KEY* |
 | [expression](/wiki/Chado_Tables#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
-|  | rank | integer | *NOT NULL* |
+| | rank | integer | *NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_type_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_cvterm Structure
@@ -178,7 +178,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | expression_image_id | serial | *PRIMARY KEY* |
+| | expression_image_id | serial | *PRIMARY KEY* |
 | [expression](/wiki/Chado_Tables#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
 | [eimage](/wiki/Chado_Tables#Table:_eimage) | eimage_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -190,7 +190,7 @@ expression_image Structure
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | expression_pub_id | serial | *PRIMARY KEY* |
+| | expression_pub_id | serial | *PRIMARY KEY* |
 | [expression](/wiki/Chado_Tables#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -202,7 +202,7 @@ expression_pub Structure
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | feature_expression_id | serial | *PRIMARY KEY* |
+| | feature_expression_id | serial | *PRIMARY KEY* |
 | [expression](/wiki/Chado_Tables#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
 | [feature](/wiki/Chado_Tables#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |

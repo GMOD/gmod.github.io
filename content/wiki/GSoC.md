@@ -6,19 +6,19 @@ title: "GSoC"
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/GoogleSummer_2016logo.jpg"
 width="373" height="373" alt="GoogleSummer 2016logo.jpg" />](/wiki/GSoC)
 
-  of Code 2026 @ Open Genome
-  Informatics</span>](#Google_Summer_of_Code_2026_.40_Open_Genome_Informatics)
+ of Code 2026 @ Open Genome
+ Informatics</span>](#Google_Summer_of_Code_2026_.40_Open_Genome_Informatics)
 - [Mailing lists,
-  IRC, and other ways to get in
-  touch](#Mailing_lists.2C_IRC.2C_and_other_ways_to_get_in_touch)
+ IRC, and other ways to get in
+ touch](#Mailing_lists.2C_IRC.2C_and_other_ways_to_get_in_touch)
 - [Project
-  Ideas](#Project_Ideas)
+ Ideas](#Project_Ideas)
 - [Preparing for
-  GSoC 2026](#Preparing_for_GSoC_2026)
-  - [Contributors](#Contributors)
-  - [Mentors](#Mentors)
-  - [Source
-    Code](#Source_Code)
+ GSoC 2026](#Preparing_for_GSoC_2026)
+ - [Contributors](#Contributors)
+ - [Mentors](#Mentors)
+ - [Source
+ Code](#Source_Code)
 
 ## Google Summer of Code 2026 @ Open Genome Informatics
 
@@ -69,21 +69,21 @@ class="external text" rel="nofollow">FAQ</a>.
 ## Mailing lists, IRC, and other ways to get in touch
 
 - Email: <a href="mailto:awright@oicr.on.ca" class="external text"
-  rel="nofollow">awright@oicr.on.ca</a>,
-  <a href="mailto:rhaw@oicr.on.ca" class="external text"
-  rel="nofollow">rhaw@oicr.on.ca</a> **and**
-  <a href="mailto:help@gmod.org" class="external text"
-  rel="nofollow">help@gmod.org</a> -- find out more about GSoC, a
-  specific project, or your potential mentor(s).
+ rel="nofollow">awright@oicr.on.ca</a>,
+ <a href="mailto:rhaw@oicr.on.ca" class="external text"
+ rel="nofollow">rhaw@oicr.on.ca</a> **and**
+ <a href="mailto:help@gmod.org" class="external text"
+ rel="nofollow">help@gmod.org</a> -- find out more about GSoC, a
+ specific project, or your potential mentor(s).
 - Discussion mailing lists:
-  <a href="http://groups.google.com/group/genome-informatics"
-  class="external text" rel="nofollow">Genome Informatics Google
-  Groups</a> - ask about our projects; join the community!
+ <a href="http://groups.google.com/group/genome-informatics"
+ class="external text" rel="nofollow">Genome Informatics Google
+ Groups</a> - ask about our projects; join the community!
 - Students and Mentors can email both
-  Robin and Adam to get more information about the
-  program.
+ Robin and Adam to get more information about the
+ program.
 
-##  [Project Ideas](/wiki/GSOC_Project_Ideas_2026)
+## [Project Ideas](/wiki/GSOC_Project_Ideas_2026)
 
 **Got an idea for a GSOC project? [Add it
 here](/wiki/GSOC_Project_Ideas_2026).** Ideas will

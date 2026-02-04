@@ -9,7 +9,7 @@ This article describes **static images** and how to create them in
 For the main GBrowse configuration article, see:
 
 - <a href="../GBrowse_Configuration" class="mw-redirect"
-  title="GBrowse Configuration">GBrowse Configuration</a> or
+ title="GBrowse Configuration">GBrowse Configuration</a> or
 - [GBrowse 2.0 HOWTO](../GBrowse_2.0_HOWTO).
 
 ## Generating Static Images: PNGs, SVGs and PDFs
@@ -18,11 +18,11 @@ GBrowse can create three types of static image suitable for
 incorporation into posters, publications or other web pages:
 
 - PNG -- a bitmapped format suitable for low-resolution graphics, such
-  as web pages.
+ as web pages.
 - SVG -- an editable vector-graphics format, suitable for posters,
-  publications and other high-resolution applications.
+ publications and other high-resolution applications.
 - PDF -- the familiar document exchange format, suitable for posters,
-  publications and other high-resolution applications.
+ publications and other high-resolution applications.
 
 All the work is handled by the *gbrowse_img* script and needs little
 configuration. When the user selects a region and set of tracks to
@@ -49,8 +49,8 @@ need to create two subdirectories in the web user's home directory in
 order for inkscape to work properly. Assuming that the web user is
 "www-data" run the following commands:
 
-    sudo mkdir ~www-data/{.inkscape,.gnome2}
-    sudo chown www-data ~www-data/{.inkscape,.gnome2}
+ sudo mkdir ~www-data/{.inkscape,.gnome2}
+ sudo chown www-data ~www-data/{.inkscape,.gnome2}
 
 This will create the two directories ".inkscape" and ".gnome2" in the
 www-data user's home directory, and make them writable by the www-data
@@ -59,7 +59,7 @@ user.
 Unfortunately, Inkscape will generate a one line warning into the server
 error log every time it executes:
 
-    (inkscape:28490): Gdk-CRITICAL **: gdk_display_list_devices: assertion `GDK_IS_DISPLAY (display)' failed
+ (inkscape:28490): Gdk-CRITICAL **: gdk_display_list_devices: assertion `GDK_IS_DISPLAY (display)' failed
 
 At the current time there is no known fix for this problem.
 

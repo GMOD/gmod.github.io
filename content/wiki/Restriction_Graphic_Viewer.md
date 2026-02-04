@@ -11,7 +11,7 @@ The Restriction Graphic Viewer is a simple Web-based restriction site
 analysis tool. It is a component of the Generic Model Organism Systems
 Database project.
 
-  Screenshots</span>](#Demo_.26_Screenshots)
+ Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Contact](#Contact)
 - [Downloads](#Downloads)
@@ -24,13 +24,13 @@ class="external text" rel="nofollow">Demo at Stanford</a>
 ## Requirements
 
 - The Apache web server
-  (<a href="http://www.apache.org" class="external text"
-  rel="nofollow">http://www.apache.org/</a>)
+ (<a href="http://www.apache.org" class="external text"
+ rel="nofollow">http://www.apache.org/</a>)
 - Perl 5.005 or higher
 - <a href="http://search.cpan.org/perldoc?GD" class="external text"
-  rel="nofollow">GD</a>
+ rel="nofollow">GD</a>
 - <a href="http://bioperl.org" class="external text"
-  rel="nofollow">Bioperl</a>
+ rel="nofollow">Bioperl</a>
 
 ## Contact
 

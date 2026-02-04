@@ -7,15 +7,15 @@ GMOD includes several components for managing and visualizing
 
 data.
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Presentations
-  and Posters](#Presentations_and_Posters)
+ and Posters](#Presentations_and_Posters)
 - [GMOD
-  Components](#GMOD_Components)
-  - [CMap](#CMap)
-  - [GBrowse_syn](#GBrowse_syn)
-  - [Sybil](#Sybil)
-  - [SynView](#SynView)
+ Components](#GMOD_Components)
+ - [CMap](#CMap)
+ - [GBrowse_syn](#GBrowse_syn)
+ - [Sybil](#Sybil)
+ - [SynView](#SynView)
 
 ## Introduction
 
@@ -27,25 +27,25 @@ genomics data.
 ## Presentations and Posters
 
 - **<a
-  href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf"
-  class="internal"
-  title="GMODToolsForComparativeGenomicsIGERTPoster.pdf">GMOD Tools for
-  Comparative Genomics</a>** - Poster about the tools described on this
-  page.
+ href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf"
+ class="internal"
+ title="GMODToolsForComparativeGenomicsIGERTPoster.pdf">GMOD Tools for
+ Comparative Genomics</a>** - Poster about the tools described on this
+ page.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/SyntenyModeling.pdf" class="internal"
-  title="SyntenyModeling.pdf">Modeling and Displaying Synteny w/
-  SynView</a>** - presented by Steve Fischer at the [November 2007 GMOD
-  Meeting](/wiki/November_2007_GMOD_Meeting), is
-  a good overview of many issues encountered when displaying synteny.
+ title="SyntenyModeling.pdf">Modeling and Displaying Synteny w/
+ SynView</a>** - presented by Steve Fischer at the [November 2007 GMOD
+ Meeting](/wiki/November_2007_GMOD_Meeting), is
+ a good overview of many issues encountered when displaying synteny.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/BoG2006.pdf" class="internal"
-  title="BoG2006.pdf">An Example Comparative Genome Database for Yeasts
-  Using GMOD Tools</a>** - poster by [Scott
-  Cain](/wiki/User:Scott) showing how six GMOD tools are used to
-  create an example comparative genome model organism database.
+ title="BoG2006.pdf">An Example Comparative Genome Database for Yeasts
+ Using GMOD Tools</a>** - poster by Scott
+ Cain showing how six GMOD tools are used to
+ create an example comparative genome model organism database.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf"
-  class="internal" title="04-Stajich NESCENT GMOD.pdf">Comparative
-  Genomics With GMOD and BioPerl</a>** - a 2004 presentation by [Jason
-  Stajich](/wiki/User:Stajich).
+ class="internal" title="04-Stajich NESCENT GMOD.pdf">Comparative
+ Genomics With GMOD and BioPerl</a>** - a 2004 presentation by Jason
+ Stajich.
 
 ## GMOD Components
 

@@ -3,24 +3,24 @@ title: "Hackathon 2007 info"
 ---
 # Hackathon 2007 info
 
-  Accomplishments](#Accomplishments)
-  - [Apollo](#Apollo)
-  - [Core](#Core)
-  - [MediaWiki](#MediaWiki)
+ Accomplishments](#Accomplishments)
+ - [Apollo](#Apollo)
+ - [Core](#Core)
+ - [MediaWiki](#MediaWiki)
 - [Location
-  info](#Location_info)
-  - [Dates](#Dates)
-  - [Agenda](#Agenda)
-  - [Location](#Location)
-  - [Transportation](#Transportation)
-    - [Airports](#Airports)
-    - [Driving](#Driving)
-    - [Public
-      Transportation](#Public_Transportation)
-  - [Lodging](#Lodging)
+ info](#Location_info)
+ - [Dates](#Dates)
+ - [Agenda](#Agenda)
+ - [Location](#Location)
+ - [Transportation](#Transportation)
+ - [Airports](#Airports)
+ - [Driving](#Driving)
+ - [Public
+ Transportation](#Public_Transportation)
+ - [Lodging](#Lodging)
 - [Goal](#Goal)
-  - [Possible
-    Goals considered](#Possible_Goals_considered)
+ - [Possible
+ Goals considered](#Possible_Goals_considered)
 - [Preparation](#Preparation)
 - [Attendees](#Attendees)
 
@@ -29,11 +29,11 @@ title: "Hackathon 2007 info"
 ## Apollo
 
 - Created an example organism-specific webstart build of Apollo and an
-  accompanying ant build file for repeating the build.
+ accompanying ant build file for repeating the build.
 - Verified that the triggers required for the original JDBC connector
-  work with PostgreSQL 8.1 (they work in Pg 7.4 but not in 8.0).
+ work with PostgreSQL 8.1 (they work in Pg 7.4 but not in 8.0).
 - Wrote an alternative set of triggers in plperl (converted from
-  plpgsql)
+ plpgsql)
 
 Needs to be done still:
 
@@ -42,11 +42,11 @@ Needs to be done still:
 ## Core
 
 - Created a webpage outlining the various configuration parameters that
-  need to be adjusted to make it organism-specific.
+ need to be adjusted to make it organism-specific.
 - Created tools for users to upload GAME-XML files and for admins to
-  load the XML files into Chado.
+ load the XML files into Chado.
 - Tested the GBrowse Chado adaptor with the GBrowse DAS server to verify
-  that the Chado adaptor can work as a DAS-1 source.
+ that the Chado adaptor can work as a DAS-1 source.
 
 Needs to be done still:
 
@@ -55,12 +55,12 @@ Needs to be done still:
 See [Hackathon_wikidb](/wiki/Hackathon_wikidb)
 
 - Did most of a new release of TableEdit to conform better to MW coding
-  standards
+ standards
 - Wiki Chado round trip partly successful
-  - Chado2Wiki worked via dumps to intermediate flatfile formats
-  - Wiki2Chado worked for simple case with [Modware](/wiki/Modware)
-  - Wiki2Chado via Chado XML and XORT - close but not completed before
-    we left
+ - Chado2Wiki worked via dumps to intermediate flatfile formats
+ - Wiki2Chado worked for simple case with [Modware](/wiki/Modware)
+ - Wiki2Chado via Chado XML and XORT - close but not completed before
+ we left
 
 # Location info
 
@@ -78,7 +78,7 @@ Thursday 8:40 Meet in the lobby of the hotel to walk over to NU
 
 - Chado
 - Wiki/TableEdit  : working notes at
-  [Hackathon_wikidb](/wiki/Hackathon_wikidb)
+ [Hackathon_wikidb](/wiki/Hackathon_wikidb)
 - Apollo
 - Documentation\`
 
@@ -111,22 +111,22 @@ There are two major airports in Chicago: Midway and O'Hare. Both are
 about equally convenient to Northwestern's Chicago Campus
 
 - <a
-  href="http://www.northwestern.edu/visiting/chicago/transportation/ohare/"
-  class="external text" rel="nofollow">Directions from O'Hare</a>
+ href="http://www.northwestern.edu/visiting/chicago/transportation/ohare/"
+ class="external text" rel="nofollow">Directions from O'Hare</a>
 - <a
-  href="http://www.northwestern.edu/visiting/chicago/transportation/midway/"
-  class="external text" rel="nofollow">Directions from Midway</a>
+ href="http://www.northwestern.edu/visiting/chicago/transportation/midway/"
+ class="external text" rel="nofollow">Directions from Midway</a>
 
 ### Driving
 
 - <a href="http://www.northwestern.edu/visiting/chicago/north/"
-  class="external text" rel="nofollow">Driving from the North</a>
+ class="external text" rel="nofollow">Driving from the North</a>
 - <a href="http://www.northwestern.edu/visiting/chicago/south/"
-  class="external text" rel="nofollow">Driving from the South</a>
+ class="external text" rel="nofollow">Driving from the South</a>
 - <a href="http://www.northwestern.edu/visiting/chicago/east/"
-  class="external text" rel="nofollow">Driving from the East</a>
+ class="external text" rel="nofollow">Driving from the East</a>
 - <a href="http://www.northwestern.edu/visiting/chicago/west/"
-  class="external text" rel="nofollow">Driving from the West</a>
+ class="external text" rel="nofollow">Driving from the West</a>
 
 Be aware that above driving directions for South and East travel take
 you through I-90/94. This stretch of interstate is currently undergoing
@@ -159,12 +159,12 @@ If you are interested in other hotels, there are a couple of very
 conveniently located hotels:
 
 - <a
-  href="http://www.marriott.com/hotels/travel/chimm-courtyard-chicago-downtown-magnificent-mile/"
-  class="external text" rel="nofollow">Courtyard by Mariott</a>
+ href="http://www.marriott.com/hotels/travel/chimm-courtyard-chicago-downtown-magnificent-mile/"
+ class="external text" rel="nofollow">Courtyard by Mariott</a>
 - <a href="http://www.wyndham.com/hotels/ORDDT/main.wnt"
-  class="external text" rel="nofollow">The Wyndham hotel</a>
+ class="external text" rel="nofollow">The Wyndham hotel</a>
 - <a href="http://www.omnihotels.com/FindAHotel/Chicago.aspx"
-  class="external text" rel="nofollow">The Omni hotel</a>
+ class="external text" rel="nofollow">The Omni hotel</a>
 
 Lastly, because of Chicago's public transportation system, anywhere that
 is relatively near an 'El' stop is convenient!
@@ -192,39 +192,39 @@ More specific subgoals:
 **Core:**
 
 - A cgi file upload/drop box for community created GAMEXML/ChadoXML
-  files (perhaps the wiki could handle this, since it would also take
-  care of user identification, though it would almost certainly make the
-  script below a little more complicated).
+ files (perhaps the wiki could handle this, since it would also take
+ care of user identification, though it would almost certainly make the
+ script below a little more complicated).
 - A script for periodically loading uploaded XML files to Chado (this
-  could use command line Apollo or XORT).
+ could use command line Apollo or XORT).
 - A set up script that will prompt the user for items specific to the
-  user/community and will make appropriate changes to *everything*,
-  including:
-  - Modifying mediawiki's LocalSettings.php with names, email addresses
-    and icons
-  - Inserting organism data into Chado (allowing for the possibility of
-    multiple organisms)
-  - Modifying appropriate Apollo config files that would then be
-    downloadable by members of the community
-  - Modifying the default organism in /usr/local/gmod/conf/default.conf.
+ user/community and will make appropriate changes to *everything*,
+ including:
+ - Modifying mediawiki's LocalSettings.php with names, email addresses
+ and icons
+ - Inserting organism data into Chado (allowing for the possibility of
+ multiple organisms)
+ - Modifying appropriate Apollo config files that would then be
+ downloadable by members of the community
+ - Modifying the default organism in /usr/local/gmod/conf/default.conf.
 - An easy to understand 'Getting started' guide that gives an overview
-  of the contents and how to get started (presumably, this would go in
-  the wiki so that the users would have the ability to edit the contents
-  for their community)
+ of the contents and how to get started (presumably, this would go in
+ the wiki so that the users would have the ability to edit the contents
+ for their community)
 - An easy to understand guide on how to update any software when
-  necessary--mediawiki, extensions, GBrowse, Chado. More than anything,
-  these should be pointers to where to get further information.
+ necessary--mediawiki, extensions, GBrowse, Chado. More than anything,
+ these should be pointers to where to get further information.
 
 **Apollo:**
 
 - An easy to understand Apollo configuration set up. Will we need a new
-  release of Apollo (I'm betting yes)
+ release of Apollo (I'm betting yes)
 - A good example config that works with the dicty example database.
 
 **MediaWiki/[TableEdit](/wiki/TableEdit):**
 
 - See [Table Edit at Hackathon
-  2007](/wiki/TableEdit#Table_Edit_at_Hackathon_2007)
+ 2007](/wiki/TableEdit#Table_Edit_at_Hackathon_2007)
 
 All of this should be saved in the schema cvs, in the hackathon_2007
 directory:
@@ -236,10 +236,10 @@ While definitive goals have not been established yet, here are some
 possibilities. Please feel free to add more.
 
 - Improving [Apollo-Chado](/wiki/Apollo-Chado) round tripping
-  (documentation, examples, tutorials, configuration files, installation
-  procedures, etc)
+ (documentation, examples, tutorials, configuration files, installation
+ procedures, etc)
 
-[Justin](/wiki/User:Justaddcoffee): I've written
+Justin: I've written
 [Apollo-Chado Integration at BovineBase: Bugs and
 Suggestions](/wiki/Apollo-Chado_Integration_at_BovineBase__Bugs_and_Suggestions)
 containing a list of bugs and suggestions from our developers and
@@ -248,20 +248,20 @@ Chado\<-\>Apollo setup for the Bovine genome annotation effort.
 
 - Beginning work on Apollo-Ensembl round tripping
 - Merging the ClassDBI classes the [Modware](/wiki/Modware) and
-  [GMODWeb](/wiki/GMODWeb) use (Chado::AutoDBO and Turnkey::AutoDBI)
+ [GMODWeb](/wiki/GMODWeb) use (Chado::AutoDBO and Turnkey::AutoDBI)
 - Giving a small MOD a 'GMOD make over'
 - Work on perl XML::DOM tools for writing [Chado
-  XML](/wiki/Chado_XML)
+ XML](/wiki/Chado_XML)
 - Building VMware instances for distribution
 - Rebuilding RPM packages for updated GMOD software
 - Polishing a gmod 0.5 release
 - Modify Apollo to annotate with GO terms and enable Chado round
-  tripping of feature_cvterms
+ tripping of feature_cvterms
 - improving analysis plugins for chado via [Modware](/wiki/Modware)
-  or [GBrowse](/wiki/GBrowse)
+ or [GBrowse](/wiki/GBrowse)
 - performance tuning.
 - community [wiki development/wiki table editor
-  work](/wiki/TableEdit#Table_Edit_at_Hackathon_2007)
+ work](/wiki/TableEdit#Table_Edit_at_Hackathon_2007)
 
 # Preparation
 
@@ -269,36 +269,36 @@ Things we'll need provided either by Eric (the host) or various people
 coming:
 
 - A server that a few VMware instances can go on (this could potentially
-  be a fast laptop with a fair amount of memory)
+ be a fast laptop with a fair amount of memory)
 - A base VMware instance to start working with (Scott will provide--what
-  distro to use? Ubuntu server (its a bit of a hassle and the lack of a
-  gui may turn some people off)? Ubuntu desktop? Fedora 7?)
+ distro to use? Ubuntu server (its a bit of a hassle and the lack of a
+ gui may turn some people off)? Ubuntu desktop? Fedora 7?)
 - A VMWare instance with Chado already installed and some sample data
-  (what to use? a few chromosomes of worm, or a few chromosomes of fly,
-  something else? Perhaps a 'younger' organism that someone attending
-  works on?) (Eric already created a vmware appliance with <a
-  href="http://wiki.dictybase.org/dictywiki/index.php/Getting_Started_With_Modware_using_Vmware_appliance"
-  class="external text" rel="nofollow">Chado populated with Dicty data</a>--I'll
-  probably use that.)
+ (what to use? a few chromosomes of worm, or a few chromosomes of fly,
+ something else? Perhaps a 'younger' organism that someone attending
+ works on?) (Eric already created a vmware appliance with <a
+ href="http://wiki.dictybase.org/dictywiki/index.php/Getting_Started_With_Modware_using_Vmware_appliance"
+ class="external text" rel="nofollow">Chado populated with Dicty data</a>--I'll
+ probably use that.)
 - Also in the vmware instance: ~~phpmyadmin, phppgadmin,~~ mediawiki all
-  configured and ready to use.
-  [Scott](/wiki/User:Scott) 20:46, 30 July 2007 (EDT): *I don't
-  think the admin stuff needs to be a priority*
+ configured and ready to use.
+ Scott 20:46, 30 July 2007 (EDT): *I don't
+ think the admin stuff needs to be a priority*
 - A printer (maybe--do people use paper anymore?)
 - A computer projector
 
 **Prep for attendees:**
 
 - All attendees should have SourceForge accounts and have them added as
-  GMOD developers since we will be using a SourceForge GMOD cvs
-  repository for work at the hackathon. Email Scott Cain with your
-  SourceForge account name so he can add you.
+ GMOD developers since we will be using a SourceForge GMOD cvs
+ repository for work at the hackathon. Email Scott Cain with your
+ SourceForge account name so he can add you.
 - Get a developer's cvs checkout of the GMOD schema repository (if you
-  already have one, do an "update -d" to get the new directory for the
-  hackathon).
+ already have one, do an "update -d" to get the new directory for the
+ hackathon).
 - Get a developer's cvs checkout of Apollo (in the GMOD cvs reposotiry),
-  and try to build it. See apollo/doc/README.developers for pointers on
-  running/building Apollo.
+ and try to build it. See apollo/doc/README.developers for pointers on
+ running/building Apollo.
 
 # Attendees
 
@@ -309,8 +309,8 @@ coming:
 - Mark Gibson, Apollo, Berkeley?
 - Josh Goodman, FlyBase, IndianaU
 - Mike Wong, SFSU, Center for Computing for Life Science (CCLS,
-  <a href="http://ccls.lab.sfsu.edu" class="external free"
-  rel="nofollow">http://ccls.lab.sfsu.edu</a>)
+ <a href="http://ccls.lab.sfsu.edu" class="external free"
+ rel="nofollow">http://ccls.lab.sfsu.edu</a>)
 - Brian O'Connor, UCLA, biopackages.net
 - Ben Faga, CSHL
 - Debra Burhans, CSHL, Dolan Center
@@ -319,14 +319,14 @@ coming:
 - Barry Wanner, Purdue University
 - Colonel Ghiban, CSHL, Dolan Center
 - David Sigfredo Angulo, DePaul University
-  - <a href="http://IllinoisBioGrid.org" class="external free"
-    rel="nofollow">http://IllinoisBioGrid.org</a>
-  - <a href="http://facweb.cs.depaul.edu/bioinformatics/"
-    class="external free"
-    rel="nofollow">http://facweb.cs.depaul.edu/bioinformatics/</a>
-  - <a href="http://gridweb.cti.depaul.edu/twiki/bin/view/IBG/WebHome"
-    class="external free"
-    rel="nofollow">http://gridweb.cti.depaul.edu/twiki/bin/view/IBG/WebHome</a>
+ - <a href="http://IllinoisBioGrid.org" class="external free"
+ rel="nofollow">http://IllinoisBioGrid.org</a>
+ - <a href="http://facweb.cs.depaul.edu/bioinformatics/"
+ class="external free"
+ rel="nofollow">http://facweb.cs.depaul.edu/bioinformatics/</a>
+ - <a href="http://gridweb.cti.depaul.edu/twiki/bin/view/IBG/WebHome"
+ class="external free"
+ rel="nofollow">http://gridweb.cti.depaul.edu/twiki/bin/view/IBG/WebHome</a>
 
 Possible:
 

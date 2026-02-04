@@ -18,9 +18,9 @@ with any database supported by DBIx::Class. So far, it has been used
 successfully with Chado schemas running on both PostgreSQL and Oracle.
 Please try it out and report back to the mailing list!
 
-  Development](#Development)
-  - [To-Do](#To-Do)
-  - [Contributors](#Contributors)
+ Development](#Development)
+ - [To-Do](#To-Do)
+ - [Contributors](#Contributors)
 - [Documentation](#Documentation)
 - [Download](#Download)
 - [Support](#Support)
@@ -33,18 +33,18 @@ Development of Bio%253A%253AChado%253A%253ASchema uses `git`, hosted on GitHub:
 ### To-Do
 
 - Need many more many_to_many relationships throughout. These have to be
-  added manually. If you find one missing that you need, please git
-  clone the repository and send a pull request with it.
+ added manually. If you find one missing that you need, please git
+ clone the repository and send a pull request with it.
 - Need more compatibility with BioPerl. Right now you can use a
-  Sequence::Feature as a Bio::SeqI, but that's all. Patches and ideas
-  are welcome, see the BCS discussion page.
+ Sequence::Feature as a Bio::SeqI, but that's all. Patches and ideas
+ are welcome, see the BCS discussion page.
 
 ### Contributors
 
-- [Robert Buels](/wiki/User:RobertBuels) (Sol Genomics
-  Network)
-- [Naama Menda](/wiki/User:NaamaMenda) (Sol Genomics
-  Network)
+- Robert Buels (Sol Genomics
+ Network)
+- Naama Menda (Sol Genomics
+ Network)
 - Aureliano Bombarely (Sol Genomics Network)
 - Jonathan "Duke" Leto (Sol Genomics Network)
 
@@ -60,7 +60,7 @@ Releases of Bio%253A%253AChado%253A%253ASchema are available on CPAN:
 
 Use your preferred CPAN client to install it:
 
-      cpan Bio%253A%253AChado%253A%253ASchema
+ cpan Bio%253A%253AChado%253A%253ASchema
 
 is often sufficient.
 
@@ -68,8 +68,8 @@ is often sufficient.
 
 |
 |----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| **Bio%253A%253AChado%253A%253ASchema** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" |  |  |
+| | Mailing List Link | Description | Archive(s) |
+| **Bio%253A%253AChado%253A%253ASchema** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" | | |
 class="external text" rel="nofollow">gmod-schema</a> | Use the <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> list (gmod-schema) for all **Bio%253A%253AChado%253A%253ASchema** questions. | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://old.nabble.com/gmod-schema-f3506.html"
 class="external text" rel="nofollow">Nabble (old)</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html"

@@ -3,13 +3,13 @@ title: "LuceGene"
 ---
 # LuceGene
 
-  Description](#Description)
-  - [EBI's
-    EB-eye](#EBI.27s_EB-eye)
-  - [Lucene
-    search at Uniprot](#Lucene_search_at_Uniprot)
+ Description](#Description)
+ - [EBI's
+ EB-eye](#EBI.27s_EB-eye)
+ - [Lucene
+ search at Uniprot](#Lucene_search_at_Uniprot)
 - [Demo &
-  Screenshots](#Demo_.26_Screenshots)
+ Screenshots](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Downloads](#Downloads)
@@ -33,18 +33,18 @@ systems such as Exite, Alta-vista, and Google.
 LuceGene adds these bio-data methods to Lucene:
 
 - Indexing adaptors for formats such as XML, PDF Documents,
-  Biosequences, Spreadsheets, HTML, and others.
+ Biosequences, Spreadsheets, HTML, and others.
 - Configurations for bio-data include UniProt/Swiss-Prot, Fasta and
-  GenBank sequences, BIND protein interactions, NCBI Gene Expression
-  Omnibus, BLAST output tables, Medline.
+ GenBank sequences, BIND protein interactions, NCBI Gene Expression
+ Omnibus, BLAST output tables, Medline.
 - Support for batch-list look-ups and searches is included, useful for
-  data miners.
+ data miners.
 - Web applications offer paged search results, batch downloads, search
-  refinement and search-linking among data libraries.
+ refinement and search-linking among data libraries.
 - Web Services support for data mining is included with a SOAP
-  interface.
+ interface.
 - Output support includes field selection and formats such as
-  Spreadsheet, XML, HTML via XSLT, and others.
+ Spreadsheet, XML, HTML via XSLT, and others.
 
 LuceGene is speedy with big data sets: Searching the UniProt library of
 1.7 million sequences with LuceGene is a close equivalent to SRS in
@@ -100,31 +100,31 @@ search-all-proteins system. See it in action at
 
 - [Demo Screenshots](/wiki/LuceGene_Screenshots)
 - Daphnia genome search
-  <a href="http://wfleabase.org/lucegene" class="external free"
-  rel="nofollow">http://wfleabase.org/lucegene</a>
-  - newly updated with full Daphnia genome, see notes at
-    [LuceGene_for_Daphnia_genome](/wiki/LuceGene_for_Daphnia_genome)
+ <a href="http://wfleabase.org/lucegene" class="external free"
+ rel="nofollow">http://wfleabase.org/lucegene</a>
+ - newly updated with full Daphnia genome, see notes at
+ [LuceGene_for_Daphnia_genome](/wiki/LuceGene_for_Daphnia_genome)
 
-[Dongilbert](/wiki/User:Dongilbert) 16:25, 4 September 2007
+Dongilbert 16:25, 4 September 2007
 (EDT)
 
 - Demonstration server is available at
-  <a href="http://eugenes.org/demolucegene/" class="external free"
-  rel="nofollow">http://eugenes.org/demolucegene/</a>
+ <a href="http://eugenes.org/demolucegene/" class="external free"
+ rel="nofollow">http://eugenes.org/demolucegene/</a>
 - euGenes genome search
-  <a href="http://eugenes.org/lucegene/" class="external free"
-  rel="nofollow">http://eugenes.org/lucegene/</a>
+ <a href="http://eugenes.org/lucegene/" class="external free"
+ rel="nofollow">http://eugenes.org/lucegene/</a>
 - FlyBase Search preview
-  <a href="http://chipmunk.bio.indiana.edu:7082/lucegene/"
-  class="external free"
-  rel="nofollow">http://chipmunk.bio.indiana.edu:7082/lucegene/</a>
+ <a href="http://chipmunk.bio.indiana.edu:7082/lucegene/"
+ class="external free"
+ rel="nofollow">http://chipmunk.bio.indiana.edu:7082/lucegene/</a>
 
 ## Requirements
 
 - LuceGene requires Java versions 1.4 or later to compile and run.
 - A Java/JSP web server like
-  <a href="http://tomcat.apache.org/" class="external text"
-  rel="nofollow">Jakarta Tomcat</a> is used for the web application.
+ <a href="http://tomcat.apache.org/" class="external text"
+ rel="nofollow">Jakarta Tomcat</a> is used for the web application.
 
 Jakarta Lucene software is included with this package, as are other
 required java libraries.
@@ -132,13 +132,13 @@ required java libraries.
 ## Documentation
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fc/Lucegene-readme.txt" class="internal"
-  title="Lucegene-readme.txt">LuceGene README</a>
+ title="Lucegene-readme.txt">LuceGene README</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/Lucegene-index-overview.txt"
-  class="internal" title="Lucegene-index-overview.txt">Indexing methods
-  overview</a>
+ class="internal" title="Lucegene-index-overview.txt">Indexing methods
+ overview</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Gmod-argos-sep03.pdf" class="internal"
-  title="Gmod-argos-sep03.pdf">Talk slides on Argos/LuceGene, Sept
-  2003</a>
+ title="Gmod-argos-sep03.pdf">Talk slides on Argos/LuceGene, Sept
+ 2003</a>
 
 ## Downloads
 
@@ -148,19 +148,19 @@ class="external text" rel="nofollow">SourceForge</a> and
 <a href="http://eugenes.org/gmod/lucegene/" class="external free"
 
 - <a href="http://prdownloads.sourceforge.net/gmod/lucegene.war"
-  class="external text" rel="nofollow">lucegene.war</a>: web application
-  archive
+ class="external text" rel="nofollow">lucegene.war</a>: web application
+ archive
 - lucegene-\*-src.jar : sources, documents, configurations
 - <a href="http://eugenes.org/gmod/lucegene/dist/" class="external text"
-  rel="nofollow">sample data</a> for lucegene.war as lucegene_demo\*.zip
+ rel="nofollow">sample data</a> for lucegene.war as lucegene_demo\*.zip
 - <a href="http://eugenes.org/gmod/genomeview-package2008/"
-  class="external text" rel="nofollow">Genome Viewer package</a> Lucene
-  is packaged here with GBrowse as a genome viewing system
-  (platform-independent) that has minimal installation/configuration
-  requirements. Also included are the several organism genome data sets
-  provided thru euGenes.org (Drosophila, Daphnia, Nasonia and others).
+ class="external text" rel="nofollow">Genome Viewer package</a> Lucene
+ is packaged here with GBrowse as a genome viewing system
+ (platform-independent) that has minimal installation/configuration
+ requirements. Also included are the several organism genome data sets
+ provided thru euGenes.org (Drosophila, Daphnia, Nasonia and others).
 
 ## Contact
 
 - email: lucegene AT eugenes.org
-  Current developers: Don Gilbert, Paul Poole, and others
+ Current developers: Don Gilbert, Paul Poole, and others

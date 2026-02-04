@@ -7,47 +7,47 @@ title: "GBrowse Popup Balloons"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/48/Balloon.png" class="thumbborder"
 width="414" height="308" alt="Balloon.png" />
 
-  Balloons</span>](#Using_Balloons)
-  - [Linking
-    back to GBrowse](#Linking_back_to_GBrowse)
+ Balloons</span>](#Using_Balloons)
+ - [Linking
+ back to GBrowse](#Linking_back_to_GBrowse)
 - [Customizing
-  Balloons](#Customizing_Balloons)
-  - [Using AJAX
-    and remote content](#Using_AJAX_and_remote_content)
-  - [Using
-    GBrowse_details as an AJAX Request Handler for Popup
-    Balloons](#Using_GBrowse_details_as_an_AJAX_Request_Handler_for_Popup_Balloons)
-    - [Examples](#Examples)
-    - [Changes to
-      gbrowse_details](#Changes_to_gbrowse_details)
-    - [Changes To Configuration
-      File](#Changes_To_Configuration_File)
+ Balloons](#Customizing_Balloons)
+ - [Using AJAX
+ and remote content](#Using_AJAX_and_remote_content)
+ - [Using
+ GBrowse_details as an AJAX Request Handler for Popup
+ Balloons](#Using_GBrowse_details_as_an_AJAX_Request_Handler_for_Popup_Balloons)
+ - [Examples](#Examples)
+ - [Changes to
+ gbrowse_details](#Changes_to_gbrowse_details)
+ - [Changes To Configuration
+ File](#Changes_To_Configuration_File)
 - [Popups in
-  Gbrowse 2.0](#Popups_in_Gbrowse_2.0)
-  - [Tooltip
-    Styles](#Tooltip_Styles)
-    - [GBubble and
-      GFade](#GBubble_and_GFade)
-    - [GPlain](#GPlain)
-    - [GBox](#GBox)
-  - [Changing
-    the global default balloon
-    style](#Changing_the_global_default_balloon_style)
-  - [Configuring Default Tooltip
-    Styles](#Configuring_Default_Tooltip_Styles)
-  - [Other
-    differences](#Other_differences)
-    - [Cursor
-      Tracking](#Cursor_Tracking)
-    - [Overflow and
-      Scrollbars](#Overflow_and_Scrollbars)
-    - [Both
-      height and width can be
-      constrained](#Both_height_and_width_can_be_constrained)
-    - [Tooltips will not go
-      off-screen](#Tooltips_will_not_go_off-screen)
-  - [GBox for
-    GBrowse 1.7](#GBox_for_GBrowse_1.7)
+ Gbrowse 2.0](#Popups_in_Gbrowse_2.0)
+ - [Tooltip
+ Styles](#Tooltip_Styles)
+ - [GBubble and
+ GFade](#GBubble_and_GFade)
+ - [GPlain](#GPlain)
+ - [GBox](#GBox)
+ - [Changing
+ the global default balloon
+ style](#Changing_the_global_default_balloon_style)
+ - [Configuring Default Tooltip
+ Styles](#Configuring_Default_Tooltip_Styles)
+ - [Other
+ differences](#Other_differences)
+ - [Cursor
+ Tracking](#Cursor_Tracking)
+ - [Overflow and
+ Scrollbars](#Overflow_and_Scrollbars)
+ - [Both
+ height and width can be
+ constrained](#Both_height_and_width_can_be_constrained)
+ - [Tooltips will not go
+ off-screen](#Tooltips_will_not_go_off-screen)
+ - [GBox for
+ GBrowse 1.7](#GBox_for_GBrowse_1.7)
 
 # Using Balloons
 
@@ -64,9 +64,9 @@ tips
 
 to a true value:
 
-         [GENERAL]
-         ...
-         balloon tips = 1
+ [GENERAL]
+ ...
+ balloon tips = 1
 
 Then add \`\`balloon hover _and/or \`\`balloon click_ options to the
 track stanzas that you wish to add buttons to. You can also place these
@@ -77,10 +77,10 @@ the user hovers over a feature. \`\`balloon click _specifies HTML or a_
 URL that will appear when the user clicks on a feature. The HTML can
 contain images, formatted text, and even controls. Examples:
 
-     balloon hover = <h2>Gene $name</h2>
-     balloon click = <h2>Gene $name</h2>
-           <a href='<a href="http://www.google.com/search?q=">http://www.google.com/search?q=</a>$name'>Search Google</a><br>
-           <a href='<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&term=">http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&term=</a>$name'>Search NCBI</a><br>
+ balloon hover = <h2>Gene $name</h2>
+ balloon click = <h2>Gene $name</h2>
+ <a href='<a href="http://www.google.com/search?q=">http://www.google.com/search?q=</a>$name'>Search Google</a><br>
+ <a href='<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&term=">http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&term=</a>$name'>Search NCBI</a><br>
 
 ## Linking back to GBrowse
 
@@ -89,17 +89,17 @@ view in GBrowse. Use a callback to get the desired coordinates for the
 new view. Example:
 
 ```de1
-balloon hover = sub   {
-      my $feature = shift;
-      my $box_content = "";
-      if ($feature->strand > 0){
-            $box_content .= "<b>Zoom in:</b>&nbsp;<a class=ggbmenu_link href=?q=NC_010473:"
-               .($feature->start-25)."..".($feature->start+24)."&enable=DNA target=_self>".$feature->name." N-terminus</a><br>";
-     }else{
-            $box_content .= "<b>Zoom in:</b>&nbsp;<a class=ggbmenu_link href=?q=NC_010473:"
-               .($feature->end-25)."..".($feature->end+24)."&enable=DNA target=_self>".$feature->name." N-terminus</a><br>";
-     }
-      return $box_content;
+balloon hover = sub {
+ my $feature = shift;
+ my $box_content = "";
+ if ($feature->strand > 0){
+ $box_content .= "<b>Zoom in:</b>&nbsp;<a class=ggbmenu_link href=?q=NC_010473:"
+ .($feature->start-25)."..".($feature->start+24)."&enable=DNA target=_self>".$feature->name." N-terminus</a><br>";
+ }else{
+ $box_content .= "<b>Zoom in:</b>&nbsp;<a class=ggbmenu_link href=?q=NC_010473:"
+ .($feature->end-25)."..".($feature->end+24)."&enable=DNA target=_self>".$feature->name." N-terminus</a><br>";
+ }
+ return $box_content;
  }
 ```
 
@@ -116,13 +116,13 @@ configure any number of custom balloons.
 To declare two new balloons, create a "custom balloons" option in the
 \[GENERAL\] section:
 
-     custom balloons = [blue_balloon]
-                      images   =  /gbrowse/images/blue_balloons
-                      maxWidth = 300
-                      shadow   = 0
+ custom balloons = [blue_balloon]
+ images = /gbrowse/images/blue_balloons
+ maxWidth = 300
+ shadow = 0
 
-                      [wide_balloon]
-                      maxWidth = 800
+ [wide_balloon]
+ maxWidth = 800
 
 This creates two new balloons. The first, named "blue_balloon" will look
 for its images and icons at the local URL /gbrowse/images/blue_balloons.
@@ -136,14 +136,14 @@ pixels. The various balloon options are described well at
 To use the blue balloon rather than the standard one, format the
 "balloon hover" and/or "balloon click" options like this:
 
-     balloon click = [blue_balloon] /cgi-bin/get_gene_data?gene=$name
+ balloon click = [blue_balloon] /cgi-bin/get_gene_data?gene=$name
 
 The \[blue_balloon\] keyword tells gbrowse to use the blue balloon for
 clicks on these features. The standard balloon is called "balloon", and
 so the following two options are equivalent:
 
-     balloon click = /cgi-bin/get_gene_data?gene=$name
-     balloon click = [balloon] /cgi-bin/get_gene_data?gene=$name
+ balloon click = /cgi-bin/get_gene_data?gene=$name
+ balloon click = [balloon] /cgi-bin/get_gene_data?gene=$name
 
 The images for custom balloons reside in the default location of
 /gbrowse/images/balloons, unless indicated otherwise using the
@@ -154,9 +154,9 @@ seven PNG images described in the
 
 These images must be named as listed below:
 
-     balloon.png     down_right.png  up_right.png
-     balloon_ie.png  down_left.png   up_left.png
-     close.png
+ balloon.png down_right.png up_right.png
+ balloon_ie.png down_left.png up_left.png
+ close.png
 
 Tips for creating these images can be found
 [here](Popup_Balloons#Customization.
@@ -170,7 +170,7 @@ that must be downloaded by the client. To dynamically load the balloon
 contents from the server, use a balloon hover or balloon click option
 like this:
 
-     balloon click = /cgi-bin/get_gene_data?gene=$name
+ balloon click = /cgi-bin/get_gene_data?gene=$name
 
 In this case, when the user clicks on the feature, it creates a balloon
 whose content contains the HTML returned by the CGI script
@@ -179,17 +179,17 @@ contents of the balloon by looking for the leading slash. However, to
 reduce ambiguity, we recommend that you prefix the URL with \`\`url:
 _as_ so:
 
-     balloon click = url:/cgi-bin/get_gene_data?gene=$name
+ balloon click = url:/cgi-bin/get_gene_data?gene=$name
 
 This also allows you to refer to relative URLs:
 
-     balloon click = url:../../get_gene_data?gene=$name
+ balloon click = url:../../get_gene_data?gene=$name
 
 It is also possible to fill the balloon with content from a remote
 source. Simply specify a full URL beginning with \`\`http: _\`\`https:_
 or \`\`ftp:
 
-     balloon hover = <a href="http://www.wormbase.org/db/get?name=">http://www.wormbase.org/db/get?name=</a>$name;class=gene
+ balloon hover = <a href="http://www.wormbase.org/db/get?name=">http://www.wormbase.org/db/get?name=</a>$name;class=gene
 
 Note that the balloon library uses an internal \<iframe\> to populate
 the balloon with the content of external URLs. This means that vertical
@@ -207,8 +207,8 @@ to worry about them messing up the HTML.
 You might also wish to specify \`\`titles are balloons _in the
 \[GENERAL\]_ section:
 
-     [GENERAL]
-     titles are balloons = 1
+ [GENERAL]
+ titles are balloons = 1
 
 This will generate balloons on all mouse hover events, using the content
 that would otherwise have been placed in the built-in browser tooltip.
@@ -218,7 +218,7 @@ within the \[track\] section. If you wish the balloon to be sticky
 (require the user to press the close button) even if it is a hover
 balloon, then place this option in the \[track section\]:
 
-     balloon sticky = 1
+ balloon sticky = 1
 
 Setting \`\`balloon sticky _to 0 will have the effect of making
 balloons_ disappear as soon as the mouse leaves them, even if it was
@@ -230,7 +230,7 @@ not like the height of the balloon, you can adjust the height with the
 
 option:
 
-     balloon height = 400
+ balloon height = 400
 
 ## Using GBrowse_details as an AJAX Request Handler for Popup Balloons
 
@@ -240,14 +240,14 @@ ajax handler for Gbrowse popup ballons (or other applications**
 ### Examples
 
 - A balloon hover with contents generated using an AJAX call to
-  gbrowse_details and the **_params_** callback shown below
+ gbrowse_details and the **_params_** callback shown below
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Sample1b.png" width="492" height="239"
 alt="Sample1b.png" />
 
 - A sticky balloon with contents generated from gbrowse-details (via an
-  \<iframe\> element) and the **_default_** callback shown below.
+ \<iframe\> element) and the **_default_** callback shown below.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/Sample2b.png" width="454" height="364"
@@ -256,52 +256,52 @@ alt="Sample2b.png" />
 ### Changes to gbrowse_details
 
 - A new CGI parameter to invoke the AJAX-handling behavior
-    my $rmt   = param('remote');
+ my $rmt = param('remote');
 
 - A response is triggered after the feature(s) are defined but before
-  **_PrintTop_** is called.
-    if (defined $rmt) {
-      print header,start_html;
-      print remote_content($rmt,$features[0]);
-      print end_html;
-      exit 0;
-    }
+ **_PrintTop_** is called.
+ if (defined $rmt) {
+ print header,start_html;
+ print remote_content($rmt,$features[0]);
+ print end_html;
+ exit 0;
+ }
 
 - The **_remote_content_** subroutine will get the text or coderef. It
-  will return the text or execute the callback with user-defined
-  arguments
-    # do something for popup balloons
-    sub remote_content {
-      my $key = shift; # the key for the text or code-ref in the gbrowse config file
-      my $feat = shift;
-      my $contents = $CONFIG->config->code_setting('TOOLTIPS',$key) or die "$key is empty";
-      my $coderef = (ref $contents|'') eq 'CODE';
-      return $contents unless $coderef;
-      # paranoia?
-      die "Error: $key is not a CODE-REF" if ref $contents && !$coderef;
-      # args are user-defined
-      my %args = (feature => $feat) if $feat;
-      for my $arg (param()) {
-        my @vals = param($arg);
-        my $val  = @vals > 1 ? \@vals : $vals[0];
-        $args{$arg} = $val;
-      }
-      return $contents->(\%args);
-    }
+ will return the text or execute the callback with user-defined
+ arguments
+ # do something for popup balloons
+ sub remote_content {
+ my $key = shift; # the key for the text or code-ref in the gbrowse config file
+ my $feat = shift;
+ my $contents = $CONFIG->config->code_setting('TOOLTIPS',$key) or die "$key is empty";
+ my $coderef = (ref $contents|'') eq 'CODE';
+ return $contents unless $coderef;
+ # paranoia?
+ die "Error: $key is not a CODE-REF" if ref $contents && !$coderef;
+ # args are user-defined
+ my %args = (feature => $feat) if $feat;
+ for my $arg (param()) {
+ my @vals = param($arg);
+ my $val = @vals > 1 ? \@vals : $vals[0];
+ $args{$arg} = $val;
+ }
+ return $contents->(\%args);
+ }
 
 ### Changes To Configuration File
 
 - A new section \[TOOLTIPS\] that has all the named text sections or
-  callbacks you need to access through gbrowse_details
-  - **NOTE:** This section must be placed at the end of the \[GENERAL\]
-    section.
+ callbacks you need to access through gbrowse_details
+ - **NOTE:** This section must be placed at the end of the \[GENERAL\]
+ section.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/92/Callbacks" width="687" height="408"
 alt="Callbacks" />
 
 - The \[ORF\] configuration stanza used to generate the images above.
-  The relevant section is highlighted
+ The relevant section is highlighted
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Orf_stanza" width="749" height="267"
@@ -321,7 +321,7 @@ Some key differences are:
 
 eg
 
-    balloon hover = [GPlain] This is my message
+ balloon hover = [GPlain] This is my message
 
 #### GBubble and GFade
 
@@ -331,7 +331,7 @@ opacity set to 90%) and fades up to the full opacity setting rather than
 abruptly appearing.
 
 - GBubble the the default balloon style, so the \[GBubble\] name is
-  optional.
+ optional.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/GBubble.png" class="thumbborder"
@@ -344,8 +344,8 @@ balloon hover = [GBubble] I am 'GBubble', the <i>classic</i> GBrowse popup ballo
 ```
 
 - GFade is identical to GBubble except that it fades into view rather
-  than just popping up. This is accomplished by starting out transparent
-  and gradually increasing the opacity over a span of 1200 msec.
+ than just popping up. This is accomplished by starting out transparent
+ and gradually increasing the opacity over a span of 1200 msec.
 
 #### GPlain
 
@@ -372,9 +372,9 @@ dynamically (actually, this is true of all balloon tooltips).
 
 - For sticky boxes, if the contents are too big, scrollbars will appear.
 - The GBox style is used for the inline track configuration (called by
-  clicking "?" in the titlebar for each track).
+ clicking "?" in the titlebar for each track).
 - You can also use is anywhere else in Gbrowse using the '\[GBox\]'
-  name.
+ name.
 
 An example track configuration box
 <img
@@ -400,8 +400,8 @@ The balloon style used by default is 'GBubble'. This can be changed
 using the 'balloon style' option in either GBrowse.conf or in the
 configuration file for individual data sources.
 
-    # use GBubble as the default balloon style
-    balloon style = GBubble
+ # use GBubble as the default balloon style
+ balloon style = GBubble
 
 ### Configuring Default Tooltip Styles
 
@@ -415,36 +415,36 @@ below is the default configuration applied to all balloon styles
 balloon.config.js
 
 ```
-  ////////////////////////////////////////////////////////////////
-  // The default "base" config applied to all balloon objects.  //
-  // See http://gmod.org/wiki/Popup_Balloons#Customization for  //
-  // details about config options                               //
-  //                                                            //
-  // values can be overridden in custom config cases (see below) //
-  ////////////////////////////////////////////////////////////////
-  if (!balloon.configured) {                                    //
-    balloon.fontColor          = 'black';                       //
-    balloon.fontFamily         = 'Arial, sans-serif';           //
-    balloon.fontSize           = '12pt';                        //
-    balloon.minWidth           = 100;                           //
-    balloon.maxWidth           = 400;                           //
-    balloon.delayTime          = 750;                           //
-    balloon.vOffset            = 10;                            //
-    balloon.hOffset            = 10;                            //
-    balloon.stem               = true;                          //
-    balloon.balloonImage       = 'balloon.png';                 //
-    balloon.upLeftStem         = 'up_left.png';                 //
-    balloon.downLeftStem       = 'down_left.png';               //
-    balloon.upRightStem        = 'up_right.png';                //
-    balloon.downRightStem      = 'down_right.png';              //
-    balloon.closeButton        = 'close.png';                   //
-    balloon.closeButtonWidth   = 16;                            //
-    balloon.allowAJAX          = true;                          //
-    balloon.allowIframes       = true;                          //
-    balloon.configured         = true;                          //
-    balloon.trackCursor        = true;                          //
-  }                                                             //
-  ////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////
+ // The default "base" config applied to all balloon objects. //
+ // See http://gmod.org/wiki/Popup_Balloons#Customization for //
+ // details about config options //
+ // //
+ // values can be overridden in custom config cases (see below) //
+ ////////////////////////////////////////////////////////////////
+ if (!balloon.configured) { //
+ balloon.fontColor = 'black'; //
+ balloon.fontFamily = 'Arial, sans-serif'; //
+ balloon.fontSize = '12pt'; //
+ balloon.minWidth = 100; //
+ balloon.maxWidth = 400; //
+ balloon.delayTime = 750; //
+ balloon.vOffset = 10; //
+ balloon.hOffset = 10; //
+ balloon.stem = true; //
+ balloon.balloonImage = 'balloon.png'; //
+ balloon.upLeftStem = 'up_left.png'; //
+ balloon.downLeftStem = 'down_left.png'; //
+ balloon.upRightStem = 'up_right.png'; //
+ balloon.downRightStem = 'down_right.png'; //
+ balloon.closeButton = 'close.png'; //
+ balloon.closeButtonWidth = 16; //
+ balloon.allowAJAX = true; //
+ balloon.allowIframes = true; //
+ balloon.configured = true; //
+ balloon.trackCursor = true; //
+ } //
+ ////////////////////////////////////////////////////////////////
 ```
 
 Below is the syntax for default configuration for the three styles above
@@ -452,57 +452,57 @@ in balloon.config.js
 
 ```
 
-  ////////////////////////////////////////////////////////////////
-  // Custom configuration options -- Add a case below for your  //
-  // config set (GBrowse defaults: GBox, GPlain and GBubble)    //
-  ////////////////////////////////////////////////////////////////
-  switch(set) {
+ ////////////////////////////////////////////////////////////////
+ // Custom configuration options -- Add a case below for your //
+ // config set (GBrowse defaults: GBox, GPlain and GBubble) //
+ ////////////////////////////////////////////////////////////////
+ switch(set) {
 
-    // A formatted box (no background image)
-    case('GBox') :
-      balloon.bgColor     = 'lightgoldenrodyellow';
-      balloon.borderStyle = '2px solid gray';
-      balloon.padding     = 5;
-      balloon.shadow      = 0;
-      balloon.stem        = false;
-      balloon.opacity     = 90;
-      break;
+ // A formatted box (no background image)
+ case('GBox') :
+ balloon.bgColor = 'lightgoldenrodyellow';
+ balloon.borderStyle = '2px solid gray';
+ balloon.padding = 5;
+ balloon.shadow = 0;
+ balloon.stem = false;
+ balloon.opacity = 90;
+ break;
 
-    // A simple balloon
-    case('GPlain') :
-      balloon.padding     = 5;
-      balloon.shadow      = 0;
-      balloon.stemHeight  = 15;
-      balloon.stemOverlap = 1;
-      balloon.opacity     = 85;
-      break;
+ // A simple balloon
+ case('GPlain') :
+ balloon.padding = 5;
+ balloon.shadow = 0;
+ balloon.stemHeight = 15;
+ balloon.stemOverlap = 1;
+ balloon.opacity = 85;
+ break;
 
-    // The original cartoon bubble
-    case('GBubble') :
-      balloon.ieImage     = 'balloon_ie.png';
-      balloon.shadow      = 20;
-      balloon.padding     = 10;
-      balloon.stemHeight  = 32;
-      balloon.stemOverlap = 3;
-      balloon.vOffset     = 1;
-      balloon.hOffset     = 1;
-      balloon.opacity     = 85;
-      break;
+ // The original cartoon bubble
+ case('GBubble') :
+ balloon.ieImage = 'balloon_ie.png';
+ balloon.shadow = 20;
+ balloon.padding = 10;
+ balloon.stemHeight = 32;
+ balloon.stemOverlap = 3;
+ balloon.vOffset = 1;
+ balloon.hOffset = 1;
+ balloon.opacity = 85;
+ break;
 
-    // The cartoon bubble with a fade-in effect
-    case('GFade') :
-      balloon.ieImage     = 'balloon_ie.png';
-      balloon.shadow      = 20;
-      balloon.padding     = 10;
-      balloon.stemHeight  = 32;
-      balloon.stemOverlap = 3;
-      balloon.vOffset     = 1;
-      balloon.hOffset     = 1;
-      balloon.opacity     = 85;
-      balloon.allowFade   = true;
-      balloon.trackCursor = false;
-      break;
-  }
+ // The cartoon bubble with a fade-in effect
+ case('GFade') :
+ balloon.ieImage = 'balloon_ie.png';
+ balloon.shadow = 20;
+ balloon.padding = 10;
+ balloon.stemHeight = 32;
+ balloon.stemOverlap = 3;
+ balloon.vOffset = 1;
+ balloon.hOffset = 1;
+ balloon.opacity = 85;
+ balloon.allowFade = true;
+ balloon.trackCursor = false;
+ break;
+ }
 ```
 
 ### Other differences
@@ -510,22 +510,22 @@ in balloon.config.js
 #### Cursor Tracking
 
 - By default, the position of non-sticky balloons (or boxes) will follow
-  the mouse cursor until it leaves the text or image that triggered the
-  balloon tooltip.
+ the mouse cursor until it leaves the text or image that triggered the
+ balloon tooltip.
 - This option can be disabled via balloon.config.js
-     balloon.trackCursor = false;
+ balloon.trackCursor = false;
 
 #### Overflow and Scrollbars
 
 - When the size of the balloon contents exceeds the balloon (or box)
-  size, two new behaviors have been introduced:
+ size, two new behaviors have been introduced:
 
-1.  for sticky tooltips, scrollbars will appear.
-2.  for non-sticky tooltips, excess contents will be clipped (hidden).
-    Note this will not usually happen unless the size of the balloons
-    has been explicitly constrained. Reasonable care must be taken here,
-    as popup balloons are not mean to contain contents exceeding
-    500-600px width and height in any case.
+1. for sticky tooltips, scrollbars will appear.
+2. for non-sticky tooltips, excess contents will be clipped (hidden).
+ Note this will not usually happen unless the size of the balloons
+ has been explicitly constrained. Reasonable care must be taken here,
+ as popup balloons are not mean to contain contents exceeding
+ 500-600px width and height in any case.
 
 #### Both height and width can be constrained
 
@@ -552,52 +552,52 @@ width="440" height="263" alt="GBoxretro.png" />
 wherever you have installed the gbrowse images on your web server).
 
 2. Add the following text to the top of you GBrowse configuration file.
-   It must be in the \[GENERAL\] section.
+ It must be in the \[GENERAL\] section.
 
 ```
 custom balloons = [GBox]
-                  balloonImage  = Box.png
-                  stem          = 0
-                  vOffset       = 20
-                  hOffset       = 20
-                  padding       = 1
-                  shadow        = 0
+ balloonImage = Box.png
+ stem = 0
+ vOffset = 20
+ hOffset = 20
+ padding = 1
+ shadow = 0
 ```
 
 3. Add this function to the top of your configuration file (in the
-   \[GENERAL\] section). This is a generic function to display all feature
-   attributes in a formatted table. It is not strictly necessary to use a
-   function like this, as you can put whatever you want in the tooltip. Be
-   sure to get rid of any cut and paste artifacts like line wrapping, each
-   new line of the code (including the closing brace) must start with at
-   least one white space character.
+ \[GENERAL\] section). This is a generic function to display all feature
+ attributes in a formatted table. It is not strictly necessary to use a
+ function like this, as you can put whatever you want in the tooltip. Be
+ sure to get rid of any cut and paste artifacts like line wrapping, each
+ new line of the code (including the closing brace) must start with at
+ least one white space character.
 
 ```de1
 # A generic function to display a table of all attribute values
 # for a feature object
 init_code =
  sub tooltip {
-    my $f = shift;
-    my $name = $f->name;
-    my @tags = $f->all_tags;
-    my $chr = $f->seq_id;
-    $chr .= ':' . $f->start . '..' . $f->end;
-    my $retval = qq([GBox] <table>);
-    $retval   .= qq(<tr><th style="color:white;background:blue;margin:-2px" colspan=2>$name ($chr)</th></tr>);
+ my $f = shift;
+ my $name = $f->name;
+ my @tags = $f->all_tags;
+ my $chr = $f->seq_id;
+ $chr .= ':' . $f->start . '..' . $f->end;
+ my $retval = qq([GBox] <table>);
+ $retval .= qq(<tr><th style="color:white;background:blue;margin:-2px" colspan=2>$name ($chr)</th></tr>);
 
-    for my $tag (sort @tags) {
-      my ($val) = $f->get_tag_values($tag);
-      $retval .= qq(<tr valign=TO><td><b>$tag</b></td><td>$val</td>);
-    }
+ for my $tag (sort @tags) {
+ my ($val) = $f->get_tag_values($tag);
+ $retval .= qq(<tr valign=TO><td><b>$tag</b></td><td>$val</td>);
+ }
 
-    return $retval . "</table>";
-  }
+ return $retval . "</table>";
+ }
 ```
 
 4\) Add the balloon tooltip option to the configuration stanza for your
 track(s)
 
-    balloon hover = sub {tooltip(shift)}
+ balloon hover = sub {tooltip(shift)}
 
 The above example passes the feature object to the tooltips function you
 added to the init_code section. More simply, you could just do:

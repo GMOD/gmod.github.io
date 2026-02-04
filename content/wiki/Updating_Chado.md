@@ -18,14 +18,14 @@ warned! :-)
 To use the updater, you can start the installation like you normally
 would:
 
-     perl Makefile.PL
-     make
-     sudo make install
+ perl Makefile.PL
+ make
+ sudo make install
 
 and then, rather than doing the next step (make load_schema) which would
 wipe out the current database, do
 
-     make update
+ make update
 
 which will (hopefully) do the updating for you. Note that if you
 modified the schema after you installed Chado the last time, this update
@@ -35,7 +35,7 @@ may fail. Please watch the output from the PostgreSQL server to look for
 You can also run this updater on the command line to update any Chado
 database by providing it's name, like this:
 
-     gmod_update_chado.pl --dbprofile chado_db_name
+ gmod_update_chado.pl --dbprofile chado_db_name
 
 which will make use of the database connection parameters stored in that
 database's configuration file in \$GMOD_ROOT/conf.

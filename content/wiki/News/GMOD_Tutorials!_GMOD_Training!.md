@@ -28,36 +28,36 @@ that image.
 The [tutorials](../Category:Tutorials) are:
 
 - **<a href="../Apollo_Tutorial" class="mw-redirect"
-  title="Apollo Tutorial">Apollo Tutorial</a>** - by [Ed
-  Lee](../User:Elee)
+ title="Apollo Tutorial">Apollo Tutorial</a>** - by [Ed
+ Lee](../User:Elee)
 - **[Artemis-Chado Integration
-  Tutorial](../Artemis-Chado_Integration_Tutorial)** -
-  by [Robin Houston](../User:RobinHouston), [Tim
-  Carver](../User:TimCarver) and [Giles
-  Velarde](../User:Buggy)
+ Tutorial](../Artemis-Chado_Integration_Tutorial)** -
+ by [Robin Houston](../User:RobinHouston), [Tim
+ Carver](../User:TimCarver) and [Giles
+ Velarde](../User:Buggy)
 - **[BioMart Tutorial](../BioMart_Tutorial)** - by
-  [Junjun Zhang](../User:Junjun) and [Syed
-  Haider](../User:SyedHaider)
+ [Junjun Zhang](../User:Junjun) and [Syed
+ Haider](../User:SyedHaider)
 - **<a href="../Chado_Tutorial" class="mw-redirect"
-  title="Chado Tutorial">Chado Tutorial</a>** - by [Scott
-  Cain](../User:Scott), [Joshua
-  Orvis](../User:Jorvis), and [Dave
-  Clements](../User:Clements)
+ title="Chado Tutorial">Chado Tutorial</a>** - by [Scott
+ Cain](../User:Scott), [Joshua
+ Orvis](../User:Jorvis), and [Dave
+ Clements](../User:Clements)
 - **[GBrowse Tutorial](../GBrowse_Tutorial)** - by
-  [Scott Cain](../User:Scott) and [Sheldon
-  McKay](../User:Mckays)
+ [Scott Cain](../User:Scott) and [Sheldon
+ McKay](../User:Mckays)
 - **<a href="../GBrowse_syn_Tutorial" class="mw-redirect"
-  title="GBrowse syn Tutorial">GBrowse_syn Tutorial</a>** - by [Sheldon
-  McKay](../User:Mckays)
+ title="GBrowse syn Tutorial">GBrowse_syn Tutorial</a>** - by [Sheldon
+ McKay](../User:Mckays)
 - **<a href="../JBrowse_Tutorial" class="mw-redirect"
-  title="JBrowse Tutorial">JBrowse Tutorial</a>** - by [Mitch
-  Skinner](../User:MitchSkinner) and Ian Holmes
+ title="JBrowse Tutorial">JBrowse Tutorial</a>** - by [Mitch
+ Skinner](../User:MitchSkinner) and Ian Holmes
 - **<a href="../MAKER_Tutorial" class="mw-redirect"
-  title="MAKER Tutorial">MAKER Tutorial</a>** - by [Carson
-  Holt](../User:Carsonholt)
+ title="MAKER Tutorial">MAKER Tutorial</a>** - by [Carson
+ Holt](../User:Carsonholt)
 - **<a href="../Tripal_Tutorial" class="mw-redirect"
-  title="Tripal Tutorial">Tripal Tutorial</a>** - by [Stephen
-  Ficklin](../User:Sficklin)
+ title="Tripal Tutorial">Tripal Tutorial</a>** - by [Stephen
+ Ficklin](../User:Sficklin)
 
 There is also a plethora of GMOD related [training and
 outreach](../Training_and_Outreach) going on in

@@ -39,7 +39,7 @@ technology.
 
 - experience in Java development
 - good knowledge of J2EE technologies (Hibernate, Spring, Struts et
-  JSP) - experience with [BioPerl](../BioPerl) or Perl objects
+ JSP) - experience with [BioPerl](../BioPerl) or Perl objects
 
 The job should start on the first of September 2008
 
@@ -79,11 +79,11 @@ Answers expected before September the 5th. The job should start on the
 **Contacts:**
 
 - Joelle Amselem:
-  <a href="mailto:joelle.amselem@versailles.inra.fr" class="external text"
-  rel="nofollow">joelle.amselem((at))versailles.inra.fr</a>
+ <a href="mailto:joelle.amselem@versailles.inra.fr" class="external text"
+ rel="nofollow">joelle.amselem((at))versailles.inra.fr</a>
 - Michael Alaux:
-  <a href="mailto:michael.alaux@versailles.inra.fr" class="external text"
-  rel="nofollow">michael.alaux((at))versailles.inra.fr</a>
+ <a href="mailto:michael.alaux@versailles.inra.fr" class="external text"
+ rel="nofollow">michael.alaux((at))versailles.inra.fr</a>
 
 *update october 2008: position for the first year now assigned.*
 

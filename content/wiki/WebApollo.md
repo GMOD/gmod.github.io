@@ -6,7 +6,7 @@ title: "WebApollo"
 ------------------------------------------------------------------------
 
 ```
-NOTE:  This document is provided for versions of Web Apollo 2014-04-03 and older.
+NOTE: This document is provided for versions of Web Apollo 2014-04-03 and older.
 ```
 
 Newer documentation can be found at the

@@ -389,13 +389,13 @@ colleges.
 ## See Also
 
 - [GMOD Europe 2009](/wiki/GMOD_Europe_2009) - The previous
-  *GMOD Europe* event.
+ *GMOD Europe* event.
 - [January 2010 GMOD
-  Meeting](/wiki/January_2010_GMOD_Meeting) - The
-  previous GMOD [community meeting](/wiki/Meetings).
+ Meeting](/wiki/January_2010_GMOD_Meeting) - The
+ previous GMOD [community meeting](/wiki/Meetings).
 - <a
-  href="http://ensembl.blogspot.com/2010/06/ensembl-developers-workshop-at-genome.html"
-  class="external text" rel="nofollow">Ensembl Developers Workshop</a> -
-  This event overlaps entirely (13-15 September) with GMOD Europe. It's
-  being held in nearby Hinxton, at the Wellcome Trust Genome Campus. We
-  were unaware of this overlap when we scheduled GMOD Europe 2010.
+ href="http://ensembl.blogspot.com/2010/06/ensembl-developers-workshop-at-genome.html"
+ class="external text" rel="nofollow">Ensembl Developers Workshop</a> -
+ This event overlaps entirely (13-15 September) with GMOD Europe. It's
+ being held in nearby Hinxton, at the Wellcome Trust Genome Campus. We
+ were unaware of this overlap when we scheduled GMOD Europe 2010.

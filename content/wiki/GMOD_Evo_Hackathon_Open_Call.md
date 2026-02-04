@@ -28,20 +28,20 @@ November 8-12, 2010<br />
 </tbody>
 </table>
 
-  Apply</span>](#How_To_Apply)
+ Apply</span>](#How_To_Apply)
 - [About
-  GMOD](#About_GMOD)
+ GMOD](#About_GMOD)
 - [About
-  Hackathons](#About_Hackathons)
+ Hackathons](#About_Hackathons)
 - [About the GMOD
-  Evo Hackathon](#About_the_GMOD_Evo_Hackathon)
-  - [Overview](#Overview)
-  - [Before the
-    Event](#Before_the_Event)
-  - [During the
-    Event](#During_the_Event)
-  - [Deliverables / Event
-    Results](#Deliverables_.2F_Event_Results)
+ Evo Hackathon](#About_the_GMOD_Evo_Hackathon)
+ - [Overview](#Overview)
+ - [Before the
+ Event](#Before_the_Event)
+ - [During the
+ Event](#During_the_Event)
+ - [Deliverables / Event
+ Results](#Deliverables_.2F_Event_Results)
 - [Links](#Links)
 
 We are seeking participants for the [GMOD Tools for Evolutionary Biology
@@ -53,9 +53,9 @@ National Evolutionary Synthesis Center (NESCent)</a> in Durham, NC.
 This hackathon targets three critical gaps in the capabilities of the
 GMOD toolbox that currently limit its utility for evolutionary research:
 
-1.  Visualization of comparative genomics data
-2.  Visualization of phylogenetic data and trees
-3.  Support for population diversity and phenotype data
+1. Visualization of comparative genomics data
+2. Visualization of phylogenetic data and trees
+3. Support for population diversity and phenotype data
 
 If you are interested in these areas and have relevant expertise, you
 are strongly encouraged to apply. Relevant areas of expertise include
@@ -96,24 +96,24 @@ Sincerely,
 The [GMOD EvoHack](/wiki/GMOD_Evo_Hackathon) Organizing
 Committee (and project affiliations as relevant):
 
-- [Nicole Washington](/wiki/User:NLWashington), Chair
-  (Lawrence Berkeley National Laboratory;
-  <a href="http://www.modencode.org" class="external text"
-  rel="nofollow">modENCODE</a>, [Phenote](/wiki/Phenote))
-- [Robert Buels](/wiki/User:RobertBuels)
-  (<a href="http://solgenomics.net/" class="external text"
-  rel="nofollow">Solanaceae Genomics Network (SGN)</a>, Chado NatDiv)
-- [Scott Cain](/wiki/User:Scott) (Ontario Institute for Cancer
-  Research, GMOD)
-- [Dave Clements](/wiki/User:Clements)
-  (<a href="http://www.nescent.org" class="external text"
-  rel="nofollow">NESCent</a>, GMOD)
-- [Hilmar Lapp](/wiki/User:Hlapp)
-  (<a href="http://www.nescent.org" class="external text"
-  rel="nofollow">NESCent</a>, Phenoscape, Chado NatDiv)
-- [Sheldon McKay](/wiki/User:Mckays) (University of Arizona;
-  <a href="http://www.iplantcollaborative.org/" class="external text"
-  rel="nofollow">iPlant</a>, [GBrowse_syn](/wiki/GBrowse_syn))
+- Nicole Washington, Chair
+ (Lawrence Berkeley National Laboratory;
+ <a href="http://www.modencode.org" class="external text"
+ rel="nofollow">modENCODE</a>, [Phenote](/wiki/Phenote))
+- Robert Buels
+ (<a href="http://solgenomics.net/" class="external text"
+ rel="nofollow">Solanaceae Genomics Network (SGN)</a>, Chado NatDiv)
+- Scott Cain (Ontario Institute for Cancer
+ Research, GMOD)
+- Dave Clements
+ (<a href="http://www.nescent.org" class="external text"
+ rel="nofollow">NESCent</a>, GMOD)
+- Hilmar Lapp
+ (<a href="http://www.nescent.org" class="external text"
+ rel="nofollow">NESCent</a>, Phenoscape, Chado NatDiv)
+- Sheldon McKay (University of Arizona;
+ <a href="http://www.iplantcollaborative.org/" class="external text"
+ rel="nofollow">iPlant</a>, [GBrowse_syn](/wiki/GBrowse_syn))
 
 ## About the [GMOD Evo Hackathon](/wiki/GMOD_Evo_Hackathon)
 
@@ -187,9 +187,9 @@ demographic boundaries.
 
 - [Main GMOD EvoHack page](/wiki/GMOD_Evo_Hackathon)
 - <a href="http://www.nescent.org" class="external text"
-  rel="nofollow">NESCent</a>
+ rel="nofollow">NESCent</a>
 - [GMOD](/wiki/Main_Page)
 - <a href="http://www.uninstallersoftware.net/" class="external text"
-  rel="nofollow">uninstall google toolbar</a>
+ rel="nofollow">uninstall google toolbar</a>
 - <a href="http://hackathon.nescent.org/" class="external text"
-  rel="nofollow">Similar past NESCent events</a>
+ rel="nofollow">Similar past NESCent events</a>

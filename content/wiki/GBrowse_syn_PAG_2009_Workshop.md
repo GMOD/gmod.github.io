@@ -11,9 +11,9 @@ width="250" height="80" alt="GBrowse syn" />
 This [Comparative Genomics with GBrowse_syn: A hands on workshop for
 visualizing your syntenic data with
 GBrowse_syn](/wiki/GBrowse_syn) tutorial was presented by
-[Sheldon McKay](/wiki/User:Mckays), [Scott
-Cain](/wiki/User:Scott), and [Dave
-Clements](/wiki/User:Clements) at the
+Sheldon McKay, Scott
+Cain, and Dave
+Clements at the
 <a href="http://www.intl-pag.org/" class="external text"
 
 most recent GBrowse syn tutorial can be found at the
@@ -28,22 +28,22 @@ class="external text" rel="nofollow">GBrowse_syn workshop</a> at the
 2009](/wiki/PAG_2009)) held in San Diego on January 10-14, 2009.
 This workshop was attended by almost 70 people.
 
-  Overview](#Overview)
+ Overview](#Overview)
 - [Workshop
-  Instructors](#Workshop_Instructors)
+ Instructors](#Workshop_Instructors)
 - [Tutorial
-  Level](#Tutorial_Level)
+ Level](#Tutorial_Level)
 - [Syllabus](#Syllabus)
 - [Laptops](#Laptops)
 - [Prerequisite
-  Software](#Prerequisite_Software)
-  - [VMware](#VMware)
-  - [System
-    Image](#System_Image)
+ Software](#Prerequisite_Software)
+ - [VMware](#VMware)
+ - [System
+ Image](#System_Image)
 - [Datasets](#Datasets)
 - [Other GMOD
-  Presentations and
-  Meetings](#Other_GMOD_Presentations_and_Meetings)
+ Presentations and
+ Meetings](#Other_GMOD_Presentations_and_Meetings)
 
 ## Overview
 
@@ -60,19 +60,19 @@ workshop](/wiki/GBrowse_PAG_2009_Workshop) at [PAG
 
 ## Workshop Instructors
 
-- [Sheldon McKay](/wiki/User:Mckays),
-  <a href="http://www.iplantcollaborative.org/" class="external text"
-  rel="nofollow">iPlant Collaborative</a> (and author of
-  [GBrowse_syn](/wiki/GBrowse_syn)),
-  <a href="http://www.cshl.edu/" class="external text" rel="nofollow">Cold
-  Spring Harbor Laboratory</a>
-- [Scott Cain](/wiki/User:Scott), GMOD Project Coordinator,
-  <a href="http://www.oicr.on.ca/" class="external text"
-  rel="nofollow">Ontario Institute for Cancer Research</a>
-- [Dave Clements](/wiki/User:Clements),
-  [GMOD_Help_Desk](/wiki/GMOD_Help_Desk),
-  <a href="http://www.nescent.org" class="external text"
-  rel="nofollow">NESCent</a>
+- Sheldon McKay,
+ <a href="http://www.iplantcollaborative.org/" class="external text"
+ rel="nofollow">iPlant Collaborative</a> (and author of
+ [GBrowse_syn](/wiki/GBrowse_syn)),
+ <a href="http://www.cshl.edu/" class="external text" rel="nofollow">Cold
+ Spring Harbor Laboratory</a>
+- Scott Cain, GMOD Project Coordinator,
+ <a href="http://www.oicr.on.ca/" class="external text"
+ rel="nofollow">Ontario Institute for Cancer Research</a>
+- Dave Clements,
+ [GMOD_Help_Desk](/wiki/GMOD_Help_Desk),
+ <a href="http://www.nescent.org" class="external text"
+ rel="nofollow">NESCent</a>
 
 ## Tutorial Level
 
@@ -122,7 +122,7 @@ height="48" alt="Windoze" /></a>
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for  and
+A free VMware player is available for and
  [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
@@ -178,8 +178,8 @@ for installation and use of GBrowse or GBrowse_syn.
 ### System Image
 
 - The virtual disk image can be downloaded from
-  <a href="/wiki/ftp://ftp.wormbase.org/pub/gmod" class="external text"
-  rel="nofollow">WormBase ftp</a>
+ <a href="/wiki/ftp://ftp.wormbase.org/pub/gmod" class="external text"
+ rel="nofollow">WormBase ftp</a>
 - The disk image is approximately 1 gigabyte.
 
 ## Datasets

@@ -25,36 +25,36 @@ class="external text" rel="nofollow">SVN code repository</a> - see
 how that process works.
 
 - *For the main GBrowse 2.0 HOWTO article, see: [GBrowse 2.0
-  HOWTO](/wiki/GBrowse_2.0_HOWTO).*
+ HOWTO](/wiki/GBrowse_2.0_HOWTO).*
 - *See also: [GBrowse Install
-  HOWTO](/wiki/GBrowse_Install_HOWTO).*
+ HOWTO](/wiki/GBrowse_Install_HOWTO).*
 
-  the CPAN Shell</span>](#Installing_via_the_CPAN_Shell)
-  - [Ubuntu
-    11.04 Issue](#Ubuntu_11.04_Issue)
+ the CPAN Shell</span>](#Installing_via_the_CPAN_Shell)
+ - [Ubuntu
+ 11.04 Issue](#Ubuntu_11.04_Issue)
 - [Installing
-  Manually](#Installing_Manually)
-  - [Running
-    the Build.PL Script](#Running_the_Build.PL_Script)
-  - [Running
-    the Build Script](#Running_the_Build_Script)
-  - [Selecting
-    Installation
-    Directories](#Selecting_Installation_Directories)
-  - [Configure
-    in Mac OS X 10.6.6](#Configure_in_Mac_OS_X_10.6.6)
-  - [Running
-    the GBrowse Demo
-    (optional)](#Running_the_GBrowse_Demo_.28optional.29)
-  - [Registering GBrowse
-    (optional)](#Registering_GBrowse_.28optional.29)
-  - [Final
-    Installation](#Final_Installation)
+ Manually](#Installing_Manually)
+ - [Running
+ the Build.PL Script](#Running_the_Build.PL_Script)
+ - [Running
+ the Build Script](#Running_the_Build_Script)
+ - [Selecting
+ Installation
+ Directories](#Selecting_Installation_Directories)
+ - [Configure
+ in Mac OS X 10.6.6](#Configure_in_Mac_OS_X_10.6.6)
+ - [Running
+ the GBrowse Demo
+ (optional)](#Running_the_GBrowse_Demo_.28optional.29)
+ - [Registering GBrowse
+ (optional)](#Registering_GBrowse_.28optional.29)
+ - [Final
+ Installation](#Final_Installation)
 - [Debugging and
-  Customizing the
-  Installation](#Debugging_and_Customizing_the_Installation)
+ Customizing the
+ Installation](#Debugging_and_Customizing_the_Installation)
 - [Advanced
-  Installation Topics](#Advanced_Installation_Topics)
+ Installation Topics](#Advanced_Installation_Topics)
 
 ## Installing via the CPAN Shell
 
@@ -65,7 +65,7 @@ before proceeding.
 You can install the latest released version of GBrowse by running the
 CPAN shell. Run this command:
 
-    sudo perl -MCPAN -e 'install Bio::Graphics::Browser2'
+ sudo perl -MCPAN -e 'install Bio::Graphics::Browser2'
 
 This will run all the steps described in the "Installing Manually"
 section below, including configuring GBrowse's installation directories
@@ -85,9 +85,9 @@ The binary version of the GD Perl module that is packaged for Ubuntu
 11.04 (Natty Narwhal) contains a bug that causes BioPerl to fail several
 of its tests, blocking GBrowse installation. To fix:
 
-    sudo apt-get remove libgd-gd2-perl
-    sudo apt-get install libgd2-noxpm-dev
-    sudo perl -MCPAN -e 'install GD'
+ sudo apt-get remove libgd-gd2-perl
+ sudo apt-get install libgd2-noxpm-dev
+ sudo perl -MCPAN -e 'install GD'
 
 Then proceed to install Bio::Graphics::Browser2 as described above.
 
@@ -101,7 +101,7 @@ before proceeding.
 
 The command to issue is:
 
-    git clone https://github.com/GMOD/GBrowse
+ git clone https://github.com/GMOD/GBrowse
 
 This will create a directory named *Generic-Genome-Browser*:
 
@@ -109,28 +109,28 @@ This will create a directory named *Generic-Genome-Browser*:
 
 Next, enter the newly-created directory and run the `Build.PL` script:
 
-     % cd Generic-Genome-Browser
-     % perl Build.PL
-     Checking whether your kit is complete...
-     Looks good
+ % cd Generic-Genome-Browser
+ % perl Build.PL
+ Checking whether your kit is complete...
+ Looks good
 
-     Checking prerequisites...
-     Looks good
+ Checking prerequisites...
+ Looks good
 
-     cc -I/usr/lib/perl/5.8/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE \
-       -DTHREADS_HAVE_PIDS -DDEBIAN -fno-strict-aliasing -pipe \
-       -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 \
-        -O2 -o /tmp/compilet.o /tmp/compilet.c
-     cc -shared -L/usr/local/lib -o /tmp/compilet.so /tmp/compilet.o
+ cc -I/usr/lib/perl/5.8/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE \
+ -DTHREADS_HAVE_PIDS -DDEBIAN -fno-strict-aliasing -pipe \
+ -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 \
+ -O2 -o /tmp/compilet.o /tmp/compilet.c
+ cc -shared -L/usr/local/lib -o /tmp/compilet.so /tmp/compilet.o
 
-     Creating new 'Build' script for 'GBrowse' version '2.00'
-     Now run:
-      ./Build test
-      ./Build config
-      ./Build demo          (optional)
-      ./Build install       (as superuser/administrator)
-            -or-
-      ./Build install_slave (optional, for slave installations)
+ Creating new 'Build' script for 'GBrowse' version '2.00'
+ Now run:
+ ./Build test
+ ./Build config
+ ./Build demo (optional)
+ ./Build install (as superuser/administrator)
+ -or-
+ ./Build install_slave (optional, for slave installations)
 
 Among other things, this script will report all the missing Perl
 libraries that you need to run GBrowse. Please be sure to [install all
@@ -138,7 +138,7 @@ prerequisites](/wiki/GBrowse_2.0_Prerequisites)
 before going any further. To install any missing Perl prerequisites
 automatically, you may run:
 
-    ./Build installdeps
+ ./Build installdeps
 
 After running, Build.PL will create a script named `Build` in the
 current directory.
@@ -151,14 +151,14 @@ running **./Build test** (the "./" is there to ensure that you are
 running the Build script in the current directory, and not some other
 Build script somewhere in your path:
 
-     % ./Build test
-     t/01yeast...................ok
-     t/02.rearchitecture.........ok
-     t/03.render.................ok
-     ...
-     All tests successful.
-     Files=8, Tests=323, 12 wallclock secs
-     Result: PASS
+ % ./Build test
+ t/01yeast...................ok
+ t/02.rearchitecture.........ok
+ t/03.render.................ok
+ ...
+ All tests successful.
+ Files=8, Tests=323, 12 wallclock secs
+ Result: PASS
 
 All tests should pass (you may safely ignore warnings and occasional
 timeout errors). If not, please file a <a
@@ -173,17 +173,17 @@ class="external text" rel="nofollow">GBrowse mailing list</a>.
 After passings its tests, you should configure GBrowse by running
 **./Build config**:
 
-     % ./Build config
+ % ./Build config
 
-     **Beginning interactive configuration**
-     Apache loadable module directory (for demo)? [/usr/lib/apache2/modules]
-     Apache CGI scripts directory? [/usr/lib/cgi-bin]
-     Directory for GBrowse's config and support files? [/etc/GBrowse2]
-     Directory for GBrowse's static images & HTML files? [/var/www/gbrowse2]
-     Internet port to run demo web site on (for demo)? [8000]
-     User account under which Apache daemon runs? [www-data]
+ **Beginning interactive configuration**
+ Apache loadable module directory (for demo)? [/usr/lib/apache2/modules]
+ Apache CGI scripts directory? [/usr/lib/cgi-bin]
+ Directory for GBrowse's config and support files? [/etc/GBrowse2]
+ Directory for GBrowse's static images & HTML files? [/var/www/gbrowse2]
+ Internet port to run demo web site on (for demo)? [8000]
+ User account under which Apache daemon runs? [www-data]
 
-     **Interactive configuration done. Run './Build reconfig' to reconfigure**
+ **Interactive configuration done. Run './Build reconfig' to reconfigure**
 
 The configuration process will ask you to confirm six site-specific
 configuration options, and will do its best to guess for you. In most
@@ -250,14 +250,14 @@ you run *./Build reconfig*. You can also bypass interactive
 configuration by directly passing Build.PL one or more of the
 configuration options on the command line:
 
-    perl Build.PL --apachemodules=/usr/local/share/apache/libexec \
-                  --cgibin=/var/lib/cgi \
-                  --conf=/etc/gbrowse \
-                  --htdocs=/usr/local/docs/gbrowse \
-                  --databases=/usr/local/gbrowse/databases \
-                  --tmp=/tmp/gbrowse \
-                  --portdemo=9000 \
-                  --wwwuser=fred
+ perl Build.PL --apachemodules=/usr/local/share/apache/libexec \
+ --cgibin=/var/lib/cgi \
+ --conf=/etc/gbrowse \
+ --htdocs=/usr/local/docs/gbrowse \
+ --databases=/usr/local/gbrowse/databases \
+ --tmp=/tmp/gbrowse \
+ --portdemo=9000 \
+ --wwwuser=fred
 
 The options passed on the command line will become the defaults for
 *./Build config* will be used during installation, and will also become
@@ -267,15 +267,15 @@ Here is an example of a 'non-standard' install, that allows you to
 install and run GB as a non-root user (assuming you have Perl's
 local-lib working properly):
 
-    perl Build.PL \
-      --cgibin=$HOME/httpd/cgi-bin/gbrowse2 \
-      --conf=$HOME/httpd/conf/gbrowse2 \
-      --htdocs=$HOME/httpd/htdocs/potato/gbrowse2 \
-      --tmp=$HOME/httpd/tmp \
-      --url_base=/potato/gbrowse2
+ perl Build.PL \
+ --cgibin=$HOME/httpd/cgi-bin/gbrowse2 \
+ --conf=$HOME/httpd/conf/gbrowse2 \
+ --htdocs=$HOME/httpd/htdocs/potato/gbrowse2 \
+ --tmp=$HOME/httpd/tmp \
+ --url_base=/potato/gbrowse2
 
-    ./Build test
-    ./Build install
+ ./Build test
+ ./Build install
 
 Note that we still need to tweak \$HOME/httpd/conf/gbrowse2/GBrowse.conf
 to set the 'url_base' from '/gbrowse2' to '/potato/gbrowse2' in this
@@ -286,77 +286,77 @@ case.
 If you install apache2 using Mac Ports
 (<a href="http://www.macports.org/" class="external free"
 
-    sh-3.2# ./Build config
+ sh-3.2# ./Build config
 
-    **Beginning interactive configuration**
-    Directory for GBrowse's config and support files? [/etc/gbrowse2] /opt/local/apache2/conf/gbrowse2
-    Directory for GBrowse's static images & HTML files? [/Library/Webserver/Documents/gbrowse2] /opt/local/apache2/htdocs/gbrowse2
-    Directory for GBrowse's temporary data [/var/tmp/gbrowse2]
-    Directory for GBrowse's example databases [/Library/Webserver/Documents/gbrowse2/databases] /opt/local/apache2/htdocs/gbrowse2/databases
-    Directory for GBrowse's CGI script executables? [/Library/Webserver/CGI-Executables/gb2] /opt/local/apache2/cgi-bin/gb2
-    Internet port to run demo web site on (for demo)? [80]
-    Apache loadable module directory (for demo)? [/usr/lib/apache/modules] /opt/local/apache2/modules
-    User account under which Apache daemon runs? [www]
+ **Beginning interactive configuration**
+ Directory for GBrowse's config and support files? [/etc/gbrowse2] /opt/local/apache2/conf/gbrowse2
+ Directory for GBrowse's static images & HTML files? [/Library/Webserver/Documents/gbrowse2] /opt/local/apache2/htdocs/gbrowse2
+ Directory for GBrowse's temporary data [/var/tmp/gbrowse2]
+ Directory for GBrowse's example databases [/Library/Webserver/Documents/gbrowse2/databases] /opt/local/apache2/htdocs/gbrowse2/databases
+ Directory for GBrowse's CGI script executables? [/Library/Webserver/CGI-Executables/gb2] /opt/local/apache2/cgi-bin/gb2
+ Internet port to run demo web site on (for demo)? [80]
+ Apache loadable module directory (for demo)? [/usr/lib/apache/modules] /opt/local/apache2/modules
+ User account under which Apache daemon runs? [www]
 
 And after install
 
-    sh-3.2# chmod -R 777 /var/tmp/gbrowse2
+ sh-3.2# chmod -R 777 /var/tmp/gbrowse2
 
 Copy configure information to the end of
 '/opt/local/apache2/conf/httpd.conf'
 
-    <Directory "/opt/local/apache2/htdocs/gbrowse2">
-      AllowOverride Options
-      Options -Indexes -MultiViews +FollowSymLinks
-      Order allow,deny
-      Allow from all
-    </Directory>
+ <Directory "/opt/local/apache2/htdocs/gbrowse2">
+ AllowOverride Options
+ Options -Indexes -MultiViews +FollowSymLinks
+ Order allow,deny
+ Allow from all
+ </Directory>
 
-    <Directory "/var/tmp/gbrowse2/images/">
-      Order allow,deny
-      Allow from all
-    </Directory>
+ <Directory "/var/tmp/gbrowse2/images/">
+ Order allow,deny
+ Allow from all
+ </Directory>
 
-    <Directory "/opt/local/apache2/cgi-bin/gb2">
+ <Directory "/opt/local/apache2/cgi-bin/gb2">
 
-      SetEnv GBROWSE_CONF   "/opt/local/apache2/conf/gbrowse2"
-    </Directory>
+ SetEnv GBROWSE_CONF "/opt/local/apache2/conf/gbrowse2"
+ </Directory>
 
-    <IfModule mod_fcgid.c>
-      Alias /fgb2 "/opt/local/apache2/cgi-bin/gb2"
-      <Location /fgb2>
-        SetHandler   fcgid-script
-        Options      ExecCGI
-      </Location>
-      DefaultInitEnv GBROWSE_CONF /opt/local/apache2/conf/gbrowse2
-      # these directives prevent idle/busy timeouts and may need to be
-      # adjusted up or down
-      FcgidMinProcessesPerClass 6
-      FcgidIOTimeout   600
-      FcgidBusyTimeout 600
+ <IfModule mod_fcgid.c>
+ Alias /fgb2 "/opt/local/apache2/cgi-bin/gb2"
+ <Location /fgb2>
+ SetHandler fcgid-script
+ Options ExecCGI
+ </Location>
+ DefaultInitEnv GBROWSE_CONF /opt/local/apache2/conf/gbrowse2
+ # these directives prevent idle/busy timeouts and may need to be
+ # adjusted up or down
+ FcgidMinProcessesPerClass 6
+ FcgidIOTimeout 600
+ FcgidBusyTimeout 600
 
-    </IfModule>
+ </IfModule>
 
-    <IfModule mod_fastcgi.c>
-      Alias /fgb2 "/opt/local/apache2/cgi-bin/gb2"
-      <Location /fgb2>
-        SetHandler   fastcgi-script
-        Options      ExecCGI
-      </Location>
-      # Note: you may need to increase -idle-timeout if file uploads are timing out and returning server
-      # errors.
-      FastCgiConfig -idle-timeout 600 -maxClassProcesses 20  -initial-env GBROWSE_CONF=/opt/local/apache2/conf/gbrowse2
-    </IfModule>
+ <IfModule mod_fastcgi.c>
+ Alias /fgb2 "/opt/local/apache2/cgi-bin/gb2"
+ <Location /fgb2>
+ SetHandler fastcgi-script
+ Options ExecCGI
+ </Location>
+ # Note: you may need to increase -idle-timeout if file uploads are timing out and returning server
+ # errors.
+ FastCgiConfig -idle-timeout 600 -maxClassProcesses 20 -initial-env GBROWSE_CONF=/opt/local/apache2/conf/gbrowse2
+ </IfModule>
 
-    <IfModule mod_perl.c>
-       Alias /mgb2 "/opt/local/apache2/cgi-bin/gb2"
+ <IfModule mod_perl.c>
+ Alias /mgb2 "/opt/local/apache2/cgi-bin/gb2"
 
-       <Location /mgb2>
-         SetHandler perl-script
-         PerlResponseHandler ModPerl::Registry
-         PerlOptions +ParseHeaders
-       </Location>
-    </IfModule>
+ <Location /mgb2>
+ SetHandler perl-script
+ PerlResponseHandler ModPerl::Registry
+ PerlOptions +ParseHeaders
+ </Location>
+ </IfModule>
 
 ### Running the GBrowse Demo (optional)
 
@@ -364,9 +364,9 @@ Before you install GBrowse, you may wish to run its demo. This will
 attempt to launch a correctly configured instance of Apache running
 under your own account. To launch the demo, run **./Build demo**:
 
-    % ./Build demo
-    Demo is now running on http://localhost:8000
-    Run "./Build demostop" to stop it.
+ % ./Build demo
+ Demo is now running on http://localhost:8000
+ Run "./Build demostop" to stop it.
 
 You can now point your web browser at
 *<a href="http://localhost:8000" class="external free"
@@ -416,4 +416,4 @@ track upload system, and restricting access to certain databases and
 tracks via user authentication, see:
 
 - [GBrowse 2.0 Install
-  HOWTO/Advanced](/wiki/GBrowse_2.0_Install_HOWTO/Advanced)
+ HOWTO/Advanced](/wiki/GBrowse_2.0_Install_HOWTO/Advanced)

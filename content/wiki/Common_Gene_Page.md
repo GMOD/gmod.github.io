@@ -3,25 +3,25 @@ title: "Common Gene Page"
 ---
 # Common Gene Page
 
-  Page Rationale</span>](#Common_Gene_Page_Rationale)
-  - [Gene Page
-    Sections](#Gene_Page_Sections)
+ Page Rationale</span>](#Common_Gene_Page_Rationale)
+ - [Gene Page
+ Sections](#Gene_Page_Sections)
 - [Implementation](#Implementation)
 - [Notes for
-  Discussion 2008](#Notes_for_Discussion_2008)
-  - [Notes from
-    the July 2008 GMOD
-    Meeting](#Notes_from_the_July_2008_GMOD_Meeting)
+ Discussion 2008](#Notes_for_Discussion_2008)
+ - [Notes from
+ the July 2008 GMOD
+ Meeting](#Notes_from_the_July_2008_GMOD_Meeting)
 - [Example
-  uses](#Example_uses)
-  - [Early
-    documents and samples](#Early_documents_and_samples)
-  - [More
-    discussion and samples](#More_discussion_and_samples)
-  - [Daphnia
-    genome database use case](#Daphnia_genome_database_use_case)
-  - [Pea aphid
-    genome annotation case](#Pea_aphid_genome_annotation_case)
+ uses](#Example_uses)
+ - [Early
+ documents and samples](#Early_documents_and_samples)
+ - [More
+ discussion and samples](#More_discussion_and_samples)
+ - [Daphnia
+ genome database use case](#Daphnia_genome_database_use_case)
+ - [Pea aphid
+ genome annotation case](#Pea_aphid_genome_annotation_case)
 
 # Common Gene Page Rationale
 
@@ -40,23 +40,23 @@ Text
 
 One outline for these attributes is to have main sections as:
 
-      BASIC_INFORMATION, LOCATION, GENE_PRODUCT, GENE_ONTOLOGY,
-      SIMILAR_GENES, FUNCTION, REAGENTS, VARIANTS, LITERATURE,
-      SUMMARY, ADDITIONAL_INFORMATION
+ BASIC_INFORMATION, LOCATION, GENE_PRODUCT, GENE_ONTOLOGY,
+ SIMILAR_GENES, FUNCTION, REAGENTS, VARIANTS, LITERATURE,
+ SUMMARY, ADDITIONAL_INFORMATION
 
 - BASIC_INFORMATION: primary gene info, including Symbol Full_name
-  Synonyms GeneID Species
+ Synonyms GeneID Species
 - LOCATION: location in genome, including Chromosome Scaffold Genome_map
 - GENE_PRODUCT: products of genes at sequence and above levels,
-  including Polypeptides Transcripts Gene_type Sequence
+ including Polypeptides Transcripts Gene_type Sequence
 - GENE_ONTOLOGY: standardized Gene Ontology parts, including GO term,
-  evidence Molecular_function, Biological_process, Cellular_component
+ evidence Molecular_function, Biological_process, Cellular_component
 - FUNCTION: higher level gene actions, including Protein_domains
-  External_links Expressions Phenotypes Interactions
+ External_links Expressions Phenotypes Interactions
 - REAGENTS: Including PCR, cDNA, EST
 - VARIANTS: mutant alleles, genetic and phenotypic variants, SNPs
 - SIMILAR_GENES: list of related organism genes, generally
-  blast-computed, including Similarity Evalue Percent
+ blast-computed, including Similarity Evalue Percent
 - LITERATURE: relevant experimental references (Dublin Core fields)
 - SUMMARY: a human-readable text summary of gene information
 - ADDITIONAL_INFORMATION: unstructured, suited for project additions
@@ -73,7 +73,7 @@ gene pages in XML format.
 
 # Notes for Discussion 2008
 
-From [Dongilbert](/wiki/User:Dongilbert) 13:15, 14 July 2008
+From Dongilbert 13:15, 14 July 2008
 (EDT) :
 
 In hopes there will be a lively discussion on this topic at the [July

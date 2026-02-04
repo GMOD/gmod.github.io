@@ -61,47 +61,47 @@ was a part of [GMOD Europe 2010](/wiki/GMOD_Europe_2010).
 See [GMOD Europe 2010](/wiki/GMOD_Europe_2010) for
 information on other events.
 
-  Participants](#Participants)
+ Participants](#Participants)
 - [Summary](#Summary)
 - [Discussion](#Discussion)
-  - [Conceptual](#Conceptual)
-    - [Non
-      Linear Thinking](#Non_Linear_Thinking)
-    - [Dynamic
-      Reference](#Dynamic_Reference)
-  - [Towards
-    Solutions](#Towards_Solutions)
-    - [Inspiration](#Inspiration)
+ - [Conceptual](#Conceptual)
+ - [Non
+ Linear Thinking](#Non_Linear_Thinking)
+ - [Dynamic
+ Reference](#Dynamic_Reference)
+ - [Towards
+ Solutions](#Towards_Solutions)
+ - [Inspiration](#Inspiration)
 - [See
-  Also](#See_Also)
+ Also](#See_Also)
 
 ## Participants
 
 | Participant | Affilliation(s) | URL |
 |----|----|----|
-| [Dave Clements](/wiki/User:Clements) | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
+| Dave Clements | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
 
 ## Summary
 
 The world is shifting away from the concept of a single reference genome
 in a number of ways:
 
-1.  For many applications we are moving to a network model ("islands of
-    stability in a sea of variation") where navigation and thinking are
-    likely to shift from today's linear, top-down paradigm, to a
-    bottom-up, networked view. This will require tools that are
-    significantly different from what we have today.
-2.  Some applications will shift from the concept of a single static
-    reference to a dynamically selected reference: "This is my genome of
-    interest, show me how it relates to other information." This will
-    not be as radical of a cognative change as the shift to a networked
-    model. Tools that operate on this model may also have visualizations
-    that are recognizable from today's tools, but the underlying
-    algorithms and data structures will be quite different.
-3.  Cutting across all areas will be the need to support data analysis
-    and multi-dimensional querying embedded in tools of all kinds. The
-    datasets are simply getting too big and too varied to not have
-    sophisticated tools for narrowing and analyzing them.
+1. For many applications we are moving to a network model ("islands of
+ stability in a sea of variation") where navigation and thinking are
+ likely to shift from today's linear, top-down paradigm, to a
+ bottom-up, networked view. This will require tools that are
+ significantly different from what we have today.
+2. Some applications will shift from the concept of a single static
+ reference to a dynamically selected reference: "This is my genome of
+ interest, show me how it relates to other information." This will
+ not be as radical of a cognative change as the shift to a networked
+ model. Tools that operate on this model may also have visualizations
+ that are recognizable from today's tools, but the underlying
+ algorithms and data structures will be quite different.
+3. Cutting across all areas will be the need to support data analysis
+ and multi-dimensional querying embedded in tools of all kinds. The
+ datasets are simply getting too big and too varied to not have
+ sophisticated tools for narrowing and analyzing them.
 
 ## Discussion
 
@@ -246,7 +246,7 @@ model could also be adopted.
 Key ideas here are network representation and navigation.
 
 Clade databases can also provide some insights here. An excerpt from and
-email from [Don Gilbert](/wiki/User:Dongilbert):
+email from Don Gilbert:
 
 Part of the answer likely involves clade genomics, i.e. don't peg your
 new genome to one reference, but to a consensus of several related. We

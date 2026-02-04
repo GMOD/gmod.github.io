@@ -32,35 +32,35 @@ On this page you will find additional information related to the [GMOD
 Evo Hackathon
 Proposal](/wiki/GMOD_Evo_Hackathon_Proposal).
 
-  of Secondary Importance</span>](#Other_topics_of_Secondary_Importance)
-  - [Natural
-    Diversity / Population Genetics / Multidimensional Data
-    Visualization in a Genomic
-    Context](#Natural_Diversity_.2F_Population_Genetics_.2F_Multidimensional_Data_Visualization_in_a_Genomic_Context)
-  - [Web-based
-    display of Chado Phenotype/Natural Diversity
-    data](#Web-based_display_of_Chado_Phenotype.2FNatural_Diversity_data)
-  - [Support
-    for pangenomes and core
-    genomes](#Support_for_pangenomes_and_core_genomes)
-  - [Support
-    for annotation tools based on phylogenetic analysis, such as
-    PAINT](#Support_for_annotation_tools_based_on_phylogenetic_analysis.2C_such_as_PAINT)
-  - [Linking
-    xrate (and other phylo-aware annotation tools) to
-    jbrowse](#Linking_xrate_.28and_other_phylo-aware_annotation_tools.29_to_jbrowse)
+ of Secondary Importance</span>](#Other_topics_of_Secondary_Importance)
+ - [Natural
+ Diversity / Population Genetics / Multidimensional Data
+ Visualization in a Genomic
+ Context](#Natural_Diversity_.2F_Population_Genetics_.2F_Multidimensional_Data_Visualization_in_a_Genomic_Context)
+ - [Web-based
+ display of Chado Phenotype/Natural Diversity
+ data](#Web-based_display_of_Chado_Phenotype.2FNatural_Diversity_data)
+ - [Support
+ for pangenomes and core
+ genomes](#Support_for_pangenomes_and_core_genomes)
+ - [Support
+ for annotation tools based on phylogenetic analysis, such as
+ PAINT](#Support_for_annotation_tools_based_on_phylogenetic_analysis.2C_such_as_PAINT)
+ - [Linking
+ xrate (and other phylo-aware annotation tools) to
+ jbrowse](#Linking_xrate_.28and_other_phylo-aware_annotation_tools.29_to_jbrowse)
 - [Discussion /
-  Development Topics](#Discussion_.2F_Development_Topics)
-  - [Post-Reference Genome
-    Tools](#Post-Reference_Genome_Tools)
-  - [High-throughput Imaging /
-    Phenotyping](#High-throughput_Imaging_.2F_Phenotyping)
-  - [Third-generation
-    Sequencing](#Third-generation_Sequencing)
-  - [Evo-Devo
-    Support](#Evo-Devo_Support)
-  - [Tree /
-    Graph Visualization](#Tree_.2F_Graph_Visualization)
+ Development Topics](#Discussion_.2F_Development_Topics)
+ - [Post-Reference Genome
+ Tools](#Post-Reference_Genome_Tools)
+ - [High-throughput Imaging /
+ Phenotyping](#High-throughput_Imaging_.2F_Phenotyping)
+ - [Third-generation
+ Sequencing](#Third-generation_Sequencing)
+ - [Evo-Devo
+ Support](#Evo-Devo_Support)
+ - [Tree /
+ Graph Visualization](#Tree_.2F_Graph_Visualization)
 
 ### Other topics of Secondary Importance
 

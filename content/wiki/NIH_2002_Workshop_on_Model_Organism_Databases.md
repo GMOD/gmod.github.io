@@ -17,75 +17,75 @@ Databases**
 
 National Human Genome Research Institute Bethesda, Md. April 29-30, 2002
 
-  Participants](#Participants)
+ Participants](#Participants)
 - [Executive
-  Summary](#Executive_Summary)
+ Summary](#Executive_Summary)
 - [Detailed
-  Report](#Detailed_Report)
-  - [Benefits
-    of Reuse](#Benefits_of_Reuse)
-  - [Good
-    Practices and Other Guidelines for New
-    MODs](#Good_Practices_and_Other_Guidelines_for_New_MODs)
-    - [1.
-      Rely on institution practices rather than
-      people](#1._Rely_on_institution_practices_rather_than_people)
-    - [2.
-      Reuse software, don't reinvent
-      it](#2._Reuse_software.2C_don.27t_reinvent_it)
-    - [3.
-      Seek "co-curation" opportunities whenever
-      possible](#3._Seek_.22co-curation.22_opportunities_whenever_possible)
-    - [4.
-      Design software with a view to
-      interoperability](#4._Design_software_with_a_view_to_interoperability)
-    - [5.
-      Perform a thorough needs analysis. Repeat
-      regularly](#5._Perform_a_thorough_needs_analysis._Repeat_regularly)
-    - [6.
-      Involve the research
-      community](#6._Involve_the_research_community)
-    - [7.
-      Interact with other MODs](#7._Interact_with_other_MODs)
-    - [8. Use
-      shared resources such as compute grids when
-      appropriate](#8._Use_shared_resources_such_as_compute_grids_when_appropriate)
-  - [A
-    Framework for Assessing Computational
-    Interoperability](#A_Framework_for_Assessing_Computational_Interoperability)
-    - [Level
-      -1: Web linking, data dumps to FTP
-      site](#Level_-1:_Web_linking.2C_data_dumps_to_FTP_site)
-    - [Level
-      0: Published API](#Level_0:_Published_API)
-    - [Level
-      1: Published API with a test
-      suite](#Level_1:_Published_API_with_a_test_suite)
-    - [Level
-      2: Published "effectively stable" API with a test
-      suite](#Level_2:_Published_.22effectively_stable.22_API_with_a_test_suite)
-    - [Level
-      3: Shared API](#Level_3:_Shared_API)
-    - [Level
-      4: Shared API based on a standard API
-      "flavor."](#Level_4:_Shared_API_based_on_a_standard_API_.22flavor..22)
-    - [Level
-      5: Adopt an approved preexisting
-      API](#Level_5:_Adopt_an_approved_preexisting_API)
-  - [Moving
-    Towards Generic
-    Components](#Moving_Towards_Generic_Components)
-  - [Need for
-    Continued Funding](#Need_for_Continued_Funding)
-  - [High
-    Priority Needs](#High_Priority_Needs)
-  - [Intellectual Property
-    Issues](#Intellectual_Property_Issues)
-    - [Appendix A: Minority opinion on IP from Rolf
-      Apweiler](#Appendix_A:_Minority_opinion_on_IP_from_Rolf_Apweiler)
-    - [Appendix B: Minority opinion on IP from
-      Peter
-      Karp](#Appendix_B:_Minority_opinion_on_IP_from_Peter_Karp)
+ Report](#Detailed_Report)
+ - [Benefits
+ of Reuse](#Benefits_of_Reuse)
+ - [Good
+ Practices and Other Guidelines for New
+ MODs](#Good_Practices_and_Other_Guidelines_for_New_MODs)
+ - [1.
+ Rely on institution practices rather than
+ people](#1._Rely_on_institution_practices_rather_than_people)
+ - [2.
+ Reuse software, don't reinvent
+ it](#2._Reuse_software.2C_don.27t_reinvent_it)
+ - [3.
+ Seek "co-curation" opportunities whenever
+ possible](#3._Seek_.22co-curation.22_opportunities_whenever_possible)
+ - [4.
+ Design software with a view to
+ interoperability](#4._Design_software_with_a_view_to_interoperability)
+ - [5.
+ Perform a thorough needs analysis. Repeat
+ regularly](#5._Perform_a_thorough_needs_analysis._Repeat_regularly)
+ - [6.
+ Involve the research
+ community](#6._Involve_the_research_community)
+ - [7.
+ Interact with other MODs](#7._Interact_with_other_MODs)
+ - [8. Use
+ shared resources such as compute grids when
+ appropriate](#8._Use_shared_resources_such_as_compute_grids_when_appropriate)
+ - [A
+ Framework for Assessing Computational
+ Interoperability](#A_Framework_for_Assessing_Computational_Interoperability)
+ - [Level
+ -1: Web linking, data dumps to FTP
+ site](#Level_-1:_Web_linking.2C_data_dumps_to_FTP_site)
+ - [Level
+ 0: Published API](#Level_0:_Published_API)
+ - [Level
+ 1: Published API with a test
+ suite](#Level_1:_Published_API_with_a_test_suite)
+ - [Level
+ 2: Published "effectively stable" API with a test
+ suite](#Level_2:_Published_.22effectively_stable.22_API_with_a_test_suite)
+ - [Level
+ 3: Shared API](#Level_3:_Shared_API)
+ - [Level
+ 4: Shared API based on a standard API
+ "flavor."](#Level_4:_Shared_API_based_on_a_standard_API_.22flavor..22)
+ - [Level
+ 5: Adopt an approved preexisting
+ API](#Level_5:_Adopt_an_approved_preexisting_API)
+ - [Moving
+ Towards Generic
+ Components](#Moving_Towards_Generic_Components)
+ - [Need for
+ Continued Funding](#Need_for_Continued_Funding)
+ - [High
+ Priority Needs](#High_Priority_Needs)
+ - [Intellectual Property
+ Issues](#Intellectual_Property_Issues)
+ - [Appendix A: Minority opinion on IP from Rolf
+ Apweiler](#Appendix_A:_Minority_opinion_on_IP_from_Rolf_Apweiler)
+ - [Appendix B: Minority opinion on IP from
+ Peter
+ Karp](#Appendix_B:_Minority_opinion_on_IP_from_Peter_Karp)
 
 ## Participants
 
@@ -453,10 +453,10 @@ would deal with the following issues with respect to the focus domain:
 - Data format standards.
 - Transport standards.
 - The task of each workshop would be to develop a plan for
-  standardization of the focus domain, and a schedule for implementing
-  the plan. Workshop attendees would meet again at subsequent
-  domain-focused workshops in order to assess progress towards
-  development of the components and to test their interoperability.
+ standardization of the focus domain, and a schedule for implementing
+ the plan. Workshop attendees would meet again at subsequent
+ domain-focused workshops in order to assess progress towards
+ development of the components and to test their interoperability.
 
 Between workshops, development work will be coordinated through the GMOD
 Web site (www.gmod.org). This is a SourceForge-sponsored development
@@ -509,21 +509,21 @@ needed. The list is prioritized from highest need to lowest:
 - Continuing ontology development.
 - A documented model organism database schema.
 - Viewers:
-  - Annotated sequences
-  - Comparative, functional and relational map viewers
-  - Data capture & curation tools for:
-  - Sequence annotation
-  - Comparative sequence analysis
-  - Literature tracking and management
-  - Microarray data
-  - Expression data
-  - Molecular interactions
-  - Functional annotation of proteins
-  - Phenotype data
-  - Image curation and searching
-  - Ontology creation and maintenance aids
-  - Data export tools
-  - Network viewers and tools (regulatory, protein-protein interaction)
+ - Annotated sequences
+ - Comparative, functional and relational map viewers
+ - Data capture & curation tools for:
+ - Sequence annotation
+ - Comparative sequence analysis
+ - Literature tracking and management
+ - Microarray data
+ - Expression data
+ - Molecular interactions
+ - Functional annotation of proteins
+ - Phenotype data
+ - Image curation and searching
+ - Ontology creation and maintenance aids
+ - Data export tools
+ - Network viewers and tools (regulatory, protein-protein interaction)
 
 ### Intellectual Property Issues
 

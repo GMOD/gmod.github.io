@@ -3,16 +3,16 @@ title: "Store an unigene in Chado HOWTO"
 ---
 # Store an unigene in Chado HOWTO
 
-  an unigene in a Chado
-  database</span>](#How_to_store_an_unigene_in_a_Chado_database)
-  - [Chado
-    layout](#Chado_layout)
-    - [Analysis](#Analysis)
-    - [ESTs](#ESTs)
-    - [Unigene](#Unigene)
-      - [Note](#Note)
-    - [ESTs
-      and assembly alignments](#ESTs_and_assembly_alignments)
+ an unigene in a Chado
+ database</span>](#How_to_store_an_unigene_in_a_Chado_database)
+ - [Chado
+ layout](#Chado_layout)
+ - [Analysis](#Analysis)
+ - [ESTs](#ESTs)
+ - [Unigene](#Unigene)
+ - [Note](#Note)
+ - [ESTs
+ and assembly alignments](#ESTs_and_assembly_alignments)
 
 # How to store an unigene in a Chado database
 
@@ -45,22 +45,22 @@ the transcribed_cluster feature.
 
 Let's store an unigene in the database:
 
-    transcribed_cluster
-    EST1       --------->     (EST)
-    EST2           <--------- (EST)
-    consensus  -------------> (stored in the transcribed_cluster residues)
+ transcribed_cluster
+ EST1 ---------> (EST)
+ EST2 <--------- (EST)
+ consensus -------------> (stored in the transcribed_cluster residues)
 
 This schema would also work with the NCBI unigenes that do not have
 consensus.
 
 We have to store several items in the chado database:
 
-1.  The analysis that has clustered and assembled the ESTs.
-2.  The ESTs.
-3.  The consensus assembly.
-4.  The relationship graph between the ESTs and the consensus (aka the
-    unigene cluster)
-5.  The alignments between each EST and the consensus.
+1. The analysis that has clustered and assembled the ESTs.
+2. The ESTs.
+3. The consensus assembly.
+4. The relationship graph between the ESTs and the consensus (aka the
+ unigene cluster)
+5. The alignments between each EST and the consensus.
 
 ### Analysis
 
@@ -68,12 +68,12 @@ The analysis is stored in the [analysis
 table](/wiki/Chado_Tables#Table:_analysis):
 
 - **name**: A way of grouping analyses. This should be a handy short
-  identifier that can help people find an analysis they want. For
-  instance "unigene clustering", and it should not be assumed to be
-  unique. For instance, there may be lots of separate analyses done
-  against a cDNA database.
+ identifier that can help people find an analysis they want. For
+ instance "unigene clustering", and it should not be assumed to be
+ unique. For instance, there may be lots of separate analyses done
+ against a cDNA database.
 - **description**: Some description of this clustering and assembly
-  analysis.
+ analysis.
 - **program**: Program used, like CAP3 or mira.
 - **programversion**:
 - **algorithm**:
@@ -92,7 +92,7 @@ table](/wiki/Chado_Tables#Table:_feature).
 - **type_id**: 345
 - **is_analysis**: False
 
-| dbxref_id  | organism    | name   | uniquename | type_id   | is_analysis |
+| dbxref_id | organism | name | uniquename | type_id | is_analysis |
 |------------|-------------|--------|------------|-----------|-------------|
 | CMV:EST001 | organism id | EST001 | CMV:EST001 | SO:345 id | False |
 | CMV:EST002 | organism id | EST002 | CMV:EST002 | SO:345 id | False |
@@ -109,13 +109,13 @@ residues.
 
 The feature entry for the unigene.
 
-| dbxref_id  | organism | name   | uniquename | type_id    | is_analysis |
+| dbxref_id | organism | name | uniquename | type_id | is_analysis |
 |------------|----------|--------|------------|------------|-------------|
 | CMV:UNI001 | ? | UNI001 | CMV:UNI001 | SO:1457 id | True |
 
 The feature relationships (feature graph).
 
-| subject_id | object_id | type_id    | rank |
+| subject_id | object_id | type_id | rank |
 |------------|-----------|------------|------|
 | EST001 id | UNI001 id | part_of id | 0 |
 | EST002 id | UNI000 id | part_of id | 0 |
@@ -135,15 +135,15 @@ The ESTs are all aligned with the assembly consensus. For each EST there
 is an alignment. For each alignment there is:
 
 - a feature (type <a
-  href="http://www.sequenceontology.org/miso/current_cvs/term/SO:0000668"
-  class="external text" rel="nofollow">EST_match</a> (SO:0000668))
+ href="http://www.sequenceontology.org/miso/current_cvs/term/SO:0000668"
+ class="external text" rel="nofollow">EST_match</a> (SO:0000668))
 - an entry in the analysis feature table.
 - two feature_locs, one for the consensus assembly and another for the
-  EST.
+ EST.
 
 Additional features for the alignments.
 
-| organism | uniquename      | type_id   | is_analysis |
+| organism | uniquename | type_id | is_analysis |
 |----------|-----------------|-----------|-------------|
 | ? | CMV:UNI001_EST1 | SO:668 id | True |
 | ? | CMV:UNI001_EST2 | SO:668 id | True |
@@ -152,7 +152,7 @@ An [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
 for each of the previous features with the alignment scores. If we don't
 need to store these scores, maybe be this table could be optional.
 
-| feature_id         | analysis_id                | identity |
+| feature_id | analysis_id | identity |
 |--------------------|----------------------------|----------------|
 | CMV:UNI001_EST1 id | EST clustering analysis id | The identity % |
 | CMV:UNI001_EST2 id | EST clustering analysis id | The identity % |

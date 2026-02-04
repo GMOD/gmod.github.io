@@ -28,8 +28,8 @@ Apollo<sup>[\[5\]](#cite_note-PMID:12537571-5)</sup>
 unrelated perl test:
 
 ``` de1
-  use strict;
-  print "ack!";
+ use strict;
+ print "ack!";
 ```
 
 Compare to
@@ -38,17 +38,17 @@ class="external text" rel="nofollow">Behavior on EcoliWiki</a>
 
 ## References
 
-1.  <span id="cite_note-PMID:12368253"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:12368253_0)</span>
-    **Cite error: Invalid `<ref>` tag; no text was provided for refs
-    named `PMID:12368253`**</span>
-2.  <span id="cite_note-2"><span class="mw-cite-backlink">[↑](#cite_ref-2)</span>
-    <span class="reference-text">PMID:12368253</span></span>
-3.  <span id="cite_note-PMID:_17301755"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:_17301755_0)</span>
-    **Cite error: Invalid `<ref>` tag; no text was provided for refs
-    named `PMID:_17301755`**</span>
-4.  <span id="cite_note-PMID:2657739"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:2657739_0)</span>
-    **Cite error: Invalid `<ref>` tag; no text was provided for refs
-    named `PMID:2657739`**</span>
-5.  <span id="cite_note-PMID:12537571"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:12537571_0)</span>
-    **Cite error: Invalid `<ref>` tag; no text was provided for refs
-    named `PMID:12537571`**</span>
+1. <span id="cite_note-PMID:12368253"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:12368253_0)</span>
+ **Cite error: Invalid `<ref>` tag; no text was provided for refs
+ named `PMID:12368253`**</span>
+2. <span id="cite_note-2"><span class="mw-cite-backlink">[↑](#cite_ref-2)</span>
+ <span class="reference-text">PMID:12368253</span></span>
+3. <span id="cite_note-PMID:_17301755"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:_17301755_0)</span>
+ **Cite error: Invalid `<ref>` tag; no text was provided for refs
+ named `PMID:_17301755`**</span>
+4. <span id="cite_note-PMID:2657739"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:2657739_0)</span>
+ **Cite error: Invalid `<ref>` tag; no text was provided for refs
+ named `PMID:2657739`**</span>
+5. <span id="cite_note-PMID:12537571"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:12537571_0)</span>
+ **Cite error: Invalid `<ref>` tag; no text was provided for refs
+ named `PMID:12537571`**</span>

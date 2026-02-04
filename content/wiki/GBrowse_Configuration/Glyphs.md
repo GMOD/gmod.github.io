@@ -7,14 +7,14 @@ This article describes **glyphs** and **glyph configuration options** in
 GBrowse.
 
 - *For the main GBrowse configuration article, see:
-  <a href="../GBrowse_Configuration" class="mw-redirect"
-  title="GBrowse Configuration">GBrowse Configuration</a>.*
+ <a href="../GBrowse_Configuration" class="mw-redirect"
+ title="GBrowse Configuration">GBrowse Configuration</a>.*
 - *See also: [Glyphs and Glyph
-  Options](../Glyphs_and_Glyph_Options), a
-  competing document.*
+ Options](../Glyphs_and_Glyph_Options), a
+ competing document.*
 - *See also: <a href="http://webgbrowse.cgb.indiana.edu/glyphdoc.html"
-  class="external text" rel="nofollow">The Glyph Gallery</a> at
-  webgbrowse.*
+ class="external text" rel="nofollow">The Glyph Gallery</a> at
+ webgbrowse.*
 
 ## Glyphs and Glyph Options
 
@@ -32,7 +32,7 @@ Predefined glyphs are:
 
 | Glyph | Description |
 |----|----|
-| <a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph" |  |
+| <a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph" | |
 class="extiw" title="bp:Module:Bio::Graphics::Glyph">Glyph</a> | Common options for all glyphs. (*Glyph* is the parent class of all the glyphs). | <a
 href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::allele_tower"
 
@@ -113,7 +113,7 @@ modules:
 The "perldoc" command is handy for reading the documentation from the
 Unix command line. For example:
 
-      perldoc Bio::Graphics::Glyph::primers
+ perldoc Bio::Graphics::Glyph::primers
 
 This will provide you with a summary of the options that apply to the
 "primers" glyph.
@@ -125,19 +125,19 @@ that connects the two inward pointing arrows in the primer pair glyph.
 This translates to the configuration file as an option named
 "connect_color". For example:
 
-    [PCR Products]
-    glyph = primer
-    connect_color = blue
+ [PCR Products]
+ glyph = primer
+ connect_color = blue
 
 When referring to colors, you can use a variety of color names such as
 "blue" and "green". To get the full list, cut and paste the following
 magic incantation into the command line:
 
-    perl -MBio::Graphics::Panel -e 'print join "\n",Bio::Graphics::Panel->color_names'
+ perl -MBio::Graphics::Panel -e 'print join "\n",Bio::Graphics::Panel->color_names'
 
 or see this URL:
 
-     http://www.wormbase.org/db/seq/gbrowse?help=annotation
+ http://www.wormbase.org/db/seq/gbrowse?help=annotation
 
 Alternatively, you can use the \#RRGGBB notation to specify the red,
 green and blue components of the color. Refer to any book on HTML for

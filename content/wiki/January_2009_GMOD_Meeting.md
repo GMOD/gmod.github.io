@@ -43,67 +43,67 @@ participants](#Meeting_Participants) at the meeting.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2009Meeting.JPG" width="319"
 height="100" alt="Jan 2009 Meeting" />
 
-  Agenda](#Agenda)
-  - [Thursday,
-    January 15](#Thursday.2C_January_15)
-  - [Friday,
-    January 16](#Friday.2C_January_16)
+ Agenda](#Agenda)
+ - [Thursday,
+ January 15](#Thursday.2C_January_15)
+ - [Friday,
+ January 16](#Friday.2C_January_16)
 - [Themes and
-  Discussions](#Themes_and_Discussions)
-  - [Data
-    Sharing](#Data_Sharing)
+ Discussions](#Themes_and_Discussions)
+ - [Data
+ Sharing](#Data_Sharing)
 - [Presentations](#Presentations)
-  - [The State
-    of GMOD](#The_State_of_GMOD)
-    - [Releases](#Releases)
-    - [Howard
-      Hughes Medical Institute Science Education
-      Alliance](#Howard_Hughes_Medical_Institute_Science_Education_Alliance)
-    - [GBrowse Update](#GBrowse_Update)
-  - [GMOD Help
-    Desk](#GMOD_Help_Desk)
-  - [A RESTful
-    Interface for MODs?](#A_RESTful_Interface_for_MODs.3F)
-  - [Data
-    Representation in Chado: Best
-    Practices](#Data_Representation_in_Chado:_Best_Practices)
-  - [Generic
-    Gene Page XML](#Generic_Gene_Page_XML)
-  - [BioMart](#BioMart)
-  - [JBrowse](#JBrowse)
-  - [GMODWeb
-    and Package Management](#GMODWeb_and_Package_Management)
-  - [EcoliWiki
-    and TableEdit](#EcoliWiki_and_TableEdit)
-  - [WebGBrowse: GBrowse Configuration
-    Management](#WebGBrowse:_GBrowse_Configuration_Management)
-  - [Drupal
-    and MarineGenomics.org](#Drupal_and_MarineGenomics.org)
-    - [Drupal](#Drupal)
-    - [Drupal and Chado](#Drupal_and_Chado)
-    - [Tripal](#Tripal)
-  - [Artemis
-    and Chado at GeneDB](#Artemis_and_Chado_at_GeneDB)
-  - [Chado and
-    GUS at SBRI](#Chado_and_GUS_at_SBRI)
-  - [modENCODE: extending Chado, BIR-TAB, & GBrowse
-    for automating data validation &
-    display](#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display)
-  - [BeeSpace](#BeeSpace)
-  - [Metadata
-    Input and Submission Tool and GIS linked metagenomic
-    database](#Metadata_Input_and_Submission_Tool_and_GIS_linked_metagenomic_database)
-  - [Bovine
-    Genome Database](#Bovine_Genome_Database)
-  - [GNPAnnot](#GNPAnnot)
+ - [The State
+ of GMOD](#The_State_of_GMOD)
+ - [Releases](#Releases)
+ - [Howard
+ Hughes Medical Institute Science Education
+ Alliance](#Howard_Hughes_Medical_Institute_Science_Education_Alliance)
+ - [GBrowse Update](#GBrowse_Update)
+ - [GMOD Help
+ Desk](#GMOD_Help_Desk)
+ - [A RESTful
+ Interface for MODs?](#A_RESTful_Interface_for_MODs.3F)
+ - [Data
+ Representation in Chado: Best
+ Practices](#Data_Representation_in_Chado:_Best_Practices)
+ - [Generic
+ Gene Page XML](#Generic_Gene_Page_XML)
+ - [BioMart](#BioMart)
+ - [JBrowse](#JBrowse)
+ - [GMODWeb
+ and Package Management](#GMODWeb_and_Package_Management)
+ - [EcoliWiki
+ and TableEdit](#EcoliWiki_and_TableEdit)
+ - [WebGBrowse: GBrowse Configuration
+ Management](#WebGBrowse:_GBrowse_Configuration_Management)
+ - [Drupal
+ and MarineGenomics.org](#Drupal_and_MarineGenomics.org)
+ - [Drupal](#Drupal)
+ - [Drupal and Chado](#Drupal_and_Chado)
+ - [Tripal](#Tripal)
+ - [Artemis
+ and Chado at GeneDB](#Artemis_and_Chado_at_GeneDB)
+ - [Chado and
+ GUS at SBRI](#Chado_and_GUS_at_SBRI)
+ - [modENCODE: extending Chado, BIR-TAB, & GBrowse
+ for automating data validation &
+ display](#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display)
+ - [BeeSpace](#BeeSpace)
+ - [Metadata
+ Input and Submission Tool and GIS linked metagenomic
+ database](#Metadata_Input_and_Submission_Tool_and_GIS_linked_metagenomic_database)
+ - [Bovine
+ Genome Database](#Bovine_Genome_Database)
+ - [GNPAnnot](#GNPAnnot)
 - [Registration](#Registration)
 - [Agenda
-  Proposals](#Agenda_Proposals)
+ Proposals](#Agenda_Proposals)
 - [Meeting
-  Participants](#Meeting_Participants)
+ Participants](#Meeting_Participants)
 - [Feedback](#Feedback)
 - [Next Meeting:
-  August 2009 at Oxford](#Next_Meeting:_August_2009_at_Oxford)
+ August 2009 at Oxford](#Next_Meeting:_August_2009_at_Oxford)
 
 ## Agenda
 
@@ -112,20 +112,20 @@ height="100" alt="Jan 2009 Meeting" />
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
 | 10:00 AM | Registration | 10:30 AM | Introductions |
-| [Scott Cain](/wiki/User:Scott) | 11:00 AM | The State of GMOD | [Scott Cain](/wiki/User:Scott) |
-| <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Jan2009StateOfGMOD.ppt" |  |  |  |
-class="internal" title="Jan2009StateOfGMOD.ppt">PPT</a>, [Summary](#The_State_of_GMOD) | 11:30 AM | A variety of [GMOD Help Desk](/wiki/GMOD_Help_Desk) stuff | [Dave Clements](/wiki/User:Clements) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Jan2009HelpDesk.pdf" class="internal"
+| Scott Cain | 11:00 AM | The State of GMOD | Scott Cain |
+| <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Jan2009StateOfGMOD.ppt" | | | |
+class="internal" title="Jan2009StateOfGMOD.ppt">PPT</a>, [Summary](#The_State_of_GMOD) | 11:30 AM | A variety of [GMOD Help Desk](/wiki/GMOD_Help_Desk) stuff | Dave Clements | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Jan2009HelpDesk.pdf" class="internal"
 title="Jan2009HelpDesk.pdf">PDF</a>, [Summary](#GMOD_Help_Desk) | 12:00 PM | Lunch | *one hour 30 minutes* | 1:30 PM | <a href="http://drupal.org" class="external text"
 
 class="internal" title="Jan2009MarineGenomics.pdf">PDF</a>, [Summary](#Drupal_and_MarineGenomics.org) | 2:00 PM | <a href="http://www.sanger.ac.uk/Software/Artemis/"
 class="external text" rel="nofollow">Artemis</a> and <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> at <a href="http://www.genedb.org/" class="external text"
 
 class="internal" title="Jan2009ArtemisChadoGeneDB.ppt">PPT</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8a/Jan2009ArtemisChadoGeneDB.pdf"
-class="internal" title="Jan2009ArtemisChadoGeneDB.pdf">PDF</a>, [Summary](#Artemis_and_Chado_at_GeneDB) | 2:30 PM | modENCODE: extending <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, BIR-TAB, & GBrowse for automating data validation & display | [Nicole Washington](/wiki/User:NLWashington) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/70/Jan2009modENCODE.pdf" class="internal"
-title="Jan2009modENCODE.pdf">PDF</a>, [Summary](#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display) | 3:00 PM | Break | 3:30 PM | A RESTful interface for [MODs](/wiki/MOD)? | [Josh Goodman](/wiki/User:Jogoodma) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/Jan2009RESTfulMODs.ppt"
+class="internal" title="Jan2009ArtemisChadoGeneDB.pdf">PDF</a>, [Summary](#Artemis_and_Chado_at_GeneDB) | 2:30 PM | modENCODE: extending <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, BIR-TAB, & GBrowse for automating data validation & display | Nicole Washington | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/70/Jan2009modENCODE.pdf" class="internal"
+title="Jan2009modENCODE.pdf">PDF</a>, [Summary](#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display) | 3:00 PM | Break | 3:30 PM | A RESTful interface for [MODs](/wiki/MOD)? | Josh Goodman | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/Jan2009RESTfulMODs.ppt"
 class="internal" title="Jan2009RESTfulMODs.ppt">PPT</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/66/Jan2009RESTfulMODs.pdf"
 class="internal" title="Jan2009RESTfulMODs.pdf">PDF</a>, [Summary](#A_RESTful_Interface_for_MODs.3F), [Discussion](#Data_Sharing) | 4:00 PM | Metadata Input and Submission Tool and GIS linked metagenomic database | Iddo Friedberg and Christopher Condit | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c7/Jan2009MIST.pdf" class="internal"
-title="Jan2009MIST.pdf">PDF</a>, [Summary](#Metadata_Input_and_Submission_Tool_and_GIS_linked_metagenomic_database) | 4:30 PM | Data Representation in <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>: Best Practices | [Joshua Orvis](/wiki/User:Jorvis) and/or Scott Cain | [Summary](#Data_Representation_in_Chado:_Best_Practices), [Discussion](#Data_Sharing) | 5:00 PM | Dinner (on your own) |  ### Friday, January 16
+title="Jan2009MIST.pdf">PDF</a>, [Summary](#Metadata_Input_and_Submission_Tool_and_GIS_linked_metagenomic_database) | 4:30 PM | Data Representation in <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>: Best Practices | Joshua Orvis and/or Scott Cain | [Summary](#Data_Representation_in_Chado:_Best_Practices), [Discussion](#Data_Sharing) | 5:00 PM | Dinner (on your own) | ### Friday, January 16
 
 <table class="wikitable">
 <colgroup>
@@ -149,7 +149,7 @@ title="Jan2009MIST.pdf">PDF</a>, [Summary](#Metadata_Input_and_Submission_Tool_a
 href="http://www.gusdb.org/" class="external text"
 
 class="external text" rel="nofollow">SBRI</a></td>
-<td><a href="/wiki/User%253ASivam" title="User%253ASivam">Dhileep Sivam</a> and
+<td>Dhileep Sivam and
 Isabelle Phan</td>
 <td><a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/2009_GMOD_Meeting_Dhileep_Sivam_and_Isabelle_Phan.ppt"
@@ -200,8 +200,8 @@ href="#WebGBrowse:_GBrowse_Configuration_Management">Summary</a></td>
 <td>11:30 AM</td>
 <td><a href="http://genome.biowiki.org" class="external text"
 
-<td><a href="/wiki/User%253AMitchSkinner" title="User%253AMitchSkinner">Mitch
-Skinner</a></td>
+<td>Mitch
+Skinner</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Jan2009JBrowse.odp"
 class="internal" title="Jan2009JBrowse.odp">ODP</a>, <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/ca/Jan2009JBrowse.pdf" class="internal"
@@ -218,8 +218,8 @@ title="Jan2009JBrowse.pdf">PDF</a>, <a href="#JBrowse">Summary</a></td>
 <td><a href="http://ecoliwiki.net" class="external text"
 
 title="TableEdit">TableEdit</a></td>
-<td><a href="/wiki/User%253ADanielRenfro" title="User%253ADanielRenfro">Daniel
-Renfro</a></td>
+<td>Daniel
+Renfro</td>
 <td><span style="font-size:smaller;">I tried, but all I get is
 errors.<br />
 And PowerPoint makes a 10MB pdf,<br />
@@ -286,7 +286,7 @@ Several presentations touched on this:
 
 - [A RESTful Interface for MODs?](#A_RESTful_Interface_for_MODs.3F)
 - [Data Representation in Chado: Best
-  Practices](#Data_Representation_in_Chado:_Best_Practices)
+ Practices](#Data_Representation_in_Chado:_Best_Practices)
 - [Generic Gene Page XML](#Generic_Gene_Page_XML)
 - [Chado and GUS at SBRI](#Chado_and_GUS_at_SBRI)
 
@@ -296,7 +296,7 @@ modest goals, or should we aim for a sweet spot in the middle? Should we
 emphasize robustness or ease of implementation? Should GMOD support
 *semantic web* efforts?
 
-[Josh Goodman](/wiki/User:Jogoodma)
+Josh Goodman
 [argued](#A_RESTful_Interface_for_MODs.3F) that RESTful interfaces
 provide the highest payoff for the least amount of effort -- that
 RESTful was both useful and the easiest to implement.
@@ -318,7 +318,7 @@ services working
 group](/wiki/Web_services_working_group) and will
 continue and expand this discussion with the GMOD community.**
 
-[Joshua Orvis](/wiki/User:Jorvis)'s "[Data Representation in
+Joshua Orvis's "[Data Representation in
 Chado: Best Practices](#Data_Representation_in_Chado:_Best_Practices)"
 session dealt with the same issue, this time in the context of
 representing biology within
@@ -332,8 +332,8 @@ practices would enable both data sharing and common tools. Joshua got
 the ball rolling by describing IGS's Chado practices on the [IGS Data
 Representation](/wiki/IGS_Data_Representation) page.
 
-RDF got additional discussion during [Dhileep
-Sivam](/wiki/User:Sivam) and Isabelle Phan's session on [Chado
+RDF got additional discussion during Dhileep
+Sivam and Isabelle Phan's session on [Chado
 and GUS at SBRI](#Chado_and_GUS_at_SBRI).
 <a href="http://dev.isb-sib.ch/projects/uniprot-rdf/intro.html"
 class="external text" rel="nofollow">Uniprot uses RDF</a> to represent

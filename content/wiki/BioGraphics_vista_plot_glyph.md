@@ -32,10 +32,10 @@ Example:
 
 See the Bio::Graphics::Glyph::vista_plot manual page for full details.
 
-    $panel->add_track($features,
-                      -glyph    => vista_plot,
-                      -option1  => $value1,
-                      -option2  => $value2...);
+ $panel->add_track($features,
+ -glyph => vista_plot,
+ -option1 => $value1,
+ -option2 => $value2...);
 
 To experiment with this glyph's options, use the glyph_help.pl script
 with either the -v or -p switch. Run "glyph_help -help" for details.

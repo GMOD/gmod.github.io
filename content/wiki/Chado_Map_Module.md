@@ -3,18 +3,18 @@ title: "Chado Map Module"
 ---
 # Chado Map Module
 
-  Introduction](#Introduction)
-  - [To
-    Do](#To_Do)
-  - [Tables](#Tables)
-  - [Table:
-    featuremap](#Table:_featuremap)
-  - [Table:
-    featuremap_pub](#Table:_featuremap_pub)
-  - [Table:
-    featurepos](#Table:_featurepos)
-  - [Table:
-    featurerange](#Table:_featurerange)
+ Introduction](#Introduction)
+ - [To
+ Do](#To_Do)
+ - [Tables](#Tables)
+ - [Table:
+ featuremap](#Table:_featuremap)
+ - [Table:
+ featuremap_pub](#Table:_featuremap_pub)
+ - [Table:
+ featurepos](#Table:_featurepos)
+ - [Table:
+ featurerange](#Table:_featurerange)
 
 # Introduction
 
@@ -23,24 +23,24 @@ Note: this module is all due for revision.
 A possibly problematic case is where we want to localize an object to
 the left or right of a feature (but not within it):
 
-           ------------------------------------------------- map
+ ------------------------------------------------- map
 |------|----------|
-| features to map wrt |  |
+| features to map wrt | |
 
 ### To Do
 
 - Determine how we would map the 3' end of the feature-to-map.
 - Get a comprehensive set of mapping use-cases.
-  - One set of use-cases is aberrations (which will all be involved with
-    this module). Simple aberrations should be do-able, but what about
-    cases where a breakpoint interrupts a gene? Would this be an example
-    of the problematic case above?
+ - One set of use-cases is aberrations (which will all be involved with
+ this module). Simple aberrations should be do-able, but what about
+ cases where a breakpoint interrupts a gene? Would this be an example
+ of the problematic case above?
 
 ## Tables
 
 ## Table: featuremap
 
-| F-Key                                               | Name          | Type                   | Description   | --------------------------------------------------- | ------------- | ---------------------- | ------------- |                                                     | featuremap_id | serial                 | _PRIMARY KEY_ |                                                     | name          | character varying(255) | _UNIQUE_      |                                                     | description   | text                   | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | unittype_id   | integer                featuremap Structure
+| F-Key | Name | Type | Description | --------------------------------------------------- | ------------- | ---------------------- | ------------- | | featuremap_id | serial | _PRIMARY KEY_ | | name | character varying(255) | _UNIQUE_ | | description | text | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | unittype_id | integer featuremap Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -52,7 +52,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: featuremap_pub
 
-| F-Key                                                       | Name              | Type    | Description   | ----------------------------------------------------------- | ----------------- | ------- | ------------- |                                                             | featuremap_pub_id | serial  | _PRIMARY KEY_ | [featuremap](/wiki/Chado_Tables#Table:_featuremap) | featuremap_id     | integer | _NOT NULL_    | [pub](/wiki/Chado_Tables#Table:_pub)               | pub_id            | integer | _NOT NULL_    |
+| F-Key | Name | Type | Description | ----------------------------------------------------------- | ----------------- | ------- | ------------- | | featuremap_pub_id | serial | _PRIMARY KEY_ | [featuremap](/wiki/Chado_Tables#Table:_featuremap) | featuremap_id | integer | _NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _NOT NULL_ |
 
 featuremap_pub Structure
 

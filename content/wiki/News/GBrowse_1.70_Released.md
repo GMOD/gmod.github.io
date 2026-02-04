@@ -36,27 +36,27 @@ list](../GMOD_Mailing_Lists).
 Changes from 1.69 to 1.70:
 
 - Bug fixes for the Chado adapter, including improving wildcard
-  searching and fixing a bug that caused ALL features on a reference
-  sequence to be returned when the segment was at the beginning of the
-  reference sequence.
+ searching and fixing a bug that caused ALL features on a reference
+ sequence to be returned when the segment was at the beginning of the
+ reference sequence.
 - Fixed [Galaxy](../Galaxy.1) support bug which caused
-  prevented features from multiple tracks being selected.
+ prevented features from multiple tracks being selected.
 - Fixed problem with feature highlighting which caused highlighting to
-  get "stuck"on beige.
+ get "stuck"on beige.
 - Removed annoying debugging statements from log files
 - Fixed character encoding issues for onClick popup balloons
 - Killed annoying "missing path" warning on windows systems
 - Fixed issue in which the selected region shown in the overview is
-  offset from true region.
+ offset from true region.
 - Silenced log file warnings when inkscape isn't present.
 - Added "merge searches" option to turn merging of similarly-named
-  features on and off.
+ features on and off.
 - Moved Bio::DB::Das::Chado and Bio::DB::BioSQL to their own packages
-  and out of the GBrowse distribution so they can be updated
-  independently via CPAN
+ and out of the GBrowse distribution so they can be updated
+ independently via CPAN
 - Fixed encoding of version number at the bottom of the page.
 - Made the <a href="../DAS" class="mw-redirect" title="DAS">DAS</a>
-  script compatible with DAS Registry
+ script compatible with DAS Registry
 
 [Scott](../User:Scott)
 

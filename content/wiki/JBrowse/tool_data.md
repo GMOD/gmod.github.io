@@ -29,11 +29,11 @@ for the server.
 ### Features
 
 - Fast, smooth scrolling and zooming. Explore your genome with
-  unparalleled speed.
+ unparalleled speed.
 - Scales easily to multi-gigabase genomes.
 - Supports GFF3, BED, FASTA, Wiggle, BigWig, BAM, and more.
 - Very light server resource requirements. Serve huge datasets from a
-  single low-cost cloud instance.
+ single low-cost cloud instance.
 
 \| screenshot =
 
@@ -55,7 +55,7 @@ with JBrowse. \| req = JBrowse requires libpng, Zlib, and GD development
 libraries, plus make and a C compiler. On Ubuntu, you can install these
 prerequisites using the command:
 
-     sudo apt-get install libpng-dev libgd2-noxpm-dev build-essential
+ sudo apt-get install libpng-dev libgd2-noxpm-dev build-essential
 
 For tips on installing these baseline libraries, see [JBrowse
 Troubleshooting](../JBrowse_Troubleshooting).
@@ -71,8 +71,8 @@ with JBrowse.
 2\. Unpack JBrowse into a directory that is served by your web browser.
 On many systems, this defaults to `/var/www`.
 
-       cd /var/www
-       unzip JBrowse-*.zip
+ cd /var/www
+ unzip JBrowse-*.zip
 
 **Make sure you have permissions to write to the contents of the
 `jbrowse/` directory you have just created.**
@@ -94,35 +94,35 @@ Guide](../JBrowse_Configuration_Guide) for
 information on:
 
 - [Formatting reference
-  sequences](../JBrowse_Configuration_Guide#Reference_Sequences)
-  (e.g. from FASTA files, or a Chado database)
+ sequences](../JBrowse_Configuration_Guide#Reference_Sequences)
+ (e.g. from FASTA files, or a Chado database)
 - [Feature
-  Tracks](../JBrowse_Configuration_Guide#Feature_Tracks)
-  (e.g. from BED or GFF files, a Chado database, or the UCSC genome
-  browser)
+ Tracks](../JBrowse_Configuration_Guide#Feature_Tracks)
+ (e.g. from BED or GFF files, a Chado database, or the UCSC genome
+ browser)
 - [Image
-  Tracks](../JBrowse_Configuration_Guide#Image_Tracks)
-  (e.g. from WIG files)
+ Tracks](../JBrowse_Configuration_Guide#Image_Tracks)
+ (e.g. from WIG files)
 - [Wiggle/BigWig
-  Tracks](../JBrowse_Configuration_Guide#Wiggle_Tracks)
+ Tracks](../JBrowse_Configuration_Guide#Wiggle_Tracks)
 - [Name Search and
-  Autocompletion](../JBrowse_Configuration_Guide#Name_Searching_and_Autocompletion)
+ Autocompletion](../JBrowse_Configuration_Guide#Name_Searching_and_Autocompletion)
 - [Removing
-  tracks](../JBrowse_Configuration_Guide#Removing_Tracks)
+ tracks](../JBrowse_Configuration_Guide#Removing_Tracks)
 - [Compressing data stored on the
-  server](../JBrowse_Configuration_Guide#Compressing_data_on_the_server)
+ server](../JBrowse_Configuration_Guide#Compressing_data_on_the_server)
 - [URL
-  control](../JBrowse_Configuration_Guide#URL_Control)
+ control](../JBrowse_Configuration_Guide#URL_Control)
 - [Faceted track
-  selection](../JBrowse_Configuration_Guide#Faceted_Track_Selection)
+ selection](../JBrowse_Configuration_Guide#Faceted_Track_Selection)
 - [Anonymous usage
-  statistics](../JBrowse_Configuration_Guide#Anonymous_Usage_Statistics)
+ statistics](../JBrowse_Configuration_Guide#Anonymous_Usage_Statistics)
 
 Additional topics:
 
 - [GMOD in the
-  Cloud](../Category:GMOD_in_the_Cloud)
+ Cloud](../Category:GMOD_in_the_Cloud)
 - [JBrowse](../Category:JBrowse)
 - [GMOD
-  Components](../Category:GMOD_Components)
+ Components](../Category:GMOD_Components)
 - [Tool data](../Category:Tool_data)

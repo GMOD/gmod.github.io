@@ -35,7 +35,7 @@ include:
 - Virtualization
 - Schedulers
 - Deployment of [Galaxy](../Galaxy.1) instances and dependence
-  management
+ management
 - Relational databases and query optimization
 - User management
 

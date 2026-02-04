@@ -30,18 +30,18 @@ dl_src = \| dl_src_url = \| dl_dev = \| dl_dev_url = \|
 getting_started_preamble = \| req =
 
 - The <a href="http://www.apache.org" class="external text"
-  rel="nofollow">Apache web server</a>
+ rel="nofollow">Apache web server</a>
 - Perl 5.005 or higher
 - <a href="http://search.cpan.org/perldoc?GD" class="external text"
-  rel="nofollow">GD</a>
+ rel="nofollow">GD</a>
 - <a href="http://search.cpan.org/perldoc?CGI" class="external text"
-  rel="nofollow">CGI</a>
+ rel="nofollow">CGI</a>
 - <a href="http://www.graphviz.org/" class="external text"
-  rel="nofollow">GraphViz</a>
+ rel="nofollow">GraphViz</a>
 - <a href="http://search.cpan.org/perldoc?GO::TermFinder"
-  class="external text" rel="nofollow">GO::TermFinder</a>
+ class="external text" rel="nofollow">GO::TermFinder</a>
 - <a href="http://bioperl.org" class="external text"
-  rel="nofollow">Bioperl</a>
+ rel="nofollow">Bioperl</a>
 
 \| install = \| config = \| doc = Documentation is provided in the
 README file in the

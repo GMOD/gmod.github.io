@@ -26,11 +26,11 @@ clarification:
 > joined by:
 >
 > - The sharing of “raw science” like datasets, code, and experimental
->   designs
+> designs
 > - Semantic publishing or “nanopublication,” where the citeable unit is
->   an argument or passage rather than entire article.
+> an argument or passage rather than entire article.
 > - Widespread self-publishing via blogging, microblogging, and comments
->   or annotations on existing work.
+> or annotations on existing work.
 
 ImpactStory collates metrics from numerous online sources to give a more
 complete picture of how an article, data set, piece of software, or

@@ -5,14 +5,14 @@ title: "October 2005 GMOD Meeting"
 
 Generic Model Organism Database Construction Set
 
-  7</span>](#Meeting_7)
+ 7</span>](#Meeting_7)
 - [Agenda](#Agenda)
-  - [Friday,
-    October 28, 2005 DIFFERENT ROOM: Plimpton Conference Room, Beckman
-    Building,
-    CSHL](#Friday.2C_October_28.2C_2005.0ADIFFERENT_ROOM:_Plimpton_Conference_Room.2C_Beckman_Building.2C_CSHL)
+ - [Friday,
+ October 28, 2005 DIFFERENT ROOM: Plimpton Conference Room, Beckman
+ Building,
+ CSHL](#Friday.2C_October_28.2C_2005.0ADIFFERENT_ROOM:_Plimpton_Conference_Room.2C_Beckman_Building.2C_CSHL)
 - [Meeting
-  Report](#Meeting_Report)
+ Report](#Meeting_Report)
 
 ## Meeting 7
 
@@ -106,70 +106,70 @@ package for release</td>
 ## Meeting Report
 
 Meeting report for October, 2005 GMOD meeting. This is an outline by
-[Scott Cain](/wiki/User:Scott).
+Scott Cain.
 
 Topics covered:
 
 - Current state of gmod/chado release, movement towards 0.1 release
 - Discussed 'MOD Top Ten list'
-  - Mike Cherry proposed operating a MOD 'co-location' facility with all
-    GMOD tools. The may be greatly facilitated by the software packaging
-    work done by Allen Day and Brian O'Connor with
-    <a href="http://biopackages.net" class="external text"
-    rel="nofollow">biopackages.net</a>.
-  - Some discussion of using a content management tool like
-    <a href="http://drupal.org" class="external text"
-    rel="nofollow">Drupal</a> to handle some of the page display tasks
-    for a MOD and use [turnkey](/wiki/Turnkey) only as a tool to
-    access and display
-    <a href="/wiki/Chado" class="mw-redirect" title="Chado">chado</a> related
-    data.
+ - Mike Cherry proposed operating a MOD 'co-location' facility with all
+ GMOD tools. The may be greatly facilitated by the software packaging
+ work done by Allen Day and Brian O'Connor with
+ <a href="http://biopackages.net" class="external text"
+ rel="nofollow">biopackages.net</a>.
+ - Some discussion of using a content management tool like
+ <a href="http://drupal.org" class="external text"
+ rel="nofollow">Drupal</a> to handle some of the page display tasks
+ for a MOD and use [turnkey](/wiki/Turnkey) only as a tool to
+ access and display
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">chado</a> related
+ data.
 - Architecture
-  - Testing recommendations
-  - Volunteers to examine
-  - How to get various chado instances to conform to a standard method
-    of encoding data? Documentation: Joshua (TIGR) volunteered to
-    document how TIGR is using chado to encode data and make it public
-    as a first step in a collaborative effort among current users of
-    chado (including TIGR,
-    , and GMOD
-    developers).
+ - Testing recommendations
+ - Volunteers to examine
+ - How to get various chado instances to conform to a standard method
+ of encoding data? Documentation: Joshua (TIGR) volunteered to
+ document how TIGR is using chado to encode data and make it public
+ as a first step in a collaborative effort among current users of
+ chado (including TIGR,
+ , and GMOD
+ developers).
 - [www.gmod.org](/wiki/Main_Page)
-  - In the evening of the first day, Allen Day, Brian O'Connor and Scott
-    Cain created a prototype website with the purpose of improving the
-    function of the site. It is based on an open source content
-    management software package that will facilitate collaborative
-    documentation projects, such as the chado usage project discussed
-    earlier that day.
+ - In the evening of the first day, Allen Day, Brian O'Connor and Scott
+ Cain created a prototype website with the purpose of improving the
+ function of the site. It is based on an open source content
+ management software package that will facilitate collaborative
+ documentation projects, such as the chado usage project discussed
+ earlier that day.
 - Common gene page. Since this group does not represent the target
-  users, we did not feel that we would make much headway in establishing
-  a standard. However, it was noted that the data collected by GO for
-  several organisms contains much of the data that would be needed for a
-  simple gene page. It was decided that Scott Cain would create a gene
-  page using this data and present it at the biocurators meeting in
-  December
+ users, we did not feel that we would make much headway in establishing
+ a standard. However, it was noted that the data collected by GO for
+ several organisms contains much of the data that would be needed for a
+ simple gene page. It was decided that Scott Cain would create a gene
+ page using this data and present it at the biocurators meeting in
+ December
 - Software developer's guide and software release recommendations
 - stuff to do
-  - Scott: build sample gene page from GO gene data (or talk Chris into
-    doing it) hopefully to present to biocurator list in December
-  - Migrate website to facilitate documentation improvements
-  - key to improving standards for chado usage
-  - follow up on getting/comparing data dumps for different chado
-    implementations
-  - Talk to lincoln about identifying a journal for publication
+ - Scott: build sample gene page from GO gene data (or talk Chris into
+ doing it) hopefully to present to biocurator list in December
+ - Migrate website to facilitate documentation improvements
+ - key to improving standards for chado usage
+ - follow up on getting/comparing data dumps for different chado
+ implementations
+ - Talk to lincoln about identifying a journal for publication
 - demos
-  - <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">TIGR pipeline
-    tool</a>
-  - Princeton/ web-based data curation
-    tool (talks directly to chado)
-  - [DAS2](/wiki/Distributed_Annotation_System)
-    java tool for querying [chado microarray
-    data](/wiki/Chado_Mage_Module)
-  - community module for chado
-    (<a href="http://xenbase.org" class="external text"
-    rel="nofollow">XenBase</a>\])
-  - PuMA, java tool for pubmed query building
-  -  [GBrowse for
-    synteny](/wiki/SynView)
-  - flybase gbrowse for synteny
-  - flybase query builder
+ - <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">TIGR pipeline
+ tool</a>
+ - Princeton/ web-based data curation
+ tool (talks directly to chado)
+ - [DAS2](/wiki/Distributed_Annotation_System)
+ java tool for querying [chado microarray
+ data](/wiki/Chado_Mage_Module)
+ - community module for chado
+ (<a href="http://xenbase.org" class="external text"
+ rel="nofollow">XenBase</a>\])
+ - PuMA, java tool for pubmed query building
+ - [GBrowse for
+ synteny](/wiki/SynView)
+ - flybase gbrowse for synteny
+ - flybase query builder

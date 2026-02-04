@@ -17,17 +17,17 @@ JBrowse is a Web 2.0 genome browser that features:
 
 - Client side rendering, and very fast rendering at that.
 - As a consequence it has very low server disk space, server CPU,
-  security and network bandwidth requirements.
+ security and network bandwidth requirements.
 - An interface that is entirely [AJAX](../Glossary#AJAX)
-  based. *Everything* is done with AJAX.
+ based. *Everything* is done with AJAX.
 - [GFF3](../GFF3),
-  <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> and/or
-  <a href="https://cgwb.nci.nih.gov/goldenPath/help/wiggle.html"
-  class="external text" rel="nofollow">Wiggle track</a> compatibility
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> and/or
+ <a href="https://cgwb.nci.nih.gov/goldenPath/help/wiggle.html"
+ class="external text" rel="nofollow">Wiggle track</a> compatibility
 - [JSON](../Glossary#JSON) based configuration files (very
-  similar to GBrowse config files in their content)
+ similar to GBrowse config files in their content)
 - Easy embedding in other web applications (an example of embedding a
-  genome browser in a wiki is provided)
+ genome browser in a wiki is provided)
 
 JBrowse features smooth panning, zooming, navigation, and track
 selection and sets a new standard for the genome browser interface.

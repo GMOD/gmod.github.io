@@ -17,28 +17,28 @@ installation; for longer-term uses, the virtual server can be kept
 running as long as required, and data can easily be moved when new
 versions of GMOD in a Box are released.
 
-  in a Box</span>](#What.27s_in_GMOD_in_a_Box)
+ in a Box</span>](#What.27s_in_GMOD_in_a_Box)
 - [Where to find
-  GMOD in a Box](#Where_to_find_GMOD_in_a_Box)
-  - [Build
-    information](#Build_information)
+ GMOD in a Box](#Where_to_find_GMOD_in_a_Box)
+ - [Build
+ information](#Build_information)
 - [Getting
-  Started](#Getting_Started)
-  - [Directory
-    Structure](#Directory_Structure)
-  - [Updating
-    from previous versions](#Updating_from_previous_versions)
-  - [Phoning
-    home](#Phoning_home)
+ Started](#Getting_Started)
+ - [Directory
+ Structure](#Directory_Structure)
+ - [Updating
+ from previous versions](#Updating_from_previous_versions)
+ - [Phoning
+ home](#Phoning_home)
 - [Installed GMOD
-  software](#Installed_GMOD_software)
-  - [PostgreSQL](#PostgreSQL)
-  - [Drupal](#Drupal)
-  - [Tripal](#Tripal)
-  - [Chado](#Chado)
-  - [GBrowse2](#GBrowse2)
-  - [JBrowse](#JBrowse)
-  - [WebApollo](#WebApollo)
+ software](#Installed_GMOD_software)
+ - [PostgreSQL](#PostgreSQL)
+ - [Drupal](#Drupal)
+ - [Tripal](#Tripal)
+ - [Chado](#Chado)
+ - [GBrowse2](#GBrowse2)
+ - [JBrowse](#JBrowse)
+ - [WebApollo](#WebApollo)
 
 ## What's in GMOD in a Box
 
@@ -97,7 +97,7 @@ section](/wiki/GMOD_in_a_Box#Phoning_home) below.
 
 #### Build information
 
-[Scott](/wiki/User:Scott) has fairly extensive notes on the
+Scott has fairly extensive notes on the
 configuration file edits and the commands used when building GMOD in a
 Box. See his <a
 href="https://github.com/scottcain/GMODintheCloud/blob/master/GitC2_build"
@@ -260,12 +260,12 @@ GBrowse is configured to use
 
 GBrowse. To use it, your GBrowse URLs should look like this:
 
-       http://your-ip-address/fgb2/gbrowse/yeast
+ http://your-ip-address/fgb2/gbrowse/yeast
 
 If there are problems with fcgid, you can still use the non-accelerated
 GBrowse at
 
-       http://your-ip-address/cgi-bin/gb2/gbrowse/yeast
+ http://your-ip-address/cgi-bin/gb2/gbrowse/yeast
 
 ### JBrowse
 

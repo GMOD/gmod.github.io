@@ -27,21 +27,21 @@ per subtrack. In this scheme, each subtrack is defined by a set of
 feature filters. The filters are applied to each filter in turn, sorting
 them into the appropriate subtrack.
 
-  Metadata</span>](#Using_Metadata)
-  - [Full
-    Example](#Full_Example)
+ Metadata</span>](#Using_Metadata)
+ - [Full
+ Example](#Full_Example)
 - [Using Subtrack
-  Select](#Using_Subtrack_Select)
-  - [A Basic
-    Example](#A_Basic_Example)
-  - [Multidimensional
-    Subtracks](#Multidimensional_Subtracks)
-  - [Adding
-    subtrack IDs to the Table](#Adding_subtrack_IDs_to_the_Table)
-  - [Labeling
-    Subtracks](#Labeling_Subtracks)
-  - [Hiding
-    Subtracks with no Data](#Hiding_Subtracks_with_no_Data)
+ Select](#Using_Subtrack_Select)
+ - [A Basic
+ Example](#A_Basic_Example)
+ - [Multidimensional
+ Subtracks](#Multidimensional_Subtracks)
+ - [Adding
+ subtrack IDs to the Table](#Adding_subtrack_IDs_to_the_Table)
+ - [Labeling
+ Subtracks](#Labeling_Subtracks)
+ - [Hiding
+ Subtracks with no Data](#Hiding_Subtracks_with_no_Data)
 
 ## Using Metadata
 
@@ -49,47 +49,47 @@ If you have just a few features and there is a one-to-one correspondence
 between feature and subtrack, then the easiest way to define subtracks
 is by use of an external metadata file. A typical file looks like this:
 
-    [feature_name_1]
-    :dbid        = f101
-    :selected    = 1
-    display_name = My First Feature
-    type         = some_type1
-    method       = my_method1
-    source       = my_source1
-    some_attribute    = value1
-    another_attribute = value2
+ [feature_name_1]
+ :dbid = f101
+ :selected = 1
+ display_name = My First Feature
+ type = some_type1
+ method = my_method1
+ source = my_source1
+ some_attribute = value1
+ another_attribute = value2
 
-    [feature_name_2]
-    :dbid        = f102
-    :selected    = 1
-    display_name = My Second Feature
-    type         = some_type2
-    method       = my_method2
-    source       = my_source2
-    some_attribute    = value3
-    another_attribute = value4
+ [feature_name_2]
+ :dbid = f102
+ :selected = 1
+ display_name = My Second Feature
+ type = some_type2
+ method = my_method2
+ source = my_source2
+ some_attribute = value3
+ another_attribute = value4
 
-    [feature_name_3]
-    :dbid        = f103
-    type         = some_type2
-    method       = my_method2
-    source       = my_source2
-    some_attribute    = value5
-    another_attribute = value6
+ [feature_name_3]
+ :dbid = f103
+ type = some_type2
+ method = my_method2
+ source = my_source2
+ some_attribute = value5
+ another_attribute = value6
 
 Each \[stanza\] begins with the name of a feature as it is represented
 in the underlying database. Below each \[stanza\] heading are a series
 of tag=value pairs. The following tag names have special meaning:
 
-    :dbid          Optional unique identifier for the subtrack; If provided, it can be used in the GBrowse
-                   URL to select the subtrack.
-    :selected      If true, this subtrack is selected by default when the containing track is turned on.
-    display_name   Display name for the feature. If not present, will
-                   default to the feature's native display name (i.e. the one in the [stanza]).
-    type           What is returned by calling the feature's type() method.
-    method         What is returned by calling the feature's method() method.
-    source         What is returned by calling the feature's source() method.
-    score          What is returned by calling the feature's score() method.
+ :dbid Optional unique identifier for the subtrack; If provided, it can be used in the GBrowse
+ URL to select the subtrack.
+ :selected If true, this subtrack is selected by default when the containing track is turned on.
+ display_name Display name for the feature. If not present, will
+ default to the feature's native display name (i.e. the one in the [stanza]).
+ type What is returned by calling the feature's type() method.
+ method What is returned by calling the feature's method() method.
+ source What is returned by calling the feature's source() method.
+ score What is returned by calling the feature's score() method.
 
 Any other tags become sortable attributes which are displayed by the
 GBrowse subtrack selection dialog box. For this to work properly, each
@@ -100,11 +100,11 @@ Save this file anywhere convenient and then associate it with the
 desired track using the **metadata** option. This option takes the full
 path name to the metadata file. For example:
 
-    [ChIP-Seq]
-    database = Peaks
-    feature  = signal
-    glyph    = vista_ploat
-    metadata = /var/www/gbrowse2/databases/chip-seq/metadata.txt
+ [ChIP-Seq]
+ database = Peaks
+ feature = signal
+ glyph = vista_ploat
+ metadata = /var/www/gbrowse2/databases/chip-seq/metadata.txt
 
 ### Full Example
 
@@ -132,25 +132,25 @@ histone modification ChIP-seq track from the modENCODE project and the
 dialog box used to select among the subtracks. This track was created
 with the following configuration:
 
-    [ChIP-seq]
-    subtrack select = Antibody    tag_value antibody    ;
-                      Stage       tag_value stage       ;
-                      Temperature tag_value temp        ;
-                      Confirmed   has_tag   confirmed   ;
-    subtrack table = H3K4Me3  E0-4h 23  1 * ;
-                     H3K4Me3  E4-8h 23  0   ;
-                     H3K4Me3  pupae 23  0   ;
-                     H3K4Me3  pupae 26  0   ;
-                     H3K9Me2  E0-4h 23  0 * ;
-                     H3K9Me2  E4-8h 23  1   ;
-                     H3K9Me2  pupae 23  0   ;
-                     H3K9Me2  pupae 26  1   ;
-                     H3K27Me3 E0-4h 23  1 * ;
-    subtrack select labels = E0-4h "Early embryo" ;
-                             E4-8h "Late embryo"  ;
-                             pupae "Pupating larvae" ;
-    brief comment = This track shows modENCODE ChIP-seq characterization of
-                    histone marks across various stages and growth conditions.
+ [ChIP-seq]
+ subtrack select = Antibody tag_value antibody  ;
+ Stage tag_value stage  ;
+ Temperature tag_value temp  ;
+ Confirmed has_tag confirmed  ;
+ subtrack table = H3K4Me3 E0-4h 23 1 * ;
+ H3K4Me3 E4-8h 23 0  ;
+ H3K4Me3 pupae 23 0  ;
+ H3K4Me3 pupae 26 0  ;
+ H3K9Me2 E0-4h 23 0 * ;
+ H3K9Me2 E4-8h 23 1  ;
+ H3K9Me2 pupae 23 0  ;
+ H3K9Me2 pupae 26 1  ;
+ H3K27Me3 E0-4h 23 1 * ;
+ subtrack select labels = E0-4h "Early embryo" ;
+ E4-8h "Late embryo"  ;
+ pupae "Pupating larvae" ;
+ brief comment = This track shows modENCODE ChIP-seq characterization of
+ histone marks across various stages and growth conditions.
 
 In this case, the **subtrack select** option has four lines, each one
 separated by a semicolon (the semicolon on the final line is optional).
@@ -185,22 +185,22 @@ off via the GBrowse URL in the same way that whole tracks are turned on
 and off. To do this, append "=*identifier*" to each line of the subtrack
 table like this:
 
-    subtrack table = H3K4Me3  E0-4h 23  1 * =100 ;
-                     H3K4Me3  E4-8h 23  0   =101 ;
-                     H3K4Me3  pupae 23  0   =102 ;
-                     H3K4Me3  pupae 26  0   =103 ;
-                     H3K9Me2  E0-4h 23  0 * =104 ;
-                     H3K9Me2  E4-8h 23  1   =105 ;
-                     H3K9Me2  pupae 23  0   =106 ;
-                     H3K9Me2  pupae 26  1   =107 ;
-                     H3K27Me3 E0-4h 23  1 * =108 ;
+ subtrack table = H3K4Me3 E0-4h 23 1 * =100 ;
+ H3K4Me3 E4-8h 23 0 =101 ;
+ H3K4Me3 pupae 23 0 =102 ;
+ H3K4Me3 pupae 26 0 =103 ;
+ H3K9Me2 E0-4h 23 0 * =104 ;
+ H3K9Me2 E4-8h 23 1 =105 ;
+ H3K9Me2 pupae 23 0 =106 ;
+ H3K9Me2 pupae 26 1 =107 ;
+ H3K27Me3 E0-4h 23 1 * =108 ;
 
 The identifier can be any combination of letters and numbers. Its exact
 position on the line doesn't matter.
 
 The identifiers can then be used to select subtrack in the GBrowse URL:
 
-      http://your.site/cgi-bin/gb2/gbrowse/elegans/?q=I:1000..2000;l=ChIP-seq/100+102+103
+ http://your.site/cgi-bin/gb2/gbrowse/elegans/?q=I:1000..2000;l=ChIP-seq/100+102+103
 
 This will select the region between positions 1000 and 2000 on
 chromosome I, and turn on the ChIP-seq track, subtracks 100, 102 and
@@ -225,14 +225,14 @@ where you to have intervene manually.
 To implement the first scheme, set the option "group_label" to a false
 value:
 
-     group_label = 0
+ group_label = 0
 
 Be sure that the label assigned to each feature is sufficiently
 informative that they can substitute for the subtrack label.
 
 To implement the second scheme, set "group_label_position" to "top":
 
-     group_label_position = top
+ group_label_position = top
 
 For compatibility with earlier behavior, GBrowse will automatically set
 group_label to 0 if the track consists of quantitative data (uses one of

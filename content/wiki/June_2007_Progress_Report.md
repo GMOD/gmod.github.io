@@ -3,47 +3,47 @@ title: "June 2007 Progress Report"
 ---
 # June 2007 Progress Report
 
-  Overview](#Overview)
-  - [Meetings](#Meetings)
-  - [New GMOD
-    homepage and better
-    documentation](#New_GMOD_homepage_and_better_documentation)
-  - [Software
-    releases](#Software_releases)
-  - [Users](#Users)
+ Overview](#Overview)
+ - [Meetings](#Meetings)
+ - [New GMOD
+ homepage and better
+ documentation](#New_GMOD_homepage_and_better_documentation)
+ - [Software
+ releases](#Software_releases)
+ - [Users](#Users)
 - [Chado/FlyBase](#Chado.2FFlyBase)
 - [GBrowse](#GBrowse)
 - [Textpresso](#Textpresso)
 - [CMap](#CMap)
 - [Pathway
-  Tools/BioCyc](#Pathway_Tools.2FBioCyc)
+ Tools/BioCyc](#Pathway_Tools.2FBioCyc)
 - [Apollo](#Apollo)
-  - [Specific
-    Aims](#Specific_Aims)
-  - [Studies
-    and Results](#Studies_and_Results)
-  - [Significance](#Significance)
-  - [Plans](#Plans)
-  - [Project
-    Generated Resources](#Project_Generated_Resources)
+ - [Specific
+ Aims](#Specific_Aims)
+ - [Studies
+ and Results](#Studies_and_Results)
+ - [Significance](#Significance)
+ - [Plans](#Plans)
+ - [Project
+ Generated Resources](#Project_Generated_Resources)
 - [RGD](#RGD)
 - [dictyBase/Modware](#dictyBase.2FModware)
-  - [dictyBase](#dictyBase)
-  - [Modware](#Modware)
+ - [dictyBase](#dictyBase)
+ - [Modware](#Modware)
 - [Genome
-  Informatics Lab, Indiana
-  U.](#Genome_Informatics_Lab.2C_Indiana_U.)
-  - [Model
-    Organism/Genome Database
-    efforts](#Model_Organism.2FGenome_Database_efforts)
-  - [GMOD User
-    Interface Caucus](#GMOD_User_Interface_Caucus)
-  - [GMODTools
-    updates](#GMODTools_updates)
-  - [Genome
-    Data Grid Tools](#Genome_Data_Grid_Tools)
-  - [Publications and
-    outreach](#Publications_and_outreach)
+ Informatics Lab, Indiana
+ U.](#Genome_Informatics_Lab.2C_Indiana_U.)
+ - [Model
+ Organism/Genome Database
+ efforts](#Model_Organism.2FGenome_Database_efforts)
+ - [GMOD User
+ Interface Caucus](#GMOD_User_Interface_Caucus)
+ - [GMODTools
+ updates](#GMODTools_updates)
+ - [Genome
+ Data Grid Tools](#Genome_Data_Grid_Tools)
+ - [Publications and
+ outreach](#Publications_and_outreach)
 - [TAIR](#TAIR)
 
 ## Overview
@@ -139,69 +139,69 @@ curated and bulk data is processed into chadoXML using WriteChadoMac.pm,
 and loaded using XORT. XORT is also used for all data dumping for
 generating public web pages as well as data for curation support.
 
-1.  Chado schema work:
-    - Modifications of chado schema to improve support of
-      genetic/phenotypic data.
-    - Continued work on integration of genetic/phenotypic data with
-      genome data in chado.
-    - Published paper (Bioinformatics - In Press):
+1. Chado schema work:
+ - Modifications of chado schema to improve support of
+ genetic/phenotypic data.
+ - Continued work on integration of genetic/phenotypic data with
+ genome data in chado.
+ - Published paper (Bioinformatics - In Press):
 
-      Title: A Chado Case Study: An Ontology-based Modular Schema for
-      Representing Genome-Associated Biological Information
-      Author(s): Christopher J Mungall, David B Emmert and The FlyBase
-      Consortium
-      Suzanna Lewis will present this paper at ISMB/ECCB, July 21-25,
-      2007, Vienna, Austria.
-2.  Perl module for generating chadoXML XML::DOM elements:
-    WriteChadoMac.pm
-    This module provides methods for writing chadoXML elements for most
-    types of chado data, which can then be loaded using XORT.
-3.  XORT:
-    - Performance improvements:
-      - Redesign of dumping methods to handle large data output and
-        significantly reduce dump time.
-      - Implementation of entity declarations to support non-ASCII
-        characters in chadoXML.
-      - Add functionality to support "limit", "distinct on", "group by",
-        and "order by" SQL query operations.
-    - Bug fixes:
-      - Fix bugs for regular expression in parsing dumpspec files.
-      - Fix warning messages.
-    - Development of XORT dumpspecs for dumping various aspects of
-      FlyBase data
-4.  Development of a suite of XSL templates which translate chadoXML
-    into HTML reports, GFF, FASTA files, and FlyBase search optimized
-    database.
-5.  Continued work on improving FlyBase search-optimized database and
-    investigation of implementing BioMart.
-6.  GBrowse:
-    - Further development of PureGFF adaptor.
-    - Plan is to submit this to GMOD later this summer after further
-      testing by external testers to ensure that it works outside of FB
-      environment.
-7.  Active chado databases at FlyBase:
-    Currently in chado
+ Title: A Chado Case Study: An Ontology-based Modular Schema for
+ Representing Genome-Associated Biological Information
+ Author(s): Christopher J Mungall, David B Emmert and The FlyBase
+ Consortium
+ Suzanna Lewis will present this paper at ISMB/ECCB, July 21-25,
+ 2007, Vienna, Austria.
+2. Perl module for generating chadoXML XML::DOM elements:
+ WriteChadoMac.pm
+ This module provides methods for writing chadoXML elements for most
+ types of chado data, which can then be loaded using XORT.
+3. XORT:
+ - Performance improvements:
+ - Redesign of dumping methods to handle large data output and
+ significantly reduce dump time.
+ - Implementation of entity declarations to support non-ASCII
+ characters in chadoXML.
+ - Add functionality to support "limit", "distinct on", "group by",
+ and "order by" SQL query operations.
+ - Bug fixes:
+ - Fix bugs for regular expression in parsing dumpspec files.
+ - Fix warning messages.
+ - Development of XORT dumpspecs for dumping various aspects of
+ FlyBase data
+4. Development of a suite of XSL templates which translate chadoXML
+ into HTML reports, GFF, FASTA files, and FlyBase search optimized
+ database.
+5. Continued work on improving FlyBase search-optimized database and
+ investigation of implementing BioMart.
+6. GBrowse:
+ - Further development of PureGFF adaptor.
+ - Plan is to submit this to GMOD later this summer after further
+ testing by external testers to ensure that it works outside of FB
+ environment.
+7. Active chado databases at FlyBase:
+ Currently in chado
 
-    - D. melanogaster genome, annotations, genetic & phenotypic data.
-    - D. pseudoobscura genome and annotations
+ - D. melanogaster genome, annotations, genetic & phenotypic data.
+ - D. pseudoobscura genome and annotations
 
-    Additional genomes in the process of being implemented in chado at FlyBase
+ Additional genomes in the process of being implemented in chado at FlyBase
 
-    - D. simulans genome and annotations
-    - D. sechelia genome and annotations
-    - D. yakuba genome and annotations
-    - D. erecta genome and annotations
-    - D. ananassae genome and annotatons
-    - D. persimilis genome and annotations
-    - D. willistoni genome and annotations
-    - D. mojavensis genome and annotations
-    - D. virilis genome and annotations
-    - D. grimshawi genome and annotations
-8.  In development:
-    CHIA - Chado Interface Application
-    A java user interface integrating XORT dumper and loader
-    functionality, pre-defined chado SQL query execution, ad hoc chado
-    SQL queries execution, and simple reports of chado data.
+ - D. simulans genome and annotations
+ - D. sechelia genome and annotations
+ - D. yakuba genome and annotations
+ - D. erecta genome and annotations
+ - D. ananassae genome and annotatons
+ - D. persimilis genome and annotations
+ - D. willistoni genome and annotations
+ - D. mojavensis genome and annotations
+ - D. virilis genome and annotations
+ - D. grimshawi genome and annotations
+8. In development:
+ CHIA - Chado Interface Application
+ A java user interface integrating XORT dumper and loader
+ functionality, pre-defined chado SQL query execution, ad hoc chado
+ SQL queries execution, and simple reports of chado data.
 
 ## GBrowse
 
@@ -308,7 +308,7 @@ Significant updates funded under this grant since the last report in
 August 2006 are as follows.
 
 - Versions 10.5 and 11.0 of Pathway Tools have been released in this
-  period.
+ period.
 - 1177 groups have licensed Pathway Tools to date.
 
 During this grant period we we made several extremely significant
@@ -327,86 +327,86 @@ Significant software enhancements funded by the Pathway Tools grant
 during this period include the following.
 
 - **New Genome Overview.** This tool provides a one-screen view of every
-  gene on one or more chromosomes and plasmids, and can display omics
-  data across those entire replicons. The current version works in
-  desktop mode only; in the next release of Pathway Tools, the Genome
-  Overview will work through the Web as well. To see the Genome
-  Overview, go to <a
-  href="http://biocyc.org/desktop-vs-web-mode.shtml#genome-ov#genome-ov"
-  class="external free"
-  rel="nofollow">http://biocyc.org/desktop-vs-web-mode.shtml#genome-ov</a>.
+ gene on one or more chromosomes and plasmids, and can display omics
+ data across those entire replicons. The current version works in
+ desktop mode only; in the next release of Pathway Tools, the Genome
+ Overview will work through the Web as well. To see the Genome
+ Overview, go to <a
+ href="http://biocyc.org/desktop-vs-web-mode.shtml#genome-ov#genome-ov"
+ class="external free"
+ rel="nofollow">http://biocyc.org/desktop-vs-web-mode.shtml#genome-ov</a>.
 - **New Regulatory Overview.** This tool displays the transcriptional
-  regulatory network of an organism that is defined in a PGDB. The
-  network can be interrogated in several ways, such as highlighting all
-  genes under a specified Gene Ontology class, and highlighting all
-  genes regulated by a specified transcription factor. The current
-  version works in desktop mode only; in the next release of Pathway
-  Tools, the Regulatory Overview will work through the Web as well. To
-  see the Regulatory Overview, go to
-  <a href="http://biocyc.org/desktop-vs-web-mode.shtml#reg-ov#reg-ov"
-  class="external free"
-  rel="nofollow">http://biocyc.org/desktop-vs-web-mode.shtml#reg-ov</a>.
+ regulatory network of an organism that is defined in a PGDB. The
+ network can be interrogated in several ways, such as highlighting all
+ genes under a specified Gene Ontology class, and highlighting all
+ genes regulated by a specified transcription factor. The current
+ version works in desktop mode only; in the next release of Pathway
+ Tools, the Regulatory Overview will work through the Web as well. To
+ see the Regulatory Overview, go to
+ <a href="http://biocyc.org/desktop-vs-web-mode.shtml#reg-ov#reg-ov"
+ class="external free"
+ rel="nofollow">http://biocyc.org/desktop-vs-web-mode.shtml#reg-ov</a>.
 
-  The Regulatory Overview depends for its operation on an encoding of
-  the organism's transcriptional regulatory network within a PGDB.
-  Currently, EcoCyc is the only BioCyc PGDB that contains such a
-  regulatory network. PGDB authors can define such a network manually
-  using the interactive editors within Pathway Tools.
+ The Regulatory Overview depends for its operation on an encoding of
+ the organism's transcriptional regulatory network within a PGDB.
+ Currently, EcoCyc is the only BioCyc PGDB that contains such a
+ regulatory network. PGDB authors can define such a network manually
+ using the interactive editors within Pathway Tools.
 
 - **Metabolite tracing.** A new metabolite tracing tool allows users to
-  visually trace the path of substrates through the metabolic network
-  within a PGDB, using the Cellular Overview diagram. To see an example
-  of metabolite tracing, go to <a
-  href="http://biocyc.org/desktop-vs-web-mode.shtml#metab-trace#metab-trace"
-  class="external free"
-  rel="nofollow">http://biocyc.org/desktop-vs-web-mode.shtml#metab-trace</a>.
+ visually trace the path of substrates through the metabolic network
+ within a PGDB, using the Cellular Overview diagram. To see an example
+ of metabolite tracing, go to <a
+ href="http://biocyc.org/desktop-vs-web-mode.shtml#metab-trace#metab-trace"
+ class="external free"
+ rel="nofollow">http://biocyc.org/desktop-vs-web-mode.shtml#metab-trace</a>.
 - **New BioVelo Query Language.** We introduce a new advanced query
-  language for querying PGDBs called BioVelo. BioVelo is a
-  query-by-example system that allows users to construct extremely
-  powerful queries using an intuitive graphical interface. BioVelo
-  replaces the old Advanced Query Page. Users can construct BioVelo
-  queries interactively through the BioCyc
-  <a href="http://biocyc.org/query.html" class="external text"
-  rel="nofollow">Advanced Query Page</a>,
-  <a href="http://biocyc.org/webQueryDoc.html" class="external free"
-  rel="nofollow">http://biocyc.org/webQueryDoc.html</a>
-  (documentation)\], and they can construct textual queries using
-  BioVelo language
-  <a href="http://biocyc.org/bioveloLanguage.html" class="external text"
-  rel="nofollow">(documentation)</a>.
+ language for querying PGDBs called BioVelo. BioVelo is a
+ query-by-example system that allows users to construct extremely
+ powerful queries using an intuitive graphical interface. BioVelo
+ replaces the old Advanced Query Page. Users can construct BioVelo
+ queries interactively through the BioCyc
+ <a href="http://biocyc.org/query.html" class="external text"
+ rel="nofollow">Advanced Query Page</a>,
+ <a href="http://biocyc.org/webQueryDoc.html" class="external free"
+ rel="nofollow">http://biocyc.org/webQueryDoc.html</a>
+ (documentation)\], and they can construct textual queries using
+ BioVelo language
+ <a href="http://biocyc.org/bioveloLanguage.html" class="external text"
+ rel="nofollow">(documentation)</a>.
 - Gene ontology assignments (both GO and MultiFun) are now displayed on
-  gene-product pages in addition to gene pages.
+ gene-product pages in addition to gene pages.
 - New commands Proteins-\>Search by GO Term and Proteins-\>Search by
-  MultiFun Term are available.
+ MultiFun Term are available.
 - **External databases.** The editors now contain a command for creating
-  or editing the descriptions of external databases for use in PGDB
-  links to those databases.
+ or editing the descriptions of external databases for use in PGDB
+ links to those databases.
 - The **Pathway Hole Filler** is now fully functional under the Windows
-  operating system.
+ operating system.
 - **Monitor sizing.** Through both the desktop and Web versions, Pathway
-  Tools now knows the size of the user's monitor. For example, this
-  users to create very large genome browserdisplays by reshaping their
-  Web browser to the full screen of a wide-screen monitor.
+ Tools now knows the size of the user's monitor. For example, this
+ users to create very large genome browserdisplays by reshaping their
+ Web browser to the full screen of a wide-screen monitor.
 - **Automatic patch loading.** Whenever Pathway Tools starts up, it now
-  performs its Instant Patch command automatically, so that users will
-  always be running the latest set of patches.
+ performs its Instant Patch command automatically, so that users will
+ always be running the latest set of patches.
 
 The following additional enhancements to Pathway Tools were funded by
 other projects, but are available to all Pathway Tools users.
 
 - Display of protein features on protein pages has been improved.
 - **Google searching.** The Navigator query page now contains a section
-  for performing a Google-based search of the PGDB, which uses Google's
-  index of a PGDB to perform arbitrary text searches against the PGDB.
+ for performing a Google-based search of the PGDB, which uses Google's
+ index of a PGDB to perform arbitrary text searches against the PGDB.
 - **New All-Search box.** An All-Search box is now present at the bottom
-  of every PGDB web page to allow users to perform a new search without
-  first clicking to the query page.
+ of every PGDB web page to allow users to perform a new search without
+ first clicking to the query page.
 - **Name mouse-overs.** Mouseover of compounds, genes, and proteins will
-  additionally show all object synonyms.
+ additionally show all object synonyms.
 - **Compound duplicate checking:** The Compound Editor now checks if a
-  newly created chemical compound is a duplicate of an existing compound
-  in either the current PGDB or in MetaCyc, by searching both the names
-  and chemical structure of the new compound.
+ newly created chemical compound is a duplicate of an existing compound
+ in either the current PGDB or in MetaCyc, by searching both the names
+ and chemical structure of the new compound.
 
 ## Apollo
 
@@ -439,9 +439,9 @@ planning on working with them to incorporate into the main code base the
 following extensions that they have developed:
 
 - Prediction and visualization of the secondary structure of a
-  subsequence (item of a new menu RNA)
+ subsequence (item of a new menu RNA)
 - Prediction and visualization of RNA/RNA interactions (item of a new
-  menu RNA)
+ menu RNA)
 - Visualization (graph) of quantitative variables
 - Export of chained views
 
@@ -469,21 +469,21 @@ experimental results, to create and refine detailed annotations.
 
 Our new work is focused on the following specific aims:
 
-1.  We will enable Apollo to annotate a wider range of sequence feature
-    by using the Sequence Ontology. This will also improve Apollo's
-    interoperability with other biological data sources.
-2.  We will implement a configuration interfaces to make it easier for
-    researchers to set preferences and display new data sources.
-3.  We will develop additional editors. One that will allow gene models
-    to be modified in direct reference to multiple alignment data, and
-    another to edit repetitive elements in detail.
-4.  We will improve the analysis import code, documentation, and user
-    interface to increase its ease of use, to enable biologists to more
-    easily add on-demand analyses of their sequence of interest to the
-    data being displayed.
-5.  We will continue our Apollo support and outreach efforts, including
-    including workshops and on-site visitsand training curricula for
-    both biologists and software developers.
+1. We will enable Apollo to annotate a wider range of sequence feature
+ by using the Sequence Ontology. This will also improve Apollo's
+ interoperability with other biological data sources.
+2. We will implement a configuration interfaces to make it easier for
+ researchers to set preferences and display new data sources.
+3. We will develop additional editors. One that will allow gene models
+ to be modified in direct reference to multiple alignment data, and
+ another to edit repetitive elements in detail.
+4. We will improve the analysis import code, documentation, and user
+ interface to increase its ease of use, to enable biologists to more
+ easily add on-demand analyses of their sequence of interest to the
+ data being displayed.
+5. We will continue our Apollo support and outreach efforts, including
+ including workshops and on-site visitsand training curricula for
+ both biologists and software developers.
 
 The work will be done in collaboration with The Arabidopsis Information
 Resource (TAIR) at the Carnegie Institution.
@@ -506,15 +506,15 @@ Flash GViewer has been a popular download and is in use by a number of
 sites, for example:
 
 - Horse Genome
-  <a href="http://www.biokao.com/gviewer.html" class="external free"
-  rel="nofollow">http://www.biokao.com/gviewer.html</a>
+ <a href="http://www.biokao.com/gviewer.html" class="external free"
+ rel="nofollow">http://www.biokao.com/gviewer.html</a>
 - Boston University
-   Browser
-  <a href="http://gmed.bu.edu/" class="external free"
-  rel="nofollow">http://gmed.bu.edu/</a>
+ Browser
+ <a href="http://gmed.bu.edu/" class="external free"
+ rel="nofollow">http://gmed.bu.edu/</a>
 - Apropos annotation tool
-  <a href="http://apropos.rubyforge.org" class="external free"
-  rel="nofollow">http://apropos.rubyforge.org</a>
+ <a href="http://apropos.rubyforge.org" class="external free"
+ rel="nofollow">http://apropos.rubyforge.org</a>
 
 We will be working on improving the rendering of larger datasets in
 GViewer, particularly on the zoomed view of a chromosome. The layout
@@ -539,7 +539,7 @@ for a feature or region.
 - Second release Jan, 2007
 - Last year was primarily concerned with launching Modware
 - We are applying for funding expand Modware to cover more use cases and
-  to train users
+ to train users
 
 ## Genome Informatics Lab, Indiana U.
 
@@ -614,26 +614,26 @@ PRELIMINARY: <a href="http://gmod.cvs.sourceforge.net/gmod/genogrid/"
 ### Publications and outreach
 
 - Gilbert, D.G., 2007. DroSpeGe: rapid access database for new
-  Drosophila species genomes. Nucleic Acids Research, Vol. 35, Database
-  issue D480-D485 doi:10.1093/nar/gkl997
+ Drosophila species genomes. Nucleic Acids Research, Vol. 35, Database
+ issue D480-D485 doi:10.1093/nar/gkl997
 - Gilbert, D.G., 2007. Drosophila species genome analyses. <a
-  href="http://insects.eugenes.org/species/about/analysis-doc/drospege-analysis.doc.pdf"
-  class="external free"
-  rel="nofollow">http://insects.eugenes.org/species/about/analysis-doc/drospege-analysis.doc.pdf</a>
+ href="http://insects.eugenes.org/species/about/analysis-doc/drospege-analysis.doc.pdf"
+ class="external free"
+ rel="nofollow">http://insects.eugenes.org/species/about/analysis-doc/drospege-analysis.doc.pdf</a>
 - Talk, May 2007. Daphnia Genome Annotation, Indiana University.
-  <a href="http://wfleabase.org/docs/daph-annot-07may.pdf"
-  class="external free"
-  rel="nofollow">http://wfleabase.org/docs/daph-annot-07may.pdf</a>
+ <a href="http://wfleabase.org/docs/daph-annot-07may.pdf"
+ class="external free"
+ rel="nofollow">http://wfleabase.org/docs/daph-annot-07may.pdf</a>
 - Poster, May 2007. "Genome Database Construction with GMOD". at
-  Bioinformatics Indiana'07 conference
-  <a href="http://iubio.bio.indiana.edu/gmod/docs/gmod-bindy07-poster.pdf"
-  class="external free"
-  rel="nofollow">http://iubio.bio.indiana.edu/gmod/docs/gmod-bindy07-poster.pdf</a>
+ Bioinformatics Indiana'07 conference
+ <a href="http://iubio.bio.indiana.edu/gmod/docs/gmod-bindy07-poster.pdf"
+ class="external free"
+ rel="nofollow">http://iubio.bio.indiana.edu/gmod/docs/gmod-bindy07-poster.pdf</a>
 - GMOD.org documentation. MOD User Interface Caucus, MOD Face Summary,
-  MOD Face Talks, MOD, Load BLAST Into Chado, Sample Chado SQL, Sample
-  Chado gene report, and miscellaneous. See
-  <a href="http://www.gmod.org/" class="external free"
-  rel="nofollow">http://www.gmod.org/</a>
+ MOD Face Talks, MOD, Load BLAST Into Chado, Sample Chado SQL, Sample
+ Chado gene report, and miscellaneous. See
+ <a href="http://www.gmod.org/" class="external free"
+ rel="nofollow">http://www.gmod.org/</a>
 
 ## TAIR
 

@@ -50,20 +50,20 @@ for 25 participants, and admission was competitive.
 website, where they are available as [Online
 Tutorials](/wiki/Training_and_Outreach#Online_Tutorials).**
 
-  Applications](#Applications)
+ Applications](#Applications)
 - [Program](#Program)
 - [Instructors](#Instructors)
 - [Prerequisites](#Prerequisites)
 - [System
-  Requirements](#System_Requirements)
-  - [VMware on
-    Windows and Linux](#VMware_on_Windows_and_Linux)
-  - [VMware on
-    Mac OS X](#VMware_on_Mac_OS_X)
+ Requirements](#System_Requirements)
+ - [VMware on
+ Windows and Linux](#VMware_on_Windows_and_Linux)
+ - [VMware on
+ Mac OS X](#VMware_on_Mac_OS_X)
 - [Costs](#Costs)
 - [Sponsor](#Sponsor)
 - [Travel,
-  Lodging and Food](#Travel.2C_Lodging_and_Food)
+ Lodging and Food](#Travel.2C_Lodging_and_Food)
 - [Feedback](#Feedback)
 
 ## Applications
@@ -101,7 +101,7 @@ data-cellspacing="0">
 <td
 style="text-align: center; background-color: #ddffff;"><strong>Introduction
 and Overview</strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
+Scott Cain and Dave Clements<br />
 Participant and instructor introductions, how the GMOD project works,
 what software tools are available in GMOD, how they interoperate, what
 resources are needed to get a GMOD installation up and running, and
@@ -125,7 +125,7 @@ style="text-align: center; background-color: #ddffff;"><strong>Lunch</strong><br
 <td style="background-color: #ccffff">1:15pm</td>
 <td style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/MAKER_Tutorial" class="mw-redirect" title="MAKER Tutorial">MAKER
 I</a></strong><br />
-<a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson Holt</a><br />
+Carson Holt<br />
 <a href="/wiki/MAKER" title="MAKER">MAKER</a> overview, installation, basic
 configuration for annotating genomic sequence, re-annotation options,
 and improving annotation quality</td>
@@ -143,7 +143,7 @@ class="external text" rel="nofollow">on your own</a></td>
 <td style="background-color: #ccffff">6:30pm</td>
 <td style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/MAKER_Tutorial" class="mw-redirect" title="MAKER Tutorial">MAKER
 II</a></strong><br />
-<a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson Holt</a><br />
+Carson Holt<br />
 Advanced <a href="/wiki/MAKER" title="MAKER">MAKER</a> configuration,
 re-annotation options, and improving annotation quality</td>
 </tr>
@@ -173,7 +173,7 @@ their projects with the rest of the group.
 <td style="background-color: #ccffdd">8:45am</td>
 <td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/GBrowse_Tutorial"
 title="GBrowse Tutorial">GBrowse</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
+Scott Cain<br />
 </td>
 </tr>
 <tr class="even">
@@ -187,8 +187,8 @@ style="text-align: center; background-color: #ddffdd;"><strong>Lunch</strong><br
 <td style="background-color: #ccffdd">2:00pm</td>
 <td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/Galaxy_Tutorial" class="mw-redirect"
 title="Galaxy Tutorial">Galaxy</a></strong><br />
-<a href="/wiki/User%253AJamesTaylor" title="User%253AJamesTaylor">James
-Taylor</a><br />
+James
+Taylor<br />
 Introduction; Installation and configuration of Galaxy; Defining your
 own tools; ...</td>
 </tr>
@@ -196,8 +196,8 @@ own tools; ...</td>
 <td style="background-color: #ccffdd">6:00pm</td>
 <td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse</a></strong><br />
-<a href="/wiki/User%253AMitchSkinner" title="User%253AMitchSkinner">Mitch
-Skinner</a><br />
+Mitch
+Skinner<br />
 <a href="/wiki/JBrowse" title="JBrowse">JBrowse</a> installation,
 configuration and administration; converting <a href="/wiki/GFF3"
 title="GFF3">GFF3</a> to <a href="/wiki/Glossary#JSON"
@@ -217,7 +217,7 @@ title="Glossary">JSON</a> and loading it into JBrowse.</td>
 <td style="background-color: #ffffbb">8:45am</td>
 <td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/Chado_Tutorial" class="mw-redirect" title="Chado Tutorial">Chado
 I</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+Scott Cain and Dave Clements</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #ffffbb">1:00pm</td>
@@ -230,13 +230,13 @@ style="text-align: center; background-color: #ffffcc;"><strong>Lunch</strong><br
 <td style="background-color: #ffffbb">2:00pm</td>
 <td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/Chado_Tutorial" class="mw-redirect" title="Chado Tutorial">Chado
 II</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+Scott Cain and Dave Clements</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #ffffbb">3:00pm</td>
 <td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo</a></strong><br />
-<a href="/wiki/User%253AElee" title="User%253AElee">Ed Lee</a><br />
+Ed Lee<br />
 Overview, basic installation, basic configuration, reading/writing data,
 and remote analyses. Custom installation (building Apollo from source),
 advanced configuration, and setting up customized Java Web Start
@@ -256,7 +256,7 @@ instance.</td>
 <td style="background-color: #ffddcc">8:45am</td>
 <td style="text-align: center; background-color: #ffeedd;"><strong><a href="/wiki/GBrowse_syn_Tutorial" class="mw-redirect"
 title="GBrowse syn Tutorial">GBrowse_syn</a></strong><br />
-<a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+Sheldon McKay</td>
 </tr>
 <tr class="even">
 <td style="background-color: #ffddcc">12:30pm</td>
@@ -269,7 +269,7 @@ style="text-align: center; background-color: #ffeedd;"><strong>Lunch</strong><br
 <td style="background-color: #ffddcc">1:30pm</td>
 <td style="text-align: center; background-color: #ffeedd;"><strong><a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal</a></strong><br />
-<a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen Ficklin</a><br />
+Stephen Ficklin<br />
 <a href="/wiki/Tripal" title="Tripal">Tripal</a> is a web front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases built
 on <a href="http://www.drupal.org/" class="external text"
 
@@ -281,7 +281,7 @@ administration.</td>
 <td
 style="text-align: center; background-color: #ffeedd;"><strong>Wrapup
 and Resources</strong><br />
-<a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a> and <a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+Dave Clements and Scott Cain</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #ffddcc">6:30pm</td>
@@ -295,9 +295,9 @@ Ends</td>
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse) | <a href="http://www.oicr.on.ca/" class="external text" |
+| Scott Cain | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse) | <a href="http://www.oicr.on.ca/" class="external text" |
 
-Spring Harbor Laboratory</a> | [Mitch Skinner](/wiki/User:MitchSkinner) | [JBrowse](/wiki/JBrowse) | <a href="http://berkeley.edu" class="external text"
+Spring Harbor Laboratory</a> | Mitch Skinner | [JBrowse](/wiki/JBrowse) | <a href="http://berkeley.edu" class="external text"
 
 ## Prerequisites
 
@@ -307,8 +307,8 @@ Requirements](/wiki/Computing_Requirements)). By "a
 minimal level of Linux systems administration knowledge" we mean that
 participants should be
 
-1.  Comfortable with the Linux command line interface, and
-2.  Comfortable installing packages under Linux.
+1. Comfortable with the Linux command line interface, and
+2. Comfortable installing packages under Linux.
 
 *A good benchmark for this level of knowledge is that you should be able
 to get a basic [GBrowse
@@ -341,7 +341,7 @@ height="48" alt="Windows" /></a>
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for  and
+A free VMware player is available for and
  [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
@@ -392,13 +392,13 @@ running VMware images, *but we have not tested this with our images.*
 This course is *free* thanks to
 
 - <a
-  href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="
-  class="external text" rel="nofollow">NIH grant 1R01HG004483-01</a>
-  under <a href="http://biowiki.org/IanHolmes" class="external text"
-  rel="nofollow">Ian Holmes</a>
+ href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="
+ class="external text" rel="nofollow">NIH grant 1R01HG004483-01</a>
+ under <a href="http://biowiki.org/IanHolmes" class="external text"
+ rel="nofollow">Ian Holmes</a>
 - Financial support from
-  <a href="http://nescent.org" class="external text"
-  rel="nofollow">NESCent</a>
+ <a href="http://nescent.org" class="external text"
+ rel="nofollow">NESCent</a>
 - The grants of the individual instructors
 
 ## Sponsor

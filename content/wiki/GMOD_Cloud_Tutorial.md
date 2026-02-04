@@ -8,45 +8,45 @@ screenshot guide to registering with Amazon Web Services, setting up a
 GMOD in the Cloud instance, connecting to it using SSH, and shutting
 down.
 
-  Services</span>](#Amazon_Web_Services)
+ Services</span>](#Amazon_Web_Services)
 - [Amazon Web
-  Services: Registration](#Amazon_Web_Services:_Registration)
+ Services: Registration](#Amazon_Web_Services:_Registration)
 - [Credit Where
-  Credit's Due](#Credit_Where_Credit.27s_Due)
+ Credit's Due](#Credit_Where_Credit.27s_Due)
 - [Finding and
-  Starting a GMOD Cloud
-  AMI](#Finding_and_Starting_a_GMOD_Cloud_AMI)
-  - [Launch an
-    Instance](#Launch_an_Instance)
-  - [Directory
-    Structure](#Directory_Structure)
+ Starting a GMOD Cloud
+ AMI](#Finding_and_Starting_a_GMOD_Cloud_AMI)
+ - [Launch an
+ Instance](#Launch_an_Instance)
+ - [Directory
+ Structure](#Directory_Structure)
 - [Interacting
-  with the Server](#Interacting_with_the_Server)
-  - [Logging
-    in](#Logging_in)
-  - [Instance
-    Access](#Instance_Access)
-  - [Resizing
-    your data partition](#Resizing_your_data_partition)
+ with the Server](#Interacting_with_the_Server)
+ - [Logging
+ in](#Logging_in)
+ - [Instance
+ Access](#Instance_Access)
+ - [Resizing
+ your data partition](#Resizing_your_data_partition)
 - [Working with
-  the GMOD Software on the
-  Server](#Working_with_the_GMOD_Software_on_the_Server)
-  - [Loading
-    Data into Chado](#Loading_Data_into_Chado)
-  - [Configuring
-    GBrowse](#Configuring_GBrowse)
-  - [Getting
-    Data into JBrowse](#Getting_Data_into_JBrowse)
-  - [Configuring
-    Tripal](#Configuring_Tripal)
+ the GMOD Software on the
+ Server](#Working_with_the_GMOD_Software_on_the_Server)
+ - [Loading
+ Data into Chado](#Loading_Data_into_Chado)
+ - [Configuring
+ GBrowse](#Configuring_GBrowse)
+ - [Getting
+ Data into JBrowse](#Getting_Data_into_JBrowse)
+ - [Configuring
+ Tripal](#Configuring_Tripal)
 - [Leaving the
-  Cloud](#Leaving_the_Cloud)
-  - [Shutting
-    Down](#Shutting_Down)
-  - [Getting
-    your data off the Cloud](#Getting_your_data_off_the_Cloud)
-  - [Volume
-    Deletion](#Volume_Deletion)
+ Cloud](#Leaving_the_Cloud)
+ - [Shutting
+ Down](#Shutting_Down)
+ - [Getting
+ your data off the Cloud](#Getting_your_data_off_the_Cloud)
+ - [Volume
+ Deletion](#Volume_Deletion)
 
 ## Amazon Web Services
 
@@ -365,7 +365,7 @@ EC2 machine</a>; note that rather than "root" or "ec2-user", you need to
 use "ubuntu" as the user name, so an ssh command would typically looks
 something like this:
 
-     ssh -i my_key.pem ubuntu@ec2-184-72-204-112.compute-1.amazonaws.com
+ ssh -i my_key.pem ubuntu@ec2-184-72-204-112.compute-1.amazonaws.com
 
 The following screenshots walk you through logging into an AMI using a
 command line tool. [Skip to the next
@@ -488,7 +488,7 @@ you stop the machine.
 
 To stop an instance from the command line, type the following:
 
-     sudo /sbin/shutdown now
+ sudo /sbin/shutdown now
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/50/Screen_shot_2012-08-25_at_11.59.27.png/750px-Screen_shot_2012-08-25_at_11.59.27.png"
@@ -516,23 +516,23 @@ width="750" height="482" alt="Instance stopped" />
 To archive, compress, and securely transfer directory DIR to remote host
 HOST without writing the archive to your localhost:
 
-     $ tar -cjvf - DIR | ssh HOST 'cat > DIR.tar.bz2'
+ $ tar -cjvf - DIR | ssh HOST 'cat > DIR.tar.bz2'
 
 or, using pax:
 
-     $ pax -w DIR | bzip2 | ssh HOST 'cat > DIR.tar.bz2'
+ $ pax -w DIR | bzip2 | ssh HOST 'cat > DIR.tar.bz2'
 
 You can also decompress/untar the archive on-the-fly on the remote host
 as well (note that the "v" option was omitted from the first tar command
 to avoid echoing each file twice):
 
-     $ tar -cjf - DIR | ssh HOST 'tar -xjvf -'
+ $ tar -cjf - DIR | ssh HOST 'tar -xjvf -'
 
 The default SSH2 cipher, 3des, is somewhat slow; if the data transfer is
 occurring over a high-speed network, a faster SSH cipher (e.g.,
 blowfish-cbc or arcfour256) may speed up the transfer:
 
-     $ tar -cjvf - DIR | ssh -o 'Ciphers blowfish-cbc' HOST 'cat > DIR.tar.bz2'
+ $ tar -cjvf - DIR | ssh -o 'Ciphers blowfish-cbc' HOST 'cat > DIR.tar.bz2'
 
 *Thanks to Nathan Weeks for these tips*
 

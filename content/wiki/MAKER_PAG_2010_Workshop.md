@@ -44,9 +44,9 @@ MAKER on a local machine.
 
 ## Workshop Instructor
 
-- [Carson Holt](/wiki/User:Carsonholt),
-  <a href="http://www.utah.edu" class="external text"
-  rel="nofollow">University of Utah</a>
+- Carson Holt,
+ <a href="http://www.utah.edu" class="external text"
+ rel="nofollow">University of Utah</a>
 
 ## Tutorial Level
 
@@ -64,7 +64,7 @@ This workshop will cover
 - Creating an Account and Uploading Data
 - Basic Explanation on Using a Locally Installed Version of MAKER
 - Quick Demonstration on Loading MAKER Data into Other [GMOD
-  Tools](/wiki/GMOD_Components)
+ Tools](/wiki/GMOD_Components)
 
 This is not a hands-on workshop. There are portions of the workshop for
 which the user may follow along online if they wish, but it is not
@@ -79,14 +79,14 @@ GMOD will have a [strong presence](/wiki/PAG_2010) at PAG 2010,
 including
 
 - A [workshop](/wiki/GBrowse_PAG_2010_Workshop) on
-  [GBrowse](/wiki/GBrowse), a genome viewer.
+ [GBrowse](/wiki/GBrowse), a genome viewer.
 - A
-  [workshop](/wiki/GBrowse_syn_PAG_2010_Workshop)
-  on [GBrowse_syn](/wiki/GBrowse_syn), a comparative genomics
-  viewer built on [GBrowse](/wiki/GBrowse)
+ [workshop](/wiki/GBrowse_syn_PAG_2010_Workshop)
+ on [GBrowse_syn](/wiki/GBrowse_syn), a comparative genomics
+ viewer built on [GBrowse](/wiki/GBrowse)
 - The <a href="http://www.intl-pag.org/18/18-gramene.html"
-  class="external text" rel="nofollow">Gramene Workshop</a> will include
-  a section on the [CMap](/wiki/CMap) comparative map viewer.
+ class="external text" rel="nofollow">Gramene Workshop</a> will include
+ a section on the [CMap](/wiki/CMap) comparative map viewer.
 
 See [PAG 2010](/wiki/PAG_2010) for a more complete list of
 GMOD-related presentations at PAG XVIII.

@@ -15,12 +15,12 @@ _accessible, reproducible, and transparent_ computational biomedical
 research.
 
 - _Accessibility:_ Galaxy enables users without programming experience
-  to easily specify parameters and run tools and workflows.
+ to easily specify parameters and run tools and workflows.
 - _Reproducibility:_ Galaxy captures all information necessary so that
-  any user can repeat and understand a complete computational analysis.
+ any user can repeat and understand a complete computational analysis.
 - _Transparency:_ Galaxy enables users to share and publish analyses via
-  the web and create Pages--interactive, web-based documents that
-  describe a complete analysis.
+ the web and create Pages--interactive, web-based documents that
+ describe a complete analysis.
 
 Galaxy is open source for all organizations. The
 <a href="http://usegalaxy.org" class="external text"

@@ -14,15 +14,15 @@ to the **[GMOD News
 Archives](/wiki/GMOD_News_Archives)**. See also the [GMOD
 Calendar and Events List](/wiki/Calendar).
 
-  News</span>](#Recent_News)
+ News</span>](#Recent_News)
 - [News
-  Archives](#News_Archives)
+ Archives](#News_Archives)
 - [Adding a News
-  Item](#Adding_a_News_Item)
-  - [Short
-    Instructions](#Short_Instructions)
-  - [Longer
-    Instructions](#Longer_Instructions)
+ Item](#Adding_a_News_Item)
+ - [Short
+ Instructions](#Short_Instructions)
+ - [Longer
+ Instructions](#Longer_Instructions)
 
 ## Recent News
 
@@ -892,12 +892,12 @@ there is some functionality still under development. However, this
 release is made to help early adopters of Tripal for Drupal 7. Reports
 of bugs or other issues are highly welcomed. Below are available
 resources for Tripal 2.0a</p>
-<pre><code>   Download Instructions
-   New Functionality
-   Installation and Tutorial
-   Tripal 2.0 API site
-   Tripal Mailing List
-   Tripal Developer&#39;s Mailing List</code></pre>
+<pre><code> Download Instructions
+ New Functionality
+ Installation and Tutorial
+ Tripal 2.0 API site
+ Tripal Mailing List
+ Tripal Developer&#39;s Mailing List</code></pre>
 <p>The Installation tutorial is still under development but should have
 enough information for complete installation of Tripal v2.0a as well as
 loading of organisms and features.</p>
@@ -1342,62 +1342,62 @@ news tracker on the [home page](/wiki/Main_Page).
 
 Please follow these guidelines when adding a news item.
 
-1.  Create a new page named "**News/\***News Item Title\*".
-    - Please make _News Item Title_ be as short as possible, **and no
-      more 35 characters at most**.
-2.  Enter the text of your news item.
-    - **The first link in the news item should point to the page/URL you
-      want the RSS feed to link to.**
-3.  Preview / save your changes. Edit and save the page until the news
-    item looks like you want.
-4.  Once you are happy with how the item looks, insert this line at the
-    end of it:
-     (don't do this--it was for the mediawiki instance)
+1. Create a new page named "**News/\***News Item Title\*".
+ - Please make _News Item Title_ be as short as possible, **and no
+ more 35 characters at most**.
+2. Enter the text of your news item.
+ - **The first link in the news item should point to the page/URL you
+ want the RSS feed to link to.**
+3. Preview / save your changes. Edit and save the page until the news
+ item looks like you want.
+4. Once you are happy with how the item looks, insert this line at the
+ end of it:
+ (don't do this--it was for the mediawiki instance)
 
 ### Longer Instructions
 
 Please follow these guidelines when adding a news item.
 
-1.  Create a new page named "**News/\***News Item Title\*".
+1. Create a new page named "**News/\***News Item Title\*".
 
-    - Please make _News Item Title_ be as short as possible, **and no
-      more 35 characters at most**.
-    - The page must start with **News/**, otherwise it won't be picked
-      by the RSS news feed.
+ - Please make _News Item Title_ be as short as possible, **and no
+ more 35 characters at most**.
+ - The page must start with **News/**, otherwise it won't be picked
+ by the RSS news feed.
 
-2.  Enter the text of your news item.
+2. Enter the text of your news item.
 
-    - Make the news item succinct.
-    - Do not start the item with a MediaWiki header ("== Header ==").
-      - It won't render very well. You should be able to avoid headers
-        altogether.
-    - **The first link in the news item should point to the page/URL you
-      want the RSS feed to link to.**
-      - For example, the first link in a news item about
-        <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-        could point to the
-        <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-        page.
-    - You can include images in your news item. See  for what markup
-      to use to do this.
+ - Make the news item succinct.
+ - Do not start the item with a MediaWiki header ("== Header ==").
+ - It won't render very well. You should be able to avoid headers
+ altogether.
+ - **The first link in the news item should point to the page/URL you
+ want the RSS feed to link to.**
+ - For example, the first link in a news item about
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+ could point to the
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+ page.
+ - You can include images in your news item. See for what markup
+ to use to do this.
 
-3.  Preview / save your changes. Edit and save the page until the news
-    item looks like you want.
+3. Preview / save your changes. Edit and save the page until the news
+ item looks like you want.
 
-4.  Once you are happy with how the item looks, insert this line at the
-    end of it:
+4. Once you are happy with how the item looks, insert this line at the
+ end of it:
 
-        No--this was for MW
+ No--this was for MW
 
-    Where _yyyy/mm/dd_ is the current date. This line will cause it to
-    be added to the GMOD News RSS feed. The item will show up in the
-    feed within an hour.
+ Where _yyyy/mm/dd_ is the current date. This line will cause it to
+ be added to the GMOD News RSS feed. The item will show up in the
+ feed within an hour.
 
-5.  **Once you have added the NewsItem template and saved the page, try
-    to avoid editing the page after that.**
+5. **Once you have added the NewsItem template and saved the page, try
+ to avoid editing the page after that.**
 
-    - Every edit results in the news item being reposted to the RSS
-      feed. If you do need to update an item later on, you may do so,
-      but please also update the NewsItem line:
+ - Every edit results in the news item being reposted to the RSS
+ feed. If you do need to update an item later on, you may do so,
+ but please also update the NewsItem line:
 
-        NewsItem|yyyy/mm/dd, updated yyyy/mm/dd
+ NewsItem|yyyy/mm/dd, updated yyyy/mm/dd

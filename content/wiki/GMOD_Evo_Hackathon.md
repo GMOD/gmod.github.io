@@ -45,37 +45,37 @@ Participation](/wiki/GMOD_Evo_Hackathon_Open_Call)
 went out on August 1, 2010, and remained open until August 25.
 Participants have been selected and notified of their status.
 
-  Synopsis](#Synopsis)
-  - [Subgroups](#Subgroups)
-  - [PAG
-    Poster](#PAG_Poster)
+ Synopsis](#Synopsis)
+ - [Subgroups](#Subgroups)
+ - [PAG
+ Poster](#PAG_Poster)
 - [Background](#Background)
 - [Specific
-  objectives](#Specific_objectives)
-  - [Viewing
-    tools for comparative genomics
-    data](#Viewing_tools_for_comparative_genomics_data)
-  - [Visualization of phylogenetic data and
-    trees](#Visualization_of_phylogenetic_data_and_trees)
-  - [Population
-    Diversity and Phenotype
-    support](#Population_Diversity_and_Phenotype_support)
+ objectives](#Specific_objectives)
+ - [Viewing
+ tools for comparative genomics
+ data](#Viewing_tools_for_comparative_genomics_data)
+ - [Visualization of phylogenetic data and
+ trees](#Visualization_of_phylogenetic_data_and_trees)
+ - [Population
+ Diversity and Phenotype
+ support](#Population_Diversity_and_Phenotype_support)
 - [Hackathon
-  Structure](#Hackathon_Structure)
-  - [Before the
-    Event](#Before_the_Event)
-  - [During the
-    Event](#During_the_Event)
-  - [Deliverables / Event
-    Results](#Deliverables_.2F_Event_Results)
+ Structure](#Hackathon_Structure)
+ - [Before the
+ Event](#Before_the_Event)
+ - [During the
+ Event](#During_the_Event)
+ - [Deliverables / Event
+ Results](#Deliverables_.2F_Event_Results)
 - [Participant
-  Funding](#Participant_Funding)
+ Funding](#Participant_Funding)
 - [March 2011
-  Satellite](#March_2011_Satellite)
+ Satellite](#March_2011_Satellite)
 - [Timeline](#Timeline)
 - [Sponsorship](#Sponsorship)
 - [Organizing
-  Committee](#Organizing_Committee)
+ Committee](#Organizing_Committee)
 
 # Synopsis
 
@@ -202,7 +202,7 @@ memory.
 
 ## PAG Poster
 
-[Robert Buels](/wiki/User:RobertBuels) gave a <a
+Robert Buels gave a <a
 href="http://www.nescent.org/wg/gmodevohackathon/images/3/3f/Gmod_evohack_poster.pdf"
 class="external text" rel="nofollow">poster on the hackathon</a> at [PAG
 2011](/wiki/PAG_2011).
@@ -266,9 +266,9 @@ page.
 
 [GBrowse_syn](/wiki/GBrowse_syn) is a popular GMOD component
 for viewing comparative genomics data, particularly for viewing synteny
-between genomes. It does not currently support the [next-generation
+between genomes. It does not currently support the next-generation
 sequencing (NGS)
-data](/wiki/Next_Generation_Sequencing)
+data
 increasingly available for comparative genomics and emerging model
 systems. Support for NGS data was identified by the EMS working group as
 a high priority.
@@ -405,7 +405,7 @@ you are strongly encouraged to participate.*
 | Name | Email | Particular Interest? |
 |----|----|----|
 | Duke Leto (Organizer) | jonathan at leto net | Hilmar Lapp |
-| hlapp at nescent.org | Large trees in BioPerl cleanup |  |
+| hlapp at nescent.org | Large trees in BioPerl cleanup | |
 
 |---:|----|
 | **June 3, 2010** | [Proposal](/wiki/GMOD_Evo_Hackathon_Proposal) submitted to <a href="http://nesscent.org/" class="external text" |
@@ -432,11 +432,10 @@ boundaries.
 
 # Organizing Committee
 
-- [Nicole Washington](/wiki/User:NLWashington), chair
-- [Sheldon McKay](/wiki/User:Mckays)
-- [Scott Cain](/wiki/User:Scott)
-- <a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
-  Buels</a>
-- <a href="http://informatics.nescent.org/wiki/User%253AHlapp"
-  class="external text" rel="nofollow">Hilmar Lapp</a>
-- [Dave Clements](/wiki/User:Clements)
+- Nicole Washington, chair
+- Sheldon McKay
+- Scott Cain
+- Robert
+ Buels
+- Hilmar Lapp
+- Dave Clements

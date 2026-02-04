@@ -18,24 +18,24 @@ Note: One of the 2009 security updates from Apple caused problems for
 Perl, which affect cpan and installation of Perl packages. See: [Fixing
 Perl on OSX](/wiki/Fixing_Perl_on_OSX)
 
-  libGD with the double click
-  installer</span>](#Installing_libGD_with_the_double_click_installer)
+ libGD with the double click
+ installer</span>](#Installing_libGD_with_the_double_click_installer)
 - [Prerequisites](#Prerequisites)
-  - [The Fink
-    Way](#The_Fink_Way)
-  - [The
-    MacPorts Way](#The_MacPorts_Way)
-  - [The Manual
-    Way](#The_Manual_Way)
+ - [The Fink
+ Way](#The_Fink_Way)
+ - [The
+ MacPorts Way](#The_MacPorts_Way)
+ - [The Manual
+ Way](#The_Manual_Way)
 - [Installing
-  GBrowse using the net
-  installer](#Installing_GBrowse_using_the_net_installer)
+ GBrowse using the net
+ installer](#Installing_GBrowse_using_the_net_installer)
 - [Activate
-  Apache](#Activate_Apache)
+ Apache](#Activate_Apache)
 - [Test the
-  browser](#Test_the_browser)
+ browser](#Test_the_browser)
 - [Install Perl
-  MySQL driver](#Install_Perl_MySQL_driver)
+ MySQL driver](#Install_Perl_MySQL_driver)
 - [AUTHORS](#AUTHORS)
 
 # Installing libGD with the double click installer
@@ -71,7 +71,7 @@ and run `fink selfupdate`
 
 Open up a command window, and install the following Fink packages:
 
-     % fink install gd2 gd2-bin gd2-shlibs
+ % fink install gd2 gd2-bin gd2-shlibs
 
 If you use fink to install any perl modules (for instance,
 `fink install dbi-pm586` will install DBI.pm), you should modify your
@@ -79,32 +79,32 @@ Apache configuration file, httpd.conf (Note, in Mac OSX the file is
 located at /etc/apache2/httpd.conf). In that file, find and uncomment
 (that is, remove the '#' symbols) these two lines:
 
-     #LoadModule env_module         libexec/httpd/mod_env.so
-      ...
-     #AddModule mod_env.c
+ #LoadModule env_module libexec/httpd/mod_env.so
+ ...
+ #AddModule mod_env.c
 
 and add this line near the bottom of the file:
 
-     #added to allow for fink installed perl libs to be found
-     SetEnv PERL5LIB /sw/lib/perl5:/sw/lib/perl5/darwin
+ #added to allow for fink installed perl libs to be found
+ SetEnv PERL5LIB /sw/lib/perl5:/sw/lib/perl5/darwin
 
 Now restart the webserver either via the system preferences panel for
 network services, or via this command:
 
-       sudo /System/Library/StartupItems/Apache/Apache restart
+ sudo /System/Library/StartupItems/Apache/Apache restart
 
 You do not need to install BioPerl, GD, or any other Perl packages using
 fink. You can install GD, BioPerl, BioGraphics and GBrowse with the cpan
 shell:
 
-     %  cpan
-     cpan>force install GD
+ % cpan
+ cpan>force install GD
 
 Currently this fails GD test 10, but that functionality isn't needed for
 GBrowse, so it is safe to force.
 
-     cpan>install BioPerl
-     cpan>install Bio::Graphics::Browser2
+ cpan>install BioPerl
+ cpan>install Bio::Graphics::Browser2
 
 Which will complete the installation of GBrowse2. For installing GBrowse
 1, go directly to [Installing GBrowse using the net
@@ -123,7 +123,7 @@ available from
 
 Open up a command window, and install the following MacPorts packages:
 
-     % port install gd2
+ % port install gd2
 
 This will install MANY programs (more than fink), including Perl and
 several Xorg packages. Since MacPorts modifies your \$PATH variable to
@@ -136,16 +136,16 @@ easiest solution to this problem is to fix the \$PATH variable before
 continuing. To do this, edit the .profile file in your home directory,
 and find the line that looks like this:
 
-     export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 and replace it with
 
-     export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+ export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
 and save the file. Then to make your current terminal aware of the
 changes, you need to "source" the profile:
 
-     . ~/.profile
+ . ~/.profile
 
 or close your current terminal window and open a new one.
 
@@ -153,14 +153,14 @@ You do not need to install BioPerl, GD, or any other Perl packages using
 MacPorts. You can install GD, BioPerl, BioGraphics and GBrowse with the
 cpan shell:
 
-     %  cpan
-     cpan>force install GD
+ % cpan
+ cpan>force install GD
 
 Currently this fails GD test 10, but that functionality isn't needed for
 GBrowse, so it is safe to force.
 
-     cpan>install BioPerl
-     cpan>install Bio::Graphics::Browser2
+ cpan>install BioPerl
+ cpan>install Bio::Graphics::Browser2
 
 Which will complete the installation of GBrowse2. For installing GBrowse
 1, go directly to [Installing GBrowse using the net
@@ -173,10 +173,10 @@ on the distribution CD. Include X11 and the X11 SDK in the tools you
 install. To confirm that you have the tools, open a command window and
 type:
 
-          % which gcc
-          % which autoconf
-          % which xmkmf
-          % which pkg-config
+  % which gcc
+  % which autoconf
+  % which xmkmf
+  % which pkg-config
 
 If any of these commands returns with the error message "command not
 found," then you should (re)install the developer tools.
@@ -208,19 +208,19 @@ Worry not; just follow the recipe.
 **1.** _Make sure your `PATH` environment variable includes
 `/usr/local/bin`_ by running the command:
 
-          % echo $PATH
+  % echo $PATH
 
 If you do not see \</tt\>/usr/local/bin\</tt\> listed, either create or
 edit a file called `.bash_login` in your home folder (note the leading
 ".", which hides this file from directory listings), and add the
 following line to the bottom:
 
-          export PATH="/usr/local/bin:$PATH"
+ export PATH="/usr/local/bin:$PATH"
 
 **2.** _Make sure that you have at least version 2.58 of the autoconf
 tool installed._ Run the command:
 
-          % autoconf -V
+  % autoconf -V
 
 This will print out the version number. It must be 2.58 or higher. If
 the version is too low, then upgrade autoconf like this:
@@ -232,9 +232,9 @@ Download version 2.58 or higher from
 
 Unpack autoconf, enter the distribution directory and type:
 
-              % ./configure --prefix=/usr
-              % make
-              % sudo make install
+  % ./configure --prefix=/usr
+  % make
+  % sudo make install
 
 **3.** _Install libpng_
 
@@ -245,9 +245,9 @@ version "with config script."
 
 Unpack libpng, enter the distribution directory and type:
 
-              % ./configure
-              % make
-              % sudo make install
+  % ./configure
+  % make
+  % sudo make install
 
 **4.** _Install libgd_
 
@@ -256,16 +256,16 @@ Get the latest libgd from
 
 Unpack libgd, enter the distribution directory and type:
 
-              % ./configure
-              % make
-              % sudo make install
+  % ./configure
+  % make
+  % sudo make install
 
 If "make" fails with errors about not being able to compile gdft.c, then
 reconfigure with the following commands:
 
-              % ./configure --without-fontconfig --without-freetype
-              % make
-              % sudo make install
+  % ./configure --without-fontconfig --without-freetype
+  % make
+  % sudo make install
 
 _Do not try to fix this problem by reinstalling freetype unless you are
 very brave; you will likely to make things worse. Freetype support is
@@ -285,7 +285,7 @@ rel="nofollow"><code>gbrowse_netinstall.pl</code></a> script from the
 GBrowse distribution. Run the following command as the root user or
 using "sudo":
 
-      % perl gbrowse_netinstall.pl
+  % perl gbrowse_netinstall.pl
 
 See the main install page for a description of command line options for
 the [netinstall script](/wiki/GBrowse#Installation).
@@ -300,8 +300,8 @@ of the default.
 If this installer fails, it may be because the perl module LWP::Simple
 is not present. To install it, execute the command:
 
-      % sudo cpan
-      cpan> install LWP::Simple
+  % sudo cpan
+ cpan> install LWP::Simple
 
 and then rerun the GBrowse net install script.
 
@@ -310,8 +310,8 @@ and then rerun the GBrowse net install script.
 You may need to turn on the local web server if it isn't activated
 already:
 
-        Apple Menu -> System Preferences ->  Sharing.
-        Activate "Personal Web Sharing".
+ Apple Menu -> System Preferences -> Sharing.
+ Activate "Personal Web Sharing".
 
 You may also wish to adjust your firewall settings to control access to
 your machine's web server from the Internet.
@@ -332,7 +332,7 @@ driver.
 
 From the command line, type:
 
-     % perl -MCPAN -e 'install DBD::mysql'
+  % perl -MCPAN -e 'install DBD::mysql'
 
 If you get a lot of errors about not having read/write privileges on the
 test database, download the
@@ -346,10 +346,10 @@ which is used to load gff files into a mysql database is located in
 but this doesn't exist on the Mac. Edit line 347 of bp_bulk_load_gff.pl
 to look like this:
 
-     my $tmpdir = $ENV{TMPDIR} | $ENV{TMP} | '/tmp';
+ my $tmpdir = $ENV{TMPDIR} | $ENV{TMP} | '/tmp';
 
 # AUTHORS
 
-[Lincoln D. Stein](/wiki/User:Lstein) \<steinl@cshl.edu\> 20:24,
+Lincoln D. Stein \<steinl@cshl.edu\> 20:24,
 16 April 2007 (EDT) Adapted from instructions contributed by Yair Benita
 \<y.benita@wanadoo.nl\>.

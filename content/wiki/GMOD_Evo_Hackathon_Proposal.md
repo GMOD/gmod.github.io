@@ -40,22 +40,22 @@ to bring together key developers of GMOD components with developers from
 the evolutionary biology community to fill critical gaps in GMOD for
 evolutionary research.
 
-  Synopsis](#Synopsis)
+ Synopsis](#Synopsis)
 - [Background](#Background)
 - [Specific
-  objectives](#Specific_objectives)
-  - [Viewing
-    tools for comparative genomics
-    data](#Viewing_tools_for_comparative_genomics_data)
-  - [Visualization of phylogenetic data and
-    trees](#Visualization_of_phylogenetic_data_and_trees)
-  - [Population
-    Diversity and Phenotype
-    support](#Population_Diversity_and_Phenotype_support)
+ objectives](#Specific_objectives)
+ - [Viewing
+ tools for comparative genomics
+ data](#Viewing_tools_for_comparative_genomics_data)
+ - [Visualization of phylogenetic data and
+ trees](#Visualization_of_phylogenetic_data_and_trees)
+ - [Population
+ Diversity and Phenotype
+ support](#Population_Diversity_and_Phenotype_support)
 - [Logistics and
-  Participation](#Logistics_and_Participation)
+ Participation](#Logistics_and_Participation)
 - [Organization
-  and Agenda](#Organization_and_Agenda)
+ and Agenda](#Organization_and_Agenda)
 
 ## Synopsis
 
@@ -258,7 +258,7 @@ pool to create a group with balanced, complementary, and diverse sets of
 expertise, background, and interests, using a number of criteria:
 
 - Experience in bioinformatics programming in general and GMOD in
-  particular;
+ particular;
 - Experience with and understanding of evolutionary data types;
 - Potential to uniquely benefit from the event;
 - Complementarity of expertise and background;
@@ -276,27 +276,27 @@ license.
 
 The following people comprise the organizing committee:
 
-- [Nicole Washington](/wiki/User:NLWashington), Chair
-  (Lawrence Berkeley National Laboratory;
-  <a href="http://www.modencode.org" class="external text"
-  rel="nofollow">modENCODE</a> and developer of
-  [Phenote](/wiki/Phenote))
-- [Sheldon McKay](/wiki/User:Mckays) (University of Arizona;
-  <a href="http://www.iplantcollaborative.org/" class="external text"
-  rel="nofollow">The iPlant collaborative</a> and developer of
-  [GBrowse_syn](/wiki/GBrowse_syn))
-- [Robert Buels](/wiki/User:RobertBuels) (Cornell
-  University; <a href="http://solgenomics.net/" class="external text"
-  rel="nofollow">Solanaceae Genomics Network (SGN)</a>)
-- [Scott Cain](/wiki/User:Scott) (Ontario Institute for Cancer
-  Research; GMOD Program Coordinator)
-- [Hilmar Lapp](/wiki/User:Hlapp)
-  (<a href="http://www.nescent.org" class="external text"
-  rel="nofollow">NESCent</a>)
-- [Dave Clements](/wiki/User:Clements)
-  (<a href="http://www.nescent.org" class="external text"
-  rel="nofollow">NESCent</a>; [GMOD Help
-  Desk](/wiki/GMOD_Help_Desk))
+- Nicole Washington, Chair
+ (Lawrence Berkeley National Laboratory;
+ <a href="http://www.modencode.org" class="external text"
+ rel="nofollow">modENCODE</a> and developer of
+ [Phenote](/wiki/Phenote))
+- Sheldon McKay (University of Arizona;
+ <a href="http://www.iplantcollaborative.org/" class="external text"
+ rel="nofollow">The iPlant collaborative</a> and developer of
+ [GBrowse_syn](/wiki/GBrowse_syn))
+- Robert Buels (Cornell
+ University; <a href="http://solgenomics.net/" class="external text"
+ rel="nofollow">Solanaceae Genomics Network (SGN)</a>)
+- Scott Cain (Ontario Institute for Cancer
+ Research; GMOD Program Coordinator)
+- Hilmar Lapp
+ (<a href="http://www.nescent.org" class="external text"
+ rel="nofollow">NESCent</a>)
+- Dave Clements
+ (<a href="http://www.nescent.org" class="external text"
+ rel="nofollow">NESCent</a>; [GMOD Help
+ Desk](/wiki/GMOD_Help_Desk))
 
 The actual agenda will be determined by the participants. At the event,
 participants will split into subgroups. The composition and tasks of the

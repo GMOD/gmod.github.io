@@ -40,9 +40,9 @@ sleeved T shirt or even a *GMOD Pet Bowl*).
 Please note:
 
 - GMOD gear is offered at cost. GMOD does not make any money from the
-  sale of these items.
+ sale of these items.
 - The *GMOD News* will return to its usual, somewhat more sedate, style
-  with the next posting.
+ with the next posting.
 
 [Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)

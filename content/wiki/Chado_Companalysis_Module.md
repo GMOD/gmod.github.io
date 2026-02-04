@@ -8,28 +8,28 @@ sequence analysis. The key concept is that the results of a
 computational analysis can be interpreted or described as a sequence
 feature.
 
-  companalysis module</span>](#Using_the_companalysis_module)
-  - [Alignment
-    Results in Flybase](#Alignment_Results_in_Flybase)
-    - [Background](#Background)
-    - [General
-      implementation](#General_implementation)
-    - [Examples](#Examples)
-    - [Evidence data types in
-      chado](#Evidence_data_types_in_chado)
-      - [Aligned
-        features](#Aligned_features)
-      - [Predicted
-        features](#Predicted_features)
+ companalysis module</span>](#Using_the_companalysis_module)
+ - [Alignment
+ Results in Flybase](#Alignment_Results_in_Flybase)
+ - [Background](#Background)
+ - [General
+ implementation](#General_implementation)
+ - [Examples](#Examples)
+ - [Evidence data types in
+ chado](#Evidence_data_types_in_chado)
+ - [Aligned
+ features](#Aligned_features)
+ - [Predicted
+ features](#Predicted_features)
 - [Tables](#Tables)
-  - [Table:
-    analysis](#Table:_analysis)
-  - [Table:
-    analysisfeature](#Table:_analysisfeature)
-  - [Table:
-    analysisprop](#Table:_analysisprop)
-  - [UML
-    diagram](#UML_diagram)
+ - [Table:
+ analysis](#Table:_analysis)
+ - [Table:
+ analysisfeature](#Table:_analysisfeature)
+ - [Table:
+ analysisprop](#Table:_analysisprop)
+ - [UML
+ diagram](#UML_diagram)
 
 # Using the companalysis module
 
@@ -60,22 +60,22 @@ featureloc to the genome and not to a second type of feature.
 
 **Nucleotide and protein alignments**
 
-         ----------------------------------------------  genome
-                 ^                   ^
-                 |   _______A______  |          alignment feature type = match
-            floc |    ^          ^   | floc (rank = 0)
-                 | f_r  f_r                 --B----        ---C---        hsp feature type = match
-                                       floc | floc (rank = 1)
-                      V        V
-                      ----D-----              aligned feature type = EST, cDNA, protein etc.
+ ---------------------------------------------- genome
+ ^ ^
+ | _______A______ | alignment feature type = match
+ floc | ^ ^ | floc (rank = 0)
+ | f_r f_r --B---- ---C--- hsp feature type = match
+ floc | floc (rank = 1)
+ V V
+ ----D----- aligned feature type = EST, cDNA, protein etc.
 
 **Predicted features**
 
-         ----------------------------------------------  genome
-                 ^                   ^
-                 |   _______A______  |          alignment feature type = match
-            floc |    ^          ^   | floc (rank = 0)
-                 | f_r  f_r                 --B----        ---C---        hsp feature type = match
+ ---------------------------------------------- genome
+ ^ ^
+ | _______A______ | alignment feature type = match
+ floc | ^ ^ | floc (rank = 0)
+ | f_r f_r --B---- ---C--- hsp feature type = match
 
 ### Examples
 
@@ -87,11 +87,11 @@ Feature A (uniquename = 4191059_sim4) is the alignment feature of type
 - *feature.is_analysis* = 't'
 - this is an abstract feature used to group and order HSP features
 - feature A is linked to the HSP features B and C via a
-  *feature_relationship* with feature A as the object and features B and
-  C as subjects with the *feature_relationship* rank indicating ordering
-  of features
-  - note that the rank has not been implemented for many of the current
-    alignments (sim4 and sim4tandem)
+ *feature_relationship* with feature A as the object and features B and
+ C as subjects with the *feature_relationship* rank indicating ordering
+ of features
+ - note that the rank has not been implemented for many of the current
+ alignments (sim4 and sim4tandem)
 - this feature is linked to *analysis* via *analysisfeature*
 
 Feature B (uniquename = 10425228) and feature C (uniquename = 10425229)
@@ -99,30 +99,30 @@ are HSP features.
 
 - *feature.is_analysis* = 't'
 - the HSP features linked via *feature_relationship* as described above
-  to explicitly represent ordering and grouping and are linked via a
-  *partof* relationship type
+ to explicitly represent ordering and grouping and are linked via a
+ *partof* relationship type
 - these features are located to the genome (*srcfeature.id* = arm) and
-  this featureloc info has *featureloc.rank* = 0
+ this featureloc info has *featureloc.rank* = 0
 - the HSPs are also linked to the specific analysis via
-  *analysisfeature*
-  - for aligned sequences these features are also located to the aligned
-    feature (i.e. cDNA, EST etc.) and this featureloc info has a
-    *featureloc.rank* = 1
+ *analysisfeature*
+ - for aligned sequences these features are also located to the aligned
+ feature (i.e. cDNA, EST etc.) and this featureloc info has a
+ *featureloc.rank* = 1
 - note that this only applies to aligned sequences and not gene
-  predictions
+ predictions
 
 Feature D (uniquename = CO056789) is the aligned feature i.e. cDNA, EST,
 protein.
 
 - feature.is_analysis = 't'
 - the aligned HSPs are located to this feature via *featureloc* with
-  featureloc.rank = 1
+ featureloc.rank = 1
 - *featureloc.residue_info* should contain the residues of this feature
-  that correspond to the extent of the HSP
-  - note that the *residue_info* is specific to the type of feature that
-    is aligned (for example if a protein is aligned to the genome via
-    blastx then the *featureloc.residue_info* should be aminoacid
-    residues)
+ that correspond to the extent of the HSP
+ - note that the *residue_info* is specific to the type of feature that
+ is aligned (for example if a protein is aligned to the genome via
+ blastx then the *featureloc.residue_info* should be aminoacid
+ residues)
 
 ### Evidence data types in chado
 
@@ -131,74 +131,74 @@ protein.
 Here is a list from 'chado_dmel_r4_3_16a_reporting' of aligned feature
 types and the algorithms used to align them (not filtered by species).
 
-    SQL query:
-    SELECT DISTINCT c.name as feature_type, a.program
-    FROM   feature alg, feature hsp, analysisfeature af, analysis a, cvterm c, featureloc fl
-    WHERE  hsp.feature_id = af.feature_id and af.analysis_id = a.analysis_id
-    and    hsp.feature_id = fl.feature_id and alg.feature_id = fl.srcfeature_id
-    and    fl.rank = 1 and c.cvterm_id = alg.type_id
-    ORDER BY program;
+ SQL query:
+ SELECT DISTINCT c.name as feature_type, a.program
+ FROM feature alg, feature hsp, analysisfeature af, analysis a, cvterm c, featureloc fl
+ WHERE hsp.feature_id = af.feature_id and af.analysis_id = a.analysis_id
+ and hsp.feature_id = fl.feature_id and alg.feature_id = fl.srcfeature_id
+ and fl.rank = 1 and c.cvterm_id = alg.type_id
+ ORDER BY program;
 
-    results:
-       feature_type       |           program
-    ----------------------+------------------------------
-     so                   | assembly
-     BAC                  | bdgp_unknown_clonelocator
-     EST                  | blastn
-     protein              | blastx_masked
-     oligonucleotide      | dmel_r3_to_dmel_r4_migration
-     protein              | prosplign
-     RepeatMasker:dummy   | repeatmasker
-     so                   | repeatmasker
-     EST                  | sim4
-     alignment            | sim4
-     mRNA                 | sim4
-     ncRNA                | sim4
-     pseudogene           | sim4
-     rRNA                 | sim4
-     region               | sim4
-     snRNA                | sim4
-     snoRNA               | sim4
-     so                   | sim4
-     tRNA                 | sim4
-     transposable_element | sim4
-     cDNA                 | sim4tandem
-     so                   | sim4tandem
-     cDNA                 | splign
-     protein              | tblastn
-     EST                  | tblastx_masked
-     so                   | tblastx_masked
-     DNA                  | tblastxwrap_masked
-     so                   | tblastxwrap_masked
-    (28 rows)
+ results:
+ feature_type | program
+ ----------------------+------------------------------
+ so | assembly
+ BAC | bdgp_unknown_clonelocator
+ EST | blastn
+ protein | blastx_masked
+ oligonucleotide | dmel_r3_to_dmel_r4_migration
+ protein | prosplign
+ RepeatMasker:dummy | repeatmasker
+ so | repeatmasker
+ EST | sim4
+ alignment | sim4
+ mRNA | sim4
+ ncRNA | sim4
+ pseudogene | sim4
+ rRNA | sim4
+ region | sim4
+ snRNA | sim4
+ snoRNA | sim4
+ so | sim4
+ tRNA | sim4
+ transposable_element | sim4
+ cDNA | sim4tandem
+ so | sim4tandem
+ cDNA | splign
+ protein | tblastn
+ EST | tblastx_masked
+ so | tblastx_masked
+ DNA | tblastxwrap_masked
+ so | tblastxwrap_masked
+ (28 rows)
 
 #### Predicted features
 
 Note that this was determined by a process of elimination from the
 results of the following query:
 
-    SELECT DISTINCT c.name, a.program
-      FROM feature map_feat, feature hsp, analysisfeature af,
-           analysis a, cvterm c, feature_relationship fr
-     WHERE hsp.feature_id = af.feature_id and af.analysis_id = a.analysis_id
-       and hsp.feature_id = fr.subject_id  and map_feat.feature_id = fr.object_id
-       and c.cvterm_id = map_feat.type_id ORDER BY program;
+ SELECT DISTINCT c.name, a.program
+ FROM feature map_feat, feature hsp, analysisfeature af,
+ analysis a, cvterm c, feature_relationship fr
+ WHERE hsp.feature_id = af.feature_id and af.analysis_id = a.analysis_id
+ and hsp.feature_id = fr.subject_id and map_feat.feature_id = fr.object_id
+ and c.cvterm_id = map_feat.type_id ORDER BY program;
 
-    and then removing those matches that corresponded to the alignment features for the
-    part A query
+ and then removing those matches that corresponded to the alignment features for the
+ part A query
 
-          name       |           program
-    -----------------+------------------------------
-     match           | augustus
-     match           | genewise
-     match           | genie_masked
-     match           | genscan
-     match           | genscan_masked
-     match           | promoter
-     match           | repeat_runner_seg
-     match           | tRNAscan-SE
-     syntenic_region | tblastn
-     match           | twinscan
+ name | program
+ -----------------+------------------------------
+ match | augustus
+ match | genewise
+ match | genie_masked
+ match | genscan
+ match | genscan_masked
+ match | promoter
+ match | repeat_runner_seg
+ match | tRNAscan-SE
+ syntenic_region | tblastn
+ match | twinscan
 
 # Tables
 
@@ -427,10 +427,10 @@ analysisfeature Structure
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | analysisprop_id | serial | *PRIMARY KEY* |
+| | analysisprop_id | serial | *PRIMARY KEY* |
 | [analysis](/wiki/Chado_Tables#Table:_analysis) | analysis_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | text | *UNIQUE#1* |
+| | value | text | *UNIQUE#1* |
 
 analysisprop Structure
 

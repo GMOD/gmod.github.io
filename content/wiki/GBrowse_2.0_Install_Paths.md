@@ -12,13 +12,13 @@ for instance), the paths may be different.
 ## Ubuntu
 
 - **/var/www/gbrowse2/**: Holds the website files (HTML, etc.),
-  Javascript & CSS files, and any databases.
+ Javascript & CSS files, and any databases.
 - **/etc/gbrowse2/**: Holds the language files for help, MobyServices,
-  the themes & various configuration files.
+ the themes & various configuration files.
 - **/usr/local/lib/perl/\[perl version\]/Bio/Graphics/Browser2**: The
-  perl modules which make up the majority of the Gbrowse code.
+ perl modules which make up the majority of the Gbrowse code.
 - **/etc/apache2/conf.d/gbrowse2.conf**: The apache configuration file.
 - **/usr/lib/cgi-bin/**: CGI scripts for use when the site is running
-  (anything in the source /cgi-bin/ directory).
+ (anything in the source /cgi-bin/ directory).
 - **/var/tmp/gbrowse2/**: Temporary files like sessions, user data,
-  images, etc.
+ images, etc.

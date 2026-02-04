@@ -13,88 +13,88 @@ interactive analysis that transparently tracks the details of analyses,
 a workflow system for convenient reuse, data management, sharing,
 publishing, and more.
 
-  Galaxy instance</span>](#Creating_a_Galaxy_instance)
-  - [Getting
-    Galaxy](#Getting_Galaxy)
-    - [Prerequisites](#Prerequisites)
-    - [Cloning the Galaxy
-      repository](#Cloning_the_Galaxy_repository)
+ Galaxy instance</span>](#Creating_a_Galaxy_instance)
+ - [Getting
+ Galaxy](#Getting_Galaxy)
+ - [Prerequisites](#Prerequisites)
+ - [Cloning the Galaxy
+ repository](#Cloning_the_Galaxy_repository)
 - [Initial Setup
-  and Run](#Initial_Setup_and_Run)
-  - [Set the
-    port](#Set_the_port)
-  - [Run
-    Galaxy! Run!](#Run_Galaxy.21_Run.21)
+ and Run](#Initial_Setup_and_Run)
+ - [Set the
+ port](#Set_the_port)
+ - [Run
+ Galaxy! Run!](#Run_Galaxy.21_Run.21)
 - [Running
-  analyses with Galaxy](#Running_analyses_with_Galaxy)
-  - [1. Access
-    your new Galaxy
-    instance](#1._Access_your_new_Galaxy_instance)
-  - [2. Upload
-    TAF1 ChIP-Seq data](#2._Upload_TAF1_ChIP-Seq_data)
-  - [3. Edit
-    Dataset Attributes](#3._Edit_Dataset_Attributes)
-  - [4. Get
-    Gene Annotations from
-    UCSC](#4._Get_Gene_Annotations_from_UCSC)
-  - [5.
-    Generate a set of putative promoter
-    regions](#5._Generate_a_set_of_putative_promoter_regions)
-  - [6.
-    Identify promoter regions containing TAF1
-    sites](#6._Identify_promoter_regions_containing_TAF1_sites)
+ analyses with Galaxy](#Running_analyses_with_Galaxy)
+ - [1. Access
+ your new Galaxy
+ instance](#1._Access_your_new_Galaxy_instance)
+ - [2. Upload
+ TAF1 ChIP-Seq data](#2._Upload_TAF1_ChIP-Seq_data)
+ - [3. Edit
+ Dataset Attributes](#3._Edit_Dataset_Attributes)
+ - [4. Get
+ Gene Annotations from
+ UCSC](#4._Get_Gene_Annotations_from_UCSC)
+ - [5.
+ Generate a set of putative promoter
+ regions](#5._Generate_a_set_of_putative_promoter_regions)
+ - [6.
+ Identify promoter regions containing TAF1
+ sites](#6._Identify_promoter_regions_containing_TAF1_sites)
 - [Under the
-  hood](#Under_the_hood)
-  - [Data and
-    metadata](#Data_and_metadata)
-  - [Tools](#Tools)
+ hood](#Under_the_hood)
+ - [Data and
+ metadata](#Data_and_metadata)
+ - [Tools](#Tools)
 - [Configuring
-  Galaxy (2)](#Configuring_Galaxy_.282.29)
-  - [Using a
-    more robust database](#Using_a_more_robust_database)
-  - [Tool
-    dependencies](#Tool_dependencies)
+ Galaxy (2)](#Configuring_Galaxy_.282.29)
+ - [Using a
+ more robust database](#Using_a_more_robust_database)
+ - [Tool
+ dependencies](#Tool_dependencies)
 - [A second
-  example with NGS data](#A_second_example_with_NGS_data)
-  - [1. Upload
-    datasets](#1._Upload_datasets)
-  - [2. Run BWA
-    to map reads](#2._Run_BWA_to_map_reads)
+ example with NGS data](#A_second_example_with_NGS_data)
+ - [1. Upload
+ datasets](#1._Upload_datasets)
+ - [2. Run BWA
+ to map reads](#2._Run_BWA_to_map_reads)
 - [Adding a new
-  tool](#Adding_a_new_tool)
-  - [The tool
-    command (script)](#The_tool_command_.28script.29)
-  - [The tool
-    wrapper](#The_tool_wrapper)
-  - [Running
-    the new tool](#Running_the_new_tool)
+ tool](#Adding_a_new_tool)
+ - [The tool
+ command (script)](#The_tool_command_.28script.29)
+ - [The tool
+ wrapper](#The_tool_wrapper)
+ - [Running
+ the new tool](#Running_the_new_tool)
 - [Galaxy
-  Workflows](#Galaxy_Workflows)
+ Workflows](#Galaxy_Workflows)
 - [Making genome
-  / alignment data available to
-  Galaxy](#Making_genome_.2F_alignment_data_available_to_Galaxy)
-  - [Python
-    package management tools](#Python_package_management_tools)
-  - [bx-python](#bx-python)
-  - [Get
-    datasets for our genome](#Get_datasets_for_our_genome)
-  - [Edit
-    configuration files](#Edit_configuration_files)
-  - [Create
-    dataset using new genome
-    build](#Create_dataset_using_new_genome_build)
-  - [Extract
-    sequence corresponding to these
-    intervals](#Extract_sequence_corresponding_to_these_intervals)
-  - [Extract
-    multiple alignments corresponding to these
-    intervals](#Extract_multiple_alignments_corresponding_to_these_intervals)
-  - [Other
-    Features](#Other_Features)
-  - [Galaxy
-    Pages](#Galaxy_Pages)
+ / alignment data available to
+ Galaxy](#Making_genome_.2F_alignment_data_available_to_Galaxy)
+ - [Python
+ package management tools](#Python_package_management_tools)
+ - [bx-python](#bx-python)
+ - [Get
+ datasets for our genome](#Get_datasets_for_our_genome)
+ - [Edit
+ configuration files](#Edit_configuration_files)
+ - [Create
+ dataset using new genome
+ build](#Create_dataset_using_new_genome_build)
+ - [Extract
+ sequence corresponding to these
+ intervals](#Extract_sequence_corresponding_to_these_intervals)
+ - [Extract
+ multiple alignments corresponding to these
+ intervals](#Extract_multiple_alignments_corresponding_to_these_intervals)
+ - [Other
+ Features](#Other_Features)
+ - [Galaxy
+ Pages](#Galaxy_Pages)
 - [Where to go
-  next](#Where_to_go_next)
+ next](#Where_to_go_next)
 
 # Creating a Galaxy instance
 
@@ -107,8 +107,8 @@ version 2.4 or greater. Python 3 is a different language and is
 currently not supported. The Ubuntu VM images used for this course
 include version 2.6.4 of the interpreter:
 
-    gmod@ubuntu:~$ python --version
-    Python 2.6.4
+ gmod@ubuntu:~$ python --version
+ Python 2.6.4
 
 Galaxy is distributed (and developed) using a distributed version
 control system called
@@ -116,9 +116,9 @@ control system called
 
 mercurial version 1.3.1:
 
-    gmod@ubuntu:~$ hg --version
-    Mercurial Distributed SCM (version 1.3.1)
-    ...
+ gmod@ubuntu:~$ hg --version
+ Mercurial Distributed SCM (version 1.3.1)
+ ...
 
 ### Cloning the Galaxy repository
 
@@ -137,8 +137,8 @@ repository run the following:
 of Galaxy, instead clone from a repository that is already on the VM
 image:
 
-    gmod@ubuntu:~$ cd ~/work
-    gmod@ubuntu:~/work$ hg clone ~/Documents/Software/galaxy/galaxy-dist
+ gmod@ubuntu:~$ cd ~/work
+ gmod@ubuntu:~/work$ hg clone ~/Documents/Software/galaxy/galaxy-dist
 
 Either is equivalent, and the resulting repository can later be updated
 from any other Galaxy clone.
@@ -158,23 +158,23 @@ by default listen to port 8080. InterMine is already using port 8080 on
 the course image. Therefore, to avoid a collision with InterMine, let's
 do InterMine one better and use port 8081.
 
-    gmod@ubuntu:~/work$ cd ~/work/galaxy-dist
+ gmod@ubuntu:~/work$ cd ~/work/galaxy-dist
 
 Galaxy's main configuration file, `universe_wsgi.ini`, sets the port. By
 default, that file is created at initialization time by copying
 `universe_wsgi.ini.sample`. However, if the file already exists, it will
 use the already existing file.
 
-    $ cp universe_wsgi.ini.sample universe_wsgi.ini
-    $ gedit universe_wsgi.ini
+ $ cp universe_wsgi.ini.sample universe_wsgi.ini
+ $ gedit universe_wsgi.ini
 
 Change this:
 
-    #port = 8080
+ #port = 8080
 
 to this:
 
-    port = 8081
+ port = 8081
 
 and save the file.
 
@@ -183,30 +183,30 @@ and save the file.
 Galaxy includes a script to run it. This script also does the
 initialization of Galaxy, the first time it is run. Run it now:
 
-    gmod@ubuntu:~/work/galaxy-dist$ sh run.sh
-    Initializing external_service_types_conf.xml from external_service_types_conf.xml.sample
-    Initializing datatypes_conf.xml from datatypes_conf.xml.sample
-    Initializing reports_wsgi.ini from reports_wsgi.ini.sample
-    Initializing tool_conf.xml from tool_conf.xml.sample
-    ... (a minute or two or three will pass) ...
-    galaxy.web.buildapp DEBUG 2011-02-25 13:01:32,295 Enabling 'x-forwarded-host' middleware
-    Starting server in PID 5153.
-    serving on http://127.0.0.1:8081
+ gmod@ubuntu:~/work/galaxy-dist$ sh run.sh
+ Initializing external_service_types_conf.xml from external_service_types_conf.xml.sample
+ Initializing datatypes_conf.xml from datatypes_conf.xml.sample
+ Initializing reports_wsgi.ini from reports_wsgi.ini.sample
+ Initializing tool_conf.xml from tool_conf.xml.sample
+ ... (a minute or two or three will pass) ...
+ galaxy.web.buildapp DEBUG 2011-02-25 13:01:32,295 Enabling 'x-forwarded-host' middleware
+ Starting server in PID 5153.
+ serving on http://127.0.0.1:8081
 
 This script performs several significant actions the first time it is
 run:
 
 - Creates initial configuration files, including the main file
-  `universe_wsgi.ini` (but not this time, because we created it), and
-  empty directories for storing data files
+ `universe_wsgi.ini` (but not this time, because we created it), and
+ empty directories for storing data files
 - Fetches all of the Galaxy framework's
-  <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/Config/Eggs"
-  class="external text" rel="nofollow">dependencies</a>, packaged as
-  Python eggs, for the current platform.
+ <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/Config/Eggs"
+ class="external text" rel="nofollow">dependencies</a>, packaged as
+ Python eggs, for the current platform.
 - Initialize its database. Galaxy uses a database migration system to
-  automatically handle any changes to the database schema. On first load
-  it runs all migrations to ensure the database is in a known state,
-  which may take a little time.
+ automatically handle any changes to the database schema. On first load
+ it runs all migrations to ensure the database is in a known state,
+ which may take a little time.
 
 Once the database is initialized, the normal startup process proceeds,
 loading tool configurations, starting the job runner, and finally
@@ -245,7 +245,7 @@ In the **Tools** panel *select* **Get Data** → **Upload File**. You can
 either upload a file, or enter one or more URLs in the **URL/Text** box.
 *Enter*
 
-    ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/TAF1_ChIP.txt
+ ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/TAF1_ChIP.txt
 
 (**Note:** You can also upload this from the filesystem at
 `~/Documents/Data/galaxy/)`
@@ -359,9 +359,9 @@ and how it handles our data. Return to the terminal, and *hit*
 Within our Galaxy instance directory, instance data is stored under the
 `database` directory:
 
-    gmod@ubuntu:~/work/galaxy-dist$ ls database/
-    compiled_templates  info.txt               pbs  universe.sqlite
-    files               job_working_directory  tmp  whoosh_indexes
+ gmod@ubuntu:~/work/galaxy-dist$ ls database/
+ compiled_templates info.txt pbs universe.sqlite
+ files job_working_directory tmp whoosh_indexes
 
 Two key files are `universe.sqlite` which is a [relational
 database](/wiki/Glossary#Relational) containing all the metadata
@@ -369,22 +369,22 @@ tracked by Galaxy, and the `files` directory which contains the raw
 datasets. First let's look at the database using the SQLite command line
 interface:
 
-    gmod@ubuntu:~/work/galaxy-dist$ sqlite3 database/universe.sqlite
-    SQLite version 3.6.16
-    Enter ".help" for instructions
-    Enter SQL statements terminated with a ";"
-    sqlite>
+ gmod@ubuntu:~/work/galaxy-dist$ sqlite3 database/universe.sqlite
+ SQLite version 3.6.16
+ Enter ".help" for instructions
+ Enter SQL statements terminated with a ";"
+ sqlite>
 
 For example, let's look at the first dataset we created:
 
-    sqlite> select * from history_dataset_association limit 1;
-    1|1|1|2011-02-25 23:10:08.399957|2011-02-25 23:33:22.081694|1|ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/TAF1_ChIP.txt%7Cuploaded tabular file|200 regions|#bin chrom   chromStart  chromEnd    name    score   floatScore
-    1470    chr7    116099071   116100373   26384   720 2.183
-    1589    chr5    131622266   131623568   26442   679 2.06
-    1590    chr5    131854028   131855330   26415   693 2.102
-    1591    chr5    131859918   131861220   26451   675 2.048
-    1592    chr5    132109996   132111298   26337   764 2.317
-    |tabular|{"column_types": ["int", "str", "int", "int", "int", "int", "float"], "columns": 7, "comment_lines": 1, "data_lines": 200, "dbkey": "hg18"}||0|1|
+ sqlite> select * from history_dataset_association limit 1;
+ 1|1|1|2011-02-25 23:10:08.399957|2011-02-25 23:33:22.081694|1|ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/TAF1_ChIP.txt%7Cuploaded tabular file|200 regions|#bin chrom chromStart chromEnd name score floatScore
+ 1470 chr7 116099071 116100373 26384 720 2.183
+ 1589 chr5 131622266 131623568 26442 679 2.06
+ 1590 chr5 131854028 131855330 26415 693 2.102
+ 1591 chr5 131859918 131861220 26451 675 2.048
+ 1592 chr5 132109996 132111298 26337 764 2.317
+ |tabular|{"column_types": ["int", "str", "int", "int", "int", "int", "float"], "columns": 7, "comment_lines": 1, "data_lines": 200, "dbkey": "hg18"}||0|1|
 
 We see that this table tracks all the information the Galaxy interface
 needs to work with this dataset, include user defined fields such as
@@ -395,29 +395,29 @@ Exit the sqlite interface by *pressing* **Control-D**.
 
 Now let's look at the actual data.
 
-    gmod@ubuntu:~/work/galaxy-dist$ find database/files/
-    database/files
-    database/files/000
-    database/files/000/dataset_1.dat
-    database/files/000/dataset_2.dat
-    database/files/000/dataset_3.dat
-    database/files/000/dataset_4.dat
+ gmod@ubuntu:~/work/galaxy-dist$ find database/files/
+ database/files
+ database/files/000
+ database/files/000/dataset_1.dat
+ database/files/000/dataset_2.dat
+ database/files/000/dataset_3.dat
+ database/files/000/dataset_4.dat
 
 All of the datasets corresponding to our history items are stored in
 this directory. Datasets are broken up into a hierarchy based on ID to
 avoid problems with particular filesystems. If we look at a single file:
 
-    gmod@ubuntu:~/work/galaxy-dist$ head database/files/000/dataset_1.dat
-    #bin    chrom   chromStart  chromEnd    name    score   floatScore
-    1470    chr7    116099071   116100373   26384   720 2.183
-    1589    chr5    131622266   131623568   26442   679 2.06
-    1590    chr5    131854028   131855330   26415   693 2.102
-    1591    chr5    131859918   131861220   26451   675 2.048
-    1592    chr5    132109996   132111298   26337   764 2.317
-    1593    chr5    132140320   132141622   26374   729 2.21
-    1471    chr11   116212868   116214170   26386   718 2.178
-    816 chr22   30341490    30342792    26387   718 2.176
-    102 chr22   30670342    30671644    26475   663 2.01
+ gmod@ubuntu:~/work/galaxy-dist$ head database/files/000/dataset_1.dat
+ #bin chrom chromStart chromEnd name score floatScore
+ 1470 chr7 116099071 116100373 26384 720 2.183
+ 1589 chr5 131622266 131623568 26442 679 2.06
+ 1590 chr5 131854028 131855330 26415 693 2.102
+ 1591 chr5 131859918 131861220 26451 675 2.048
+ 1592 chr5 132109996 132111298 26337 764 2.317
+ 1593 chr5 132140320 132141622 26374 729 2.21
+ 1471 chr11 116212868 116214170 26386 718 2.178
+ 816 chr22 30341490 30342792 26387 718 2.176
+ 102 chr22 30670342 30671644 26475 663 2.01
 
 we see that Galaxy just stores the raw data exactly as we uploaded it.
 
@@ -427,33 +427,33 @@ Galaxy reads all of its tool configuration from a series of
 [XML](/wiki/Glossary#XML) files. The file `tool_conf.xml` defines
 which tools are loaded by a given instance:
 
-    gmod@ubuntu:~/work/galaxy-dist$ head tool_conf.xml
+ gmod@ubuntu:~/work/galaxy-dist$ head tool_conf.xml
 
 ``` de1
 <?xml version="1.0"?>
  <toolbox>
-   <section name="Get Data" id="getext">
-     <tool file="data_source/upload.xml"/>
-     <tool file="data_source/ucsc_tablebrowser.xml" />
-     <tool file="data_source/ucsc_tablebrowser_test.xml" />
-     <tool file="data_source/ucsc_tablebrowser_archaea.xml" />
-     <tool file="data_source/bx_browser.xml" />
-     <tool file="data_source/microbial_import.xml" />
-     <tool file="data_source/biomart.xml" />
+ <section name="Get Data" id="getext">
+ <tool file="data_source/upload.xml"/>
+ <tool file="data_source/ucsc_tablebrowser.xml" />
+ <tool file="data_source/ucsc_tablebrowser_test.xml" />
+ <tool file="data_source/ucsc_tablebrowser_archaea.xml" />
+ <tool file="data_source/bx_browser.xml" />
+ <tool file="data_source/microbial_import.xml" />
+ <tool file="data_source/biomart.xml" />
 ```
 
 Each referenced file contains the description of a particular tool. The
 **Get Flanks** tool we used earlier is described farther down:
 
 ``` de1
-  <section name="Operate on Genomic Intervals" id="bxops">
-    <tool file="new_operations/intersect.xml" />
-    ...
-    <tool file="new_operations/join.xml" />
-    <tool file="new_operations/get_flanks.xml" />
-    <tool file="new_operations/flanking_features.xml" />
-    <tool file="annotation_profiler/annotation_profiler.xml" />
-  </section>
+ <section name="Operate on Genomic Intervals" id="bxops">
+ <tool file="new_operations/intersect.xml" />
+ ...
+ <tool file="new_operations/join.xml" />
+ <tool file="new_operations/get_flanks.xml" />
+ <tool file="new_operations/flanking_features.xml" />
+ <tool file="annotation_profiler/annotation_profiler.xml" />
+ </section>
 ```
 
 Let's examine the **Get Flanks** tool by looking at the file
@@ -461,31 +461,31 @@ Let's examine the **Get Flanks** tool by looking at the file
 
 ``` de1
  <tool id="get_flanks1" name="Get flanks">
-  <description>returns flanking region/s for every gene</description>
-  <command interpreter="python">get_flanks.py $input $out_file1 $size $direction $region -o $offset \
-       -l ${input.metadata.chromCol},${input.metadata.startCol},${input.metadata.endCol},${input.metadata.strandCol}</command>
-  <inputs>
-    <param format="interval" name="input" type="data" label="Select data"/>
-    <param name="region" type="select" label="Region">
-      <option value="whole" selected="true">Whole feature</option>
-      <option value="start">Around Start</option>
-      <option value="end">Around End</option>
-    </param>
-    <param name="direction" type="select" label="Location of the flanking region/s">
-      <option value="Upstream">Upstream</option>
-      <option value="Downstream">Downstream</option>
-      <option value="Both">Both</option>
-    </param>
-    <param name="offset" size="10" type="integer" value="0" label="Offset"
-           help="Use positive values to offset co-ordinates in the direction of transcription and negative values to offset in the opposite direction."/>
-    <param name="size" size="10" type="integer" value="50" label="Length of the flanking region(s)" help="Use non-negative value for length"/>
-  </inputs>
-  <outputs>
-    <data format="interval" name="out_file1" metadata_source="input"/>
-  </outputs>
-  <tests>
-    ...
-  </tests>
+ <description>returns flanking region/s for every gene</description>
+ <command interpreter="python">get_flanks.py $input $out_file1 $size $direction $region -o $offset \
+ -l ${input.metadata.chromCol},${input.metadata.startCol},${input.metadata.endCol},${input.metadata.strandCol}</command>
+ <inputs>
+ <param format="interval" name="input" type="data" label="Select data"/>
+ <param name="region" type="select" label="Region">
+ <option value="whole" selected="true">Whole feature</option>
+ <option value="start">Around Start</option>
+ <option value="end">Around End</option>
+ </param>
+ <param name="direction" type="select" label="Location of the flanking region/s">
+ <option value="Upstream">Upstream</option>
+ <option value="Downstream">Downstream</option>
+ <option value="Both">Both</option>
+ </param>
+ <param name="offset" size="10" type="integer" value="0" label="Offset"
+ help="Use positive values to offset co-ordinates in the direction of transcription and negative values to offset in the opposite direction."/>
+ <param name="size" size="10" type="integer" value="50" label="Length of the flanking region(s)" help="Use non-negative value for length"/>
+ </inputs>
+ <outputs>
+ <data format="interval" name="out_file1" metadata_source="input"/>
+ </outputs>
+ <tests>
+ ...
+ </tests>
  <help>
 ...
 </help>
@@ -498,7 +498,7 @@ class="external text" rel="nofollow">Tool Config Syntax</a> on the
 Galaxy wiki. You can guess what most of it is about, but some of it,
 such as:
 
-    ${input.metadata.chromCol}
+ ${input.metadata.chromCol}
 
 is less clear. A set of *metadata information* is defined for each
 supported data type. In this case, the input is defined as format
@@ -509,16 +509,16 @@ find each type's metadata elements, search for `MetadataElement`:
 
 ``` de1
 class Interval( Tabular ):
-    """Tab delimited data containing interval information"""
-    file_ext = "interval"
+ """Tab delimited data containing interval information"""
+ file_ext = "interval"
 
-    """Add metadata elements"""
-    MetadataElement( name="chromCol", default=1, desc="Chrom column", param=metadata.ColumnParameter )
-    MetadataElement( name="startCol", default=2, desc="Start column", param=metadata.ColumnParameter )
-    MetadataElement( name="endCol", default=3, desc="End column", param=metadata.ColumnParameter )
-    MetadataElement( name="strandCol", desc="Strand column (click box & select)", param=metadata.ColumnParameter, optional=True, no_value=0 )
-    MetadataElement( name="nameCol", desc="Name/Identifier column (click box & select)", param=metadata.ColumnParameter, optional=True, no_value=0 )
-    MetadataElement( name="columns", default=3, desc="Number of columns", readonly=True, visible=False )
+ """Add metadata elements"""
+ MetadataElement( name="chromCol", default=1, desc="Chrom column", param=metadata.ColumnParameter )
+ MetadataElement( name="startCol", default=2, desc="Start column", param=metadata.ColumnParameter )
+ MetadataElement( name="endCol", default=3, desc="End column", param=metadata.ColumnParameter )
+ MetadataElement( name="strandCol", desc="Strand column (click box & select)", param=metadata.ColumnParameter, optional=True, no_value=0 )
+ MetadataElement( name="nameCol", desc="Name/Identifier column (click box & select)", param=metadata.ColumnParameter, optional=True, no_value=0 )
+ MetadataElement( name="columns", default=3, desc="Number of columns", readonly=True, visible=False )
 ```
 
 Test and help details have been removed from the listing here. The
@@ -556,51 +556,51 @@ Postgres is already installed on our VM image (it's the default
 `gmod` user has permission to create databases, so let's create a
 database for Galaxy
 
-    gmod@ubuntu:~/work/galaxy-dist$ createdb galaxy_test
+ gmod@ubuntu:~/work/galaxy-dist$ createdb galaxy_test
 
 Once the empty database is created, we need to edit Galaxy's
 `universe_wsgi.ini` file to use it:
 
-1.  Setting `database_connection` to
-    `postgres://gmod:gmodamericas2011@localhost:5432/galaxy_test`.
-2.  Setting `database_engine_option_server_side_cursors` to `True`
-3.  Setting `database_engine_option_strategy` to `threadlocal`
+1. Setting `database_connection` to
+ `postgres://gmod:gmodamericas2011@localhost:5432/galaxy_test`.
+2. Setting `database_engine_option_server_side_cursors` to `True`
+3. Setting `database_engine_option_strategy` to `threadlocal`
 
 With these changes the `Database` section of your Galaxy config file
 will look like:
 
-    # -- Database
+ # -- Database
 
-    # By default, Galaxy uses a SQLite database at 'database/universe.sqlite'.  You
-    # may use a SQLAlchemy connection string to specify an external database
-    # instead.  This string takes many options which are explained in detail in the
-    # config file documentation.
-    #database_connection = sqlite:///./database/universe.sqlite?isolation_level=IMMEDIATE
-    database_connection = postgres://gmod:gmodamericas2011@localhost:5432/galaxy_test
+ # By default, Galaxy uses a SQLite database at 'database/universe.sqlite'. You
+ # may use a SQLAlchemy connection string to specify an external database
+ # instead. This string takes many options which are explained in detail in the
+ # config file documentation.
+ #database_connection = sqlite:///./database/universe.sqlite?isolation_level=IMMEDIATE
+ database_connection = postgres://gmod:gmodamericas2011@localhost:5432/galaxy_test
 
-    # If the server logs errors about not having enough database pool connections,
-    # you will want to increase these values, or consider running more Galaxy
-    # processes.
-    #database_engine_option_pool_size = 5
-    #database_engine_option_max_overflow = 10
+ # If the server logs errors about not having enough database pool connections,
+ # you will want to increase these values, or consider running more Galaxy
+ # processes.
+ #database_engine_option_pool_size = 5
+ #database_engine_option_max_overflow = 10
 
-    # If using MySQL and the server logs the error "MySQL server has gone away",
-    # you will want to set this to some positive value (7200 should work).
-    #database_engine_option_pool_recycle = -1
+ # If using MySQL and the server logs the error "MySQL server has gone away",
+ # you will want to set this to some positive value (7200 should work).
+ #database_engine_option_pool_recycle = -1
 
-    # If large database query results are causing memory or response time issues in
-    # the Galaxy process, leave the result on the server instead.  This option is
-    # only available for PostgreSQL and is highly recommended.
-    database_engine_option_server_side_cursors = True
+ # If large database query results are causing memory or response time issues in
+ # the Galaxy process, leave the result on the server instead. This option is
+ # only available for PostgreSQL and is highly recommended.
+ database_engine_option_server_side_cursors = True
 
-    # Create only one connection to the database per thread, to reduce the
-    # connection overhead.  Recommended when not using SQLite:
-    database_engine_option_strategy = threadlocal
+ # Create only one connection to the database per thread, to reduce the
+ # connection overhead. Recommended when not using SQLite:
+ database_engine_option_strategy = threadlocal
 
-    # Log all database transactions, can be useful for debugging and performance
-    # profiling.  Logging is done via Python's 'logging' module under the qualname
-    # 'galaxy.model.orm.logging_connection_proxy'
-    #database_query_profiling_proxy = False
+ # Log all database transactions, can be useful for debugging and performance
+ # profiling. Logging is done via Python's 'logging' module under the qualname
+ # 'galaxy.model.orm.logging_connection_proxy'
+ #database_query_profiling_proxy = False
 
 ## Tool dependencies
 
@@ -617,23 +617,23 @@ tool requires us to install
 
 compiled on the VM image, so let's copy it to a location on the `PATH`:
 
-    $ sudo cp /home/gmod/Documents/Software/galaxy/bwa-0.5.9/bwa /usr/local/bin
+ $ sudo cp /home/gmod/Documents/Software/galaxy/bwa-0.5.9/bwa /usr/local/bin
 
 Now `bwa` can be run from the command line:
 
-    $ bwa
+ $ bwa
 
-    Program: bwa (alignment via Burrows-Wheeler transformation)
-    Version: 0.5.9-r16
-    Contact: Heng Li <lh3@sanger.ac.uk>
+ Program: bwa (alignment via Burrows-Wheeler transformation)
+ Version: 0.5.9-r16
+ Contact: Heng Li <lh3@sanger.ac.uk>
 
-    ...
+ ...
 
 The Galaxy tool also requires a `loc` file which contains the locations
 of indexes for locally stored genome builds. We don't have any, so we
 can just use the empty sample:
 
-    $ cp tool-data/bwa_index.loc.sample tool-data/bwa_index.loc
+ $ cp tool-data/bwa_index.loc.sample tool-data/bwa_index.loc
 
 and run Galaxy using `sh run.sh`
 
@@ -652,8 +652,8 @@ We will again use the **Get Data → Upload File** tool to upload data
 into Galaxy. You can enter multiple URLs into the **URL / Text** box.
 *Enter:*
 
-    ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/phiX174_genome.fa
-    ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/phiX174_reads.fastqsanger
+ ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/phiX174_genome.fa
+ ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/phiX174_reads.fastqsanger
 
 and *click* **Execute**:
 
@@ -707,7 +707,7 @@ tool in Python (or perl, or awk, or...) to do this.
 
 Let's first create a directory for our new tool:
 
-    gmod@ubuntu:~/work/galaxy-dist$ mkdir tools/gmod_2011
+ gmod@ubuntu:~/work/galaxy-dist$ mkdir tools/gmod_2011
 
 ## The tool command (script)
 
@@ -726,17 +726,17 @@ import sys
 out = open( sys.argv[2], "w" )
 
 for line in open( sys.argv[1] ):
-    # Strip end of line and split on tabs
-    fields = line.rstrip( "\r\n" ).split( "\t" )
-    # Look only at optional fields
-    write_line = False
-    for field in fields[12:]:
-        flag, type, value = field.split( ":" )
-        if flag == sys.argv[3] and value == sys.argv[4]:
-            write_line = True
-    # If any optional field matched, keep the read
-    if write_line:
-        out.write( line )
+ # Strip end of line and split on tabs
+ fields = line.rstrip( "\r\n" ).split( "\t" )
+ # Look only at optional fields
+ write_line = False
+ for field in fields[12:]:
+ flag, type, value = field.split( ":" )
+ if flag == sys.argv[3] and value == sys.argv[4]:
+ write_line = True
+ # If any optional field matched, keep the read
+ if write_line:
+ out.write( line )
 ```
 
 ## The tool wrapper
@@ -746,15 +746,15 @@ Next, we need to create the tool configuration. Edit the file
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
-    <command interpreter="python">
+ <command interpreter="python">
 
-    </command>
-    <inputs>
+ </command>
+ <inputs>
 
-    </inputs>
-    <outputs>
+ </inputs>
+ <outputs>
 
-    </outputs>
+ </outputs>
 </tool>
 ```
 
@@ -763,15 +763,15 @@ First, let's define the output. This tool has a single output, of type
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
-    <command interpreter="python">
+ <command interpreter="python">
 
-    </command>
-    <inputs>
+ </command>
+ <inputs>
 
-    </inputs>
-    <outputs>
-        <data name="output1" format="sam" />
-    </outputs>
+ </inputs>
+ <outputs>
+ <data name="output1" format="sam" />
+ </outputs>
 </tool>
 ```
 
@@ -787,21 +787,21 @@ The resulting configuration:
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
-    <command interpreter="python">
+ <command interpreter="python">
 
-    </command>
-    <inputs>
-        <param type="data" format="sam" name="input1" label="File to filter"/>
-        <param type="select" name="flag" label="Optional field to filter on">
-            <option value="NM">Edit Distance</option>
-            <option value="MD">Mismatching positions / bases</option>
-        <option value="AS">Alignment score</option>
-        </param>
-    <param type="text" name="value" label="Value to require for flag"/>
-    </inputs>
-    <outputs>
-        <data name="output1" format="sam" />
-    </outputs>
+ </command>
+ <inputs>
+ <param type="data" format="sam" name="input1" label="File to filter"/>
+ <param type="select" name="flag" label="Optional field to filter on">
+ <option value="NM">Edit Distance</option>
+ <option value="MD">Mismatching positions / bases</option>
+ <option value="AS">Alignment score</option>
+ </param>
+ <param type="text" name="value" label="Value to require for flag"/>
+ </inputs>
+ <outputs>
+ <data name="output1" format="sam" />
+ </outputs>
 </tool>
 ```
 
@@ -812,21 +812,21 @@ final tool configuration is:
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
-    <command interpreter="python">
-        sam_filter.py $input1 $output1 $flag $value
-    </command>
-    <inputs>
-        <param type="data" format="sam" name="input1" label="File to filter"/>
-        <param type="select" name="flag" label="Optional field to filter on">
-            <option value="NM">Edit Distance</option>
-            <option value="MD">Mismatching positions / bases</option>
-        <option value="AS">Alignment score</option>
-        </param>
-    <param type="text" name="value" label="Value to require for flag"/>
-    </inputs>
-    <outputs>
-        <data name="output1" format="sam" />
-    </outputs>
+ <command interpreter="python">
+ sam_filter.py $input1 $output1 $flag $value
+ </command>
+ <inputs>
+ <param type="data" format="sam" name="input1" label="File to filter"/>
+ <param type="select" name="flag" label="Optional field to filter on">
+ <option value="NM">Edit Distance</option>
+ <option value="MD">Mismatching positions / bases</option>
+ <option value="AS">Alignment score</option>
+ </param>
+ <param type="text" name="value" label="Value to require for flag"/>
+ </inputs>
+ <outputs>
+ <data name="output1" format="sam" />
+ </outputs>
 </tool>
 ```
 
@@ -836,10 +836,10 @@ Galaxy. Modify the top of `tool_conf.xml` to look like:
 ``` de1
 <?xml version="1.0"?>
 <toolbox>
-  <section name="GMOD 2011 Course Tools" id="gmod_2011">
-    <tool file="gmod_2011/sam_filter.xml"/>
-  </section>
-  ...
+ <section name="GMOD 2011 Course Tools" id="gmod_2011">
+ <tool file="gmod_2011/sam_filter.xml"/>
+ </section>
+ ...
 ```
 
 and run Galaxy using `run.sh`
@@ -936,10 +936,10 @@ Python libraries for working with genomic and comparative genomic data.
 
 Now, we will download the datasets for our example genome:
 
-    $ mkdir tool-data/a_example_1
-    $ cd tool-data/a_example_1
-    $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/a_example_1.maf
-    $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/a_example_1.2bit
+ $ mkdir tool-data/a_example_1
+ $ cd tool-data/a_example_1
+ $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/a_example_1.maf
+ $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/a_example_1.2bit
 
 Note: These files are also available on the image in
 `~/Documents/Data/galaxy/`.
@@ -948,10 +948,10 @@ Next, we will use the script `maf_build_index.py` (put in
 `/usr/local/bin/` when `bx-python` was installed) to create a binary
 index that allows fast selection of alignments from a MAF file:
 
-    $ maf_build_index.py a_example_1.maf
-    $ ls
-    a_example_1.2bit  a_example_1.maf  a_example_1.maf.index
-    $ cd ~/work/galaxy-dist
+ $ maf_build_index.py a_example_1.maf
+ $ ls
+ a_example_1.2bit a_example_1.maf a_example_1.maf.index
+ $ cd ~/work/galaxy-dist
 
 ## Edit configuration files
 
@@ -962,7 +962,7 @@ existence of our genome, and of these associated datasets.
 tabs are in the right places. If you have trouble cutting and pasting
 from the wiki, you can cut and paste from this text file instead:
 
-    ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/info.txt
+ ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/info.txt
 
 Add this line to `tool-data/shared/ucsc/builds.txt`
 
@@ -979,13 +979,13 @@ seq a_example_1 /home/gmod/work/galaxy-dist/tool-data/a_example_1/a_example_1.2b
 Add this to `tool-data/maf_index.loc`
 
 ``` enter
-a_example_1 with 3 other species    a_example_1_3way    a_example_1 a_example_1,apiMel2,n_vitripennis_20100409,dm3  /home/gmod/work/galaxy-dist/tool-data/a_example_1/a_example_1.maf
+a_example_1 with 3 other species a_example_1_3way a_example_1 a_example_1,apiMel2,n_vitripennis_20100409,dm3 /home/gmod/work/galaxy-dist/tool-data/a_example_1/a_example_1.maf
 ```
 
 Now, stop and start your running Galaxy with
 
-    <Control-C>
-    $ sh run.sh
+ <Control-C>
+ $ sh run.sh
 
 ## Create dataset using new genome build
 
@@ -994,8 +994,8 @@ Upload File**.
 
 Paste the following into the **URL/Text** box:
 
-    scaffold0   450 650
-    scaffold0   2000    3000
+ scaffold0 450 650
+ scaffold0 2000 3000
 
 Set the **File Format** to **BED**, make sure **Convert spaces to tabs**
 is **selected**, and click in the **Genome:** box. You should be able to
@@ -1037,8 +1037,8 @@ height="683" alt="Galaxy Fetch 3.png" />
 Terminate Galaxy with `Control-C`. Edit `universe_wsgi.ini` again and in
 the section `[app:main]` add two lines:
 
-    # enable_tracks = True
-    enable_pages = True
+ # enable_tracks = True
+ enable_pages = True
 
 Restart Galaxy with `run.sh`
 
@@ -1096,35 +1096,35 @@ We've only scratched the surface of what can be done with Galaxy. Here
 are some pointers for learning more:
 
 - <a
-  href="http://main.g2.bx.psu.edu/u/jeremy/p/galaxy-rna-seq-analysis-exercise"
-  class="external text" rel="nofollow">Jeremy Goecks' RNA-seq Analysis
-  Exercise shared page</a>.
+ href="http://main.g2.bx.psu.edu/u/jeremy/p/galaxy-rna-seq-analysis-exercise"
+ class="external text" rel="nofollow">Jeremy Goecks' RNA-seq Analysis
+ Exercise shared page</a>.
 - <a
-  href="http://bitbucket.org/galaxy/galaxy-central/wiki/ToolConfigSyntax"
-  class="external text" rel="nofollow">You can build much more complicated
-  tool configurations</a>
+ href="http://bitbucket.org/galaxy/galaxy-central/wiki/ToolConfigSyntax"
+ class="external text" rel="nofollow">You can build much more complicated
+ tool configurations</a>
 - <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/Config/Cluster"
-  class="external text" rel="nofollow">Your Galaxy instance can run jobs
-  on a cluster</a>
+ class="external text" rel="nofollow">Your Galaxy instance can run jobs
+ on a cluster</a>
 - <a
-  href="http://bitbucket.org/galaxy/galaxy-central/wiki/Config/ProductionServer"
-  class="external text" rel="nofollow">Your Galaxy can be more robust and
-  scalable</a>
+ href="http://bitbucket.org/galaxy/galaxy-central/wiki/Config/ProductionServer"
+ class="external text" rel="nofollow">Your Galaxy can be more robust and
+ scalable</a>
 - <a
-  href="http://bitbucket.org/galaxy/galaxy-central/wiki/DataIntegration"
-  class="external text" rel="nofollow">You can make local genomes,
-  alignments, and other data available to Galaxy</a>
+ href="http://bitbucket.org/galaxy/galaxy-central/wiki/DataIntegration"
+ class="external text" rel="nofollow">You can make local genomes,
+ alignments, and other data available to Galaxy</a>
 - <a
-  href="http://bitbucket.org/galaxy/galaxy-central/wiki/ExternalDisplayApplications/Tutorial"
-  class="external text" rel="nofollow">You can customize what external
-  applications are available for displaying datasets</a>
+ href="http://bitbucket.org/galaxy/galaxy-central/wiki/ExternalDisplayApplications/Tutorial"
+ class="external text" rel="nofollow">You can customize what external
+ applications are available for displaying datasets</a>
 - <a
-  href="http://bitbucket.org/galaxy/galaxy-central/wiki/AddingDatatypes"
-  class="external text" rel="nofollow">You can customize the datatypes for
-  a Galaxy instance</a>
+ href="http://bitbucket.org/galaxy/galaxy-central/wiki/AddingDatatypes"
+ class="external text" rel="nofollow">You can customize the datatypes for
+ a Galaxy instance</a>
 - <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/cloud"
-  class="external text" rel="nofollow">You can instantiate Galaxy on the
-  Amazon cloud</a>
+ class="external text" rel="nofollow">You can instantiate Galaxy on the
+ Amazon cloud</a>
 - <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/Home"
-  class="external text" rel="nofollow">You can find even more at the
-  Galaxy wiki</a>
+ class="external text" rel="nofollow">You can find even more at the
+ Galaxy wiki</a>

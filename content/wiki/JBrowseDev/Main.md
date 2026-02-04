@@ -30,6 +30,6 @@ width="40" height="39" alt="} is open source" /></a>
 class="external text" rel="nofollow">Artistic License 2.0</a>
 
 - [GMOD
-  Components](../Category:GMOD_Components)
+ Components](../Category:GMOD_Components)
 - [AJAX](../Category:AJAX)
 - [JBrowse](../Category:JBrowse)

@@ -3,72 +3,72 @@ title: "Introduction to Chado"
 ---
 # Introduction to Chado
 
-  chado?</span>](#What.27s_a_chado.3F)
+ chado?</span>](#What.27s_a_chado.3F)
 - [Chado - the
-  way of tea](#Chado_-_the_way_of_tea)
+ way of tea](#Chado_-_the_way_of_tea)
 - [What
-  Documentation Exists for
-  chado?](#What_Documentation_Exists_for_chado.3F)
+ Documentation Exists for
+ chado?](#What_Documentation_Exists_for_chado.3F)
 - [A Modular
-  Schema](#A_Modular_Schema)
-  - [Chado
-    Module List](#Chado_Module_List)
+ Schema](#A_Modular_Schema)
+ - [Chado
+ Module List](#Chado_Module_List)
 - [The Sequence
-  Module and Features](#The_Sequence_Module_and_Features)
-  - [Definition](#Definition)
-  - [Feature
-    Types: an *Ontology*](#Feature_Types:_an_Ontology)
-  - [Some other
-    feature types](#Some_other_feature_types)
+ Module and Features](#The_Sequence_Module_and_Features)
+ - [Definition](#Definition)
+ - [Feature
+ Types: an *Ontology*](#Feature_Types:_an_Ontology)
+ - [Some other
+ feature types](#Some_other_feature_types)
 - [Feature
-  Graphs](#Feature_Graphs)
+ Graphs](#Feature_Graphs)
 - [Feature Graph
-  Transformations](#Feature_Graph_Transformations)
+ Transformations](#Feature_Graph_Transformations)
 - [Representing
-  Graphs in a Relational
-  Database](#Representing_Graphs_in_a_Relational_Database)
+ Graphs in a Relational
+ Database](#Representing_Graphs_in_a_Relational_Database)
 - [Representing
-  Ontology Graphs in
-  Chado](#Representing_Ontology_Graphs_in_Chado)
+ Ontology Graphs in
+ Chado](#Representing_Ontology_Graphs_in_Chado)
 - [Representing
-  Feature Graphs in Chado](#Representing_Feature_Graphs_in_Chado)
-  - [Features
-    are typed](#Features_are_typed)
+ Feature Graphs in Chado](#Representing_Feature_Graphs_in_Chado)
+ - [Features
+ are typed](#Features_are_typed)
 - [Querying
-  Graphs](#Querying_Graphs)
+ Graphs](#Querying_Graphs)
 - [Using views
-  to simplify queries](#Using_views_to_simplify_queries)
+ to simplify queries](#Using_views_to_simplify_queries)
 - [Extensible
-  Attributes](#Extensible_Attributes)
+ Attributes](#Extensible_Attributes)
 - [Localising
-  Features in Sequence
-  Coordinates](#Localising_Features_in_Sequence_Coordinates)
+ Features in Sequence
+ Coordinates](#Localising_Features_in_Sequence_Coordinates)
 - [Interbase
-  Coordinates](#Interbase_Coordinates)
+ Coordinates](#Interbase_Coordinates)
 - [Basic
-  example - with locations](#Basic_example_-_with_locations)
+ example - with locations](#Basic_example_-_with_locations)
 - [Locations can
-  be nested](#Locations_can_be_nested)
+ be nested](#Locations_can_be_nested)
 - [Computational
-  analysis: Predictions](#Computational_analysis:_Predictions)
+ analysis: Predictions](#Computational_analysis:_Predictions)
 - [Computational
-  analysis: Similarity
-  results](#Computational_analysis:_Similarity_results)
+ analysis: Similarity
+ results](#Computational_analysis:_Similarity_results)
 - [Computational
-  analysis: Multiple
-  alignments](#Computational_analysis:_Multiple_alignments)
+ analysis: Multiple
+ alignments](#Computational_analysis:_Multiple_alignments)
 - [Variation
-  features](#Variation_features)
+ features](#Variation_features)
 - [Bioperl and
-  chado mapping](#Bioperl_and_chado_mapping)
+ chado mapping](#Bioperl_and_chado_mapping)
 - [Acknowledgements](#Acknowledgements)
-  - [Schema
-    design](#Schema_design)
-  - [Chado
-    beta testers and other
-    feedback](#Chado_beta_testers_and_other_feedback)
+ - [Schema
+ design](#Schema_design)
+ - [Chado
+ beta testers and other
+ feedback](#Chado_beta_testers_and_other_feedback)
 - [About this
-  Page](#About_this_Page)
+ Page](#About_this_Page)
 
 ## What's a chado?
 
@@ -101,39 +101,39 @@ are more useful pages in the Wiki:
 ### Chado Module List
 
 - [Audit](/wiki/Chado_Audit_Module) - for database audit
-  trails
+ trails
 - [Companalysis](/wiki/Chado_Companalysis_Module) -
-  for data from computational analysis
+ for data from computational analysis
 - [Contact](/wiki/Chado_Contact_Module) - for people,
-  groups, and organizations
+ groups, and organizations
 - [Controlled Vocabulary (cv)](/wiki/Chado_CV_Module) - for
-  controlled vocabularies and ontologies
+ controlled vocabularies and ontologies
 - [Expression](/wiki/Chado_Expression_Module) - for
-  summaries of RNA and protein expression
+ summaries of RNA and protein expression
 - [General](/wiki/Chado_General_Module) - for
-  identifiers
+ identifiers
 - [Genetic](/wiki/Chado_Genetic_Module) - for genetic
-  data and genotypes
+ data and genotypes
 - [Library](/wiki/Chado_Library_Module) - for
-  descriptions of molecular libraries
+ descriptions of molecular libraries
 - [Mage](/wiki/Chado_Mage_Module) - for microarray data
 - [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](/wiki/Chado_Natural_Diversity_Module) -
-  for multiple experiments, such as phenotyping and genotyping
+ (ND)](/wiki/Chado_Natural_Diversity_Module) -
+ for multiple experiments, such as phenotyping and genotyping
 - [Organism](/wiki/Chado_Organism_Module) - for
-  taxonomic data
+ taxonomic data
 - [Phenotype](/wiki/Chado_Phenotype_Module) - for
-  phenotypic data
+ phenotypic data
 - [Phylogeny](/wiki/Chado_Phylogeny_Module) - for
-  organisms and phylogenetic trees
+ organisms and phylogenetic trees
 - [Publication
-  (pub)](/wiki/Chado_Publication_Module) - for
-  publications and references
+ (pub)](/wiki/Chado_Publication_Module) - for
+ publications and references
 - [Sequence](/wiki/Chado_Sequence_Module) - for
-  sequences and sequence features
+ sequences and sequence features
 - [Stock](/wiki/Chado_Stock_Module) - for specimens and
-  biological collections
+ biological collections
 - [WWW](/wiki/Chado_WWW_Module) -
 
 There are *dependencies* between the modules.
@@ -330,11 +330,11 @@ height="532" alt="Transitive closure.png" />
 Solid lines represent the actual relationships. The collection of dotted
 lines is the closure of the relationships.
 
-    forall x      ALWAYS TRUE:     x R* x
+ forall x ALWAYS TRUE: x R* x
 
-    x R y             IMPLIES:     x R* y
+ x R y IMPLIES: x R* y
 
-    x R y,  y R* z    IMPLIES:     x R* z
+ x R y, y R* z IMPLIES: x R* z
 
 ## Using views to simplify queries
 
@@ -344,12 +344,12 @@ includes the closure of the *is_a* relationship.
 
 ``` de1
  CREATE VIEW fgene AS
-   SELECT
-     feature.*
-   FROM
-     feature INNER JOIN cvpath ON (feature.ftype_id = cvpath.subjterm_id)
-     INNER JOIN cvterm ON (cvpath.objterm_id = cvterm.cvterm_id)
-   WHERE cvterm.termname = 'gene';
+ SELECT
+ feature.*
+ FROM
+ feature INNER JOIN cvpath ON (feature.ftype_id = cvpath.subjterm_id)
+ INNER JOIN cvterm ON (cvpath.objterm_id = cvterm.cvterm_id)
+ WHERE cvterm.termname = 'gene';
 ```
 
 At Flybase we will mostly be using chado in *data-mining* mode - i.e. we
@@ -560,5 +560,5 @@ multiple locations.
 ## About this Page
 
 - This page is a Wikified version of a
-  <a href="http://archive.is/ENOJk" class="external text"
-  rel="nofollow">presentation by Chris Mungall</a>.
+ <a href="http://archive.is/ENOJk" class="external text"
+ rel="nofollow">presentation by Chris Mungall</a>.

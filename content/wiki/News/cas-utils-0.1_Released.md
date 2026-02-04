@@ -11,7 +11,7 @@ used to tie together [GBrowse](../GBrowse.1),
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>. It can
 be downloaded at:
 
-    http://sourceforge.net/project/showfiles.php?group_id=27707&package_id=284978
+ http://sourceforge.net/project/showfiles.php?group_id=27707&package_id=284978
 
 These utilities consist of 4 main tools:
 
@@ -27,7 +27,7 @@ immediately loaded into Chado or to be held for validation.
 
 - A configuration perl module to make modifying the CGI's behavior easy.
 - A Module::Build based installer that queries the user for needed setup
-  data.
+ data.
 
 While this release of cas-utils assumes that the port for connecting to
 the database is blocked for outside users, future releases of these
@@ -39,7 +39,7 @@ working:
 
 - Chado with computational analysis and annotation data already loaded.
 - GBrowse (either 1.69 (to be released soon) or from the stable cvs
-  branch).
+ branch).
 - Apollo, both as an installed application (like in /usr/bin), and as
 
 source that has been built into a webstart application and installed for
@@ -50,13 +50,13 @@ prerequisites, please send questions to the most appropriate mailing
 list:
 
 - Chado:
-  <a href="mailto:gmod-schema@lists.sourceforge.net" class="external text"
-  rel="nofollow">gmod-schema@lists.sourceforge.net</a>
+ <a href="mailto:gmod-schema@lists.sourceforge.net" class="external text"
+ rel="nofollow">gmod-schema@lists.sourceforge.net</a>
 - GBrowse: <a href="mailto:gmod-gbrowse@lists.sourceforge.net"
-  class="external text"
-  rel="nofollow">gmod-gbrowse@lists.sourceforge.net</a>
+ class="external text"
+ rel="nofollow">gmod-gbrowse@lists.sourceforge.net</a>
 - Apollo: <a href="mailto:apollo@fruitfly.org" class="external text"
-  rel="nofollow">apollo@fruitfly.org</a>
+ rel="nofollow">apollo@fruitfly.org</a>
 
 I've only tested this application on CentOS 4.6 and Ubuntu 8.04, though
 there is no reason to believe that this wouldn't work on any Linux and

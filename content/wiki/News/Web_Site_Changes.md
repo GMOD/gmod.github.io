@@ -8,13 +8,13 @@ different, but it was updated on Monday, August 11,2008. Here's what
 changed:
 
 - The site was upgraded from
-  <a href="http://mediawiki.org" class="external text">Mediawiki</a>
-  1.9.3 to <a href="http://mediawiki.org/wiki/Manual:Upgrading_to_1.12"
-  class="external text">MediaWiki 1.12.0</a>.
+ <a href="http://mediawiki.org" class="external text">Mediawiki</a>
+ 1.9.3 to <a href="http://mediawiki.org/wiki/Manual:Upgrading_to_1.12"
+ class="external text">MediaWiki 1.12.0</a>.
 - Replaced the default MediaWiki site search mechanism with Google.
 - URLs have been rationalized. Previously, there were many different URL
-  to get to each wiki page. Now all URLs are redirected to
-  http://gmod.org/wiki/Page_Name
+ to get to each wiki page. Now all URLs are redirected to
+ http://gmod.org/wiki/Page_Name
 
 We have done our best to make this upgrade as smooth and transparent as
 possible. However, if you do notice anything unusual, please notify the

@@ -26,12 +26,12 @@ must successfully complete a criminal background check
 The essential functions of this position include:
 
 - Supervise technical staff (9 direct reports) ensuring equal growth
-  opportunities and facilitating skills development.
+ opportunities and facilitating skills development.
 - Manage project plans and schedules.
 - Work with staff to establish software project development standards.
 - Ensure development process consistency and compliance with standards.
 - Meet regularly with the data curation manager to co-ordinate planning
-  efforts and review progress.
+ efforts and review progress.
 - Ensure adequate support for existing and future infrastructure.
 - Help team members to resolve technical and non-technical problems.
 - Facilitate communication within and between teams.
@@ -39,11 +39,11 @@ The essential functions of this position include:
 Minimum qualifications:
 
 - Bachelor's degree in computer science or a related technical field.
-  Master's preferred.
+ Master's preferred.
 - 3+ years experience managing software development projects.
 - Proven experience using formal software methodologies.
 - Familiarity with relational database systems and Java programming
-  environment.
+ environment.
 - Strong interpersonal skills, written, and verbal communication.
 - Demonstrated organizational skills.
 - Knowledge of biology is a plus.

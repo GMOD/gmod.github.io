@@ -5,29 +5,29 @@ title: "Zheng's installation notes"
 
 Back to [Chado New Users](/wiki/Chado_New_Users)
 
-  information</span>](#general_information)
+ information</span>](#general_information)
 - [before you
-  start](#before_you_start)
+ start](#before_you_start)
 - [get chado
-  schema from cvs](#get_chado_schema_from_cvs)
+ schema from cvs](#get_chado_schema_from_cvs)
 - [install
-  prerequisites](#install_prerequisites)
-  - [install
-    Ant](#install_Ant)
-  - [install
-    postgresql](#install_postgresql)
-  - [install
-    several general perl
-    modules](#install_several_general_perl_modules)
-  - [install
-    bioperl live](#install_bioperl_live)
-  - [install
-    go-dev](#install_go-dev)
+ prerequisites](#install_prerequisites)
+ - [install
+ Ant](#install_Ant)
+ - [install
+ postgresql](#install_postgresql)
+ - [install
+ several general perl
+ modules](#install_several_general_perl_modules)
+ - [install
+ bioperl live](#install_bioperl_live)
+ - [install
+ go-dev](#install_go-dev)
 - [install
-  chado](#install_chado)
+ chado](#install_chado)
 - [install
-  gbrowse to work with
-  chado](#install_gbrowse_to_work_with_chado)
+ gbrowse to work with
+ chado](#install_gbrowse_to_work_with_chado)
 
 ## general information
 
@@ -35,19 +35,19 @@ There suppose to be an easy way and a hard way to install Chado database
 on Fedora:
 
 - the easy way: use an existing rpm package. I have not tried it. but
-  you can find information at [installation using an
-  RPM](/wiki/Chado_-_Getting_Started#Installation_using_an_RPM)
+ you can find information at [installation using an
+ RPM](/wiki/Chado_-_Getting_Started#Installation_using_an_RPM)
 - the hard way: install by source. But
-  <a href="http://en.wikipedia.org/wiki/Yellow_dog_Updater,_Modified"
-  class="external text" rel="nofollow">yum</a> makes it easier. The
-  following is my note on installation of Chado on Fedora 6.
+ <a href="http://en.wikipedia.org/wiki/Yellow_dog_Updater,_Modified"
+ class="external text" rel="nofollow">yum</a> makes it easier. The
+ following is my note on installation of Chado on Fedora 6.
 
 ## before you start
 
 - you can be a superuser or you can sudo to install packages;
 - you have read <a
-  href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/schema/chado/INSTALL"
-  class="external text" rel="nofollow">the chado INSTALL document</a>
+ href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/schema/chado/INSTALL"
+ class="external text" rel="nofollow">the chado INSTALL document</a>
 
 ## get chado schema from cvs
 
@@ -59,44 +59,44 @@ issue cvs command at my home directory.
 
 ### install <a href="http://en.wikipedia.org/wiki/Apache_Ant" class="external text"
 
-    sudo yum install ant
+ sudo yum install ant
 
 ### install <a href="http://www.postgresql.org/" class="external text"
 
 - install both client and server by yum
-    [zha@localhost ~] sudo yum install postgresql
-    [zha@localhost ~] sudo yum install postgresql-server
+ [zha@localhost ~] sudo yum install postgresql
+ [zha@localhost ~] sudo yum install postgresql-server
 
 right now the version is 8.1.8 (in yum package pool)
 
 - make server run
-    [zha@localhost ~] sudo /sbin/service postgres start
+ [zha@localhost ~] sudo /sbin/service postgres start
 
 to make it run at boot
 
-    [zha@localhost ~] sudo /sbin/chkconfig postgres on
+ [zha@localhost ~] sudo /sbin/chkconfig postgres on
 
 - in .bash_profile add line
-    export PGDATA="/var/lib/pgsql/data/"
+ export PGDATA="/var/lib/pgsql/data/"
 
 But I still can't get rid of the -D /var/lib/pgsql/data/ **why???**
 
-    [zha@localhost gff3]$ sudo -u postgres postgres
-    postgres does not know where to find the server configuration file.
-    You must specify the --config-file or -D invocation option or set the PGDATA environment variable.
-    [zha@localhost gff3]$ sudo -u postgres postgres -D /var/lib/pgsql/data
-    FATAL:  lock file "postmaster.pid" already exists
-    HINT:  Is another postmaster (PID 2785) running in data directory "/var/lib/pgsql/data"?
+ [zha@localhost gff3]$ sudo -u postgres postgres
+ postgres does not know where to find the server configuration file.
+ You must specify the --config-file or -D invocation option or set the PGDATA environment variable.
+ [zha@localhost gff3]$ sudo -u postgres postgres -D /var/lib/pgsql/data
+ FATAL: lock file "postmaster.pid" already exists
+ HINT: Is another postmaster (PID 2785) running in data directory "/var/lib/pgsql/data"?
 
 - create PL language, template, several roles
-    [zha@localhost ~] sudo -u postgres creatlang plpgsql template1
-    [zha@localhost ~] sudo -u postgres createuser zha
+ [zha@localhost ~] sudo -u postgres creatlang plpgsql template1
+ [zha@localhost ~] sudo -u postgres createuser zha
 
 replace zha with your own account name at your home directory. this must
 be a user with privilege to create and drop database. this is purely for
 the purpose of smooth installation.
 
-    [zha@localhost ~] sudo -u postgres createuser root
+ [zha@localhost ~] sudo -u postgres createuser root
 
 this must be a superuser of postgresql (same privilege as postgres),
 this is for installing DBIx::DBStag.
@@ -106,10 +106,10 @@ this is for installing DBIx::DBStag.
 the pg_hba.conf is in /var/lib/pgsql/data/pg_hba.conf, you probably need
 to chown to postgres.
 
-    # TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD
-    local   all         all                               trust
-    host    all         all         127.0.0.1/32          trust
-    host    all         all         ::1/128               trust
+ # TYPE DATABASE USER CIDR-ADDRESS METHOD
+ local all all trust
+ host all all 127.0.0.1/32 trust
+ host all all  ::1/128 trust
 
 **need revisit for local access and access method (MD5)**
 
@@ -136,7 +136,7 @@ class="external text" rel="nofollow">DBD::Pg</a> (1.49 or better)
 
 you can also install it by
 
-    yum install perl-DBD-Pg
+ yum install perl-DBD-Pg
 
 <a href="http://search.cpan.org/~gaas/Digest-MD5-2.36/MD5.pm"
 class="external text" rel="nofollow">Digest::MD5</a> (GBrowse)
@@ -198,9 +198,9 @@ better) (chado)
 ### install <a href="http://search.cpan.org/~sendu/bioperl-1.5.2_102/"
 class="external text" rel="nofollow">bioperl live</a>
 
-    [zha@localhost ~]$ sudo cpan
-    Password:
-    cpan[1]> install S/SE/SENDU/bioperl-1.5.2_102
+ [zha@localhost ~]$ sudo cpan
+ Password:
+ cpan[1]> install S/SE/SENDU/bioperl-1.5.2_102
 
 this is the live bioperl right now
 
@@ -212,39 +212,39 @@ environment variable. Although right now only a perl parser module for
 GO is needed.
 
 - in .bash_profile add line
-    export GO_ROOT="$HOME/go-dev"
+ export GO_ROOT="$HOME/go-dev"
 
 - install GO::Parser
-    [zha@localhost ~]$ sudo cpan
-    Password:
-    cpan[1]> install GO::Parser
+ [zha@localhost ~]$ sudo cpan
+ Password:
+ cpan[1]> install GO::Parser
 
 ## install chado
 
 - in .bash_profile add lines
-    export GMOD_ROOT="/usr/local/gmod"
-    export CHADO_DB_NAME="yeast_chado"
-    export CHADO_DB_USERNAME="zha"
+ export GMOD_ROOT="/usr/local/gmod"
+ export CHADO_DB_NAME="yeast_chado"
+ export CHADO_DB_USERNAME="zha"
 
 - standard perl package install
-    perl Makefile.PL
-    make
-    sudo make install
+ perl Makefile.PL
+ make
+ sudo make install
 
 and then:
 
-    make load_schema
-    make prepdb
-    make ontologies
+ make load_schema
+ make prepdb
+ make ontologies
 
 - backup ontologies
-    pg_dump wormbase_chado > onto_only.sql
+ pg_dump wormbase_chado > onto_only.sql
 
 - load sample yeast genome data
 
 download yeast genome gff3 file. load by bulk load
 
-    gmod_bulk_load_gff3.pl --organism yeast --gfffile saccharomyces_cerevisiae.gff
+ gmod_bulk_load_gff3.pl --organism yeast --gfffile saccharomyces_cerevisiae.gff
 
 ## install gbrowse to work with chado
 
@@ -256,34 +256,34 @@ class="external text" rel="nofollow">Gbrowse</a>, unpack it. standard
 install procedure. But be sure to read **README.fedora** and disable
 SELINUX for apache!!!
 
-    perl Makefile.PL HTDOCS=/var/www/html CONF=/etc/httpd/conf CGIBIN=/var/www/cgi-bin --SELINUX=1
-    make
-    sudo make install UNINST=1
+ perl Makefile.PL HTDOCS=/var/www/html CONF=/etc/httpd/conf CGIBIN=/var/www/cgi-bin --SELINUX=1
+ make
+ sudo make install UNINST=1
 
 - work with chado
 
 who is running apache?
 
-    [zha@localhost ~]$ ps -ef |grep httpd
+ [zha@localhost ~]$ ps -ef |grep httpd
 
 in my machine it is 'apache'. configure gbrowse to work with chado.
 
-    cp /home/zha/Generic-Genome-Browser-1.67/contrib/conf_files/07.chado.conf /etc/httpd/conf/gbrowse.conf/yeast_chado.conf
+ cp /home/zha/Generic-Genome-Browser-1.67/contrib/conf_files/07.chado.conf /etc/httpd/conf/gbrowse.conf/yeast_chado.conf
 
 make two-line-change to yeast_chado.conf
 
-    database      = dbi:Pg:dbname=yeast_chado;host=localhost;port=5432
-    user          = apache
+ database = dbi:Pg:dbname=yeast_chado;host=localhost;port=5432
+ user = apache
 
 grant select privilege on several tables to apache
 
-    grant select on feature to apache;
+ grant select on feature to apache;
 
 in Mac it is www, see [Jim's installation
 notes](/wiki/Jim's_installation_notes).
 
 it is a little bit surprise to me that I need
 
-    grant select on analysisfeature to apache;
+ grant select on analysisfeature to apache;
 
 since no analysisfeature exists in dataset (?)

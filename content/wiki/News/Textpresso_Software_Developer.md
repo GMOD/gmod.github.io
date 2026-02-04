@@ -26,13 +26,13 @@ Basic qualifications include:
 - BS in a field of science or engineering.
 - Documented experience in software development.
 - Experience with the majority of the following languages: Perl, C/C++,
-  Java, Javascript, Ajax, jQuery.
+ Java, Javascript, Ajax, jQuery.
 - Familiarity with web application frameworks.
 - Experience managing and configuring Linux systems and webservers.
 - Proficiency in protocols used for web-publishing such as HTML, XML,
-  XSLT, CSS.
+ XSLT, CSS.
 - Knowledge about database management systems and similar software such
-  as PostgreSQL or MySQL.
+ as PostgreSQL or MySQL.
 
 Thanks and Happy Holidays,
 

@@ -19,20 +19,20 @@ class="external text" rel="nofollow">four BioMart or BioMart-related
 openings</a>:
 
 - <a
-  href="http://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=633983"
-  class="external text" rel="nofollow">Bioinformatician/Data Manager</a>
+ href="http://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=633983"
+ class="external text" rel="nofollow">Bioinformatician/Data Manager</a>
 - <a
-  href="http://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=634437"
-  class="external text" rel="nofollow">Outreach and Training Coordinator
-  ICGC DCC</a>
+ href="http://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=634437"
+ class="external text" rel="nofollow">Outreach and Training Coordinator
+ ICGC DCC</a>
 - <a
-  href="http://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=633985"
-  class="external text" rel="nofollow">Database programmer/Technical
-  Analyst</a>
+ href="http://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=633985"
+ class="external text" rel="nofollow">Database programmer/Technical
+ Analyst</a>
 - <a
-  href="http://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=633980"
-  class="external text" rel="nofollow">Scientific Associate Computational
-  Biology</a>
+ href="http://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=633980"
+ class="external text" rel="nofollow">Scientific Associate Computational
+ Biology</a>
 
 The [BioMart](../BioMart) biological data warehouse system is
 developed at <a href="http://www.oicr.on.ca/" class="external text"

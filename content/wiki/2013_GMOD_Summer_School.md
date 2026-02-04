@@ -46,7 +46,7 @@ The course covers the following topics in detail:
 <tr class="odd">
 <td>Day 1, AM</td>
 <td><a href="/wiki/Cloud" title="Cloud">GMOD in the Cloud</a>, <a href="/wiki/AWS_walkthrough" title="AWS walkthrough">AWS walkthrough</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
@@ -57,7 +57,7 @@ title="GBrowse">GBrowse</a></td>
 <td>Day 2, AM</td>
 <td><a href="/wiki/Chado_Tutorial_2013" title="Chado Tutorial 2013">Chado
 Tutorial</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
@@ -68,7 +68,7 @@ title="GBrowse">GBrowse</a></td>
 <td>Day 5, AM</td>
 <td><a href="/wiki/Galaxy_Tutorial_2013" title="Galaxy Tutorial 2013">Galaxy
 Tutorial</a></td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 <td><a href="http://galaxyproject.org/" class="external text"
 
 class="external text" rel="nofollow">Emory University</a><br />
@@ -77,7 +77,7 @@ class="external text" rel="nofollow">Emory University</a><br />
 <tr class="even">
 <td>Day 4, AM</td>
 <td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
@@ -88,7 +88,7 @@ title="GBrowse">GBrowse</a></td>
 <td>Day 4, PM</td>
 <td><a href="/wiki/GBrowse_syn_Tutorial_2013"
 title="GBrowse syn Tutorial 2013">GBrowse syn Tutorial</a></td>
-<td><a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+<td>Sheldon McKay</td>
 <td><a href="http://iplantcollaborative.org" class="external text"
 
 class="external text" rel="nofollow">CSHL</a><br />
@@ -97,7 +97,7 @@ class="external text" rel="nofollow">CSHL</a><br />
 <tr class="even">
 <td>Day 1, AM</td>
 <td><a href="/wiki/GFF3" title="GFF3">GFF3</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
@@ -108,8 +108,8 @@ title="GBrowse">GBrowse</a></td>
 <td>Day 3, AM</td>
 <td><a href="/wiki/JBrowse_Tutorial_2013"
 title="JBrowse Tutorial 2013">JBrowse Tutorial</a></td>
-<td><a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
-Buels</a></td>
+<td>Robert
+Buels</td>
 <td><a href="http://berkeley.edu" class="external text"
 
 <a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></td>
@@ -136,8 +136,8 @@ title="SOBA Tutorial">SOBA Tutorial</a></td>
 <td>Day 2, PM</td>
 <td><a href="/wiki/Tripal_Tutorial_v1.1" title="Tripal Tutorial v1.1">Tripal
 Tutorial</a></td>
-<td><a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen
-Ficklin</a></td>
+<td>Stephen
+Ficklin</td>
 <td><a href="http://www.wsu.edu" class="external text"
 
 <a href="/wiki/Tripal" title="Tripal">Tripal</a></td>
@@ -146,8 +146,8 @@ Ficklin</a></td>
 <td>Day 3, PM</td>
 <td><a href="/wiki/WebApollo_Tutorial_2013"
 title="WebApollo Tutorial 2013">WebApollo Tutorial</a></td>
-<td><a href="/wiki/User%253AChilders" title="User%253AChilders">Chris
-Childers</a></td>
+<td>Chris
+Childers</td>
 <td><a href="http://genomes.missouri.edu/" class="external text"
 
 <a href="/wiki/Apollo" title="Apollo">Apollo</a>, <a href="/wiki/WebApollo"

@@ -31,21 +31,21 @@ Additional MAKER options/capabilities include:
 
 - Map old annotation sets on to new assemblies.
 - Merge multiple legacy annotation sets into a consensus set of
-  annotations.
+ annotations.
 - Update existing annotations to take new evidence into account.
 - Tag pre-existing gene models with evidence alignments and quality
-  control metrics to assist in downstream manual curation.
+ control metrics to assist in downstream manual curation.
 - Use GFF3 pass-through to include both evidence alignments and
-  predicted gene models from algorithms not natively supported by MAKER.
+ predicted gene models from algorithms not natively supported by MAKER.
 - MAKER is MPI capable for rapid parallelization across computer
-  clusters.
+ clusters.
 - You can also easily integrate raw InterProScan results into MAKER,
-  which will identify protein domains, add GO functional categories, and
-  help assign putative gene functions to genome annotations. This data
-  then becomes accessible as part of the GFF3 output and can be loaded
-  into a <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
-  database, [GBrowse](../GBrowse.1), or
-  [Apollo](../Apollo.1).
+ which will identify protein domains, add GO functional categories, and
+ help assign putative gene functions to genome annotations. This data
+ then becomes accessible as part of the GFF3 output and can be loaded
+ into a <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
+ database, [GBrowse](../GBrowse.1), or
+ [Apollo](../Apollo.1).
 
 MAKER comes with sample data for testing purposes. See the `/data`
 directory in the download. \| screenshot =

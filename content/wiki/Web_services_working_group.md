@@ -3,16 +3,16 @@ title: "Web services working group"
 ---
 # Web services working group
 
-  Us</span>](#About_Us)
+ Us</span>](#About_Us)
 - [Members](#Members)
 - [Initiatives](#Initiatives)
-  - [GMOD
-    RESTful API](#GMOD_RESTful_API)
-  - [GMOD
-    semantic web services](#GMOD_semantic_web_services)
+ - [GMOD
+ RESTful API](#GMOD_RESTful_API)
+ - [GMOD
+ semantic web services](#GMOD_semantic_web_services)
 - [Discussions](#Discussions)
 - [Links of
-  interest](#Links_of_interest)
+ interest](#Links_of_interest)
 
 ## About Us
 
@@ -25,13 +25,13 @@ the various MODs.
 
 ## Members
 
-- [Josh Goodman](/wiki/User:Jogoodma) -
-  <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>
+- Josh Goodman -
+ <a href="http://flybase.org" class="external text"
+ rel="nofollow">FlyBase</a>
 - Robert Buels -
-  <a href="http://www.sgn.cornell.edu/" class="external text"
-  rel="nofollow">Sol Genomics Network</a>
-- Ben Hitz  are being developed in order to bring the full power of
+ <a href="http://www.sgn.cornell.edu/" class="external text"
+ rel="nofollow">Sol Genomics Network</a>
+- Ben Hitz are being developed in order to bring the full power of
 the semantic web to the rich information that all the model organism
 databases provide.
 

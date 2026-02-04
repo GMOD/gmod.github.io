@@ -15,17 +15,17 @@ life of this program, and the specific details of the program will vary
 depending on the design program that is currently involved. However,
 there are some general guidelines that apply to all programs.
 
-  Participation
-  Requirements</span>](#GMOD_User_Participation_Requirements)
+ Participation
+ Requirements</span>](#GMOD_User_Participation_Requirements)
 - [Graphic Design
-  Student Requirements](#Graphic_Design_Student_Requirements)
+ Student Requirements](#Graphic_Design_Student_Requirements)
 - [How it
-  works](#How_it_works)
+ works](#How_it_works)
 - [Previous
-  Calls](#Previous_Calls)
-  - [Spring
-    2010: Linn-Benton Community
-    College](#Spring_2010:_Linn-Benton_Community_College)
+ Calls](#Previous_Calls)
+ - [Spring
+ 2010: Linn-Benton Community
+ College](#Spring_2010:_Linn-Benton_Community_College)
 
 ## GMOD User Participation Requirements
 

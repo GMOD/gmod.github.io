@@ -26,17 +26,17 @@ maps.
 ## Links
 
 - <a href="http://acpfg.imb.uq.edu.au/cmap3d.php" class="external text"
-  rel="nofollow">CMap3D page</a> at the
-  <a href="http://acpfg.imb.uq.edu.au/" class="external text"
-  rel="nofollow">Australian Centre for Plant Functional Genomics
-  (ACPFG)</a>, where it was developed
+ rel="nofollow">CMap3D page</a> at the
+ <a href="http://acpfg.imb.uq.edu.au/" class="external text"
+ rel="nofollow">Australian Centre for Plant Functional Genomics
+ (ACPFG)</a>, where it was developed
 - [Presentation by Chris
-  Duran](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/PAG2010CMap3D.pdf) at [PAG
-  2010](/wiki/PAG_2010) on CMap3D and other tools in _Brassica_
-  research.
+ Duran](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/PAG2010CMap3D.pdf) at [PAG
+ 2010](/wiki/PAG_2010) on CMap3D and other tools in _Brassica_
+ research.
 - <a
-  href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/2/273"
-  class="external text" rel="nofollow">CMap3D: a 3D visualization tool for
-  comparative genetic maps</a>, by Chris Duran, Zoran Boskovic, Michael
-  Imelfort, Jacqueline Batley, Nicholas A. Hamilton and David Edwards,
-  Bioinformatics 2010 26(2):273-274; doi:10.1093/bioinformatics/btp646
+ href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/2/273"
+ class="external text" rel="nofollow">CMap3D: a 3D visualization tool for
+ comparative genetic maps</a>, by Chris Duran, Zoran Boskovic, Michael
+ Imelfort, Jacqueline Batley, Nicholas A. Hamilton and David Edwards,
+ Bioinformatics 2010 26(2):273-274; doi:10.1093/bioinformatics/btp646

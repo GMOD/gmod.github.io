@@ -23,30 +23,30 @@ title="Galaxy Tutorial">Galaxy Tutorial</a> for the first time.
 The [tutorials](../Category:Tutorials) are:
 
 - **<a href="../Apollo_Tutorial" class="mw-redirect"
-  title="Apollo Tutorial">Apollo Tutorial</a>** - by [Ed
-  Lee](../User:Elee)
+ title="Apollo Tutorial">Apollo Tutorial</a>** - by [Ed
+ Lee](../User:Elee)
 - **<a href="../Chado_Tutorial" class="mw-redirect"
-  title="Chado Tutorial">Chado Tutorial</a>** - by [Scott
-  Cain](../User:Scott), [Dave
-  Clements](../User:Clements), and [Joshua
-  Orvis](../User:Jorvis).
+ title="Chado Tutorial">Chado Tutorial</a>** - by [Scott
+ Cain](../User:Scott), [Dave
+ Clements](../User:Clements), and [Joshua
+ Orvis](../User:Jorvis).
 - **<a href="../Galaxy_Tutorial" class="mw-redirect"
-  title="Galaxy Tutorial">Galaxy Tutorial</a>** - by [James
-  Taylor](../User:JamesTaylor)
+ title="Galaxy Tutorial">Galaxy Tutorial</a>** - by [James
+ Taylor](../User:JamesTaylor)
 - **[GBrowse Tutorial](../GBrowse_Tutorial)** - by
-  [Scott Cain](../User:Scott)
+ [Scott Cain](../User:Scott)
 - **<a href="../GBrowse_syn_Tutorial" class="mw-redirect"
-  title="GBrowse syn Tutorial">GBrowse_syn Tutorial</a>** - by [Sheldon
-  McKay](../User:Mckays)
+ title="GBrowse syn Tutorial">GBrowse_syn Tutorial</a>** - by [Sheldon
+ McKay](../User:Mckays)
 - **<a href="../JBrowse_Tutorial" class="mw-redirect"
-  title="JBrowse Tutorial">JBrowse Tutorial</a>** - by [Mitch
-  Skinner](../User:MitchSkinner)
+ title="JBrowse Tutorial">JBrowse Tutorial</a>** - by [Mitch
+ Skinner](../User:MitchSkinner)
 - **<a href="../MAKER_Tutorial" class="mw-redirect"
-  title="MAKER Tutorial">MAKER Tutorial</a>** - by [Carson
-  Holt](../User:Carsonholt)
+ title="MAKER Tutorial">MAKER Tutorial</a>** - by [Carson
+ Holt](../User:Carsonholt)
 - **<a href="../Tripal_Tutorial" class="mw-redirect"
-  title="Tripal Tutorial">Tripal Tutorial</a>** - by [Stephen
-  Ficklin](../User:Sficklin)
+ title="Tripal Tutorial">Tripal Tutorial</a>** - by [Stephen
+ Ficklin](../User:Sficklin)
 
 The [2010 GMOD Summer School -
 Americas](../2010_GMOD_Summer_School_-_Americas)

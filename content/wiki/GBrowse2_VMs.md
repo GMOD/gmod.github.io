@@ -3,39 +3,39 @@ title: "GBrowse2 VMs"
 ---
 # GBrowse2 VMs
 
-  Virtual Machines</span>](#GBrowse2_Virtual_Machines)
-  - [Getting
-    Started with the VirtualBox
-    VM](#Getting_Started_with_the_VirtualBox_VM)
-    - [User
-      Accounts](#User_Accounts)
-    - [Editing Network
-      Settings](#Editing_Network_Settings)
-      - [Enabling SSH](#Enabling_SSH)
-    - [Expanding
-      Storage](#Expanding_Storage)
-  - [Getting
-    Started with the EC2 VM](#Getting_Started_with_the_EC2_VM)
-    - [Logging into the GBrowse EC2
-      VM](#Logging_into_the_GBrowse_EC2_VM)
-    - [Using
-      the Load Balancing
-      Scripts](#Using_the_Load_Balancing_Scripts)
-    - [Expanding Database Storage on the GBrowse
-      EC2 VM](#Expanding_Database_Storage_on_the_GBrowse_EC2_VM)
-  - [Administration common to both VirtualBox and
-    EC2
-    VMs](#Administration_common_to_both_VirtualBox_and_EC2_VMs)
-    - [Configuring
-      Tracks](#Configuring_Tracks)
-    - [Filesystem
-      Layout](#Filesystem_Layout)
-    - [Adding
-      New Databases](#Adding_New_Databases)
-    - [The
-      gbrowse_clean.pl Script](#The_gbrowse_clean.pl_Script)
-    - [Admin
-      mode](#Admin_mode)
+ Virtual Machines</span>](#GBrowse2_Virtual_Machines)
+ - [Getting
+ Started with the VirtualBox
+ VM](#Getting_Started_with_the_VirtualBox_VM)
+ - [User
+ Accounts](#User_Accounts)
+ - [Editing Network
+ Settings](#Editing_Network_Settings)
+ - [Enabling SSH](#Enabling_SSH)
+ - [Expanding
+ Storage](#Expanding_Storage)
+ - [Getting
+ Started with the EC2 VM](#Getting_Started_with_the_EC2_VM)
+ - [Logging into the GBrowse EC2
+ VM](#Logging_into_the_GBrowse_EC2_VM)
+ - [Using
+ the Load Balancing
+ Scripts](#Using_the_Load_Balancing_Scripts)
+ - [Expanding Database Storage on the GBrowse
+ EC2 VM](#Expanding_Database_Storage_on_the_GBrowse_EC2_VM)
+ - [Administration common to both VirtualBox and
+ EC2
+ VMs](#Administration_common_to_both_VirtualBox_and_EC2_VMs)
+ - [Configuring
+ Tracks](#Configuring_Tracks)
+ - [Filesystem
+ Layout](#Filesystem_Layout)
+ - [Adding
+ New Databases](#Adding_New_Databases)
+ - [The
+ gbrowse_clean.pl Script](#The_gbrowse_clean.pl_Script)
+ - [Admin
+ mode](#Admin_mode)
 
 # GBrowse2 Virtual Machines
 
@@ -67,7 +67,7 @@ The VirtualBox VM does not run an SSH server by default, however you can
 enable it easily by running this command from Administrator's
 command-line shell.
 
-    sudo apt-get install openssh-server
+ sudo apt-get install openssh-server
 
 You can then ssh into the guest by using its host-only network
 interface. You can look up the network interface from within the virtual
@@ -76,12 +76,12 @@ in the upper right of the menu bar), and selecting *Connection
 Information=\>Wired connection 2*. Alternatively, you can look it up
 from the command-line of the host machine using *VBoxManage*:
 
-    $ VBoxManage guestproperty get "Growse 2.XX, VirtualBox Edition" "/VirtualBox/GuestInfo/Net/1/V4/IP"
-    Value: 192.168.56.101
+ $ VBoxManage guestproperty get "Growse 2.XX, VirtualBox Edition" "/VirtualBox/GuestInfo/Net/1/V4/IP"
+ Value: 192.168.56.101
 
 You can now ssh in using the address you just got:
 
-    ssh admin@192.168.56.101
+ ssh admin@192.168.56.101
 
 ### Expanding Storage
 
@@ -100,10 +100,10 @@ done this once before). Do not partition or format this disk. Instead,
 use the Logical Volume Manager to extend the logical /opt/gbrowse volume
 onto this disk via the following series of commands:
 
-    sudo pvcreate /dev/sdc
-    sudo vgextend volumes /dev/sdc
-    sudo lvextend -l +100%FREE /dev/volumes/gbrowse
-    sudo resize2fs /dev/volumes/gbrowse
+ sudo pvcreate /dev/sdc
+ sudo vgextend volumes /dev/sdc
+ sudo lvextend -l +100%FREE /dev/volumes/gbrowse
+ sudo resize2fs /dev/volumes/gbrowse
 
 /opt/gbrowse will now be increased by the size of the disk you just
 added.
@@ -172,7 +172,7 @@ account named "admin", which can only be accessed via an SSH key. To log
 into the instance, invoke ssh with your AWS keypair identity file and
 the "admin" username:
 
-    ssh -i /path/to/aws_private_key.pem admin@ec2-XX-XX-XX-XX.compute-1.amazonaws.com
+ ssh -i /path/to/aws_private_key.pem admin@ec2-XX-XX-XX-XX.compute-1.amazonaws.com
 
 This will give you a command-line shell on the GBrowse server. To run
 any command as root, you may use *sudo* without providing a password.
@@ -207,7 +207,7 @@ Balancing GBrowse2 with AWS Spot
 Instances](/wiki/Load_Balancing_GBrowse2_with_AWS_Spot_Instances)
 or run:
 
-    perldoc gbrowse_aws_balancer.pl
+ perldoc gbrowse_aws_balancer.pl
 
 ### Expanding Database Storage on the GBrowse EC2 VM
 
@@ -218,7 +218,7 @@ easily expand it while logged into the GBrowse server by running
 expand it by. For example, this command increases the volume by an
 additional 40 GB:
 
-    gbrowse_grow_cloud_vol.pl 40
+ gbrowse_grow_cloud_vol.pl 40
 
 This works by allocating a new EBS volume, attaching it to the server
 instance, adding it to the logical volume manager group, and then
@@ -278,7 +278,7 @@ new command-line tool called *gbrowse_import_ucsc_db.pl* that will
 initialize starter databases from information held in the UCSC Genome
 Browser. It is run this way:
 
-    gbrowse_import_ucsc_db.pl hg19 'H. sapiens genome (hg19), genes and DNA'
+ gbrowse_import_ucsc_db.pl hg19 'H. sapiens genome (hg19), genes and DNA'
 
 The first argument is the UCSC genome build name, such as *hg19*. The
 second is the description to attach to the new database. This
@@ -299,7 +299,7 @@ will log its run time actions to the file
 
 You may disable gbrowse_clean.pl by running:
 
-    sudo crontab -u www-data -e
+ sudo crontab -u www-data -e
 
 This will open up a text editor. Simply comment out the line that runs
 gbrowse_clean.pl.
@@ -312,8 +312,8 @@ account* link in the upper right of the GBrowse main window, all tracks
 uploaded by this user will be publicly visible. The username and
 password for this user are:
 
-    username: admin
-    password: gbrowse
+ username: admin
+ password: gbrowse
 
 If you make the VM publicly accessible, you are advised to change the
 password by selecting *My Account* and then *Change Password* after you

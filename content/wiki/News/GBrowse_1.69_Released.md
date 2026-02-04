@@ -29,21 +29,21 @@ Finally, here is a list of the major changes since the 1.68 release:
 - Draggable tracks; use "drag and drop" option to activate.
 - Collapsible tracks - comes for free with "drag and drop"
 - [Popup balloons](../GBrowse_Popup_Balloons)
-  w/ Ajax content; use "balloon tips" option to activate.
+ w/ Ajax content; use "balloon tips" option to activate.
 - Caching of individual tracks for better performance; use "cache time"
-  option to control.
+ option to control.
 - Changed licensing model to dual license under Perl Artistic 2.0 and
-  GPL.
+ GPL.
 - Fix duplicated tracks during dragging.
 - Features with same name are now found, not merged.
 - [Galaxy](../Galaxy.1) support, courtesy Greg Von Kuster
 - Can change fill and outline color of selected regions on overview &
-  regionview.
+ regionview.
 - Various bugs
-  <a href="http://sourceforge.net/tracker/?group_id=27707&amp;atid=391291"
-  class="external text" rel="nofollow">squashed</a>.
+ <a href="http://sourceforge.net/tracker/?group_id=27707&amp;atid=391291"
+ class="external text" rel="nofollow">squashed</a>.
 - When updating settings or searching, the browser scrolls to the top of
-  the overview section as a convenience.
+ the overview section as a convenience.
 - Fixed cross-site scripting vulnerability.
 
 Thank you and happy GBrowsing,

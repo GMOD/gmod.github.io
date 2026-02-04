@@ -3,32 +3,32 @@ title: "Mage FAQ"
 ---
 # Mage FAQ
 
-  FAQ</span>](#About_this_FAQ)
-  - [What is
-    this FAQ?](#What_is_this_FAQ.3F)
-  - [How is it
-    maintained?](#How_is_it_maintained.3F)
-  - [Is there
-    other documentation?](#Is_there_other_documentation.3F)
+ FAQ</span>](#About_this_FAQ)
+ - [What is
+ this FAQ?](#What_is_this_FAQ.3F)
+ - [How is it
+ maintained?](#How_is_it_maintained.3F)
+ - [Is there
+ other documentation?](#Is_there_other_documentation.3F)
 - [Using
-  Mage](#Using_Mage)
-  - [What
-    happened to the Rad
-    module?](#What_happened_to_the_Rad_module.3F)
-  - [What
-    should be done with experiments with multiple arrays per
-    sample?](#What_should_be_done_with_experiments_with_multiple_arrays_per_sample.3F)
-  - [How do you
-    store files containing raw
-    data?](#How_do_you_store_files_containing_raw_data.3F)
-  - [How can
-    one trace the biomaterials back to get a sense of the level of
-    technical and/or biological
-    replication?](#How_can_one_trace_the_biomaterials_back_to_get_a_sense_of_the_level_of_technical_and.2For_biological_replication.3F)
-  - [How do you
-    create a reference from the results of a microarray experiment to
-    the source of the data stored in the pub
-    table?](#How_do_you_create_a_reference_from_the_results_of_a_microarray_experiment_to_the_source_of_the_data_stored_in_the_pub_table.3F)
+ Mage](#Using_Mage)
+ - [What
+ happened to the Rad
+ module?](#What_happened_to_the_Rad_module.3F)
+ - [What
+ should be done with experiments with multiple arrays per
+ sample?](#What_should_be_done_with_experiments_with_multiple_arrays_per_sample.3F)
+ - [How do you
+ store files containing raw
+ data?](#How_do_you_store_files_containing_raw_data.3F)
+ - [How can
+ one trace the biomaterials back to get a sense of the level of
+ technical and/or biological
+ replication?](#How_can_one_trace_the_biomaterials_back_to_get_a_sense_of_the_level_of_technical_and.2For_biological_replication.3F)
+ - [How do you
+ create a reference from the results of a microarray experiment to
+ the source of the data stored in the pub
+ table?](#How_do_you_create_a_reference_from_the_results_of_a_microarray_experiment_to_the_source_of_the_data_stored_in_the_pub_table.3F)
 
 ## About this FAQ
 

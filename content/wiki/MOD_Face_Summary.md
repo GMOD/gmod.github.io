@@ -44,48 +44,48 @@ feedback. Google can be harnessed to aid, but is not solely sufficient
 for, searching MOD data. Providing "server snapshots" is a useful
 mechanism for keeping older database versions available.
 
-  Model Organism Database User Interface Caucus GMOD Meeting, January
-  18, 2007, San Diego, CA,
-  USA</span>](#Meeting_Report_.0AModel_Organism_Database_User_Interface_Caucus.0AGMOD_Meeting.2C_January_18.2C_2007.2C_San_Diego.2C_CA.2C_USA)
+ Model Organism Database User Interface Caucus GMOD Meeting, January
+ 18, 2007, San Diego, CA,
+ USA</span>](#Meeting_Report_.0AModel_Organism_Database_User_Interface_Caucus.0AGMOD_Meeting.2C_January_18.2C_2007.2C_San_Diego.2C_CA.2C_USA)
 - [Executive
-  Summary](#Executive_Summary)
+ Summary](#Executive_Summary)
 - [Participants
-  and Presentations](#Participants_and_Presentations)
+ and Presentations](#Participants_and_Presentations)
 - [Detailed
-  Report](#Detailed_Report)
-  - [Addressing
-    Six MOD Use Cases](#Addressing_Six_MOD_Use_Cases)
-  - [User
-    Interface Development](#User_Interface_Development)
-    - [Lessons Learned from
-      Experience](#Lessons_Learned_from_Experience)
-    - [Gathering and Analyzing User
-      Feedback](#Gathering_and_Analyzing_User_Feedback)
-      - [Using User Feedback to Guide UI
-        Design](#Using_User_Feedback_to_Guide_UI_Design)
-      - [Site Logging](#Site_Logging)
-      - [Card Sorting](#Card_Sorting)
-      - [Watching Users](#Watching_Users)
-    - [Balancing Completeness and
-      Simplicity](#Balancing_Completeness_and_Simplicity)
-  - [New Trends
-    in MOD UIs](#New_Trends_in_MOD_UIs)
-    - [Community
-      Participation](#Community_Participation)
-    - [Client-side Scripting
-      (JavaScript)](#Client-side_Scripting_.28JavaScript.29)
-    - [Using
-      Virtualization for MOD
-      Snapshots](#Using_Virtualization_for_MOD_Snapshots)
-  - [Using
-    Google and Other General Search
-    Engines](#Using_Google_and_Other_General_Search_Engines)
-  - [User
-    Interface Conventions](#User_Interface_Conventions)
-  - [General
-    Discussion](#General_Discussion)
-  - [Implementation
-    Techniques](#Implementation_Techniques)
+ Report](#Detailed_Report)
+ - [Addressing
+ Six MOD Use Cases](#Addressing_Six_MOD_Use_Cases)
+ - [User
+ Interface Development](#User_Interface_Development)
+ - [Lessons Learned from
+ Experience](#Lessons_Learned_from_Experience)
+ - [Gathering and Analyzing User
+ Feedback](#Gathering_and_Analyzing_User_Feedback)
+ - [Using User Feedback to Guide UI
+ Design](#Using_User_Feedback_to_Guide_UI_Design)
+ - [Site Logging](#Site_Logging)
+ - [Card Sorting](#Card_Sorting)
+ - [Watching Users](#Watching_Users)
+ - [Balancing Completeness and
+ Simplicity](#Balancing_Completeness_and_Simplicity)
+ - [New Trends
+ in MOD UIs](#New_Trends_in_MOD_UIs)
+ - [Community
+ Participation](#Community_Participation)
+ - [Client-side Scripting
+ (JavaScript)](#Client-side_Scripting_.28JavaScript.29)
+ - [Using
+ Virtualization for MOD
+ Snapshots](#Using_Virtualization_for_MOD_Snapshots)
+ - [Using
+ Google and Other General Search
+ Engines](#Using_Google_and_Other_General_Search_Engines)
+ - [User
+ Interface Conventions](#User_Interface_Conventions)
+ - [General
+ Discussion](#General_Discussion)
+ - [Implementation
+ Techniques](#Implementation_Techniques)
 - [References](#References)
 
 # Participants and [Presentations](/wiki/MOD_Face_Talks)
@@ -181,39 +181,39 @@ explored.
 ### Lessons Learned from Experience
 
 - Clear (better yet, obvious) input actions and requirements are
-  important. For example, "What, exactly, are people expected to type
-  into a 'quick search' box?" and "If the 'log on' box is at the top of
-  the homepage, does that mean I have to register and log on to use the
-  site?". Also, input fields should be prefilled with an example query
-  value to give user an idea of the type of value to be entered (and to
-  permit
+ important. For example, "What, exactly, are people expected to type
+ into a 'quick search' box?" and "If the 'log on' box is at the top of
+ the homepage, does that mean I have to register and log on to use the
+ site?". Also, input fields should be prefilled with an example query
+ value to give user an idea of the type of value to be entered (and to
+ permit
 
 easy exploration by novices).
 
 - Reliable results are important.
 - Fast results are good.
 - What users ask for isn't always what they really want (see the ApiDB
-  presentation).
+ presentation).
 - Appearance is less important than functionality.
 - UI components and report sections should be clearly labeled and
-  include tips, sample queries and default values. Results should
-  include brief summaries whenever possible.
+ include tips, sample queries and default values. Results should
+ include brief summaries whenever possible.
 - Use terms the bio-community understands and try to stay away from
-  those that you might want them to learn, but that aren't strictly
-  necessary for usage (e.g. the word "Boolean" at ApiDB )
+ those that you might want them to learn, but that aren't strictly
+ necessary for usage (e.g. the word "Boolean" at ApiDB )
 - Don't change what works for users; even if you develop a "better" more
-  sophisticated tool, the users might still prefer the one they know how
-  to use (e.g. the Batch Sequences tool at Wormbase). MODs generally
-  thought that we should avoid rapid turnover in UI, but many felt that
-  frequent, small changes and additions can be useful to community (if
-  clearly explained)
+ sophisticated tool, the users might still prefer the one they know how
+ to use (e.g. the Batch Sequences tool at Wormbase). MODs generally
+ thought that we should avoid rapid turnover in UI, but many felt that
+ frequent, small changes and additions can be useful to community (if
+ clearly explained)
 
 - Support for User preferences/sessions/configurations (e.g. "MyNCBI",
-  FlyMine's "MyMine")
-  - default UI dilemma: simple/dumb for general audience, or
-    sophisticated/complex for focused users
-  - variable (low) use of preference options?
-  - needs transparency to user (avoid logins/extra effort)
+ FlyMine's "MyMine")
+ - default UI dilemma: simple/dumb for general audience, or
+ sophisticated/complex for focused users
+ - variable (low) use of preference options?
+ - needs transparency to user (avoid logins/extra effort)
 
 ### Gathering and Analyzing User Feedback
 
@@ -376,8 +376,8 @@ Some examples of gracefully degrading client-side features showcased at
 this meeting were:
 
 - dynamic, database-backed automatic completion of entries typed into
-  web search forms (older browsers simply won't see any automatic
-  completion)
+ web search forms (older browsers simply won't see any automatic
+ completion)
 - dynamically expanding or collapsing sections of large data displays
 - drag-and-drop map track reordering in GMOD's GBrowse software
 
@@ -390,10 +390,10 @@ advanced user), for map track reordering, retaining history of user
 queries and answers, and other uses.
 
 - more graphical summaries of long lists/tables are possible; can be
-  useful
+ useful
 - improving comparative genomics aspects to aid broader audience
 - include curator/community edits/updates to contents (part of same
-  reading UI) (ZFIN,SGN,)
+ reading UI) (ZFIN,SGN,)
 
 ### Using Virtualization for MOD Snapshots
 
@@ -455,10 +455,10 @@ among MODs. Attendees notes several cases of "convergent evolution"
 among the MOD user interfaces:
 
 - most MODs seem to have some sort of unified search feature for all
-  data in the MOD
+ data in the MOD
 - wide adoption of GMOD's GBrowse software
 - existing tools for bulk data download, movement toward more flexible
-  search and reporting tools such as BioMart and InterMine
+ search and reporting tools such as BioMart and InterMine
 
 Todd Harris proposed developing a convention for common URLs for bulk
 downloading of genome data, but the subject was not fully discussed. A
@@ -475,81 +475,81 @@ should be sure to include:
 - community news
 - MOD data cross-referenced to publications
 - summary statistics of data in the MOD
-  - if possible, a history of these statistics over time
+ - if possible, a history of these statistics over time
 - update history (a.k.a. changelog) of MOD
 - central credits list for MOD contributors
 
 ## General Discussion
 
 - Steps in developing good MOD Faces
-  Consensus
-  help links everywhere are useful. Examples on input fields are easy to
-  add, and very useful.
+ Consensus
+ help links everywhere are useful. Examples on input fields are easy to
+ add, and very useful.
 
-  - Sample values are frequently invaluable near the text input box.
-  - There is no one right answer in UI design, there are many right
-    answers. There are also many wrong answers.
-  - Never create a link to a location where there's nothing to be found.
-    Indicate, by some means, if there's no information or more
-    information.
+ - Sample values are frequently invaluable near the text input box.
+ - There is no one right answer in UI design, there are many right
+ answers. There are also many wrong answers.
+ - Never create a link to a location where there's nothing to be found.
+ Indicate, by some means, if there's no information or more
+ information.
 - User community testing, interviews, surveys, HCI principles
-  - Differing views on value of types and stages in user testing (Is
-    user testing necessary? What about releasing software as a means to
-    get feedback?)
-    - It may be that user testing is most valuable when attempting to
-      solve specific problems, as opposed to "design". User testing is
-      probably most useful in the earliest phase, looking at prototypes
-      or prototypes on paper.
-    - Monitoring and logging is important, you must know what occupies
-      the user the most.
+ - Differing views on value of types and stages in user testing (Is
+ user testing necessary? What about releasing software as a means to
+ get feedback?)
+ - It may be that user testing is most valuable when attempting to
+ solve specific problems, as opposed to "design". User testing is
+ probably most useful in the earliest phase, looking at prototypes
+ or prototypes on paper.
+ - Monitoring and logging is important, you must know what occupies
+ the user the most.
 - Dilemma of too much or too little information/choice
-  - Consensus: complexity goes with the territory, but you have to make
-    the most common things easy and the hard things possible, and have
-    good user education and documentation.
-  - Is it true that complexity should be concealed? How does one strike
-    the balance between providing for the expert and for the novice?
+ - Consensus: complexity goes with the territory, but you have to make
+ the most common things easy and the hard things possible, and have
+ good user education and documentation.
+ - Is it true that complexity should be concealed? How does one strike
+ the balance between providing for the expert and for the novice?
 - Google is your enemy/friend ...
-  - Differing views on advantage/disadavantages of Google as adjunct to
-    MOD search systems (No consensus that using Google is advantageous;
-    Techniques for guiding Google/Bots below)
+ - Differing views on advantage/disadavantages of Google as adjunct to
+ MOD search systems (No consensus that using Google is advantageous;
+ Techniques for guiding Google/Bots below)
 - Good new ideas
-  - More dynamic content, graphics summaries may be good
-    - Can we make more use of graphics to replace text? E.g. a generated
-      image replaces expression information.
-    - Word or string completion as user asks questions is useful UI
-      technique (see Javascript and AJAX below)
+ - More dynamic content, graphics summaries may be good
+ - Can we make more use of graphics to replace text? E.g. a generated
+ image replaces expression information.
+ - Word or string completion as user asks questions is useful UI
+ technique (see Javascript and AJAX below)
 - Common UIs across MODs?
-  Not discussed (sigh :()
+ Not discussed (sigh :()
 
 ## Implementation Techniques
 
 - Easy way to direct Google/Bots to best or full content (e.g. gene
-  pages) is with a site map with links to everything you want to expose.
-  - detecting user agent, query referral string, etc., in web query lets
-    report software alter output (e.g. give Google all of report to
-    index, highlight Google user queries)
-  - Google offers indexing tips, directions to update or hide specific
-    parts
+ pages) is with a site map with links to everything you want to expose.
+ - detecting user agent, query referral string, etc., in web query lets
+ report software alter output (e.g. give Google all of report to
+ index, highlight Google user queries)
+ - Google offers indexing tips, directions to update or hide specific
+ parts
 - Dynamic content (Javascript/AJAX):
-  - Word or string completion using Javascript/AJAX and dedicated,
-    simple databases of words to complete work well (Wormbase, EBI
-    Ontology Lookup Service, others?).
-  - use to hide and show sections of pages; reorder tracks in a genome
-    browser;
+ - Word or string completion using Javascript/AJAX and dedicated,
+ simple databases of words to complete work well (Wormbase, EBI
+ Ontology Lookup Service, others?).
+ - use to hide and show sections of pages; reorder tracks in a genome
+ browser;
 - RSS is probably underutilized, but would it be widely used if
-  available?
+ available?
 - An XML representation of an "entry" makes a "diff" or change easy to
-  assess, and reliable alerts could be constructed.
+ assess, and reliable alerts could be constructed.
 
 # References
 
-1.  <span id="cite_note-1"><span class="mw-cite-backlink">[↑](#cite_ref-1)</span>
-    <span class="reference-text">Salzberg SL. Genome re-annotation: a
-    wiki solution? Genome Biol. 2007 Feb 1;8(1):102; PMID:
-    17274839</span></span>
-2.  <span id="cite_note-2"><span class="mw-cite-backlink">[↑](#cite_ref-2)</span>
-    <span class="reference-text">Bradley I. Arshinoff, Garret Suen,
-    Eric M. Just, Sohel M. Merchant, Warren A. Kibbe, Rex L. Chisholm,
-    and Roy D. Welch. Xanthusbase: adapting wikipedia principles to a
-    model organism database. Nucl. Acids Res. 2007 35: D422-D426;
-    doi:10.1093/nar/gkl881 </span></span>
+1. <span id="cite_note-1"><span class="mw-cite-backlink">[↑](#cite_ref-1)</span>
+ <span class="reference-text">Salzberg SL. Genome re-annotation: a
+ wiki solution? Genome Biol. 2007 Feb 1;8(1):102; PMID:
+ 17274839</span></span>
+2. <span id="cite_note-2"><span class="mw-cite-backlink">[↑](#cite_ref-2)</span>
+ <span class="reference-text">Bradley I. Arshinoff, Garret Suen,
+ Eric M. Just, Sohel M. Merchant, Warren A. Kibbe, Rex L. Chisholm,
+ and Roy D. Welch. Xanthusbase: adapting wikipedia principles to a
+ model organism database. Nucl. Acids Res. 2007 35: D422-D426;
+ doi:10.1093/nar/gkl881 </span></span>

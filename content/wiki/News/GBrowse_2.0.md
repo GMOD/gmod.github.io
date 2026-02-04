@@ -20,41 +20,41 @@ The following are highlights of the many new features that have been
 added since the 1.70 release:
 
 - A completely rewritten internal rearchitecture loads tracks
-  asynchronously, providing a more responsive user experience.
+ asynchronously, providing a more responsive user experience.
 - Different [database
-  backends](../GBrowse_2.0_HOWTO#Database_Definitions)
-  can be associated with each track, making backend management much
-  simpler.
+ backends](../GBrowse_2.0_HOWTO#Database_Definitions)
+ can be associated with each track, making backend management much
+ simpler.
 - A revamped user interface for a less cluttered and more functional
-  end-user experience.
+ end-user experience.
 - A [UI theming system](../GBrowse_2.0_HOWTO#Themes)
-  with three predefined themes, including a cool "transparent" theme.
+ with three predefined themes, including a cool "transparent" theme.
 - A custom [track upload and management
-  system](../GBrowse_2.0_HOWTO#Configuring_the_Uploaded_Track_Database)
-  gives users much greater control over custom tracks.
+ system](../GBrowse_2.0_HOWTO#Configuring_the_Uploaded_Track_Database)
+ gives users much greater control over custom tracks.
 - An optional [admin
-  interface](../GBrowse_2.0_HOWTO#The_Admin_Interface)
-  allows an authorized user to upload and manage public tracks without
-  editing config files.
+ interface](../GBrowse_2.0_HOWTO#The_Admin_Interface)
+ allows an authorized user to upload and manage public tracks without
+ editing config files.
 - An optional [user registration and login
-  system](../GBrowse_2.0_HOWTO#Configuring_the_User_Account_Database)
-  allows users to register stable GBrowse accounts and to keep their
-  settings and custom tracks when they move from one computer to
-  another.
+ system](../GBrowse_2.0_HOWTO#Configuring_the_User_Account_Database)
+ allows users to register stable GBrowse accounts and to keep their
+ settings and custom tracks when they move from one computer to
+ another.
 - Support for named subtracks (tracks within tracks) and filtering of
-  those subtracks.
+ those subtracks.
 - Support for [next generation
-  sequencing](../GBrowse_NGS_Tutorial) data.
+ sequencing](../GBrowse_NGS_Tutorial) data.
 
 There are also a number of features that *didn't* make it into the 2.00
 release, most notably:
 
 - The internal <a href="../DAS" class="mw-redirect" title="DAS">DAS</a>
-  server does not work, although the DAS client (ability to import DAS
-  tracks) does. This will be added in a 2.01 release.
+ server does not work, although the DAS client (ability to import DAS
+ tracks) does. This will be added in a 2.01 release.
 - Internationalization has lagged way behind, and so most of the new
-  features will be presented in English rather than in the user's
-  preferred language (volunteers are needed to help with translations).
+ features will be presented in English rather than in the user's
+ preferred language (volunteers are needed to help with translations).
 
 Please send help queries to the
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-gbrowse"

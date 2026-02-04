@@ -6,16 +6,16 @@ title: "DBStag"
 DBStag is a generic [SQL](/wiki/Glossary#SQL) to
 [XML](/wiki/Glossary#XML) mapping tool
 
-  Download](#Download)
+ Download](#Download)
 - [Use](#Use)
-  - [Loading
-    data](#Loading_data)
-  - [Querying](#Querying)
+ - [Loading
+ data](#Loading_data)
+ - [Querying](#Querying)
 
 ## Download
 
 - <a href="http://search.cpan.org/~cmungall/DBIx-DBStag/"
-  class="external text" rel="nofollow">CPAN</a>
+ class="external text" rel="nofollow">CPAN</a>
 
 ## Use
 
@@ -25,7 +25,7 @@ The most common use in the context of Chado is to load [Chado
 XML](/wiki/Chado_XML). No configuration is necessary, just install
 and run
 
-     stag-storenode.pl -d Pg:mychadoinst@myserver gene_ontology.chado
+ stag-storenode.pl -d Pg:mychadoinst@myserver gene_ontology.chado
 
 ### Querying
 
@@ -40,4 +40,4 @@ can be used with Stag.
 
 Example:
 
-     selectall_xml.pl -d Pg:mychadoinst@myserver /chado-cvterm dbname=GO accession=0008150
+ selectall_xml.pl -d Pg:mychadoinst@myserver /chado-cvterm dbname=GO accession=0008150

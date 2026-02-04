@@ -6,27 +6,27 @@ title: "AWS walkthrough"
 This is a click-by-click walkthrough of how to get a GMOD machine image
 up and running using Amazon's cloud services.
 
-  Amazon</span>](#Registering_on_Amazon)
+ Amazon</span>](#Registering_on_Amazon)
 - [Amazon Web
-  Services: Registration](#Amazon_Web_Services:_Registration)
+ Services: Registration](#Amazon_Web_Services:_Registration)
 - [Credit Where
-  Credit's Due](#Credit_Where_Credit.27s_Due)
+ Credit's Due](#Credit_Where_Credit.27s_Due)
 - [Your First
-  Instance](#Your_First_Instance)
-  - [Launch an
-    Instance](#Launch_an_Instance)
-  - [Setting Up
-    Security Post-Launch](#Setting_Up_Security_Post-Launch)
+ Instance](#Your_First_Instance)
+ - [Launch an
+ Instance](#Launch_an_Instance)
+ - [Setting Up
+ Security Post-Launch](#Setting_Up_Security_Post-Launch)
 - [Working in the
-  Cloud](#Working_in_the_Cloud)
-  - [Instance
-    Access](#Instance_Access)
+ Cloud](#Working_in_the_Cloud)
+ - [Instance
+ Access](#Instance_Access)
 - [Leaving the
-  Cloud](#Leaving_the_Cloud)
-  - [Shutting
-    Down](#Shutting_Down)
-  - [Volume
-    Deletion](#Volume_Deletion)
+ Cloud](#Leaving_the_Cloud)
+ - [Shutting
+ Down](#Shutting_Down)
+ - [Volume
+ Deletion](#Volume_Deletion)
 
 ## Registering on Amazon
 
@@ -371,7 +371,7 @@ you stop the machine.
 
 To stop an instance from the command line, type the following:
 
-     sudo /sbin/shutdown now
+ sudo /sbin/shutdown now
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/50/Screen_shot_2012-08-25_at_11.59.27.png/750px-Screen_shot_2012-08-25_at_11.59.27.png"

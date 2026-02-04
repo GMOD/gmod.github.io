@@ -16,22 +16,22 @@ To reiterate the changes in 1.3.2 compared to the previous version of
 ISGA available for download -
 
 - New Prokaryotic Annotation Pipeline Release:
-  - All calls to wu-blast programs have been replaced with NCBI blast
-  - We have enabled the pathway image output for Asgard
-  - Reference databases have been updated
-  - Improved validation and auto-correction of Fasta input
-  - Streamline output-generation and include more information in summary
-    files
+ - All calls to wu-blast programs have been replaced with NCBI blast
+ - We have enabled the pathway image output for Asgard
+ - Reference databases have been updated
+ - Improved validation and auto-correction of Fasta input
+ - Streamline output-generation and include more information in summary
+ files
 - Other New Features:
-  - Pipelines are now modular and can be installed independently of the
-    ISGA installation process
-  - Workbench interface has been standardized to make adding new tools
-    easier
-  - Added PhyloEGGS tool for studying gene clusters across phylogenies
-    of prokaryotes.
-  - Added ability to "upload" files to ISGA by providing a URL
-  - Fixed several instances where large files were read in entirety into
-    memory
+ - Pipelines are now modular and can be installed independently of the
+ ISGA installation process
+ - Workbench interface has been standardized to make adding new tools
+ easier
+ - Added PhyloEGGS tool for studying gene clusters across phylogenies
+ of prokaryotes.
+ - Added ability to "upload" files to ISGA by providing a URL
+ - Fixed several instances where large files were read in entirety into
+ memory
 
 Cheers,
 

@@ -3,168 +3,168 @@ title: "Tripal Tutorial (v0.3.1b)"
 ---
 # Tripal Tutorial (v0.3.1b)
 
-  to Tripal</span>](#Introduction_to_Tripal)
-  - [What is
-    Tripal](#What_is_Tripal)
-  - [Content
-    Management System](#Content_Management_System)
-  - [Drupal](#Drupal)
-  - [Chado](#Chado)
-  - [Goals of
-    Tripal](#Goals_of_Tripal)
-  - [Structure
-    of Tripal](#Structure_of_Tripal)
-  - [Sites
-    Running Tripal](#Sites_Running_Tripal)
-  - [Resources](#Resources)
-  - [Contributing
-    Organizations](#Contributing_Organizations)
-  - [Funding](#Funding)
-  - [Additional
-    Support](#Additional_Support)
+ to Tripal</span>](#Introduction_to_Tripal)
+ - [What is
+ Tripal](#What_is_Tripal)
+ - [Content
+ Management System](#Content_Management_System)
+ - [Drupal](#Drupal)
+ - [Chado](#Chado)
+ - [Goals of
+ Tripal](#Goals_of_Tripal)
+ - [Structure
+ of Tripal](#Structure_of_Tripal)
+ - [Sites
+ Running Tripal](#Sites_Running_Tripal)
+ - [Resources](#Resources)
+ - [Contributing
+ Organizations](#Contributing_Organizations)
+ - [Funding](#Funding)
+ - [Additional
+ Support](#Additional_Support)
 - [Pre-planning](#Pre-planning)
-  - [IT
-    Infrastructure](#IT_Infrastructure)
-  - [Technical
-    Skills](#Technical_Skills)
-  - [Why Use
-    Tripal](#Why_Use_Tripal)
+ - [IT
+ Infrastructure](#IT_Infrastructure)
+ - [Technical
+ Skills](#Technical_Skills)
+ - [Why Use
+ Tripal](#Why_Use_Tripal)
 - [Server
-  Setup](#Server_Setup)
-  - [Install
-    the Apache Web Server](#Install_the_Apache_Web_Server)
-  - [Install
-    the PostgreSQL Server](#Install_the_PostgreSQL_Server)
-  - [Install &
-    Setup PHP](#Install_.26_Setup_PHP)
-  - [Install
-    phpPgAdmin](#Install_phpPgAdmin)
-  - [Prepare
-    Apache](#Prepare_Apache)
+ Setup](#Server_Setup)
+ - [Install
+ the Apache Web Server](#Install_the_Apache_Web_Server)
+ - [Install
+ the PostgreSQL Server](#Install_the_PostgreSQL_Server)
+ - [Install &
+ Setup PHP](#Install_.26_Setup_PHP)
+ - [Install
+ phpPgAdmin](#Install_phpPgAdmin)
+ - [Prepare
+ Apache](#Prepare_Apache)
 - [Database
-  Setup](#Database_Setup)
+ Setup](#Database_Setup)
 - [Install
-  Drupal](#Install_Drupal)
-  - [Software
-    Installation](#Software_Installation)
-  - [Configuration
-    File](#Configuration_File)
-  - [Final
-    directory creation](#Final_directory_creation)
-  - [Compatibility with other
-    tools](#Compatibility_with_other_tools)
-  - [Web-based
-    Steps](#Web-based_Steps)
-  - [Drupal
-    Cron Entry](#Drupal_Cron_Entry)
+ Drupal](#Install_Drupal)
+ - [Software
+ Installation](#Software_Installation)
+ - [Configuration
+ File](#Configuration_File)
+ - [Final
+ directory creation](#Final_directory_creation)
+ - [Compatibility with other
+ tools](#Compatibility_with_other_tools)
+ - [Web-based
+ Steps](#Web-based_Steps)
+ - [Drupal
+ Cron Entry](#Drupal_Cron_Entry)
 - [Explore
-  Drupal](#Explore_Drupal)
-  - [User
-    Account Page](#User_Account_Page)
-  - [Creating
-    Content](#Creating_Content)
-  - [Site
-    Administration](#Site_Administration)
-    - [Content
-      Management](#Content_Management)
-    - [Site
-      Building](#Site_Building)
-      - [Modules](#Modules)
-      - [Themes](#Themes)
-      - [Blocks](#Blocks)
-      - [Menus](#Menus)
-      - [URL Path](#URL_Path)
-      - [Site
-        Configuration](#Site_Configuration)
-  - [User
-    Accounts](#User_Accounts)
+ Drupal](#Explore_Drupal)
+ - [User
+ Account Page](#User_Account_Page)
+ - [Creating
+ Content](#Creating_Content)
+ - [Site
+ Administration](#Site_Administration)
+ - [Content
+ Management](#Content_Management)
+ - [Site
+ Building](#Site_Building)
+ - [Modules](#Modules)
+ - [Themes](#Themes)
+ - [Blocks](#Blocks)
+ - [Menus](#Menus)
+ - [URL Path](#URL_Path)
+ - [Site
+ Configuration](#Site_Configuration)
+ - [User
+ Accounts](#User_Accounts)
 - [Prepare Drupal
-  for Tripal](#Prepare_Drupal_for_Tripal)
-  - [Theme
-    Installation](#Theme_Installation)
-  - [Theme
-    Configuration](#Theme_Configuration)
-  - [Module
-    Installation](#Module_Installation)
+ for Tripal](#Prepare_Drupal_for_Tripal)
+ - [Theme
+ Installation](#Theme_Installation)
+ - [Theme
+ Configuration](#Theme_Configuration)
+ - [Module
+ Installation](#Module_Installation)
 - [Tripal
-  Installation](#Tripal_Installation)
-  - [Main
-    Package Installation](#Main_Package_Installation)
-  - [Tripal
-    Extension Module
-    Installation](#Tripal_Extension_Module_Installation)
+ Installation](#Tripal_Installation)
+ - [Main
+ Package Installation](#Main_Package_Installation)
+ - [Tripal
+ Extension Module
+ Installation](#Tripal_Extension_Module_Installation)
 - [Using
-  Tripal](#Using_Tripal)
-  - [Installing
-    Chado](#Installing_Chado)
-  - [Jobs
-    Management](#Jobs_Management)
-  - [Using
-    PhpPgAdmin to View Chado/Drupal
-    Tables](#Using_PhpPgAdmin_to_View_Chado.2FDrupal_Tables)
-  - [Enable
-    Additional Tripal Modules](#Enable_Additional_Tripal_Modules)
-  - [Enable the
-    Tripal Theme](#Enable_the_Tripal_Theme)
-  - [Controlled
-    Vocabularies: Installing
-    CVs](#Controlled_Vocabularies:_Installing_CVs)
-  - [Creating
-    Organism Pages](#Creating_Organism_Pages)
-    - [What
-      if Our Organism is Already in
-      Chado?](#What_if_Our_Organism_is_Already_in_Chado.3F)
-    - [What
-      if My Organism Is Not Present in
-      Chado?](#What_if_My_Organism_Is_Not_Present_in_Chado.3F)
-  - [Creating
-    an Analysis](#Creating_an_Analysis)
-  - [Creating a
-    Database Cross
-    Reference](#Creating_a_Database_Cross_Reference)
-  - [Loading
-    Feature Data](#Loading_Feature_Data)
-    - [Loading a GFF3
-      File](#Loading_a_GFF3_File)
-    - [Loading FASTA
-      files](#Loading_FASTA_files)
-  - [Creating
-    Feature Pages](#Creating_Feature_Pages)
-  - [Materialized
-    Views](#Materialized_Views)
-  - [Feature
-    Page Configuration](#Feature_Page_Configuration)
-  - [Loading
-    Functional Data Using Extension
-    Modules](#Loading_Functional_Data_Using_Extension_Modules)
-    - [Loading Blast
-      Results](#Loading_Blast_Results)
-    - [Loading InterProScan
-      Results](#Loading_InterProScan_Results)
-    - [Loading KEGG Analysis
-      Results](#Loading_KEGG_Analysis_Results)
-  - [Creating
-    Stocks](#Creating_Stocks)
-  - [Using the
-    GBrowse Extension
-    Module](#Using_the_GBrowse_Extension_Module)
-  - [Drupal
-    Taxonomy & Searching](#Drupal_Taxonomy_.26_Searching)
-    - [Drupal Taxonomy](#Drupal_Taxonomy)
-    - [Drupal Searching](#Drupal_Searching)
+ Tripal](#Using_Tripal)
+ - [Installing
+ Chado](#Installing_Chado)
+ - [Jobs
+ Management](#Jobs_Management)
+ - [Using
+ PhpPgAdmin to View Chado/Drupal
+ Tables](#Using_PhpPgAdmin_to_View_Chado.2FDrupal_Tables)
+ - [Enable
+ Additional Tripal Modules](#Enable_Additional_Tripal_Modules)
+ - [Enable the
+ Tripal Theme](#Enable_the_Tripal_Theme)
+ - [Controlled
+ Vocabularies: Installing
+ CVs](#Controlled_Vocabularies:_Installing_CVs)
+ - [Creating
+ Organism Pages](#Creating_Organism_Pages)
+ - [What
+ if Our Organism is Already in
+ Chado?](#What_if_Our_Organism_is_Already_in_Chado.3F)
+ - [What
+ if My Organism Is Not Present in
+ Chado?](#What_if_My_Organism_Is_Not_Present_in_Chado.3F)
+ - [Creating
+ an Analysis](#Creating_an_Analysis)
+ - [Creating a
+ Database Cross
+ Reference](#Creating_a_Database_Cross_Reference)
+ - [Loading
+ Feature Data](#Loading_Feature_Data)
+ - [Loading a GFF3
+ File](#Loading_a_GFF3_File)
+ - [Loading FASTA
+ files](#Loading_FASTA_files)
+ - [Creating
+ Feature Pages](#Creating_Feature_Pages)
+ - [Materialized
+ Views](#Materialized_Views)
+ - [Feature
+ Page Configuration](#Feature_Page_Configuration)
+ - [Loading
+ Functional Data Using Extension
+ Modules](#Loading_Functional_Data_Using_Extension_Modules)
+ - [Loading Blast
+ Results](#Loading_Blast_Results)
+ - [Loading InterProScan
+ Results](#Loading_InterProScan_Results)
+ - [Loading KEGG Analysis
+ Results](#Loading_KEGG_Analysis_Results)
+ - [Creating
+ Stocks](#Creating_Stocks)
+ - [Using the
+ GBrowse Extension
+ Module](#Using_the_GBrowse_Extension_Module)
+ - [Drupal
+ Taxonomy & Searching](#Drupal_Taxonomy_.26_Searching)
+ - [Drupal Taxonomy](#Drupal_Taxonomy)
+ - [Drupal Searching](#Drupal_Searching)
 - [Customizations](#Customizations)
-  - [Panels &
-    Custom Layouts](#Panels_.26_Custom_Layouts)
-    - [Adding a GBrowse
-      Image](#Adding_a_GBrowse_Image)
-  - [Drupal
-    Views](#Drupal_Views)
-    - [Changing Tripal Default
-      Views](#Changing_Tripal_Default_Views)
-  - [Editing
-    Template Files](#Editing_Template_Files)
-    - [Adding a GBrowse
-      Image](#Adding_a_GBrowse_Image_2)
+ - [Panels &
+ Custom Layouts](#Panels_.26_Custom_Layouts)
+ - [Adding a GBrowse
+ Image](#Adding_a_GBrowse_Image)
+ - [Drupal
+ Views](#Drupal_Views)
+ - [Changing Tripal Default
+ Views](#Changing_Tripal_Default_Views)
+ - [Editing
+ Template Files](#Editing_Template_Files)
+ - [Adding a GBrowse
+ Image](#Adding_a_GBrowse_Image_2)
 
 ## Introduction to Tripal
 
@@ -195,9 +195,9 @@ These procedures can be manual or computer-based. The procedures are
 designed to do the following:
 
 - Allow for a large number of people to contribute to and share stored
-  data
+ data
 - Control access to data, based on user roles (defining which
-  information users or user groups can view, edit, publish, etc.)
+ information users or user groups can view, edit, publish, etc.)
 - Aid in easy storage and retrieval of data
 - Reduce repetitive duplicate input
 - Improve the ease of report writing
@@ -219,12 +219,12 @@ and existing sites. Features of Drupal
 - A well-supporting community.
 - Books, tutorials and online forums for help .
 - Hundreds of user-contributed extension modules that are freely
-  available.
+ available.
 - Hundreds of user-contributed themes to instantly change the
-  look-and-feel of the site
+ look-and-feel of the site
 - User management infrastructure.
 - Allows for non-coding manipulation of the website contents. Anyone can
-  edit content.
+ edit content.
 - Easy to install and maintain
 
 Drupal website: <a href="http://www.drupal.org" class="external free"
@@ -246,7 +246,7 @@ modular structure:
 - Companalysis - for data from computational analysis
 - Contact - for people, groups, and organizations
 - Controlled Vocabulary (cv) - for controlled vocabularies and
-  ontologies
+ ontologies
 - Expression - for summaries of RNA and protein expression
 - General - for identifiers
 - Genetic - for genetic data and genotypes
@@ -266,22 +266,22 @@ Tripal is also modular along these same designations.
 ### Goals of Tripal
 
 - Simplify Construction of Biological Databases
-  - Reduce time of development
-  - Reduce costs
-  - Reduce technical resources (i.e. programmers, systems admins).
-  - A non-technical site administrator can add content without knowing
-    PHP, HTML, JavaScript.
+ - Reduce time of development
+ - Reduce costs
+ - Reduce technical resources (i.e. programmers, systems admins).
+ - A non-technical site administrator can add content without knowing
+ PHP, HTML, JavaScript.
 - Greater Flexibility of the Biological Website
-  - Social Networking
-  - Non-biological content
-  - Outreach, tutorials, documentation, protocols, publications
+ - Social Networking
+ - Non-biological content
+ - Outreach, tutorials, documentation, protocols, publications
 - Expandability
-  - Site can be programmatically expanded in any way
-  - Changes to base-code are not needed but modules are added.
-  - Availability of an Application Programmer Interface (API)
+ - Site can be programmatically expanded in any way
+ - Changes to base-code are not needed but modules are added.
+ - Availability of an Application Programmer Interface (API)
 - Reusability
-  - All code can be shared. Expansion modules created by one group can
-    be shared with all.
+ - All code can be shared. Expansion modules created by one group can
+ be shared with all.
 
 ### Structure of Tripal
 
@@ -311,15 +311,15 @@ The Chado-centric modules provide:
 Analysis modules provide
 
 - Custom visualization for specific analyses (e.g. Blast, KEGG,
-  InterProScan, Unigene construction)
+ InterProScan, Unigene construction)
 - Uses the API from the Tripal Analysis (Chado-centric) module.
 
 Applications:
 
 - These are full blown applications that use Tripal, Drupal and Chado
-  and typically consist of several Chado-centric modules, Analysis
-  modules and custom built modules. (e.g. Breeders Toolbox currently
-  under construction).
+ and typically consist of several Chado-centric modules, Analysis
+ modules and custom built modules. (e.g. Breeders Toolbox currently
+ under construction).
 
 ### Sites Running Tripal
 
@@ -363,10 +363,10 @@ Integration (CITI) group.
 ### Additional Support
 
 - Logistical and community interaction support and has been provided by
-  GMOD!!
+ GMOD!!
 - The South Carolina Marine Genomics Consortium with researchers housed
-  primarily at the NOAA Hollings Marine Lab in Charleston South Carolina
-  provided input and direction for the first versions of Tripal.
+ primarily at the NOAA Hollings Marine Lab in Charleston South Carolina
+ provided input and direction for the first versions of Tripal.
 
 ## Pre-planning
 
@@ -385,27 +385,27 @@ Tripal are quite easy.
 There are three basic ways you could get a Tripal/Drupal/Chado database
 web server available for your site
 
-1.  **Option \#1 In-house dedicated servers:** You may have access to
-    servers in your own department or group which you have
-    administrative control and wish to install Tripal/Drupal/Chado on
-    these.
-2.  **Option \#2 Institutional IT support:** Your institution may
-    provide IT servers and would support your efforts to install a
-    website with database backend.
-3.  **Option \#3 Commercial web-hosting:** If options \#1 and \#2 are
-    not available to you, commercial web-hosting is an affordable
-    option. For large databases you may require a dedicated server.
+1. **Option \#1 In-house dedicated servers:** You may have access to
+ servers in your own department or group which you have
+ administrative control and wish to install Tripal/Drupal/Chado on
+ these.
+2. **Option \#2 Institutional IT support:** Your institution may
+ provide IT servers and would support your efforts to install a
+ website with database backend.
+3. **Option \#3 Commercial web-hosting:** If options \#1 and \#2 are
+ not available to you, commercial web-hosting is an affordable
+ option. For large databases you may require a dedicated server.
 
 After selection of one of the options that works best for you you can
 arrange your database/webserver in the following ways:
 
-1.  **Arrangement \#1:** The database and web server are housed on a
-    single server. *This is the approach taken by this course*. It is
-    necessary to gain access to a machine with enough memory (RAM), hard
-    disk speed and space, and processor power to handle both services.
-2.  **Arrangement \#2:** The database and web server are housed on
-    different servers. This provides dedicated resources to each service
-    (i.e. web and database).
+1. **Arrangement \#1:** The database and web server are housed on a
+ single server. *This is the approach taken by this course*. It is
+ necessary to gain access to a machine with enough memory (RAM), hard
+ disk speed and space, and processor power to handle both services.
+2. **Arrangement \#2:** The database and web server are housed on
+ different servers. This provides dedicated resources to each service
+ (i.e. web and database).
 
 **Selection of an appropriate machine**
 
@@ -444,16 +444,16 @@ been done and expand on it....?**
 Tripal does not yet fully support Chado. We are getting closer, but as
 of now, it is still lacking in many areas... ***So why use Tripal?***
 
-1.  If you want to use Chado
-2.  You need a web interface
-3.  You need CMS capabilities (distributed content editing, user
-    management, social networking... i.e. Drupal)
-4.  You want to contribute to a community effort to help build a tool
-    others can use.
-5.  Participate in a community of other database developers using the
-    same technology, confronting similar problems and helping each
-    other.
-6.  It is all open-source and free technology!
+1. If you want to use Chado
+2. You need a web interface
+3. You need CMS capabilities (distributed content editing, user
+ management, social networking... i.e. Drupal)
+4. You want to contribute to a community effort to help build a tool
+ others can use.
+5. Participate in a community of other database developers using the
+ same technology, confronting similar problems and helping each
+ other.
+6. It is all open-source and free technology!
 
 ## Server Setup
 
@@ -472,7 +472,7 @@ database. It is not required for successful operation of Tripal but is
 very useful.
 
 ``` enter
-   sudo apt-get install phppgadmin
+ sudo apt-get install phppgadmin
 ```
 
 Now navigate to the URL
@@ -492,17 +492,17 @@ to use password protection for PhpPgAdmin. To do this, edit the
 phppgadmin config file for apache:
 
 ``` enter
-   cd /etc/apache2/conf.d
-   sudo gedit phppgadmin
+ cd /etc/apache2/conf.d
+ sudo gedit phppgadmin
 ```
 
 Within the Directory stanza add the following:
 
 ``` enter
-   AuthType Basic
-   AuthName "Password Required"
-   AuthUserFile /usr/share/phppgadmin/.htpasswd
-   Require User tripaladmin
+ AuthType Basic
+ AuthName "Password Required"
+ AuthUserFile /usr/share/phppgadmin/.htpasswd
+ Require User tripaladmin
 ```
 
 Note: it is necessary that the preceding lines appear below the
@@ -514,8 +514,8 @@ user allowed to login is 'tripaladmin'. Next we need to create the
 password file:
 
 ``` enter
-   cd /usr/share/phppgadmin
-   sudo htpasswd -c .htpasswd tripaladmin
+ cd /usr/share/phppgadmin
+ sudo htpasswd -c .htpasswd tripaladmin
 ```
 
 The htpasswd command above will create the .htpasswd file and add the
@@ -523,7 +523,7 @@ new user 'tripaladmin'. You will need to set a password when requested.
 
 Now, restart the webserver:
 
-      sudo /etc/init.d/apache2 restart
+ sudo /etc/init.d/apache2 restart
 
 A password should now be required when accessing the PhpPgAdmin page.
 
@@ -534,8 +534,8 @@ Clean URLs with Drupal. Clean URLs are not required but make the page
 URLs easier to use. We'll discuss clean URLs later.
 
 ``` enter
-   cd /etc/apache2/mods-enabled
-   sudo ln -s ../mods-available/rewrite.load
+ cd /etc/apache2/mods-enabled
+ sudo ln -s ../mods-available/rewrite.load
 ```
 
 Next we need to edit the apache configuration file to give Drupal full
@@ -543,19 +543,19 @@ controls of options within the directory root. Edit the
 /etc/apache2/sites-available/000-default file:
 
 ``` enter
-   cd /etc/apache2/sites-available/
-   sudo gedit 000-default
+ cd /etc/apache2/sites-available/
+ sudo gedit 000-default
 ```
 
 And change the **AllowOverride** option from **None** to **All**:
 
 ``` enter
-   <Directory /var/www/>
-      Options Indexes FollowSymLinks MultiViews
-      AllowOverride All
-      Order allow,deny
-      allow from all
-   </Directory>
+ <Directory /var/www/>
+ Options Indexes FollowSymLinks MultiViews
+ AllowOverride All
+ Order allow,deny
+ allow from all
+ </Directory>
 ```
 
 Now restart your apache again.
@@ -587,11 +587,11 @@ createuser -P tripal
 
 When requested, enter an appropriate password:
 
-      Enter password for new role: *********
-      Enter it again:  *********
-      Shall the new role be a superuser? (y/n) n
-      Shall the new role be allowed to create databases? (y/n) y
-      Shall the new role be allowed to create more new roles? (y/n) n
+ Enter password for new role: *********
+ Enter it again: *********
+ Shall the new role be a superuser? (y/n) n
+ Shall the new role be allowed to create databases? (y/n) y
+ Shall the new role be allowed to create more new roles? (y/n) n
 
 Finally, create the new database:
 
@@ -614,9 +614,9 @@ want to be able to do this as our 'tripal' user. So, first, let's set
 the directory permissions to allow this:
 
 ``` enter
-  cd /var
-  sudo chgrp -R tripal www
-  sudo chmod -R g+rw www
+ cd /var
+ sudo chgrp -R tripal www
+ sudo chmod -R g+rw www
 ```
 
 In the command above we set the group of the directory to be **tripal**
@@ -632,16 +632,16 @@ can be downloaded manually from the Drupal website through a web browser
 or we can use the 'wget' command to retrieve it:
 
 ``` class
-   cd /var/www
-   wget http://ftp.drupal.org/files/projects/drupal-6.22.tar.gz
+ cd /var/www
+ wget http://ftp.drupal.org/files/projects/drupal-6.22.tar.gz
 ```
 
 Next, we want to install Drupal. We will use the **tar** command to
 uncompress the software:
 
 ``` enter
-  cd /var/www
-  tar -zxvf drupal-6.22.tar.gz
+ cd /var/www
+ tar -zxvf drupal-6.22.tar.gz
 ```
 
 Notice that we now have a `drupal-6.22` directory with all of the Drupal
@@ -660,7 +660,7 @@ also moved (note the second 'mv' command above. Check to make sure this
 file is there
 
 ``` enter
-   ls -l .htaccess
+ ls -l .htaccess
 ```
 
 Notice that the last of the three `mv` commands renames the `index.html`
@@ -678,7 +678,7 @@ configuration file which we can borrow.
 First navigate to the location where the configuration file should go:
 
 ``` enter
-  cd /var/www/sites/default/
+ cd /var/www/sites/default/
 ```
 
 Next, copy the example configuration that already exists in the
@@ -686,7 +686,7 @@ directory to be our actual configuration file by renaming it to
 `settings.php`.
 
 ``` enter
-  cp default.settings.php settings.php
+ cp default.settings.php settings.php
 ```
 
 Now, we need to edit the configuration file to tell Drupal how to
@@ -694,13 +694,13 @@ connect to our database server. To do this we'll use an easy to use text
 editor **gedit**
 
 ``` enter
-  gedit settings.php
+ gedit settings.php
 ```
 
 Find the variable \$db_url and set it to this
 
 ``` enter
-  $db_url = 'pgsql://tripal:********@localhost/tripal_demo';
+ $db_url = 'pgsql://tripal:********@localhost/tripal_demo';
 ```
 
 Replace the text '\*\*\*\*\*\*\*\*' with your database password for the
@@ -712,10 +712,10 @@ Finally, we need to create three new directories. The first is the
 `files` directory which Drupal uses for storing uploaded files.
 
 ``` enter
-  cd /var/www/sites/default
-  mkdir files
-  sudo chown tripal:www-data files
-  sudo chmod g+rw files
+ cd /var/www/sites/default
+ mkdir files
+ sudo chown tripal:www-data files
+ sudo chmod g+rw files
 ```
 
 The above command creates the directory but sets the group to be the web
@@ -729,9 +729,9 @@ installing later:
 Now create the modules and themes directory
 
 ``` enter
-  cd /var/www/sites/all
-  mkdir modules
-  mkdir themes
+ cd /var/www/sites/all
+ mkdir modules
+ mkdir themes
 ```
 
 ### Compatibility with other tools
@@ -744,14 +744,14 @@ look for both `index.php` and `index.html` files when serving pages.
 Use 'gedit' to modify the `/var/www.htaccess` file.
 
 ``` enter
-   cd /var/www
-   gedit .htaccess
+ cd /var/www
+ gedit .htaccess
 ```
 
 Locate the line `DirectoryIndex` and change it to mach the following:
 
 ``` enter
-  DirectoryIndex index.php index.html
+ DirectoryIndex index.php index.html
 ```
 
 ### Web-based Steps
@@ -808,7 +808,7 @@ Drupal itself requires an entry in the crontab to function. To edit the
 cron launch the crontab editor:
 
 ``` enter
-  sudo crontab -e
+ sudo crontab -e
 ```
 
 [A word on text editors such as
@@ -817,7 +817,7 @@ nano](/wiki/Linux_Text_Editors).
 Add this line to the crontab
 
 ``` enter
-  0,30 * * * * /usr/bin/wget -O - -q http://localhost/cron.php > /dev/null
+ 0,30 * * * * /usr/bin/wget -O - -q http://localhost/cron.php > /dev/null
 ```
 
 Now save the changes. We have now added a UNIX cron job that will occur
@@ -1107,7 +1107,7 @@ infrastructure except to point out:
 - User accounts can be created
 - Users are assigned to various roles
 - Permissions for those roles can be set to allow groups of users
-  certain administrative rights or access to specific data.
+ certain administrative rights or access to specific data.
 
 Explore the Drupal **User Management** menu to see how users can be
 created, added to roles with specific permissions.
@@ -1119,20 +1119,20 @@ created, added to roles with specific permissions.
 Drupal allows us to install new themes. Installation of themes involves
 these steps:
 
-1.  Locate and download a theme from the Drupal website
-    (<a href="http://www.drupal.org/themes" class="external free"
-    rel="nofollow">http://www.drupal.org/themes</a>)
-2.  Unpack the theme in the /var/www/sites/all/themes directory
-3.  Return to the Drupal **Administer** → **Site Building** → **Themes**
-    page and enable the theme
+1. Locate and download a theme from the Drupal website
+ (<a href="http://www.drupal.org/themes" class="external free"
+ rel="nofollow">http://www.drupal.org/themes</a>)
+2. Unpack the theme in the /var/www/sites/all/themes directory
+3. Return to the Drupal **Administer** → **Site Building** → **Themes**
+ page and enable the theme
 
 For this tutorial, we will use the Sky theme which is available from
 <a href="http://drupal.org/project/sky" class="external free"
 
 ``` enter
-  cd /var/www/sites/all/themes
-  wget http://ftp.drupal.org/files/projects/sky-6.x-3.11.tar.gz
-  tar -zxvf sky-6.x-3.11.tar.gz
+ cd /var/www/sites/all/themes
+ wget http://ftp.drupal.org/files/projects/sky-6.x-3.11.tar.gz
+ tar -zxvf sky-6.x-3.11.tar.gz
 ```
 
 This should unpack the theme for us. Now, navigate to **Administer** →
@@ -1186,11 +1186,11 @@ file upload interface on the page to upload this file as our logo.
 Also set the following for the theme:
 
 - The dark blue header is a bit too dark for our logo image. So, let's
-  add a different color that. Find the text box for the header
-  background color and enter this color: '#EE2222' (red color).
+ add a different color that. Find the text box for the header
+ background color and enter this color: '#EE2222' (red color).
 - Set the 'Custom Layout Width' to be 1200px to give us more room
 - Set the height of the header to be 120px to give a bit more room in
-  the header as well.
+ the header as well.
 
 Then, click the **Save Configuration** button at the bottom. We now have
 a new logo and our slogan appears.
@@ -1206,12 +1206,12 @@ workshop we have several modules that we will need to install but which
 do not yet appear in the list of modules. To do this, we must follow
 these steps:
 
-1.  Locate and download the extension modules from the Drupal website
-2.  Unpack the module in the /var/www/sites/all/modules directory
-3.  Check for a README.txt or INSTALL.txt for any further instructions
-    for installation of the module
-4.  Return the the Drupal 'Administer' -\> 'Site Building' -\> 'Modules'
-    page and enable the module.
+1. Locate and download the extension modules from the Drupal website
+2. Unpack the module in the /var/www/sites/all/modules directory
+3. Check for a README.txt or INSTALL.txt for any further instructions
+ for installation of the module
+4. Return the the Drupal 'Administer' -\> 'Site Building' -\> 'Modules'
+ page and enable the module.
 
 For an example, let's install the **Views** module needed for this
 workshop. The Views module can be found here:
@@ -1220,22 +1220,22 @@ workshop. The Views module can be found here:
 current version as of the writing of this tutorial:
 
 ``` enter
-  cd /var/www/sites/all/modules
-  wget http://ftp.drupal.org/files/projects/views-6.x-2.12.tar.gz
+ cd /var/www/sites/all/modules
+ wget http://ftp.drupal.org/files/projects/views-6.x-2.12.tar.gz
 ```
 
 Now unpack the module:
 
 ``` enter
-  tar -zxvf views-6.x-2.12.tar.gz
+ tar -zxvf views-6.x-2.12.tar.gz
 ```
 
 Check the README for additional installation instructions
 
 ``` enter
-  cd views
-  ls
-  less README.txt
+ cd views
+ ls
+ less README.txt
 ```
 
 *Use the space-bar to scroll through the README.txt file. Hit the 'q'
@@ -1257,12 +1257,12 @@ by Role, and Panels modules should also be downloaded and installed
 following the same instructions above
 
 ``` enter
-   cd /var/www/sites/all/modules
-   wget http://ftp.drupal.org/files/projects/ctools-6.x-1.8.tar.gz
-   wget http://ftp.drupal.org/files/projects/panels-6.x-3.9.tar.gz
-   wget http://ftp.drupal.org/files/projects/jquery_ui-6.x-1.5.tar.gz
-   wget http://ftp.drupal.org/files/projects/cck-6.x-2.9.tar.gz
-   wget http://ftp.drupal.org/files/projects/devel-6.x-1.26.tar.gz
+ cd /var/www/sites/all/modules
+ wget http://ftp.drupal.org/files/projects/ctools-6.x-1.8.tar.gz
+ wget http://ftp.drupal.org/files/projects/panels-6.x-3.9.tar.gz
+ wget http://ftp.drupal.org/files/projects/jquery_ui-6.x-1.5.tar.gz
+ wget http://ftp.drupal.org/files/projects/cck-6.x-2.9.tar.gz
+ wget http://ftp.drupal.org/files/projects/devel-6.x-1.26.tar.gz
 ```
 
 For JQuery UI the README file indicates we need to install the JQuery UI
@@ -1272,15 +1272,15 @@ from online.
 Here is a quick command for downloading this file
 
 ``` enter
-  cd /var/www/sites/all/modules/jquery_ui
-  wget http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip
+ cd /var/www/sites/all/modules/jquery_ui
+ wget http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip
 ```
 
 Now unzip the package and rename it according to the instructions
 
 ``` enter
-  unzip jquery.ui-1.6.zip
-  mv jquery.ui-1.6 jquery.ui
+ unzip jquery.ui-1.6.zip
+ mv jquery.ui-1.6 jquery.ui
 ```
 
 Now, return to our Drupal website and enable the modules.
@@ -1288,16 +1288,16 @@ Now, return to our Drupal website and enable the modules.
 For Chaos Tools, enable these modules under the *Chaos tool suite*
 category:
 
-     * Chaos tools
-     * Custom content panes
-     * Page Manager
-     * Views content panes
+ * Chaos tools
+ * Custom content panes
+ * Page Manager
+ * Views content panes
 
 Enables these modules under the **Panels** category:
 
-     * Mini panels
-     * Panel nodes
-     * Panels
+ * Mini panels
+ * Panel nodes
+ * Panels
 
 Enable the JQuery module. which is found under the **User Interface**
 category.
@@ -1306,25 +1306,25 @@ Enable all modules under the **CCK** category.
 
 Enable these modules under the **Devel** category:
 
-      * Devel
+ * Devel
 
 For reference, the modules installed above can be found here:
 
 - CTools:
-  <a href="http://drupal.org/project/ctools" class="external free"
-  rel="nofollow">http://drupal.org/project/ctools</a>
+ <a href="http://drupal.org/project/ctools" class="external free"
+ rel="nofollow">http://drupal.org/project/ctools</a>
 - Views: <a href="http://drupal.org/project/views" class="external free"
-  rel="nofollow">http://drupal.org/project/views</a>
+ rel="nofollow">http://drupal.org/project/views</a>
 - Panels:
-  <a href="http://drupal.org/project/panels" class="external free"
-  rel="nofollow">http://drupal.org/project/panels</a>
+ <a href="http://drupal.org/project/panels" class="external free"
+ rel="nofollow">http://drupal.org/project/panels</a>
 - JQuery-ui:
-  <a href="http://drupal.org/project/jquery_ui" class="external free"
-  rel="nofollow">http://drupal.org/project/jquery_ui</a>
+ <a href="http://drupal.org/project/jquery_ui" class="external free"
+ rel="nofollow">http://drupal.org/project/jquery_ui</a>
 - CCK: <a href="http://drupal.org/project/cck" class="external free"
-  rel="nofollow">http://drupal.org/project/cck</a>
+ rel="nofollow">http://drupal.org/project/cck</a>
 - Devel: <a href="http://drupal.org/project/devel" class="external free"
-  rel="nofollow">http://drupal.org/project/devel</a>
+ rel="nofollow">http://drupal.org/project/devel</a>
 
 ## Tripal Installation
 
@@ -1399,8 +1399,8 @@ be copied. The following command will copy all the theme files and place
 them in the correct location:
 
 ``` enter
-   cd /var/www/sites/all/modules
-   cp -R tripal_analysis*/theme/* /var/www/sites/all/themes/theme_tripal
+ cd /var/www/sites/all/modules
+ cp -R tripal_analysis*/theme/* /var/www/sites/all/themes/theme_tripal
 ```
 
 Do not enable these modules in Drupal just yet. We will do that later.
@@ -1459,7 +1459,7 @@ as well to allow for regular execution of jobs in the queue. We will
 need to add a second cron entry:
 
 ``` enter
-   sudo crontab -e
+ sudo crontab -e
 ```
 
 [A word on text editors such as
@@ -1468,7 +1468,7 @@ nano](/wiki/Linux_Text_Editors).
 Add this line to the crontab
 
 ``` enter
-   0,15,30,45 * * * * (cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator ) > /dev/null
+ 0,15,30,45 * * * * (cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator ) > /dev/null
 ```
 
 This entry will run the Tripal cron every 15 minutes as the
@@ -1477,7 +1477,7 @@ at the most to execute our jobs. So, we will run the jobs manually. We
 will execute the same command that we used in the cron above:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 We should now see that Chado is being installed!
@@ -1552,14 +1552,14 @@ Return to the **Administer** → **Site building** → **Modules** page and
 turn on the following Tripal modules in the following order. Do not
 enable all of them at once. Use the following order:
 
-1.  Tripal DB
-2.  Tripal CV
-3.  Tripal Organism
-4.  Tripal Analysis
-5.  Tripal Feature
-6.  Tripal Stock
-7.  Tripal Library
-8.  Tripal Search
+1. Tripal DB
+2. Tripal CV
+3. Tripal Organism
+4. Tripal Analysis
+5. Tripal Feature
+6. Tripal Stock
+7. Tripal Library
+8. Tripal Search
 
 **Note**: It is not necessary to enable all Tripal modules. Only those
 you may want to use. For example, if you do not want to use the library
@@ -1584,9 +1584,9 @@ Views installed the menu items will include:
 - Analyses: provides a list of all analyses in Chado
 - Organisms: provides a list of all organisms in Chado
 - Sequence Features: provides a basic list and searching mechanism to
-  find genomic features
+ find genomic features
 - Sequence Libraries: provides a basic list and searching mechanism to
-  find libraries.
+ find libraries.
 - Stocks: provides a basic searching mechanism to find stocsk.
 
 Using the Drupal Views interface (to be discussed later), you can change
@@ -1624,14 +1624,14 @@ it should use Tripal as it's base theme. To do this, we need to edit the
 .info file in the **Sky** theme directory.
 
 ``` enter
-   cd /var/www/sites/all/themes/sky
-   gedit sky.info
+ cd /var/www/sites/all/themes/sky
+ gedit sky.info
 ```
 
 Scroll to the bottom of the file and add the following line
 
 ``` enter
-   base theme = tripal
+ base theme = tripal
 ```
 
 If you do not wish to use the Sky theme, you simply need to find the
@@ -1661,10 +1661,10 @@ the saved drop down list for loading of future updates to the ontology.
 
 For this tutorial, we need to install these ontologies:
 
-1.  Chado feature properties
-2.  Relationship ontology
-3.  Sequence ontology
-4.  Gene ontology.
+1. Chado feature properties
+2. Relationship ontology
+3. Sequence ontology
+4. Gene ontology.
 
 Do so by selecting one and clicking the **Submit** button. Repeat this
 process for each of the three ontologies. You'll notice each time that a
@@ -1673,7 +1673,7 @@ job is added to the jobs subsystem.
 Now manually launch these jobs
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 **Note:** Loading the Gene Ontology will take several hours.
@@ -1712,7 +1712,7 @@ check box next to **Drosophila melenogaster** and then click the
 As usual we want to run this job manually:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 Now that our organism is synced we should have a new page for
@@ -1810,12 +1810,12 @@ associated with all imported features. This has several advantages,
 including:
 
 - The source of features (sequences) can be traced. Even for feature
-  simply downloaded from a database, it allows someone else to see where
-  the features came from.
+ simply downloaded from a database, it allows someone else to see where
+ the features came from.
 - Provides a mechanism for describing how the features were created
-  (e.g. whole genome structural and functional annotation description)
+ (e.g. whole genome structural and functional annotation description)
 - The analysis links all of the features together which can be useful
-  for querying for specific features from an analysis.
+ for querying for specific features from an analysis.
 
 To create an analysis for loading our genomic data, navigate to the
 **Create content**and click on the link: **Analysis**
@@ -1840,14 +1840,14 @@ source of your data. For this tutorial, enter the following:
 - Program Version: FlyBase r5.34
 - Source Name: FlyBase
 - Source URI: <a href="http://flybase.org/" class="external free"
-  rel="nofollow">http://flybase.org/</a>
+ rel="nofollow">http://flybase.org/</a>
 - Time Executed: (todays date)
 - Description: A subset of the gene list from the 2lHet chromosome of
-  Drosophila melanogaster was downloaded from Flybase. The original GFF
-  file can be obtained from here: \<a href="/wiki/<a
-  href="ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.34_FB2011_02/gff/dmel-2LHet-r5.34.gff.gz"
-  class="external free"
-  rel="nofollow">ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.34_FB2011_02/gff/dmel-2LHet-r5.34.gff.gz</a>"\>dmel-2LHet-r5.34.gff.gz\</a\>
+ Drosophila melanogaster was downloaded from Flybase. The original GFF
+ file can be obtained from here: \<a href="/wiki/<a
+ href="ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.34_FB2011_02/gff/dmel-2LHet-r5.34.gff.gz"
+ class="external free"
+ rel="nofollow">ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.34_FB2011_02/gff/dmel-2LHet-r5.34.gff.gz</a>"\>dmel-2LHet-r5.34.gff.gz\</a\>
 
 After saving, you should have the following analysis page:
 
@@ -1880,12 +1880,12 @@ database**. Enter the following values for the fields:
 
 - Name: FlyBase
 - Description: FlyBase: a database for drosophila genetics and molecular
-  biology
+ biology
 - URL: <a href="http://flybase.org/" class="external free"
-  rel="nofollow">http://flybase.org/</a>
+ rel="nofollow">http://flybase.org/</a>
 - URL prefix:
-  <a href="http://flybase.org/reports/" class="external free"
-  rel="nofollow">http://flybase.org/reports/</a>
+ <a href="http://flybase.org/reports/" class="external free"
+ rel="nofollow">http://flybase.org/reports/</a>
 
 The URL prefix is important as it will be used to create the links on
 our gene pages. Our gene name will be appended to this URL to create the
@@ -1931,20 +1931,20 @@ width="800" height="466" alt="Tripal-importGFF.png" />
 
 Perform the following:
 
-1.  Choose the organism to which the GFF3 file belongs (in this case
-    *Drosophila melanogaster (fruitfly)*
-2.  Enter the path on the file system where our GFF file resides
-    (`/var/www/sites/default/files/Flybase-tripal-demo.gff`)
-3.  Select the analysis named "Drosophila melanogaster genes from
-    Flybase".
-4.  Select the check box "Import all and update"
+1. Choose the organism to which the GFF3 file belongs (in this case
+ *Drosophila melanogaster (fruitfly)*
+2. Enter the path on the file system where our GFF file resides
+ (`/var/www/sites/default/files/Flybase-tripal-demo.gff`)
+3. Select the analysis named "Drosophila melanogaster genes from
+ Flybase".
+4. Select the check box "Import all and update"
 
 Finally, click the **Import GFF3 button**. You'll notice a job was
 submitted to the jobs subsystem. Now, to complete the process we need
 the job to run. We'll do this manually:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 The final text on the screen should look like the following:
@@ -1970,17 +1970,17 @@ FASTA files which you can download from the following links. Save these
 files in the `/var/www/sites/default/files` directory
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/Flybase-tripal-demo.2LHet.fna.txt"
-  class="internal"
-  title="Flybase-tripal-demo.2LHet.fna.txt">Media:Flybase-tripal-demo.2LHet.fna.txt</a>:
-  2LHet chromosomal sequence
+ class="internal"
+ title="Flybase-tripal-demo.2LHet.fna.txt">Media:Flybase-tripal-demo.2LHet.fna.txt</a>:
+ 2LHet chromosomal sequence
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f4/Flybase-tripal-demo.genes.fna.txt"
-  class="internal"
-  title="Flybase-tripal-demo.genes.fna.txt">Media:Flybase-tripal-demo.genes.fna.txt</a>:
-  nucleotide sequences for genes
+ class="internal"
+ title="Flybase-tripal-demo.genes.fna.txt">Media:Flybase-tripal-demo.genes.fna.txt</a>:
+ nucleotide sequences for genes
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a2/Flybase-tripal-demo.peptides.fna.txt"
-  class="internal"
-  title="Flybase-tripal-demo.peptides.fna.txt">Media:Flybase-tripal-demo.peptides.fna.txt</a>:
-  translated peptide sequences
+ class="internal"
+ title="Flybase-tripal-demo.peptides.fna.txt">Media:Flybase-tripal-demo.peptides.fna.txt</a>:
+ translated peptide sequences
 
 Now,navigate to the **Administer** → **Tripal Management** →
 **Features** → **Import a Multi-FASTA file** Page
@@ -2009,7 +2009,7 @@ type. For example, in our GFF file the chromosome's are of type
 'chromosome_arm' and have an ID of '2LHet' and a Name of '2LHet':
 
 ``` enter
-2LHet   FlyBase chromosome_arm  1       368872  .       .       .       ID=2LHet;Name=2LHet;Dbxref=REFSEQ:NW_001848855,GB:CM000456
+2LHet FlyBase chromosome_arm 1 368872 . . . ID=2LHet;Name=2LHet;Dbxref=REFSEQ:NW_001848855,GB:CM000456
 ```
 
 In our FASTA file for the chromosomes, the first few line are as
@@ -2033,7 +2033,7 @@ on the name or the unique name when loading this file.
 In another example, here is an entry from the GFF file for a gene:
 
 ``` enter
-2LHet   FlyBase gene    19633   32995   .   -   .   ID=FBgn0039958;Name=CG12567;Alias=FBan0012567;
+2LHet FlyBase gene 19633 32995 . - . ID=FBgn0039958;Name=CG12567;Alias=FBan0012567;
 ```
 
 And here is the corresponding part of the FASTA file:
@@ -2065,11 +2065,11 @@ match them to existing features.
 Load the FASTA file for the chromosomes by specifying the following:
 
 - FASTA file:
-  /var/www/sites/default/files/Flybase-tripal-demo.2LHet.fna.txt
+ /var/www/sites/default/files/Flybase-tripal-demo.2LHet.fna.txt
 - Organism: Drosophila melenogaster (fruitfly)
 - Sequence type: chromosome_arm
 - Method: Update only (we do not want to insert these are they should
-  already be there)
+ already be there)
 - Name Match: Unique name
 - Analysis: Drosophila melanogaster genes from Flybase
 
@@ -2077,7 +2077,7 @@ Click the **Import Fasta File**, and a job will be added to the jobs
 system. Run the job:
 
 ``` enter
-   cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 ***Loading Flybase-tripal-demo.genes.fna.txt***
@@ -2085,14 +2085,14 @@ system. Run the job:
 Load the FASTA file for the chromosomes by specifying the following:
 
 - FASTA file:
-  /var/www/sites/default/files/Flybase-tripal-demo.genes.fna.txt
+ /var/www/sites/default/files/Flybase-tripal-demo.genes.fna.txt
 - Organism: Drosophila melanogaster (fruitfly)
 - Sequence type: gene
 - Method: Update only
 - Name Match Type: Unique name
 - Under advanced options set the following
-  - External database: FlyBase (the database we created earlier)
-  - Regular expression for the accession: ^(.\*?)\s.\*\$
+ - External database: FlyBase (the database we created earlier)
+ - Regular expression for the accession: ^(.\*?)\s.\*\$
 
 We set the "External database" and "Regular expression for the
 accession" fields because we want to link our genes to Flybase. Earlier,
@@ -2105,18 +2105,18 @@ regular expression to extract this name.
 Here is the meaning of the characters in the regular expression:
 
 ``` enter
-  ^         matches the beginning of the line
-  $         matches the end of the line
-  .         matches any character
-  \s        matches a space
-  (.*?)\s   matches all characters up to the first space.  The text in parenthesis will be the accession
+ ^ matches the beginning of the line
+ $ matches the end of the line
+ . matches any character
+ \s matches a space
+ (.*?)\s matches all characters up to the first space. The text in parenthesis will be the accession
 ```
 
 Click the **Import Fasta File**, and a job will be added to the jobs
 system. Run the job:
 
 ``` enter
-   cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 You should see output from the jobs similar to the following indicating
@@ -2157,27 +2157,27 @@ We will use regular expressions to pull out the necessary information.
 Use these values when loading this FASTA file:
 
 - FASTA file:
-  /var/www/sites/default/files/Flybase-tripal-demo.peptides.fna.txt
+ /var/www/sites/default/files/Flybase-tripal-demo.peptides.fna.txt
 - Organism: Drosophila melanogaster (fruitfly)
 - Sequence type: protein
 - Method: Insert and update
 - Name match Type: Unique name
 - Analysis: Drosophila melanogaster genes from Flybase
 - Under advanced options set the following
-  - Regular expression for the name: name=(.\*?);
-  - Regular expression for the unique name: ID=(.\*?);
-  - External Database Reference:
-    - External Database: FlyBase
-    - Regular expression for the accession: ID=(.\*?);
-  - Relationships
-    - Relationship type: produced by
-    - Regular expression for the parent: parent=.\*?,(.\*?);
-    - Parent type: mRNA
+ - Regular expression for the name: name=(.\*?);
+ - Regular expression for the unique name: ID=(.\*?);
+ - External Database Reference:
+ - External Database: FlyBase
+ - Regular expression for the accession: ID=(.\*?);
+ - Relationships
+ - Relationship type: produced by
+ - Regular expression for the parent: parent=.\*?,(.\*?);
+ - Parent type: mRNA
 
 Click the **Import FASTA file** button and then run the job:
 
 ``` enter
-   cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 You should see output where the protein feature was added, along with
@@ -2214,7 +2214,7 @@ which we need to manually run rather than wait on the cron entry to run
 it.
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 Our features are now synced:
@@ -2277,18 +2277,18 @@ into Chado by the GMOD folks.
 A materialized views will take an SQL query like this
 
 ``` enter
-   SELECT DISTINCT CVT.name,CVT.cvterm_id, CV.cv_id, CV.name
-   FROM {cvterm_relationship} CVTR
-     INNER JOIN cvterm CVT on CVTR.object_id = CVT.cvterm_id
-     INNER JOIN CV on CV.cv_id = CVT.cv_id
-   WHERE CVTR.object_id not in
-        (SELECT subject_id FROM {cvterm_relationship})
+ SELECT DISTINCT CVT.name,CVT.cvterm_id, CV.cv_id, CV.name
+ FROM {cvterm_relationship} CVTR
+ INNER JOIN cvterm CVT on CVTR.object_id = CVT.cvterm_id
+ INNER JOIN CV on CV.cv_id = CVT.cv_id
+ WHERE CVTR.object_id not in
+ (SELECT subject_id FROM {cvterm_relationship})
 ```
 
 And reduce it into this:
 
 ``` enter
-     SELECT * FROM cv_root_mview WHERE cvterm_id = 100
+ SELECT * FROM cv_root_mview WHERE cvterm_id = 100
 ```
 
 For this to work a table named **cv_root_mview** is created and
@@ -2319,7 +2319,7 @@ the name:
 Run these jobs manually:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 You can now see that both views are up-to-date on the **Materialized
@@ -2365,7 +2365,7 @@ do this, click the button 'Set Feature URLs'. This will add a job to the
 jobs subsystem. We want to execute this job manually:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 Third on the configuration page are **Feature Browser** settings. By
@@ -2439,14 +2439,14 @@ navigate to the **Create Content** page and select the content type
 - Source version: FB2011_02
 - Time Executed: Mar 6 2011
 - Description: blastx vs ExPASy SwissProt of four genes from the Dmel
-  2LHet chromosomal region to provide evidence of function
-  - Blast Settings
-    - Database: DB:swisprot:display
-    - Blast XML File/Directory:
-      /var/www/sites/default/files/Flybase-tripal-demo.genes.blastx.xml.txt
-    - Check the box 'Use Unique Name'
-    - Parameters: -e 1e-6
-    - Submit a job to parse the XML output: checked
+ 2LHet chromosomal region to provide evidence of function
+ - Blast Settings
+ - Database: DB:swisprot:display
+ - Blast XML File/Directory:
+ /var/www/sites/default/files/Flybase-tripal-demo.genes.blastx.xml.txt
+ - Check the box 'Use Unique Name'
+ - Parameters: -e 1e-6
+ - Submit a job to parse the XML output: checked
 
 Click the **Save** button. You can now see our new Analysis.
 
@@ -2461,7 +2461,7 @@ the page.
 Now we need to manually run the job to parse the Blast results:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 The results should now be loaded. if we visit our feature page, for
@@ -2502,13 +2502,13 @@ for this analysis
 - Time Executed: Aug 18, 2011
 - Description: InterProScan search of Dmel genes against all databases
 - InterPro Settings
-  - InterProScan XML File/Directory:
-    /var/www/sites/default/files/Flybase-tripal-demo.iprscan.xml.txt
-  - Check the box 'Submit a job to parse the Interpro XML output'
-  - Check the box 'Load GO terms'
-  - Parameters: -goterms -ipr -format xml
-  - Check the box 'Use Unique Name'
-  - Query type: gene
+ - InterProScan XML File/Directory:
+ /var/www/sites/default/files/Flybase-tripal-demo.iprscan.xml.txt
+ - Check the box 'Submit a job to parse the Interpro XML output'
+ - Check the box 'Load GO terms'
+ - Parameters: -goterms -ipr -format xml
+ - Check the box 'Use Unique Name'
+ - Query type: gene
 
 Click the **Save** button. You can now see our new Analysis.
 
@@ -2520,7 +2520,7 @@ width="800" height="484" alt="Traipal-Interpro analysis.png" />
 Now we need to manually run the job to parse the Inetpro results:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 The results should now be loaded. if we visit our feature page, for
@@ -2560,19 +2560,19 @@ this analysis
 - Source version: FB2011_02
 - Time Executed: Aug 18, 2011
 - Description: Drosophila melanogaster gene sequences were uploaded to
-  the KEGG / KASS server at \<a href="/wiki/<a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
-  rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>"\><a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
-  rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>\</a\>.   The
-  SBH method was selected.  Results were downloaded in the heir.tar.gz
-  hierarchy file and uploaded to the website.
+ the KEGG / KASS server at \<a href="/wiki/<a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
+ rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>"\><a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
+ rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>\</a\>.   The
+ SBH method was selected.  Results were downloaded in the heir.tar.gz
+ hierarchy file and uploaded to the website.
 
 \<meta content="text/html; charset=utf-8" http-equiv="content-type" /\>
 
 - KEGG Settings
-  - KAAS hier.tar.gz Output File:
-    /var/www/sites/default/files/Flybase-tripal-demo.kegg.heir.tar.gz
-  - Check the box "use unique name"
-  - Check the box "Submit a job to parse the kegg output into Chado"
+ - KAAS hier.tar.gz Output File:
+ /var/www/sites/default/files/Flybase-tripal-demo.kegg.heir.tar.gz
+ - Check the box "use unique name"
+ - Check the box "Submit a job to parse the kegg output into Chado"
 
 Click the **Save** button. You can now see our new Analysis.
 
@@ -2584,7 +2584,7 @@ width="800" height="484" alt="Tripal-kegg1.png" />
 Now we need to manually run the job to parse the Blast results:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 To make the KEGG reports appear on the Organism page, we must populate
@@ -2594,7 +2594,7 @@ the **kegg_by_organism** view and click the **update** link. Manually
 run the job to populate the view:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 You should now return to the organism page and see the KEGG report.
@@ -2636,7 +2636,7 @@ features** button.
 This will add a job to our jobs subsystem which we want to run manually:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 Now, all of our synced features are annotated with Drupal taxonomy
@@ -2674,7 +2674,7 @@ width="800" height="213" alt="Tripal-reindex.png" />
 Then manually run the job:
 
 ``` enter
-  cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
+ cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
 ```
 
 Drupal searching will not work unless all of the pages are indexed. To
@@ -2788,12 +2788,12 @@ shown here in this tutorial). But first, open to the feature page
 - How to remove default content from the panel regions
 - How to add content to each panel region
 - Adding of blocks in this order:
-  - Feature Details in the **Left Above** section
-  - Feature Synonyms in the **Left Above** section, just below the
-    feature details.
-  - Feature References in the **Right Above** section
-  - Feature Relationships as Object in the **Middle** section
-  - Add any other blocks desired to the **Middle** or lower sections
+ - Feature Details in the **Left Above** section
+ - Feature Synonyms in the **Left Above** section, just below the
+ feature details.
+ - Feature References in the **Right Above** section
+ - Feature Relationships as Object in the **Middle** section
+ - Add any other blocks desired to the **Middle** or lower sections
 
 When finished our page now looks like this:
 
@@ -2832,7 +2832,7 @@ $node = node_load($nid);
 $feature = $node->feature;
 
 if($feature->type_id->name == 'gene' or $feature->type_id->name == 'mRNA'){
-   print "<img src=\"http://flybase.org/cgi-bin/gbrowse_img/dmel/?name=$feature->uniquename\">";
+ print "<img src=\"http://flybase.org/cgi-bin/gbrowse_img/dmel/?name=$feature->uniquename\">";
 }
 ?>
 ```
@@ -2844,7 +2844,7 @@ See the Tripal website for more information about using the Tripal API.
 that case, we can change the print statement to use the Metazome GBrowse
 (Ideally we would want to use GBrowse installed on our own system):
 
-       print "<img src=\"http://www.metazome.net/cgi-bin/gbrowse_img/Dmelanogaster/?name=$feature->name\">";
+ print "<img src=\"http://www.metazome.net/cgi-bin/gbrowse_img/Dmelanogaster/?name=$feature->name\">";
 
 We'll try the flybase link first. If it doesn't work we can return here
 to switch it out for the Metazome URL.

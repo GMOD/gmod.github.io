@@ -3,34 +3,34 @@ title: "FlyBase Field Mapping Tables"
 ---
 # FlyBase Field Mapping Tables
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [FlyBase Gene
-  Report](#FlyBase_Gene_Report)
+ Report](#FlyBase_Gene_Report)
 - [FlyBase Allele
-  Report](#FlyBase_Allele_Report)
+ Report](#FlyBase_Allele_Report)
 - [FlyBase Gene
-  Expression Report](#FlyBase_Gene_Expression_Report)
+ Expression Report](#FlyBase_Gene_Expression_Report)
 - [FlyBase
-  Transcript Report](#FlyBase_Transcript_Report)
+ Transcript Report](#FlyBase_Transcript_Report)
 - [FlyBase
-  Polypeptide Report](#FlyBase_Polypeptide_Report)
+ Polypeptide Report](#FlyBase_Polypeptide_Report)
 - [FlyBase
-  Insertion Report](#FlyBase_Insertion_Report)
+ Insertion Report](#FlyBase_Insertion_Report)
 - [FlyBase Clone
-  Report](#FlyBase_Clone_Report)
+ Report](#FlyBase_Clone_Report)
 - [FlyBase Stock
-  Report](#FlyBase_Stock_Report)
+ Report](#FlyBase_Stock_Report)
 - [FlyBase
-  Aberration Report](#FlyBase_Aberration_Report)
+ Aberration Report](#FlyBase_Aberration_Report)
 - [FlyBase
-  Balancer Report](#FlyBase_Balancer_Report)
+ Balancer Report](#FlyBase_Balancer_Report)
 - [FlyBase
-  Reference Report](#FlyBase_Reference_Report)
+ Reference Report](#FlyBase_Reference_Report)
 - [FlyBase
-  Transgenic Construct
-  Report](#FlyBase_Transgenic_Construct_Report)
+ Transgenic Construct
+ Report](#FlyBase_Transgenic_Construct_Report)
 - [FlyBase
-  Natural Transposon Report](#FlyBase_Natural_Transposon_Report)
+ Natural Transposon Report](#FlyBase_Natural_Transposon_Report)
 
 ## Introduction
 
@@ -61,12 +61,12 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(s.name)
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -75,10 +75,10 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, o.genus, o.species
-  FROM feature f, cvterm cvt, organism o
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename LIKE &#39;FBgn%&#39; AND
-    f.organism_id = o.organism_id;</code></pre>
+ FROM feature f, cvterm cvt, organism o
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename LIKE &#39;FBgn%&#39; AND
+ f.organism_id = o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -87,12 +87,12 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(s.name)
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;fullname&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;fullname&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -101,10 +101,10 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;FlyBase Annotation IDs&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;FlyBase Annotation IDs&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -113,9 +113,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;promoted_gene_type&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;promoted_gene_type&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -124,9 +124,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.name = &#39;ab&#39;;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.name = &#39;ab&#39;;</code></pre>
 
 </td>
 </tr>
@@ -135,8 +135,8 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned, timelastmodified
-  FROM feature f
-  WHERE uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f
+ WHERE uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -145,9 +145,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_gene_model_status&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_gene_model_status&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -156,9 +156,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_genetic_status&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_genetic_status&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -170,9 +170,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename
-  FROM feature f, featureloc fl, feature a
-  WHERE f.feature_id = fl.feature_id AND fl.srcfeature_id = a.feature_id AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureloc fl, feature a
+ WHERE f.feature_id = fl.feature_id AND fl.srcfeature_id = a.feature_id AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -181,9 +181,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;promoted_genetic_location&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;promoted_genetic_location&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -192,9 +192,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_computed_cyto&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_computed_cyto&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -203,9 +203,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT s.uniquename, fmin, fmax, strand
-  FROM feature f, featureloc fl, feature s
-  WHERE f.feature_id = fl.feature_id AND fl.srcfeature_id = s.feature_id AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureloc fl, feature s
+ WHERE f.feature_id = fl.feature_id AND fl.srcfeature_id = s.feature_id AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -220,9 +220,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_computed_cyto&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_computed_cyto&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -231,9 +231,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_computed_cyto&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_computed_cyto&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -245,9 +245,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_experimental_cyto&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_experimental_cyto&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -256,9 +256,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;cyto_loc_comment&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;cyto_loc_comment&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -267,10 +267,10 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;cyto_loc_comment&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000060&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;cyto_loc_comment&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000060&#39;;</code></pre>
 
 </td>
 </tr>
@@ -282,9 +282,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;genetic_location&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;genetic_location&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -293,12 +293,12 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name, p.uniquename
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
-     pub p
-  WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;recom_right_end&#39; AND
-    f.uniquename = &#39;FBgn0000051&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
+ pub p
+ WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;recom_right_end&#39; AND
+ f.uniquename = &#39;FBgn0000051&#39;;</code></pre>
 
 </td>
 </tr>
@@ -307,12 +307,12 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name, p.uniquename
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
-     pub p
-  WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;recom_left_end&#39; AND
-    f.uniquename = &#39;FBgn0000051&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
+ pub p
+ WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;recom_left_end&#39; AND
+ f.uniquename = &#39;FBgn0000051&#39;;</code></pre>
 
 </td>
 </tr>
@@ -321,10 +321,10 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;cyto_loc_comment&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000060&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;cyto_loc_comment&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000060&#39;;</code></pre>
 
 </td>
 </tr>
@@ -341,11 +341,11 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = p.pub_id AND
-    cvt.name = &#39;gene_order&#39; AND fp.VALUE LIKE &#39;Gene order: In direction%&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = p.pub_id AND
+ cvt.name = &#39;gene_order&#39; AND fp.VALUE LIKE &#39;Gene order: In direction%&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -359,11 +359,11 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = p.pub_id AND
-    cvt.name = &#39;gene_order&#39; AND fp.VALUE LIKE &#39;Gene order: In direction%&#39; AND
-    f.uniquename = &#39;FBgn0000053&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = p.pub_id AND
+ cvt.name = &#39;gene_order&#39; AND fp.VALUE LIKE &#39;Gene order: In direction%&#39; AND
+ f.uniquename = &#39;FBgn0000053&#39;;</code></pre>
 
 </td>
 </tr>
@@ -382,11 +382,11 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, s.name AS synonym, synonym_sgml, cvt.name, p.uniquename
-  FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;symbol&#39; AND fs.is_current = &#39;f&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;symbol&#39; AND fs.is_current = &#39;f&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -395,11 +395,11 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, s.name AS synonym, synonym_sgml, cvt.name, p.uniquename
-  FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;fullname&#39; AND fs.is_current = &#39;f&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;fullname&#39; AND fs.is_current = &#39;f&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -408,10 +408,10 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, accession, db.name
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;f&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;FlyBase&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;f&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;FlyBase&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -426,12 +426,12 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p,
-     cv
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = p.pub_id AND
-    cvt.cv_id = cv.cv_id AND cv.name = &#39;annotation property type&#39; AND
-    cvt.name = &#39;comment&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p,
+ cv
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = p.pub_id AND
+ cvt.cv_id = cv.cv_id AND cv.name = &#39;annotation property type&#39; AND
+ cvt.name = &#39;comment&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -443,9 +443,9 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_supporting_accessions&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_supporting_accessions&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -462,12 +462,12 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, fd.is_current, db.name, dbx.accession
-  FROM feature g, feature_dbxref fd, dbxref dbx, db, cvterm gt
-  WHERE g.type_id = gt.cvterm_id AND gt.name = &#39;gene&#39; AND
-    g.uniquename LIKE &#39;FBgn%&#39; AND g.is_obsolete = &#39;f&#39; AND
-    g.feature_id = fd.feature_id AND fd.dbxref_id = dbx.dbxref_id AND
-    dbx.db_id = db.db_id AND db.name = &#39;UniProt/Swiss-Prot&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_dbxref fd, dbxref dbx, db, cvterm gt
+ WHERE g.type_id = gt.cvterm_id AND gt.name = &#39;gene&#39; AND
+ g.uniquename LIKE &#39;FBgn%&#39; AND g.is_obsolete = &#39;f&#39; AND
+ g.feature_id = fd.feature_id AND fd.dbxref_id = dbx.dbxref_id AND
+ dbx.db_id = db.db_id AND db.name = &#39;UniProt/Swiss-Prot&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -476,12 +476,12 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, fd.is_current, db.name, dbx.accession
-  FROM feature g, feature_dbxref fd, dbxref dbx, db, cvterm gt
-  WHERE g.type_id = gt.cvterm_id AND gt.name = &#39;gene&#39; AND
-    g.uniquename LIKE &#39;FBgn%&#39; AND g.is_obsolete = &#39;f&#39; AND
-    g.feature_id = fd.feature_id AND fd.dbxref_id = dbx.dbxref_id AND
-    dbx.db_id = db.db_id AND db.name = &#39;UniProt/TrEMBL&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_dbxref fd, dbxref dbx, db, cvterm gt
+ WHERE g.type_id = gt.cvterm_id AND gt.name = &#39;gene&#39; AND
+ g.uniquename LIKE &#39;FBgn%&#39; AND g.is_obsolete = &#39;f&#39; AND
+ g.feature_id = fd.feature_id AND fd.dbxref_id = dbx.dbxref_id AND
+ dbx.db_id = db.db_id AND db.name = &#39;UniProt/TrEMBL&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -490,10 +490,10 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, c.uniquename, c.name
-  FROM feature f, feature_relationship fr, cvterm cvt, feature c
-  WHERE f.feature_id = subject_id AND object_id = c.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;maps_to_clone&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature c
+ WHERE f.feature_id = subject_id AND object_id = c.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;maps_to_clone&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -502,10 +502,10 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, c.uniquename, c.name
-  FROM feature f, feature_relationship fr, cvterm cvt, feature c
-  WHERE f.feature_id = subject_id AND object_id = c.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;nomaps_to_clone&#39; AND
-    f.uniquename = &#39;FBgn0003308&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature c
+ WHERE f.feature_id = subject_id AND object_id = c.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;nomaps_to_clone&#39; AND
+ f.uniquename = &#39;FBgn0003308&#39;;</code></pre>
 
 </td>
 </tr>
@@ -514,10 +514,10 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, c.uniquename, c.name
-  FROM feature f, feature_relationship fr, cvterm cvt, feature c
-  WHERE f.feature_id = subject_id AND object_id = c.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;identified_with&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature c
+ WHERE f.feature_id = subject_id AND object_id = c.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;identified_with&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -529,15 +529,15 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT cvt.name
-  FROM feature f, feature_relationship fr, feature m, cvterm cvt
-  WHERE f.uniquename LIKE &#39;FBgn%&#39; AND f.feature_id = object_id AND
-    subject_id = m.feature_id AND m.type_id = cvt.cvterm_id AND
-    cvt.name IN (&#39;aberration_junction&#39;,&#39;complex_substitution&#39;,
-      &#39;deletion&#39;,&#39;enhancer&#39;,
-      &#39;insertion_site&#39;,&#39;point_mutation&#39;,
-       &#39;protein_binding_site&#39;,&#39;regulatory_region&#39;,
-      &#39;rescue_fragment&#39;,&#39;sequence_variant&#39;,
-      &#39;transposable_element_target_site_duplication&#39;,&#39;uncharacterized_change_in_nucleotide_sequence&#39;) AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, feature m, cvterm cvt
+ WHERE f.uniquename LIKE &#39;FBgn%&#39; AND f.feature_id = object_id AND
+ subject_id = m.feature_id AND m.type_id = cvt.cvterm_id AND
+ cvt.name IN (&#39;aberration_junction&#39;,&#39;complex_substitution&#39;,
+ &#39;deletion&#39;,&#39;enhancer&#39;,
+ &#39;insertion_site&#39;,&#39;point_mutation&#39;,
+ &#39;protein_binding_site&#39;,&#39;regulatory_region&#39;,
+ &#39;rescue_fragment&#39;,&#39;sequence_variant&#39;,
+ &#39;transposable_element_target_site_duplication&#39;,&#39;uncharacterized_change_in_nucleotide_sequence&#39;) AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -546,17 +546,17 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT m.uniquename AS mutation, s.uniquename AS arm, strand, fmin, fmax
-  FROM featureloc fl, feature f, feature_relationship fr, feature m, cvterm cvt,
-     feature s
-  WHERE f.uniquename LIKE &#39;FBgn%&#39; AND f.feature_id = object_id AND
-    subject_id = m.feature_id AND m.type_id = cvt.cvterm_id AND
-    cvt.name IN (&#39;aberration_junction&#39;,&#39;complex_substitution&#39;,
-      &#39;deletion&#39;,&#39;enhancer&#39;,
-      &#39;insertion_site&#39;,&#39;point_mutation&#39;,
-       &#39;protein_binding_site&#39;,&#39;regulatory_region&#39;,
-      &#39;rescue_fragment&#39;,&#39;sequence_variant&#39;,
-      &#39;transposable_element_target_site_duplication&#39;,&#39;uncharacterized_change_in_nucleotide_sequence&#39;) AND m.feature_id = fl.feature_id AND
-    fl.srcfeature_id = s.feature_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM featureloc fl, feature f, feature_relationship fr, feature m, cvterm cvt,
+ feature s
+ WHERE f.uniquename LIKE &#39;FBgn%&#39; AND f.feature_id = object_id AND
+ subject_id = m.feature_id AND m.type_id = cvt.cvterm_id AND
+ cvt.name IN (&#39;aberration_junction&#39;,&#39;complex_substitution&#39;,
+ &#39;deletion&#39;,&#39;enhancer&#39;,
+ &#39;insertion_site&#39;,&#39;point_mutation&#39;,
+ &#39;protein_binding_site&#39;,&#39;regulatory_region&#39;,
+ &#39;rescue_fragment&#39;,&#39;sequence_variant&#39;,
+ &#39;transposable_element_target_site_duplication&#39;,&#39;uncharacterized_change_in_nucleotide_sequence&#39;) AND m.feature_id = fl.feature_id AND
+ fl.srcfeature_id = s.feature_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -565,18 +565,18 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT m.uniquename, p.uniquename, cvt2.name, fp.VALUE
-  FROM feature f, feature_relationship fr, feature m, feature_pub mp, pub p,
-     cvterm cvt, cvterm cvt2, featureprop fp
-  WHERE f.uniquename LIKE &#39;FBgn%&#39; AND f.feature_id = object_id AND
-    su\ object_id = m.feature_id AND m.type_id = cvt.cvterm_id AND
-    cvt.name IN (&#39;aberration_junction&#39;,&#39;complex_substitution&#39;,
-      &#39;deletion&#39;,&#39;enhancer&#39;,
-      &#39;insertion_site&#39;,&#39;point_mutation&#39;,
-       &#39;protein_binding_site&#39;,&#39;regulatory_region&#39;,
-      &#39;rescue_fragment&#39;,&#39;sequence_variant&#39;,
-      &#39;transposable_element_target_site_duplication&#39;,&#39;uncharacterized_change_in_nucleotide_sequence&#39;) AND m.feature_id = mp.feature_id AND
-    mp.pub_id = p.pub_id AND m.feature_id = fp.feature_id AND
-    fp.type_id = cvt2.cvterm_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, feature m, feature_pub mp, pub p,
+ cvterm cvt, cvterm cvt2, featureprop fp
+ WHERE f.uniquename LIKE &#39;FBgn%&#39; AND f.feature_id = object_id AND
+ su\ object_id = m.feature_id AND m.type_id = cvt.cvterm_id AND
+ cvt.name IN (&#39;aberration_junction&#39;,&#39;complex_substitution&#39;,
+ &#39;deletion&#39;,&#39;enhancer&#39;,
+ &#39;insertion_site&#39;,&#39;point_mutation&#39;,
+ &#39;protein_binding_site&#39;,&#39;regulatory_region&#39;,
+ &#39;rescue_fragment&#39;,&#39;sequence_variant&#39;,
+ &#39;transposable_element_target_site_duplication&#39;,&#39;uncharacterized_change_in_nucleotide_sequence&#39;) AND m.feature_id = mp.feature_id AND
+ mp.pub_id = p.pub_id AND m.feature_id = fp.feature_id AND
+ fp.type_id = cvt2.cvterm_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -592,12 +592,12 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;dedb&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;dedb&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -606,10 +606,10 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;EPD&#39; AND f.uniquename = &#39;FBgn0000042&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;EPD&#39; AND f.uniquename = &#39;FBgn0000042&#39;;</code></pre>
 
 </td>
 </tr>
@@ -624,16 +624,16 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.name, p.seqlen, fmin, fmax, strand, a.uniquename AS arm
-  FROM feature f, feature p, feature_relationship fr, cvterm cvt, featureloc fl,
-     feature a, cvterm cvt2
-  WHERE f.feature_id = object_id AND subject_id = p.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
-    p.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
-       &#39;ncRNA&#39;, &#39;snRNA&#39;,
-      &#39;tRNA&#39;,&#39;rRNA&#39;,
-      &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
-    p.feature_id = fl.feature_id AND fl.srcfeature_id = a.feature_id AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature p, feature_relationship fr, cvterm cvt, featureloc fl,
+ feature a, cvterm cvt2
+ WHERE f.feature_id = object_id AND subject_id = p.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
+ p.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
+ &#39;ncRNA&#39;, &#39;snRNA&#39;,
+ &#39;tRNA&#39;,&#39;rRNA&#39;,
+ &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
+ p.feature_id = fl.feature_id AND fl.srcfeature_id = a.feature_id AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -650,19 +650,19 @@ field.
 <td>
 
 <pre class="de1"><code>SELECT t.uniquename, t.name, p.uniquename, p.name, p.seqlen
-  FROM feature g, feature_relationship fr, cvterm cvt, feature t, cvterm cvt2,
-     feature p, feature_relationship fr2, cvterm cvt3, cvterm cvt4
-  WHERE g.feature_id = fr.object_id AND fr.subject_id = t.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
-    t.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
-       &#39;ncRNA&#39;, &#39;snRNA&#39;,
-      &#39;tRNA&#39;,&#39;rRNA&#39;,
-      &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
-    t.feature_id = fr2.object_id AND fr2.subject_id = p.feature_id AND
-    fr2.type_id = cvt3.cvterm_id AND cvt3.name = &#39;producedby&#39; AND
-    p.type_id = cvt4.cvterm_id AND cvt4.name = &#39;protein&#39; AND
-    p.seqlen IS NOT NULL AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature t, cvterm cvt2,
+ feature p, feature_relationship fr2, cvterm cvt3, cvterm cvt4
+ WHERE g.feature_id = fr.object_id AND fr.subject_id = t.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
+ t.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
+ &#39;ncRNA&#39;, &#39;snRNA&#39;,
+ &#39;tRNA&#39;,&#39;rRNA&#39;,
+ &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
+ t.feature_id = fr2.object_id AND fr2.subject_id = p.feature_id AND
+ fr2.type_id = cvt3.cvterm_id AND cvt3.name = &#39;producedby&#39; AND
+ p.type_id = cvt4.cvterm_id AND cvt4.name = &#39;protein&#39; AND
+ p.seqlen IS NOT NULL AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -675,9 +675,9 @@ transcript sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_transcript_reported_sizes&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_transcript_reported_sizes&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -686,9 +686,9 @@ transcript sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_transcript_comment&#39; AND f.uniquename = &#39;FBgn0000038&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_transcript_comment&#39; AND f.uniquename = &#39;FBgn0000038&#39;;</code></pre>
 
 </td>
 </tr>
@@ -700,10 +700,10 @@ transcript sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;MIR&#39; AND f.uniquename = &#39;FBgn0064191&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;MIR&#39; AND f.uniquename = &#39;FBgn0064191&#39;;</code></pre>
 
 </td>
 </tr>
@@ -712,10 +712,10 @@ transcript sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;Rfam&#39; AND f.uniquename = &#39;FBgn0000810&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;Rfam&#39; AND f.uniquename = &#39;FBgn0000810&#39;;</code></pre>
 
 </td>
 </tr>
@@ -730,22 +730,22 @@ transcript sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, t.uniquename, t.name, p.uniquename, p.name, p.seqlen, fmin, fmax, strand, a.uniquename, cvt5.name, fp.VALUE
-  FROM feature g, feature_relationship fr, cvterm cvt, feature t, cvterm cvt2,
-     feature p, feature_relationship fr2, cvterm cvt3, cvterm cvt4, featureloc fl,
-     feature a, featureprop fp, cvterm cvt5
-  WHERE g.feature_id = fr.object_id AND fr.subject_id = t.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
-    t.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
-       &#39;ncRNA&#39;, &#39;snRNA&#39;,
-       &#39;tRNA&#39;, &#39;rRNA&#39;,
-       &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
-    t.feature_id = fr2.object_id AND fr2.subject_id = p.feature_id AND
-    fr2.type_id = cvt3.cvterm_id AND cvt3.name = &#39;producedby&#39; AND
-    p.type_id = cvt4.cvterm_id AND cvt4.name = &#39;protein&#39; AND
-    p.seqlen IS NOT NULL AND
-    p.feature_id = fl.feature_id AND fl.srcfeature_id = a.feature_id AND
-    p.feature_id = fp.feature_id AND fp.type_id = cvt5.cvterm_id AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature t, cvterm cvt2,
+ feature p, feature_relationship fr2, cvterm cvt3, cvterm cvt4, featureloc fl,
+ feature a, featureprop fp, cvterm cvt5
+ WHERE g.feature_id = fr.object_id AND fr.subject_id = t.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
+ t.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
+ &#39;ncRNA&#39;, &#39;snRNA&#39;,
+ &#39;tRNA&#39;, &#39;rRNA&#39;,
+ &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
+ t.feature_id = fr2.object_id AND fr2.subject_id = p.feature_id AND
+ fr2.type_id = cvt3.cvterm_id AND cvt3.name = &#39;producedby&#39; AND
+ p.type_id = cvt4.cvterm_id AND cvt4.name = &#39;protein&#39; AND
+ p.seqlen IS NOT NULL AND
+ p.feature_id = fl.feature_id AND fl.srcfeature_id = a.feature_id AND
+ p.feature_id = fp.feature_id AND fp.type_id = cvt5.cvterm_id AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -770,23 +770,23 @@ transcript sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, t.uniquename, t.name, p.uniquename, p.name, p.seqlen, fmin, fmax, strand, a.uniquename, d.accession
-  FROM feature g, feature_relationship fr, cvterm cvt, feature t, cvterm cvt2,
-     feature p, feature_relationship fr2, cvterm cvt3, cvterm cvt4, featureloc fl,
-     feature a, feature_dbxref fd, dbxref d, db
-  WHERE g.feature_id = fr.object_id AND fr.subject_id = t.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
-    t.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
-       &#39;ncRNA&#39;, &#39;snRNA&#39;,
-       &#39;tRNA&#39;, &#39;rRNA&#39;,
-       &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
-    t.feature_id = fr2.object_id AND fr2.subject_id = p.feature_id AND
-    fr2.type_id = cvt3.cvterm_id AND cvt3.name = &#39;producedby&#39; AND
-    p.type_id = cvt4.cvterm_id AND cvt4.name = &#39;protein&#39; AND
-    p.seqlen IS NOT NULL AND
-    p.feature_id = fl.feature_id AND fl.srcfeature_id = a.feature_id AND
-    p.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    d.db_id = db.db_id AND db.name = &#39;GB_protein&#39; AND
-    g.uniquename = &#39;FBgn0051371&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature t, cvterm cvt2,
+ feature p, feature_relationship fr2, cvterm cvt3, cvterm cvt4, featureloc fl,
+ feature a, feature_dbxref fd, dbxref d, db
+ WHERE g.feature_id = fr.object_id AND fr.subject_id = t.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
+ t.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
+ &#39;ncRNA&#39;, &#39;snRNA&#39;,
+ &#39;tRNA&#39;, &#39;rRNA&#39;,
+ &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
+ t.feature_id = fr2.object_id AND fr2.subject_id = p.feature_id AND
+ fr2.type_id = cvt3.cvterm_id AND cvt3.name = &#39;producedby&#39; AND
+ p.type_id = cvt4.cvterm_id AND cvt4.name = &#39;protein&#39; AND
+ p.seqlen IS NOT NULL AND
+ p.feature_id = fl.feature_id AND fl.srcfeature_id = a.feature_id AND
+ p.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ d.db_id = db.db_id AND db.name = &#39;GB_protein&#39; AND
+ g.uniquename = &#39;FBgn0051371&#39;;</code></pre>
 
 </td>
 </tr>
@@ -810,10 +810,10 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;GCR&#39; AND f.uniquename = &#39;FBgn0004168&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;GCR&#39; AND f.uniquename = &#39;FBgn0004168&#39;;</code></pre>
 
 </td>
 </tr>
@@ -822,10 +822,10 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;INTERPRO&#39; AND f.uniquename = &#39;FBgn0015570&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;INTERPRO&#39; AND f.uniquename = &#39;FBgn0015570&#39;;</code></pre>
 
 </td>
 </tr>
@@ -834,10 +834,10 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;MEROPS&#39; AND f.uniquename = &#39;FBgn0004648&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;MEROPS&#39; AND f.uniquename = &#39;FBgn0004648&#39;;</code></pre>
 
 </td>
 </tr>
@@ -846,10 +846,10 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;MITODROME&#39; AND f.uniquename = &#39;FBgn0027085&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;MITODROME&#39; AND f.uniquename = &#39;FBgn0027085&#39;;</code></pre>
 
 </td>
 </tr>
@@ -858,10 +858,10 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;NRL_3D&#39; AND f.uniquename = &#39;FBgn0003470&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;NRL_3D&#39; AND f.uniquename = &#39;FBgn0003470&#39;;</code></pre>
 
 </td>
 </tr>
@@ -870,12 +870,12 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;panther&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;panther&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -884,10 +884,10 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;PDB&#39; AND f.uniquename = &#39;FBgn0003659&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;PDB&#39; AND f.uniquename = &#39;FBgn0003659&#39;;</code></pre>
 
 </td>
 </tr>
@@ -896,10 +896,10 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;TF&#39; AND f.uniquename = &#39;FBgn0000014&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;TF&#39; AND f.uniquename = &#39;FBgn0000014&#39;;</code></pre>
 
 </td>
 </tr>
@@ -911,12 +911,12 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;bdgpinsituexpr&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;bdgpinsituexpr&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -925,12 +925,12 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;kwexpression&#39; AND f.uniquename = &#39;FBgn0000014&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;kwexpression&#39; AND f.uniquename = &#39;FBgn0000014&#39;;</code></pre>
 
 </td>
 </tr>
@@ -942,9 +942,9 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;molecular_info&#39; AND f.uniquename = &#39;FBgn0000014&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;molecular_info&#39; AND f.uniquename = &#39;FBgn0000014&#39;;</code></pre>
 
 </td>
 </tr>
@@ -959,15 +959,15 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    NOT EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ NOT EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -976,17 +976,17 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
-     cvterm cvt3
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    NOT EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
-    cvt3.name = &#39;promoted_allele_class&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
+ cvterm cvt3
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ NOT EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
+ cvt3.name = &#39;promoted_allele_class&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -995,18 +995,18 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     cvtermprop cvtp, feature_cvterm fcv
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    NOT EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    a.feature_id = fcv.feature_id AND fcv.cvterm_id = cvt4.cvterm_id AND
-    cvt4.cvterm_id = cvtp.cvterm_id AND cvtp.VALUE = &#39;origin_of_mutation&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ cvtermprop cvtp, feature_cvterm fcv
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ NOT EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ a.feature_id = fcv.feature_id AND fcv.cvterm_id = cvt4.cvterm_id AND
+ cvt4.cvterm_id = cvtp.cvterm_id AND cvtp.VALUE = &#39;origin_of_mutation&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1015,17 +1015,17 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt3.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
-     cvterm cvt3
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    NOT EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
-    cvt3.name LIKE &#39;derived_stock_%&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
+ cvterm cvt3
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ NOT EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
+ cvt3.name LIKE &#39;derived_stock_%&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1034,18 +1034,18 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt3.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
-     cvterm cvt3
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    NOT EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
-    cvt3.name IN (&#39;molecular_info&#39;,&#39;aminoacid_rep&#39;,
-      &#39;nucleotide_rep&#39;) AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
+ cvterm cvt3
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ NOT EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
+ cvt3.name IN (&#39;molecular_info&#39;,&#39;aminoacid_rep&#39;,
+ &#39;nucleotide_rep&#39;) AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1057,15 +1057,15 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1074,17 +1074,17 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
-     cvterm cvt3
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
-    cvt3.name = &#39;promoted_allele_class&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
+ cvterm cvt3
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
+ cvt3.name = &#39;promoted_allele_class&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1093,18 +1093,18 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     cvtermprop cvtp, feature_cvterm fcv
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    a.feature_id = fcv.feature_id AND fcv.cvterm_id = cvt4.cvterm_id AND
-    cvt4.cvterm_id = cvtp.cvterm_id AND cvtp.VALUE = &#39;origin_of_mutation&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ cvtermprop cvtp, feature_cvterm fcv
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ a.feature_id = fcv.feature_id AND fcv.cvterm_id = cvt4.cvterm_id AND
+ cvt4.cvterm_id = cvtp.cvterm_id AND cvtp.VALUE = &#39;origin_of_mutation&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1113,17 +1113,17 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt3.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
-     cvterm cvt3
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
-    cvt3.name LIKE &#39;derived_stock_%&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
+ cvterm cvt3
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
+ cvt3.name LIKE &#39;derived_stock_%&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1132,18 +1132,18 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt3.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
-     cvterm cvt3
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    EXISTS (SELECT *
-  FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
-  WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
-    t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
-    cvt3.name IN (&#39;molecular_info&#39;,&#39;aminoacid_rep&#39;,
-      &#39;nucleotide_rep&#39;) AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, featureprop fp,
+ cvterm cvt3
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ EXISTS (SELECT *
+ FROM feature_relationship fr2, feature t, cvterm cvt2, cvterm cvt3
+ WHERE fr2.subject_id = a.feature_id AND fr2.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND fr2.object_id = t.feature_id AND
+ t.type_id = cvt3.cvterm_id AND cvt3.name = &#39;transgenic_transposon&#39;) AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt3.cvterm_id AND
+ cvt3.name IN (&#39;molecular_info&#39;,&#39;aminoacid_rep&#39;,
+ &#39;nucleotide_rep&#39;) AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1155,20 +1155,20 @@ protein sizes</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     featureprop fp
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
-    cvt4.name = &#39;derived_pheno_class&#39;AND fp.VALUE LIKE &#39;%lethal%&#39; AND g.uniquename = &#39;FBgn0000011&#39; UNION
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ featureprop fp
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
+ cvt4.name = &#39;derived_pheno_class&#39;AND fp.VALUE LIKE &#39;%lethal%&#39; AND g.uniquename = &#39;FBgn0000011&#39; UNION
 SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     featureprop fp
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
-    cvt4.name = &#39;derived_pheno_class&#39; AND fp.VALUE LIKE &#39;%viable%&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ featureprop fp
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
+ cvt4.name = &#39;derived_pheno_class&#39; AND fp.VALUE LIKE &#39;%viable%&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1181,20 +1181,20 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     featureprop fp
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
-    cvt4.name = &#39;derived_pheno_class&#39;AND fp.VALUE LIKE &#39;%fertile%&#39; AND g.uniquename = &#39;FBgn0000011&#39; UNION
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ featureprop fp
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
+ cvt4.name = &#39;derived_pheno_class&#39;AND fp.VALUE LIKE &#39;%fertile%&#39; AND g.uniquename = &#39;FBgn0000011&#39; UNION
 SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     featureprop fp
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
-    cvt4.name = &#39;derived_pheno_class&#39; AND fp.VALUE LIKE &#39;%sterile%&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ featureprop fp
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
+ cvt4.name = &#39;derived_pheno_class&#39; AND fp.VALUE LIKE &#39;%sterile%&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1207,37 +1207,37 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     featureprop fp
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
-    cvt4.name = &#39;derived_pheno_class&#39;AND fp.VALUE NOT LIKE &#39;%lethal%&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39; INTERSECT
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ featureprop fp
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
+ cvt4.name = &#39;derived_pheno_class&#39;AND fp.VALUE NOT LIKE &#39;%lethal%&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39; INTERSECT
 SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     featureprop fp
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
-    cvt4.name = &#39;derived_pheno_class&#39; AND fp.VALUE NOT
-    LIKE &#39;%viable%&#39; AND g.uniquename = &#39;FBgn0000011&#39; INTERSECT
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ featureprop fp
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
+ cvt4.name = &#39;derived_pheno_class&#39; AND fp.VALUE NOT
+ LIKE &#39;%viable%&#39; AND g.uniquename = &#39;FBgn0000011&#39; INTERSECT
 SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     featureprop fp
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
-    cvt4.name = &#39;derived_pheno_class&#39;AND fp.VALUE NOT LIKE &#39;%fertile%&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39; INTERSECT
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ featureprop fp
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
+ cvt4.name = &#39;derived_pheno_class&#39;AND fp.VALUE NOT LIKE &#39;%fertile%&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39; INTERSECT
 SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     featureprop fp
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
-    cvt4.name = &#39;derived_pheno_class&#39; AND fp.VALUE NOT
-    LIKE &#39;%sterile%&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ featureprop fp
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
+ cvt4.name = &#39;derived_pheno_class&#39; AND fp.VALUE NOT
+ LIKE &#39;%sterile%&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1250,12 +1250,12 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
-  FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
-     featureprop fp
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
-    cvt4.name = &#39;derived_pheno_manifest&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, feature a, cvterm cvt, cvterm cvt4,
+ featureprop fp
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.feature_id = fp.feature_id AND fp.type_id = cvt4.cvterm_id AND
+ cvt4.name = &#39;derived_pheno_manifest&#39; AND g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1271,10 +1271,10 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, cvt.name, a.uniquename, a.name
-  FROM feature g, feature_relationship fr, cvterm cvt, feature a
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;useful_Dp_direct&#39;, &#39;useful_Dp_from_cyto&#39;) AND
-    g.uniquename = &#39;FBgn0000022&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature a
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;useful_Dp_direct&#39;, &#39;useful_Dp_from_cyto&#39;) AND
+ g.uniquename = &#39;FBgn0000022&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1287,10 +1287,10 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, cvt.name, a.uniquename, a.name
-  FROM feature g, feature_relationship fr, cvterm cvt, feature a
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;deletes&#39;, &#39;molec_deletes&#39;) AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature a
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;deletes&#39;, &#39;molec_deletes&#39;) AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1299,10 +1299,10 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, cvt.name, a.uniquename, a.name
-  FROM feature g, feature_relationship fr, cvterm cvt, feature a
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;part_deletes&#39;, &#39;molec_partdeletes&#39;) AND
-    g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature a
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;part_deletes&#39;, &#39;molec_partdeletes&#39;) AND
+ g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1311,10 +1311,10 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, cvt.name, a.uniquename, a.name
-  FROM feature g, feature_relationship fr, cvterm cvt, feature a
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;nondeletes&#39;, &#39;molec_nondeletes&#39;) AND
-    g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature a
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;nondeletes&#39;, &#39;molec_nondeletes&#39;) AND
+ g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1323,10 +1323,10 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, cvt.name, a.uniquename, a.name
-  FROM feature g, feature_relationship fr, cvterm cvt, feature a
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;duplicates&#39;, &#39;molec_dups&#39;) AND
-    g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature a
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;duplicates&#39;, &#39;molec_dups&#39;) AND
+ g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1335,10 +1335,10 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, cvt.name, a.uniquename, a.name
-  FROM feature g, feature_relationship fr, cvterm cvt, feature a
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;part_duplicates&#39;, &#39;molec_partdups&#39;) AND
-    g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature a
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;part_duplicates&#39;, &#39;molec_partdups&#39;) AND
+ g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1347,10 +1347,10 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, cvt.name, a.uniquename, a.name
-  FROM feature g, feature_relationship fr, cvterm cvt, feature a
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;nonduplicates&#39;, &#39;molec_nondups&#39;) AND
-    g.uniquename = &#39;FBgn0000022&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature a
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;nonduplicates&#39;, &#39;molec_nondups&#39;) AND
+ g.uniquename = &#39;FBgn0000022&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1369,16 +1369,16 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, t.uniquename, t.name, frtp.name, frp.VALUE
-  FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
-     cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
-    gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
-    g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
-    frtp.name = &#39;derived_assoc_heat_shock_construct&#39; AND object_id = t.feature_id AND
-    t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
-    t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
-    frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
-    g.uniquename = &#39;FBgn0000015&#39;;</code></pre>
+ FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
+ cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
+ gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
+ g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
+ frtp.name = &#39;derived_assoc_heat_shock_construct&#39; AND object_id = t.feature_id AND
+ t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
+ t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
+ frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
+ g.uniquename = &#39;FBgn0000015&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1387,16 +1387,16 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, t.uniquename, t.name, frtp.name, frp.VALUE
-  FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
-     cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
-    gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
-    g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
-    frtp.name = &#39;derived_assoc_UAS_construct&#39; AND object_id = t.feature_id AND
-    t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
-    t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
-    frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
+ cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
+ gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
+ g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
+ frtp.name = &#39;derived_assoc_UAS_construct&#39; AND object_id = t.feature_id AND
+ t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
+ t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
+ frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1405,16 +1405,16 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, t.uniquename, t.name, frtp.name, frp.VALUE
-  FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
-     cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
-    gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
-    g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
-    frtp.name = &#39;derived_assoc_characterization_construct&#39; AND object_id = t.feature_id AND
-    t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
-    t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
-    frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
-    g.uniquename = &#39;FBgn0000009&#39;;</code></pre>
+ FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
+ cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
+ gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
+ g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
+ frtp.name = &#39;derived_assoc_characterization_construct&#39; AND object_id = t.feature_id AND
+ t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
+ t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
+ frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
+ g.uniquename = &#39;FBgn0000009&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1423,16 +1423,16 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, t.uniquename, t.name, frtp.name, frp.VALUE
-  FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
-     cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
-    gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
-    g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
-    frtp.name = &#39;derived_assoc_vital_reporter_construct&#39; AND object_id = t.feature_id AND
-    t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
-    t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
-    frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
-    g.uniquename = &#39;FBgn0000042&#39;;</code></pre>
+ FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
+ cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
+ gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
+ g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
+ frtp.name = &#39;derived_assoc_vital_reporter_construct&#39; AND object_id = t.feature_id AND
+ t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
+ t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
+ frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
+ g.uniquename = &#39;FBgn0000042&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1441,16 +1441,16 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, t.uniquename, t.name, frtp.name, frp.VALUE
-  FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
-     cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
-    gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
-    g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
-    frtp.name = &#39;derived_assoc_reporter_construct&#39; AND object_id = t.feature_id AND
-    t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
-    t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
-    frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
-    g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
+ FROM feature g, feature t, cvterm frtp, cvterm gtp, cvterm ttp,
+ cvterm frpt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE subject_id = g.feature_id AND g.type_id = gtp.cvterm_id AND
+ gtp.name = &#39;gene&#39; AND g.is_analysis = &#39;f&#39; AND
+ g.is_obsolete = &#39;f&#39; AND fr.type_id = frtp.cvterm_id AND
+ frtp.name = &#39;derived_assoc_reporter_construct&#39; AND object_id = t.feature_id AND
+ t.type_id = ttp.cvterm_id AND ttp.name = &#39;transgenic_transposon&#39; AND
+ t.is_analysis = &#39;f&#39; AND t.is_obsolete = &#39;f&#39; AND
+ frp.type_id = frpt.cvterm_id AND frpt.name = &#39;has_expression_data&#39; AND
+ g.uniquename = &#39;FBgn0000014&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1462,16 +1462,16 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT stp.name, s.uniquename, s.name, frtp.name, otp.name, o.uniquename, o.name, frcvt.name, frp.VALUE
-  FROM feature s, feature o, cvterm frtp, cvterm otp, cvterm stp,
-     cvterm frcvt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE s.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.type_id = frtp.cvterm_id AND frtp.name = &#39;derived_assoc_insertion_of_mobile_activating_element&#39; AND
-    o.type_id = otp.cvterm_id AND stp.name = &#39;gene&#39; AND
-    s.type_id = stp.cvterm_id AND otp.name = &#39;transposable_element_insertion_site&#39; AND
-    s.is_obsolete = &#39;f&#39; AND s.is_analysis = &#39;f&#39; AND
-    o.is_obsolete = &#39;f&#39; AND o.is_analysis = &#39;f&#39; AND
-    frp.type_id = frcvt.cvterm_id AND frcvt.name = &#39;has_expression_data&#39; AND
-    s.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature s, feature o, cvterm frtp, cvterm otp, cvterm stp,
+ cvterm frcvt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE s.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.type_id = frtp.cvterm_id AND frtp.name = &#39;derived_assoc_insertion_of_mobile_activating_element&#39; AND
+ o.type_id = otp.cvterm_id AND stp.name = &#39;gene&#39; AND
+ s.type_id = stp.cvterm_id AND otp.name = &#39;transposable_element_insertion_site&#39; AND
+ s.is_obsolete = &#39;f&#39; AND s.is_analysis = &#39;f&#39; AND
+ o.is_obsolete = &#39;f&#39; AND o.is_analysis = &#39;f&#39; AND
+ frp.type_id = frcvt.cvterm_id AND frcvt.name = &#39;has_expression_data&#39; AND
+ s.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1480,16 +1480,16 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT stp.name, s.uniquename, s.name, frtp.name, otp.name, o.uniquename, o.name, frcvt.name, frp.VALUE
-  FROM feature s, feature o, cvterm frtp, cvterm otp, cvterm stp,
-     cvterm frcvt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE s.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.type_id = frtp.cvterm_id AND frtp.name = &#39;derived_assoc_insertion_of_enhancer_trap&#39; AND
-    o.type_id = otp.cvterm_id AND stp.name = &#39;gene&#39; AND
-    s.type_id = stp.cvterm_id AND otp.name = &#39;transposable_element_insertion_site&#39; AND
-    s.is_obsolete = &#39;f&#39; AND s.is_analysis = &#39;f&#39; AND
-    o.is_obsolete = &#39;f&#39; AND o.is_analysis = &#39;f&#39; AND
-    frp.type_id = frcvt.cvterm_id AND frcvt.name = &#39;has_expression_data&#39; AND
-    s.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature s, feature o, cvterm frtp, cvterm otp, cvterm stp,
+ cvterm frcvt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE s.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.type_id = frtp.cvterm_id AND frtp.name = &#39;derived_assoc_insertion_of_enhancer_trap&#39; AND
+ o.type_id = otp.cvterm_id AND stp.name = &#39;gene&#39; AND
+ s.type_id = stp.cvterm_id AND otp.name = &#39;transposable_element_insertion_site&#39; AND
+ s.is_obsolete = &#39;f&#39; AND s.is_analysis = &#39;f&#39; AND
+ o.is_obsolete = &#39;f&#39; AND o.is_analysis = &#39;f&#39; AND
+ frp.type_id = frcvt.cvterm_id AND frcvt.name = &#39;has_expression_data&#39; AND
+ s.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1498,16 +1498,16 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT stp.name, s.uniquename, s.name, frtp.name, otp.name, o.uniquename, o.name, frcvt.name, frp.VALUE
-  FROM feature s, feature o, cvterm frtp, cvterm otp, cvterm stp,
-     cvterm frcvt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE s.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.type_id = frtp.cvterm_id AND frtp.name = &#39;derived_assoc_insertion_of_enhancer_trap_binary_system&#39; AND
-    o.type_id = otp.cvterm_id AND stp.name = &#39;gene&#39; AND
-    s.type_id = stp.cvterm_id AND otp.name = &#39;transposable_element_insertion_site&#39; AND
-    s.is_obsolete = &#39;f&#39; AND s.is_analysis = &#39;f&#39; AND
-    o.is_obsolete = &#39;f&#39; AND o.is_analysis = &#39;f&#39; AND
-    frp.type_id = frcvt.cvterm_id AND frcvt.name = &#39;has_expression_data&#39; AND
-    s.uniquename = &#39;FBgn0000157&#39;;</code></pre>
+ FROM feature s, feature o, cvterm frtp, cvterm otp, cvterm stp,
+ cvterm frcvt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE s.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.type_id = frtp.cvterm_id AND frtp.name = &#39;derived_assoc_insertion_of_enhancer_trap_binary_system&#39; AND
+ o.type_id = otp.cvterm_id AND stp.name = &#39;gene&#39; AND
+ s.type_id = stp.cvterm_id AND otp.name = &#39;transposable_element_insertion_site&#39; AND
+ s.is_obsolete = &#39;f&#39; AND s.is_analysis = &#39;f&#39; AND
+ o.is_obsolete = &#39;f&#39; AND o.is_analysis = &#39;f&#39; AND
+ frp.type_id = frcvt.cvterm_id AND frcvt.name = &#39;has_expression_data&#39; AND
+ s.uniquename = &#39;FBgn0000157&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1516,16 +1516,16 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT stp.name, s.uniquename, s.name, frtp.name, otp.name, o.uniquename, o.name, frcvt.name, frp.VALUE
-  FROM feature s, feature o, cvterm frtp, cvterm otp, cvterm stp,
-     cvterm frcvt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE s.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.type_id = frtp.cvterm_id AND frtp.name = &#39;derived_assoc_misc_insertion&#39; AND
-    o.type_id = otp.cvterm_id AND stp.name = &#39;gene&#39; AND
-    s.type_id = stp.cvterm_id AND otp.name = &#39;transposable_element_insertion_site&#39; AND
-    s.is_obsolete = &#39;f&#39; AND s.is_analysis = &#39;f&#39; AND
-    o.is_obsolete = &#39;f&#39; AND o.is_analysis = &#39;f&#39; AND
-    frp.type_id = frcvt.cvterm_id AND frcvt.name = &#39;has_expression_data&#39; AND
-    s.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature s, feature o, cvterm frtp, cvterm otp, cvterm stp,
+ cvterm frcvt, feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE s.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.type_id = frtp.cvterm_id AND frtp.name = &#39;derived_assoc_misc_insertion&#39; AND
+ o.type_id = otp.cvterm_id AND stp.name = &#39;gene&#39; AND
+ s.type_id = stp.cvterm_id AND otp.name = &#39;transposable_element_insertion_site&#39; AND
+ s.is_obsolete = &#39;f&#39; AND s.is_analysis = &#39;f&#39; AND
+ o.is_obsolete = &#39;f&#39; AND o.is_analysis = &#39;f&#39; AND
+ frp.type_id = frcvt.cvterm_id AND frcvt.name = &#39;has_expression_data&#39; AND
+ s.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1537,9 +1537,9 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;gene_phenotypes&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;gene_phenotypes&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1551,13 +1551,13 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cv.name | accession AS SO_accession, cvt.name, p.uniquename
-  FROM feature f, feature_cvterm fc, cvterm cvt, cv, dbxref d,
-     db, pub p, cvterm gft
-  WHERE f.feature_id = fc.feature_id AND fc.cvterm_id = cvt.cvterm_id AND
-    cvt.cv_id = cv.cv_id AND cv.name = &#39;SO&#39; AND
-    cvt.dbxref_id = d.dbxref_id AND d.db_id = db.db_id AND
-    fc.pub_id = p.pub_id AND f.type_id = gft.cvterm_id AND
-    gft.name = &#39;gene&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_cvterm fc, cvterm cvt, cv, dbxref d,
+ db, pub p, cvterm gft
+ WHERE f.feature_id = fc.feature_id AND fc.cvterm_id = cvt.cvterm_id AND
+ cvt.cv_id = cv.cv_id AND cv.name = &#39;SO&#39; AND
+ cvt.dbxref_id = d.dbxref_id AND d.db_id = db.db_id AND
+ fc.pub_id = p.pub_id AND f.type_id = gft.cvterm_id AND
+ gft.name = &#39;gene&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1577,13 +1577,13 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, fcpt.name, fcp.VALUE, p.uniquename
-  FROM feature f, feature_cvterm fc, cvterm cvt, cv, cvterm fcpt,
-     pub p, feature_cvtermprop fcp
-  WHERE f.feature_id = fc.feature_id AND fc.cvterm_id = cvt.cvterm_id AND
-    fc.pub_id = p.pub_id AND fc.feature_cvterm_id = fcp.feature_cvterm_id AND
-    cvt.cv_id = cv.cv_id AND fcp.type_id = fcpt.cvterm_id AND
-    cv.name = &#39;molecular_function&#39; AND fcpt.name = &#39;evidence_code&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_cvterm fc, cvterm cvt, cv, cvterm fcpt,
+ pub p, feature_cvtermprop fcp
+ WHERE f.feature_id = fc.feature_id AND fc.cvterm_id = cvt.cvterm_id AND
+ fc.pub_id = p.pub_id AND fc.feature_cvterm_id = fcp.feature_cvterm_id AND
+ cvt.cv_id = cv.cv_id AND fcp.type_id = fcpt.cvterm_id AND
+ cv.name = &#39;molecular_function&#39; AND fcpt.name = &#39;evidence_code&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1625,13 +1625,13 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, cvt2.name, fcp.VALUE, p.uniquename
-  FROM feature f, feature_cvterm fc, cvterm cvt, cv, pub p,
-     feature_cvtermprop fcp, cvterm cvt2
-  WHERE f.feature_id = fc.feature_id AND fc.cvterm_id = cvt.cvterm_id AND
-    fc.pub_id = p.pub_id AND fc.feature_cvterm_id = fcp.feature_cvterm_id AND
-    fcp.type_id = cvt2.cvterm_id AND cvt2.name = &#39;evidence_code&#39; AND
-    cvt.cv_id = cv.cv_id AND cv.name = &#39;biological_process&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_cvterm fc, cvterm cvt, cv, pub p,
+ feature_cvtermprop fcp, cvterm cvt2
+ WHERE f.feature_id = fc.feature_id AND fc.cvterm_id = cvt.cvterm_id AND
+ fc.pub_id = p.pub_id AND fc.feature_cvterm_id = fcp.feature_cvterm_id AND
+ fcp.type_id = cvt2.cvterm_id AND cvt2.name = &#39;evidence_code&#39; AND
+ cvt.cv_id = cv.cv_id AND cv.name = &#39;biological_process&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1673,13 +1673,13 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, cvt2.name, fcp.VALUE, p.uniquename
-  FROM feature f, feature_cvterm fc, cvterm cvt, cv, pub p,
-     feature_cvtermprop fcp, cvterm cvt2
-  WHERE f.feature_id = fc.feature_id AND fc.cvterm_id = cvt.cvterm_id AND
-    fc.pub_id = p.pub_id AND fc.feature_cvterm_id = fcp.feature_cvterm_id AND
-    fcp.type_id = cvt2.cvterm_id AND cvt2.name = &#39;evidence_code&#39; AND
-    cvt.cv_id = cv.cv_id AND cv.name = &#39;cellular_component&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_cvterm fc, cvterm cvt, cv, pub p,
+ feature_cvtermprop fcp, cvterm cvt2
+ WHERE f.feature_id = fc.feature_id AND fc.cvterm_id = cvt.cvterm_id AND
+ fc.pub_id = p.pub_id AND fc.feature_cvterm_id = fcp.feature_cvterm_id AND
+ fcp.type_id = cvt2.cvterm_id AND cvt2.name = &#39;evidence_code&#39; AND
+ cvt.cv_id = cv.cv_id AND cv.name = &#39;cellular_component&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1717,9 +1717,9 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;wild_type_role&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;wild_type_role&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1734,12 +1734,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, cvt.name, a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature g, cvterm cvt, feature a, feature_relationship_pub frpb, pub p,
-     feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
-  WHERE g.feature_id = subject_id AND object_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;interacts_genetically&#39; AND
-    fr.feature_relationship_id = frpb.feature_relationship_id AND frpb.pub_id = p.pub_id AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, cvterm cvt, feature a, feature_relationship_pub frpb, pub p,
+ feature_relationship fr LEFT OUTER JOIN feature_relationshipprop frp ON (fr.feature_relationship_id = frp.feature_relationship_id)
+ WHERE g.feature_id = subject_id AND object_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;interacts_genetically&#39; AND
+ fr.feature_relationship_id = frpb.feature_relationship_id AND frpb.pub_id = p.pub_id AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1759,12 +1759,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;flygrid&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;flygrid&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1773,12 +1773,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;hybrigenics&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;hybrigenics&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1790,10 +1790,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o
-  WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;putative_ortholog_of&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o
+ WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;putative_ortholog_of&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1802,12 +1802,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name, p.uniquename
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
-     pub p
-  WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;homologue&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
+ pub p
+ WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;homologue&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1816,12 +1816,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;orthologs&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;orthologs&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1833,13 +1833,13 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name, p.uniquename
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
-     pub p
-  WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;fnally_comps&#39;, &#39;fnaly_noncomps&#39;,
-       &#39;fnally_partcomps&#39;) AND
-    f.uniquename = &#39;FBgn0010602&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
+ pub p
+ WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;fnally_comps&#39;, &#39;fnaly_noncomps&#39;,
+ &#39;fnally_partcomps&#39;) AND
+ f.uniquename = &#39;FBgn0010602&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1856,13 +1856,13 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name, p.uniquename
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
-     pub p
-  WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;fnally_comps&#39;, &#39;fnaly_noncomps&#39;,
-       &#39;fnally_partcomps&#39;) AND
-    f.uniquename = &#39;FBgn0000099&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
+ pub p
+ WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;fnally_comps&#39;, &#39;fnaly_noncomps&#39;,
+ &#39;fnally_partcomps&#39;) AND
+ f.uniquename = &#39;FBgn0000099&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1882,11 +1882,11 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;gain_of_fn_species&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND fp.VALUE LIKE &#39;Gain of function effect%&#39; AND
-    f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;gain_of_fn_species&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND fp.VALUE LIKE &#39;Gain of function effect%&#39; AND
+ f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1895,11 +1895,11 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;gain_of_fn_species&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND fp.VALUE LIKE &#39;No gain of function effect%&#39; AND
-    f.uniquename = &#39;FBgn0013263&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;gain_of_fn_species&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND fp.VALUE LIKE &#39;No gain of function effect%&#39; AND
+ f.uniquename = &#39;FBgn0013263&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1914,9 +1914,9 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name LIKE &#39;derived_stock_%&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name LIKE &#39;derived_stock_%&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1957,10 +1957,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;availability&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0003200&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;availability&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0003200&#39;;</code></pre>
 
 </td>
 </tr>
@@ -1972,10 +1972,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o
-  WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;derived_assoc_BAC&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o
+ WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;derived_assoc_BAC&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2016,12 +2016,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;geo&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;geo&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2030,12 +2030,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;hdri&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;hdri&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2044,12 +2044,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;drsc&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;drsc&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2061,10 +2061,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;reported_antibod_gen&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;reported_antibod_gen&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2079,10 +2079,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;discoverer&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;discoverer&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2094,10 +2094,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;etymology&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000953&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;etymology&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000953&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2109,10 +2109,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;identified_by&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0011737&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;identified_by&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0011737&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2124,13 +2124,13 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name, p.uniquename
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
-     pub p
-  WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;dom_position_effect&#39;, &#39;no_position_effect&#39;,
-      &#39;rec_position_effect&#39;) AND
-    f.uniquename = &#39;FBgn0000012&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
+ pub p
+ WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;dom_position_effect&#39;, &#39;no_position_effect&#39;,
+ &#39;rec_position_effect&#39;) AND
+ f.uniquename = &#39;FBgn0000012&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2150,10 +2150,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;identity_source&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;identity_source&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2162,10 +2162,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;merge_source&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000008&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;merge_source&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000008&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2174,12 +2174,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT o.uniquename, o.name, cvt.name, f.uniquename, f.name, p.uniquename
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
-     pub p
-  WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;member_gene_of&#39; AND
-    o.uniquename = &#39;FBgn0053354&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
+ pub p
+ WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;member_gene_of&#39; AND
+ o.uniquename = &#39;FBgn0053354&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2188,12 +2188,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name, p.uniquename
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
-     pub p
-  WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;member_gene_of&#39; AND
-    f.uniquename = &#39;FBgn0000002&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o, feature_relationship_pub frp,
+ pub p
+ WHERE f.feature_id = object_id AND subject_id = o.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;member_gene_of&#39; AND
+ f.uniquename = &#39;FBgn0000002&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2202,10 +2202,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o
-  WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;encoded_by&#39;,&#39;has_component_gene&#39;) AND
-    f.uniquename = &#39;FBgn0061475&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o
+ WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name IN (&#39;encoded_by&#39;,&#39;has_component_gene&#39;) AND
+ f.uniquename = &#39;FBgn0061475&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2214,10 +2214,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name, o.uniquename, o.name
-  FROM feature f, feature_relationship fr, cvterm cvt, feature o
-  WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;included_in&#39; AND
-    f.uniquename = &#39;FBgn0015015&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm cvt, feature o
+ WHERE f.feature_id = subject_id AND object_id = o.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;included_in&#39; AND
+ f.uniquename = &#39;FBgn0015015&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2226,10 +2226,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;gene_relationships&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000042&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;gene_relationships&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000042&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2241,10 +2241,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE, p.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;misc&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub p
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;misc&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2256,9 +2256,9 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;foreign_seq_data&#39; AND f.uniquename = &#39;FBgn0014442&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;foreign_seq_data&#39; AND f.uniquename = &#39;FBgn0014442&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2273,17 +2273,17 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.name, p.seqlen, db.name, dx.accession
-  FROM feature f, feature p, feature_relationship fr, cvterm cvt, cvterm cvt2,
-     feature_dbxref fd, dbxref dx, db
-  WHERE f.feature_id = object_id AND subject_id = p.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
-    p.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
-       &#39;ncRNA&#39;, &#39;snRNA&#39;,
-      &#39;tRNA&#39;,&#39;rRNA&#39;,
-      &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
-    p.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND db.name = &#39;REFSEQ&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature p, feature_relationship fr, cvterm cvt, cvterm cvt2,
+ feature_dbxref fd, dbxref dx, db
+ WHERE f.feature_id = object_id AND subject_id = p.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
+ p.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
+ &#39;ncRNA&#39;, &#39;snRNA&#39;,
+ &#39;tRNA&#39;,&#39;rRNA&#39;,
+ &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
+ p.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND db.name = &#39;REFSEQ&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2292,22 +2292,22 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.name, p.seqlen, db.name, dx.accession
-  FROM feature g, feature_relationship fr, cvterm cvt, feature t, cvterm cvt2,
-     feature p, feature_relationship fr2, cvterm cvt3, cvterm cvt4, fea\ ture_dbxref fd,
-     dbxref dx, db
-  WHERE g.feature_id = fr.object_id AND fr.subject_id = t.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
-    t.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
-       &#39;ncRNA&#39;, &#39;snRNA&#39;,
-      &#39;tRNA&#39;,&#39;rRNA&#39;,
-      &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
-    t.feature_id = fr2.object_id AND fr2.subject_id = p.feature_id AND
-    fr2.type_id = cvt3.cvterm_id AND cvt3.name = &#39;producedby&#39; AND
-    p.type_id = cvt4.cvterm_id AND cvt4.name = &#39;protein&#39; AND
-    p.seqlen IS NOT NULL AND
-    p.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND db.name = &#39;REFSEQ&#39; AND
-    g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature g, feature_relationship fr, cvterm cvt, feature t, cvterm cvt2,
+ feature p, feature_relationship fr2, cvterm cvt3, cvterm cvt4, fea\ ture_dbxref fd,
+ dbxref dx, db
+ WHERE g.feature_id = fr.object_id AND fr.subject_id = t.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;partof&#39; AND
+ t.type_id = cvt2.cvterm_id AND cvt2.name IN (&#39;mRNA&#39;, &#39;snoRNA&#39;,
+ &#39;ncRNA&#39;, &#39;snRNA&#39;,
+ &#39;tRNA&#39;,&#39;rRNA&#39;,
+ &#39;miRNA&#39;, &#39;pseudogene&#39;) AND
+ t.feature_id = fr2.object_id AND fr2.subject_id = p.feature_id AND
+ fr2.type_id = cvt3.cvterm_id AND cvt3.name = &#39;producedby&#39; AND
+ p.type_id = cvt4.cvterm_id AND cvt4.name = &#39;protein&#39; AND
+ p.seqlen IS NOT NULL AND
+ p.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND db.name = &#39;REFSEQ&#39; AND
+ g.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2316,10 +2316,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND db.name = &#39;UniProt/Swiss-Prot&#39; AND
-    f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND db.name = &#39;UniProt/Swiss-Prot&#39; AND
+ f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2328,10 +2328,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND db.name = &#39;UniProt/TrEMBL&#39; AND
-    f.uniquename = &#39;FBgn0000015&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND db.name = &#39;UniProt/TrEMBL&#39; AND
+ f.uniquename = &#39;FBgn0000015&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2406,12 +2406,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;flight&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;flight&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2420,12 +2420,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;flight&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;flight&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2442,12 +2442,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
-     cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
-    dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
-    db.name = &#39;if&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, db, dbxref dx, dbxrefprop dxp,
+ cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.db_id = db.db_id AND dx.dbxref_id = dxp.dbxref_id AND
+ dxp.type_id = cvt.cvterm_id AND cvt.name = &#39;linkout&#39; AND
+ db.name = &#39;if&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -2471,9 +2471,9 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name AS pub_type, p.uniquename AS FBrf_id, miniref AS citation
-  FROM feature f, feature_pub fp, pub p, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.pub_id = p.pub_id AND
-    p.type_id = cvt.cvterm_id AND f.uniquename = &#39;FBgn0000011&#39; ORDER BY cvt.name;</code></pre>
+ FROM feature f, feature_pub fp, pub p, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.pub_id = p.pub_id AND
+ p.type_id = cvt.cvterm_id AND f.uniquename = &#39;FBgn0000011&#39; ORDER BY cvt.name;</code></pre>
 
 </td>
 </tr>
@@ -2521,15 +2521,15 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(s.name)
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2,
-     feature_relationship fr, cvterm cvt3
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.feature_id = subject_id AND
-    fr.type_id = cvt3.cvterm_id AND cvt3.name = &#39;alleleof&#39; AND
-    f.uniquename = &#39;FBal0000067&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2,
+ feature_relationship fr, cvterm cvt3
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.feature_id = subject_id AND
+ fr.type_id = cvt3.cvterm_id AND cvt3.name = &#39;alleleof&#39; AND
+ f.uniquename = &#39;FBal0000067&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2540,10 +2540,10 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, o.genus, o.species
-  FROM feature f, cvterm cvt, organism o
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBal0000067&#39; AND
-    f.organism_id = o.organism_id;</code></pre>
+ FROM feature f, cvterm cvt, organism o
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBal0000067&#39; AND
+ f.organism_id = o.organism_id;</code></pre>
 
 </td>
 <td></td>
@@ -2554,12 +2554,12 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(s.name)
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;fullname&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBal0000046&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;fullname&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBal0000046&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2570,9 +2570,9 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.name = &#39;ab[1];</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.name = &#39;ab[1];</code></pre>
 
 </td>
 <td></td>
@@ -2589,8 +2589,8 @@ Component</td>
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned, timelastmodified
-  FROM feature f
-  WHERE uniquename = &#39;FBal0000046&#39;;</code></pre>
+ FROM feature f
+ WHERE uniquename = &#39;FBal0000046&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2604,10 +2604,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name
-  FROM feature a, feature g, feature_relationship fr, cvterm cvt
-  WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
-    a.uniquename = &#39;FBal0000046&#39;;</code></pre>
+ FROM feature a, feature g, feature_relationship fr, cvterm cvt
+ WHERE g.feature_id = object_id AND subject_id = a.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;alleleof&#39; AND
+ a.uniquename = &#39;FBal0000046&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2618,9 +2618,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;promoted_allele_class&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;promoted_allele_class&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2631,11 +2631,11 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT f.feature_id, f.uniquename, f.name, cvt.cvterm_id, cvt.name, cvtp.type_id, cvtp.VALUE, p.uniquename
-  FROM cvterm cvt, cvtermprop cvtp, feature f, feature_cvterm fcv, pub p
-  WHERE f.feature_id = cv.feature_id AND fcv.cvterm_id = cvt.cvterm_id AND
-    cvt.cvterm_id = cvtp.cvterm_id AND fcv.pub_id = p.pub_id AND
-    cvtp.VALUE = &#39;origin_of_mutation&#39; AND f.uniquename = &#39;FBal0000049&#39; AND
-    p.uniquename = &#39;unattributed&#39;;</code></pre>
+ FROM cvterm cvt, cvtermprop cvtp, feature f, feature_cvterm fcv, pub p
+ WHERE f.feature_id = cv.feature_id AND fcv.cvterm_id = cvt.cvterm_id AND
+ cvt.cvterm_id = cvtp.cvterm_id AND fcv.pub_id = p.pub_id AND
+ cvtp.VALUE = &#39;origin_of_mutation&#39; AND f.uniquename = &#39;FBal0000049&#39; AND
+ p.uniquename = &#39;unattributed&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2651,10 +2651,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_allele_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_allele_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -2665,11 +2665,11 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT f.feature_id, f.uniquename, f.name, cvt.cvterm_id, cvt.name, cvtp.type_id, cvtp.VALUE, p.uniquename
-  FROM cvterm cvt, cvtermprop cvtp, feature f, feature_cvterm fcv, pub p
-  WHERE f.feature_id = cv.feature_id AND fcv.cvterm_id = cvt.cvterm_id AND
-    cvt.cvterm_id = cvtp.cvterm_id AND fcv.pub_id = p.pub_id AND
-    cvtp.VALUE = &#39;origin_of_mutation&#39; AND f.uniquename = &#39;FBal0000049&#39; AND
-    p.uniquename != &#39;unattributed&#39;;</code></pre>
+ FROM cvterm cvt, cvtermprop cvtp, feature f, feature_cvterm fcv, pub p
+ WHERE f.feature_id = cv.feature_id AND fcv.cvterm_id = cvt.cvterm_id AND
+ cvt.cvterm_id = cvtp.cvterm_id AND fcv.pub_id = p.pub_id AND
+ cvtp.VALUE = &#39;origin_of_mutation&#39; AND f.uniquename = &#39;FBal0000049&#39; AND
+ p.uniquename != &#39;unattributed&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2714,9 +2714,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_supporting_accessions&#39; AND a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_supporting_accessions&#39; AND a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2739,11 +2739,11 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, fd.is_current, db.name, dbx.accession
-  FROM feature g, feature_dbxref fd, dbxref dbx, db, cvterm gt
-  WHERE g.type_id = gt.cvterm_id AND gt.name = &#39;gene&#39; AND
-    g.uniquename LIKE &#39;FBal%&#39; AND g.is_obsolete = &#39;f&#39; AND
-    g.feature_id = fd.feature_id AND fd.dbxref_id = dbx.dbxref_id AND
-    dbx.db_id = db.db_id AND db.name = &#39;UniProt/Swiss-Prot&#39;;</code></pre>
+ FROM feature g, feature_dbxref fd, dbxref dbx, db, cvterm gt
+ WHERE g.type_id = gt.cvterm_id AND gt.name = &#39;gene&#39; AND
+ g.uniquename LIKE &#39;FBal%&#39; AND g.is_obsolete = &#39;f&#39; AND
+ g.feature_id = fd.feature_id AND fd.dbxref_id = dbx.dbxref_id AND
+ dbx.db_id = db.db_id AND db.name = &#39;UniProt/Swiss-Prot&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2754,11 +2754,11 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT g.uniquename, g.name, fd.is_current, db.name, dbx.accession
-  FROM feature g, feature_dbxref fd, dbxref dbx, db, cvterm gt
-  WHERE g.type_id = gt.cvterm_id AND gt.name = &#39;gene&#39; AND
-    g.uniquename LIKE &#39;FBal%&#39; AND g.is_obsolete = &#39;f&#39; AND
-    g.feature_id = fd.feature_id AND fd.dbxref_id = dbx.dbxref_id AND
-    dbx.db_id = db.db_id AND db.name = &#39;UniProt/TrEMBL&#39;;</code></pre>
+ FROM feature g, feature_dbxref fd, dbxref dbx, db, cvterm gt
+ WHERE g.type_id = gt.cvterm_id AND gt.name = &#39;gene&#39; AND
+ g.uniquename LIKE &#39;FBal%&#39; AND g.is_obsolete = &#39;f&#39; AND
+ g.feature_id = fd.feature_id AND fd.dbxref_id = dbx.dbxref_id AND
+ dbx.db_id = db.db_id AND db.name = &#39;UniProt/TrEMBL&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2769,12 +2769,12 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT pr.uniquename, pr.name p.uniquename
-  FROM feature f, feature_relationship fr, feature pr, cvterm cvt, feature_relationship_pub frp,
-     pub p
-  WHERE f.feature_id = fr.object_id AND fr.subject_id = pr.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;progenitor&#39; AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    f.uniquename = &#39;FBal0000080&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, feature pr, cvterm cvt, feature_relationship_pub frp,
+ pub p
+ WHERE f.feature_id = fr.object_id AND fr.subject_id = pr.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;progenitor&#39; AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ f.uniquename = &#39;FBal0000080&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2785,11 +2785,11 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, cvt.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name IN (&#39;molecular_info&#39;,&#39;aminoacid_rep&#39;,
-      &#39;nucleotide_sub&#39;) AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name IN (&#39;molecular_info&#39;,&#39;aminoacid_rep&#39;,
+ &#39;nucleotide_sub&#39;) AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -2800,15 +2800,15 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvtp.VALUE, cvt.name, p.uniquename
-  FROM feature f, feature_genotype fg, phendesc ph, environment e, environment_cvterm ec,
-     cvterm cvt, cvtermprop cvtp, pub p, cvterm gtp
-  WHERE f.feature_id = fg.feature_id AND fg.genotype_id = ph.genotype_id AND
-    ph.environment_id = e.environment_id AND ph.pub_id = p.pub_id AND
-    e.environment_id = ec.environment_id AND ec.cvterm_id = cvt.cvterm_id AND
-    cvt.cvterm_id = cvtp.cvterm_id AND cvtp.VALUE = &#39;mode_of_assay&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.is_analysis = &#39;f&#39; AND
-    f.type_id = gtp.cvterm_id AND gtp.name = &#39;gene&#39; AND
-    f.uniquename LIKE &#39;FBal%&#39;;</code></pre>
+ FROM feature f, feature_genotype fg, phendesc ph, environment e, environment_cvterm ec,
+ cvterm cvt, cvtermprop cvtp, pub p, cvterm gtp
+ WHERE f.feature_id = fg.feature_id AND fg.genotype_id = ph.genotype_id AND
+ ph.environment_id = e.environment_id AND ph.pub_id = p.pub_id AND
+ e.environment_id = ec.environment_id AND ec.cvterm_id = cvt.cvterm_id AND
+ cvt.cvterm_id = cvtp.cvterm_id AND cvtp.VALUE = &#39;mode_of_assay&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.is_analysis = &#39;f&#39; AND
+ f.type_id = gtp.cvterm_id AND gtp.name = &#39;gene&#39; AND
+ f.uniquename LIKE &#39;FBal%&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2819,13 +2819,13 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT i.uniquename, i.name, p.uniquename
-  FROM feature a, feature_relationship fr, feature i, cvterm cvt, cvterm cvt2,
-     feature_relationship_pub frp, pub p
-  WHERE a.feature_id = subject_id AND object_id = i.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    i.type_id = cvt.cvterm_id AND fr.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND cvt.name = &#39;transposable_element_insertion_site&#39; AND
-    a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
+ FROM feature a, feature_relationship fr, feature i, cvterm cvt, cvterm cvt2,
+ feature_relationship_pub frp, pub p
+ WHERE a.feature_id = subject_id AND object_id = i.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ i.type_id = cvt.cvterm_id AND fr.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND cvt.name = &#39;transposable_element_insertion_site&#39; AND
+ a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2836,13 +2836,13 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, i.uniquename, i.name, p.uniquename
-  FROM feature a, feature_relationship fr, feature i, cvterm itp, cvterm frtp,
-     feature_relationship_pub frp, pub p
-  WHERE a.feature_id = subject_id AND object_id = i.feature_id AND
-    fr.type_id = frtp.cvterm_id AND frtp.name = &#39;associated_with&#39; AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
-    i.type_id = itp.cvterm_id AND itp.name = &#39;transgenic_transposon&#39; AND
-    a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
+ FROM feature a, feature_relationship fr, feature i, cvterm itp, cvterm frtp,
+ feature_relationship_pub frp, pub p
+ WHERE a.feature_id = subject_id AND object_id = i.feature_id AND
+ fr.type_id = frtp.cvterm_id AND frtp.name = &#39;associated_with&#39; AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND frp.pub_id = p.pub_id AND
+ i.type_id = itp.cvterm_id AND itp.name = &#39;transgenic_transposon&#39; AND
+ a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2853,10 +2853,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, t.uniquename, t.name
-  FROM feature a, feature_relationship fr, feature t, cvterm cvt
-  WHERE a.feature_id = fr.subject_id AND fr.object_id = t.feature_id AND
-    fr.type_id = cvt.cvterm_id AND cvt.name = &#39;included_in&#39; AND
-    a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
+ FROM feature a, feature_relationship fr, feature t, cvterm cvt
+ WHERE a.feature_id = fr.subject_id AND fr.object_id = t.feature_id AND
+ fr.type_id = cvt.cvterm_id AND cvt.name = &#39;included_in&#39; AND
+ a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2873,13 +2873,13 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, i.uniquename, i.name, p.uniquename
-  FROM feature a, feature_relationship fr, feature i, cvterm cvt, feature_relationship_pub frp,
-     pub p, cvterm cvt2
-  WHERE a.feature_id = object_id AND subject_id = i.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND fr.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;associated_with&#39; AND frp.pub_id = p.pub_id AND
-    i.type_id = cvt.cvterm_id AND cvt.name = &#39;chromosome_structure_variation&#39; AND
-    a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
+ FROM feature a, feature_relationship fr, feature i, cvterm cvt, feature_relationship_pub frp,
+ pub p, cvterm cvt2
+ WHERE a.feature_id = object_id AND subject_id = i.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND fr.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;associated_with&#39; AND frp.pub_id = p.pub_id AND
+ i.type_id = cvt.cvterm_id AND cvt.name = &#39;chromosome_structure_variation&#39; AND
+ a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2890,13 +2890,13 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, i.uniquename, i.name, p.uniquename
-  FROM feature a, feature_relationship fr, feature i, cvterm cvt, feature_relationship_pub frp,
-     pub p, cvterm cvt2
-  WHERE a.feature_id = subject_id AND object_id = i.feature_id AND
-    fr.feature_relationship_id = frp.feature_relationship_id AND fr.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;carried_on&#39; AND frp.pub_id = p.pub_id AND
-    i.type_id = cvt.cvterm_id AND cvt.name = &#39;chromosome_structure_variation&#39; AND
-    a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
+ FROM feature a, feature_relationship fr, feature i, cvterm cvt, feature_relationship_pub frp,
+ pub p, cvterm cvt2
+ WHERE a.feature_id = subject_id AND object_id = i.feature_id AND
+ fr.feature_relationship_id = frp.feature_relationship_id AND fr.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;carried_on&#39; AND frp.pub_id = p.pub_id AND
+ i.type_id = cvt.cvterm_id AND cvt.name = &#39;chromosome_structure_variation&#39; AND
+ a.uniquename LIKE &#39;FBal%&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -2907,10 +2907,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;cyto_change_comment&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;cyto_change_comment&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -2931,10 +2931,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_pheno_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_pheno_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -2950,10 +2950,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_pheno_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_pheno_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -2969,10 +2969,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_allele_pheno_description&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_allele_pheno_description&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -2998,10 +2998,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_enhanceable_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_enhanceable_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3017,10 +3017,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non-enhanceable_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non-enhanceable_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3036,10 +3036,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_suppressible_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_suppressible_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3055,10 +3055,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non-suppressible_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non-suppressible_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3074,10 +3074,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_enhancer_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_enhancer_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3093,10 +3093,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non-enhancer_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non-enhancer_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3112,10 +3112,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_suppressor_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_suppressor_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3131,10 +3131,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non-suppressor_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non-suppressor_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3150,10 +3150,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_other_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_other_class&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3174,10 +3174,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_enhanceable_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_enhanceable_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3193,10 +3193,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non-enhanceable_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non-enhanceable_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3212,10 +3212,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_suppressible_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_suppressible_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3231,10 +3231,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non-suppressible_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non-suppressible_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3250,10 +3250,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_enhancer_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_enhancer_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3269,10 +3269,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non-enhancer_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non-enhancer_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3288,10 +3288,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_suppressor_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_suppressor_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3307,10 +3307,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non-suppressor_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non-suppressor_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3326,10 +3326,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_other_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_other_manifest&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3345,10 +3345,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_allele_interaction_comment&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_allele_interaction_comment&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3366,10 +3366,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_allele_xeno_interaction_comment&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_allele_xeno_interaction_comment&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3385,10 +3385,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_complements&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_complements&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3399,10 +3399,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_part_complements&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_part_complements&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3413,10 +3413,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non_complements&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non_complements&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3427,10 +3427,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_rescued_by&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_rescued_by&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3441,10 +3441,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_part_rescued_by&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_part_rescued_by&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3455,10 +3455,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non_rescued_by&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non_rescued_by&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3469,10 +3469,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_rescues&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_rescues&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3483,10 +3483,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_part_rescues&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_part_rescues&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3497,10 +3497,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_non_rescues&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_non_rescues&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 <td></td>
@@ -3512,10 +3512,10 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE, p.uniquename
-  FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_allele_complementation_comment&#39; AND frp.featureprop_id = frpp.featureprop_id AND
-    frpp.pub_id = p.pub_id;</code></pre>
+ FROM feature a, featureprop frp, featureprop_pub frpp, pub p, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_allele_complementation_comment&#39; AND frp.featureprop_id = frpp.featureprop_id AND
+ frpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -3529,9 +3529,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_stock_Bloomington&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_stock_Bloomington&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -3542,9 +3542,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_stock_Kyoto&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_stock_Kyoto&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -3555,9 +3555,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_stock_Szeged&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_stock_Szeged&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -3568,9 +3568,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_stock_Tucson&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_stock_Tucson&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -3581,9 +3581,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_stock_Carpenter&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_stock_Carpenter&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -3594,9 +3594,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_stock_Garcia-Bellido&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_stock_Garcia-Bellido&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -3607,9 +3607,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_stock_Harvard&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_stock_Harvard&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -3620,9 +3620,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_stock_Nusslein-Volhard&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_stock_Nusslein-Volhard&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -3633,9 +3633,9 @@ potentially erroneous)</td>
 <td>
 
 <pre class="de1"><code>SELECT a.uniquename, a.name, frp.VALUE
-  FROM feature a, featureprop frp, cvterm cvt
-  WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_stock_Saxton&#39;;</code></pre>
+ FROM feature a, featureprop frp, cvterm cvt
+ WHERE a.feature_id = frp.feature_id AND frp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_stock_Saxton&#39;;</code></pre>
 
 </td>
 <td></td>
@@ -3760,12 +3760,12 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(s.name)
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3774,10 +3774,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, o.genus, o.species
-  FROM feature f, cvterm cvt, organism o
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename LIKE &#39;FBgn%&#39; AND
-    f.organism_id = o.organism_id;</code></pre>
+ FROM feature f, cvterm cvt, organism o
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename LIKE &#39;FBgn%&#39; AND
+ f.organism_id = o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -3786,12 +3786,12 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(s.name)
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;fullname&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;fullname&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3800,10 +3800,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;FlyBase Annotation IDs&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;FlyBase Annotation IDs&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3812,9 +3812,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;promoted_gene_type&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;promoted_gene_type&#39; AND f.uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3823,9 +3823,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
-    f.name = &#39;ab&#39;;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;gene&#39; AND
+ f.name = &#39;ab&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3834,8 +3834,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned, timelastmodified
-  FROM feature f
-  WHERE uniquename = &#39;FBgn0000011&#39;;</code></pre>
+ FROM feature f
+ WHERE uniquename = &#39;FBgn0000011&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3850,10 +3850,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_transcript_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE that this will RETURN a structured string that contains stage information IN the bracketed &#39;t&#39; portion OF the statement.;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_transcript_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE that this will RETURN a structured string that contains stage information IN the bracketed &#39;t&#39; portion OF the statement.;</code></pre>
 
 </td>
 </tr>
@@ -3862,10 +3862,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_transcript_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE that this will RETURN a structured string that contains tissue/POSITION information IN the bracketed &#39;a&#39; (AND &#39;p&#39;) portion OF the statement.;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_transcript_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE that this will RETURN a structured string that contains tissue/POSITION information IN the bracketed &#39;a&#39; (AND &#39;p&#39;) portion OF the statement.;</code></pre>
 
 </td>
 </tr>
@@ -3875,9 +3875,9 @@ material</td>
 
 <pre class="de1"><code>NOTE: the pub uniquename associated WITH a statement IS returned USING the queries above. TO directly GET a specific pub association you need either the featureprop_id OR the feature_id/rank/featureprop.type_id UNIQUE KEY VALUES WITH which you can:
 SELECT uniquename
-  FROM featureprop fp, featureprop_pub, pub
-  WHERE fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = pub.pub_id AND
-    fp.featureprop_id = ?;</code></pre>
+ FROM featureprop fp, featureprop_pub, pub
+ WHERE fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = pub.pub_id AND
+ fp.featureprop_id = ?;</code></pre>
 
 </td>
 </tr>
@@ -3889,10 +3889,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_transcript_bodypart_expression_text&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_transcript_bodypart_expression_text&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3901,10 +3901,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_transcript_mode_of_assay&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_transcript_mode_of_assay&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3913,10 +3913,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_transcript_bodypart_expression_marker&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_transcript_bodypart_expression_marker&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3928,10 +3928,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_transcript_subcellular_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_transcript_subcellular_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3941,9 +3941,9 @@ SELECT uniquename
 
 <pre class="de1"><code>NOTE: the pub uniquename associated WITH a statement IS returned USING the queries above. TO directly GET a specific pub association you need either the featureprop_id OR the feature_id/rank/featureprop.type_id UNIQUE KEY VALUES WITH which you can:
 SELECT uniquename
-  FROM featureprop fp, featureprop_pub, pub
-  WHERE fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = pub.pub_id AND
-    fp.featureprop_id = ?;</code></pre>
+ FROM featureprop fp, featureprop_pub, pub
+ WHERE fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = pub.pub_id AND
+ fp.featureprop_id = ?;</code></pre>
 
 </td>
 </tr>
@@ -3952,10 +3952,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_transcript_subcellular_expression_text&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_transcript_subcellular_expression_text&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -3970,10 +3970,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_polypeptide_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE that this will RETURN a structured string that contains stage information IN the bracketed &#39;t&#39; portion OF the statement.;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_polypeptide_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE that this will RETURN a structured string that contains stage information IN the bracketed &#39;t&#39; portion OF the statement.;</code></pre>
 
 </td>
 </tr>
@@ -3982,10 +3982,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_polypeptide_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE that this will RETURN a structured string that contains stage information IN the bracketed &#39;a&#39; (AND &#39;p&#39;) portion OF the statement.;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_polypeptide_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE that this will RETURN a structured string that contains stage information IN the bracketed &#39;a&#39; (AND &#39;p&#39;) portion OF the statement.;</code></pre>
 
 </td>
 </tr>
@@ -3995,9 +3995,9 @@ SELECT uniquename
 
 <pre class="de1"><code>NOTE: the pub uniquename associated WITH a statement IS returned USING the queries above. TO directly GET a specific pub association you need either the featureprop_id OR the feature_id/rank/featureprop.type_id UNIQUE KEY VALUES WITH which you can:
 SELECT uniquename
-  FROM featureprop fp, featureprop_pub, pub
-  WHERE fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = pub.pub_id AND
-    fp.featureprop_id = ?;</code></pre>
+ FROM featureprop fp, featureprop_pub, pub
+ WHERE fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = pub.pub_id AND
+ fp.featureprop_id = ?;</code></pre>
 
 </td>
 </tr>
@@ -4009,10 +4009,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_polypeptide_bodypart_expression_text&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_polypeptide_bodypart_expression_text&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -4021,10 +4021,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_polypeptide_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE: assay IS found IN the &#39;as&#39; bracketed tag IN the statement;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_polypeptide_bodypart_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;; NOTE: assay IS found IN the &#39;as&#39; bracketed tag IN the statement;</code></pre>
 
 </td>
 </tr>
@@ -4033,10 +4033,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_polypeptide_bodypart_expression_marker&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_polypeptide_bodypart_expression_marker&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -4048,10 +4048,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_polypeptide_subcellular_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_polypeptide_subcellular_expression_cv&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -4061,9 +4061,9 @@ SELECT uniquename
 
 <pre class="de1"><code>NOTE: the pub uniquename associated WITH a statement IS returned USING the queries above. TO directly GET a specific pub association you need either the featureprop_id OR the feature_id/rank/featureprop.type_id UNIQUE KEY VALUES WITH which you can:
 SELECT uniquename
-  FROM featureprop fp, featureprop_pub, pub
-  WHERE fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = pub.pub_id AND
-    fp.featureprop_id = ?;</code></pre>
+ FROM featureprop fp, featureprop_pub, pub
+ WHERE fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = pub.pub_id AND
+ fp.featureprop_id = ?;</code></pre>
 
 </td>
 </tr>
@@ -4072,10 +4072,10 @@ SELECT uniquename
 <td>
 
 <pre class="de1"><code>SELECT VALUE, pub.uniquename
-  FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_polypeptide_subcellular_expression_text&#39; AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt, featureprop_pub fpp, pub
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_polypeptide_subcellular_expression_text&#39; AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = pub.pub_id AND f.uniquename = &#39;FBgn0000490&#39;;</code></pre>
 
 </td>
 </tr>
@@ -4127,13 +4127,13 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
-    cvt.name LIKE &#39;%RNA&#39;) AND f.feature_id = fs.feature_id AND
-    fs.synonym_id = s.synonym_id AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND s.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;symbol&#39; AND f.is_obsolete = &#39;f&#39; AND
-    f.uniquename = &#39;FBtr0087703&#39; GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
+ cvt.name LIKE &#39;%RNA&#39;) AND f.feature_id = fs.feature_id AND
+ fs.synonym_id = s.synonym_id AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND s.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;symbol&#39; AND f.is_obsolete = &#39;f&#39; AND
+ f.uniquename = &#39;FBtr0087703&#39; GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -4142,10 +4142,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT o.genus, o.species
-  FROM feature f, cvterm cvt, organism o
-  WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
-    cvt.name LIKE &#39;%RNA&#39;) AND f.is_obsolete = &#39;f&#39; AND
-    f.uniquename = &#39;FBtr0087703&#39; AND f.organism_id = o.organism_id;</code></pre>
+ FROM feature f, cvterm cvt, organism o
+ WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
+ cvt.name LIKE &#39;%RNA&#39;) AND f.is_obsolete = &#39;f&#39; AND
+ f.uniquename = &#39;FBtr0087703&#39; AND f.organism_id = o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -4154,10 +4154,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;FlyBase Annotation IDs&#39; AND f.uniquename = &#39;FBtr0087703&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;FlyBase Annotation IDs&#39; AND f.uniquename = &#39;FBtr0087703&#39;;</code></pre>
 
 </td>
 </tr>
@@ -4166,10 +4166,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
-    cvt.name LIKE &#39;%RNA&#39;) AND f.name = &#39;cnn-RA&#39; AND
-    f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
+ cvt.name LIKE &#39;%RNA&#39;) AND f.name = &#39;cnn-RA&#39; AND
+ f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -4178,9 +4178,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT cvt.name
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND f.uniquename = &#39;FBtr0087703&#39; AND
-    f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND f.uniquename = &#39;FBtr0087703&#39; AND
+ f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -4189,12 +4189,12 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(g.uniquename),g.name
-  FROM feature tr, feature g, feature_relationship fr, cvterm fr_type, cvterm tr_type,
-     cvterm g_type
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_obsolete=FALSE AND
-    tr.is_analysis=FALSE AND fr_type.name=&#39;partof&#39; AND
-    g_type.name=&#39;gene&#39; AND tr.feature_id=fr.subject_id AND
-    fr.object_id=g.feature_id;</code></pre>
+ FROM feature tr, feature g, feature_relationship fr, cvterm fr_type, cvterm tr_type,
+ cvterm g_type
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_obsolete=FALSE AND
+ tr.is_analysis=FALSE AND fr_type.name=&#39;partof&#39; AND
+ g_type.name=&#39;gene&#39; AND tr.feature_id=fr.subject_id AND
+ fr.object_id=g.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4203,10 +4203,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned, timelastmodified
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
-    cvt.name LIKE &#39;%RNA&#39;) AND f.uniquename = &#39;FBtr0087703&#39; AND
-    f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
+ cvt.name LIKE &#39;%RNA&#39;) AND f.uniquename = &#39;FBtr0087703&#39; AND
+ f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -4215,9 +4215,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtr0087703&#39; AND fp_type.name=&#39;score&#39; AND
-    f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtr0087703&#39; AND fp_type.name=&#39;score&#39; AND
+ f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -4226,9 +4226,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtr0087703&#39; AND fp_type.name=&#39;score_text&#39; AND
-    f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtr0087703&#39; AND fp_type.name=&#39;score_text&#39; AND
+ f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -4237,10 +4237,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT seqlen
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
-    cvt.name LIKE &#39;%RNA&#39;) AND f.uniquename = &#39;FBtr0087703&#39; AND
-    f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
+ cvt.name LIKE &#39;%RNA&#39;) AND f.uniquename = &#39;FBtr0087703&#39; AND
+ f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -4259,15 +4259,15 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT clone.name, clone.uniquename
-  FROM feature tr, feature cDNA, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
-     feature_relationship fr2, cvterm fr1_type, cvterm cDNA_type, cvterm clone_type
-  WHERE tr.uniquename = &#39;FBtr0070000&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
-    fr1_prop.VALUE=&#39;exact&#39; AND cDNA_type.name=&#39;cDNA&#39; AND
-    clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
-    fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=cDNA.feature_id AND
-    cDNA.type_id=cDNA_type.cvterm_id AND cDNA.feature_id=fr2.subject_id AND
-    fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
+ FROM feature tr, feature cDNA, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
+ feature_relationship fr2, cvterm fr1_type, cvterm cDNA_type, cvterm clone_type
+ WHERE tr.uniquename = &#39;FBtr0070000&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
+ fr1_prop.VALUE=&#39;exact&#39; AND cDNA_type.name=&#39;cDNA&#39; AND
+ clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
+ fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=cDNA.feature_id AND
+ cDNA.type_id=cDNA_type.cvterm_id AND cDNA.feature_id=fr2.subject_id AND
+ fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -4278,15 +4278,15 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT clone.name, clone.uniquename
-  FROM feature tr, feature cDNA, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
-     feature_relationship fr2, cvterm fr1_type, cvterm cDNA_type, cvterm clone_type
-  WHERE tr.uniquename = &#39;FBtr0005088&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
-    fr1_prop.VALUE=&#39;full&#39; AND cDNA_type.name=&#39;cDNA&#39; AND
-    clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
-    fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=cDNA.feature_id AND
-    cDNA.type_id=cDNA_type.cvterm_id AND cDNA.feature_id=fr2.subject_id AND
-    fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
+ FROM feature tr, feature cDNA, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
+ feature_relationship fr2, cvterm fr1_type, cvterm cDNA_type, cvterm clone_type
+ WHERE tr.uniquename = &#39;FBtr0005088&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
+ fr1_prop.VALUE=&#39;full&#39; AND cDNA_type.name=&#39;cDNA&#39; AND
+ clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
+ fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=cDNA.feature_id AND
+ cDNA.type_id=cDNA_type.cvterm_id AND cDNA.feature_id=fr2.subject_id AND
+ fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -4297,16 +4297,16 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT clone.name, clone.uniquename
-  FROM feature tr, feature cDNA, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
-     feature_relationship fr2, cvterm fr1_type, cvterm cDNA_type, cvterm clone_type
-  WHERE tr.uniquename = &#39;FBtr0005009&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
-    fr1_prop.VALUE IN (&#39;not_five&#39;,&#39;not_three&#39;,
-      &#39;not_ends&#39;) AND cDNA_type.name=&#39;cDNA&#39; AND
-    clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
-    fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=cDNA.feature_id AND
-    cDNA.type_id=cDNA_type.cvterm_id AND cDNA.feature_id=fr2.subject_id AND
-    fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
+ FROM feature tr, feature cDNA, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
+ feature_relationship fr2, cvterm fr1_type, cvterm cDNA_type, cvterm clone_type
+ WHERE tr.uniquename = &#39;FBtr0005009&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
+ fr1_prop.VALUE IN (&#39;not_five&#39;,&#39;not_three&#39;,
+ &#39;not_ends&#39;) AND cDNA_type.name=&#39;cDNA&#39; AND
+ clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
+ fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=cDNA.feature_id AND
+ cDNA.type_id=cDNA_type.cvterm_id AND cDNA.feature_id=fr2.subject_id AND
+ fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -4320,15 +4320,15 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT clone.name, clone.uniquename
-  FROM feature tr, feature EST, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
-     feature_relationship fr2, cvterm fr1_type, cvterm EST_type, cvterm clone_type
-  WHERE tr.uniquename = &#39;FBtr0005009&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
-    fr1_prop.VALUE=&#39;full&#39; AND EST_type.name=&#39;EST&#39; AND
-    clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
-    fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=EST.feature_id AND
-    EST.type_id=EST_type.cvterm_id AND EST.feature_id=fr2.subject_id AND
-    fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
+ FROM feature tr, feature EST, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
+ feature_relationship fr2, cvterm fr1_type, cvterm EST_type, cvterm clone_type
+ WHERE tr.uniquename = &#39;FBtr0005009&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
+ fr1_prop.VALUE=&#39;full&#39; AND EST_type.name=&#39;EST&#39; AND
+ clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
+ fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=EST.feature_id AND
+ EST.type_id=EST_type.cvterm_id AND EST.feature_id=fr2.subject_id AND
+ fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -4339,16 +4339,16 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT clone.name, clone.uniquename
-  FROM feature tr, feature EST, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
-     feature_relationship fr2, cvterm fr1_type, cvterm EST_type, cvterm clone_type
-  WHERE tr.uniquename = &#39;FBtr0005009&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
-    fr1_prop.VALUE IN (&#39;not_five&#39;,&#39;not_three&#39;,
-      &#39;not_ends&#39;) AND EST_type.name=&#39;EST&#39; AND
-    clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
-    fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=EST.feature_id AND
-    EST.type_id=EST_type.cvterm_id AND EST.feature_id=fr2.subject_id AND
-    fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
+ FROM feature tr, feature EST, feature clone, feature_relationship fr1, feature_relationshipprop fr1_prop,
+ feature_relationship fr2, cvterm fr1_type, cvterm EST_type, cvterm clone_type
+ WHERE tr.uniquename = &#39;FBtr0005009&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND fr1_type.name=&#39;supports&#39; AND
+ fr1_prop.VALUE IN (&#39;not_five&#39;,&#39;not_three&#39;,
+ &#39;not_ends&#39;) AND EST_type.name=&#39;EST&#39; AND
+ clone_type.name=&#39;cDNA_clone&#39; AND tr.feature_id=fr1.object_id AND
+ fr1.feature_relationship_id=fr1_prop.feature_relationship_id AND fr1.subject_id=EST.feature_id AND
+ EST.type_id=EST_type.cvterm_id AND EST.feature_id=fr2.subject_id AND
+ fr2.object_id=clone.feature_id AND clone.type_id=clone_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -4371,10 +4371,10 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT residues
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
-    cvt.name LIKE &#39;%RNA&#39;) AND f.uniquename = &#39;FBtr0005009&#39; AND
-    f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND (cvt.name = &#39;pseudogene&#39; OR
+ cvt.name LIKE &#39;%RNA&#39;) AND f.uniquename = &#39;FBtr0005009&#39; AND
+ f.is_analysis=FALSE AND f.is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -4389,24 +4389,24 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature tr, feature g, feature otr, cvterm tr_type, cvterm g_type,
-     cvterm otr_type, feature_relationship fr1, feature_relationship fr2, cvterm fr1_type, cvterm fr2_type,
-     featureloc fl, feature_synonym fs, synonym s, cvterm s_type
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND otr.uniquename ~ &#39;^FBtr[0-9]+$&#39; AND
-    g.uniquename ~ &#39;^FBgn[0-9]+$&#39; AND (tr_type.name = &#39;pseudogene&#39; OR
-    tr_type.name LIKE &#39;%RNA&#39;) AND (otr_type.name = &#39;pseudogene&#39; OR
-    otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
-    fr1_type.name=&#39;partof&#39; AND fr2_type.name=&#39;partof&#39; AND
-    otr.uniquename != tr.uniquename AND fs.is_current=TRUE AND
-    fs.is_internal=FALSE AND s_type.name=&#39;symbol&#39; AND
-    tr.feature_id=fr1.subject_id AND fr1.object_id=g.feature_id AND
-    g.feature_id=fr2.object_id AND fr2.subject_id=otr.feature_id AND
-    fr1.type_id=fr1_type.cvterm_id AND fr2.type_id=fr2_type.cvterm_id AND
-    tr.type_id=tr_type.cvterm_id AND g.type_id=g_type.cvterm_id AND
-    otr.type_id=otr_type.cvterm_id AND otr.feature_id=fl.feature_id AND
-    otr.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature tr, feature g, feature otr, cvterm tr_type, cvterm g_type,
+ cvterm otr_type, feature_relationship fr1, feature_relationship fr2, cvterm fr1_type, cvterm fr2_type,
+ featureloc fl, feature_synonym fs, synonym s, cvterm s_type
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND otr.uniquename ~ &#39;^FBtr[0-9]+$&#39; AND
+ g.uniquename ~ &#39;^FBgn[0-9]+$&#39; AND (tr_type.name = &#39;pseudogene&#39; OR
+ tr_type.name LIKE &#39;%RNA&#39;) AND (otr_type.name = &#39;pseudogene&#39; OR
+ otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
+ fr1_type.name=&#39;partof&#39; AND fr2_type.name=&#39;partof&#39; AND
+ otr.uniquename != tr.uniquename AND fs.is_current=TRUE AND
+ fs.is_internal=FALSE AND s_type.name=&#39;symbol&#39; AND
+ tr.feature_id=fr1.subject_id AND fr1.object_id=g.feature_id AND
+ g.feature_id=fr2.object_id AND fr2.subject_id=otr.feature_id AND
+ fr1.type_id=fr1_type.cvterm_id AND fr2.type_id=fr2_type.cvterm_id AND
+ tr.type_id=tr_type.cvterm_id AND g.type_id=g_type.cvterm_id AND
+ otr.type_id=otr_type.cvterm_id AND otr.feature_id=fl.feature_id AND
+ otr.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -4415,21 +4415,21 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT otr.uniquename
-  FROM feature tr, feature g, feature otr, cvterm tr_type, cvterm g_type,
-     cvterm otr_type, feature_relationship fr1, feature_relationship fr2, cvterm fr1_type, cvterm fr2_type,
-     featureloc fl
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND otr.uniquename ~ &#39;^FBtr[0-9]+$&#39; AND
-    g.uniquename ~ &#39;^FBgn[0-9]+$&#39; AND (tr_type.name = &#39;pseudogene&#39; OR
-    tr_type.name LIKE &#39;%RNA&#39;) AND (otr_type.name = &#39;pseudogene&#39; OR
-    otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
-    fr1_type.name=&#39;partof&#39; AND fr2_type.name=&#39;partof&#39; AND
-    otr.uniquename != tr.uniquename AND tr.feature_id=fr1.subject_id AND
-    fr1.object_id=g.feature_id AND g.feature_id=fr2.object_id AND
-    fr2.subject_id=otr.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
-    fr2.type_id=fr2_type.cvterm_id AND tr.type_id=tr_type.cvterm_id AND
-    g.type_id=g_type.cvterm_id AND otr.type_id=otr_type.cvterm_id AND
-    otr.feature_id=fl.feature_id;</code></pre>
+ FROM feature tr, feature g, feature otr, cvterm tr_type, cvterm g_type,
+ cvterm otr_type, feature_relationship fr1, feature_relationship fr2, cvterm fr1_type, cvterm fr2_type,
+ featureloc fl
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND otr.uniquename ~ &#39;^FBtr[0-9]+$&#39; AND
+ g.uniquename ~ &#39;^FBgn[0-9]+$&#39; AND (tr_type.name = &#39;pseudogene&#39; OR
+ tr_type.name LIKE &#39;%RNA&#39;) AND (otr_type.name = &#39;pseudogene&#39; OR
+ otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
+ fr1_type.name=&#39;partof&#39; AND fr2_type.name=&#39;partof&#39; AND
+ otr.uniquename != tr.uniquename AND tr.feature_id=fr1.subject_id AND
+ fr1.object_id=g.feature_id AND g.feature_id=fr2.object_id AND
+ fr2.subject_id=otr.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
+ fr2.type_id=fr2_type.cvterm_id AND tr.type_id=tr_type.cvterm_id AND
+ g.type_id=g_type.cvterm_id AND otr.type_id=otr_type.cvterm_id AND
+ otr.feature_id=fl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4438,21 +4438,21 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT otr.seqlen
-  FROM feature tr, feature g, feature otr, cvterm tr_type, cvterm g_type,
-     cvterm otr_type, feature_relationship fr1, feature_relationship fr2, cvterm fr1_type, cvterm fr2_type,
-     featureloc fl
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND otr.uniquename ~ &#39;^FBtr[0-9]+$&#39; AND
-    g.uniquename ~ &#39;^FBgn[0-9]+$&#39; AND (tr_type.name = &#39;pseudogene&#39; OR
-    tr_type.name LIKE &#39;%RNA&#39;) AND (otr_type.name = &#39;pseudogene&#39; OR
-    otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
-    fr1_type.name=&#39;partof&#39; AND fr2_type.name=&#39;partof&#39; AND
-    otr.uniquename != tr.uniquename AND tr.feature_id=fr1.subject_id AND
-    fr1.object_id=g.feature_id AND g.feature_id=fr2.object_id AND
-    fr2.subject_id=otr.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
-    fr2.type_id=fr2_type.cvterm_id AND tr.type_id=tr_type.cvterm_id AND
-    g.type_id=g_type.cvterm_id AND otr.type_id=otr_type.cvterm_id AND
-    otr.feature_id=fl.feature_id;</code></pre>
+ FROM feature tr, feature g, feature otr, cvterm tr_type, cvterm g_type,
+ cvterm otr_type, feature_relationship fr1, feature_relationship fr2, cvterm fr1_type, cvterm fr2_type,
+ featureloc fl
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND otr.uniquename ~ &#39;^FBtr[0-9]+$&#39; AND
+ g.uniquename ~ &#39;^FBgn[0-9]+$&#39; AND (tr_type.name = &#39;pseudogene&#39; OR
+ tr_type.name LIKE &#39;%RNA&#39;) AND (otr_type.name = &#39;pseudogene&#39; OR
+ otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
+ fr1_type.name=&#39;partof&#39; AND fr2_type.name=&#39;partof&#39; AND
+ otr.uniquename != tr.uniquename AND tr.feature_id=fr1.subject_id AND
+ fr1.object_id=g.feature_id AND g.feature_id=fr2.object_id AND
+ fr2.subject_id=otr.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
+ fr2.type_id=fr2_type.cvterm_id AND tr.type_id=tr_type.cvterm_id AND
+ g.type_id=g_type.cvterm_id AND otr.type_id=otr_type.cvterm_id AND
+ otr.feature_id=fl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4464,18 +4464,18 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature tr, feature p, cvterm tr_type, cvterm p_type, feature_relationship fr1,
-     cvterm fr1_type, featureloc fl, feature_synonym fs, synonym s, cvterm s_type
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND p.uniquename ~ &#39;^FBpp[0-9]+$&#39; AND
-    (tr_type.NAME = &#39;pseudogene&#39; OR tr_type.NAME LIKE &#39;%RNA&#39;) AND
-    p_type.NAME=&#39;protein&#39; AND fr1_type.NAME=&#39;producedby&#39; AND
-    fs.is_current=TRUE AND fs.is_internal=FALSE AND
-    s_type.NAME=&#39;symbol&#39; AND tr.feature_id=fr1.object_id AND
-    fr1.subject_id=p.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
-    tr.type_id=tr_type.cvterm_id AND p.feature_id=fl.feature_id AND
-    p.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature tr, feature p, cvterm tr_type, cvterm p_type, feature_relationship fr1,
+ cvterm fr1_type, featureloc fl, feature_synonym fs, synonym s, cvterm s_type
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND p.uniquename ~ &#39;^FBpp[0-9]+$&#39; AND
+ (tr_type.NAME = &#39;pseudogene&#39; OR tr_type.NAME LIKE &#39;%RNA&#39;) AND
+ p_type.NAME=&#39;protein&#39; AND fr1_type.NAME=&#39;producedby&#39; AND
+ fs.is_current=TRUE AND fs.is_internal=FALSE AND
+ s_type.NAME=&#39;symbol&#39; AND tr.feature_id=fr1.object_id AND
+ fr1.subject_id=p.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
+ tr.type_id=tr_type.cvterm_id AND p.feature_id=fl.feature_id AND
+ p.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -4484,15 +4484,15 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename
-  FROM feature tr, feature p, cvterm tr_type, cvterm p_type, feature_relationship fr1,
-     cvterm fr1_type, featureloc fl
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND p.uniquename ~ &#39;^FBpp[0-9]+$&#39; AND
-    (tr_type.NAME = &#39;pseudogene&#39; OR tr_type.NAME LIKE &#39;%RNA&#39;) AND
-    p_type.NAME=&#39;protein&#39; AND fr1_type.NAME=&#39;producedby&#39; AND
-    tr.feature_id=fr1.object_id AND fr1.subject_id=p.feature_id AND
-    fr1.type_id=fr1_type.cvterm_id AND tr.type_id=tr_type.cvterm_id AND
-    p.feature_id=fl.feature_id;</code></pre>
+ FROM feature tr, feature p, cvterm tr_type, cvterm p_type, feature_relationship fr1,
+ cvterm fr1_type, featureloc fl
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND p.uniquename ~ &#39;^FBpp[0-9]+$&#39; AND
+ (tr_type.NAME = &#39;pseudogene&#39; OR tr_type.NAME LIKE &#39;%RNA&#39;) AND
+ p_type.NAME=&#39;protein&#39; AND fr1_type.NAME=&#39;producedby&#39; AND
+ tr.feature_id=fr1.object_id AND fr1.subject_id=p.feature_id AND
+ fr1.type_id=fr1_type.cvterm_id AND tr.type_id=tr_type.cvterm_id AND
+ p.feature_id=fl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4501,15 +4501,15 @@ internally consistent</td>
 <td>
 
 <pre class="de1"><code>SELECT p.seqlen
-  FROM feature tr, feature p, cvterm tr_type, cvterm p_type, feature_relationship fr1,
-     cvterm fr1_type, featureloc fl
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND p.uniquename ~ &#39;^FBpp[0-9]+$&#39; AND
-    (tr_type.NAME = &#39;pseudogene&#39; OR tr_type.NAME LIKE &#39;%RNA&#39;) AND
-    p_type.NAME=&#39;protein&#39; AND fr1_type.NAME=&#39;producedby&#39; AND
-    tr.feature_id=fr1.object_id AND fr1.subject_id=p.feature_id AND
-    fr1.type_id=fr1_type.cvterm_id AND tr.type_id=tr_type.cvterm_id AND
-    p.feature_id=fl.feature_id;</code></pre>
+ FROM feature tr, feature p, cvterm tr_type, cvterm p_type, feature_relationship fr1,
+ cvterm fr1_type, featureloc fl
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND p.uniquename ~ &#39;^FBpp[0-9]+$&#39; AND
+ (tr_type.NAME = &#39;pseudogene&#39; OR tr_type.NAME LIKE &#39;%RNA&#39;) AND
+ p_type.NAME=&#39;protein&#39; AND fr1_type.NAME=&#39;producedby&#39; AND
+ tr.feature_id=fr1.object_id AND fr1.subject_id=p.feature_id AND
+ fr1.type_id=fr1_type.cvterm_id AND tr.type_id=tr_type.cvterm_id AND
+ p.feature_id=fl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4522,25 +4522,25 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature tr, feature g, feature otr, feature op, cvterm g_type,
-     cvterm otr_type, cvterm op_type, feature_relationship fr1, feature_relationship fr2, feature_relationship fr3,
-     cvterm fr1_type, cvterm fr2_type, cvterm fr3_type, featureloc fl, feature_synonym fs,
-     synonym s, cvterm s_type
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND (otr_type.name = &#39;pseudogene&#39; OR
-    otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
-    op_type.name=&#39;protein&#39; AND fr1_type.name=&#39;partof&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;producedby&#39; AND
-    otr.uniquename != tr.uniquename AND fs.is_current=TRUE AND
-    fs.is_internal=FALSE AND s_type.name=&#39;symbol&#39; AND
-    tr.feature_id=fr1.subject_id AND fr1.object_id=g.feature_id AND
-    g.feature_id=fr2.object_id AND fr2.subject_id=otr.feature_id AND
-    otr.feature_id=fr3.object_id AND fr3.subject_id=op.feature_id AND
-    fr1.type_id=fr1_type.cvterm_id AND fr2.type_id=fr2_type.cvterm_id AND
-    fr3.type_id=fr3_type.cvterm_id AND g.type_id=g_type.cvterm_id AND
-    otr.type_id=otr_type.cvterm_id AND op.type_id=op_type.cvterm_id AND
-    op.feature_id=fl.feature_id AND op.feature_id=fs.feature_id AND
-    fs.synonym_id=s.synonym_id AND s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature tr, feature g, feature otr, feature op, cvterm g_type,
+ cvterm otr_type, cvterm op_type, feature_relationship fr1, feature_relationship fr2, feature_relationship fr3,
+ cvterm fr1_type, cvterm fr2_type, cvterm fr3_type, featureloc fl, feature_synonym fs,
+ synonym s, cvterm s_type
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND (otr_type.name = &#39;pseudogene&#39; OR
+ otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
+ op_type.name=&#39;protein&#39; AND fr1_type.name=&#39;partof&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;producedby&#39; AND
+ otr.uniquename != tr.uniquename AND fs.is_current=TRUE AND
+ fs.is_internal=FALSE AND s_type.name=&#39;symbol&#39; AND
+ tr.feature_id=fr1.subject_id AND fr1.object_id=g.feature_id AND
+ g.feature_id=fr2.object_id AND fr2.subject_id=otr.feature_id AND
+ otr.feature_id=fr3.object_id AND fr3.subject_id=op.feature_id AND
+ fr1.type_id=fr1_type.cvterm_id AND fr2.type_id=fr2_type.cvterm_id AND
+ fr3.type_id=fr3_type.cvterm_id AND g.type_id=g_type.cvterm_id AND
+ otr.type_id=otr_type.cvterm_id AND op.type_id=op_type.cvterm_id AND
+ op.feature_id=fl.feature_id AND op.feature_id=fs.feature_id AND
+ fs.synonym_id=s.synonym_id AND s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -4549,21 +4549,21 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT op.uniquename
-  FROM feature tr, feature g, feature otr, feature op, cvterm g_type,
-     cvterm otr_type, cvterm op_type, feature_relationship fr1, feature_relationship fr2, feature_relationship fr3,
-     cvterm fr1_type, cvterm fr2_type, cvterm fr3_type, featureloc fl
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND (otr_type.name = &#39;pseudogene&#39; OR
-    otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
-    op_type.name=&#39;protein&#39; AND fr1_type.name=&#39;partof&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;producedby&#39; AND
-    otr.uniquename != tr.uniquename AND tr.feature_id=fr1.subject_id AND
-    fr1.object_id=g.feature_id AND g.feature_id=fr2.object_id AND
-    fr2.subject_id=otr.feature_id AND otr.feature_id=fr3.object_id AND
-    fr3.subject_id=op.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
-    fr2.type_id=fr2_type.cvterm_id AND fr3.type_id=fr3_type.cvterm_id AND
-    g.type_id=g_type.cvterm_id AND otr.type_id=otr_type.cvterm_id AND
-    op.type_id=op_type.cvterm_id AND op.feature_id=fl.feature_id;</code></pre>
+ FROM feature tr, feature g, feature otr, feature op, cvterm g_type,
+ cvterm otr_type, cvterm op_type, feature_relationship fr1, feature_relationship fr2, feature_relationship fr3,
+ cvterm fr1_type, cvterm fr2_type, cvterm fr3_type, featureloc fl
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND (otr_type.name = &#39;pseudogene&#39; OR
+ otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
+ op_type.name=&#39;protein&#39; AND fr1_type.name=&#39;partof&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;producedby&#39; AND
+ otr.uniquename != tr.uniquename AND tr.feature_id=fr1.subject_id AND
+ fr1.object_id=g.feature_id AND g.feature_id=fr2.object_id AND
+ fr2.subject_id=otr.feature_id AND otr.feature_id=fr3.object_id AND
+ fr3.subject_id=op.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
+ fr2.type_id=fr2_type.cvterm_id AND fr3.type_id=fr3_type.cvterm_id AND
+ g.type_id=g_type.cvterm_id AND otr.type_id=otr_type.cvterm_id AND
+ op.type_id=op_type.cvterm_id AND op.feature_id=fl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4572,21 +4572,21 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT op.seqlen
-  FROM feature tr, feature g, feature otr, feature op, cvterm g_type,
-     cvterm otr_type, cvterm op_type, feature_relationship fr1, feature_relationship fr2, feature_relationship fr3,
-     cvterm fr1_type, cvterm fr2_type, cvterm fr3_type, featureloc fl
-  WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
-    tr.is_obsolete=FALSE AND (otr_type.name = &#39;pseudogene&#39; OR
-    otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
-    op_type.name=&#39;protein&#39; AND fr1_type.name=&#39;partof&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;producedby&#39; AND
-    otr.uniquename != tr.uniquename AND tr.feature_id=fr1.subject_id AND
-    fr1.object_id=g.feature_id AND g.feature_id=fr2.object_id AND
-    fr2.subject_id=otr.feature_id AND otr.feature_id=fr3.object_id AND
-    fr3.subject_id=op.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
-    fr2.type_id=fr2_type.cvterm_id AND fr3.type_id=fr3_type.cvterm_id AND
-    g.type_id=g_type.cvterm_id AND otr.type_id=otr_type.cvterm_id AND
-    op.type_id=op_type.cvterm_id AND op.feature_id=fl.feature_id;</code></pre>
+ FROM feature tr, feature g, feature otr, feature op, cvterm g_type,
+ cvterm otr_type, cvterm op_type, feature_relationship fr1, feature_relationship fr2, feature_relationship fr3,
+ cvterm fr1_type, cvterm fr2_type, cvterm fr3_type, featureloc fl
+ WHERE tr.uniquename=&#39;FBtr0087703&#39; AND tr.is_analysis=FALSE AND
+ tr.is_obsolete=FALSE AND (otr_type.name = &#39;pseudogene&#39; OR
+ otr_type.name LIKE &#39;%RNA&#39;) AND g_type.name=&#39;gene&#39; AND
+ op_type.name=&#39;protein&#39; AND fr1_type.name=&#39;partof&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;producedby&#39; AND
+ otr.uniquename != tr.uniquename AND tr.feature_id=fr1.subject_id AND
+ fr1.object_id=g.feature_id AND g.feature_id=fr2.object_id AND
+ fr2.subject_id=otr.feature_id AND otr.feature_id=fr3.object_id AND
+ fr3.subject_id=op.feature_id AND fr1.type_id=fr1_type.cvterm_id AND
+ fr2.type_id=fr2_type.cvterm_id AND fr3.type_id=fr3_type.cvterm_id AND
+ g.type_id=g_type.cvterm_id AND otr.type_id=otr_type.cvterm_id AND
+ op.type_id=op_type.cvterm_id AND op.feature_id=fl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4598,9 +4598,9 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tr, featureprop fp, cvterm fp_type
-  WHERE tr.uniquename=&#39;FBtr0000021&#39; AND fp_type.name=&#39;comment&#39; AND
-    tr.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tr, featureprop fp, cvterm fp_type
+ WHERE tr.uniquename=&#39;FBtr0000021&#39; AND fp_type.name=&#39;comment&#39; AND
+ tr.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -4623,10 +4623,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, s.name AS synonym, synonym_sgml, cvt.name, p.uniquename
-  FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
-    fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBtr0087703&#39;;</code></pre>
+ FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
+ fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBtr0087703&#39;;</code></pre>
 
 </td>
 </tr>
@@ -4638,9 +4638,9 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.miniref, p.title
-  FROM feature f, pub p, feature_pub fp
-  WHERE f.uniquename = &#39;FBtr0087703&#39; AND f.feature_id=fp.feature_id AND
-    fp.pub_id=p.pub_id;</code></pre>
+ FROM feature f, pub p, feature_pub fp
+ WHERE f.uniquename = &#39;FBtr0087703&#39; AND f.feature_id=fp.feature_id AND
+ fp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -4668,12 +4668,12 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBpp0086822&#39; GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBpp0086822&#39; GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -4682,10 +4682,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT o.genus, o.species
-  FROM feature f, cvterm cvt, organism o
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBpp0086822&#39; AND
-    f.organism_id = o.organism_id;</code></pre>
+ FROM feature f, cvterm cvt, organism o
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBpp0086822&#39; AND
+ f.organism_id = o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -4694,10 +4694,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT accession
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
-    db.name = &#39;FlyBase Annotation IDs&#39; AND f.uniquename = &#39;FBpp0086822&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;t&#39; AND d.db_id = db.db_id AND
+ db.name = &#39;FlyBase Annotation IDs&#39; AND f.uniquename = &#39;FBpp0086822&#39;;</code></pre>
 
 </td>
 </tr>
@@ -4706,10 +4706,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
-    f.name = &#39;cnn-PA&#39; AND f.is_analysis=FALSE AND
-    f.is_obsolete=FALSE;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
+ f.name = &#39;cnn-PA&#39; AND f.is_analysis=FALSE AND
+ f.is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -4718,14 +4718,14 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(g.uniquename),g.name
-  FROM feature p, feature tr, feature g, feature_relationship fr1, feature_relationship fr2,
-     cvterm fr1_type, cvterm fr2_type, cvterm p_type, cvterm g_type
-  WHERE p.uniquename=&#39;FBpp0086822&#39; AND p.is_obsolete=FALSE AND
-    p.is_analysis=FALSE AND fr1_type.name=&#39;producedby&#39; AND
-    fr2_type.name=&#39;partof&#39; AND p_type.name=&#39;protein&#39; AND
-    g_type.name=&#39;gene&#39; AND p.feature_id=fr1.subject_id AND
-    fr1.object_id=tr.feature_id AND tr.feature_id=fr2.subject_id AND
-    fr2.object_id=g.feature_id;</code></pre>
+ FROM feature p, feature tr, feature g, feature_relationship fr1, feature_relationship fr2,
+ cvterm fr1_type, cvterm fr2_type, cvterm p_type, cvterm g_type
+ WHERE p.uniquename=&#39;FBpp0086822&#39; AND p.is_obsolete=FALSE AND
+ p.is_analysis=FALSE AND fr1_type.name=&#39;producedby&#39; AND
+ fr2_type.name=&#39;partof&#39; AND p_type.name=&#39;protein&#39; AND
+ g_type.name=&#39;gene&#39; AND p.feature_id=fr1.subject_id AND
+ fr1.object_id=tr.feature_id AND tr.feature_id=fr2.subject_id AND
+ fr2.object_id=g.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4734,10 +4734,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned, timelastmodified
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
-    f.uniquename = &#39;FBpp0086822&#39; AND f.is_analysis=FALSE AND
-    f.is_obsolete=FALSE;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
+ f.uniquename = &#39;FBpp0086822&#39; AND f.is_analysis=FALSE AND
+ f.is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -4746,10 +4746,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT seqlen
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
-    f.uniquename = &#39;FBpp0086822&#39; AND f.is_analysis=FALSE AND
-    f.is_obsolete=FALSE;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
+ f.uniquename = &#39;FBpp0086822&#39; AND f.is_analysis=FALSE AND
+ f.is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -4758,9 +4758,9 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_isoelectric_point&#39; AND f.uniquename = &#39;FBpp0086822&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_isoelectric_point&#39; AND f.uniquename = &#39;FBpp0086822&#39;;</code></pre>
 
 </td>
 </tr>
@@ -4769,9 +4769,9 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;derived_molecular_weight&#39; AND f.uniquename = &#39;FBpp0086822&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;derived_molecular_weight&#39; AND f.uniquename = &#39;FBpp0086822&#39;;</code></pre>
 
 </td>
 </tr>
@@ -4787,10 +4787,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT residues
-  FROM feature f, cvterm cvt
-  WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
-    f.uniquename = &#39;FBpp0086822&#39; AND f.is_analysis=FALSE AND
-    f.is_obsolete=FALSE;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.type_id = cvt.cvterm_id AND cvt.name = &#39;protein&#39; AND
+ f.uniquename = &#39;FBpp0086822&#39; AND f.is_analysis=FALSE AND
+ f.is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -4805,13 +4805,13 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature pp, feature_relationship fr, cvterm fr_type, feature tr, feature_synonym fs,
-     synonym s, cvterm s_type
-  WHERE pp.uniquename=&#39;FBpp0086822&#39; AND fr_type.name=&#39;producedby&#39; AND
-    s_type.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    pp.feature_id=fr.subject_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.object_id=tr.feature_id AND tr.feature_id=fs.feature_id AND
-    fs.synonym_id=s.synonym_id AND s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature pp, feature_relationship fr, cvterm fr_type, feature tr, feature_synonym fs,
+ synonym s, cvterm s_type
+ WHERE pp.uniquename=&#39;FBpp0086822&#39; AND fr_type.name=&#39;producedby&#39; AND
+ s_type.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ pp.feature_id=fr.subject_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.object_id=tr.feature_id AND tr.feature_id=fs.feature_id AND
+ fs.synonym_id=s.synonym_id AND s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -4820,10 +4820,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT tr.uniquename
-  FROM feature pp, feature_relationship fr, cvterm fr_type, feature tr
-  WHERE pp.uniquename=&#39;FBpp0086822&#39; AND fr_type.name=&#39;producedby&#39; AND
-    pp.feature_id=fr.subject_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.object_id=tr.feature_id;</code></pre>
+ FROM feature pp, feature_relationship fr, cvterm fr_type, feature tr
+ WHERE pp.uniquename=&#39;FBpp0086822&#39; AND fr_type.name=&#39;producedby&#39; AND
+ pp.feature_id=fr.subject_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.object_id=tr.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4832,10 +4832,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT tr.seqlen
-  FROM feature pp, feature_relationship fr, cvterm fr_type, feature tr
-  WHERE pp.uniquename=&#39;FBpp0086822&#39; AND fr_type.name=&#39;producedby&#39; AND
-    pp.feature_id=fr.subject_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.object_id=tr.feature_id;</code></pre>
+ FROM feature pp, feature_relationship fr, cvterm fr_type, feature tr
+ WHERE pp.uniquename=&#39;FBpp0086822&#39; AND fr_type.name=&#39;producedby&#39; AND
+ pp.feature_id=fr.subject_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.object_id=tr.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4847,21 +4847,21 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature pp, feature tr, feature g, feature otr, feature_relationship fr1,
-     feature_relationship fr2, feature_relationship fr3, cvterm fr1_type, cvterm fr2_type, cvterm fr3_type,
-     feature_synonym fs, synonym s, cvterm s_type, featureloc fl
-  WHERE pp.uniquename=&#39;FBpp0086822&#39; AND otr.is_analysis=FALSE AND
-    otr.is_obsolete=FALSE AND otr.uniquename LIKE &#39;FBtr%&#39; AND
-    otr.uniquename != tr.uniquename AND fr1_type.name=&#39;producedby&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
-    fs.is_current=TRUE AND fs.is_internal=FALSE AND
-    s_type.name=&#39;symbol&#39; AND pp.feature_id=fr1.subject_id AND
-    fr1.type_id=fr1_type.cvterm_id AND fr1.object_id=tr.feature_id AND
-    tr.feature_id=fr2.subject_id AND fr2.type_id=fr2_type.cvterm_id AND
-    fr2.object_id=g.feature_id AND g.feature_id=fr3.object_id AND
-    fr3.type_id=fr3_type.cvterm_id AND fr3.subject_id=otr.feature_id AND
-    otr.feature_id=fs.feature_id AND otr.feature_id=fl.feature_id AND
-    fs.synonym_id=s.synonym_id AND s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature pp, feature tr, feature g, feature otr, feature_relationship fr1,
+ feature_relationship fr2, feature_relationship fr3, cvterm fr1_type, cvterm fr2_type, cvterm fr3_type,
+ feature_synonym fs, synonym s, cvterm s_type, featureloc fl
+ WHERE pp.uniquename=&#39;FBpp0086822&#39; AND otr.is_analysis=FALSE AND
+ otr.is_obsolete=FALSE AND otr.uniquename LIKE &#39;FBtr%&#39; AND
+ otr.uniquename != tr.uniquename AND fr1_type.name=&#39;producedby&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
+ fs.is_current=TRUE AND fs.is_internal=FALSE AND
+ s_type.name=&#39;symbol&#39; AND pp.feature_id=fr1.subject_id AND
+ fr1.type_id=fr1_type.cvterm_id AND fr1.object_id=tr.feature_id AND
+ tr.feature_id=fr2.subject_id AND fr2.type_id=fr2_type.cvterm_id AND
+ fr2.object_id=g.feature_id AND g.feature_id=fr3.object_id AND
+ fr3.type_id=fr3_type.cvterm_id AND fr3.subject_id=otr.feature_id AND
+ otr.feature_id=fs.feature_id AND otr.feature_id=fl.feature_id AND
+ fs.synonym_id=s.synonym_id AND s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -4870,18 +4870,18 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT otr.uniquename
-  FROM feature pp, feature tr, feature g, feature otr, feature_relationship fr1,
-     feature_relationship fr2, feature_relationship fr3, cvterm fr1_type, cvterm fr2_type, cvterm fr3_type,
-     featureloc fl
-  WHERE pp.uniquename=&#39;FBpp0086822&#39; AND otr.is_analysis=FALSE AND
-    otr.is_obsolete=FALSE AND otr.uniquename LIKE &#39;FBtr%&#39; AND
-    otr.uniquename != tr.uniquename AND fr1_type.name=&#39;producedby&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
-    pp.feature_id=fr1.subject_id AND fr1.type_id=fr1_type.cvterm_id AND
-    fr1.object_id=tr.feature_id AND tr.feature_id=fr2.subject_id AND
-    fr2.type_id=fr2_type.cvterm_id AND fr2.object_id=g.feature_id AND
-    g.feature_id=fr3.object_id AND fr3.type_id=fr3_type.cvterm_id AND
-    fr3.subject_id=otr.feature_id AND otr.feature_id=fl.feature_id;</code></pre>
+ FROM feature pp, feature tr, feature g, feature otr, feature_relationship fr1,
+ feature_relationship fr2, feature_relationship fr3, cvterm fr1_type, cvterm fr2_type, cvterm fr3_type,
+ featureloc fl
+ WHERE pp.uniquename=&#39;FBpp0086822&#39; AND otr.is_analysis=FALSE AND
+ otr.is_obsolete=FALSE AND otr.uniquename LIKE &#39;FBtr%&#39; AND
+ otr.uniquename != tr.uniquename AND fr1_type.name=&#39;producedby&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
+ pp.feature_id=fr1.subject_id AND fr1.type_id=fr1_type.cvterm_id AND
+ fr1.object_id=tr.feature_id AND tr.feature_id=fr2.subject_id AND
+ fr2.type_id=fr2_type.cvterm_id AND fr2.object_id=g.feature_id AND
+ g.feature_id=fr3.object_id AND fr3.type_id=fr3_type.cvterm_id AND
+ fr3.subject_id=otr.feature_id AND otr.feature_id=fl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4890,18 +4890,18 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT otr.seqlen
-  FROM feature pp, feature tr, feature g, feature otr, feature_relationship fr1,
-     feature_relationship fr2, feature_relationship fr3, cvterm fr1_type, cvterm fr2_type, cvterm fr3_type,
-     featureloc fl
-  WHERE pp.uniquename=&#39;FBpp0086822&#39; AND otr.is_analysis=FALSE AND
-    otr.is_obsolete=FALSE AND otr.uniquename LIKE &#39;FBtr%&#39; AND
-    otr.uniquename != tr.uniquename AND fr1_type.name=&#39;producedby&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
-    pp.feature_id=fr1.subject_id AND fr1.type_id=fr1_type.cvterm_id AND
-    fr1.object_id=tr.feature_id AND tr.feature_id=fr2.subject_id AND
-    fr2.type_id=fr2_type.cvterm_id AND fr2.object_id=g.feature_id AND
-    g.feature_id=fr3.object_id AND fr3.type_id=fr3_type.cvterm_id AND
-    fr3.subject_id=otr.feature_id AND otr.feature_id=fl.feature_id;</code></pre>
+ FROM feature pp, feature tr, feature g, feature otr, feature_relationship fr1,
+ feature_relationship fr2, feature_relationship fr3, cvterm fr1_type, cvterm fr2_type, cvterm fr3_type,
+ featureloc fl
+ WHERE pp.uniquename=&#39;FBpp0086822&#39; AND otr.is_analysis=FALSE AND
+ otr.is_obsolete=FALSE AND otr.uniquename LIKE &#39;FBtr%&#39; AND
+ otr.uniquename != tr.uniquename AND fr1_type.name=&#39;producedby&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
+ pp.feature_id=fr1.subject_id AND fr1.type_id=fr1_type.cvterm_id AND
+ fr1.object_id=tr.feature_id AND tr.feature_id=fr2.subject_id AND
+ fr2.type_id=fr2_type.cvterm_id AND fr2.object_id=g.feature_id AND
+ g.feature_id=fr3.object_id AND fr3.type_id=fr3_type.cvterm_id AND
+ fr3.subject_id=otr.feature_id AND otr.feature_id=fl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4913,25 +4913,25 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature pp, feature tr, feature g, feature otr, feature opp,
-     feature_relationship fr1, feature_relationship fr2, feature_relationship fr3, feature_relationship fr4, cvterm fr1_type,
-     cvterm fr2_type, cvterm fr3_type, cvterm fr4_type, feature_synonym fs, synonym s,
-     cvterm s_type, featureloc otrfl, featureloc oppfl
-  WHERE pp.uniquename=&#39;FBpp0086822&#39; AND opp.is_obsolete=FALSE AND
-    opp.is_analysis=FALSE AND opp.uniquename LIKE &#39;FBpp%&#39; AND
-    opp.uniquename != pp.uniquename AND fr1_type.name=&#39;producedby&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
-    fr4_type.name=&#39;producedby&#39; AND fs.is_current=TRUE AND
-    fs.is_internal=FALSE AND s_type.name=&#39;symbol&#39; AND
-    pp.feature_id=fr1.subject_id AND fr1.type_id=fr1_type.cvterm_id AND
-    fr1.object_id=tr.feature_id AND tr.feature_id=fr2.subject_id AND
-    fr2.type_id=fr2_type.cvterm_id AND fr2.object_id=g.feature_id AND
-    g.feature_id=fr3.object_id AND fr3.type_id=fr3_type.cvterm_id AND
-    fr3.subject_id=otr.feature_id AND otr.feature_id=fr4.object_id AND
-    fr4.type_id=fr4_type.cvterm_id AND fr4.subject_id=opp.feature_id AND
-    otr.feature_id=otrfl.feature_id AND opp.feature_id=oppfl.feature_id AND
-    opp.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature pp, feature tr, feature g, feature otr, feature opp,
+ feature_relationship fr1, feature_relationship fr2, feature_relationship fr3, feature_relationship fr4, cvterm fr1_type,
+ cvterm fr2_type, cvterm fr3_type, cvterm fr4_type, feature_synonym fs, synonym s,
+ cvterm s_type, featureloc otrfl, featureloc oppfl
+ WHERE pp.uniquename=&#39;FBpp0086822&#39; AND opp.is_obsolete=FALSE AND
+ opp.is_analysis=FALSE AND opp.uniquename LIKE &#39;FBpp%&#39; AND
+ opp.uniquename != pp.uniquename AND fr1_type.name=&#39;producedby&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
+ fr4_type.name=&#39;producedby&#39; AND fs.is_current=TRUE AND
+ fs.is_internal=FALSE AND s_type.name=&#39;symbol&#39; AND
+ pp.feature_id=fr1.subject_id AND fr1.type_id=fr1_type.cvterm_id AND
+ fr1.object_id=tr.feature_id AND tr.feature_id=fr2.subject_id AND
+ fr2.type_id=fr2_type.cvterm_id AND fr2.object_id=g.feature_id AND
+ g.feature_id=fr3.object_id AND fr3.type_id=fr3_type.cvterm_id AND
+ fr3.subject_id=otr.feature_id AND otr.feature_id=fr4.object_id AND
+ fr4.type_id=fr4_type.cvterm_id AND fr4.subject_id=opp.feature_id AND
+ otr.feature_id=otrfl.feature_id AND opp.feature_id=oppfl.feature_id AND
+ opp.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=s_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -4940,21 +4940,21 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT opp.uniquename
-  FROM feature pp, feature tr, feature g, feature otr, feature opp,
-     feature_relationship fr1, feature_relationship fr2, feature_relationship fr3, feature_relationship fr4, cvterm fr1_type,
-     cvterm fr2_type, cvterm fr3_type, cvterm fr4_type, featureloc otrfl, featureloc oppfl
-  WHERE pp.uniquename=&#39;FBpp0086822&#39; AND opp.uniquename LIKE &#39;FBpp%&#39; AND
-    opp.uniquename != pp.uniquename AND opp.is_analysis=FALSE AND
-    opp.is_obsolete=FALSE AND fr1_type.name=&#39;producedby&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
-    fr4_type.name=&#39;producedby&#39; AND pp.feature_id=fr1.subject_id AND
-    fr1.type_id=fr1_type.cvterm_id AND fr1.object_id=tr.feature_id AND
-    tr.feature_id=fr2.subject_id AND fr2.type_id=fr2_type.cvterm_id AND
-    fr2.object_id=g.feature_id AND g.feature_id=fr3.object_id AND
-    fr3.type_id=fr3_type.cvterm_id AND fr3.subject_id=otr.feature_id AND
-    otr.feature_id=fr4.object_id AND fr4.type_id=fr4_type.cvterm_id AND
-    fr4.subject_id=opp.feature_id AND otr.feature_id=otrfl.feature_id AND
-    opp.feature_id=oppfl.feature_id;</code></pre>
+ FROM feature pp, feature tr, feature g, feature otr, feature opp,
+ feature_relationship fr1, feature_relationship fr2, feature_relationship fr3, feature_relationship fr4, cvterm fr1_type,
+ cvterm fr2_type, cvterm fr3_type, cvterm fr4_type, featureloc otrfl, featureloc oppfl
+ WHERE pp.uniquename=&#39;FBpp0086822&#39; AND opp.uniquename LIKE &#39;FBpp%&#39; AND
+ opp.uniquename != pp.uniquename AND opp.is_analysis=FALSE AND
+ opp.is_obsolete=FALSE AND fr1_type.name=&#39;producedby&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
+ fr4_type.name=&#39;producedby&#39; AND pp.feature_id=fr1.subject_id AND
+ fr1.type_id=fr1_type.cvterm_id AND fr1.object_id=tr.feature_id AND
+ tr.feature_id=fr2.subject_id AND fr2.type_id=fr2_type.cvterm_id AND
+ fr2.object_id=g.feature_id AND g.feature_id=fr3.object_id AND
+ fr3.type_id=fr3_type.cvterm_id AND fr3.subject_id=otr.feature_id AND
+ otr.feature_id=fr4.object_id AND fr4.type_id=fr4_type.cvterm_id AND
+ fr4.subject_id=opp.feature_id AND otr.feature_id=otrfl.feature_id AND
+ opp.feature_id=oppfl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4963,21 +4963,21 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT opp.seqlen
-  FROM feature pp, feature tr, feature g, feature otr, feature opp,
-     feature_relationship fr1, feature_relationship fr2, feature_relationship fr3, feature_relationship fr4, cvterm fr1_type,
-     cvterm fr2_type, cvterm fr3_type, cvterm fr4_type, featureloc otrfl, featureloc oppfl
-  WHERE pp.uniquename=&#39;FBpp0086822&#39; AND opp.uniquename LIKE &#39;FBpp%&#39; AND
-    opp.uniquename != pp.uniquename AND opp.is_analysis=FALSE AND
-    opp.is_obsolete=FALSE AND fr1_type.name=&#39;producedby&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
-    fr4_type.name=&#39;producedby&#39; AND pp.feature_id=fr1.subject_id AND
-    fr1.type_id=fr1_type.cvterm_id AND fr1.object_id=tr.feature_id AND
-    tr.feature_id=fr2.subject_id AND fr2.type_id=fr2_type.cvterm_id AND
-    fr2.object_id=g.feature_id AND g.feature_id=fr3.object_id AND
-    fr3.type_id=fr3_type.cvterm_id AND fr3.subject_id=otr.feature_id AND
-    otr.feature_id=fr4.object_id AND fr4.type_id=fr4_type.cvterm_id AND
-    fr4.subject_id=opp.feature_id AND otr.feature_id=otrfl.feature_id AND
-    opp.feature_id=oppfl.feature_id;</code></pre>
+ FROM feature pp, feature tr, feature g, feature otr, feature opp,
+ feature_relationship fr1, feature_relationship fr2, feature_relationship fr3, feature_relationship fr4, cvterm fr1_type,
+ cvterm fr2_type, cvterm fr3_type, cvterm fr4_type, featureloc otrfl, featureloc oppfl
+ WHERE pp.uniquename=&#39;FBpp0086822&#39; AND opp.uniquename LIKE &#39;FBpp%&#39; AND
+ opp.uniquename != pp.uniquename AND opp.is_analysis=FALSE AND
+ opp.is_obsolete=FALSE AND fr1_type.name=&#39;producedby&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;partof&#39; AND
+ fr4_type.name=&#39;producedby&#39; AND pp.feature_id=fr1.subject_id AND
+ fr1.type_id=fr1_type.cvterm_id AND fr1.object_id=tr.feature_id AND
+ tr.feature_id=fr2.subject_id AND fr2.type_id=fr2_type.cvterm_id AND
+ fr2.object_id=g.feature_id AND g.feature_id=fr3.object_id AND
+ fr3.type_id=fr3_type.cvterm_id AND fr3.subject_id=otr.feature_id AND
+ otr.feature_id=fr4.object_id AND fr4.type_id=fr4_type.cvterm_id AND
+ fr4.subject_id=opp.feature_id AND otr.feature_id=otrfl.feature_id AND
+ opp.feature_id=oppfl.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -4989,10 +4989,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT db.name,dbx.accession
-  FROM feature f, feature_dbxref fdbx, dbxref dbx, db
-  WHERE f.uniquename=&#39;FBpp0086822&#39; AND fdbx.is_current=TRUE AND
-    db.name IN (&#39;GB_protein&#39;,&#39;REFSEQ&#39;) AND f.feature_id=fdbx.feature_id AND
-    fdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM feature f, feature_dbxref fdbx, dbxref dbx, db
+ WHERE f.uniquename=&#39;FBpp0086822&#39; AND fdbx.is_current=TRUE AND
+ db.name IN (&#39;GB_protein&#39;,&#39;REFSEQ&#39;) AND f.feature_id=fdbx.feature_id AND
+ fdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -5004,10 +5004,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, s.name AS synonym, synonym_sgml, cvt.name, p.uniquename
-  FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
-    fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBpp0086822&#39;;</code></pre>
+ FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
+ fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBpp0086822&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5019,9 +5019,9 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.miniref, p.title
-  FROM feature f, pub p, feature_pub fp
-  WHERE f.uniquename = &#39;FBpp0086822&#39; AND f.feature_id=fp.feature_id AND
-    fp.pub_id=p.pub_id;</code></pre>
+ FROM feature f, pub p, feature_pub fp
+ WHERE f.uniquename = &#39;FBpp0086822&#39; AND f.feature_id=fp.feature_id AND
+ fp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -5049,11 +5049,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(s.synonym_sgml)
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt.cvterm_id AND cvt.name = &#39;symbol&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBti0000001&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt.cvterm_id AND cvt.name = &#39;symbol&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5062,9 +5062,9 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT o.genus, o.species
-  FROM feature f, organism o
-  WHERE f.is_obsolete = &#39;f&#39; AND f.uniquename =&#39;FBti0000001&#39; AND
-    f.organism_id = o.organism_id;</code></pre>
+ FROM feature f, organism o
+ WHERE f.is_obsolete = &#39;f&#39; AND f.uniquename =&#39;FBti0000001&#39; AND
+ f.organism_id = o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -5081,8 +5081,8 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT cvterm.name
-  FROM feature f, cvterm
-  WHERE f.type_id=cvterm.cvterm_id AND f.uniquename = &#39;FBti0000001&#39;;</code></pre>
+ FROM feature f, cvterm
+ WHERE f.type_id=cvterm.cvterm_id AND f.uniquename = &#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5091,8 +5091,8 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned, timelastmodified
-  FROM feature f
-  WHERE uniquename = &#39;FBti0000001&#39; AND is_obsolete=&#39;f&#39;;</code></pre>
+ FROM feature f
+ WHERE uniquename = &#39;FBti0000001&#39; AND is_obsolete=&#39;f&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5104,10 +5104,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.name
-  FROM feature f, feature fp, feature_relationship fr
-  WHERE fr.subject_id=f.feature_id AND fr.object_id=fp.feature_id AND
-    fr.type_id=27 AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39;;</code></pre>
+ FROM feature f, feature fp, feature_relationship fr
+ WHERE fr.subject_id=f.feature_id AND fr.object_id=fp.feature_id AND
+ fr.type_id=27 AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5116,11 +5116,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fg.name
-  FROM feature fg, feature f, feature_relationship fr, cvterm cvt
-  WHERE fr.subject_id=fg.feature_id AND f.feature_id=fr.object_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
-    fg.type_id=219 AND fg.uniquename LIKE &#39;FBgn%&#39; AND
-    fg.organism_id=f.organism_id AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fg, feature f, feature_relationship fr, cvterm cvt
+ WHERE fr.subject_id=fg.feature_id AND f.feature_id=fr.object_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
+ fg.type_id=219 AND fg.uniquename LIKE &#39;FBgn%&#39; AND
+ fg.organism_id=f.organism_id AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5129,11 +5129,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fg.name
-  FROM feature fg, feature f, feature_relationship fr, cvterm cvt
-  WHERE fr.subject_id=fg.feature_id AND f.feature_id=fr.object_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
-    fg.type_id=219 AND fg.uniquename LIKE &#39;FBal%&#39; AND
-    fg.organism_id=f.organism_id AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fg, feature f, feature_relationship fr, cvterm cvt
+ WHERE fr.subject_id=fg.feature_id AND f.feature_id=fr.object_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
+ fg.type_id=219 AND fg.uniquename LIKE &#39;FBal%&#39; AND
+ fg.organism_id=f.organism_id AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5142,10 +5142,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE cvt.name=&#39;originating_line&#39; AND cvt.cvterm_id=fp.type_id AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39; AND
-    fp.feature_id=f.feature_id;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE cvt.name=&#39;originating_line&#39; AND cvt.cvterm_id=fp.type_id AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39; AND
+ fp.feature_id=f.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -5158,10 +5158,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_expression_data&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_expression_data&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5170,10 +5170,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;curated_phenotype&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;curated_phenotype&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5189,10 +5189,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_chromosome_location&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_chromosome_location&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5201,10 +5201,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_genomic_cyto_location&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_genomic_cyto_location&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5213,9 +5213,9 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT src.uniquename fl.fmin, fl.fmax
-  FROM feature f, featureloc fl, feature src
-  WHERE fl.feature_id=f.feature_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39; AND fl.srcfeature_id=src.feature_id;</code></pre>
+ FROM feature f, featureloc fl, feature src
+ WHERE fl.feature_id=f.feature_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39; AND fl.srcfeature_id=src.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -5231,11 +5231,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, cvterm cvt, pub, featureprop_pub frp
-  WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    frp.pub_id=pub.pub_id AND frp.featureprop_id=fp.featureprop_id AND
-    cvt.name=&#39;curated_chromosomal_location&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt, pub, featureprop_pub frp
+ WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
+ frp.pub_id=pub.pub_id AND frp.featureprop_id=fp.featureprop_id AND
+ cvt.name=&#39;curated_chromosomal_location&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5244,11 +5244,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT src.uniquename fl.fmin, fl.fmax, pub.uniquename
-  FROM feature f, featureloc fl,featureloc_pub, flp, pub,
-     feature src
-  WHERE fl.feature_id=f.feature_id AND flp.pub_id=pub.pub_id AND
-    flp.featureloc_id=fl.featureloc_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39; AND fl.srcfeature_id=src.feature_id;</code></pre>
+ FROM feature f, featureloc fl,featureloc_pub, flp, pub,
+ feature src
+ WHERE fl.feature_id=f.feature_id AND flp.pub_id=pub.pub_id AND
+ flp.featureloc_id=fl.featureloc_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39; AND fl.srcfeature_id=src.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -5257,12 +5257,12 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, featureprop_pub, fpp, pub, feature f,
-     cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fpp.featureprop_id=fp.featureprop_id AND
-    pub.pub_id=fpp.pub_id AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;chromosomal_orientation&#39;;</code></pre>
+ FROM featureprop fp, featureprop_pub, fpp, pub, feature f,
+ cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fpp.featureprop_id=fp.featureprop_id AND
+ pub.pub_id=fpp.pub_id AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;chromosomal_orientation&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5271,10 +5271,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_compute_cyto_location&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_compute_cyto_location&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5283,11 +5283,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, cvterm cvt, pub, featureprop_pub frp
-  WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    frp.pub_id=pub.pub_id AND frp.featureprop_id=fp.featureprop_id AND
-    cvt.name=&#39;curated_cytological_location&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt, pub, featureprop_pub frp
+ WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
+ frp.pub_id=pub.pub_id AND frp.featureprop_id=fp.featureprop_id AND
+ cvt.name=&#39;curated_cytological_location&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5296,11 +5296,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, cvterm cvt, pub, featureprop_pub frp
-  WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    frp.pub_id=pub.pub_id AND frp.featureprop_id=fp.featureprop_id AND
-    cvt.name=&#39;gen_loc_comment&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt, pub, featureprop_pub frp
+ WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
+ frp.pub_id=pub.pub_id AND frp.featureprop_id=fp.featureprop_id AND
+ cvt.name=&#39;gen_loc_comment&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5316,11 +5316,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
-    fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transposable_element_flanking_region&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
+ fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transposable_element_flanking_region&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5332,11 +5332,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;producedby&#39; AND
-    fo.type_id= cvt2.cvterm_id AND cvt2.name!=&#39;natural_transposon&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;producedby&#39; AND
+ fo.type_id= cvt2.cvterm_id AND cvt2.name!=&#39;natural_transposon&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5349,13 +5349,13 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, feature_relationship fr, feature ft, featureprop fp, cvterm cvt,
-     cvterm cvt2
-  WHERE f.feature_id=fr.subject_id AND fr.object_id=ft.feature_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;producedby&#39; AND
-    ft.feature_id=fp.feature_id AND fp.type_id=cvt2.cvterm_id AND
-    (cvt2.name=&#39;compiled_kb_length&#39; OR cvt2.name=&#39;kb_length&#39;) AND
-    f1.is_obsolete=&#39;f&#39; AND f1.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, feature ft, featureprop fp, cvterm cvt,
+ cvterm cvt2
+ WHERE f.feature_id=fr.subject_id AND fr.object_id=ft.feature_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;producedby&#39; AND
+ ft.feature_id=fp.feature_id AND fp.type_id=cvt2.cvterm_id AND
+ (cvt2.name=&#39;compiled_kb_length&#39; OR cvt2.name=&#39;kb_length&#39;) AND
+ f1.is_obsolete=&#39;f&#39; AND f1.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5364,13 +5364,13 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.name
-  FROM feature f, feature_relationship fr1, feature_relationship fr2, feature fp, cvterm c1,
-     cvterm c2
-  WHERE fr1.type_id=c1.cvterm_id AND c1.name=&#39;producedby&#39; AND
-    f.feature_id=fr1.subject_id AND fr1.object_id=fr2.object_id AND
-    fr2.object_id=fp.feature_id AND fr2.type_id=c2.cvterm_id AND
-    c2.name=&#39;derived_tp_assoc_alleles&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature f, feature_relationship fr1, feature_relationship fr2, feature fp, cvterm c1,
+ cvterm c2
+ WHERE fr1.type_id=c1.cvterm_id AND c1.name=&#39;producedby&#39; AND
+ f.feature_id=fr1.subject_id AND fr1.object_id=fr2.object_id AND
+ fr2.object_id=fp.feature_id AND fr2.type_id=c2.cvterm_id AND
+ c2.name=&#39;derived_tp_assoc_alleles&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5398,12 +5398,12 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename, pub.uniquename
-  FROM feature fo, feature f, feature_relationship fr, feature_relationship_pub frp, pub,
-     cvterm cvt
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; frp.feature_relationship_id=fr.feature_relationship_id AND
-    frp.pub_id=pub.pub_id AND fo.uniquename LIKE &#39;FBgn%&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, feature_relationship_pub frp, pub,
+ cvterm cvt
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; frp.feature_relationship_id=fr.feature_relationship_id AND
+ frp.pub_id=pub.pub_id AND fo.uniquename LIKE &#39;FBgn%&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5412,14 +5412,14 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.name, frp.VALUE, pub.uniquename
-  FROM feature fo, feature f, feature_relationship fr, feature_relationshipprop frp, feature_relationshipprop_pub frpp,
-     pub, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
-    fo.uniquename LIKE &#39;FBgn%&#39; AND frp.feature_relationshipprop_id=frpp.feature_relationshipprop_id AND
-    frpp.pub_id=pub.pub_id AND fr.feature_relationship_id=frp.feature_relationship_id AND
-    frp.type_id= cvt2.cvterm_id AND cvt2.name=&#39;relative_orientation&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, feature_relationshipprop frp, feature_relationshipprop_pub frpp,
+ pub, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
+ fo.uniquename LIKE &#39;FBgn%&#39; AND frp.feature_relationshipprop_id=frpp.feature_relationshipprop_id AND
+ frpp.pub_id=pub.pub_id AND fr.feature_relationship_id=frp.feature_relationship_id AND
+ frp.type_id= cvt2.cvterm_id AND cvt2.name=&#39;relative_orientation&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5431,11 +5431,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
-    fo.uniquename LIKE &#39;FBal%&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
+ fo.uniquename LIKE &#39;FBal%&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5512,11 +5512,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, featureprop_pub frp, pub, feature f, cvterm cvt
-  WHERE cvt.name=&#39;originating_line&#39; AND cvt.cvterm_id=fp.type_id AND
-    frp.featureprop_id=fp.featureprop_id AND frp.pub_id=pub.pub_id AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39; AND
-    fp.feature_id=f.feature_id;</code></pre>
+ FROM featureprop fp, featureprop_pub frp, pub, feature f, cvterm cvt
+ WHERE cvt.name=&#39;originating_line&#39; AND cvt.cvterm_id=fp.type_id AND
+ frp.featureprop_id=fp.featureprop_id AND frp.pub_id=pub.pub_id AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39; AND
+ fp.feature_id=f.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -5525,11 +5525,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp,featureprop_pub frp, pub, feature f, cvterm cvt
-  WHERE cvt.name=&#39;is_multiple_insertion_line&#39; AND frp.featureprop_id=fp.featureprop_id AND
-    frp.pub_id=pub.pub_id AND cvt.cvterm_id=fp.type_id AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39; AND
-    fp.feature_id=f.feature_id;</code></pre>
+ FROM featureprop fp,featureprop_pub frp, pub, feature f, cvterm cvt
+ WHERE cvt.name=&#39;is_multiple_insertion_line&#39; AND frp.featureprop_id=fp.featureprop_id AND
+ frp.pub_id=pub.pub_id AND cvt.cvterm_id=fp.type_id AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39; AND
+ fp.feature_id=f.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -5545,11 +5545,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;transposed_descendant_of&#39; AND
-    fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transgenic_transposon_insertion_site&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;transposed_descendant_of&#39; AND
+ fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transgenic_transposon_insertion_site&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5558,11 +5558,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;recombinant_descendant_of&#39; AND
-    fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transgenic_transposon_insertion_site&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;recombinant_descendant_of&#39; AND
+ fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transgenic_transposon_insertion_site&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5571,11 +5571,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;replacement_descendant_of&#39; AND
-    fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transgenic_transposon_insertion_site&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;replacement_descendant_of&#39; AND
+ fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transgenic_transposon_insertion_site&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5584,11 +5584,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;modified_descendant_of&#39; AND
-    fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transgenic_transposon_insertion_site&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;modified_descendant_of&#39; AND
+ fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transgenic_transposon_insertion_site&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5600,11 +5600,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
-    fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;chromosome_structure_variation&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
+ fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;chromosome_structure_variation&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5613,11 +5613,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
-    fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;single balancer&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
+ fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;single balancer&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5629,10 +5629,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_stock_Bloomington&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_stock_Bloomington&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5641,10 +5641,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_stock_Kyoto&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_stock_Kyoto&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5653,10 +5653,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_stock_Szeged&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_stock_Szeged&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5665,10 +5665,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_stock_Tucson&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_stock_Tucson&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5677,10 +5677,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_stock_Carpenter&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_stock_Carpenter&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5689,10 +5689,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_stock_Garcia-Bellido&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_stock_Garcia-Bellido&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5701,10 +5701,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_stock_Harvard&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_stock_Harvard&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5713,10 +5713,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_stock_Nusslein-Volhard&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_stock_Nusslein-Volhard&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5725,10 +5725,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM featureprop fp, feature f, cvterm cvt
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_stock_Saxton&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;derived_stock_Saxton&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5737,11 +5737,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;availability&#39; AND pub.pub_id=frp.pub_id AND
-    frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;availability&#39; AND pub.pub_id=frp.pub_id AND
+ frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5764,11 +5764,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;comment&#39; AND pub.pub_id=frp.pub_id AND
-    frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;comment&#39; AND pub.pub_id=frp.pub_id AND
+ frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5783,10 +5783,10 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml, pub.uniquename
-  FROM feature_synonym fs, feature f, synonym s, pub
-  WHERE fs.feature_id=f.feature_id AND fs.synonym_id=s.synonym_id AND
-    fs.is_internal=&#39;f&#39; AND fs.pub_id=pub.pub_id AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature_synonym fs, feature f, synonym s, pub
+ WHERE fs.feature_id=f.feature_id AND fs.synonym_id=s.synonym_id AND
+ fs.is_internal=&#39;f&#39; AND fs.pub_id=pub.pub_id AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5798,11 +5798,11 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT dbxref.accession
-  FROM dbxref, feature_dbxref fd, feature f, db
-  WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
-    fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
-    db.name=&#39;FlyBase&#39; AND f.uniquename=&#39;FBti0000001&#39; AND
-    f.is_obsolete=&#39;f&#39;;</code></pre>
+ FROM dbxref, feature_dbxref fd, feature f, db
+ WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
+ fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
+ db.name=&#39;FlyBase&#39; AND f.uniquename=&#39;FBti0000001&#39; AND
+ f.is_obsolete=&#39;f&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5814,9 +5814,9 @@ gene</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name AS pub_type, p.uniquename AS FBrf_id, miniref AS citation
-  FROM feature f, feature_pub fp, pub p, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.pub_id = p.pub_id AND
-    p.type_id = cvt.cvterm_id AND f.uniquename = &#39;FBti0000001&#39; ORDER BY cvt.name;</code></pre>
+ FROM feature f, feature_pub fp, pub p, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.pub_id = p.pub_id AND
+ p.type_id = cvt.cvterm_id AND f.uniquename = &#39;FBti0000001&#39; ORDER BY cvt.name;</code></pre>
 
 </td>
 </tr>
@@ -5873,8 +5873,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT name
-  FROM feature
-  WHERE uniquename = &#39;FBcl0000001&#39; AND is_obsolete=FALSE;</code></pre>
+ FROM feature
+ WHERE uniquename = &#39;FBcl0000001&#39; AND is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -5883,9 +5883,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT o.genus, o.species
-  FROM feature f, organism o
-  WHERE f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBcl0000001&#39; AND
-    f.organism_id = o.organism_id;</code></pre>
+ FROM feature f, organism o
+ WHERE f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBcl0000001&#39; AND
+ f.organism_id = o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -5894,8 +5894,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT name
-  FROM feature
-  WHERE uniquename = &#39;FBcl0000001&#39; AND is_obsolete=FALSE;</code></pre>
+ FROM feature
+ WHERE uniquename = &#39;FBcl0000001&#39; AND is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -5904,8 +5904,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT uniquename
-  FROM feature
-  WHERE uniquename = &#39;FBcl0000001&#39; AND is_obsolete=FALSE;</code></pre>
+ FROM feature
+ WHERE uniquename = &#39;FBcl0000001&#39; AND is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -5914,9 +5914,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT cvt.NAME
-  FROM feature f, cvterm cvt
-  WHERE f.uniquename = &#39;FBcl0000001&#39; AND f.is_obsolete=FALSE AND
-    f.type_id=cvt.cvterm_id;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.uniquename = &#39;FBcl0000001&#39; AND f.is_obsolete=FALSE AND
+ f.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -5925,8 +5925,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned, timelastmodified
-  FROM feature
-  WHERE uniquename = &#39;FBcl0000001&#39; AND is_obsolete=FALSE;</code></pre>
+ FROM feature
+ WHERE uniquename = &#39;FBcl0000001&#39; AND is_obsolete=FALSE;</code></pre>
 
 </td>
 </tr>
@@ -5935,15 +5935,15 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT g.name
-  FROM feature c, feature evidence, feature tr, feature g, feature_relationship fr1,
-     feature_relationship fr2, feature_relationship fr3, cvterm evidence_type, cvterm fr2_type, cvterm g_type
-  WHERE c.uniquename=&#39;FBcl0000001&#39; AND evidence_type.name IN (&#39;cDNA&#39;,&#39;EST&#39;) AND
-    fr2_type.name=&#39;supports&#39; AND g_type.name = &#39;gene&#39; AND
-    c.feature_id=fr1.object_id AND fr1.subject_id=evidence.feature_id AND
-    evidence.type_id=evidence_type.cvterm_id AND evidence.feature_id=fr2.subject_id AND
-    fr2.type_id=fr2_type.cvterm_id AND fr2.object_id=tr.feature_id AND
-    tr.feature_id=fr3.subject_id AND fr3.object_id=g.feature_id AND
-    g.type_id=g_type.cvterm_id;</code></pre>
+ FROM feature c, feature evidence, feature tr, feature g, feature_relationship fr1,
+ feature_relationship fr2, feature_relationship fr3, cvterm evidence_type, cvterm fr2_type, cvterm g_type
+ WHERE c.uniquename=&#39;FBcl0000001&#39; AND evidence_type.name IN (&#39;cDNA&#39;,&#39;EST&#39;) AND
+ fr2_type.name=&#39;supports&#39; AND g_type.name = &#39;gene&#39; AND
+ c.feature_id=fr1.object_id AND fr1.subject_id=evidence.feature_id AND
+ evidence.type_id=evidence_type.cvterm_id AND evidence.feature_id=fr2.subject_id AND
+ fr2.type_id=fr2_type.cvterm_id AND fr2.object_id=tr.feature_id AND
+ tr.feature_id=fr3.subject_id AND fr3.object_id=g.feature_id AND
+ g.type_id=g_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -5952,9 +5952,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;status&#39; AND f.uniquename = &#39;FBcl0000003&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;status&#39; AND f.uniquename = &#39;FBcl0000003&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5963,9 +5963,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;problem&#39; AND f.uniquename = &#39;FBcl0000248&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;problem&#39; AND f.uniquename = &#39;FBcl0000248&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5974,9 +5974,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT l.name
-  FROM feature f, library_feature lf, library l
-  WHERE f.uniquename=&#39;FBcl0000001&#39; AND f.feature_id=lf.feature_id AND
-    lf.library_id=l.library_id;</code></pre>
+ FROM feature f, library_feature lf, library l
+ WHERE f.uniquename=&#39;FBcl0000001&#39; AND f.feature_id=lf.feature_id AND
+ lf.library_id=l.library_id;</code></pre>
 
 </td>
 </tr>
@@ -5985,10 +5985,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT lp.VALUE
-  FROM feature f, library_feature lf, library l, libraryprop lp, cvterm lp_type
-  WHERE f.uniquename=&#39;FBcl0394020&#39; AND lp_type.name=&#39;strain&#39; AND
-    f.feature_id=lf.feature_id AND lf.library_id=l.library_id AND
-    l.library_id=lp.library_id AND lp.type_id=lp_type.cvterm_id;</code></pre>
+ FROM feature f, library_feature lf, library l, libraryprop lp, cvterm lp_type
+ WHERE f.uniquename=&#39;FBcl0394020&#39; AND lp_type.name=&#39;strain&#39; AND
+ f.feature_id=lf.feature_id AND lf.library_id=l.library_id AND
+ l.library_id=lp.library_id AND lp.type_id=lp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -5997,8 +5997,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT lbp.VALUE FROM feature f, library_feature lf, library l, libraryprop lbp, cvterm cvt WHERE f.uniquename=&#39;FBcl0000001&#39; AND
-  cvt.name=&#39;stage&#39; AND f.feature_id=lf.feature_id AND  lf.library_id=l.library_id AND
-  l.library_id=lbp.library_id AND lbp.type_id=cvt.cvterm_id;</code></pre>
+ cvt.name=&#39;stage&#39; AND f.feature_id=lf.feature_id AND lf.library_id=l.library_id AND
+ l.library_id=lbp.library_id AND lbp.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6007,8 +6007,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT cvt.name FROM feature f, library_feature lf, library l, library_cvterm lcvt, cvterm cvt, cv
-  WHERE f.uniquename=&#39;FBcl0000001&#39; AND cv.name IN (&#39;FlyBase anatomy CV&#39;,&#39;cellular_component&#39;) AND
-  f.feature_id=lf.feature_id AND lf.library_id=l.library_id AND l.library_id=lcvt.library_id AND lcvt.cvterm_id=cvt.cvterm_id;</code></pre>
+ WHERE f.uniquename=&#39;FBcl0000001&#39; AND cv.name IN (&#39;FlyBase anatomy CV&#39;,&#39;cellular_component&#39;) AND
+ f.feature_id=lf.feature_id AND lf.library_id=l.library_id AND l.library_id=lcvt.library_id AND lcvt.cvterm_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6017,14 +6017,14 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature cl, feature vector, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm vector_type
-  WHERE cl.uniquename = &#39;FBcl0000001&#39; AND fs.is_current = TRUE AND
-    fs.is_internal = FALSE AND fs_type.NAME = &#39;symbol&#39; AND
-    vector_type.name=&#39;engineered_construct&#39; AND cl.feature_id=fr.object_id AND
-    fr.subject_id=vector.feature_id AND vector.type_id=vector_type.cvterm_id AND
-    vector.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id;</code></pre>
+ FROM feature cl, feature vector, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm vector_type
+ WHERE cl.uniquename = &#39;FBcl0000001&#39; AND fs.is_current = TRUE AND
+ fs.is_internal = FALSE AND fs_type.NAME = &#39;symbol&#39; AND
+ vector_type.name=&#39;engineered_construct&#39; AND cl.feature_id=fr.object_id AND
+ fr.subject_id=vector.feature_id AND vector.type_id=vector_type.cvterm_id AND
+ vector.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6039,10 +6039,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fls.seqlen
-  FROM feature cl, feature fls, feature_relationship fr, cvterm fls_type
-  WHERE cl.uniquename=&#39;FBcl0000003&#39; AND fls_type.name IN (&#39;cDNA&#39;,&#39;BAC_cloned_genomic_insert&#39;) AND
-    cl.feature_id=fr.object_id AND fr.subject_id=fls.feature_id AND
-    fls.type_id=fls_type.cvterm_id;</code></pre>
+ FROM feature cl, feature fls, feature_relationship fr, cvterm fls_type
+ WHERE cl.uniquename=&#39;FBcl0000003&#39; AND fls_type.name IN (&#39;cDNA&#39;,&#39;BAC_cloned_genomic_insert&#39;) AND
+ cl.feature_id=fr.object_id AND fr.subject_id=fls.feature_id AND
+ fls.type_id=fls_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6055,13 +6055,13 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT dbx.accession
-  FROM feature cl, feature fls, feature_relationship fr, cvterm fls_type, feature_dbxref fdbx,
-     dbxref dbx, db
-  WHERE cl.uniquename=&#39;FBcl0000003&#39; AND fls_type.name IN (&#39;cDNA&#39;,&#39;BAC_cloned_genomic_insert&#39;) AND
-    db.name=&#39;GB&#39; AND fdbx.is_current=TRUE AND
-    cl.feature_id=fr.object_id AND fr.subject_id=fls.feature_id AND
-    fls.type_id=fls_type.cvterm_id AND fls.feature_id=fdbx.feature_id AND
-    fdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM feature cl, feature fls, feature_relationship fr, cvterm fls_type, feature_dbxref fdbx,
+ dbxref dbx, db
+ WHERE cl.uniquename=&#39;FBcl0000003&#39; AND fls_type.name IN (&#39;cDNA&#39;,&#39;BAC_cloned_genomic_insert&#39;) AND
+ db.name=&#39;GB&#39; AND fdbx.is_current=TRUE AND
+ cl.feature_id=fr.object_id AND fr.subject_id=fls.feature_id AND
+ fls.type_id=fls_type.cvterm_id AND fls.feature_id=fdbx.feature_id AND
+ fdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -6070,10 +6070,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fls.residues
-  FROM feature cl, feature fls, feature_relationship fr, cvterm fls_type
-  WHERE cl.uniquename=&#39;FBcl0000003&#39; AND fls_type.name IN (&#39;cDNA&#39;,&#39;BAC_cloned_genomic_insert&#39;) AND
-    cl.feature_id=fr.object_id AND fr.subject_id=fls.feature_id AND
-    fls.type_id=fls_type.cvterm_id;</code></pre>
+ FROM feature cl, feature fls, feature_relationship fr, cvterm fls_type
+ WHERE cl.uniquename=&#39;FBcl0000003&#39; AND fls_type.name IN (&#39;cDNA&#39;,&#39;BAC_cloned_genomic_insert&#39;) AND
+ cl.feature_id=fr.object_id AND fr.subject_id=fls.feature_id AND
+ fls.type_id=fls_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6085,11 +6085,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fiveps.seqlen
-  FROM feature cl, feature fiveps, feature_relationship fr, cvterm fiveps_type
-  WHERE cl.uniquename=&#39;FBcl0000001&#39; AND fiveps_type.name=&#39;EST&#39; AND
-    fiveps.is_obsolete=FALSE AND (fiveps.name LIKE &#39;%5prime&#39; OR
-    fiveps.name LIKE &#39;%contig1&#39;) AND cl.feature_id=fr.object_id AND
-    fr.subject_id=fiveps.feature_id AND fiveps.type_id=fiveps_type.cvterm_id;</code></pre>
+ FROM feature cl, feature fiveps, feature_relationship fr, cvterm fiveps_type
+ WHERE cl.uniquename=&#39;FBcl0000001&#39; AND fiveps_type.name=&#39;EST&#39; AND
+ fiveps.is_obsolete=FALSE AND (fiveps.name LIKE &#39;%5prime&#39; OR
+ fiveps.name LIKE &#39;%contig1&#39;) AND cl.feature_id=fr.object_id AND
+ fr.subject_id=fiveps.feature_id AND fiveps.type_id=fiveps_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6110,15 +6110,15 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT dbx.accession
-  FROM feature cl, feature fiveps, feature_relationship fr, cvterm fiveps_type, feature_dbxref fdbx,
-     dbxref dbx, db
-  WHERE cl.uniquename=&#39;FBcl0000001&#39; AND fiveps_type.name=&#39;EST&#39; AND
-    db.name=&#39;GB&#39; AND fdbx.is_current=TRUE AND
-    fiveps.is_obsolete=FALSE AND (fiveps.name LIKE &#39;%5prime&#39; OR
-    fiveps.name LIKE &#39;%contig1&#39;) AND cl.feature_id=fr.object_id AND
-    fr.subject_id=fiveps.feature_id AND fiveps.type_id=fiveps_type.cvterm_id AND
-    fiveps.feature_id=fdbx.feature_id AND fdbx.dbxref_id=dbx.dbxref_id AND
-    dbx.db_id=db.db_id;</code></pre>
+ FROM feature cl, feature fiveps, feature_relationship fr, cvterm fiveps_type, feature_dbxref fdbx,
+ dbxref dbx, db
+ WHERE cl.uniquename=&#39;FBcl0000001&#39; AND fiveps_type.name=&#39;EST&#39; AND
+ db.name=&#39;GB&#39; AND fdbx.is_current=TRUE AND
+ fiveps.is_obsolete=FALSE AND (fiveps.name LIKE &#39;%5prime&#39; OR
+ fiveps.name LIKE &#39;%contig1&#39;) AND cl.feature_id=fr.object_id AND
+ fr.subject_id=fiveps.feature_id AND fiveps.type_id=fiveps_type.cvterm_id AND
+ fiveps.feature_id=fdbx.feature_id AND fdbx.dbxref_id=dbx.dbxref_id AND
+ dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -6128,11 +6128,11 @@ sequence data</td>
 <td>
 
 <pre class="de1"><code>SELECT fiveps.residues
-  FROM feature cl, feature fiveps, feature_relationship fr, cvterm fiveps_type
-  WHERE cl.uniquename=&#39;FBcl0000001&#39; AND fiveps_type.name=&#39;EST&#39; AND
-    fiveps.is_obsolete=FALSE AND (fiveps.name LIKE &#39;%5prime&#39; OR
-    fiveps.name LIKE &#39;%contig1&#39;) AND cl.feature_id=fr.object_id AND
-    fr.subject_id=fiveps.feature_id AND fiveps.type_id=fiveps_type.cvterm_id;</code></pre>
+ FROM feature cl, feature fiveps, feature_relationship fr, cvterm fiveps_type
+ WHERE cl.uniquename=&#39;FBcl0000001&#39; AND fiveps_type.name=&#39;EST&#39; AND
+ fiveps.is_obsolete=FALSE AND (fiveps.name LIKE &#39;%5prime&#39; OR
+ fiveps.name LIKE &#39;%contig1&#39;) AND cl.feature_id=fr.object_id AND
+ fr.subject_id=fiveps.feature_id AND fiveps.type_id=fiveps_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6144,11 +6144,11 @@ sequence data</td>
 <td>
 
 <pre class="de1"><code>SELECT threeps.seqlen
-  FROM feature cl, feature threeps, feature_relationship fr, cvterm threeps_type
-  WHERE cl.uniquename=&#39;FBcl0000002&#39; AND threeps_type.name=&#39;EST&#39; AND
-    threeps.is_obsolete=FALSE AND (threeps.name LIKE &#39;%3prime&#39; OR
-    threeps.name LIKE &#39;%contig2&#39;) AND cl.feature_id=fr.object_id AND
-    fr.subject_id=threeps.feature_id AND threeps.type_id=threeps_type.cvterm_id;</code></pre>
+ FROM feature cl, feature threeps, feature_relationship fr, cvterm threeps_type
+ WHERE cl.uniquename=&#39;FBcl0000002&#39; AND threeps_type.name=&#39;EST&#39; AND
+ threeps.is_obsolete=FALSE AND (threeps.name LIKE &#39;%3prime&#39; OR
+ threeps.name LIKE &#39;%contig2&#39;) AND cl.feature_id=fr.object_id AND
+ fr.subject_id=threeps.feature_id AND threeps.type_id=threeps_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6169,15 +6169,15 @@ sequence data</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT dbx.accession
-  FROM feature cl, feature threeps, feature_relationship fr, cvterm threeps_type, feature_dbxref fdbx,
-     dbxref dbx, db
-  WHERE cl.uniquename=&#39;FBcl0000002&#39; AND threeps_type.name=&#39;EST&#39; AND
-    db.name=&#39;GB&#39; AND fdbx.is_current=TRUE AND
-    threeps.is_obsolete=FALSE AND (threeps.name LIKE &#39;%3prime&#39; OR
-    threeps.name LIKE &#39;%contig2&#39;) AND cl.feature_id=fr.object_id AND
-    fr.subject_id=threeps.feature_id AND threeps.type_id=threeps_type.cvterm_id AND
-    threeps.feature_id=fdbx.feature_id AND fdbx.dbxref_id=dbx.dbxref_id AND
-    dbx.db_id=db.db_id;</code></pre>
+ FROM feature cl, feature threeps, feature_relationship fr, cvterm threeps_type, feature_dbxref fdbx,
+ dbxref dbx, db
+ WHERE cl.uniquename=&#39;FBcl0000002&#39; AND threeps_type.name=&#39;EST&#39; AND
+ db.name=&#39;GB&#39; AND fdbx.is_current=TRUE AND
+ threeps.is_obsolete=FALSE AND (threeps.name LIKE &#39;%3prime&#39; OR
+ threeps.name LIKE &#39;%contig2&#39;) AND cl.feature_id=fr.object_id AND
+ fr.subject_id=threeps.feature_id AND threeps.type_id=threeps_type.cvterm_id AND
+ threeps.feature_id=fdbx.feature_id AND fdbx.dbxref_id=dbx.dbxref_id AND
+ dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -6187,11 +6187,11 @@ sequence data</td>
 <td>
 
 <pre class="de1"><code>SELECT threeps.residues
-  FROM feature cl, feature threeps, feature_relationship fr, cvterm threeps_type
-  WHERE cl.uniquename=&#39;FBcl0000002&#39; AND threeps_type.name=&#39;EST&#39; AND
-    threeps.is_obsolete=FALSE AND (threeps.name LIKE &#39;%3prime&#39; OR
-    threeps.name LIKE &#39;%contig2&#39;) AND cl.feature_id=fr.object_id AND
-    fr.subject_id=threeps.feature_id AND threeps.type_id=threeps_type.cvterm_id;</code></pre>
+ FROM feature cl, feature threeps, feature_relationship fr, cvterm threeps_type
+ WHERE cl.uniquename=&#39;FBcl0000002&#39; AND threeps_type.name=&#39;EST&#39; AND
+ threeps.is_obsolete=FALSE AND (threeps.name LIKE &#39;%3prime&#39; OR
+ threeps.name LIKE &#39;%contig2&#39;) AND cl.feature_id=fr.object_id AND
+ fr.subject_id=threeps.feature_id AND threeps.type_id=threeps_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6203,11 +6203,11 @@ sequence data</td>
 <td>
 
 <pre class="de1"><code>SELECT partial.seqlen
-  FROM feature cl, feature partial, feature_relationship fr, cvterm partial_type
-  WHERE cl.uniquename=&#39;FBcl0000111&#39; AND partial_type.name=&#39;EST&#39; AND
-    partial.is_obsolete=FALSE AND partial.name !~ &#39;(5prime|contig1|3prime|contig2)$&#39; AND
-    cl.feature_id=fr.object_id AND fr.subject_id=partial.feature_id AND
-    partial.type_id=partial_type.cvterm_id;</code></pre>
+ FROM feature cl, feature partial, feature_relationship fr, cvterm partial_type
+ WHERE cl.uniquename=&#39;FBcl0000111&#39; AND partial_type.name=&#39;EST&#39; AND
+ partial.is_obsolete=FALSE AND partial.name !~ &#39;(5prime|contig1|3prime|contig2)$&#39; AND
+ cl.feature_id=fr.object_id AND fr.subject_id=partial.feature_id AND
+ partial.type_id=partial_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6228,14 +6228,14 @@ sequence data</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT dbx.accession
-  FROM feature cl, feature partial, feature_relationship fr, cvterm partial_type, feature_dbxref fdbx,
-     dbxref dbx, db
-  WHERE cl.uniquename=&#39;FBcl0000111&#39; AND partial_type.name=&#39;EST&#39; AND
-    db.name=&#39;GB&#39; AND fdbx.is_current=TRUE AND
-    partial.is_obsolete=FALSE AND partial.name !~ &#39;(5prime|contig1|3prime|contig2)$&#39; AND
-    cl.feature_id=fr.object_id AND fr.subject_id=partial.feature_id AND
-    partial.type_id=partial_type.cvterm_id AND partial.feature_id=fdbx.feature_id AND
-    fdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM feature cl, feature partial, feature_relationship fr, cvterm partial_type, feature_dbxref fdbx,
+ dbxref dbx, db
+ WHERE cl.uniquename=&#39;FBcl0000111&#39; AND partial_type.name=&#39;EST&#39; AND
+ db.name=&#39;GB&#39; AND fdbx.is_current=TRUE AND
+ partial.is_obsolete=FALSE AND partial.name !~ &#39;(5prime|contig1|3prime|contig2)$&#39; AND
+ cl.feature_id=fr.object_id AND fr.subject_id=partial.feature_id AND
+ partial.type_id=partial_type.cvterm_id AND partial.feature_id=fdbx.feature_id AND
+ fdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -6245,11 +6245,11 @@ sequence data</td>
 <td>
 
 <pre class="de1"><code>SELECT partial.residues
-  FROM feature cl, feature partial, feature_relationship fr, cvterm partial_type
-  WHERE cl.uniquename=&#39;FBcl0000111&#39; AND partial_type.name=&#39;EST&#39; AND
-    partial.is_obsolete=FALSE AND partial.name !~ &#39;(5prime|contig1|3prime|contig2)$&#39; AND
-    cl.feature_id=fr.object_id AND fr.subject_id=partial.feature_id AND
-    partial.type_id=partial_type.cvterm_id;</code></pre>
+ FROM feature cl, feature partial, feature_relationship fr, cvterm partial_type
+ WHERE cl.uniquename=&#39;FBcl0000111&#39; AND partial_type.name=&#39;EST&#39; AND
+ partial.is_obsolete=FALSE AND partial.name !~ &#39;(5prime|contig1|3prime|contig2)$&#39; AND
+ cl.feature_id=fr.object_id AND fr.subject_id=partial.feature_id AND
+ partial.type_id=partial_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6335,10 +6335,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT lp.VALUE
-  FROM feature f, library_feature lf, library l, libraryprop lp, cvterm lp_type
-  WHERE f.uniquename=&#39;FBcl0000111&#39; AND lp_type.name=&#39;comment&#39; AND
-    f.feature_id=lf.feature_id AND lf.library_id=l.library_id AND
-    l.library_id=lp.library_id AND lp.type_id=lp_type.cvterm_id;</code></pre>
+ FROM feature f, library_feature lf, library l, libraryprop lp, cvterm lp_type
+ WHERE f.uniquename=&#39;FBcl0000111&#39; AND lp_type.name=&#39;comment&#39; AND
+ f.feature_id=lf.feature_id AND lf.library_id=l.library_id AND
+ l.library_id=lp.library_id AND lp.type_id=lp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6353,10 +6353,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature f, library_feature lf, library l, library_synonym ls, synonym s
-  WHERE f.uniquename=&#39;FBcl0000111&#39; AND f.feature_id=lf.feature_id AND
-    lf.library_id=l.library_id AND l.library_id=ls.library_id AND
-    ls.synonym_id=s.synonym_id;</code></pre>
+ FROM feature f, library_feature lf, library l, library_synonym ls, synonym s
+ WHERE f.uniquename=&#39;FBcl0000111&#39; AND f.feature_id=lf.feature_id AND
+ lf.library_id=l.library_id AND l.library_id=ls.library_id AND
+ ls.synonym_id=s.synonym_id;</code></pre>
 
 </td>
 </tr>
@@ -6375,10 +6375,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename
-  FROM feature f, library_feature lf, library l, library_pub lp, pub p
-  WHERE f.uniquename=&#39;FBcl0000111&#39; AND f.feature_id=lf.feature_id AND
-    lf.library_id=l.library_id AND l.library_id=lp.library_id AND
-    lp.pub_id=p.pub_id;</code></pre>
+ FROM feature f, library_feature lf, library l, library_pub lp, pub p
+ WHERE f.uniquename=&#39;FBcl0000111&#39; AND f.feature_id=lf.feature_id AND
+ lf.library_id=l.library_id AND l.library_id=lp.library_id AND
+ lp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -6407,9 +6407,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;comment&#39; AND f.uniquename = &#39;FBcl0000001&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;comment&#39; AND f.uniquename = &#39;FBcl0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6424,11 +6424,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, s.name AS synonym, synonym_sgml, cvt.name, p.uniquename
-  FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
-    fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBcl0000001&#39; AND
-    cvt.name=&#39;symbol&#39;;</code></pre>
+ FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
+ fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBcl0000001&#39; AND
+ cvt.name=&#39;symbol&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6437,11 +6437,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, s.name AS synonym, synonym_sgml, cvt.name, p.uniquename
-  FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
-    fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBcl0000001&#39; AND
-    cvt.name=&#39;fullname&#39;;</code></pre>
+ FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
+ fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBcl0000001&#39; AND
+ cvt.name=&#39;fullname&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6453,11 +6453,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT dbxref.accession
-  FROM dbxref, feature_dbxref fd, feature f, db
-  WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
-    fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
-    db.name=&#39;FlyBase&#39; AND f.uniquename=&#39;FBcl0006217&#39; AND
-    f.is_obsolete=&#39;f&#39;;</code></pre>
+ FROM dbxref, feature_dbxref fd, feature f, db
+ WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
+ fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
+ db.name=&#39;FlyBase&#39; AND f.uniquename=&#39;FBcl0006217&#39; AND
+ f.is_obsolete=&#39;f&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6469,9 +6469,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.miniref, p.title
-  FROM feature f, pub p, feature_pub fp
-  WHERE f.uniquename = &#39;FBcl0006217&#39; AND f.feature_id=fp.feature_id AND
-    fp.pub_id=p.pub_id;</code></pre>
+ FROM feature f, pub p, feature_pub fp
+ WHERE f.uniquename = &#39;FBcl0006217&#39; AND f.feature_id=fp.feature_id AND
+ fp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -6516,9 +6516,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT sc.uniquename
-  FROM stock s, stockcollection_stock scs, stockcollection sc
-  WHERE s.uniquename=&#39;FBst0000001&#39; AND s.stock_id=scs.stock_id AND
-    scs.stockcollection_id=sc.stockcollection_id;</code></pre>
+ FROM stock s, stockcollection_stock scs, stockcollection sc
+ WHERE s.uniquename=&#39;FBst0000001&#39; AND s.stock_id=scs.stock_id AND
+ scs.stockcollection_id=sc.stockcollection_id;</code></pre>
 
 </td>
 </tr>
@@ -6527,9 +6527,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT sc_type.name
-  FROM stock s, stockcollection_stock scs, stockcollection sc, cvterm sc_type
-  WHERE s.uniquename=&#39;FBst0000001&#39; AND s.stock_id=scs.stock_id AND
-    scs.stockcollection_id=sc.stockcollection_id AND sc.type_id=sc_type.cvterm_id;</code></pre>
+ FROM stock s, stockcollection_stock scs, stockcollection sc, cvterm sc_type
+ WHERE s.uniquename=&#39;FBst0000001&#39; AND s.stock_id=scs.stock_id AND
+ scs.stockcollection_id=sc.stockcollection_id AND sc.type_id=sc_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6538,8 +6538,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT name
-  FROM stock s
-  WHERE s.uniquename=&#39;FBst0000001&#39;;</code></pre>
+ FROM stock s
+ WHERE s.uniquename=&#39;FBst0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6548,8 +6548,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT genus,species
-  FROM stock s, organism o
-  WHERE s.uniquename=&#39;FBst0000001&#39; AND s.organism_id=o.organism_id;</code></pre>
+ FROM stock s, organism o
+ WHERE s.uniquename=&#39;FBst0000001&#39; AND s.organism_id=o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -6558,8 +6558,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT uniquename
-  FROM stock s
-  WHERE s.uniquename=&#39;FBst0000001&#39;;</code></pre>
+ FROM stock s
+ WHERE s.uniquename=&#39;FBst0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6572,8 +6572,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT description
-  FROM stock s
-  WHERE s.uniquename=&#39;FBst0000001&#39;;</code></pre>
+ FROM stock s
+ WHERE s.uniquename=&#39;FBst0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6582,9 +6582,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT genotype.name
-  FROM stock s, stock_genotype sg, genotype
-  WHERE s.uniquename=&#39;FBst0000001&#39; AND s.stock_id=sg.stock_id AND
-    sg.genotype_id=genotype.genotype_id;</code></pre>
+ FROM stock s, stock_genotype sg, genotype
+ WHERE s.uniquename=&#39;FBst0000001&#39; AND s.stock_id=sg.stock_id AND
+ sg.genotype_id=genotype.genotype_id;</code></pre>
 
 </td>
 </tr>
@@ -6593,8 +6593,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s_type.name
-  FROM stock s, cvterm s_type
-  WHERE s.uniquename=&#39;FBst0000001&#39; AND s.type_id=s_type.cvterm_id;</code></pre>
+ FROM stock s, cvterm s_type
+ WHERE s.uniquename=&#39;FBst0000001&#39; AND s.type_id=s_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6603,9 +6603,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT cvt.name
-  FROM stock s, stock_cvterm scvt, cvterm cvt
-  WHERE s.uniquename=&#39;FBst0000001&#39; AND s.stock_id=scvt.stock_id AND
-    scvt.cvterm_id=cvt.cvterm_id;</code></pre>
+ FROM stock s, stock_cvterm scvt, cvterm cvt
+ WHERE s.uniquename=&#39;FBst0000001&#39; AND s.stock_id=scvt.stock_id AND
+ scvt.cvterm_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6622,12 +6622,12 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT scp.VALUE
-  FROM stock s, stockcollection_stock scs, stockcollection sc, stockcollectionprop scp, cvterm scp_type
-  WHERE s.uniquename=&#39;FBst0000001&#39; AND scp_type.name IN (&#39;request_text&#39;, &#39;homepage_url&#39;,
-       &#39;order_url&#39;, &#39;request_text&#39;,
-       &#39;email_order_contact_name&#39;) AND
-    s.stock_id=scs.stock_id AND scs.stockcollection_id=sc.stockcollection_id AND
-    sc.stockcollection_id=scp.stockcollection_id AND scp.type_id=scp_type.cvterm_id;</code></pre>
+ FROM stock s, stockcollection_stock scs, stockcollection sc, stockcollectionprop scp, cvterm scp_type
+ WHERE s.uniquename=&#39;FBst0000001&#39; AND scp_type.name IN (&#39;request_text&#39;, &#39;homepage_url&#39;,
+ &#39;order_url&#39;, &#39;request_text&#39;,
+ &#39;email_order_contact_name&#39;) AND
+ s.stock_id=scs.stock_id AND scs.stockcollection_id=sc.stockcollection_id AND
+ sc.stockcollection_id=scp.stockcollection_id AND scp.type_id=scp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6655,12 +6655,12 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND cvt.NAME = &#39;chromosome_structure_variation&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.NAME = &#39;symbol&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBab0000001&#39; GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND cvt.NAME = &#39;chromosome_structure_variation&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.NAME = &#39;symbol&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBab0000001&#39; GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -6669,8 +6669,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT o.genus, o.species
-  FROM feature f, organism o
-  WHERE f.uniquename=&#39;FBab0000001&#39; AND f.organism_id=o.organism_id;</code></pre>
+ FROM feature f, organism o
+ WHERE f.uniquename=&#39;FBab0000001&#39; AND f.organism_id=o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -6683,8 +6683,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT uniquename
-  FROM feature f
-  WHERE f.uniquename=&#39;FBab0000001&#39;;</code></pre>
+ FROM feature f
+ WHERE f.uniquename=&#39;FBab0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6693,13 +6693,13 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT c.name
-  FROM feature f, cvterm c, feature_cvterm fc, feature_cvtermprop cp, cvterm c1,
-     cvterm c2, pub p
-  WHERE f.type_id = c1.cvterm_id AND c1.name = &#39;chromosome_structure_variation&#39; AND
-    f.feature_id = fc.feature_id AND fc.cvterm_id = c.cvterm_id AND
-    cp.feature_cvterm_id = fc.feature_cvterm_id AND cp.type_id = c2.cvterm_id AND
-    c2.name = &#39;wt_class&#39; AND fc.pub_id = p.pub_id AND
-    p.uniquename LIKE &#39;FBrf%&#39; AND f.uniquename=&#39;FBab0000001&#39;;</code></pre>
+ FROM feature f, cvterm c, feature_cvterm fc, feature_cvtermprop cp, cvterm c1,
+ cvterm c2, pub p
+ WHERE f.type_id = c1.cvterm_id AND c1.name = &#39;chromosome_structure_variation&#39; AND
+ f.feature_id = fc.feature_id AND fc.cvterm_id = c.cvterm_id AND
+ cp.feature_cvterm_id = fc.feature_cvterm_id AND cp.type_id = c2.cvterm_id AND
+ c2.name = &#39;wt_class&#39; AND fc.pub_id = p.pub_id AND
+ p.uniquename LIKE &#39;FBrf%&#39; AND f.uniquename=&#39;FBab0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6708,8 +6708,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned,timelastmodified
-  FROM feature f
-  WHERE f.uniquename=&#39;FBab0000001&#39;;</code></pre>
+ FROM feature f
+ WHERE f.uniquename=&#39;FBab0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6722,9 +6722,9 @@ genetic data</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBab0000001&#39; AND fp_type.name = &#39;computed_map&#39; AND
-    f.feature_id = fp.feature_id AND fp.type_id = fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBab0000001&#39; AND fp_type.name = &#39;computed_map&#39; AND
+ f.feature_id = fp.feature_id AND fp.type_id = fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6733,14 +6733,14 @@ genetic data</td>
 <td>
 
 <pre class="de1"><code>SELECT s.uniquename, fmin, fmax, miniref AS citation
-  FROM feature f, feature b, feature_relationship fr, cvterm cvt1, cvterm cvt2,
-     featureloc fl, feature s, featureloc_pub flp, pub p
-  WHERE f.uniquename = &#39;FBab0030010&#39; AND f.feature_id = fr.object_id AND
-    fr.type_id = cvt1.cvterm_id AND cvt1.name = &#39;break_of&#39; AND
-    fr.subject_id = b.feature_id AND b.type_id = cvt2.cvterm_id AND
-    cvt2.name = &#39;breakpoint&#39; AND b.feature_id = fl.feature_id AND
-    fl.srcfeature_id = s.feature_id AND fl.featureloc_id = flp.featureloc_id AND
-    flp.pub_id = p.pub_id;</code></pre>
+ FROM feature f, feature b, feature_relationship fr, cvterm cvt1, cvterm cvt2,
+ featureloc fl, feature s, featureloc_pub flp, pub p
+ WHERE f.uniquename = &#39;FBab0030010&#39; AND f.feature_id = fr.object_id AND
+ fr.type_id = cvt1.cvterm_id AND cvt1.name = &#39;break_of&#39; AND
+ fr.subject_id = b.feature_id AND b.type_id = cvt2.cvterm_id AND
+ cvt2.name = &#39;breakpoint&#39; AND b.feature_id = fl.feature_id AND
+ fl.srcfeature_id = s.feature_id AND fl.featureloc_id = flp.featureloc_id AND
+ flp.pub_id = p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -6749,9 +6749,9 @@ genetic data</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBab0000001&#39; AND fp_type.name = &#39;deleted_segment&#39; AND
-    f.feature_id = fp.feature_id AND fp.type_id = fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBab0000001&#39; AND fp_type.name = &#39;deleted_segment&#39; AND
+ f.feature_id = fp.feature_id AND fp.type_id = fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6765,15 +6765,15 @@ Breakpoints include</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id = 1 AND
-    fp_type.name = &#39;derived_computed_breakpoint&#39; AND f.feature_id = fp.feature_id AND
-    fp.type_id = fp_type.cvterm_id UNION
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id = 1 AND
+ fp_type.name = &#39;derived_computed_breakpoint&#39; AND f.feature_id = fp.feature_id AND
+ fp.type_id = fp_type.cvterm_id UNION
 SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id != 1 AND
-    fp_type.name = &#39;non_Dmel_location&#39; AND f.feature_id = fp.feature_id AND
-    fp.type_id = fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id != 1 AND
+ fp_type.name = &#39;non_Dmel_location&#39; AND f.feature_id = fp.feature_id AND
+ fp.type_id = fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -6789,10 +6789,10 @@ SELECT fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE , miniref AS citation
-  FROM feature f, featureprop fp, cvterm fp_type, featureprop_pub fpp, pub p
-  WHERE f.uniquename=&#39;FBab0044894&#39; AND fp_type.name = &#39;new_order&#39; AND
-    f.feature_id = fp.feature_id AND fp.type_id = fp_type.cvterm_id AND
-    fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = p.pub_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type, featureprop_pub fpp, pub p
+ WHERE f.uniquename=&#39;FBab0044894&#39; AND fp_type.name = &#39;new_order&#39; AND
+ f.feature_id = fp.feature_id AND fp.type_id = fp_type.cvterm_id AND
+ fp.featureprop_id = fpp.featureprop_id AND fpp.pub_id = p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -6801,14 +6801,14 @@ SELECT fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature ab, feature prog, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE ab.uniquename = &#39;FBab0030010&#39; AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
-    fr_type.NAME=&#39;progenitor&#39; AND ab.feature_id=fr.subject_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.object_id=prog.feature_id AND
-    prog.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature ab, feature prog, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE ab.uniquename = &#39;FBab0030010&#39; AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
+ fr_type.NAME=&#39;progenitor&#39; AND ab.feature_id=fr.subject_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.object_id=prog.feature_id AND
+ prog.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -6817,13 +6817,13 @@ SELECT fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT c.name
-  FROM feature f, cvterm c, feature_cvterm fc, cvtermprop cp, cvterm c1,
-     pub p
-  WHERE f.type_id = c1.cvterm_id AND c1.name = &#39;chromosome_structure_variation&#39; AND
-    f.feature_id = fc.feature_id AND fc.cvterm_id = c.cvterm_id AND
-    c.cvterm_id = cp.cvterm_id AND cp.VALUE = &#39;origin_of_mutation&#39; AND
-    fc.pub_id = p.pub_id AND p.uniquename LIKE &#39;FBrf%&#39; AND
-    f.uniquename=&#39;FBab0030010&#39;;</code></pre>
+ FROM feature f, cvterm c, feature_cvterm fc, cvtermprop cp, cvterm c1,
+ pub p
+ WHERE f.type_id = c1.cvterm_id AND c1.name = &#39;chromosome_structure_variation&#39; AND
+ f.feature_id = fc.feature_id AND fc.cvterm_id = c.cvterm_id AND
+ c.cvterm_id = cp.cvterm_id AND cp.VALUE = &#39;origin_of_mutation&#39; AND
+ fc.pub_id = p.pub_id AND p.uniquename LIKE &#39;FBrf%&#39; AND
+ f.uniquename=&#39;FBab0030010&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6833,13 +6833,13 @@ SELECT fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT c.name
-  FROM feature f, cvterm c, feature_cvterm fc, feature_cvtermprop cp, cvterm c1,
-     cvterm c2, pub p
-  WHERE f.type_id = c1.cvterm_id AND c1.name = &#39;chromosome_structure_variation&#39; AND
-    f.feature_id = fc.feature_id AND fc.cvterm_id = c.cvterm_id AND
-    cp.feature_cvterm_id = fc.feature_cvterm_id AND cp.type_id = c2.cvterm_id AND
-    c2.name = &#39;aberr_class&#39; AND fc.pub_id = p.pub_id AND
-    p.uniquename LIKE &#39;FBrf%&#39; AND f.uniquename=&#39;FBab0030010&#39;;</code></pre>
+ FROM feature f, cvterm c, feature_cvterm fc, feature_cvtermprop cp, cvterm c1,
+ cvterm c2, pub p
+ WHERE f.type_id = c1.cvterm_id AND c1.name = &#39;chromosome_structure_variation&#39; AND
+ f.feature_id = fc.feature_id AND fc.cvterm_id = c.cvterm_id AND
+ cp.feature_cvterm_id = fc.feature_cvterm_id AND cp.type_id = c2.cvterm_id AND
+ c2.name = &#39;aberr_class&#39; AND fc.pub_id = p.pub_id AND
+ p.uniquename LIKE &#39;FBrf%&#39; AND f.uniquename=&#39;FBab0030010&#39;;</code></pre>
 
 </td>
 </tr>
@@ -6848,17 +6848,17 @@ SELECT fp.VALUE
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, miniref AS citation
-  FROM feature f, featureprop fp, cvterm fp_type , featureprop_pun fpp, pub p
-  WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id = 1 AND
-    fp_type.name = &#39;derived_attributed_breakpoint&#39; AND f.feature_id = fp.feature_id AND
-    fp.type_id = fp_type.cvterm_id AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND p.uniquename like &#39;FBrf%&#39; UNION
+ FROM feature f, featureprop fp, cvterm fp_type , featureprop_pun fpp, pub p
+ WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id = 1 AND
+ fp_type.name = &#39;derived_attributed_breakpoint&#39; AND f.feature_id = fp.feature_id AND
+ fp.type_id = fp_type.cvterm_id AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND p.uniquename like &#39;FBrf%&#39; UNION
 SELECT fp.VALUE, miniref AS citation
-  FROM feature f, featureprop fp, cvterm fp_type , featureprop_pun fpp, pub p
-  WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id != 1 AND
-    fp_type.name = &#39;non_Dmel_location&#39; AND f.feature_id = fp.feature_id AND
-    fp.type_id = fp_type.cvterm_id AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND p.uniquename like &#39;FBrf%&#39;;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type , featureprop_pun fpp, pub p
+ WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id != 1 AND
+ fp_type.name = &#39;non_Dmel_location&#39; AND f.feature_id = fp.feature_id AND
+ fp.type_id = fp_type.cvterm_id AND fp.featureprop_id = fpp.featureprop_id AND
+ fpp.pub_id = p.pub_id AND p.uniquename like &#39;FBrf%&#39;;</code></pre>
 
 </td>
 </tr>
@@ -7192,12 +7192,12 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND cvt.NAME = &#39;single balancer&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.NAME = &#39;symbol&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBba0000005&#39; GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND cvt.NAME = &#39;single balancer&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.NAME = &#39;symbol&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBba0000005&#39; GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -7206,8 +7206,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT o.genus, o.species
-  FROM feature f, organism o
-  WHERE f.uniquename=&#39;FBba0000005&#39; AND f.organism_id=o.organism_id;</code></pre>
+ FROM feature f, organism o
+ WHERE f.uniquename=&#39;FBba0000005&#39; AND f.organism_id=o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -7216,8 +7216,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT uniquename
-  FROM feature f
-  WHERE f.uniquename=&#39;FBba0000005&#39;;</code></pre>
+ FROM feature f
+ WHERE f.uniquename=&#39;FBba0000005&#39;;</code></pre>
 
 </td>
 </tr>
@@ -7226,8 +7226,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned,timelastmodified
-  FROM feature f
-  WHERE f.uniquename=&#39;FBba0000005&#39;;</code></pre>
+ FROM feature f
+ WHERE f.uniquename=&#39;FBba0000005&#39;;</code></pre>
 
 </td>
 </tr>
@@ -7236,12 +7236,12 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
-  WHERE f.type_id = cvt.cvterm_id AND cvt.NAME = &#39;single balancer&#39; AND
-    f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.NAME = &#39;nickname&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBba0000005&#39; GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt, cvterm cvt2
+ WHERE f.type_id = cvt.cvterm_id AND cvt.NAME = &#39;single balancer&#39; AND
+ f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.NAME = &#39;nickname&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBba0000005&#39; GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -7250,14 +7250,14 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature ba, feature pab, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE ba.uniquename = &#39;FBba0000005&#39; AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
-    fr_type.NAME=&#39;variant_of&#39; AND ba.feature_id=fr.subject_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.object_id=pab.feature_id AND
-    pab.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature ba, feature pab, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE ba.uniquename = &#39;FBba0000005&#39; AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
+ fr_type.NAME=&#39;variant_of&#39; AND ba.feature_id=fr.subject_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.object_id=pab.feature_id AND
+ pab.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -7266,12 +7266,12 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, feature pab, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE ba.uniquename = &#39;FBba0000005&#39; AND fp_type.NAME=&#39;new_order&#39; AND
-    fr_type.NAME=&#39;variant_of&#39; AND ba.feature_id=fr.subject_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.object_id=pab.feature_id AND
-    pab.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, feature pab, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE ba.uniquename = &#39;FBba0000005&#39; AND fp_type.NAME=&#39;new_order&#39; AND
+ fr_type.NAME=&#39;variant_of&#39; AND ba.feature_id=fr.subject_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.object_id=pab.feature_id AND
+ pab.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7280,14 +7280,14 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature ba, feature prog, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE ba.uniquename = &#39;FBba0000005&#39; AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
-    fr_type.NAME=&#39;progenitor&#39; AND ba.feature_id=fr.subject_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.object_id=prog.feature_id AND
-    prog.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature ba, feature prog, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE ba.uniquename = &#39;FBba0000005&#39; AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
+ fr_type.NAME=&#39;progenitor&#39; AND ba.feature_id=fr.subject_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.object_id=prog.feature_id AND
+ prog.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -7296,11 +7296,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, p.miniref
-  FROM feature ba, featureprop fp, featureprop_pub fpp, pub p, cvterm fp_type
-  WHERE ba.uniquename=&#39;FBba0000005&#39; AND fp_type.NAME=&#39;balancer_status&#39; AND
-    p.uniquename ~ &#39;^FBrf[0-9]+$&#39; AND ba.feature_id=fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id AND fp.featureprop_id=fpp.featureprop_id AND
-    fpp.pub_id=p.pub_id;</code></pre>
+ FROM feature ba, featureprop fp, featureprop_pub fpp, pub p, cvterm fp_type
+ WHERE ba.uniquename=&#39;FBba0000005&#39; AND fp_type.NAME=&#39;balancer_status&#39; AND
+ p.uniquename ~ &#39;^FBrf[0-9]+$&#39; AND ba.feature_id=fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id AND fp.featureprop_id=fpp.featureprop_id AND
+ fpp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -7309,14 +7309,14 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature ba, feature al, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE ba.uniquename = &#39;FBba0000005&#39; AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
-    fr_type.NAME=&#39;carried_on&#39; AND ba.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
-    al.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature ba, feature al, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE ba.uniquename = &#39;FBba0000005&#39; AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
+ fr_type.NAME=&#39;carried_on&#39; AND ba.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
+ al.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -7325,14 +7325,14 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature ba, feature ti, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE ba.uniquename = &#39;FBba0000473&#39; AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
-    fr_type.NAME=&#39;associated_with&#39; AND ba.feature_id=fr.subject_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.object_id=ti.feature_id AND
-    ti.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature ba, feature ti, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE ba.uniquename = &#39;FBba0000473&#39; AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
+ fr_type.NAME=&#39;associated_with&#39; AND ba.feature_id=fr.subject_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.object_id=ti.feature_id AND
+ ti.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -7341,9 +7341,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000006&#39; AND fp_type.NAME=&#39;discoverer&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000006&#39; AND fp_type.NAME=&#39;discoverer&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7355,9 +7355,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Bloomington&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Bloomington&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7366,9 +7366,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000002&#39; AND fp_type.NAME=&#39;derived_stock_Bloomington&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000002&#39; AND fp_type.NAME=&#39;derived_stock_Bloomington&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7377,9 +7377,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000003&#39; AND fp_type.NAME=&#39;derived_stock_Szeged&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000003&#39; AND fp_type.NAME=&#39;derived_stock_Szeged&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7388,9 +7388,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Tucson&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Tucson&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7399,9 +7399,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Carpenter&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Carpenter&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7410,9 +7410,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Garcia-Bellido&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Garcia-Bellido&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7421,9 +7421,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Harvard&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Harvard&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7432,9 +7432,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Nusslein-Volhard&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Nusslein-Volhard&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7443,9 +7443,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Saxton&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;derived_stock_Saxton&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7454,9 +7454,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;availability&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000001&#39; AND fp_type.NAME=&#39;availability&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7468,14 +7468,14 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature ba, feature g, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE ba.uniquename = &#39;FBba0000116&#39; AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
-    fr_type.NAME=&#39;rec_position_effect&#39; AND ba.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=g.feature_id AND
-    g.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature ba, feature g, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE ba.uniquename = &#39;FBba0000116&#39; AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
+ fr_type.NAME=&#39;rec_position_effect&#39; AND ba.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=g.feature_id AND
+ g.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -7484,14 +7484,14 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature ba, feature g, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE ba.uniquename = &#39;FBba0000119&#39; AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
-    fr_type.NAME=&#39;dom_position_effect&#39; AND ba.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=g.feature_id AND
-    g.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature ba, feature g, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE ba.uniquename = &#39;FBba0000119&#39; AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
+ fr_type.NAME=&#39;dom_position_effect&#39; AND ba.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=g.feature_id AND
+ g.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -7500,14 +7500,14 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM feature ba, feature g, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE ba.uniquename = &#39;FBba0000119&#39; AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
-    fr_type.NAME=&#39;no_position_effect&#39; AND ba.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=g.feature_id AND
-    g.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM feature ba, feature g, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE ba.uniquename = &#39;FBba0000119&#39; AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
+ fr_type.NAME=&#39;no_position_effect&#39; AND ba.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=g.feature_id AND
+ g.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -7519,9 +7519,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature ba, featureprop fp, cvterm fp_type
-  WHERE ba.uniquename =&#39;FBba0000002&#39; AND fp_type.NAME=&#39;misc&#39; AND
-    ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature ba, featureprop fp, cvterm fp_type
+ WHERE ba.uniquename =&#39;FBba0000002&#39; AND fp_type.NAME=&#39;misc&#39; AND
+ ba.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7536,11 +7536,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.NAME, s.NAME AS synonym, synonym_sgml, cvt.NAME, p.uniquename
-  FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
-    fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBba0000116&#39; AND
-    cvt.name=&#39;symbol&#39;;</code></pre>
+ FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
+ fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBba0000116&#39; AND
+ cvt.name=&#39;symbol&#39;;</code></pre>
 
 </td>
 </tr>
@@ -7549,11 +7549,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.NAME, s.NAME AS synonym, synonym_sgml, cvt.NAME, p.uniquename
-  FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
-    fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBba0000116&#39; AND
-    cvt.name=&#39;fullname&#39;;</code></pre>
+ FROM cvterm cvt, feature f, feature_synonym fs, synonym s, pub p
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.pub_id = p.pub_id AND s.type_id = cvt.cvterm_id AND
+ fs.is_current = &#39;f&#39; AND f.uniquename = &#39;FBba0000116&#39; AND
+ cvt.name=&#39;fullname&#39;;</code></pre>
 
 </td>
 </tr>
@@ -7565,10 +7565,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.NAME, accession, db.NAME
-  FROM feature f, feature_dbxref fd, dbxref d, db
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
-    fd.is_current = &#39;f&#39; AND d.db_id = db.db_id AND
-    db.NAME = &#39;FlyBase&#39; AND f.uniquename = &#39;FBba0000005&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref d, db
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = d.dbxref_id AND
+ fd.is_current = &#39;f&#39; AND d.db_id = db.db_id AND
+ db.NAME = &#39;FlyBase&#39; AND f.uniquename = &#39;FBba0000005&#39;;</code></pre>
 
 </td>
 </tr>
@@ -7580,9 +7580,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.miniref, p.title
-  FROM feature f, pub p, feature_pub fp
-  WHERE f.uniquename = &#39;FBba0000005&#39; AND f.feature_id=fp.feature_id AND
-    fp.pub_id=p.pub_id;</code></pre>
+ FROM feature f, pub p, feature_pub fp
+ WHERE f.uniquename = &#39;FBba0000005&#39; AND f.feature_id=fp.feature_id AND
+ fp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -7628,16 +7628,16 @@ material</td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.pyear, p.title, array_to_string( array(
 SELECT pa.surname | &#39;, &#39; | pa.givennames
-  FROM pubauthor pa
-  WHERE pa.pub_id=p.pub_id), &#39;, &#39; ) AS authors, (SELECT pp.VALUE
-  FROM pubprop pp, cvterm pp_type
-  WHERE pp_type.name=&#39;pubmed_fulltext_url&#39; AND pp.pub_id=p.pub_id AND
-    pp.type_id=pp_type.cvterm_id) AS fulltext_url, (SELECT pub_in.miniref
-  FROM pub pub_in, pub_relationship pr, cvterm pr_type
-  WHERE pr_type.name=&#39;published_in&#39; AND p.pub_id=pr.subject_id AND
-    pr.object_id=pub_in.pub_id AND pr.type_id=pr_type.cvterm_id) AS journal, p.volume, p.issue, p.pages
-  FROM pub p
-  WHERE p.uniquename=&#39;FBrf0126983&#39;;</code></pre>
+ FROM pubauthor pa
+ WHERE pa.pub_id=p.pub_id), &#39;, &#39; ) AS authors, (SELECT pp.VALUE
+ FROM pubprop pp, cvterm pp_type
+ WHERE pp_type.name=&#39;pubmed_fulltext_url&#39; AND pp.pub_id=p.pub_id AND
+ pp.type_id=pp_type.cvterm_id) AS fulltext_url, (SELECT pub_in.miniref
+ FROM pub pub_in, pub_relationship pr, cvterm pr_type
+ WHERE pr_type.name=&#39;published_in&#39; AND p.pub_id=pr.subject_id AND
+ pr.object_id=pub_in.pub_id AND pr.type_id=pr_type.cvterm_id) AS journal, p.volume, p.issue, p.pages
+ FROM pub p
+ WHERE p.uniquename=&#39;FBrf0126983&#39;;</code></pre>
 
 </td>
 </tr>
@@ -7646,8 +7646,8 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT uniquename
-  FROM pub
-  WHERE uniquename=&#39;FBrf0126983&#39;;</code></pre>
+ FROM pub
+ WHERE uniquename=&#39;FBrf0126983&#39;;</code></pre>
 
 </td>
 </tr>
@@ -7660,9 +7660,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pubprop pp, cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND cvt.name=&#39;cam_offprint&#39; AND
-    p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
+ FROM pub p, pubprop pp, cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND cvt.name=&#39;cam_offprint&#39; AND
+ p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7674,10 +7674,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT dbx.accession
-  FROM pub p, pub_dbxref pdbx, dbxref dbx, db
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND db.name=&#39;pubmed&#39; AND
-    pdbx.is_current=TRUE AND p.pub_id=pdbx.pub_id AND
-    pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM pub p, pub_dbxref pdbx, dbxref dbx, db
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND db.name=&#39;pubmed&#39; AND
+ pdbx.is_current=TRUE AND p.pub_id=pdbx.pub_id AND
+ pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -7686,9 +7686,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pubprop pp, cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND cvt.name=&#39;pubmed_abstract&#39; AND
-    p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
+ FROM pub p, pubprop pp, cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND cvt.name=&#39;pubmed_abstract&#39; AND
+ p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7697,9 +7697,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pubprop pp, cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0188865&#39; AND cvt.name=&#39;conf_abs_text&#39; AND
-    p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
+ FROM pub p, pubprop pp, cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0188865&#39; AND cvt.name=&#39;conf_abs_text&#39; AND
+ p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7708,10 +7708,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT dbx.accession
-  FROM pub p, pub_dbxref pdbx, dbxref dbx, db
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND db.name=&#39;biosis&#39; AND
-    pdbx.is_current=TRUE AND p.pub_id=pdbx.pub_id AND
-    pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM pub p, pub_dbxref pdbx, dbxref dbx, db
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND db.name=&#39;biosis&#39; AND
+ pdbx.is_current=TRUE AND p.pub_id=pdbx.pub_id AND
+ pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -7720,10 +7720,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT dbx.accession
-  FROM pub p, pub_dbxref pdbx, dbxref dbx, db
-  WHERE p.uniquename=&#39;FBrf0025508&#39; AND db.name=&#39;zoorec_id&#39; AND
-    pdbx.is_current=TRUE AND p.pub_id=pdbx.pub_id AND
-    pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM pub p, pub_dbxref pdbx, dbxref dbx, db
+ WHERE p.uniquename=&#39;FBrf0025508&#39; AND db.name=&#39;zoorec_id&#39; AND
+ pdbx.is_current=TRUE AND p.pub_id=pdbx.pub_id AND
+ pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -7735,9 +7735,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pubprop pp, cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0148886&#39; AND cvt.name=&#39;associated_text&#39; AND
-    p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
+ FROM pub p, pubprop pp, cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0148886&#39; AND cvt.name=&#39;associated_text&#39; AND
+ p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7747,9 +7747,9 @@ communication</td>
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pubprop pp, cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0188739&#39; AND cvt.name=&#39;perscommtext&#39; AND
-    p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
+ FROM pub p, pubprop pp, cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0188739&#39; AND cvt.name=&#39;perscommtext&#39; AND
+ p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7758,9 +7758,9 @@ communication</td>
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pubprop pp, cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0191798&#39; AND cvt.name=&#39;deposited_files&#39; AND
-    p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
+ FROM pub p, pubprop pp, cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0191798&#39; AND cvt.name=&#39;deposited_files&#39; AND
+ p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7772,15 +7772,15 @@ communication</td>
 <td>
 
 <pre class="de1"><code>SELECT related_pub.uniquename, related_pub.miniref, pub_type.name
-  FROM pub p, pub_relationship pr, pub related_pub, cvterm rel_type, cvterm pub_type
-  WHERE p.uniquename=&#39;FBrf0000634&#39; AND rel_type.name=&#39;related_to&#39; AND
-    p.pub_id=pr.object_id AND pr.subject_id=related_pub.pub_id AND
-    pr.type_id=rel_type.cvterm_id AND related_pub.type_id=pub_type.cvterm_id UNION
+ FROM pub p, pub_relationship pr, pub related_pub, cvterm rel_type, cvterm pub_type
+ WHERE p.uniquename=&#39;FBrf0000634&#39; AND rel_type.name=&#39;related_to&#39; AND
+ p.pub_id=pr.object_id AND pr.subject_id=related_pub.pub_id AND
+ pr.type_id=rel_type.cvterm_id AND related_pub.type_id=pub_type.cvterm_id UNION
 SELECT related_pub.uniquename, related_pub.miniref, pub_type.name
-  FROM pub p, pub_relationship pr, pub related_pub, cvterm rel_type, cvterm pub_type
-  WHERE p.uniquename=&#39;FBrf0000634&#39; AND rel_type.name=&#39;related_to&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=related_pub.pub_id AND
-    pr.type_id=rel_type.cvterm_id AND related_pub.type_id=pub_type.cvterm_id;</code></pre>
+ FROM pub p, pub_relationship pr, pub related_pub, cvterm rel_type, cvterm pub_type
+ WHERE p.uniquename=&#39;FBrf0000634&#39; AND rel_type.name=&#39;related_to&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=related_pub.pub_id AND
+ pr.type_id=rel_type.cvterm_id AND related_pub.type_id=pub_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7826,15 +7826,15 @@ communication</td>
 <td>
 
 <pre class="de1"><code>SELECT related_pub.uniquename, related_pub.miniref, pub_type.name
-  FROM pub p, pub_relationship pr, pub related_pub, cvterm rel_type, cvterm pub_type
-  WHERE p.uniquename=&#39;FBrf0000424&#39; AND rel_type.name=&#39;also_in&#39; AND
-    p.pub_id=pr.object_id AND pr.subject_id=related_pub.pub_id AND
-    pr.type_id=rel_type.cvterm_id AND related_pub.type_id=pub_type.cvterm_id UNION
+ FROM pub p, pub_relationship pr, pub related_pub, cvterm rel_type, cvterm pub_type
+ WHERE p.uniquename=&#39;FBrf0000424&#39; AND rel_type.name=&#39;also_in&#39; AND
+ p.pub_id=pr.object_id AND pr.subject_id=related_pub.pub_id AND
+ pr.type_id=rel_type.cvterm_id AND related_pub.type_id=pub_type.cvterm_id UNION
 SELECT related_pub.uniquename, related_pub.miniref, pub_type.name
-  FROM pub p, pub_relationship pr, pub related_pub, cvterm rel_type, cvterm pub_type
-  WHERE p.uniquename=&#39;FBrf0000424&#39; AND rel_type.name=&#39;also_in&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=related_pub.pub_id AND
-    pr.type_id=rel_type.cvterm_id AND related_pub.type_id=pub_type.cvterm_id;</code></pre>
+ FROM pub p, pub_relationship pr, pub related_pub, cvterm rel_type, cvterm pub_type
+ WHERE p.uniquename=&#39;FBrf0000424&#39; AND rel_type.name=&#39;also_in&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=related_pub.pub_id AND
+ pr.type_id=rel_type.cvterm_id AND related_pub.type_id=pub_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7880,10 +7880,10 @@ communication</td>
 <td>
 
 <pre class="de1"><code>SELECT dbx.accession
-  FROM pub p, pub_dbxref pdbx, dbxref dbx, db
-  WHERE p.uniquename=&#39;FBrf0000810&#39; AND db.name=&#39;FlyBase&#39; AND
-    pdbx.is_current=FALSE AND p.pub_id=pdbx.pub_id AND
-    pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM pub p, pub_dbxref pdbx, dbxref dbx, db
+ WHERE p.uniquename=&#39;FBrf0000810&#39; AND db.name=&#39;FlyBase&#39; AND
+ pdbx.is_current=FALSE AND p.pub_id=pdbx.pub_id AND
+ pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -7892,9 +7892,9 @@ communication</td>
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pubprop pp, cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0000002&#39; AND cvt.name=&#39;languages&#39; AND
-    p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
+ FROM pub p, pubprop pp, cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0000002&#39; AND cvt.name=&#39;languages&#39; AND
+ p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7904,9 +7904,9 @@ of abstract</td>
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pubprop pp, cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0064412&#39; AND cvt.name=&#39;abstract_languages&#39; AND
-    p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
+ FROM pub p, pubprop pp, cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0064412&#39; AND cvt.name=&#39;abstract_languages&#39; AND
+ p.pub_id=pp.pub_id AND pp.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7915,10 +7915,10 @@ of abstract</td>
 <td>
 
 <pre class="de1"><code>SELECT dbx.accession
-  FROM pub p, pub_dbxref pdbx, dbxref dbx, db
-  WHERE p.uniquename=&#39;FBrf0019088&#39; AND db.name=&#39;isbn&#39; AND
-    pdbx.is_current=TRUE AND p.pub_id=pdbx.pub_id AND
-    pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM pub p, pub_dbxref pdbx, dbxref dbx, db
+ WHERE p.uniquename=&#39;FBrf0019088&#39; AND db.name=&#39;isbn&#39; AND
+ pdbx.is_current=TRUE AND p.pub_id=pdbx.pub_id AND
+ pdbx.dbxref_id = dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -7927,8 +7927,8 @@ of abstract</td>
 <td>
 
 <pre class="de1"><code>SELECT pubplace
-  FROM pub
-  WHERE uniquename =&#39;FBrf0075564&#39;;</code></pre>
+ FROM pub
+ WHERE uniquename =&#39;FBrf0075564&#39;;</code></pre>
 
 </td>
 </tr>
@@ -7940,10 +7940,10 @@ of abstract</td>
 <td>
 
 <pre class="de1"><code>SELECT pub_in.miniref
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7952,10 +7952,10 @@ of abstract</td>
 <td>
 
 <pre class="de1"><code>SELECT pub_in.title
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7965,12 +7965,12 @@ of abstract</td>
 
 <pre class="de1"><code>SELECT array_to_string( array(
 SELECT pa.surname | &#39;, &#39; | pa.givennames
-  FROM pubauthor pa
-  WHERE pa.pub_id=pub_in.pub_id), &#39;, &#39; ) AS authors
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
-  WHERE p.uniquename=&#39;FBrf0191612&#39; AND rel_type.name=&#39;published_in&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id;</code></pre>
+ FROM pubauthor pa
+ WHERE pa.pub_id=pub_in.pub_id), &#39;, &#39; ) AS authors
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
+ WHERE p.uniquename=&#39;FBrf0191612&#39; AND rel_type.name=&#39;published_in&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7979,10 +7979,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pub_in.volume
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -7991,10 +7991,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pub_in.pyear
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8003,10 +8003,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pub_in.pages
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8015,10 +8015,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pub_in.publisher
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8027,10 +8027,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pub_in.pubplace
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND rel_type.name=&#39;published_in&#39; AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8039,12 +8039,12 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type, pubprop pp,
-     cvterm pp_type
-  WHERE p.uniquename=&#39;FBrf0002356&#39; AND rel_type.name=&#39;published_in&#39; AND
-    pp_type.name=&#39;languages&#39; AND p.pub_id=pr.subject_id AND
-    pr.object_id=pub_in.pub_id AND pr.type_id=rel_type.cvterm_id AND
-    pp.type_id=pp_type.cvterm_id AND pub_in.pub_id=pp.pub_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type, pubprop pp,
+ cvterm pp_type
+ WHERE p.uniquename=&#39;FBrf0002356&#39; AND rel_type.name=&#39;published_in&#39; AND
+ pp_type.name=&#39;languages&#39; AND p.pub_id=pr.subject_id AND
+ pr.object_id=pub_in.pub_id AND pr.type_id=rel_type.cvterm_id AND
+ pp.type_id=pp_type.cvterm_id AND pub_in.pub_id=pp.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -8053,13 +8053,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT dbx.accession
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type, pub_dbxref pdbx,
-     dbxref dbx, db
-  WHERE p.uniquename=&#39;FBrf0000051&#39; AND rel_type.name=&#39;published_in&#39; AND
-    db.name IN (&#39;isbn&#39;,&#39;issn&#39;) AND pdbx.is_current=TRUE AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id AND pub_in.pub_id=pdbx.pub_id AND
-    pdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type, pub_dbxref pdbx,
+ dbxref dbx, db
+ WHERE p.uniquename=&#39;FBrf0000051&#39; AND rel_type.name=&#39;published_in&#39; AND
+ db.name IN (&#39;isbn&#39;,&#39;issn&#39;) AND pdbx.is_current=TRUE AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id AND pub_in.pub_id=pdbx.pub_id AND
+ pdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -8068,13 +8068,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT dbx.accession
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type, pub_dbxref pdbx,
-     dbxref dbx, db
-  WHERE p.uniquename=&#39;FBrf0000015&#39; AND rel_type.name=&#39;published_in&#39; AND
-    db.name=&#39;coden&#39; AND pdbx.is_current=TRUE AND
-    p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
-    pr.type_id=rel_type.cvterm_id AND pub_in.pub_id=pdbx.pub_id AND
-    pdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type, pub_dbxref pdbx,
+ dbxref dbx, db
+ WHERE p.uniquename=&#39;FBrf0000015&#39; AND rel_type.name=&#39;published_in&#39; AND
+ db.name=&#39;coden&#39; AND pdbx.is_current=TRUE AND
+ p.pub_id=pr.subject_id AND pr.object_id=pub_in.pub_id AND
+ pr.type_id=rel_type.cvterm_id AND pub_in.pub_id=pdbx.pub_id AND
+ pdbx.dbxref_id=dbx.dbxref_id AND dbx.db_id=db.db_id;</code></pre>
 
 </td>
 </tr>
@@ -8083,12 +8083,12 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT pp.VALUE
-  FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type, pubprop pp,
-     cvterm pp_type
-  WHERE p.uniquename=&#39;FBrf0002356&#39; AND rel_type.name=&#39;published_in&#39; AND
-    pp_type.name=&#39;deposted_files&#39; AND p.pub_id=pr.subject_id AND
-    pr.object_id=pub_in.pub_id AND pr.type_id=rel_type.cvterm_id AND
-    pp.type_id=pp_type.cvterm_id AND pub_in.pub_id=pp.pub_id;</code></pre>
+ FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type, pubprop pp,
+ cvterm pp_type
+ WHERE p.uniquename=&#39;FBrf0002356&#39; AND rel_type.name=&#39;published_in&#39; AND
+ pp_type.name=&#39;deposted_files&#39; AND p.pub_id=pr.subject_id AND
+ pr.object_id=pub_in.pub_id AND pr.type_id=rel_type.cvterm_id AND
+ pp.type_id=pp_type.cvterm_id AND pub_in.pub_id=pp.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -8103,13 +8103,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBgn%&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBgn%&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8121,13 +8121,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBtr%&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBtr%&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8139,13 +8139,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBpp%&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBpp%&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8157,13 +8157,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBal%&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBal%&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8175,13 +8175,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename ~ &#39;FB(tp|ms|mc)[0-9]+$&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename ~ &#39;FB(tp|ms|mc)[0-9]+$&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8193,13 +8193,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBti%&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBti%&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8211,13 +8211,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBab%&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBab%&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8229,13 +8229,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBba%&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBba%&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8254,13 +8254,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBcl%&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBcl%&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8272,13 +8272,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml
-  FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
-     cvterm cvt
-  WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBte%&#39; AND
-    cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
-    f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
+ FROM pub p, feature_pub fp, feature f, feature_synonym fs, synonym s,
+ cvterm cvt
+ WHERE p.uniquename=&#39;FBrf0126983&#39; AND f.uniquename LIKE &#39;FBte%&#39; AND
+ cvt.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ p.pub_id=fp.pub_id AND fp.feature_id=f.feature_id AND
+ f.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=cvt.cvterm_id GROUP BY s.synonym_sgml;</code></pre>
 
 </td>
 </tr>
@@ -8306,11 +8306,11 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt.cvterm_id AND cvt.name = &#39;symbol&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBtp0000001&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt.cvterm_id AND cvt.name = &#39;symbol&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBtp0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -8319,8 +8319,8 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename
-  FROM feature f
-  WHERE f.uniquename = &#39;FBtp0000001&#39;;</code></pre>
+ FROM feature f
+ WHERE f.uniquename = &#39;FBtp0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -8329,8 +8329,8 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT cvt.name
-  FROM feature f, cvterm cvt
-  WHERE f.uniquename = &#39;FBtp0000001&#39; AND f.type_id=cvt.cvterm_id;</code></pre>
+ FROM feature f, cvterm cvt
+ WHERE f.uniquename = &#39;FBtp0000001&#39; AND f.type_id=cvt.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8339,8 +8339,8 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT f.timeaccessioned,f.timelastmodified
-  FROM feature f
-  WHERE f.uniquename = &#39;FBtp0000001&#39;;</code></pre>
+ FROM feature f
+ WHERE f.uniquename = &#39;FBtp0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -8352,10 +8352,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0018202&#39; AND (fp_type.name=&#39;kb_length&#39; OR
-    fp_type.name=&#39;compiled_kb_length&#39;) AND f.feature_id=fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0018202&#39; AND (fp_type.name=&#39;kb_length&#39; OR
+ fp_type.name=&#39;compiled_kb_length&#39;) AND f.feature_id=fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8364,9 +8364,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0036669&#39; AND fp_type.name=&#39;derived_expression_data&#39; AND
-    f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0036669&#39; AND fp_type.name=&#39;derived_expression_data&#39; AND
+ f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8379,14 +8379,14 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature tp, feature ins, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE tp.uniquename=&#39;FBtp0036624&#39; AND fs.is_current=&#39;t&#39; AND
-    fs.is_internal=&#39;f&#39; AND fs_type.NAME=&#39;symbol&#39; AND
-    fr_type.NAME=&#39;producedby&#39; AND tp.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=ins.feature_id AND
-    ins.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=fs_type.cvterm_id;</code></pre>
+ FROM feature tp, feature ins, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE tp.uniquename=&#39;FBtp0036624&#39; AND fs.is_current=&#39;t&#39; AND
+ fs.is_internal=&#39;f&#39; AND fs_type.NAME=&#39;symbol&#39; AND
+ fr_type.NAME=&#39;producedby&#39; AND tp.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=ins.feature_id AND
+ ins.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=fs_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8405,8 +8405,8 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT o.genus,o.species
-  FROM feature f, organism o
-  WHERE f.uniquename=&#39;FBtp0000001&#39; AND f.organism_id=o.organism_id;</code></pre>
+ FROM feature f, organism o
+ WHERE f.uniquename=&#39;FBtp0000001&#39; AND f.organism_id=o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -8415,10 +8415,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT cvt.name
-  FROM feature f, feature_cvterm fcvt, cvterm cvt, cv
-  WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_description&#39; AND
-    f.feature_id=fcvt.feature_id AND fcvt.cvterm_id=cvt.cvterm_id AND
-    cvt.cv_id=cv.cv_id;</code></pre>
+ FROM feature f, feature_cvterm fcvt, cvterm cvt, cv
+ WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_description&#39; AND
+ f.feature_id=fcvt.feature_id AND fcvt.cvterm_id=cvt.cvterm_id AND
+ cvt.cv_id=cv.cv_id;</code></pre>
 
 </td>
 </tr>
@@ -8427,10 +8427,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fcvtp.VALUE
-  FROM feature f, feature_cvterm fcvt, feature_cvtermprop fcvtp, cvterm cvt, cv
-  WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_description&#39; AND
-    fcvt.feature_cvterm_id=fcvtp.feature_cvterm_id AND f.feature_id=fcvt.feature_id AND
-    fcvt.cvterm_id=cvt.cvterm_id AND cvt.cv_id=cv.cv_id;</code></pre>
+ FROM feature f, feature_cvterm fcvt, feature_cvtermprop fcvtp, cvterm cvt, cv
+ WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_description&#39; AND
+ fcvt.feature_cvterm_id=fcvtp.feature_cvterm_id AND f.feature_id=fcvt.feature_id AND
+ fcvt.cvterm_id=cvt.cvterm_id AND cvt.cv_id=cv.cv_id;</code></pre>
 
 </td>
 </tr>
@@ -8439,10 +8439,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename
-  FROM feature f, feature_cvterm fcvt, pub p, cvterm cvt, cv
-  WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_description&#39; AND
-    fcvt.pub_id=p.pub_id AND f.feature_id=fcvt.feature_id AND
-    fcvt.cvterm_id=cvt.cvterm_id AND cvt.cv_id=cv.cv_id;</code></pre>
+ FROM feature f, feature_cvterm fcvt, pub p, cvterm cvt, cv
+ WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_description&#39; AND
+ fcvt.pub_id=p.pub_id AND f.feature_id=fcvt.feature_id AND
+ fcvt.cvterm_id=cvt.cvterm_id AND cvt.cv_id=cv.cv_id;</code></pre>
 
 </td>
 </tr>
@@ -8454,10 +8454,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT cvt.name
-  FROM feature f, feature_cvterm fcvt, cvterm cvt, cv
-  WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_uses&#39; AND
-    f.feature_id=fcvt.feature_id AND fcvt.cvterm_id=cvt.cvterm_id AND
-    cvt.cv_id=cv.cv_id;</code></pre>
+ FROM feature f, feature_cvterm fcvt, cvterm cvt, cv
+ WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_uses&#39; AND
+ f.feature_id=fcvt.feature_id AND fcvt.cvterm_id=cvt.cvterm_id AND
+ cvt.cv_id=cv.cv_id;</code></pre>
 
 </td>
 </tr>
@@ -8466,10 +8466,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fcvtp.VALUE
-  FROM feature f, feature_cvterm fcvt, feature_cvtermprop fcvtp, cvterm cvt, cv
-  WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_uses&#39; AND
-    fcvt.feature_cvterm_id=fcvtp.feature_cvterm_id AND f.feature_id=fcvt.feature_id AND
-    fcvt.cvterm_id=cvt.cvterm_id AND cvt.cv_id=cv.cv_id;</code></pre>
+ FROM feature f, feature_cvterm fcvt, feature_cvtermprop fcvtp, cvterm cvt, cv
+ WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_uses&#39; AND
+ fcvt.feature_cvterm_id=fcvtp.feature_cvterm_id AND f.feature_id=fcvt.feature_id AND
+ fcvt.cvterm_id=cvt.cvterm_id AND cvt.cv_id=cv.cv_id;</code></pre>
 
 </td>
 </tr>
@@ -8478,10 +8478,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename
-  FROM feature f, feature_cvterm fcvt, pub p, cvterm cvt, cv
-  WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_uses&#39; AND
-    fcvt.pub_id=p.pub_id AND f.feature_id=fcvt.feature_id AND
-    fcvt.cvterm_id=cvt.cvterm_id AND cvt.cv_id=cv.cv_id;</code></pre>
+ FROM feature f, feature_cvterm fcvt, pub p, cvterm cvt, cv
+ WHERE f.uniquename=&#39;FBtp0022777&#39; AND cv.name=&#39;transgene_uses&#39; AND
+ fcvt.pub_id=p.pub_id AND f.feature_id=fcvt.feature_id AND
+ fcvt.cvterm_id=cvt.cvterm_id AND cvt.cv_id=cv.cv_id;</code></pre>
 
 </td>
 </tr>
@@ -8526,9 +8526,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT arm.name, fl.fmin+1, fl.fmax
-  FROM feature f, featureloc fl, feature arm
-  WHERE f.uniquename=&#39;FBtp0000078&#39; AND f.feature_id=fl.feature_id AND
-    fl.srcfeature_id=arm.feature_id;</code></pre>
+ FROM feature f, featureloc fl, feature arm
+ WHERE f.uniquename=&#39;FBtp0000078&#39; AND f.feature_id=fl.feature_id AND
+ fl.srcfeature_id=arm.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -8537,9 +8537,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0036625&#39; AND fp_type.name=&#39;comment&#39; AND
-    f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0036625&#39; AND fp_type.name=&#39;comment&#39; AND
+ f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8551,10 +8551,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0018202&#39; AND (fp_type.name=&#39;kb_length&#39; OR
-    fp_type.name=&#39;compiled_kb_length&#39;) AND f.feature_id=fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0018202&#39; AND (fp_type.name=&#39;kb_length&#39; OR
+ fp_type.name=&#39;compiled_kb_length&#39;) AND f.feature_id=fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8563,9 +8563,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0000078&#39; AND fp_type.name=&#39;original_left_end&#39; AND
-    f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0000078&#39; AND fp_type.name=&#39;original_left_end&#39; AND
+ f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8574,9 +8574,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0000078&#39; AND fp_type.name=&#39;original_right_end&#39; AND
-    f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0000078&#39; AND fp_type.name=&#39;original_right_end&#39; AND
+ f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8588,10 +8588,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fr.rank
-  FROM feature f, feature seg, feature_relationship fr, cvterm fr_type
-  WHERE f.uniquename=&#39;FBtp0000078&#39; AND fr_type.name=&#39;partof&#39; AND
-    f.feature_id=fr.object_id AND fr.subject_id=seg.feature_id AND
-    fr.type_id=fr_type.cvterm_id;</code></pre>
+ FROM feature f, feature seg, feature_relationship fr, cvterm fr_type
+ WHERE f.uniquename=&#39;FBtp0000078&#39; AND fr_type.name=&#39;partof&#39; AND
+ f.feature_id=fr.object_id AND fr.subject_id=seg.feature_id AND
+ fr.type_id=fr_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8600,12 +8600,12 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT frp.VALUE
-  FROM feature f, feature seg, feature_relationship fr, cvterm fr_type, cvterm frp_type,
-     feature_relationshipprop frp
-  WHERE f.uniquename=&#39;FBtp0000078&#39; AND fr_type.name=&#39;partof&#39; AND
-    frp_type.name=&#39;relative_orientation&#39; AND f.feature_id=fr.object_id AND
-    fr.subject_id=seg.feature_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.feature_relationship_id=frp.feature_relationship_id AND frp.type_id=frp_type.cvterm_id;</code></pre>
+ FROM feature f, feature seg, feature_relationship fr, cvterm fr_type, cvterm frp_type,
+ feature_relationshipprop frp
+ WHERE f.uniquename=&#39;FBtp0000078&#39; AND fr_type.name=&#39;partof&#39; AND
+ frp_type.name=&#39;relative_orientation&#39; AND f.feature_id=fr.object_id AND
+ fr.subject_id=seg.feature_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.feature_relationship_id=frp.feature_relationship_id AND frp.type_id=frp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8614,13 +8614,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature f, feature seg, feature_relationship fr, cvterm fr_type, feature_synonym fs,
-     synonym s, cvterm s_type
-  WHERE f.uniquename=&#39;FBtp0000078&#39; AND fr_type.name=&#39;partof&#39; AND
-    fs.is_current=TRUE AND s_type.name=&#39;symbol&#39; AND
-    f.feature_id=fr.object_id AND fr.subject_id=seg.feature_id AND
-    fr.type_id=fr_type.cvterm_id AND seg.feature_id=fs.feature_id AND
-    fs.synonym_id=s.synonym_id AND s.type_id=s_type.cvterm_id;</code></pre>
+ FROM feature f, feature seg, feature_relationship fr, cvterm fr_type, feature_synonym fs,
+ synonym s, cvterm s_type
+ WHERE f.uniquename=&#39;FBtp0000078&#39; AND fr_type.name=&#39;partof&#39; AND
+ fs.is_current=TRUE AND s_type.name=&#39;symbol&#39; AND
+ f.feature_id=fr.object_id AND fr.subject_id=seg.feature_id AND
+ fr.type_id=fr_type.cvterm_id AND seg.feature_id=fs.feature_id AND
+ fs.synonym_id=s.synonym_id AND s.type_id=s_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8629,12 +8629,12 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename
-  FROM feature f, feature seg, feature_relationship fr, cvterm fr_type, feature_relationship_pub frp,
-     pub p
-  WHERE f.uniquename=&#39;FBtp0000078&#39; AND fr_type.name=&#39;partof&#39; AND
-    f.feature_id=fr.object_id AND fr.subject_id=seg.feature_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.feature_relationship_id=frp.feature_relationship_id AND
-    frp.pub_id=p.pub_id;</code></pre>
+ FROM feature f, feature seg, feature_relationship fr, cvterm fr_type, feature_relationship_pub frp,
+ pub p
+ WHERE f.uniquename=&#39;FBtp0000078&#39; AND fr_type.name=&#39;partof&#39; AND
+ f.feature_id=fr.object_id AND fr.subject_id=seg.feature_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.feature_relationship_id=frp.feature_relationship_id AND
+ frp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -8646,9 +8646,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0022777&#39; AND fp_type.name=&#39;derived_transgene_features&#39; AND
-    f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0022777&#39; AND fp_type.name=&#39;derived_transgene_features&#39; AND
+ f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8657,9 +8657,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0022777&#39; AND fp_type.name=&#39;derived_transgene_features&#39; AND
-    f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0022777&#39; AND fp_type.name=&#39;derived_transgene_features&#39; AND
+ f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8668,10 +8668,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename
-  FROM feature f, featureprop fp, featureprop_pub fpp, pub p, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0022777&#39; AND fp_type.name=&#39;derived_transgene_features&#39; AND
-    f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id AND
-    fp.featureprop_id=fpp.featureprop_id AND fpp.pub_id=p.pub_id;</code></pre>
+ FROM feature f, featureprop fp, featureprop_pub fpp, pub p, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0022777&#39; AND fp_type.name=&#39;derived_transgene_features&#39; AND
+ f.feature_id=fp.feature_id AND fp.type_id=fp_type.cvterm_id AND
+ fp.featureprop_id=fpp.featureprop_id AND fpp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -8683,14 +8683,14 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature tp, feature al, feature_relationship fr, feature_synonym fs, synonym s,
-     cvterm fs_type, cvterm fr_type
-  WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fs.is_current = &#39;t&#39; AND
-    fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
-    fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND tp.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
-    al.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    s.type_id = fs_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, feature_synonym fs, synonym s,
+ cvterm fs_type, cvterm fr_type
+ WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fs.is_current = &#39;t&#39; AND
+ fs.is_internal = &#39;f&#39; AND fs_type.NAME = &#39;symbol&#39; AND
+ fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND tp.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
+ al.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ s.type_id = fs_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8699,12 +8699,12 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, feature_relationship_pub frp,
-     pub p
-  WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.subject_id=al.feature_id AND fr.feature_relationship_id=frp.feature_relationship_id AND
-    frp.pub_id=p.pub_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, feature_relationship_pub frp,
+ pub p
+ WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.subject_id=al.feature_id AND fr.feature_relationship_id=frp.feature_relationship_id AND
+ frp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -8713,12 +8713,12 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    fp_type.name=&#39;molecular_info&#39; AND tp.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
-    al.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ fp_type.name=&#39;molecular_info&#39; AND tp.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
+ al.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8727,12 +8727,12 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    fp_type.name=&#39;derived_pheno_class&#39; AND tp.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
-    al.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ fp_type.name=&#39;derived_pheno_class&#39; AND tp.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
+ al.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8741,12 +8741,12 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    fp_type.name=&#39;derived_pheno_manifest&#39; AND tp.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
-    al.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ fp_type.name=&#39;derived_pheno_manifest&#39; AND tp.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
+ al.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8755,12 +8755,12 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    fp_type.name=&#39;derived_allele_phendesc&#39; AND tp.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
-    al.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0022777&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ fp_type.name=&#39;derived_allele_phendesc&#39; AND tp.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=al.feature_id AND
+ al.feature_id = fp.feature_id AND fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8779,13 +8779,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0036669&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    (fp_type.name=&#39;derived_transcript_bodypart_expression_cv&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_cv&#39;) AND
-    tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0036669&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ (fp_type.name=&#39;derived_transcript_bodypart_expression_cv&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_cv&#39;) AND
+ tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8794,13 +8794,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0036669&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    (fp_type.name=&#39;derived_transcript_bodypart_expression_cv&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_cv&#39;) AND
-    tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0036669&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ (fp_type.name=&#39;derived_transcript_bodypart_expression_cv&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_cv&#39;) AND
+ tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8809,14 +8809,14 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT p.uniquename
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     featureprop_pub fpp, pub p, cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0036669&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    (fp_type.name=&#39;derived_transcript_bodypart_expression_cv&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_cv&#39;) AND
-    tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id AND fp.featureprop_id=fpp.featureprop_id AND
-    fpp.pub_id=p.pub_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ featureprop_pub fpp, pub p, cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0036669&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ (fp_type.name=&#39;derived_transcript_bodypart_expression_cv&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_cv&#39;) AND
+ tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id AND fp.featureprop_id=fpp.featureprop_id AND
+ fpp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -8828,13 +8828,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0001557&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    (fp_type.name=&#39;derived_transcript_bodypart_expression_text&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_text&#39;) AND
-    tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0001557&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ (fp_type.name=&#39;derived_transcript_bodypart_expression_text&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_text&#39;) AND
+ tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8843,14 +8843,14 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT p.uniquename
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     featureprop_pub fpp, pub p, cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0001557&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    (fp_type.name=&#39;derived_transcript_bodypart_expression_text&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_text&#39;) AND
-    tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id AND fp.featureprop_id=fpp.featureprop_id AND
-    fpp.pub_id=p.pub_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ featureprop_pub fpp, pub p, cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0001557&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ (fp_type.name=&#39;derived_transcript_bodypart_expression_text&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_text&#39;) AND
+ tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id AND fp.featureprop_id=fpp.featureprop_id AND
+ fpp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -8859,13 +8859,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0036669&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    (fp_type.name=&#39;derived_transcript_bodypart_expression_cv&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_cv&#39;) AND
-    tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0036669&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ (fp_type.name=&#39;derived_transcript_bodypart_expression_cv&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_cv&#39;) AND
+ tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8874,13 +8874,13 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
-     cvterm fp_type
-  WHERE tp.uniquename = &#39;FBtp0000365&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    (fp_type.name=&#39;derived_transcript_bodypart_expression_marker&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_marker&#39;) AND
-    tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
-    fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature_relationship fr, cvterm fr_type, featureprop fp,
+ cvterm fp_type
+ WHERE tp.uniquename = &#39;FBtp0000365&#39; AND fr_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ (fp_type.name=&#39;derived_transcript_bodypart_expression_marker&#39; OR fp_type.name=&#39;derived_polypeptide_bodypart_expression_marker&#39;) AND
+ tp.feature_id=fr.object_id AND fr.type_id=fr_type.cvterm_id AND
+ fr.subject_id=al.feature_id AND al.feature_id = fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8889,19 +8889,19 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature tp, feature al, feature tr, feature gn, feature_relationship fr1,
-     feature_relationship fr2, feature_relationship fr3, cvterm fr1_type, cvterm fr2_type, cvterm fr3_type,
-     feature_synonym fs, synonym s, cvterm s_type
-  WHERE tp.uniquename = &#39;FBtp0000362&#39; AND fr1_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
-    fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;attributed_as_expression_of&#39; AND
-    fs.is_current=TRUE AND fs.is_internal=FALSE AND
-    s_type.name=&#39;symbol&#39; AND tp.feature_id=fr1.object_id AND
-    fr1.type_id=fr1_type.cvterm_id AND fr1.subject_id=al.feature_id AND
-    al.feature_id = fr2.object_id AND fr2.type_id=fr2_type.cvterm_id AND
-    fr2.subject_id=tr.feature_id AND tr.feature_id=fr3.subject_id AND
-    fr3.type_id=fr3_type.cvterm_id AND fr3.object_id=gn.feature_id AND
-    gn.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=s_type.cvterm_id;</code></pre>
+ FROM feature tp, feature al, feature tr, feature gn, feature_relationship fr1,
+ feature_relationship fr2, feature_relationship fr3, cvterm fr1_type, cvterm fr2_type, cvterm fr3_type,
+ feature_synonym fs, synonym s, cvterm s_type
+ WHERE tp.uniquename = &#39;FBtp0000362&#39; AND fr1_type.NAME=&#39;derived_tp_assoc_alleles&#39; AND
+ fr2_type.name=&#39;partof&#39; AND fr3_type.name=&#39;attributed_as_expression_of&#39; AND
+ fs.is_current=TRUE AND fs.is_internal=FALSE AND
+ s_type.name=&#39;symbol&#39; AND tp.feature_id=fr1.object_id AND
+ fr1.type_id=fr1_type.cvterm_id AND fr1.subject_id=al.feature_id AND
+ al.feature_id = fr2.object_id AND fr2.type_id=fr2_type.cvterm_id AND
+ fr2.subject_id=tr.feature_id AND tr.feature_id=fr3.subject_id AND
+ fr3.type_id=fr3_type.cvterm_id AND fr3.object_id=gn.feature_id AND
+ gn.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=s_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8913,14 +8913,14 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature tp, feature prog, feature_relationship fr, cvterm fr_type, feature_synonym fs,
-     synonym s, cvterm s_type
-  WHERE tp.uniquename=&#39;FBtp0001096&#39; AND fr_type.name=&#39;in_vitro_descendant_of&#39; AND
-    s_type.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    fs.is_internal=FALSE AND tp.feature_id=fr.subject_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.object_id=prog.feature_id AND
-    prog.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=s_type.cvterm_id;</code></pre>
+ FROM feature tp, feature prog, feature_relationship fr, cvterm fr_type, feature_synonym fs,
+ synonym s, cvterm s_type
+ WHERE tp.uniquename=&#39;FBtp0001096&#39; AND fr_type.name=&#39;in_vitro_descendant_of&#39; AND
+ s_type.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ fs.is_internal=FALSE AND tp.feature_id=fr.subject_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.object_id=prog.feature_id AND
+ prog.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=s_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8929,14 +8929,14 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature tp, feature descn, feature_relationship fr, cvterm fr_type, feature_synonym fs,
-     synonym s, cvterm s_type
-  WHERE tp.uniquename=&#39;FBmc0001085&#39; AND fr_type.name=&#39;in_vitro_descendant_of&#39; AND
-    s_type.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
-    fs.is_internal=FALSE AND tp.feature_id=fr.object_id AND
-    fr.type_id=fr_type.cvterm_id AND fr.subject_id=descn.feature_id AND
-    descn.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
-    s.type_id=s_type.cvterm_id;</code></pre>
+ FROM feature tp, feature descn, feature_relationship fr, cvterm fr_type, feature_synonym fs,
+ synonym s, cvterm s_type
+ WHERE tp.uniquename=&#39;FBmc0001085&#39; AND fr_type.name=&#39;in_vitro_descendant_of&#39; AND
+ s_type.name=&#39;symbol&#39; AND fs.is_current=TRUE AND
+ fs.is_internal=FALSE AND tp.feature_id=fr.object_id AND
+ fr.type_id=fr_type.cvterm_id AND fr.subject_id=descn.feature_id AND
+ descn.feature_id=fs.feature_id AND fs.synonym_id=s.synonym_id AND
+ s.type_id=s_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8948,10 +8948,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE
-  FROM feature f, featureprop fp, cvterm fp_type
-  WHERE f.uniquename=&#39;FBtp0036625&#39; AND (fp_type.name=&#39;comment&#39; OR
-    fp_type.name=&#39;restriction_sites&#39;) AND f.feature_id=fp.feature_id AND
-    fp.type_id=fp_type.cvterm_id;</code></pre>
+ FROM feature f, featureprop fp, cvterm fp_type
+ WHERE f.uniquename=&#39;FBtp0036625&#39; AND (fp_type.name=&#39;comment&#39; OR
+ fp_type.name=&#39;restriction_sites&#39;) AND f.feature_id=fp.feature_id AND
+ fp.type_id=fp_type.cvterm_id;</code></pre>
 
 </td>
 </tr>
@@ -8966,10 +8966,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT s.synonym_sgml
-  FROM feature tp, feature_synonym fs, synonym s, cvterm s_type
-  WHERE tp.uniquename=&#39;FBtp0036625&#39; AND tp.feature_id=fs.feature_id AND
-    fs.is_internal=FALSE AND fs.synonym_id=s.synonym_id AND
-    s.type_id=s_type.cvterm_id AND s_type.name=&#39;symbol&#39;;</code></pre>
+ FROM feature tp, feature_synonym fs, synonym s, cvterm s_type
+ WHERE tp.uniquename=&#39;FBtp0036625&#39; AND tp.feature_id=fs.feature_id AND
+ fs.is_internal=FALSE AND fs.synonym_id=s.synonym_id AND
+ s.type_id=s_type.cvterm_id AND s_type.name=&#39;symbol&#39;;</code></pre>
 
 </td>
 </tr>
@@ -8981,10 +8981,10 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT dbx.accession
-  FROM feature tp, feature_dbxref fdbx, dbxref dbx, db
-  WHERE tp.uniquename=&#39;FBtp0023480&#39; AND tp.feature_id=fdbx.feature_id AND
-    fdbx.is_current=FALSE AND fdbx.dbxref_id=dbx.dbxref_id AND
-    dbx.db_id=db.db_id AND db.name=&#39;FlyBase&#39;;</code></pre>
+ FROM feature tp, feature_dbxref fdbx, dbxref dbx, db
+ WHERE tp.uniquename=&#39;FBtp0023480&#39; AND tp.feature_id=fdbx.feature_id AND
+ fdbx.is_current=FALSE AND fdbx.dbxref_id=dbx.dbxref_id AND
+ dbx.db_id=db.db_id AND db.name=&#39;FlyBase&#39;;</code></pre>
 
 </td>
 </tr>
@@ -8996,9 +8996,9 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.miniref, p.title
-  FROM feature f, pub p, feature_pub fp
-  WHERE f.uniquename = &#39;FBtp0023480&#39; AND f.feature_id=fp.feature_id AND
-    fp.pub_id=p.pub_id;</code></pre>
+ FROM feature f, pub p, feature_pub fp
+ WHERE f.uniquename = &#39;FBtp0023480&#39; AND f.feature_id=fp.feature_id AND
+ fp.pub_id=p.pub_id;</code></pre>
 
 </td>
 </tr>
@@ -9043,11 +9043,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(s.synonym_sgml)
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt2
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBte0000001&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt2
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;symbol&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9056,9 +9056,9 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT o.genus, o.species
-  FROM feature f, organism o
-  WHERE f.is_obsolete = &#39;f&#39; AND f.uniquename =&#39;FBte0000001&#39; AND
-    f.organism_id = o.organism_id;</code></pre>
+ FROM feature f, organism o
+ WHERE f.is_obsolete = &#39;f&#39; AND f.uniquename =&#39;FBte0000001&#39; AND
+ f.organism_id = o.organism_id;</code></pre>
 
 </td>
 </tr>
@@ -9067,11 +9067,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT DISTINCT(s.synonym_sgml)
-  FROM feature f, feature_synonym fs, synonym s, cvterm cvt2
-  WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
-    fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
-    s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;fullname&#39; AND
-    f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBte0000001&#39;;</code></pre>
+ FROM feature f, feature_synonym fs, synonym s, cvterm cvt2
+ WHERE f.feature_id = fs.feature_id AND fs.synonym_id = s.synonym_id AND
+ fs.is_current = &#39;t&#39; AND fs.is_internal = &#39;f&#39; AND
+ s.type_id = cvt2.cvterm_id AND cvt2.name = &#39;fullname&#39; AND
+ f.is_obsolete = &#39;f&#39; AND f.uniquename = &#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9084,8 +9084,8 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT timeaccessioned, timelastmodified
-  FROM feature f
-  WHERE uniquename = &#39;FBte0000001&#39; AND is_obsolete=&#39;f&#39;;</code></pre>
+ FROM feature f
+ WHERE uniquename = &#39;FBte0000001&#39; AND is_obsolete=&#39;f&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9097,11 +9097,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE , pub.uniquename
-  FROM featureprop fp, feature f, cvterm cvt, featureprop_pub fpp, pub
-  WHERE cvt.name=&#39;TE_total_length&#39; AND cvt.cvterm_id=fp.type_id AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39; AND
-    fp.featureprop_id=fpp.featureprop_id AND fpp.pub_id=pub.pub_id AND
-    fp.feature_id=f.feature_id;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt, featureprop_pub fpp, pub
+ WHERE cvt.name=&#39;TE_total_length&#39; AND cvt.cvterm_id=fp.type_id AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39; AND
+ fp.featureprop_id=fpp.featureprop_id AND fpp.pub_id=pub.pub_id AND
+ fp.feature_id=f.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -9110,11 +9110,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE , pub.uniquename
-  FROM featureprop fp, feature f, cvterm cvt, featureprop_pub fpp, pub
-  WHERE cvt.name=&#39;TE_repeat_length&#39; AND cvt.cvterm_id=fp.type_id AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39; AND
-    fp.featureprop_id=fpp.featureprop_id AND fpp.pub_id=pub.pub_id AND
-    fp.feature_id=f.feature_id;</code></pre>
+ FROM featureprop fp, feature f, cvterm cvt, featureprop_pub fpp, pub
+ WHERE cvt.name=&#39;TE_repeat_length&#39; AND cvt.cvterm_id=fp.type_id AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39; AND
+ fp.featureprop_id=fpp.featureprop_id AND fpp.pub_id=pub.pub_id AND
+ fp.feature_id=f.feature_id;</code></pre>
 
 </td>
 </tr>
@@ -9127,10 +9127,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.name
-  FROM feature f, feature fp, feature_relationship fr, cvterm cvt
-  WHERE fr.subject_id=f.feature_id AND fr.object_id=fp.feature_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;has_component_gene&#39; AND
-    f.uniquename=&#39;FBte0000001&#39; AND f.is_obsolete=&#39;f&#39;;</code></pre>
+ FROM feature f, feature fp, feature_relationship fr, cvterm cvt
+ WHERE fr.subject_id=f.feature_id AND fr.object_id=fp.feature_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;has_component_gene&#39; AND
+ f.uniquename=&#39;FBte0000001&#39; AND f.is_obsolete=&#39;f&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9146,11 +9146,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT dbxref.accession
-  FROM dbxref, feature_dbxref fd, feature f, db
-  WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
-    fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
-    db.name LIKE &#39;GB%&#39; AND f.uniquename=&#39;FBte0000001&#39; AND
-    f.is_obsolete=&#39;f&#39;;</code></pre>
+ FROM dbxref, feature_dbxref fd, feature f, db
+ WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
+ fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
+ db.name LIKE &#39;GB%&#39; AND f.uniquename=&#39;FBte0000001&#39; AND
+ f.is_obsolete=&#39;f&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9159,11 +9159,11 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
-    fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transposable_element_flanking_region&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, cvterm cvt2
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND cvt.name=&#39;associated_with&#39; AND
+ fo.type_id= cvt2.cvterm_id AND cvt2.name=&#39;transposable_element_flanking_region&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9175,10 +9175,10 @@ material</td>
 <td>
 
 <pre class="de1"><code>SELECT c.name
-  FROM cvterm c, feature f, feature_cvterm fc, cv
-  WHERE fc.feature_id=f.feature_id AND c.cvterm_id=fc.cvterm_id AND
-    c.cv_id=cv.cv_id AND cv.name=&#39;SO&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM cvterm c, feature f, feature_cvterm fc, cv
+ WHERE fc.feature_id=f.feature_id AND c.cvterm_id=fc.cvterm_id AND
+ c.cv_id=cv.cv_id AND cv.name=&#39;SO&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9191,11 +9191,11 @@ and comments</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;TE_copies_in_genome&#39; AND pub.pub_id=frp.pub_id AND
-    frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;TE_copies_in_genome&#39; AND pub.pub_id=frp.pub_id AND
+ frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9204,10 +9204,10 @@ and comments</td>
 <td>
 
 <pre class="de1"><code>SELECT s.name
-  FROM feature f, feature_relationship fr, cvterm c, feature s
-  WHERE f.feature_id=fr.object_id AND fr.type_id=c.cvterm_id AND
-    c.name=&#39;producedby&#39; AND fr.subject_id=s.feature_id AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM feature f, feature_relationship fr, cvterm c, feature s
+ WHERE f.feature_id=fr.object_id AND fr.type_id=c.cvterm_id AND
+ c.name=&#39;producedby&#39; AND fr.subject_id=s.feature_id AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9216,11 +9216,11 @@ and comments</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;TE_copies_in_sequenced_genome&#39; AND pub.pub_id=frp.pub_id AND
-    frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;TE_copies_in_sequenced_genome&#39; AND pub.pub_id=frp.pub_id AND
+ frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9246,11 +9246,11 @@ other genomes</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;TE_duplication_length&#39; AND pub.pub_id=frp.pub_id AND
-    frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;TE_duplication_length&#39; AND pub.pub_id=frp.pub_id AND
+ frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9259,11 +9259,11 @@ other genomes</td>
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;TE_target_sequence&#39; AND pub.pub_id=frp.pub_id AND
-    frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;TE_target_sequence&#39; AND pub.pub_id=frp.pub_id AND
+ frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9275,12 +9275,12 @@ other genomes</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.name, pub.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
-     pub
-  WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
-    fr.type_id=cvt.cvterm_id AND frp.feature_relationship_id=fr.feature_relationship_id AND
-    pub.pub_id=frp.pub_id AND cvt.name=&#39;isolate_of&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
+ pub
+ WHERE fo.feature_id=fr.object_id AND f.feature_id=fr.subject_id AND
+ fr.type_id=cvt.cvterm_id AND frp.feature_relationship_id=fr.feature_relationship_id AND
+ pub.pub_id=frp.pub_id AND cvt.name=&#39;isolate_of&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9289,13 +9289,13 @@ other genomes</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.name, pub.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
-     pub
-  WHERE fo.feature_id=fr.subject_id AND fo.is_obsolete=&#39;f&#39; AND
-    f.feature_id=fr.object_id AND fr.type_id=cvt.cvterm_id AND
-    frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
-    cvt.name=&#39;in_vitro_descendant_of&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
+ pub
+ WHERE fo.feature_id=fr.subject_id AND fo.is_obsolete=&#39;f&#39; AND
+ f.feature_id=fr.object_id AND fr.type_id=cvt.cvterm_id AND
+ frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
+ cvt.name=&#39;in_vitro_descendant_of&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9304,13 +9304,13 @@ other genomes</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.name, pub.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
-     pub
-  WHERE fo.feature_id=fr.subject_id AND fo.is_obsolete=&#39;f&#39; AND
-    f.feature_id=fr.object_id AND fr.type_id=cvt.cvterm_id AND
-    frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
-    (cvt.name=&#39;in_vitro_descendant_of&#39; OR cvt.name=&#39;belongs_to&#39;) AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
+ pub
+ WHERE fo.feature_id=fr.subject_id AND fo.is_obsolete=&#39;f&#39; AND
+ f.feature_id=fr.object_id AND fr.type_id=cvt.cvterm_id AND
+ frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
+ (cvt.name=&#39;in_vitro_descendant_of&#39; OR cvt.name=&#39;belongs_to&#39;) AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9319,13 +9319,13 @@ other genomes</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.name, pub.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
-     pub
-  WHERE fo.feature_id=fr.subject_id AND fo.is_obsolete=&#39;f&#39; AND
-    f.feature_id=fr.object_id AND fr.type_id=cvt.cvterm_id AND
-    frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
-    cvt.name=&#39;alleleof&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
+ pub
+ WHERE fo.feature_id=fr.subject_id AND fo.is_obsolete=&#39;f&#39; AND
+ f.feature_id=fr.object_id AND fr.type_id=cvt.cvterm_id AND
+ frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
+ cvt.name=&#39;alleleof&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9337,21 +9337,21 @@ other genomes</td>
 <td>
 
 <pre class="de1"><code>SELECT fo.name, pub.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
-     pub
-  WHERE fo.feature_id=fr.subject_id AND fo.is_obsolete=&#39;f&#39; AND
-    f.feature_id=fr.object_id AND fr.type_id=cvt.cvterm_id AND
-    frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
-    cvt.name=&#39;homologue&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39; UNION
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
+ pub
+ WHERE fo.feature_id=fr.subject_id AND fo.is_obsolete=&#39;f&#39; AND
+ f.feature_id=fr.object_id AND fr.type_id=cvt.cvterm_id AND
+ frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
+ cvt.name=&#39;homologue&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39; UNION
 SELECT fo.name, pub.uniquename
-  FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
-     pub
-  WHERE fo.feature_id=fr.object_id AND fo.is_obsolete=&#39;f&#39; AND
-    f.feature_id=fr.subject_id AND fr.type_id=cvt.cvterm_id AND
-    frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
-    cvt.name=&#39;homologue&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp,
+ pub
+ WHERE fo.feature_id=fr.object_id AND fo.is_obsolete=&#39;f&#39; AND
+ f.feature_id=fr.subject_id AND fr.type_id=cvt.cvterm_id AND
+ frp.feature_relationship_id=fr.feature_relationship_id AND pub.pub_id=frp.pub_id AND
+ cvt.name=&#39;homologue&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9363,11 +9363,11 @@ SELECT fo.name, pub.uniquename
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;comment&#39; AND pub.pub_id=frp.pub_id AND
-    frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;comment&#39; AND pub.pub_id=frp.pub_id AND
+ frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9382,11 +9382,11 @@ SELECT fo.name, pub.uniquename
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;etymology&#39; AND pub.pub_id=frp.pub_id AND
-    frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;etymology&#39; AND pub.pub_id=frp.pub_id AND
+ frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9398,11 +9398,11 @@ SELECT fo.name, pub.uniquename
 <td>
 
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
-  FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
-  WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;phylogentic_range&#39; AND pub.pub_id=frp.pub_id AND
-    frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
+ WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
+ cvt.name=&#39;phylogentic_range&#39; AND pub.pub_id=frp.pub_id AND
+ frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9417,11 +9417,11 @@ SELECT fo.name, pub.uniquename
 <td>
 
 <pre class="de1"><code>SELECT dbxref.accession
-  FROM dbxref, feature_dbxref fd, feature f, db
-  WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
-    fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
-    (db.name LIKE &#39;GB%&#39; OR db.name =&#39;UNIPROT/TREMBL&#39; )AND f.uniquename=&#39;FBte0000001&#39; AND
-    f.is_obsolete=&#39;f&#39; AND fd.is_current=&#39;t&#39;;</code></pre>
+ FROM dbxref, feature_dbxref fd, feature f, db
+ WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
+ fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
+ (db.name LIKE &#39;GB%&#39; OR db.name =&#39;UNIPROT/TREMBL&#39; )AND f.uniquename=&#39;FBte0000001&#39; AND
+ f.is_obsolete=&#39;f&#39; AND fd.is_current=&#39;t&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9440,11 +9440,11 @@ SELECT fo.name, pub.uniquename
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, db.name, accession
-  FROM feature f, feature_dbxref fd, dbxref dx, dbxrefprop dxp, cvterm cvt
-  WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
-    dx.dbxref_id = dxp.dbxref_id AND dxp.type_id = cvt.cvterm_id AND
-    cvt.name = &#39;linkout&#39; AND f.is_obsolete=&#39;f&#39; AND
-    f.uniquename = &#39;FBsf0000000001&#39;;</code></pre>
+ FROM feature f, feature_dbxref fd, dbxref dx, dbxrefprop dxp, cvterm cvt
+ WHERE f.feature_id = fd.feature_id AND fd.dbxref_id = dx.dbxref_id AND
+ dx.dbxref_id = dxp.dbxref_id AND dxp.type_id = cvt.cvterm_id AND
+ cvt.name = &#39;linkout&#39; AND f.is_obsolete=&#39;f&#39; AND
+ f.uniquename = &#39;FBsf0000000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9459,11 +9459,11 @@ SELECT fo.name, pub.uniquename
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml, pub.uniquename
-  FROM feature_synonym fs, feature f, synonym s, cvterm cvt, pub
-  WHERE fs.feature_id=f.feature_id AND fs.synonym_id=s.synonym_id AND
-    fs.is_internal=&#39;f&#39; AND fs.pub_id=pub.pub_id AND
-    cvt.cvterm_id=s.type_id AND cvt.name=&#39;symbol&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
+ FROM feature_synonym fs, feature f, synonym s, cvterm cvt, pub
+ WHERE fs.feature_id=f.feature_id AND fs.synonym_id=s.synonym_id AND
+ fs.is_internal=&#39;f&#39; AND fs.pub_id=pub.pub_id AND
+ cvt.cvterm_id=s.type_id AND cvt.name=&#39;symbol&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9472,11 +9472,11 @@ SELECT fo.name, pub.uniquename
 <td>
 
 <pre class="de1"><code>SELECT s.synonym_sgml, pub.uniquename
-  FROM feature_synonym fs, feature f, synonym s, cvterm cvt, pub
-  WHERE fs.feature_id=f.feature_id AND fs.synonym_id=s.synonym_id AND
-    fs.is_internal=&#39;f&#39; AND fs.pub_id=pub.pub_id AND
-    cvt.cvterm_id=s.type_id AND cvt.name=&#39;fullname&#39; AND
-    f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
+ FROM feature_synonym fs, feature f, synonym s, cvterm cvt, pub
+ WHERE fs.feature_id=f.feature_id AND fs.synonym_id=s.synonym_id AND
+ fs.is_internal=&#39;f&#39; AND fs.pub_id=pub.pub_id AND
+ cvt.cvterm_id=s.type_id AND cvt.name=&#39;fullname&#39; AND
+ f.is_obsolete=&#39;f&#39; AND f.uniquename=&#39;FBte0000001&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9488,11 +9488,11 @@ SELECT fo.name, pub.uniquename
 <td>
 
 <pre class="de1"><code>SELECT dbxref.accession
-  FROM dbxref, feature_dbxref fd, feature f, db
-  WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
-    fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
-    db.name=&#39;FlyBase&#39; AND f.uniquename=&#39;FBte0000001&#39; AND
-    f.is_obsolete=&#39;f&#39;;</code></pre>
+ FROM dbxref, feature_dbxref fd, feature f, db
+ WHERE f.feature_id=fd.feature_id AND dbxref.dbxref_id=fd.dbxref_id AND
+ fd.is_current=&#39;f&#39; AND dbxref.db_id=db.db_id AND
+ db.name=&#39;FlyBase&#39; AND f.uniquename=&#39;FBte0000001&#39; AND
+ f.is_obsolete=&#39;f&#39;;</code></pre>
 
 </td>
 </tr>
@@ -9504,9 +9504,9 @@ SELECT fo.name, pub.uniquename
 <td>
 
 <pre class="de1"><code>SELECT f.uniquename, f.name, cvt.name AS pub_type, p.uniquename AS FBrf_id, miniref AS citation
-  FROM feature f, feature_pub fp, pub p, cvterm cvt
-  WHERE f.feature_id = fp.feature_id AND fp.pub_id = p.pub_id AND
-    p.type_id = cvt.cvterm_id AND f.uniquename = &#39;FBte0000001&#39; ORDER BY cvt.name;</code></pre>
+ FROM feature f, feature_pub fp, pub p, cvterm cvt
+ WHERE f.feature_id = fp.feature_id AND fp.pub_id = p.pub_id AND
+ p.type_id = cvt.cvterm_id AND f.uniquename = &#39;FBte0000001&#39; ORDER BY cvt.name;</code></pre>
 
 </td>
 </tr>

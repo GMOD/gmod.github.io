@@ -3,95 +3,95 @@ title: "Tripal Developer's Handbook"
 ---
 # Tripal Developer's Handbook
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Using the
-  Drupal Devel Module](#Using_the_Drupal_Devel_Module)
+ Drupal Devel Module](#Using_the_Drupal_Devel_Module)
 - [Theming
-  API](#Theming_API)
-  - [Skills
-    Required](#Skills_Required)
-  - [Best
-    Practices](#Best_Practices)
-  - [Brief
-    Introduction to Drupal
-    Theming](#Brief_Introduction_to_Drupal_Theming)
-  - [Introduction to the Tripal
-    Theme](#Introduction_to_the_Tripal_Theme)
-  - [Structure
-    of the Tripal Theme
-    Directory](#Structure_of_the_Tripal_Theme_Directory)
-  - [Theming
-    Content Types](#Theming_Content_Types)
-  - [Where To
-    Put a Template File](#Where_To_Put_a_Template_File)
-  - [Layout of
-    a Tripal Node Template](#Layout_of_a_Tripal_Node_Template)
-  - [Dissecting
-    a Tripal Node Template
-    File](#Dissecting_a_Tripal_Node_Template_File)
-    - [Template Basics](#Template_Basics)
-    - [Layout
-      Sections](#Layout_Sections)
-    - [Subtemplates](#Subtemplates)
-      - [Description of a
-        Subtemplate](#Description_of_a_Subtemplate)
-      - [Adding a New
-        Subtemplate](#Adding_a_New_Subtemplate)
-    - [Template
-      JavaScript](#Template_JavaScript)
-    - [Accessing Chado
-      Data](#Accessing_Chado_Data)
-      - [Accessing Large Text
-        Fields](#Accessing_Large_Text_Fields)
-      - [Accessing Records from One-To-Many
-        Relationships](#Accessing_Records_from_One-To-Many_Relationships)
-      - [Working with Large Record
-        Sets](#Working_with_Large_Record_Sets)
-      - [Accessing Drupal Node
-        Information](#Accessing_Drupal_Node_Information)
+ API](#Theming_API)
+ - [Skills
+ Required](#Skills_Required)
+ - [Best
+ Practices](#Best_Practices)
+ - [Brief
+ Introduction to Drupal
+ Theming](#Brief_Introduction_to_Drupal_Theming)
+ - [Introduction to the Tripal
+ Theme](#Introduction_to_the_Tripal_Theme)
+ - [Structure
+ of the Tripal Theme
+ Directory](#Structure_of_the_Tripal_Theme_Directory)
+ - [Theming
+ Content Types](#Theming_Content_Types)
+ - [Where To
+ Put a Template File](#Where_To_Put_a_Template_File)
+ - [Layout of
+ a Tripal Node Template](#Layout_of_a_Tripal_Node_Template)
+ - [Dissecting
+ a Tripal Node Template
+ File](#Dissecting_a_Tripal_Node_Template_File)
+ - [Template Basics](#Template_Basics)
+ - [Layout
+ Sections](#Layout_Sections)
+ - [Subtemplates](#Subtemplates)
+ - [Description of a
+ Subtemplate](#Description_of_a_Subtemplate)
+ - [Adding a New
+ Subtemplate](#Adding_a_New_Subtemplate)
+ - [Template
+ JavaScript](#Template_JavaScript)
+ - [Accessing Chado
+ Data](#Accessing_Chado_Data)
+ - [Accessing Large Text
+ Fields](#Accessing_Large_Text_Fields)
+ - [Accessing Records from One-To-Many
+ Relationships](#Accessing_Records_from_One-To-Many_Relationships)
+ - [Working with Large Record
+ Sets](#Working_with_Large_Record_Sets)
+ - [Accessing Drupal Node
+ Information](#Accessing_Drupal_Node_Information)
 - [Module
-  Development API](#Module_Development_API)
-  - [Skills
-    Required](#Skills_Required_2)
-  - [Brief
-    Introduction to Drupal Module
-    Development](#Brief_Introduction_to_Drupal_Module_Development)
-  - [Components
-    of the Tripal API](#Components_of_the_Tripal_API)
-    - [Materialized Views
-      API](#Materialized_Views_API)
-    - [Controlled Vocabularies
-      API](#Controlled_Vocabularies_API)
-    - [Jobs
-      Management API](#Jobs_Management_API)
-    - [Chado
-      API](#Chado_API)
-    - [Chado
-      Schema API](#Chado_Schema_API)
-    - [Analysis API](#Analysis_API)
-    - [Modules API](#Modules_API)
-    - [Views
-      API](#Views_API)
-  - [The
-    Anatomy of a Tripal Module](#The_Anatomy_of_a_Tripal_Module)
-    - [The
-      Module File](#The_Module_File)
-    - [Add a
-      New Node Type](#Add_a_New_Node_Type)
-    - [The
-      Install File](#The_Install_File)
-  - [DOxygen
-    Documentation Style](#DOxygen_Documentation_Style)
+ Development API](#Module_Development_API)
+ - [Skills
+ Required](#Skills_Required_2)
+ - [Brief
+ Introduction to Drupal Module
+ Development](#Brief_Introduction_to_Drupal_Module_Development)
+ - [Components
+ of the Tripal API](#Components_of_the_Tripal_API)
+ - [Materialized Views
+ API](#Materialized_Views_API)
+ - [Controlled Vocabularies
+ API](#Controlled_Vocabularies_API)
+ - [Jobs
+ Management API](#Jobs_Management_API)
+ - [Chado
+ API](#Chado_API)
+ - [Chado
+ Schema API](#Chado_Schema_API)
+ - [Analysis API](#Analysis_API)
+ - [Modules API](#Modules_API)
+ - [Views
+ API](#Views_API)
+ - [The
+ Anatomy of a Tripal Module](#The_Anatomy_of_a_Tripal_Module)
+ - [The
+ Module File](#The_Module_File)
+ - [Add a
+ New Node Type](#Add_a_New_Node_Type)
+ - [The
+ Install File](#The_Install_File)
+ - [DOxygen
+ Documentation Style](#DOxygen_Documentation_Style)
 
 ## Introduction
 
 Tripal provides two Application Programming Interfaces (APIs) that
 allows developers to interact and customize Tripal and Chado content:
 
-1.  **Tripal Theming API**: allows customization of the look-and feel
-    of the site through API function calls and template files.
-2.  **Tripal Module Development API**: allows addition of new or custom
-    functionality through module development.
+1. **Tripal Theming API**: allows customization of the look-and feel
+ of the site through API function calls and template files.
+2. **Tripal Module Development API**: allows addition of new or custom
+ functionality through module development.
 
 The Theming API provides an interface for developers who want to change
 the look-and feel of their site. These developers may not necessarily
@@ -150,7 +150,7 @@ developer should have the following skills:
 
 - Knowledge of PHP
 - Knowledge of Chado and relationships between tables (at least tables
-  where data of interest is stored).
+ where data of interest is stored).
 - Understanding of the Tripal theming API
 - Understanding of how Drupal theming works
 
@@ -158,19 +158,19 @@ developer should have the following skills:
 
 There are a few rules to follow when updating templates
 
-1.  All development should follow standard Drupal coding standards:
-    <a href="http://drupal.org/coding-standards" class="external free"
-    rel="nofollow">http://drupal.org/coding-standards</a>.
-2.  Do not use SQL statements inside of the template files. While you
-    can do this it makes your templates longer and harder to read.
-    Instead always try to use the Tripal API function calls as described
-    below.
-3.  Always copy the template files from the Tripal theme to your own
-    default theme before editing. Try to preserve the directory
-    structure when copying. This will ensure that future updates to
-    Tripal will not overwrite your customizations. Drupal will prefer to
-    use the templates in your default them rather than those with the
-    same name in the Tripal theme.
+1. All development should follow standard Drupal coding standards:
+ <a href="http://drupal.org/coding-standards" class="external free"
+ rel="nofollow">http://drupal.org/coding-standards</a>.
+2. Do not use SQL statements inside of the template files. While you
+ can do this it makes your templates longer and harder to read.
+ Instead always try to use the Tripal API function calls as described
+ below.
+3. Always copy the template files from the Tripal theme to your own
+ default theme before editing. Try to preserve the directory
+ structure when copying. This will ensure that future updates to
+ Tripal will not overwrite your customizations. Drupal will prefer to
+ use the templates in your default them rather than those with the
+ same name in the Tripal theme.
 
 ### Brief Introduction to Drupal Theming
 
@@ -217,7 +217,7 @@ In a typical Drupal installation, the Tripal theme is installed in the
 directory:
 
 ``` enter
-   /[drupal dir]/sites/all/themes/theme_tripal
+ /[drupal dir]/sites/all/themes/theme_tripal
 ```
 
 Where \[drupal dir\] is the location where Drupal is installed.
@@ -225,28 +225,28 @@ Where \[drupal dir\] is the location where Drupal is installed.
 Inside of the Tripal theme are the following files:
 
 - **tripal.info**: a file required by Drupal to identify the theme and
-  specify location of theming components
+ specify location of theming components
 - **logo.png**: a file of the Tripal logo seen when viewing the Drupal
-  Theme administrative page
+ Theme administrative page
 - **node.tpl.php**: a default template file when no other template is
-  available. In practice this file is currently not used as each content
-  type created by Tripal has a template file.
+ available. In practice this file is currently not used as each content
+ type created by Tripal has a template file.
 - **node-\[content type\].tpl.php**: a series of PHP template files use
-  to theme specific Chado content, where \[content type\] is the name of
-  a content type such as 'feature', 'library', etc. These names
-  correspond to the same content types available when creating new
-  content in Drupal.
+ to theme specific Chado content, where \[content type\] is the name of
+ a content type such as 'feature', 'library', etc. These names
+ correspond to the same content types available when creating new
+ content in Drupal.
 
 Inside of the Tripal theme are the following directories:
 
 - **tripal\_\[content type\]**: a series of directories with sub
-  templates for each Chado content type.
+ templates for each Chado content type.
 - **js**: a directory that houses all of the javascript files for the
-  theme. Each Tripal module has its own Javascript file.
+ theme. Each Tripal module has its own Javascript file.
 - **css**: a directory that houses all of the CSS files for the theme.
-  Each Tripal module has its own CSS file.
+ Each Tripal module has its own CSS file.
 - **images**: a directory for storing images referenced by any of the
-  template files.
+ template files.
 
 ### Theming Content Types
 
@@ -257,7 +257,7 @@ using the programmatic name of the node. Drupal will look for a file
 with the following name:
 
 ``` enter
-   node-[content type].tpl.php
+ node-[content type].tpl.php
 ```
 
 where **\[content type\]** is the programmatic name of the node type.
@@ -287,17 +287,17 @@ Additionally, several commonly used extension modules have the following
 content type names:
 
 - chado_analysis_blast
-  (<a href="http://tripal.sourceforge.net/?q=node/22" class="external text"
-  rel="nofollow">Blast Analysis Extension</a>)
+ (<a href="http://tripal.sourceforge.net/?q=node/22" class="external text"
+ rel="nofollow">Blast Analysis Extension</a>)
 - chado_analysis_interpro
-  (<a href="http://tripal.sourceforge.net/?q=node/24" class="external text"
-  rel="nofollow">Interpro Analysis Extension</a>)
+ (<a href="http://tripal.sourceforge.net/?q=node/24" class="external text"
+ rel="nofollow">Interpro Analysis Extension</a>)
 - chado_analysis_kegg
-  (<a href="http://tripal.sourceforge.net/?q=node/25" class="external text"
-  rel="nofollow">KEGG Analysis Extension</a>)
+ (<a href="http://tripal.sourceforge.net/?q=node/25" class="external text"
+ rel="nofollow">KEGG Analysis Extension</a>)
 - chado_analysis_unigene
-  (<a href="http://tripal.sourceforge.net/?q=node/26" class="external text"
-  rel="nofollow">Unigene Analysis Extension</a>)
+ (<a href="http://tripal.sourceforge.net/?q=node/26" class="external text"
+ rel="nofollow">Unigene Analysis Extension</a>)
 
 For any Tripal content type, either from the base Tripal package or a
 Tripal extension a template file should be available for customization.
@@ -314,7 +314,7 @@ name exists in the current default theme that template file takes
 precedence.
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. It is best to always copy any templates files out of the Tripal theme directory into your default theme for editing. This way, future upgrades to Tripal, that may change the template files will not affect customizations to your site. |
 
@@ -340,7 +340,7 @@ description of the code in this template file will be provided next. All
 of the node template files follow this same structure
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: If you would like to maintain this layout structure for any themes of new content types for new Tripal extensions, you will want to follow this same structure in your template files. See the next section for more details. |
 
@@ -375,7 +375,7 @@ templates, and Tripal adds data to this variable. Thus, in the
 template:
 
 ``` enter
-   $feature = $variables['node']->feature;
+ $feature = $variables['node']->feature;
 ```
 
 Tripal queries the **feature** table of Chado, as well as those linked
@@ -387,71 +387,71 @@ is simplified to a variable named \$feature.
 
 As mentioned previously, the node template files have two major regions:
 
-1.  a details section
-2.  a resources sidebar.
+1. a details section
+2. a resources sidebar.
 
 In the template file, each of these sections is defined by **div** tags
 with special CSS class names. First is the details section:
 
 ``` enter
 
-   <!-- Basic Details Theme -->
-   <?php print theme('tripal_feature_base',$node); ?>
+ <!-- Basic Details Theme -->
+ <?php print theme('tripal_feature_base',$node); ?>
 
-   <!-- Database References -->
-   <?php print theme('tripal_feature_references', $node); ?>
+ <!-- Database References -->
+ <?php print theme('tripal_feature_references', $node); ?>
 
-   <!-- Properties -->
-   <?php print theme('tripal_feature_properties', $node); ?>
+ <!-- Properties -->
+ <?php print theme('tripal_feature_properties', $node); ?>
 
-   <!-- Annotated Terms -->
-   <?php print theme('tripal_feature_terms', $node); ?>
+ <!-- Annotated Terms -->
+ <?php print theme('tripal_feature_terms', $node); ?>
 
-   <!-- Synonyms -->
-   <?php print theme('tripal_feature_synonyms', $node); ?>
+ <!-- Synonyms -->
+ <?php print theme('tripal_feature_synonyms', $node); ?>
 
-   <!-- Phenotypes -->
-   <?php print theme('tripal_feature_phenotypes', $node); ?>
+ <!-- Phenotypes -->
+ <?php print theme('tripal_feature_phenotypes', $node); ?>
 
-   <!-- Maps -->
-   <?php print theme('tripal_feature_featurepos', $node); ?>
+ <!-- Maps -->
+ <?php print theme('tripal_feature_featurepos', $node); ?>
 
-   <!-- Sequence --> <?php
-   if(strcmp($feature->type_id->name,'scaffold')!=0 and
-      strcmp($feature->type_id->name,'chromosome')!=0 and
-      strcmp($feature->type_id->name,'supercontig')!=0 and
-      strcmp($feature->type_id->name,'pseudomolecule')!=0)
-   {
-      print theme('tripal_feature_sequence', $node);
-   } ?>
+ <!-- Sequence --> <?php
+ if(strcmp($feature->type_id->name,'scaffold')!=0 and
+ strcmp($feature->type_id->name,'chromosome')!=0 and
+ strcmp($feature->type_id->name,'supercontig')!=0 and
+ strcmp($feature->type_id->name,'pseudomolecule')!=0)
+ {
+ print theme('tripal_feature_sequence', $node);
+ } ?>
 
-   <!-- Formatted Sequences -->
-   <?php print theme('tripal_feature_featureloc_sequences', $node); ?>
+ <!-- Formatted Sequences -->
+ <?php print theme('tripal_feature_featureloc_sequences', $node); ?>
 
-   <!-- Relationships -->
-   <?php print theme('tripal_feature_relationships', $node); ?>
+ <!-- Relationships -->
+ <?php print theme('tripal_feature_relationships', $node); ?>
 
-   <!-- Feature locations --> <?php
-   if(strcmp($feature->type_id->name,'scaffold')!=0 and
-      strcmp($feature->type_id->name,'chromosome')!=0 and
-      strcmp($feature->type_id->name,'supercontig')!=0 and
-      strcmp($feature->type_id->name,'pseudomolecule')!=0)
-   {
-      print theme('tripal_feature_alignments', $node);
-   } ?>
+ <!-- Feature locations --> <?php
+ if(strcmp($feature->type_id->name,'scaffold')!=0 and
+ strcmp($feature->type_id->name,'chromosome')!=0 and
+ strcmp($feature->type_id->name,'supercontig')!=0 and
+ strcmp($feature->type_id->name,'pseudomolecule')!=0)
+ {
+ print theme('tripal_feature_alignments', $node);
+ } ?>
 
-   <!-- Resource Blocks CCK elements --><?php
-   for($i = 0; $i < count($node->field_resource_titles); $i++){
-     if($node->field_resource_titles[$i]['value']){ ?>
-       -box" class="tripal_feature-info-box tripal-info-box">
-         <?php print $node->field_resource_titles[$i]['value'] ?>
-         <?php print $node->field_resource_blocks[$i]['value']; ?>
-       <?php
-     }
-   }?>
+ <!-- Resource Blocks CCK elements --><?php
+ for($i = 0; $i < count($node->field_resource_titles); $i++){
+ if($node->field_resource_titles[$i]['value']){ ?>
+ -box" class="tripal_feature-info-box tripal-info-box">
+ <?php print $node->field_resource_titles[$i]['value'] ?>
+ <?php print $node->field_resource_blocks[$i]['value']; ?>
+ <?php
+ }
+ }?>
 
-   <!-- Let modules add more content -->
-   <?php print $content ?>
+ <!-- Let modules add more content -->
+ <?php print $content ?>
 
 ```
 
@@ -465,7 +465,7 @@ Also, within this **div** block are several **print theme** statements
 one of which is as follows:
 
 ``` enter
-   <?php print theme('tripal_feature_base',$node); ?>
+ <?php print theme('tripal_feature_base',$node); ?>
 ```
 
 These statements instruct Drupal to load **subtemplates**. These
@@ -481,16 +481,16 @@ pseudomolecule. This is because those datasets typically have very large
 sequences that would be too slow for the page.
 
 ``` enter
-   <!-- Sequence -->
-   <?php
-   if(strcmp($feature->type_id->name,'scaffold')!=0 and
-      strcmp($feature->type_id->name,'chromosome')!=0 and
-      strcmp($feature->type_id->name,'supercontig')!=0 and
-      strcmp($feature->type_id->name,'pseudomolecule')!=0)
-   {
-      include('tripal_feature/tripal_feature_sequence.tpl.php');
-   }
-   ?>
+ <!-- Sequence -->
+ <?php
+ if(strcmp($feature->type_id->name,'scaffold')!=0 and
+ strcmp($feature->type_id->name,'chromosome')!=0 and
+ strcmp($feature->type_id->name,'supercontig')!=0 and
+ strcmp($feature->type_id->name,'pseudomolecule')!=0)
+ {
+ include('tripal_feature/tripal_feature_sequence.tpl.php');
+ }
+  ?>
 ```
 
 Finally, the resources side-bar is the last thing defined in the default
@@ -498,19 +498,19 @@ node templates. The code is as follows:
 
 ``` enter
 
-   Resources
-   <ul id="tripal_feature_toc_list" class="tripal_toc_list">
+ Resources
+ <ul id="tripal_feature_toc_list" class="tripal_toc_list">
 
-     <!-- Resource Links CCK elements --><?php
-     for($i = 0; $i < count($node->field_resource_links); $i++){
-       if($node->field_resource_links[$i]['value']){
-         $matches = preg_split("/\|/",$node->field_resource_links[$i]['value']);?>
-         <li><a href="/wiki/<?php print $matches[1] ?>" target="_blank"><?php print $matches[0] ?></a></li><?php
-       }
-     }?>
+ <!-- Resource Links CCK elements --><?php
+ for($i = 0; $i < count($node->field_resource_links); $i++){
+ if($node->field_resource_links[$i]['value']){
+ $matches = preg_split("/\|/",$node->field_resource_links[$i]['value']);?>
+ <li><a href="/wiki/<?php print $matches[1] ?>" target="_blank"><?php print $matches[0] ?></a></li><?php
+ }
+ }?>
 
-     <?php // ADD CUSTOMIZED <li> LINKS HERE ?>
-   </ul>
+ <?php // ADD CUSTOMIZED <li> LINKS HERE ?>
+ </ul>
 
 ```
 
@@ -542,32 +542,32 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/dc/TripalDevHB-Resources.png/300px-TripalDevHB-Resources.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/dc/TripalDevHB-Resources.png 2x"
 width="200" height="306" alt="TripalDevHB-Resources.png" /></td>
 <td><pre class="enter"><code>&lt;div id=&quot;tripal_organism_toc&quot; class=&quot;tripal_toc&quot;&gt;
-   &lt;div id=&quot;tripal_organism_toc_title&quot; class=&quot;tripal_toc_title&quot;&gt;Resources&lt;/div&gt;
-   &lt;ul id=&quot;tripal_organism_toc_list&quot; class=&quot;tripal_toc_list&quot;&gt;
-     &lt;?php if($organism-&gt;species == &#39;clementina&#39;){?&gt;
-        &lt;li&gt;&lt;a href=&quot;/species/clementina/genome0.9&quot;&gt;JGI Genome Assembly v0.9&lt;/a&gt;&lt;/li&gt;
-     &lt;?php } ?&gt;
-     &lt;?php if($organism-&gt;species == &#39;sinensis&#39;){?&gt;
-        &lt;li&gt;&lt;a href=&quot;/species/sinensis/genome1.0&quot;&gt;JGI Genome Assembly v1.0&lt;/a&gt;&lt;/li&gt;
-     &lt;?php } ?&gt;
-   &lt;/ul&gt;
-   &lt;b&gt;External links&lt;/b&gt;
-   &lt;ul&gt;
-     &lt;?php if($organism-&gt;species == &#39;clementina&#39;){?&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;name=Citrus+clementina&amp;lvl=0&amp;srchmode=1&quot; target=&quot;_blank&quot;&gt;NCBI&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?314344&quot; target=&quot;_blank&quot;&gt;GRIN&lt;/a&gt;&lt;/li&gt;
-     &lt;?php } ?&gt;
-     &lt;?php if($organism-&gt;species == &#39;sinensis&#39;){?&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;name=Citrus+sinensis&amp;lvl=0&amp;srchmode=1&quot; target=&quot;_blank&quot;&gt;NCBI&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?10782&quot; target=&quot;_blank&quot;&gt;GRIN&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.eol.org/pages/582206&quot; target=&quot;_blank&quot;&gt;Encylopeida of Life&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/nuccore/114329635?report=graph&quot;&gt;Chloroplast genome&lt;/a&gt;&lt;/li&gt;
-     &lt;?php } ?&gt;
-     &lt;?php if($organism-&gt;species == &#39;trifoliata&#39;){?&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;name=Citrus+trifoliata&amp;lvl=0&amp;srchmode=1&quot; target=&quot;_blank&quot;&gt;NCBI&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?29344&quot; target=&quot;_blank&quot;&gt;GRIN&lt;/a&gt;&lt;/li&gt;
-     &lt;?php } ?&gt;
-   &lt;/ul&gt;
+ &lt;div id=&quot;tripal_organism_toc_title&quot; class=&quot;tripal_toc_title&quot;&gt;Resources&lt;/div&gt;
+ &lt;ul id=&quot;tripal_organism_toc_list&quot; class=&quot;tripal_toc_list&quot;&gt;
+ &lt;?php if($organism-&gt;species == &#39;clementina&#39;){?&gt;
+ &lt;li&gt;&lt;a href=&quot;/species/clementina/genome0.9&quot;&gt;JGI Genome Assembly v0.9&lt;/a&gt;&lt;/li&gt;
+ &lt;?php } ?&gt;
+ &lt;?php if($organism-&gt;species == &#39;sinensis&#39;){?&gt;
+ &lt;li&gt;&lt;a href=&quot;/species/sinensis/genome1.0&quot;&gt;JGI Genome Assembly v1.0&lt;/a&gt;&lt;/li&gt;
+ &lt;?php } ?&gt;
+ &lt;/ul&gt;
+ &lt;b&gt;External links&lt;/b&gt;
+ &lt;ul&gt;
+ &lt;?php if($organism-&gt;species == &#39;clementina&#39;){?&gt;
+ &lt;li&gt;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;name=Citrus+clementina&amp;lvl=0&amp;srchmode=1&quot; target=&quot;_blank&quot;&gt;NCBI&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?314344&quot; target=&quot;_blank&quot;&gt;GRIN&lt;/a&gt;&lt;/li&gt;
+ &lt;?php } ?&gt;
+ &lt;?php if($organism-&gt;species == &#39;sinensis&#39;){?&gt;
+ &lt;li&gt;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;name=Citrus+sinensis&amp;lvl=0&amp;srchmode=1&quot; target=&quot;_blank&quot;&gt;NCBI&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?10782&quot; target=&quot;_blank&quot;&gt;GRIN&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;http://www.eol.org/pages/582206&quot; target=&quot;_blank&quot;&gt;Encylopeida of Life&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/nuccore/114329635?report=graph&quot;&gt;Chloroplast genome&lt;/a&gt;&lt;/li&gt;
+ &lt;?php } ?&gt;
+ &lt;?php if($organism-&gt;species == &#39;trifoliata&#39;){?&gt;
+ &lt;li&gt;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;name=Citrus+trifoliata&amp;lvl=0&amp;srchmode=1&quot; target=&quot;_blank&quot;&gt;NCBI&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?29344&quot; target=&quot;_blank&quot;&gt;GRIN&lt;/a&gt;&lt;/li&gt;
+ &lt;?php } ?&gt;
+ &lt;/ul&gt;
 &lt;/div&gt;</code></pre></td>
 </tr>
 </tbody>
@@ -584,19 +584,19 @@ Summary
 
 In Summary, each node template file has two major sections:
 
-1.  a **div** block defined with a class of **tripal_details** to serve
-    as the container for content
-    1.  this section contains include statements for subtemplates and
-        logic to include subtemplates under different conditions.
-2.  a **div** block defined with a class of **tripal_toc** to serve as
-    the resources side bar
-    1.  a title for the resources sidebar defined by a **block** with a
-        class of **tripal_toc_title**
-    2.  a list section for the resources sidebar defined by a **block**
-        with a class of **tripal_tocl_list**
+1. a **div** block defined with a class of **tripal_details** to serve
+ as the container for content
+ 1. this section contains include statements for subtemplates and
+ logic to include subtemplates under different conditions.
+2. a **div** block defined with a class of **tripal_toc** to serve as
+ the resources side bar
+ 1. a title for the resources sidebar defined by a **block** with a
+ class of **tripal_toc_title**
+ 2. a list section for the resources sidebar defined by a **block**
+ with a class of **tripal_tocl_list**
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: A Tripal compatible template file should only have one **div** block for the details region and one block the resources side bar. |
 
@@ -641,7 +641,7 @@ subtemplates to the sidebar using Javascript described in the next
 section.
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: By convention, the default subtemplate (the one listed first) should have the word **base** in the template name. This is to easily identify it as a type of "home page" for the content type. |
 
@@ -655,12 +655,12 @@ Each subtemplate file follows the same structural layout:
 
 - A top section where variables are defined
 - A **div** block of class **tripal-info-box** to define the container
-  for the content. All data should be displayed within this block.
+ for the content. All data should be displayed within this block.
 - Two internal **div** boxes:
-  - One to identify the title of the container with a class of
-    **tripal-info-box-title**
-  - One to provide a description of the content of class of
-    **tripal-info-box-desc**
+ - One to identify the title of the container with a class of
+ **tripal-info-box-title**
+ - One to provide a description of the content of class of
+ **tripal-info-box-desc**
 
 The following code is taken from the **tripal_feature_base.tpl.php**
 template and demonstrates the use of each of the required structural
@@ -668,9 +668,9 @@ elements descrbibed above:
 
 ``` enter
 
-  <?php print $feature->type_id->name ?> Details
+ <?php print $feature->type_id->name ?> Details
 
-  [.... additional content here ....]
+ [.... additional content here ....]
 
 ```
 
@@ -678,22 +678,22 @@ elements descrbibed above:
 
 To add a new subtemplate to Tripal follow these steps
 
-1.  Create the template file with a **.tpl.php** extension in the
-    appropriate subtemplate directory. For example, to add a new
-    subtemplate with content to appear on a feature page, add the file
-    to the tripal_theme/tripal_feature directory.
+1. Create the template file with a **.tpl.php** extension in the
+ appropriate subtemplate directory. For example, to add a new
+ subtemplate with content to appear on a feature page, add the file
+ to the tripal_theme/tripal_feature directory.
 
-2.  Follow the guidelines for the structural layout of the PHP code as
-    described in the previous section. To access data from Chado, in the
-    templates, follow the instructions in the [Accessing Chado
-    Data](#Accessing_Chado_Data) section below.
+2. Follow the guidelines for the structural layout of the PHP code as
+ described in the previous section. To access data from Chado, in the
+ templates, follow the instructions in the [Accessing Chado
+ Data](#Accessing_Chado_Data) section below.
 
-3.  Add an entry in the appropriate **node** template file for this new
-    template. For example, to add a new subtemplate to appear on the
-    feature page, add a new entry to the **node-chado_feature.tpl.php**
-    file. The entry should be an **include** statement such as:
+3. Add an entry in the appropriate **node** template file for this new
+ template. For example, to add a new subtemplate to appear on the
+ feature page, add a new entry to the **node-chado_feature.tpl.php**
+ file. The entry should be an **include** statement such as:
 
-        <?php include('tripal_feature/tripal_feature_mysubtemplate.tpl.php'); ?>
+ <?php include('tripal_feature/tripal_feature_mysubtemplate.tpl.php'); ?>
 
 You may have noticed that here we use an **include** statement for the
 subtemplate file rather than use a **print theme** statement as with
@@ -701,7 +701,7 @@ other subtemplates. This is because we are adding a single template
 which is managed by a Tripal module.
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: You should not need to add SQL queries to the PHP subtemplates. Use the Tripal API to access all necessary data. |
 
@@ -717,45 +717,45 @@ and CSS classes. Below is the JavaScript code take from the
 ``` enter
 <script type="text/javascript">
 if (Drupal.jsEnabled) {
-   Drupal.behaviors.organismBehavior = function (context){
-      // hide all tripal info boxes at the start
-      $(".tripal-info-box").hide();
+ Drupal.behaviors.organismBehavior = function (context){
+ // hide all tripal info boxes at the start
+ $(".tripal-info-box").hide();
 
-      // iterate through all of the info boxes and add their titles
-      // to the table of contents
-      $(".tripal-info-box-title").each(function(){
-        var parent = $(this).parent();
-        var id = $(parent).attr('id');
-        var title = $(this).text();
-        $('#tripal_feature_toc_list').append('<li><a href="#'+id+'" class="tripal_feature_toc_item">'+title+'</a></li>');
-      });
+ // iterate through all of the info boxes and add their titles
+ // to the table of contents
+ $(".tripal-info-box-title").each(function(){
+ var parent = $(this).parent();
+ var id = $(parent).attr('id');
+ var title = $(this).text();
+ $('#tripal_feature_toc_list').append('<li><a href="#'+id+'" class="tripal_feature_toc_item">'+title+'</a></li>');
+ });
 
-      // when a title in the table of contents is clicked, then
-      // show the corresponding item in the details box
-      $(".tripal_feature_toc_item").click(function(){
-         $(".tripal-info-box").hide();
-         href = $(this).attr('href');
-         $(href).fadeIn('slow');
-         // we want to make sure our table of contents and the details
-         // box stay the same height
-         $("#tripal_feature_toc").height($(href).parent().height());
-         return false;
-      });
+ // when a title in the table of contents is clicked, then
+ // show the corresponding item in the details box
+ $(".tripal_feature_toc_item").click(function(){
+ $(".tripal-info-box").hide();
+ href = $(this).attr('href');
+ $(href).fadeIn('slow');
+ // we want to make sure our table of contents and the details
+ // box stay the same height
+ $("#tripal_feature_toc").height($(href).parent().height());
+ return false;
+ });
 
-      // we want the base details to show up when the page is first shown
-      // unless the user specified a specific block
-      var block = window.location.href.match(/[\?|\&]block=(.+?)\&/)
-      if(block == null){
-         block = window.location.href.match(/[\?|\&]block=(.+)/)
-      }
-      if(block != null){
-         $("#tripal_feature-"+block[1]+"-box").show();
-      } else {
-         $("#tripal_feature-base-box").show();
-      }
+ // we want the base details to show up when the page is first shown
+ // unless the user specified a specific block
+ var block = window.location.href.match(/[\?|\&]block=(.+?)\&/)
+ if(block == null){
+ block = window.location.href.match(/[\?|\&]block=(.+)/)
+ }
+ if(block != null){
+ $("#tripal_feature-"+block[1]+"-box").show();
+ } else {
+ $("#tripal_feature-base-box").show();
+ }
 
-      $("#tripal_feature_toc").height($("#tripal_feature-base-box").parent().height());
-   };
+ $("#tripal_feature_toc").height($("#tripal_feature-base-box").parent().height());
+ };
 }
 </script>
 ```
@@ -764,7 +764,7 @@ When the page first loads, the Javascript hides all of the sub template
 content with the following statement:
 
 ``` enter
-      $(".tripal-info-box").hide();
+ $(".tripal-info-box").hide();
 ```
 
 It then iterates through each subtemplate and adds the title to the
@@ -773,7 +773,7 @@ visible when clicked, sets the first subtemplate as visible and adjusts
 the height of the Resources side-bar.
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: When creating a template for a new node, the Javascript code above should be duplicated, with names of the content and sidebar div blocks changed to match your content name. |
 
@@ -789,7 +789,7 @@ the variable. The record is then available in the template in the
 following way:
 
 ``` enter
-   $feature = $variables['node']->feature;
+ $feature = $variables['node']->feature;
 ```
 
 In the example code above, the **\$feature** variable now contains the
@@ -797,10 +797,10 @@ record from the feature table. The fields for the record can then be
 accessed in the following way:
 
 ``` enter
-   $name = $feature->name;
-   $uniquename = $feature->uniquename;
-   $feature_id = $feature->feature_id;
-   ...
+ $name = $feature->name;
+ $uniquename = $feature->uniquename;
+ $feature_id = $feature->feature_id;
+ ...
 ```
 
 The following example code, taken from the
@@ -810,29 +810,29 @@ are accessed and used:
 ``` enter
 <?php
 
-$feature  = $variables['node']->feature;
+$feature = $variables['node']->feature;
 
 ?>
 
-  <?php print $feature->type_id->name ?> Details
+ <?php print $feature->type_id->name ?> Details
 
-   <?php if(strcmp($feature->is_obsolete,'t')==0){ ?>
-      This feature is obsolete
-   <?php }?>
-   <table id="tripal_feature-base-table" class="tripal_feature-table tripal-table tripal-table-vert">
-      <tr class="tripal_feature-table-even-row tripal-table-even-row">
-        <th>Name</th>
-        <td><?php print $feature->name; ?></td>
-      </tr>
-      <tr class="tripal_feature-table-odd-row tripal-table-odd-row">
-        <th nowrap>Unique Name</th>
-        <td><?php print $feature->uniquename; ?></td>
-      </tr>
-      <tr class="tripal_feature-table-even-row tripal-table-even-row">
-        <th>Internal ID</th>
-        <td><?php print $feature->feature_id; ?></td>
-      </tr>
-      ...
+ <?php if(strcmp($feature->is_obsolete,'t')==0){ ?>
+ This feature is obsolete
+ <?php }?>
+ <table id="tripal_feature-base-table" class="tripal_feature-table tripal-table tripal-table-vert">
+ <tr class="tripal_feature-table-even-row tripal-table-even-row">
+ <th>Name</th>
+ <td><?php print $feature->name; ?></td>
+ </tr>
+ <tr class="tripal_feature-table-odd-row tripal-table-odd-row">
+ <th nowrap>Unique Name</th>
+ <td><?php print $feature->uniquename; ?></td>
+ </tr>
+ <tr class="tripal_feature-table-even-row tripal-table-even-row">
+ <th>Internal ID</th>
+ <td><?php print $feature->feature_id; ?></td>
+ </tr>
+ ...
 ```
 
 Within the HTML table structure, the fields of the feature are printed
@@ -850,9 +850,9 @@ the case of the feature table, this would be the **organism_id** field.
 Therefore, you can access the organism fields in the following way:
 
 ``` enter
-   $genus = $feature->organism_id->genus;
-   $species = $feature->organism_id->species;
-   ...
+ $genus = $feature->organism_id->genus;
+ $species = $feature->organism_id->species;
+ ...
 ```
 
 ##### Accessing Large Text Fields
@@ -869,11 +869,11 @@ using the **tripal_core_expand_chado_vars** function. This function take
 the following arguments:
 
 - The associative array for the record (e.g.
-  \$variables-\>\['node'\]-\>feature)
+ \$variables-\>\['node'\]-\>feature)
 - The type of expansion to do (e.g. 'field', 'node', or 'table')
 - The name of the field, node or table to expand. If a field, the name
-  must include the table name as well as the field name (e.g.
-  'features.residues').
+ must include the table name as well as the field name (e.g.
+ 'features.residues').
 
 The function returns the associative array, passed as the first
 argument, but with the requested expansion.
@@ -884,7 +884,7 @@ not automatically included in the record. To get this information we can
 expand the record in the following way:
 
 ``` enter
-$feature  = $variables['node']->feature;
+$feature = $variables['node']->feature;
 $feature = tripal_core_expand_chado_vars($feature,'field','feature.residues');
 ```
 
@@ -923,9 +923,9 @@ results into an array to make it easy to iterate over the results:
 
 ``` enter
 if (!$synonyms) {
-   $synonyms = array();
+ $synonyms = array();
 } elseif (!is_array($synonyms)) {
-   $synonyms = array($synonyms);
+ $synonyms = array($synonyms);
 }
 ```
 
@@ -946,19 +946,19 @@ When expanding tables in a one-to-many relationship it is possible to
 return hundreds or thousands (or more) records. There are two problems
 that can occur when large datasets are returned
 
-1.  First, by default, when Tripal expands a record to include tables in
-    a one-to-many relationship using the
-    **tripal_core_expand_chado_vars** function it will automatically
-    recurse through all of the one-to-one relationships and add new
-    records. This allows you to have access to all of the data in Chado
-    related to the primary data type. However, you can limit the amount
-    of recursion that will take place. This is helpful if there are
-    hundreds or thousands of records returned and recursing through all
-    of their foreign-key relationships would dramatically slow the page
-    load.
-2.  Second, thousands of records can be too much to display on the
-    browser, making the page load slowly or not at all. Therefore,
-    limiting the number of result and providing a pager is desired.
+1. First, by default, when Tripal expands a record to include tables in
+ a one-to-many relationship using the
+ **tripal_core_expand_chado_vars** function it will automatically
+ recurse through all of the one-to-one relationships and add new
+ records. This allows you to have access to all of the data in Chado
+ related to the primary data type. However, you can limit the amount
+ of recursion that will take place. This is helpful if there are
+ hundreds or thousands of records returned and recursing through all
+ of their foreign-key relationships would dramatically slow the page
+ load.
+2. Second, thousands of records can be too much to display on the
+ browser, making the page load slowly or not at all. Therefore,
+ limiting the number of result and providing a pager is desired.
 
 The following code is from the tripal_featuremap_featurepos.tpl.php
 template of Tripal. Here, the featuremap may be a genetic map and we
@@ -977,21 +977,21 @@ $featurepos_pager_id = 0;
 
 // set the options for expanding the featurepos table
 $options = array(
-  'return_array' => 1,
-  'order_by' => array('map_feature_id' => 'ASC'),
-  'pager' => array('limit' => $num_results_per_page, 'element' => $featurepos_pager_id),
-  'include_fk' => array(
-    'map_feature_id' => array(
-      'type_id' => 1,
-      'organism_id' => 1,
-    ),
-    'feature_id' => array(
-      'type_id' => 1,
-    ),
-    'featuremap_id' => array(
-       'unittype_id' => 1,
-    ),
-  ),
+ 'return_array' => 1,
+ 'order_by' => array('map_feature_id' => 'ASC'),
+ 'pager' => array('limit' => $num_results_per_page, 'element' => $featurepos_pager_id),
+ 'include_fk' => array(
+ 'map_feature_id' => array(
+ 'type_id' => 1,
+ 'organism_id' => 1,
+ ),
+ 'feature_id' => array(
+ 'type_id' => 1,
+ ),
+ 'featuremap_id' => array(
+ 'unittype_id' => 1,
+ ),
+ ),
 );
 
 // expand the featurepos table to include map features
@@ -1081,7 +1081,7 @@ should have the following skills:
 - Knowledge of PHP
 - Understanding of the Drupal API
 - Knowledge of Chado and relationships between tables (at least tables
-  where data of interest is stored).
+ where data of interest is stored).
 - Understanding of the Tripal API (described here)
 
 It is best to have a basic understanding of Drupal module development to
@@ -1098,7 +1098,7 @@ learned through
 <a href="http://drupal.org/node/300614%7C" class="external text"
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. Before proceeding with Tripal module development, it is recommended to have a general understanding of the Drupal API. It is possible to add functionality to Drupal without strictly using the API. However, inappropriate use of the API can cause problems in the future when integrating with other modules or for upgrading. It is important to become familiar with the coding standards suggested by Drupal to ensure readable, re-usable code. |
 
@@ -1114,10 +1114,10 @@ These include the following:
 - Chado Schema API for obtaining Chado table structural information
 - Analyses API for creating new analysis modules
 - Module APIs (e.g. Tripal Feature module API, Tripal DB module API,
-  etc).
+ etc).
 - Views API for integrating MViews and Chado tables with the
-  <a href="http://www.drupal.org/project/views" class="external text"
-  rel="nofollow">Views</a> module
+ <a href="http://www.drupal.org/project/views" class="external text"
+ rel="nofollow">Views</a> module
 
 The Tripal API documentation can be found here:
 <a href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/index.html"
@@ -1141,13 +1141,13 @@ is the SQL query used for to extract this information:
 
 ``` enter
 SELECT O.organism_id, O.genus, O.species, O.common_name,
-   count(F.feature_id) as num_features,
-   CVT.cvterm_id, CVT.name as feature_type
+ count(F.feature_id) as num_features,
+ CVT.cvterm_id, CVT.name as feature_type
 FROM Organism O
-   INNER JOIN Feature F           ON O.Organism_id = F.organism_id
-   INNER JOIN Cvterm CVT          ON F.type_id = CVT.cvterm_id
+ INNER JOIN Feature F ON O.Organism_id = F.organism_id
+ INNER JOIN Cvterm CVT ON F.type_id = CVT.cvterm_id
 GROUP BY O.Organism_id, O.genus, O.species, O.common_name,
-   CVT.cvterm_id, CVT.name
+ CVT.cvterm_id, CVT.name
 ```
 
 This query is too slow to execute for each visitor to the site,
@@ -1227,7 +1227,7 @@ are met before inserts and updates and provide results from queries in a
 consistent manner.
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. Even though it is possible to query Chado without the Tripal API function calls, it is best to use them as it provides a consistent interface with Chado, reduces the amount of coding and makes the code more legible by all Tripal developers. |
 
@@ -1333,7 +1333,7 @@ that the modules **tripal_core**, **tripal_feature**, and
 be enabled.
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. At a minimum your Tripal extension module should always set the package to be **Tripal Extensions** and should have the **tripal_core** module as a dependency. |
 
@@ -1380,40 +1380,40 @@ The following code creates a new module with the project name
 <?php
 
 /**
- *  Implementation of the Drupal hook_init() subroutine.
+ * Implementation of the Drupal hook_init() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function tripal_example_module_init(){
 
-   // add javascript and CSS requirements.  See comments
-   // in the developers handbook for where to place CSS and JS files
-   drupal_add_js (drupal_get_path('theme', 'tripal').'/js/tripal_example.js');
-   drupal_add_css(drupal_get_path('theme', 'tripal').'/css/tripal_example.css');
+ // add javascript and CSS requirements. See comments
+ // in the developers handbook for where to place CSS and JS files
+ drupal_add_js (drupal_get_path('theme', 'tripal').'/js/tripal_example.js');
+ drupal_add_css(drupal_get_path('theme', 'tripal').'/css/tripal_example.css');
 }
 
 /**
- *  Implementation of the Drupal hook_menu() subroutine.
+ * Implementation of the Drupal hook_menu() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function tripal_example_module_menu() {
-   $items = array()
+ $items = array()
 
-   // Add an instruction page telling the user how your module works.
-   // Any menu items beginning with the path 'admin' will be made
-   // available under the 'Administer' menu
-   $items['admin/tripal/tripal_example_module'] = array(
-     'title' => 'Example Module',
-     'description' => 'Basic Description of Tripal Example Module Functionality',
-     'page callback' => 'tripal_example_module_description_page',
-     'access arguments' => array('administer site configuration'),
-     'type' => MENU_NORMAL_ITEM,
-   );
+ // Add an instruction page telling the user how your module works.
+ // Any menu items beginning with the path 'admin' will be made
+ // available under the 'Administer' menu
+ $items['admin/tripal/tripal_example_module'] = array(
+ 'title' => 'Example Module',
+ 'description' => 'Basic Description of Tripal Example Module Functionality',
+ 'page callback' => 'tripal_example_module_description_page',
+ 'access arguments' => array('administer site configuration'),
+ 'type' => MENU_NORMAL_ITEM,
+ );
 
-   // add additional menu items here as needed by your module
+ // add additional menu items here as needed by your module
 
-   return $items;
+ return $items;
 }
 
 <?php
@@ -1422,41 +1422,41 @@ function tripal_example_module_menu() {
  * Purpose: Provide Guidance to new Tripal Admin
  *
  * @return
- *   HTML Formatted text
+ * HTML Formatted text
  *
  * @ingroup tripal_example_module
  */
 function tripal_example_module_description_page() {
 
-   // provide a description of how your module works.  Typically, the top
-   // section is reserved for Quick Links that take the site admin to
-   // the administrative functions your module provides.
-   $text .= '<h3>Tripal Example Module Administrative Tools Quick Links:</h3>';
-   $text .= "<ul>
-              <li><a href=\"".url("admin/tripal/tripal_example_module/configuration") . "\">Example Configuration</a></li>
-              <li><a href=\"".url("admin/tripal/tripal_example_module/foo_bar"). "\">Foo Bar Functionality</a></li>
-             </ul>";
+ // provide a description of how your module works. Typically, the top
+ // section is reserved for Quick Links that take the site admin to
+ // the administrative functions your module provides.
+ $text .= '<h3>Tripal Example Module Administrative Tools Quick Links:</h3>';
+ $text .= "<ul>
+ <li><a href=\"".url("admin/tripal/tripal_example_module/configuration") . "\">Example Configuration</a></li>
+ <li><a href=\"".url("admin/tripal/tripal_example_module/foo_bar"). "\">Foo Bar Functionality</a></li>
+ </ul>";
 
-   $text .= '<h3>Module Description:</h3>';
-   $text .= '<p>This module provides an interface for ....
-             </p>';
+ $text .= '<h3>Module Description:</h3>';
+ $text .= '<p>This module provides an interface for ....
+ </p>';
 
-   $text .= '<h3>Setup Instructions:</h3>';
-   $text .= '<p>After installation of the feature module.  The following tasks should be performed
-             <ol>
-               <li><p><b>Set Permissions</b>: ....</p></li>
-             </ol>
-             </p>';
+ $text .= '<h3>Setup Instructions:</h3>';
+ $text .= '<p>After installation of the feature module. The following tasks should be performed
+ <ol>
+ <li><p><b>Set Permissions</b>: ....</p></li>
+ </ol>
+ </p>';
 
-   $text .= '<h3>Features of This Module:</h3>';
-   $text .= '<p>...
-             </p>';
+ $text .= '<h3>Features of This Module:</h3>';
+ $text .= '<p>...
+ </p>';
 
-   $text .= '<h3>How to Customize Content</h3>';
-   $text .= '<p>...
-             </p>';
+ $text .= '<h3>How to Customize Content</h3>';
+ $text .= '<p>...
+ </p>';
 
-  return $text;
+ return $text;
 }
 ```
 
@@ -1474,246 +1474,246 @@ the customary default code found in most Tripal extension modules.
 ``` enter
 
 /**
- *  Implementation of the Drupal hook_node_info() subroutine.
+ * Implementation of the Drupal hook_node_info() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function tripal_example_module_node_info() {
 
-   // The hook_node_info() provides details about how
-   // the new content type we want to create.  See the
-   // Drupal API documentation for information about the
-   // elements of the array the get returned by this function.
-   $nodes = array();
-   $nodes['example_node'] = array(
-      'name' => t('New Example Node (Content Type)'),
-      'module' => 'tripal_example_module',
-      'description' => t('Provides a description for what this content type does'),
-      'has_title' => FALSE,
-      'title_label' => t('Content Type Label'),
-      'has_body' => FALSE,
-      'body_label' => t('Body Label'),
-      'locked' => TRUE
-   );
-   return $nodes;
+ // The hook_node_info() provides details about how
+ // the new content type we want to create. See the
+ // Drupal API documentation for information about the
+ // elements of the array the get returned by this function.
+ $nodes = array();
+ $nodes['example_node'] = array(
+ 'name' => t('New Example Node (Content Type)'),
+ 'module' => 'tripal_example_module',
+ 'description' => t('Provides a description for what this content type does'),
+ 'has_title' => FALSE,
+ 'title_label' => t('Content Type Label'),
+ 'has_body' => FALSE,
+ 'body_label' => t('Body Label'),
+ 'locked' => TRUE
+ );
+ return $nodes;
 }
 /**
- *  Implementation of the Drupal hook_perm() subroutine.
+ * Implementation of the Drupal hook_perm() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function tripal_example_module_perm(){
 
-   // create permission types to allow the site admin to
-   // specify which users can access, create, delete or edit
-   // the content provided by nodes of this type.  Implementation
-   // of these permissions is performed in the hook_access()
-   // function below.
-   $perms = array(
-      'access example_node content',
-      'create example_node content',
-      'delete example_node content',
-      'edit example_node content',
-   );
-   return $perms;
+ // create permission types to allow the site admin to
+ // specify which users can access, create, delete or edit
+ // the content provided by nodes of this type. Implementation
+ // of these permissions is performed in the hook_access()
+ // function below.
+ $perms = array(
+ 'access example_node content',
+ 'create example_node content',
+ 'delete example_node content',
+ 'edit example_node content',
+ );
+ return $perms;
 }
 /**
- *  Implementation of the Drupal hook_load() subroutine.
+ * Implementation of the Drupal hook_load() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function example_node_load($node){
 
-   // add any additional data elements to the node by
-   // populating the $additions object.  This is
-   // necessary when data needs to be pulled from Chado.
-   // example code from the tripal_feature module is provided
-   // below
+ // add any additional data elements to the node by
+ // populating the $additions object. This is
+ // necessary when data needs to be pulled from Chado.
+ // example code from the tripal_feature module is provided
+ // below
 
-   // A linker table should exists linking entries in a Chado
-   // table to a Drupal node. This table is created in the
-   // installation of the module in the .install file.  Here
-   // we need to get the primary key value for the Chado data that
-   // belongs to this node.  For example, for the feature table,
-   // a 'chado_feature' linker table exists in the Drupal database.
-   // The call below (with 'feature' instead of 'example') would
-   // retrieve for us, the feature_id of the feature in Chado.
-   $feature_id = chado_get_id_for_node('feature',$node);
+ // A linker table should exists linking entries in a Chado
+ // table to a Drupal node. This table is created in the
+ // installation of the module in the .install file. Here
+ // we need to get the primary key value for the Chado data that
+ // belongs to this node. For example, for the feature table,
+ // a 'chado_feature' linker table exists in the Drupal database.
+ // The call below (with 'feature' instead of 'example') would
+ // retrieve for us, the feature_id of the feature in Chado.
+ $feature_id = chado_get_id_for_node('feature',$node);
 
-   // use the tripal_core_generate_chado_vars API call to get the
-   // data from Chado.  You should generally use the API function calls
-   // to get Chado data rather than writing your own SQL queries.
-   // it is important to use the tripal_core_generate_chado_vars()
-   // function here rather than the tripal_core_chado_select() function
-   // because the first will cross foreign key constraints and populate
-   // that data as well, making all information related to this feature
-   // available to the page (and hence, site admin for customization).
-   $values = array('feature_id' => $feature_id);
-   $feature = tripal_core_generate_chado_var('feature',$values);
+ // use the tripal_core_generate_chado_vars API call to get the
+ // data from Chado. You should generally use the API function calls
+ // to get Chado data rather than writing your own SQL queries.
+ // it is important to use the tripal_core_generate_chado_vars()
+ // function here rather than the tripal_core_chado_select() function
+ // because the first will cross foreign key constraints and populate
+ // that data as well, making all information related to this feature
+ // available to the page (and hence, site admin for customization).
+ $values = array('feature_id' => $feature_id);
+ $feature = tripal_core_generate_chado_var('feature',$values);
 
-   // now add the feature data as an "addition" to the node.
-   // Always use the name of the Chado table as the variable
-   // added (e.g. feature on $additions->feature).
-   $additions->feature = $feature;
-   return $additions;
+ // now add the feature data as an "addition" to the node.
+ // Always use the name of the Chado table as the variable
+ // added (e.g. feature on $additions->feature).
+ $additions->feature = $feature;
+ return $additions;
 }
 
 /**
- *  Implementation of the Drupal hook_insert() subroutine.
+ * Implementation of the Drupal hook_insert() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function example_node_insert($node){
 
-   // use the tripal_core_chado_insert() API function to
-   // insert a new record into the Chado database
+ // use the tripal_core_chado_insert() API function to
+ // insert a new record into the Chado database
 
 }
 
 /**
- *  Implementation of the Drupal hook_update() subroutine.
+ * Implementation of the Drupal hook_update() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function example_node_update($node){
 
-   // use the tripal_core_chado_update() API function to
-   // insert a new record into the Chado database
+ // use the tripal_core_chado_update() API function to
+ // insert a new record into the Chado database
 }
 
 /**
- *  Implementation of the Drupal hook_delete() subroutine.
+ * Implementation of the Drupal hook_delete() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function example_node_delete($node){
 
-   // use the tripal_core_chado_delete() API function to
-   // insert a new record into the Chado database
+ // use the tripal_core_chado_delete() API function to
+ // insert a new record into the Chado database
 }
 
 /**
- *  Implementation of the Drupal hook_view() subroutine.
+ * Implementation of the Drupal hook_view() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function example_node_view ($node, $teaser = FALSE, $page = FALSE) {
-   // Get the default node view then make customizations to the node as needed
-   $node = node_prepare($node, $teaser);
+ // Get the default node view then make customizations to the node as needed
+ $node = node_prepare($node, $teaser);
 
-   if (!$teaser) {
+ if (!$teaser) {
 
-      // if we're building the node for search indexing then leave only
-      // words that need to be index (for Drupal searching only)
-      if($node->build_mode == NODE_BUILD_SEARCH_INDEX){
-         // set the content for the node, but use a theme to do it.
-         // we don't want to hard-code HTML.
-         $node->content['index_version'] = array(
-            '#value' => theme('example_node_search_index',$node),
-            '#weight' => 1,
-         );
-      }
-      // if we're building the search results for a node then...
-      elseif($node->build_mode == NODE_BUILD_SEARCH_RESULT){
-         $node->content['index_version'] = array(
-            '#value' => theme('tripal_feature_search_results',$node),
-            '#weight' => 1,
-         );
-      }
-      else {
-         // for all other views of this node, including the full
-         // page, make any customizations if desired here. If you
-         // want to customize the look-and-feel of the main page then
-         // no code is necessary here as Drupal expects a template
-         // file to exists that can allow for customizations.
-      }
-   } else {
-      // make alterations to the node teaser here if needed
-   }
-   return $node;
+ // if we're building the node for search indexing then leave only
+ // words that need to be index (for Drupal searching only)
+ if($node->build_mode == NODE_BUILD_SEARCH_INDEX){
+ // set the content for the node, but use a theme to do it.
+ // we don't want to hard-code HTML.
+ $node->content['index_version'] = array(
+ '#value' => theme('example_node_search_index',$node),
+ '#weight' => 1,
+ );
+ }
+ // if we're building the search results for a node then...
+ elseif($node->build_mode == NODE_BUILD_SEARCH_RESULT){
+ $node->content['index_version'] = array(
+ '#value' => theme('tripal_feature_search_results',$node),
+ '#weight' => 1,
+ );
+ }
+ else {
+ // for all other views of this node, including the full
+ // page, make any customizations if desired here. If you
+ // want to customize the look-and-feel of the main page then
+ // no code is necessary here as Drupal expects a template
+ // file to exists that can allow for customizations.
+ }
+ } else {
+ // make alterations to the node teaser here if needed
+ }
+ return $node;
 }
 
 /**
- *  Implementation of the Drupal hook_theme() subroutine.
+ * Implementation of the Drupal hook_theme() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function tripal_example_module_theme () {
-   // we want to wrap all content to be themed so that
-   // other programmers can customize the content.  This
-   // function defines all of the module hooks we have
-   // written for our module. In the hook_view() function
-   // above we indicate that we want to call two theming
-   // hooks for the content used for indexing and for
-   // displaying results when searching.  Here we must
-   // tell Drupal about those hooks.
-   return array(
-      'tripal_example_module_search_index' => array (
-         'arguments' => array('node'),
-      ),
-      'tripal_example_module_search_results' => array (
-         'arguments' => array('node'),
-      ),
-   );
+ // we want to wrap all content to be themed so that
+ // other programmers can customize the content. This
+ // function defines all of the module hooks we have
+ // written for our module. In the hook_view() function
+ // above we indicate that we want to call two theming
+ // hooks for the content used for indexing and for
+ // displaying results when searching. Here we must
+ // tell Drupal about those hooks.
+ return array(
+ 'tripal_example_module_search_index' => array (
+ 'arguments' => array('node'),
+ ),
+ 'tripal_example_module_search_results' => array (
+ 'arguments' => array('node'),
+ ),
+ );
 }
 
 /**
- *  Implementation of the Drupal theme_hook() subroutine.
+ * Implementation of the Drupal theme_hook() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function theme_tripal_feature_search_index ($node) {
 
-   // customize the content for search indexing here. Only
-   // include words that should be indexed.  Strip out
-   // all non essential words or it may bloat the database
+ // customize the content for search indexing here. Only
+ // include words that should be indexed. Strip out
+ // all non essential words or it may bloat the database
 
-   return $content;
+ return $content;
 }
 
 /**
- *  Implementation of the Drupal theme_hook() subroutine.
+ * Implementation of the Drupal theme_hook() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function theme_tripal_feature_search_results ($node) {
 
-   // customize the content for search results here.
+ // customize the content for search results here.
 
-   return $content;
+ return $content;
 }
 
 /**
- *  Implementation of the Drupal hook_access() subroutine.
+ * Implementation of the Drupal hook_access() subroutine.
  *
  * @ingroup tripal_example_module
  */
 function example_node_access($op, $node, $account){
 
-   // here we check permissions for our node. We previously
-   // defined those permissions in the hook_perl() function
-   // above.  Now we define how those permissions are used.
-   if ($op == 'create') {
-      if(!user_access('create example_node content', $account)){
-         return FALSE;
-      }
-   }
-   if ($op == 'update') {
-      if (!user_access('edit example_node content', $account)) {
-         return FALSE;
-      }
-   }
-   if ($op == 'delete') {
-      if (!user_access('delete example_node content', $account)) {
-         return FALSE;
-      }
-   }
-   if ($op == 'view') {
-      if(!user_access('access example_node content', $account)){
-         return FALSE;
-      }
-   }
-   return NULL;
+ // here we check permissions for our node. We previously
+ // defined those permissions in the hook_perl() function
+ // above. Now we define how those permissions are used.
+ if ($op == 'create') {
+ if(!user_access('create example_node content', $account)){
+ return FALSE;
+ }
+ }
+ if ($op == 'update') {
+ if (!user_access('edit example_node content', $account)) {
+ return FALSE;
+ }
+ }
+ if ($op == 'delete') {
+ if (!user_access('delete example_node content', $account)) {
+ return FALSE;
+ }
+ }
+ if ($op == 'view') {
+ if(!user_access('access example_node content', $account)){
+ return FALSE;
+ }
+ }
+ return NULL;
 }
 ```
 
@@ -1728,33 +1728,33 @@ you should customize this file to suit your needs.
 <?php
 
 /**
-*  Implementation of hook_install();
+* Implementation of hook_install();
 *
 * @ingroup tripal_example_module
 */
 function tripal_example_module_install(){
-   // this function is called when the module is first installed.
+ // this function is called when the module is first installed.
 
-   // All Tripal modules should create a module directory. This
-   // is where any public files should be stored.
-   tripal_create_moddir('tripal_example_module');
+ // All Tripal modules should create a module directory. This
+ // is where any public files should be stored.
+ tripal_create_moddir('tripal_example_module');
 
-   // If there are any database tables needed by your module
-   // then you must tell Drupal to install those tables.
-   // simple cal this drupal_install_schema function with the
-   // package name
-   drupal_install_schema('tripal_example_module');
+ // If there are any database tables needed by your module
+ // then you must tell Drupal to install those tables.
+ // simple cal this drupal_install_schema function with the
+ // package name
+ drupal_install_schema('tripal_example_module');
 
-   // The following wrapper function is used
-   // for adding a new materialized view
-   tripal_example_module_add_example_mview();
+ // The following wrapper function is used
+ // for adding a new materialized view
+ tripal_example_module_add_example_mview();
 
-   // You can add custom vocabulary terms that may be needed
-   // to store data in Chado (e.g. property tables). The
-   // following will add a term to the 'tripal' controlled
-   // vocabulary.  It is best to always use a community
-   // recognized and published ontology if applicable.
-   tripal_add_cvterms('unique_term_name','Term Description');
+ // You can add custom vocabulary terms that may be needed
+ // to store data in Chado (e.g. property tables). The
+ // following will add a term to the 'tripal' controlled
+ // vocabulary. It is best to always use a community
+ // recognized and published ontology if applicable.
+ tripal_add_cvterms('unique_term_name','Term Description');
 
 }
 
@@ -1765,28 +1765,28 @@ function tripal_example_module_install(){
 */
 function tripal_example_module_schema() {
 
-   // This is the function that Drupal calls to install any custom
-   // tables needed by the module.  Drupal uses an array structure
-   // to define the table.  Below is an example.  See the Drupal API and
-   // reference documentation for more info.
-   $schema['example_node'] = array(
-      'fields' => array(
-         'vid' => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
-         'nid' => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
-         'feature_id' => array('type' => 'int', 'not null' => TRUE, 'default' => 0),
-         'sync_date' => array ('type' => 'int', 'not null' => FALSE, 'description' => 'UNIX integer sync date/time'),
-      ),
-      'indexes' => array(
-         'feature_id' => array('feature_id')
-       ),
-      'unique keys' => array(
-         'nid_vid' => array('nid','vid'),
-         'vid' => array('vid')
-      ),
-      'primary key' => array('nid'),
-  );
+ // This is the function that Drupal calls to install any custom
+ // tables needed by the module. Drupal uses an array structure
+ // to define the table. Below is an example. See the Drupal API and
+ // reference documentation for more info.
+ $schema['example_node'] = array(
+ 'fields' => array(
+ 'vid' => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
+ 'nid' => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
+ 'feature_id' => array('type' => 'int', 'not null' => TRUE, 'default' => 0),
+ 'sync_date' => array ('type' => 'int', 'not null' => FALSE, 'description' => 'UNIX integer sync date/time'),
+ ),
+ 'indexes' => array(
+ 'feature_id' => array('feature_id')
+ ),
+ 'unique keys' => array(
+ 'nid_vid' => array('nid','vid'),
+ 'vid' => array('vid')
+ ),
+ 'primary key' => array('nid'),
+ );
 
-  return $schema;
+ return $schema;
 }
 /**
 * A wrapper function for adding an example materialized view to Tripal
@@ -1794,49 +1794,49 @@ function tripal_example_module_schema() {
 * @ingroup tripal_example_module
 */
 function tripal_example_module_add_example_mview(){
-   $view_name = 'example_organism_feature_count';
+ $view_name = 'example_organism_feature_count';
 
-   // Don't add the Mview if it already exists.
-   $mview_id = tripal_mviews_get_mview_id($view_name);
-   if($mview_id){
-      tripal_mviews_action("delete",$mview_id);
-   }
+ // Don't add the Mview if it already exists.
+ $mview_id = tripal_mviews_get_mview_id($view_name);
+ if($mview_id){
+ tripal_mviews_action("delete",$mview_id);
+ }
 
-   // Below is an example Materialized View API call
-   tripal_add_mview(
-      // view name
-      $view_name,
-      // tripal module name
-      'tripal_example_module',
-      // table name
-      $view_name,
-      // table schema definition
-      'organism_id integer, genus character varying(255), '.
-      '  species character varying(255), '.
-      '  common_name character varying(255), '.
-      '  num_features integer, cvterm_id integer, '.
-      '  feature_type character varying(255)',
-      // columns for indexing
-      'organism_id,cvterm_id,feature_type',
-      // SQL statement to populate the view
-      'SELECT O.organism_id, O.genus, O.species, O.common_name,
-          count(F.feature_id) as num_features,
-          CVT.cvterm_id, CVT.name as feature_type
-       FROM {Organism} O
-          INNER JOIN Feature F           ON O.Organism_id = F.organism_id
-          INNER JOIN Cvterm CVT          ON F.type_id = CVT.cvterm_id
-       GROUP BY O.Organism_id, O.genus, O.species, O.common_name,
-          CVT.cvterm_id, CVT.name',
-      // special index
-      ''
-   );
+ // Below is an example Materialized View API call
+ tripal_add_mview(
+ // view name
+ $view_name,
+ // tripal module name
+ 'tripal_example_module',
+ // table name
+ $view_name,
+ // table schema definition
+ 'organism_id integer, genus character varying(255), '.
+ ' species character varying(255), '.
+ ' common_name character varying(255), '.
+ ' num_features integer, cvterm_id integer, '.
+ ' feature_type character varying(255)',
+ // columns for indexing
+ 'organism_id,cvterm_id,feature_type',
+ // SQL statement to populate the view
+ 'SELECT O.organism_id, O.genus, O.species, O.common_name,
+ count(F.feature_id) as num_features,
+ CVT.cvterm_id, CVT.name as feature_type
+ FROM {Organism} O
+ INNER JOIN Feature F ON O.Organism_id = F.organism_id
+ INNER JOIN Cvterm CVT ON F.type_id = CVT.cvterm_id
+ GROUP BY O.Organism_id, O.genus, O.species, O.common_name,
+ CVT.cvterm_id, CVT.name',
+ // special index
+ ''
+ );
 
-   // add a job to the job queue so this view gets updated automatically next
-   // time the job facility is run
-   $mview_id = tripal_mviews_get_mview_id($view_name);
-   if($mview_id){
-      tripal_mviews_action('update',$mview_id);
-   }
+ // add a job to the job queue so this view gets updated automatically next
+ // time the job facility is run
+ $mview_id = tripal_mviews_get_mview_id($view_name);
+ if($mview_id){
+ tripal_mviews_action('update',$mview_id);
+ }
 }
 /**
 * Implementation of hook_uninstall()
@@ -1844,26 +1844,26 @@ function tripal_example_module_add_example_mview(){
 * @ingroup tripal_example_module
 */
 function tripal_example_module_uninstall(){
-   // this function is called when Drupal uninstalls the module
+ // this function is called when Drupal uninstalls the module
 
-   // Drop the MView table if it exists
-   $view_name = 'example_organism_feature_count';
-   $mview_id = tripal_mviews_get_mview_id($view_name);
-   if($mview_id){
-      tripal_mviews_action("delete",$mview_id);
-   }
+ // Drop the MView table if it exists
+ $view_name = 'example_organism_feature_count';
+ $mview_id = tripal_mviews_get_mview_id($view_name);
+ if($mview_id){
+ tripal_mviews_action("delete",$mview_id);
+ }
 
-   // uninstall the tables we added during the install
-   drupal_uninstall_schema('tripal_example_module');
+ // uninstall the tables we added during the install
+ drupal_uninstall_schema('tripal_example_module');
 
-   // Remove nodes
-   $sql_feature_id = "SELECT nid, vid ".
-                     "FROM {node} ".
-                     "WHERE type='example_node'";
-   $result = db_query($sql_feature_id);
-   while ($node = db_fetch_object($result)) {
-      node_delete($node->nid);
-   }
+ // Remove nodes
+ $sql_feature_id = "SELECT nid, vid ".
+ "FROM {node} ".
+ "WHERE type='example_node'";
+ $result = db_query($sql_feature_id);
+ while ($node = db_fetch_object($result)) {
+ node_delete($node->nid);
+ }
 }
 
 /**
@@ -1873,20 +1873,20 @@ function tripal_example_module_uninstall(){
  * @ingroup tripal_example_module
  */
 function tripal_example_module_requirements($phase) {
-   $requirements = array();
-   if ($phase == 'install') {
-      // make sure the core module is installed, we do this
-      // just by making sure one of the API functions is in scope
-      if (!function_exists('tripal_create_moddir')) {
-         // add additional checks to the if statement above for other
-         $requirements ['tripal_example_module'] = array(
-            'title' => "tripal_example_module",
-            'value' => "Some required modules are not installed. Please check the list of dependencies and try again.",
-            'severity' => REQUIREMENT_ERROR,
-         );
-      }
-   }
-   return $requirements;
+ $requirements = array();
+ if ($phase == 'install') {
+ // make sure the core module is installed, we do this
+ // just by making sure one of the API functions is in scope
+ if (!function_exists('tripal_create_moddir')) {
+ // add additional checks to the if statement above for other
+ $requirements ['tripal_example_module'] = array(
+ 'title' => "tripal_example_module",
+ 'value' => "Some required modules are not installed. Please check the list of dependencies and try again.",
+ 'severity' => REQUIREMENT_ERROR,
+ );
+ }
+ }
+ return $requirements;
 }
 ```
 

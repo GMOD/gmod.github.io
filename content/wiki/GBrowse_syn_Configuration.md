@@ -8,15 +8,15 @@ title: "GBrowse syn Configuration"
 based on [GBrowse](/wiki/GBrowse). This page describes how to
 configure GBrowse_syn.
 
-  Configuration File</span>](#Main_Configuration_File)
-  - [Purpose](#Purpose)
-    - [Example config
-      file](#Example_config_file)
-  - [Configuration
-    settings](#Configuration_settings)
-  - [The
-    species' configuration
-    stanzas](#The_species.27_configuration_stanzas)
+ Configuration File</span>](#Main_Configuration_File)
+ - [Purpose](#Purpose)
+ - [Example config
+ file](#Example_config_file)
+ - [Configuration
+ settings](#Configuration_settings)
+ - [The
+ species' configuration
+ stanzas](#The_species.27_configuration_stanzas)
 
 # Main Configuration File
 
@@ -34,56 +34,56 @@ This example contains information about the alignment (joining) database
 and the individual database for of the species in the browser. For
 details of each setting, see below.
 
-    [GENERAL]
-    description =  PECAN alignments for Caenorhabditis
+ [GENERAL]
+ description = PECAN alignments for Caenorhabditis
 
-    # The synteny database
-    join        = dbi:mysql:database=pecan;host=localhost;user=nobody
+ # The synteny database
+ join = dbi:mysql:database=pecan;host=localhost;user=nobody
 
-    #     symbolic src   config file (without the ".conf")  Description
-    source_map =      c_elegans      c_elegans     "C. elegans"
-                      c_remanei      c_remanei     "C. remanei"
-                      c_briggsae     c_briggsae    "C. briggsae"
-                      c_brenneri     c_brenneri    "C. brenneri"
-                      c_japonica     c_japonica    "C. japonica"
+ # symbolic src config file (without the ".conf") Description
+ source_map = c_elegans c_elegans "C. elegans"
+ c_remanei c_remanei "C. remanei"
+ c_briggsae c_briggsae "C. briggsae"
+ c_brenneri c_brenneri "C. brenneri"
+ c_japonica c_japonica "C. japonica"
 
-    tmpimages     = /gbrowse/tmp
-    imagewidth    = 800
-    stylesheet    = /gbrowse/gbrowse.css
-    cache time    = 1
+ tmpimages = /gbrowse/tmp
+ imagewidth = 800
+ stylesheet = /gbrowse/gbrowse.css
+ cache time = 1
 
-    # example searches to display
-    examples = c_elegans X:1050000..1150000
-               c_briggsae chrX:620000..670000
-               c_elegans R193.2
+ # example searches to display
+ examples = c_elegans X:1050000..1150000
+ c_briggsae chrX:620000..670000
+ c_elegans R193.2
 
-    zoom levels = 5000 10000 25000 50000 100000 200000 400000
+ zoom levels = 5000 10000 25000 50000 100000 200000 400000
 
-    # species-specific databases
-    [c_elegans]
-    tracks    = CG
-    color     = green
+ # species-specific databases
+ [c_elegans]
+ tracks = CG
+ color = green
 
-    [c_remanei]
-    tracks    = CG
-    color     = red
+ [c_remanei]
+ tracks = CG
+ color = red
 
-    [c_briggsae]
-    tracks    = CG
-    color     = black
+ [c_briggsae]
+ tracks = CG
+ color = black
 
-    [c_brenneri]
-    tracks    = CG
-    color     = purple
+ [c_brenneri]
+ tracks = CG
+ color = purple
 
-    [c_japonica]
-    tracks    = CG
-    color     = blue
+ [c_japonica]
+ tracks = CG
+ color = blue
 
 - Another example can be found in the
-  <span class="pops"><a href="/wiki/GBrowse_syn_Tutorial#The_GBrowse_syn_Config_File"
-  class="mw-redirect"
-  title="GBrowse syn Tutorial">GBrowse_syn_Tutorial</a></span>
+ <span class="pops"><a href="/wiki/GBrowse_syn_Tutorial#The_GBrowse_syn_Config_File"
+ class="mw-redirect"
+ title="GBrowse syn Tutorial">GBrowse_syn_Tutorial</a></span>
 
 ## Configuration settings
 
@@ -265,19 +265,19 @@ web colors or RGB hex codes (eg: '#FFFFFF').</td>
 ## The species' configuration stanzas
 
 - Each individual species (or equivalent) that has a configuration file
-  specified in the source map should also have a config stanza
-  specifying which tracks to display and the theme color for the
-  species.
+ specified in the source map should also have a config stanza
+ specifying which tracks to display and the theme color for the
+ species.
 - Note that the label of each stanza must match one of those in the
-  second column of the source_map.
-    [elegans_synteny]
-    tracks    = CG
-    color     = blue
+ second column of the source_map.
+ [elegans_synteny]
+ tracks = CG
+ color = blue
 
-    [briggsae_synteny]
-    tracks    = CG
-    color     = purple
+ [briggsae_synteny]
+ tracks = CG
+ color = purple
 
-    [remanei_synteny]
-    tracks    = CG
-    color     = black
+ [remanei_synteny]
+ tracks = CG
+ color = black

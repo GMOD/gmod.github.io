@@ -24,11 +24,11 @@ While you are there, you register for the *[free
 workshops](../October_2011_GMOD_Meeting#Scheduled_Satellite_Meetings)*
 on the following day:
 
-1.  [BioMart](../October_2011_GMOD_Meeting#BioMart_Workshop)
-    from 9:00 to 12:30
-2.  [Galaxy](../October_2011_GMOD_Meeting#Galaxy_Workshop)
-    from 9:00 to 2:00
-3.  [MAKER](../MAKER.1) from 2:30 to 5:00
+1. [BioMart](../October_2011_GMOD_Meeting#BioMart_Workshop)
+ from 9:00 to 12:30
+2. [Galaxy](../October_2011_GMOD_Meeting#Galaxy_Workshop)
+ from 9:00 to 2:00
+3. [MAKER](../MAKER.1) from 2:30 to 5:00
 
 Space is limited for them too, so register as soon as you can. You do
 not need to attend the main GMOD meeting to attend one of the workshops.

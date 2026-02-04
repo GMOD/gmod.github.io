@@ -20,83 +20,83 @@ Evolutionary Biology
 hackathon](/wiki/GMOD_Evo_Hackathon), see <a
 href="https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup"
 
-  Introduction](#Introduction)
-  - [Interactions with Other Chado
-    Modules](#Interactions_with_Other_Chado_Modules)
-    - [Stock
-      Module](#Stock_Module)
-  - [General
-    Description of Natural Diversity
-    Module](#General_Description_of_Natural_Diversity_Module)
-  - [Key
-    Ontologies](#Key_Ontologies)
-    - [Stock
-      Relationship Ontology](#Stock_Relationship_Ontology)
-  - [Loading
-    Data](#Loading_Data)
-  - [Web Front
-    Ends](#Web_Front_Ends)
-  - [See
-    Also](#See_Also)
-    - [Email
-      Threads](#Email_Threads)
+ Introduction](#Introduction)
+ - [Interactions with Other Chado
+ Modules](#Interactions_with_Other_Chado_Modules)
+ - [Stock
+ Module](#Stock_Module)
+ - [General
+ Description of Natural Diversity
+ Module](#General_Description_of_Natural_Diversity_Module)
+ - [Key
+ Ontologies](#Key_Ontologies)
+ - [Stock
+ Relationship Ontology](#Stock_Relationship_Ontology)
+ - [Loading
+ Data](#Loading_Data)
+ - [Web Front
+ Ends](#Web_Front_Ends)
+ - [See
+ Also](#See_Also)
+ - [Email
+ Threads](#Email_Threads)
 - [Use
-  Cases](#Use_Cases)
-  - [tree fruit
-    breeding data (tfGDR)](#tree_fruit_breeding_data_.28tfGDR.29)
-    - [Cross
-      Experiment](#Cross_Experiment)
-    - [Phenotype Assay](#Phenotype_Assay)
-  - [Tomato/potato breeder lines and cultivars (Sol
-    genomics
-    network)](#Tomato.2Fpotato_breeder_lines_and_cultivars_.28Sol_genomics_network.29)
-    - [Phenotyping
-      experiment](#Phenotyping_experiment)
-    - [Genotyping
-      experiment](#Genotyping_experiment)
+ Cases](#Use_Cases)
+ - [tree fruit
+ breeding data (tfGDR)](#tree_fruit_breeding_data_.28tfGDR.29)
+ - [Cross
+ Experiment](#Cross_Experiment)
+ - [Phenotype Assay](#Phenotype_Assay)
+ - [Tomato/potato breeder lines and cultivars (Sol
+ genomics
+ network)](#Tomato.2Fpotato_breeder_lines_and_cultivars_.28Sol_genomics_network.29)
+ - [Phenotyping
+ experiment](#Phenotyping_experiment)
+ - [Genotyping
+ experiment](#Genotyping_experiment)
 - [ER
-  Diagram](#ER_Diagram)
+ Diagram](#ER_Diagram)
 - [Tables](#Tables)
-  - [Table:
-    nd_experiment](#Table:_nd_experiment)
-  - [Table:
-    nd_experiment_contact](#Table:_nd_experiment_contact)
-  - [Table:
-    nd_experiment_dbxref](#Table:_nd_experiment_dbxref)
-  - [Table:
-    nd_experiment_genotype](#Table:_nd_experiment_genotype)
-  - [Table:
-    nd_experiment_phenotype](#Table:_nd_experiment_phenotype)
-  - [Table:
-    nd_experiment_project](#Table:_nd_experiment_project)
-  - [Table:
-    nd_experiment_protocol](#Table:_nd_experiment_protocol)
-  - [Table:
-    nd_experiment_pub](#Table:_nd_experiment_pub)
-  - [Table:
-    nd_experiment_stock](#Table:_nd_experiment_stock)
-  - [Table:
-    nd_experiment_stock_dbxref](#Table:_nd_experiment_stock_dbxref)
-  - [Table:
-    nd_experiment_stockprop](#Table:_nd_experiment_stockprop)
-  - [Table:
-    nd_experimentprop](#Table:_nd_experimentprop)
-  - [Table:
-    nd_geolocation](#Table:_nd_geolocation)
-  - [Table:
-    nd_geolocationprop](#Table:_nd_geolocationprop)
-  - [Table:
-    nd_protocol](#Table:_nd_protocol)
-  - [Table:
-    nd_protocol_reagent](#Table:_nd_protocol_reagent)
-  - [Table:
-    nd_protocolprop](#Table:_nd_protocolprop)
-  - [Table:
-    nd_reagent](#Table:_nd_reagent)
-  - [Table:
-    nd_reagent_relationship](#Table:_nd_reagent_relationship)
-  - [Table:
-    nd_reagentprop](#Table:_nd_reagentprop)
+ - [Table:
+ nd_experiment](#Table:_nd_experiment)
+ - [Table:
+ nd_experiment_contact](#Table:_nd_experiment_contact)
+ - [Table:
+ nd_experiment_dbxref](#Table:_nd_experiment_dbxref)
+ - [Table:
+ nd_experiment_genotype](#Table:_nd_experiment_genotype)
+ - [Table:
+ nd_experiment_phenotype](#Table:_nd_experiment_phenotype)
+ - [Table:
+ nd_experiment_project](#Table:_nd_experiment_project)
+ - [Table:
+ nd_experiment_protocol](#Table:_nd_experiment_protocol)
+ - [Table:
+ nd_experiment_pub](#Table:_nd_experiment_pub)
+ - [Table:
+ nd_experiment_stock](#Table:_nd_experiment_stock)
+ - [Table:
+ nd_experiment_stock_dbxref](#Table:_nd_experiment_stock_dbxref)
+ - [Table:
+ nd_experiment_stockprop](#Table:_nd_experiment_stockprop)
+ - [Table:
+ nd_experimentprop](#Table:_nd_experimentprop)
+ - [Table:
+ nd_geolocation](#Table:_nd_geolocation)
+ - [Table:
+ nd_geolocationprop](#Table:_nd_geolocationprop)
+ - [Table:
+ nd_protocol](#Table:_nd_protocol)
+ - [Table:
+ nd_protocol_reagent](#Table:_nd_protocol_reagent)
+ - [Table:
+ nd_protocolprop](#Table:_nd_protocolprop)
+ - [Table:
+ nd_reagent](#Table:_nd_reagent)
+ - [Table:
+ nd_reagent_relationship](#Table:_nd_reagent_relationship)
+ - [Table:
+ nd_reagentprop](#Table:_nd_reagentprop)
 
 # Introduction
 
@@ -137,8 +137,8 @@ group of insects collected in a field). To accommodate this change, the
 ## General Description of Natural Diversity Module
 
 - This section can be removed later on from this wiki page since most of
-  the content exists in the table descriptions below. But it is included
-  here as a summary to help us write the Use Cases.
+ the content exists in the table descriptions below. But it is included
+ here as a summary to help us write the Use Cases.
 
 Nd_experiment is the core table for the natural diversity module,
 representing each individual assay that is undertaken (nb this is
@@ -202,24 +202,24 @@ insert your data in the database.
 ## See Also
 
 - [Chado Natural Diversity Module Working
-  Group](/wiki/Chado_Natural_Diversity_Module_Working_Group)
-  page, and the [group's discussion
-  page](/wiki/Talk:Chado_Natural_Diversity_Module_Working_Group)
-  for background on how this module was created.
+ Group](/wiki/Chado_Natural_Diversity_Module_Working_Group)
+ page, and the group's discussion
+ page
+ for background on how this module was created.
 
 ### Email Threads
 
 - <a
-  href="http://gmod.827538.n3.nabble.com/Natural-diversity-module-and-phenotype-cvterm-values-td829757.html#a829757#a829757"
-  class="external text" rel="nofollow">Natural diversity module and
-  phenotype cvterm values</a>
+ href="http://gmod.827538.n3.nabble.com/Natural-diversity-module-and-phenotype-cvterm-values-td829757.html#a829757#a829757"
+ class="external text" rel="nofollow">Natural diversity module and
+ phenotype cvterm values</a>
 - <a
-  href="http://gmod.827538.n3.nabble.com/Re-Gmod-schema-Use-Cases-on-the-simplified-natural-diversity-module-td815602.html#a840919#a840919"
-  class="external text" rel="nofollow">Use Cases on the simplified natural
-  diversity module</a>
+ href="http://gmod.827538.n3.nabble.com/Re-Gmod-schema-Use-Cases-on-the-simplified-natural-diversity-module-td815602.html#a840919#a840919"
+ class="external text" rel="nofollow">Use Cases on the simplified natural
+ diversity module</a>
 - <a
-  href="http://gmod.827538.n3.nabble.com/Re-nd-naming-td937709.html#a937709#a937709"
-  class="external text" rel="nofollow">nd naming</a>
+ href="http://gmod.827538.n3.nabble.com/Re-nd-naming-td937709.html#a937709#a937709"
+ class="external text" rel="nofollow">nd naming</a>
 
 # Use Cases
 
@@ -230,85 +230,85 @@ insert your data in the database.
 Data:
 
 - Cross name/ID, location, female and male parent, progeny, project
-  name, metadata such as how many seeds were produced, date of the
-  cross, etc.
+ name, metadata such as how many seeds were produced, date of the
+ cross, etc.
 - Accession_ID, Aliases, cultivar name, pedigree, description
 
 Chado:
 
 - Accession_ID is stored in 'stock' table and the associated data such
-  as cultivar name, pedigree, and description are stored in 'stockprop'
-  table.
+ as cultivar name, pedigree, and description are stored in 'stockprop'
+ table.
 - nd_experiment.type_id is the cvterm_id for 'cross_experiment'.
 - Cross location is stored in 'nd_experiment' table (nd_geolocation_id).
 - Cross name/ID and the all the metadata that are associated with the
-  cross experiments are stored in 'nd_experimentprop' table (cvterm_id
-  and value).
+ cross experiments are stored in 'nd_experimentprop' table (cvterm_id
+ and value).
 - Parent and progeny are stored in 'stock' table and they are linked to
-  'nd_experiment' via 'nd_experiment_stock' using type_id such as 'is a
-  female parent', 'is a progeny', etc.
+ 'nd_experiment' via 'nd_experiment_stock' using type_id such as 'is a
+ female parent', 'is a progeny', etc.
 - The whole progeny is stored as a population in stock table and the
-  individual line is linked to the population entry via
-  'stock_relationship' table.
+ individual line is linked to the population entry via
+ 'stock_relationship' table.
 - Individual crosses is linked to a larger project via
-  nd_experiment_project.
+ nd_experiment_project.
 
 #### Phenotype Assay
 
 - Multiple clones of the same fruit tree accessions are planted in
-  various lots of various orchards.
+ various lots of various orchards.
 - The fruits are harvested from the tree in multiple times, freshly
-  evaluated or stored in different conditions then evaluated for
-  multiple phenotypes.
+ evaluated or stored in different conditions then evaluated for
+ multiple phenotypes.
 - The fruits of the multiple clonal trees in the same lot are combined
-  for phenotype assays and are given the same clone_ID (?!!)
+ for phenotype assays and are given the same clone_ID (?!!)
 - Individual trees have a distinct repetition number (per individual
-  tree) in addition to the clone_ID and the phenotypes of individual
-  trees are evaluated multiple times.
+ tree) in addition to the clone_ID and the phenotypes of individual
+ trees are evaluated multiple times.
 
 Data:
 
 - Sample_ID (given by tfGDR), Clone_ID (eg. wsu001_1, gala_1),
-  Accession_ID (eg. wsu001, gala, etc), pick date, assay date, storage
-  time, storage condition, evaluators, plant date, repetition number.
+ Accession_ID (eg. wsu001, gala, etc), pick date, assay date, storage
+ time, storage condition, evaluators, plant date, repetition number.
 - rootstock_ID, site (orchard), sub_location (plot, row and position)
 - Name, definition and scale of phenotype descriptor and phenotypic
-  value
+ value
 - An example of phenotype is 'fruit size' and their value can be 1
-  through 5 (1=very small; 2=small; 3=medium; 4=large; 5= very large)
+ through 5 (1=very small; 2=small; 3=medium; 4=large; 5= very large)
 
 Chado:
 
 - Sample_ID is given by tfGDR for each sample to which a distinct set of
-  phenotype assays were performed.
+ phenotype assays were performed.
 - Accession_ID, Clone_ID and Sample_ID are stored in 'stock' table and
-  their relationship are stored in 'stock_relationship' table.
+ their relationship are stored in 'stock_relationship' table.
 - A unique nd_experiment_id with type 'phenotype_assay' is created for a
-  unique combination of a sample and its phenotype.
+ unique combination of a sample and its phenotype.
 - pick date, assay date, storage time, storage condition, rootstock and
-  any other sample properties are stored in stockprop table using cvterm
-  and value.
+ any other sample properties are stored in stockprop table using cvterm
+ and value.
 - If more complicated treatments are performed on the sample (eg.
-  fertilizers), nd_experiment of type 'sample_treatment' will be
-  created.
+ fertilizers), nd_experiment of type 'sample_treatment' will be
+ created.
 - Evaluators of each phenotype experiment are stored in 'contact' table,
-  and linked to 'nd_experiment' via 'nd_experiment_contact'.
+ and linked to 'nd_experiment' via 'nd_experiment_contact'.
 - Project information is stored in project, linked to nd_experiment via
-  nd_experiment_project.
+ nd_experiment_project.
 - Relationship between subprojects and larger projects are stored in
-  project_relationship.
+ project_relationship.
 - Each breeder can have different definitions for similar phenotype
-  descriptors, phenotype descriptors from each breeder are stored
-  separately in 'cvterm' table (eg.fruit_size from a breeder called KE
-  is stored as KE_fruit_size in cvterm table).
+ descriptors, phenotype descriptors from each breeder are stored
+ separately in 'cvterm' table (eg.fruit_size from a breeder called KE
+ is stored as KE_fruit_size in cvterm table).
 - The names and definitions of phenotype descriptors are stored in
-  cvterm table and their scale is stored in 'cvtermprop' table using
-  value and scale fields. For example, 'KE_fruit_size' has a scale of 1
-  to 5 with 1(tiny), 2(small), 3(medium), 4(large), and 5(very large),
-  the numeric values are stored in cvtermprop.rank and the descriptions
-  are stored in cvtermprop.value.
+ cvterm table and their scale is stored in 'cvtermprop' table using
+ value and scale fields. For example, 'KE_fruit_size' has a scale of 1
+ to 5 with 1(tiny), 2(small), 3(medium), 4(large), and 5(very large),
+ the numeric values are stored in cvtermprop.rank and the descriptions
+ are stored in cvtermprop.value.
 - Phenotype and the value , such as KE_fruit_size (attr_id) and 1
-  (value), are stored in phenotype table
+ (value), are stored in phenotype table
 
 Comments:
 
@@ -409,7 +409,7 @@ cross_experiment\] in mind.
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experiment_id | serial | *PRIMARY KEY* |
+| | nd_experiment_id | serial | *PRIMARY KEY* |
 | [nd_geolocation](/wiki/Chado_Tables#Table:_nd_geolocation) | nd_geolocation_id | integer | *NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *NOT NULL* |
 
@@ -437,7 +437,7 @@ project_contact).
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experiment_contact_id | serial | *PRIMARY KEY* |
+| | nd_experiment_contact_id | serial | *PRIMARY KEY* |
 | [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *NOT NULL* |
 | [contact](/wiki/Chado_Tables#Table:_contact) | contact_id | integer | *NOT NULL* |
 
@@ -451,7 +451,7 @@ Cross-reference experiment to accessions, images, etc
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experiment_dbxref_id | serial | *PRIMARY KEY* |
+| | nd_experiment_dbxref_id | serial | *PRIMARY KEY* |
 | [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *NOT NULL* |
 | [dbxref](/wiki/Chado_Tables#Table:_dbxref) | dbxref_id | integer | *NOT NULL* |
 
@@ -471,7 +471,7 @@ individuals can be easily ascertained).
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experiment_genotype_id | serial | *PRIMARY KEY* |
+| | nd_experiment_genotype_id | serial | *PRIMARY KEY* |
 | [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
 | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -489,7 +489,7 @@ link a single qualitative phenotype to multiple experiments
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experiment_phenotype_id | serial | *PRIMARY KEY* |
+| | nd_experiment_phenotype_id | serial | *PRIMARY KEY* |
 | [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
 | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -504,7 +504,7 @@ should be linked to at least one project.
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experiment_project_id | serial | *PRIMARY KEY* |
+| | nd_experiment_project_id | serial | *PRIMARY KEY* |
 | [project](/wiki/Chado_Tables#Table:_project) | project_id | integer | *NOT NULL* |
 | [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *NOT NULL* |
 
@@ -518,7 +518,7 @@ Linking table: experiments to the protocols they involve.
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experiment_protocol_id | serial | *PRIMARY KEY* |
+| | nd_experiment_protocol_id | serial | *PRIMARY KEY* |
 | [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *NOT NULL* |
 | [nd_protocol](/wiki/Chado_Tables#Table:_nd_protocol) | nd_protocol_id | integer | *NOT NULL* |
 
@@ -532,7 +532,7 @@ Linking nd_experiment(s) to publication(s)
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experiment_pub_id | serial | *PRIMARY KEY* |
+| | nd_experiment_pub_id | serial | *PRIMARY KEY* |
 | [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -609,7 +609,7 @@ Cross-reference experiment_stock to accessions, images, etc
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experiment_stock_dbxref_id | serial | *PRIMARY KEY* |
+| | nd_experiment_stock_dbxref_id | serial | *PRIMARY KEY* |
 | [nd_experiment_stock](/wiki/Chado_Tables#Table:_nd_experiment_stock) | nd_experiment_stock_id | integer | *NOT NULL* |
 | [dbxref](/wiki/Chado_Tables#Table:_dbxref) | dbxref_id | integer | *NOT NULL* |
 
@@ -694,11 +694,11 @@ Tag-value properties - follows standard chado model.
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_experimentprop_id | serial | *PRIMARY KEY* |
+| | nd_experimentprop_id | serial | *PRIMARY KEY* |
 | [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | character varying(255) | *NOT NULL* |
-|  | rank | integer | *UNIQUE#1 NOT NULL* |
+| | value | character varying(255) | *NOT NULL* |
+| | rank | integer | *UNIQUE#1 NOT NULL* |
 
 public.nd_experimentprop Structure
 
@@ -914,7 +914,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_protocol_reagent_id | serial | *PRIMARY KEY* |
+| | nd_protocol_reagent_id | serial | *PRIMARY KEY* |
 | [nd_protocol](/wiki/Chado_Tables#Table:_nd_protocol) | nd_protocol_id | integer | *NOT NULL* |
 | [nd_reagent](/wiki/Chado_Tables#Table:_nd_reagent) | reagent_id | integer | *NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *NOT NULL* |
@@ -1139,11 +1139,11 @@ public.nd_reagent_relationship Structure
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | nd_reagentprop_id | serial | *PRIMARY KEY* |
+| | nd_reagentprop_id | serial | *PRIMARY KEY* |
 | [nd_reagent](/wiki/Chado_Tables#Table:_nd_reagent) | nd_reagent_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | character varying(255) | rank |
-| integer | *UNIQUE#1 NOT NULL* |  |  |
+| | value | character varying(255) | rank |
+| integer | *UNIQUE#1 NOT NULL* | | |
 
 public.nd_reagentprop Structure
 

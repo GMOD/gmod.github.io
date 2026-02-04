@@ -8,19 +8,19 @@ for implementing GMOD components at your organization. Requirements for
 specific components can be found on [each component's
 page](/wiki/GMOD_Components).
 
-  Administrator</span>](#GMOD_Systems_Administrator)
-  - [Qualifications and
-    Hiring](#Qualifications_and_Hiring)
+ Administrator</span>](#GMOD_Systems_Administrator)
+ - [Qualifications and
+ Hiring](#Qualifications_and_Hiring)
 - [Hardware and
-  Software](#Hardware_and_Software)
-  - [Hardware](#Hardware)
-  - [Operating
-    System](#Operating_System)
-    - [Unix,
-      Linux, and Mac OS](#Unix.2C_Linux.2C_and_Mac_OS)
-    - [Windows](#Windows)
-  - [Other
-    Software](#Other_Software)
+ Software](#Hardware_and_Software)
+ - [Hardware](#Hardware)
+ - [Operating
+ System](#Operating_System)
+ - [Unix,
+ Linux, and Mac OS](#Unix.2C_Linux.2C_and_Mac_OS)
+ - [Windows](#Windows)
+ - [Other
+ Software](#Other_Software)
 
 ## GMOD Systems Administrator
 
@@ -124,17 +124,17 @@ ability to learn, and a professional attitude.
 What does a *professional attitude* mean in this context?
 
 - They should be willing to tell you when choices being made can
-  compromise the project. For example:
-  - Yes, we can do that, but it means our backups won't work for the
-    next week. Or,
-  - Yes, I can do that now, but it means I won't be able to document the
-    installation I just did until next week and by then I may have
-    forgotten a lot.
+ compromise the project. For example:
+ - Yes, we can do that, but it means our backups won't work for the
+ next week. Or,
+ - Yes, I can do that now, but it means I won't be able to document the
+ installation I just did until next week and by then I may have
+ forgotten a lot.
 - They will tell you when things aren't going well, or when they have
-  messed up.
+ messed up.
 - They treat everyone with respect, including people in your group, any
-  users your project may have, your organization's sys admins, and the
-  larger GMOD community.
+ users your project may have, your organization's sys admins, and the
+ larger GMOD community.
 
 ## Hardware and Software
 

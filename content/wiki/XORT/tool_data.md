@@ -33,27 +33,27 @@ database, we denote the corresponding XML "Chado XML."
 getting_started_preamble = \| req =
 
 - <a href="http://search.cpan.org/perldoc?XML::DOM" class="external text"
-  rel="nofollow">XML::DOM</a>
+ rel="nofollow">XML::DOM</a>
 - <a href="http://search.cpan.org/perldoc?XML::Parser::PerlSAX"
-  class="external text" rel="nofollow">XML::Parser::PerlSAX</a>
+ class="external text" rel="nofollow">XML::Parser::PerlSAX</a>
 
 \| install = \| config = \| doc =
 
 - <a
-  href="http://gmod.svn.sourceforge.net/viewvc/gmod/XML-XORT/trunk/README"
-  class="external text" rel="nofollow">README</a>
+ href="http://gmod.svn.sourceforge.net/viewvc/gmod/XML-XORT/trunk/README"
+ class="external text" rel="nofollow">README</a>
 - <a href="http://iubio.bio.indiana.edu:8081/docs/chadopg-oct03-notes.txt"
-  class="external text" rel="nofollow">Loading Chado Using XORT and
-  Chado-XML</a>
+ class="external text" rel="nofollow">Loading Chado Using XORT and
+ Chado-XML</a>
 - [File:XORTSpecification
-  0.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/XORTSpecification_0.pdf)
+ 0.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/XORTSpecification_0.pdf)
 
 \| papers = \| presentations =
 
 - [Presentation on XORT by Pinglei
-  Zhou](../XORT_Presentation)
+ Zhou](../XORT_Presentation)
 - [Comparison of XORT and Hibernate for Chado
-  reporting](../Comparison_of_XORT_and_Hibernate_for_Chado_reporting)
+ reporting](../Comparison_of_XORT_and_Hibernate_for_Chado_reporting)
 
 \| tutorials = \| wild_urls = \| mail = There is no mailing list for
 XORT; please direct queries to the
@@ -68,13 +68,13 @@ zhou@morgan.harvard.edu \| formats = \| see_also =
 Note that [GMODTools](../GMODTools) offers an alternative
 approach to bulk uploads and downloads from a Chado database.
 
-  DBStag](#DBStag)
+ DBStag](#DBStag)
 - [Chado-XML](#Chado-XML)
 - [Tools that
-  read and write Chado-XML](#Tools_that_read_and_write_Chado-XML)
-  - [go2chadoxml](#go2chadoxml)
-  - [BioPerl](#BioPerl)
-  - [Bio-Chaos](#Bio-Chaos)
+ read and write Chado-XML](#Tools_that_read_and_write_Chado-XML)
+ - [go2chadoxml](#go2chadoxml)
+ - [BioPerl](#BioPerl)
+ - [Bio-Chaos](#Bio-Chaos)
 - [Macros](#Macros)
 
 ### DBStag
@@ -108,8 +108,8 @@ nightly basis.
 #### BioPerl
 
 - <a
-  href="http://search.cpan.org/~cjfields/BioPerl-1.6.901/Bio/SeqIO/chadoxml.pm"
-  class="external text" rel="nofollow">Bio::SeqIO::chadoxml</a>
+ href="http://search.cpan.org/~cjfields/BioPerl-1.6.901/Bio/SeqIO/chadoxml.pm"
+ class="external text" rel="nofollow">Bio::SeqIO::chadoxml</a>
 
 writes chadoXML
 

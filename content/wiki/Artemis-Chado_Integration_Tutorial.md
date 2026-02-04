@@ -8,14 +8,14 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Artemis" />
 
 This [Artemis-Chado Integration](/wiki/Artemis) tutorial was
-presented by [Robin Houston](/wiki/User:RobinHouston),
-[Tim Carver](/wiki/User:TimCarver) and [Giles
-Velarde](/wiki/User:Buggy) at the 2009 GMOD Summer School -
+presented by Robin Houston,
+Tim Carver and Giles
+Velarde at the 2009 GMOD Summer School -
 Europe, August 2009. The most recent Artemis tutorial can be found at
 the <a href="/wiki/Artemis_Tutorial" class="mw-redirect"
 title="Artemis Tutorial">Artemis Tutorial</a> page.
 
-This  walks you
+This walks you
 through how to use the Artemis annotation editor with a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database.
 
@@ -25,7 +25,7 @@ through how to use the Artemis annotation editor with a
 
 To run ACT use the `act` script:
 
-    ./act -Dchado="localhost:5432/chado_pathogen?gmod" -Dibatis
+ ./act -Dchado="localhost:5432/chado_pathogen?gmod" -Dibatis
 
 From the 'File' menu select the option 'Open Database and SSH File
 Manager' and login. Drag and drop the *Plasmodium* entries from the
@@ -76,16 +76,16 @@ A utility script (`etc/write_db_entry`) is also provided as a means of
 writing out multiple sequences from the database. The script takes the
 following options:
 
-    -h      show help
-    -f      [y|n] flatten the gene model, default is y
-    -i      [y|n] ignore obsolete features, default is y
-    -s      space separated list of sequences to read and write out
-    -o      [EMBL|GFF] output format, default is EMBL
-    -a      [y|n] for EMBL submission format change to n, default is y
+ -h show help
+ -f [y|n] flatten the gene model, default is y
+ -i [y|n] ignore obsolete features, default is y
+ -s space separated list of sequences to read and write out
+ -o [EMBL|GFF] output format, default is EMBL
+ -a [y|n] for EMBL submission format change to n, default is y
 
 Try running:
 
-    etc/writedb_entry -Dchado="localhost:5432/chado_pathogen?gmod" NC_004314
+ etc/writedb_entry -Dchado="localhost:5432/chado_pathogen?gmod" NC_004314
 
 ## Mailing List
 
@@ -96,12 +96,12 @@ class="external text" rel="nofollow">artemis-user</a>.
 ## References
 
 - <a href="http://www.sanger.ac.uk/Software/Artemis/"
-  class="external text" rel="nofollow">Artemis home page</a>
+ class="external text" rel="nofollow">Artemis home page</a>
 - <a href="http://www.sanger.ac.uk/Software/ACT/" class="external text"
-  rel="nofollow">ACT home page</a>
+ rel="nofollow">ACT home page</a>
 - <a href="http://www.sanger.ac.uk/Software/Artemis/v11/chado/"
-  class="external text" rel="nofollow">Artemis Connecting to Chado
-  Databases</a>
+ class="external text" rel="nofollow">Artemis Connecting to Chado
+ Databases</a>
 - <a
-  href="http://www.sanger.ac.uk/Software/Artemis/v11/database/chado.practical.guide.pdf"
-  class="external text" rel="nofollow">User Practical Guide</a>
+ href="http://www.sanger.ac.uk/Software/Artemis/v11/database/chado.practical.guide.pdf"
+ class="external text" rel="nofollow">User Practical Guide</a>

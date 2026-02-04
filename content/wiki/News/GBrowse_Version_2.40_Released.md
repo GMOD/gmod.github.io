@@ -10,21 +10,21 @@ class="external text" rel="nofollow">SourceForge</a> and CPAN.
 Here is the recent changelog:
 
 - Quash a few uninitialized variable warnings when bringing up track
-  configuration dialog.
+ configuration dialog.
 - Fix inability to toggle visibility & favorite status of plugin tracks
-  from the track titlebar.
+ from the track titlebar.
 - Added caching of inverted configuration file data structure to speed
-  up track rendering on really huge configuration files with many
-  stanzas. Cache structure is stored in
-  /tmp/bio_graphics_ff_cache\_\$UID
+ up track rendering on really huge configuration files with many
+ stanzas. Cache structure is stored in
+ /tmp/bio_graphics_ff_cache\_\$UID
 - Add ability to save and restore named snapshots of current state.
 - Changed behavior of render slave to a prefork model. Activate by
-  including PREFORK=5 (or other desired number of servers) in
-  /etc/default/gbrowse-slave.
+ including PREFORK=5 (or other desired number of servers) in
+ /etc/default/gbrowse-slave.
 - Added support script for Amazon cloud image: gbrowse_attach_slaves.pl
-  creates slave instances for AMI ami-c6ca31af.
+ creates slave instances for AMI ami-c6ca31af.
 - Change default tmpfile location to /var/tmp/gbrowse2 (was
-  /tmp/gbrowse2).
+ /tmp/gbrowse2).
 
 The most significant change is actually the third from the top, which
 improves speed dramatically when used with data sources that have lots

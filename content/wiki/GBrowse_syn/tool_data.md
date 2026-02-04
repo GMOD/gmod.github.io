@@ -47,13 +47,13 @@ GBrowse_syn](../GBrowse_syn_Help)
 #### Alignment data
 
 - GBrowse_syn uses a central 'joining' database that contains
-  information about the multiple sequence alignments
+ information about the multiple sequence alignments
 - There is an additional GBrowse database for each species represented
-  in the alignments
+ in the alignments
 - The databases for each species are configured in the same way as a
-  regular GBrowse installations
+ regular GBrowse installations
 - [Details on the GBrowse_syn
-  database](../GBrowse_syn_Database)
+ database](../GBrowse_syn_Database)
 
 #### User interface
 
@@ -68,7 +68,7 @@ to the number of species that can be displayed. \| papers = Please refer
 to the following paper when citing GBrowse_syn:
 
 - Using the Generic Synteny Browser (GBrowse_syn)
-  <sup>[\[1\]](#cite_note-PMID:20836076-1)</sup>
+ <sup>[\[1\]](#cite_note-PMID:20836076-1)</sup>
 
 \| presentations = \*
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d4/GBrowse_syn_EBI2009.pdf"
@@ -86,8 +86,8 @@ orthologous regions are the subject of considerable interest, so some
 background reading is listed below:
 
 - [GMOD in the
-  Cloud](../Category:GMOD_in_the_Cloud)
+ Cloud](../Category:GMOD_in_the_Cloud)
 - [GMOD
-  Components](../Category:GMOD_Components)
+ Components](../Category:GMOD_Components)
 - [Tool data](../Category:Tool_data)
 - [GBrowse syn](../Category:GBrowse_syn)

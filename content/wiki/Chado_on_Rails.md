@@ -3,46 +3,46 @@ title: "Chado on Rails"
 ---
 # Chado on Rails
 
-  Intro](#Intro)
+ Intro](#Intro)
 - [Download](#Download)
 - [Features](#Features)
 - [Installation](#Installation)
-  - [For the
-    impatient](#For_the_impatient)
-  - [Step 1 -
-    Install Ruby on Rails (and ruby, and rubygems if
-    necessary)](#Step_1_-_Install_Ruby_on_Rails_.28and_ruby.2C_and_rubygems_if_necessary.29)
-  - [Step 2 -
-    Install Chado on Rails](#Step_2_-_Install_Chado_on_Rails)
-  - [Step 3 -
-    Edit
-    config/database.yml](#Step_3_-_Edit_config.2Fdatabase.yml)
-  - [Step 4a -
-    Create a new Chado
-    database](#Step_4a_-_Create_a_new_Chado_database)
-  - [Step 4b -
-    Connect to an existing standard Chado
-    database](#Step_4b_-_Connect_to_an_existing_standard_Chado_database)
-  - [Step 4c -
-    Create custom CoR for your non-standard Chado database
-    (experimental)](#Step_4c_-_Create_custom_CoR_for_your_non-standard_Chado_database_.28experimental.29)
+ - [For the
+ impatient](#For_the_impatient)
+ - [Step 1 -
+ Install Ruby on Rails (and ruby, and rubygems if
+ necessary)](#Step_1_-_Install_Ruby_on_Rails_.28and_ruby.2C_and_rubygems_if_necessary.29)
+ - [Step 2 -
+ Install Chado on Rails](#Step_2_-_Install_Chado_on_Rails)
+ - [Step 3 -
+ Edit
+ config/database.yml](#Step_3_-_Edit_config.2Fdatabase.yml)
+ - [Step 4a -
+ Create a new Chado
+ database](#Step_4a_-_Create_a_new_Chado_database)
+ - [Step 4b -
+ Connect to an existing standard Chado
+ database](#Step_4b_-_Connect_to_an_existing_standard_Chado_database)
+ - [Step 4c -
+ Create custom CoR for your non-standard Chado database
+ (experimental)](#Step_4c_-_Create_custom_CoR_for_your_non-standard_Chado_database_.28experimental.29)
 - [Cookbook](#Cookbook)
-  - [creating
-    new databases](#creating_new_databases)
-  - [creating a
-    web application for an existing Chado
-    database](#creating_a_web_application_for_an_existing_Chado_database)
-  - [creating a
-    web application for a custom Chado
-    database](#creating_a_web_application_for_a_custom_Chado_database)
-  - [making
-    gene pages for a Chado
-    database](#making_gene_pages_for_a_Chado_database)
-  - [using the
-    command line](#using_the_command_line)
+ - [creating
+ new databases](#creating_new_databases)
+ - [creating a
+ web application for an existing Chado
+ database](#creating_a_web_application_for_an_existing_Chado_database)
+ - [creating a
+ web application for a custom Chado
+ database](#creating_a_web_application_for_a_custom_Chado_database)
+ - [making
+ gene pages for a Chado
+ database](#making_gene_pages_for_a_Chado_database)
+ - [using the
+ command line](#using_the_command_line)
 - [Notes from the
-  GMOD evo hackathon
-  2010](#Notes_from_the_GMOD_evo_hackathon_2010)
+ GMOD evo hackathon
+ 2010](#Notes_from_the_GMOD_evo_hackathon_2010)
 
 ## Intro
 
@@ -55,11 +55,11 @@ NasoniaBase. Chado on Rails is free as in beer/speech.
 
 The latest stable release can be downloaded here:
 
-     svn checkout http://chadoonrails.rubyforge.org/svn/tags/release0.1
+ svn checkout http://chadoonrails.rubyforge.org/svn/tags/release0.1
 
 The development trunk can be downloaded here:
 
-     svn checkout http://chadoonrails.rubyforge.org/svn/trunk
+ svn checkout http://chadoonrails.rubyforge.org/svn/trunk
 
 ## Features
 
@@ -77,26 +77,26 @@ great support from Ruby and RoR community
 
 #### For the impatient
 
-    gem install rails # if you get an error, go to the following page and install rails and rubygems http://wiki.rubyonrails.org/getting-started/installation
-    svn checkout http://chadoonrails.rubyforge.org/svn/tags/release0.1 cor
-    cd cor # edit config/database.yml if necessary
+ gem install rails # if you get an error, go to the following page and install rails and rubygems http://wiki.rubyonrails.org/getting-started/installation
+ svn checkout http://chadoonrails.rubyforge.org/svn/tags/release0.1 cor
+ cd cor # edit config/database.yml if necessary
 
-    # if you are hooking CoR up to an existing, standard Chado db your installation is now done.
+ # if you are hooking CoR up to an existing, standard Chado db your installation is now done.
 
-    # to create new Chado db
-    cp db/schema_chado_1.133.rb db/schema.rb
-    rake db:create RAILS_ENV=development
+ # to create new Chado db
+ cp db/schema_chado_1.133.rb db/schema.rb
+ rake db:create RAILS_ENV=development
 
-    # to create new Flybase Chado db
-    cp db/schema_flybase2010.rb db/schema.rb
-    rake db:create RAILS_ENV=development
+ # to create new Flybase Chado db
+ cp db/schema_flybase2010.rb db/schema.rb
+ rake db:create RAILS_ENV=development
 
-    # to create custom Rails models and association for your non-standard Chado db
-    cd cor # or where ever CoR lives
-    ./script/generate magic_chado
-    [lots of chatter]
-    overwrite app/models/analysisfeature.rb? (enter "h" for help) [Ynaqdh] a # <--- ANSWER 'A'
-    [lots of chatter]
+ # to create custom Rails models and association for your non-standard Chado db
+ cd cor # or where ever CoR lives
+ ./script/generate magic_chado
+ [lots of chatter]
+ overwrite app/models/analysisfeature.rb? (enter "h" for help) [Ynaqdh] a # <--- ANSWER 'A'
+ [lots of chatter]
 
 #### Step 1 - Install Ruby on Rails (and ruby, and rubygems if necessary)
 
@@ -110,7 +110,7 @@ should not matter.
 
 #### Step 2 - Install Chado on Rails
 
-    svn checkout http://chadoonrails.rubyforge.org/svn/tags/release0.1 cor
+ svn checkout http://chadoonrails.rubyforge.org/svn/tags/release0.1 cor
 
 #### Step 3 - Edit config/database.yml
 
@@ -120,34 +120,34 @@ connect to a postgreSQL database named cor_development using the root
 user with no password. The database.yml file should look something like
 this:
 
-    development:
-       adapter: postgresql
-       database: cor_development  # <- might need to change this
-       template: template0
-       encoding: utf8
-       host: localhost
-       username: root # <- might need to change this
-       password: # <- might need change this
-    # Warning: The database defined as "test" will be erased and
-    # re-generated from your development database when you run "rake".
-    # Do not set this db to the same as development or production.
-    # test:
-    test: &TEST
-      adapter: postgresql
-      template: template0
-      encoding: utf8
-      database: cor_test
-      host: localhost
-      username: root
-      password:
-    production:
-      adapter: postgresql
-      database: cor_production
-      host: localhost
-      username: root
-      password:
-    cucumber:
-      <<: *TEST
+ development:
+ adapter: postgresql
+ database: cor_development # <- might need to change this
+ template: template0
+ encoding: utf8
+ host: localhost
+ username: root # <- might need to change this
+ password: # <- might need change this
+ # Warning: The database defined as "test" will be erased and
+ # re-generated from your development database when you run "rake".
+ # Do not set this db to the same as development or production.
+ # test:
+ test: &TEST
+ adapter: postgresql
+ template: template0
+ encoding: utf8
+ database: cor_test
+ host: localhost
+ username: root
+ password:
+ production:
+ adapter: postgresql
+ database: cor_production
+ host: localhost
+ username: root
+ password:
+ cucumber:
+ <<: *TEST
 
 Edit the database, host, username, password items in the development
 stanza so that CoR can connect to the database you'd like to use. Change
@@ -158,15 +158,15 @@ has not been tested well, but should work.
 
 To create a standard Chado 1.13 database
 
-    cd cor # or where ever CoR lives
-    cp db/schema_chado_1.133.rb db/schema.rb
-    rake db:create RAILS_ENV=development
+ cd cor # or where ever CoR lives
+ cp db/schema_chado_1.133.rb db/schema.rb
+ rake db:create RAILS_ENV=development
 
 To create a 2010 Flybase Chado database
 
-    cd cor # or where ever CoR lives
-    cp db/schema_flybase2010.rb db/schema.rb
-    rake db:create RAILS_ENV=development
+ cd cor # or where ever CoR lives
+ cp db/schema_flybase2010.rb db/schema.rb
+ rake db:create RAILS_ENV=development
 
 If you get database permission errors, check that the host, username and
 password in config/database.yml are actually the ones you'd like to use.
@@ -181,11 +181,11 @@ your standard Chado database without any more effort on your part.
 CoR can generate a custom set of Rails models for your non-standard
 Chado database.
 
-    cd cor # or where ever CoR lives
-    ./script/generate magic_chado
-    [lots of chatter]
-    overwrite app/models/analysisfeature.rb? (enter "h" for help) [Ynaqdh] a # <--- ANSWER 'A'
-    [lots of chatter]
+ cd cor # or where ever CoR lives
+ ./script/generate magic_chado
+ [lots of chatter]
+ overwrite app/models/analysisfeature.rb? (enter "h" for help) [Ynaqdh] a # <--- ANSWER 'A'
+ [lots of chatter]
 
 Some (gory) details: CoR generates a custom ORM for your non-standard
 Chado database using the magic chado gem, which was inspired by and

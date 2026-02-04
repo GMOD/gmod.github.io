@@ -3,74 +3,74 @@ title: "GBrowse FAQ"
 ---
 # GBrowse FAQ
 
-  FAQ</span>](#About_this_FAQ)
-  - [What is
-    this FAQ?](#What_is_this_FAQ.3F)
-  - [How is it
-    maintained?](#How_is_it_maintained.3F)
+ FAQ</span>](#About_this_FAQ)
+ - [What is
+ this FAQ?](#What_is_this_FAQ.3F)
+ - [How is it
+ maintained?](#How_is_it_maintained.3F)
 - [General
-  Questions](#General_Questions)
-  - [What is
-    GBrowse good for?](#What_is_GBrowse_good_for.3F)
-  - [What
-    platforms does GBrowse run
-    on?](#What_platforms_does_GBrowse_run_on.3F)
-  - [How is
-    GBrowse distributed?](#How_is_GBrowse_distributed.3F)
-  - [What are
-    the terms of use for
-    GBrowse?](#What_are_the_terms_of_use_for_GBrowse.3F)
-  - [I have a
-    problem. What do I do?](#I_have_a_problem._What_do_I_do.3F)
+ Questions](#General_Questions)
+ - [What is
+ GBrowse good for?](#What_is_GBrowse_good_for.3F)
+ - [What
+ platforms does GBrowse run
+ on?](#What_platforms_does_GBrowse_run_on.3F)
+ - [How is
+ GBrowse distributed?](#How_is_GBrowse_distributed.3F)
+ - [What are
+ the terms of use for
+ GBrowse?](#What_are_the_terms_of_use_for_GBrowse.3F)
+ - [I have a
+ problem. What do I do?](#I_have_a_problem._What_do_I_do.3F)
 - [Problem-solving](#Problem-solving)
-  - [Where do I
-    download GBrowse?](#Where_do_I_download_GBrowse.3F)
-  - [How do I
-    install GBrowse?](#How_do_I_install_GBrowse.3F)
-  - [Where do I
-    find a list of all available
-    glyphs?](#Where_do_I_find_a_list_of_all_available_glyphs.3F)
-  - [When I
-    search, why doesn't GBrowse find my 3-letter gene
-    name?](#When_I_search.2C_why_doesn.27t_GBrowse_find_my_3-letter_gene_name.3F)
-  - [How do I
-    use semantic zooming to hide a track
-    completely?](#How_do_I_use_semantic_zooming_to_hide_a_track_completely.3F)
-  - [How to add
-    an outgoing link to a text on the feature detail page in
-    Gbrowse?](#How_to_add_an_outgoing_link_to_a_text_on_the_feature_detail_page_in_Gbrowse.3F)
-  - [I have a
-    multi-segmented feature (such as a multi-exon transcript). It looks
-    fine at low power, but when I zoom in the connecting lines between
-    segments disappear.
-    Help!](#I_have_a_multi-segmented_feature_.28such_as_a_multi-exon_transcript.29._It_looks_fine_at_low_power.2C_but_when_I_zoom_in_the_connecting_lines_between_segments_disappear._Help.21)
-  - [I'm using
-    the GFF database adaptor. Is it better to load it using GFF2 or
-    GFF3?](#I.27m_using_the_GFF_database_adaptor._Is_it_better_to_load_it_using_GFF2_or_GFF3.3F)
-  - [How do I
-    pass parameters into functions of
-    init_code?](#How_do_I_pass_parameters_into_functions_of_init_code.3F)
-  - [How do I
-    show circular genomes?](#How_do_I_show_circular_genomes.3F)
-  - [There's a
-    problem with my overview and detail images - they're the same
-    scale](#There.27s_a_problem_with_my_overview_and_detail_images_-_they.27re_the_same_scale)
-  - [Can I add
-    Popup Balloon Tips to
-    GBrowse?](#Can_I_add_Popup_Balloon_Tips_to_GBrowse.3F)
-  - [Why is
-    GBrowse on Chado so
-    slow?](#Why_is_GBrowse_on_Chado_so_slow.3F)
-  - [The
-    "Bio::Graphics::BrowserConfig=HASH ... Bio/Graphics/Browser.pm line
-    587"
-    Error](#The_.22Bio::Graphics::BrowserConfig.3DHASH_..._Bio.2FGraphics.2FBrowser.pm_line_587.22_Error)
-  - [Can I
-    show more than one glyph in the same
-    track?](#Can_I_show_more_than_one_glyph_in_the_same_track.3F)
-  - [How many
-    tracks can be displayed in
-    GBrowse?](#How_many_tracks_can_be_displayed_in_GBrowse.3F)
+ - [Where do I
+ download GBrowse?](#Where_do_I_download_GBrowse.3F)
+ - [How do I
+ install GBrowse?](#How_do_I_install_GBrowse.3F)
+ - [Where do I
+ find a list of all available
+ glyphs?](#Where_do_I_find_a_list_of_all_available_glyphs.3F)
+ - [When I
+ search, why doesn't GBrowse find my 3-letter gene
+ name?](#When_I_search.2C_why_doesn.27t_GBrowse_find_my_3-letter_gene_name.3F)
+ - [How do I
+ use semantic zooming to hide a track
+ completely?](#How_do_I_use_semantic_zooming_to_hide_a_track_completely.3F)
+ - [How to add
+ an outgoing link to a text on the feature detail page in
+ Gbrowse?](#How_to_add_an_outgoing_link_to_a_text_on_the_feature_detail_page_in_Gbrowse.3F)
+ - [I have a
+ multi-segmented feature (such as a multi-exon transcript). It looks
+ fine at low power, but when I zoom in the connecting lines between
+ segments disappear.
+ Help!](#I_have_a_multi-segmented_feature_.28such_as_a_multi-exon_transcript.29._It_looks_fine_at_low_power.2C_but_when_I_zoom_in_the_connecting_lines_between_segments_disappear._Help.21)
+ - [I'm using
+ the GFF database adaptor. Is it better to load it using GFF2 or
+ GFF3?](#I.27m_using_the_GFF_database_adaptor._Is_it_better_to_load_it_using_GFF2_or_GFF3.3F)
+ - [How do I
+ pass parameters into functions of
+ init_code?](#How_do_I_pass_parameters_into_functions_of_init_code.3F)
+ - [How do I
+ show circular genomes?](#How_do_I_show_circular_genomes.3F)
+ - [There's a
+ problem with my overview and detail images - they're the same
+ scale](#There.27s_a_problem_with_my_overview_and_detail_images_-_they.27re_the_same_scale)
+ - [Can I add
+ Popup Balloon Tips to
+ GBrowse?](#Can_I_add_Popup_Balloon_Tips_to_GBrowse.3F)
+ - [Why is
+ GBrowse on Chado so
+ slow?](#Why_is_GBrowse_on_Chado_so_slow.3F)
+ - [The
+ "Bio::Graphics::BrowserConfig=HASH ... Bio/Graphics/Browser.pm line
+ 587"
+ Error](#The_.22Bio::Graphics::BrowserConfig.3DHASH_..._Bio.2FGraphics.2FBrowser.pm_line_587.22_Error)
+ - [Can I
+ show more than one glyph in the same
+ track?](#Can_I_show_more_than_one_glyph_in_the_same_track.3F)
+ - [How many
+ tracks can be displayed in
+ GBrowse?](#How_many_tracks_can_be_displayed_in_GBrowse.3F)
 
 ## About this FAQ
 
@@ -154,7 +154,7 @@ There is a list of glyphs at the end of the documentation for
 class="external text" rel="nofollow">Bio::Graphics::Glyph</a> which you
 can also see by executing
 
-     perldoc Bio::Graphics::Glyph
+ perldoc Bio::Graphics::Glyph
 
 from the command line.
 
@@ -174,21 +174,21 @@ or
 The latter solution is a multi-step process:
 
 - Open /etc/my.cnf and add the following configuration line to the
-  \[mysqld\] section:
-        ft_min_word_len=3
+ \[mysqld\] section:
+ ft_min_word_len=3
 
 - Restart the mysql server.
 - Connect to your database using the mysql command-line client and run
-  the command:
-       mysql> repair table fattribute_to_feature quick;
+ the command:
+ mysql> repair table fattribute_to_feature quick;
 
 ### How do I use semantic zooming to hide a track completely?
 
 If you wish to turn off a track entirely, you can use the "hide" flag to
 hide the track when the display exceeds a certain size:
 
-                [6_frame_translation:50000]
-                hide = 1
+ [6_frame_translation:50000]
+ hide = 1
 
 ### How to add an outgoing link to a text on the feature detail page in Gbrowse?
 
@@ -210,18 +210,18 @@ configuration of the
 title="GBrowse Configuration HOWTO">GBrowse configuration file</a> and
 GFF3 like this would work:
 
-                Chr1 . match         1  1000 . . . ID=Hit27
-                Chr1 . match_part    1   200 . . . Parent=Hit27
-                Chr1 . match_part  500   600 . . . Parent=Hit27
-                Chr1 . match_part  900  1000 . . . Parent=Hit27
+ Chr1 . match 1 1000 . . . ID=Hit27
+ Chr1 . match_part 1 200 . . . Parent=Hit27
+ Chr1 . match_part 500 600 . . . Parent=Hit27
+ Chr1 . match_part 900 1000 . . . Parent=Hit27
 
 In [GFF2](/wiki/GFF2) format, you will need to use an aggregator, in
 this case, the "match" aggregator. Example GFF2 will look like this:
 
-                Chr1 . match    1  1000 . . . Hit Hit27
-                Chr1 . HSP      1   200 . . . Hit Hit27
-                Chr1 . HSP    500   600 . . . Hit Hit27
-                Chr1 . HSP    900  1000 . . . Hit Hit27
+ Chr1 . match 1 1000 . . . Hit Hit27
+ Chr1 . HSP 1 200 . . . Hit Hit27
+ Chr1 . HSP 500 600 . . . Hit Hit27
+ Chr1 . HSP 900 1000 . . . Hit Hit27
 
 And you will use "match" (the name of the aggregator, not the name of
 the parent feature) as the feature in the track configuration in the
@@ -254,18 +254,18 @@ be called within callbacks.
 
 The answer is to do something like this:
 
-               [GENERAL]
-               init_code = sub round {
-                               my $a = shift;
-                               return int($a + 0.5);
-                           }
+ [GENERAL]
+ init_code = sub round {
+ my $a = shift;
+ return int($a + 0.5);
+ }
 
-               [TRACKS]
-               label    = sub {
-                         my $feature = shift;
-                         my $score   = $feature->score;
-                         return "score = ",round($score);
-                         }
+ [TRACKS]
+ label = sub {
+ my $feature = shift;
+ my $score = $feature->score;
+ return "score = ",round($score);
+ }
 
 Note that you'll need GBrowse version 1.63 or higher for this to work.
 
@@ -324,7 +324,7 @@ up periodic dumps of your Chado database to GFF3.
 
 Users of GBrowse 1.69 will see this message in their Apache error logs:
 
-    Bio::Graphics::BrowserConfig=HASH(0xnnnnnnn) at some_path/Bio/Graphics/Browser.pm line 587
+ Bio::Graphics::BrowserConfig=HASH(0xnnnnnnn) at some_path/Bio/Graphics/Browser.pm line 587
 
 This is a debugging statement that was accidentally left in the GBrowse
 1.69 release. You can either ignore it (it does not affect anything), or
@@ -337,22 +337,22 @@ title="Subversion">Subversion</a>.
 Yes. To show multiple glyphs in the same track set the glyph with a Perl
 *callback*. For example:
 
-    [newtrack]
-    feature = sRNA  sRNA_HL
-    glyph    = sub {
-                    my $f = shift;
-                    my $type = $f->type->method;
-                    if ($type eq 'sRNA') {
-                         return 'xyplot';
-                    }
-                    else {
-                         return 'processed_transcript';
-                    }
-                 }
+ [newtrack]
+ feature = sRNA sRNA_HL
+ glyph = sub {
+ my $f = shift;
+ my $type = $f->type->method;
+ if ($type eq 'sRNA') {
+ return 'xyplot';
+ }
+ else {
+ return 'processed_transcript';
+ }
+ }
 
 Another example:
 
-    glyph        = sub { my $strand = shift->strand; return $strand >=0 ? 'gene' : 'box' }
+ glyph = sub { my $strand = shift->strand; return $strand >=0 ? 'gene' : 'box' }
 
 For a situation where a attribute wouldn't make sense, you could return
 undef.
@@ -363,13 +363,13 @@ callbacks.
 From email threads:
 
 - <a
-  href="http://gmod.827538.n3.nabble.com/more-than-one-glyph-in-same-track-tp951795p951795.html"
-  class="external text" rel="nofollow">More than one glyph in the same
-  track</a>, Alaguraj Veluchamy, July 2010.
+ href="http://gmod.827538.n3.nabble.com/more-than-one-glyph-in-same-track-tp951795p951795.html"
+ class="external text" rel="nofollow">More than one glyph in the same
+ track</a>, Alaguraj Veluchamy, July 2010.
 - <a
-  href="http://gmod.827538.n3.nabble.com/Turn-some-Wiggle-tracks-off-when-no-value-in-selected-region-td946842.html#a946982#a946982"
-  class="external text" rel="nofollow">Callbacks on Glyphs</a>, Andreas
-  Redl, July 2010.
+ href="http://gmod.827538.n3.nabble.com/Turn-some-Wiggle-tracks-off-when-no-value-in-selected-region-td946842.html#a946982#a946982"
+ class="external text" rel="nofollow">Callbacks on Glyphs</a>, Andreas
+ Redl, July 2010.
 
 ### How many tracks can be displayed in GBrowse?
 
@@ -377,7 +377,7 @@ There is no set maximum number of tracks. As of about GBrowse 2.13,
 GBrowse works with more than 1,000 tracks. From this <a
 href="http://gmod.827538.n3.nabble.com/http://gmod.827538.n3.nabble.com/Turn-some-Wiggle-tracks-off-when-no-value-in-selected-region-tp946842p946842.html"
 class="external text" rel="nofollow">email thread (Kai Xia, 2010/07</a>,
-[Lincoln Stein](/wiki/User:Lstein) said:
+Lincoln Stein said:
 
 I think you'll find that 20,000 track definitions are going to slow
 GBrowse down to the point of unusability. I have made some fixes to

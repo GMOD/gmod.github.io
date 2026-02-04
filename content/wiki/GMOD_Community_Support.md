@@ -3,19 +3,19 @@ title: "GMOD Community Support"
 ---
 # GMOD Community Support
 
-  GMOD's Community Support</span>](#Roles_of_GMOD.27s_Community_Support)
-  - [Help
-    Desk](#Help_Desk)
-  - [Grant
-    Review Service](#Grant_Review_Service)
-  - [Training
-    and Outreach](#Training_and_Outreach)
-  - [GMOD for
-    Evolutionary Biology](#GMOD_for_Evolutionary_Biology)
+ GMOD's Community Support</span>](#Roles_of_GMOD.27s_Community_Support)
+ - [Help
+ Desk](#Help_Desk)
+ - [Grant
+ Review Service](#Grant_Review_Service)
+ - [Training
+ and Outreach](#Training_and_Outreach)
+ - [GMOD for
+ Evolutionary Biology](#GMOD_for_Evolutionary_Biology)
 - [Please share
-  your feedback](#Please_share_your_feedback)
+ your feedback](#Please_share_your_feedback)
 - [Acknowledgements and
-  History](#Acknowledgements_and_History)
+ History](#Acknowledgements_and_History)
 
 ## Roles of GMOD's Community Support
 
@@ -53,9 +53,9 @@ aid investigators with grant proposals that include using and/or
 extending GMOD components. Consultancy on grant proposals focuses on
 
 - How [GMOD Components](/wiki/GMOD_Components) can be used
-  to their fullest extent in the grant, and
+ to their fullest extent in the grant, and
 - Finding opportunities to fund support and extension of the GMOD
-  project as a part of grants that use GMOD.
+ project as a part of grants that use GMOD.
 
 ### Training and Outreach
 
@@ -75,15 +75,15 @@ outreach activities](/wiki/Training_and_Outreach).
 These include the following:
 
 - Running multi-day hands-on [GMOD Schools](/wiki/GMOD_Schools)
-  for new GMOD users.
+ for new GMOD users.
 - Giving in person
-  [tutorials](/wiki/Training_and_Outreach#Other_Training_and_Tutorials)
-  and [workshops at
-  conferences](/wiki/Training_and_Outreach#Conference_Workshops)
-  and at GMOD user sites.
+ [tutorials](/wiki/Training_and_Outreach#Other_Training_and_Tutorials)
+ and [workshops at
+ conferences](/wiki/Training_and_Outreach#Conference_Workshops)
+ and at GMOD user sites.
 - Presenting [posters at
-  conferences](/wiki/Training_and_Outreach#Outreach:_Posters_and_Presentations)
-  to increase awareness of GMOD and its capabilities.
+ conferences](/wiki/Training_and_Outreach#Outreach:_Posters_and_Presentations)
+ to increase awareness of GMOD and its capabilities.
 
 ### GMOD for Evolutionary Biology
 
@@ -106,14 +106,14 @@ priorities. Please <a href="mailto:help@gmod.org" class="external text"
 
 - You have a suggestion for a tutorial topic.
 - You are interested in attending a tutorial either at a conference or
-  at <a href="http://www.nescent.org" class="external text"
-  rel="nofollow">NESCent</a>.
+ at <a href="http://www.nescent.org" class="external text"
+ rel="nofollow">NESCent</a>.
 - You have suggestions on conferences or meetings where a GMOD tutorial
-  or poster should be presented.
+ or poster should be presented.
 - You have a suggestion for improving the documentation or web site.
 - You want the GMOD Help Desk to send someone to your organization to
-  help with training, setup, or debugging. (Note that the host needs to
-  pay travel expenses.)
+ help with training, setup, or debugging. (Note that the host needs to
+ pay travel expenses.)
 
 ## Acknowledgements and History
 
@@ -125,17 +125,17 @@ was initially managed by NESCent.
 <a href="http://www.bioperl.org/wiki/Brian" class="extiw"
 title="bp:Brian">Brian Osborne</a> started the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk) in 2006 and, among other things,
-created this wiki. In 2007 [Dave
-Clements](/wiki/User:Clements) took over, who held the
+created this wiki. In 2007 Dave
+Clements took over, who held the
 position until the end of 2010 (when he moved to the
-[Galaxy](/wiki/Galaxy) project). [Amelia
-Ireland](/wiki/User:Girlwithglasses) was Community
+[Galaxy](/wiki/Galaxy) project). Amelia
+Ireland was Community
 Support Specialist from July 2012 to May 2014, when grant funding ran
 out.
 
 Some community support functions are also provided by several other
-members of the GMOD community, notably [Scott
-Cain](/wiki/User:Scott), the GMOD Project Coordinator.
+members of the GMOD community, notably Scott
+Cain, the GMOD Project Coordinator.
 
 The GMOD Help Desk was funded by <a
 href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="

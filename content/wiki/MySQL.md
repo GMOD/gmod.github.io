@@ -18,7 +18,7 @@ See also:
 
 - [Databases and GMOD](/wiki/Databases_and_GMOD)
 - [PostgreSQL](/wiki/PostgreSQL) - The DBMS used with
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 ## Scott Cain's thoughts on why you shouldn't use MySQL for Chado
 
@@ -33,36 +33,36 @@ why I learned to distrust it for 'important' data.
 Some things that make me wary:
 
 - The ability to either have or not have transactional integrity (and
-  look out if you accidentally forget to declare one of your tables as
-  INNODB). See
-  <a href="http://sql-info.de/en/mysql/transaction-innodb-table.html"
-  class="external free"
-  rel="nofollow">http://sql-info.de/en/mysql/transaction-innodb-table.html</a>,
-  <a href="http://sql-info.de/en/mysql/database-definition.html#2_3#2_3"
-  class="external free"
-  rel="nofollow">http://sql-info.de/en/mysql/database-definition.html#2_3</a>
-  and
-  <a href="http://sql-info.de/en/mysql/database-definition.html#2_4#2_4"
-  class="external free"
-  rel="nofollow">http://sql-info.de/en/mysql/database-definition.html#2_4</a>
+ look out if you accidentally forget to declare one of your tables as
+ INNODB). See
+ <a href="http://sql-info.de/en/mysql/transaction-innodb-table.html"
+ class="external free"
+ rel="nofollow">http://sql-info.de/en/mysql/transaction-innodb-table.html</a>,
+ <a href="http://sql-info.de/en/mysql/database-definition.html#2_3#2_3"
+ class="external free"
+ rel="nofollow">http://sql-info.de/en/mysql/database-definition.html#2_3</a>
+ and
+ <a href="http://sql-info.de/en/mysql/database-definition.html#2_4#2_4"
+ class="external free"
+ rel="nofollow">http://sql-info.de/en/mysql/database-definition.html#2_4</a>
 - Silent dropping or truncation of data (To me, this is a VERY BIG DEAL
-  if you care about your data.) See
-  <a href="http://sql-info.de/mysql/gotchas.html#1_13#1_13"
-  class="external free"
-  rel="nofollow">http://sql-info.de/mysql/gotchas.html#1_13</a> for a
-  simple example that is still broken on MySQL 5.0.45.
-  - See the story below about silently throwing away data when inserting
-    it; while MySQL 5 doesn't appear to be affected by this, you might
-    see why my perception of MySQL is perhaps a little shaded by these
-    events.
+ if you care about your data.) See
+ <a href="http://sql-info.de/mysql/gotchas.html#1_13#1_13"
+ class="external free"
+ rel="nofollow">http://sql-info.de/mysql/gotchas.html#1_13</a> for a
+ simple example that is still broken on MySQL 5.0.45.
+ - See the story below about silently throwing away data when inserting
+ it; while MySQL 5 doesn't appear to be affected by this, you might
+ see why my perception of MySQL is perhaps a little shaded by these
+ events.
 - Poor support for triggers (for example, you can't have more than one
-  trigger that has the same trigger action time and event and triggers
-  do not get executed when the event is caused by a cascading foreign
-  key action (and Chado makes considerable use of cascading deletes, so
-  this could affect trigger results)).
+ trigger that has the same trigger action time and event and triggers
+ do not get executed when the event is caused by a cascading foreign
+ key action (and Chado makes considerable use of cascading deletes, so
+ this could affect trigger results)).
 - We already have several years of development of tools devoted to
-  PostgreSQL. I don't have the time to devote to porting, especially
-  since PostgreSQL is an excellent RDBMS.
+ PostgreSQL. I don't have the time to devote to porting, especially
+ since PostgreSQL is an excellent RDBMS.
 
 ### How I learned to distrust MySQL
 

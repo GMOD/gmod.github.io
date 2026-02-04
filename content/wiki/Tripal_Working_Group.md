@@ -67,4 +67,4 @@ subscribe to the Tripal mailing list.
 
 | Name | Email | Affiliation | Comments |
 |----|----|----|----|
-| [Stephen Ficklin](/wiki/User:Sficklin) | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text" |  |
+| Stephen Ficklin | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text" | |

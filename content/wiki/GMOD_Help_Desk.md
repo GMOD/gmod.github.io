@@ -8,17 +8,17 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/GMODHelpDeskLogo.jpg/600px-GMODHelpDeskLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/GMODHelpDeskLogo.jpg/800px-GMODHelpDeskLogo.jpg 2x"
 width="400" height="196" alt="GMOD Help Desk" />
 
-  Desk</span>](#GMOD_Help_Desk)
-  - [Help Desk
-    Services](#Help_Desk_Services)
-    - [User
-      Help](#User_Help)
-    - [GMOD
-      Web Site and
-      Documentation](#GMOD_Web_Site_and_Documentation)
-    - [Developer
-      Support](#Developer_Support)
-  - [Acknowledgements](#Acknowledgements)
+ Desk</span>](#GMOD_Help_Desk)
+ - [Help Desk
+ Services](#Help_Desk_Services)
+ - [User
+ Help](#User_Help)
+ - [GMOD
+ Web Site and
+ Documentation](#GMOD_Web_Site_and_Documentation)
+ - [Developer
+ Support](#Developer_Support)
+ - [Acknowledgements](#Acknowledgements)
 
 # GMOD Help Desk
 

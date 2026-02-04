@@ -38,7 +38,7 @@ the bp_load_gff.pl or bp_bulk_load_gff.pl script using the -fasta
 argument. For example, if the yeast genome is contained in a FASTA file
 named yeast.fa, you would run the command:
 
-         bp_bulk_load_gff.pl -d yeast -fasta yeast.fa sample/yeast_data.gff
+ bp_bulk_load_gff.pl -d yeast -fasta yeast.fa sample/yeast_data.gff
 
 Alternatively, you may put several FASTA files into a directory, and
 provide the directory name as the argument to -fasta. (The yeast DNA is
@@ -66,11 +66,11 @@ currently under display.
 Three factors are major contributors to the length of time it takes to
 load a gbrowse page:
 
-1.  Loading the Perl interpreter and parsing BioPerl and all the other
-    Perl libraries that gbrowse uses.
-2.  Query speed on the database
-3.  The conversion at the Perl layer of database data into BioPerl
-    objects for rendering.
+1. Loading the Perl interpreter and parsing BioPerl and all the other
+ Perl libraries that gbrowse uses.
+2. Query speed on the database
+3. The conversion at the Perl layer of database data into BioPerl
+ objects for rendering.
 
 To improve (1), I recommend that you install the mod_perl module for
 Apache.(<a href="http://perl.apache.org" class="external free"
@@ -122,14 +122,14 @@ reactivate the extra checking (at the expense of a performance hit), go
 to the file "gbrowse" located in the Web scripts directory and edit the
 top line of the file to read:
 
-         #!/usr/bin/perl -w -T
+ #!/usr/bin/perl -w -T
 
 The -T switch turns on taint checks.
 
 If you are running GBrowse under mod_perl, add the following line to the
 httpd.conf configuration file:
 
-         PerlTaintCheck  On
+ PerlTaintCheck On
 
 This will affect all mod_perl scripts globally.
 
@@ -141,7 +141,7 @@ tags in order to make a thumbnail of a region of interest. The thumbnail
 can then be linked to the full-featured gbrowse. Here is an example of
 how this works using the WormBase site:
 
-      http://www.wormbase.org/db/seq/gbrowse_img/wormbase?name=mec-3;width=200
+ http://www.wormbase.org/db/seq/gbrowse_img/wormbase?name=mec-3;width=200
 
 This will generate a 200-pixel inline image of the region.
 
@@ -166,7 +166,7 @@ that you create a separate directory outside the gbrowse.conf/ hierarchy
 in which to store them and then to indicate the location of these
 plugins using the plugin_path setting:
 
-         plugin_path = /usr/local/gbrowse_plugins
+ plugin_path = /usr/local/gbrowse_plugins
 
 This setting should be somewhere in the \[GENERAL\] section of the
 relevant gbrowse configuration file.
@@ -183,19 +183,19 @@ entries.
 This functionality is not well supported, nor widely used, but here is a
 recipe for giving it a try:
 
-1.  Create a local database named "embl" and initialize it this way:
-2.  Set up permissions for this database so that "nobody@localhost" has
-    SELECT, INSERT, UPDATE and DELETE privileges
-3.  Initialize the database for use with this command:
-     % bp_load_gff.pl -c -d embl
+1. Create a local database named "embl" and initialize it this way:
+2. Set up permissions for this database so that "nobody@localhost" has
+ SELECT, INSERT, UPDATE and DELETE privileges
+3. Initialize the database for use with this command:
+  % bp_load_gff.pl -c -d embl
 
-4.  If you need to use a proxy to access remote web sites, uncomment the
-    -proxy line in the conf file, and adjust the URL of the proxy as
-    appropriate.
-5.  Go to
-    <a href="http://localhost/cgi-bin/gbrowse/embl" class="external free"
-    rel="nofollow">http://localhost/cgi-bin/gbrowse/embl</a>. Search for
-    a Genbank or embl accession number, such as CEF58D5
+4. If you need to use a proxy to access remote web sites, uncomment the
+ -proxy line in the conf file, and adjust the URL of the proxy as
+ appropriate.
+5. Go to
+ <a href="http://localhost/cgi-bin/gbrowse/embl" class="external free"
+ rel="nofollow">http://localhost/cgi-bin/gbrowse/embl</a>. Search for
+ a Genbank or embl accession number, such as CEF58D5
 
 # Removing Out-of-Date Image Files
 
@@ -205,8 +205,8 @@ relatively small, but if you run GBrowse for a long time they may begin
 consuming significant amounts of disk space. The following Unix shell
 commands will remove old image files:
 
-         cd HTDOCS/gbrowse/tmp
-         find . -type f -atime +20 -print -exec rm {} \;
+ cd HTDOCS/gbrowse/tmp
+ find . -type f -atime +20 -print -exec rm {} \;
 
 *Be sure to replace HTDOCS with the path to your web server HTML
 document root directory.*

@@ -12,14 +12,14 @@ See <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
 [DIYA](/wiki/DIYA) and [MAKER](/wiki/MAKER) for currently supported
 workflow and analysis packages.
 
-  Description](#Description)
+ Description](#Description)
 - [Requirements](#Requirements)
 - [Getting the
-  Software](#Getting_the_Software)
+ Software](#Getting_the_Software)
 - [Mailing
-  List](#Mailing_List)
+ List](#Mailing_List)
 - [Affiliated
-  projects](#Affiliated_projects)
+ projects](#Affiliated_projects)
 
 ## Description
 
@@ -31,31 +31,31 @@ analysis. It also known as Biopipe. This system is heavily inspired by
 the EnsEMBL Pipeline system.
 
 - Handling of various input and output data formats from various
-  databases.
+ databases.
 - A bioperl interface to non-specific loadsharing software (LSF,PBS etc)
-  to ensure that the various analysis programs are run in proper order
-  and are successfully completed while re-running those that fail.
+ to ensure that the various analysis programs are run in proper order
+ and are successfully completed while re-running those that fail.
 - A flexible pluggable bioperl interface that allows programs to be
-  'pipeline-enabled'. Setting up bioinformatics pipeline is not trivial.
-  This tutorial introduces some aspects of biopipe through setting up a
-  very simple blast pipeline and a protein analysis pipeline.It is hope
-  that through this tutorial, two objectives are achieved:
+ 'pipeline-enabled'. Setting up bioinformatics pipeline is not trivial.
+ This tutorial introduces some aspects of biopipe through setting up a
+ very simple blast pipeline and a protein analysis pipeline.It is hope
+ that through this tutorial, two objectives are achieved:
 - Iron out installation issues using a simple example.
 - Familiarization with the biopipe system and introduction of the XML
-  system we have develop to ameliorate some of the complexities involve
-  in setting up.
+ system we have develop to ameliorate some of the complexities involve
+ in setting up.
 
 ## Requirements
 
 - <a href="http://www.perl.com/" class="external text" rel="nofollow">Perl
-  5.6 or later</a>
+ 5.6 or later</a>
 - <a href="http://www.mysql.com/" class="external text"
-  rel="nofollow">MySQL</a>
+ rel="nofollow">MySQL</a>
 - <a href="http://bioperl.org/wiki/Main_Page" class="external text"
-  rel="nofollow">Bioperl Packages</a>:
-  - bioperl-pipeline
-  - bioperl-live
-  - bioperl-run
+ rel="nofollow">Bioperl Packages</a>:
+ - bioperl-pipeline
+ - bioperl-live
+ - bioperl-run
 
 ## Getting the Software
 
@@ -63,7 +63,7 @@ You can download the CVS version of bioperl-pipeline from
 <a href="http://code.open-bio.org/cgi/viewcvs.cgi/"
 class="external text" rel="nofollow">Bioperl CVS</a>
 
-    cvs -d :pserver:cvs@cvs.open-bio.org:/home/repository/bioperl co bioperl-pipeline
+ cvs -d :pserver:cvs@cvs.open-bio.org:/home/repository/bioperl co bioperl-pipeline
 
 ## Mailing List
 

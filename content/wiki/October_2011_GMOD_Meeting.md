@@ -38,34 +38,34 @@ Tweet?_ Please use the
 <a href="https://twitter.com/#!/search?q=%23gmod11#!/search?q=#gmod11"
 class="external text" rel="nofollow">#gmod11 hashtag</a>.</span>
 
-  Registration](#Registration)
+ Registration](#Registration)
 - [Agenda](#Agenda)
-  - [Keynote
-    speakers](#Keynote_speakers)
-    - [Gary D. Bader](#Gary_D._Bader)
-    - [Michael Brudno](#Michael_Brudno)
-  - [Agenda](#Agenda_2)
-    - [Day 1:
-      Wednesday](#Day_1:_Wednesday)
-    - [Day 2:
-      Thursday](#Day_2:_Thursday)
-    - [Day 3:
-      Friday](#Day_3:_Friday)
-  - [Suggested
-    agenda items](#Suggested_agenda_items)
-  - [Scheduled
-    Satellite Meetings](#Scheduled_Satellite_Meetings)
-    - [Galaxy
-      Workshop](#Galaxy_Workshop)
-    - [InterMine Development
-      Meeting](#InterMine_Development_Meeting)
-    - [BioMart Workshop](#BioMart_Workshop)
-    - [MAKER
-      Workshop](#MAKER_Workshop)
+ - [Keynote
+ speakers](#Keynote_speakers)
+ - [Gary D. Bader](#Gary_D._Bader)
+ - [Michael Brudno](#Michael_Brudno)
+ - [Agenda](#Agenda_2)
+ - [Day 1:
+ Wednesday](#Day_1:_Wednesday)
+ - [Day 2:
+ Thursday](#Day_2:_Thursday)
+ - [Day 3:
+ Friday](#Day_3:_Friday)
+ - [Suggested
+ agenda items](#Suggested_agenda_items)
+ - [Scheduled
+ Satellite Meetings](#Scheduled_Satellite_Meetings)
+ - [Galaxy
+ Workshop](#Galaxy_Workshop)
+ - [InterMine Development
+ Meeting](#InterMine_Development_Meeting)
+ - [BioMart Workshop](#BioMart_Workshop)
+ - [MAKER
+ Workshop](#MAKER_Workshop)
 - [Logistics](#Logistics)
-  - [Hotel](#Hotel)
+ - [Hotel](#Hotel)
 - [Next
-  Meeting](#Next_Meeting)
+ Meeting](#Next_Meeting)
 
 The next [GMOD meeting](/wiki/Meetings) is being held in October
 12-13, 2011 at the <a href="http://oicr.on.ca/" class="external text"
@@ -165,15 +165,15 @@ directions once you are outside the building:
 Directions to the HL31 are as follows:
 
 - Enter the MaRS Centre (101 College Street, Toronto ON M5G 1L7) through
-  the main doors (with the stairs & ramp)
+ the main doors (with the stairs & ramp)
 - In the main lobby area, turn right and walk towards the west end of
-  the building
+ the building
 - Pass the RBC bank machine and proceed through a glass door on your
-  right
+ right
 - Go down the stairs marked “Stair 16, Ground Floor” (or take the
-  elevator)
+ elevator)
 - At the bottom of the stairs, enter the hallway through the door marked
-  “Stair 16, Upper Concourse”
+ “Stair 16, Upper Concourse”
 - The corridor to HL31 boardroom is immediately on your left
 
 ### Day 1: Wednesday
@@ -197,13 +197,13 @@ Directions to the HL31 are as follows:
 <tr class="odd">
 <td>9:15</td>
 <td>Introductions</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>9:35</td>
 <td>Welcome to OICR and the State of GMOD</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Scott_cain_intro.ppt"
 class="internal" title="Scott cain intro.ppt">slides</a></td>
 </tr>
@@ -223,7 +223,7 @@ title="Gary bader.pptx">PPT</a></td>
 <tr class="odd">
 <td>11:30</td>
 <td>GBrowse2: What's New</td>
-<td><a href="/wiki/User%253ALstein" title="User%253ALstein">Lincoln Stein</a></td>
+<td>Lincoln Stein</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/Lincoln_stein.ppt"
 class="internal" title="Lincoln stein.ppt">PPT</a></td>
 </tr>
@@ -236,8 +236,8 @@ class="internal" title="Lincoln stein.ppt">PPT</a></td>
 <tr class="odd">
 <td>1:30</td>
 <td><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a> and <a href="/wiki/WebApollo" title="WebApollo">WebApollo</a></td>
-<td><a href="/wiki/User%253AMitchSkinner" title="User%253AMitchSkinner">Mitch
-Skinner</a></td>
+<td>Mitch
+Skinner</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Mitch_skinner.pdf"
 class="internal" title="Mitch skinner.pdf">PDF</a></td>
 </tr>
@@ -258,24 +258,24 @@ class="internal" title="Andrew oberlin.pdf">PDF</a></td>
 <tr class="even">
 <td>3:00</td>
 <td><a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
-<td><a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson
-Holt</a></td>
+<td>Carson
+Holt</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1a/Carson_holt.pdf" class="internal"
 title="Carson holt.pdf">PDF</a></td>
 </tr>
 <tr class="odd">
 <td>3:30</td>
 <td><a href="/wiki/InterMine" title="InterMine">InterMine</a></td>
-<td><a href="/wiki/User%253AAlexkalderimis" title="User%253AAlexkalderimis">Alex
-Kalderimis</a><br />
-and/or <a href="/wiki/User%253ARsmith" title="User%253ARsmith">Richard Smith</a></td>
+<td>Alex
+Kalderimis<br />
+and/or Richard Smith</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/Richard_smith.pdf"
 class="internal" title="Richard smith.pdf">PDF</a></td>
 </tr>
 <tr class="even">
 <td>4:00</td>
 <td>Improving MOD interoperation (A Discussion)</td>
-<td><a href="/wiki/User%253AJogoodma" title="User%253AJogoodma">Josh Goodman</a></td>
+<td>Josh Goodman</td>
 <td>
 PDF unavailable
 </td>
@@ -292,7 +292,7 @@ title="Matahari.pdf">PDF</a></td>
 
 ### Day 2: Thursday
 
-| Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                               | Keynote: The Savant Browser and MedSavant                                    | Michael Brudno                                   | PDF unavailable                                                                                                                | 10:00                              | [Galaxy](/wiki/Galaxy)                                                  | [Dan Blankenberg](/wiki/User:DanB) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" | title="2011 10 Galaxy.pdf">PDF</a> | 10:30                              | [Coffee](/wiki/GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_...) | 11:00                              | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"                     |
+| Time | Topic | Presenter(s) | Links | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | 9:15 | Keynote: The Savant Browser and MedSavant | Michael Brudno | PDF unavailable | 10:00 | [Galaxy](/wiki/Galaxy) | Dan Blankenberg | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" | title="2011 10 Galaxy.pdf">PDF</a> | 10:30 | [Coffee](/wiki/GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_...) | 11:00 | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD" |
 
 class="external text" rel="nofollow">SADI for GMOD: An RDF/OWL Interface
 to GMOD Data</a> | Ben Vandervalk | <a
@@ -302,36 +302,36 @@ title="SADIforGMOD.pdf">PDF</a> | 11:30 | [The Comprehensive Antibiotic Resistan
 title="Andrew mcarthur.pdf">PDF</a>,<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Andrew_mcarthur.ppt" class="internal"
 title="Andrew mcarthur.ppt">PPT</a> | 12:00 | Lunch | 1:30 | Lightning talks <span class="small">(Please feel free to give a 5-10 minute talk on whatever; if you are interested enough to put together a talk, others will likely be interested in the content! :-)</span> | ### Day 3: Friday
 
-| Time | Workshop                     | Location                  | ---- | ---------------------------- | ------------------------- | 9:00 | [BioMart](#BioMart_Workshop) | OICR, 8th floor Boardroom | 9:00 | [Galaxy](#Galaxy_Workshop)   | OICR room HL-31           | 2:30 | [MAKER](#MAKER_Workshop)     | OICR, 8th floor Boardroom |
+| Time | Workshop | Location | ---- | ---------------------------- | ------------------------- | 9:00 | [BioMart](#BioMart_Workshop) | OICR, 8th floor Boardroom | 9:00 | [Galaxy](#Galaxy_Workshop) | OICR room HL-31 | 2:30 | [MAKER](#MAKER_Workshop) | OICR, 8th floor Boardroom |
 
 ## Suggested agenda items
 
 Please feel free to add suggested talks or topics for the meeting.
 
 - The Mycoplasma Genome Database: marrying microscopy and genomics
-  (Andrew Oberlin & Iddo Friedberg)
-- Improving MOD interoperability ([Scott Cain](/wiki/User:Scott),
-  [Josh Goodman](/wiki/User:Jogoodma) will lead the
-  discussion)
+ (Andrew Oberlin & Iddo Friedberg)
+- Improving MOD interoperability (Scott Cain,
+ Josh Goodman will lead the
+ discussion)
 - [BioMart](/wiki/BioMart),
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
-  [Galaxy](/wiki/Galaxy), [GBrowse](/wiki/GBrowse), and
-  [InterMine](/wiki/InterMine) updates - since representatives of
-  all those groups will be there (suggested by [Dave
-  C](/wiki/User:Clements))
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+ [Galaxy](/wiki/Galaxy), [GBrowse](/wiki/GBrowse), and
+ [InterMine](/wiki/InterMine) updates - since representatives of
+ all those groups will be there (suggested by Dave
+ C)
 - <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"
-  class="external text" rel="nofollow">SADI for GMOD: An RDF/OWL Interface
-  to GMOD Data</a> (Ben Vandervalk)
+ class="external text" rel="nofollow">SADI for GMOD: An RDF/OWL Interface
+ to GMOD Data</a> (Ben Vandervalk)
 - Running GBrowse2 without root and without Apache (Todd Harris)
 - [The Comprehensive Antibiotic Resistance
-  Database](/wiki/News/CARD) (Andrew McArthur)
+ Database](/wiki/News/CARD) (Andrew McArthur)
 - JBrowse update (Mitch Skinner)
 - web application integration, the Ambikon integration server (Rob
-  Buels)
+ Buels)
 
 ## Scheduled Satellite Meetings
 
-|     | --- | --- | --- | --- | <img
+| | --- | --- | --- | --- | <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/110px-Biomart250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/165px-Biomart250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/220px-Biomart250.png 2x"
 width="110" height="44" alt="BioMart" /> | <img
@@ -346,26 +346,26 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="110" height="37" alt="MAKER" /> |
 
 - [BioMart workshop](#BioMart_Workshop) (half day, morning), Friday, 14
-  October
+ October
 - [Galaxy workshop](#Galaxy_Workshop) (half day, morning), Friday,
-  October 14 - details to be forthcoming
+ October 14 - details to be forthcoming
 - [InterMine development meeting](#InterMine_Development_Meeting),
-  Thursday and Friday
+ Thursday and Friday
 - [MAKER workshop](#MAKER_Workshop) (half day, afternoon), Friday,
-  October 14
+ October 14
 
 You can register for the BioMart, Galaxy, and MAKER Workshops on the
 <a href="http://gmod.eventbrite.com/" class="external text"
 
 the [InterMine development meeting](#InterMine_Development_Meeting),
-please let [Richard Smith](/wiki/User:Rsmith) know.
+please let Richard Smith know.
 
 ### [Galaxy](/wiki/Galaxy) Workshop
 
 This workshop will cover an introduction to [Galaxy](/wiki/Galaxy),
 including analyzing data with tools and visualizations, using Galaxy in
-the cloud, and running your own instance and adding new tools. [Dan
-Blankenberg](/wiki/User:DanB) of the
+the cloud, and running your own instance and adding new tools. Dan
+Blankenberg of the
 <a href="http://galaxyproject.org/" class="external text"
 
 Galaxy is an open-source analysis and data integration framework that is
@@ -386,7 +386,7 @@ seating is limited to 18 participants, with space for an additional 10
 participants, so please
 <a href="http://gmod.eventbrite.com/" class="external text"
 
-| Workshop Slides                                                                                                                                                                                                                 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [An Introduction to Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GalaxyWorkshop0_2011_10.pdf)                                                    | [Using Galaxy for High-throughput Sequencing (HTS) Analysis and Visualization](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/GalaxyWorkshop1_2011_10.pdf) | [Running and Enhancing your own Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/GalaxyWorkshop2_2011_10.pdf)                                        | [Second Half: Running Your Own Instance](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/GalaxyWorkshop3_2011_10.pdf)                                       |
+| Workshop Slides | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [An Introduction to Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GalaxyWorkshop0_2011_10.pdf) | [Using Galaxy for High-throughput Sequencing (HTS) Analysis and Visualization](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/GalaxyWorkshop1_2011_10.pdf) | [Running and Enhancing your own Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/GalaxyWorkshop2_2011_10.pdf) | [Second Half: Running Your Own Instance](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/GalaxyWorkshop3_2011_10.pdf) |
 
 ### [InterMine](/wiki/InterMine) Development Meeting
 
@@ -398,7 +398,7 @@ which involves supporting InterMine data-warehouses for _D.
 melanogaster_, _R. norvegus_, _M. musculus_, _S. cerevisiae_, _D. rerio_
 and _C. elegans_. Groups representing other efforts to use InterMine for
 biological data-warehousing are welcome to attend (as indeed some already
-are) - please contact [Richard Smith](/wiki/User:Rsmith) for
+are) - please contact Richard Smith for
 more details.
 
 ### [BioMart](/wiki/BioMart) Workshop

@@ -25,28 +25,28 @@ User%253A your profile name from the morning session
 
 Password: abrf_HTS
 
-    ssh profilename@abrf2010.jbrowse.org
+ ssh profilename@abrf2010.jbrowse.org
 
 Copy your GFF file from this morning to this machine:
 
-    wget --http-user=abrf_workshop --http-password=abrf_HTS http://abrf.cgrb.oregonstate.edu/UserData/mitch/finaloutput-cashx_18887.dir/finaloutput-cashx.gff
+ wget --http-user=abrf_workshop --http-password=abrf_HTS http://abrf.cgrb.oregonstate.edu/UserData/mitch/finaloutput-cashx_18887.dir/finaloutput-cashx.gff
 
 OR
 
-    cp ~mitch/finaloutput-cashx.gff ~/
+ cp ~mitch/finaloutput-cashx.gff ~/
 
 Go into your JBrowse installation:
 
-    cd public_html
+ cd public_html
 
 Add the GFF file to your JBrowse instance:
 
-    bin/flatfile-to-json.pl --gff2 ~mitch/finaloutput-cashx.gff --tracklabel "ABRF_Test" --key "ABRF Test" --cssclass feature3
+ bin/flatfile-to-json.pl --gff2 ~mitch/finaloutput-cashx.gff --tracklabel "ABRF_Test" --key "ABRF Test" --cssclass feature3
 
 ## Conference Talk
 
 **Seeing the Forest and the Trees: Visualizing Next Generation Sequence
-Data**, by [Mitch Skinner](/wiki/User:MitchSkinner)
+Data**, by Mitch Skinner
 
 Part of the Session _Tools to Facilitate Management, Analysis and
 Visualization of 2nd Generation Sequencing Data_

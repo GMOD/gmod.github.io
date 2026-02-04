@@ -15,23 +15,23 @@ gbrowse_clean.pl - Clean up sessions and other temporary gbrowse2 files
 
 From the command line:
 
-    sudo -u www-data gbrowse_clean.pl
+ sudo -u www-data gbrowse_clean.pl
 
 Replace "www-data" with the web server account name on your system.
 
 To run automatically under cron, create a crontab file for the web
 server user that contains a line like the following:
 
-    # m h  dom mon dow   command
-    5 0  *  *  * /usr/bin/gbrowse_clean.pl >>/var/log/gbrowse2/gbrowse_clean.log
+ # m h dom mon dow command
+ 5 0 * * * /usr/bin/gbrowse_clean.pl >>/var/log/gbrowse2/gbrowse_clean.log
 
 ------------------------------------------------------------------------
 
 **OPTIONS**
 
-    -verbose: Report actions verbosely, printing out each session, file and directory deleted.
-    -help   : Print a brief help message and exits.
-    -man    : Prints the manual page and exits.
+ -verbose: Report actions verbosely, printing out each session, file and directory deleted.
+ -help  : Print a brief help message and exits.
+ -man  : Prints the manual page and exits.
 
 ------------------------------------------------------------------------
 
@@ -45,23 +45,23 @@ This script expires these temporary files, releasing unneeded space. The
 script honors the following options from the GBrowse.conf master
 configuration file:
 
-    Name                   Default Description
-    ----                   ------- -----------
-    expire session         1M      How long to keep session data
-    expire cache           2h      How long to keep cache data
-    expire uploads         6w      How long to keep user track data
+ Name Default Description
+ ---- ------- -----------
+ expire session 1M How long to keep session data
+ expire cache 2h How long to keep cache data
+ expire uploads 6w How long to keep user track data
 
 Time intervals are indicated using a count and a unit:
 
-    Suffix     Time Unit
-    ------     ---------
-     s         seconds
-     m         minutes
-     h         hours
-     d         days
-     w         weeks
-     M         months
-     y         years
+ Suffix Time Unit
+ ------ ---------
+ s seconds
+ m minutes
+ h hours
+ d days
+ w weeks
+ M months
+ y years
 
 **expire session** controls how long before user session data expires.
 Once a session expires, the user's saved settings, such as his preferred

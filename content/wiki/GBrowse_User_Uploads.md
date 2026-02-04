@@ -21,34 +21,34 @@ more flexible sharing. It has been tested using
 
 use others.
 
-  Display](#Display)
+ Display](#Display)
 - [Basic Custom
-  Tracks](#Basic_Custom_Tracks)
-  - [Adding
-    Custom Tracks](#Adding_Custom_Tracks)
-    - [Uploaded Tracks](#Uploaded_Tracks)
-    - [Remote
-      Tracks/URLs](#Remote_Tracks.2FURLs)
-    - [Created Tracks](#Created_Tracks)
+ Tracks](#Basic_Custom_Tracks)
+ - [Adding
+ Custom Tracks](#Adding_Custom_Tracks)
+ - [Uploaded Tracks](#Uploaded_Tracks)
+ - [Remote
+ Tracks/URLs](#Remote_Tracks.2FURLs)
+ - [Created Tracks](#Created_Tracks)
 - [Advanced
-  Custom Tracks](#Advanced_Custom_Tracks)
-  - [Permissions](#Permissions)
-    - [Private](#Private)
-    - [Casual](#Casual)
-    - [Group](#Group)
-    - [Public/Community](#Public.2FCommunity)
+ Custom Tracks](#Advanced_Custom_Tracks)
+ - [Permissions](#Permissions)
+ - [Private](#Private)
+ - [Casual](#Casual)
+ - [Group](#Group)
+ - [Public/Community](#Public.2FCommunity)
 - [Setup](#Setup)
-  - [To use
-    SQLite](#To_use_SQLite)
-  - [To use
-    MySQL](#To_use_MySQL)
-  - [User
-    Accounts Flag](#User_Accounts_Flag)
+ - [To use
+ SQLite](#To_use_SQLite)
+ - [To use
+ MySQL](#To_use_MySQL)
+ - [User
+ Accounts Flag](#User_Accounts_Flag)
 - [Database
-  Schema](#Database_Schema)
-  - [Uploads](#Uploads)
-  - [Sharing](#Sharing)
-  - [DBInfo](#DBInfo)
+ Schema](#Database_Schema)
+ - [Uploads](#Uploads)
+ - [Sharing](#Sharing)
+ - [DBInfo](#DBInfo)
 
 ## Display
 
@@ -236,9 +236,9 @@ the folder *holding* the .sqlite file, as SQLite creates a temporary
 file in that folder before any writes are made, and needs the
 permissions to do so.
 
-    # Path to the database -- you will need to create this database and grant all
-    # privileges on it to the indicated user.
-    # user_account_db        = DBI:SQLite:/path/to/your/database.sqlite
+ # Path to the database -- you will need to create this database and grant all
+ # privileges on it to the indicated user.
+ # user_account_db = DBI:SQLite:/path/to/your/database.sqlite
 
 ### To use MySQL
 
@@ -253,17 +253,17 @@ To configure your GBrowse.conf file to use a MySQL database, uncomment
 "user_account_db") and specify the connection details as indicated.
 Change the user and/or password fields as needed.
 
-    # user_account_db        = DBI:mysql:gbrowse_login;user=gbrowse;password=gbrowse
+ # user_account_db = DBI:mysql:gbrowse_login;user=gbrowse;password=gbrowse
 
 ### User Accounts Flag
 
 Once the configuration option has been set, the "user accounts" switch
 to enable the user database must be turned on (set from 0 to 1).
 
-    ####### User Account Registration Database ######
-    # If "user accounts" is true, then we will try to use
-    # a user registration database
-    user accounts          = 0
+ ####### User Account Registration Database ######
+ # If "user accounts" is true, then we will try to use
+ # a user registration database
+ user accounts = 0
 
 ## Database Schema
 
@@ -297,7 +297,7 @@ public file to their session, a new record is kept in this table to
 store that relationship. Not the public flag - public and shared files
 are kept separate, to avoid contamination between the two share types.
 
-| Field   | Type                 | Description |
+| Field | Type | Description |
 |---------|----------------------|--------------------------------------------|
 | trackid | varchar(32) not null | The unique ID of the track to be shared. |
 | userid | integer not null | The unique ID of the user to be shared to. |

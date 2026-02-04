@@ -3,30 +3,30 @@ title: "Load BLAST Into Chado"
 ---
 # Load BLAST Into Chado
 
-  Abstract](#Abstract)
+ Abstract](#Abstract)
 - [Have an
-  existing Chado genome
-  database](#Have_an_existing_Chado_genome_database)
+ existing Chado genome
+ database](#Have_an_existing_Chado_genome_database)
 - [Convert BLAST
-  analysis to GFF3](#Convert_BLAST_analysis_to_GFF3)
-  - [BLAST GFF3
-    sample for Chado](#BLAST_GFF3_sample_for_Chado)
+ analysis to GFF3](#Convert_BLAST_analysis_to_GFF3)
+ - [BLAST GFF3
+ sample for Chado](#BLAST_GFF3_sample_for_Chado)
 - [Load Query
-  Protein sequence to Chado
-  DB](#Load_Query_Protein_sequence_to_Chado_DB)
+ Protein sequence to Chado
+ DB](#Load_Query_Protein_sequence_to_Chado_DB)
 - [Load BLAST
-  result GFF3 to Chado DB](#Load_BLAST_result_GFF3_to_Chado_DB)
-  - [Chado
-    Tables Updated](#Chado_Tables_Updated)
+ result GFF3 to Chado DB](#Load_BLAST_result_GFF3_to_Chado_DB)
+ - [Chado
+ Tables Updated](#Chado_Tables_Updated)
 - [See
-  also](#See_also)
+ also](#See_also)
 - [More
-  Information](#More_Information)
+ Information](#More_Information)
 - [Authors](#Authors)
 
 # Abstract
 
-This  describes steps to add a
+This describes steps to add a
  analysis to a [Chado
 database](/wiki/Chado_-_Getting_Started).
 
@@ -46,7 +46,7 @@ to have this example work.
 For example, match yeast proteins to your genome with tBLASTn, and
 reformat to [GFF3](/wiki/GFF3).
 
-     $ncbi/blastall -p tblastn -i MOD_Scer.fa -d dmel4 -o dmel4-modsc.tblastn
+ $ncbi/blastall -p tblastn -i MOD_Scer.fa -d dmel4 -o dmel4-modsc.tblastn
 
 First reformat to [GFF3](/wiki/GFF3) with the
 [BioPerl](/wiki/BioPerl) `bp_search2gff.pl` script. The Chado policy
@@ -54,29 +54,29 @@ here is to put your program and blast query data names into the GFF3
 `--source` field. The GFF3 `--method` field should always be SO term
 'match_part'. You also want the `--type hit` and `--target` options.
 
-     scripts/bp_search2gff.pl --in dmel4-modsc.tblastn \
-         --out dmel4-modsc.tblastn.gff -version 3 \
-         --format blast \
-         --method match_part --source tBLASTn.MOD_Scer \
-         --type hit --target
+ scripts/bp_search2gff.pl --in dmel4-modsc.tblastn \
+ --out dmel4-modsc.tblastn.gff -version 3 \
+ --format blast \
+ --method match_part --source tBLASTn.MOD_Scer \
+ --type hit --target
 
 Finally clean up the GFF3 a bit:
 
-      perl -pi -e 's/Target=Sequence:/Target=/' dmel4-modsc.tblastn.gff
+ perl -pi -e 's/Target=Sequence:/Target=/' dmel4-modsc.tblastn.gff
 
 ## BLAST GFF3 sample for Chado
 
 Result should be formatted like this:
 
-      ##gff-version 3
-      # sample tBLASTn yeast protein x fly chromosome 4 (GenBank NC_004353) matches
-      # GFF formatted for loading to Chado database
+ ##gff-version 3
+ # sample tBLASTn yeast protein x fly chromosome 4 (GenBank NC_004353) matches
+ # GFF formatted for loading to Chado database
 
-      NC_004353 tBLASTn.MOD_Scer  match_part  141495  141815  48.9  - 0 Target=S000003211 43 156
+ NC_004353 tBLASTn.MOD_Scer match_part 141495 141815 48.9 - 0 Target=S000003211 43 156
 
-      NC_004353 tBLASTn.MOD_Scer  match_part  161699  162793  217 + 0 Target=S000005817 984 1204
-      NC_004353 tBLASTn.MOD_Scer  match_part  160517  161407  185 + 0 Target=S000005817 455 980
-         # this is a protein match with 2 HSP parts, note the identical Target=
+ NC_004353 tBLASTn.MOD_Scer match_part 161699 162793 217 + 0 Target=S000005817 984 1204
+ NC_004353 tBLASTn.MOD_Scer match_part 160517 161407 185 + 0 Target=S000005817 455 980
+ # this is a protein match with 2 HSP parts, note the identical Target=
 
 # Load Query Protein sequence to Chado DB
 
@@ -86,8 +86,8 @@ for reference in your
 script `gmod_bulk_load_gff3.pl` will handle this after converting
 sequence Fasta to [GFF3](/wiki/GFF3) format.
 
-     gmod_fasta2gff3.pl  --type protein --source SGD --fasta MOD_Scer.fa --gff MOD_Scer.fa.gff
-     gmod_bulk_load_gff3.pl --dbname my_chado_01  --organism yeast --dbxref --gff MOD_Scer.fa.gff
+ gmod_fasta2gff3.pl --type protein --source SGD --fasta MOD_Scer.fa --gff MOD_Scer.fa.gff
+ gmod_bulk_load_gff3.pl --dbname my_chado_01 --organism yeast --dbxref --gff MOD_Scer.fa.gff
 
 If your query sequence comes from UniProt or GenBank formats, you can
 instead use the
@@ -101,14 +101,14 @@ Use the `gmod_bulk_load_gff3.pl` script for this, indicating the input
 is `--analysis`, and the Target names are unique IDs matching above
 protein features.
 
-     gmod_bulk_load_gff3.pl --dbname my_chado_01  --organism fruitfly \
-       --analysis --unique_target --score raw  \
-       --gff dmel4-modsc.tblastn.gff
+ gmod_bulk_load_gff3.pl --dbname my_chado_01 --organism fruitfly \
+ --analysis --unique_target --score raw \
+ --gff dmel4-modsc.tblastn.gff
 
 Note: If you have pre-loaded the database with all the protein sequence
 features such as the SGD:S000002445 protein, you should use
 
-    gmod_bulk_load_gff3 --analysis --unique_target
+ gmod_bulk_load_gff3 --analysis --unique_target
 
 to ensure that Target feature is linked with your Blast result.
 
@@ -121,15 +121,15 @@ Analysis table entry of the
 
 | analysis_id | name | description | program | programversion | algorithm | sourcename |
 |----|----|----|----|----|----|----|
-| 10 | tBLASTn.MOD_Scer | tBLASTn | null | MOD_Scer |  |  |
+| 10 | tBLASTn.MOD_Scer | tBLASTn | null | MOD_Scer | | |
 
 Analysisfeature table entries (1/hsp)
 
-|  |  |
+| | |
 |----|----|----|----|----|----|----|----|
 | analysisfeature_id | feature_id | analysis_id | rawscore | normscore | significance | identity | 21 |
-| 88148 | 10 | 117 |  | ← 1st HSP | 22 | 88150 | 10 |
-| 91.7 |  | ... |  |  | Feature table entry for Hit feature_id 88148 : |  |  |
+| 88148 | 10 | 117 | | ← 1st HSP | 22 | 88150 | 10 |
+| 91.7 | | ... | | | Feature table entry for Hit feature_id 88148 : | | |
 
 ``` de1
  SELECT * FROM feature WHERE feature_id = 88148;
@@ -137,26 +137,26 @@ Analysisfeature table entries (1/hsp)
 
 | feature_id | dbxref_id | organism_id | name | uniquename | residues | seqlen | md5checksum | type_id | is_analysis | is_obsolete |
 |----|----|----|----|----|----|----|----|----|----|----|
-| 88148 | 76797 | 10 | protein_match-auto88148 | auto88148 |  | 423 | t | f | ... |  |
-|  |  |  | Featureloc entries for Hit feature_id 88148: |  |  |  |  |  |  |  |
+| 88148 | 76797 | 10 | protein_match-auto88148 | auto88148 | | 423 | t | f | ... | |
+| | | | Featureloc entries for Hit feature_id 88148: | | | | | | | |
 
 | featureloc_id | feature_id | srcfeature_id | fmin | is_fmin_partial | fmax | is_fmax_partial | strand | phase | residue_info | locgroup | rank |
 |----|----|----|----|----|----|----|----|----|----|----|----|----|
-| 88149 | 88148 | 88149 | 69 | f | 858 | f |  | 0 | 1 | ← Target protein | 88148 | 88148 |
-| 31118 | 24052 | f | 24448 | f | 1 |  | 0 | 0 | ← Source genome |  |  |  |
+| 88149 | 88148 | 88149 | 69 | f | 858 | f | | 0 | 1 | ← Target protein | 88148 | 88148 |
+| 31118 | 24052 | f | 24448 | f | 1 | | 0 | 0 | ← Source genome | | | |
 
 Featureloc entries for Target feature_id 88149:
 
 | featureloc_id | feature_id | srcfeature_id | fmin | is_fmin_partial | fmax | is_fmax_partial | strand | phase | residue_info | locgroup | rank |
 |----|----|----|----|----|----|----|----|----|----|----|----|----|
-| 88149 | 88148 | 88149 | 69 | f | 858 | f |  | 0 | 1 | ← first HSP | 88151 | 88150 |
-| 88149 | 69 | f | 858 | f |  | 0 | 1 | ← second HSP |  |  |  |  |
+| 88149 | 88148 | 88149 | 69 | f | 858 | f | | 0 | 1 | ← first HSP | 88151 | 88150 |
+| 88149 | 69 | f | 858 | f | | 0 | 1 | ← second HSP | | | | |
 
 *I believe the ranks shown in the featureloc example above may not be
 correct or at least are misleading; see the [Chado Best Practices
 section for handling BLAST
 results](/wiki/Chado_Best_Practices#Results_from_BLAST)
-for clarification* [Scott](/wiki/User:Scott) 19:18, 21 November
+for clarification* Scott 19:18, 21 November
 2008 (UTC)
 
 # See also
@@ -171,5 +171,5 @@ Please send questions to the GMOD developers list:
 
 # Authors
 
-- [Dongilbert](/wiki/User:Dongilbert) 23:24, 3 April 2007
-  (EDT)
+- Dongilbert 23:24, 3 April 2007
+ (EDT)

@@ -14,20 +14,20 @@ demo installation</a>
 ## Note on installation
 
 - GBrowse_karyotype is not part of the [GBrowse](/wiki/GBrowse)
-  distribution
+ distribution
 - It should be
-  <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/GBrowse_karyotype"
-  class="external text" rel="nofollow">checked out from Subversion</a>,
-  or downloaded from
-  <a href="http://mckay.cshl.edu/downloads/GBrowse_karyotype.tar.gz"
-  class="external text" rel="nofollow">here</a>.
+ <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/GBrowse_karyotype"
+ class="external text" rel="nofollow">checked out from Subversion</a>,
+ or downloaded from
+ <a href="http://mckay.cshl.edu/downloads/GBrowse_karyotype.tar.gz"
+ class="external text" rel="nofollow">here</a>.
 - Install as you would GBrowse, **after** you have installed GBrowse
-  1.69, or 1.68, or a
-  <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a> checkout of the
-  'stable' branch
-    cd GBrowse_karyotype
-    perl MakeFile.PL
-    make install
+ 1.69, or 1.68, or a
+ <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a> checkout of the
+ 'stable' branch
+ cd GBrowse_karyotype
+ perl MakeFile.PL
+ make install
 
 ## Cytoband Data
 

@@ -32,30 +32,30 @@ actions:
 
 - Validate that you have the prerequisite software.
 - Add "searchable_name" column to the
-  [feature](/wiki/Chado_Sequence_Module#Table:_feature)
-  table.
+ [feature](/wiki/Chado_Sequence_Module#Table:_feature)
+ table.
 - Add "searchable_synonym_sgml" column to the
-  [synonym](/wiki/Chado_Sequence_Module#Table:_synonym)
-  table.
+ [synonym](/wiki/Chado_Sequence_Module#Table:_synonym)
+ table.
 - Add "searchable_accession" column to the
-  [dbxref](/wiki/Chado_General_Module#Table:_dbxref)
-  table.
+ [dbxref](/wiki/Chado_General_Module#Table:_dbxref)
+ table.
 - Add triggers on these tables so that when the name or accession is
-  added or modified, the "searchable" column will be updated too.
+ added or modified, the "searchable" column will be updated too.
 - Execute the `gmod_materialized_view_tool.pl` to materialize the
-  all_feature_names view.
+ all_feature_names view.
 
 In order to turn on full text searching through GBrowse, the
 `-fulltext 1` argument must be passed to the Chado GBrowse adaptor from
 the configuration file. Like this example:
 
-    [main:database]
-    db_adaptor    = Bio::DB::Das::Chado
-    db_args       = -dsn dbi:Pg:dbname=chado;host=localhost;port=5432
-                   -user cain
-                   -organism 'Saccharomyces cerevisiae'
-                   -srcfeatureslice 1
-                   -fulltext 1
+ [main:database]
+ db_adaptor = Bio::DB::Das::Chado
+ db_args = -dsn dbi:Pg:dbname=chado;host=localhost;port=5432
+ -user cain
+ -organism 'Saccharomyces cerevisiae'
+ -srcfeatureslice 1
+ -fulltext 1
 
 ## Maintaining the materialized view
 
@@ -69,7 +69,7 @@ functionality can be run via a
 rel="nofollow"><code>cron</code></a> job to make it happen on a regular
 basis:
 
-     1 0 * * * gmod_materialized_view_tool.pl --automatic
+ 1 0 * * * gmod_materialized_view_tool.pl --automatic
 
 In this example, `cron` will examine the database, and if a view hasn't
 be updated recently, it will update the materialized at one minute past
@@ -88,5 +88,5 @@ is 86400 (24 hours \* 60 minutes \* 60 seconds), but can be changed to
 weekly (604800) or any other value desired:
 
 ``` de1
-  UPDATE materialized_view SET refresh_time = 604800 WHERE name = 'all_feature_names';
+ UPDATE materialized_view SET refresh_time = 604800 WHERE name = 'all_feature_names';
 ```

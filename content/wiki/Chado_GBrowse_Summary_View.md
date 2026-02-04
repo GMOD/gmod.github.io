@@ -17,10 +17,10 @@ with GBrowse.
 
 - [GBrowse](/wiki/GBrowse) 2.13
 - <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
-  class="external text" rel="nofollow">Bio::DB::Das::Chado</a> 0.31
+ class="external text" rel="nofollow">Bio::DB::Das::Chado</a> 0.31
 - [PostgreSQL](/wiki/PostgreSQL) 8.1 (probably--I only tested
-  with 8.4, but I'm reasonably sure it will work with versions back to
-  8.1)
+ with 8.4, but I'm reasonably sure it will work with versions back to
+ 8.1)
 
 ## Configuration
 
@@ -46,11 +46,11 @@ stale due to added data.
 To turn on summaries, add this line to your data source's conf file in
 the main section:
 
-     show summary   = 100000
+ show summary = 100000
 
 which will make all tracks go to the summary view when the region shown
 is greater than 100000. To turn summaries off for a given track, add
 
-     show summary   = 0
+ show summary = 0
 
 to the track configuration.

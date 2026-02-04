@@ -10,17 +10,17 @@ comfortable adding features to it or modifying it for their own needs.
 Help is always available via the
 <a href="/wiki/GMOD_Mailing_Lists#GMOD_Components" class="external text"
 
-  Structure</span>](#Program_Structure)
-  - [The AJAX
-    Pipeline](#The_AJAX_Pipeline)
+ Structure</span>](#Program_Structure)
+ - [The AJAX
+ Pipeline](#The_AJAX_Pipeline)
 - [Normal
-  Operations](#Normal_Operations)
+ Operations](#Normal_Operations)
 - [Modules](#Modules)
 - [State
-  Information](#State_Information)
-  - [Globals](#Globals)
-  - [Session](#Session)
-  - [State](#State)
+ Information](#State_Information)
+ - [Globals](#Globals)
+ - [Session](#Session)
+ - [State](#State)
 
 ## Program Structure
 
@@ -87,98 +87,98 @@ The modules which make up GBrowse are contained in the **lib** directory
 in the SVN. They are as follows:
 
 - **Action** (Bio::Graphics::Browser2::Action) - The Perl side of all
-  AJAX requests. Each subroutine corresponds to the "action" parameter
-  called in the AJAX request.
+ AJAX requests. Each subroutine corresponds to the "action" parameter
+ called in the AJAX request.
 - **AuthorizedFeatureFile**
-  (Bio::Graphics::Browser2::AuthorizedFeatureFile) - Adds HTTP
-  authorization features to FeatureFiles.
+ (Bio::Graphics::Browser2::AuthorizedFeatureFile) - Adds HTTP
+ authorization features to FeatureFiles.
 - **CachedTrack** (Bio::Graphics::Browser2::CachedTrack) - Defines a
-  Bio::Graphics::Browser2::Track option that manages the caching of
-  track images and imagemaps.
+ Bio::Graphics::Browser2::Track option that manages the caching of
+ track images and imagemaps.
 - **DataBase** (Bio::Graphics::Browser2::DataBase) - Maintains a cache
-  of database handles to improve performance on in-memory databases and
-  other databases that have a relatively slow startup time.
+ of database handles to improve performance on in-memory databases and
+ other databases that have a relatively slow startup time.
 - **DataLoader** (Bio::Graphics::Browser2::DataLoader) - An interface
-  for managing files or URLs containing data and converting them into
-  new databases for easier access. A full list of adaptors is available
-  [here](/wiki/GBrowse_Adaptors).
-  - **bam** (Bio::Graphics::Browser2::DataLoader::bam) - A loader for
-    the BAM half of the [SAM/BAM file format](/wiki/Glossary#BAM).
-  - **bed** (Bio::Graphics::Browser2::DataLoader::bed) - A loader for
-    the [BED file
-    format](/wiki/GBrowse/Uploading_Wiggle_Tracks#Wiggle_.28BED.29).
-  - **bigwig** (Bio::Graphics::Browser2::DataLoader::bigwig) - A loader
-    for the <a href="http://search.cpan.org/perldoc?Bio::DB::BigWig"
-    class="external text" rel="nofollow">BigWig file format</a>
-  - **featurefile** (Bio::Graphics::Browser2::DataLoader::featurefile) -
-    A loader for <a
-    href="http://search.cpan.org/~birney/bioperl-1.2.3/Bio/Graphics/FeatureFile.pm"
-    class="external text" rel="nofollow">Bio::Graphics Feature Files</a>.
-  - **generic** (Bio::Graphics::Browser2::DataLoader::generic) - A
-    generic loader module.
-  - **gff** (Bio::Graphics::Browser2::DataLoader::gff) - A loader for
-    the [GFF#GFF3](/wiki/GFF#GFF3) file format.
-  - **gff3** (Bio::Graphics::Browser2::DataLoader::gff3) - A loader for
-    the [GFF3](/wiki/GFF3) file format.
-  - **sam** (Bio::Graphics::Browser2::DataLoader::sam) - A loader for
-    the SAM half of the [SAM/BAM file format](/wiki/Glossary#BAM).
-  - **wiggle** (Bio::Graphics::Browser2::DataLoader::wiggle) - A loader
-    for the [Wiggle file
-    format](/wiki/GBrowse/Uploading_Wiggle_Tracks#Wiggle_tracks).
+ for managing files or URLs containing data and converting them into
+ new databases for easier access. A full list of adaptors is available
+ [here](/wiki/GBrowse_Adaptors).
+ - **bam** (Bio::Graphics::Browser2::DataLoader::bam) - A loader for
+ the BAM half of the [SAM/BAM file format](/wiki/Glossary#BAM).
+ - **bed** (Bio::Graphics::Browser2::DataLoader::bed) - A loader for
+ the [BED file
+ format](/wiki/GBrowse/Uploading_Wiggle_Tracks#Wiggle_.28BED.29).
+ - **bigwig** (Bio::Graphics::Browser2::DataLoader::bigwig) - A loader
+ for the <a href="http://search.cpan.org/perldoc?Bio::DB::BigWig"
+ class="external text" rel="nofollow">BigWig file format</a>
+ - **featurefile** (Bio::Graphics::Browser2::DataLoader::featurefile) -
+ A loader for <a
+ href="http://search.cpan.org/~birney/bioperl-1.2.3/Bio/Graphics/FeatureFile.pm"
+ class="external text" rel="nofollow">Bio::Graphics Feature Files</a>.
+ - **generic** (Bio::Graphics::Browser2::DataLoader::generic) - A
+ generic loader module.
+ - **gff** (Bio::Graphics::Browser2::DataLoader::gff) - A loader for
+ the [GFF#GFF3](/wiki/GFF#GFF3) file format.
+ - **gff3** (Bio::Graphics::Browser2::DataLoader::gff3) - A loader for
+ the [GFF3](/wiki/GFF3) file format.
+ - **sam** (Bio::Graphics::Browser2::DataLoader::sam) - A loader for
+ the SAM half of the [SAM/BAM file format](/wiki/Glossary#BAM).
+ - **wiggle** (Bio::Graphics::Browser2::DataLoader::wiggle) - A loader
+ for the [Wiggle file
+ format](/wiki/GBrowse/Uploading_Wiggle_Tracks#Wiggle_tracks).
 - **DataSource** (Bio::Graphics::Browser2::DataSource) - An interface
-  for managing a data source, since GBrowse can work with a few (see the
-  "Data Sources" drop-down menu on the main page)
+ for managing a data source, since GBrowse can work with a few (see the
+ "Data Sources" drop-down menu on the main page)
 - **ExternalData** (Bio::Graphics::Browser2::ExternalData) - A
-  collection of utilities for working with non-FeatureFile data sets.
+ collection of utilities for working with non-FeatureFile data sets.
 - **GFFhelper** (Bio::Graphics::Browser2::GFFhelper) - A helper module
-  so plugins can handle GFF files more easily.
+ so plugins can handle GFF files more easily.
 - **I18n** (Bio::Graphics::Browser2::Il8n) - Controls GBrowse's
-  internationalization settings
+ internationalization settings
 - **Markup** (Bio::Graphics::Browser2::Markup) - Marks up a string with
-  HTML cascading stylesheet styles in such a way that intersecting
-  regions contain the union of the two intersecting styles.
+ HTML cascading stylesheet styles in such a way that intersecting
+ regions contain the union of the two intersecting styles.
 - **OptionPick** (Bio::Graphics::Browser2::OptionPick) - An object to
-  choose colour options (for tracks?)
+ choose colour options (for tracks?)
 - **PadAlignment** (Bio::Graphics::Browser2::PadAlignment) - A module to
-  print out aligned raw sequence files in a padded, easily-readable
-  format.
+ print out aligned raw sequence files in a padded, easily-readable
+ format.
 - **Plugin** (Bio::Graphics::Browser2::Plugin) - A base class for
-  plugins.
+ plugins.
 - **PluginSet** (Bio::Graphics::Browser2::PluginSet) - Describes the API
-  for using plugins.
+ for using plugins.
 - **Realign** (Bio::Graphics::Browser2::Realign) - A module to perform
-  Smith-Waterman alignments on sequence data.
+ Smith-Waterman alignments on sequence data.
 - **Region** (Bio::Graphics::Browser2::Region) - A module to enable easy
-  fetching/manipulation of regions.
+ fetching/manipulation of regions.
 - **RegionSearch** (Bio::Graphics::Browser2::RegionSearch) - A module to
-  search through multiple databases for feature matches.
+ search through multiple databases for feature matches.
 - **RemoteSet** (Bio::Graphics::Browser2::RemoteSet) - An API for
-  handling a set of remote annotation sources
+ handling a set of remote annotation sources
 - **Render** (Bio::Graphics::Browser2::Render) - An interface to any
-  non-HTML rendering code.
-  - **HTML** (Bio::Graphics::Browser2::Render::HTML) - Renders the HTML
-    content and markup. Very important since GBrowse is HTML-based.
+ non-HTML rendering code.
+ - **HTML** (Bio::Graphics::Browser2::Render::HTML) - Renders the HTML
+ content and markup. Very important since GBrowse is HTML-based.
 - **RenderPanels** (Bio::Graphics::Browser2::RenderPanels) - Interface
-  for drawing and saving the panels which graphically show each track.
+ for drawing and saving the panels which graphically show each track.
 - **Session** (Bio::Graphics::Browser2::Session) - Controls the session
-  and persistent variables.
+ and persistent variables.
 - **Shellwords** (Bio::Graphics::Browser2::Shellwords) - A shell for
-  Text::ParseWords::shellwords.
+ Text::ParseWords::shellwords.
 - **SubtrackTable** (Bio::Graphics::Browser2::SubtrackTable) - A module
-  for creating an HTML table out of a track's subtracks.
+ for creating an HTML table out of a track's subtracks.
 - **TrackDumper** (Bio::Graphics::Browser2::TrackDumper) - A plugin to
-  dump the data of a section of a track.
+ dump the data of a section of a track.
 - **UserDB** (Bio::Graphics::Browser2::UserDB) - Manages all operations
-  involving the user accounts database (both GBrowse users and users who
-  use their OpenIDs to log in) and the uploads database.
+ involving the user accounts database (both GBrowse users and users who
+ use their OpenIDs to log in) and the uploads database.
 - **UserTracks** (Bio::Graphics::Browser2::UserTracks) - Manages a
-  user's uploaded tracks & files, permissions, etc.
-  - **Database** (Bio::Graphics::Browser2::UserTracks::Database) - A
-    database-backed system for managing uploaded tracks & files.
-  - **Filesystem** (Bio::Graphics::Browser2::UserTracks::Filesystem) - A
-    file system-backed system for managing uploaded tracks & files.
+ user's uploaded tracks & files, permissions, etc.
+ - **Database** (Bio::Graphics::Browser2::UserTracks::Database) - A
+ database-backed system for managing uploaded tracks & files.
+ - **Filesystem** (Bio::Graphics::Browser2::UserTracks::Filesystem) - A
+ file system-backed system for managing uploaded tracks & files.
 - **Util** (Bio::Graphics::Browser2::Util) - A library of generally
-  useful utilities.
+ useful utilities.
 
 ## State Information
 

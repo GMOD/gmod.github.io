@@ -16,18 +16,18 @@ Hackathon](/wiki/GMOD_Evo_Hackathon). Please edit the
 table and column descriptions below. These updates will be added to the
 PostgreSQL comments before the next Chado release.
 
-  Introduction](#Introduction)
-  - [Phenotypes
-    at FlyBase](#Phenotypes_at_FlyBase)
+ Introduction](#Introduction)
+ - [Phenotypes
+ at FlyBase](#Phenotypes_at_FlyBase)
 - [Tables](#Tables)
-  - [Table:
-    feature_phenotype](#Table:_feature_phenotype)
-  - [Table:
-    phenotype](#Table:_phenotype)
-  - [Table:
-    phenotype_cvterm](#Table:_phenotype_cvterm)
-  - [Table:
-    phenotypeprop](#Table:_phenotypeprop)
+ - [Table:
+ feature_phenotype](#Table:_feature_phenotype)
+ - [Table:
+ phenotype](#Table:_phenotype)
+ - [Table:
+ phenotype_cvterm](#Table:_phenotype_cvterm)
+ - [Table:
+ phenotypeprop](#Table:_phenotypeprop)
 
 # Introduction
 
@@ -64,7 +64,7 @@ page.
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | feature_phenotype_id | serial | *PRIMARY KEY* |
+| | feature_phenotype_id | serial | *PRIMARY KEY* |
 | [feature](/wiki/Chado_Tables#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* |
 | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -184,10 +184,10 @@ Deprecated and superseded by phenotypeprop.
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | phenotype_cvterm_id | serial | *PRIMARY KEY* |
+| | phenotype_cvterm_id | serial | *PRIMARY KEY* |
 | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
-|  | rank | integer | *UNIQUE#1 NOT NULL* |
+| | rank | integer | *UNIQUE#1 NOT NULL* |
 
 public.phenotype_cvterm Structure
 

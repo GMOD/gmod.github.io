@@ -3,11 +3,11 @@ title: "Est2assembly"
 ---
 # Est2assembly
 
-  Overview](#Overview)
+ Overview](#Overview)
 - [Dependencies](#Dependencies)
 - [Features](#Features)
 - [Demos and
-  Screenshots](#Demos_and_Screenshots)
+ Screenshots](#Demos_and_Screenshots)
 - [License](#License)
 
 # Overview
@@ -30,10 +30,10 @@ need to be installed. Please see the manual.
 # Features
 
 - Currently makes use of MIRA and Newbler cDNA assemblers (the only NGS
-  assemblers currently designed for ESTs)
+ assemblers currently designed for ESTs)
 - Standardized methods for judging transcriptome quality
 - In active development for more packages for transcriptome analysis
-  (e.g. digital transcriptomics with edgeR, curation and others)
+ (e.g. digital transcriptomics with edgeR, curation and others)
 
 # Demos and Screenshots
 
@@ -44,7 +44,7 @@ class="external text" rel="nofollow">project website</a>.
 # License
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
-currently supported by [Alexie
-Papanicolaou](/wiki/User:Alpapan) while at CSIRO, the
+currently supported by Alexie
+Papanicolaou while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"

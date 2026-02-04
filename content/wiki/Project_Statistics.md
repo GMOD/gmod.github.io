@@ -5,37 +5,37 @@ title: "Project Statistics"
 
 Statistics and places to get statistics on the GMOD Project.
 
-  Site</span>](#Web_Site)
-  - [2012
-    onwards](#2012_onwards)
-  - [2007-2010](#2007-2010)
-    - [By
-      Month](#By_Month)
-    - [By
-      Year](#By_Year)
-    - [See
-      Also](#See_Also)
+ Site</span>](#Web_Site)
+ - [2012
+ onwards](#2012_onwards)
+ - [2007-2010](#2007-2010)
+ - [By
+ Month](#By_Month)
+ - [By
+ Year](#By_Year)
+ - [See
+ Also](#See_Also)
 - [Sourceforge
-  Statistics Pages](#Sourceforge_Statistics_Pages)
+ Statistics Pages](#Sourceforge_Statistics_Pages)
 - [Events](#Events)
-  - [Meetings](#Meetings)
-  - [GMOD
-    Schools](#GMOD_Schools)
+ - [Meetings](#Meetings)
+ - [GMOD
+ Schools](#GMOD_Schools)
 - [Mailing
-  Lists](#Mailing_Lists)
-  - [Mailing
-    List Subscriber Counts](#Mailing_List_Subscriber_Counts)
-  - [Mailing
-    List Volume](#Mailing_List_Volume)
+ Lists](#Mailing_Lists)
+ - [Mailing
+ List Subscriber Counts](#Mailing_List_Subscriber_Counts)
+ - [Mailing
+ List Volume](#Mailing_List_Volume)
 - [Components](#Components)
-  - [SourceForge Download
-    Statistics](#SourceForge_Download_Statistics)
-  - [GBrowse](#GBrowse)
-    - [GBrowse 2
-      Registrations](#GBrowse_2_Registrations)
-  - [Galaxy](#Galaxy)
-  - [Community
-    Surveys](#Community_Surveys)
+ - [SourceForge Download
+ Statistics](#SourceForge_Download_Statistics)
+ - [GBrowse](#GBrowse)
+ - [GBrowse 2
+ Registrations](#GBrowse_2_Registrations)
+ - [Galaxy](#Galaxy)
+ - [Community
+ Surveys](#Community_Surveys)
 
 ## Web Site
 
@@ -254,14 +254,14 @@ information.
 | gmod-schema | 148 | 194 | 213 | For discussion of Chado |
 | ergatis-announce | 16 | 18 | general Ergatis announcements | ergatis-devel |
 | 22 | 23 | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developer communication | ergatis-users | 24 |
-| 36 | Ergatis user communication and general help | isga-users |  | 9 |
-| [ISGA](/wiki/ISGA) user communication and general help | gmod-ware-users |  | 15 | [Modware](/wiki/Modware) user communication and general help |
-| sybil-info |  | 8 | [Sybil](/wiki/Sybil) user communication and general help | turnkey-devel |
-|  | 15 | [Turnkey](/wiki/Turnkey) development | turnkey-users |  |
-| 10 | [Turnkey](/wiki/Turnkey) user list | gmod-cogephy |  | 0 |
-| Comparative genomics, phylogeny and related topics. Created in 2010/12 | gmod-phendiver |  | 0 | Phenotype, natural diversity and related topics. Created in 2010/12 |
-| galaxy-user |  | 1681 | Support list for users of the Galaxy public server. *Note: The 2010/12 numbers are from 2011/01.* | galaxy-dev |
-|  | 280 | Support list for Galaxy developers and those deploying Galaxy locally. *Note: The 2010/12 numbers are from 2011/01.* |  |  |
+| 36 | Ergatis user communication and general help | isga-users | | 9 |
+| [ISGA](/wiki/ISGA) user communication and general help | gmod-ware-users | | 15 | [Modware](/wiki/Modware) user communication and general help |
+| sybil-info | | 8 | [Sybil](/wiki/Sybil) user communication and general help | turnkey-devel |
+| | 15 | [Turnkey](/wiki/Turnkey) development | turnkey-users | |
+| 10 | [Turnkey](/wiki/Turnkey) user list | gmod-cogephy | | 0 |
+| Comparative genomics, phylogeny and related topics. Created in 2010/12 | gmod-phendiver | | 0 | Phenotype, natural diversity and related topics. Created in 2010/12 |
+| galaxy-user | | 1681 | Support list for users of the Galaxy public server. *Note: The 2010/12 numbers are from 2011/01.* | galaxy-dev |
+| | 280 | Support list for Galaxy developers and those deploying Galaxy locally. *Note: The 2010/12 numbers are from 2011/01.* | | |
 
 ### Mailing List Volume
 
@@ -273,16 +273,16 @@ Statistics](/wiki/GMOD_Mailing_List_Statistics).
 ## Components
 
 - [Components Section
-  summary](/wiki/2008_GMOD_Community_Survey#GMOD_Components)
-  and <a href="../extras/2008GMODCommunitySurvey.html#GMOD_Components"
-  class="external text" rel="nofollow">details</a> of the [2008 GMOD
-  Community
-  Survey](/wiki/2008_GMOD_Community_Survey). This
-  covers all components.
+ summary](/wiki/2008_GMOD_Community_Survey#GMOD_Components)
+ and <a href="../extras/2008GMODCommunitySurvey.html#GMOD_Components"
+ class="external text" rel="nofollow">details</a> of the [2008 GMOD
+ Community
+ Survey](/wiki/2008_GMOD_Community_Survey). This
+ covers all components.
 - The [2009 GMOD Community
-  Survey](/wiki/2009_GMOD_Community_Survey) has
-  some numbers on components for genome and comparative genomics
-  visualization.
+ Survey](/wiki/2009_GMOD_Community_Survey) has
+ some numbers on components for genome and comparative genomics
+ visualization.
 
 ### SourceForge Download Statistics
 
@@ -312,10 +312,10 @@ class="external text" rel="nofollow">Galaxy Project Statistics</a> page.
 ### Community Surveys
 
 - <a href="../answers-1.html" class="external text" rel="nofollow">2013
-  GMOD Survey</a> - Survey of the GMOD community, covering a wide range
-  of topics.
+ GMOD Survey</a> - Survey of the GMOD community, covering a wide range
+ of topics.
 - [2009 GMOD Community
-  Survey](/wiki/2009_GMOD_Community_Survey)
+ Survey](/wiki/2009_GMOD_Community_Survey)
 - [2008 GMOD Community
-  Survey](/wiki/2008_GMOD_Community_Survey) - A
-  treasure trove of information about the GMOD community in late 2008.
+ Survey](/wiki/2008_GMOD_Community_Survey) - A
+ treasure trove of information about the GMOD community in late 2008.

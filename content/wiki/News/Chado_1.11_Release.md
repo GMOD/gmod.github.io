@@ -33,9 +33,9 @@ Since the schema didn't change, if you already have a 1.1 schema and
 want the bug fixes and added functionality, all you need to do for
 installation is to go up to the install step and stop there, i.e.:
 
-    perl Makefile.PL
-    make
-    sudo make install
+ perl Makefile.PL
+ make
+ sudo make install
 
 Happy *GMODing* and please direct questions about this release to the
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"

@@ -14,7 +14,7 @@ Highlights of this release are:
 - New Feature Glyphs
 - A dot-plot view
 - An image_only URL parameter allowing a CMap image to be embedded in
-  another page
+ another page
 - Easier install with directory guessing
 - API better documented for writing custom scripts to load data
 

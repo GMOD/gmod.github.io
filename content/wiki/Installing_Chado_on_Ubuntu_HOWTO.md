@@ -29,27 +29,27 @@ Installing prereqs with Synaptic:
 - libparse-recdescent-perl \# needed by DBIx::DBStag
 - xsltproc
 - bioperl
-    sudo apt-get install postgresql postgresql-client postgresql-contrib postgresql-plperl libpq-dev libdbd-pg-perl libtemplate-perl libxml-simple-perl liblog-log4perl-perl ant libparse-recdescent-perl xsltproc bioperl
+ sudo apt-get install postgresql postgresql-client postgresql-contrib postgresql-plperl libpq-dev libdbd-pg-perl libtemplate-perl libxml-simple-perl liblog-log4perl-perl ant libparse-recdescent-perl xsltproc bioperl
 
 Create a db user for yourself - your Ubuntu username:
 
-     $ sudo su - postgres
-     $ createuser <username>
-     Shall the new role be a superuser? (y/n) y
-     CREATE ROLE
-     $ vi /etc/postgresql/9.1/main/pg_hba.conf
-     #changed "local all all" and "host all all" lines from ident sameuser to trust
-     $ exit
-     $ sudo /etc/init.d/postgresql restart
+ $ sudo su - postgres
+ $ createuser <username>
+ Shall the new role be a superuser? (y/n) y
+ CREATE ROLE
+ $ vi /etc/postgresql/9.1/main/pg_hba.conf
+ #changed "local all all" and "host all all" lines from ident sameuser to trust
+ $ exit
+ $ sudo /etc/init.d/postgresql restart
 
 It is useful to actually have a password, even using trust, otherwise
 problems with DBD::Pg pop up telling you that no password was supplied.
 
-     $ sudo su - postgres
-     $ psql -d template1
-     $ alter USER <username> with password '<password>';
-     $ exit #from psql
-     $ exit #from sudo
+ $ sudo su - postgres
+ $ psql -d template1
+ $ alter USER <username> with password '<password>';
+ $ exit #from psql
+ $ exit #from sudo
 
 Installing prereqs with cpan shell:
 
@@ -63,51 +63,51 @@ Installed DBIx::DBStag 'by hand':
 than running the whole shell as root (via "sudo cpan"), you can install
 DBIx::DBStag from the cpan shell.)
 
-     wget http://search.cpan.org/CPAN/authors/id/C/CM/CMUNGALL/DBIx-DBStag-0.10.tar.gz
-     tar zxvf DBIx-DBStag-0.10.tar.gz
-     cd DBIx-DBStag-0.10
-     createdb test   # needed for the make test step
-     perl Makefile.PL
-     make
-     make test  #all tests pass
-     sudo make install
+ wget http://search.cpan.org/CPAN/authors/id/C/CM/CMUNGALL/DBIx-DBStag-0.10.tar.gz
+ tar zxvf DBIx-DBStag-0.10.tar.gz
+ cd DBIx-DBStag-0.10
+ createdb test # needed for the make test step
+ perl Makefile.PL
+ make
+ make test #all tests pass
+ sudo make install
 
 Create the file ~/.gmod_profile, with the contents:
 
-     export GMOD_ROOT=/usr/local/gmod
-     export CHADO_DB_NAME=chado
-     export CHADO_DB_USER=<username>
-     export CHADO_DB_PASS=<password>
-     export CHADO_DB_HOST=localhost
-     export CHADO_DB_PORT=5432
-     export GO_ROOT=/usr/local/share/perl/5.8.8/GO
+ export GMOD_ROOT=/usr/local/gmod
+ export CHADO_DB_NAME=chado
+ export CHADO_DB_USER=<username>
+ export CHADO_DB_PASS=<password>
+ export CHADO_DB_HOST=localhost
+ export CHADO_DB_PORT=5432
+ export GO_ROOT=/usr/local/share/perl/5.8.8/GO
 
 and add this line to the end of ~/.bash_profile:
 
-     . ~/.gmod_profile   #sources the gmod profile on login
+ . ~/.gmod_profile #sources the gmod profile on login
 
 If you haven't already, download gmod, either from
 
-    http://sourceforge.net/projects/gmod/files/gmod/
+ http://sourceforge.net/projects/gmod/files/gmod/
 
 or via <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a>.
 
 Then, in the gmod directory
 
-     perl Makefile.PL
-     make
-     sudo make install
-     make load_schema
-     make prepdb
-     make ontologies  #selected 1,2,3,4
+ perl Makefile.PL
+ make
+ sudo make install
+ make load_schema
+ make prepdb
+ make ontologies #selected 1,2,3,4
 
 Get and load yeast [GFF3](/wiki/GFF3) file:
 
-      wget http://downloads.yeastgenome.org/sequence/S288C_reference/genome_releases/S288C_reference_genome_Current_Release.tgz
+ wget http://downloads.yeastgenome.org/sequence/S288C_reference/genome_releases/S288C_reference_genome_Current_Release.tgz
 
-      gmod_bulk_load_gff3.pl --analysis --organism=yeast -g saccharomyces_cerevisiae.gff --noexon
+ gmod_bulk_load_gff3.pl --analysis --organism=yeast -g saccharomyces_cerevisiae.gff --noexon
 
 - Note you may have to install the perl module "version::vxs" for some
-  reason--it is not a prerequisite for any GMOD software, but must be an
-  undeclared prereq for something that GMOD software depends on.
-  Hopefully this will be fixed by the author soon.
+ reason--it is not a prerequisite for any GMOD software, but must be an
+ undeclared prereq for something that GMOD software depends on.
+ Hopefully this will be fixed by the author soon.

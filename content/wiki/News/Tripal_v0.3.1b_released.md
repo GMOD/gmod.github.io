@@ -12,24 +12,24 @@ The Tripal development group has released an updated version of Tripal,
 version 0.3.1b. The new release provides the following:
 
 - Multiple bug fixes including several for loading of FASTA, GFF and OBO
-  files.
+ files.
 - The GFF loader has been expanded to support the majority of the GFF3
-  specification.
+ specification.
 - An updated
-  <a href="../Tripal_Tutorial_(v0.3.1b)" class="external text"
-  rel="nofollow">Tripal tutorial</a> is now available and hosted on the
-  GMOD website
+ <a href="../Tripal_Tutorial_(v0.3.1b)" class="external text"
+ rel="nofollow">Tripal tutorial</a> is now available and hosted on the
+ GMOD website
 - A VirtualBox virtual machine is now available for download on the
-  <a href="http://tripal.sourceforge.net" class="external text"
-  rel="nofollow">Tripal website</a> that has Tripal/Drupal/Chado
-  pre-installed ready for data loading and customization.
+ <a href="http://tripal.sourceforge.net" class="external text"
+ rel="nofollow">Tripal website</a> that has Tripal/Drupal/Chado
+ pre-installed ready for data loading and customization.
 - A version of the
-  <a href="../Tripal_Tutorial_(v0.3.1b_VM)" class="external text"
-  rel="nofollow">Tripal tutorial</a> is available for the virtual
-  machine image
+ <a href="../Tripal_Tutorial_(v0.3.1b_VM)" class="external text"
+ rel="nofollow">Tripal tutorial</a> is available for the virtual
+ machine image
 - The extension modules for Blast, KEGG, GO, Interpro and Unigene have
-  all been updated for this new version and are also available for
-  download.
+ all been updated for this new version and are also available for
+ download.
 
 Thanks to everyone who indicated problems and provided suggestions.
 

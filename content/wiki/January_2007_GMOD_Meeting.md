@@ -5,12 +5,12 @@ title: "January 2007 GMOD Meeting"
 
 GMOD Generic Model Organism Database
 
-  9</span>](#Meeting_9)
+ 9</span>](#Meeting_9)
 - [MOD User
-  Interface Caucus](#MOD_User_Interface_Caucus)
+ Interface Caucus](#MOD_User_Interface_Caucus)
 - [GMOD
-  Middleware](#GMOD_Middleware)
-  - [Agenda](#Agenda)
+ Middleware](#GMOD_Middleware)
+ - [Agenda](#Agenda)
 - [Attendees](#Attendees)
 
 ## Meeting 9
@@ -35,7 +35,7 @@ Middleware](/wiki/GMOD_Middleware)
 
 - 9:00 AM - 9:05 AM **Introduction, Eric Just**
 - 9:05 AM - 9:30 AM **Object/relational Mapping Principles, Sohel
-  Merchant**
+ Merchant**
 - 9:30 AM - 9:55 AM **XORT, Pinglei Zhou**
 - 9:55 AM - 10:20 AM **Chado%253A%253AAutoDBI, Brian O'Connor**
 - 10:20 AM - 10:35 AM **Coffee Break**
@@ -47,10 +47,10 @@ Middleware](/wiki/GMOD_Middleware)
 - 1:40 PM - 2:05 PM **PSU Chado Interface, Chinmay Patel**
 - 2:05 PM - 2:20 PM **Coffee Break**
 - 2:20 PM - 2:45 PM **GUS Web Development Kit (not GUS-specific), Steve
-  Fischer**
+ Fischer**
 - 2:45 PM - 3:10 PM **InterMine/FlyMine data warehousing, Gos Micklem**
 - 3:10 PM - 4:30 PM **Wrap up (Eric Just, Scott Cain, Brian Osborne),
-  discussion**
+ discussion**
 
 ## Attendees
 
@@ -63,22 +63,22 @@ of organizations:
 | Richard Bruskiewich | IRRI/IRIS + Generation Challenge Programme |
 | Kate Rosenbloom | UCSC Genome Bioinformatics Group |
 | Zhiliang Hu | Iowa State University |
-| Robert Wilson |  |
-| Sohel Merchant |  |
+| Robert Wilson | |
+| Sohel Merchant | |
 | Chinmay Patel | GeneDB |
-| pinglei zhou |  |
+| pinglei zhou | |
 | Prachi Shah | Candida Genome Database |
 | Vivien Bonazzi | NHGRI |
 | Jay Sundaram | TIGR |
-| [Ben Faga](/wiki/User:Faga) | GMOD |
-| George Kowalski |  |
+| Ben Faga | GMOD |
+| George Kowalski | |
 | Dave Matthews | GrainGenes |
 | Brian Osborne | NESCent |
-| Eric Just |  |
-| Susan Bromberg |  |
-| Eva Huala |  |
+| Eric Just | |
+| Susan Bromberg | |
+| Eva Huala | |
 | Allen | GMOD |
-| [Sheldon McKay](/wiki/User:Mckays) |  |
-| [Todd Harris](/wiki/User:Tharris) |  |
+| Sheldon McKay | |
+| Todd Harris | |
 | Kim Pruitt | NCBI |
 | Karla Gendler | <a href="http://www.chromdb.org" class="external text" |

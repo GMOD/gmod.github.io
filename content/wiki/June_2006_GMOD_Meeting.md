@@ -12,30 +12,30 @@ June 29-30 <a href="http://nescent.org" class="external text"
 ## Presentations
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/BenFaga_GMOD_June_2006.ppt"
-  class="internal"
-  title="BenFaga GMOD June 2006.ppt">BenFaga_GMOD_June_2006.ppt</a>
+ class="internal"
+ title="BenFaga GMOD June 2006.ppt">BenFaga_GMOD_June_2006.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Biocyc-GMOD-2006.ppt" class="internal"
-  title="Biocyc-GMOD-2006.ppt">Biocyc-GMOD-2006.ppt</a>
+ title="Biocyc-GMOD-2006.ppt">Biocyc-GMOD-2006.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/GDPDM_GMOD_presentation20060630.ppt"
-  class="internal"
-  title="GDPDM GMOD presentation20060630.ppt">GDPDM_GMOD_presentation20060630.ppt</a> -
-  The Genomic Diversity and Phenotype Data Model (GDPDM)
+ class="internal"
+ title="GDPDM GMOD presentation20060630.ppt">GDPDM_GMOD_presentation20060630.ppt</a> -
+ The Genomic Diversity and Phenotype Data Model (GDPDM)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/GMOD_Architecture.ppt"
-  class="internal" title="GMOD Architecture.ppt">GMOD_Architecture.ppt</a>
+ class="internal" title="GMOD Architecture.ppt">GMOD_Architecture.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/Lapp.pdf" class="internal"
-  title="Lapp.pdf">Lapp.pdf</a>‎
+ title="Lapp.pdf">Lapp.pdf</a>‎
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6f/Mcmillan.pdf" class="internal"
-  title="Mcmillan.pdf">Mcmillan.pdf</a>‎
+ title="Mcmillan.pdf">Mcmillan.pdf</a>‎
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/af/SGD-gmod.ppt" class="internal"
-  title="SGD-gmod.ppt">SGD-gmod.ppt</a>
+ title="SGD-gmod.ppt">SGD-gmod.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Stajich_GMOD_2006-06-30.pdf"
-  class="internal"
-  title="Stajich GMOD 2006-06-30.pdf">Stajich_GMOD_2006-06-30.pdf</a>‎ -
-  Fungal
+ class="internal"
+ title="Stajich GMOD 2006-06-30.pdf">Stajich_GMOD_2006-06-30.pdf</a>‎ -
+ Fungal
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bc/Vision.pdf" class="internal"
-  title="Vision.pdf">Vision.pdf</a>‎
+ title="Vision.pdf">Vision.pdf</a>‎
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Whats_new.ppt" class="internal"
-  title="Whats new.ppt">Whats_new.ppt</a>
+ title="Whats new.ppt">Whats_new.ppt</a>
 
 ## Agenda
 

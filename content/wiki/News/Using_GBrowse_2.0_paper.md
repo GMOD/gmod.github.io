@@ -24,6 +24,6 @@ Abstract:
 
 <a href="http://dx.doi.org/10.1093/bib/bbt001" class="external text"
 
-1.  <span id="cite_note-PMID:23376193"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:23376193_0)</span>
-    **Cite error: Invalid `<ref>` tag; no text was provided for refs
-    named `PMID:23376193`**</span>
+1. <span id="cite_note-PMID:23376193"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:23376193_0)</span>
+ **Cite error: Invalid `<ref>` tag; no text was provided for refs
+ named `PMID:23376193`**</span>

@@ -3,22 +3,22 @@ title: "Chado Genetic Module"
 ---
 # Chado Genetic Module
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Tables](#Tables)
-  - [Table:
-    environment](#Table:_environment)
-  - [Table:
-    environment_cvterm](#Table:_environment_cvterm)
-  - [Table:
-    feature_genotype](#Table:_feature_genotype)
-  - [Table:
-    genotype](#Table:_genotype)
-  - [Table:
-    phendesc](#Table:_phendesc)
-  - [Table:
-    phenotype_comparison](#Table:_phenotype_comparison)
-  - [Table:
-    phenstatement](#Table:_phenstatement)
+ - [Table:
+ environment](#Table:_environment)
+ - [Table:
+ environment_cvterm](#Table:_environment_cvterm)
+ - [Table:
+ feature_genotype](#Table:_feature_genotype)
+ - [Table:
+ genotype](#Table:_genotype)
+ - [Table:
+ phendesc](#Table:_phendesc)
+ - [Table:
+ phenotype_comparison](#Table:_phenotype_comparison)
+ - [Table:
+ phenstatement](#Table:_phenstatement)
 
 # Introduction
 
@@ -32,7 +32,7 @@ explanations of parts of this module.
 
 The environmental component of a phenotype description.
 
-| F-Key | Name           | Type   | Description       | ----- | -------------- | ------ | ----------------- |       | environment_id | serial | _PRIMARY KEY_     |       | uniquename     | text   | _UNIQUE NOT NULL_ |       | description    | text   environment Structure
+| F-Key | Name | Type | Description | ----- | -------------- | ------ | ----------------- | | environment_id | serial | _PRIMARY KEY_ | | uniquename | text | _UNIQUE NOT NULL_ | | description | text environment Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -45,7 +45,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: environment_cvterm
 
-| F-Key                                                         | Name                  | Type    | Description         | ------------------------------------------------------------- | --------------------- | ------- | ------------------- |                                                               | environment_cvterm_id | serial  | _PRIMARY KEY_       | [environment](/wiki/Chado_Tables#Table:_environment) | environment_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)           | cvterm_id             | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ------------------------------------------------------------- | --------------------- | ------- | ------------------- | | environment_cvterm_id | serial | _PRIMARY KEY_ | [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | _UNIQUE#1 NOT NULL_ |
 
 environment_cvterm Structure
 
@@ -208,7 +208,7 @@ Tables referencing this one via Foreign Key Constraints:
 A summary of a \_set\_ of phenotypic statements for any one gcontext
 made in any one publication.
 
-| F-Key                                                         | Name           | Type    | Description         | ------------------------------------------------------------- | -------------- | ------- | ------------------- |                                                               | phendesc_id    | serial  | _PRIMARY KEY_       | [genotype](/wiki/Chado_Tables#Table:_genotype)       | genotype_id    | integer | _UNIQUE#1 NOT NULL_ | [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | _UNIQUE#1 NOT NULL_ |                                                               | description    | text    | _NOT NULL_          | [cvterm](/wiki/Chado_Tables#Table:_cvterm)           | type_id        | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                 | pub_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ------------------------------------------------------------- | -------------- | ------- | ------------------- | | phendesc_id | serial | _PRIMARY KEY_ | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | _UNIQUE#1 NOT NULL_ | [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | _UNIQUE#1 NOT NULL_ | | description | text | _NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 phendesc Structure
 
@@ -219,7 +219,7 @@ phendesc Structure
 Comparison of phenotypes e.g., genotype1/environment1/phenotype1
 "non-suppressible" with respect to genotype2/environment2/phenotype2.
 
-| F-Key                                                         | Name                    | Type    | Description         | ------------------------------------------------------------- | ----------------------- | ------- | ------------------- |                                                               | phenotype_comparison_id | serial  | _PRIMARY KEY_       | [genotype](/wiki/Chado_Tables#Table:_genotype)       | genotype1_id            | integer | _UNIQUE#1 NOT NULL_ | [environment](/wiki/Chado_Tables#Table:_environment) | environment1_id         | integer | _UNIQUE#1 NOT NULL_ | [genotype](/wiki/Chado_Tables#Table:_genotype)       | genotype2_id            | integer | _UNIQUE#1 NOT NULL_ | [environment](/wiki/Chado_Tables#Table:_environment) | environment2_id         | integer | _UNIQUE#1 NOT NULL_ | [phenotype](/wiki/Chado_Tables#Table:_phenotype)     | phenotype1_id           | integer | _UNIQUE#1 NOT NULL_ | [phenotype](/wiki/Chado_Tables#Table:_phenotype)     | phenotype2_id           | integer | [cvterm](/wiki/Chado_Tables#Table:_cvterm)           | type_id                 | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                 | pub_id                  | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ------------------------------------------------------------- | ----------------------- | ------- | ------------------- | | phenotype_comparison_id | serial | _PRIMARY KEY_ | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype1_id | integer | _UNIQUE#1 NOT NULL_ | [environment](/wiki/Chado_Tables#Table:_environment) | environment1_id | integer | _UNIQUE#1 NOT NULL_ | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype2_id | integer | _UNIQUE#1 NOT NULL_ | [environment](/wiki/Chado_Tables#Table:_environment) | environment2_id | integer | _UNIQUE#1 NOT NULL_ | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype1_id | integer | _UNIQUE#1 NOT NULL_ | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype2_id | integer | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 phenotype_comparison Structure
 
@@ -232,7 +232,7 @@ like "dpp-1 is recessive larval lethal". So essentially phenstatement is
 a linking table expressing the relationship between genotype,
 environment, and phenotype.
 
-| F-Key                                                         | Name             | Type    | Description         | ------------------------------------------------------------- | ---------------- | ------- | ------------------- |                                                               | phenstatement_id | serial  | _PRIMARY KEY_       | [genotype](/wiki/Chado_Tables#Table:_genotype)       | genotype_id      | integer | _UNIQUE#1 NOT NULL_ | [environment](/wiki/Chado_Tables#Table:_environment) | environment_id   | integer | _UNIQUE#1 NOT NULL_ | [phenotype](/wiki/Chado_Tables#Table:_phenotype)     | phenotype_id     | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)           | type_id          | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                 | pub_id           | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ------------------------------------------------------------- | ---------------- | ------- | ------------------- | | phenstatement_id | serial | _PRIMARY KEY_ | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | _UNIQUE#1 NOT NULL_ | [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | _UNIQUE#1 NOT NULL_ | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 phenstatement Structure
 

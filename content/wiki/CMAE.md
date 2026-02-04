@@ -23,30 +23,30 @@ highlight possible mis-assemblies. The editor will then allow
 mis-assembled contigs to be split, merged or moved, or the troubled
 contigs can be exported to a more specialized program. (L. Stein)
 
-  Requirements](#Requirements)
+ Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Screenshots](#Screenshots)
 - [Code](#Code)
 - [Mailing
-  List](#Mailing_List)
+ List](#Mailing_List)
 - [Contact](#Contact)
 
 ## Requirements
 
 - [CMap](/wiki/CMap)
 - <a href="http://www.perltk.org/" class="external text"
-  rel="nofollow">Perl/Tk</a>
+ rel="nofollow">Perl/Tk</a>
 - <a href="http://www.tkzinc.org/tkzinc/index.php" class="external text"
-  rel="nofollow">Tkzinc</a>
+ rel="nofollow">Tkzinc</a>
 
 ## Documentation
 
 - [Integrating_CMAE](/wiki/Integrating_CMAE) (<a
-  href="http://gmod.cvs.sourceforge.net/gmod/cmap/editor/Integrating_CMAE.pod?view=markup"
-  class="external text" rel="nofollow">CVS</a>)
+ href="http://gmod.cvs.sourceforge.net/gmod/cmap/editor/Integrating_CMAE.pod?view=markup"
+ class="external text" rel="nofollow">CVS</a>)
 - [CMap_API](/wiki/CMap_API) (<a
-  href="http://gmod.cvs.sourceforge.net/gmod/cmap/docs/CMAP_API.pod?view=markup"
-  class="external text" rel="nofollow">CVS</a>)
+ href="http://gmod.cvs.sourceforge.net/gmod/cmap/docs/CMAP_API.pod?view=markup"
+ class="external text" rel="nofollow">CVS</a>)
 
 ## Screenshots
 
@@ -67,18 +67,18 @@ height="384" alt="CMAE Screenshot3.png" />
 The CMAE code is located in the SourceForge CVS repository for CMap.
 
 - <a href="http://gmod.cvs.sourceforge.net/gmod/cmap/"
-  class="external text" rel="nofollow">CMap CVS</a>
+ class="external text" rel="nofollow">CMap CVS</a>
 
 The CMAE specific information is located in the "editor" directory.
 
 - <a href="http://gmod.cvs.sourceforge.net/gmod/cmap/editor/"
-  class="external text" rel="nofollow">CMap/editor CVS</a>
+ class="external text" rel="nofollow">CMap/editor CVS</a>
 
 ## Mailing List
 
 - gmod-cmae@lists.sourceforge.net: Discussion of development,
-  installation problems, etc.
+ installation problems, etc.
 
 ## Contact
 
-- [Ben Faga](/wiki/User:Faga)
+- Ben Faga

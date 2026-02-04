@@ -15,25 +15,25 @@ href="http://www.oracle.com/technology/products/berkeley-db/index.html"
 class="external text" rel="nofollow">Berkeley DB</a> and
 <a href="http://www.mysql.com/" class="external text"
 
-  Setup](#Setup)
-  - [To use
-    SQLite](#To_use_SQLite)
-  - [To use
-    MySQL](#To_use_MySQL)
-  - [User
-    Accounts Flag](#User_Accounts_Flag)
+ Setup](#Setup)
+ - [To use
+ SQLite](#To_use_SQLite)
+ - [To use
+ MySQL](#To_use_MySQL)
+ - [User
+ Accounts Flag](#User_Accounts_Flag)
 - [Database
-  Schema](#Database_Schema)
-  - [Users](#Users)
-    - [OpenID
-      Users](#OpenID_Users)
-    - [Sessions](#Sessions)
-    - [DBInfo](#DBInfo)
+ Schema](#Database_Schema)
+ - [Users](#Users)
+ - [OpenID
+ Users](#OpenID_Users)
+ - [Sessions](#Sessions)
+ - [DBInfo](#DBInfo)
 - [Errors](#Errors)
-  - [Access
-    Denied](#Access_Denied)
-  - [Unable to
-    Find Table](#Unable_to_Find_Table)
+ - [Access
+ Denied](#Access_Denied)
+ - [Unable to
+ Find Table](#Unable_to_Find_Table)
 - [Confirmation](#Confirmation)
 
 ## Setup
@@ -64,9 +64,9 @@ the folder *holding* the .sqlite file, as SQLite creates a temporary
 file in that folder before any writes are made, and needs the
 permissions to do so.
 
-    # Path to the database -- you will need to create this database and grant all
-    # privileges on it to the indicated user.
-    # user_account_db        = DBI:SQLite:/path/to/your/database.sqlite
+ # Path to the database -- you will need to create this database and grant all
+ # privileges on it to the indicated user.
+ # user_account_db = DBI:SQLite:/path/to/your/database.sqlite
 
 ### To use MySQL
 
@@ -81,17 +81,17 @@ To configure your GBrowse.conf file to use a MySQL database, uncomment
 "user_account_db") and specify the connection details as indicated.
 Change the user and/or password fields as needed.
 
-    # user_account_db        = DBI:mysql:gbrowse_login;user=gbrowse;password=gbrowse
+ # user_account_db = DBI:mysql:gbrowse_login;user=gbrowse;password=gbrowse
 
 ### User Accounts Flag
 
 Once the configuration option has been set, the "user accounts" switch
 to enable the user database must be turned on (set from 0 to 1).
 
-    ####### User Account Registration Database ######
-    # If "user accounts" is true, then we will try to use
-    # a user registration database
-    user accounts          = 0
+ ####### User Account Registration Database ######
+ # If "user accounts" is true, then we will try to use
+ # a user registration database
+ user accounts = 0
 
 ## Database Schema
 
@@ -123,7 +123,7 @@ using their OpenID or a username. It stores the following information:
 
 This table holds all openIDs associated with users.
 
-| Field      | Type                              | Description |
+| Field | Type | Description |
 |------------|-----------------------------------|------------------------|
 | userid | integer not null | A unique user ID. |
 | openid_url | varchar(128) not null PRIMARY key | The URL of the openID. |
@@ -162,9 +162,9 @@ is not using the credentials as specified in GBrowse.conf. A fix for
 this error is to grant permissions for the user on your database, by
 having the database administrator run the following SQL command:
 
-    GRANT ALL PRIVILEGES
-    ON gbrowse_login.*
-    TO 'www-data'@'localhost' identified by "";
+ GRANT ALL PRIVILEGES
+ ON gbrowse_login.*
+ TO 'www-data'@'localhost' identified by "";
 
 If you wish to use another user, simply replace "www-data" with the user
 of your choice. If you wish to use a password, enter it between the

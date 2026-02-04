@@ -19,9 +19,9 @@ extended and optimised to allow the annotation of plant species:
 > —Michael Campbell, MAKER development team
 
 - Read the publication on MAKER-P:
-  <a href="http://dx.doi.org/​10.​1104/​pp.​113.​230144" class="external text"
-  rel="nofollow">MAKER-P: a tool-kit for the rapid creation, management,
-  and quality control of plant genome annotations</a>
+ <a href="http://dx.doi.org/​10.​1104/​pp.​113.​230144" class="external text"
+ rel="nofollow">MAKER-P: a tool-kit for the rapid creation, management,
+ and quality control of plant genome annotations</a>
 - Download and install [MAKER and MAKER-P](../MAKER.1).
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/12/16*

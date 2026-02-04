@@ -3,23 +3,23 @@ title: "XORT Dumper HOWTO"
 ---
 # XORT Dumper HOWTO
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Author](#Author)
 - [Prerequisites](#Prerequisites)
 - [System
-  Setup](#System_Setup)
+ Setup](#System_Setup)
 - [Chado Database
-  Setup](#Chado_Database_Setup)
+ Setup](#Chado_Database_Setup)
 - [XORT
-  Installation](#XORT_Installation)
+ Installation](#XORT_Installation)
 - [Dumping
-  ChadoXML](#Dumping_ChadoXML)
-  - [Genes](#Genes)
-  - [Feature
-    locations](#Feature_locations)
-  - [CDS](#CDS)
+ ChadoXML](#Dumping_ChadoXML)
+ - [Genes](#Genes)
+ - [Feature
+ locations](#Feature_locations)
+ - [CDS](#CDS)
 - [More
-  Information](#More_Information)
+ Information](#More_Information)
 
 ## Introduction
 
@@ -37,7 +37,7 @@ using XORT and what is involved to do so.
 
 ## Author
 
-- [Josh Goodman](/wiki/User:Jogoodma)
+- Josh Goodman
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ schema.
 
 1\. Install make, gcc, autoconf, automake, and binutils.
 
-    $ sudo apt-get install make gcc autoconf automake binutils
+ $ sudo apt-get install make gcc autoconf automake binutils
 
 2\. Install PostgreSQL. Please note that PostgreSQL 8.3 is the default
 in 8.04 and should work, but at the time of this writing there were some
@@ -59,21 +59,21 @@ href="http://www.nabble.com/Re%253A--Gmod-help--gmod-bulk-upload-td17135725.html
 class="external text" rel="nofollow">concerns</a> about GMOD
 compatibility with 8.3.
 
-    $ sudo apt-get install postgresql-8.2 postgresql-client-8.2
+ $ sudo apt-get install postgresql-8.2 postgresql-client-8.2
 
 3\. Install Perl libraries
 
-    $ sudo apt-get install libxml-perl libxml-dom-perl libxml-sax-perl
-    $ sudo apt-get install libdbi-perl libdbd-pg-perl
+ $ sudo apt-get install libxml-perl libxml-dom-perl libxml-sax-perl
+ $ sudo apt-get install libdbi-perl libdbd-pg-perl
 
 ## Chado Database Setup
 
 1\. Create a PostgreSQL database superuser
 
-    $ sudo su - postgres
-    $ createuser
-    Enter name of role to add: <username>
-    Shall the new role be a superuser? (y/n) y
+ $ sudo su - postgres
+ $ createuser
+ Enter name of role to add: <username>
+ Shall the new role be a superuser? (y/n) y
 
 The value of \<username\> used should match your local unix login name
 in order to simplify things.
@@ -82,37 +82,37 @@ in order to simplify things.
 the postgres user here. Be sure to substitute \<username\> and
 \<password\> with an actual username and password.
 
-    $ psql
-    postgres=# alter user <username> with password '<password>';
-    postgres=# \q
-    $ exit
+ $ psql
+ postgres=# alter user <username> with password '<password>';
+ postgres=# \q
+ $ exit
 
 3\. Fetch the YFGdb Chado dump
 
-    $ wget ftp://gen-ftp.princeton.edu/yfgdb/yfgdb_no-privs_20080211.sql.gz
+ $ wget ftp://gen-ftp.princeton.edu/yfgdb/yfgdb_no-privs_20080211.sql.gz
 
 4\. Create and load the YFGdb database
 
-    $ createdb -E SQL_ASCII yfgdb
-    $ zcat yfgdb_no-privs_20080211.sql.gz | psql -d yfgdb -o yfgdb_load.log
+ $ createdb -E SQL_ASCII yfgdb
+ $ zcat yfgdb_no-privs_20080211.sql.gz | psql -d yfgdb -o yfgdb_load.log
 
 ## XORT Installation
 
-    $ wget http://superb-west.dl.sourceforge.net/sourceforge/gmod/XML-XORT-0.008.tar.gz
-    $ tar zxf XML-XORT-0.008.tar.gz
-    $ cd XML-XORT-0.008
-    $ perl Makefile.PL
-      What is the database name? yfgdb
-      What is the database username? <username>
-      What is the password for 'jogoodma'? <password>
-      What is the database host? localhost
-      What is your database port? 5432
-      Where will the tmp directory go? /tmp
-      Where will the conf directory go? /usr/local/xort/conf
-      Where is the DDL file? <enter> - accept default
-      Where do you want to install XORT if other than default, press ENTER if default: <enter>
-    $ make
-    $ sudo make install
+ $ wget http://superb-west.dl.sourceforge.net/sourceforge/gmod/XML-XORT-0.008.tar.gz
+ $ tar zxf XML-XORT-0.008.tar.gz
+ $ cd XML-XORT-0.008
+ $ perl Makefile.PL
+ What is the database name? yfgdb
+ What is the database username? <username>
+ What is the password for 'jogoodma'? <password>
+ What is the database host? localhost
+ What is your database port? 5432
+ Where will the tmp directory go? /tmp
+ Where will the conf directory go? /usr/local/xort/conf
+ Where is the DDL file? <enter> - accept default
+ Where do you want to install XORT if other than default, press ENTER if default: <enter>
+ $ make
+ $ sudo make install
 
 ## Dumping ChadoXML
 
@@ -127,18 +127,18 @@ genes.xml in your home directory that looks like this:
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <chado dumpspec="genes.xml">
-    <feature dump="select">
-       <type_id test="yes">
-          <cvterm>
-             <name>gene</name>
-          </cvterm>
-       </type_id>
-       <is_obsolete test="yes">false</is_obsolete>
-       <is_analysis test="yes">false</is_analysis>
-       <uniquename />
-       <name />
-       <seqlen />
-    </feature>
+ <feature dump="select">
+ <type_id test="yes">
+ <cvterm>
+ <name>gene</name>
+ </cvterm>
+ </type_id>
+ <is_obsolete test="yes">false</is_obsolete>
+ <is_analysis test="yes">false</is_analysis>
+ <uniquename />
+ <name />
+ <seqlen />
+ </feature>
 </chado>
 ```
 
@@ -156,15 +156,15 @@ search operators. The SQL version of this dumpspec looks like this:
 
 ``` de1
 SELECT f.uniquename, f.name, f.seqlen
-       FROM feature f, cvterm cvt
-       WHERE f.is_obsolete=FALSE AND f.is_analysis=FALSE AND
-             cvterm.name='gene' AND f.type_id=cvt.cvterm_id;
+ FROM feature f, cvterm cvt
+ WHERE f.is_obsolete=FALSE AND f.is_analysis=FALSE AND
+ cvterm.name='gene' AND f.type_id=cvt.cvterm_id;
 ```
 
 You can execute this dumpspec by running the xort_dump.pl program like
 this:
 
-    $ /usr/local/bin/xort_dump.pl --database chado --output chado_genes.xml --dumpspec genes.xml
+ $ /usr/local/bin/xort_dump.pl --database chado --output chado_genes.xml --dumpspec genes.xml
 
 It is important to note that the --database option takes the first part
 of the database properties file name located in the XORT conf directory
@@ -185,25 +185,25 @@ back to the feature table.
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <chado dumpspec="genes.xml">
-    <feature dump="select">
-       <type_id test="yes">
-          <cvterm>
-             <name>gene</name>
-          </cvterm>
-       </type_id>
-       <is_obsolete test="yes">false</is_obsolete>
-       <is_analysis test="yes">false</is_analysis>
-       <uniquename />
-       <name />
-       <seqlen />
-       <featureloc dump="cols">
-          <srcfeature_id>
-             <feature dump="select">
-                <uniquename />
-             </feature>
-          </srcfeature_id>
-       </featureloc>
-    </feature>
+ <feature dump="select">
+ <type_id test="yes">
+ <cvterm>
+ <name>gene</name>
+ </cvterm>
+ </type_id>
+ <is_obsolete test="yes">false</is_obsolete>
+ <is_analysis test="yes">false</is_analysis>
+ <uniquename />
+ <name />
+ <seqlen />
+ <featureloc dump="cols">
+ <srcfeature_id>
+ <feature dump="select">
+ <uniquename />
+ </feature>
+ </srcfeature_id>
+ </featureloc>
+ </feature>
 </chado>
 ```
 
@@ -213,10 +213,10 @@ localized on. The equivalent SQL for this dumpspec would be this:
 
 ``` de1
 SELECT f1.uniquename, f1.name, f1.seqlen, fl.*, f2.uniquename
-       FROM feature f1, feature f2, cvterm cvt, featureloc fl
-       WHERE f1.is_obsolete=FALSE AND f1.is_analysis=FALSE AND
-             cvt.name='gene' AND f1.type_id=cvt.cvterm_id AND
-             f1.feature_id=fl.feature_id AND fl.srcfeature_id=f2.feature_id;
+ FROM feature f1, feature f2, cvterm cvt, featureloc fl
+ WHERE f1.is_obsolete=FALSE AND f1.is_analysis=FALSE AND
+ cvt.name='gene' AND f1.type_id=cvt.cvterm_id AND
+ f1.feature_id=fl.feature_id AND fl.srcfeature_id=f2.feature_id;
 ```
 
 ### CDS
@@ -230,58 +230,58 @@ dumpspec would look like for dumping CDS features:
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <chado dumpspec="genes.xml">
-    <feature dump="select">
-       <type_id test="yes">
-          <cvterm>
-             <name>gene</name>
-          </cvterm>
-       </type_id>
-       <is_obsolete test="yes">false</is_obsolete>
-       <is_analysis test="yes">false</is_analysis>
-       <uniquename />
-       <name />
-       <seqlen />
-       <featureloc dump="cols">
-          <srcfeature_id>
-             <feature dump="select">
-                <uniquename />
-             </feature>
-          </srcfeature_id>
-       </featureloc>
-       <feature_relationship>
-          <type_id test="yes">
-             <cvterm>
-                <name>part_of</name>
-             </cvterm>
-          </type_id>
-          <subject_id test="yes">
-             <feature>
-                <type_id>
-                   <cvterm>
-                      <name>CDS</name>
-                   </cvterm>
-                </type_id>
-             </feature>
-          </subject_id>
-          <subject_id>
-             <feature dump="select">
-                <uniquename />
-                <name />
-                <type_id>
-                   <cvterm dump="select">
-                      <name />
-                   </cvterm>
-                </type_id>
-                <featureloc dump="cols" />
-             </feature>
-          </subject_id>
-          <type_id>
-             <cvterm dump="select">
-                <name />
-             </cvterm>
-          </type_id>
-       </feature_relationship>
-    </feature>
+ <feature dump="select">
+ <type_id test="yes">
+ <cvterm>
+ <name>gene</name>
+ </cvterm>
+ </type_id>
+ <is_obsolete test="yes">false</is_obsolete>
+ <is_analysis test="yes">false</is_analysis>
+ <uniquename />
+ <name />
+ <seqlen />
+ <featureloc dump="cols">
+ <srcfeature_id>
+ <feature dump="select">
+ <uniquename />
+ </feature>
+ </srcfeature_id>
+ </featureloc>
+ <feature_relationship>
+ <type_id test="yes">
+ <cvterm>
+ <name>part_of</name>
+ </cvterm>
+ </type_id>
+ <subject_id test="yes">
+ <feature>
+ <type_id>
+ <cvterm>
+ <name>CDS</name>
+ </cvterm>
+ </type_id>
+ </feature>
+ </subject_id>
+ <subject_id>
+ <feature dump="select">
+ <uniquename />
+ <name />
+ <type_id>
+ <cvterm dump="select">
+ <name />
+ </cvterm>
+ </type_id>
+ <featureloc dump="cols" />
+ </feature>
+ </subject_id>
+ <type_id>
+ <cvterm dump="select">
+ <name />
+ </cvterm>
+ </type_id>
+ </feature_relationship>
+ </feature>
 </chado>
 ```
 

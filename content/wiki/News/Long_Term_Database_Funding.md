@@ -33,15 +33,15 @@ alt="TAIR Funding Update and Discussion Forum" /></a>
 
 <a href="http://www.arabidopsis.org/" class="external text"
 
-1.  Cite TAIR in publications: as a reference, as a source of data in
-    methods sections, and under acknowledgments.
-2.  Contribute to a
-    <a href="http://www.arabidopsis.org/doc/about/tair_funding/410"
-    class="external text" rel="nofollow">discussion on the TAIR web site</a>
-    about
-    1.  the bioinformatics needs of the *Arabidopsis* and wider plant
-        biology communities and
-    2.  how resources like TAIR should be funded.
+1. Cite TAIR in publications: as a reference, as a source of data in
+ methods sections, and under acknowledgments.
+2. Contribute to a
+ <a href="http://www.arabidopsis.org/doc/about/tair_funding/410"
+ class="external text" rel="nofollow">discussion on the TAIR web site</a>
+ about
+ 1. the bioinformatics needs of the *Arabidopsis* and wider plant
+ biology communities and
+ 2. how resources like TAIR should be funded.
 
 The <a href="http://www.arabidopsis.org/doc/about/tair_funding/410"
 class="external text" rel="nofollow">discussion at TAIR</a> is now 19

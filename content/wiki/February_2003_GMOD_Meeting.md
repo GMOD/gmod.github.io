@@ -19,7 +19,7 @@ space. If you would like a copy of a presentation, please contact
 
 - [GBrowse](/wiki/GBrowse) update
 - [CMap](/wiki/CMap) update
--  update
+- update
 - Update from Gavin Sherlock's group (working with microarray data)
 - [PubFetch](/wiki/PubFetch) and PubTrack update
 - [PubSearch](/wiki/PubSearch) update

@@ -22,21 +22,21 @@ For example, the following view is for all exons in the feature table:
 
 ``` de1
 CREATE VIEW exon AS
-  SELECT
-    feature_id AS exon_id,
-    feature.*
-  FROM
-    feature INNER JOIN cvterm ON (feature.type_id = cvterm.cvterm_id)
-  WHERE cvterm.name = 'coding_exon' OR
-        cvterm.name = 'noncoding_exon' OR
-        cvterm.name = 'interior_exon' OR
-        cvterm.name = 'exon_of_single_exon_gene' OR
-        cvterm.name = 'interior_coding_exon' OR
-        cvterm.name = 'five_prime_coding_exon' OR
-        cvterm.name = 'three_prime_coding_exon' OR
-        cvterm.name = 'three_prime_noncoding_exon' OR
-        cvterm.name = 'five_prime_noncoding_exon' OR
-        cvterm.name = 'exon';
+ SELECT
+ feature_id AS exon_id,
+ feature.*
+ FROM
+ feature INNER JOIN cvterm ON (feature.type_id = cvterm.cvterm_id)
+ WHERE cvterm.name = 'coding_exon' OR
+ cvterm.name = 'noncoding_exon' OR
+ cvterm.name = 'interior_exon' OR
+ cvterm.name = 'exon_of_single_exon_gene' OR
+ cvterm.name = 'interior_coding_exon' OR
+ cvterm.name = 'five_prime_coding_exon' OR
+ cvterm.name = 'three_prime_coding_exon' OR
+ cvterm.name = 'three_prime_noncoding_exon' OR
+ cvterm.name = 'five_prime_noncoding_exon' OR
+ cvterm.name = 'exon';
 ```
 
 Essentially, it is a way of taking advantage of the structure of the

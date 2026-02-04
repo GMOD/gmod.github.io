@@ -9,74 +9,74 @@ This document provides information on configuring version 1 of the
 <a href="/wiki/GBrowse_2_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse 2 Configuration HOWTO">GBrowse 2 Configuration HOWTO</a>.
 
-  Databases From Scratch</span>](#Creating_Databases_From_Scratch)
+ Databases From Scratch</span>](#Creating_Databases_From_Scratch)
 - [Adding and
-  Configuring Databases](#Adding_and_Configuring_Databases)
-  - [Configuration File
-    layout](#Configuration_File_layout)
-  - [The
-    \[GENERAL\] Section](#The_.5BGENERAL.5D_Section)
-    - [Adaptor Options](#Adaptor_Options)
-    - [Appearance
-      Options](#Appearance_Options)
-    - [Behavior Options](#Behavior_Options)
-    - [Directory and URL
-      Options](#Directory_and_URL_Options)
-    - [Plugin
-      Options](#Plugin_Options)
-    - [Track
-      Sharing Options](#Track_Sharing_Options)
-  - [The
-    \[TRACK DEFAULTS\]
-    section](#The_.5BTRACK_DEFAULTS.5D_section)
-  - [Track
-    Sections](#Track_Sections)
-  - [Glyphs and
-    Glyph Options](#Glyphs_and_Glyph_Options)
-  - [Adding
-    features to the overview](#Adding_features_to_the_overview)
-  - [Semantic
-    Zooming](#Semantic_Zooming)
-  - [Computed
-    Options](#Computed_Options)
-    - [Named
-      Subroutine References](#Named_Subroutine_References)
-  - [Declaring
-    New Aggregators](#Declaring_New_Aggregators)
-  - [Grouping
-    Features](#Grouping_Features)
-  - [Controlling the gbrowse_details
-    page](#Controlling_the_gbrowse_details_page)
-  - [Linking
-    out from gbrowse_details](#Linking_out_from_gbrowse_details)
-  - [Configuring Balloon
-    Tooltips](#Configuring_Balloon_Tooltips)
-  - [Generating Static Images: PNGs, SVGs and
-    PDFs](#Generating_Static_Images:_PNGs.2C_SVGs_and_PDFs)
+ Configuring Databases](#Adding_and_Configuring_Databases)
+ - [Configuration File
+ layout](#Configuration_File_layout)
+ - [The
+ \[GENERAL\] Section](#The_.5BGENERAL.5D_Section)
+ - [Adaptor Options](#Adaptor_Options)
+ - [Appearance
+ Options](#Appearance_Options)
+ - [Behavior Options](#Behavior_Options)
+ - [Directory and URL
+ Options](#Directory_and_URL_Options)
+ - [Plugin
+ Options](#Plugin_Options)
+ - [Track
+ Sharing Options](#Track_Sharing_Options)
+ - [The
+ \[TRACK DEFAULTS\]
+ section](#The_.5BTRACK_DEFAULTS.5D_section)
+ - [Track
+ Sections](#Track_Sections)
+ - [Glyphs and
+ Glyph Options](#Glyphs_and_Glyph_Options)
+ - [Adding
+ features to the overview](#Adding_features_to_the_overview)
+ - [Semantic
+ Zooming](#Semantic_Zooming)
+ - [Computed
+ Options](#Computed_Options)
+ - [Named
+ Subroutine References](#Named_Subroutine_References)
+ - [Declaring
+ New Aggregators](#Declaring_New_Aggregators)
+ - [Grouping
+ Features](#Grouping_Features)
+ - [Controlling the gbrowse_details
+ page](#Controlling_the_gbrowse_details_page)
+ - [Linking
+ out from gbrowse_details](#Linking_out_from_gbrowse_details)
+ - [Configuring Balloon
+ Tooltips](#Configuring_Balloon_Tooltips)
+ - [Generating Static Images: PNGs, SVGs and
+ PDFs](#Generating_Static_Images:_PNGs.2C_SVGs_and_PDFs)
 - [Generating
-  Feature Frequency
-  Histograms](#Generating_Feature_Frequency_Histograms)
+ Feature Frequency
+ Histograms](#Generating_Feature_Frequency_Histograms)
 - [Internationalization](#Internationalization)
 - [Authentication
-  & Authorization](#Authentication_.26_Authorization)
+ & Authorization](#Authentication_.26_Authorization)
 - [Displaying
-  Genetic & RH Maps](#Displaying_Genetic_.26_RH_Maps)
+ Genetic & RH Maps](#Displaying_Genetic_.26_RH_Maps)
 - [Changing the
-  Location of the Configuration
-  Files](#Changing_the_Location_of_the_Configuration_Files)
+ Location of the Configuration
+ Files](#Changing_the_Location_of_the_Configuration_Files)
 - [Using DAS
-  (Distributed Annotation System)
-  Databases](#Using_DAS_.28Distributed_Annotation_System.29_Databases)
+ (Distributed Annotation System)
+ Databases](#Using_DAS_.28Distributed_Annotation_System.29_Databases)
 - [The Bio::MOBY
-  Browse](#The_Bio::MOBY_Browse)
+ Browse](#The_Bio::MOBY_Browse)
 - [Filtering
-  Search Results](#Filtering_Search_Results)
+ Search Results](#Filtering_Search_Results)
 - [Invoking
-  GBrowse URLs](#Invoking_GBrowse_URLs)
+ GBrowse URLs](#Invoking_GBrowse_URLs)
 - [Important
-  Maintenance](#Important_Maintenance)
+ Maintenance](#Important_Maintenance)
 - [Further
-  Information](#Further_Information)
+ Information](#Further_Information)
 
 # Creating Databases From Scratch
 
@@ -93,45 +93,45 @@ genomic data you want to see into a database that GBrowse can read.
 There are 3 widely used [GBrowse
 Adaptors](/wiki/GBrowse_Adaptors) that use databases:
 
-1.  [GFF3](/wiki/GFF3) databases - slightly faster than
-    [GFF2](/wiki/GFF2) and able to represent multilevel features.
-2.  [GFF2](/wiki/GFF2) databases - older and unable to represent genes
-    with alternative splicing patterns, features with more than one
-    level of nesting, and several other common situations. **GFF2 is
-    deprecated and if possible you are strongly encouraged to use
-    [GFF3](/wiki/GFF3).**
-3.  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-    databases - These are significantly slower than the GFF databases,
-    but are feature-rich.
+1. [GFF3](/wiki/GFF3) databases - slightly faster than
+ [GFF2](/wiki/GFF2) and able to represent multilevel features.
+2. [GFF2](/wiki/GFF2) databases - older and unable to represent genes
+ with alternative splicing patterns, features with more than one
+ level of nesting, and several other common situations. **GFF2 is
+ deprecated and if possible you are strongly encouraged to use
+ [GFF3](/wiki/GFF3).**
+3. <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+ databases - These are significantly slower than the GFF databases,
+ but are feature-rich.
 
 Here is the sequence of steps for creating new GBrowse databases:
 
-1.  Make a GFF3 file for your genome (i.e. from a GenBank download that
-    ends in .gb) - On the command line:
-    `bp_genbank2gff3.pl -noCDS -s antgenome.gb`
-    This will result in the creation of a file ("antgenome.gb.gff" in
-    the example)
-2.  Create a database in your MySQL database (e.g. antgenome) and grant
-    the www user SELECT privileges on that database. This would be
-    "nobody" on most systems. On Ubuntu Linux the user would be
-    "www-data". Also, grant your own user privileges on that database.
-    `mysql -uroot -prootpassword`
-    `mysql> create database antgenome;`
-    `mysql> GRANT SELECT ON antgenome to 'www-data'@'localhost';`
-    `mysql> GRANT ALL PRIVILEGES ON antgenome TO 'myuser'@'localhost';`
-    `mysql>quit`
-3.  Copy an existing configuration file (database_name.conf) and adjust
-    the paths to your new database and rename accordingly.
-    `sudo cp mysillygenome.conf /etc/gbrowse2/antgenome.conf`
-4.  Load the .GFF file into the database - On the command line:
-    `bp_seqfeature_load.pl -c --dsn "dbi:mysql:antgenome" --user "myuser" --password "my password" antgenome.gb.gff`
-    - If you want to change things easily in your database to display
-      new tracks, I found it easiest to edit the .gb file. I would copy
-      & paste specific sections (i.e. section for CDS or gene, etc. -
-      any type can be altered) and then change the type to some key word
-      (this becomes the "feature" in the .conf file). Then I would
-      remake the GFF file and reload the database. This was the simplest
-      way I had of manipulating the files to create custom tracks.
+1. Make a GFF3 file for your genome (i.e. from a GenBank download that
+ ends in .gb) - On the command line:
+ `bp_genbank2gff3.pl -noCDS -s antgenome.gb`
+ This will result in the creation of a file ("antgenome.gb.gff" in
+ the example)
+2. Create a database in your MySQL database (e.g. antgenome) and grant
+ the www user SELECT privileges on that database. This would be
+ "nobody" on most systems. On Ubuntu Linux the user would be
+ "www-data". Also, grant your own user privileges on that database.
+ `mysql -uroot -prootpassword`
+ `mysql> create database antgenome;`
+ `mysql> GRANT SELECT ON antgenome to 'www-data'@'localhost';`
+ `mysql> GRANT ALL PRIVILEGES ON antgenome TO 'myuser'@'localhost';`
+ `mysql>quit`
+3. Copy an existing configuration file (database_name.conf) and adjust
+ the paths to your new database and rename accordingly.
+ `sudo cp mysillygenome.conf /etc/gbrowse2/antgenome.conf`
+4. Load the .GFF file into the database - On the command line:
+ `bp_seqfeature_load.pl -c --dsn "dbi:mysql:antgenome" --user "myuser" --password "my password" antgenome.gb.gff`
+ - If you want to change things easily in your database to display
+ new tracks, I found it easiest to edit the .gb file. I would copy
+ & paste specific sections (i.e. section for CDS or gene, etc. -
+ any type can be altered) and then change the type to some key word
+ (this becomes the "feature" in the .conf file). Then I would
+ remake the GFF file and reload the database. This was the simplest
+ way I had of manipulating the files to create custom tracks.
 
 # Adding and Configuring Databases
 
@@ -141,14 +141,14 @@ make a copy of one of the existing configuration files and modify it to
 meet your needs. The name of the new configuration file must follow the
 form:
 
-     sourcename.conf
+ sourcename.conf
 
 where "sourcename" is a short word that describes the data source. You
 can use this name to select the data source when linking to the browser.
 Just construct a URL that uses "sourcename" as a virtual directory under
 cgi-bin/gbrowse:
 
-     http://localhost/cgi-bin/gbrowse/sourcename/
+ http://localhost/cgi-bin/gbrowse/sourcename/
 
 (Note: If you don't add the slash at the end, gbrowse will automatically
 do it for you, since the terminal slash is needed to work around an
@@ -176,24 +176,24 @@ class="external text" rel="nofollow">yeast configuration file</a>
 GBrowse configuration files are arranged into configuration *stanzas*,
 or sections in the form:
 
-    # This line is a comment that will be ignored
-    [CONFIG ITEM]
-    option1 = value1
-    option2 = value2
-    etc...
+ # This line is a comment that will be ignored
+ [CONFIG ITEM]
+ option1 = value1
+ option2 = value2
+ etc...
 
 - While configuration files are being parsed, a new section always
-  begins with a label in square brackets and a series of key/value
-  pairs.
+ begins with a label in square brackets and a series of key/value
+ pairs.
 - Values may span multiple lines
 - Comment lines beginning with the reserved character '#' are ignored
-  when the configuration file is parsed. Any lines that begin with a
-  pound sign (#) are considered comments and ignored.
+ when the configuration file is parsed. Any lines that begin with a
+ pound sign (#) are considered comments and ignored.
 - Config files begin with the \[GENERAL\] section, which contains all
-  fundamental configuration options (see below).
+ fundamental configuration options (see below).
 - Note that all key value/pairs are assigned to the most recent section
-  header, so take care to keep all related options grouped together
-  before the start of the next section.
+ header, so take care to keep all related options grouped together
+ before the start of the next section.
 
 ## The \[GENERAL\] Section
 
@@ -201,14 +201,14 @@ The \[GENERAL\] section consists of a series of name=value options. For
 example, the beginning of the yeast.conf sample configuration file looks
 like this:
 
-    [GENERAL]
-    description = S. cerevisiae (via SGD Nov 2001)
-    db_adaptor  = Bio::DB::GFF
-    db_args     = -adaptor dbi::mysql
-                  -dsn     dbi:mysql:database=yeast;host=localhost
-    aggregators = transcript alignment
-    user        =
-    passwd      =
+ [GENERAL]
+ description = S. cerevisiae (via SGD Nov 2001)
+ db_adaptor = Bio::DB::GFF
+ db_args = -adaptor dbi::mysql
+ -dsn dbi:mysql:database=yeast;host=localhost
+ aggregators = transcript alignment
+ user =
+ passwd =
 
 Each option is a single word or phrase, usually in lower case. This is
 followed by an equals sign and the value of the option. You can add
@@ -217,8 +217,8 @@ value is very long, you can continue it on additional lines provided
 that you put a tab or other whitespace on the continuation lines. For
 example:
 
-    description = S. cerevisiae annotations via SGD Nov 2001, and
-                  converted using the process_sgd.pl script
+ description = S. cerevisiae annotations via SGD Nov 2001, and
+ converted using the process_sgd.pl script
 
 All \[GENERAL\] options are listed below, grouped together by function.
 
@@ -241,8 +241,8 @@ connection. The exact format will depend on the adaptor you're using.
 For Bio::DB::GFF running on top of a [MySQL](/wiki/MySQL) database use
 a db_args like the following:
 
-       db_args = -adaptor dbi::mysql
-                 -dsn     dbi:mysql:database=<db_name>;host=<db_host>
+ db_args = -adaptor dbi::mysql
+ -dsn dbi:mysql:database=<db_name>;host=<db_host>
 
 replacing `<db_name>` and `<db_host>` with the database and database
 host of your choice. For MySQL databases running on the localhost, you
@@ -251,10 +251,10 @@ can shorten this to just `db_name`.
 If the database requires you to log in with a user name and password,
 use the following db_adaptor:
 
-       db_args = -adaptor dbi::mysql
-                 -dsn     dbi:mysql:database=<db_name>;host=<db_host>
-                 -user    <username>
-                 -pass    <password>
+ db_args = -adaptor dbi::mysql
+ -dsn dbi:mysql:database=<db_name>;host=<db_host>
+ -user <username>
+ -pass <password>
 
 replacing `<username>` and `<password>` with the appropriate values. In
 the example configuration files, we use a username of `nobody` and an
@@ -264,8 +264,8 @@ password.
 
 To use the Oracle version of Bio::DB::GFF, use these arguments:
 
-       db_args = -adaptor dbi::oracle
-                 -dsn dbi:oracle:database=db_service
+ db_args = -adaptor dbi::oracle
+ -dsn dbi:oracle:database=db_service
 
 Where `db_description` should be replaced with the name of the desired
 database service definition. See the documentation for the Perl
@@ -275,8 +275,8 @@ more information about the `-dsn` format.
 
 To use the in-memory version of Bio::DB::GFF, use these arguments:
 
-     db_args = -adaptor memory
-               -dir   /path/to/directory
+ db_args = -adaptor memory
+ -dir /path/to/directory
 
 The indicated directory should contain one or more [GFF](/wiki/GFF) and
 [FASTA](/wiki/Glossary#FASTA) files, distinguished by the filename
@@ -323,14 +323,14 @@ default features
 The default features option is a space-delimited list of tracks to turn
 on by default. You will probably need to change this. For example:
 
-        default features = Genes ORFs tRNAs Centromeres:overview
+ default features = Genes ORFs tRNAs Centromeres:overview
 
 The syntax for annotation plugins is slightly different. To activate an
 annotation plugin track by default, preface the plugin's name with
 `plugin:`
 
-        default features = Genes ORFs Centromeres:overview
-                           plugin:RestrictionAnnotator
+ default features = Genes ORFs Centromeres:overview
+ plugin:RestrictionAnnotator
 
 initial landmark
 
@@ -341,7 +341,7 @@ overview or panel.
 
 Example:
 
-          initial landmark = Chr1
+ initial landmark = Chr1
 
 truecolor
 If this option is present and true, then GBrowse will create 24-bit
@@ -364,7 +364,7 @@ zoom levels
 GBrowse allows unlimited zoom levels. This option selects the width of
 each level, in bp. For example:
 
-         zoom levels = 1000 2000 5000 10000 20000 40000 100000 200000
+ zoom levels = 1000 2000 5000 10000 20000 40000 100000 200000
 
 region segment
 If this configuration option is set, a new "region panel" will appear
@@ -377,7 +377,7 @@ region sizes
 This contains a space-delimited list of region panel sizes to present to
 the user in a popup menu:
 
-        region sizes   = 5000 10000 20000
+ region sizes = 5000 10000 20000
 
 show sources
 
@@ -416,7 +416,7 @@ for details.
 
 Example:
 
-       header = <h1>Welcome to the Volvox Sequence Page</h1>
+ header = <h1>Welcome to the Volvox Sequence Page</h1>
 
 footer
 
@@ -431,16 +431,16 @@ for details.
 
 Example:
 
-        footer = <hr>
-            <table width="100%">
-            <TR>
-            <TD align="LEFT" class="databody">
-            For the source code for this browser, see the <a href="http://gmod.org">
-            Generic Model Organism Database Project.</a>  For other questions, send
-            mail to <a href="mailto:lstein@cshl.org">lstein@cshl.org</a>.
-            </TD>
-            </TR>
-            </table>
+ footer = <hr>
+ <table width="100%">
+ <TR>
+ <TD align="LEFT" class="databody">
+ For the source code for this browser, see the <a href="http://gmod.org">
+ Generic Model Organism Database Project.</a> For other questions, send
+ mail to <a href="mailto:lstein@cshl.org">lstein@cshl.org</a>.
+ </TD>
+ </TR>
+ </table>
 
 examples
 
@@ -448,7 +448,7 @@ You can provide GBrowse with some canned examples of "interesting
 regions" for the user to click on. The examples option, if present,
 provides a space-delimited list of interesting regions. For example:
 
-          examples = II  NPY1 NAB2 Orf:YGL123W
+ examples = II NPY1 NAB2 Orf:YGL123W
 
 instructions, search_instructions, navigation_instructions
 
@@ -456,7 +456,7 @@ You may override the default instructions (as defined in the
 language-specific configuration files in conf/lang) by setting these
 options. For example:
 
-            instructions = "Type in the name of a contig or clone."
+ instructions = "Type in the name of a contig or clone."
 
 category tables
 
@@ -466,28 +466,28 @@ experimental design of a microarray or ChIP-on-Chip experiment.
 
 The format is:
 
-    category tables = 'category name' 'columnlabel1 columnlabel2 columnlabel3' 'rowlabel1 rowlabel2 rowlabel3'
+ category tables = 'category name' 'columnlabel1 columnlabel2 columnlabel3' 'rowlabel1 rowlabel2 rowlabel3'
 
 Where *`category name`* is the name of the track category (described in
 more detail below), *`columnlabelN`* is the label of the *Nth* column,
 and *`rowlabelN`* is the label of the *Nth* row. For example:
 
-    category tables = 'ArrayExpts' 'strain-A strain-B strain-C' 'temperature anaerobic aerobic'
+ category tables = 'ArrayExpts' 'strain-A strain-B strain-C' 'temperature anaerobic aerobic'
 
 This will set up all the tracks labeled with category "ArrayExpts" so
 that they are displayed in a 3x3 table like this:
 
-                    temperature     anaerobic      aerobic
-      strain-A      track 1          track 4       track 7
-      strain-B      track 2          track 5       track 8
-      strain-C      track 3          track 6       track 9
+ temperature anaerobic aerobic
+ strain-A track 1 track 4 track 7
+ strain-B track 2 track 5 track 8
+ strain-C track 3 track 6 track 9
 
 *`track N`* will be replaced with the name you selected for the track.
 
 Additional category tables can be specified using continuation lines:
 
-    category tables = 'ArrayExpts' 'strain-A strain-B strain-C' 'temperature anaerobic aerobic'
-                      'CHiP-Chip'  'TFX1 ONE-CUT PHA4' '16-cell-stage 320-cell-stage adult'
+ category tables = 'ArrayExpts' 'strain-A strain-B strain-C' 'temperature anaerobic aerobic'
+ 'CHiP-Chip' 'TFX1 ONE-CUT PHA4' '16-cell-stage 320-cell-stage adult'
 
 See the <a href="http://cloud.gmod.org/gbrowse2/tutorial/tutorial.html"
 class="external text" rel="nofollow">GBrowse2 Admin Tutorial</a> for
@@ -507,7 +507,7 @@ initially open or collapsed. Their values are one of:
 
 For example
 
-    instructions section = closed
+ instructions section = closed
 
 will initially show the instructions section in collapsed form when the
 user visits GBrowse for the first time. "upload_tracks section = off"
@@ -540,20 +540,20 @@ These can be code references. One useful thing to do is to use the
 language translator to insert language-specific HTML. Here's an example
 provided by Marc Logghe:
 
-        html2 = sub {
-            my $go = $main::CONFIG->tr('Go');
-            return
-            qq(
-            <table width="800" border="0">
-            <tr class="searchbody">
-            <td align="left" colspan="3" />
-            <b>Dump:</b><input type="button" value="Assembly" onclick="window.open('gbrowse?plugin=AssemblyDumper;plugin_action=$go');">
-            <input type="button" value="Reads" onclick="window.open('gbrowse?plugin=ReadDumper;plugin_action=$go');">
-            </td>
-            </tr>
-            </table>
-            );
-           }
+ html2 = sub {
+ my $go = $main::CONFIG->tr('Go');
+ return
+ qq(
+ <table width="800" border="0">
+ <tr class="searchbody">
+ <td align="left" colspan="3" />
+ <b>Dump:</b><input type="button" value="Assembly" onclick="window.open('gbrowse?plugin=AssemblyDumper;plugin_action=$go');">
+ <input type="button" value="Reads" onclick="window.open('gbrowse?plugin=ReadDumper;plugin_action=$go');">
+ </td>
+ </tr>
+ </table>
+ );
+ }
 
 If you use a coderef for the html options, the subroutine is passed two
 arguments. The first argument is a
@@ -658,12 +658,12 @@ described in [Declaring New Aggregators](#Declaring_New_Aggregators).
 
 To disable the default aggregators, leave this setting blank, as in:
 
-        aggregators=
+ aggregators=
 
 To activate the default aggregators of `transcript`, `clone`, and
 `alignment`, comment this setting out entirely:
 
-       # aggregators =
+ # aggregators =
 
 Do not use aggregators with the
 <a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store"
@@ -754,7 +754,7 @@ their attention to a new feature you've added.
 
 Example:
 
-      version = 1.1
+ version = 1.1
 
 request timeout
 This is the timeout value for requests. If a user requests a large
@@ -778,11 +778,11 @@ that rely on all or part of the HTML having been loaded and interpreted
 by the browser. The `onload` text must use correct JavaScript syntax.
 For example:
 
-     onload = alert('I am about to do something');doSomething('arg1','arg2')
+ onload = alert('I am about to do something');doSomething('arg1','arg2')
 
 will result in
 
-     <body onload="alert('I am about to do something');doSomething('arg1','arg2')">
+ <body onload="alert('I am about to do something');doSomething('arg1','arg2')">
 
 automatic classes
 
@@ -793,7 +793,7 @@ other classes as well by defining the `automatic classes` option.
 
 Example:
 
-           automatic classes = Symbol Gene Clone
+ automatic classes = Symbol Gene Clone
 
 When the user types in `hb3`, the browser will search first for a
 Sequence feature of class hb3, followed in turn by matching features in
@@ -819,7 +819,7 @@ If you don't want the "Landmark or Region" textbox to appear, set this
 to true. The user will still be able to search the database by appending
 `q=<search term>` to the URL.
 
-             no search = 1
+ no search = 1
 
 no autosearch
 If this option is set to a true value, then users' previous search will
@@ -853,7 +853,7 @@ connections, `ftp proxy` will set the proxy to use for outgoing FTP
 connections, and "proxy" will set both. The value is the URL of the
 proxy:
 
-      proxy = http://myproxy.myorg.com:9000
+ proxy = http://myproxy.myorg.com:9000
 
 session driver, session args
 
@@ -879,9 +879,9 @@ For example, here is how to create session data that is stored in the
 "gbrowse_sessions." The session data will be stored in binary form by
 the Storable module:
 
-    session driver = driver:mysql;serializer:storable
-    session args   = DataSource test
-                     TableName  gbrowse_sessions
+ session driver = driver:mysql;serializer:storable
+ session args = DataSource test
+ TableName gbrowse_sessions
 
 See the <a href="http://search.cpan.org/perldoc?CGI::Session"
 class="external text" rel="nofollow">CGI::Session</a> documentation for
@@ -905,7 +905,7 @@ The length of time to remember page-specific settings in the format
 `+NNNu`, where `NNN` is a number and `u` is a unit (`w` = weeks, `d` =
 days, `M` = months). For example:
 
-     remember settings time = +3M   # remember settings for 3 months
+ remember settings time = +3M # remember settings for 3 months
 
 The users' settings, which includes uploaded files, track options and
 plugin configuration, will be reset to the default if he or she fails to
@@ -963,9 +963,9 @@ Alternatively, you can specify an absolute URL (e.g.
 separating them by spaces. You can also specify a media type by
 following this format:
 
-     stylesheet = http://www.example.com/stylesheets/lowres.css(screen)
-                  http://www.example.com/stylesheets/audio.css(audio)
-                  http://www.example.com/stylesheets/hires.css(paper)
+ stylesheet = http://www.example.com/stylesheets/lowres.css(screen)
+ http://www.example.com/stylesheets/audio.css(audio)
+ http://www.example.com/stylesheets/hires.css(paper)
 
 - **buttons**
 
@@ -984,7 +984,7 @@ apply here as well. (You will probably not need to change this).
 URL of a writable directory in which GBrowse can write its temporary
 images. The format is:
 
-     tmpimages = <tmpimages_url> <tmpimages_path>
+ tmpimages = <tmpimages_url> <tmpimages_path>
 
 Where \<tmpimages_url\> is the directory as it appears as a URL and
 \<tmpimages_path\> is the physical path to the directory as it appears
@@ -1014,7 +1014,7 @@ GBrowse configuration directory under the `plugins` subdirectory. See
 This is a list of plugins that you want to be available from gbrowse. A
 good standard list of plugins is:
 
-       plugins = SequenceDumper FastaDumper RestrictionAnnotator
+ plugins = SequenceDumper FastaDumper RestrictionAnnotator
 
 See the contents of `conf/plugins` and `contrib/plugins` for more
 plugins that you can install.
@@ -1058,7 +1058,7 @@ If you would like GBrowse to be able to send data to the
 option to the URL for the Galaxy server you would like to use. A good
 default is:
 
-      galaxy outgoing = http://main.g2.bx.psu.edu/tool_runner?tool_id=TOOL_ID
+ galaxy outgoing = http://main.g2.bx.psu.edu/tool_runner?tool_id=TOOL_ID
 
 Without this option, GBrowse will be able to receive and process queries
 from Galaxy servers, but will not be able to initiate a connection.
@@ -1071,7 +1071,7 @@ developers.
 Use this option to change the URL that Galaxy will use when it tries to
 fetch GFF3-formatted data from GBrowse. The default is:
 
-      http://yourhostname/cgi-bin/gbgff
+ http://yourhostname/cgi-bin/gbgff
 
 However, the default will break if the Gbrowse web server is behind a
 web proxy that uses a different hostname. In this case, you will need to
@@ -1091,21 +1091,21 @@ present, the value default to the database name.
 This option allows you to add remote annotation sources to the menu of
 such sources at the bottom of the main window. The format is:
 
-         remote sources = "Menu Label 1" http://url1.host.com/etc/etc
-                          "Menu Label 2" http://url2.host.com/etc/etc
+ remote sources = "Menu Label 1" http://url1.host.com/etc/etc
+ "Menu Label 2" http://url2.host.com/etc/etc
 
 ## The \[TRACK DEFAULTS\] section
 
 The track defaults section specifies default values for each track. The
 following common options are recognized:
 
-                glyph
-                height
-                bgcolor
-                fgcolor
-                fontcolor
-                font2color
-                strand_arrow
+ glyph
+ height
+ bgcolor
+ fgcolor
+ fontcolor
+ font2color
+ strand_arrow
 
 These options control the default graphical settings for any annotation
 types that are not explicitly specified. See the section below on
@@ -1140,27 +1140,27 @@ variables. Variables begin with a dollar sign (\$), and are replaced at
 run time with the information relating to the selected annotation.
 Recognized variables include:
 
-        $name        The feature's name (group name)
-        $id          The feature's id (eg, PK from a database)
-        $class       The feature's class (group class)
-        $method      The feature's method
-        $source      The feature's source
-        $ref         The name of the sequence segment (chromosome, contig)
-                        on which this feature is located
-        $description The feature's description (notes)
-        $start       The start position of this feature, relative to $ref
-        $end         The end position of this feature, relative to $ref
-        $segstart    The left end of $ref displayed in the detailed view
-        $segend      The right end of $ref displayed in the detailed view
+ $name The feature's name (group name)
+ $id The feature's id (eg, PK from a database)
+ $class The feature's class (group class)
+ $method The feature's method
+ $source The feature's source
+ $ref The name of the sequence segment (chromosome, contig)
+ on which this feature is located
+ $description The feature's description (notes)
+ $start The start position of this feature, relative to $ref
+ $end The end position of this feature, relative to $ref
+ $segstart The left end of $ref displayed in the detailed view
+ $segend The right end of $ref displayed in the detailed view
 
 For example, the wormbase.conf file uses this link rule:
 
-        link = http://www.wormbase.org/db/get?name=$name;class=$class
+ link = http://www.wormbase.org/db/get?name=$name;class=$class
 
 At run time, if the user clicks on an EST named yk1234.5, this will
 generate the URL
 
-        http://www.wormbase.org/db/get?name=yk1234.5;class=EST
+ http://www.wormbase.org/db/get?name=yk1234.5;class=EST
 
 It is possible to override the global link rule on a feature-by-feature
 basis. See the next section for details on this. It is also possible to
@@ -1179,7 +1179,7 @@ feature, or designate a named window or frame to receive the contents of
 the link. To do this, add the "link_target" option to the \[TRACK
 DEFAULTS\] section or to a track stanza. The format is this:
 
-          link_target = _blank
+ link_target = _blank
 
 The value uses the HTML targeting rules to name/create the window to
 receive the value of the link. The first time the link is accessed, a
@@ -1226,16 +1226,16 @@ declaration of a track. The order of track sections will become the
 default order of tracks on the display (the user can change this later).
 Here is a typical track declaration from yeast.conf:
 
-    [Genes]
-    feature      = gene:sgd
-    glyph        = generic
-    bgcolor      = yellow
-    forwardcolor = yellow
-    reversecolor = turquoise
-    strand_arrow = 1
-    height       = 6
-    description  = 1
-    key          = Named gene
+ [Genes]
+ feature = gene:sgd
+ glyph = generic
+ bgcolor = yellow
+ forwardcolor = yellow
+ reversecolor = turquoise
+ strand_arrow = 1
+ height = 6
+ description = 1
+ key = Named gene
 
 This track is named "Genes". You may use a short mnemonic if you prefer;
 this will make the URL shorter when the user bookmarks a view he or she
@@ -1262,7 +1262,7 @@ types displayed on a single track. Simply provide the feature option
 with a space-delimited list of the features you want to include. For
 example:
 
-       feature = gene:sgd stRNA:sgd
+ feature = gene:sgd stRNA:sgd
 
 This will include features of type "gene:sgd" and "stRNA:sgd" in the
 same track and display them in a similar fashion.
@@ -1278,7 +1278,7 @@ script, or a DAS source. When this option is active, the "feature"
 option and most of the glyph control options described below are
 ignored, but the "citation" and "key" options are honored. Example:
 
-    remote feature = http://www.wormbase.org/cgi-bin/das/wormbase?type=mRNA
+ remote feature = http://www.wormbase.org/cgi-bin/das/wormbase?type=mRNA
 
 glyph
 
@@ -1406,7 +1406,7 @@ other method. This is mostly useful for XY-plot data, where you may want
 to dynamically group related data points together so that they share the
 same vertical scaling. Example:
 
-           group_on = display_name
+ group_on = display_name
 
 (this feature is under refinement and may change in the future)
 
@@ -1422,17 +1422,17 @@ GBrowse display in addition to the default group called 'General'. For
 example, if you wanted several tracks to be in a separate group called
 "Genes", you would add this to each of the track definitions:
 
-     category = Genes
+ category = Genes
 
 As of GBrowse version 1.7, it is possible to create subcategories using
 this syntax:
 
-     [label1]
-     category = Genes:Coding
-     ...
+ [label1]
+ category = Genes:Coding
+ ...
 
-     [label2]
-     category = Genes:Non-coding
+ [label2]
+ category = Genes:Non-coding
 
 This will create a section in the tracks panel called "Genes", which
 will have two subsections called "Coding" and "Non-coding". The track
@@ -1476,26 +1476,26 @@ overview rather than as an option in the detailed view. For example,
 this stanza adds to the overview a set of features of method "gene",
 source "framework":
 
-    [framework:overview]
-    feature       = gene:framework
-    label         = 1
-    glyph         = generic
-    bgcolor       = lavender
-    height        = 5
-    key           = Mapped Genes
+ [framework:overview]
+ feature = gene:framework
+ label = 1
+ glyph = generic
+ bgcolor = lavender
+ height = 5
+ key = Mapped Genes
 
 Similarly, you can make a track appear in the region panel by appending
 ":region" to its name:
 
-    [genedensity:region]
-    feature       = gene_density
-    glyph         = xyplot
-    graph_type    = boxes
-    scale         = right
-    bgcolor       = red
-    fgcolor       = red
-    height        = 20
-    key           = SNP Density
+ [genedensity:region]
+ feature = gene_density
+ glyph = xyplot
+ graph_type = boxes
+ scale = right
+ bgcolor = red
+ fgcolor = red
+ height = 20
+ key = SNP Density
 
 ## Semantic Zooming
 
@@ -1506,24 +1506,24 @@ this, create a set of "length qualified" stanzas of format
 \<label\>, and \<zoom level\> indicates the minimum size of the region
 that the stanza will apply to. For example:
 
-     [gene]
-     feature = transcript:curated
-     glyph    = dna
-     fgcolor  = blue
-     key      = genes
-     citation = example semantic zoom track
+ [gene]
+ feature = transcript:curated
+ glyph = dna
+ fgcolor = blue
+ key = genes
+ citation = example semantic zoom track
 
-     [gene:500]
-     feature = transcript:curated
-     glyph   = transcript2
+ [gene:500]
+ feature = transcript:curated
+ glyph = transcript2
 
-     [gene:100000]
-     feature = transcript:curated
-     glyph   = arrow
+ [gene:100000]
+ feature = transcript:curated
+ glyph = arrow
 
-     [gene:500000]
-     feature = transcript:curated
-     glyph   = generic
+ [gene:500000]
+ feature = transcript:curated
+ glyph = generic
 
 This series of stanzas says to use the "transcript2" glyph when the
 segment being displayed is 500 bp or longer, to use the "arrow" glyph
@@ -1541,10 +1541,10 @@ example, if you want to change the color to red in when displaying genes
 on segments between 500 and 99,999 bp, you can modify the \[gene:500\]
 stanza as follows:
 
-     [gene:500]
-     feature = transcript:curated
-     glyph   = transcript2
-     fgcolor = red
+ [gene:500]
+ feature = transcript:curated
+ glyph = transcript2
+ fgcolor = red
 
 It is also possible to display different features at different zoom
 levels, although you should handle this potentially confusing feature
@@ -1553,8 +1553,8 @@ with care.
 If you wish to turn off a track entirely, you can use the "hide" flag to
 hide the track when the display exceeds a certain size:
 
-     [6_frame_translation:50000]
-     hide = 1
+ [6_frame_translation:50000]
+ hide = 1
 
 ## Computed Options
 
@@ -1566,11 +1566,11 @@ options, and any glyph-specific option that appears in a track section.
 You need to know the Perl programming language to take advantage of
 this. The general format of this type of option is:
 
-     option name = sub {
-                 some perl code;
-                 some more perl code;
-                 even more perl code;
-                 }
+ option name = sub {
+ some perl code;
+ some more perl code;
+ even more perl code;
+ }
 
 The value must begin with the sequence "sub {" in order to be recognized
 as a subroutine declaration. After this, you can have one or more lines
@@ -1596,11 +1596,11 @@ value is treated as the value of the corresponding option. For example,
 this bgcolor subroutine will call the feature's primary_tag() method,
 and return "blue" if it is an exon, "orange" otherwise:
 
-     bgcolor = sub {
-             my $feature = shift;
-             return "blue" if $feature->primary_tag eq 'exon';
-             return "orange";
-             }
+ bgcolor = sub {
+ my $feature = shift;
+ return "blue" if $feature->primary_tag eq 'exon';
+ return "orange";
+ }
 
 See the manual page for Bio::DB::GFF::Feature for information on how to
 interrogate the feature object.
@@ -1610,22 +1610,22 @@ differently, you may need access to all five arguments. Here is an
 example that draws the first and last parts of a feature in blue and the
 rest in red:
 
-      sub {
-            my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
-            return 'blue' if $part_no == 0;                # zero-based indexing!
-            return 'blue' if $part_no == $total_parts-1;   # zero-based indexing!
-            return 'red';
-            }
+ sub {
+ my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
+ return 'blue' if $part_no == 0; # zero-based indexing!
+ return 'blue' if $part_no == $total_parts-1; # zero-based indexing!
+ return 'red';
+ }
 
 If you need access to information in the parent of the feature (e.g. in
 a multipart feature), you can call the glyph's parent_feature() method:
 
-     sub {
-            my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
-            my $parent = $glyph->parent_feature;
-            return 'blue' if $parent->name =~ /Blue\d+/;
-            return 'red';
-            }
+ sub {
+ my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
+ my $parent = $glyph->parent_feature;
+ return 'blue' if $parent->name =~ /Blue\d+/;
+ return 'red';
+ }
 
 The parent_feature() method was added to Bioperl on 17 April 2008. If
 you are using an earlier version, parent_feature() will not be
@@ -1639,20 +1639,20 @@ consisting of the feature, the Bio::Graphics::Panel object, and the
 Bio::Graphics::Glyph object corresponding to the current track within
 the panel:
 
-     link = sub {
-                my ($feature, $panel, $track) = @_;
-                ... do something
-                }
+ link = sub {
+ my ($feature, $panel, $track) = @_;
+ ... do something
+ }
 
 Ordinarily you will only need to use the feature object. The other
 arguments are useful to look up panel-specific settings such as the
 pixel width of the panel or the state of the "flip" setting:
 
-     title = sub {
-             my ($feature,$panel,$track) = @_;
-             my $name = $feature->display_name;
-             return $panel->flip ? "$name (flipped)" : $name;
-          }
+ title = sub {
+ my ($feature,$panel,$track) = @_;
+ my $name = $feature->display_name;
+ return $panel->flip ? "$name (flipped)" : $name;
+ }
 
 ### Named Subroutine References
 
@@ -1662,44 +1662,44 @@ subroutines, add an init_code section to the \[GENERAL\] section of the
 configuration file. init_code should contain nothing but subroutine
 definitions and other initialization routines. For example:
 
-     init_code = sub score_color {
-                   my $feature = shift;
-                   if ($feature->score > 50) {
-                     return 'red';
-                   } else {
-                     return 'green';
-                   }
-                 }
-                 sub score_height {
-                   my $feature = shift;
-                   if ($feature->score > 50) {
-                     return 10;
-                   } else {
-                     return 5;
-                   }
-                 }
+ init_code = sub score_color {
+ my $feature = shift;
+ if ($feature->score > 50) {
+ return 'red';
+ } else {
+ return 'green';
+ }
+ }
+ sub score_height {
+ my $feature = shift;
+ if ($feature->score > 50) {
+ return 10;
+ } else {
+ return 5;
+ }
+ }
 
 Then simply refer to these subroutines using the \\name syntax:
 
-       [EST_ALIGNMENTS]
-       glyph = generic
-       bgcolor = \&score_color
-       height  = \&score_height
+ [EST_ALIGNMENTS]
+ glyph = generic
+ bgcolor = \&score_color
+ height = \&score_height
 
 You can declare global variables in the init_code subroutine if you use
 "no strict 'vars';" at the top of the section:
 
-       init_code = no strict 'vars';
-                   $HEIGHT = 10;
-                   sub score_height {
-                     my $feature = shift;
-                     $HEIGHT++;
-                     if ($feature->score > 50) {
-                       return $HEIGHT*2;
-                     } else {
-                       return $HEIGHT;
-                     }
-                   }
+ init_code = no strict 'vars';
+ $HEIGHT = 10;
+ sub score_height {
+ my $feature = shift;
+ $HEIGHT++;
+ if ($feature->score > 50) {
+ return $HEIGHT*2;
+ } else {
+ return $HEIGHT;
+ }
+ }
 
 Due to the way the configuration file is parsed, there must be no empty
 lines in the init_code section. Either use comments to introduce white
@@ -1710,10 +1710,10 @@ anonymous subroutines, will go into a package that changes unpredictably
 each time you load the page. If you need a predictable package name, you
 can define it this way:
 
-      init_code = package My; sub score_height { .... }
+ init_code = package My; sub score_height { .... }
 
-      [EST_ALIGNMENTS]
-      height = \&My::score_height
+ [EST_ALIGNMENTS]
+ height = \&My::score_height
 
 ## Declaring New Aggregators
 
@@ -1730,12 +1730,12 @@ this feature a method of "primary_transc" (for "primary transcript.")
 
 In a GFF file, a three-exon transcript might be represented as follows:
 
-    Chr1 confirmed primary_transc 100 500  .  +  .  Transcript "ABC.1"
-    Chr1 confirmed TSS            100 100  .  +  .  Transcript "ABC.1"
-    Chr1 confirmed exon           100 200  .  +  .  Transcript "ABC.1"
-    Chr1 confirmed exon           250 300  .  +  .  Transcript "ABC.1"
-    Chr1 confirmed exon           400 500  .  +  .  Transcript "ABC.1"
-    Chr1 confirmed polyA          500 500  .  +  .  Transcript "ABC.1"
+ Chr1 confirmed primary_transc 100 500 . + . Transcript "ABC.1"
+ Chr1 confirmed TSS 100 100 . + . Transcript "ABC.1"
+ Chr1 confirmed exon 100 200 . + . Transcript "ABC.1"
+ Chr1 confirmed exon 250 300 . + . Transcript "ABC.1"
+ Chr1 confirmed exon 400 500 . + . Transcript "ABC.1"
+ Chr1 confirmed polyA 500 500 . + . Transcript "ABC.1"
 
 To aggregate this, you would like to create an aggregator named
 "transcript", whose "main method" is "primary_transc", and whose "sub
@@ -1744,7 +1744,7 @@ methods" are "TSS," "exon," and "polyA."
 The way to indicate this in the configuration file is to add a "complex
 aggregator" to the list of aggregators:
 
-     aggregators = transcript{TSS,exon,polyA/primary_transc}
+ aggregators = transcript{TSS,exon,polyA/primary_transc}
 
 The format of this value is
 "aggregator_name{submethod1,submethod2,.../mainmethod}".
@@ -1752,32 +1752,32 @@ The format of this value is
 You can now use the name of the aggregator name as the argument of the
 "feature" option in a track section:
 
-     [Transcripts]
-     feature      = transcript
-     glyph        = segments
-     bgcolor      = wheat
-     fgcolor      = black
-     height       = 10
-     key          = Transcripts
+ [Transcripts]
+ feature = transcript
+ glyph = segments
+ bgcolor = wheat
+ fgcolor = black
+ height = 10
+ key = Transcripts
 
 If you do not have a main subfeature, leave off the "/mainmethod". For
 example:
 
-     aggregators = transcript{TSS,exon,polyA}
+ aggregators = transcript{TSS,exon,polyA}
 
 A few formatting notes. You are free to mix simple and complex
 aggregators in the "aggregator" option. For example, you can activate
 the standard "clone" and "alignment" aggregators as well as the new
 transcript aggregator with a line like this one:
 
-    aggregators = clone
-                  transcript{TSS,exon,polyA/primary_transc}
-                  alignment
+ aggregators = clone
+ transcript{TSS,exon,polyA/primary_transc}
+ alignment
 
 If the complex aggregator contains whitespace or apostrophes, you must
 surround it with double-quotes, like this:
 
-      "transcript{TSS,5'UTR,3'UTR,exon,polyA/primary_transc}"
+ "transcript{TSS,5'UTR,3'UTR,exon,polyA/primary_transc}"
 
 Be aware that some glyphs look for particular method names when
 rendering aggregated features. For example, the standard "transcript"
@@ -1787,14 +1787,14 @@ submethods named "intron", "exon" and "CDS", and a main method named
 
 Here is the list of available predefined aggregators:
 
-        alignment
-        clone
-        coding
-        transcript
-        none
-        orf
-        waba_alignment
-        wormbase_gene
+ alignment
+ clone
+ coding
+ transcript
+ none
+ orf
+ waba_alignment
+ wormbase_gene
 
 To view the documentation for any of these aggregators, run the command
 "perldoc Bio::DB::GFF::Aggregator::aggregator_name", where
@@ -1816,7 +1816,7 @@ or "3" depending on whether the read was from the 5' or 3' ends of the
 insert. To group these pairs by a dotted line, specify the
 "group_pattern" option in the appropriate track section:
 
-         group_pattern =  /\.[53]$/
+ group_pattern = /\.[53]$/
 
 At render time, gbrowse will strip off this pattern from the names of
 all features in the EST track and group those that have a common base
@@ -1829,7 +1829,7 @@ pattern results in related features sharing the same name. For example,
 if the convention were "est.for.501283" and "est.rev.501283", then this
 grouping pattern would have the desired effect:
 
-         group_pattern = /\.(for|rev)\./
+ group_pattern = /\.(for|rev)\./
 
 Don't forget to escape regular expression meta-characters and to
 consider the various ways in which the regular expression might break.
@@ -1850,10 +1850,10 @@ feature.
 You can control, to some extent, the formatting of the tag value table
 by providing a configuration stanza with the following format:
 
-     [feature_type:details]
-     tag1 = formatting rule
-     tag2 = formatting rule
-     tag3 = formatting rule
+ [feature_type:details]
+ tag1 = formatting rule
+ tag2 = formatting rule
+ tag3 = formatting rule
 
 "feature_type" is the type of the feature you wish to control. For
 example, "gene:sgd" or simply "gene". "tag1", "tag2", etc. are the tags
@@ -1879,20 +1879,20 @@ through.
 For example, here is a simple way to boldface the Type field, italicize
 the Length field, and turn the Notes into a Google search:
 
-     [gene:details]
-     Type   = <b>$value</b>
-     Length = <b>$value</b>
-     Note  = <a href="http://www.google.com/search?q=$value">$value</a>
+ [gene:details]
+ Type = <b>$value</b>
+ Length = <b>$value</b>
+ Note = <a href="http://www.google.com/search?q=$value">$value</a>
 
 If you provide a callback, the callback subroutine will be invoked with
 three arguments. WARNING: the three arguments are different from the
 ones passed to other callbacks, and consist of the tag value, the tag
 name, and the current feature:
 
-     Note = sub {
-                my($value,$tag_name,$feature) = @_;
-                do something....
-                }
+ Note = sub {
+ my($value,$tag_name,$feature) = @_;
+ do something....
+ }
 
 You can use this feature to format sequence attributes nicely. For
 example, if your features have a Translation attribute which contains
@@ -1901,12 +1901,12 @@ default formatting of these features. You can modify this with a
 callback that word-wraps the value into lines of at most 60 characters,
 and puts the whole thing in a \<pre\> section.
 
-    [gene:details]
-    Translation = sub {
-                   my $value = shift;
-                   $value =~ s/(\S{1,60})/$1\n/g;
-                   "<pre>$value</pre>";
-                }
+ [gene:details]
+ Translation = sub {
+ my $value = shift;
+ $value =~ s/(\S{1,60})/$1\n/g;
+ "<pre>$value</pre>";
+ }
 
 ## Linking out from gbrowse_details
 
@@ -1922,20 +1922,20 @@ containing a string to be transformed into the URL.
 
 For example, to link to a local cgi script from the following GFF line:
 
-    IV     curated exon    518     550     . + .   Transcript B0273.1; local_id 11723
+ IV curated exon 518 550 . + . Transcript B0273.1; local_id 11723
 
 one might add the following stanza to the configuration file:
 
-       [local_id:DETAILS]
-       URL   = http://localhost/cgi-bin/localLookup.cgi?tag=$tag;id=$value
+ [local_id:DETAILS]
+ URL = http://localhost/cgi-bin/localLookup.cgi?tag=$tag;id=$value
 
 The URL option's value should be a URL containing one or more variables.
 Variables begin with a dollar sign (\$), and are replaced at run time
 with the information relating to the selected feature attribute.
 Recognized variables are:
 
-        $tag        The "tag" of the tag/value pair
-        $value      The "value" of the tag/value pair
+ $tag The "tag" of the tag/value pair
+ $value The "value" of the tag/value pair
 
 The value of URL can also be an anonymous subroutine, in which case the
 subroutine will be invoked with a two-element argument list consisting
@@ -1943,14 +1943,14 @@ of the name of the tag and its value. This example, provided by Cyril
 Pommier, will convert Dbxref tags into links to NCBI, provided that the
 value of the tag looks like an NCBI GI number:
 
-    [Dbxref:DETAILS]
-    URL = sub {
-          my ($tag,$value)=@_;
-          if ($value =~ /NCBI_gi:(.+)/){
-           return "http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi?term=$1";
-           }
-           return;
-         }
+ [Dbxref:DETAILS]
+ URL = sub {
+ my ($tag,$value)=@_;
+ if ($value =~ /NCBI_gi:(.+)/){
+ return "http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi?term=$1";
+ }
+ return;
+ }
 
 ## Configuring Balloon Tooltips
 
@@ -1995,8 +1995,8 @@ load it as usual. Now you must tell GBrowse to reverse these changes.
 Enter the following options into the \[GENERAL\] section of the
 configuration file:
 
-    units = M
-    unit_divider = 100
+ units = M
+ unit_divider = 100
 
 These two options tell GBrowse to use "M" (Morgan) units, and to divide
 all coordinates by 100. GBrowse will automatically display the scale
@@ -2009,13 +2009,13 @@ If you wish to change the location of the gbrowse.conf configuration
 file directory, you must manually edit the gbrowse CGI script. Open the
 script in a text editor, and find this section:
 
-    ###################################################################
-    # Non-modperl users should change this variable if needed to point
-    # to the directory in which the configuration files are stored.
-    #
-    use constant CONF_DIR => '/usr/local/apache/conf/gbrowse.conf';
-    #
-    ###################################################################
+ ###################################################################
+ # Non-modperl users should change this variable if needed to point
+ # to the directory in which the configuration files are stored.
+ #
+ use constant CONF_DIR => '/usr/local/apache/conf/gbrowse.conf';
+ #
+ ###################################################################
 
 Change the definition of CONF_DIR to the desired location of the
 configuration files.
@@ -2025,13 +2025,13 @@ per-directory variable to the configuration for the directory in which
 the gbrowse script lives. This variable overrides the CONF_DIR value.
 For example:
 
-    <Directory /usr/local/apache/cgi-perl>
-      SetHandler      perl-script
-      PerlHandler     Apache::Registry
-      PerlSendHeader  On
-      Options         +ExecCGI
-      PerlSetVar      GBrowseConf /etc/gbrowse.conf
-    </Directory>
+ <Directory /usr/local/apache/cgi-perl>
+ SetHandler perl-script
+ PerlHandler Apache::Registry
+ PerlSendHeader On
+ Options +ExecCGI
+ PerlSetVar GBrowseConf /etc/gbrowse.conf
+ </Directory>
 
 # Using DAS (Distributed Annotation System) Databases
 
@@ -2053,15 +2053,15 @@ a little crowdy. The administrator can decide to show only the top 5 of
 the blast hits. This can easily be accomplished by adding the filter
 option in the conf file. It might look like this:
 
-     [BLAST]
-     feature       = blast
-     glyph         = segments
-     filter = sub {
-                    my $feat = shift;
-                    (my $rank) = $feat->get_tag_values('rank'); # persistent Bio::SeqFeature::Generic features
-                    #(my $rank) = $feat->attributes('rank'); # Bio::DB::GFF::Feature
-                    $rank < 6;
-                  }
+ [BLAST]
+ feature = blast
+ glyph = segments
+ filter = sub {
+ my $feat = shift;
+ (my $rank) = $feat->get_tag_values('rank'); # persistent Bio::SeqFeature::Generic features
+ #(my $rank) = $feat->attributes('rank'); # Bio::DB::GFF::Feature
+ $rank < 6;
+ }
 
 Another useful example is to show features coming from a plain genbank
 file. When loaded into BioSQL the source becomes
@@ -2072,21 +2072,21 @@ source string. This problem can be solved using the filter option. In
 the following example the difference between the features is done based
 on the primary_tag
 
-     [REGION]
-     feature      = EMBL/GenBank/SwissProt
-     filter       = sub {
-                     my $feat = shift;
-                     $feat->primary_tag =~ /region/i;
-                    }
-     key          = RefSeq Protein Domains
+ [REGION]
+ feature = EMBL/GenBank/SwissProt
+ filter = sub {
+ my $feat = shift;
+ $feat->primary_tag =~ /region/i;
+ }
+ key = RefSeq Protein Domains
 
-     [SIGPEPTIDE]
-     feature      = EMBL/GenBank/SwissProt
-     filter       = sub {
-                     my $feat = shift;
-                     $feat->primary_tag =~ /sig_peptide/i;
-                    }
-     key          = RefSeq Signal Peptide
+ [SIGPEPTIDE]
+ feature = EMBL/GenBank/SwissProt
+ filter = sub {
+ my $feat = shift;
+ $feat->primary_tag =~ /sig_peptide/i;
+ }
+ key = RefSeq Signal Peptide
 
 # Invoking GBrowse URLs
 
@@ -2099,8 +2099,8 @@ GBrowse creates lots of cache files as it operates, and it does not
 garbage collect them automatically. To keep the cache files under
 control, you should run the following cron job at regular intervals:
 
-            cd HTDOCS/gbrowse/tmp
-            find . -type f -atime +20 -print -exec rm {} \;
+ cd HTDOCS/gbrowse/tmp
+ find . -type f -atime +20 -print -exec rm {} \;
 
 Be sure to replace HTDOCS with the path to your web server HTML document
 root directory, and make sure that the cron job runs under has the

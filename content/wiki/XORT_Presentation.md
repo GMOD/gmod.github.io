@@ -7,75 +7,75 @@ This Wiki section is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf" class="internal"
 title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Chado
-  XML](#Chado_XML)
+ XML](#Chado_XML)
 - [Components](#Components)
 - [Highlights of
-  Chado XML
-  Specification](#Highlights_of_Chado_XML_Specification)
+ Chado XML
+ Specification](#Highlights_of_Chado_XML_Specification)
 - [Putting it
-  together: New FlyBase dataflow Part
-  1](#Putting_it_together:_New_FlyBase_dataflow_Part_1)
+ together: New FlyBase dataflow Part
+ 1](#Putting_it_together:_New_FlyBase_dataflow_Part_1)
 - [Putting it
-  together: New FlyBase dataflow Part
-  2](#Putting_it_together:_New_FlyBase_dataflow_Part_2)
+ together: New FlyBase dataflow Part
+ 2](#Putting_it_together:_New_FlyBase_dataflow_Part_2)
 - [Data & Report
-  Generation](#Data_.26_Report_Generation)
+ Generation](#Data_.26_Report_Generation)
 - [Hibernate &
-  XORT](#Hibernate_.26_XORT)
+ XORT](#Hibernate_.26_XORT)
 - [Support for
-  complex transactions using
-  XORT](#Support_for_complex_transactions_using_XORT)
+ complex transactions using
+ XORT](#Support_for_complex_transactions_using_XORT)
 - [CHIA (Chado
-  Interface
-  Application)](#CHIA_.28Chado_Interface_Application.29)
+ Interface
+ Application)](#CHIA_.28Chado_Interface_Application.29)
 - [Documentation](#Documentation)
 - [Acknowledgements](#Acknowledgements)
 
 ##### Introduction
 
 - An [XML](/wiki/Glossary#XML)-database mapping system for data
-  exchange between DB and XML-driven application
+ exchange between DB and XML-driven application
 - [XORT](/wiki/XORT) can handle typical XML, it's not
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>-specific
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>-specific
 - Developed/Supported by Pinglei Zhou at FlyBase Harvard, 0.007 version
-  now.
+ now.
 - Used at all FlyBase sites
-  - Harvard has extensive library of Perl modules for generating
-    ChadoXML
+ - Harvard has extensive library of Perl modules for generating
+ ChadoXML
 - Written in Perl
 - Required Perl modules:
-  - <a href="http://search.cpan.org/perldoc?XML::Parser::PerlSAX"
-    class="external text" rel="nofollow">XML::Parser::PerlSAX</a>
-  - <a href="http://search.cpan.org/perldoc?Unicode::String"
-    class="external text" rel="nofollow">Unicode::String</a>
-  - <a href="http://search.cpan.org/perldoc?XML::DOM" class="external text"
-    rel="nofollow">XML::DOM</a>
-  - <a href="http://search.cpan.org/perldoc?DBI" class="external text"
-    rel="nofollow">DBI</a>
+ - <a href="http://search.cpan.org/perldoc?XML::Parser::PerlSAX"
+ class="external text" rel="nofollow">XML::Parser::PerlSAX</a>
+ - <a href="http://search.cpan.org/perldoc?Unicode::String"
+ class="external text" rel="nofollow">Unicode::String</a>
+ - <a href="http://search.cpan.org/perldoc?XML::DOM" class="external text"
+ rel="nofollow">XML::DOM</a>
+ - <a href="http://search.cpan.org/perldoc?DBI" class="external text"
+ rel="nofollow">DBI</a>
 
 ##### Chado XML
 
 - Is [Chado XML](/wiki/Chado_XML) necessary? No, but it may help
-  you.
+ you.
 - ChadoXML assists with incremental updates, if you want to avoid
-  flush-and-reload.
+ flush-and-reload.
 - While update can be achieved by other middleware (for example, perl
-  Class::DBI, Java Hibernate), ChadoXML provide additional feature as
-  way to archive your transaction.
+ Class::DBI, Java Hibernate), ChadoXML provide additional feature as
+ way to archive your transaction.
 - It provides bulk update/download which other methods lack or is
-  inefficient
+ inefficient
 
 ##### Components
 
 - Database & Schema
 - ChadoXML Specification
 - DumpSpec
-  - DumpSpec files are simple XML files that tell XORT what to do
-  - DumpSpec files are *language independent*, being XML
-  - It's fairly easy for those who know the schema to read these files
-    and understand what the operation is
+ - DumpSpec files are simple XML files that tell XORT what to do
+ - DumpSpec files are *language independent*, being XML
+ - It's fairly easy for those who know the schema to read these files
+ and understand what the operation is
 
 ##### Highlights of Chado XML Specification
 
@@ -120,25 +120,25 @@ power users.
 ##### Data & Report Generation
 
 - Content of all output files is controlled by XML dumpspecs.
-  - Dumpspecs are language independent.
-  - Easily readable (with knowledge of Chado structure).
+ - Dumpspecs are language independent.
+ - Easily readable (with knowledge of Chado structure).
 - All XML transformation steps are done with XSLT v2.
-  - Saxon XSLT
-    (<a href="http://saxon.sourceforge.net/" class="external free"
-    rel="nofollow">http://saxon.sourceforge.net/</a>)
-  - ChadoXML is split into individual chunks before XSLT processing to
-    accommodate large file sizes.
-  - Extremely fast. We can process all data for ~60,000 Drosophila genes
-    in under 30 minutes.
+ - Saxon XSLT
+ (<a href="http://saxon.sourceforge.net/" class="external free"
+ rel="nofollow">http://saxon.sourceforge.net/</a>)
+ - ChadoXML is split into individual chunks before XSLT processing to
+ accommodate large file sizes.
+ - Extremely fast. We can process all data for ~60,000 Drosophila genes
+ in under 30 minutes.
 
 ##### Hibernate & XORT
 
 - Hibernate didn't scale well when dealing with 5,000+ features in bulk.
-  - The test was simply calling `print()` statements
+ - The test was simply calling `print()` statements
 - Performance tweaks for Hibernate can be quite complicated to setup for
-  bulk operations.
+ bulk operations.
 - XORT is currently handling ~6 million features in production with only
-  minor performance problems.
+ minor performance problems.
 - XORT is much more language independent.
 
 ##### Support for complex transactions using XORT
@@ -152,9 +152,9 @@ Step 1. Dump all data use simple dumpspec
 
 ``` de1
  <chado>
-  <feature dump=“all”>
-   <uniquename test=“eq”>x</uniquename>
-  </feature>
+ <feature dump=“all”>
+ <uniquename test=“eq”>x</uniquename>
+ </feature>
  </chado>
 ```
 
@@ -180,14 +180,14 @@ needed.
 ##### Documentation
 
 - *Using Chado to Store Genome Annotation Data"*
-  - Current Protocols in Bioinformatics (Baxevanis, A.D., and Davison,
-    D.B., eds) 2, 9.6.1-9.6.28.
+ - Current Protocols in Bioinformatics (Baxevanis, A.D., and Davison,
+ D.B., eds) 2, 9.6.1-9.6.28.
 - XORT specification docs
 - XORT draft (unpublished)
 - GMOD case demo procedure
-  - All in the doc directory of XORT package,
-    <a href="http://www.gmod.org" class="external free"
-    rel="nofollow">http://www.gmod.org</a>
+ - All in the doc directory of XORT package,
+ <a href="http://www.gmod.org" class="external free"
+ rel="nofollow">http://www.gmod.org</a>
 
 ##### Acknowledgements
 

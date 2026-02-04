@@ -61,14 +61,14 @@ Please send resumes and vitaes to **Todd Harris (todd@wormbase.org)**.
 - **email me** at todd@wormbase.org
 - **call me** on skype: toddharris.phd
 - **find me** on google+/gchat:
-  <a href="https://plus.google.com/u/2/110418008431460860105/about/p/pub"
-  class="external text" rel="nofollow">toddwharris</a>
+ <a href="https://plus.google.com/u/2/110418008431460860105/about/p/pub"
+ class="external text" rel="nofollow">toddwharris</a>
 - **read** a <a
-  href="http://blog.wormbase.org/2011/10/19/wormbase-now-hiring-web-architectdeveloper/"
-  class="external text" rel="nofollow">blog post about the position</a>
+ href="http://blog.wormbase.org/2011/10/19/wormbase-now-hiring-web-architectdeveloper/"
+ class="external text" rel="nofollow">blog post about the position</a>
 - **see** the <a
-  href="https://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=663696"
-  class="external text" rel="nofollow">official job posting at OICR</a>
+ href="https://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=663696"
+ class="external text" rel="nofollow">official job posting at OICR</a>
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/10/20*
 

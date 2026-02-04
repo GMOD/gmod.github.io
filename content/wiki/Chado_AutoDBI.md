@@ -3,7 +3,7 @@ title: "Chado%253A%253AAutoDBI"
 ---
 # Chado%253A%253AAutoDBI
 
-  Description](#Description)
+ Description](#Description)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
@@ -24,16 +24,16 @@ project which is a generic ORM/website code generation tool.
 ## Requirements
 
 - Chado. See [Chado - Getting
-  Started](/wiki/Chado_-_Getting_Started)
+ Started](/wiki/Chado_-_Getting_Started)
 - <a href="http://search.cpan.org/perldoc?Class::DBI"
-  class="external text" rel="nofollow">Class::DBI</a>
+ class="external text" rel="nofollow">Class::DBI</a>
 
 ## Documentation
 
 - [Chado::AutoDBI
-  Presentation](/wiki/Chado_AutoDBI_Presentation)
+ Presentation](/wiki/Chado_AutoDBI_Presentation)
 - [GMOD Middleware](/wiki/GMOD_Middleware) - discusses
-  different packages, contains section on Chado%253A%253AAutoDBI
+ different packages, contains section on Chado%253A%253AAutoDBI
 
 ## Contact
 

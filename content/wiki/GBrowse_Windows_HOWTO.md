@@ -3,20 +3,20 @@ title: "GBrowse Windows HOWTO"
 ---
 # GBrowse Windows HOWTO
 
-  WARNING](#WARNING)
+ WARNING](#WARNING)
 - [Abstract](#Abstract)
 - [Windows
-  Installation](#Windows_Installation)
-  - [Install
-    ActiveState Perl](#Install_ActiveState_Perl)
-  - [Install
-    the Apache web server](#Install_the_Apache_web_server)
-  - [Install
-    the MySQL database
-    (optional)](#Install_the_MySQL_database_.28optional.29)
-  - [Install
-    GBrowse and its Perl
-    Dependencies](#Install_GBrowse_and_its_Perl_Dependencies)
+ Installation](#Windows_Installation)
+ - [Install
+ ActiveState Perl](#Install_ActiveState_Perl)
+ - [Install
+ the Apache web server](#Install_the_Apache_web_server)
+ - [Install
+ the MySQL database
+ (optional)](#Install_the_MySQL_database_.28optional.29)
+ - [Install
+ GBrowse and its Perl
+ Dependencies](#Install_GBrowse_and_its_Perl_Dependencies)
 - [Authors](#Authors)
 
 ## WARNING
@@ -108,31 +108,31 @@ works best when <a href="http://apache.org" class="external text"
 
 default locations. Execute the command in the DOS command shell:
 
-     perl gbrowse_netinstall.pl
+ perl gbrowse_netinstall.pl
 
 And answer questions that are presented (the defaults will be acceptable
 most of the time, but be careful if you've changed the location of
 ActiveState and/or Apache!). A few notes:
 
 - The script requires the LWP Perl package be installed, but it comes by
-  default with ActiveState Perl 5.8.
+ default with ActiveState Perl 5.8.
 - The script also works for Linux and MacOS as long as it is run as root
-  (e.g. with `sudo`). Please see the [GBrowse](/wiki/GBrowse)
-  install doc for more information on what this script is doing.
+ (e.g. with `sudo`). Please see the [GBrowse](/wiki/GBrowse)
+ install doc for more information on what this script is doing.
 - *This is out of date, as the bulk loader doesn't yet support pulling
-  GBrowse from git.* If you want to use the `-d`, `--bioperl_dev`, or
-  `--gbrowse_dev` options (to install from
-  <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a>), you must have
-  a <a href="/wiki/Subversion" class="mw-redirect"
-  title="Subversion">Subversion</a> client installed, such as
-  <a href="http://tortoisesvn.tigris.org/" class="external text"
-  rel="nofollow">TortoiseSVN</a> or
-  <a href="http://rapidsvn.tigris.org/" class="external text"
-  rel="nofollow">RapidSVN</a> or
-  <a href="http://www.xptweaks.net/" class="external text"
-  rel="nofollow">xp tweaks</a>
+ GBrowse from git.* If you want to use the `-d`, `--bioperl_dev`, or
+ `--gbrowse_dev` options (to install from
+ <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a>), you must have
+ a <a href="/wiki/Subversion" class="mw-redirect"
+ title="Subversion">Subversion</a> client installed, such as
+ <a href="http://tortoisesvn.tigris.org/" class="external text"
+ rel="nofollow">TortoiseSVN</a> or
+ <a href="http://rapidsvn.tigris.org/" class="external text"
+ rel="nofollow">RapidSVN</a> or
+ <a href="http://www.xptweaks.net/" class="external text"
+ rel="nofollow">xp tweaks</a>
 
 ## Authors
 
-- [Lincoln Stein](/wiki/User:Lstein)
-- [Scott Cain](/wiki/User:Scott)
+- Lincoln Stein
+- Scott Cain

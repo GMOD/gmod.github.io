@@ -23,13 +23,13 @@ wait for the next official release. Please note, however, that
 components pulled from SVN are **development** versions, and may not
 always work as expected.
 
-  Repositories</span>](#Browsing_SVN_Repositories)
+ Repositories</span>](#Browsing_SVN_Repositories)
 - [SVN Read-only
-  Access](#SVN_Read-only_Access)
+ Access](#SVN_Read-only_Access)
 - [SVN Developer
-  Access](#SVN_Developer_Access)
+ Access](#SVN_Developer_Access)
 - [Legacy CVS
-  Read-only Access](#Legacy_CVS_Read-only_Access)
+ Read-only Access](#Legacy_CVS_Read-only_Access)
 
 ## Browsing SVN Repositories
 
@@ -42,7 +42,7 @@ The GMOD [SVN](/wiki/Glossary#SVN) repository can be checked out
 through anonymous SVN with the following instruction set. The module you
 wish to check out must be specified in place of **PROJECTNAME**.
 
-    svn co https://gmod.svn.sourceforge.net/svnroot/gmod/PROJECTNAME/trunk
+ svn co https://gmod.svn.sourceforge.net/svnroot/gmod/PROJECTNAME/trunk
 
 See <a href="http://gmod.svn.sourceforge.net/" class="external free"
 
@@ -72,15 +72,15 @@ The module you wish to check out must be specified as the *modulename*.
 When prompted for a password for anonymous, simply press the Enter or
 Return key.
 
-    cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod login
-    cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co modulename
+ cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod login
+ cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co modulename
 
 If you need to check out a particular revision/tag in the repository,
 add *-r tag_name* to the command. For example, if you needed the
 'stable' branch of the GBrowse repository, you would do this in your
 checkout command:
 
-     cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co -r stable Generic-Genome-Browser
+ cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co -r stable Generic-Genome-Browser
 
 See <a href="http://gmod.cvs.sourceforge.net/" class="external free"
 

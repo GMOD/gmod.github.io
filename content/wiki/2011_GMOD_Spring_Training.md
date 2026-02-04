@@ -15,24 +15,24 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="600" height="177"
 alt="March 2011 GMOD Spring Training Participants, minus a few" />
 
-  Sessions → Online
-  Tutorials</span>](#Course_Sessions_.E2.86.92_Online_Tutorials)
+ Sessions → Online
+ Tutorials</span>](#Course_Sessions_.E2.86.92_Online_Tutorials)
 - [Schedule](#Schedule)
 - [Instructors](#Instructors)
 - [Prerequisites](#Prerequisites)
 - [System
-  Requirements](#System_Requirements)
-  - [VMware on
-    Windows and Linux](#VMware_on_Windows_and_Linux)
-  - [VMware on
-    Mac OS X](#VMware_on_Mac_OS_X)
+ Requirements](#System_Requirements)
+ - [VMware on
+ Windows and Linux](#VMware_on_Windows_and_Linux)
+ - [VMware on
+ Mac OS X](#VMware_on_Mac_OS_X)
 - [Applications](#Applications)
 - [Costs](#Costs)
 - [Sponsors](#Sponsors)
 - [Get the Word
-  Out!](#Get_the_Word_Out.21)
+ Out!](#Get_the_Word_Out.21)
 - [Travel,
-  Lodging and Meals](#Travel.2C_Lodging_and_Meals)
+ Lodging and Meals](#Travel.2C_Lodging_and_Meals)
 - [Feedback](#Feedback)
 
 The ***2011 GMOD Spring Training*** was held March 8-12 at the
@@ -182,7 +182,7 @@ project staff:
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse) | <a href="http://www.oicr.on.ca/" class="external text" |
+| Scott Cain | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse) | <a href="http://www.oicr.on.ca/" class="external text" |
 
 # Prerequisites
 
@@ -192,8 +192,8 @@ Requirements](/wiki/Computing_Requirements)). By "a
 minimal level of Linux systems administration knowledge" we mean that
 participants should be
 
-1.  Comfortable with the Linux command line interface, and
-2.  Comfortable installing packages under Linux.
+1. Comfortable with the Linux command line interface, and
+2. Comfortable installing packages under Linux.
 
 *A good benchmark for this level of knowledge is that you should be able
 to get a basic [GBrowse
@@ -226,19 +226,19 @@ course:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windows" /></a> | <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
-alt="Linux" /> | A free VMware player is available for  and  [operating systems](/wiki/Glossary#Operating_System) from <a href="http://vmware.com/products/player/" class="external text"
+alt="Linux" /> | A free VMware player is available for and [operating systems](/wiki/Glossary#Operating_System) from <a href="http://vmware.com/products/player/" class="external text"
 
 ### VMware on Mac OS X
 
 |----|----|
-| <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img |  |
+| <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a> | Participants can also bring *newer Macs with Intel processors*. The Intel processor is a requirement for all the packages discussed below. There is no free VMware player that runs *directly* under . However, there are several other options, **all of which require an Intel Mac**: |
 
 VMware Fusion
 
 |----|----|
-| <a href="http://www.vmware.com/products/fusion/" rel="nofollow" |  |
+| <a href="http://www.vmware.com/products/fusion/" rel="nofollow" | |
 title="Fusion"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg"
 width="48" height="48" alt="Fusion" /></a> | <a href="http://www.vmware.com/products/fusion/" class="external text"
 
@@ -247,7 +247,7 @@ class="external text" rel="nofollow">$40/Academic</a>) allows you to run VMware 
 VirtualBox
 
 |----|----|
-| <img |  |
+| <img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/VirtualBox-logo.png" width="48"
 height="48" alt="VirtualBox-logo.png" /> | <a href="http://www.virtualbox.org/wiki/Downloads" class="external text"
 
@@ -445,14 +445,14 @@ overall.</strong></td>
 The "Yes, with reservations" responses were:
 
 - This workshop is meant more for bioinformaticians than for biologists.
-  That would be my 'reservation'.
+ That would be my 'reservation'.
 - This is an amazing course. I learned more than I expected and all the
-  instructors were great.
+ instructors were great.
 - I was actually surprised at how many of the researchers in the room
-  were comfortable with the somewhat involved installations. You
-  definitely have to be comfortable not just with command line, but with
-  a lot of Unix concepts... This course would not be for someone
-  shackled to Mac or Win and clicky interfaces, I don't think...
-  Conversely, an IT person with no biology background might also get a
-  bit overwhelmed...
+ were comfortable with the somewhat involved installations. You
+ definitely have to be comfortable not just with command line, but with
+ a lot of Unix concepts... This course would not be for someone
+ shackled to Mac or Win and clicky interfaces, I don't think...
+ Conversely, an IT person with no biology background might also get a
+ bit overwhelmed...
 - I feel some sessions need more time.

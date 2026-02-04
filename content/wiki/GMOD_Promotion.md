@@ -11,27 +11,27 @@ width="310" height="147" alt="Powered by GMOD" />
 There are a number of resources available to help spread the word about
 the GMOD project. This serves (at least) three interrelated purposes.
 
-1.  It lets people know where tools come from and gives them an idea of
-    how they can learn more. Telling people about GMOD can help them
-    from being overwhelmed by their data.
-2.  This increased visibility leads to increased adoption of tools and
-    that leads to more people contributing back to the project.
-3.  Increased adoption and development help the project and the
-    components get funding.
+1. It lets people know where tools come from and gives them an idea of
+ how they can learn more. Telling people about GMOD can help them
+ from being overwhelmed by their data.
+2. This increased visibility leads to increased adoption of tools and
+ that leads to more people contributing back to the project.
+3. Increased adoption and development help the project and the
+ components get funding.
 
-  GMOD</span>](#Citing_GMOD)
+ GMOD</span>](#Citing_GMOD)
 - [Powered by
-  GMOD](#Powered_by_GMOD)
+ GMOD](#Powered_by_GMOD)
 - [Speakers](#Speakers)
 - [Presentation
-  Material](#Presentation_Material)
-  - [Graphics](#Graphics)
-  - [Slides](#Slides)
-  - [Statistics](#Statistics)
+ Material](#Presentation_Material)
+ - [Graphics](#Graphics)
+ - [Slides](#Slides)
+ - [Statistics](#Statistics)
 - [Presentation
-  and Event Promotion](#Presentation_and_Event_Promotion)
+ and Event Promotion](#Presentation_and_Event_Promotion)
 - [Mugs,
-  T-Shirts, Buttons, ...](#Mugs.2C_T-Shirts.2C_Buttons.2C_...)
+ T-Shirts, Buttons, ...](#Mugs.2C_T-Shirts.2C_Buttons.2C_...)
 - [Brochures](#Brochures)
 
 ## Citing GMOD

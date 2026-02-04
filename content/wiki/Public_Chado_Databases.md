@@ -3,14 +3,14 @@ title: "Public Chado Databases"
 ---
 # Public Chado Databases
 
-  Genome Database
-  Releases</span>](#Public_Chado_Genome_Database_Releases)
-  - [Chado
-    PostgreSQL Dumps](#Chado_PostgreSQL_Dumps)
-  - [Direct
-    Chado Access](#Direct_Chado_Access)
-    - [FlyBase](#FlyBase)
-    - [GeneDB](#GeneDB)
+ Genome Database
+ Releases</span>](#Public_Chado_Genome_Database_Releases)
+ - [Chado
+ PostgreSQL Dumps](#Chado_PostgreSQL_Dumps)
+ - [Direct
+ Chado Access](#Direct_Chado_Access)
+ - [FlyBase](#FlyBase)
+ - [GeneDB](#GeneDB)
 
 # Public <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> <a href="/wiki/Genome" class="mw-redirect" title="Genome">Genome</a> Database Releases
 
@@ -21,36 +21,36 @@ These projects provide
 dumps that you can copy and learn from.
 
 - :
-  <a href="/wiki/ftp://ftp.flybase.org/releases/current/psql/"
-  class="external free"
-  rel="nofollow">ftp://ftp.flybase.org/releases/current/psql/</a> -
-  Contains 12 Drosophila genomes.
+ <a href="/wiki/ftp://ftp.flybase.org/releases/current/psql/"
+ class="external free"
+ rel="nofollow">ftp://ftp.flybase.org/releases/current/psql/</a> -
+ Contains 12 Drosophila genomes.
 - [ParameciumDB](/wiki/ParameciumDB):
-  <a href="http://paramecium.cgm.cnrs-gif.fr/download/sql/"
-  class="external free"
-  rel="nofollow">http://paramecium.cgm.cnrs-gif.fr/download/sql/</a>
+ <a href="http://paramecium.cgm.cnrs-gif.fr/download/sql/"
+ class="external free"
+ rel="nofollow">http://paramecium.cgm.cnrs-gif.fr/download/sql/</a>
 - :
-  <a href="http://sgdlite.princeton.edu/download/sgdlite/"
-  class="external free"
-  rel="nofollow">http://sgdlite.princeton.edu/download/sgdlite/</a>
+ <a href="http://sgdlite.princeton.edu/download/sgdlite/"
+ class="external free"
+ rel="nofollow">http://sgdlite.princeton.edu/download/sgdlite/</a>
 :
-  <a href="/wiki/ftp://ftp.vectorbase.org/public_data/databases/chado/"
-  class="external free"
-  rel="nofollow">ftp://ftp.vectorbase.org/public_data/databases/chado/</a>
+ <a href="/wiki/ftp://ftp.vectorbase.org/public_data/databases/chado/"
+ class="external free"
+ rel="nofollow">ftp://ftp.vectorbase.org/public_data/databases/chado/</a>
 
 Please add to this list, if you have a Chado database to share, or know
 of someone who does. If you have a public Chado database, please
 consider adding an export dump file.
 
-     pg_dump -f mychado.dump mychado
+ pg_dump -f mychado.dump mychado
 
 ## Direct <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Access
 
 ### <a href="http://flybase.org" class="external text"
 
 - <a
-  href="https://flybase.github.io/docs/chado/index#public-database#public-database"
-  class="external text" rel="nofollow">FlyBase public chado database</a>
+ href="https://flybase.github.io/docs/chado/index#public-database#public-database"
+ class="external text" rel="nofollow">FlyBase public chado database</a>
 
 ### <a href="http://www.genedb.org" class="external text"
 
@@ -67,4 +67,4 @@ database, which may change or disappear without warning.
 
 e.g.
 
-    psql -h db.genedb.org -U genedb_ro snapshot
+ psql -h db.genedb.org -U genedb_ro snapshot

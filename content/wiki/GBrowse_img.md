@@ -7,32 +7,32 @@ title: "GBrowse img"
 <a href="/wiki/Gbrowse.1" class="mw-redirect" title="Gbrowse">Generic Genome
 Browser</a>
 
-  Description](#Description)
+ Description](#Description)
 - [Examples](#Examples)
-  - [Simple
-    Example](#Simple_Example)
-  - [More
-    complex](#More_complex)
-  - [Listing
-    Sources](#Listing_Sources)
-  - [Listing
-    Types](#Listing_Types)
+ - [Simple
+ Example](#Simple_Example)
+ - [More
+ complex](#More_complex)
+ - [Listing
+ Sources](#Listing_Sources)
+ - [Listing
+ Types](#Listing_Types)
 - [CGI
-  arguments](#CGI_arguments)
-  - [Image-maps](#Image-maps)
+ arguments](#CGI_arguments)
+ - [Image-maps](#Image-maps)
 - [Generating
-  from inside Gbrowse](#Generating_from_inside_Gbrowse)
-  - [Gbrowse
-    v1.x](#Gbrowse_v1.x)
-  - [Gbrowse
-    v2.x](#Gbrowse_v2.x)
+ from inside Gbrowse](#Generating_from_inside_Gbrowse)
+ - [Gbrowse
+ v1.x](#Gbrowse_v1.x)
+ - [Gbrowse
+ v2.x](#Gbrowse_v2.x)
 - [Known
-  Bugs](#Known_Bugs)
+ Bugs](#Known_Bugs)
 - [Author](#Author)
 - [Mediawiki
-  Extension](#Mediawiki_Extension)
+ Extension](#Mediawiki_Extension)
 - [See
-  Also](#See_Also)
+ Also](#See_Also)
 
 ## Description
 
@@ -40,7 +40,7 @@ This CGI script is an interface to the Generic Genome Browser for the
 purpose of retrieving dynamic images of a region of the genome. It can
 be used as the destination of an \<img\> tag like this:
 
-    <img src="http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?name=NC_000913:3923000..3951000">
+ <img src="http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?name=NC_000913:3923000..3951000">
 
 The script can also be used to superimpose one or more external features
 onto the display, for example for the purpose of displaying BLAST hits,
@@ -85,35 +85,35 @@ alt="Gbrowse img example1.png" />
 You can get a list of sources (genomes, chromosomes, *etc.*), by setting
 the **list** parameter to *sources* like so:
 
-    http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?list=sources
+ http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?list=sources
 
-    ## Sources
-    ATCC_8739
-    BL21
-    BL21_DE3
-    BL21_Gold_DE3
-    BW2952
-    DH10B
-    MG1655
-    etc.
+ ## Sources
+ ATCC_8739
+ BL21
+ BL21_DE3
+ BL21_Gold_DE3
+ BW2952
+ DH10B
+ MG1655
+ etc.
 
 ### Listing Types
 
 To get a list of available tracks (the **type** parameter), set the
 **list** parameter to *types* like so:
 
-    http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?list=types
+ http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?list=types
 
-    ## Feature types for source MG1655
-    Genes   Genes   default
-    TranslationF    3-frame translation (forward)
-    TranslationR    3-frame translation (reverse)
-    DNA DNA/GC Content
-    Protein
-    rRNA_Operons
-    RegulonDBtu RegulonDB txn units default
-    Cryptic_Prophage    cryptic prophage    default
-    etc.
+ ## Feature types for source MG1655
+ Genes Genes default
+ TranslationF 3-frame translation (forward)
+ TranslationR 3-frame translation (reverse)
+ DNA DNA/GC Content
+ Protein
+ rRNA_Operons
+ RegulonDBtu RegulonDB txn units default
+ Cryptic_Prophage cryptic prophage default
+ etc.
 
 ## CGI arguments
 
@@ -137,7 +137,7 @@ options have one-letter aliases that can be used to reduce URL lengths.
 | flip image left to right | grid | turn grid on (1) or off (0) |
 | embed | generate full HTML for image and imagemap for use in an embedded frame | format |
 | format for the image (use "SVG" for scalable vector graphics) | list | get certain types of configuration information |
-| source | database name |  |
+| source | database name | |
 
 The arguments are explained in more detail here:
 
@@ -146,19 +146,19 @@ This argument specifies the region of the genome to be displayed.
 Several forms are recognized:
 
 - *name=Landmark*
-  Display the landmark named "Landmark". Valid landmark names include
-  chromosomes, contigs, clones, STSs, predicted genes, and any other
-  landmark that the administrator has designated. Be careful when
-  fetching large landmarks such as whole chromosomes!
+ Display the landmark named "Landmark". Valid landmark names include
+ chromosomes, contigs, clones, STSs, predicted genes, and any other
+ landmark that the administrator has designated. Be careful when
+ fetching large landmarks such as whole chromosomes!
 - *name=Landmark:start..end*
-  Display the region between *start* and *end* relative to "Landmark".
+ Display the region between *start* and *end* relative to "Landmark".
 - *name=Class:Landmark*
-  Display "Landmark", restricting to a particular class, such as
-  "PCR_Product". The list of classes is under the control of the
-  database administrator and is not yet available through this
-  interface.
+ Display "Landmark", restricting to a particular class, such as
+ "PCR_Product". The list of classes is under the control of the
+ database administrator and is not yet available through this
+ interface.
 - *name=Class:Landmark:start..end*
-  As above, but restricted to the designated range.
+ As above, but restricted to the designated range.
 
 If you use multiple **name** options, then this script will generate an
 overview image showing the position of each landmark. The alias "q" can
@@ -175,7 +175,7 @@ This argument lists the feature types to display. The value of this
 argument is a list of track names separated by spaces ("+" characters
 when L-escaped). For example:
 
-    http://www.wormbase.org/db/seq/gbrowse_img/elegans?name=mec-3&type=tRNA+NG+WABA+CG+ESTB
+ http://www.wormbase.org/db/seq/gbrowse_img/elegans?name=mec-3&type=tRNA+NG+WABA+CG+ESTB
 
 Multiple *type=* arguments will be combined to form a single
 space-delimited list. The alias "t" can be used to shorten the length of
@@ -183,7 +183,7 @@ the URL.
 
 If the track name has a space in it, put quotes around the name:
 
-    type="microbe tRNA"+NG+WABA+CG+ESTB
+ type="microbe tRNA"+NG+WABA+CG+ESTB
 width / w
 Width of the desired image, in pixels.
 options / o
@@ -194,14 +194,14 @@ Options are integers from 0 to 3, where 0=auto, 1=compact, 2=expanded,
 tracks should always be expanded and labeled, but that the WABA track
 should be compact, use:
 
-    options=tRNA+3+NG+3+WABA+1
+ options=tRNA+3+NG+3+WABA+1
 
 The alias "o" can be used to shorten the length of the URL.
 add / a
 Superimpose one or more additional features on top of the view. Features
 are specified as space ("+") delimited lists in the following format:
 
-    add=Landmark+Type+Name+start..end,start..end,start..end
+ add=Landmark+Type+Name+start..end,start..end,start..end
 
 "Landmark" is the landmark name, "Type" is a descriptive type that will
 be printed in the image caption, "Name" is a name for the feature to be
@@ -212,13 +212,13 @@ additional feature named "Your sequence", type "Blast Hit", that is
 located on chromosome III in a gapped range between 20000 and 22000,
 will be formatted as:
 
-    add=III+%22Blast%20Hit%22+%22Your%20Sequence%22+20000..21000,21550..22000
+ add=III+%22Blast%20Hit%22+%22Your%20Sequence%22+20000..21000,21550..22000
 
 One or both of the type and name can be omitted. If omitted, type will
 default to "Your Features" and the name will default to "Feature XX"
 where XX is an integer. This allows for a very simple feature line:
 
-    add=III+20000..21000,21550..22000
+ add=III+20000..21000,21550..22000
 
 Multiple *add=* arguments are allowed. The alias "a" can be used to
 shorten the length of the URL.
@@ -231,7 +231,7 @@ class="external text" rel="nofollow">this document</a>. For example, if
 you have added a "Blast Hit" annotation, then you can tell the renderer
 to use a red arrow for this glyph in this way:
 
-    style=%22Blast%20Hit%22+glyph=arrow+fgcolor=red
+ style=%22Blast%20Hit%22+glyph=arrow+fgcolor=red
 keystyle / k
 Controls the positioning of the track key. One of "right", "left",
 "between" (default) or "bottom"
@@ -261,7 +261,7 @@ tab-delimited list giving the track names and feature types
 corresponding to the currently-selected data source. The format is as
 follows:
 
-    Mnemonic <tab> Full description of feature <tab> [default]
+ Mnemonic <tab> Full description of feature <tab> [default]
 
 The third column contains the word "default" if the track will be shown
 by default when no *type* argument is provided.
@@ -278,7 +278,7 @@ The name of a feature to highlight in the format
 
 Example:
 
-    h_feat=SKT5@blue
+ h_feat=SKT5@blue
 
 You may omit "@color", in which case the highlight will default to
 yellow. You can specify multiple h_feat arguments in order to highlight
@@ -289,7 +289,7 @@ format *sequence_name*:*start*..*end*@*color_name*
 
 Example:
 
-    h_region=Chr3:200000..250000@wheat
+ h_region=Chr3:200000..250000@wheat
 
 You may omit "@color", in which case the highlighted region will default
 to lightgrey. You can specify multiple h_region arguments in order to
@@ -302,9 +302,9 @@ a feature takes the user to the destination configured in the gbrowse
 config file, you may do so by placing the URL in an \<iframe\> section
 and using the *embed=1* flag:
 
-    <iframe src="http://localhost/cgi-bin/gbrowse_img/elegans?name=B0001;embed=1" width="100%" height="250">
-       <img src="http://localhost/cgi-bin/gbrowse_img/elegans?name=B0001"/>
-    </iframe>
+ <iframe src="http://localhost/cgi-bin/gbrowse_img/elegans?name=B0001;embed=1" width="100%" height="250">
+ <img src="http://localhost/cgi-bin/gbrowse_img/elegans?name=B0001"/>
+ </iframe>
 
 Placing an \<img\> tag inside the \<iframe\> tag arranges for older
 browsers that don't know about iframes to display the static image

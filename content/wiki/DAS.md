@@ -18,12 +18,12 @@ You only have to know how to retrieve it from a DAS server.
 
 See the <a href="http://www.biodas.org/" class="external text"
 
-  DAS/2</span>](#DAS.2F1_and_DAS.2F2)
-  - [Preserving
-    DAS/1 Strengths in
-    DAS/2](#Preserving_DAS.2F1_Strengths_in_DAS.2F2)
+ DAS/2</span>](#DAS.2F1_and_DAS.2F2)
+ - [Preserving
+ DAS/1 Strengths in
+ DAS/2](#Preserving_DAS.2F1_Strengths_in_DAS.2F2)
 - [DAS in
-  GMOD](#DAS_in_GMOD)
+ GMOD](#DAS_in_GMOD)
 - [Presentations](#Presentations)
 
 ## DAS/1 and DAS/2
@@ -36,36 +36,36 @@ weaknesses.
 
 - Keep focus on location-based annotation of biological sequences.
 - Protocol, not an implementation.
-  - HTTP for transport,
-  - URLs for queries
-  - XML for responses
-  - REST-like style.
+ - HTTP for transport,
+ - URLs for queries
+ - XML for responses
+ - REST-like style.
 - No Required central authority.
 - Couple XML response to URL request formats.
 - XML has been shortened, but big gain comes from client-server content
-  format negotiation, including binary. Empty elements dropped.
+ format negotiation, including binary. Empty elements dropped.
 - Uses HTTP caching in the client.
 - [IGB](/wiki/IGB) - reference client for DAS2. Integrated Genome
-  Browser
+ Browser
 
 ## DAS in GMOD
 
 These components work with DAS servers:
 
 - [GBrowse](/wiki/GBrowse) - See
-  <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
-  title="GBrowse adaptors">GBrowse adaptors</a>
+ <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
+ title="GBrowse adaptors">GBrowse adaptors</a>
 
 ## Presentations
 
 - [DAS
-  Update](/wiki/August_2009_GMOD_Meeting#DAS_update),
-  [August 2009 GMOD
-  Meeting](/wiki/August_2009_GMOD_Meeting)
+ Update](/wiki/August_2009_GMOD_Meeting#DAS_update),
+ [August 2009 GMOD
+ Meeting](/wiki/August_2009_GMOD_Meeting)
 - [Distributed Annotation Systems/2
-  (DAS/2)](/wiki/November_2007_GMOD_Meeting#Distributed_Annotation_System.2F2_.28DAS.2F2.29),
-  [November 2007 GMOD
-  Meeting](/wiki/November_2007_GMOD_Meeting)
+ (DAS/2)](/wiki/November_2007_GMOD_Meeting#Distributed_Annotation_System.2F2_.28DAS.2F2.29),
+ [November 2007 GMOD
+ Meeting](/wiki/November_2007_GMOD_Meeting)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Das.ppt" class="internal"
-  title="Das.ppt">DAS2</a>, [May 2005 GMOD
-  Meeting](/wiki/May_2005_GMOD_Meeting)
+ title="Das.ppt">DAS2</a>, [May 2005 GMOD
+ Meeting](/wiki/May_2005_GMOD_Meeting)

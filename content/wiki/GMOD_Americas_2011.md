@@ -9,18 +9,18 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="600" height="239"
 alt="GMOD Americas 2011, Community and Satellite Meetings, GMOD Course, March 5-12" />
 
-  GMOD</span>](#About_GMOD)
+ GMOD</span>](#About_GMOD)
 - [Registration](#Registration)
 - [Events](#Events)
 - [Logistics](#Logistics)
-  - [Lodging](#Lodging)
-  - [Transportation](#Transportation)
-  - [Meals](#Meals)
+ - [Lodging](#Lodging)
+ - [Transportation](#Transportation)
+ - [Meals](#Meals)
 - [Sponsors](#Sponsors)
 - [Help Get the
-  Word Out](#Help_Get_the_Word_Out)
+ Word Out](#Help_Get_the_Word_Out)
 - [See
-  Also](#See_Also)
+ Also](#See_Also)
 
 ***GMOD Americas 2011*** was an 8 day event held at the
 <a href="http://www.nescent.org/" class="external text"
@@ -383,12 +383,12 @@ exploit their data.
 # See Also
 
 - [GMOD Europe 2010](/wiki/GMOD_Europe_2010) - The previous
-  GMOD event.
+ GMOD event.
 - [2010 GMOD Summer School -
-  Americas](/wiki/2010_GMOD_Summer_School_-_Americas) -
-  the previous [GMOD School](/wiki/GMOD_Schools).
+ Americas](/wiki/2010_GMOD_Summer_School_-_Americas) -
+ the previous [GMOD School](/wiki/GMOD_Schools).
 - <a href="http://www.nescent.org" class="external text"
-  rel="nofollow">NESCent</a> - Meeting sponsor and host.
+ rel="nofollow">NESCent</a> - Meeting sponsor and host.
 - [October 2011 GMOD
-  Meeting](/wiki/October_2011_GMOD_Meeting) - the
-  next [GMOD meeting](/wiki/Meetings)
+ Meeting](/wiki/October_2011_GMOD_Meeting) - the
+ next [GMOD meeting](/wiki/Meetings)

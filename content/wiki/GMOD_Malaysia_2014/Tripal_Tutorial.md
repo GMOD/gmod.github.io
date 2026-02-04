@@ -32,169 +32,169 @@ class="external text" rel="nofollow">Tripal mailing List</a> or adding a
 bug report on the <a href="https://drupal.org/project/issues/1337878"
 class="external text" rel="nofollow">Tripal issues tracker</a>.
 
-  Tripal</span>](#What_is_Tripal)
+ Tripal</span>](#What_is_Tripal)
 - [Content
-  Management System](#Content_Management_System)
+ Management System](#Content_Management_System)
 - [Drupal](#Drupal)
 - [Chado](#Chado)
 - [Goals of
-  Tripal](#Goals_of_Tripal)
+ Tripal](#Goals_of_Tripal)
 - [Structure of
-  Tripal](#Structure_of_Tripal)
+ Tripal](#Structure_of_Tripal)
 - [Sites Running
-  Tripal](#Sites_Running_Tripal)
+ Tripal](#Sites_Running_Tripal)
 - [Resources](#Resources)
 - [Contributing
-  Organizations](#Contributing_Organizations)
+ Organizations](#Contributing_Organizations)
 - [Funding](#Funding)
 - [Publications](#Publications)
 - [Pre-planning](#Pre-planning)
-  - [IT
-    Infrastructure](#IT_Infrastructure)
-  - [Technical
-    Skills](#Technical_Skills)
-  - [Why Use
-    Tripal](#Why_Use_Tripal)
-  - [Development and Production
-    Instances](#Development_and_Production_Instances)
+ - [IT
+ Infrastructure](#IT_Infrastructure)
+ - [Technical
+ Skills](#Technical_Skills)
+ - [Why Use
+ Tripal](#Why_Use_Tripal)
+ - [Development and Production
+ Instances](#Development_and_Production_Instances)
 - [Server
-  Installation](#Server_Installation)
-  - [Apache
-    Setup](#Apache_Setup)
-  - [Setup
-    PHP](#Setup_PHP)
-  - [Install
-    phpPgAdmin](#Install_phpPgAdmin)
+ Installation](#Server_Installation)
+ - [Apache
+ Setup](#Apache_Setup)
+ - [Setup
+ PHP](#Setup_PHP)
+ - [Install
+ phpPgAdmin](#Install_phpPgAdmin)
 - [Database
-  Setup](#Database_Setup)
+ Setup](#Database_Setup)
 - [Install
-  Drupal](#Install_Drupal)
-  - [Software
-    Installation](#Software_Installation)
-  - [Configuration
-    File](#Configuration_File)
-  - [Final
-    directory creation](#Final_directory_creation)
-  - [Compatibility with other
-    tools](#Compatibility_with_other_tools)
-  - [Web-based
-    Steps](#Web-based_Steps)
-  - [Drupal
-    Cron Entry](#Drupal_Cron_Entry)
+ Drupal](#Install_Drupal)
+ - [Software
+ Installation](#Software_Installation)
+ - [Configuration
+ File](#Configuration_File)
+ - [Final
+ directory creation](#Final_directory_creation)
+ - [Compatibility with other
+ tools](#Compatibility_with_other_tools)
+ - [Web-based
+ Steps](#Web-based_Steps)
+ - [Drupal
+ Cron Entry](#Drupal_Cron_Entry)
 - [Drush](#Drush)
 - [Explore
-  Drupal](#Explore_Drupal)
-  - [User
-    Account Page](#User_Account_Page)
-  - [Creating
-    Content](#Creating_Content)
-  - [Site
-    Administration](#Site_Administration)
-    - [Content
-      Management](#Content_Management)
-    - [Site
-      Building](#Site_Building)
-      - [Modules](#Modules)
-      - [Themes](#Themes)
-      - [Blocks](#Blocks)
-      - [Menus](#Menus)
-      - [URL Path](#URL_Path)
-      - [Site
-        Configuration](#Site_Configuration)
-  - [User
-    Accounts](#User_Accounts)
+ Drupal](#Explore_Drupal)
+ - [User
+ Account Page](#User_Account_Page)
+ - [Creating
+ Content](#Creating_Content)
+ - [Site
+ Administration](#Site_Administration)
+ - [Content
+ Management](#Content_Management)
+ - [Site
+ Building](#Site_Building)
+ - [Modules](#Modules)
+ - [Themes](#Themes)
+ - [Blocks](#Blocks)
+ - [Menus](#Menus)
+ - [URL Path](#URL_Path)
+ - [Site
+ Configuration](#Site_Configuration)
+ - [User
+ Accounts](#User_Accounts)
 - [Prepare
-  Drupal for Tripal](#Prepare_Drupal_for_Tripal)
-  - [Theme
-    Installation](#Theme_Installation)
-  - [Theme
-    Configuration](#Theme_Configuration)
-  - [3rd Party
-    Modules](#3rd_Party_Modules)
-    - [Configure
-      CKEditor](#Configure_CKEditor)
+ Drupal for Tripal](#Prepare_Drupal_for_Tripal)
+ - [Theme
+ Installation](#Theme_Installation)
+ - [Theme
+ Configuration](#Theme_Configuration)
+ - [3rd Party
+ Modules](#3rd_Party_Modules)
+ - [Configure
+ CKEditor](#Configure_CKEditor)
 - [Tripal
-  Installation](#Tripal_Installation)
-  - [Get the
-    Software](#Get_the_Software)
-  - [Installation](#Installation)
-  - [Controlled Vocabularies: Installing
-    CVs](#Controlled_Vocabularies:_Installing_CVs)
-  - [Setting
-    Perimssions](#Setting_Perimssions)
+ Installation](#Tripal_Installation)
+ - [Get the
+ Software](#Get_the_Software)
+ - [Installation](#Installation)
+ - [Controlled Vocabularies: Installing
+ CVs](#Controlled_Vocabularies:_Installing_CVs)
+ - [Setting
+ Perimssions](#Setting_Perimssions)
 - [Using
-  Tripal](#Using_Tripal)
-  - [Creating
-    Organism Pages](#Creating_Organism_Pages)
-    - [What
-      if Our Organism is Already in
-      Chado?](#What_if_Our_Organism_is_Already_in_Chado.3F)
-    - [What
-      if My Organism Is Not Present in
-      Chado?](#What_if_My_Organism_Is_Not_Present_in_Chado.3F)
-  - [Creating
-    an Analysis](#Creating_an_Analysis)
-  - [Creating
-    a Database Cross
-    Reference](#Creating_a_Database_Cross_Reference)
-  - [Loading
-    Feature Data](#Loading_Feature_Data)
-    - [Loading a GFF3
-      File](#Loading_a_GFF3_File)
-    - [Loading FASTA
-      files](#Loading_FASTA_files)
-  - [Creating
-    Feature Pages](#Creating_Feature_Pages)
-  - [Materialized
-    Views](#Materialized_Views)
-  - [Feature
-    Page Configuration](#Feature_Page_Configuration)
-    - [Feature URLs](#Feature_URLs)
-    - [Feature Browser](#Feature_Browser)
-    - [Feature Summary
-      Report](#Feature_Summary_Report)
-  - [Loading
-    Functional Data Using Extension
-    Modules](#Loading_Functional_Data_Using_Extension_Modules)
-    - [Loading Blast
-      Results](#Loading_Blast_Results)
-      - [Configuring Blast
-        Databases](#Configuring_Blast_Databases)
-      - [Load the Blast
-        Results](#Load_the_Blast_Results)
-    - [Loading InterProScan
-      Results](#Loading_InterProScan_Results)
-    - [Viewing GO Terms](#Viewing_GO_Terms)
-    - [Loading KEGG Analysis
-      Results](#Loading_KEGG_Analysis_Results)
-  - [Adding
-    New Resources To Pages](#Adding_New_Resources_To_Pages)
-  - [Linking
-    to Resource Blocks](#Linking_to_Resource_Blocks)
-  - [Adding
-    Publications](#Adding_Publications)
-    - [Manually Adding a
-      Publication](#Manually_Adding_a_Publication)
-    - [Searching for
-      Publications](#Searching_for_Publications)
-    - [Bulk
-      Import of Publications](#Bulk_Import_of_Publications)
-  - [Drupal
-    Views Integration](#Drupal_Views_Integration)
-    - [Editing Existing
-      Views](#Editing_Existing_Views)
-    - [Adding a New
-      View](#Adding_a_New_View)
-    - [Limitations of
-      views](#Limitations_of_views)
-  - [Customizing The Look-and-Feel of
-    Tripal](#Customizing_The_Look-and-Feel_of_Tripal)
-  - [Advanced
-    Features](#Advanced_Features)
-    - [The
-      Tripal Bulk Loader](#The_Tripal_Bulk_Loader)
-    - [Creating Custom
-      Modules](#Creating_Custom_Modules)
+ Tripal](#Using_Tripal)
+ - [Creating
+ Organism Pages](#Creating_Organism_Pages)
+ - [What
+ if Our Organism is Already in
+ Chado?](#What_if_Our_Organism_is_Already_in_Chado.3F)
+ - [What
+ if My Organism Is Not Present in
+ Chado?](#What_if_My_Organism_Is_Not_Present_in_Chado.3F)
+ - [Creating
+ an Analysis](#Creating_an_Analysis)
+ - [Creating
+ a Database Cross
+ Reference](#Creating_a_Database_Cross_Reference)
+ - [Loading
+ Feature Data](#Loading_Feature_Data)
+ - [Loading a GFF3
+ File](#Loading_a_GFF3_File)
+ - [Loading FASTA
+ files](#Loading_FASTA_files)
+ - [Creating
+ Feature Pages](#Creating_Feature_Pages)
+ - [Materialized
+ Views](#Materialized_Views)
+ - [Feature
+ Page Configuration](#Feature_Page_Configuration)
+ - [Feature URLs](#Feature_URLs)
+ - [Feature Browser](#Feature_Browser)
+ - [Feature Summary
+ Report](#Feature_Summary_Report)
+ - [Loading
+ Functional Data Using Extension
+ Modules](#Loading_Functional_Data_Using_Extension_Modules)
+ - [Loading Blast
+ Results](#Loading_Blast_Results)
+ - [Configuring Blast
+ Databases](#Configuring_Blast_Databases)
+ - [Load the Blast
+ Results](#Load_the_Blast_Results)
+ - [Loading InterProScan
+ Results](#Loading_InterProScan_Results)
+ - [Viewing GO Terms](#Viewing_GO_Terms)
+ - [Loading KEGG Analysis
+ Results](#Loading_KEGG_Analysis_Results)
+ - [Adding
+ New Resources To Pages](#Adding_New_Resources_To_Pages)
+ - [Linking
+ to Resource Blocks](#Linking_to_Resource_Blocks)
+ - [Adding
+ Publications](#Adding_Publications)
+ - [Manually Adding a
+ Publication](#Manually_Adding_a_Publication)
+ - [Searching for
+ Publications](#Searching_for_Publications)
+ - [Bulk
+ Import of Publications](#Bulk_Import_of_Publications)
+ - [Drupal
+ Views Integration](#Drupal_Views_Integration)
+ - [Editing Existing
+ Views](#Editing_Existing_Views)
+ - [Adding a New
+ View](#Adding_a_New_View)
+ - [Limitations of
+ views](#Limitations_of_views)
+ - [Customizing The Look-and-Feel of
+ Tripal](#Customizing_The_Look-and-Feel_of_Tripal)
+ - [Advanced
+ Features](#Advanced_Features)
+ - [The
+ Tripal Bulk Loader](#The_Tripal_Bulk_Loader)
+ - [Creating Custom
+ Modules](#Creating_Custom_Modules)
 
 ### What is Tripal
 
@@ -219,9 +219,9 @@ These procedures can be manual or computer-based. The procedures are
 designed to do the following:
 
 - Allow for a large number of people to contribute to and share stored
-  data
+ data
 - Control access to data, based on user roles (defining which
-  information users or user groups can view, edit, publish, etc.)
+ information users or user groups can view, edit, publish, etc.)
 - Aid in easy storage and retrieval of data
 - Reduce repetitive duplicate input
 - Improve the ease of report writing
@@ -243,12 +243,12 @@ and existing sites. Features of Drupal
 - A well-supporting community.
 - Books, tutorials and online forums for help .
 - Hundreds of user-contributed extension modules that are freely
-  available.
+ available.
 - Hundreds of user-contributed themes to instantly change the
-  look-and-feel of the site
+ look-and-feel of the site
 - User management infrastructure.
 - Allows for non-coding manipulation of the website contents. Anyone can
-  edit content.
+ edit content.
 - Easy to install and maintain
 
 Drupal website: <a href="http://www.drupal.org" class="external free"
@@ -271,7 +271,7 @@ Chado has a modular structure:
 - Companalysis - for data from computational analysis
 - Contact - for people, groups, and organizations
 - Controlled Vocabulary (cv) - for controlled vocabularies and
-  ontologies
+ ontologies
 - Expression - for summaries of RNA and protein expression
 - General - for identifiers
 - Genetic - for genetic data and genotypes
@@ -291,22 +291,22 @@ Tripal is also modular along these same designations.
 ### Goals of Tripal
 
 - Simplify Construction of Biological Databases
-  - Reduce time of development
-  - Reduce costs
-  - Reduce technical resources (i.e. programmers, systems admins).
-  - A non-technical site administrator can add content without knowing
-    PHP, HTML, JavaScript.
+ - Reduce time of development
+ - Reduce costs
+ - Reduce technical resources (i.e. programmers, systems admins).
+ - A non-technical site administrator can add content without knowing
+ PHP, HTML, JavaScript.
 - Greater Flexibility of the Biological Website
-  - Social Networking
-  - Non-biological content
-  - Outreach, tutorials, documentation, protocols, publications
+ - Social Networking
+ - Non-biological content
+ - Outreach, tutorials, documentation, protocols, publications
 - Expandability
-  - Site can be programmatically expanded in any way
-  - Changes to base-code are not needed but modules are added.
-  - Availability of an Application Programmer Interface (API)
+ - Site can be programmatically expanded in any way
+ - Changes to base-code are not needed but modules are added.
+ - Availability of an Application Programmer Interface (API)
 - Reusability
-  - All code can be shared. Expansion modules created by one group can
-    be shared with all.
+ - All code can be shared. Expansion modules created by one group can
+ be shared with all.
 
 ### Structure of Tripal
 
@@ -337,19 +337,19 @@ The Chado-centric modules provide:
 Analysis modules provide
 
 - Custom visualization for specific analyses (e.g. Blast, KEGG,
-  InterProScan, Unigene construction)
+ InterProScan, Unigene construction)
 - Uses the API from the Tripal Analysis (Chado-centric) module.
 
 Applications:
 
 - These are full blown applications that use Tripal, Drupal and Chado
-  and typically consist of several Chado-centric modules, Analysis
-  modules and custom built modules. (e.g. Breeders Toolbox currently
-  under construction).
+ and typically consist of several Chado-centric modules, Analysis
+ modules and custom built modules. (e.g. Breeders Toolbox currently
+ under construction).
 
 ### Sites Running Tripal
 
-| Site Name                                             | URL                                                                | ----------------------------------------------------- | ------------------------------------------------------------------ | Banana Genome Hub                                     | <a href="http://banana-genome.cirad.fr/" class="external free"     | rel="nofollow">http://banana-genome.cirad.fr/</a>     | Pulse Crops Genomics & Breeding                       | <a href="http://knowpulse2.usask.ca/portal/" class="external free" | rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | Genome Database for Vaccinium                         | <a href="http://www.vaccinium.org" class="external free"           | rel="nofollow">http://www.vaccinium.org</a>           | Genome Database for Rosacaee                          | <a href="http://www.rosaceae.org" class="external free"            | rel="nofollow">http://www.rosaceae.org</a>            | Cool Season Food Legume Database                      | <a href="http://www.gabcsfl.org" class="external free"             | rel="nofollow">http://www.gabcsfl.org</a>             | Cacao Genome Database                                 | <a href="http://www.cacaogenomedb.org" class="external free"       | rel="nofollow">http://www.cacaogenomedb.org</a>       | Fagaceae Genome Web                                   | <a href="http://www.fagaceae.org" class="external free"            | rel="nofollow">http://www.fagaceae.org</a>            | Citrus Genome Database                                | <a href="http://www.citrusgenomedb.org" class="external free"      | rel="nofollow">http://www.citrusgenomedb.org</a>      | Marine Genomics Project                               | <a href="http://www.marinegenomics.org" class="external free"      | rel="nofollow">http://www.marinegenomics.org</a>      |
+| Site Name | URL | ----------------------------------------------------- | ------------------------------------------------------------------ | Banana Genome Hub | <a href="http://banana-genome.cirad.fr/" class="external free" | rel="nofollow">http://banana-genome.cirad.fr/</a> | Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free" | rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free" | rel="nofollow">http://www.vaccinium.org</a> | Genome Database for Rosacaee | <a href="http://www.rosaceae.org" class="external free" | rel="nofollow">http://www.rosaceae.org</a> | Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free" | rel="nofollow">http://www.gabcsfl.org</a> | Cacao Genome Database | <a href="http://www.cacaogenomedb.org" class="external free" | rel="nofollow">http://www.cacaogenomedb.org</a> | Fagaceae Genome Web | <a href="http://www.fagaceae.org" class="external free" | rel="nofollow">http://www.fagaceae.org</a> | Citrus Genome Database | <a href="http://www.citrusgenomedb.org" class="external free" | rel="nofollow">http://www.citrusgenomedb.org</a> | Marine Genomics Project | <a href="http://www.marinegenomics.org" class="external free" | rel="nofollow">http://www.marinegenomics.org</a> |
 
 ### Resources
 
@@ -393,16 +393,16 @@ various sources.
 
 ### Publications
 
-1.  Lacey-Anne Sanderson, Stephen. P. Ficklin, Chun-Huai Cheng, Sook
-    Jung, Frank A. Feltus, Kirstin E. Bett, Dorrie Main. Tripal v1.1: a
-    Standards-based Platform for Construction of Online Genetic and
-    Genomic Databases". Submitted for review June 2013.
-2.  Stephen P. Ficklin, Lacey-Anne Sanderson, Chun-Huai Cheng, Margaret
-    Staton, Taein Lee, Il-Hyung Cho, Sook Jung, Kirstin E Bett, Dorrie
-    Main.
-    <a href="http://database.oxfordjournals.org/content/2011/bar044.full%7C"
-    class="external text" rel="nofollow">Tripal: a construction Toolkit for
-    Online Genome Databases</a>. _Database_, Sept 2011. Vol 2011.
+1. Lacey-Anne Sanderson, Stephen. P. Ficklin, Chun-Huai Cheng, Sook
+ Jung, Frank A. Feltus, Kirstin E. Bett, Dorrie Main. Tripal v1.1: a
+ Standards-based Platform for Construction of Online Genetic and
+ Genomic Databases". Submitted for review June 2013.
+2. Stephen P. Ficklin, Lacey-Anne Sanderson, Chun-Huai Cheng, Margaret
+ Staton, Taein Lee, Il-Hyung Cho, Sook Jung, Kirstin E Bett, Dorrie
+ Main.
+ <a href="http://database.oxfordjournals.org/content/2011/bar044.full%7C"
+ class="external text" rel="nofollow">Tripal: a construction Toolkit for
+ Online Genome Databases</a>. _Database_, Sept 2011. Vol 2011.
 
 ## Pre-planning
 
@@ -419,35 +419,35 @@ Tripal are quite easy.
 There are four ways you could get a Tripal/Drupal/Chado database web
 server available for your site
 
-1.  **Option \#1 In-house dedicated servers:** You may have access to
-    servers in your own department or group which you have
-    administrative control and wish to install Tripal/Drupal/Chado on
-    these.
-2.  **Option \#2 Institutional IT support:** Your institution may
-    provide IT servers and would support your efforts to install a
-    website with database backend.
-3.  **Option \#3 Commercial web-hosting:** If options \#1 and \#2 are
-    not available to you, commercial web-hosting is an affordable
-    option. For large databases you may require a dedicated server.
-    <a href="http://www.bluehost.com/" class="external text"
-    rel="nofollow">Bluehost.com</a> is a web hosting service that
-    provides hosting compatible with Drupal, Tripal and its
-    dependencies.
-4.  **Option \#4 In the Cloud:** Tripal is a part of the
-    <a href="../Cloud.1" class="external text" rel="nofollow">GMOD in the
-    cloud</a> Amazon AWS image created by GMOD. It is also accompanied
-    by other GMOD tools such as GBrowse2, JBrowse, Apollo and WebApollo.
+1. **Option \#1 In-house dedicated servers:** You may have access to
+ servers in your own department or group which you have
+ administrative control and wish to install Tripal/Drupal/Chado on
+ these.
+2. **Option \#2 Institutional IT support:** Your institution may
+ provide IT servers and would support your efforts to install a
+ website with database backend.
+3. **Option \#3 Commercial web-hosting:** If options \#1 and \#2 are
+ not available to you, commercial web-hosting is an affordable
+ option. For large databases you may require a dedicated server.
+ <a href="http://www.bluehost.com/" class="external text"
+ rel="nofollow">Bluehost.com</a> is a web hosting service that
+ provides hosting compatible with Drupal, Tripal and its
+ dependencies.
+4. **Option \#4 In the Cloud:** Tripal is a part of the
+ <a href="../Cloud.1" class="external text" rel="nofollow">GMOD in the
+ cloud</a> Amazon AWS image created by GMOD. It is also accompanied
+ by other GMOD tools such as GBrowse2, JBrowse, Apollo and WebApollo.
 
 After selection of one of the options above you can arrange your
 database/webserver in the following ways:
 
-1.  **Arrangement \#1:** The database and web server are housed on a
-    single server. _This is the approach taken by this course_. It is
-    necessary to gain access to a machine with enough memory (RAM), hard
-    disk speed and space, and processor power to handle both services.
-2.  **Arrangement \#2:** The database and web server are housed on
-    different servers. This provides dedicated resources to each service
-    (i.e. web and database).
+1. **Arrangement \#1:** The database and web server are housed on a
+ single server. _This is the approach taken by this course_. It is
+ necessary to gain access to a machine with enough memory (RAM), hard
+ disk speed and space, and processor power to handle both services.
+2. **Arrangement \#2:** The database and web server are housed on
+ different servers. This provides dedicated resources to each service
+ (i.e. web and database).
 
 **Selection of an appropriate machine**
 
@@ -485,17 +485,17 @@ Tripal v1.1 provides default views for most Chado data types. It also
 support **all** of Chado in terms of data access. **_So why use
 Tripal?_**
 
-1.  You want to use a community-supported common database infrastrcure
-    (i.e. Chado).
-2.  You need a web interface but do not want to build one from scratch.
-3.  You need content-management capabilities (distributed content
-    editing, user management, social networking... i.e. Drupal)
-4.  You want to contribute to a community effort to help build a tool
-    others can use.
-5.  You want to participate in a community with other database
-    developers using the same technology and confronting similar
-    problems.
-6.  You want to use open-source and free technology!
+1. You want to use a community-supported common database infrastrcure
+ (i.e. Chado).
+2. You need a web interface but do not want to build one from scratch.
+3. You need content-management capabilities (distributed content
+ editing, user management, social networking... i.e. Drupal)
+4. You want to contribute to a community effort to help build a tool
+ others can use.
+5. You want to participate in a community with other database
+ developers using the same technology and confronting similar
+ problems.
+6. You want to use open-source and free technology!
 
 ### Development and Production Instances
 
@@ -556,8 +556,8 @@ Clean URLs with Drupal. Clean URLs are not required but make the page
 URLs easier to use. We'll discuss clean URLs later.
 
 ```enter
-   cd /etc/apache2/mods-enabled
-   sudo ln -s ../mods-available/rewrite.load
+ cd /etc/apache2/mods-enabled
+ sudo ln -s ../mods-available/rewrite.load
 ```
 
 Next we need to edit the apache configuration file to give Drupal full
@@ -565,19 +565,19 @@ controls of options within the directory root. Edit the
 /etc/apache2/sites-available/000-default file:
 
 ```enter
-   cd /etc/apache2/sites-available/
-   sudo gedit default
+ cd /etc/apache2/sites-available/
+ sudo gedit default
 ```
 
 And change the **AllowOverride** option from **None** to **All**:
 
 ```enter
-   <Directory /var/www/>
-      Options Indexes FollowSymLinks MultiViews
-      AllowOverride All
-      Order allow,deny
-      allow from all
-   </Directory>
+ <Directory /var/www/>
+ Options Indexes FollowSymLinks MultiViews
+ AllowOverride All
+ Order allow,deny
+ allow from all
+ </Directory>
 ```
 
 Now restart your apache again.
@@ -597,15 +597,15 @@ width="50" height="58" alt="Ubuntu.jpg" /></a> First install php5 using
 Ubuntu's apt-get utility:
 
 ```enter
-   sudo apt-get install php5-pgsql
-   sudo apt-get install php5-gd
+ sudo apt-get install php5-pgsql
+ sudo apt-get install php5-gd
 ```
 
 For newer versions of Ubuntu (e.g. 13.10) you will also want to install
 the php5-json package:
 
 ```enter
-   sudo apt-get install php5-json
+ sudo apt-get install php5-json
 ```
 
 <a href="../File:Suse.png" class="image"><img
@@ -615,7 +615,7 @@ width="50" height="45" alt="Suse.png" /></a> For Suse Linux you may need
 to install the **php-posix** package:
 
 ```enter
-   yum install php-posix
+ yum install php-posix
 ```
 
 <a href="../File:Red_hat_logo_big.jpg" class="image"><img
@@ -625,24 +625,24 @@ width="50" height="55" alt="Red hat logo big.jpg" /></a> For RedHat
 Linux you may also need to install the **php-process** package:
 
 ```enter
-   yum install php-process
+ yum install php-process
 ```
 
 Change some php settings (as root):
 
 ```enter
-   cd /etc/php5/apache2
-   sudo gedit php.ini
+ cd /etc/php5/apache2
+ sudo gedit php.ini
 ```
 
 Set the `memory_limit` to something larger than `128M` (should not
 exceed physical memory, be conservative but not too much so):
 
-      memory_limit = 2048M;
+ memory_limit = 2048M;
 
 Now, restart the webserver:
 
-      sudo /etc/init.d/apache2 restart
+ sudo /etc/init.d/apache2 restart
 
 ### Install phpPgAdmin
 
@@ -651,7 +651,7 @@ database. **Note**: PhpPgAdmin is not required for successful operation
 of Tripal but is very useful.
 
 ```enter
-   sudo apt-get install phppgadmin
+ sudo apt-get install phppgadmin
 ```
 
 Next, we need to make changes to the configuration settings so that we
@@ -659,8 +659,8 @@ can remotely access phppgadmin. To do this, edit the phppgadmin config
 file for apache:
 
 ```enter
-   cd /etc/apache2/conf.d
-   sudo gedit phppgadmin
+ cd /etc/apache2/conf.d
+ sudo gedit phppgadmin
 ```
 
 Now, comment out the line that allows access to the local server only,
@@ -689,8 +689,8 @@ user allowed to login is 'tripaladmin'. Save the configuration file.
 Next we need to create the password file:
 
 ```enter
-   cd /usr/share/phppgadmin
-   sudo htpasswd -c .htpasswd tripaladmin
+ cd /usr/share/phppgadmin
+ sudo htpasswd -c .htpasswd tripaladmin
 ```
 
 The htpasswd command above will create the .htpasswd file and add the
@@ -737,11 +737,11 @@ createuser -P drupal
 
 When requested, enter an appropriate password:
 
-      Enter password for new role: *********
-      Enter it again:  *********
-      Shall the new role be a superuser? (y/n) n
-      Shall the new role be allowed to create databases? (y/n) y
-      Shall the new role be allowed to create more new roles? (y/n) n
+ Enter password for new role: *********
+ Enter it again: *********
+ Shall the new role be a superuser? (y/n) n
+ Shall the new role be allowed to create databases? (y/n) y
+ Shall the new role be allowed to create more new roles? (y/n) n
 
 Finally, create the new database:
 
@@ -764,9 +764,9 @@ want to be able to do this as our 'ubuntu' user. So, first, set the
 directory permissions to allow this:
 
 ```enter
-  cd /var
-  sudo chown -R ubuntu www
-  sudo chgrp -R ubuntu www
+ cd /var
+ sudo chown -R ubuntu www
+ sudo chgrp -R ubuntu www
 ```
 
 In the command above we set the owner and group of the directory to be
@@ -781,8 +781,8 @@ software can be downloaded manually from the Drupal website through a
 web browser or we can use the 'wget' command to retrieve it:
 
 ```class
-   cd /var/www
-   wget http://ftp.drupal.org/files/projects/drupal-6.28.tar.gz
+ cd /var/www
+ wget http://ftp.drupal.org/files/projects/drupal-6.28.tar.gz
 ```
 
 **Note:** The current version of Drupal is Drupal 7.x. The major release
@@ -794,8 +794,8 @@ Next, we want to install Drupal. We will use the **tar** command to
 uncompress the software:
 
 ```enter
-  cd /var/www
-  tar -zxvf drupal-6.28.tar.gz
+ cd /var/www
+ tar -zxvf drupal-6.28.tar.gz
 ```
 
 Notice that we now have a `drupal-6.28` directory with all of the Drupal
@@ -814,7 +814,7 @@ also moved (note the second 'mv' command above. Check to make sure this
 file is there
 
 ```enter
-   ls -l .htaccess
+ ls -l .htaccess
 ```
 
 Notice that the last of the three `mv` commands renames the `index.html`
@@ -832,7 +832,7 @@ configuration file which we can borrow.
 First navigate to the location where the configuration file should go:
 
 ```enter
-  cd /var/www/sites/default/
+ cd /var/www/sites/default/
 ```
 
 Next, copy the example configuration that already exists in the
@@ -840,7 +840,7 @@ directory to be our actual configuration file by renaming it to
 `settings.php`.
 
 ```enter
-  cp default.settings.php settings.php
+ cp default.settings.php settings.php
 ```
 
 Now, we need to edit the configuration file to tell Drupal how to
@@ -848,13 +848,13 @@ connect to our database server. To do this we'll use an easy to use text
 editor **gedit**
 
 ```enter
-  gedit settings.php
+ gedit settings.php
 ```
 
 Find the variable \$db_url and set it to this
 
 ```enter
-  $db_url = 'pgsql://drupal:********@localhost/drupal';
+ $db_url = 'pgsql://drupal:********@localhost/drupal';
 ```
 
 Replace the text '\*\*\*\*\*\*\*\*' with your database password for the
@@ -866,10 +866,10 @@ Finally, we need to create three new directories. The first is the
 `files` directory which Drupal uses for storing uploaded files.
 
 ```enter
-  cd /var/www/sites/default
-  mkdir files
-  sudo chown ubuntu:www-data files
-  sudo chmod g+rw files
+ cd /var/www/sites/default
+ mkdir files
+ sudo chown ubuntu:www-data files
+ sudo chmod g+rw files
 ```
 
 The above command creates the directory but sets the group to be the web
@@ -883,9 +883,9 @@ installing later:
 Now create the modules and themes directory
 
 ```enter
-  cd /var/www/sites/all
-  mkdir modules
-  mkdir themes
+ cd /var/www/sites/all
+ mkdir modules
+ mkdir themes
 ```
 
 ### Compatibility with other tools
@@ -898,14 +898,14 @@ look for both `index.php` and `index.html` files when serving pages.
 Use 'gedit' to modify the `/var/www.htaccess` file.
 
 ```enter
-   cd /var/www
-   gedit .htaccess
+ cd /var/www
+ gedit .htaccess
 ```
 
 Locate the line `DirectoryIndex` and change it to mach the following:
 
 ```enter
-  DirectoryIndex index.php index.html
+ DirectoryIndex index.php index.html
 ```
 
 ### Web-based Steps
@@ -962,7 +962,7 @@ Drupal itself requires an entry in the crontab to function. To edit the
 cron launch the crontab editor:
 
 ```enter
-  sudo crontab -e
+ sudo crontab -e
 ```
 
 [A word on text editors such as
@@ -971,7 +971,7 @@ nano](../Linux_Text_Editors).
 Add this line to the crontab
 
 ```enter
-  0,30 * * * * /usr/bin/wget -O - -q http://localhost/cron.php > /dev/null
+ 0,30 * * * * /usr/bin/wget -O - -q http://localhost/cron.php > /dev/null
 ```
 
 Now save the changes. We have now added a UNIX cron job that will occur
@@ -999,10 +999,10 @@ is normally installed. We'll download the package to /usr/local/src and
 uncompress into /usr/local:
 
 ```enter
-  cd /usr/local/src
-  sudo wget http://ftp.drupal.org/files/projects/drush-7.x-5.9.tar.gz
-  cd /usr/local
-  sudo tar -zxvf src/drush-7.x-5.9.tar.gz
+ cd /usr/local/src
+ sudo wget http://ftp.drupal.org/files/projects/drush-7.x-5.9.tar.gz
+ cd /usr/local
+ sudo tar -zxvf src/drush-7.x-5.9.tar.gz
 ```
 
 Next, we want the operating system to know about drush. We'll create a
@@ -1010,7 +1010,7 @@ symbolic link to the Drush executable in the /usr/local/bin directory
 where the operating systems looks for executables:
 
 ```enter
-  sudo ln -s /usr/local/drush/drush /usr/local/bin/drush
+ sudo ln -s /usr/local/drush/drush /usr/local/bin/drush
 ```
 
 Finally Drush needs to perform updates the first time it is run, so
@@ -1019,7 +1019,7 @@ perform it's updates. In the future we no longer need 'sudo' to run
 drush:
 
 ```enter
-  sudo drush
+ sudo drush
 ```
 
 You must always run drush commands within the Drupal installation. It
@@ -1028,8 +1028,8 @@ directory structure. To see a list of available commands type the
 following:
 
 ```enter
-  cd /var/www/
-  drush
+ cd /var/www/
+ drush
 ```
 
 ## Explore Drupal
@@ -1315,7 +1315,7 @@ infrastructure except to point out:
 - User accounts can be created
 - Users are assigned to various roles
 - Permissions for those roles can be set to allow groups of users
-  certain administrative rights or access to specific data.
+ certain administrative rights or access to specific data.
 
 Explore the Drupal **User Management** menu to see how users can be
 created, added to roles with specific permissions.
@@ -1327,12 +1327,12 @@ created, added to roles with specific permissions.
 Drupal allows us to install new themes. Installation of themes involves
 these steps:
 
-1.  Locate and download a theme from the Drupal website
-    (<a href="http://www.drupal.org/themes" class="external free"
-    rel="nofollow">http://www.drupal.org/themes</a>)
-2.  Unpack the theme in the /var/www/sites/all/themes directory
-3.  Return to the Drupal **Administer** → **Site Building** → **Themes**
-    page and enable the theme
+1. Locate and download a theme from the Drupal website
+ (<a href="http://www.drupal.org/themes" class="external free"
+ rel="nofollow">http://www.drupal.org/themes</a>)
+2. Unpack the theme in the /var/www/sites/all/themes directory
+3. Return to the Drupal **Administer** → **Site Building** → **Themes**
+ page and enable the theme
 
 For this tutorial, we will use the Sky theme which is available from
 <a href="http://drupal.org/project/sky" class="external free"
@@ -1340,8 +1340,8 @@ For this tutorial, we will use the Sky theme which is available from
 utility to download the theme
 
 ```enter
-  cd /var/www/sites/all/themes
-  drush pm-download sky
+ cd /var/www/sites/all/themes
+ drush pm-download sky
 ```
 
 This should unpack the theme for us. Now, navigate to **Administer** →
@@ -1392,12 +1392,12 @@ workshop we have several modules that we will need to install but which
 do not yet appear in the list of modules. To do this, we must follow
 these steps:
 
-1.  Locate the extension modules from the Drupal website
-2.  Retrieve the module using a **drush** command.
-3.  Check for a README.txt or INSTALL.txt for any further instructions
-    for installation of the module
-4.  Return the the Drupal **Administer** → **Site Building** →
-    **Modules** page and enable the module.
+1. Locate the extension modules from the Drupal website
+2. Retrieve the module using a **drush** command.
+3. Check for a README.txt or INSTALL.txt for any further instructions
+ for installation of the module
+4. Return the the Drupal **Administer** → **Site Building** →
+ **Modules** page and enable the module.
 
 For an example, let's install the **Views** module needed for this
 workshop. The Views module can be found here:
@@ -1406,16 +1406,16 @@ workshop. The Views module can be found here:
 current version as of the writing of this tutorial:
 
 ```enter
-  cd /var/www/sites/all/modules
-  drush pm-download views
+ cd /var/www/sites/all/modules
+ drush pm-download views
 ```
 
 Check the README for additional installation instructions
 
 ```enter
-  cd views
-  ls
-  less README.txt
+ cd views
+ ls
+ less README.txt
 ```
 
 _Use the space-bar to scroll through the README.txt file. Hit the 'q'
@@ -1435,7 +1435,7 @@ and they all appear under a **Views** category.
 Alternatively, you can enable the module using another drush command:
 
 ```enter
-  drush pm-enable views views_ui views_export
+ drush pm-enable views views_ui views_export
 ```
 
 for this Tutorial, CCK, Views, Views Data Export, JQuery update, and
@@ -1457,42 +1457,42 @@ from online.
 Here is a quick command for downloading this file
 
 ```enter
-  cd /var/www/sites/all/modules/ckeditor
-  wget http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1.2/ckeditor_4.1.2_standard.zip
+ cd /var/www/sites/all/modules/ckeditor
+ wget http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1.2/ckeditor_4.1.2_standard.zip
 ```
 
 Now unzip the package and rename it according to the instructions
 
 ```enter
-  unzip ckeditor_4.1.2_standard.zip
+ unzip ckeditor_4.1.2_standard.zip
 ```
 
 Once all installation steps have been completed the Views Data Export,
 CCK and CKEditor modules can be enabled with the following
 
 ```enter
-   drush pm-enable views_data_export
-   drush pm-enable content fieldgroup content_permissions nodereference userreference text content_copy optionwidgets number
-   drush pm-enable jquery_update
-   drush pm-enable ckeditor
+ drush pm-enable views_data_export
+ drush pm-enable content fieldgroup content_permissions nodereference userreference text content_copy optionwidgets number
+ drush pm-enable jquery_update
+ drush pm-enable ckeditor
 ```
 
 For reference, the modules installed above can be found here:
 
 - Views: <a href="http://drupal.org/project/views" class="external free"
-  rel="nofollow">http://drupal.org/project/views</a>
+ rel="nofollow">http://drupal.org/project/views</a>
 - CCK: <a href="http://drupal.org/project/cck" class="external free"
-  rel="nofollow">http://drupal.org/project/cck</a>
+ rel="nofollow">http://drupal.org/project/cck</a>
 - Views Data Export:
-  <a href="http://drupal.org/project/views_data_export"
-  class="external free"
-  rel="nofollow">http://drupal.org/project/views_data_export</a>
+ <a href="http://drupal.org/project/views_data_export"
+ class="external free"
+ rel="nofollow">http://drupal.org/project/views_data_export</a>
 - JQuery Update:
-  <a href="https://drupal.org/project/jquery_update" class="external free"
-  rel="nofollow">https://drupal.org/project/jquery_update</a>
+ <a href="https://drupal.org/project/jquery_update" class="external free"
+ rel="nofollow">https://drupal.org/project/jquery_update</a>
 - CKEditor:
-  <a href="http://drupal.org/project/ckeditor" class="external free"
-  rel="nofollow">http://drupal.org/project/ckeditor</a>
+ <a href="http://drupal.org/project/ckeditor" class="external free"
+ rel="nofollow">http://drupal.org/project/ckeditor</a>
 
 #### Configure CKEditor
 
@@ -1675,7 +1675,7 @@ as well to allow for regular execution of jobs in the queue. We will
 need to add a second cron entry:
 
 ```enter
-   sudo crontab -e
+ sudo crontab -e
 ```
 
 [A word on text editors such as
@@ -1684,7 +1684,7 @@ nano](../Linux_Text_Editors).
 Add this line to the crontab
 
 ```enter
-   0,15,30,45 * * * * (cd /var/www; drush trpjob-run administrator ) > /dev/null
+ 0,15,30,45 * * * * (cd /var/www; drush trpjob-run administrator ) > /dev/null
 ```
 
 This entry will run the Tripal cron every 15 minutes as the
@@ -1700,16 +1700,16 @@ drush trpjob-run administrator
 We should now see to following text in the terminal window indicating
 that the installation of Chado was successful:
 
-    Tripal Job Launcher
-    Running as user 'administrator'
-    -------------------
-    Calling: tripal_core_install_chado(Install Chado v1.2, 1)
-    Creating 'chado' schema
-    Loading sites/all/modules/tripal/tripal_core/chado_schema/default_schema-1.2.sql...
-    Install of Chado v1.2 (Step 1 of 2) Successful!
-    Loading sites/all/modules/tripal/tripal_core/chado_schema/initialize-1.2.sql...
-    Install of Chado v1.2 (Step 2 of 2) Successful.
-    Installation Complete
+ Tripal Job Launcher
+ Running as user 'administrator'
+ -------------------
+ Calling: tripal_core_install_chado(Install Chado v1.2, 1)
+ Creating 'chado' schema
+ Loading sites/all/modules/tripal/tripal_core/chado_schema/default_schema-1.2.sql...
+ Install of Chado v1.2 (Step 1 of 2) Successful!
+ Loading sites/all/modules/tripal/tripal_core/chado_schema/initialize-1.2.sql...
+ Install of Chado v1.2 (Step 2 of 2) Successful.
+ Installation Complete
 
 Also, we see that the job has completed when refreshing the jobs
 management page:
@@ -1819,10 +1819,10 @@ the saved drop down list for loading of future updates to the ontology.
 
 For this tutorial, we need to install these ontologies:
 
-1.  Chado feature properties
-2.  Relationship ontology
-3.  Sequence ontology
-4.  Gene ontology.
+1. Chado feature properties
+2. Relationship ontology
+3. Sequence ontology
+4. Gene ontology.
 
 Do so by selecting one and clicking the **Submit** button. Repeat this
 process for each of the three ontologies. You'll notice each time that a
@@ -1997,16 +1997,16 @@ the fields with these values:
 - Abbreviation: C. sinensis
 - Common name: Sweet orange
 - Description: Sweet orange is the No.1 citrus production in the world,
-  accounting for about 70% of the total. Brazil, Florida (USA), and
-  China are the three largest sweet orange producers. Sweet orange
-  fruits have very tight peel and are classified into the hard-to-peel
-  group. They are often used for juice processing, rather than fresh
-  consumption. Valencia, Navel, Blood, Acidless, and other subtypes are
-  bud mutants of common sweet orange varieties. Sweet orange is
-  considered as an introgression of a natural hybrid of mandarin and
-  pummelo; some estimates shows more mandarin genomic background than
-  pummelo. The genome size is estimated at 380Mb across 9 haploid
-  chromosomes.
+ accounting for about 70% of the total. Brazil, Florida (USA), and
+ China are the three largest sweet orange producers. Sweet orange
+ fruits have very tight peel and are classified into the hard-to-peel
+ group. They are often used for juice processing, rather than fresh
+ consumption. Valencia, Navel, Blood, Acidless, and other subtypes are
+ bud mutants of common sweet orange varieties. Sweet orange is
+ considered as an introgression of a natural hybrid of mandarin and
+ pummelo; some estimates shows more mandarin genomic background than
+ pummelo. The genome size is estimated at 380Mb across 9 haploid
+ chromosomes.
 
 And, use the following image:
 
@@ -2030,12 +2030,12 @@ associated with all imported features. This has several advantages,
 including:
 
 - The source of features (sequences) can be traced. Even for features
-  simply downloaded from a database, someone else can see where the
-  features came from.
+ simply downloaded from a database, someone else can see where the
+ features came from.
 - Provides a mechanism for describing how the features were created
-  (e.g. whole genome structural and functional annotation description)
+ (e.g. whole genome structural and functional annotation description)
 - The analysis links all of the features together which can be useful
-  for querying for specific features from an analysis.
+ for querying for specific features from an analysis.
 
 To create an analysis for loading our genomic data, navigate to the
 **Create content** and click on the link: **Analysis**
@@ -2051,35 +2051,35 @@ Here you can provide the necessary details to help others understand the
 source of your data. For this tutorial, enter the following:
 
 - Analysis Name: Whole Genome Assembly and Annotation of Citrus Sinensis
-  (JGI)
+ (JGI)
 - Program: Performed by JGI
 - Program Version: v1.0
 - Source Name: JGI Citrus sinensis assembly/annotation v1.0 (154)
 - Source URI:
-  <a href="http://www.phytozome.net/citrus.php" class="external free"
-  rel="nofollow">http://www.phytozome.net/citrus.php</a>
+ <a href="http://www.phytozome.net/citrus.php" class="external free"
+ rel="nofollow">http://www.phytozome.net/citrus.php</a>
 - Time Executed: Feb 1, 2011
 - Materials and Methods: (if using CKEditor, click the 'Source' button
-  before pasting)
+ before pasting)
 
 ```enter
 <p>
-    <strong><em>Note: </em>The following text comes from phytozome.org:</strong></p>
+ <strong><em>Note: </em>The following text comes from phytozome.org:</strong></p>
 <p>
-    <u>Genome Size / Loci</u><br />
-    This version (v.1) of the assembly is 319 Mb spread over 12,574 scaffolds. Half the genome is accounted for by 236 scaffolds 251 kb or longer. The current gene set (orange1.1) integrates 3.8 million ESTs with homology and ab initio-based gene predictions (see below). 25,376 protein-coding loci have been predicted, each with a primary transcript. An additional 20,771 alternative transcripts have been predicted, generating a total of 46,147 transcripts. 16,318 primary transcripts have EST support over at least 50% of their length. Two-fifths of the primary transcripts (10,813) have EST support over 100% of their length.</p>
+ <u>Genome Size / Loci</u><br />
+ This version (v.1) of the assembly is 319 Mb spread over 12,574 scaffolds. Half the genome is accounted for by 236 scaffolds 251 kb or longer. The current gene set (orange1.1) integrates 3.8 million ESTs with homology and ab initio-based gene predictions (see below). 25,376 protein-coding loci have been predicted, each with a primary transcript. An additional 20,771 alternative transcripts have been predicted, generating a total of 46,147 transcripts. 16,318 primary transcripts have EST support over at least 50% of their length. Two-fifths of the primary transcripts (10,813) have EST support over 100% of their length.</p>
 <p>
-    <u>Sequencing Method</u><br />
-    Genomic sequence was generated using a whole genome shotgun approach with 2Gb sequence coming from GS FLX Titanium; 2.4 Gb from FLX Standard; 440 Mb from Sanger paired-end libraries; 2.0 Gb from 454 paired-end libraries</p>
+ <u>Sequencing Method</u><br />
+ Genomic sequence was generated using a whole genome shotgun approach with 2Gb sequence coming from GS FLX Titanium; 2.4 Gb from FLX Standard; 440 Mb from Sanger paired-end libraries; 2.0 Gb from 454 paired-end libraries</p>
 <p>
-    <u>Assembly Method</u><br />
-    The 25.5 million 454 reads and 623k Sanger sequence reads were generated by a collaborative effort by 454 Life Sciences, University of Florida and JGI. The assembly was generated by Brian Desany at 454 Life Sciences using the Newbler assembler.</p>
+ <u>Assembly Method</u><br />
+ The 25.5 million 454 reads and 623k Sanger sequence reads were generated by a collaborative effort by 454 Life Sciences, University of Florida and JGI. The assembly was generated by Brian Desany at 454 Life Sciences using the Newbler assembler.</p>
 <p>
-    <u>Identification of Repeats</u><br />
-    A de novo repeat library was made by running RepeatModeler (Arian Smit, Robert Hubley) on the genome to produce a library of repeat sequences. Sequences with Pfam domains associated with non-TE functions were removed from the library of repeat sequences and the library was then used to mask 31% of the genome with RepeatMasker.</p>
+ <u>Identification of Repeats</u><br />
+ A de novo repeat library was made by running RepeatModeler (Arian Smit, Robert Hubley) on the genome to produce a library of repeat sequences. Sequences with Pfam domains associated with non-TE functions were removed from the library of repeat sequences and the library was then used to mask 31% of the genome with RepeatMasker.</p>
 <p>
-    <u>EST Alignments</u><br />
-    We aligned the sweet orange EST sequences using Brian Haas's PASA pipeline which aligns ESTs to the best place in the genome via gmap, then filters hits to ensure proper splice boundaries.</p>
+ <u>EST Alignments</u><br />
+ We aligned the sweet orange EST sequences using Brian Haas's PASA pipeline which aligns ESTs to the best place in the genome via gmap, then filters hits to ensure proper splice boundaries.</p>
 ```
 
 **Note:**: Above we entered HTML. This is not the easiest way to enter
@@ -2112,15 +2112,15 @@ Enter the following values for the fields:
 
 - Name: Phytozome
 - Description: Phytozome is a joint project of the Department of
-  Energy's Joint Genome Institute and the Center for Integrative
-  Genomics to facilitate comparative genomic studies amongst green
-  plants
+ Energy's Joint Genome Institute and the Center for Integrative
+ Genomics to facilitate comparative genomic studies amongst green
+ plants
 - URL: <a href="http://www.phytozome.net/" class="external free"
-  rel="nofollow">http://www.phytozome.net/</a>
+ rel="nofollow">http://www.phytozome.net/</a>
 - URL prefix: <a
-  href="http://www.phytozome.net/genePage.php?search=1&amp;detail=1&amp;er=1&amp;crown&amp;method=0&amp;searchText=transcriptid%253A"
-  class="external free"
-  rel="nofollow">http://www.phytozome.net/genePage.php?search=1&amp;detail=1&amp;er=1&amp;crown&amp;method=0&amp;searchText=transcriptid%253A</a>
+ href="http://www.phytozome.net/genePage.php?search=1&amp;detail=1&amp;er=1&amp;crown&amp;method=0&amp;searchText=transcriptid%253A"
+ class="external free"
+ rel="nofollow">http://www.phytozome.net/genePage.php?search=1&amp;detail=1&amp;er=1&amp;crown&amp;method=0&amp;searchText=transcriptid%253A</a>
 
 The URL prefix is important as it will be used to create the links on
 our gene pages. Our gene name will be appended to this URL to create the
@@ -2137,20 +2137,20 @@ SwissProt:
 - Name: NCBI nr
 - Description: NCBI's non-redundant database.
 - URL: <a href="http://www.ncbi.nlm.nih.gov/" class="external free"
-  rel="nofollow">http://www.ncbi.nlm.nih.gov/</a>
+ rel="nofollow">http://www.ncbi.nlm.nih.gov/</a>
 - URL prefix:
-  <a href="http://www.ncbi.nlm.nih.gov/protein/" class="external free"
-  rel="nofollow">http://www.ncbi.nlm.nih.gov/protein/</a>
+ <a href="http://www.ncbi.nlm.nih.gov/protein/" class="external free"
+ rel="nofollow">http://www.ncbi.nlm.nih.gov/protein/</a>
 
 - Name: ExPASy Swiss-Prot
 - Description: A curated protein sequence database which strives to
-  provide a high level of annotation, a minimal level of redundancy and
-  high level of integration with other databases
+ provide a high level of annotation, a minimal level of redundancy and
+ high level of integration with other databases
 - URL: <a href="http://expasy.org/sprot/" class="external free"
-  rel="nofollow">http://expasy.org/sprot/</a>
+ rel="nofollow">http://expasy.org/sprot/</a>
 - URL prefix:
-  <a href="http://www.uniprot.org/uniprot/" class="external free"
-  rel="nofollow">http://www.uniprot.org/uniprot/</a>
+ <a href="http://www.uniprot.org/uniprot/" class="external free"
+ rel="nofollow">http://www.uniprot.org/uniprot/</a>
 
 ### Loading Feature Data
 
@@ -2161,29 +2161,29 @@ move through the tutorial rather quickly. The following datasets will be
 used for this tutorial:
 
 - <a
-  href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/dc/Citrus_sinensis-orange1.1g015632m.g.gff3"
-  class="internal" title="Citrus sinensis-orange1.1g015632m.g.gff3">Citrus
-  sinensis-orange1.1g015632m.g.gff3</a>
+ href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/dc/Citrus_sinensis-orange1.1g015632m.g.gff3"
+ class="internal" title="Citrus sinensis-orange1.1g015632m.g.gff3">Citrus
+ sinensis-orange1.1g015632m.g.gff3</a>
 - <a
-  href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/87/Citrus_sinensis-scaffold00001.fasta"
-  class="internal" title="Citrus sinensis-scaffold00001.fasta">Citrus
-  sinensis-scaffold00001.fasta</a>
+ href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/87/Citrus_sinensis-scaffold00001.fasta"
+ class="internal" title="Citrus sinensis-scaffold00001.fasta">Citrus
+ sinensis-scaffold00001.fasta</a>
 - <a
-  href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/90/Citrus_sinensis-orange1.1g015632m.g.fasta"
-  class="internal"
-  title="Citrus sinensis-orange1.1g015632m.g.fasta">Citrus
-  sinensis-orange1.1g015632m.g.fasta</a>
+ href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/90/Citrus_sinensis-orange1.1g015632m.g.fasta"
+ class="internal"
+ title="Citrus sinensis-orange1.1g015632m.g.fasta">Citrus
+ sinensis-orange1.1g015632m.g.fasta</a>
 
 Download these to the `/var/www/sites/default/files`. The quickest
 method is to right-click on the links above, then **wget** to retrieve
 the file:
 
 ```enter
-  cd /var/www/sites/default/files
-  #Note that these files no longer exist!
-  wget http://gmod.org/mediawiki/images/d/dc/Citrus_sinensis-orange1.1g015632m.g.gff3
-  wget http://gmod.org/mediawiki/images/8/87/Citrus_sinensis-scaffold00001.fasta
-  wget http://gmod.org/mediawiki/images/9/90/Citrus_sinensis-orange1.1g015632m.g.fasta
+ cd /var/www/sites/default/files
+ #Note that these files no longer exist!
+ wget http://gmod.org/mediawiki/images/d/dc/Citrus_sinensis-orange1.1g015632m.g.gff3
+ wget http://gmod.org/mediawiki/images/8/87/Citrus_sinensis-scaffold00001.fasta
+ wget http://gmod.org/mediawiki/images/9/90/Citrus_sinensis-orange1.1g015632m.g.fasta
 ```
 
 #### Loading a GFF3 File
@@ -2201,13 +2201,13 @@ width="800" height="466" alt="Tripal-importGFF.png" /></a>
 
 Perform the following:
 
-1.  Enter the path on the file system where our GFF file resides
-    (`/var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.gff3`)
-2.  Choose the organism to which the GFF3 file belongs (in this case
-    _Citrus sinensis (sweet orange)_
-3.  Select the analysis named "Whole Genome Assembly and Annotation of
-    Citrus sinensis...".
-4.  Leave all other options as default.
+1. Enter the path on the file system where our GFF file resides
+ (`/var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.gff3`)
+2. Choose the organism to which the GFF3 file belongs (in this case
+ _Citrus sinensis (sweet orange)_
+3. Select the analysis named "Whole Genome Assembly and Annotation of
+ Citrus sinensis...".
+4. Leave all other options as default.
 
 Finally, click the **Import GFF3 file** button. You'll notice a job was
 submitted to the jobs subsystem. Now, to complete the process we need
@@ -2223,19 +2223,19 @@ complete. There should be no errors or warnings after loading the GFF
 file but there will be information about the time and memory used when
 loading the file. Below is similar to what you should see:
 
-    Tripal Job Launcher
-    Running as user 'administrator'
-    -------------------
-    Calling: tripal_feature_load_gff3(/var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.gff3, 13, 10, 0, 1, 0, 0, 1, , , 0, , , , 0, 8)
+ Tripal Job Launcher
+ Running as user 'administrator'
+ -------------------
+ Calling: tripal_feature_load_gff3(/var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.gff3, 13, 10, 0, 1, 0, 0, 1, , , 0, , , , 0, 8)
 
-    NOTE: Loading of this GFF file is performed using a database transaction.
-    If the load fails or is terminated prematurely then the entire set of
-    insertions/updates is rolled back and will not be found in the database
+ NOTE: Loading of this GFF file is performed using a database transaction.
+ If the load fails or is terminated prematurely then the entire set of
+ insertions/updates is rolled back and will not be found in the database
 
-    Opening /var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.gff3
-    Parsing Line 138 (100.00%). Memory: 39,138,672 bytes.
-    Setting ranks of children...
-    Done
+ Opening /var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.gff3
+ Parsing Line 138 (100.00%). Memory: 39,138,672 bytes.
+ Setting ranks of children...
+ Done
 
 #### Loading FASTA files
 
@@ -2265,7 +2265,7 @@ can uniquely identify the feature for the specific organism and sequence
 type. For example, in our GFF file an mRNA feature appears as follows:
 
 ```enter
-scaffold00001   phytozome6      mRNA    4058460 4062210 .       +       .       ID=PAC:18136217;Name=orange1.1g015632m;PACid=18136217;Parent=orange1.1g015632m.g
+scaffold00001 phytozome6 mRNA 4058460 4062210 . + . ID=PAC:18136217;Name=orange1.1g015632m;PACid=18136217;Parent=orange1.1g015632m.g
 ```
 
 Note that for this mRNA feature the ID is **PAC:18136217** and the name
@@ -2302,12 +2302,12 @@ match them to existing features.
 Now, enter the following values in the fields on the web form:
 
 - FASTA file:
-  /var/www/sites/default/files/Citrus_sinensis-scaffold00001.fasta
+ /var/www/sites/default/files/Citrus_sinensis-scaffold00001.fasta
 - Organism: Citrus sinensis (Sweet orange)
 - Sequence type: scaffold
 - Name Match Type: Name
 - Method: Update only (we do not want to insert these are they should
-  already be there)
+ already be there)
 - Analysis: Whole Genome Assembly and Annotation of Citrus sinensis....
 
 Click the **Import Fasta File**, and a job will be added to the jobs
@@ -2321,7 +2321,7 @@ drush trpjob-run administrator
 Next do the same for the genes GFF:
 
 - FASTA file:
-  /var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.fasta
+ /var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.fasta
 - Organism: Citrus sinensis (Sweet orange)
 - Sequence type: mRNA
 - Method: Update only
@@ -2508,20 +2508,20 @@ drush trpjob-run administrator
 
 You should see the following output to the terminal:
 
-    Tripal Job Launcher (in parallel)
-    Running as user 'administrator'
-    -------------------
-    Calling: tripal_feature_set_urls(, 18)
-    Setting URL alias for orange1.1g015632m.g: node/4 => orange1.1g015632m.g
-    Setting URL alias for orange1.1g015632m: node/5 => orange1.1g015632m
-    Setting URL alias for orange1.1g015645m: node/6 => orange1.1g015645m
-    Setting URL alias for orange1.1g015615m: node/7 => orange1.1g015615m
-    Setting URL alias for orange1.1g015662m: node/8 => orange1.1g015662m
-    Setting URL alias for orange1.1g017341m: node/9 => orange1.1g017341m
-    Setting URL alias for orange1.1g018514m: node/10 => orange1.1g018514m
-    Setting URL alias for orange1.1g022520m: node/11 => orange1.1g022520m
-    Setting URL alias for orange1.1g022799m: node/12 => orange1.1g022799m
-    Setting URL alias for orange1.1g022797m: node/13 => orange1.1g022797m
+ Tripal Job Launcher (in parallel)
+ Running as user 'administrator'
+ -------------------
+ Calling: tripal_feature_set_urls(, 18)
+ Setting URL alias for orange1.1g015632m.g: node/4 => orange1.1g015632m.g
+ Setting URL alias for orange1.1g015632m: node/5 => orange1.1g015632m
+ Setting URL alias for orange1.1g015645m: node/6 => orange1.1g015645m
+ Setting URL alias for orange1.1g015615m: node/7 => orange1.1g015615m
+ Setting URL alias for orange1.1g015662m: node/8 => orange1.1g015662m
+ Setting URL alias for orange1.1g017341m: node/9 => orange1.1g017341m
+ Setting URL alias for orange1.1g018514m: node/10 => orange1.1g018514m
+ Setting URL alias for orange1.1g022520m: node/11 => orange1.1g022520m
+ Setting URL alias for orange1.1g022799m: node/12 => orange1.1g022799m
+ Setting URL alias for orange1.1g022797m: node/13 => orange1.1g022797m
 
 Previously, URLs were set to use the Internal ID by default, but now the
 URLs for features are similar to:
@@ -2568,12 +2568,12 @@ can rename them to be more meaningful. To select which items will appear
 in this list, add the following contents to the **Map feature types**
 box:
 
-    CDS
-    five_prime_UTR = 5'UTR
-    three_prime_UTR = 3'UTR
-    mRNA
-    supercontig = Supercontig
-    gene = Gene
+ CDS
+ five_prime_UTR = 5'UTR
+ three_prime_UTR = 3'UTR
+ mRNA
+ supercontig = Supercontig
+ gene = Gene
 
 Now the Data Type Summary on the organism page appears as:
 
@@ -2596,37 +2596,37 @@ were completed prior to this tutorial and results files are available
 for downloading:
 
 - <a
-  href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0c/Citrus_sinensis-orange1.1g015632m.g.iprscan.xml"
-  class="internal"
-  title="Citrus sinensis-orange1.1g015632m.g.iprscan.xml">Citrus
-  sinensis-orange1.1g015632m.g.iprscan.xml</a>
+ href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0c/Citrus_sinensis-orange1.1g015632m.g.iprscan.xml"
+ class="internal"
+ title="Citrus sinensis-orange1.1g015632m.g.iprscan.xml">Citrus
+ sinensis-orange1.1g015632m.g.iprscan.xml</a>
 - <a
-  href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/13/Citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz"
-  class="internal"
-  title="Citrus sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz">Citrus
-  sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz</a>
+ href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/13/Citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz"
+ class="internal"
+ title="Citrus sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz">Citrus
+ sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz</a>
 - <a
-  href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out"
-  class="internal"
-  title="Blastx citrus sinensis-orange1.1g015632m.g.fasta.0 vs uniprot sprot.fasta.out">Blastx
-  citrus sinensis-orange1.1g015632m.g.fasta.0 vs uniprot
-  sprot.fasta.out</a>
+ href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out"
+ class="internal"
+ title="Blastx citrus sinensis-orange1.1g015632m.g.fasta.0 vs uniprot sprot.fasta.out">Blastx
+ citrus sinensis-orange1.1g015632m.g.fasta.0 vs uniprot
+ sprot.fasta.out</a>
 - <a
-  href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out"
-  class="internal"
-  title="Blastx citrus sinensis-orange1.1g015632m.g.fasta.0 vs nr.out">Blastx
-  citrus sinensis-orange1.1g015632m.g.fasta.0 vs nr.out</a>
+ href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out"
+ class="internal"
+ title="Blastx citrus sinensis-orange1.1g015632m.g.fasta.0 vs nr.out">Blastx
+ citrus sinensis-orange1.1g015632m.g.fasta.0 vs nr.out</a>
 
 Download these files to the `/var/www/sites/default/files` directory. To
 do so quickly run these commands:
 
 ```enter
-  cd /var/www/sites/default/files
-  # Note that these files no longer exist!
-  wget http://gmod.org/mediawiki/images/0/0c/Citrus_sinensis-orange1.1g015632m.g.iprscan.xml
-  wget http://gmod.org/mediawiki/images/1/13/Citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz
-  wget http://gmod.org/mediawiki/images/e/e8/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out
-  wget http://gmod.org/mediawiki/images/2/24/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out
+ cd /var/www/sites/default/files
+ # Note that these files no longer exist!
+ wget http://gmod.org/mediawiki/images/0/0c/Citrus_sinensis-orange1.1g015632m.g.iprscan.xml
+ wget http://gmod.org/mediawiki/images/1/13/Citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz
+ wget http://gmod.org/mediawiki/images/e/e8/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out
+ wget http://gmod.org/mediawiki/images/2/24/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out
 ```
 
 #### Loading Blast Results
@@ -2737,15 +2737,15 @@ values for this analysis. In the fields set the following values:
 - Source name: C. sinensis mRNA vs ExPASy SwissProt
 - Time Executed: (today's date)
 - Materials & Methods: C. sinensis mRNA sequences were BLAST'ed against
-  the ExPASy SwissProt protein database using a local installation of
-  BLAST on in-house linux server. Expectation value was set at 1e-6
+ the ExPASy SwissProt protein database using a local installation of
+ BLAST on in-house linux server. Expectation value was set at 1e-6
 - Blast Settings
-  - Database: ExPASy SwissProt
-  - Blast XML File/Directory:
-    /var/www/sites/default/files/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out
-  - Parameters: -p blastx -e 1e-6 -m 7
-  - Submit a job to parse the XML output: checked
-  - Keywords for custom search: checked
+ - Database: ExPASy SwissProt
+ - Blast XML File/Directory:
+ /var/www/sites/default/files/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out
+ - Parameters: -p blastx -e 1e-6 -m 7
+ - Submit a job to parse the XML output: checked
+ - Keywords for custom search: checked
 
 Click the **Save** button. You can now see our new Analysis.
 
@@ -2783,15 +2783,15 @@ add a new analysis with the following details:
 - Source name: C. sinensis mRNA vs NCBI nr
 - Time Executed: (today's date)
 - Materials & Methods: C. sinensis mRNA sequences were BLAST'ed against
-  the NCBI nr protein database using a local installation of BLAST on
-  in-house linux server. Expectation value was set at 1e-6
+ the NCBI nr protein database using a local installation of BLAST on
+ in-house linux server. Expectation value was set at 1e-6
 - Blast Settings
-  - Database: NCBI nr
-  - Blast XML File/Directory:
-    /var/www/sites/default/files/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out
-  - Parameters: -p blastx -e 1e-6 -m 7
-  - Submit a job to parse the XML output: checked
-  - Keywords for custom search: checked
+ - Database: NCBI nr
+ - Blast XML File/Directory:
+ /var/www/sites/default/files/Blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out
+ - Parameters: -p blastx -e 1e-6 -m 7
+ - Submit a job to parse the XML output: checked
+ - Keywords for custom search: checked
 
 Click the **Save** button and manually run the job:
 
@@ -2822,15 +2822,15 @@ for this analysis
 - Source name: C. sinensis v1.0 mRNA
 - Time Executed: (today's date)
 - Materials & Methods: C. sinensis mRNA sequences were mapped to IPR
-  domains and GO terms using a local installation of InterProScan
-  executed on a computational cluster. InterProScan date files used were
-  MATCH_DATA_v32, DATA_v32.0 and PTHR_DATA v31.0.
+ domains and GO terms using a local installation of InterProScan
+ executed on a computational cluster. InterProScan date files used were
+ MATCH_DATA_v32, DATA_v32.0 and PTHR_DATA v31.0.
 - InterPro Settings
-  - InterProScan XML File/Directory:
-    /var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.iprscan.xml
-  - Check the box 'Submit a job to parse the Interpro XML output'
-  - Check the box 'Load GO terms'
-  - Parameters: iprscan -cli -goterms -ipr -format xml
+ - InterProScan XML File/Directory:
+ /var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.iprscan.xml
+ - Check the box 'Submit a job to parse the Interpro XML output'
+ - Check the box 'Load GO terms'
+ - Parameters: iprscan -cli -goterms -ipr -format xml
 
 Click the **Save** button. You can now see our new Analysis.
 
@@ -2884,10 +2884,10 @@ width="800" height="489" alt="Triapl-GO-Report-NotSetup.png" /></a>
 
 Follow the instructions as presented on the page. Briefly, you need to
 
-1.  Set the CV term paths for the three GO vocabularies. This should
-    have been done automatically when you loaded the Gene Ontology
-    earlier in the Tutorial.
-2.  Populate the **go_count_analysis** materialized view.
+1. Set the CV term paths for the three GO vocabularies. This should
+ have been done automatically when you loaded the Gene Ontology
+ earlier in the Tutorial.
+2. Populate the **go_count_analysis** materialized view.
 
 When complete the following report will be visible:
 
@@ -2923,13 +2923,13 @@ this analysis
 - Source name: C. sinensis v1.0 genes
 - Time Executed: (todays date)
 - Materials & Methods: C. sinensis mRNA sequences were uploaded to the
-  KEGG Automatic Annotation Server (KAAS) where they were mapped to KEGG
-  pathways and orthologs. The SBH (single-directional best hit) was used
-  with the genes data set being the defaults for genes.
+ KEGG Automatic Annotation Server (KAAS) where they were mapped to KEGG
+ pathways and orthologs. The SBH (single-directional best hit) was used
+ with the genes data set being the defaults for genes.
 - KEGG Settings
-  - KAAS hier.tar.gz Output File:
-    /var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz
-  - Check the box "Submit a job to parse the kegg output into Chado"
+ - KAAS hier.tar.gz Output File:
+ /var/www/sites/default/files/Citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz
+ - Check the box "Submit a job to parse the kegg output into Chado"
 
 Click the **Save** button. You can now see our new Analysis.
 
@@ -3155,38 +3155,38 @@ text area under **Resource Blocks** add the following text:
 <p>The following annotation files are available for download:</p>
 <b>Structural Annotations</b>
 <table>
-  <tr>
-    <th>C. sinensis v1.0 scaffolds (FASTA format)</th>
-    <td><a href="/sites/default/files/citrus_sinensis-scaffold00001.fasta">citrus_sinensis-scaffold00001.fasta</a></td>
-  </tr>
-  <tr>
-    <th>C. siensis v1.0 genes sequences (FASTA format)</th>
-    <td><a href="/sites/default/files/citrus_sinensis-orange1.1g015632m.g.fasta">citrus_sinensis-orange1.1g015632m.g.fasta</a></td>
-  </tr>
-  <tr>
-    <th>C. siensis v1.0 genes (GFF3 format)</th>
-    <td><a href="/sites/default/files/citrus_sinensis-orange1.1g015632m.g.gff3">citrus_sinensis-orange1.1g015632m.g.gff3</a></td>
-  </tr>
+ <tr>
+ <th>C. sinensis v1.0 scaffolds (FASTA format)</th>
+ <td><a href="/sites/default/files/citrus_sinensis-scaffold00001.fasta">citrus_sinensis-scaffold00001.fasta</a></td>
+ </tr>
+ <tr>
+ <th>C. siensis v1.0 genes sequences (FASTA format)</th>
+ <td><a href="/sites/default/files/citrus_sinensis-orange1.1g015632m.g.fasta">citrus_sinensis-orange1.1g015632m.g.fasta</a></td>
+ </tr>
+ <tr>
+ <th>C. siensis v1.0 genes (GFF3 format)</th>
+ <td><a href="/sites/default/files/citrus_sinensis-orange1.1g015632m.g.gff3">citrus_sinensis-orange1.1g015632m.g.gff3</a></td>
+ </tr>
 </table>
 
 <b>Functional Annotations</b>
 <table>
-  <tr>
-    <th>Blast of C. sinensis v1.0 mRNA vs NCBI nr (XML format)</th>
-    <td><a href="/sites/default/files/blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out">blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out</a></td>
-  </tr>
-  <tr>
-    <th>Blast of C. sinensis v1.0 mRNA vs ExPASy SwissProt (XML format)</th>
-    <td><a href="/sites/default/files/blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out">blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out</a></td>
-  </tr>
-  <tr>
-    <th>InterPro analysis of C. sinensis v1.0 mRNA (XML format)</th>
-    <td><a href="/sites/default/files/citrus_sinensis-orange1.1g015632m.g.iprscan.xml">citrus_sinensis-orange1.1g015632m.g.iprscan.xml</a></td>
-  </tr>
-  <tr>
-    <th>KEGG analysis of C. sinensis v1.0 mRNA (KEGG heir format)</th>
-    <td><a href="/sites/default/files/citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz">citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz</td>
-  </tr>
+ <tr>
+ <th>Blast of C. sinensis v1.0 mRNA vs NCBI nr (XML format)</th>
+ <td><a href="/sites/default/files/blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out">blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_nr.out</a></td>
+ </tr>
+ <tr>
+ <th>Blast of C. sinensis v1.0 mRNA vs ExPASy SwissProt (XML format)</th>
+ <td><a href="/sites/default/files/blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out">blastx_citrus_sinensis-orange1.1g015632m.g.fasta.0_vs_uniprot_sprot.fasta.out</a></td>
+ </tr>
+ <tr>
+ <th>InterPro analysis of C. sinensis v1.0 mRNA (XML format)</th>
+ <td><a href="/sites/default/files/citrus_sinensis-orange1.1g015632m.g.iprscan.xml">citrus_sinensis-orange1.1g015632m.g.iprscan.xml</a></td>
+ </tr>
+ <tr>
+ <th>KEGG analysis of C. sinensis v1.0 mRNA (KEGG heir format)</th>
+ <td><a href="/sites/default/files/citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz">citrus_sinensis-orange1.1g015632m.g.KEGG.heir.tar.gz</td>
+ </tr>
 </table>
 ```
 
@@ -3232,7 +3232,7 @@ the sidebar using CCK fields. In some cases, we may want to link
 directly to these resource blocks. For example, the URL for our _Citrus
 sinensis_ page has been:
 
-    http://localhost/node/2
+ http://localhost/node/2
 
 On that page we have a feature browser, KEGG reports, GO reports, a data
 type summary and now we have a new Downloads block.
@@ -3249,7 +3249,7 @@ To create this link, first right-click on the link in the **Resources**
 sidebar and copying the link address. Paste the link in a text-editor so
 you can see the full URL. For this tutorial, the new Downloads link is
 
-    http://localhost/node/2#tripal_organism-resource_0-box
+ http://localhost/node/2#tripal_organism-resource_0-box
 
 Notice the text after the hash symbol: tripal_organism-resource_0-box.
 If you split that text into three pieces, using the dash as a delimiter,
@@ -3258,7 +3258,7 @@ link. The direct link to the **Downloads** block on our organism page is
 then the concatenation of the URL for our species page with this text in
 the following way:
 
-    http://localhost/node/2?block=resource_0
+ http://localhost/node/2?block=resource_0
 
 Notice, that we added the suffix '?block=' followed by the text
 'resource_0' to our original organism link. You can create links to any
@@ -3266,23 +3266,23 @@ block on the **Resources** sidebar using this method. As another
 example, here is the direct link to the data type summary block on our
 organism page:
 
-    http://localhost/node/2?block=feature_counts
+ http://localhost/node/2?block=feature_counts
 
 Suppose we do not want our organism page to have `node/2` in the URL,
 but rather we want the name of the species in our URL. If we edit our
 organism and set the **URL path settings** to be
 
-    species/citrus_sinensis
+ species/citrus_sinensis
 
 The URL for our organism page now becomes:
 
-    http://localhost/species/citrus_sinensis
+ http://localhost/species/citrus_sinensis
 
 We can still use the same scheme described above to link to the resource
 blocks, but using the new URL for our species:
 
-    http://localhost/species/citrus_sinensis?block=resource_0
-    http://localhost/species/citrus_sinensis?block=feature_counts
+ http://localhost/species/citrus_sinensis?block=resource_0
+ http://localhost/species/citrus_sinensis?block=feature_counts
 
 ### Adding Publications
 
@@ -3301,14 +3301,14 @@ drush pm-enable tripal_pub
 
 You should see the following output in the terminal:
 
-    The following extensions will be enabled: tripal_pub, tripal_contact
-    Do you really want to continue? (y/n): y
-    tripal_contact was enabled successfully.                                                                   [ok]
-    tripal_pub was enabled successfully.                                                                       [ok]
-    The directory sites/default/files/tripal/tripal_pub has been created.                                      [status]
-    Job 'Load OBO Tripal Publication' submitted.  Check the jobs page for status                               [status]
-    The directory sites/default/files/tripal/tripal_contact has been created.                                  [status]
-    Job 'Load OBO Tripal Contacts' submitted.  Check the jobs page for status                                  [status]
+ The following extensions will be enabled: tripal_pub, tripal_contact
+ Do you really want to continue? (y/n): y
+ tripal_contact was enabled successfully. [ok]
+ tripal_pub was enabled successfully. [ok]
+ The directory sites/default/files/tripal/tripal_pub has been created. [status]
+ Job 'Load OBO Tripal Publication' submitted. Check the jobs page for status [status]
+ The directory sites/default/files/tripal/tripal_contact has been created. [status]
+ Job 'Load OBO Tripal Contacts' submitted. Check the jobs page for status [status]
 
 You will notice that the Tripal Contact module was also installed, and
 two jobs were submitted. These jobs will load a contact and publication
@@ -3343,46 +3343,46 @@ We will add information about the Tripal publication. Enter the
 following values:
 
 - Publication Title: Tripal: a construction Toolkit for Online Genome
-  Databases
+ Databases
 - Publication Type: Journal Article
 - Publication Year: 2011
 - Citation: Stephen Ficklin SP, Sanderson LA, Cheng CH, Staton M, Lee T,
-  Cho IH, Jung S, Bett KE, Main D. Tripal: a construction Toolkit for
-  Online Genome Databases. Database, Sept 2011. Vol 2011.
+ Cho IH, Jung S, Bett KE, Main D. Tripal: a construction Toolkit for
+ Online Genome Databases. Database, Sept 2011. Vol 2011.
 - Additional Details
-  - Journal Name: Database
-  - Abstract: As the availability, affordability and magnitude of
-    genomics and genetics research increases so does the need to provide
-    online access to resulting data and analyses. Availability of a
-    tailored online database is the desire for many investigators or
-    research communities; however, managing the Information Technology
-    infrastructure needed to create such a database can be an undesired
-    distraction from primary research or potentially cost prohibitive.
-    Tripal provides simplified site development by merging the power of
-    Drupal, a popular web Content Management System with that of Chado,
-    a community-derived database schema for storage of genomic, genetic
-    and other related biological data. Tripal provides an interface that
-    extends the content management features of Drupal to the data housed
-    in Chado. Furthermore, Tripal provides a web-based Chado installer,
-    genomic data loaders, web-based editing of data for organisms,
-    genomic features, biological libraries, controlled vocabularies and
-    stock collections. Also available are Tripal extensions that support
-    loading and visualizations of NCBI BLAST, InterPro, Kyoto
-    Encyclopedia of Genes and Genomes and Gene Ontology analyses, as
-    well as an extension that provides integration of Tripal with
-    GBrowse, a popular GMOD tool. An Application Programming Interface
-    is available to allow creation of custom extensions by site
-    developers, and the look-and-feel of the site is completely
-    customizable through Drupal-based PHP template files. Addition of
-    non-biological content and user-management is afforded through
-    Drupal. Tripal is an open source and freely available software
-    package found at
-    <a href="http://tripal.sourceforge.net" class="external free"
-    rel="nofollow">http://tripal.sourceforge.net</a>
-  - Publication Date: 2011 Sep
-  - Authors: Ficklin SP, Sanderson LA, Cheng CH, Staton M, Lee T, Cho
-    IH, Jung S, Bett KE, Main D
-  - Volume: 2011
+ - Journal Name: Database
+ - Abstract: As the availability, affordability and magnitude of
+ genomics and genetics research increases so does the need to provide
+ online access to resulting data and analyses. Availability of a
+ tailored online database is the desire for many investigators or
+ research communities; however, managing the Information Technology
+ infrastructure needed to create such a database can be an undesired
+ distraction from primary research or potentially cost prohibitive.
+ Tripal provides simplified site development by merging the power of
+ Drupal, a popular web Content Management System with that of Chado,
+ a community-derived database schema for storage of genomic, genetic
+ and other related biological data. Tripal provides an interface that
+ extends the content management features of Drupal to the data housed
+ in Chado. Furthermore, Tripal provides a web-based Chado installer,
+ genomic data loaders, web-based editing of data for organisms,
+ genomic features, biological libraries, controlled vocabularies and
+ stock collections. Also available are Tripal extensions that support
+ loading and visualizations of NCBI BLAST, InterPro, Kyoto
+ Encyclopedia of Genes and Genomes and Gene Ontology analyses, as
+ well as an extension that provides integration of Tripal with
+ GBrowse, a popular GMOD tool. An Application Programming Interface
+ is available to allow creation of custom extensions by site
+ developers, and the look-and-feel of the site is completely
+ customizable through Drupal-based PHP template files. Addition of
+ non-biological content and user-management is afforded through
+ Drupal. Tripal is an open source and freely available software
+ package found at
+ <a href="http://tripal.sourceforge.net" class="external free"
+ rel="nofollow">http://tripal.sourceforge.net</a>
+ - Publication Date: 2011 Sep
+ - Authors: Ficklin SP, Sanderson LA, Cheng CH, Staton M, Lee T, Cho
+ IH, Jung S, Bett KE, Main D
+ - Volume: 2011
 
 Our publication has been added and you should see the following page:
 
@@ -3406,7 +3406,7 @@ link to the website where the publication can be found. When we created
 the publication we failed to add a 'URL' as a property. Edit the page
 and add a new URL property with the property **URL** with the value:
 
-    http://database.oxfordjournals.org/content/2011/bar044.long
+ http://database.oxfordjournals.org/content/2011/bar044.long
 
 After saving the page, the title is now linked to the full article.
 
@@ -3487,9 +3487,9 @@ Enter the following values in the fields:
 - Remote Database: PubMed
 - Loader Name: Pubs for Citrus sinensis
 - Criteria \#1:
-  - Scope: Abstract/Title
-  - Search Terms: Citrus sinensis
-  - is Phrase?: checked
+ - Scope: Abstract/Title
+ - Search Terms: Citrus sinensis
+ - is Phrase?: checked
 
 Now, click the 'Test Importer' button. This will connect to PubMed and
 search for all publications that match our provided criteria. On the
@@ -3523,9 +3523,9 @@ Now, add the following criteria:
 - Loader Name: Pubs for Citrus sinensis last 30 days
 - Days since record modified: 30
 - Criteria \#1:
-  - Scope: Abstract/Title
-  - Search Terms: Citrus sinensis
-  - is Phrase?: checked
+ - Scope: Abstract/Title
+ - Search Terms: Citrus sinensis
+ - is Phrase?: checked
 
 Now, when we test the importer we find only 2 publications that have
 been add (created) in PubMed in the last 30 days:
@@ -3549,11 +3549,11 @@ drush tpubs-import
 
 You should see output to the terminal that begins like this:
 
-    NOTE: Loading of publications is performed using a database transaction.
-    If the load fails or is terminated prematurely then the entire set of
-    insertions/updates is rolled back and will not be found in the database
+ NOTE: Loading of publications is performed using a database transaction.
+ If the load fails or is terminated prematurely then the entire set of
+ insertions/updates is rolled back and will not be found in the database
 
-    Importing: Pubs for Citrus sinensis
+ Importing: Pubs for Citrus sinensis
 
 And as publications are imported each one is printed to the screen. The
 importer will pause while it requests 100 publications. It will then
@@ -3562,15 +3562,15 @@ publications that match the criteria.
 
 Some things to know about the publication importer:
 
-1.  The importer keeps track of publications from the remote database
-    using the publication accession (e.g. PubMed ID).
-2.  If a publication with an accession (e.g. PubMed ID) already exists
-    in the local database, the record will be updated.
-3.  If a publication in the local database matches by title, journal and
-    year with one that is to be imported, then the record will be
-    updated. You can change the requirement of which fields to match at
-    the **Administer** → **Tripal Management** → **Publications** →
-    **Configuration** Page.
+1. The importer keeps track of publications from the remote database
+ using the publication accession (e.g. PubMed ID).
+2. If a publication with an accession (e.g. PubMed ID) already exists
+ in the local database, the record will be updated.
+3. If a publication in the local database matches by title, journal and
+ year with one that is to be imported, then the record will be
+ updated. You can change the requirement of which fields to match at
+ the **Administer** → **Tripal Management** → **Publications** →
+ **Configuration** Page.
 
 The second way to import publications is to add an entry to the UNIX
 cron. We did this previously for the Tripal Jobs management system when
@@ -3601,15 +3601,15 @@ sudo crontab -e
 Now add the following line to the bottom of the crontab:
 
 ```enter
-30 8 1,15 * *  su - www-data -c 'cd /var/www; /usr/local/drush/drush -l http://[site url] tpubs-import --report=[your email] > /dev/null'
+30 8 1,15 * * su - www-data -c 'cd /var/www; /usr/local/drush/drush -l http://[site url] tpubs-import --report=[your email] > /dev/null'
 ```
 
 Where
 
 - \[site url\] is the full URL of your site
 - \[your email\] is the email address of the user that should receive an
-  email containing a list of publications that were imported. You can
-  separate multiple email addresses with a comma.
+ email containing a list of publications that were imported. You can
+ separate multiple email addresses with a comma.
 
 The cron entry above will launch the importer at 8:30am on the first and
 fifteenth days of the month. We will run this importer twice a month in
@@ -3800,8 +3800,8 @@ Suppose we want to create a 'Species' page for our site that lists all
 of the available species that our site houses. To do this, enter the
 following
 
-1.  View name: all_species
-2.  View type: Node
+1. View name: all_species
+2. View type: Node
 
 Despite that we will be creating a list of species, we select the view
 type as 'Node'. This is because all nodes (nodes are pages in Drupal
@@ -3875,7 +3875,7 @@ this new page is inheriting all of the view settings we just created.
 Also a new **Page settings** section appeared. We need a URL for this
 species page so, click the **Path** setting and add the following text:
 
-    species
+ species
 
 This will create a page at the URL
 <a href="http://localhost/species" class="external free"

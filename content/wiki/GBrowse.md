@@ -38,7 +38,7 @@ and GFF2 </td>
 </tr>
 <tr class="odd rowhttp://gmod.org/wiki/-odd">
 <td class="smwpropname"></td>
-<td class="smwprops">GPL2  and
+<td class="smwprops">GPL2 and
 Artistic License </td>
 <td></td>
 </tr>
@@ -60,7 +60,7 @@ Artistic License </td>
 <tr class="odd rhttp://gmod.org/wiki/ow-odd">
 <td class="smwpropname"></td>
 <td class="smwprops">WormBase ,
-FlyBase  and
+FlyBase and
 HapMap </td>
 <td></td>
 </tr>
@@ -78,7 +78,7 @@ HapMap </td>
 <td class="smwpropname"></td>
 <td class="smwprops">download ,
 source code ,
-website  and
+website and
 wild URL </td>
 <td></td>
 </tr>

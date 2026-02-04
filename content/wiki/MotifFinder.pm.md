@@ -4,7 +4,7 @@ title: "MotifFinder.pm"
 # MotifFinder.pm
 
 MotifFinder.pm is a [GBrowse](/wiki/GBrowse) plugin written by
-[Xiaoqi Shi](/wiki/User:Xshi). It finds sequence specific motifs
+Xiaoqi Shi. It finds sequence specific motifs
 using Position Weight Matrix and display results graphically as tracks
 in the genome browser.
 
@@ -16,24 +16,24 @@ more information. Follow this link for
 class="external text" rel="nofollow">background reading of Position
 Weight Matrix</a></span>
 
-  plugin</span>](#download_the_plugin)
+ plugin</span>](#download_the_plugin)
 - [How to use
-  MotifFinder plugin](#How_to_use_MotifFinder_plugin)
-  - [Access The
-    Plugin](#Access_The_Plugin)
-  - [MotifFinder
-    Parameters](#MotifFinder_Parameters)
-  - [Position
-    Frequency Matrices](#Position_Frequency_Matrices)
-  - [Indel
-    Detection](#Indel_Detection)
-  - [Graphical
-    Presentation](#Graphical_Presentation)
+ MotifFinder plugin](#How_to_use_MotifFinder_plugin)
+ - [Access The
+ Plugin](#Access_The_Plugin)
+ - [MotifFinder
+ Parameters](#MotifFinder_Parameters)
+ - [Position
+ Frequency Matrices](#Position_Frequency_Matrices)
+ - [Indel
+ Detection](#Indel_Detection)
+ - [Graphical
+ Presentation](#Graphical_Presentation)
 - [How is the
-  motif predicted?](#How_is_the_motif_predicted.3F)
-  - [Calculate
-    Weight Score](#Calculate_Weight_Score)
-  - [Algorithms](#Algorithms)
+ motif predicted?](#How_is_the_motif_predicted.3F)
+ - [Calculate
+ Weight Score](#Calculate_Weight_Score)
+ - [Algorithms](#Algorithms)
 
 # download the plugin
 
@@ -49,13 +49,13 @@ class="external text" rel="nofollow">contact the author</a> for source
 code and then follow the instruction below:
 
 - save both 'motiffinder' and 'MotifFinder.pm' under GBrowse plugin
-  directory(set the permission as executable).
+ directory(set the permission as executable).
 - save 'matrices.txt'(example of the PFM tables) under GBrowse conf
-  directory
+ directory
 - include "MotifFinder" in your main GBrowse.conf.
 - specify the matrix file name in your species \*.conf
-            [MotifFinder:plugin]
-            matrix = matrices.txt
+ [MotifFinder:plugin]
+ matrix = matrices.txt
 
 Then you should be able to run the plugin!
 
@@ -64,9 +64,9 @@ Then you should be able to run the plugin!
 ## Access The Plugin
 
 - From GBrowse main page, the PrimerDesigner plugin, as well as other
-  installed plugins, can be accessed via the upper right menu.
+ installed plugins, can be accessed via the upper right menu.
 - In GBrowse, navigate to the genomic region you interested in, then
-  select 'Annotate Sequence Motif' from the menu and click 'Configure'
+ select 'Annotate Sequence Motif' from the menu and click 'Configure'
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Select.png" class="thumbborder"
@@ -78,7 +78,7 @@ width="389" height="112" alt="Select.png" />
 - Threshold: a cutoff score between 0.8 to 1 is recommended.
 - Background Probability: should be inputted in (A C G T) order.
 - Indel Size: currently only small Indels(length under 6) can be
-  handled.
+ handled.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/da/Parameter.png" width="428" height="289"
@@ -98,11 +98,11 @@ WormBase</a>
 However, you can also add your own PFMs to the toggle section "Paste
 PFMs Here" in fasta format(arrange rows in A C G T order). e.g.
 
-     >name of the matrix ( the '>' sign is required !)
-     0       1       1       1       1       23      0       0       1       7       0       0       19
-     10      18      1       13      14      2       20      0       17      0       7       16      0
-     2       4       24      1       0       0       0       26      8       2       0       10      7
-     14      3       0       11      11      1       6       0       0       17      19      0       0
+ >name of the matrix ( the '>' sign is required !)
+ 0 1 1 1 1 23 0 0 1 7 0 0 19
+ 10 18 1 13 14 2 20 0 17 0 7 16 0
+ 2 4 24 1 0 0 0 26 8 2 0 10 7
+ 14 3 0 11 11 1 6 0 0 17 19 0 0
 
 ## Indel Detection
 
@@ -115,7 +115,7 @@ improvement.
 - each matching motifs is displayed as a glyph box on the tracks
 - box arrow indicates the strand info
 - move mouse on glyph will show you the computed similarity score and
-  start/stop position of the motif
+ start/stop position of the motif
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/29/Display.png" width="1035" height="293"
@@ -131,14 +131,14 @@ position matrix) in new sequences.
 Scoring function is the same as the
 <a href="http://tfbs.genereg.net/" class="external text"
 
-     w = log2 ( ( f + sqrt(N) * p ) / ( N + sqrt(N) ) / 0.25 )
+ w = log2 ( ( f + sqrt(N) * p ) / ( N + sqrt(N) ) / 0.25 )
 
 If we have PFM from TRANSFAC 7.0:
 
-       A 1 12 0 0 0 0 0 7 1 1 0 0 0 2 1
-       C 8 0 0 0 0 0 13 1 7 0 0 3 8 7 8
-       G 2 1 12 0 0 0 0 1 2 0 0 0 0 2 3
-       T 2 0 0 13 13 13 0 4 3 12 13 10 5 2 1
+ A 1 12 0 0 0 0 0 7 1 1 0 0 0 2 1
+ C 8 0 0 0 0 0 13 1 7 0 0 3 8 7 8
+ G 2 1 12 0 0 0 0 1 2 0 0 0 0 2 3
+ T 2 0 0 13 13 13 0 4 3 12 13 10 5 2 1
 
 w - is a weight for the current nucleotide we are calculating
 
@@ -154,9 +154,9 @@ one usually defaults to 0.25 (i.e. one nucleotide out of four)
 ## Algorithms
 
 - Backtrack: use recursive function to build all possible motifs,
-  terminate recursion when an intermediate score is not reached.
+ terminate recursion when an intermediate score is not reached.
 - Brute-Force: calculate the similarity score across the whole region
-  using a sliding window of motif size
+ using a sliding window of motif size
 
 This program uses a combined strategy by choosing between above two
 methods(depending length of the motif and cutoff score) to achieve

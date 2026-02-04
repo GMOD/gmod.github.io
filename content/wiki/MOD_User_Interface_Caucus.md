@@ -49,11 +49,11 @@ The common user interface topics for presenters to answer are
 
 - Search for name of gene, view information (gene page)
 - Search for genes that cause a phenotype or GO association (ie, by some
-  attribute)
+ attribute)
 - Generate a customized report on selected aspects of a gene
 - Generate bulk output based on a query
 - Combine the results at your MOD with information from other data
-  sources
+ sources
 
 Please use this node to add comments or questions. You must have an
 account to post though, please login or registration.
@@ -63,12 +63,12 @@ gotten out of control.) If you are already logged in, use the 'add new
 comment' link below.
 
 - [Face Caucus ApiDB: User Studies and Impact on
-  Development](/wiki/Face_Caucus_ApiDB:_User_Studies_and_Impact_on_Development)
+ Development](/wiki/Face_Caucus_ApiDB:_User_Studies_and_Impact_on_Development)
 
 - [Face Caucus SGN: Associating Solanaceae loci with
-  phenotype](/wiki/Face_Caucus_SGN__Associating_Solanaceae_loci_with_phenotype)
+ phenotype](/wiki/Face_Caucus_SGN__Associating_Solanaceae_loci_with_phenotype)
 
 - [MOD User Interfaces: outline of
-  topics](/wiki/MOD_User_Interfaces__outline_of_topics)
+ topics](/wiki/MOD_User_Interfaces__outline_of_topics)
 - [MOD User Interfaces: Sample of several MOD Top Level
-  functions](/wiki/MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions)
+ functions](/wiki/MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions)

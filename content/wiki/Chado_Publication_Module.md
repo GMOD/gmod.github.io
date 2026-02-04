@@ -3,18 +3,18 @@ title: "Chado Publication Module"
 ---
 # Chado Publication Module
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Tables](#Tables)
-  - [Table:
-    pub](#Table:_pub)
-  - [Table:
-    pub_dbxref](#Table:_pub_dbxref)
-  - [Table:
-    pub_relationship](#Table:_pub_relationship)
-  - [Table:
-    pubauthor](#Table:_pubauthor)
-  - [Table:
-    pubprop](#Table:_pubprop)
+ - [Table:
+ pub](#Table:_pub)
+ - [Table:
+ pub_dbxref](#Table:_pub_dbxref)
+ - [Table:
+ pub_relationship](#Table:_pub_relationship)
+ - [Table:
+ pubauthor](#Table:_pubauthor)
+ - [Table:
+ pubprop](#Table:_pubprop)
 
 # Introduction
 
@@ -194,10 +194,10 @@ Medline, ISSN, coden...
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | pub_dbxref_id | serial | *PRIMARY KEY* |
+| | pub_dbxref_id | serial | *PRIMARY KEY* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 | [dbxref](/wiki/Chado_Tables#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
-|  | is_current | boolean | *NOT NULL DEFAULT true* |
+| | is_current | boolean | *NOT NULL DEFAULT true* |
 
 pub_dbxref Structure
 
@@ -212,7 +212,7 @@ pub.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | pub_relationship_id | serial | *PRIMARY KEY* |
+| | pub_relationship_id | serial | *PRIMARY KEY* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | subject_id | integer | *UNIQUE#1 NOT NULL* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | object_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
@@ -310,11 +310,11 @@ Property-value pairs for a pub. Follows standard chado pattern.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | pubprop_id | serial | *PRIMARY KEY* |
+| | pubprop_id | serial | *PRIMARY KEY* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | text | *NOT NULL* |
-|  | rank | integer | *UNIQUE#1* |
+| | value | text | *NOT NULL* |
+| | rank | integer | *UNIQUE#1* |
 
 pubprop Structure
 

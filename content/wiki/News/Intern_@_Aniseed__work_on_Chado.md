@@ -51,7 +51,7 @@ ontologies, and the development of interfaces to graphically represent
 the data and mine them. The data considered include:
 
 - SELEX-seq DNA-binding specificities for a large fraction of ascidian
-  transcription factors obtained by the team
+ transcription factors obtained by the team
 - Data from ChIP-seq/RNA-seq experiments
 - Signal transduction pathways/networks
 
@@ -70,8 +70,8 @@ sufficient to understand technical seminars, annotating code, and
 present the work is requested. Computer skills required are:
 
 - Knowledge of relational databases (PostgreSQL, MySQL). Knowledge of
-  <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> would
-  be an asset.
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> would
+ be an asset.
 - OOP / Languages: PHP 5 (Jelix framework), Perl, XML
 - Control of web interfaces PHP / HTML / Apache, IDE: NetBeans
 - Experience in web-service (XHTML, HTML, CSS, XML)

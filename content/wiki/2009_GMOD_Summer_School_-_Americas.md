@@ -46,11 +46,11 @@ title="GMOD Summer School">GMOD Summer School</a> was offered in
 2009](/wiki/2009_GMOD_Summer_School_-_Europe),
 as part of [GMOD Europe 2009](/wiki/GMOD_Europe_2009).
 
-  Program](#Program)
+ Program](#Program)
 - [Instructors](#Instructors)
 - [Prerequisites](#Prerequisites)
-  - [System
-    Requirements](#System_Requirements)
+ - [System
+ Requirements](#System_Requirements)
 - [Cost](#Cost)
 - [Feedback](#Feedback)
 
@@ -104,7 +104,7 @@ July 16</td>
 <td
 style="text-align: center; background-color: #ddffff;"><strong>Introduction
 and Overview</strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
+Scott Cain and Dave Clements<br />
 Participant and instructor introductions, how the GMOD project works,
 what software tools are available in GMOD, how they interoperate, what
 resources are needed to get a GMOD installation up and running, and
@@ -128,7 +128,7 @@ style="text-align: center; background-color: #ddffff;"><strong>Lunch</strong><br
 <td style="background-color: #ccffff">1:15pm</td>
 <td style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/MAKER_Tutorial" class="mw-redirect" title="MAKER Tutorial">MAKER
 I</a></strong><br />
-<a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson Holt</a><br />
+Carson Holt<br />
 <a href="/wiki/MAKER" title="MAKER">MAKER</a> overview, installation, and
 basic configuration for annotating genomic sequence</td>
 </tr>
@@ -145,7 +145,7 @@ class="external text" rel="nofollow">on your own</a></td>
 <td style="background-color: #ccffff">6:30pm</td>
 <td style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/MAKER_Tutorial" class="mw-redirect" title="MAKER Tutorial">MAKER
 II</a></strong><br />
-<a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson Holt</a><br />
+Carson Holt<br />
 Advanced <a href="/wiki/MAKER" title="MAKER">MAKER</a> configuration,
 re-annotation options, and improving annotation quality</td>
 </tr>
@@ -153,8 +153,8 @@ re-annotation options, and improving annotation quality</td>
 <td style="background-color: #ccffff">7:30pm</td>
 <td style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse</a></strong><br />
-<a href="/wiki/User%253AMitchSkinner" title="User%253AMitchSkinner">Mitch
-Skinner</a><br />
+Mitch
+Skinner<br />
 <a href="/wiki/JBrowse" title="JBrowse">JBrowse</a> installation,
 configuration and administration; converting <a href="/wiki/GFF3"
 title="GFF3">GFF3</a> to <a href="/wiki/Glossary#JSON"
@@ -175,7 +175,7 @@ July 17</td>
 <td style="background-color: #ccffdd">8:45am</td>
 <td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/Chado_Tutorial" class="mw-redirect" title="Chado Tutorial">Chado
 I</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a>, <a href="/wiki/User%253AJorvis" title="User%253AJorvis">Joshua Orvis</a>, and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+Scott Cain, Joshua Orvis, and Dave Clements</td>
 </tr>
 <tr class="even">
 <td style="background-color: #ccffdd">12:30pm</td>
@@ -188,13 +188,13 @@ style="text-align: center; background-color: #ddffdd;"><strong>Lunch</strong><br
 <td style="background-color: #ccffdd">1:30pm</td>
 <td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/Chado_Tutorial" class="mw-redirect" title="Chado Tutorial">Chado
 II</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a>, <a href="/wiki/User%253AJorvis" title="User%253AJorvis">Joshua Orvis</a>, and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+Scott Cain, Joshua Orvis, and Dave Clements</td>
 </tr>
 <tr class="even">
 <td style="background-color: #ccffdd">3:00pm</td>
 <td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo I</a></strong><br />
-<a href="/wiki/User%253AElee" title="User%253AElee">Ed Lee</a><br />
+Ed Lee<br />
 Overview, basic installation, basic configuration, reading/writing data,
 and remote analyses.</td>
 </tr>
@@ -209,7 +209,7 @@ style="text-align: center; background-color: #ddffdd;"><strong>Dinner</strong><b
 <td style="background-color: #ccffdd">7:00pm</td>
 <td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo II</a></strong><br />
-<a href="/wiki/User%253AElee" title="User%253AElee">Ed Lee</a><br />
+Ed Lee<br />
 Custom installation (building Apollo from source), advanced
 configuration, and setting up customized Java Web Start instance.</td>
 </tr>
@@ -228,7 +228,7 @@ July 18</td>
 <td style="background-color: #ffffbb">8:45am</td>
 <td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/GBrowse_Tutorial" title="GBrowse Tutorial">GBrowse
 I</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a><br />
+Scott Cain and Sheldon McKay<br />
 </td>
 </tr>
 <tr class="odd">
@@ -242,13 +242,13 @@ style="text-align: center; background-color: #ffffcc;"><strong>Lunch</strong><br
 <td style="background-color: #ffffbb">1:30pm</td>
 <td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/GBrowse_Tutorial" title="GBrowse Tutorial">GBrowse
 II</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+Scott Cain and Sheldon McKay</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #ffffbb">2:30pm</td>
 <td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/BioMart_Tutorial"
 title="BioMart Tutorial">BioMart</a></strong><br />
-<a href="/wiki/User%253AJunjun" title="User%253AJunjun">Junjun Zhang</a><br />
+Junjun Zhang<br />
 Introduction; exploring over 20 public databases through <a href="/wiki/BioMart" title="BioMart">BioMart</a> central portal; system
 installation; accessing BioMart server via API, webservice and <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a>; configuration of
 BioMart server including federation; demonstration of creating data
@@ -290,7 +290,7 @@ July 19</td>
 <td style="background-color: #ffddcc">8:45am</td>
 <td style="text-align: center; background-color: #ffeedd;"><strong><a href="/wiki/GBrowse_syn_Tutorial" class="mw-redirect"
 title="GBrowse syn Tutorial">GBrowse_syn</a></strong><br />
-<a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+Sheldon McKay</td>
 </tr>
 <tr class="even">
 <td style="background-color: #ffddcc">12:30pm</td>
@@ -303,7 +303,7 @@ style="text-align: center; background-color: #ffeedd;"><strong>Lunch</strong><br
 <td style="background-color: #ffddcc">1:30pm</td>
 <td style="text-align: center; background-color: #ffeedd;"><strong><a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal</a></strong><br />
-<a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen Ficklin</a><br />
+Stephen Ficklin<br />
 <a href="/wiki/Tripal" title="Tripal">Tripal</a> is a web front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases built
 on <a href="http://www.drupal.org/" class="external text"
 
@@ -315,7 +315,7 @@ administration.</td>
 <td
 style="text-align: center; background-color: #ffeedd;"><strong>Wrapup
 and Resources</strong><br />
-<a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a> and <a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+Dave Clements and Scott Cain</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #ffddcc">6:30pm</td>
@@ -329,9 +329,9 @@ Ends</td>
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> develoepr | <a href="http://www.oicr.on.ca/" class="external text" |
+| Scott Cain | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> develoepr | <a href="http://www.oicr.on.ca/" class="external text" |
 
-Spring Harbor Laboratory</a> | [Joshua Orvis](/wiki/User:Jorvis) | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developer and power <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> user | <a href="http://www.igs.umaryland.edu/" class="external text"
+Spring Harbor Laboratory</a> | Joshua Orvis | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developer and power <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> user | <a href="http://www.igs.umaryland.edu/" class="external text"
 
 ## Prerequisites
 
@@ -353,7 +353,7 @@ as homework to be done prior to the course's start.**
 ### System Requirements
 
 |----|----|
-| <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img |  |
+| <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img | |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/VmwareLogoSmall.jpg" width="100"
 height="26" alt="VMware" /></a> | *Participants are required to bring their own laptops, already capable of running a VMware system image.* |
 
@@ -372,7 +372,7 @@ height="48" alt="Windoze" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for  and
+A free VMware player is available for and
  [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
@@ -437,7 +437,7 @@ instructors.
 <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> to others?**
 
-| No  | Yes, with reservations | Yes | No opinion |
+| No | Yes, with reservations | Yes | No opinion |
 |-----|------------------------|-----|------------|
 | 0% | 12% | 88% | 0% |
 

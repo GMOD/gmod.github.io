@@ -41,4 +41,4 @@ annotations.
 More information about Canto:
 
 - [GMOD wiki page on Canto](../Canto) -- includes downloads and
-  mailing list
+ mailing list

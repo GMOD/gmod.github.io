@@ -3,31 +3,31 @@ title: "Chado General Module"
 ---
 # Chado General Module
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Design
-  patterns](#Design_patterns)
+ patterns](#Design_patterns)
 - [About the
-  Tables](#About_the_Tables)
-  - [URLs and
-    URIs](#URLs_and_URIs)
-    - [About
-      URL](#About_URL)
-    - [About
-      URI](#About_URI)
-    - [To
-      Do](#To_Do)
-  - [Identiﬁers
-    and Interoperability between Chado
-    Instances](#Identi.EF.AC.81ers_and_Interoperability_between_Chado_Instances)
+ Tables](#About_the_Tables)
+ - [URLs and
+ URIs](#URLs_and_URIs)
+ - [About
+ URL](#About_URL)
+ - [About
+ URI](#About_URI)
+ - [To
+ Do](#To_Do)
+ - [Identiﬁers
+ and Interoperability between Chado
+ Instances](#Identi.EF.AC.81ers_and_Interoperability_between_Chado_Instances)
 - [Tables](#Tables)
-  - [Table:
-    db](#Table:_db)
-  - [Table:
-    dbxref](#Table:_dbxref)
-  - [Table:
-    project](#Table:_project)
-  - [Table:
-    tableinfo](#Table:_tableinfo)
+ - [Table:
+ db](#Table:_db)
+ - [Table:
+ dbxref](#Table:_dbxref)
+ - [Table:
+ project](#Table:_project)
+ - [Table:
+ tableinfo](#Table:_tableinfo)
 
 # Introduction
 
@@ -103,10 +103,10 @@ not be two GOs.
 See the following for background:
 
 - <a href="http://en.wikipedia.org/wiki/Uniform_Resource_Identifier"
-  class="external free"
-  rel="nofollow">http://en.wikipedia.org/wiki/Uniform_Resource_Identifier</a>
+ class="external free"
+ rel="nofollow">http://en.wikipedia.org/wiki/Uniform_Resource_Identifier</a>
 - <a href="http://en.wikipedia.org/wiki/URL" class="external free"
-  rel="nofollow">http://en.wikipedia.org/wiki/URL</a>
+ rel="nofollow">http://en.wikipedia.org/wiki/URL</a>
 
 Basically, a URI is an addressing scheme. The form of URI most people
 are familiar with are URLs; but not all URIs are URLs. Another URI
@@ -172,7 +172,7 @@ URIs, URNs (e.g. LSIDs). We can do this by treating the URL as a URI -
 however, some applications may expect this to be resolvable - to be
 decided.
 
-| F-Key | Name        | Type                   | Description       | ----- | ----------- | ---------------------- | ----------------- |       | db_id       | serial                 | _PRIMARY KEY_     |       | name        | character varying(255) | _UNIQUE NOT NULL_ |       | description | character varying(255) | urlprefix   | character varying(255) | url         | character varying(255) db Structure
+| F-Key | Name | Type | Description | ----- | ----------- | ---------------------- | ----------------- | | db_id | serial | _PRIMARY KEY_ | | name | character varying(255) | _UNIQUE NOT NULL_ | | description | character varying(255) | urlprefix | character varying(255) | url | character varying(255) db Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -274,7 +274,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: project
 
-| F-Key | Name        | Type                   | Description       | ----- | ----------- | ---------------------- | ----------------- |       | project_id  | serial                 | _PRIMARY KEY_     |       | name        | character varying(255) | _UNIQUE NOT NULL_ |       | description | character varying(255) | _NOT NULL_        |
+| F-Key | Name | Type | Description | ----- | ----------- | ---------------------- | ----------------- | | project_id | serial | _PRIMARY KEY_ | | name | character varying(255) | _UNIQUE NOT NULL_ | | description | character varying(255) | _NOT NULL_ |
 
 project Structure
 
@@ -287,7 +287,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: tableinfo
 
-| F-Key | Name                | Type                  | Description              | ----- | ------------------- | --------------------- | ------------------------ |       | tableinfo_id        | serial                | _PRIMARY KEY_            |       | name                | character varying(30) | _UNIQUE NOT NULL_        |       | primary_key_column  | character varying(30) | is_view             | integer               | _NOT NULL_               |       | view_on_table_id    | integer               | superclass_table_id | integer               | is_updateable       | integer               | _NOT NULL DEFAULT 1_     |       | modification_date   | date                  | _NOT NULL DEFAULT now()_ |
+| F-Key | Name | Type | Description | ----- | ------------------- | --------------------- | ------------------------ | | tableinfo_id | serial | _PRIMARY KEY_ | | name | character varying(30) | _UNIQUE NOT NULL_ | | primary_key_column | character varying(30) | is_view | integer | _NOT NULL_ | | view_on_table_id | integer | superclass_table_id | integer | is_updateable | integer | _NOT NULL DEFAULT 1_ | | modification_date | date | _NOT NULL DEFAULT now()_ |
 
 tableinfo Structure
 

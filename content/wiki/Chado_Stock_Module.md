@@ -3,32 +3,32 @@ title: "Chado Stock Module"
 ---
 # Chado Stock Module
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Tables](#Tables)
-  - [Table:
-    stock](#Table:_stock)
-  - [Table:
-    stock_cvterm](#Table:_stock_cvterm)
-  - [Table:
-    stock_dbxref](#Table:_stock_dbxref)
-  - [Table:
-    stock_genotype](#Table:_stock_genotype)
-  - [Table:
-    stock_pub](#Table:_stock_pub)
-  - [Table:
-    stock_relationship](#Table:_stock_relationship)
-  - [Table:
-    stock_relationship_pub](#Table:_stock_relationship_pub)
-  - [Table:
-    stockcollection](#Table:_stockcollection)
-  - [Table:
-    stockcollection_stock](#Table:_stockcollection_stock)
-  - [Table:
-    stockcollectionprop](#Table:_stockcollectionprop)
-  - [Table:
-    stockprop](#Table:_stockprop)
-  - [Table:
-    stockprop_pub](#Table:_stockprop_pub)
+ - [Table:
+ stock](#Table:_stock)
+ - [Table:
+ stock_cvterm](#Table:_stock_cvterm)
+ - [Table:
+ stock_dbxref](#Table:_stock_dbxref)
+ - [Table:
+ stock_genotype](#Table:_stock_genotype)
+ - [Table:
+ stock_pub](#Table:_stock_pub)
+ - [Table:
+ stock_relationship](#Table:_stock_relationship)
+ - [Table:
+ stock_relationship_pub](#Table:_stock_relationship_pub)
+ - [Table:
+ stockcollection](#Table:_stockcollection)
+ - [Table:
+ stockcollection_stock](#Table:_stockcollection_stock)
+ - [Table:
+ stockcollectionprop](#Table:_stockcollectionprop)
+ - [Table:
+ stockprop](#Table:_stockprop)
+ - [Table:
+ stockprop_pub](#Table:_stockprop_pub)
 
 # Introduction
 
@@ -162,7 +162,7 @@ primary cvterms should use stock.type_id.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | stock_cvterm_id | serial | *PRIMARY KEY* |
+| | stock_cvterm_id | serial | *PRIMARY KEY* |
 | [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
@@ -237,7 +237,7 @@ stock_genotype -\> stock.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | stock_genotype_id | serial | *PRIMARY KEY* |
+| | stock_genotype_id | serial | *PRIMARY KEY* |
 | [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
 | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -252,7 +252,7 @@ computer file.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | stock_pub_id | serial | *PRIMARY KEY* |
+| | stock_pub_id | serial | *PRIMARY KEY* |
 | [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -264,12 +264,12 @@ stock_pub Structure
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | stock_relationship_id | serial | *PRIMARY KEY* |
+| | stock_relationship_id | serial | *PRIMARY KEY* |
 | [stock](/wiki/Chado_Tables#Table:_stock) | subject_id | integer | *UNIQUE#1 NOT NULL* |
 | [stock](/wiki/Chado_Tables#Table:_stock) | object_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | text | rank |
-| integer | *UNIQUE#1 NOT NULL* |  |  |
+| | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* | | |
 
 stock_relationship Structure
 
@@ -286,7 +286,7 @@ of a publication.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | stock_relationship_pub_id | serial | *PRIMARY KEY* |
+| | stock_relationship_pub_id | serial | *PRIMARY KEY* |
 | [stock_relationship](/wiki/Chado_Tables#Table:_stock_relationship) | stock_relationship_id | integer | *UNIQUE#1 NOT NULL* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -374,7 +374,7 @@ contained in the collection.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | stockcollection_stock_id | serial | *PRIMARY KEY* |
+| | stockcollection_stock_id | serial | *PRIMARY KEY* |
 | [stockcollection](/wiki/Chado_Tables#Table:_stockcollection) | stockcollection_id | integer | *UNIQUE#1 NOT NULL* |
 | [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -390,11 +390,11 @@ URLs.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | stockcollectionprop_id | serial | *PRIMARY KEY* |
+| | stockcollectionprop_id | serial | *PRIMARY KEY* |
 | [stockcollection](/wiki/Chado_Tables#Table:_stockcollection) | stockcollection_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | text | rank |
-| integer | *UNIQUE#1 NOT NULL* |  |  |
+| | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* | | |
 
 stockcollectionprop Structure
 
@@ -410,11 +410,11 @@ Multivalued property-value pairs must be differentiated by rank.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | stockprop_id | serial | *PRIMARY KEY* |
+| | stockprop_id | serial | *PRIMARY KEY* |
 | [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | text | rank |
-| integer | *UNIQUE#1 NOT NULL* |  |  |
+| | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* | | |
 
 stockprop Structure
 
@@ -431,7 +431,7 @@ publication.
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
-|  | stockprop_pub_id | serial | *PRIMARY KEY* |
+| | stockprop_pub_id | serial | *PRIMARY KEY* |
 | [stockprop](/wiki/Chado_Tables#Table:_stockprop) | stockprop_id | integer | *UNIQUE#1 NOT NULL* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 

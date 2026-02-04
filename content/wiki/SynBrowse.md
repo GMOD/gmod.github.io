@@ -11,7 +11,7 @@ height="104" alt="SynBrowse logo.png" />
 > the GMOD project.
 > This page is included only for reference purposes.
 
-  Status](#Status)
+ Status](#Status)
 - [Demo](#Demo)
 - [Requirements](#Requirements)
 - [Downloads](#Downloads)

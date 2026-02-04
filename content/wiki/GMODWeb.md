@@ -51,9 +51,9 @@ For site administrators installing GMODWeb we recommend using the
 
 <a href="http://genomebiology.com/2008/9/6/R102" class="external text"
 
-by Brian D O'Connor, Allen Day, [Scott Cain](/wiki/User:Scott),
-Olivier Arnaiz, [Linda Sperling](/wiki/User:Sperling) and
-[Lincoln D Stein](/wiki/User:Lstein), Genome Biology 2008,
+by Brian D O'Connor, Allen Day, Scott Cain,
+Olivier Arnaiz, Linda Sperling and
+Lincoln D Stein, Genome Biology 2008,
 9:R102. The publication describing GMODWeb
 
 [GMODWeb and Package Management](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/Jan2009GMODWebAndPackages.pdf)

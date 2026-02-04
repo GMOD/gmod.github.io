@@ -3,56 +3,56 @@ title: "GMOD Online Training 2014/JBrowse Tutorial"
 ---
 # GMOD Online Training 2014/JBrowse Tutorial
 
-  Prerequisites](#Prerequisites)
+ Prerequisites](#Prerequisites)
 - [JBrowse
-  Introduction](#JBrowse_Introduction)
+ Introduction](#JBrowse_Introduction)
 - [Setting up
-  JBrowse](#Setting_up_JBrowse)
-  - [Getting
-    JBrowse](#Getting_JBrowse)
-  - [Starting
-    Point](#Starting_Point)
-  - [Basic
-    Steps](#Basic_Steps)
-  - [Features
-    from a directory of
-    files](#Features_from_a_directory_of_files)
-    - [Specify reference
-      sequences](#Specify_reference_sequences)
-    - [Load
-      Feature Data](#Load_Feature_Data)
-    - [Index
-      feature names](#Index_feature_names)
-  - [Features
-    from GFF3 or BED files](#Features_from_GFF3_or_BED_files)
-  - [BAM
-    alignments](#BAM_alignments)
-  - [BAM
-    coverage](#BAM_coverage)
-  - [Quantitative data](#Quantitative_data)
-    - [BigWig](#BigWig)
-  - [Variation
-    Data](#Variation_Data)
-    - [VCF
-      tracks](#VCF_tracks)
-  - [Faceted
-    Track Selection](#Faceted_Track_Selection)
+ JBrowse](#Setting_up_JBrowse)
+ - [Getting
+ JBrowse](#Getting_JBrowse)
+ - [Starting
+ Point](#Starting_Point)
+ - [Basic
+ Steps](#Basic_Steps)
+ - [Features
+ from a directory of
+ files](#Features_from_a_directory_of_files)
+ - [Specify reference
+ sequences](#Specify_reference_sequences)
+ - [Load
+ Feature Data](#Load_Feature_Data)
+ - [Index
+ feature names](#Index_feature_names)
+ - [Features
+ from GFF3 or BED files](#Features_from_GFF3_or_BED_files)
+ - [BAM
+ alignments](#BAM_alignments)
+ - [BAM
+ coverage](#BAM_coverage)
+ - [Quantitative data](#Quantitative_data)
+ - [BigWig](#BigWig)
+ - [Variation
+ Data](#Variation_Data)
+ - [VCF
+ tracks](#VCF_tracks)
+ - [Faceted
+ Track Selection](#Faceted_Track_Selection)
 - [JBrowse
-  Features](#JBrowse_Features)
-  - [Highlighting interesting
-    things](#Highlighting_interesting_things)
-  - [Opening
-    local files](#Opening_local_files)
-  - [Combination tracks (coming in
-    1.10.0)](#Combination_tracks_.28coming_in_1.10.0.29)
+ Features](#JBrowse_Features)
+ - [Highlighting interesting
+ things](#Highlighting_interesting_things)
+ - [Opening
+ local files](#Opening_local_files)
+ - [Combination tracks (coming in
+ 1.10.0)](#Combination_tracks_.28coming_in_1.10.0.29)
 - [Upgrading an
-  Existing JBrowse](#Upgrading_an_Existing_JBrowse)
+ Existing JBrowse](#Upgrading_an_Existing_JBrowse)
 - [Common
-  Problems](#Common_Problems)
+ Problems](#Common_Problems)
 - [Future JBrowse
-  Plans](#Future_JBrowse_Plans)
+ Plans](#Future_JBrowse_Plans)
 - [Other
-  links](#Other_links)
+ links](#Other_links)
 
 ## Prerequisites
 
@@ -69,14 +69,14 @@ the JBrowse directory):
 
 - samtools, and its dependency libncurses5-dev
 - perl module: <a href="http://search.cpan.org/perldoc?Bio::DB::SAM"
-  class="external text" rel="nofollow">Bio::DB::SAM</a>
+ class="external text" rel="nofollow">Bio::DB::SAM</a>
 
 Other prerequisites are installed by JBrowse automatically.
 
 This is how they were installed: **(don't do this yourself)**
 
 ``` dont
-  sudo apt-get install libpng12-0 libpng12-dev build-essential libncurses5-dev
+ sudo apt-get install libpng12-0 libpng12-dev build-essential libncurses5-dev
 ```
 
 Make sure you can copy/paste from the wiki.
@@ -102,21 +102,21 @@ presentation</a>
 ### Getting JBrowse
 
 - prepare a directory for JBrowse
-    cd /var/www
-    sudo mkdir jbrowse_demo
-    sudo chown ubuntu.ubuntu jbrowse_demo
-    cd jbrowse_demo
+ cd /var/www
+ sudo mkdir jbrowse_demo
+ sudo chown ubuntu.ubuntu jbrowse_demo
+ cd jbrowse_demo
 
 - download the demo bundle from jbrowse.org and unzip it
-    wget https://s3.amazonaws.com/gmod-online-2014/GMOD_Summer_School_2014_JBrowse.tar.gz
-    tar zxvf GMOD_Summer_School_2014_JBrowse.tar.gz
-    cd GMOD_Summer_School_2014_JBrowse/
-    unzip JBrowse-1.11.4.zip
-    mv JBrowse-1.11.4 jbrowse
+ wget https://s3.amazonaws.com/gmod-online-2014/GMOD_Summer_School_2014_JBrowse.tar.gz
+ tar zxvf GMOD_Summer_School_2014_JBrowse.tar.gz
+ cd GMOD_Summer_School_2014_JBrowse/
+ unzip JBrowse-1.11.4.zip
+ mv JBrowse-1.11.4 jbrowse
 
 - run `setup.sh` to configure this copy of JBrowse
-    cd jbrowse
-    ./setup.sh
+ cd jbrowse
+ ./setup.sh
 
 ### Starting Point
 
@@ -130,10 +130,10 @@ You should see a "Congratulations" page.
 
 There are four basic steps to setting up an instance of JBrowse:
 
-1.  Load and format reference sequences
-2.  Format data for tracks
-3.  Configure direct-access tracks
-4.  Index feature names
+1. Load and format reference sequences
+2. Format data for tracks
+3. Configure direct-access tracks
+4. Index feature names
 
 ### Features from a directory of files
 
@@ -148,14 +148,14 @@ class="external text" rel="nofollow">Bio::DB::GFF</a>.
 
 Config file: `pythium-1.conf`
 
-    {
-      "description": "GMOD Summer School 2013 P. ultima Example",
-      "db_adaptor": "Bio::DB::SeqFeature::Store",
-      "db_args" : {
-          "-adaptor" : "memory",
-          "-dir" : ".."
-       },
-    ...
+ {
+ "description": "GMOD Summer School 2013 P. ultima Example",
+ "db_adaptor": "Bio::DB::SeqFeature::Store",
+ "db_args" : {
+ "-adaptor" : "memory",
+ "-dir" : ".."
+ },
+ ...
 
 #### Specify reference sequences
 
@@ -167,8 +167,8 @@ Run this from within the `jbrowse` directory (you could run it
 elsewhere, but you'd have to explicitly specify the location of the data
 directory on the command line).
 
-    cd /var/www/jbrowse_demo/GMOD_Summer_School_2014_JBrowse/jbrowse
-    bin/prepare-refseqs.pl --gff ../scf1117875582023.gff
+ cd /var/www/jbrowse_demo/GMOD_Summer_School_2014_JBrowse/jbrowse
+ bin/prepare-refseqs.pl --gff ../scf1117875582023.gff
 
 Refresh it in your web browser, you should new see the JBrowse UI and a
 sequence track, which will show you the DNA base pairs if you zoom in
@@ -186,23 +186,23 @@ In this case, we have specified all of our track configurations in
 ``` de1
 ...
 
-  "TRACK DEFAULTS": {
-    "class": "feature"
-  },
+ "TRACK DEFAULTS": {
+ "class": "feature"
+ },
 
  "tracks": [
-    {
-      "track": "Genes",
-      "key": "Genes",
-      "feature": ["mRNA"],
-      "autocomplete": "all",
-      "class": "transcript",
-      "subfeature_classes" : {
-            "CDS" : "transcript-CDS",
-            "UTR" : "transcript-UTR"
-      }
-    },
-   ...
+ {
+ "track": "Genes",
+ "key": "Genes",
+ "feature": ["mRNA"],
+ "autocomplete": "all",
+ "class": "transcript",
+ "subfeature_classes" : {
+ "CDS" : "transcript-CDS",
+ "UTR" : "transcript-UTR"
+ }
+ },
+ ...
 ]
 ```
 
@@ -230,7 +230,7 @@ class.
 Run the `bin/biodb-to-json.pl` script with this config file to format
 this track, and the others in the file:
 
-    bin/biodb-to-json.pl --conf ../pythium-1.conf
+ bin/biodb-to-json.pl --conf ../pythium-1.conf
 
 Refresh JBrowse in your web browser. You should now see a bunch of
 annotation tracks.
@@ -246,7 +246,7 @@ The `bin/generate-names.pl` script collects those lists of names from
 all the tracks and combines them into one big tree that the client uses
 to search.
 
-    bin/generate-names.pl -v
+ bin/generate-names.pl -v
 
 Visit in web browser, try typing a feature name, such as
 **maker-scf1117875582023-snap-gene-0.26-mRNA-1**. Notice that JBrowse
@@ -259,16 +259,16 @@ We're going to add a couple more tracks that come from a flat file,
 `flatfile-to-json.pl`.
 
 - We'll add a RepeatMasker track:
-    bin/flatfile-to-json.pl --trackLabel repeatmasker \
-        --type match:repeatmasker --key RepeatMasker \
-        --className generic_parent \
-        --subfeatureClasses '{"match_part" : "feature"}' --gff ../repeats.gff
+ bin/flatfile-to-json.pl --trackLabel repeatmasker \
+ --type match:repeatmasker --key RepeatMasker \
+ --className generic_parent \
+ --subfeatureClasses '{"match_part" : "feature"}' --gff ../repeats.gff
 
 - And then a RepeatRunner track:
-    bin/flatfile-to-json.pl --trackLabel repeatrunner \
-        --type protein_match:repeatrunner \
-        --key RepeatRunner --className generic_parent \
-        --subfeatureClasses '{"match_part" : "feature"}' --gff ../repeats.gff
+ bin/flatfile-to-json.pl --trackLabel repeatrunner \
+ --type protein_match:repeatrunner \
+ --key RepeatRunner --className generic_parent \
+ --subfeatureClasses '{"match_part" : "feature"}' --gff ../repeats.gff
 
 Visit in web browser; you should see the two new RepeatMasker and
 RepeatRunner tracks.
@@ -281,37 +281,37 @@ server, and add a snippet of configuration to JBrowse to add the track,
 similar to:
 
 ``` de1
-     {
-        "label" : "bam_alignments",
-        "key" : "BAM alignments",
-        "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-        "urlTemplate" : "../../simulated-sorted.bam",
-        "type" : "Alignments2"
-      }
+ {
+ "label" : "bam_alignments",
+ "key" : "BAM alignments",
+ "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+ "urlTemplate" : "../../simulated-sorted.bam",
+ "type" : "Alignments2"
+ }
 ```
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
 inject the track configuration:
 
-    echo '{
-           "label" : "bam_alignments",
-           "key" : "BAM alignments",
-           "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-           "urlTemplate" : "../../simulated-sorted.bam",
-           "type" : "Alignments2"
-         }' | bin/add-track-json.pl data/trackList.json
+ echo '{
+ "label" : "bam_alignments",
+ "key" : "BAM alignments",
+ "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+ "urlTemplate" : "../../simulated-sorted.bam",
+ "type" : "Alignments2"
+ }' | bin/add-track-json.pl data/trackList.json
 
 ### BAM coverage
 
 ``` de1
-     {
-        "label" : "bam_coverage",
-        "key" : "BAM Coverage",
-        "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-        "urlTemplate" : "../../simulated-sorted.bam",
-        "type" : "SNPCoverage"
-      }
+ {
+ "label" : "bam_coverage",
+ "key" : "BAM Coverage",
+ "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+ "urlTemplate" : "../../simulated-sorted.bam",
+ "type" : "SNPCoverage"
+ }
 ```
 
 ### Quantitative data
@@ -324,28 +324,28 @@ to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
 
 ``` de1
-     {
-        "label" : "bigwig_bam_coverage",
-        "key" : "BigWig - BAM coverage",
-        "storeClass" : "BigWig",
-        "urlTemplate" : "../../simulated-sorted.bam.coverage.bw",
-        "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-        "variance_band" : true
-      }
+ {
+ "label" : "bigwig_bam_coverage",
+ "key" : "BigWig - BAM coverage",
+ "storeClass" : "BigWig",
+ "urlTemplate" : "../../simulated-sorted.bam.coverage.bw",
+ "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+ "variance_band" : true
+ }
 ```
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
 inject the track configuration:
 
-    echo ' {
-           "label" : "bam_coverage",
-           "key" : "BAM coverage",
-           "storeClass" : "BigWig",
-           "urlTemplate" : "../../simulated-sorted.bam.coverage.bw",
-           "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-           "variance_band" : true
-         } ' | bin/add-track-json.pl data/trackList.json
+ echo ' {
+ "label" : "bam_coverage",
+ "key" : "BAM coverage",
+ "storeClass" : "BigWig",
+ "urlTemplate" : "../../simulated-sorted.bam.coverage.bw",
+ "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+ "variance_band" : true
+ } ' | bin/add-track-json.pl data/trackList.json
 
 ### Variation Data
 
@@ -358,26 +358,26 @@ to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
 
 ``` de1
-      {
-        "label" : "bam_variation",
-        "key" : "VCF simulated variation",
-        "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
-        "urlTemplate" : "../../simulated-sorted.vcf.gz",
-        "type" : "HTMLVariants"
-      }
+ {
+ "label" : "bam_variation",
+ "key" : "VCF simulated variation",
+ "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+ "urlTemplate" : "../../simulated-sorted.vcf.gz",
+ "type" : "HTMLVariants"
+ }
 ```
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
 inject the track configuration:
 
-    echo ' {
-           "label" : "bam_variation",
-           "key" : "VCF simulated variation",
-           "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
-           "urlTemplate" : "../../simulated-sorted.vcf.gz",
-           "type" : "HTMLVariants"
-         } ' | bin/add-track-json.pl data/trackList.json
+ echo ' {
+ "label" : "bam_variation",
+ "key" : "VCF simulated variation",
+ "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+ "urlTemplate" : "../../simulated-sorted.vcf.gz",
+ "type" : "HTMLVariants"
+ } ' | bin/add-track-json.pl data/trackList.json
 
 ### Faceted Track Selection
 
@@ -391,19 +391,19 @@ track labels in the JBrowse configuration.
 The demo bundle contains an example `trackMetadata.csv` file, which can
 be copied into the `data` directory for use with this configuration.
 
-    cp trackMetadata.csv jbrowse/data
+ cp trackMetadata.csv jbrowse/data
 
 Then a simple faceted track selection configuration might look like:
 
 ``` de1
-   trackSelector: {
-       type: 'Faceted',
-   },
-   trackMetadata: {
-       sources: [
-          { type: 'csv', url: 'data/trackMetadata.csv' }
-       ]
-   }
+ trackSelector: {
+ type: 'Faceted',
+ },
+ trackMetadata: {
+ sources: [
+ { type: 'csv', url: 'data/trackMetadata.csv' }
+ ]
+ }
 ```
 
 The `jbrowse_conf.json` file in the `jbrowse` directory already
@@ -452,7 +452,7 @@ from the old JBrowse directory into the new JBrowse directory.
 ## Common Problems
 
 - JSON syntax errors in configuration files (2.x series will stop this
-  madness!)
+ madness!)
 
 ## Future JBrowse Plans
 
@@ -465,9 +465,9 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
 ## Other links
 
 - Config file ref:
-  <a href="http://jbrowse.org/code/jbrowse-master/docs/config.html"
-  class="external free"
-  rel="nofollow">http://jbrowse.org/code/jbrowse-master/docs/config.html</a>
+ <a href="http://jbrowse.org/code/jbrowse-master/docs/config.html"
+ class="external free"
+ rel="nofollow">http://jbrowse.org/code/jbrowse-master/docs/config.html</a>
 - DIV test: <a href="http://jbrowse.org/test/boatdiv/boat.html"
-  class="external free"
-  rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
+ class="external free"
+ rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>

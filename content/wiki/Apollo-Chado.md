@@ -10,93 +10,93 @@ September 2006 01:26:42 PM**
 
 ------------------------------------------------------------------------
 
-    Reading and Writing to a Chado database with Apollo
-        This needs to be better documented, but here is a start:
+ Reading and Writing to a Chado database with Apollo
+ This needs to be better documented, but here is a start:
 
-        In order to use Apollo read/write with chado, here are things that need
-        to be done:
+ In order to use Apollo read/write with chado, here are things that need
+ to be done:
 
-        Grant privileges to users to several tables (list here)
-            In the absence of a complete list of tables, you can grant access to
-            all tables using sqlt and the perl Template::Toolkit template,
-            bin/privileges.tmpl
+ Grant privileges to users to several tables (list here)
+ In the absence of a complete list of tables, you can grant access to
+ all tables using sqlt and the perl Template::Toolkit template,
+ bin/privileges.tmpl
 
-                sqlt -f PostgreSQL -t TTSchema --template bin/privileges.tmpl modules/nofuncs.sql | psql
+ sqlt -f PostgreSQL -t TTSchema --template bin/privileges.tmpl modules/nofuncs.sql | psql
 
-            You can edit the template to grant privileges to just specific users
-            instead of PUBLIC, which of course would be a lot more secure.
+ You can edit the template to grant privileges to just specific users
+ instead of PUBLIC, which of course would be a lot more secure.
 
-        Insert several ad hoc cv terms found in
-        modules/sequence/apollo-bridge/cv_inserts.sql.
-            This file contains sql commands to insert several controlled
-            vocabulary terms that Apollo expects to be in the database. This
-            file can be recreated with additional terms as needed by editing the
-            file modules/sequence/apollo-bridge/ad_hoc_cv and running the perl
-            script modules/sequence/apollo-bridge/insert_ad_doc_cv.pl. The
-            resulting sql file can be inserted into the database with this
-            command:
+ Insert several ad hoc cv terms found in
+ modules/sequence/apollo-bridge/cv_inserts.sql.
+ This file contains sql commands to insert several controlled
+ vocabulary terms that Apollo expects to be in the database. This
+ file can be recreated with additional terms as needed by editing the
+ file modules/sequence/apollo-bridge/ad_hoc_cv and running the perl
+ script modules/sequence/apollo-bridge/insert_ad_doc_cv.pl. The
+ resulting sql file can be inserted into the database with this
+ command:
 
-                $ psql $DBNAME < modules/sequence/apollo-bridge/cv_inserts.sql
+ $ psql $DBNAME < modules/sequence/apollo-bridge/cv_inserts.sql
 
-        Insert a few misc items like those found in
-        modules/sequence/apollo-bridge/apollo.inserts
-            Essentially, Apollo and chado have to agree about what the names of
-            the programs in the analysis table are, and there needs to be a few
-            terms in the cv table.
+ Insert a few misc items like those found in
+ modules/sequence/apollo-bridge/apollo.inserts
+ Essentially, Apollo and chado have to agree about what the names of
+ the programs in the analysis table are, and there needs to be a few
+ terms in the cv table.
 
-            About naming analysis results: there are no restrictions on what you
-            name them, however the GFF3 bulk loader will insert them typically
-            one of two ways:
+ About naming analysis results: there are no restrictions on what you
+ name them, however the GFF3 bulk loader will insert them typically
+ one of two ways:
 
-            1   If you specify the -a (--analysis) flag with an argument, the
-                loader will look for an entry in the analysis table where
-                analysis.name is equal to the argument supplied with -a.
+ 1 If you specify the -a (--analysis) flag with an argument, the
+ loader will look for an entry in the analysis table where
+ analysis.name is equal to the argument supplied with -a.
 
-            2   If you don't give an argument with -a, the loader will look for
-                analysis.name that is equal to the GFF source and type
-                concatenated with and underscore between them, ie
-                'source_type', eg, 'Rice_cDNA_match'.
+ 2 If you don't give an argument with -a, the loader will look for
+ analysis.name that is equal to the GFF source and type
+ concatenated with and underscore between them, ie
+ 'source_type', eg, 'Rice_cDNA_match'.
 
-            The inserts into the db table are there so that dbxref entries in
-            GFF files I typically process. They can be ignored unless you are
-            loading GFF files with Dbxref entries.
+ The inserts into the db table are there so that dbxref entries in
+ GFF files I typically process. They can be ignored unless you are
+ loading GFF files with Dbxref entries.
 
-            Then there is the uniquename_id_generator sequence, for which
-            integers for building uniquenames are used. Then there are two
-            interts in to cvtermprop for the suffix and prefix for uniquename
-            generation. Generated uniquenames with be of the form:
+ Then there is the uniquename_id_generator sequence, for which
+ integers for building uniquenames are used. Then there are two
+ interts in to cvtermprop for the suffix and prefix for uniquename
+ generation. Generated uniquenames with be of the form:
 
-                $prefix . (int from uniquename_id sequence) . $suffix
+ $prefix . (int from uniquename_id sequence) . $suffix
 
-            For example, if you insert 'RICE' for the prefix and 'X' for the
-            suffix, the resulting name of the first feature will be
-            'RICE000001X';
+ For example, if you insert 'RICE' for the prefix and 'X' for the
+ suffix, the resulting name of the first feature will be
+ 'RICE000001X';
 
-        Add the functions and triggers to chado.
-            Use the perl script:
+ Add the functions and triggers to chado.
+ Use the perl script:
 
-                % /usr/local/bin/gmod_apollo_triggers.pl create
+  % /usr/local/bin/gmod_apollo_triggers.pl create
 
-            Note that this script can also be used to drop and add the triggers
-            in case you want to do some bulk loading and want to disactivate the
-            triggers for that.
+ Note that this script can also be used to drop and add the triggers
+ in case you want to do some bulk loading and want to disactivate the
+ triggers for that.
 
-        Modify the Apollo configuration file, chado-adapter.xml.
-            IS THERE DOCUMENTATION FOR DOING THAT IN APOLLO'S DOCS? Yes, there
-            is a section for connecteding directly to flybase chado in the
-            apollo doc directory: doc/html/userguide.html but it is somewhat out
-            of date. I need to work with Mark to update it (it will probably
-            need me to write it and have Mark proof it).
+ Modify the Apollo configuration file, chado-adapter.xml.
+ IS THERE DOCUMENTATION FOR DOING THAT IN APOLLO'S DOCS? Yes, there
+ is a section for connecteding directly to flybase chado in the
+ apollo doc directory: doc/html/userguide.html but it is somewhat out
+ of date. I need to work with Mark to update it (it will probably
+ need me to write it and have Mark proof it).
 
-        I understand that these directions are somewhat vague. Getting Apollo to
-        work with chado requires a little hands on tinkering. If you find
-        yourself having difficulties, please contact me.
+ I understand that these directions are somewhat vague. Getting Apollo to
+ work with chado requires a little hands on tinkering. If you find
+ yourself having difficulties, please contact me.
 
-        Scott Cain
+ Scott Cain
 
-        cain@cshl.edu
+ cain@cshl.edu
 
-        4/29/05
+ 4/29/05
 
 - [Apollo-Chado example
-  database](/wiki/Apollo-Chado_example_database)
+ database](/wiki/Apollo-Chado_example_database)

@@ -14,13 +14,13 @@ A comprehensive
 <a href="http://www.openhelix.com" class="external text"
 
 - the basic layout and search methods in
-  [GBrowse](../GBrowse.1)
+ [GBrowse](../GBrowse.1)
 - how to access detailed annotation data tied to genomic sequences
 - how to select and customize annotations using tracks
 - how to upload and incorporate your own data or other external data
-  sources
+ sources
 - take a tour of different GBrowse installations at model organism
-  databases
+ databases
 
 The tutorial also includes <a
 href="http://www.openhelix.com/downloads/gbrowse/gbrowseslidesDL.shtml"

@@ -67,10 +67,10 @@ and genomic data.
 Components covered in the course include:
 
 - <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
-  schema
+ schema
 - [Galaxy](/wiki/Galaxy) analysis pipeline
 - [GBrowse](/wiki/GBrowse) and [JBrowse](/wiki/JBrowse)
-  genome browsers
+ genome browsers
 - [MAKER](/wiki/MAKER) and MAKER-P genome annotation pipelines
 - [Tripal](/wiki/Tripal) website generator and database interface
 - [WebApollo](/wiki/WebApollo) manual gene annotation software

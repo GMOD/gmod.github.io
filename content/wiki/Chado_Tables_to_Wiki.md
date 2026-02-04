@@ -32,28 +32,28 @@ First, the Chado tables or schema that you want to document has to be
 installed in Postgres. Then:
 
 - Install postgresql_autodoc
-  (<a href="http://www.rbt.ca/autodoc/" class="external free"
-  rel="nofollow">http://www.rbt.ca/autodoc/</a>)
+ (<a href="http://www.rbt.ca/autodoc/" class="external free"
+ rel="nofollow">http://www.rbt.ca/autodoc/</a>)
 - Save [this text](/wiki/Html.tmpl.main) as *html.tmpl* if
-  you want to create table documentation for the entire schema
+ you want to create table documentation for the entire schema
 - Save [this text](/wiki/Html.tmpl.module) as *html.tmpl*
-  if you want to create table documentation for a single module
+ if you want to create table documentation for a single module
 - Run the postgresql_autodoc script in the same directory as the
-  *html.tmpl* file. The command will be something like this (substitute
-  your own user name, password, and database name):
-      >postgresql_autodoc -f chado -u user -d chado --password=passwd -l .
+ *html.tmpl* file. The command will be something like this (substitute
+ your own user name, password, and database name):
+ >postgresql_autodoc -f chado -u user -d chado --password=passwd -l .
 
 - This should create an HTML file called *chado.html*
 - Run [this Perl script](/wiki/Print-wiki-tables) to
-  convert the HTML to Wiki text (this script will work with the Chado v.
-  1.6 schema)
+ convert the HTML to Wiki text (this script will work with the Chado v.
+ 1.6 schema)
 - If you're creating table documentation for the entire schema the
-  command will look something like this:
-      >print-wiki-tables.pl -all > allmodules.wiki
+ command will look something like this:
+ >print-wiki-tables.pl -all > allmodules.wiki
 
 - If you're creating table documentation for a module the command will
-  look something like this:
-     >print-wiki-tables.pl -m cv > cv.wiki
+ look something like this:
+ >print-wiki-tables.pl -m cv > cv.wiki
 
 Then copy and paste.
 

@@ -57,14 +57,14 @@ used to interact with PubMed, create XML data and load into RGD.**
 The fundamental actions required of PubFetch are:
 
 - Search LitDb for articles matching certain query criteria (eg.
-  keywords, date, author, etc).
-  - This will most likely entail passing the search criteria to
-    PubFetch and retrieving a set of accession numbers (eg. PubMed IDs,
-    PMIDs) for matching references.
+ keywords, date, author, etc).
+ - This will most likely entail passing the search criteria to
+ PubFetch and retrieving a set of accession numbers (eg. PubMed IDs,
+ PMIDs) for matching references.
 - Retrieve the text information from the LitDb corresponding to a
-  supplied accession number (e.g. *bring me the PubMed entry for
-  <a href="http://www.ncbi.nlm.nih.gov/pubmed/12345?dopt=Abstract"
-  class="external mw-magiclink-pmid" rel="nofollow">PMID 12345</a>*)
+ supplied accession number (e.g. *bring me the PubMed entry for
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/12345?dopt=Abstract"
+ class="external mw-magiclink-pmid" rel="nofollow">PMID 12345</a>*)
 
 ### PubFetch as a BioMOBY webservice
 

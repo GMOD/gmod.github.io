@@ -6,10 +6,10 @@ title: "A Brief Guide to Databases"
 A database provides infrastructure for storing, managing, and retrieving
 information.
 
-  Records, and Attributes</span>](#Tables.2C_Records.2C_and_Attributes)
-  - [Example](#Example)
+ Records, and Attributes</span>](#Tables.2C_Records.2C_and_Attributes)
+ - [Example](#Example)
 - [Keys](#Keys)
-  - [Example](#Example_2)
+ - [Example](#Example_2)
 
 ## Tables, Records, and Attributes
 
@@ -77,7 +77,7 @@ book
 
 If we now imagine a second table with book prices in it:
 
-| ISBN       | Format    | Price (\$) |
+| ISBN | Format | Price (\$) |
 |------------|-----------|------------|
 | 9400707495 | Hardback | 189.00 |
 | 9400707495 | Ebook | 151.20 |

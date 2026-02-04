@@ -27,10 +27,10 @@ These *Version 1* requirements are:
 We'd now like to add two new requirements that probably should have been
 there in the first version:
 
-1.  Component has a support [mailing
-    list](../GMOD_Mailing_Lists) that is publicly
-    archived
-2.  Publicly accessible code repository
+1. Component has a support [mailing
+ list](../GMOD_Mailing_Lists) that is publicly
+ archived
+2. Publicly accessible code repository
 
 We discussed these changes at the [September 2010 GMOD
 Meeting](../September_2010_GMOD_Meeting#GMOD_Membership_Requirements)

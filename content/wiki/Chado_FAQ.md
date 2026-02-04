@@ -3,39 +3,39 @@ title: "Chado FAQ"
 ---
 # Chado FAQ
 
-  FAQ</span>](#About_this_FAQ)
-  - [What is
-    this FAQ?](#What_is_this_FAQ.3F)
-  - [How is it
-    maintained?](#How_is_it_maintained.3F)
+ FAQ</span>](#About_this_FAQ)
+ - [What is
+ this FAQ?](#What_is_this_FAQ.3F)
+ - [How is it
+ maintained?](#How_is_it_maintained.3F)
 - [Chado
-  Questions](#Chado_Questions)
-  - [How do you
-    pronounce *chado*?](#How_do_you_pronounce_chado.3F)
-  - [How does
-    one represent BLAST results in Chado? or alignments?
-    or...](#How_does_one_represent_BLAST_results_in_Chado.3F_or_alignments.3F_or...)
-  - [Where do I
-    find a list of tables in
-    Chado?](#Where_do_I_find_a_list_of_tables_in_Chado.3F)
-  - [What are
-    the modules in Chado?](#What_are_the_modules_in_Chado.3F)
-  - [Is there a
-    *Chado for Beginners*?](#Is_there_a_Chado_for_Beginners.3F)
-  - [Loading
-    data into Chado](#Loading_data_into_Chado)
-  - [Why is
-    loading GFF3 data so slow and what can I do about
-    it?](#Why_is_loading_GFF3_data_so_slow_and_what_can_I_do_about_it.3F)
-  - [I get a
-    weird error when loading ontologies; what do I
-    do?](#I_get_a_weird_error_when_loading_ontologies.3B_what_do_I_do.3F)
-  - [Is it
-    possible to load ontologies without the DBIx::DBStag
-    Module?](#Is_it_possible_to_load_ontologies_without_the_DBIx::DBStag_Module.3F)
-  - [Loading
-    Ontologies takes forever! There has to be a better
-    way?](#Loading_Ontologies_takes_forever.21_There_has_to_be_a_better_way.3F)
+ Questions](#Chado_Questions)
+ - [How do you
+ pronounce *chado*?](#How_do_you_pronounce_chado.3F)
+ - [How does
+ one represent BLAST results in Chado? or alignments?
+ or...](#How_does_one_represent_BLAST_results_in_Chado.3F_or_alignments.3F_or...)
+ - [Where do I
+ find a list of tables in
+ Chado?](#Where_do_I_find_a_list_of_tables_in_Chado.3F)
+ - [What are
+ the modules in Chado?](#What_are_the_modules_in_Chado.3F)
+ - [Is there a
+ *Chado for Beginners*?](#Is_there_a_Chado_for_Beginners.3F)
+ - [Loading
+ data into Chado](#Loading_data_into_Chado)
+ - [Why is
+ loading GFF3 data so slow and what can I do about
+ it?](#Why_is_loading_GFF3_data_so_slow_and_what_can_I_do_about_it.3F)
+ - [I get a
+ weird error when loading ontologies; what do I
+ do?](#I_get_a_weird_error_when_loading_ontologies.3B_what_do_I_do.3F)
+ - [Is it
+ possible to load ontologies without the DBIx::DBStag
+ Module?](#Is_it_possible_to_load_ontologies_without_the_DBIx::DBStag_Module.3F)
+ - [Loading
+ Ontologies takes forever! There has to be a better
+ way?](#Loading_Ontologies_takes_forever.21_There_has_to_be_a_better_way.3F)
 
 ## About this FAQ
 
@@ -90,9 +90,9 @@ Manual](/wiki/Chado_Manual#Modules) or
 When I try to load data into Chado using the [GFF](/wiki/GFF) bulk
 loader (gmod_bulk_load_gff3.pl), I get this error:
 
-     DBD::Pg::db pg_endcopy failed: ERROR:  invalid input syntax for integer: ""
+ DBD::Pg::db pg_endcopy failed: ERROR: invalid input syntax for integer: ""
 
-     CONTEXT:  COPY feature_relationship, line 1, column type_id: "" at /usr/lib/perl5/site_perl/5.8.8/Bio/GMOD/DB/Adapter.pm line 2723, <$fh> line 64298.
+ CONTEXT: COPY feature_relationship, line 1, column type_id: "" at /usr/lib/perl5/site_perl/5.8.8/Bio/GMOD/DB/Adapter.pm line 2723, <$fh> line 64298.
 
 Why is that and what do I do?
 
@@ -108,8 +108,8 @@ Instead, you must run a SQL command to repair the database:
 
 ``` de1
  UPDATE cvterm SET cv_id = (SELECT cv_id FROM cv WHERE name = 'relationship')
-  WHERE name = 'part_of'
-   AND cv_id IN (SELECT cv_id FROM cv WHERE name='gene_ontology');
+ WHERE name = 'part_of'
+ AND cv_id IN (SELECT cv_id FROM cv WHERE name='gene_ontology');
 ```
 
 Then, rerunning the loader with the --recreate_cache option should allow
@@ -147,8 +147,8 @@ an option to not load the database in a single transaction.
 When I try to use \`make ontologies\` to load ontologies, I get this
 message:
 
-     install_driver(Pg) failed: DBD::Pg object version v2.15.1 does not match bootstrap parameter 2.15.1 at /System/Library/Perl/5.8.8/darwin-thread-multi-2level/DynaLoader.pm line 253, <STDIN> line 1.
-     Compilation failed in require at (eval 91) line 3, <STDIN> line 1.
+ install_driver(Pg) failed: DBD::Pg object version v2.15.1 does not match bootstrap parameter 2.15.1 at /System/Library/Perl/5.8.8/darwin-thread-multi-2level/DynaLoader.pm line 253, <STDIN> line 1.
+ Compilation failed in require at (eval 91) line 3, <STDIN> line 1.
 
 What can I do about it?
 
@@ -157,10 +157,10 @@ there was a problem when DBD::Pg was installed. The first option to try
 is to reinstall it, using the UNINST=1 directive on the install command,
 like this:
 
-     perl Makefile.PL
-     make
-     make test
-     sudo make install UNINST=1
+ perl Makefile.PL
+ make
+ make test
+ sudo make install UNINST=1
 
 If that doesn't solve the problem, it is possible to edit DBD::Pg in
 place to fix the version string. In the particular example sited above,
@@ -175,7 +175,7 @@ I have errors associated with loading ontologies that appear to be
 related to the DBIx::DBStag module. When attempting to load ontologies
 with stag-storenode.pl, I get the error message:
 
-     Cannot quote a reference at /Library/Perl/5.8.8/DBIx/DBStag.pm line 3732.
+ Cannot quote a reference at /Library/Perl/5.8.8/DBIx/DBStag.pm line 3732.
 
 I am using the latest version (0.10) of the Module, and installed it by
 hand. The tests on Installation also failed with a similar error message

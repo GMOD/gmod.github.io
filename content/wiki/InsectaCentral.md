@@ -8,16 +8,16 @@ title="InsectaCentral"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/InsectaCentralLogo.png" width="93"
 height="75" alt="InsectaCentral" /></a>
 
-  Overview](#Overview)
+ Overview](#Overview)
 - [Aim](#Aim)
 - [Data
-  Origin](#Data_Origin)
+ Origin](#Data_Origin)
 - [Quality](#Quality)
 - [Content](#Content)
-  - [Roadmap](#Roadmap)
-  - [Wishlist](#Wishlist)
+ - [Roadmap](#Roadmap)
+ - [Wishlist](#Wishlist)
 - [Software](#Software)
-  - [Roadmap](#Roadmap_2)
+ - [Roadmap](#Roadmap_2)
 - [Wishlist](#Wishlist_2)
 - [License](#License)
 
@@ -78,14 +78,14 @@ The current public release is: **beta**
 ## Roadmap
 
 - **Alpha** ~~EST datasets funded by/collaborated with RFC lab; EST
-  datasets of special interest; in-depth annotation~~
+ datasets of special interest; in-depth annotation~~
 - **Beta** ~~Molecular markers; All Insecta transcriptomes;
-  documentation~~
+ documentation~~
 - **1.0** Implementation of a community curation system;Tutorials;
-  Solexa digital transcriptomics; preparation of manuscript
+ Solexa digital transcriptomics; preparation of manuscript
 - **1.5** Homeless insect genomes + DAS genomes of interest
 - **2.0** Geographical and population data of Insects in collaboration
-  with the Atlas of Living Australia.
+ with the Atlas of Living Australia.
 
 ## Wishlist
 
@@ -104,17 +104,17 @@ The current public release is: **beta**
 ## Roadmap
 
 - **Alpha** ~~Most of ButterflyBase's user interface; support for
-  Sanger/454 EST data, SNP markers, BLASTs, ontology-based annotation;
-  support for public + secure (private) data; Chado database engine;
-  SeqFeature/Gbrowse driven exploration; iceBLAST interface~~
+ Sanger/454 EST data, SNP markers, BLASTs, ontology-based annotation;
+ support for public + secure (private) data; Chado database engine;
+ SeqFeature/Gbrowse driven exploration; iceBLAST interface~~
 - **Beta** ~~Support for sample library information; extended user
-  interface; documentation; Drupalization of an extended BLAST
-  interface; curation module~~
+ interface; documentation; Drupalization of an extended BLAST
+ interface; curation module~~
 - **1.0** Support for digital transcriptomics; Walkthrough/tutorials;
-  Further Drupal standardization; preparation of manuscript
+ Further Drupal standardization; preparation of manuscript
 - **2.0** Support for geographical and population data; interface with
-  Google Earth/Atlas of Living Australia; support for basic phylogenetic
-  information
+ Google Earth/Atlas of Living Australia; support for basic phylogenetic
+ information
 
 # Wishlist
 
@@ -123,7 +123,7 @@ The current public release is: **beta**
 # License
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
-currently supported by [Alexie
-Papanicolaou](/wiki/User:Alpapan) while at CSIRO, the
+currently supported by Alexie
+Papanicolaou while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"

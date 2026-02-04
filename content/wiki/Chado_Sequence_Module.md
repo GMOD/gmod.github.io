@@ -3,98 +3,98 @@ title: "Chado Sequence Module"
 ---
 # Chado Sequence Module
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Features](#Features)
-  - [Names of
-    Features](#Names_of_Features)
-  - [Feature
-    Synonyms](#Feature_Synonyms)
-  - [Feature
-    Locations](#Feature_Locations)
-    - [The
-      Feature Location Graph](#The_Feature_Location_Graph)
-    - [Feature
-      Coordinates](#Feature_Coordinates)
-      - [Multiple Locations for a
-        Feature](#Multiple_Locations_for_a_Feature)
-    - [Difference Between the chado Location Model
-      and Other
-      Schemas](#Difference_Between_the_chado_Location_Model_and_Other_Schemas)
-  - [Feature
-    Rank](#Feature_Rank)
-  - [Extensible
-    Feature Properties](#Extensible_Feature_Properties)
-  - [Linking
-    Features to External
-    Databases](#Linking_Features_to_External_Databases)
-  - [Feature
-    Annotations](#Feature_Annotations)
-  - [Relationships Between
-    Features](#Relationships_Between_Features)
-  - [Compliance](#Compliance)
-    - [Chado
-      Compliance Layers](#Chado_Compliance_Layers)
-      - [Level 0: Relational
-        Schema](#Level_0:_Relational_Schema)
-      - [Layer 1:
-        Ontologies](#Layer_1:_Ontologies)
-      - [Level 2: Graph](#Level_2:_Graph)
-    - [Examples: Current
-      implementations](#Examples:_Current_implementations)
-      - [SO
-        terms used for Standard Central-dogma Gene
-        Model](#SO_terms_used_for_Standard_Central-dogma_Gene_Model)
-      - [SO
-        terms Used for Storing
-        Alignments](#SO_terms_Used_for_Storing_Alignments)
-      - [feature_relationship
-        Types](#feature_relationship_Types)
-      - [featureloc
-        Policy](#featureloc_Policy)
-      - [Non-central Dogma Gene
-        Models](#Non-central_Dogma_Gene_Models)
-      - [Other Features](#Other_Features)
-      - [Derivable Feature
-        Types](#Derivable_Feature_Types)
-      - [Sequence
-        Variants](#Sequence_Variants)
+ - [Names of
+ Features](#Names_of_Features)
+ - [Feature
+ Synonyms](#Feature_Synonyms)
+ - [Feature
+ Locations](#Feature_Locations)
+ - [The
+ Feature Location Graph](#The_Feature_Location_Graph)
+ - [Feature
+ Coordinates](#Feature_Coordinates)
+ - [Multiple Locations for a
+ Feature](#Multiple_Locations_for_a_Feature)
+ - [Difference Between the chado Location Model
+ and Other
+ Schemas](#Difference_Between_the_chado_Location_Model_and_Other_Schemas)
+ - [Feature
+ Rank](#Feature_Rank)
+ - [Extensible
+ Feature Properties](#Extensible_Feature_Properties)
+ - [Linking
+ Features to External
+ Databases](#Linking_Features_to_External_Databases)
+ - [Feature
+ Annotations](#Feature_Annotations)
+ - [Relationships Between
+ Features](#Relationships_Between_Features)
+ - [Compliance](#Compliance)
+ - [Chado
+ Compliance Layers](#Chado_Compliance_Layers)
+ - [Level 0: Relational
+ Schema](#Level_0:_Relational_Schema)
+ - [Layer 1:
+ Ontologies](#Layer_1:_Ontologies)
+ - [Level 2: Graph](#Level_2:_Graph)
+ - [Examples: Current
+ implementations](#Examples:_Current_implementations)
+ - [SO
+ terms used for Standard Central-dogma Gene
+ Model](#SO_terms_used_for_Standard_Central-dogma_Gene_Model)
+ - [SO
+ terms Used for Storing
+ Alignments](#SO_terms_Used_for_Storing_Alignments)
+ - [feature_relationship
+ Types](#feature_relationship_Types)
+ - [featureloc
+ Policy](#featureloc_Policy)
+ - [Non-central Dogma Gene
+ Models](#Non-central_Dogma_Gene_Models)
+ - [Other Features](#Other_Features)
+ - [Derivable Feature
+ Types](#Derivable_Feature_Types)
+ - [Sequence
+ Variants](#Sequence_Variants)
 - [Tables](#Tables)
-  - [Table:
-    feature](#Table:_feature)
-  - [Table:
-    feature_cvterm](#Table:_feature_cvterm)
-  - [Table:
-    feature_cvterm_dbxref](#Table:_feature_cvterm_dbxref)
-  - [Table:
-    feature_cvterm_pub](#Table:_feature_cvterm_pub)
-  - [Table:
-    feature_cvtermprop](#Table:_feature_cvtermprop)
-  - [Table:
-    feature_dbxref](#Table:_feature_dbxref)
-  - [Table:
-    feature_pub](#Table:_feature_pub)
-  - [Table:
-    feature_pubprop](#Table:_feature_pubprop)
-  - [Table:
-    feature_relationship](#Table:_feature_relationship)
-  - [Table:
-    feature_relationship_pub](#Table:_feature_relationship_pub)
-  - [Table:
-    feature_relationshipprop](#Table:_feature_relationshipprop)
-  - [Table:
-    feature_relationshipprop_pub](#Table:_feature_relationshipprop_pub)
-  - [Table:
-    feature_synonym](#Table:_feature_synonym)
-  - [Table:
-    featureloc](#Table:_featureloc)
-  - [Table:
-    featureloc_pub](#Table:_featureloc_pub)
-  - [Table:
-    featureprop](#Table:_featureprop)
-  - [Table:
-    featureprop_pub](#Table:_featureprop_pub)
-  - [Table:
-    synonym](#Table:_synonym)
+ - [Table:
+ feature](#Table:_feature)
+ - [Table:
+ feature_cvterm](#Table:_feature_cvterm)
+ - [Table:
+ feature_cvterm_dbxref](#Table:_feature_cvterm_dbxref)
+ - [Table:
+ feature_cvterm_pub](#Table:_feature_cvterm_pub)
+ - [Table:
+ feature_cvtermprop](#Table:_feature_cvtermprop)
+ - [Table:
+ feature_dbxref](#Table:_feature_dbxref)
+ - [Table:
+ feature_pub](#Table:_feature_pub)
+ - [Table:
+ feature_pubprop](#Table:_feature_pubprop)
+ - [Table:
+ feature_relationship](#Table:_feature_relationship)
+ - [Table:
+ feature_relationship_pub](#Table:_feature_relationship_pub)
+ - [Table:
+ feature_relationshipprop](#Table:_feature_relationshipprop)
+ - [Table:
+ feature_relationshipprop_pub](#Table:_feature_relationshipprop_pub)
+ - [Table:
+ feature_synonym](#Table:_feature_synonym)
+ - [Table:
+ featureloc](#Table:_featureloc)
+ - [Table:
+ featureloc_pub](#Table:_featureloc_pub)
+ - [Table:
+ featureprop](#Table:_featureprop)
+ - [Table:
+ featureprop_pub](#Table:_featureprop_pub)
+ - [Table:
+ synonym](#Table:_synonym)
 
 # Introduction
 
@@ -112,11 +112,11 @@ You may find these related documents useful:
 
 - [Chado Manual](/wiki/Chado_Manual)
 - [Chado Best Practices](/wiki/Chado_Best_Practices) -
-  many issues specific to the Sequence module are discussed
+ many issues specific to the Sequence module are discussed
 - [Chado FAQ](/wiki/Chado_FAQ)
 - [Introduction to Chado](/wiki/Introduction_to_Chado)
 - [Chado cv module](/wiki/Chado_CV_Module) - the Sequence
-  module makes extensive use of controlled vocabularies
+ module makes extensive use of controlled vocabularies
 
 # Features
 
@@ -460,20 +460,20 @@ both the query and target sequences. To locate a feature, create a
 [featureloc](#Table:_featureloc) record with:
 
 - _srcfeature_id_ = the id of the sequence on which the feature is being
-  located
+ located
 - _feature_id_ = the id of the feature being located
 - _strand_ is 1 for the positive strand, -1 for the negative, and 0 for
-  both or indifferent.
+ both or indifferent.
 - _fmin, fmax_ – the minimum and maximum coordinates of the interval
 - _is_fmin_partial, is_fmax_partial_ = true if needed to indicate that
-  the sequence is incomplete (e.g. for ESTs or EST assemblies which are
-  known to not go all the way to the 3’ or 5’ end.)
+ the sequence is incomplete (e.g. for ESTs or EST assemblies which are
+ known to not go all the way to the 3’ or 5’ end.)
 - _phase_ = 0, 1, or 2 – denotes phase of first base pair in a
-  nucleotide feature with respect to a source protein, or the offset of
-  the first nucleotide in its codon.
+ nucleotide feature with respect to a source protein, or the offset of
+ the first nucleotide in its codon.
 - _rank, locgroup_ – these are used to organize groups of feature
-  locations and can be ignored in simple cases (the details are
-  discussed below).
+ locations and can be ignored in simple cases (the details are
+ discussed below).
 
 #### Multiple Locations for a Feature
 
@@ -499,9 +499,9 @@ an organism that has introns within the transcripts; the transcript
 location is modelled as a sequence of non-contiguous intervals on the
 genome. The interval represents the location of an exon. For example:
 
-                /gene="Acph"
-        CDS     join(914..1063, 1143..1241, 1297..1536, 1605..2054,
-                     2667..2925, 3063..3172)
+ /gene="Acph"
+ CDS join(914..1063, 1143..1241, 1297..1536, 1605..2054,
+ 2667..2925, 3063..3172)
 
 Although Chado allows a feature to have multiple locations, this is only
 with variable _rank_ and _locgroup_ and this is enforced by a uniqueness
@@ -780,9 +780,9 @@ NOTE: we want to allow some ﬂexibility with this policy. We believe that
 the constituent parts linked located relative to the feature should
 always be followed. This can be stated more formally as:
 
-     IF  X is linked to Y via feature_relationship
-     AND X is located relative to Z via featureloc.srcfeature_id
-     THEN Y must also be located relative to Z via featureloc.srcfeature_id
+ IF X is linked to Y via feature_relationship
+ AND X is located relative to Z via featureloc.srcfeature_id
+ THEN Y must also be located relative to Z via featureloc.srcfeature_id
 
 <a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
 We’ve followed this policy in adding a featureloc between the protein
@@ -1147,7 +1147,7 @@ other analogous associations). See
 
 for more details.
 
-| F-Key                                                               | Name                     | Type    | Description         | ------------------------------------------------------------------- | ------------------------ | ------- | ------------------- |                                                                     | feature_cvterm_dbxref_id | serial  | _PRIMARY KEY_       | [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm) | feature_cvterm_id        | integer | _UNIQUE#1 NOT NULL_ | [dbxref](/wiki/Chado_Tables#Table:_dbxref)                 | dbxref_id                | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ------------------------------------------------------------------- | ------------------------ | ------- | ------------------- | | feature_cvterm_dbxref_id | serial | _PRIMARY KEY_ | [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm) | feature_cvterm_id | integer | _UNIQUE#1 NOT NULL_ | [dbxref](/wiki/Chado_Tables#Table:_dbxref) | dbxref_id | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_cvterm_dbxref Structure
 
@@ -1161,7 +1161,7 @@ be added using this linking table (in a GO gene association file, these
 corresponding to any IDs after the pipe symbol in the publications
 column.
 
-| F-Key                                                               | Name                  | Type    | Description         | ------------------------------------------------------------------- | --------------------- | ------- | ------------------- |                                                                     | feature_cvterm_pub_id | serial  | _PRIMARY KEY_       | [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm) | feature_cvterm_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                       | pub_id                | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ------------------------------------------------------------------- | --------------------- | ------- | ------------------- | | feature_cvterm_pub_id | serial | _PRIMARY KEY_ | [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm) | feature_cvterm_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_cvterm_pub Structure
 
@@ -1307,7 +1307,7 @@ feature_dbxref Structure
 Provenance. Linking table between features and publications that mention
 them.
 
-| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | feature_pub_id | serial  | _PRIMARY KEY_       | [feature](/wiki/Chado_Tables#Table:_feature) | feature_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)         | pub_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ----------------------------------------------------- | -------------- | ------- | ------------------- | | feature_pub_id | serial | _PRIMARY KEY_ | [feature](/wiki/Chado_Tables#Table:_feature) | feature_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_pub Structure
 
@@ -1321,7 +1321,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 Property or attribute of a feature_pub link.
 
-| F-Key                                                         | Name               | Type    | Description         | ------------------------------------------------------------- | ------------------ | ------- | ------------------- |                                                               | feature_pubprop_id | serial  | _PRIMARY KEY_       | [feature_pub](/wiki/Chado_Tables#Table:_feature_pub) | feature_pub_id     | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)           | type_id            | integer | _UNIQUE#1 NOT NULL_ |                                                               | value              | text    | rank               | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ------------------------------------------------------------- | ------------------ | ------- | ------------------- | | feature_pubprop_id | serial | _PRIMARY KEY_ | [feature_pub](/wiki/Chado_Tables#Table:_feature_pub) | feature_pub_id | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | _UNIQUE#1 NOT NULL_ | | value | text | rank | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_pubprop Structure
 
@@ -1431,7 +1431,7 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Attach optional evidence to a feature_relationship in the
 form of a publication.
 
-| F-Key                                                                           | Name                        | Type    | Description         | ------------------------------------------------------------------------------- | --------------------------- | ------- | ------------------- |                                                                                 | feature_relationship_pub_id | serial  | _PRIMARY KEY_       | [feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship) | feature_relationship_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                                   | pub_id                      | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ------------------------------------------------------------------------------- | --------------------------- | ------- | ------------------- | | feature_relationship_pub_id | serial | _PRIMARY KEY_ | [feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship) | feature_relationship_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_relationship_pub Structure
 
@@ -1522,7 +1522,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 Provenance for feature_relationshipprop.
 
-| F-Key                                                                                   | Name                            | Type    | Description         | --------------------------------------------------------------------------------------- | ------------------------------- | ------- | ------------------- |                                                                                         | feature_relationshipprop_pub_id | serial  | _PRIMARY KEY_       | [feature_relationshipprop](/wiki/Chado_Tables#Table:_feature_relationshipprop) | feature_relationshipprop_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                                           | pub_id                          | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | --------------------------------------------------------------------------------------- | ------------------------------- | ------- | ------------------- | | feature_relationshipprop_pub_id | serial | _PRIMARY KEY_ | [feature_relationshipprop](/wiki/Chado_Tables#Table:_feature_relationshipprop) | feature_relationshipprop_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_relationshipprop_pub Structure
 
@@ -1806,7 +1806,7 @@ compared) feature.</td>
 
 featureloc Structure
 
-| Name          | Constraint              | ------------- | ----------------------- | featureloc_c2 | CHECK ((fmin \<= fmax)) |
+| Name | Constraint | ------------- | ----------------------- | featureloc_c2 | CHECK ((fmin \<= fmax)) |
 
 featureloc Constraints
 
@@ -1821,7 +1821,7 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance of featureloc. Linking table between featurelocs and
 publications that mention them.
 
-| F-Key                                                       | Name              | Type    | Description         | ----------------------------------------------------------- | ----------------- | ------- | ------------------- |                                                             | featureloc_pub_id | serial  | _PRIMARY KEY_       | [featureloc](/wiki/Chado_Tables#Table:_featureloc) | featureloc_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)               | pub_id            | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ----------------------------------------------------------- | ----------------- | ------- | ------------------- | | featureloc_pub_id | serial | _PRIMARY KEY_ | [featureloc](/wiki/Chado_Tables#Table:_featureloc) | featureloc_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 featureloc_pub Structure
 
@@ -1913,7 +1913,7 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Any featureprop assignment can optionally be supported by a
 publication.
 
-| F-Key                                                         | Name               | Type    | Description         | ------------------------------------------------------------- | ------------------ | ------- | ------------------- |                                                               | featureprop_pub_id | serial  | _PRIMARY KEY_       | [featureprop](/wiki/Chado_Tables#Table:_featureprop) | featureprop_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                 | pub_id             | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ------------------------------------------------------------- | ------------------ | ------- | ------------------- | | featureprop_pub_id | serial | _PRIMARY KEY_ | [featureprop](/wiki/Chado_Tables#Table:_featureprop) | featureprop_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 featureprop_pub Structure
 

@@ -3,107 +3,107 @@ title: "Glyphs and Glyph Options"
 ---
 # Glyphs and Glyph Options
 
-  Configuring Glyphs</span>](#Selecting_and_Configuring_Glyphs)
+ Configuring Glyphs</span>](#Selecting_and_Configuring_Glyphs)
 - [Values Used in
-  Glyph Options](#Values_Used_in_Glyph_Options)
-  - [Colors](#Colors)
-    - [By
-      Name](#By_Name)
-    - [By
-      HTML Value](#By_HTML_Value)
-    - [Using
-      CSS Notation](#Using_CSS_Notation)
-    - [Alpha
-      (Transparency) Values](#Alpha_.28Transparency.29_Values)
-  - [True/False
-    Values](#True.2FFalse_Values)
-  - [Fonts](#Fonts)
-  - [Screen
-    Measurements](#Screen_Measurements)
+ Glyph Options](#Values_Used_in_Glyph_Options)
+ - [Colors](#Colors)
+ - [By
+ Name](#By_Name)
+ - [By
+ HTML Value](#By_HTML_Value)
+ - [Using
+ CSS Notation](#Using_CSS_Notation)
+ - [Alpha
+ (Transparency) Values](#Alpha_.28Transparency.29_Values)
+ - [True/False
+ Values](#True.2FFalse_Values)
+ - [Fonts](#Fonts)
+ - [Screen
+ Measurements](#Screen_Measurements)
 - [Glyphs and
-  their Configuration
-  Options](#Glyphs_and_their_Configuration_Options)
-  - [generic](#generic)
-  - [alignment](#alignment)
-  - [allele_tower](#allele_tower)
-  - [anchored_arrow](#anchored_arrow)
-  - [arrow](#arrow)
-  - [box](#box)
-  - [broken_line](#broken_line)
-  - [cds](#cds)
-  - [christmas_arrow](#christmas_arrow)
-  - [cross](#cross)
-  - [dashed_line](#dashed_line)
-  - [diamond](#diamond)
-  - [dna](#dna)
-  - [dot](#dot)
-  - [dumbbell](#dumbbell)
-  - [ellipse](#ellipse)
-  - [ex](#ex)
-  - [extending_arrow](#extending_arrow)
-  - [fixedwidth](#fixedwidth)
-  - [flag](#flag)
-  - [gene](#gene)
-  - [graded_segments](#graded_segments)
-  - [group](#group)
-  - [hat](#hat)
-  - [heat_map](#heat_map)
-  - [heat_map_ideogram](#heat_map_ideogram)
-  - [heterogeneous_segments](#heterogeneous_segments)
-  - [hidden](#hidden)
-  - [hybrid_plot](#hybrid_plot)
-  - [ideogram](#ideogram)
-  - [image](#image)
-  - [lightning](#lightning)
-  - [line](#line)
-  - [merge_parts](#merge_parts)
-  - [merged_alignment](#merged_alignment)
-  - [minmax](#minmax)
-  - [oval](#oval)
-  - [pairplot](#pairplot)
-  - [pentagram](#pentagram)
-  - [phylo_align](#phylo_align)
-  - [pinsertion](#pinsertion)
-  - [primers](#primers)
-  - [processed_transcript](#processed_transcript)
-  - [protein](#protein)
-  - [ragged_ends](#ragged_ends)
-  - [rainbow_gene](#rainbow_gene)
-  - [redgreen_box](#redgreen_box)
-  - [redgreen_segment](#redgreen_segment)
-  - [repeating_shape](#repeating_shape)
-  - [rndrect](#rndrect)
-  - [ruler_arrow](#ruler_arrow)
-  - [saw_teeth](#saw_teeth)
-  - [segmented_keyglyph](#segmented_keyglyph)
-  - [segments](#segments)
-  - [smoothing](#smoothing)
-  - [span](#span)
-  - [spectrogram](#spectrogram)
-  - [splice_site](#splice_site)
-  - [stackedplot](#stackedplot)
-  - [ternary_plot](#ternary_plot)
-  - [text_in_box](#text_in_box)
-  - [three_letters](#three_letters)
-  - [tic_tac_toe](#tic_tac_toe)
-  - [toomany](#toomany)
-  - [topoview](#topoview)
-  - [trace](#trace)
-  - [track](#track)
-  - [transcript](#transcript)
-  - [transcript2](#transcript2)
-  - [translation](#translation)
-  - [triangle](#triangle)
-  - [two_bolts](#two_bolts)
-  - [vista_plot](#vista_plot)
-  - [wave](#wave)
-  - [weighted_arrow](#weighted_arrow)
-  - [whiskerplot](#whiskerplot)
-  - [wiggle_box](#wiggle_box)
-  - [wiggle_density](#wiggle_density)
-  - [wiggle_xyplot](#wiggle_xyplot)
-  - [wiggle_minmax](#wiggle_minmax)
-  - [xyplot](#xyplot)
+ their Configuration
+ Options](#Glyphs_and_their_Configuration_Options)
+ - [generic](#generic)
+ - [alignment](#alignment)
+ - [allele_tower](#allele_tower)
+ - [anchored_arrow](#anchored_arrow)
+ - [arrow](#arrow)
+ - [box](#box)
+ - [broken_line](#broken_line)
+ - [cds](#cds)
+ - [christmas_arrow](#christmas_arrow)
+ - [cross](#cross)
+ - [dashed_line](#dashed_line)
+ - [diamond](#diamond)
+ - [dna](#dna)
+ - [dot](#dot)
+ - [dumbbell](#dumbbell)
+ - [ellipse](#ellipse)
+ - [ex](#ex)
+ - [extending_arrow](#extending_arrow)
+ - [fixedwidth](#fixedwidth)
+ - [flag](#flag)
+ - [gene](#gene)
+ - [graded_segments](#graded_segments)
+ - [group](#group)
+ - [hat](#hat)
+ - [heat_map](#heat_map)
+ - [heat_map_ideogram](#heat_map_ideogram)
+ - [heterogeneous_segments](#heterogeneous_segments)
+ - [hidden](#hidden)
+ - [hybrid_plot](#hybrid_plot)
+ - [ideogram](#ideogram)
+ - [image](#image)
+ - [lightning](#lightning)
+ - [line](#line)
+ - [merge_parts](#merge_parts)
+ - [merged_alignment](#merged_alignment)
+ - [minmax](#minmax)
+ - [oval](#oval)
+ - [pairplot](#pairplot)
+ - [pentagram](#pentagram)
+ - [phylo_align](#phylo_align)
+ - [pinsertion](#pinsertion)
+ - [primers](#primers)
+ - [processed_transcript](#processed_transcript)
+ - [protein](#protein)
+ - [ragged_ends](#ragged_ends)
+ - [rainbow_gene](#rainbow_gene)
+ - [redgreen_box](#redgreen_box)
+ - [redgreen_segment](#redgreen_segment)
+ - [repeating_shape](#repeating_shape)
+ - [rndrect](#rndrect)
+ - [ruler_arrow](#ruler_arrow)
+ - [saw_teeth](#saw_teeth)
+ - [segmented_keyglyph](#segmented_keyglyph)
+ - [segments](#segments)
+ - [smoothing](#smoothing)
+ - [span](#span)
+ - [spectrogram](#spectrogram)
+ - [splice_site](#splice_site)
+ - [stackedplot](#stackedplot)
+ - [ternary_plot](#ternary_plot)
+ - [text_in_box](#text_in_box)
+ - [three_letters](#three_letters)
+ - [tic_tac_toe](#tic_tac_toe)
+ - [toomany](#toomany)
+ - [topoview](#topoview)
+ - [trace](#trace)
+ - [track](#track)
+ - [transcript](#transcript)
+ - [transcript2](#transcript2)
+ - [translation](#translation)
+ - [triangle](#triangle)
+ - [two_bolts](#two_bolts)
+ - [vista_plot](#vista_plot)
+ - [wave](#wave)
+ - [weighted_arrow](#weighted_arrow)
+ - [whiskerplot](#whiskerplot)
+ - [wiggle_box](#wiggle_box)
+ - [wiggle_density](#wiggle_density)
+ - [wiggle_xyplot](#wiggle_xyplot)
+ - [wiggle_minmax](#wiggle_minmax)
+ - [xyplot](#xyplot)
 
 See also: [GBrowse
 Configuration/Glyphs](/wiki/GBrowse_Configuration/Glyphs)
@@ -136,20 +136,20 @@ sets. In the example the `bicolor_pivot` parameter has been set to `0`,
 and the `pos_color` and `neg_color` were set to obtain the conditional
 coloring.
 
-    [wiggle_xyplot]
-    feature       = Mooney_wiggle
-    glyph         = wiggle_xyplot
-    height        = 20
-    fgcolor       = black
-    bicolor_pivot = 0
-    pos_color     = red
-    neg_color     = blue
-    key           = Mooney ChIP-chip (Plot)
-    category      = Experimental Data
-    label         = 0
-    citation      = Mooney RA, Davis SE, Peters JM, Rowland JL et al.
-                    Regulator trafficking on bacterial transcription units in vivo. Mol Cell 2009 Jan 16;33(1):97-108.
-    label         = 1
+ [wiggle_xyplot]
+ feature = Mooney_wiggle
+ glyph = wiggle_xyplot
+ height = 20
+ fgcolor = black
+ bicolor_pivot = 0
+ pos_color = red
+ neg_color = blue
+ key = Mooney ChIP-chip (Plot)
+ category = Experimental Data
+ label = 0
+ citation = Mooney RA, Davis SE, Peters JM, Rowland JL et al.
+ Regulator trafficking on bacterial transcription units in vivo. Mol Cell 2009 Jan 16;33(1):97-108.
+ label = 1
 
 ## wiggle_minmax
 

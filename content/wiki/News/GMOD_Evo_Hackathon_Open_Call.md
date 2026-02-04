@@ -20,9 +20,9 @@ National Evolutionary Synthesis Center (NESCent)</a> in Durham, NC.
 This hackathon targets three critical gaps in the capabilities of the
 GMOD toolbox that currently limit its utility for evolutionary research:
 
-1.  Visualization of comparative genomics data
-2.  Visualization of phylogenetic data and trees
-3.  Support for population diversity and phenotype data
+1. Visualization of comparative genomics data
+2. Visualization of phylogenetic data and trees
+3. Support for population diversity and phenotype data
 
 If you are interested in these areas and have relevant expertise, you
 are strongly encouraged to apply. Relevant areas of expertise include

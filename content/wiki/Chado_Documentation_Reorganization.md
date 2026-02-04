@@ -3,7 +3,7 @@ title: "Chado Documentation Reorganization"
 ---
 # Chado Documentation Reorganization
 
-We are going to reorganize the  in this web site.
+We are going to reorganize the in this web site.
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> is the
 database schema of GMOD and it has quite a bit of documentation in this
 web site. However, the doc could be better organized and integrated.
@@ -13,17 +13,17 @@ solicits feedback on) a reorganization plan.
 Once the work starts, this page will also describe how the work is
 going.
 
-  Exists</span>](#What_Exists)
+ Exists</span>](#What_Exists)
 - [Plan](#Plan)
-  - [Feedback](#Feedback)
-    - [Comments](#Comments)
+ - [Feedback](#Feedback)
+ - [Comments](#Comments)
 - [Mechanics](#Mechanics)
 
 ## What Exists
 
 This summarizes the major Chado related pages that existed when the
 reorganization began in early April 2008. It is not an exhaustive list
-of pages related to Chado. See the  for that.
+of pages related to Chado. See the for that.
 
 <table class="wikitable">
 <colgroup>
@@ -62,7 +62,7 @@ Chado</em> page - a Chado Cookbook page.</td>
 <tr class="odd">
 <td><a href="/wiki/Chado_Doc_Project" title="Chado Doc Project">Chado Doc
 Project</a></td>
-<td><a href="/wiki/User%253ABosborne" title="User%253ABosborne">Brian Osborne's</a>
+<td>Brian Osborne's
 call-to-arms to write "material that is very practical and specific"
 meaning "Best Practices" and "module pages". Brian broke Chado up into 8
 workpackages and sent out a call for volunteers. 3 of the 8 packages
@@ -173,37 +173,37 @@ detail, is the hard part.</td>
 A draft plan for how the documentation will be restructured.
 
 - Chado
-  - Page that shows basically this outline and has a getting started
-    section or link
-  - Getting Started
+ - Page that shows basically this outline and has a getting started
+ section or link
+ - Getting Started
 - Chado Architecture and Logical Design
-  - [Chado Manual](/wiki/Chado_Manual) - Database-theory
-    centric explanation.
-  - Modules -
-    [Template:ChadoModules](/wiki/Template:ChadoModules)
-    and all accompanying pages.
+ - [Chado Manual](/wiki/Chado_Manual) - Database-theory
+ centric explanation.
+ - Modules -
+ [Template:ChadoModules](/wiki/Template:ChadoModules)
+ and all accompanying pages.
 - Chado Database Administration
-  - DBMS and OS Choice
-  - Installing Chado
-  - Maintaining Chado
-    - Include performance tips and discussion of backups.
-    - See also User Experiences with DBMS/OS combinations.
-  - Accessing, Importing and Exporting Data
-    - Various APIs, middleware solutions
-    - Pointers to Apollo, GBrowse, etc connector pages
+ - DBMS and OS Choice
+ - Installing Chado
+ - Maintaining Chado
+ - Include performance tips and discussion of backups.
+ - See also User Experiences with DBMS/OS combinations.
+ - Accessing, Importing and Exporting Data
+ - Various APIs, middleware solutions
+ - Pointers to Apollo, GBrowse, etc connector pages
 - Using Chado
-  - Chado Cookbook
-    - Answers questions like "How do I do *X* in Chado". Pull a lot of
-      these from E-mail list.
-    - Fold SQL into this one. Expand it out to cover more than Sequence
-      module.
-  - Chado FAQ - Answers those recurring questions
-  - Chado User Experiences
-    - Who uses chado and how matrix.
-    - High level user stories, such as
-      [ParameciumDB](/wiki/ParameciumDB)
-    - Low-level "installing/using Chado on *X* using DBMS *Y*"
-      logs/stories.
+ - Chado Cookbook
+ - Answers questions like "How do I do *X* in Chado". Pull a lot of
+ these from E-mail list.
+ - Fold SQL into this one. Expand it out to cover more than Sequence
+ module.
+ - Chado FAQ - Answers those recurring questions
+ - Chado User Experiences
+ - Who uses chado and how matrix.
+ - High level user stories, such as
+ [ParameciumDB](/wiki/ParameciumDB)
+ - Low-level "installing/using Chado on *X* using DBMS *Y*"
+ logs/stories.
 
 This proposal will be refined as we get feedback and the effort
 progresses.
@@ -214,16 +214,16 @@ You are encouraged to provide feedback on this effort by
 
 - Typing your comments right here.
 - Sending comments to the [GMOD Help
-  Desk](/wiki/GMOD_Help_Desk) at
-  <a href="mailto:help@gmod.org" class="external text"
-  rel="nofollow">help@gmod.org</a>.
+ Desk](/wiki/GMOD_Help_Desk) at
+ <a href="mailto:help@gmod.org" class="external text"
+ rel="nofollow">help@gmod.org</a>.
 - Sending comments to the [GMOD-Schema mailing
-  list](/wiki/GMOD_Mailing_Lists) at
-  <a href="mailto:gmod-schema@lists.sourceforge.net" class="external text"
-  rel="nofollow">gmod-schema@lists.sourceforge.net</a>. You must first
-  <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
-  class="external text" rel="nofollow">subscribe to the list</a> to post
-  to it.
+ list](/wiki/GMOD_Mailing_Lists) at
+ <a href="mailto:gmod-schema@lists.sourceforge.net" class="external text"
+ rel="nofollow">gmod-schema@lists.sourceforge.net</a>. You must first
+ <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
+ class="external text" rel="nofollow">subscribe to the list</a> to post
+ to it.
 
 **Note:** Unless you request otherwise anything sent to the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk) or to the [GMOD-Schema mailing

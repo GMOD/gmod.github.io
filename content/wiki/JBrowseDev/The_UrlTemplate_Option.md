@@ -11,14 +11,14 @@ link features to an external website.
 If you would like to follow along with the next few examples, switch to
 your jbrowse directory, then input the volvox sequence:
 
-    bin/prepare-refseqs.pl --fasta docs/tutorial/data_files/volvox.fa
+ bin/prepare-refseqs.pl --fasta docs/tutorial/data_files/volvox.fa
 
 **1. Link each feature to the same url**
 
 As a simple example, this call to flatfile-to-json.pl will link every
 feature in the track to google.com:
 
-    bin/flatfile-to-json.pl --urlTemplate http://www.google.com --type remark --gff docs/tutorial/data_files/volvox.gff3 --tracklabel same_URL
+ bin/flatfile-to-json.pl --urlTemplate http://www.google.com --type remark --gff docs/tutorial/data_files/volvox.gff3 --tracklabel same_URL
 
 Admittedly, when used in this way, urlTemplate is not very useful.
 
@@ -27,7 +27,7 @@ Admittedly, when used in this way, urlTemplate is not very useful.
 In order to make urlTemplate link different features to different urls,
 try this example:
 
-    bin/flatfile-to-json.pl --urlTemplate http://www.google.com/search?q={name} --getLabels --type remark --gff docs/tutorial/data_files/volvox.gff3 --tracklabel unique_URLs
+ bin/flatfile-to-json.pl --urlTemplate http://www.google.com/search?q={name} --getLabels --type remark --gff docs/tutorial/data_files/volvox.gff3 --tracklabel unique_URLs
 
 Now, for any given feature, clicking on the link causes google to be
 queried for that feature's name. With the correct website, this function
@@ -40,7 +40,7 @@ In order to understand how this works, it is necessary to understand a
 few aspects of the output JSON. Before reading any further, open the
 first output JSON file:
 
-    less data/tracks/ctgA/same_URL/trackData.json
+ less data/tracks/ctgA/same_URL/trackData.json
 
 By default, the JSON file is as compact as possible, containing the
 minimum amount of data necessary for the javascript to render the track.
@@ -53,7 +53,7 @@ that corresponds to these column headers.
 
 Next, open 'data/tracks/ctgA/unique_URLs/trackData.json'.
 
-    less data/tracks/ctgA/unique_URLs/trackData.json
+ less data/tracks/ctgA/unique_URLs/trackData.json
 
 Once again, locate the "headers" array. In addition to the columns that
 were previously present, there is now an additional one called "name".
@@ -66,11 +66,11 @@ individual feature. In the case of the above example, the names of each
 feature are substituted. It is also possible to substitute values from
 any of the other columns, e.g.:
 
-    ... --urlTemplate http://www.google.com/search?q={start} ...
+ ... --urlTemplate http://www.google.com/search?q={start} ...
 
 # See also
 
 - <a href="/wiki/General_Usage" class="mw-redirect"
-  title="JBrowseDev/General Usage">General Usage Notes</a>
+ title="JBrowseDev/General Usage">General Usage Notes</a>
 
 - [JBrowse](../Category:JBrowse)

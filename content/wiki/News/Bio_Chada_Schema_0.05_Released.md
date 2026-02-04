@@ -8,11 +8,11 @@ I'd like to announce a new
 release, version 0.05. Changes in this release:
 
 - Got POD generation working, now all classes and methods have POD,
-  **including** the embedded table and column comments! Thanks to the
-  wonderful DBIx::Class::Schema::Loader folks.
+ **including** the embedded table and column comments! Thanks to the
+ wonderful DBIx::Class::Schema::Loader folks.
 - Turned off DBIC's cascade_delete and cascade_copy on all relations
-  (thanks to Siddhartha Basu for troubleshooting). Deletes break if
-  these are on and you don't have every part of the schema installed.
+ (thanks to Siddhartha Basu for troubleshooting). Deletes break if
+ these are on and you don't have every part of the schema installed.
 
 I <a href="http://search.cpan.org/dist/Bio-Chado-Schema/"
 class="external text" rel="nofollow">uploaded</a> it to

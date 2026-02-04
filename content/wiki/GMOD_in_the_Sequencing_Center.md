@@ -17,14 +17,14 @@ GMOD can help you help your researchers.
 
 ## Organizers
 
-- [Chris Hemmerich](/wiki/User:Chemmeri) - Biological Database
-  Unit Leader, and Project Lead for [ISGA](/wiki/ISGA) at the
-  <a href="http://www.cgb.indiana.edu" class="external text"
-  rel="nofollow">Center for Genomics and Bioinformatics (CGB)</a>,
-  Indiana University (which is also the home of
-  [WebGBrowse](/wiki/WebGBrowse)).
-- [Dave Clements](/wiki/User:Clements) -
-  [Galaxy](/wiki/Galaxy) project, Emory University.
+- Chris Hemmerich - Biological Database
+ Unit Leader, and Project Lead for [ISGA](/wiki/ISGA) at the
+ <a href="http://www.cgb.indiana.edu" class="external text"
+ rel="nofollow">Center for Genomics and Bioinformatics (CGB)</a>,
+ Indiana University (which is also the home of
+ [WebGBrowse](/wiki/WebGBrowse)).
+- Dave Clements -
+ [Galaxy](/wiki/Galaxy) project, Emory University.
 
 ## Topics
 
@@ -35,18 +35,18 @@ something you want to discuss, please add it here.
 Suggested Topics
 
 - Using tools like
-  <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
-  [MAKER](/wiki/MAKER) and [Galaxy](/wiki/Galaxy) to help run a
-  sequencing center.
+ <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
+ [MAKER](/wiki/MAKER) and [Galaxy](/wiki/Galaxy) to help run a
+ sequencing center.
 - Using tools like [ISGA](/wiki/ISGA),
-  [WebGBrowse](/wiki/WebGBrowse), and
-  [Galaxy](/wiki/Galaxy) to enable your researchers to do
-  bioinformatics without a bioinformatician.
+ [WebGBrowse](/wiki/WebGBrowse), and
+ [Galaxy](/wiki/Galaxy) to enable your researchers to do
+ bioinformatics without a bioinformatician.
 - Providing your clients with a more finished product. Provide your
-  clients with a _genome server in a box_ using technology like VMware and tools
-  such as [GBrowse](/wiki/GBrowse),
-  [JBrowse](/wiki/JBrowse), [MAKER](/wiki/MAKER),
-  [Apollo](/wiki/Apollo).
+ clients with a _genome server in a box_ using technology like VMware and tools
+ such as [GBrowse](/wiki/GBrowse),
+ [JBrowse](/wiki/JBrowse), [MAKER](/wiki/MAKER),
+ [Apollo](/wiki/Apollo).
 - ???
 
 ## Participants
@@ -57,4 +57,4 @@ Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011)
 at [GMOD Americas 2011](/wiki/GMOD_Americas_2011), is
 free and open to anyone.
 
-| Participant                                              | Email                                 | Comments                                                                                                                                                                                                                                | -------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Chris Hemmerich](/wiki/User:Chemmeri) | chemmeri 'at' cgb dot indiana dpt edu | Organizer. CGB is a sequencing center that uses and develops GMOD tools.                                                                                                                                                                | [Dave Clements](/wiki/User:Clements)   | clements@nescent.org                  | Organizer. Galaxy Project Community Liaison. [Galaxy](/wiki/Galaxy) includes support for sequencing center sample tracking, and can also be a useful platform for your clients to analyze their data and preserve their workflows. | Olen Sluder                                              | olen AT acm DOT org                   | Texas Biomedical Research Institute                                                                                                                                                                                                     | Surya Saha                                               | ss2489 at cornell edu                 | Cornell University                                                                                                                                                                                                                      | Zhanji Liu                                               | Delaware State                                                                                                                                                                                                                          | Daniel Quest                                             | ORNL                                                                                                                                                                                                                                    | Gary Xie                                                 | LANL                                                                                                                                                                                                                                    | Victor Ruotti                                            | Wisconsin                                                                                                                                                                                                                               | Joe Hornton                                              | GSK                                                                                                                                                                                                                                     | Madhavan Ganesh                                          | UC Berkeley                                                                                                                                                                                                                             | Kashi Ravenna                                            | University of North Texas                                                                                                                                                                                                               | Template:ThisIsATET
+| Participant | Email | Comments | -------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | Chris Hemmerich | chemmeri 'at' cgb dot indiana dpt edu | Organizer. CGB is a sequencing center that uses and develops GMOD tools. | Dave Clements | clements@nescent.org | Organizer. Galaxy Project Community Liaison. [Galaxy](/wiki/Galaxy) includes support for sequencing center sample tracking, and can also be a useful platform for your clients to analyze their data and preserve their workflows. | Olen Sluder | olen AT acm DOT org | Texas Biomedical Research Institute | Surya Saha | ss2489 at cornell edu | Cornell University | Zhanji Liu | Delaware State | Daniel Quest | ORNL | Gary Xie | LANL | Victor Ruotti | Wisconsin | Joe Hornton | GSK | Madhavan Ganesh | UC Berkeley | Kashi Ravenna | University of North Texas | Template:ThisIsATET

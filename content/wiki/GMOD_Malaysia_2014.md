@@ -25,12 +25,12 @@ and genomic data. These include:
 
 - [Galaxy](/wiki/Galaxy) analysis pipeline
 - [GBrowse](/wiki/GBrowse) and [JBrowse](/wiki/JBrowse)
-  genome browsers
+ genome browsers
 - [InterMine](/wiki/InterMine) data warehouse
 - [MAKER](/wiki/MAKER) and MAKER-P genome annotation pipelines
 - [Tripal](/wiki/Tripal) website generator and database interface
 - <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
-  schema
+ schema
 
 Instruction is by experienced instructors and developers with deep
 knowledge of the tools and their applications.
@@ -46,12 +46,12 @@ yet to be confirmed. Please subscribe to the
 class="external text" rel="nofollow">GMOD announce mailing list</a> to
 be kept apprised on updates on the summer school.
 
-  Feedback](#Feedback)
+ Feedback](#Feedback)
 - [Schedule](#Schedule)
 - [Details](#Details)
 - [Participants](#Participants)
 - [Course
-  Sponsor](#Course_Sponsor)
+ Sponsor](#Course_Sponsor)
 
 ## Feedback
 

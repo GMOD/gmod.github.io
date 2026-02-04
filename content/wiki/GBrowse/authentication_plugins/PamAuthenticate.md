@@ -8,23 +8,23 @@ Plugins](../../GBrowse_Plugins) that can be used to
 gather user credentials and authenticate them. This associates a user
 with a stable username and can be used to:
 
-1.  Remember a user's preferences, uploads and other settings across
-    multiple computers.
-2.  Allow users to share tracks with each other and to make uploaded
-    tracks public.
-3.  [Authorize](../../GBrowse_Configuration/Authentication)
-    certain users to access tracks and/or datasources.
+1. Remember a user's preferences, uploads and other settings across
+ multiple computers.
+2. Allow users to share tracks with each other and to make uploaded
+ tracks public.
+3. [Authorize](../../GBrowse_Configuration/Authentication)
+ certain users to access tracks and/or datasources.
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Setting Up
-  Username/Password
-  Authentication](#Setting_Up_Username.2FPassword_Authentication)
+ Username/Password
+ Authentication](#Setting_Up_Username.2FPassword_Authentication)
 - [Setting up
-  Group Definitions](#Setting_up_Group_Definitions)
+ Group Definitions](#Setting_up_Group_Definitions)
 - [Customizing
-  the Plugin](#Customizing_the_Plugin)
+ the Plugin](#Customizing_the_Plugin)
 - [Further
-  Information](#Further_Information)
+ Information](#Further_Information)
 
 # Introduction
 
@@ -45,7 +45,7 @@ service called "gbrowse" by creating the file /etc/pam.d/gbrowse. A
 simple /etc/pam.d/gbrowse file that uses local UNIX password/shadow
 databases would look like this:
 
-    auth     requisite   pam_unix.so
+ auth requisite pam_unix.so
 
 an LDAP-based authentication would refer to *pam_ldap.so* instead.
 
@@ -53,7 +53,7 @@ Note that if you are going to use the UNIX shadow password system for
 authentication, the web user must belong to the "shadow" group on many
 systems. You can arrange this as follows:
 
-    usermod -G shadow -a www-data
+ usermod -G shadow -a www-data
 
 Change "shadow" and "www-data" to the group that can read the
 /etc/shadow file and the Apache user respectively. Note that you will
@@ -76,14 +76,14 @@ depending on how it is configured. For example, to fetch user and group
 information from the local filesystem first, and then to look in LDAP,
 nsswitch.conf should have lines that looks like this:
 
-    passwd: compat ldap
-    group:  compat ldap
+ passwd: compat ldap
+ group: compat ldap
 
 Once these steps are taken, you'll configure GBrowse to use the PAM
 authentication plugin. Edit **/etc/gbrowse2/GBrowse.conf** and add or
 uncomment the following line in the \[GENERAL\] section:
 
-    authentication plugin = PamAuthenticate
+ authentication plugin = PamAuthenticate
 
 When you reload GBrowse, you will see a simple "Login" link in the upper
 right hand corner of the screen. Clicking on this link will bring up a
@@ -97,11 +97,11 @@ You can customize the messages that appear at the top and bottom of the
 login dialog box by setting configuration options in the
 \[PamAuthenticate:plugin\] stanza located in GBrowse.conf:
 
-    [PamAuthenticate:plugin]
-    login hint = your UNIX account
-    login help = Please see your system administrator for help
-    if you have lost your  password.
-    pam service name = gbrowse
+ [PamAuthenticate:plugin]
+ login hint = your UNIX account
+ login help = Please see your system administrator for help
+ if you have lost your password.
+ pam service name = gbrowse
 
 login hint
 This is the message that appears at the top of the dialog box, and is
@@ -129,4 +129,4 @@ to create your own customized authentication plugin, please see
 Plugins](../../Creating_GBrowse_Plugins).
 
 - [GBrowse
-  Plugins](../../Category:GBrowse_Plugins)
+ Plugins](../../Category:GBrowse_Plugins)

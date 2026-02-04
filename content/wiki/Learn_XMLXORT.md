@@ -24,38 +24,38 @@ data. Which strategy to use?
 steps: I will first try on the rudimental table, such as cv(?), biblio,
 db(?).
 
-  classes</span>](#wormbase_acedb_classes)
+ classes</span>](#wormbase_acedb_classes)
 - [chado database
-  ddl](#chado_database_ddl)
+ ddl](#chado_database_ddl)
 - [chadoxml
-  dtd](#chadoxml_dtd)
+ dtd](#chadoxml_dtd)
 - [chadoxml](#chadoxml)
 - [migration](#migration)
-  - [mapping
-    wormbase info to chado](#mapping_wormbase_info_to_chado)
-  - [extract
-    info from wormbase using AcePerl (sample
-    code)](#extract_info_from_wormbase_using_AcePerl_.28sample_code.29)
-  - [write
-    chadoxml (sample xml)](#write_chadoxml_.28sample_xml.29)
-  - [validate
-    xml file](#validate_xml_file)
-  - [load xml
-    file](#load_xml_file)
+ - [mapping
+ wormbase info to chado](#mapping_wormbase_info_to_chado)
+ - [extract
+ info from wormbase using AcePerl (sample
+ code)](#extract_info_from_wormbase_using_AcePerl_.28sample_code.29)
+ - [write
+ chadoxml (sample xml)](#write_chadoxml_.28sample_xml.29)
+ - [validate
+ xml file](#validate_xml_file)
+ - [load xml
+ file](#load_xml_file)
 - [order is
-  important for loading](#order_is_important_for_loading)
+ important for loading](#order_is_important_for_loading)
 - [extend chado
-  schema](#extend_chado_schema)
+ schema](#extend_chado_schema)
 - [cvterm is most
-  important for chado](#cvterm_is_most_important_for_chado)
+ important for chado](#cvterm_is_most_important_for_chado)
 - [strain from
-  wormbase to stock from
-  chado](#strain_from_wormbase_to_stock_from_chado)
+ wormbase to stock from
+ chado](#strain_from_wormbase_to_stock_from_chado)
 - [transgene
-  from wormbase to feature from
-  chado](#transgene_from_wormbase_to_feature_from_chado)
+ from wormbase to feature from
+ chado](#transgene_from_wormbase_to_feature_from_chado)
 - [variation
-  from wormbase](#variation_from_wormbase)
+ from wormbase](#variation_from_wormbase)
 
 ## wormbase acedb classes
 
@@ -79,38 +79,38 @@ class="external text" rel="nofollow">postgresql create table command</a>.
 
 - chadoxml is a direct, fixed mapping of the chado schema;
 - change to ddl will map to change to dtd by a program
-  chado_dtd_creator.pl in xmlxort/examples
+ chado_dtd_creator.pl in xmlxort/examples
 - can delete, update(alter), new(create), etc using XML.
 - no module in xml
 - table map to element, foreign table maps to nested element
-    <pub>
-       <pubprop>
-          ....
-       </pubprop>
-    </pub>
+ <pub>
+ <pubprop>
+ ....
+ </pubprop>
+ </pub>
 
 - column map to nested element
-    <pub>
-       <uniquename>this paper</uniquename>
-    </pub>
+ <pub>
+ <uniquename>this paper</uniquename>
+ </pub>
 
 - xml attributes only a few, usually for database transaction, such as
-  lookup, insert, delete, update, force. default is force, i.e,combining
-  lookup/update/insert.
-    <pub op='lookup'>
+ lookup, insert, delete, update, force. default is force, i.e,combining
+ lookup/update/insert.
+ <pub op='lookup'>
 
 - macro_id for save space, since XML could be quite long
-    <pub id='WBPaper000001'>
-      <title>....
-      <miniref>....
-      <volumn>
-    <stock_pub>
-       <pub_id>
-          <pub>WBPaper000001</pub>
+ <pub id='WBPaper000001'>
+ <title>....
+ <miniref>....
+ <volumn>
+ <stock_pub>
+ <pub_id>
+ <pub>WBPaper000001</pub>
 
 - use \<pub_id\> instead of \<pub\> if the schema ask for a column of
-  pub_id. this is always true in chado for foreign key. see above
-  example.
+ pub_id. this is always true in chado for foreign key. see above
+ example.
 
 ## migration
 
@@ -136,129 +136,129 @@ Wormbase to chado is as following:
 - paper-\>Status --\> pub.is_obsolete=FALSE
 - paper-\>Erratum --\> pub_relationship (corrects)
 - paper-\>Journal ---\>pub_relationship (journal is another pub,
-  type=journal)
+ type=journal)
 - paper-\>Reference-\>title etc. ---\> pub (title, pages, volume, issue,
-  year, publisher)
+ year, publisher)
 - paper-\>In_book pub_relationship (book is another pub, type=book)
 - paper-\>journal and paper-\>Contained_in ---\>pub_relationship
-  (published in)
+ (published in)
 - paper-\>author ----\>pubauthor
 - paper-\>B rief_citation --\>pub.miniref (modified)
 - paper-\>Abstract, paper-\>Keyword ---\> pubprop
-  (type=abstract/keyword)
+ (type=abstract/keyword)
 - paper-\>Type --\> pub.type_id
 - pubprop (type=paper remark)
 
 ### extract info from wormbase using AcePerl (sample code)
 
-     sub read_paper_pub {
-       my $paper = shift;
-       my %info;
-       $info{uniquename} = $paper->name;
-       ...........
-       if (defined($paper->Page)) {
-           my @pages = $paper->Page->row;
-           if (scalar @pages == 1) {
-               $info{pages} = $pages[0]->name;
-           } elsif (scalar @pages == 2) {
-               $info{pages} = join "-", ($pages[0]->name, $pages[1]->name);
-           }
-       }
+ sub read_paper_pub {
+ my $paper = shift;
+ my %info;
+ $info{uniquename} = $paper->name;
+ ...........
+ if (defined($paper->Page)) {
+ my @pages = $paper->Page->row;
+ if (scalar @pages == 1) {
+ $info{pages} = $pages[0]->name;
+ } elsif (scalar @pages == 2) {
+ $info{pages} = join "-", ($pages[0]->name, $pages[1]->name);
+ }
+ }
 
 ### write chadoxml (sample xml)
 
-    sub write_paper_pub {
-       my $paper = shift;
-       my $fh = shift;
-       my $p_href = &read_paper_pub($paper);
-       my $doc = new XML::DOM::Document;
-       my $root = $doc->createElement("chado");
-       my $pub_el = create_ch_pub(doc => $doc,
-                                  no_lookup => 1,
-                                  %$p_href);
-       ........
-       if (defined($paper->CGC_name)) {
-           my $db = 'CGC';
-           my $accession = substr($paper->CGC_name->name, 3);
-           my $is_current = 't';
-           my $pd_el = create_ch_pub_dbxref(doc => $doc,
-                                            db => $db,
-                                            accession => $accession,
-                                            no_lookup => 1);
-           $pub_el->appendChild($pd_el);
-       }
-       ........
-       if (defined($paper->Abstract)) {
-           my %abstract = ();
-           $abstract{type} = 'pubmed_abstract';
-           if ($paper->Abstract->right->name ne ) {
-               $abstract{value} = $paper->Abstract->right->name;
-               my $pp_el = create_ch_pubprop(doc => $doc,
-                                             %abstract);
-               $pub_el->appendChild($pp_el);
-           }
-       }
-       .........
+ sub write_paper_pub {
+ my $paper = shift;
+ my $fh = shift;
+ my $p_href = &read_paper_pub($paper);
+ my $doc = new XML::DOM::Document;
+ my $root = $doc->createElement("chado");
+ my $pub_el = create_ch_pub(doc => $doc,
+ no_lookup => 1,
+  %$p_href);
+ ........
+ if (defined($paper->CGC_name)) {
+ my $db = 'CGC';
+ my $accession = substr($paper->CGC_name->name, 3);
+ my $is_current = 't';
+ my $pd_el = create_ch_pub_dbxref(doc => $doc,
+ db => $db,
+ accession => $accession,
+ no_lookup => 1);
+ $pub_el->appendChild($pd_el);
+ }
+ ........
+ if (defined($paper->Abstract)) {
+ my %abstract = ();
+ $abstract{type} = 'pubmed_abstract';
+ if ($paper->Abstract->right->name ne ) {
+ $abstract{value} = $paper->Abstract->right->name;
+ my $pp_el = create_ch_pubprop(doc => $doc,
+  %abstract);
+ $pub_el->appendChild($pp_el);
+ }
+ }
+ .........
 
-    sub write_paper_pub_relationship {
-       .........
-       if (defined($paper->In_book)) {
-           my %pr = ();
-           $pr{is_object} = 't';
-           $pr{rtype} = 'published_in';
-           if (defined($paper->In_book->at('Title'))) {
-             $pr{uniquename} = $paper->In_book->at('Title')->right->name;
-           } else {........
-           }
-           my $pr_el = create_ch_pub_relationship(doc => $doc;
-                                                  %pr);
-           $pub_el->appendChild($pr_el);
-       }
+ sub write_paper_pub_relationship {
+ .........
+ if (defined($paper->In_book)) {
+ my %pr = ();
+ $pr{is_object} = 't';
+ $pr{rtype} = 'published_in';
+ if (defined($paper->In_book->at('Title'))) {
+ $pr{uniquename} = $paper->In_book->at('Title')->right->name;
+ } else {........
+ }
+ my $pr_el = create_ch_pub_relationship(doc => $doc;
+  %pr);
+ $pub_el->appendChild($pr_el);
+ }
 
 ### validate xml file
 
-    xort_validator.pl -d wormbase_chado -f xml/paper/1.xml -v 1 -b 1
+ xort_validator.pl -d wormbase_chado -f xml/paper/1.xml -v 1 -b 1
 
 this will connect database to validate the xml file
 
 ### load xml file
 
-    xort_loader.pl -d wormbase_chado -f xml/paper/1.xml
+ xort_loader.pl -d wormbase_chado -f xml/paper/1.xml
 
 ## order is important for loading
 
 - load cvterm first, mapping wormbase paper/person type/proptype to
-  chado cvterm
+ chado cvterm
 - load pub/pubauthor/pubprop, contact/contactprop first, extracting
-  related paper/person info
+ related paper/person info
 - load pub_relationship/contact_relationship at last, since two
-  pub/contact (a relationship)will not exist in xml/db before all
-  pub/contact instance get populated.
+ pub/contact (a relationship)will not exist in xml/db before all
+ pub/contact instance get populated.
 
 ## extend chado schema
 
 - add a contactprop table rather than alter contact table (e.g, adding
-  email column, etc.) this solution is fully extensible.
-       1 -- ================================================
-       2 -- TABLE: contactprop
-       3 -- ================================================
-       4
-       5 -- contactprop models person/lab properties, such as email, phone, etc.
-       6 -- the cvterms come from FOAF project, see the spec at http://xmlns.com/foaf/spec/
-       7
-       8 create table contactprop (
-       9    contactprop_id serial not null,
-      10    primary key (contactprop_id),
-      11    contact_id int not null,
-      12    foreign key (contact_id) references contact (contact_id) on delete cascade,
-      13    type_id int not null,
-      14    foreign key (type_id) references cvterm (cvterm_id) on delete cascade,
-      15    value text,
-      16
-      17    unique (contact_id, type_id, value)
-      18 );
-      19 create index contactprop_idx1 on contactprop (contactprop_id);
-      20 create index contactprop_idx2 on contactprop (type_id);
+ email column, etc.) this solution is fully extensible.
+ 1 -- ================================================
+ 2 -- TABLE: contactprop
+ 3 -- ================================================
+ 4
+ 5 -- contactprop models person/lab properties, such as email, phone, etc.
+ 6 -- the cvterms come from FOAF project, see the spec at http://xmlns.com/foaf/spec/
+ 7
+ 8 create table contactprop (
+ 9 contactprop_id serial not null,
+ 10 primary key (contactprop_id),
+ 11 contact_id int not null,
+ 12 foreign key (contact_id) references contact (contact_id) on delete cascade,
+ 13 type_id int not null,
+ 14 foreign key (type_id) references cvterm (cvterm_id) on delete cascade,
+ 15 value text,
+ 16
+ 17 unique (contact_id, type_id, value)
+ 18 );
+ 19 create index contactprop_idx1 on contactprop (contactprop_id);
+ 20 create index contactprop_idx2 on contactprop (type_id);
 
 ## cvterm is most important for chado
 

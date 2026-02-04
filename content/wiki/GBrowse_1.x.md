@@ -15,10 +15,10 @@ GBrowse 1.X to
 use since 2002. It is recommended for applications which use a single
 database only and which must support legacy browsers.
 
-  Downloads](#Downloads)
-  - [GitHub](#GitHub)
-  - [Net-based
-    Installer Script](#Net-based_Installer_Script)
+ Downloads](#Downloads)
+ - [GitHub](#GitHub)
+ - [Net-based
+ Installer Script](#Net-based_Installer_Script)
 - [Installation](#Installation)
 - [Configuration](#Configuration)
 
@@ -32,9 +32,9 @@ The GBrowse 1.x development branch is kept at the
 repository. To get the correct version, use the following commands to
 get the stable branch:
 
-     git clone https://github.com/GMOD/GBrowse.git
-     cd GBrowse
-     git checkout -t -b stable origin/stable
+ git clone https://github.com/GMOD/GBrowse.git
+ cd GBrowse
+ git checkout -t -b stable origin/stable
 
 ### Net-based Installer Script
 
@@ -48,7 +48,7 @@ GBrowse 1.70 (**NOT GBrowse2** and its Perl libraries for you. See
 ## Installation
 
 - [GBrowse 1.X Install
-  HOWTO](/wiki/GBrowse_Install_HOWTO)
+ HOWTO](/wiki/GBrowse_Install_HOWTO)
 - [Cygwin](/wiki/GBrowse_Cygwin_HOWTO)
 - [Gentoo](/wiki/GBrowse_Gentoo_HOWTO)
 - [Mac OS X](/wiki/GBrowse_MacOSX_HOWTO)
@@ -58,7 +58,7 @@ GBrowse 1.70 (**NOT GBrowse2** and its Perl libraries for you. See
 ## Configuration
 
 - <a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
-  title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a>
+ title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a>
 
 See **** for more
 GBrowse documentation.

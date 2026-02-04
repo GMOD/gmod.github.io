@@ -9,30 +9,30 @@ href="http://gmod.cvs.sourceforge.net/gmod/cmap/editor/Integrating_CMAE.pod?view
 class="external text" rel="nofollow">sourceforge</a>. Editing will not
 result in long term changes.
 
-  the CMap Assembly Editor (CMAE) with In-House
-  Systems</span>](#Integrating_the_CMap_Assembly_Editor_.28CMAE.29_with_In-House_Systems)
+ the CMap Assembly Editor (CMAE) with In-House
+ Systems</span>](#Integrating_the_CMap_Assembly_Editor_.28CMAE.29_with_In-House_Systems)
 - [VERSION](#VERSION)
 - [Overview](#Overview)
 - [Installing
-  CMAE](#Installing_CMAE)
-  - [Download
-    CMap](#Download_CMap)
-  - [Install
-    Pre-Requisites](#Install_Pre-Requisites)
-    - [CMap
-      Pre-Requisites](#CMap_Pre-Requisites)
-    - [CMAE
-      Pre-Requisites](#CMAE_Pre-Requisites)
-  - [Install
-    CMap](#Install_CMap)
-  - [Create the
-    Database](#Create_the_Database)
-  - [Create the
-    configuration files](#Create_the_configuration_files)
+ CMAE](#Installing_CMAE)
+ - [Download
+ CMap](#Download_CMap)
+ - [Install
+ Pre-Requisites](#Install_Pre-Requisites)
+ - [CMap
+ Pre-Requisites](#CMap_Pre-Requisites)
+ - [CMAE
+ Pre-Requisites](#CMAE_Pre-Requisites)
+ - [Install
+ CMap](#Install_CMap)
+ - [Create the
+ Database](#Create_the_Database)
+ - [Create the
+ configuration files](#Create_the_configuration_files)
 - [Importing
-  Data](#Importing_Data)
+ Data](#Importing_Data)
 - [Modifying
-  Data](#Modifying_Data)
+ Data](#Modifying_Data)
 - [Conclusion](#Conclusion)
 - [AUTHOR](#AUTHOR)
 
@@ -77,8 +77,8 @@ are being served off another machine.
 
 Download CMap from the SourceForge CVS repository
 
-     $ cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod login
-     $ cvs -z3 -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co -P cmap
+ $ cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod login
+ $ cvs -z3 -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co -P cmap
 
 ### Install Pre-Requisites
 
@@ -93,7 +93,7 @@ can be downloaded from CPAN.
 A bundle can be used to install most of these at once. To use this
 bundle, run:
 
-     $ sudo perl -MCPAN -e "install Bundle::CMap"
+ $ sudo perl -MCPAN -e "install Bundle::CMap"
 
 The GD module requires the use of the libgd library which can be found
 at <a href="http://www.libgd.org/" class="external free"
@@ -103,13 +103,13 @@ at <a href="http://www.libgd.org/" class="external free"
 In addition to the CMap requirements, CMAE requires:
 
 - Perl/Tk (<a href="http://www.perltk.org/" class="external free"
-  rel="nofollow">http://www.perltk.org/</a>)
+ rel="nofollow">http://www.perltk.org/</a>)
 
 Perl/Tk can be downloaded from CPAN,
 <a href="http://search.cpan.org/~ni-s/Tk-804.027/" class="external free"
 
 - Tkzinc (<a href="http://www.tkzinc.org/" class="external free"
-  rel="nofollow">http://www.tkzinc.org/</a>)
+ rel="nofollow">http://www.tkzinc.org/</a>)
 
 Zinc can render images using openGL. It can be downloaded from
 <a href="http://www.tkzinc.org/tkzinc/pmwiki.php?n=Main.Download"
@@ -124,9 +124,9 @@ linux system those should be easily answered.
 
 The install process is simply:
 
-     $ perl Build.PL
-     $ ./Build
-     $ sudo ./Build install
+ $ perl Build.PL
+ $ ./Build
+ $ sudo ./Build install
 
 ### Create the Database
 

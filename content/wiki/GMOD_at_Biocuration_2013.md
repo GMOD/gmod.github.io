@@ -8,11 +8,11 @@ More information coming soon!
 GMOD-related content at Biocuration 2013:
 
 - Andrew Oberlin, Miami University. Biological Database of Images and
-  Genomes: tools for community annotations linking image and genomic
-  information
+ Genomes: tools for community annotations linking image and genomic
+ information
 - Monica Munoz-Torres, Lawrence Berkeley National Laboratory. WebApollo:
-  A Web-based Sequence Annotation Editor for Distributed Community
-  Annotation.
+ A Web-based Sequence Annotation Editor for Distributed Community
+ Annotation.
 - JBrowse poster
 - GMOD in the cloud poster
 

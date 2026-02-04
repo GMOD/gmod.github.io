@@ -69,4 +69,4 @@ install = \| config = \| doc = Information on
 
 - [GBrowse](../Category:GBrowse)
 - [GMOD
-  Components](../Category:GMOD_Components)
+ Components](../Category:GMOD_Components)

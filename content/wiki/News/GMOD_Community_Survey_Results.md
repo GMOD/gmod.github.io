@@ -13,7 +13,7 @@ includes questions on:
 - The servers that GMOD runs on.
 - GMOD Meetings
 - GMOD Project overall (What is being done well, what needs improvement,
-  what should be our focus for the next 12-18 months)
+ what should be our focus for the next 12-18 months)
 - GMOD Help Desk
 - GMOD course in Europe and Asia/Pacific
 - Organisms studied
@@ -25,13 +25,13 @@ direction.
 And finally, we have our 3 winners of [GMOD Gear](#Get_GMOD_Gear.21):
 
 - Randall Svancara of
-  <a href="http://www.bioinfo.wsu.edu" class="external text"
-  rel="nofollow">Washington State University</a>
+ <a href="http://www.bioinfo.wsu.edu" class="external text"
+ rel="nofollow">Washington State University</a>
 - Victor Jun M. Ulat of the
-  <a href="http://www.irri.org" class="external text"
-  rel="nofollow">International Rice Research Institute</a>
+ <a href="http://www.irri.org" class="external text"
+ rel="nofollow">International Rice Research Institute</a>
 - Pinglei Zhou of <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>.
+ rel="nofollow">FlyBase</a>.
 
 Please let the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD

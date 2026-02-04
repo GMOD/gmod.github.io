@@ -9,15 +9,15 @@ URLs, or a common download URL. Each participating MOD has an index page
 like the ones below, describing the species and datasets that are
 available.
 
-  URL</span>](#MOD_Standard_URL)
+ URL</span>](#MOD_Standard_URL)
 - [About GMOD
-  Standard URL](#About_GMOD_Standard_URL)
+ Standard URL](#About_GMOD_Standard_URL)
 - [Common /genome
-  pages](#Common_.2Fgenome_pages)
+ pages](#Common_.2Fgenome_pages)
 - [MOD
-  Non-Standard URL](#MOD_Non-Standard_URL)
+ Non-Standard URL](#MOD_Non-Standard_URL)
 - [See
-  also](#See_also)
+ also](#See_also)
 
 # MOD Standard URL
 
@@ -37,10 +37,10 @@ presentation</a> given at the Spring, 2005 GMOD meeting. The uses for
 these common URLs are two-fold:
 
 - Keep it simple for scientists to guess where to find a genome, when
-  they may be unfamiliar with the MOD website.
+ they may be unfamiliar with the MOD website.
 - Keep it standard for computists to program a long-lasting, computer
-  parsable data URL, with no guesswork on spelling, and defined data
-  formats.
+ parsable data URL, with no guesswork on spelling, and defined data
+ formats.
 
 | Standard URL | Description |
 |----|----|
@@ -133,4 +133,4 @@ class="external text" rel="nofollow">Reference Genomes</a>
 
 - [MOD](/wiki/MOD)
 - <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/standard-urls"
-  class="external text" rel="nofollow">standard-urls project in SVN</a>
+ class="external text" rel="nofollow">standard-urls project in SVN</a>

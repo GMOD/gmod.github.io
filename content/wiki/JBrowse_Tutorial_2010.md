@@ -8,53 +8,53 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/375px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/500px-JBrowseLogo.png 2x"
 width="250" height="55" alt="JBrowse" />
 
-This [JBrowse](/wiki/JBrowse) tutorial was presented by [Mitch
-Skinner](/wiki/User:MitchSkinner) at the [2010 GMOD Summer
+This [JBrowse](/wiki/JBrowse) tutorial was presented by Mitch
+Skinner at the [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent JBrowse tutorial can be found at the
 <a href="/wiki/JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse Tutorial</a> page.
 
-This  walks you
+This walks you
 through setting up and running a [JBrowse](/wiki/JBrowse) server.
 
-  VMware](#VMware)
+ VMware](#VMware)
 - [Caveats](#Caveats)
 - [Prerequisites](#Prerequisites)
 - [JBrowse
-  Introduction](#JBrowse_Introduction)
+ Introduction](#JBrowse_Introduction)
 - [JBrowse
-  arch](#JBrowse_arch)
+ arch](#JBrowse_arch)
 - [Setting up
-  JBrowse](#Setting_up_JBrowse)
-  - [Getting
-    JBrowse](#Getting_JBrowse)
-  - [Starting
-    Point](#Starting_Point)
-  - [Basic
-    Steps](#Basic_Steps)
-  - [Data from
-    a database](#Data_from_a_database)
-    - [Specify reference
-      sequences](#Specify_reference_sequences)
-    - [Load
-      Feature Data](#Load_Feature_Data)
-    - [More
-      complex track](#More_complex_track)
-    - [Collect feature
-      names](#Collect_feature_names)
-  - [Data from
-    flat files](#Data_from_flat_files)
-    - [Sequences](#Sequences)
-    - [Features](#Features)
-    - [BAM
-      data](#BAM_data)
-  - [Quantitative data](#Quantitative_data)
+ JBrowse](#Setting_up_JBrowse)
+ - [Getting
+ JBrowse](#Getting_JBrowse)
+ - [Starting
+ Point](#Starting_Point)
+ - [Basic
+ Steps](#Basic_Steps)
+ - [Data from
+ a database](#Data_from_a_database)
+ - [Specify reference
+ sequences](#Specify_reference_sequences)
+ - [Load
+ Feature Data](#Load_Feature_Data)
+ - [More
+ complex track](#More_complex_track)
+ - [Collect feature
+ names](#Collect_feature_names)
+ - [Data from
+ flat files](#Data_from_flat_files)
+ - [Sequences](#Sequences)
+ - [Features](#Features)
+ - [BAM
+ data](#BAM_data)
+ - [Quantitative data](#Quantitative_data)
 - [See
-  also](#See_also)
+ also](#See_also)
 - [Other
-  links](#Other_links)
+ links](#Other_links)
 
 ## VMware
 
@@ -79,9 +79,9 @@ Perl:
 
 - [BioPerl 1.6](/wiki/BioPerl)
 - <a href="http://search.cpan.org/perldoc?JSON" class="external text"
-  rel="nofollow">JSON</a>
+ rel="nofollow">JSON</a>
 - <a href="http://search.cpan.org/perldoc?JSON::XS" class="external text"
-  rel="nofollow">JSON::XS</a> (optional, for speed)
+ rel="nofollow">JSON::XS</a> (optional, for speed)
 
 System packages:
 
@@ -92,7 +92,7 @@ Optional, for BAM files:
 
 - samtools, and its dependency libncurses5-dev
 - perl module: <a href="http://search.cpan.org/perldoc?Bio::DB::SAM"
-  class="external text" rel="nofollow">Bio::DB::SAM</a>
+ class="external text" rel="nofollow">Bio::DB::SAM</a>
 
 And this is how they were installed: **(don't do this, this has already
 been done in the VM)**
@@ -159,10 +159,10 @@ $ git checkout lazyfeatures
 Visit in web browser:
 
 - if your web browser is in the VM:
-  <a href="http://localhost/jbrowse/" class="external free"
-  rel="nofollow">http://localhost/jbrowse/</a>
+ <a href="http://localhost/jbrowse/" class="external free"
+ rel="nofollow">http://localhost/jbrowse/</a>
 - if your web browser is outside the VM, use your VM's IP address
-  instead of "localhost"
+ instead of "localhost"
 
 You should see just a blank white page.
 
@@ -171,9 +171,9 @@ You should see just a blank white page.
 Setting up a JBrowse instance with feature data goes in three basic
 steps:
 
-1.  Specify reference sequences
-2.  Load feature data
-3.  Collect feature names
+1. Specify reference sequences
+2. Load feature data
+3. Collect feature names
 
 ### Data from a database
 
@@ -187,14 +187,14 @@ class="external text" rel="nofollow">Bio::DB::GFF</a>.
 
 Starting config file: `~/Documents/Data/jbrowse/first-config.json`
 
-    {
-      "description": "Pythium",
-      "db_adaptor": "Bio::DB::Das::Chado",
-      "db_args": { "-dsn": "dbi:Pg:dbname=chado",
-                   "-user": "gmod",
-                   "-pass": ""},
+ {
+ "description": "Pythium",
+ "db_adaptor": "Bio::DB::Das::Chado",
+ "db_args": { "-dsn": "dbi:Pg:dbname=chado",
+ "-user": "gmod",
+ "-pass": ""},
 
-    ...
+ ...
 
 #### Specify reference sequences
 
@@ -206,8 +206,8 @@ Run this from within the `/var/www/jbrowse` directory (you could run it
 elsewhere, but you'd have to explicitly specify the location of the data
 directory on the command line).
 
-    $ cd /var/www/jbrowse
-    $ bin/prepare-refseqs.pl --conf ~/Documents/Data/jbrowse/first-config.json --refs scf1117875582023
+ $ cd /var/www/jbrowse
+ $ bin/prepare-refseqs.pl --conf ~/Documents/Data/jbrowse/first-config.json --refs scf1117875582023
 
 Visit in web browser: you should new see the JBrowse UI (and if you zoom
 all the way in, some sequence)
@@ -221,51 +221,51 @@ web browser can use.
 Add a basic track definition; this will tell `biodb-to-json.pl` what
 features to put into the track, and how the track should look:
 
-    ...
+ ...
 
-      "TRACK DEFAULTS": {
-        "class": "feature"
-      },
+ "TRACK DEFAULTS": {
+ "class": "feature"
+ },
 
-      "tracks": [
-        {
-          "track": "gene",
-          "key": "Gene",
-          "feature": ["gene"],
-          "autocomplete": "all",
-          "class": "feature2",
-          "urlTemplate": "http://www.google.com/search?q={name}"
-        }
-      ]
-    }
+ "tracks": [
+ {
+ "track": "gene",
+ "key": "Gene",
+ "feature": ["gene"],
+ "autocomplete": "all",
+ "class": "feature2",
+ "urlTemplate": "http://www.google.com/search?q={name}"
+ }
+ ]
+ }
 
 `"class"` specifies the [CSS](/wiki/Glossary#CSS) class that
 describes how the feature should look. The classes are specified in the
 `genome.css` file:
 
-    $ less genome.css
+ $ less genome.css
 
 For this particular track, I've specified the `"feature2"` class which
 looks like this in the CSS file:
 
-    .plus-feature2,
-    .minus-feature2 {
-        position:absolute;
-        height: 15px;
-        background-repeat: repeat-x;
-        cursor: pointer;
-        min-width: 1px;
-        z-index: 10;
-    }
+ .plus-feature2,
+ .minus-feature2 {
+ position:absolute;
+ height: 15px;
+ background-repeat: repeat-x;
+ cursor: pointer;
+ min-width: 1px;
+ z-index: 10;
+ }
 
-    .plus-feature2 { background-image: url('img/plus-herringbone16.png'); }
+ .plus-feature2 { background-image: url('img/plus-herringbone16.png'); }
 
-    .minus-feature2 { background-image: url('img/minus-herringbone16.png'); }
+ .minus-feature2 { background-image: url('img/minus-herringbone16.png'); }
 
 Run the `bin/biodb-to-json.pl` script with this config file to set up
 this track:
 
-    $ bin/biodb-to-json.pl --conf ~/Documents/Data/jbrowse/first-config.json
+ $ bin/biodb-to-json.pl --conf ~/Documents/Data/jbrowse/first-config.json
 
 (visit in web browser: you should see a new gene track)
 
@@ -274,26 +274,26 @@ this track:
 Now we'll add a second track; this one will have subfeatures. This
 snippet is from: `~/Documents/Data/jbrowse/second-config.json`
 
-    ...
+ ...
 
-        {
-          "track": "match",
-          "key": "Matches",
-          "feature": ["match"],
-          "autocomplete": "all",
-          "subfeatures": true,
-          "class": "generic_parent",
-          "subfeature_classes": {
-              "match_part": "match_part"
-          },
-          "clientConfig": {
-              "subfeatureScale": 20
-          }
-        }
+ {
+ "track": "match",
+ "key": "Matches",
+ "feature": ["match"],
+ "autocomplete": "all",
+ "subfeatures": true,
+ "class": "generic_parent",
+ "subfeature_classes": {
+ "match_part": "match_part"
+ },
+ "clientConfig": {
+ "subfeatureScale": 20
+ }
+ }
 
-    ...
+ ...
 
-    $ bin/biodb-to-json.pl --conf ~/Documents/Data/jbrowse/second-config.json
+ $ bin/biodb-to-json.pl --conf ~/Documents/Data/jbrowse/second-config.json
 
 (visit in web browser: you should see a new track, which has subfeatures
 if you're zoomed in far enough)
@@ -308,7 +308,7 @@ The `bin/generate-names.pl` script collects those lists of names from
 all the tracks and combines them into one big tree that the client uses
 to search.
 
-    $ bin/generate-names.pl -v
+ $ bin/generate-names.pl -v
 
 Visit in web browser, search for feature name: e.g.,
 
@@ -318,7 +318,7 @@ Visit in web browser, search for feature name: e.g.,
 
 First, remove the `data` directory:
 
-    $ rm -r data
+ $ rm -r data
 
 Visit in web browser, see blank screen again
 
@@ -327,7 +327,7 @@ Visit in web browser, see blank screen again
 You can also get data into JBrowse from flat files. For sequence, use
 `prepare-refseqs.pl` with the `--fasta` argument:
 
-    $ bin/prepare-refseqs.pl --fasta ~/Documents/Data/jbrowse/scf1117875582023.fasta
+ $ bin/prepare-refseqs.pl --fasta ~/Documents/Data/jbrowse/scf1117875582023.fasta
 
 Visit in web browser; you should see a second reference sequence.
 
@@ -338,10 +338,10 @@ To get feature data from flat files into JBrowse, use
 <a href="/wiki/MAKER_Tutorial" class="mw-redirect"
 title="MAKER Tutorial">MAKER session</a>:
 
-    $ bin/flatfile-to-json.pl \
-        --gff /home/gmod/Documents/Data/maker/example2_pyu/finished.maker.output/finished_datastore/scf1117875582023/scf1117875582023.gff \
-        --type match --getSubs --tracklabel "gff_match" --key "GFF match" \
-        --cssclass generic_parent --subfeatureClasses '{"match_part": "generic_part_a"}'
+ $ bin/flatfile-to-json.pl \
+ --gff /home/gmod/Documents/Data/maker/example2_pyu/finished.maker.output/finished_datastore/scf1117875582023/scf1117875582023.gff \
+ --type match --getSubs --tracklabel "gff_match" --key "GFF match" \
+ --cssclass generic_parent --subfeatureClasses '{"match_part": "generic_part_a"}'
 
 Visit in web browser; you should see a new "GFF match" track.
 
@@ -350,39 +350,39 @@ Visit in web browser; you should see a new "GFF match" track.
 The "lazyfeatures" branch of JBrowse can generate JSON from a BAM
 source:
 
-    $ bin/flatfile-to-json.pl \
-        --bam ~/Documents/Data/jbrowse/simulated-sorted.bam \
-        --cssclass exon --tracklabel BAM_data --key "BAM Data"
+ $ bin/flatfile-to-json.pl \
+ --bam ~/Documents/Data/jbrowse/simulated-sorted.bam \
+ --cssclass exon --tracklabel BAM_data --key "BAM Data"
 
 ### Quantitative data
 
 JBrowse can also display quantitative data in the wiggle format. JBrowse
 processes wiggle files with a C++ program, which you have to compile:
 
-    $ make
+ $ make
 
 Now you can process the wiggle file:
 
-    $ bin/wig-to-json.pl --wig ~/Documents/Data/jbrowse/pyu.wig \
-        --tracklabel "coverage_wig" --key "Wiggle Coverage" --min 0 --max 50
+ $ bin/wig-to-json.pl --wig ~/Documents/Data/jbrowse/pyu.wig \
+ --tracklabel "coverage_wig" --key "Wiggle Coverage" --min 0 --max 50
 
 Visit in web browser
 
 ## See also
 
 - Documentation: <a href="/wiki/JBrowseDev/Main" class="mw-redirect"
-  title="JBrowseDev/Main">JBrowseDev/Main</a>
+ title="JBrowseDev/Main">JBrowseDev/Main</a>
 
 ## Other links
 
 - Config file ref:
-  <a href="http://jbrowse.org/code/jbrowse-master/docs/config.html"
-  class="external free"
-  rel="nofollow">http://jbrowse.org/code/jbrowse-master/docs/config.html</a>
+ <a href="http://jbrowse.org/code/jbrowse-master/docs/config.html"
+ class="external free"
+ rel="nofollow">http://jbrowse.org/code/jbrowse-master/docs/config.html</a>
 - Misc images:
-  <a href="http://www.getdropbox.com/gallery/580036/1/gmod-eu?h=e103e0"
-  class="external free"
-  rel="nofollow">http://www.getdropbox.com/gallery/580036/1/gmod-eu?h=e103e0</a>
+ <a href="http://www.getdropbox.com/gallery/580036/1/gmod-eu?h=e103e0"
+ class="external free"
+ rel="nofollow">http://www.getdropbox.com/gallery/580036/1/gmod-eu?h=e103e0</a>
 - DIV test: <a href="http://jbrowse.org/test/boatdiv/boat.html"
-  class="external free"
-  rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
+ class="external free"
+ rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>

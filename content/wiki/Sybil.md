@@ -10,17 +10,17 @@ Status
 - **Active** support
 
 - <a href="http://sybil.sourceforge.net/" class="external text"
-  rel="nofollow">Home Page</a>
+ rel="nofollow">Home Page</a>
 - <a href="http://sybil.sourceforge.net/downloads.html"
-  class="external text" rel="nofollow">Downloads</a>
+ class="external text" rel="nofollow">Downloads</a>
 - <a href="http://sybil.sourceforge.net/documentation.html"
-  class="external text" rel="nofollow">Documentation</a>
+ class="external text" rel="nofollow">Documentation</a>
 - <a href="http://sybil.sourceforge.net/demos.html" class="external text"
-  rel="nofollow">Demos</a>
+ rel="nofollow">Demos</a>
 - <a href="https://lists.sourceforge.net/lists/listinfo/sybil-info"
-  class="external text" rel="nofollow">Mailing List</a>
+ class="external text" rel="nofollow">Mailing List</a>
 - <a href="../extras/2008GMODCommunitySurvey.html#Sybil"
-  class="external text" rel="nofollow">2008 Survey</a>
+ class="external text" rel="nofollow">2008 Survey</a>
 
 Sybil is a web-based system for comparative genomics visualizations. It
 is currently developed by engineers at

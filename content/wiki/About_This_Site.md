@@ -15,7 +15,7 @@ easy for anyone to update the contents of the web site.
 At [GMOD.org](/wiki/Main_Page), anyone with a login can update a
 page or create a new one. To request a login visit the
 <span class="plainlinks"></span> page or
-click on  in
+click on in
 the upper right hand corner of any page.
 
 The [Site Guidelines](/wiki/Site_Guidelines) page contains

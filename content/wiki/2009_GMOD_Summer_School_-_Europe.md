@@ -41,15 +41,15 @@ title="GMOD Summer School">GMOD Summer School</a> was offered in
 [Durham, North Carolina in July
 2009](/wiki/2009_GMOD_Summer_School_-_Americas).
 
-  Program](#Program)
+ Program](#Program)
 - [Instructors](#Instructors)
 - [Prerequisites](#Prerequisites)
-  - [System
-    Requirements](#System_Requirements)
+ - [System
+ Requirements](#System_Requirements)
 - [Cost](#Cost)
 - [Location](#Location)
 - [Transportation, Lodging,
-  Meals](#Transportation.2C_Lodging.2C_Meals)
+ Meals](#Transportation.2C_Lodging.2C_Meals)
 - [Sponsors](#Sponsors)
 - [Feedback](#Feedback)
 
@@ -102,7 +102,7 @@ data-cellspacing="0">
 <td
 style="text-align: center; background-color: #ddffff;"><strong>Introduction
 and Overview</strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
+Scott Cain and Dave Clements<br />
 Participant and instructor introductions, how the GMOD project works,
 what software tools are available in GMOD, how they interoperate, what
 resources are needed to get a GMOD installation up and running, and
@@ -130,7 +130,7 @@ Lunch</strong></td>
 <td style="background-color: #ccffff">13:00</td>
 <td style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/Chado_Tutorial" class="mw-redirect"
 title="Chado Tutorial">Chado</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+Scott Cain and Dave Clements</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -150,7 +150,7 @@ title="Chado Tutorial">Chado</a></strong><br />
 <td style="background-color: #ccffdd">8:30</td>
 <td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/GBrowse_Tutorial"
 title="GBrowse Tutorial">GBrowse</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+Scott Cain and Sheldon McKay</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -164,7 +164,7 @@ Lunch</strong></td>
 <td style="background-color: #ccffdd">13:30</td>
 <td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/GBrowse_syn_Tutorial" class="mw-redirect"
 title="GBrowse syn Tutorial">GBrowse_syn</a></strong><br />
-<a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+Sheldon McKay</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -185,7 +185,7 @@ August</td>
 <td style="background-color: #ffffbb">8:30</td>
 <td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/BioMart_Tutorial"
 title="BioMart Tutorial">BioMart</a></strong><br />
-<a href="/wiki/User%253AJunjun" title="User%253AJunjun">Junjun Zhang</a> and <a href="/wiki/User%253ASyedHaider" title="User%253ASyedHaider">Syed Haider</a><br />
+Junjun Zhang and Syed Haider<br />
 Introduction; exploring over 20 public databases through <a href="/wiki/BioMart" title="BioMart">BioMart</a> central portal; system
 installation; accessing BioMart server via API, webservice and <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a>; configuration of
 BioMart server including federation; demonstration of creating data
@@ -202,7 +202,7 @@ on your own</strong></td>
 <td style="background-color: #ffffbb">13:45</td>
 <td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo</a></strong><br />
-<a href="/wiki/User%253AElee" title="User%253AElee">Ed Lee</a><br />
+Ed Lee<br />
 Overview, installation (from installers and from source), configuration,
 reading/writing data, remote analyses, and setting up a customized Java
 Web Start instance.</td>
@@ -226,8 +226,8 @@ Web Start instance.</td>
 <td style="text-align: center; background-color: #ffeedd;"><strong><a href="/wiki/Artemis-Chado_Integration_Tutorial"
 title="Artemis-Chado Integration Tutorial">Artemis-Chado
 Integration</a></strong><br />
-<a href="/wiki/User%253ARobinHouston" title="User%253ARobinHouston">Robin Houston</a>,
-<a href="/wiki/User%253ATimCarver" title="User%253ATimCarver">Tim Carver</a> and <a href="/wiki/User%253ABuggy" title="User%253ABuggy">Giles Velarde</a><br />
+Robin Houston,
+Tim Carver and Giles Velarde<br />
 <a href="/wiki/Artemis" title="Artemis">Artemis</a> and ACT: Overview,
 installation, configuration, reading &amp; writing data to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.</td>
 <td></td>
@@ -244,7 +244,7 @@ Ian Holmes</td>
 <td
 style="text-align: center; background-color: #ffeedd;"><strong>Wrapup
 and Resources</strong><br />
-<a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a> and <a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+Dave Clements and Scott Cain</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -284,9 +284,9 @@ style="color: #aaaaff">August 2009 GMOD Meeting</span></a></td>
 
 | Instructor | GMOD Contribution | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text" |
+| Scott Cain | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text" |
 
-Spring Harbor Laboratory</a> | [Giles Velarde](/wiki/User:Buggy) | Developer | <a href="http://www.sanger.ac.uk/" class="external text"
+Spring Harbor Laboratory</a> | Giles Velarde | Developer | <a href="http://www.sanger.ac.uk/" class="external text"
 
 ## Prerequisites
 
@@ -327,7 +327,7 @@ height="48" alt="Windoze" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for  and
+A free VMware player is available for and
  [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
@@ -424,7 +424,7 @@ events.
 <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> to others?**
 
-| No  | Yes, with reservations | Yes | No opinion |
+| No | Yes, with reservations | Yes | No opinion |
 |-----|------------------------|-----|------------|
 | 0% | 16% | 84% | 0% |
 

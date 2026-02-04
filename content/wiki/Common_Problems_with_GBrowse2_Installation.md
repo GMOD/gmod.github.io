@@ -25,15 +25,15 @@ More information on this: for standard CGI installs, find the Apache
 config file that contains GBrowse configuration information (often in
 /etc/apache2/conf.d/gbrowse2.conf), and add a SetEnv directive. E.g.
 
-    <Directory "/usr/lib/cgi-bin/gb2">
-     SetEnv GBROWSE_NOCACHE "1"
-     SetEnv GBROWSE_CONF   "/etc/gbrowse2"  # this should already be there
-    </Directory>
+ <Directory "/usr/lib/cgi-bin/gb2">
+ SetEnv GBROWSE_NOCACHE "1"
+ SetEnv GBROWSE_CONF "/etc/gbrowse2" # this should already be there
+ </Directory>
 
 For mod_fcgid:
 
-    DefaultInitEnv GBROWSE_NOCACHE "1"
+ DefaultInitEnv GBROWSE_NOCACHE "1"
 
 For mod_fastcgi:
 
-    FastCGIConfig -initial-env GBROWSE_NOCACHE=1
+ FastCGIConfig -initial-env GBROWSE_NOCACHE=1

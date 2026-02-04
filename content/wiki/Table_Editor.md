@@ -6,34 +6,34 @@ title: "TableEdit"
 (Redirected from [Table
 Editor](/wiki/Table_Editor.1)
 
-  community annotation with a MediaWiki
-  wiki</span>](#Genome_community_annotation_with_a_MediaWiki_wiki)
+ community annotation with a MediaWiki
+ wiki</span>](#Genome_community_annotation_with_a_MediaWiki_wiki)
 - [Table
-  Edit](#Table_Edit)
-  - [Source
-    code](#Source_code)
-  - [Object
-    classes](#Object_classes)
-    - [wikiBox](#wikiBox)
-    - [wikiBoxRow](#wikiBoxRow)
-    - [TableEdit](#TableEdit)
+ Edit](#Table_Edit)
+ - [Source
+ code](#Source_code)
+ - [Object
+ classes](#Object_classes)
+ - [wikiBox](#wikiBox)
+ - [wikiBoxRow](#wikiBoxRow)
+ - [TableEdit](#TableEdit)
 - [Table Edit at
-  EcoliWiki](#Table_Edit_at_EcoliWiki)
+ EcoliWiki](#Table_Edit_at_EcoliWiki)
 - [Table Edit at
-  Hackathon 2007](#Table_Edit_at_Hackathon_2007)
-  - [TableEdit
-    Chado round trip](#TableEdit_Chado_round_trip)
-    - [Chado2TableEdit](#Chado2TableEdit)
-    - [TableEdit2Chado](#TableEdit2Chado)
-    - [Bidirectional
-      issues](#Bidirectional_issues)
-  - [TableEdit
-    IntraWiki Interaction](#TableEdit_IntraWiki_Interaction)
-  - [Restricting search to
-    Tables](#Restricting_search_to_Tables)
-  - [AJAX](#AJAX)
-  - [Other
-    TableEdit enhancements](#Other_TableEdit_enhancements)
+ Hackathon 2007](#Table_Edit_at_Hackathon_2007)
+ - [TableEdit
+ Chado round trip](#TableEdit_Chado_round_trip)
+ - [Chado2TableEdit](#Chado2TableEdit)
+ - [TableEdit2Chado](#TableEdit2Chado)
+ - [Bidirectional
+ issues](#Bidirectional_issues)
+ - [TableEdit
+ IntraWiki Interaction](#TableEdit_IntraWiki_Interaction)
+ - [Restricting search to
+ Tables](#Restricting_search_to_Tables)
+ - [AJAX](#AJAX)
+ - [Other
+ TableEdit enhancements](#Other_TableEdit_enhancements)
 
 ## Genome community annotation with a MediaWiki wiki
 
@@ -122,17 +122,17 @@ Here is a code snippet from a wrapper script
 
 ``` de1
 foreach ($genes as $gene){
-        $gene_count++;
-        $gene_name = $gene['feature_name'];
+ $gene_count++;
+ $gene_name = $gene['feature_name'];
 
-        # require something that finds the desired page and table and edits it
-        require "$bot_dir/colimod_colipedia/modify_tables/test_modify.php";
-         if ($box){
-                $tableEdit = new TableEdit();
-                $title = Title::newFromID($box->page_uid);
-                $tableEdit->save_to_page($title, $box);
-                unset($box);
-        }
+ # require something that finds the desired page and table and edits it
+ require "$bot_dir/colimod_colipedia/modify_tables/test_modify.php";
+ if ($box){
+ $tableEdit = new TableEdit();
+ $title = Title::newFromID($box->page_uid);
+ $tableEdit->save_to_page($title, $box);
+ unset($box);
+ }
  }
 ```
 
@@ -146,7 +146,7 @@ from Hirotada Mori's lab.
 
 ``` de1
 <?php
-# example for modifying box without rebuilding the whole page.  This example does not use metadata matching or conflict catching
+# example for modifying box without rebuilding the whole page. This example does not use metadata matching or conflict catching
 $page_name = "$gene_name:Gene_Product(s)";
 $template = "Gene_allele_table";
 echo "$page_name\t $template\n";
@@ -160,8 +160,8 @@ $metadata = 'keio';
 $uid = 0;
 $rows = get_wikibox_rows($box, $uid, $metadata);
 foreach ($rows as $index=>$row){
-       $box->rows[$index]->row_data = preg_replace("/16738554\|\[/","16738554|[", $box->rows[$index]->row_data);
-        $box->rows[$index]->db_save_row();
+ $box->rows[$index]->row_data = preg_replace("/16738554\|\[/","16738554|[", $box->rows[$index]->row_data);
+ $box->rows[$index]->db_save_row();
 }
 ?>
 ```
@@ -170,9 +170,9 @@ foreach ($rows as $index=>$row){
 
 Making the Table Editor more useful and integrating it better with other
 GMOD tools was our goal for the wiki part of [Hackathon
-2007](/wiki/Hackathon_2007_info). See [Possible
+2007](/wiki/Hackathon_2007_info). See Possible
 TableEdit/Wiki hackathon
-projects](/wiki/Talk:Hackathon_2007_info#Possible_TableEdit.2FWiki_hackathon_projects)
+projects
 for more.
 
 ### TableEdit Chado round trip
@@ -190,18 +190,18 @@ corruption of data in the other.
 This would involve:
 
 - Something triggering a
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> query that
-  would generate a view or join with sufficient information to determine
-  the desired page, table (box) and row to be added or updated.
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> query that
+ would generate a view or join with sufficient information to determine
+ the desired page, table (box) and row to be added or updated.
 - Creating an <a href="/wiki/TableEdit/IFALT" class="mw-redirect"
-  title="TableEdit/IFALT">IFALT</a> file for loading into the wiki via
-  the TableEdit loader system.
+ title="TableEdit/IFALT">IFALT</a> file for loading into the wiki via
+ the TableEdit loader system.
 - Instantiating a box and TableEdit as in the EcoliWiki example above,
-  and saving the table back to the page.
+ and saving the table back to the page.
 
 Based on our already being able to do table insertion, row creation, row
 updates, and row deletion, this should be a relatively simple task of
-getting  to have
+getting to have
 Chado provide data in a form that the TableEdit can use.
 
 #### TableEdit2Chado
@@ -209,11 +209,11 @@ Chado provide data in a form that the TableEdit can use.
 This would involve:
 
 - Passing a request to the TableEdit/Wiki system to identify tables/rows
-  with information needed to populate/update fields in
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
+ with information needed to populate/update fields in
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 - Returning the data in a format that can be transformed to something
-  Chado \ can
-  use.
+ Chado \ can
+ use.
 
 This is a specific case of the general problem discussed at the [Jan
 2007 GMOD workshop](/wiki/GMOD_Middleware) - how to
@@ -226,14 +226,14 @@ has to be manipulated to fit the Chado
 Some issues to discuss:
 
 - If the desired table does not already exist, should it be created, or
-  should the process throw an error?
+ should the process throw an error?
 - how should the system check for whether a row should be updated or
-  created?
+ created?
 - how should we pass these requests and send confirmation messages to
-  and from remote servers (i.e can we do this as a web service?). This
-  would allow interaction with non-PHP
-   (highly
-  desirable!).
+ and from remote servers (i.e can we do this as a web service?). This
+ would allow interaction with non-PHP
+ (highly
+ desirable!).
 
 ### TableEdit IntraWiki Interaction
 

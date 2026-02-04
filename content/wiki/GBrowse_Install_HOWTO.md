@@ -17,62 +17,62 @@ See also the following OS-specific instructions:
 - [Install on MacOSX](/wiki/GBrowse_MacOSX_HOWTO)
 - [Install on Windows](/wiki/GBrowse_Windows_HOWTO)
 - [Install on Ubuntu and other Debian-based
-  systems](/wiki/GBrowse_Ubuntu_HOWTO)
+ systems](/wiki/GBrowse_Ubuntu_HOWTO)
 - [Install on Fedora Core and other RPM-based
-  systems](/wiki/GBrowse_RPM_HOWTO)
+ systems](/wiki/GBrowse_RPM_HOWTO)
 - [Install on Gentoo Linux
-  system](/wiki/GBrowse_Gentoo_HOWTO)
+ system](/wiki/GBrowse_Gentoo_HOWTO)
 - **Source Code Install (for other Linux systems)**
 
-  NetInstaller</span>](#The_NetInstaller)
+ NetInstaller</span>](#The_NetInstaller)
 - [Prerequisites](#Prerequisites)
-  - [Apache](#Apache)
-  - [MySQL
-    (recommended)](#MySQL_.28recommended.29)
-  - [Perl](#Perl)
-    - [Standard Perl
-      modules](#Standard_Perl_modules)
-    - [BioPerl](#BioPerl)
-    - [Bio::Graphics and
-      Bio::DB::Das::Chado](#Bio::Graphics_and_Bio::DB::Das::Chado)
-    - [Optional Perl
-      modules](#Optional_Perl_modules)
-  - [Important
-    Note for Macintosh
-    Systems](#Important_Note_for_Macintosh_Systems)
+ - [Apache](#Apache)
+ - [MySQL
+ (recommended)](#MySQL_.28recommended.29)
+ - [Perl](#Perl)
+ - [Standard Perl
+ modules](#Standard_Perl_modules)
+ - [BioPerl](#BioPerl)
+ - [Bio::Graphics and
+ Bio::DB::Das::Chado](#Bio::Graphics_and_Bio::DB::Das::Chado)
+ - [Optional Perl
+ modules](#Optional_Perl_modules)
+ - [Important
+ Note for Macintosh
+ Systems](#Important_Note_for_Macintosh_Systems)
 - [Basic
-  Installation](#Basic_Installation)
-  - [Details](#Details)
-  - [Installing
-    into your Home
-    Directory](#Installing_into_your_Home_Directory)
+ Installation](#Basic_Installation)
+ - [Details](#Details)
+ - [Installing
+ into your Home
+ Directory](#Installing_into_your_Home_Directory)
 - [Try the
-  Browser Out](#Try_the_Browser_Out)
+ Browser Out](#Try_the_Browser_Out)
 - [Populating the
-  Database (MySQL)](#Populating_the_Database_.28MySQL.29)
-  - [Synopsis](#Synopsis)
-  - [Details](#Details_2)
-    - [GFF3
-      Loading](#GFF3_Loading)
+ Database (MySQL)](#Populating_the_Database_.28MySQL.29)
+ - [Synopsis](#Synopsis)
+ - [Details](#Details_2)
+ - [GFF3
+ Loading](#GFF3_Loading)
 - [Loading Other
-  Data Sets](#Loading_Other_Data_Sets)
+ Data Sets](#Loading_Other_Data_Sets)
 - [Loading
-  DNA](#Loading_DNA)
+ DNA](#Loading_DNA)
 - [Creating your
-  own Genome Database](#Creating_your_own_Genome_Database)
+ own Genome Database](#Creating_your_own_Genome_Database)
 - [Making the
-  Browser Run Faster](#Making_the_Browser_Run_Faster)
+ Browser Run Faster](#Making_the_Browser_Run_Faster)
 - [Making the
-  Server Run Safer](#Making_the_Server_Run_Safer)
+ Server Run Safer](#Making_the_Server_Run_Safer)
 - [The
-  gbrowse_img Script](#The_gbrowse_img_Script)
+ gbrowse_img Script](#The_gbrowse_img_Script)
 - [Plugins](#Plugins)
 - [The
-  Genbank/EMBL Proxy](#The_Genbank.2FEMBL_Proxy)
+ Genbank/EMBL Proxy](#The_Genbank.2FEMBL_Proxy)
 - [Removing
-  Out-of-Date Image Files](#Removing_Out-of-Date_Image_Files)
+ Out-of-Date Image Files](#Removing_Out-of-Date_Image_Files)
 - [Bug Reports
-  and Support Requests](#Bug_Reports_and_Support_Requests)
+ and Support Requests](#Bug_Reports_and_Support_Requests)
 
 # The NetInstaller
 
@@ -83,43 +83,43 @@ href="https://github.com/GMOD/GBrowse/raw/master/bin/gbrowse_netinstall.pl"
 rel="nofollow"><code>gbrowse_netinstall.pl</code></a>
 
 - You will need to have Perl 5.8.6 or higher, and the Apache web server
-  installed. See [Prerequisites](#Prerequisites) before running the
-  installer for discussion of prerequisites needed. Once these are
-  installed, save the above link to your home directory as
-  gbrowse_netinstall.pl, and then run "perl gbrowse_netinstall.pl". On
-  Windows platforms, you will need to be logged in as a user with
-  administrative privileges. On Mac OSX, Linux or Solaris platforms, you
-  will need to be logged in as root, or to run the command using "sudo"
-  (*sudo perl gbrowse_netinstall.pl*).
+ installed. See [Prerequisites](#Prerequisites) before running the
+ installer for discussion of prerequisites needed. Once these are
+ installed, save the above link to your home directory as
+ gbrowse_netinstall.pl, and then run "perl gbrowse_netinstall.pl". On
+ Windows platforms, you will need to be logged in as a user with
+ administrative privileges. On Mac OSX, Linux or Solaris platforms, you
+ will need to be logged in as root, or to run the command using "sudo"
+ (*sudo perl gbrowse_netinstall.pl*).
 
 The install script has a few useful options:
 
-     -h|--help                Show this message
-     -d|--dev                 Use the development version of both GBrowse
-                                and bioperl from GitHub
-     --bioperl_dev            Use the development version of BioPerl from GitHub
-     --gbrowse_dev            Use the development version of GBrowse from GitHub
-     --build_param_str=<args> Use this string to set Makefile.PL parameters
-                                such as CONF or PREFIX for GBrowse
-                                installation
-     --install_param_str=<args>
-                               Use this string to predefine 'make install'
-                                parameters such as CONF or PREFIX for
-                                GBrowse installation
-     --gbrowse_path           Path to GBrowse tarball (will not download
-                                GBrowse); Assumes a resulting
-                                'Generic-Genome-Browser' directory
-     --bioperl_path           Path to BioPerl tarball (will not download
-                                BioPerl); Assumes a resulting'bioperl-live'
-                                directory
-     --skip_start             Don't wait for 'Enter' at program start
-     --skip_bioperl           Don't fetch and install BioPerl; assumes a
-                                working bioperl is already installed
+ -h|--help Show this message
+ -d|--dev Use the development version of both GBrowse
+ and bioperl from GitHub
+ --bioperl_dev Use the development version of BioPerl from GitHub
+ --gbrowse_dev Use the development version of GBrowse from GitHub
+ --build_param_str=<args> Use this string to set Makefile.PL parameters
+ such as CONF or PREFIX for GBrowse
+ installation
+ --install_param_str=<args>
+ Use this string to predefine 'make install'
+ parameters such as CONF or PREFIX for
+ GBrowse installation
+ --gbrowse_path Path to GBrowse tarball (will not download
+ GBrowse); Assumes a resulting
+ 'Generic-Genome-Browser' directory
+ --bioperl_path Path to BioPerl tarball (will not download
+ BioPerl); Assumes a resulting'bioperl-live'
+ directory
+ --skip_start Don't wait for 'Enter' at program start
+ --skip_bioperl Don't fetch and install BioPerl; assumes a
+ working bioperl is already installed
 
 So, for example, if you want to install the most recent developments in
 GBrowse and BioPerl, you can do this:
 
-     sudo perl gbrowse_netinstall.pl -d
+ sudo perl gbrowse_netinstall.pl -d
 
 This option is useful for getting new options just added to GBrowse (for
 example, the Balloon pop up windows added before the release of GBrowse
@@ -252,8 +252,8 @@ distribution. The binary (or source code) can also be obtained from
 you are using this plugin, the primer3 binary must be installed in
 /usr/local/bin and named 'primer3'. If it is installed in another path,
 edit the following section in the PrimerDesigner plugin:
-             use constant BINARY            => 'primer3';
-             use constant BINPATH           => '/usr/local/bin';
+ use constant BINARY => 'primer3';
+ use constant BINPATH => '/usr/local/bin';
 
 ## Important Note for Macintosh Systems
 
@@ -270,15 +270,15 @@ class="external text" rel="nofollow">CPAN</a>.
 Once the prerequisites are installed, download the most recent version
 of the Generic-Genome-Browser source code from:
 
-          http://prdownloads.sourceforge.net/gmod
+ http://prdownloads.sourceforge.net/gmod
 
 This will give you a .tar.gz file, which must be uncompressed and
 unpacked. Then run the following commands (in brief):
 
-               perl Makefile.PL
-               make
-               make test (optional)
-               make install UNINST=1
+ perl Makefile.PL
+ make
+ make test (optional)
+ make install UNINST=1
 
 This will install the software in the default location for your
 platform. See [Installation Details](#Installation_Details) to change
@@ -331,7 +331,7 @@ Some additional configuration settings include:
 You can manually set these locations by passing Makefile.PL one or more
 NAME=VALUE pairs, like so:
 
-         perl Makefile.PL CONF=/etc HTDOCS=/home/html
+ perl Makefile.PL CONF=/etc HTDOCS=/home/html
 
 Fortunately, this isn't usually necessary. The Makefile.PL script
 attempts to guess the appropriate directory locations for your system,
@@ -341,9 +341,9 @@ you are on an unusual system, where the Apache installation uses
 /etc/httpd/conf for the configuration files, you should specify the
 following configuration:
 
-         perl Makefile.PL HTDOCS=/opt/www/html \
-                          CONF=/etc/httpd/conf \
-                          CGIBIN=/opt/run/cgi-bin
+ perl Makefile.PL HTDOCS=/opt/www/html \
+ CONF=/etc/httpd/conf \
+ CGIBIN=/opt/run/cgi-bin
 
 (The backslashes are there to split the command across multiple lines
 only). To make it easier when upgrading to new versions of the software,
@@ -354,7 +354,7 @@ case the static and CGI files will be placed into APACHE/conf,
 APACHE/htdocs and APACHE/cgi-bin respectively, where APACHE is the
 location you specified on the command line:
 
-         perl Makefile.PL APACHE=/home/www
+ perl Makefile.PL APACHE=/home/www
 
 Note that the configuration files are always placed in a subdirectory
 named gbrowse.conf. You cannot change this. Similarly, the static files
@@ -396,19 +396,19 @@ privileges. You will need to configure Apache to run out of your home
 directory. One way to do this is to install Apache from source code and
 to specify your home directory when you first configure it:
 
-          % cd apache_x.xx.xx
-          % ./configure --prefix=$HOME/apache
-          % make
-          % make install
+  % cd apache_x.xx.xx
+  % ./configure --prefix=$HOME/apache
+  % make
+  % make install
 
 This will place Apache into your home directory under ~/apache. You
 should then edit ~/apache/conf/httpd.conf and replace the directive:
 
-         Listen 80
+ Listen 80
 
 with
 
-         Listen 8000
+ Listen 8000
 
 so that Apache will listen for connections to the unprivileged port 8000
 rather than the usual port 80. If you also see a "Port 80" directive,
@@ -425,27 +425,27 @@ directory rather than its default system-wide directory.
 Create an Apache directory and its subdirectories using the following
 series of commands:
 
-         % cd ~
-         % mkdir apache
-         % mkdir apache/conf
-         % mkdir apache/logs
-         % mkdir apache/htdocs
-         % mkdir apache/cgi-bin
+  % cd ~
+  % mkdir apache
+  % mkdir apache/conf
+  % mkdir apache/logs
+  % mkdir apache/htdocs
+  % mkdir apache/cgi-bin
 
 Now copy the system-wide httpd.conf into ~/apache/conf. You may need to
 search around a bit to find out where the system-wide httpd.conf lives
 (try running the command "locate httpd.conf):
 
-         % cp /etc/httpd/conf/httpd.conf ~/apache/conf
+  % cp /etc/httpd/conf/httpd.conf ~/apache/conf
 
 Now open up ~/apache/conf/httpd.conf with a text editor and add the
 following four directives, replacing \$HOME with the full path to your
 home directory (for example "/home/fred"):
 
-         Listen       8000
-         ServerRoot   $HOME/apache
-         DocumentRoot $HOME/apache/htdocs
-         SetEnv       PERL5LIB $HOME/lib
+ Listen 8000
+ ServerRoot $HOME/apache
+ DocumentRoot $HOME/apache/htdocs
+ SetEnv PERL5LIB $HOME/lib
 
 You should search the httpd.conf file for older versions of these
 directives, and delete them if they're there. If you see a Port
@@ -456,19 +456,19 @@ as a \<Directory\> section that refers to "cgi-bin". Delete the
 ScriptAlias directive and the entire \<Directory\> section through to
 the \</Directory\> line. Replace both these sections with the following:
 
-        ScriptAlias /cgi-bin/ "cgi-bin/"
+ ScriptAlias /cgi-bin/ "cgi-bin/"
 
-        <Location "/cgi-bin">
-           AllowOverride None
-           Options None
-           Order allow,deny
-           Allow from all
-        </Location>
+ <Location "/cgi-bin">
+ AllowOverride None
+ Options None
+ Order allow,deny
+ Allow from all
+ </Location>
 
 You can now start Apache from the command line using the "apachectl"
 script:
 
-        % /usr/sbin/apachectl -d ~/apache -k start
+  % /usr/sbin/apachectl -d ~/apache -k start
 
 If Apache starts successfully, then this command will return silently.
 Otherwise, it will print an error message. More error messages may be
@@ -481,10 +481,10 @@ that you just created.
 
 Now you can build and install gbrowse with the following incantation:
 
-        % cd Generic-Genome-Browser-X.XX
-        % perl Makefile.PL APACHE=~/apache LIB=~/lib BIN=~/bin NONROOT=1
-        % make
-        % make install
+  % cd Generic-Genome-Browser-X.XX
+  % perl Makefile.PL APACHE=~/apache LIB=~/lib BIN=~/bin NONROOT=1
+  % make
+  % make install
 
 When you are prompted to load gbrowse using
 <a href="http://localhost/gbrowse" class="external free"
@@ -497,7 +497,7 @@ The installation procedure will create a small in-memory database of
 yeast chromosome 1 and 2 for you to play with. To try the browser out,
 use your favorite browser to open:
 
-         http://localhost/cgi-bin/gbrowse
+ http://localhost/cgi-bin/gbrowse
 
 Try searching for "chrI" (the name of the first chromosome of yeast), or
 a gene such as NUT21 or TEL01L. Then try searching for "membrane
@@ -511,7 +511,7 @@ CONF/gbrowse.conf/yeast.conf.
 
 More configuration information and a short tutorial are located at:
 
-          http://localhost/gbrowse
+ http://localhost/gbrowse
 
 # Populating the Database (MySQL)
 
@@ -521,13 +521,13 @@ small projects.
 
 ## Synopsis
 
-         mysql -uroot -ppassword -e 'create database yeast'
+ mysql -uroot -ppassword -e 'create database yeast'
 
-         mysql -uroot -ppassword -e 'grant all privileges on yeast.* to me@localhost'
-         mysql -uroot -ppassword -e 'grant file on *.* to me@localhost'
-         mysql -uroot -ppassword -e 'grant select on yeast.* to nobody@localhost'
+ mysql -uroot -ppassword -e 'grant all privileges on yeast.* to me@localhost'
+ mysql -uroot -ppassword -e 'grant file on *.* to me@localhost'
+ mysql -uroot -ppassword -e 'grant select on yeast.* to nobody@localhost'
 
-         bp_bulk_load_gff.pl -d yeast sample_data/yeast_data.gff
+ bp_bulk_load_gff.pl -d yeast sample_data/yeast_data.gff
 
 ## Details
 
@@ -600,7 +600,7 @@ href="http://prdownloads.sourceforge.net/gmod/yeast.fasta.gz?download"
 
 Load the file with this command:
 
-      bp_load_gff.pl -d yeast -fasta yeast.fasta.gz
+ bp_load_gff.pl -d yeast -fasta yeast.fasta.gz
 
 You should now be able to browse the yeast genome. Type the following
 URL into your favorite browser:
@@ -634,20 +634,20 @@ Here is a quick recipe.
 Get a GFF3 file (available from SGD, WormBase, FlyBase and many other
 sites) and save it as `genome.gff3`.
 
-         mysql -uroot -p password -e 'create database genomegff3'
-         mysql -uroot -p password -e 'grant all privileges on genomegff3.* to me@localhost'
-         mysql -uroot -p password -e 'grant select on genomegff3.* to nobody@localhost'
-         bp_seqfeature_load.pl -d genomegff3 -f -c genome.gff3
+ mysql -uroot -p password -e 'create database genomegff3'
+ mysql -uroot -p password -e 'grant all privileges on genomegff3.* to me@localhost'
+ mysql -uroot -p password -e 'grant select on genomegff3.* to nobody@localhost'
+ bp_seqfeature_load.pl -d genomegff3 -f -c genome.gff3
 
 Create a <a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse config</a> file by copying
 one of the existing examples, and modify the top lines to read like the
 following:
 
-    db_adaptor    = Bio::DB::SeqFeature::Store
-    db_args       = -adaptor DBI::mysql
-                    -dsn     dbi:mysql:database=genomegff3
-                    -user    nobody
+ db_adaptor = Bio::DB::SeqFeature::Store
+ db_args = -adaptor DBI::mysql
+ -dsn dbi:mysql:database=genomegff3
+ -user nobody
 
 The database should now be browsable. For more details, see
 [GFF3](/wiki/GFF3).
@@ -692,7 +692,7 @@ the bp_load_gff.pl or bp_bulk_load_gff.pl script using the -fasta
 argument. For example, if the yeast genome is contained in a FASTA file
 named yeast.fa, you would run the command:
 
-         bp_bulk_load_gff.pl -d yeast -fasta yeast.fa sample/yeast_data.gff
+ bp_bulk_load_gff.pl -d yeast -fasta yeast.fa sample/yeast_data.gff
 
 Alternatively, you may put several FASTA files into a directory, and
 provide the directory name as the argument to -fasta. (The yeast DNA is
@@ -720,11 +720,11 @@ currently under display.
 Three factors are major contributors to the length of time it takes to
 load a gbrowse page:
 
-1.  Loading the Perl interpreter and parsing BioPerl and all the other
-    Perl libraries that gbrowse uses.
-2.  Query speed on the database
-3.  The conversion at the Perl layer of database data into BioPerl
-    objects for rendering.
+1. Loading the Perl interpreter and parsing BioPerl and all the other
+ Perl libraries that gbrowse uses.
+2. Query speed on the database
+3. The conversion at the Perl layer of database data into BioPerl
+ objects for rendering.
 
 To improve (1), I recommend that you install the mod_perl module for
 Apache.(<a href="http://perl.apache.org" class="external free"
@@ -776,14 +776,14 @@ reactivate the extra checking (at the expense of a performance hit), go
 to the file "gbrowse" located in the Web scripts directory and edit the
 top line of the file to read:
 
-         #!/usr/bin/perl -w -T
+ #!/usr/bin/perl -w -T
 
 The -T switch turns on taint checks.
 
 If you are running GBrowse under mod_perl, add the following line to the
 httpd.conf configuration file:
 
-         PerlTaintCheck  On
+ PerlTaintCheck On
 
 This will affect all mod_perl scripts globally.
 
@@ -795,7 +795,7 @@ tags in order to make a thumbnail of a region of interest. The thumbnail
 can then be linked to the full-featured gbrowse. Here is an example of
 how this works using the WormBase site:
 
-      http://www.wormbase.org/db/seq/gbrowse_img/wormbase?name=mec-3;width=200
+ http://www.wormbase.org/db/seq/gbrowse_img/wormbase?name=mec-3;width=200
 
 This will generate a 200-pixel inline image of the region.
 
@@ -820,7 +820,7 @@ that you create a separate directory outside the gbrowse.conf/ hierarchy
 in which to store them and then to indicate the location of these
 plugins using the plugin_path setting:
 
-         plugin_path = /usr/local/gbrowse_plugins
+ plugin_path = /usr/local/gbrowse_plugins
 
 This setting should be somewhere in the \[GENERAL\] section of the
 relevant gbrowse configuration file.
@@ -837,19 +837,19 @@ entries.
 This functionality is not well supported, nor widely used, but here is a
 recipe for giving it a try:
 
-1.  Create a local database named "embl" and initialize it this way:
-2.  Set up permissions for this database so that "nobody@localhost" has
-    SELECT, INSERT, UPDATE and DELETE privileges
-3.  Initialize the database for use with this command:
-     % bp_load_gff.pl -c -d embl
+1. Create a local database named "embl" and initialize it this way:
+2. Set up permissions for this database so that "nobody@localhost" has
+ SELECT, INSERT, UPDATE and DELETE privileges
+3. Initialize the database for use with this command:
+  % bp_load_gff.pl -c -d embl
 
-4.  If you need to use a proxy to access remote web sites, uncomment the
-    -proxy line in the conf file, and adjust the URL of the proxy as
-    appropriate.
-5.  Go to
-    <a href="http://localhost/cgi-bin/gbrowse/embl" class="external free"
-    rel="nofollow">http://localhost/cgi-bin/gbrowse/embl</a>. Search for
-    a Genbank or embl accession number, such as CEF58D5
+4. If you need to use a proxy to access remote web sites, uncomment the
+ -proxy line in the conf file, and adjust the URL of the proxy as
+ appropriate.
+5. Go to
+ <a href="http://localhost/cgi-bin/gbrowse/embl" class="external free"
+ rel="nofollow">http://localhost/cgi-bin/gbrowse/embl</a>. Search for
+ a Genbank or embl accession number, such as CEF58D5
 
 # Removing Out-of-Date Image Files
 
@@ -859,8 +859,8 @@ relatively small, but if you run GBrowse for a long time they may begin
 consuming significant amounts of disk space. The following Unix shell
 commands will remove old image files:
 
-         cd HTDOCS/gbrowse/tmp
-         find . -type f -atime +20 -print -exec rm {} \;
+ cd HTDOCS/gbrowse/tmp
+ find . -type f -atime +20 -print -exec rm {} \;
 
 *Be sure to replace HTDOCS with the path to your web server HTML
 document root directory.*

@@ -7,33 +7,33 @@ This Wiki section is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/AutoDBI.pdf" class="internal"
 title="AutoDBI.pdf">Brian O'Connor's presentation</a>.
 
-  Turnkey</span>](#Relation_to_Turnkey)
+ Turnkey</span>](#Relation_to_Turnkey)
 - [Technical
-  Overview](#Technical_Overview)
+ Overview](#Technical_Overview)
 - [Project
-  Overview](#Project_Overview)
+ Overview](#Project_Overview)
 - [Technical
-  Overview](#Technical_Overview_2)
+ Overview](#Technical_Overview_2)
 - [Technical
-  Overview](#Technical_Overview_3)
+ Overview](#Technical_Overview_3)
 - [Technical
-  Overview](#Technical_Overview_4)
+ Overview](#Technical_Overview_4)
 - [Technical
-  Overview](#Technical_Overview_5)
+ Overview](#Technical_Overview_5)
 - [Technical
-  Overview](#Technical_Overview_6)
+ Overview](#Technical_Overview_6)
 - [Technical
-  Overview](#Technical_Overview_7)
+ Overview](#Technical_Overview_7)
 - [Problem
-  1](#Problem_1)
+ 1](#Problem_1)
 - [Problem
-  2](#Problem_2)
+ 2](#Problem_2)
 - [Problems 3,
-  4, & 5](#Problems_3.2C_4.2C_.26_5)
+ 4, & 5](#Problems_3.2C_4.2C_.26_5)
 - [Things
-  Chado::AutoDBI does well](#Things_Chado::AutoDBI_does_well)
+ Chado::AutoDBI does well](#Things_Chado::AutoDBI_does_well)
 - [For More
-  Information](#For_More_Information)
+ Information](#For_More_Information)
 
 ##### Relation to Turnkey
 
@@ -52,28 +52,28 @@ schema, based on SQL::Translator
 Convert SQL Queries/Inserts/Deletes -\> Object Calls
 
 ``` de1
-  INSERT INTO feature (organism_id, name)
-                                  VALUES (1, 'foo');
+ INSERT INTO feature (organism_id, name)
+ VALUES (1, 'foo');
 ```
 
 To:
 
 ``` de1
-    my $feature = Turnkey::Model::Feature->find_or_create({
-                       organism_id => $organism,
-                   name => 'xfile', uniquename => 'xfile',
-                   type_id => $mrna_cvterm,
-                   is_analysis => 'f', is_obsolete => 'f'
-                   });
+ my $feature = Turnkey::Model::Feature->find_or_create({
+ organism_id => $organism,
+ name => 'xfile', uniquename => 'xfile',
+ type_id => $mrna_cvterm,
+ is_analysis => 'f', is_obsolete => 'f'
+ });
 ```
 
 ##### Technical Overview
 
 - Database connection: use a base class
 - Set up base object and connect, then create a *table object* to access
-  primary key.
+ primary key.
 - Class::DBI can find and insert records into other table, based on
-  foreign key.
+ foreign key.
 
 ``` de1
 use base qw(Class::DBI::Pg);
@@ -109,7 +109,7 @@ sub feature { shift->feature_id }
 ##### Technical Overview
 
 - Basic ORM Object: Feature
-  - has_a
+ - has_a
 
 ``` de1
 #
@@ -120,29 +120,29 @@ sub cvterm { return shift->type_id; }
 ```
 
 - Basic ORM Object: Feature
-  - has_many
+ - has_many
 
 ``` de1
 #
 # has_many
 #
 Turnkey::Model::Feature->has_many('feature_synonym_feature_id',
-           'Turnkey::Model::Feature_Synonym' => 'feature_id');
+ 'Turnkey::Model::Feature_Synonym' => 'feature_id');
 sub feature_synonyms { return shift->feature_synonym_feature_id; }
 
 Turnkey::Model::Feature->has_many('featureprop_feature_id',
-           'Turnkey::Model::Featureprop' => 'feature_id');
+ 'Turnkey::Model::Featureprop' => 'feature_id');
 sub featureprops { return shift->featureprop_feature_id; }
 ```
 
 - Can traverse tables, such as going from FEATURE to FEATUREPROP
-  - Tell base object that the *table object* has_a() or has_many() keys
-    corresponding to some key in other *table object*
+ - Tell base object that the *table object* has_a() or has_many() keys
+ corresponding to some key in other *table object*
 
 ##### Technical Overview
 
 - Basic ORM Object: Feature
-  - skipping linker tables for has_many
+ - skipping linker tables for has_many
 
 ``` de1
 # skip over feature_synonym table
@@ -154,39 +154,39 @@ sub synonyms { my $self = shift; return map $_->synonym_id, $self->feature_synon
 # method 2
 #
 Turnkey::Model::Feature->has_many( synonyms2 =>
-                      ['Turnkey::Model::Feature_Synonym' => 'synonym_id']);
+ ['Turnkey::Model::Feature_Synonym' => 'synonym_id']);
 ```
 
 ##### Technical Overview
 
 - Transactions
-  - Chado%253A%253AAutoDBI supports transactions, and one can wrap the
-    transaction in an eval()
+ - Chado%253A%253AAutoDBI supports transactions, and one can wrap the
+ transaction in an eval()
 
 ``` de1
-  sub do_transaction {
-    my $class = shift;
-    my ( $code ) = @_;
-    # Turn off AutoCommit for this scope.
-    # A commit will occur at the exit of this block automatically,
-    # when the local AutoCommit goes out of scope.
-    local $class->db_Main->{ AutoCommit };
+ sub do_transaction {
+ my $class = shift;
+ my ( $code ) = @_;
+ # Turn off AutoCommit for this scope.
+ # A commit will occur at the exit of this block automatically,
+ # when the local AutoCommit goes out of scope.
+ local $class->db_Main->{ AutoCommit };
 
-    # Execute the required code inside the transaction.
-    eval { $code->() };
-    if ( $@ ) {
-      my $commit_error = $@;
-      eval { $class->dbi_rollback }; # might also die!
-      die $commit_error;
-    }
-  }
+ # Execute the required code inside the transaction.
+ eval { $code->() };
+ if ( $@ ) {
+ my $commit_error = $@;
+ eval { $class->dbi_rollback }; # might also die!
+ die $commit_error;
+ }
+ }
 ```
 
 ##### Technical Overview
 
 - Lazy Loading
-  - One can either do automated creation of objects or explicitly
-    dictate which fields are incorporated into object
+ - One can either do automated creation of objects or explicitly
+ dictate which fields are incorporated into object
 
 ``` de1
 Turnkey::Model::Feature->columns( Primary => qw/feature_id/ );
@@ -208,26 +208,26 @@ Turnkey::Model::Feature->set_up_table('feature');
 # now create mRNA feature
 
 my $feature = Turnkey::Model::Feature->find_or_create({
-                       organism_id => $organism,
-                   name => 'xfile', uniquename => 'xfile',
-                   type_id => $mrna_cvterm,
-                   is_analysis => 'f', is_obsolete => 'f'
-                   });
+ organism_id => $organism,
+ name => 'xfile', uniquename => 'xfile',
+ type_id => $mrna_cvterm,
+ is_analysis => 'f', is_obsolete => 'f'
+ });
 
 # create description
 
 my $featureprop = Turnkey::Model::Featureprop->find_or_create({
-                           value => 'A test gene for GMOD meeting',
-                           feature_id => $feature,
-                   type_id => $note_cvterm,
-                   });
+ value => 'A test gene for GMOD meeting',
+ feature_id => $feature,
+ type_id => $note_cvterm,
+ });
 ```
 
 ##### Problem 2
 
 - Retrieve a Feature via Searching
-  - Search using strings or identifiers, a search will return an
-    iterator object
+ - Search using strings or identifiers, a search will return an
+ iterator object
 
 ``` de1
 # objects for global use
@@ -267,12 +267,12 @@ $feature->delete();
 - Easy to use
 - Easy to port
 - Use with other DBs
-  - Both Oracle and Postgres used currently
+ - Both Oracle and Postgres used currently
 - Autogenerated via Turnkey
 - find_or_create method
 - Performance is not as bad as you might guess
-  - Due to Lazy loading
-  - Even whole genome operations are feasible
+ - Due to Lazy loading
+ - Even whole genome operations are feasible
 
 Note that speed is relative: one can find bad performance using the
 wrong SQL and Chado%253A%253AAutoDBI approach will be speedier.
@@ -280,13 +280,13 @@ wrong SQL and Chado%253A%253AAutoDBI approach will be speedier.
 ##### For More Information
 
 - Class::DBI
-  - <a href="http://www.class-dbi.com" class="external free"
-    rel="nofollow">http://www.class-dbi.com</a>
-  - <a href="http://search.cpan.org" class="external free"
-    rel="nofollow">http://search.cpan.org</a>
+ - <a href="http://www.class-dbi.com" class="external free"
+ rel="nofollow">http://www.class-dbi.com</a>
+ - <a href="http://search.cpan.org" class="external free"
+ rel="nofollow">http://search.cpan.org</a>
 - Turnkey
-  - <a href="http://turnkey.sf.net" class="external free"
-    rel="nofollow">http://turnkey.sf.net</a>
+ - <a href="http://turnkey.sf.net" class="external free"
+ rel="nofollow">http://turnkey.sf.net</a>
 - Biopackages
-  - <a href="http://biopackages.net" class="external free"
-    rel="nofollow">http://biopackages.net</a>
+ - <a href="http://biopackages.net" class="external free"
+ rel="nofollow">http://biopackages.net</a>

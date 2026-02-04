@@ -44,22 +44,22 @@ The next meeting will be held in [October
 Toronto, Canada. OICR is the current home of both
 [GBrowse](/wiki/GBrowse) and [BioMart](/wiki/BioMart).
 
-  GMOD</span>](#About_GMOD)
+ GMOD</span>](#About_GMOD)
 - [Registration](#Registration)
 - [GMOD Americas
-  Events](#GMOD_Americas_Events)
+ Events](#GMOD_Americas_Events)
 - [Agenda](#Agenda)
-  - [Friday:
-    Introduction to GMOD](#Friday:_Introduction_to_GMOD)
-  - [Saturday:
-    Day 1](#Saturday:_Day_1)
-  - [Sunday:
-    Day 2](#Sunday:_Day_2)
-  - [Monday:
-    Satellite Meetings](#Monday:_Satellite_Meetings)
+ - [Friday:
+ Introduction to GMOD](#Friday:_Introduction_to_GMOD)
+ - [Saturday:
+ Day 1](#Saturday:_Day_1)
+ - [Sunday:
+ Day 2](#Sunday:_Day_2)
+ - [Monday:
+ Satellite Meetings](#Monday:_Satellite_Meetings)
 - [Participants](#Participants)
 - [Help Get the
-  Word Out](#Help_Get_the_Word_Out)
+ Word Out](#Help_Get_the_Word_Out)
 - [Logistics](#Logistics)
 - [Feedback](#Feedback)
 
@@ -268,38 +268,38 @@ This session the night before the meting gave an introduction to the
 GMOD project, community, and components. It gave GMOD newcomers a
 clearer picture of the project in advance of the meeting.
 
-| Time   | Topic                    | Presenter(s)                          | Links |
+| Time | Topic | Presenter(s) | Links |
 |--------|--------------------------|---------------------------------------|-------|
-| 7pm-9m | **Introduction to GMOD** | [Scott Cain](/wiki/User:Scott) ## Saturday: Day 1 |  |
+| 7pm-9m | **Introduction to GMOD** | Scott Cain ## Saturday: Day 1 | |
 
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
-| 9:15 | Introductions | [Scott Cain](/wiki/User:Scott) | 9:35 |
-| Welcome to NESCent, & opportunities at the center | [Todd Vision](/wiki/User:Tjvision) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/Tjv.gmod11.pdf" class="internal" |  |
-title="Tjv.gmod11.pdf">slides</a> | 9:50 | The State of GMOD | [Scott Cain](/wiki/User:Scott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/State_of_gmod.ppt" class="internal"
-title="State of gmod.ppt">PPT</a> | 10:35 | Coffee | 10:50 | [GMOD Help Desk](/wiki/GMOD_Help_Desk) Update | [Dave Clements](/wiki/User:Clements) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/69/March2011GMODHelpDesk.ppt"
+| 9:15 | Introductions | Scott Cain | 9:35 |
+| Welcome to NESCent, & opportunities at the center | Todd Vision | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/Tjv.gmod11.pdf" class="internal" | |
+title="Tjv.gmod11.pdf">slides</a> | 9:50 | The State of GMOD | Scott Cain | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/State_of_gmod.ppt" class="internal"
+title="State of gmod.ppt">PPT</a> | 10:35 | Coffee | 10:50 | [GMOD Help Desk](/wiki/GMOD_Help_Desk) Update | Dave Clements | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/69/March2011GMODHelpDesk.ppt"
 class="internal" title="March2011GMODHelpDesk.ppt">PPT</a> | 11:55 | Lunch | 1:15 | *Drosophila* Genetic Reference Panel (DGRP) | Eric Stone | 2:00 | GSA and GMOD | Elizabeth Ruedi | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/March2011GSAandGMOD.pptx"
-class="internal" title="March2011GSAandGMOD.pptx">PPT</a> | 2:30 | Coffee | 3:00 | Mashing up InterMine: An introduction to the new InterMine webservice features | [Alex Kalderimis](/wiki/User:Alexkalderimis) | Slides? | 3:45 | Mimosa: Miniature Model Organism Sequence Aligner | [Jonathan "Duke" Leto](/wiki/User:Dukeleto) | <a
+class="internal" title="March2011GSAandGMOD.pptx">PPT</a> | 2:30 | Coffee | 3:00 | Mashing up InterMine: An introduction to the new InterMine webservice features | Alex Kalderimis | Slides? | 3:45 | Mimosa: Miniature Model Organism Sequence Aligner | Jonathan "Duke" Leto | <a
 href="https://github.com/leto/presentations/raw/master/2011/GMOD/pres.pdf"
-class="external text" rel="nofollow">Slides</a> | 4:30 | Head out for dinner |  ## Sunday: Day 2
+class="external text" rel="nofollow">Slides</a> | 4:30 | Head out for dinner | ## Sunday: Day 2
 
 This agenda will be finalized prior to the meeting. In the meantime,
 please see the [confirmed speakers list](#Confirmed_Speakers).
 
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
-| 9:15 | [JBrowse](/wiki/JBrowse) Project Update | [Mitch Skinner](/wiki/User:MitchSkinner) | <a |
+| 9:15 | [JBrowse](/wiki/JBrowse) Project Update | Mitch Skinner | <a |
 href="http://jbrowse.org/info/GMOD_Mar_2011/JBrowse_GMOD_Meeting_2011.pdf"
 class="external text" rel="nofollow">Slides</a> | 10:00 | [Tripal](/wiki/Tripal) Project Update | Lacey Sanderson | <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/LaceySanderson_Tripal_GMODAmericas2011.pptx"
 
-title="LaceySanderson Tripal GMODAmericas2011.pptx">Slides</a> | 10:45 | Break | 11:10 | [Galaxy](/wiki/Galaxy) for high-throughput sequence data analysis | [Dave Clements](/wiki/User:Clements) | 12:00 | Lunch | 1:00 | Implementation of RNA-Seq data in <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> at FlyBase | Dave Emmert | <a
+title="LaceySanderson Tripal GMODAmericas2011.pptx">Slides</a> | 10:45 | Break | 11:10 | [Galaxy](/wiki/Galaxy) for high-throughput sequence data analysis | Dave Clements | 12:00 | Lunch | 1:00 | Implementation of RNA-Seq data in <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> at FlyBase | Dave Emmert | <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/DaveEmmert_RNAseq_Tripal_GMODAmericas2011.pdf"
 
-title="DaveEmmert RNAseq Tripal GMODAmericas2011.pdf">Slides</a> | 2:00 | Lightning talks: |  | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> | [Chris Hemmerich](/wiki/User:Chemmeri) | [ISGA](/wiki/ISGA) | [Chris Hemmerich](/wiki/User:Chemmeri) | Coffee break |  | [Modware](/wiki/Modware): Its latest development using Moose and [Bio::Chado::Schema](/wiki/Bio_Chado_Schema) | Siddhartha Basu | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6e/March2011Modware.ppt" class="internal"
+title="DaveEmmert RNAseq Tripal GMODAmericas2011.pdf">Slides</a> | 2:00 | Lightning talks: | | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> | Chris Hemmerich | [ISGA](/wiki/ISGA) | Chris Hemmerich | Coffee break | | [Modware](/wiki/Modware): Its latest development using Moose and [Bio::Chado::Schema](/wiki/Bio_Chado_Schema) | Siddhartha Basu | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6e/March2011Modware.ppt" class="internal"
 title="March2011Modware.ppt">PPT</a>, <a href="http://slidesha.re/i3WYZ1" class="external text"
 
-class="internal" title="March20111TomWalk.pptx">PPT</a> |  | <a href="http://cas-bioinfo.cas.unt.edu/gsv" class="external text"
+class="internal" title="March20111TomWalk.pptx">PPT</a> | | <a href="http://cas-bioinfo.cas.unt.edu/gsv" class="external text"
 
 ## Monday: [Satellite Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011)
 
@@ -312,9 +312,9 @@ Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011).
 | First | Last | Affiliation |
 |----|----|----|
 | Siddhartha | Basu | Northwestern university |
-| [Robert](/wiki/User:RobertBuels) | [Buels](/wiki/User:RobertBuels) | <a href="http://solgenomics.net" class="external text" |
+| Robert | Buels | <a href="http://solgenomics.net" class="external text" |
 
-University</a>, [Galaxy](/wiki/Galaxy) | James | Collett | Pacific Northwest National Laboratory | David | Emmert | FlyBase - Harvard University | Madhavan | Ganesh | University of California, Berkeley | Eric | Ganko | Syngenta Biotech | Steve | Graham | Syngenta | [Christopher](/wiki/User:Chemmeri) | [Hemmerich](/wiki/User:Chemmeri) | Center for Genomics and Bioinformatics | Joe | Horton | GSK | [Alex](/wiki/User:Alexkalderimis) | [Kalderimis](/wiki/User:Alexkalderimis) | <a href="http://www.cam.ac.uk" class="external text"
+University</a>, [Galaxy](/wiki/Galaxy) | James | Collett | Pacific Northwest National Laboratory | David | Emmert | FlyBase - Harvard University | Madhavan | Ganesh | University of California, Berkeley | Eric | Ganko | Syngenta Biotech | Steve | Graham | Syngenta | Christopher | Hemmerich | Center for Genomics and Bioinformatics | Joe | Horton | GSK | Alex | Kalderimis | <a href="http://www.cam.ac.uk" class="external text"
 
 # Help Get the Word Out
 
@@ -362,43 +362,43 @@ others**
 "Maybe" Response:
 
 - Yes for newcomers, those with new developments that are relevant, and
-  for those looking for potential help/collaboration
+ for those looking for potential help/collaboration
 
 **Q: Please rate the meeting(s) using the following scale: 1 (not at
 all) to 3 (reasonably) to 5 (exceptionally).**
 
-| 1   | 2   | 3   | 4   | 5 |
+| 1 | 2 | 3 | 4 | 5 |
 |-----------------------------------------|-----|-----|-----|-----|-----|
 | How useful was the meeting? | 0% | 0% | 5% | 33% | 62% |
 | Was the meeting well run and organized? | 0% | 0% | 14% | 38% | 48% |
 
 **Q: Was the meeting what you expected?**
 
-| No  | Somewhat | Yes | Other |
+| No | Somewhat | Yes | Other |
 |-----|----------|-----|-------|
 | 5% | 9% | 86% | 0% |
 
 Longer responses:
 
 - Yes, the crowd is always a bit of a surprise, but having so many new
-  and prospective users made for a very interactive session.
+ and prospective users made for a very interactive session.
 - yes- good to hear about new developments and network with others
 - Yes and more then i expected.
 - Yes, and much more!
 - Yes: I came into the meeting hoping to learn about the software, but
-  also to understand the community. Mission accomplished!
+ also to understand the community. Mission accomplished!
 - it exceeded my expectations in terms of relevance to my current job.
 - First meeting but more than expected. Nescent is a great location to
-  foster discussion.
+ foster discussion.
 - Yes, absolutely. I will attend again. It is one of the most productive
-  meetings of the year for me.
+ meetings of the year for me.
 - Yes. I really appreciated the efforts that were made to get us to
-  gether and talk about not only technical but also the anthropological
-  issues in the development and adoption of open source bioinformatics
-  software.
+ gether and talk about not only technical but also the anthropological
+ issues in the development and adoption of open source bioinformatics
+ software.
 - In part, but there was a surprising lack of discussion of GMOD-wide
-  issues (e.g. component integration, user support, next steps, etc),
-  which concerned me.
+ issues (e.g. component integration, user support, next steps, etc),
+ which concerned me.
 - No, it was better!
 
 *Note: Next time, we should reword this question to: Did the meeting
@@ -415,76 +415,76 @@ the most useful or interesting?**
 - The state of gmod
 - Intermine \* Mimosa \* keynote (Drosophila) \* RNA-seq data at Flybase
 - Intro session was great to get a background of the GMOD project. Eric
-  Stone's drosophila presentation and Lacey Sanderson's Tripal/Drupal
-  presentation were the most interesting.
+ Stone's drosophila presentation and Lacey Sanderson's Tripal/Drupal
+ presentation were the most interesting.
 - Tripal Project Update
 - Evo Hackathon jbrowse satellite meeting.
 - All the sessions were very interesting and useful. I enjoyed the intro
-  to GMOD session tremendously, as it was a very nice setup for the rest
-  of the meeting. I found the 'showcasing' of different GMOD modules
-  very useful--since we are at the stage of making decisions as to which
-  components to start our project with, that was very useful. The most
-  useful, however, were many of the conversations and discussions I had
-  throughout the meeting, as well as the satellite session on JBrowse.
+ to GMOD session tremendously, as it was a very nice setup for the rest
+ of the meeting. I found the 'showcasing' of different GMOD modules
+ very useful--since we are at the stage of making decisions as to which
+ components to start our project with, that was very useful. The most
+ useful, however, were many of the conversations and discussions I had
+ throughout the meeting, as well as the satellite session on JBrowse.
 - The component presentations (JBrowse, Tripal, Galaxy, etc).
 - Honestly, all of the presentations were useful. While coming at things
-  from an IT perspective, hearing the real life practical applications
-  of the software was important.
+ from an IT perspective, hearing the real life practical applications
+ of the software was important.
 - JBrowse, State of GMOD, Tripal, Flybase.
 - Besides the updates, Eric Stone's presentation was fascinating. I
-  enjoyed the discussions in the break out groups on Monday. Great
-  interaction among attendees and with speakers.
+ enjoyed the discussions in the break out groups on Monday. Great
+ interaction among attendees and with speakers.
 - I enjoyed and learned a lot from the the Intermine, modware and Tripal
-  presentations.
+ presentations.
 - Dave E from flybase, Eric Stone, Scott Cain, Mitch JBrowse, Intermine,
-  ..., the list goes on and on very very good.
+ ..., the list goes on and on very very good.
 - Satellite Meetings because is allows a more straight line of
-  communication instead of a presentation. It is more dynamic and it
-  tends to address the questions on less casual manner.
+ communication instead of a presentation. It is more dynamic and it
+ tends to address the questions on less casual manner.
 - Mimosa & JBrowse presentations
 - All were interesting. The most useful for my work directly were as
-  follows. Introductions The State of GMOD GMOD Help Desk Update Mashing
-  up InterMine: An introduction to the new InterMine webservice features
-  JBrowse Project Update Tripal Project Update Galaxy for
-  high-throughput sequence data analysis Implementation of RNA-Seq data
-  in Chado at FlyBase
+ follows. Introductions The State of GMOD GMOD Help Desk Update Mashing
+ up InterMine: An introduction to the new InterMine webservice features
+ JBrowse Project Update Tripal Project Update Galaxy for
+ high-throughput sequence data analysis Implementation of RNA-Seq data
+ in Chado at FlyBase
 - I'm new to GMOD, so they were all useful! For me, GBrowse and Chado
-  are the core applications that I'm seeking to implement, so the
-  presentations by Scott Cain and Dave Emmert were especially
-  interesting to me
+ are the core applications that I'm seeking to implement, so the
+ presentations by Scott Cain and Dave Emmert were especially
+ interesting to me
 
 **Q: Do you have suggestions for improving GMOD meetings in the
 future?**
 
 - Scott could stand to be slightly more ... not cutting people off, but
-  maybe keeping people moving at some slow points.
+ maybe keeping people moving at some slow points.
 - Figure out agenda earlier
 - Maybe more tutorials of the software being presented.
 - I would recommend having a more diverse organizing committee, one with
-  a collectively broad view, and to include more unconference elements.
+ a collectively broad view, and to include more unconference elements.
 - Not at this time: I think it strikes a good balance.
 - The lightning talks probably ought to be truly lightning (short) and
-  maybe limited to a time frame.
+ maybe limited to a time frame.
 - Depending on the skill level/interests of attendees, it might be
-  useful to present a list of satellite meetings before the meeting.
-  People can then vote even before they come.
+ useful to present a list of satellite meetings before the meeting.
+ People can then vote even before they come.
 - No, they seem to be well run. Perhaps getting people to think about
-  hackathon-ish ideas before the meeting would be useful.
+ hackathon-ish ideas before the meeting would be useful.
 - I think GMOD needs to grow it's prestige and team with a Journal to
-  publish papers on bioinformatics databases and system integration. As
-  we enter the world of data driven science, tools and complex
-  algorithms are no longer sufficient... we need better data models and
-  better ways to integrate biology. Funding and advancement comes from
-  sharing... and management looks at sharing/support of software as less
-  important than sharing scientific results. GMOD as a community is one
-  of the few organisations who can change this.
+ publish papers on bioinformatics databases and system integration. As
+ we enter the world of data driven science, tools and complex
+ algorithms are no longer sufficient... we need better data models and
+ better ways to integrate biology. Funding and advancement comes from
+ sharing... and management looks at sharing/support of software as less
+ important than sharing scientific results. GMOD as a community is one
+ of the few organisations who can change this.
 - Kidnap Dave.
 - Great organization, not really (*I'm not sure if this is a positive or
-  a negative comment.*)
+ a negative comment.*)
 - This meeting was a little disorganized. I would like to have the
-  schedule finalized more than 1 week before the conference. I really
-  liked the introduction to GMOD on Friday night. I think a little bit
-  more about how the various programs interact and compare/contrast
-  between those that do similar things would be Really useful!
+ schedule finalized more than 1 week before the conference. I really
+ liked the introduction to GMOD on Friday night. I think a little bit
+ more about how the various programs interact and compare/contrast
+ between those that do similar things would be Really useful!
 - More examples, especially for plant, will be better.
 - More veggies for snacks!

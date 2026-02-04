@@ -14,12 +14,12 @@ href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id
 Highlights of this release are:
 
 - Added a GFF3 parser and producer for easier and more complete data
-  import and export (requires latest version of
-  [bioperl-live](../BioPerl) to import GFF).
+ import and export (requires latest version of
+ [bioperl-live](../BioPerl) to import GFF).
 - Added a module to serve data to
-  <a href="http://acpfg.imb.uq.edu.au/cmap3d.php" class="external text"
-  rel="nofollow">CMap3D</a>, a 3D viewer being developed by Chris Duran
-  and Dave Edwards.
+ <a href="http://acpfg.imb.uq.edu.au/cmap3d.php" class="external text"
+ rel="nofollow">CMap3D</a>, a 3D viewer being developed by Chris Duran
+ and Dave Edwards.
 
 If you have any questions, please
 <a href="mailto:faga@cshl.edu" class="external text" rel="nofollow">let
@@ -28,7 +28,7 @@ me know</a>.
 This is only an incremental update. For anyone who installed [version
 1.0](#CMap_1.0_Released), simply download the new release and run
 
-    perl Build.PL; ./Build; sudo ./Build install
+ perl Build.PL; ./Build; sudo ./Build install
 
 No updates to the database or config files are needed.
 

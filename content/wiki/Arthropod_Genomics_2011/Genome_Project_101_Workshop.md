@@ -33,59 +33,59 @@ This is the wiki page for the *Genome Project 101 Workshop* presented at
 This page serves as the slides for the workshop. It will be tidied up
 within a week of the end of the workshop.
 
-  URL</span>](#The_One_True_URL)
+ URL</span>](#The_One_True_URL)
 - [VMware
-  Image](#VMware_Image)
+ Image](#VMware_Image)
 - [Worked
-  Examples](#Worked_Examples)
-  - [MAKER Web
-    Annotation Service](#MAKER_Web_Annotation_Service)
-  - [Galaxy
-    Example](#Galaxy_Example)
-    - [1. Get
-      to Galaxy](#1._Get_to_Galaxy)
-    - [2.
-      What have we got?](#2._What_have_we_got.3F)
-    - [3. Get
-      just the Exons and CDSs](#3._Get_just_the_Exons_and_CDSs)
-    - [4. See
-      what is in the exon set that is not in the CDS
-      set](#4._See_what_is_in_the_exon_set_that_is_not_in_the_CDS_set)
-    - [5.
-      Investigate](#5._Investigate)
-    - [For
-      the long term](#For_the_long_term)
-  - [Chado](#Chado)
-  - [GBrowse](#GBrowse)
-  - [JBrowse](#JBrowse)
+ Examples](#Worked_Examples)
+ - [MAKER Web
+ Annotation Service](#MAKER_Web_Annotation_Service)
+ - [Galaxy
+ Example](#Galaxy_Example)
+ - [1. Get
+ to Galaxy](#1._Get_to_Galaxy)
+ - [2.
+ What have we got?](#2._What_have_we_got.3F)
+ - [3. Get
+ just the Exons and CDSs](#3._Get_just_the_Exons_and_CDSs)
+ - [4. See
+ what is in the exon set that is not in the CDS
+ set](#4._See_what_is_in_the_exon_set_that_is_not_in_the_CDS_set)
+ - [5.
+ Investigate](#5._Investigate)
+ - [For
+ the long term](#For_the_long_term)
+ - [Chado](#Chado)
+ - [GBrowse](#GBrowse)
+ - [JBrowse](#JBrowse)
 - [VMware
-  Image](#VMware_Image_2)
-  - [System
-    Configuration](#System_Configuration)
-  - [Installed
-    Prerequisite Software](#Installed_Prerequisite_Software)
-    - [PostgreSQL
-      Configuration](#PostgreSQL_Configuration)
-      - [Edit config
-        file](#Edit_config_file)
-      - [Install
-        DBIx::DBStag](#Install_DBIx::DBStag)
-  - [GMOD
-    Components](#GMOD_Components)
-    - [Chado
-      Install and Load](#Chado_Install_and_Load)
-      - [Loading Data](#Loading_Data)
-    - [GBrowse
-      Installation](#GBrowse_Installation)
-    - [JBrowse
-      Installation](#JBrowse_Installation)
-    - [Installing
-      Galaxy](#Installing_Galaxy)
+ Image](#VMware_Image_2)
+ - [System
+ Configuration](#System_Configuration)
+ - [Installed
+ Prerequisite Software](#Installed_Prerequisite_Software)
+ - [PostgreSQL
+ Configuration](#PostgreSQL_Configuration)
+ - [Edit config
+ file](#Edit_config_file)
+ - [Install
+ DBIx::DBStag](#Install_DBIx::DBStag)
+ - [GMOD
+ Components](#GMOD_Components)
+ - [Chado
+ Install and Load](#Chado_Install_and_Load)
+ - [Loading Data](#Loading_Data)
+ - [GBrowse
+ Installation](#GBrowse_Installation)
+ - [JBrowse
+ Installation](#JBrowse_Installation)
+ - [Installing
+ Galaxy](#Installing_Galaxy)
 - [If time
-  permits ...](#If_time_permits_...)
-  - [Community!](#Community.21)
+ permits ...](#If_time_permits_...)
+ - [Community!](#Community.21)
 - [Remember
-  ...](#Remember_...)
+ ...](#Remember_...)
 
 # The One True URL
 
@@ -112,7 +112,7 @@ able to make use of the web service provided by
 
 it, go to
 
-     http://derringer.genetics.utah.edu/cgi-bin/MWAS/maker.cgi
+ http://derringer.genetics.utah.edu/cgi-bin/MWAS/maker.cgi
 
 and create a free account (I created one for this tutorial with a user
 name of gmodags). After that is created, we can upload some sample data.
@@ -121,7 +121,7 @@ there are three files:
 
 - pyu-contig.fasta - a FASTA file containing a 1.7 MB contig
 - pyu-est.fasta - A set of assembled 454 read ESTs from P. ultimum and a
-  related organism
+ related organism
 - pyu-protein.fasta - a set of protein sequence from a related organism
 
 After clicking on the "New Job" tab, I uploaded all three files in the
@@ -270,7 +270,7 @@ This section attempts to track what we did to create the VMware image
 | Disk | 80 GB. This is allocated 2 GB at a time, as needed, but VMware. |
 | Networking | NAT |
 | Username | gmod |
-| Password ## Installed Prerequisite Software |  |
+| Password ## Installed Prerequisite Software | |
 
 GMOD components have a variety of prerequisite software that needs to be
 installed. Here is a list of what was installed so we could install and
@@ -305,31 +305,31 @@ configuration should be tightened down quite a bit.
 
 #### Edit config file
 
-     sudo su -
-     vi /etc/postgresql/8.4/main/pg_hba.conf
+ sudo su -
+ vi /etc/postgresql/8.4/main/pg_hba.conf
 
 Change the bottom lines to look like this:
 
-     # "local" is for Unix domain socket connections only
-     local   all         all                               trust
-     # IPv4 local connections:
-     host    all         all         127.0.0.1/32          trust
-     # IPv6 local connections:
-     host    all         all         ::1/128               trust
+ # "local" is for Unix domain socket connections only
+ local all all trust
+ # IPv4 local connections:
+ host all all 127.0.0.1/32 trust
+ # IPv6 local connections:
+ host all all  ::1/128 trust
 
 by replacing the text in the last column to "trust" as it is here
 (**that's the insecure part!**). Then restart the postgresql server:
 
-     /etc/init.d/postgresql restart
+ /etc/init.d/postgresql restart
 
 Then, switch users to the "postgres" user and create a new user called
 "gmod":
 
-     su - postgres
-     createuser gmod
-       Shall the new role be a superuser? (y/n) y
-     exit  # to leave postgres user shell
-     exit  # to leave root shell
+ su - postgres
+ createuser gmod
+ Shall the new role be a superuser? (y/n) y
+ exit # to leave postgres user shell
+ exit # to leave root shell
 
 #### Install DBIx::DBStag
 
@@ -337,12 +337,12 @@ This is a perl module that can only be installed after PostgreSQL is
 configured, so it is installed now. First, create a database called
 "test":
 
-     createdb test
+ createdb test
 
 Then install via the cpan shell:
 
-     cpan
-     cpan> install DBIx::DBStag
+ cpan
+ cpan> install DBIx::DBStag
 
 Note that installing via the cpan shell is difficult if you typically
 use cpan as root, like "sudo cpan". If instead you use cpan as a regular
@@ -355,52 +355,52 @@ install" it is easy and works correctly.
 
 Get Chado from SourceForge; point a browser at
 
-     http://sourceforge.net/projects/gmod/files/gmod/chado-1.11/chado-1.11.tar.gz/download
+ http://sourceforge.net/projects/gmod/files/gmod/chado-1.11/chado-1.11.tar.gz/download
 
 and extract the files:
 
-     cd ~/Downloads
-     tar zxvf chado-1.11.tar.gz
-     cd chado-1.11
+ cd ~/Downloads
+ tar zxvf chado-1.11.tar.gz
+ cd chado-1.11
 
 Set up some environment variables:
 
-     vi ~/.bashrc
+ vi ~/.bashrc
 
 and add these lines to the bottom:
 
-     export GMOD_ROOT=/usr/local/gmod
-     export CHADO_DB_NAME=chado
-     export CHADO_DB_USERNAME=gmod
+ export GMOD_ROOT=/usr/local/gmod
+ export CHADO_DB_NAME=chado
+ export CHADO_DB_USERNAME=gmod
 
 save .bashrc and source it so that the values are available in the
 shell:
 
-     source ~/.bashrc
+ source ~/.bashrc
 
 Now to install Chado:
 
-     perl Makefile.PL
+ perl Makefile.PL
 
 Accept all of the defaults except for the "default organism" question.
 Put "pythium" here.
 
-     make
-     sudo make install
-     make load_schema   #ignore the error about a chado database not existing
-     make prepdb
-     make ontologies
-       answer with 1,2,4
+ make
+ sudo make install
+ make load_schema #ignore the error about a chado database not existing
+ make prepdb
+ make ontologies
+ answer with 1,2,4
 
 Add our organism to the database:
 
-     psql chado
-     psql> INSERT INTO organism ( abbreviation, genus, species, common_name)
-           VALUES ('P.ultimum','Pythium','ultimum','pythium');
+ psql chado
+ psql> INSERT INTO organism ( abbreviation, genus, species, common_name)
+ VALUES ('P.ultimum','Pythium','ultimum','pythium');
 
 Make a database dump that saves progress to this point:
 
-     pg_dump chado | bzip2 -c > ontologies_only_dbdump.bz2
+ pg_dump chado | bzip2 -c > ontologies_only_dbdump.bz2
 
 #### Loading Data
 
@@ -410,14 +410,14 @@ that, we'll load "by hand".
 
 Go to where the data is:
 
-     cd ~/Downloads/3263.maker.output/
+ cd ~/Downloads/3263.maker.output/
 
 There are several files here, but the one we are interested in at the
 moment is 3263.all.gff, which has all of the "raw material" annotations
 made by MAKER as well as the final gene calls. We'll load these into
 Chado using a tool that came with Chado:
 
-     gmod_bulk_load_gff3.pl -a --noexon -g 3263.all.gff
+ gmod_bulk_load_gff3.pl -a --noexon -g 3263.all.gff
 
 where the -a tells the loader that these are computational results (as
 opposed to human-curated annotations), and the --noexon tells the loader
@@ -430,8 +430,8 @@ minutes.
 GBrowse can be installed directly from the cpan shell like several of
 the GBrowse prerequisites were installed:
 
-     cpan
-     cpan> install Bio::Graphics::Browser2
+ cpan
+ cpan> install Bio::Graphics::Browser2
 
 Accept all of the defaults when asked questions.
 
@@ -439,18 +439,18 @@ Get a config file
 
 Install Samtools
 
-     cd ~/Downloads
-     wget -O samtools.0.16.tar.bz2 http://sourceforge.net/projects/samtools/files/samtools/0.1.16/samtools-0.1.16.tar.bz2/download
-     tar jxvf samtools.0.16.tar.bz2
-     cd samtools-0.1.16
-     sudo apt-get install ncurses-dev
-     make #after adding fPIC to Makefile
+ cd ~/Downloads
+ wget -O samtools.0.16.tar.bz2 http://sourceforge.net/projects/samtools/files/samtools/0.1.16/samtools-0.1.16.tar.bz2/download
+ tar jxvf samtools.0.16.tar.bz2
+ cd samtools-0.1.16
+ sudo apt-get install ncurses-dev
+ make #after adding fPIC to Makefile
 
 Install Bio::DB::Sam
 
-     cpan
-     cpan> install Bio::DB::Sam
-        answer "/home/gmod/Downloads/samtools-0.1.16" for the location of bam.h
+ cpan
+ cpan> install Bio::DB::Sam
+ answer "/home/gmod/Downloads/samtools-0.1.16" for the location of bam.h
 
 BAM and FASTA files placed in /var/www/gbrowse2/databases/pythium/
 
@@ -465,21 +465,21 @@ during the workshop).
 
 Get JBrowse and unpack:
 
-     wget http://jbrowse.org/releases/jbrowse-1.2.1.zip
-     unzip jbrowse-1.2.1.zip
-     sudo cp -r jbrowse-1.2.1/ /var/www/jbrowse/
+ wget http://jbrowse.org/releases/jbrowse-1.2.1.zip
+ unzip jbrowse-1.2.1.zip
+ sudo cp -r jbrowse-1.2.1/ /var/www/jbrowse/
 
 Get a conf file:
 
-     cd ~/Downloads/
-     wget https://gist.github.com/raw/1014946/65ab0c150984d7bed47150d82da5026d960406f3/pythium.conf
+ cd ~/Downloads/
+ wget https://gist.github.com/raw/1014946/65ab0c150984d7bed47150d82da5026d960406f3/pythium.conf
 
 Setting up data:
 
-     cd /var/www/
-     sudo chown -R gmod:gmod jbrowse
-     cd jbrowse
-     bin/prepare-refseqs.pl --conf ~/Downloads/pythium.conf --refs scf1117875582023
+ cd /var/www/
+ sudo chown -R gmod:gmod jbrowse
+ cd jbrowse
+ bin/prepare-refseqs.pl --conf ~/Downloads/pythium.conf --refs scf1117875582023
 
 This gets the "reference sequence", that is, the contig we're working
 on. At this point, visiting the jbrowse url
@@ -490,7 +490,7 @@ see DNA residues.
 
 Now, get more data:
 
-     bin/biodb-to-json.pl --conf ~/Downloads/pythium.conf
+ bin/biodb-to-json.pl --conf ~/Downloads/pythium.conf
 
 This talks to the Chado database and extracts all of the evidence and
 predictions that were used and created in the MAKER analysis.
@@ -550,12 +550,12 @@ And Galaxy is now installed and running. Goto
 
 - [Wiki](../Main_Page)
 - <a href="../Mailing_Lists" class="mw-redirect"
-  title="Mailing Lists">Mailing Lists</a>
+ title="Mailing Lists">Mailing Lists</a>
 - [Meetings](../Meetings) and other
-  [Events](../Calendar) - Next meeting is [October 2011 GMOD
-  Meeting](../October_2011_GMOD_Meeting)
+ [Events](../Calendar) - Next meeting is [October 2011 GMOD
+ Meeting](../October_2011_GMOD_Meeting)
 - [Training and
-  Outreach](../Training_and_Outreach)
+ Outreach](../Training_and_Outreach)
 - ...
 
 # Remember ...

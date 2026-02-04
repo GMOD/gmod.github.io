@@ -5,18 +5,18 @@ title: "May 2005 GMOD Meeting"
 
 Generic Model Organism Database Construction Set
 
-  6</span>](#Meeting_6)
+ 6</span>](#Meeting_6)
 - [Presentations](#Presentations)
 - [Agenda](#Agenda)
-  - [Tuesday,
-    May 17](#Tuesday.2C_May_17)
+ - [Tuesday,
+ May 17](#Tuesday.2C_May_17)
 - [GMOD
-  Architecture Working Group](#GMOD_Architecture_Working_Group)
-  - [Goal](#Goal)
-  - [Workflow](#Workflow)
-    - [Timeline of a
-      recommendation](#Timeline_of_a_recommendation)
-  - [Communication](#Communication)
+ Architecture Working Group](#GMOD_Architecture_Working_Group)
+ - [Goal](#Goal)
+ - [Workflow](#Workflow)
+ - [Timeline of a
+ recommendation](#Timeline_of_a_recommendation)
+ - [Communication](#Communication)
 
 ## Meeting 6
 
@@ -25,40 +25,40 @@ May 16-17, 2005 SRI, Menlo Park, CA
 ## Presentations
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Apollo.ppt" class="internal"
-  title="Apollo.ppt">Apollo.ppt</a>
+ title="Apollo.ppt">Apollo.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt" class="internal"
-  title="Cain-050516.ppt">Cain-050516.ppt</a> - GMOD business and
-  setting up [ParameciumDB](/wiki/ParameciumDB)
+ title="Cain-050516.ppt">Cain-050516.ppt</a> - GMOD business and
+ setting up [ParameciumDB](/wiki/ParameciumDB)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/Cmap-050516.pdf" class="internal"
-  title="Cmap-050516.pdf">Cmap-050516.pdf</a>‎
+ title="Cmap-050516.pdf">Cmap-050516.pdf</a>‎
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Das.ppt" class="internal"
-  title="Das.ppt">Das.ppt</a>
+ title="Das.ppt">Das.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Day-050517.ppt" class="internal"
-  title="Day-050517.ppt">Day-050517.ppt</a>
+ title="Day-050517.ppt">Day-050517.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5a/Faga_050517.pdf" class="internal"
-  title="Faga 050517.pdf">Faga_050517.pdf</a>‎
+ title="Faga 050517.pdf">Faga_050517.pdf</a>‎
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/Gbrowse-050516.ppt" class="internal"
-  title="Gbrowse-050516.ppt">Gbrowse-050516.ppt</a>
+ title="Gbrowse-050516.ppt">Gbrowse-050516.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Just-050516.ppt" class="internal"
-  title="Just-050516.ppt">Just-050516.ppt</a>
+ title="Just-050516.ppt">Just-050516.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3c/Kasprzyk-050516.ppt" class="internal"
-  title="Kasprzyk-050516.ppt">Kasprzyk-050516.ppt</a> -
-  [BioMart](/wiki/BioMart) and
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+ title="Kasprzyk-050516.ppt">Kasprzyk-050516.ppt</a> -
+ [BioMart](/wiki/BioMart) and
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/Karp-050516.ppt" class="internal"
-  title="Karp-050516.ppt">Karp-050516.ppt</a>
+ title="Karp-050516.ppt">Karp-050516.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f0/Mungall-050516.ppt" class="internal"
-  title="Mungall-050516.ppt">Mungall-050516.ppt</a>
+ title="Mungall-050516.ppt">Mungall-050516.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/Oconnor-050516.ppt" class="internal"
-  title="Oconnor-050516.ppt">Oconnor-050516.ppt</a>
+ title="Oconnor-050516.ppt">Oconnor-050516.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/87/Sgd-050516.ppt" class="internal"
-  title="Sgd-050516.ppt">Sgd-050516.ppt</a>
+ title="Sgd-050516.ppt">Sgd-050516.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e9/Smutniak-050516.ppt" class="internal"
-  title="Smutniak-050516.ppt">Smutniak-050516.ppt</a>
+ title="Smutniak-050516.ppt">Smutniak-050516.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/What_next.ppt" class="internal"
-  title="What next.ppt">What_next.ppt</a>
+ title="What next.ppt">What_next.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/Zhang-050517.ppt" class="internal"
-  title="Zhang-050517.ppt">Zhang-050517.ppt</a>
+ title="Zhang-050517.ppt">Zhang-050517.ppt</a>
 
 ## Agenda
 

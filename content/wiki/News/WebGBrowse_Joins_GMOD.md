@@ -13,12 +13,12 @@ up [GBrowse](../GBrowse.1) instances, is now a part of GMOD.
 [WebGBrowse](../WebGBrowse.1) enables biologists and
 bioinformaticians to
 
-1.  upload genome annotation information in [GFF3](../GFF3)
-    format,
-2.  configure display of each genomic feature through simple mouse
-    clicks on a web browser,
-3.  visualize the configured genome with the integrated GBrowse
-    software.
+1. upload genome annotation information in [GFF3](../GFF3)
+ format,
+2. configure display of each genomic feature through simple mouse
+ clicks on a web browser,
+3. visualize the configured genome with the integrated GBrowse
+ software.
 
 *There is no manual editing of GBrowse configuration files with
 WebGBrowse.* WebGBrowse relieves both the burden of installing GBrowse

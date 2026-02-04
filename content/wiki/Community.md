@@ -3,10 +3,10 @@ title: "Community"
 ---
 # Community
 
-  Description](#Description)
+ Description](#Description)
 - [Technology](#Technology)
 - [Demo &
-  Screenshot](#Demo_.26_Screenshot)
+ Screenshot](#Demo_.26_Screenshot)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
@@ -26,15 +26,15 @@ management point for MOD user accounts.
 ## Technology
 
 - The community module uses a relational database, a Servlets and JSP
-  engine, and the Struts Web application framework.
+ engine, and the Struts Web application framework.
 
 **Other Benefits for MOD developers**
 
 - Use of cascading style sheets(CSS), XSL, and separation of application
-  and presentation logic allows individual MODs to make substantial
-  changes to the look and feel of the community module without touching
-  the modules application logic.
+ and presentation logic allows individual MODs to make substantial
+ changes to the look and feel of the community module without touching
+ the modules application logic.
 - The Struts framework provides strong support for internationalization
-  (e.g., making interfaces available in several different languages).
+ (e.g., making interfaces available in several different languages).
 
 ## Demo & Screenshot

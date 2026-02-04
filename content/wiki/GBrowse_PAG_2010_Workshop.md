@@ -34,20 +34,20 @@ class="external text" rel="nofollow">GBrowse workshop</a> at the
 
 2010](/wiki/PAG_2010)) held in San Diego on January 9-13, 2009.
 
-  Overview](#Overview)
+ Overview](#Overview)
 - [Tutorial
-  Level](#Tutorial_Level)
+ Level](#Tutorial_Level)
 - [Intended
-  Audience](#Intended_Audience)
+ Audience](#Intended_Audience)
 - [Prerequisite
-  Software and Conference
-  PCs](#Prerequisite_Software_and_Conference_PCs)
+ Software and Conference
+ PCs](#Prerequisite_Software_and_Conference_PCs)
 - [Outline](#Outline)
 - [Workshop
-  Instructor](#Workshop_Instructor)
+ Instructor](#Workshop_Instructor)
 - [Other GMOD
-  Presentations and
-  Meetings](#Other_GMOD_Presentations_and_Meetings)
+ Presentations and
+ Meetings](#Other_GMOD_Presentations_and_Meetings)
 
 ## Overview
 
@@ -93,14 +93,14 @@ material presented at this workshop.
 - Showing Quantitative Data
 - Displaying DNA and 3-frame translations
 - Features added in latest release, including draggable and collapsible
-  tracks, and [popup
-  balloons](/wiki/GBrowse_Popup_Balloons)
+ tracks, and [popup
+ balloons](/wiki/GBrowse_Popup_Balloons)
 
 ## Workshop Instructor
 
-- [Scott Cain](/wiki/User:Scott), GMOD Project Coordinator,
-  <a href="http://www.oicr.on.ca/" class="external text"
-  rel="nofollow">Ontario Institute for Cancer Research</a>
+- Scott Cain, GMOD Project Coordinator,
+ <a href="http://www.oicr.on.ca/" class="external text"
+ rel="nofollow">Ontario Institute for Cancer Research</a>
 
 ## Other GMOD Presentations and Meetings
 
@@ -108,14 +108,14 @@ GMOD will have a [strong presence](/wiki/PAG_2010) at PAG 2010,
 including
 
 - A
-  [workshop](/wiki/GBrowse_syn_PAG_2010_Workshop)
-  on [GBrowse_syn](/wiki/GBrowse_syn), a comparative genomics
-  viewer built on [GBrowse](/wiki/GBrowse)
+ [workshop](/wiki/GBrowse_syn_PAG_2010_Workshop)
+ on [GBrowse_syn](/wiki/GBrowse_syn), a comparative genomics
+ viewer built on [GBrowse](/wiki/GBrowse)
 - A [workshop](/wiki/MAKER_PAG_2010_Workshop) on
-  [MAKER](/wiki/MAKER), a genome annotation pipeline.
+ [MAKER](/wiki/MAKER), a genome annotation pipeline.
 - The <a href="http://www.intl-pag.org/18/18-gramene.html"
-  class="external text" rel="nofollow">Gramene Workshop</a> will include
-  a section on the [CMap](/wiki/CMap) comparative map viewer.
+ class="external text" rel="nofollow">Gramene Workshop</a> will include
+ a section on the [CMap](/wiki/CMap) comparative map viewer.
 
 See [PAG 2010](/wiki/PAG_2010) for a more complete list of
 GMOD-related presentations at PAG XVIII.

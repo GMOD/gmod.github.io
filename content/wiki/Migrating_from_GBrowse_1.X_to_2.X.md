@@ -12,14 +12,14 @@ have been some changes to the layout of configuration files that make
 the system easier to configure and maintain. A small amount of work is
 needed to make your existing system work with the 2.0 series.
 
-  Environment Variables</span>](#Apache_Environment_Variables)
+ Environment Variables</span>](#Apache_Environment_Variables)
 - [GBrowse.conf
-  and Data Source Config
-  Files](#GBrowse.conf_and_Data_Source_Config_Files)
+ and Data Source Config
+ Files](#GBrowse.conf_and_Data_Source_Config_Files)
 - [Specifying
-  Databases](#Specifying_Databases)
-  - [Specifying
-    Rendering Slaves](#Specifying_Rendering_Slaves)
+ Databases](#Specifying_Databases)
+ - [Specifying
+ Rendering Slaves](#Specifying_Rendering_Slaves)
 
 # Apache Environment Variables
 
@@ -32,10 +32,10 @@ directive in the Apache configuration file in order to create this
 variable and pass it through. Usually this directive will be located in
 the "cgi-bin" \<Directory\> section as follows:
 
-     <Directory /usr/lib/cgi-bin>
-       SetEnv GBROWSE_CONF /etc/GBrowse2
-       ... # other stuff # ...
-     </Directory>
+ <Directory /usr/lib/cgi-bin>
+ SetEnv GBROWSE_CONF /etc/GBrowse2
+ ... # other stuff # ...
+ </Directory>
 
 Other environment variables that can be set in the Apache configuration
 file include:
@@ -79,9 +79,9 @@ one for each species (or genome annotation release) you want to make
 available for browsing. Each data-source specific stanza looks like
 this:
 
-     [datasource]
-     description = This is a description
-     path        = datasource.conf
+ [datasource]
+ description = This is a description
+ path = datasource.conf
 
 The *description* appears in the pop-up menu that allows users to select
 the genome to browser. The *path* specifies the path to the
@@ -112,35 +112,35 @@ in the data source configuration file (suggested: between \[GENERAL\]
 and the track stanzas) declare one or more \[*name*:database\] stanzas.
 For example:
 
-      [volvox_genbank:database]
-      db_adaptor    = Bio::DB::SeqFeature::Store
-      db_args       = -adaptor memory
-                      -dir    /usr/share/databases/volvox_gb_mirror
+ [volvox_genbank:database]
+ db_adaptor = Bio::DB::SeqFeature::Store
+ db_args = -adaptor memory
+ -dir /usr/share/databases/volvox_gb_mirror
 
-      [volvox_ncRNA:database]
-      db_adaptor   = Bio::DB::SeqFeature::Store
-      db_args      = -adaptor DBI::mysql
-                     -dsn     volvox_ncRNA
+ [volvox_ncRNA:database]
+ db_adaptor = Bio::DB::SeqFeature::Store
+ db_args = -adaptor DBI::mysql
+ -dsn volvox_ncRNA
 
 This declares two databases, one named "volvox_genbank" and the other
 "volvox_local". You then assign these to the tracks as follows:
 
-      [GENES]
-      database = volvox_genbank
-      feature  = gene:genbank
-      ... etc...
+ [GENES]
+ database = volvox_genbank
+ feature = gene:genbank
+ ... etc...
 
-      [miRNAs]
-      database = volvox_ncRNA
-      feature  = miRNA
-      ... etc...
+ [miRNAs]
+ database = volvox_ncRNA
+ feature = miRNA
+ ... etc...
 
 The default database is specified in the \[GENERAL\] or \[TRACK
 DEFAULTS\] section, with the latter taking precedence over the former:
 
-     [GENERAL]
-     database = volvox_genbank   # this will be the default
-     ... etc...
+ [GENERAL]
+ database = volvox_genbank # this will be the default
+ ... etc...
 
 For backward compatibility, you can forego the \[:database\] sections
 entirely and just place db_adaptor and db_args options directly in the
@@ -159,15 +159,15 @@ having one or more rendering slaves running on the local host.
 To attach a rendering slave to a track, add the *remote renderer*
 option, giving the host and port of the slave in URL format:
 
-      [GENES]
-      feature  = gene:genbank
-      remote renderer = http://node22.serverfarm.org:1800
-      ... etc...
+ [GENES]
+ feature = gene:genbank
+ remote renderer = http://node22.serverfarm.org:1800
+ ... etc...
 
-      [miRNAs]
-      database = volvox_ncRNA
-      feature  = miRNA
-      remote renderer = http://node23.serverfarm.org:1800
+ [miRNAs]
+ database = volvox_ncRNA
+ feature = miRNA
+ remote renderer = http://node23.serverfarm.org:1800
 
 The *database* and *remote renderer* options are independent of each
 other, and can be mixed and matched according to your needs. See Running

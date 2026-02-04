@@ -17,18 +17,18 @@ class="external text" rel="nofollow">find the code here</a>.
 What's new:
 
 - **Scalability:** [JBrowse](../JBrowse.1) can now handle very
-  large data tracks, including human EST/SNP tracks, or tracks of
-  next-gen sequence reads. Large datasets are broken into smaller
-  chunks, so there is no loading delay for big tracks.
+ large data tracks, including human EST/SNP tracks, or tracks of
+ next-gen sequence reads. Large datasets are broken into smaller
+ chunks, so there is no loading delay for big tracks.
 - **Extensibility:** A Perl module (`ImageTrackRenderer.pm`) for
-  creating user-drawn image tracks is now available, based on the CPAN
-  <a href="http://search.cpan.org/perldoc?GD.pm" class="external text"
-  rel="nofollow">GD.pm</a> module. An example program is provided,
-  `draw-basepair-track.pl`, that uses this module to draw arcs over a
-  sequence representing the base-pairing interactions of RNA secondary
-  structure.
+ creating user-drawn image tracks is now available, based on the CPAN
+ <a href="http://search.cpan.org/perldoc?GD.pm" class="external text"
+ rel="nofollow">GD.pm</a> module. An example program is provided,
+ `draw-basepair-track.pl`, that uses this module to draw arcs over a
+ sequence representing the base-pairing interactions of RNA secondary
+ structure.
 - **Bug fixes:** Numerous display glitches have been fixed, including
-  issues with wide-screen monitors and long mostly-offscreen features.
+ issues with wide-screen monitors and long mostly-offscreen features.
 
 Note: The [JSON](../Glossary#JSON) format used by 1.1 *is not
 backward compatible with previous releases. If you are upgrading from an

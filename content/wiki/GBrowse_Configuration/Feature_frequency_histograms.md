@@ -27,13 +27,13 @@ out beyond 150K - Link plz?
 
 There are four steps for making histograms:
 
-1.  generate the density data using the `bp_generate_histogram.pl`
-    script.
-2.  load the density data using `bp_load_gff.pl` or
-    `bp_fast_load_gff.pl`.
-3.  declare a density aggregator to the gbrowse configuration file
-4.  add the density aggregator to the appropriate track in the
-    configuration file.
+1. generate the density data using the `bp_generate_histogram.pl`
+ script.
+2. load the density data using `bp_load_gff.pl` or
+ `bp_fast_load_gff.pl`.
+3. declare a density aggregator to the gbrowse configuration file
+4. add the density aggregator to the appropriate track in the
+ configuration file.
 
 The first step is to generate the density data. Currently this is done
 by generating a GFF file containing a set of "bin" feature types. Use
@@ -45,7 +45,7 @@ Assuming that your database is named "dicty", you have a feature named
 SNP, and you wish to generate a density distribution across 10,000 bp
 bins, here is the command you would use:
 
-     bp_generate_histogram.pl -merge -d dicty -bin 10000 SNP >snp_density.gff
+ bp_generate_histogram.pl -merge -d dicty -bin 10000 SNP >snp_density.gff
 
 This is saying to use the "dicty" database (-d) option, to use 10,000 bp
 bins (the -bin option) and to count the occurrences of the SNP feature
@@ -54,8 +54,8 @@ all types of SNPs into a single bin. Otherwise they will be stratified
 by their source. The resulting GFF file contains a series of entries
 like these ones:
 
-     Chr1  SNP bin 1     10000 49 + . bin Chr1:SNP
-     Chr1  SNP bin 10001 20000 29 + . bin Chr1:SNP
+ Chr1 SNP bin 1 10000 49 + . bin Chr1:SNP
+ Chr1 SNP bin 10001 20000 29 + . bin Chr1:SNP
 
 What this is saying is that there are now a series of pseudo-features of
 type "bin:SNP" that occupy successive 10,000 bp regions of the genome.
@@ -64,14 +64,14 @@ The score field contains the number of times a SNP was seen in that bin.
 You'll now load this file using `bp_load_gff.pl` or
 `bp_fast_load_gff.pl`:
 
-     bp_load_gff.pl -d dicty snp_density.gff
+ bp_load_gff.pl -d dicty snp_density.gff
 
 The next step is to tell GBrowse how to use this information. You do
 this by creating a new aggregator for the SNP density information. Open
 the GBrowse configuration file and find the aggregators option. Add a
 new aggregator that looks like this:
 
-     aggregators = snp_density{bin:SNP}
+ aggregators = snp_density{bin:SNP}
 
 This is declaring a new feature named "snp_density" that is composed of
 subparts of type bin:SNP.
@@ -81,15 +81,15 @@ will use the "xyplot" glyph, which can draw a number of graphs,
 including histograms. To add the SNP density information as a static
 track in the overview, create a section like this one:
 
-    [SNP:overview]
-    feature       = snp_density
-    glyph         = xyplot
-    graph_type    = boxes
-    scale         = right
-    bgcolor       = red
-    fgcolor       = red
-    height        = 20
-    key           = SNP Density
+ [SNP:overview]
+ feature = snp_density
+ glyph = xyplot
+ graph_type = boxes
+ scale = right
+ bgcolor = red
+ fgcolor = red
+ height = 20
+ key = SNP Density
 
 This article describes **glyphs** and **glyph configuration options** in
 GBrowse.
@@ -107,21 +107,21 @@ To set up a track so that the histogram appears when the user zooms out
 beyond 100,000 bp but shows the detailed information at higher
 magnifications, generate two track sections like these:
 
-     [SNPs]
-     feature       = snp
-     glyph         = triangle
-     point         = 1
-     orient        = N
-     height        = 6
-     bgcolor       = blue
-     fgcolor       = blue
-     key           = SNPs
+ [SNPs]
+ feature = snp
+ glyph = triangle
+ point = 1
+ orient = N
+ height = 6
+ bgcolor = blue
+ fgcolor = blue
+ key = SNPs
 
-     [SNPs:100000]
-     feature       = snp_density
-     glyph         = xyplot
-     graph_type    = boxes
-     scale         = right
+ [SNPs:100000]
+ feature = snp_density
+ glyph = xyplot
+ graph_type = boxes
+ scale = right
 
 The first track section sets up the defaults for the SNP track. SNPs are
 represented as blue triangles pointing North. The second track

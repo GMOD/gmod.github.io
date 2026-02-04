@@ -7,9 +7,9 @@ A new version of [Apollo](../Apollo.1) has been released.
 Highlights for this release include:
 
 - The "Sequence Aligner" ("Exon Detail Editor" with alignment viewing)
-  is now public
+ is now public
 - Brought back the "Types panel" which works in conjunction with the the
-  "Preferences editor"
+ "Preferences editor"
 - Various bug fixes
 
 As always, you can download the current version at:

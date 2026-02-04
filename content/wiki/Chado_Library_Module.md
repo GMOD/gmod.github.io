@@ -11,34 +11,34 @@ module](/wiki/Chado_Sequence_Module) can describe. It
 is expected that most of the description of a given library would come
 through the use of ontology terms.
 
-  Library module</span>](#Using_the_Library_module)
-  - [A FlyBase
-    cDNA library](#A_FlyBase_cDNA_library)
-    - [Background](#Background)
-    - [Implementation](#Implementation)
-    - [Relationship
-      graph](#Relationship_graph)
-    - [Naming
-      conventions](#Naming_conventions)
-  - [A dsRNA
-    library](#A_dsRNA_library)
-    - [Background](#Background_2)
-    - [Implementation](#Implementation_2)
-    - [Relationship
-      graph](#Relationship_graph_2)
+ Library module</span>](#Using_the_Library_module)
+ - [A FlyBase
+ cDNA library](#A_FlyBase_cDNA_library)
+ - [Background](#Background)
+ - [Implementation](#Implementation)
+ - [Relationship
+ graph](#Relationship_graph)
+ - [Naming
+ conventions](#Naming_conventions)
+ - [A dsRNA
+ library](#A_dsRNA_library)
+ - [Background](#Background_2)
+ - [Implementation](#Implementation_2)
+ - [Relationship
+ graph](#Relationship_graph_2)
 - [Tables](#Tables)
 - [Table:
-  library](#Table:_library)
+ library](#Table:_library)
 - [Table:
-  library_cvterm](#Table:_library_cvterm)
+ library_cvterm](#Table:_library_cvterm)
 - [Table:
-  library_feature](#Table:_library_feature)
+ library_feature](#Table:_library_feature)
 - [Table:
-  library_pub](#Table:_library_pub)
+ library_pub](#Table:_library_pub)
 - [Table:
-  library_synonym](#Table:_library_synonym)
+ library_synonym](#Table:_library_synonym)
 - [Table:
-  libraryprop](#Table:_libraryprop)
+ libraryprop](#Table:_libraryprop)
 
 ## Using the Library module
 
@@ -57,57 +57,57 @@ The cDNA library contains complementary DNA molecules synthesized from
 mRNA molecules in a cell. One cDNA library has only one cloning vector.
 
 - cDNA_clone: Complementary DNA; A piece of DNA copied from an mRNA and
-  spliced into a vector for propagation in a suitable host.
+ spliced into a vector for propagation in a suitable host.
 - cDNA: DNA synthesized by reverse transcriptase using RNA as a
-  template.
+ template.
 - EST: Expressed Sequence Tag: The sequence of a single sequencing read
-  from a cDNA clone or PCR product; typically a few hundred base pairs
-  long.
+ from a cDNA clone or PCR product; typically a few hundred base pairs
+ long.
 
 #### Implementation
 
-1.  Library name and uniquenames are generally from the first 2 letters
-    of the the cDNA_clones, or the first 2 letters and vector name e.g.
-    _AT library_, _HL_pOT2 library_
-2.  Library stored in _library_ table, type as _cDNA library_.
-3.  _libraryprop_ table stores the general description for each library
-    as type _comment_ and the vector for each library as type _element_.
-4.  Library synonyms are linked in _library_synonym_ table.
-5.  Library's references are linked in _library_pub_ table.
-6.  Each cDNA_clone, cDNA, EST, vector is a feature with the
-    corresponding type.
-7.  cDNA_clone has no residues information.
-8.  _library_feature_ connects library and its cDNA_clones.
-9.  cDNA, EST and vector are connected with cDNA_clone in
-    _feature_relationship_ table, as type _partof_. cDNA_clone is the
-    _object_id_, cDNA/EST/vector is the _subject_id_.
+1. Library name and uniquenames are generally from the first 2 letters
+ of the the cDNA_clones, or the first 2 letters and vector name e.g.
+ _AT library_, _HL_pOT2 library_
+2. Library stored in _library_ table, type as _cDNA library_.
+3. _libraryprop_ table stores the general description for each library
+ as type _comment_ and the vector for each library as type _element_.
+4. Library synonyms are linked in _library_synonym_ table.
+5. Library's references are linked in _library_pub_ table.
+6. Each cDNA_clone, cDNA, EST, vector is a feature with the
+ corresponding type.
+7. cDNA_clone has no residues information.
+8. _library_feature_ connects library and its cDNA_clones.
+9. cDNA, EST and vector are connected with cDNA_clone in
+ _feature_relationship_ table, as type _partof_. cDNA_clone is the
+ _object_id_, cDNA/EST/vector is the _subject_id_.
 
 #### Relationship graph
 
-                                             pOTB7
-                                     __________              vector/plasmid
-                                         |  --partof
-                             \/       AT13713
-     library -->library_feature ==> -------------------------   cDNA_clone
-                        ^     /\  --partof     ^
-                        ||      AY113251 |
-                  partof--  |   _________________  |    cDNA
-                                    |         |--partof
-                           BF499196   ________    |   ___________     EST
-                                  AT13713.contig1 |   CK130673
-                                         |       |   AT13713.contig2
-                                         |                                 ---------------------------------------- genomic contig
+ pOTB7
+ __________ vector/plasmid
+ | --partof
+ \/ AT13713
+ library -->library_feature ==> ------------------------- cDNA_clone
+ ^ /\ --partof ^
+ || AY113251 |
+ partof-- | _________________ | cDNA
+ | |--partof
+ BF499196 ________ | ___________ EST
+ AT13713.contig1 | CK130673
+ | | AT13713.contig2
+ | ---------------------------------------- genomic contig
 
 #### Naming conventions
 
 Rules for chado clones and clone features:
 
 - cDNA_clone: uniquename = FBclxxxxxxx, name = clone id number e.g.
-  _LD12345_
+ _LD12345_
 - cDNA: uniquename = accession number (if possible), name = clone id
-  number e.g. _LD12345_
+ number e.g. _LD12345_
 - EST: uniquename = accession number (if possible), name = clone id
-  number.5prime,3prime,:contig etc e.g. _LD12345.5prime_
+ number.5prime,3prime,:contig etc e.g. _LD12345.5prime_
 
 ### A dsRNA library
 
@@ -127,22 +127,22 @@ amplicons with genes and
 .
 
 - dsRNA library: contains collections of dsRNA amplicons, primarily from
-  the screening centers. Currently it holds the DRSC collection.
+ the screening centers. Currently it holds the DRSC collection.
 - dsRNA amplicon: sequence of 100-500 bp selected from genomic DNA
-  designed to amplify an exonic region or selected from cDNA
+ designed to amplify an exonic region or selected from cDNA
 - dsRNA primers: PCR primers pairs of 15-25 bp designed to amplify dsRNA
-  amplicon
+ amplicon
 
 #### Implementation
 
 - The dsRNA library uniquename and name is typically name or initials of
-  the screening center e.g. _DRSC_ for Drosophila RNAi Screening Center.
+ the screening center e.g. _DRSC_ for Drosophila RNAi Screening Center.
 - The dsRNA library is stored in _library_ table, type "dsRNA library".
 - The _libraryprop_ table stores a general description for each library
-  as type _comment_ and for the DRSC library the DNA amplified from as
-  type _strain_ value _Oregon R_.
+ as type _comment_ and for the DRSC library the DNA amplified from as
+ type _strain_ value _Oregon R_.
 - The _library_pub_ is reference to uniquename FBrf0188751 (personal
-  communication to FlyBase).
+ communication to FlyBase).
 
 Each dsRNA amplicon is stored in the _feature_ table. The uniquename is
 FBrinnnnnnn generated by script and tracked in a log file, the type is
@@ -170,13 +170,13 @@ _library_feature_ table.
 
 #### Relationship graph
 
-     ---------------------------------------------------------------------- chromosomal arm
-                         ^                                      ^
-                                                  |     floc                             |
-                                                   --------------------------------------      dsRNA
-                         ^           ^      / \       ^        ^
-                         |   fr      | |   fr   |           | |                  pcr primer R  ------------       |       ----------    pcr primer S
-                                 --partof                            ---------------------------------------   dsRNA library-->library_feature
+ ---------------------------------------------------------------------- chromosomal arm
+ ^ ^
+ | floc |
+ -------------------------------------- dsRNA
+ ^ ^ / \ ^ ^
+ | fr | | fr | | | pcr primer R ------------ | ---------- pcr primer S
+ --partof --------------------------------------- dsRNA library-->library_feature
 
 ## Tables
 
@@ -256,7 +256,7 @@ The table library_cvterm links a library to controlled vocabularies
 which describe the library. For instance, there might be a link to the
 anatomy cv for "head" or "testes" for a head or testes library.
 
-| F-Key                                                 | Name              | Type    | Description         | ----------------------------------------------------- | ----------------- | ------- | ------------------- |                                                       | library_cvterm_id | serial  | _PRIMARY KEY_       | [library](/wiki/Chado_Tables#Table:_library) | library_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)   | cvterm_id         | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)         | pub_id            | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ----------------------------------------------------- | ----------------- | ------- | ------------------- | | library_cvterm_id | serial | _PRIMARY KEY_ | [library](/wiki/Chado_Tables#Table:_library) | library_id | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 library_cvterm Structure
 
@@ -268,7 +268,7 @@ library_feature links a library to the clones which are contained in the
 library. Examples of such linked features might be "cDNA_clone" or
 "genomic_clone".
 
-| F-Key                                                 | Name               | Type    | Description         | ----------------------------------------------------- | ------------------ | ------- | ------------------- |                                                       | library_feature_id | serial  | _PRIMARY KEY_       | [library](/wiki/Chado_Tables#Table:_library) | library_id         | integer | _UNIQUE#1 NOT NULL_ | [feature](/wiki/Chado_Tables#Table:_feature) | feature_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ----------------------------------------------------- | ------------------ | ------- | ------------------- | | library_feature_id | serial | _PRIMARY KEY_ | [library](/wiki/Chado_Tables#Table:_library) | library_id | integer | _UNIQUE#1 NOT NULL_ | [feature](/wiki/Chado_Tables#Table:_feature) | feature_id | integer | _UNIQUE#1 NOT NULL_ |
 
 library_feature Structure
 
@@ -276,7 +276,7 @@ library_feature Structure
 
 ## Table: library_pub
 
-| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | library_pub_id | serial  | _PRIMARY KEY_       | [library](/wiki/Chado_Tables#Table:_library) | library_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)         | pub_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ----------------------------------------------------- | -------------- | ------- | ------------------- | | library_pub_id | serial | _PRIMARY KEY_ | [library](/wiki/Chado_Tables#Table:_library) | library_id | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | _UNIQUE#1 NOT NULL_ |
 
 library_pub Structure
 
@@ -364,7 +364,7 @@ library_synonym Structure
 
 ## Table: libraryprop
 
-| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | libraryprop_id | serial  | _PRIMARY KEY_       | [library](/wiki/Chado_Tables#Table:_library) | library_id     | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)   | type_id        | integer | _UNIQUE#1 NOT NULL_ |                                                       | value          | text    | rank           | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key | Name | Type | Description | ----------------------------------------------------- | -------------- | ------- | ------------------- | | libraryprop_id | serial | _PRIMARY KEY_ | [library](/wiki/Chado_Tables#Table:_library) | library_id | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | _UNIQUE#1 NOT NULL_ | | value | text | rank | integer | _UNIQUE#1 NOT NULL_ |
 
 libraryprop Structure
 

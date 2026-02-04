@@ -5,7 +5,7 @@ title: "Galaxy Tutorial 2012"
 
 This walks you through setting up and running a
 [Galaxy](/wiki/Galaxy) server. This tutorial was originally taught
-by [Dave Clements](/wiki/User:Clements) at the [2012 GMOD
+by Dave Clements at the [2012 GMOD
 Summer School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:
@@ -14,44 +14,44 @@ ami-a1de69c8, name: GMOD 2012 start day 3**, available in the US East
 Tutorial](/wiki/GMOD_Cloud_Tutorial) for information on
 how to get this AMI.
 
-  Galaxy Resources</span>](#Some_General_Galaxy_Resources)
+ Galaxy Resources</span>](#Some_General_Galaxy_Resources)
 - [Create a
-  Galaxy instance](#Create_a_Galaxy_instance)
-  - [Prerequisites](#Prerequisites)
-  - [Clone the
-    Galaxy repository](#Clone_the_Galaxy_repository)
-  - [Take
-    Advantage of the GMOD in the Cloud Directory
-    Structure](#Take_Advantage_of_the_GMOD_in_the_Cloud_Directory_Structure)
-  - [Update
-    Galaxy Configuration File](#Update_Galaxy_Configuration_File)
-  - [Use a more
-    robust database](#Use_a_more_robust_database)
-  - [Run,
-    Galaxy, Run!](#Run.2C_Galaxy.2C_Run.21)
+ Galaxy instance](#Create_a_Galaxy_instance)
+ - [Prerequisites](#Prerequisites)
+ - [Clone the
+ Galaxy repository](#Clone_the_Galaxy_repository)
+ - [Take
+ Advantage of the GMOD in the Cloud Directory
+ Structure](#Take_Advantage_of_the_GMOD_in_the_Cloud_Directory_Structure)
+ - [Update
+ Galaxy Configuration File](#Update_Galaxy_Configuration_File)
+ - [Use a more
+ robust database](#Use_a_more_robust_database)
+ - [Run,
+ Galaxy, Run!](#Run.2C_Galaxy.2C_Run.21)
 - [Running
-  analyses with Galaxy](#Running_analyses_with_Galaxy)
-  - [1. Access
-    your new Galaxy
-    instance](#1._Access_your_new_Galaxy_instance)
-  - [2. Create
-    a user](#2._Create_a_user)
-  - [2. Get Pig
-    Exons](#2._Get_Pig_Exons)
-    - [That's
-      odd](#That.27s_odd)
-    - [Our
-      first peek at the
-      Plumbing](#Our_first_peek_at_the_Plumbing)
-  - [3. Get Pig
-    Repeat Regions](#3._Get_Pig_Repeat_Regions)
-  - [4.
-    Identify genes and repeats that
-    overlap](#4._Identify_genes_and_repeats_that_overlap)
-  - [5. Group
-    and Count](#5._Group_and_Count)
-  - [6. Get
-    Exon Info back](#6._Get_Exon_Info_back)
+ analyses with Galaxy](#Running_analyses_with_Galaxy)
+ - [1. Access
+ your new Galaxy
+ instance](#1._Access_your_new_Galaxy_instance)
+ - [2. Create
+ a user](#2._Create_a_user)
+ - [2. Get Pig
+ Exons](#2._Get_Pig_Exons)
+ - [That's
+ odd](#That.27s_odd)
+ - [Our
+ first peek at the
+ Plumbing](#Our_first_peek_at_the_Plumbing)
+ - [3. Get Pig
+ Repeat Regions](#3._Get_Pig_Repeat_Regions)
+ - [4.
+ Identify genes and repeats that
+ overlap](#4._Identify_genes_and_repeats_that_overlap)
+ - [5. Group
+ and Count](#5._Group_and_Count)
+ - [6. Get
+ Exon Info back](#6._Get_Exon_Info_back)
 
 <a href="http://galaxyproject.org/" class="external text"
 
@@ -102,7 +102,7 @@ Results from searches are often further broken down into categories
 - **Source code**: show Galaxy source code related to my search
 - **Shared**: Show published Galaxy objects related to my search
 - **Documentation**: Show documentation (e.g. wiki pages, tool doc, ...)
-  related to my search.
+ related to my search.
 - **Abstracts**: Show papers related to my search.
 - **Requests**: Should feature requests related to my search.
 
@@ -141,8 +141,8 @@ currently not supported. The [GMOD Amazon Machine Image
 (AMI)](/wiki/Cloud) used for this course includes version 2.6.5 of
 the interpreter.
 
-    $ python --version
-    Python 2.6.5
+ $ python --version
+ Python 2.6.5
 
 Galaxy is distributed (and developed) using a distributed version
 control system called
@@ -150,9 +150,9 @@ control system called
 
 1.4.3:
 
-    $ hg --version
-    Mercurial Distributed SCM (version 1.4.3)
-    ...
+ $ hg --version
+ Mercurial Distributed SCM (version 1.4.3)
+ ...
 
 ### Clone the Galaxy repository
 
@@ -174,9 +174,9 @@ All of the Galaxy files are currently in the `~ubuntu` home directory
 under `Galaxy`. Let's start by moving this to the non-volatile disk, so
 to speak, on the *GMOD in the Cloud*-based AWS image we are using.
 
-    $ cd
-    $ mv Galaxy /data/dataHome/
-    $ ln -s /data/dataHome/Galaxy Galaxy
+ $ cd
+ $ mv Galaxy /data/dataHome/
+ $ ln -s /data/dataHome/Galaxy Galaxy
 
 ### Update Galaxy Configuration File
 
@@ -187,17 +187,17 @@ created at initialization time by copying `universe_wsgi.ini.sample`.
 However, if the file already exists it is not copied over. Copy the file
 and update it:
 
-    $ cd ~/Galaxy/galaxy-dist
-    $ cp universe_wsgi.ini.sample universe_wsgi.ini
-    $ pico universe_wsgi.ini
+ $ cd ~/Galaxy/galaxy-dist
+ $ cp universe_wsgi.ini.sample universe_wsgi.ini
+ $ pico universe_wsgi.ini
 
 Change the port from
 
-    #port = 8080
+ #port = 8080
 
 to this:
 
-    port = 8081
+ port = 8081
 
 Galaxy, like [WebApollo](/wiki/WebApollo) and several other
 components that were also covered at the course, will listen to port
@@ -206,11 +206,11 @@ different port.
 
 Change the host from
 
-    #host = 127.0.0.1
+ #host = 127.0.0.1
 
 to:
 
-    host = 0.0.0.0
+ host = 0.0.0.0
 
 This makes Galaxy visible to remote hosts, such as your laptop
 
@@ -219,11 +219,11 @@ instance
 
 Change this:
 
-    #brand = None
+ #brand = None
 
 to this:
 
-    brand = My Super Cool Brand
+ brand = My Super Cool Brand
 
 ### Use a more robust database
 
@@ -244,76 +244,76 @@ to work. Postgres is already installed on our AMI (it's the default
 Update `universe_wsgi.ini` file to use Postgres. Update the `Database`
 section of your Galaxy config file to look like:
 
-    # -- Database
+ # -- Database
 
-    # By default, Galaxy uses a SQLite database at 'database/universe.sqlite'.  You
-    # may use a SQLAlchemy connection string to specify an external database
-    # instead.  This string takes many options which are explained in detail in the
-    # config file documentation.
-    #database_connection = sqlite:///./database/universe.sqlite?isolation_level=IMMEDIATE
-    database_connection = postgres://ubuntu:@localhost:5432/galaxydb
+ # By default, Galaxy uses a SQLite database at 'database/universe.sqlite'. You
+ # may use a SQLAlchemy connection string to specify an external database
+ # instead. This string takes many options which are explained in detail in the
+ # config file documentation.
+ #database_connection = sqlite:///./database/universe.sqlite?isolation_level=IMMEDIATE
+ database_connection = postgres://ubuntu:@localhost:5432/galaxydb
 
-    # If the server logs errors about not having enough database pool connections,
-    # you will want to increase these values, or consider running more Galaxy
-    # processes.
-    #database_engine_option_pool_size = 5
-    #database_engine_option_max_overflow = 10
+ # If the server logs errors about not having enough database pool connections,
+ # you will want to increase these values, or consider running more Galaxy
+ # processes.
+ #database_engine_option_pool_size = 5
+ #database_engine_option_max_overflow = 10
 
-    # If using MySQL and the server logs the error "MySQL server has gone away",
-    # you will want to set this to some positive value (7200 should work).
-    #database_engine_option_pool_recycle = -1
+ # If using MySQL and the server logs the error "MySQL server has gone away",
+ # you will want to set this to some positive value (7200 should work).
+ #database_engine_option_pool_recycle = -1
 
-    # If large database query results are causing memory or response time issues in
-    # the Galaxy process, leave the result on the server instead.  This option is
-    # only available for PostgreSQL and is highly recommended.
-    database_engine_option_server_side_cursors = True
+ # If large database query results are causing memory or response time issues in
+ # the Galaxy process, leave the result on the server instead. This option is
+ # only available for PostgreSQL and is highly recommended.
+ database_engine_option_server_side_cursors = True
 
-    # Create only one connection to the database per thread, to reduce the
-    # connection overhead.  Recommended when not using SQLite:
-    database_engine_option_strategy = threadlocal
+ # Create only one connection to the database per thread, to reduce the
+ # connection overhead. Recommended when not using SQLite:
+ database_engine_option_strategy = threadlocal
 
-    # Log all database transactions, can be useful for debugging and performance
-    # profiling.  Logging is done via Python's 'logging' module under the qualname
-    # 'galaxy.model.orm.logging_connection_proxy'
-    #database_query_profiling_proxy = False
+ # Log all database transactions, can be useful for debugging and performance
+ # profiling. Logging is done via Python's 'logging' module under the qualname
+ # 'galaxy.model.orm.logging_connection_proxy'
+ #database_query_profiling_proxy = False
 
 Save the file.
 
 The `ubuntu` user has permission to create databases, so let's create
 the database that we told Galaxy to connect to:
 
-    $ createdb galaxydb
+ $ createdb galaxydb
 
 ### Run, Galaxy, Run!
 
 Galaxy includes a script to run it. This script also performs the Galaxy
 initialization the first time it is run. Run it now:
 
-    $ sh run.sh --reload
-    Initializing community_wsgi.ini from community_wsgi.ini.sample
-    Initializing datatypes_conf.xml from datatypes_conf.xml.sample
-    Initializing external_service_types_conf.xml from external_service_types_conf.xml.sample
-    Initializing migrated_tools_conf.xml from migrated_tools_conf.xml.sample
-    Initializing reports_wsgi.ini from reports_wsgi.ini.sample
-    Initializing shed_tool_conf.xml from shed_tool_conf.xml.sample
-    ... (a minute or two or three will pass) ...
-    galaxy.web.buildapp DEBUG 2012-08-15 07:08:36,756 Enabling 'x-forwarded-host' middleware
-    Starting server in PID 1408.
-    Serving on 0.0.0.0:8081 view at http://127.0.0.1:8081
+ $ sh run.sh --reload
+ Initializing community_wsgi.ini from community_wsgi.ini.sample
+ Initializing datatypes_conf.xml from datatypes_conf.xml.sample
+ Initializing external_service_types_conf.xml from external_service_types_conf.xml.sample
+ Initializing migrated_tools_conf.xml from migrated_tools_conf.xml.sample
+ Initializing reports_wsgi.ini from reports_wsgi.ini.sample
+ Initializing shed_tool_conf.xml from shed_tool_conf.xml.sample
+ ... (a minute or two or three will pass) ...
+ galaxy.web.buildapp DEBUG 2012-08-15 07:08:36,756 Enabling 'x-forwarded-host' middleware
+ Starting server in PID 1408.
+ Serving on 0.0.0.0:8081 view at http://127.0.0.1:8081
 
 This script performs several significant actions the first time it is
 run:
 
 - Creates initial configuration files, including the main file
-  `universe_wsgi.ini`, and empty directories for storing data files
+ `universe_wsgi.ini`, and empty directories for storing data files
 - Fetches all of the Galaxy framework's
-  <a href="https://wiki.galaxyproject.org/Admin/Config/Eggs"
-  class="external text" rel="nofollow">dependencies</a>, packaged as
-  Python eggs, for the current platform.
+ <a href="https://wiki.galaxyproject.org/Admin/Config/Eggs"
+ class="external text" rel="nofollow">dependencies</a>, packaged as
+ Python eggs, for the current platform.
 - Initializes its database. Galaxy uses a database migration system to
-  automatically handle any changes to the database schema. On first load
-  it runs all migrations to ensure the database is in a known state,
-  which may take a little time.
+ automatically handle any changes to the database schema. On first load
+ it runs all migrations to ensure the database is in a known state,
+ which may take a little time.
 
 Once the database is initialized, the normal startup process proceeds,
 loading tool configurations, starting the job runner, and finally
@@ -353,7 +353,7 @@ In the top bar, *select* **User → Register**. *Enter* your
 - Email address
 - Password
 - Public name: Public names must be at least four characters in length
-  and contain only lower-case letters, numbers, and the '-' character.
+ and contain only lower-case letters, numbers, and the '-' character.
 
 and *click* **Submit**.
 
@@ -389,10 +389,10 @@ Let's take a look at the data.
 - *Click on the dataset name* for a preview.
 - *Poke the eye* to see the full dataset.
 - *Click on pencil icon* and give dataset a better name (like
-  `Pig chr18 Exons`) and set the score column to column 5. *Click*
-  **Save**.
+ `Pig chr18 Exons`) and set the score column to column 5. *Click*
+ **Save**.
 - Change the history name from `unnamed history` (which is true, but not
-  useful) to something more meaningful.
+ useful) to something more meaningful.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/05/Galaxy_ExonSetAttributes.png/900px-Galaxy_ExonSetAttributes.png"
@@ -403,7 +403,7 @@ width="900" height="700" alt="Galaxy ExonSetAttributes.png" />
 
 - I know Galaxy can send datasets to UCSC for visualization.
 - But UCSC is not in the list of visualization options, even though we
-  just got the data from UCSC.
+ just got the data from UCSC.
 - That's *odd*
 
 <img
@@ -420,15 +420,15 @@ Galaxy-dist has several important subdirectories
 | `tool-data/` | Home of `.loc` files for sets of tools. `.loc` files tell where reference genomes, indexes, and the like can be found for particular tools. |
 | ` • shared/` | Contains subdirectories for `ensembl, `**`gbrowse`**`, genetrack, igv, jars, ncbi, rviewer, `**`ucsc`** |
 | ` • • ucsc/` | ` • • • ucsc_build_sites.txt` |
-| Defines which genomes can be viewed at the various UCSC sites. |  |
+| Defines which genomes can be viewed at the various UCSC sites. | |
 
 `susScr2` is not in the list for the main UCSC site. *Edit*
 `tool-data/shared/ucsc/ucsc_build_sites.txt` and *add it*.
 
 Restart Galaxy:
 
-    <control-c>
-    $ sh run.sh --reload
+ <control-c>
+ $ sh run.sh --reload
 
 *Click* the **Analyze Data** tab to reload the screen. **display at UCSC
 main** is now one of the options.

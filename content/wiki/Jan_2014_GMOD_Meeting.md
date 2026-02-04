@@ -16,13 +16,13 @@ please add it to the wiki or email it to
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">the
 GMOD helpdesk</a> and we will post it for you.
 
-  Speaker</span>](#Keynote_Speaker)
+ Speaker</span>](#Keynote_Speaker)
 - [Agenda](#Agenda)
-  - [Thursday,
-    January 16](#Thursday.2C_January_16)
-  - [Friday,
-    January 17](#Friday.2C_January_17)
-  - [Posters](#Posters)
+ - [Thursday,
+ January 16](#Thursday.2C_January_16)
+ - [Friday,
+ January 17](#Friday.2C_January_17)
+ - [Posters](#Posters)
 
 ## Keynote Speaker
 
@@ -51,7 +51,7 @@ Ontology Consortium.
 
 ### Thursday, January 16
 
-| Time  | Topic             | Presenter(s)                                  | Presentation                                                                                                      | ----- | ----------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | 09:15 | Introductions     | [Scott Cain](/wiki/User:Scott) | 09:30 | The State of GMOD | [Scott Cain](/wiki/User:Scott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/State_of_GMOD_2014.pdf" |
+| Time | Topic | Presenter(s) | Presentation | ----- | ----------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | 09:15 | Introductions | Scott Cain | 09:30 | The State of GMOD | Scott Cain | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/State_of_GMOD_2014.pdf" |
 
 class="internal" title="State of GMOD 2014.pdf">Slides</a>, <a href="http://youtu.be/8DXWzgag8R4" class="external text"
 
@@ -60,9 +60,9 @@ title="MaraKim GMOD2014.pdf">Slides</a>, <a href="http://youtu.be/Soam8O3g1jg" c
 class="internal" title="AndrewSu GMOD2014.pptx">Slides</a>,<a href="https://www.youtube.com/watch?v=RVijs5ry05E"
 class="external text" rel="nofollow">YouTube</a> and <a href="https://www.youtube.com/watch?v=dGHXo-iNsyU"
 class="external text" rel="nofollow">some of the discussion
-following</a> | 12:00 | Lunch and poster session | 1:15 | [JBrowse](/wiki/JBrowse) and [WebApollo](/wiki/WebApollo) | <a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
-Buels</a> | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/37/RBuels_JBrowse_2014.pdf"
-class="internal" title="RBuels JBrowse 2014.pdf">Slides</a> | 2:00 | Migrating from GBrowse to JBrowse | [Richard Hayes](/wiki/User:Richard_Hayes) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/Richard_Hayes_2014.pdf"
+following</a> | 12:00 | Lunch and poster session | 1:15 | [JBrowse](/wiki/JBrowse) and [WebApollo](/wiki/WebApollo) | Robert
+Buels | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/37/RBuels_JBrowse_2014.pdf"
+class="internal" title="RBuels JBrowse 2014.pdf">Slides</a> | 2:00 | Migrating from GBrowse to JBrowse | Richard Hayes | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/Richard_Hayes_2014.pdf"
 class="internal" title="Richard Hayes 2014.pdf">Slides</a> | 2:30 | Crowdsourcing genomics with Ash dieback | <a href="http://www.tsl.ac.uk/profile/dan-maclean.asp"
 class="external text" rel="nofollow">Dan MacLean</a> and <a href="http://www.tsl.ac.uk/profile/martin-page.asp"
 class="external text" rel="nofollow">Martin Page</a> | <a
@@ -131,8 +131,8 @@ Slides unavailable</td>
 <td>11:30</td>
 <td><a href="/wiki/Canto" title="Canto">Canto</a> community curation tool
 (screencast)</td>
-<td><a href="/wiki/User%253AGirlwithglasses" title="User%253AGirlwithglasses">Amelia
-Ireland</a> for Val Wood, PomBase</td>
+<td>Amelia
+Ireland for Val Wood, PomBase</td>
 <td><a href="http://www.youtube.com/watch?v=-cj_PdJi68A"
 class="external text" rel="nofollow">Video at YouTube</a></td>
 </tr>

@@ -3,15 +3,15 @@ title: "FlyBase Comparative Genomics Data"
 ---
 # FlyBase Comparative Genomics Data
 
-  Genomics Data Implementation in
-  Chado</span>](#Comparative_Genomics_Data_Implementation_in_Chado)
-  - [Background](#Background)
-  - [Orthology](#Orthology)
-    - [a)
-      orthologous regions](#a.29_orthologous_regions)
-    - [b)
-      orthologous genes](#b.29_orthologous_genes)
-  - [Synteny](#Synteny)
+ Genomics Data Implementation in
+ Chado</span>](#Comparative_Genomics_Data_Implementation_in_Chado)
+ - [Background](#Background)
+ - [Orthology](#Orthology)
+ - [a)
+ orthologous regions](#a.29_orthologous_regions)
+ - [b)
+ orthologous genes](#b.29_orthologous_genes)
+ - [Synteny](#Synteny)
 
 # Comparative Genomics Data Implementation in Chado
 

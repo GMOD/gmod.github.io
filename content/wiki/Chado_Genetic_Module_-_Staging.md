@@ -16,22 +16,22 @@ Hackathon](/wiki/GMOD_Evo_Hackathon). Please edit the
 table and column descriptions below. These updates will be added to the
 PostgreSQL comments before the next Chado release.
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Tables](#Tables)
-  - [Table:
-    environment](#Table:_environment)
-  - [Table:
-    environment_cvterm](#Table:_environment_cvterm)
-  - [Table:
-    feature_genotype](#Table:_feature_genotype)
-  - [Table:
-    genotype](#Table:_genotype)
-  - [Table:
-    phendesc](#Table:_phendesc)
-  - [Table:
-    phenotype_comparison](#Table:_phenotype_comparison)
-  - [Table:
-    phenstatement](#Table:_phenstatement)
+ - [Table:
+ environment](#Table:_environment)
+ - [Table:
+ environment_cvterm](#Table:_environment_cvterm)
+ - [Table:
+ feature_genotype](#Table:_feature_genotype)
+ - [Table:
+ genotype](#Table:_genotype)
+ - [Table:
+ phendesc](#Table:_phendesc)
+ - [Table:
+ phenotype_comparison](#Table:_phenotype_comparison)
+ - [Table:
+ phenstatement](#Table:_phenstatement)
 
 # Introduction
 
@@ -45,11 +45,11 @@ explanations of parts of this module.
 
 The environmental component of a phenotype description.
 
-| FK  | Name           | Type   | Description |
+| FK | Name | Type | Description |
 |-----|----------------|--------|-------------------|
-|  | environment_id | serial | *PRIMARY KEY* |
-|  | uniquename | text | *UNIQUE NOT NULL* |
-|  | description | text   public.environment Structure |  |
+| | environment_id | serial | *PRIMARY KEY* |
+| | uniquename | text | *UNIQUE NOT NULL* |
+| | description | text public.environment Structure | |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -64,7 +64,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | environment_cvterm_id | serial | *PRIMARY KEY* |
+| | environment_cvterm_id | serial | *PRIMARY KEY* |
 | [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -222,7 +222,7 @@ Tables referencing this one via Foreign Key Constraints:
 Discussion
 
 OPEN QUESTION: for multicopy transgenes, should we include a 'n_copies'
-column as well? -- [Brain Osborne](/wiki/User:Bosborne), Feb
+column as well? -- Brain Osborne, Feb
 2007
 
 ------------------------------------------------------------------------
@@ -234,10 +234,10 @@ made in any one publication.
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | phendesc_id | serial | *PRIMARY KEY* |
+| | phendesc_id | serial | *PRIMARY KEY* |
 | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
 | [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |
-|  | description | text | *NOT NULL* |
+| | description | text | *NOT NULL* |
 | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 | [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
@@ -252,7 +252,7 @@ Comparison of phenotypes e.g., genotype1/environment1/phenotype1
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | phenotype_comparison_id | serial | *PRIMARY KEY* |
+| | phenotype_comparison_id | serial | *PRIMARY KEY* |
 | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype1_id | integer | *UNIQUE#1 NOT NULL* |
 | [environment](/wiki/Chado_Tables#Table:_environment) | environment1_id | integer | *UNIQUE#1 NOT NULL* |
 | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype2_id | integer | *UNIQUE#1 NOT NULL* |
@@ -260,7 +260,7 @@ Comparison of phenotypes e.g., genotype1/environment1/phenotype1
 | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype1_id | integer | *UNIQUE#1 NOT NULL* |
 | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype2_id | integer | [pub](/wiki/Chado_Tables#Table:_pub) |
 | pub_id | integer | *UNIQUE#1 NOT NULL* | [organism](/wiki/Chado_Tables#Table:_organism) |
-| organism_id | integer | *NOT NULL* |  |
+| organism_id | integer | *NOT NULL* | |
 
 public.phenotype_comparison Structure
 
@@ -279,7 +279,7 @@ environment, and phenotype.
 
 | FK | Name | Type | Description |
 |----|----|----|----|
-|  | phenstatement_id | serial | *PRIMARY KEY* |
+| | phenstatement_id | serial | *PRIMARY KEY* |
 | [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
 | [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |
 | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |

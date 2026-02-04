@@ -15,32 +15,32 @@ TODO/wishlist for JBrowse:
 - putting track list into separate DOM element (e.g., Drupal "block")
 - "Browser" API: anything you can do manually
 - Hooks:
-  - featureCreate: has access to: feature data, feature HTML element,
-    can:
-    - style the element, and
-    - add callbacks to the element
-  - featureEventHooks:
-    { click: function(feature array, HTML element, getAttr, event)
-     mouseover: function(...
-     mouseout: ...
-     [DOM event name]: [callback function]
-    }
+ - featureCreate: has access to: feature data, feature HTML element,
+ can:
+ - style the element, and
+ - add callbacks to the element
+ - featureEventHooks:
+ { click: function(feature array, HTML element, getAttr, event)
+ mouseover: function(...
+ mouseout: ...
+ [DOM event name]: [callback function]
+ }
 
-    current approach:
+ current approach:
 
-    fields:
-    { "start": 1,
-      "end": 2,
-      "strand": 3,
-      ...
-    }
+ fields:
+ { "start": 1,
+ "end": 2,
+ "strand": 3,
+ ...
+ }
 
-    changing to: getAttr
+ changing to: getAttr
 
 - - access to region selections (e.g., for creation of lists of
-    features)
-  - function that: takes currently visible sequence, PSSM or set of
-    regexes, returns: set of regions
+ features)
+ - function that: takes currently visible sequence, PSSM or set of
+ regexes, returns: set of regions
 
 "Browser" API extensions:
 
@@ -62,9 +62,9 @@ common GBrowse glyphs not currently reproducible in JBrowse:
 
 - LD plot? (not common)
 - GBrowse uses gene-\>mRNA relationships to layout ("bump") transcripts
-  for a given gene together.
+ for a given gene together.
 - GBrowse shows different representation of break between read pairs and
-  gaps within individual reads
+ gaps within individual reads
 - Glyph/image.pm (associates images with seqfeatures)
 
 General JBrowse feature requests:

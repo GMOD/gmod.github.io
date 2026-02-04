@@ -13,23 +13,23 @@ height="91" alt="Dow AgroSciences" /></a>
 available for someone with GMOD experience. The candidate proposed here
 will be responsible for three main tasks and several secondary ones:
 
-1.  Install the open source software components for the
-    <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
-    database, data loaders, and genome browser.
-2.  Deploy the [GBrowse](../GBrowse.1) genome browser in a
-    centralized location in our intranet, which can be used by Dow
-    AgroSciences scientists across functions.
-3.  Test the system by performing preprocess (e.g annotate, perform
-    alignments) and upload whole-genome data from Arabidopsis.
-4.  Link the genome browser to Dow AgroSciences major internal
-    databases, such as Variety, markerDB, QTL locate, and microarray
-    database.
-5.  Provide integration tests to ensure the transparency of the data
-    among the different systems.
-6.  Present to other Dow AgroSciences scientists to raise awareness of
-    capability.
-7.  Complete written documentation of project development,
-    implementation, and continued maintenance.
+1. Install the open source software components for the
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
+ database, data loaders, and genome browser.
+2. Deploy the [GBrowse](../GBrowse.1) genome browser in a
+ centralized location in our intranet, which can be used by Dow
+ AgroSciences scientists across functions.
+3. Test the system by performing preprocess (e.g annotate, perform
+ alignments) and upload whole-genome data from Arabidopsis.
+4. Link the genome browser to Dow AgroSciences major internal
+ databases, such as Variety, markerDB, QTL locate, and microarray
+ database.
+5. Provide integration tests to ensure the transparency of the data
+ among the different systems.
+6. Present to other Dow AgroSciences scientists to raise awareness of
+ capability.
+7. Complete written documentation of project development,
+ implementation, and continued maintenance.
 
 Interested candidates please send a resume to Mindi Dippold at
 <a href="mailto:mdippold@dow.com" class="external text"

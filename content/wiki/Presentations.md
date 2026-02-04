@@ -6,33 +6,33 @@ title: "Presentations"
 An assorted collection of recent presentations given by GMOD
 participants.
 
-  improved* Chado genetics
-  module</span>](#The_new_and_improved_Chado_genetics_module)
+ improved* Chado genetics
+ module</span>](#The_new_and_improved_Chado_genetics_module)
 - [Phenotype
-  Annotation Tool and Ontologies at
-  dictyBase](#Phenotype_Annotation_Tool_and_Ontologies_at_dictyBase)
+ Annotation Tool and Ontologies at
+ dictyBase](#Phenotype_Annotation_Tool_and_Ontologies_at_dictyBase)
 - [Chado -
-  Generic module organism database
-  schema](#Chado_-_Generic_module_organism_database_schema)
+ Generic module organism database
+ schema](#Chado_-_Generic_module_organism_database_schema)
 - [Chado and
-  Interoperability](#Chado_and_Interoperability)
+ Interoperability](#Chado_and_Interoperability)
 - [Principles for
-  Building Biomedical
-  Ontologies](#Principles_for_Building_Biomedical_Ontologies)
+ Building Biomedical
+ Ontologies](#Principles_for_Building_Biomedical_Ontologies)
 - [Chado -
-  generic model organism database
-  schema](#Chado_-_generic_model_organism_database_schema)
+ generic model organism database
+ schema](#Chado_-_generic_model_organism_database_schema)
 - [GMOD
-  Administrivia](#GMOD_Administrivia)
+ Administrivia](#GMOD_Administrivia)
 - [Chado for
-  evolutionary science](#Chado_for_evolutionary_science)
+ evolutionary science](#Chado_for_evolutionary_science)
 - [Flybase
-  next-generation](#Flybase_next-generation)
+ next-generation](#Flybase_next-generation)
 - [Comparative
-  Genomics with GMOD and
-  Bioperl](#Comparative_Genomics_with_GMOD_and_Bioperl)
+ Genomics with GMOD and
+ Bioperl](#Comparative_Genomics_with_GMOD_and_Bioperl)
 - [The GMOD
-  Project: Order from Chaos](#The_GMOD_Project:_Order_from_Chaos)
+ Project: Order from Chaos](#The_GMOD_Project:_Order_from_Chaos)
 
 ### The *new and improved* Chado genetics module
 

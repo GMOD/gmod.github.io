@@ -6,20 +6,20 @@ title: "GBrowse Tutorial 2010"
 TutorialHeader \| what = GBrowse \| where = [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas)
-\| who = [Scott Cain](/wiki/User:Scott) \| when = May 2010 \|
+\| who = Scott Cain \| when = May 2010 \|
 logo = GBrowseLogo.png
 
-  VMware](#VMware)
+ VMware](#VMware)
 - [Caveats](#Caveats)
 - [Prerequisites](#Prerequisites)
 - [Install
-  GBrowse](#Install_GBrowse)
+ GBrowse](#Install_GBrowse)
 - [Tutorial](#Tutorial)
 - [Basic Chado
-  Configuration (if we have
-  time)](#Basic_Chado_Configuration_.28if_we_have_time.29)
-  - [Materialized views for
-    searching](#Materialized_views_for_searching)
+ Configuration (if we have
+ time)](#Basic_Chado_Configuration_.28if_we_have_time.29)
+ - [Materialized views for
+ searching](#Materialized_views_for_searching)
 
 ## VMware
 
@@ -35,13 +35,13 @@ class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
 
-| Purpose | Username | Password         | ------- | -------- | ---------------- | Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
+| Purpose | Username | Password | ------- | -------- | ---------------- | Shell | gmod | gmodamericas2010 | MySQL | root | gmodamericas2010 |
 
 ## Caveats
 
 **Important Note**
 
-This  describes the
+This describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -56,8 +56,8 @@ Installed before using apt or cpan.
 
 Easily installed via the cpan shell:
 
-     sudo cpan
-     cpan> install Bio::Graphics::Browser2
+ sudo cpan
+ cpan> install Bio::Graphics::Browser2
 
 Which gets all of the prereqs that aren't installed on the machine.
 
@@ -72,8 +72,8 @@ class="external text" rel="nofollow">Bio::DB::Das::Chado</a> was
 installed when we created the image, but I've since released a new
 version, so we can install the new version with the cpan shell:
 
-     sudo cpan
-     cpan> install Bio::DB::Das::Chado</enter>
+ sudo cpan
+ cpan> install Bio::DB::Das::Chado</enter>
 
 Simple config file in `/etc/gbrowse2/pythium.conf`
 
@@ -93,39 +93,39 @@ several tables). To create a materialized view that makes searching a
 GBrowse <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 instance a faster, we can do this:
 
-     gmod_materialized_view_tool.pl -c
+ gmod_materialized_view_tool.pl -c
 
 which will ask us several obscure questions for which we need to provide
 obscure answers:
 
-     Give your materialized view a name (word characters only):
-     all_feature_names
+ Give your materialized view a name (word characters only):
+ all_feature_names
 
-     Where will this MV be located? (schemaname.tablename):
-     public.all_feature_names
+ Where will this MV be located? (schemaname.tablename):
+ public.all_feature_names
 
-     A view with this name already exists; do you want to replace it
-     with a materialized view? [y|n]
-     y
+ A view with this name already exists; do you want to replace it
+ with a materialized view? [y|n]
+ y
 
-     How often, in seconds, should the MV be refreshed?
-     You can also type 'daily', 'weekly', 'monthly' (30 days), or 'yearly' (365 days):
-     weekly
+ How often, in seconds, should the MV be refreshed?
+ You can also type 'daily', 'weekly', 'monthly' (30 days), or 'yearly' (365 days):
+ weekly
 
-     Enter specifications for the materialized view, OR provide a file in which
-     the specs are written ('? for help):
-     feature_id integer,name varchar(255)
+ Enter specifications for the materialized view, OR provide a file in which
+ the specs are written ('? for help):
+ feature_id integer,name varchar(255)
 
-     Enter the SQL query for the materialized view,
-     or a file containing only the query:
-     SELECT feature_id,CAST(substring(uniquename from 0 for 255) as varchar(255)) as name FROM feature UNION SELECT feature_id, name FROM feature where name is not null UNION SELECT fs.feature_id,s.name FROM feature_synonym fs, synonym s WHERE fs.synonym_id = s.synonym_id
+ Enter the SQL query for the materialized view,
+ or a file containing only the query:
+ SELECT feature_id,CAST(substring(uniquename from 0 for 255) as varchar(255)) as name FROM feature UNION SELECT feature_id, name FROM feature where name is not null UNION SELECT fs.feature_id,s.name FROM feature_synonym fs, synonym s WHERE fs.synonym_id = s.synonym_id
 
-     Enter a comma separated list of fields to index (or return for none):
-     feature_id,name
+ Enter a comma separated list of fields to index (or return for none):
+ feature_id,name
 
-     Enter the SQL queries for special indexes,
-     or a file containing only the query (or return for none):
-     create index all_feature_names_lower_name on all_feature_names (lower(name))
+ Enter the SQL queries for special indexes,
+ or a file containing only the query (or return for none):
+ create index all_feature_names_lower_name on all_feature_names (lower(name))
 
-     Enter 'y' to confirm, 'n' to re-enter data:
-     y
+ Enter 'y' to confirm, 'n' to re-enter data:
+ y

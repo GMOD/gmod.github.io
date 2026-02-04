@@ -3,7 +3,7 @@ title: "Glossary"
 ---
 # Glossary
 
-  AJAX](#AJAX)
+ AJAX](#AJAX)
 - [API](#API)
 - [BAM](#BAM)
 - [CPAN](#CPAN)
@@ -13,21 +13,21 @@ title: "Glossary"
 - [DAS](#DAS)
 - [Database](#Database)
 - [Database
-  Management System](#Database_Management_System)
+ Management System](#Database_Management_System)
 - [Database
-  Schema](#Database_Schema)
+ Schema](#Database_Schema)
 - [DBMS](#DBMS)
 - [DBMS-Database](#DBMS-Database)
 - [DBMS-Schema](#DBMS-Schema)
 - [FASTA](#FASTA)
 - [Foreign
-  Key](#Foreign_Key)
+ Key](#Foreign_Key)
 - [Gene Finder
-  Format](#Gene_Finder_Format)
+ Format](#Gene_Finder_Format)
 - [Generic
-  Feature Format](#Generic_Feature_Format)
+ Feature Format](#Generic_Feature_Format)
 - [General
-  Feature Format](#General_Feature_Format)
+ Feature Format](#General_Feature_Format)
 - [GFF](#GFF)
 - [GFF2](#GFF2)
 - [GFF3](#GFF3)
@@ -40,17 +40,17 @@ title: "Glossary"
 - [Linux](#Linux)
 - [Middleware](#Middleware)
 - [Object-Relational
-  Mapping](#Object-Relational_Mapping)
+ Mapping](#Object-Relational_Mapping)
 - [Operating
-  System](#Operating_System)
+ System](#Operating_System)
 - [ORM](#ORM)
 - [OS](#OS)
 - [Perl](#Perl)
 - [RDBMS](#RDBMS)
 - [Relational](#Relational)
 - [Relational
-  Database Management
-  System](#Relational_Database_Management_System)
+ Database Management
+ System](#Relational_Database_Management_System)
 - [SAM](#SAM)
 - [SAMtools](#SAMtools)
 - [Schema](#Schema)
@@ -88,8 +88,8 @@ or *GUI*, which is a direct user interface to a resource.
 
 *BAM* is a binary version of *[Sequence Alignment/Map (SAM)](#SAM)*
 format. BAM and SAM are both part of [SAMtools](#SAMtools). BAM is
-compressed, binary, indexed format for [Next Generation
-Sequencing](/wiki/Next_Generation_Sequencing)
+compressed, binary, indexed format for Next Generation
+Sequencing
 data. [GBrowse](/wiki/GBrowse) 2 has an adaptor that can read BAM
 data.
 
@@ -102,7 +102,7 @@ language.
 See also
 
 - <a href="http://cpan.org" class="external text" rel="nofollow">CPAN</a>
-  web site.
+ web site.
 
 ### CSS
 
@@ -114,10 +114,10 @@ defined in a single place and then referred to from many pages.
 See also
 
 - <a href="http://www.w3.org/Style/CSS/" class="external text"
-  rel="nofollow">CSS Home Page @ W3C</a>
+ rel="nofollow">CSS Home Page @ W3C</a>
 - [MediaWiki:Common.css](/wiki/MediaWiki_Common.css) -
-  Extensions to MediaWiki's default CSS that we have made on this web
-  site.
+ Extensions to MediaWiki's default CSS that we have made on this web
+ site.
 
 ### CVS
 
@@ -129,9 +129,9 @@ files. GMOD now uses [SVN](#SVN).
 See Also:
 
 - <a href="/wiki/Subversion" class="mw-redirect"
-  title="Subversion">Subversion</a>
+ title="Subversion">Subversion</a>
 - <a href="http://ximbiot.com/cvs/" class="external text"
-  rel="nofollow">CVS Home Page</a>
+ rel="nofollow">CVS Home Page</a>
 
 ### DAG
 
@@ -143,7 +143,7 @@ follow connections out of that node, you will never return to it.
 See also:
 
 - <a href="http://en.wikipedia.org/wiki/Directed_acyclic_graph"
-  class="external text" rel="nofollow">Wikipedia</a>
+ class="external text" rel="nofollow">Wikipedia</a>
 
 ### DAS
 
@@ -251,20 +251,20 @@ which is often pipe ("\|") separated.
 A basic example, showing "ctg123", a DNA sequence that is 338
 nucleotides long:
 
-    >ctg123
-    cttctgggcgtacccgattctcggagaacttgccgcaccattccgccttg
-    tgttcattgctgcctgcatgttcattgtctacctcggctacgtgtggcta
-    tctttcctcggtgccctcgtgcacggagtcgagaaaccaaagaacaaaaa
-    aagaaattaaaatatttattttgctgtggtttttgatgtgtgttttttat
-    aatgatttttgatgtgaccaattgtacttttcctttaaatgaaatgtaat
-    cttaaatgtatttccgacgaattcgaggcctgaaaagt
+ >ctg123
+ cttctgggcgtacccgattctcggagaacttgccgcaccattccgccttg
+ tgttcattgctgcctgcatgttcattgtctacctcggctacgtgtggcta
+ tctttcctcggtgccctcgtgcacggagtcgagaaaccaaagaacaaaaa
+ aagaaattaaaatatttattttgctgtggtttttgatgtgtgttttttat
+ aatgatttttgatgtgaccaattgtacttttcctttaaatgaaatgtaat
+ cttaaatgtatttccgacgaattcgaggcctgaaaagt
 
 FASTA entries can be included at the end of [GFF3](#GFF3) files.
 
 See also:
 
 - <a href="http://en.wikipedia.org/wiki/Fasta_format"
-  class="external text" rel="nofollow">FASTA format</a> at Wikipedia.
+ class="external text" rel="nofollow">FASTA format</a> at Wikipedia.
 
 ### Foreign Key
 
@@ -322,7 +322,7 @@ See also:
 
 - [GFF3](/wiki/GFF3)
 - <a href="http://www.sequenceontology.org/gff3.shtml"
-  class="external text" rel="nofollow">GFF3 Specification</a>
+ class="external text" rel="nofollow">GFF3 Specification</a>
 
 ### Git
 
@@ -365,8 +365,8 @@ encountered in GMOD primarily as a language to construct user interfaces
 
 See also:
 
--  - GMOD pages tagged as
-  related to Java.
+- - GMOD pages tagged as
+ related to Java.
 
 ### JRE
 
@@ -382,7 +382,7 @@ data-interchange format. It is used in GMOD in
 See also:
 
 - <a href="http://www.json.org" class="external text"
-  rel="nofollow">JSON.org</a>
+ rel="nofollow">JSON.org</a>
 
 ### Linux
 
@@ -393,9 +393,9 @@ operating system for GMOD.
 See also:
 
 - [Computing
-  Requirements](/wiki/Computing_Requirements)
--  - List of GMOD pages
-  tagged as related to Linux.
+ Requirements](/wiki/Computing_Requirements)
+- - List of GMOD pages
+ tagged as related to Linux.
 
 ### Middleware
 
@@ -406,8 +406,8 @@ does not work.
 
 See also:
 
--  -
-  List of GMOD pages tagged as related to middleware.
+- -
+ List of GMOD pages tagged as related to middleware.
 
 ### Object-Relational Mapping
 
@@ -422,8 +422,8 @@ object-oriented languages, and relational databases.
 See also:
 
 - <a href="http://en.wikipedia.org/wiki/Object-relational_mapping"
-  class="external text" rel="nofollow">Object-relational mapping at
-  Wikipedia</a>
+ class="external text" rel="nofollow">Object-relational mapping at
+ Wikipedia</a>
 
 ### Operating System
 
@@ -434,7 +434,7 @@ systems are <a href="http://www.microsoft.com" class="external text"
 See also:
 
 - [Computing
-  Requirements](/wiki/Computing_Requirements)
+ Requirements](/wiki/Computing_Requirements)
 
 ### ORM
 
@@ -460,11 +460,11 @@ this work.
 See also:
 
 - <a href="http://www.perl.org/" class="external text" rel="nofollow">Perl
-  Home Page</a>
+ Home Page</a>
 - <a href="http://cpan.perl.org/" class="external text"
-  rel="nofollow">Perl's open source library repository.</a>
--  - GMOD pages tagged as
-  related to Perl.
+ rel="nofollow">Perl's open source library repository.</a>
+- - GMOD pages tagged as
+ related to Perl.
 
 ### RDBMS
 
@@ -494,8 +494,8 @@ System](#Database_Management_System).
 ### SAM
 
 ***S**equence **A**lignment/**M**ap* format. SAM is a text format for
-[Next Generation
-Sequencing](/wiki/Next_Generation_Sequencing)
+Next Generation
+Sequencing
 data. It is a part of [SAMtools](#SAMtools).
 [GBrowse](/wiki/GBrowse) 2 has an adaptor that can read SAM data.
 
@@ -503,8 +503,8 @@ data. It is a part of [SAMtools](#SAMtools).
 
 *<a href="http://samtools.sourceforge.net" class="external text"
 
-storing, manipulating, and accessing [Next Generation
-Sequencing](/wiki/Next_Generation_Sequencing)
+storing, manipulating, and accessing Next Generation
+Sequencing
 data.
 
 ### Schema
@@ -540,7 +540,7 @@ update the main GMOD repository at SourceForge.
 See Also:
 
 - <a href="/wiki/Subversion" class="mw-redirect"
-  title="Subversion">Subversion</a>
+ title="Subversion">Subversion</a>
 
 ### Unix
 

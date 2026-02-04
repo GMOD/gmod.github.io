@@ -11,18 +11,18 @@ width="600" height="238" alt="GMOD Americas 2011" />
 The [March 2011 GMOD
 Meeting](/wiki/March_2011_GMOD_Meeting) will be
 followed with a day of *Satellite Meetings.* Satellite meetings are
-birds-of-a-feather gatherings at  where community members with
+birds-of-a-feather gatherings at where community members with
 common interests gather for part or all of a day to discuss and work on
 a topic of interest to them. This is the third event that will have
 satellite meetings.
 
-  Topics](#Topics)
+ Topics](#Topics)
 - [Previous
-  Topics](#Previous_Topics)
+ Topics](#Previous_Topics)
 - [About
-  GMOD](#About_GMOD)
+ GMOD](#About_GMOD)
 - [Help Get the
-  Word Out](#Help_Get_the_Word_Out)
+ Word Out](#Help_Get_the_Word_Out)
 
 ## Topics
 
@@ -34,34 +34,34 @@ Meeting](/wiki/March_2011_GMOD_Meeting).
 
 | Topic | Proposers and/or Organizers | Time | Comments |
 |----|----|----|----|
-| [GMOD Evo Hackathon Followup](/wiki/GMOD_Evo_Hackathon#March_2011_Satellite) | [Duke Leto](/wiki/User:Dukeleto) | TBD | [Followup meeting](/wiki/GMOD_Evo_Hackathon#March_2011_Satellite) to the [GMOD Evo Hackathon](/wiki/GMOD_Evo_Hackathon) held at NESCent in November 2011. |
-| [Extending Embedding and Customizing JBrowse](/wiki/Extending_Embedding_and_Customizing_JBrowse) | [Mitch Skinner](/wiki/User:MitchSkinner) | TBD | [JBrowse](/wiki/JBrowse) has a few different extension points, but they're not (yet) well-documented or widely used. The GMOD meeting would be a good time to review those [APIs](/wiki/Glossary#API), relate them to the things that people want to do with them, discuss any potential changes or new APIs to support specific use cases, and potentially start to implement an extension. |
-| [GMOD Web services toolkit](/wiki/GMOD_RPC_API) | [Josh Goodman](/wiki/User:Jogoodma) | Cancelled | ~~Come to work on or discuss the [GMOD Web services API and the toolkit](/wiki/GMOD_RPC_API).~~ |
-| [GMOD in the Sequencing Center](/wiki/GMOD_in_the_Sequencing_Center) | [Chris Hemmerich](/wiki/User:Chemmeri), [Dave Clements](/wiki/User:Clements) | TBD | Sequencing centers have tremendous bioinformatics needs that GMOD can help address. Attend this satellite to find out what other sequencing centers are doing with GMOD, and how GMOD can help you help your researchers. |
+| [GMOD Evo Hackathon Followup](/wiki/GMOD_Evo_Hackathon#March_2011_Satellite) | Duke Leto | TBD | [Followup meeting](/wiki/GMOD_Evo_Hackathon#March_2011_Satellite) to the [GMOD Evo Hackathon](/wiki/GMOD_Evo_Hackathon) held at NESCent in November 2011. |
+| [Extending Embedding and Customizing JBrowse](/wiki/Extending_Embedding_and_Customizing_JBrowse) | Mitch Skinner | TBD | [JBrowse](/wiki/JBrowse) has a few different extension points, but they're not (yet) well-documented or widely used. The GMOD meeting would be a good time to review those [APIs](/wiki/Glossary#API), relate them to the things that people want to do with them, discuss any potential changes or new APIs to support specific use cases, and potentially start to implement an extension. |
+| [GMOD Web services toolkit](/wiki/GMOD_RPC_API) | Josh Goodman | Cancelled | ~~Come to work on or discuss the [GMOD Web services API and the toolkit](/wiki/GMOD_RPC_API).~~ |
+| [GMOD in the Sequencing Center](/wiki/GMOD_in_the_Sequencing_Center) | Chris Hemmerich, Dave Clements | TBD | Sequencing centers have tremendous bioinformatics needs that GMOD can help address. Attend this satellite to find out what other sequencing centers are doing with GMOD, and how GMOD can help you help your researchers. |
 
 ## Previous Topics
 
 Previous satellite topics include:
 
 - *[Post Reference Genome
-  Tools](/wiki/Post_Reference_Genome_Tools)* at
-  [GMOD Europe 2010](/wiki/GMOD_Europe_2010)
+ Tools](/wiki/Post_Reference_Genome_Tools)* at
+ [GMOD Europe 2010](/wiki/GMOD_Europe_2010)
 - *[Community
-  Annotation](/wiki/Community_Annotation_-_September_2010_Satellite)*
-  at [GMOD Europe 2010](/wiki/GMOD_Europe_2010)
+ Annotation](/wiki/Community_Annotation_-_September_2010_Satellite)*
+ at [GMOD Europe 2010](/wiki/GMOD_Europe_2010)
 - *[GMOD REST Hackathon](/wiki/GMOD_REST_Hackathon)* at
-  the [January 2010 GMOD
-  Meeting](/wiki/January_2010_GMOD_Meeting)
+ the [January 2010 GMOD
+ Meeting](/wiki/January_2010_GMOD_Meeting)
 - *<a href="http://www.bioperl.org/wiki/GMOD_2010_Meeting" class="extiw"
-  title="bp:GMOD 2010 Meeting">BioPerl</a>* at the [January 2010 GMOD
-  Meeting](/wiki/January_2010_GMOD_Meeting)
+ title="bp:GMOD 2010 Meeting">BioPerl</a>* at the [January 2010 GMOD
+ Meeting](/wiki/January_2010_GMOD_Meeting)
 - *[Tripal Working Group](/wiki/Tripal_Working_Group)*
-  at the [January 2010 GMOD
-  Meeting](/wiki/January_2010_GMOD_Meeting)
+ at the [January 2010 GMOD
+ Meeting](/wiki/January_2010_GMOD_Meeting)
 - *[Chado Natural Diversity Module Working
-  Group](/wiki/Chado_Natural_Diversity_Module_Working_Group)* -
-  at the [January 2010 GMOD
-  Meeting](/wiki/January_2010_GMOD_Meeting)
+ Group](/wiki/Chado_Natural_Diversity_Module_Working_Group)* -
+ at the [January 2010 GMOD
+ Meeting](/wiki/January_2010_GMOD_Meeting)
 
 ## About GMOD
 

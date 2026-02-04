@@ -8,7 +8,7 @@ Potier at the [August 2009 GMOD
 Meeting](/wiki/August_2009_GMOD_Meeting) titled:
 
 - [GBrowse: Lessons Learned and Statement of
-  Interest](/wiki/August_2009_GMOD_Meeting#GBrowse:_Lessons_Learned_and_Statement_of_Interest)
+ Interest](/wiki/August_2009_GMOD_Meeting#GBrowse:_Lessons_Learned_and_Statement_of_Interest)
 
 From Frederic and Erick:
 
@@ -23,47 +23,47 @@ GBrowse config file could be for example:
 #################################
 # Database for genome annotations.
 [GGB_TIGR_RICE_V5:database]
-db_adaptor    = Bio::DB::GFF
-db_args       = -adaptor  dbi::mysql
-    -dsn dbi:mysql:GGB_TIGR_RICE_V5:localhost:3306
-    -user ...
-    -pass ...
+db_adaptor = Bio::DB::GFF
+db_args = -adaptor dbi::mysql
+ -dsn dbi:mysql:GGB_TIGR_RICE_V5:localhost:3306
+ -user ...
+ -pass ...
 
 # Database for NGS
 [bamtest:database]
-db_adaptor    = Bio::DB::Sam
-db_args       = -fasta  sequence.fasta
-                  -bam   bam_file.bam
+db_adaptor = Bio::DB::Sam
+db_args = -fasta sequence.fasta
+ -bam bam_file.bam
 
 # Database for genetic markers
 [CMAP_TIGR_RICE_V5:database]
-db_adaptor    = specific CMAP adaptor or maybe an already existing one  ???
-db_args       = -adaptor  dbi::Oracle
-    -dsn dbi:Oracle:CMAP_TIGR_RICE_V5:localhost:
-    -user ...
-    -pass ...
+db_adaptor = specific CMAP adaptor or maybe an already existing one ???
+db_args = -adaptor dbi::Oracle
+ -dsn dbi:Oracle:CMAP_TIGR_RICE_V5:localhost:
+ -user ...
+ -pass ...
 
 ...
 ### TRACK CONFIGURATION ####
 ...
 
 [Pair]
-feature       = read_pair
-glyph         = segments
-database      = bamtest
-draw_target   = 1
+feature = read_pair
+glyph = segments
+database = bamtest
+draw_target = 1
 show_mismatch = 1
-bgcolor      = sub {
-                      my $f = shift;
-                 return $f->get_tag_values('M_UNMAPPED') ? 'red' : 'green';
-               }
-fgcolor       = green
-height        = 3
-label         = sub {shift->display_name}
+bgcolor = sub {
+ my $f = shift;
+ return $f->get_tag_values('M_UNMAPPED') ? 'red' : 'green';
+ }
+fgcolor = green
+height = 3
+label = sub {shift->display_name}
 label density = 50
-bump          = fast
-connector     = dashed
-key          = Read Pairs
+bump = fast
+connector = dashed
+key = Read Pairs
 
 [AFLP_RICE]
 feature = aflp

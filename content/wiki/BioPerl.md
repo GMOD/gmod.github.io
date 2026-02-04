@@ -18,27 +18,27 @@ concepts and some points that are specifically important for GMOD. If
 you have a detailed question about BioPerl, see the
 <a href="http://www.bioperl.org/" class="external text"
 
-  Frequently Given Answer in
-  GMOD</span>](#The_Most_Frequently_Given_Answer_in_GMOD)
+ Frequently Given Answer in
+ GMOD</span>](#The_Most_Frequently_Given_Answer_in_GMOD)
 - [BioPerl
-  Background](#BioPerl_Background)
-  - [BioPerl
-    Podcast](#BioPerl_Podcast)
-  - [BioPerl
-    Packages and
-    bioperl-live](#BioPerl_Packages_and_bioperl-live)
-  - [BioPerl
-    Releases](#BioPerl_Releases)
+ Background](#BioPerl_Background)
+ - [BioPerl
+ Podcast](#BioPerl_Podcast)
+ - [BioPerl
+ Packages and
+ bioperl-live](#BioPerl_Packages_and_bioperl-live)
+ - [BioPerl
+ Releases](#BioPerl_Releases)
 - [Installing
-  BioPerl](#Installing_BioPerl)
-  - [Dependencies](#Dependencies)
-    - [Outside Perl](#Outside_Perl)
-    - [Inside
-      Perl](#Inside_Perl)
-  - [Install](#Install)
-    - [Answering Questions During the
-      Install](#Answering_Questions_During_the_Install)
-    - [Errors](#Errors)
+ BioPerl](#Installing_BioPerl)
+ - [Dependencies](#Dependencies)
+ - [Outside Perl](#Outside_Perl)
+ - [Inside
+ Perl](#Inside_Perl)
+ - [Install](#Install)
+ - [Answering Questions During the
+ Install](#Answering_Questions_During_the_Install)
+ - [Errors](#Errors)
 
 ## The Most Frequently Given Answer in GMOD
 
@@ -68,8 +68,8 @@ A <a href="http://twit.tv/floss96" class="external text"
 <a href="http://twit.tv/FLOSS" class="external text"
 
 introduction to the **BioPerl** project. The podcast is an interview
-with BioPerl heavy hitters [Chris Fields](/wiki/User:Cjfields)
-and [Jason Stajich](/wiki/User:Stajich).
+with BioPerl heavy hitters Chris Fields
+and Jason Stajich.
 
 ### BioPerl Packages and bioperl-live
 
@@ -98,11 +98,11 @@ class="external text" rel="nofollow">1.6.1</a>)** | *Stable* releases have gone 
 title="bp:Using Git">Using Git</a> and <a href="http://www.bioperl.org/wiki/Getting_BioPerl" class="extiw"
 title="bp:Getting BioPerl">Getting BioPerl</a> pages for how to get the latest copy of *BioPerl-live*. | Yes<sup>[\[1\]](#cite_note-1)</sup> |
 
-1.  <span id="cite_note-1"><span class="mw-cite-backlink">[↑](#cite_ref-1)</span>
-    <span class="reference-text">Getting the latest code from Git may
-    sound scary, but in actual practice it rarely causes problems.
-    Revisions to BioPerl almost always result in a better
-    package.</span></span>
+1. <span id="cite_note-1"><span class="mw-cite-backlink">[↑](#cite_ref-1)</span>
+ <span class="reference-text">Getting the latest code from Git may
+ sound scary, but in actual practice it rarely causes problems.
+ Revisions to BioPerl almost always result in a better
+ package.</span></span>
 
 ## Installing BioPerl
 
@@ -124,7 +124,7 @@ If you are on Linux, then these will be available as packages and should
 be installed using the appropriate package manager for your Linux
 distribution. These may also already be installed on your system.
 
-| Library(ies)      | Description |
+| Library(ies) | Description |
 |-------------------|----------------------------------------------|
 | perl-devel | Perl development library. |
 | perl-DB_File | Berkeley DB support in Perl. |
@@ -177,7 +177,7 @@ From BioPerl:
 > If you decide that the failed tests will not affect how you intend to
 > use BioPerl and you'd like to install anyway do:
 >
->     cpan>force install C/CJ/CJFIELDS/BioPerl-1.6.0.tar.gz
+> cpan>force install C/CJ/CJFIELDS/BioPerl-1.6.0.tar.gz
 >
 > This is what most experienced Bioperl users would do. However, if
 > you're concerned about a failed test and need assistance or advice
@@ -188,11 +188,11 @@ to be forced. But how do you decide what level of errors are acceptable
 and what are not? Here's a rough guideline:
 
 - If you see errors related to the non-Perl prerequisites (see [Outside
-  Perl](#Outside_Perl) above)
-  then you should check that you have that prerequisite installed
-  correctly and then try again.
-  This type of error usually occurs while building the BioPerl
-  installation rather than while testing it.
+ Perl](#Outside_Perl) above)
+ then you should check that you have that prerequisite installed
+ correctly and then try again.
+ This type of error usually occurs while building the BioPerl
+ installation rather than while testing it.
 - If your errors occur only in the testing part of the installation, and
-  there are few of them compared to the total number of tests,
-  then you are probably safe to do a force install.
+ there are few of them compared to the total number of tests,
+ then you are probably safe to do a force install.

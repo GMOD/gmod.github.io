@@ -3,19 +3,19 @@ title: "Load RefSeq Into Chado"
 ---
 # Load RefSeq Into Chado
 
-This  describes a method for
+This describes a method for
 loading the sequence data in Genbank RefSeq files into the [Chado
 database](/wiki/Chado_-_Getting_Started).
 
-  Sequence Files</span>](#Download_the_Sequence_Files)
+ Sequence Files</span>](#Download_the_Sequence_Files)
 - [Convert RefSeq
-  to GFF3](#Convert_RefSeq_to_GFF3)
+ to GFF3](#Convert_RefSeq_to_GFF3)
 - [Add an Entry
-  for Your Organism](#Add_an_Entry_for_Your_Organism)
+ for Your Organism](#Add_an_Entry_for_Your_Organism)
 - [Load the
-  GFF3](#Load_the_GFF3)
+ GFF3](#Load_the_GFF3)
 - [More
-  Information](#More_Information)
+ Information](#More_Information)
 - [Authors](#Authors)
 
 ## Download the Sequence Files
@@ -36,7 +36,7 @@ actually installed BioPerl then the installed script will have been
 renamed `bp_genbank2gff3.pl`. Note that there's also an older
 `genbank2gff.pl` script, don't use it.
 
-     >bp_genbank2gff3.pl <filename>
+ >bp_genbank2gff3.pl <filename>
 
 This will create a [GFF3](/wiki/GFF3) file. It may give several
 warnings about *unrecognized feature types*. If the feature types are
@@ -63,8 +63,8 @@ If you do not see your organism listed, execute a command equivalent to
 this:
 
 ``` de1
-  INSERT INTO organism (abbreviation, genus, species, common_name)
-                VALUES ('H.sapiens', 'Homo', 'sapiens', 'Human');
+ INSERT INTO organism (abbreviation, genus, species, common_name)
+ VALUES ('H.sapiens', 'Homo', 'sapiens', 'Human');
 ```
 
 Substitute in the appropriate values for your own organism.
@@ -74,7 +74,7 @@ Substitute in the appropriate values for your own organism.
 Run the `load/bin/gmod_bulk_load_gff3.pl` script from the GMOD
 distribution:
 
-      >gmod_bulk_load_gff3.pl --gfffile <your gfffile>
+ >gmod_bulk_load_gff3.pl --gfffile <your gfffile>
 
 If you didn't specify this organism when installing Chado, (in response
 to the question "What is the default organism (common name, or
@@ -101,6 +101,6 @@ Please send questions to the GMOD developers list:
 
 ## Authors
 
-- [Scott Cain](/wiki/User:Scott)
+- Scott Cain
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
-  title="bp:Brian Osborne">Brian Osborne</a>
+ title="bp:Brian Osborne">Brian Osborne</a>

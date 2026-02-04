@@ -19,16 +19,16 @@ for installing the Tripal v0.3.1b virtual machine:
 **Note:**: The Tripal VM requires by default 2GB of RAM.
 
 - Download and then decompress the Tripal virtual machine in a location
-  you will remember later.
+ you will remember later.
 - Download and install the Oracle VirtualBox software.
 - After installing VirtualBox, open the Oracle VM VirtualBox Manager
-  program.
+ program.
 - Click **Machine** → **Add**
 - A file dialogue box will appear. Use this to locate and select the
-  Tripal virtual machine
+ Tripal virtual machine
 - A new virtual machine will be added titled 'Tripal-0.6x-0.3.1b-VM'.
-  Click this virtual machine, and then click the **Start** arrow at the
-  top of the VirtualBox Manager.
+ Click this virtual machine, and then click the **Start** arrow at the
+ top of the VirtualBox Manager.
 - Log in using the credentials specified below.
 
 When using the virtual machine, the usernames and passwords are as

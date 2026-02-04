@@ -19,105 +19,105 @@ familiar with its theoretical underpinnings.
 See also:
 
 - [Chado Sequence
-  Module](/wiki/Chado_Sequence_Module) - description
-  of many of the terms used here
+ Module](/wiki/Chado_Sequence_Module) - description
+ of many of the terms used here
 - [Introduction to
-  Chado](/wiki/Introduction_to_Chado) - useful
-  visualizations of some of the models described here
+ Chado](/wiki/Introduction_to_Chado) - useful
+ visualizations of some of the models described here
 - [IGS Data
-  Representation](/wiki/IGS_Data_Representation) -
-  further discussion on these conventions and how they were implemented
-  at IGS (for comparison)
+ Representation](/wiki/IGS_Data_Representation) -
+ further discussion on these conventions and how they were implemented
+ at IGS (for comparison)
 
-  Models</span>](#Gene_Models)
-  - [Canonical
-    Gene Model](#Canonical_Gene_Model)
-    - [Querying for Canonical
-      Genes](#Querying_for_Canonical_Genes)
-    - [Application
-      Support](#Application_Support)
-  - [Noncoding
-    Genes](#Noncoding_Genes)
-    - [Application
-      Support](#Application_Support_2)
-  - [Pseudogene](#Pseudogene)
-    - [Application
-      Support](#Application_Support_3)
-  - [Singleton
-    Feature](#Singleton_Feature)
-    - [Application
-      Support](#Application_Support_4)
-  - [Dicistronic Gene](#Dicistronic_Gene)
-  - [xxx
-    Operon](#xxx_Operon)
-  - [Trans-spliced
-    Gene](#Trans-spliced_Gene)
-    - [Application
-      Support](#Application_Support_5)
-  - [xxx Gene
-    with Regulatory Elements](#xxx_Gene_with_Regulatory_Elements)
-  - [xxx
-    Transposons](#xxx_Transposons)
-  - [Gene with
-    Implicit Features
-    Manifested](#Gene_with_Implicit_Features_Manifested)
-  - [Unlocalized Gene](#Unlocalized_Gene)
-    - [Application
-      Support](#Application_Support_6)
-  - [Feature
-    Localization](#Feature_Localization)
-  - [Feature
-    Localization to Contigs in
-    Assembly](#Feature_Localization_to_Contigs_in_Assembly)
-    - [Application
-      Support](#Application_Support_7)
-  - [Redundant
-    Localizations to Different Assembly
-    Levels](#Redundant_Localizations_to_Different_Assembly_Levels)
-    - [Application
-      Support](#Application_Support_8)
-  - [N-level
-    Assemblies](#N-level_Assemblies)
-  - [Immature
-    or Primary RNA](#Immature_or_Primary_RNA)
+ Models</span>](#Gene_Models)
+ - [Canonical
+ Gene Model](#Canonical_Gene_Model)
+ - [Querying for Canonical
+ Genes](#Querying_for_Canonical_Genes)
+ - [Application
+ Support](#Application_Support)
+ - [Noncoding
+ Genes](#Noncoding_Genes)
+ - [Application
+ Support](#Application_Support_2)
+ - [Pseudogene](#Pseudogene)
+ - [Application
+ Support](#Application_Support_3)
+ - [Singleton
+ Feature](#Singleton_Feature)
+ - [Application
+ Support](#Application_Support_4)
+ - [Dicistronic Gene](#Dicistronic_Gene)
+ - [xxx
+ Operon](#xxx_Operon)
+ - [Trans-spliced
+ Gene](#Trans-spliced_Gene)
+ - [Application
+ Support](#Application_Support_5)
+ - [xxx Gene
+ with Regulatory Elements](#xxx_Gene_with_Regulatory_Elements)
+ - [xxx
+ Transposons](#xxx_Transposons)
+ - [Gene with
+ Implicit Features
+ Manifested](#Gene_with_Implicit_Features_Manifested)
+ - [Unlocalized Gene](#Unlocalized_Gene)
+ - [Application
+ Support](#Application_Support_6)
+ - [Feature
+ Localization](#Feature_Localization)
+ - [Feature
+ Localization to Contigs in
+ Assembly](#Feature_Localization_to_Contigs_in_Assembly)
+ - [Application
+ Support](#Application_Support_7)
+ - [Redundant
+ Localizations to Different Assembly
+ Levels](#Redundant_Localizations_to_Different_Assembly_Levels)
+ - [Application
+ Support](#Application_Support_8)
+ - [N-level
+ Assemblies](#N-level_Assemblies)
+ - [Immature
+ or Primary RNA](#Immature_or_Primary_RNA)
 - [xxx Genomic
-  Rearrangements](#xxx_Genomic_Rearrangements)
-  - [Inversions](#Inversions)
-  - [Translocations](#Translocations)
-  - [Deletions](#Deletions)
-  - [Copy
-    Number Variations](#Copy_Number_Variations)
+ Rearrangements](#xxx_Genomic_Rearrangements)
+ - [Inversions](#Inversions)
+ - [Translocations](#Translocations)
+ - [Deletions](#Deletions)
+ - [Copy
+ Number Variations](#Copy_Number_Variations)
 - [Single
-  Nucleotide Polymorphisms
-  (SNPs)](#Single_Nucleotide_Polymorphisms_.28SNPs.29)
-  - [Extensions](#Extensions)
-  - [Similarities to
-    Alignments](#Similarities_to_Alignments)
-  - [Redundant
-    Storage of Coordinates on Different Assembly
-    Levels](#Redundant_Storage_of_Coordinates_on_Different_Assembly_Levels)
+ Nucleotide Polymorphisms
+ (SNPs)](#Single_Nucleotide_Polymorphisms_.28SNPs.29)
+ - [Extensions](#Extensions)
+ - [Similarities to
+ Alignments](#Similarities_to_Alignments)
+ - [Redundant
+ Storage of Coordinates on Different Assembly
+ Levels](#Redundant_Storage_of_Coordinates_on_Different_Assembly_Levels)
 - [Sequence
-  Alignments](#Sequence_Alignments)
-  - [Results
-    from BLAST](#Results_from_BLAST)
-  - [xxx
-    Multiple Sequence
-    Alignments](#xxx_Multiple_Sequence_Alignments)
+ Alignments](#Sequence_Alignments)
+ - [Results
+ from BLAST](#Results_from_BLAST)
+ - [xxx
+ Multiple Sequence
+ Alignments](#xxx_Multiple_Sequence_Alignments)
 - [xxx
-  Posttranslational
-  Modifications](#xxx_Posttranslational_Modifications)
+ Posttranslational
+ Modifications](#xxx_Posttranslational_Modifications)
 - [xxx
-  Genotypes](#xxx_Genotypes)
+ Genotypes](#xxx_Genotypes)
 - [xxx
-  Phenotypes](#xxx_Phenotypes)
+ Phenotypes](#xxx_Phenotypes)
 - [xxx
-  Cleavage](#xxx_Cleavage)
+ Cleavage](#xxx_Cleavage)
 - [xxx Protein
-  Complexes](#xxx_Protein_Complexes)
+ Complexes](#xxx_Protein_Complexes)
 - [GO
-  annotations](#GO_annotations)
+ annotations](#GO_annotations)
 - [xxx Genome
-  Versions](#xxx_Genome_Versions)
+ Versions](#xxx_Genome_Versions)
 
 ### Gene Models
 
@@ -153,7 +153,7 @@ appropriate assembly unit.
 
 This scenario involves rows in the following tables:
 
-| Table                                                                      | type_id                                                         | Number                                                                                                                             | Comments                                                                                                                                                                                                                                                                                                                                                                           | -------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | feature                                                                    | <a href="http://www.sequenceontology.org/miSO/SO_CVS/gene.html" | class="external text" rel="nofollow">SO:Gene</a>                           | 1                                                               | The gene must always be provided                                                                                                   | feature                                                                    | <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html" | class="external text" rel="nofollow">SO:mRNA</a>                           | 1 or more                                                       | One or more transcripts are required, and these are always of type <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html" | class="external text" rel="nofollow">SO:mRNA</a> for protein-coding genes. | feature                                                                    | exon                                                            | 1 or more                                                                                                                          | Exons are always required, even if the genome under consideration has no introns.                                                                                                                                                                                                                                                                                                  | feature                                                                    | polypeptide                                                     | At least 1                                                                                                                         | A protein-coding gene always produces a polypeptide, by definition. The polypeptide is located relative to the same genomic feature as the exons, mRNAs and gene. A single featureloc is used, with _fmin_ and _fmax_ indicating the start and stop codon positions (location is inclusive of stop codon). The polypeptide sequence should be specified as an amino acid sequence. |
+| Table | type_id | Number | Comments | -------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | feature | <a href="http://www.sequenceontology.org/miSO/SO_CVS/gene.html" | class="external text" rel="nofollow">SO:Gene</a> | 1 | The gene must always be provided | feature | <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html" | class="external text" rel="nofollow">SO:mRNA</a> | 1 or more | One or more transcripts are required, and these are always of type <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html" | class="external text" rel="nofollow">SO:mRNA</a> for protein-coding genes. | feature | exon | 1 or more | Exons are always required, even if the genome under consideration has no introns. | feature | polypeptide | At least 1 | A protein-coding gene always produces a polypeptide, by definition. The polypeptide is located relative to the same genomic feature as the exons, mRNAs and gene. A single featureloc is used, with _fmin_ and _fmax_ indicating the start and stop codon positions (location is inclusive of stop codon). The polypeptide sequence should be specified as an amino acid sequence. |
 
 ##### Querying for Canonical Genes
 
@@ -164,17 +164,17 @@ graph](/wiki/Introduction_to_Chado#Feature_Graphs) has
 3 levels. If we follow this assumption:
 
 ```de1
-    SELECT * FROM feature AS gene
-         INNER JOIN
-       feature_relationship AS feat0 ON (gene.feature_id = feat0.object_id)
-         INNER JOIN
-       feature AS subfeat1 ON (subfeat1.feature_id = feat0.subject_id)
-         INNER JOIN
-       feature_relationship AS feat1 ON (subfeat1.feature_id = feat1.object_id)
-         INNER JOIN
-       feature AS subfeat2 ON (subfeat2.feature_id = feat1.subject_id)
-    WHERE
-       gene.name = 'Dredd';
+ SELECT * FROM feature AS gene
+ INNER JOIN
+ feature_relationship AS feat0 ON (gene.feature_id = feat0.object_id)
+ INNER JOIN
+ feature AS subfeat1 ON (subfeat1.feature_id = feat0.subject_id)
+ INNER JOIN
+ feature_relationship AS feat1 ON (subfeat1.feature_id = feat1.object_id)
+ INNER JOIN
+ feature AS subfeat2 ON (subfeat2.feature_id = feat1.subject_id)
+ WHERE
+ gene.name = 'Dredd';
 ```
 
 This query should fetch a 3-deep graph rooted at "Dredd".
@@ -193,7 +193,7 @@ model](#Canonical_Gene_Model), with the following exceptions:
 
 - There is no polypeptide feature
 - Instead of an mRNA feature, there is a feature that is some other
-  sub-type of RNA
+ sub-type of RNA
 
 ##### Application Support
 
@@ -211,19 +211,19 @@ class="external text" rel="nofollow">decayed_exon</a>. In practice
 no-one is using Chado to do this. There are currently two practices:
 
 - Pseudogenes are treated analogously to [Noncoding
-  Genes](#Noncoding_Genes). That is, there are normal "gene" and "exon"
-  features. However, in place of a subtype of RNA, there is a feature of
-  type pseudogene. This practice is **strongly discouraged** (it is not
-  compliant with the relations in
-  <a href="http://sequenceontology.org" class="external text"
-  rel="nofollow">SO</a>, it gives false counts to the number of real
-  genes in the database). Note that this is the current default for
-  <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>.
+ Genes](#Noncoding_Genes). That is, there are normal "gene" and "exon"
+ features. However, in place of a subtype of RNA, there is a feature of
+ type pseudogene. This practice is **strongly discouraged** (it is not
+ compliant with the relations in
+ <a href="http://sequenceontology.org" class="external text"
+ rel="nofollow">SO</a>, it gives false counts to the number of real
+ genes in the database). Note that this is the current default for
+ <a href="http://flybase.org" class="external text"
+ rel="nofollow">FlyBase</a>.
 - Pseudogenes are normal [singleton features](#Singleton_Feature). There
-  is no annotation of exon structure. This practice is encouraged. If at
-  a later date it becomes desirable to annotated the exon structure of a
-  pseudogene, it will be compatible with this.
+ is no annotation of exon structure. This practice is encouraged. If at
+ a later date it becomes desirable to annotated the exon structure of a
+ pseudogene, it will be compatible with this.
 
 ##### Application Support
 
@@ -287,7 +287,7 @@ data-align="right" width="200px">
 all of prokaryotic molecular biology to being outside the realm of
 biologists who use the term "gene". Note that although the test refers
 to two proposals, they are not linked/or described. What the heck are
-they?!!! <a href="/wiki/User%253AJimHu.1" title="User%253AJimHu">JimHu</a> 13:33, 10
+they?!!! JimHu 13:33, 10
 April 2007 (EDT)</p></td>
 </tr>
 </tbody>
@@ -582,20 +582,20 @@ genome.
 
 Here we would have one feature and two featurelocs.
 
-    (feature
-     (name "SNP_01")
-     (featureloc
-       (srcfeature "Chromosome_arm_2L") ;;; dna feature identifier
-       (nbeg 1000000)
-       (nend 1000001)
-       (strand 1)
-       (residue_info "A")
-       (rank 0)
-       (locgroup 0))
-     (featureloc
-       (residue_info "G")
-       (rank 1)
-       (locgroup 0)))
+ (feature
+ (name "SNP_01")
+ (featureloc
+ (srcfeature "Chromosome_arm_2L") ;;; dna feature identifier
+ (nbeg 1000000)
+ (nend 1000001)
+ (strand 1)
+ (residue_info "A")
+ (rank 0)
+ (locgroup 0))
+ (featureloc
+ (residue_info "G")
+ (rank 1)
+ (locgroup 0)))
 
 The first location is on the chromosome arm (presumably wild type). The
 second location has no _srcfeature_ value (i.e. it is set to null).
@@ -606,20 +606,20 @@ in the second locgroup's _srcfeature_.
 Let's take another example - a SNP that has only been characterised at
 the protein level. This SNP changes an _I_ to a _V_.
 
-    (feature
-     (name "SNP_02")
-     (featureloc
-       (srcfeature "dpp-P1")    ;;; protein feature identifier
-       (nbeg 23)
-       (nend 24)
-       (strand 1)
-       (residue_info "I")
-       (rank 0)
-       (locgroup 0))
-     (featureloc
-       (residue_info "V")
-       (rank 1)
-       (locgroup 0)))
+ (feature
+ (name "SNP_02")
+ (featureloc
+ (srcfeature "dpp-P1")  ;;; protein feature identifier
+ (nbeg 23)
+ (nend 24)
+ (strand 1)
+ (residue_info "I")
+ (rank 0)
+ (locgroup 0))
+ (featureloc
+ (residue_info "V")
+ (rank 1)
+ (locgroup 0)))
 
 Again, the second featureloc has no srcfeature. The mutant protein is
 implicit. The mutant protein sequence can be inferred by taking the
@@ -630,18 +630,18 @@ To do a query for all SNPs that switch I to V or vice versa:
 ```de1
 SELECT snp.*
 FROM
-  featureloc AS wildloc,
-  featureloc AS mutloc,
-  feature AS snp,
-  cvterm AS ftype
+ featureloc AS wildloc,
+ featureloc AS mutloc,
+ feature AS snp,
+ cvterm AS ftype
 WHERE
-  snp.type_id = ftype.cvterm_id        AND
-  ftype.termname = 'snp'               AND
-  wildloc.feature_id = snp.feature_id  AND
-  mutloc.feature_id = snp.feature_id   AND
-  wildloc.locgroup = mutloc.locgroup   AND
-  wildloc.residue_info = 'I'           AND
-  mutloc.residue_info = 'I';
+ snp.type_id = ftype.cvterm_id AND
+ ftype.termname = 'snp' AND
+ wildloc.feature_id = snp.feature_id AND
+ mutloc.feature_id = snp.feature_id AND
+ wildloc.locgroup = mutloc.locgroup AND
+ wildloc.residue_info = 'I' AND
+ mutloc.residue_info = 'I';
 ```
 
 Note that this query remains the same even if mutant protein features
@@ -655,56 +655,56 @@ effect on the genome, transcript and translation.
 Note that in this example, the transcript is on the reverse strand, so
 the residue is reverse complemented.
 
-    (feature
-     (name "SNP_03")
+ (feature
+ (name "SNP_03")
 
-     ;; position on genome
-     (featureloc
-       (srcfeature "chrom_arm_3R")
-       (nbeg 2000000)
-       (nend 2000001)
-       (strand 1)
-       (residue_info "A")
-       (rank 0)                       ;; wild
-       (locgroup 0))
-     (featureloc
-       (residue_info "G")
-       (rank 1)                       ;; mutant
-       (locgroup 0))
+  ;; position on genome
+ (featureloc
+ (srcfeature "chrom_arm_3R")
+ (nbeg 2000000)
+ (nend 2000001)
+ (strand 1)
+ (residue_info "A")
+ (rank 0)  ;; wild
+ (locgroup 0))
+ (featureloc
+ (residue_info "G")
+ (rank 1)  ;; mutant
+ (locgroup 0))
 
-     ;; position on transcript
-     (featureloc
-       (srcfeature "blah-transcript001")     ;; processed transcript ID
-       (nbeg 1000)
-       (nend 1001)
-       (strand 1)
-       (residue_info "T")
-       (rank 0)                       ;; wild
-       (locgroup 1))
-     (featureloc
-       (residue_info "C")
-       (rank 1)                       ;; mutant
-       (locgroup 1))
+  ;; position on transcript
+ (featureloc
+ (srcfeature "blah-transcript001")  ;; processed transcript ID
+ (nbeg 1000)
+ (nend 1001)
+ (strand 1)
+ (residue_info "T")
+ (rank 0)  ;; wild
+ (locgroup 1))
+ (featureloc
+ (residue_info "C")
+ (rank 1)  ;; mutant
+ (locgroup 1))
 
-     ;; position on protein
-     (featureloc
-       (srcfeature "blah-protein001")    ;;; protein feature identifier
-       (nbeg 23)
-       (nend 24)
-       (strand 1)
-       (residue_info "I")
-       (rank 0)                       ;; wild
-       (locgroup 2))
-     (featureloc
-       (residue_info "T")
-       (rank 1)                       ;; mutant
-       (locgroup 2)))
+  ;; position on protein
+ (featureloc
+ (srcfeature "blah-protein001")  ;;; protein feature identifier
+ (nbeg 23)
+ (nend 24)
+ (strand 1)
+ (residue_info "I")
+ (rank 0)  ;; wild
+ (locgroup 2))
+ (featureloc
+ (residue_info "T")
+ (rank 1)  ;; mutant
+ (locgroup 2)))
 
 Here we have 6 locations for one SNP. The 6 locations can be imagined to
 be in a 2-D matrix. The purpose of _rank_ and _locgroup_ is to specify
 the column and row in the matrix.
 
-| Allele    | Genome | Transcript | Protein | --------- | ------ | ---------- | ------- | Wild-type | A      | T          | I       | Mutant    | G      | C          | T       |
+| Allele | Genome | Transcript | Protein | --------- | ------ | ---------- | ------- | Wild-type | A | T | I | Mutant | G | C | T |
 
 _rank_ is used to group the strain and _locgroup_ is used for the
 grouping within that strain. rank=0 should be used for the wildtype, but
@@ -719,7 +719,7 @@ different frames).
 
 Here we would want to add another locgroup, for the second protein.
 
-| Allele    | Genome | Transcript | Protein1 | Protein2 | --------- | ------ | ---------- | -------- | -------- | Wild-type | A      | T          | I        | Y        | Mutant    | G      | C          | T        | H        |
+| Allele | Genome | Transcript | Protein1 | Protein2 | --------- | ------ | ---------- | -------- | -------- | Wild-type | A | T | I | Y | Mutant | G | C | T | H |
 
 Again, if we don't need to instantiate the 2 mutant proteins, but their
 sequence can be reconstructed from the wild type proteins plus the
@@ -740,22 +740,22 @@ SELECT
  snp.name,
  wildfeat.name,
  substr(wildfeat.residues,
-        1,
-        wildloc.nbeg)  mutloc.residue_info   substr(wildfeat.residues,
-        wildloc.nend+1)
+ 1,
+ wildloc.nbeg) mutloc.residue_info substr(wildfeat.residues,
+ wildloc.nend+1)
 FROM
-  featureloc AS wildloc,
-  feature AS wildfeat,
-  featureloc AS mutloc,
-  feature AS snp,
-  cvterm AS ftype
+ featureloc AS wildloc,
+ feature AS wildfeat,
+ featureloc AS mutloc,
+ feature AS snp,
+ cvterm AS ftype
 WHERE
-  snp.type_id = ftype.cvterm_id         AND
-  ftype.termname = 'snp'                AND
-  wildloc.feature_id = snp.feature_id   AND
-  mutloc.feature_id = snp.feature_id    AND
-  wildloc.locgroup = mutloc.locgroup    AND
-  wildloc.srcfeature = wildfeat
+ snp.type_id = ftype.cvterm_id AND
+ ftype.termname = 'snp' AND
+ wildloc.feature_id = snp.feature_id AND
+ mutloc.feature_id = snp.feature_id AND
+ wildloc.locgroup = mutloc.locgroup AND
+ wildloc.srcfeature = wildfeat
 ```
 
 #### Extensions
@@ -794,40 +794,40 @@ provides a worked example of this using BioPerl and GMOD scripts,
 bp_search2gff.pl and gmod_bulk_load_gff3.pl
 
 - Create a record for the BLAST search itself is an entry in the
-  [analysis](/wiki/Chado_Tables#Table:_analysis) table.
+ [analysis](/wiki/Chado_Tables#Table:_analysis) table.
 - Create a feature for both the query and target sequences. If these
-  have database accessions or identifiers then records in the
-  [dbxref](/wiki/Chado_Tables#Table:_dbxref) table should be
-  created for each.
-  - Optionally include the residues of the features.
+ have database accessions or identifiers then records in the
+ [dbxref](/wiki/Chado_Tables#Table:_dbxref) table should be
+ created for each.
+ - Optionally include the residues of the features.
 - Store the hits in both the
-  [feature](/wiki/Chado_Tables#Table:_feature) and
-  [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
-  tables, as well as in the
-  [featureloc](/wiki/Chado_Tables#Table:_featureloc) table,
-  where the featureloc entry for the query sequence has a
-  featureloc.rank of 0 and the featureloc.rank of the target sequence
-  is 1. The <a href="http://sequenceontology" class="external text"
-  rel="nofollow">SO</a> term is _match_.
-  - Note: _featureloc.locgroup_ is not used.
+ [feature](/wiki/Chado_Tables#Table:_feature) and
+ [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
+ tables, as well as in the
+ [featureloc](/wiki/Chado_Tables#Table:_featureloc) table,
+ where the featureloc entry for the query sequence has a
+ featureloc.rank of 0 and the featureloc.rank of the target sequence
+ is 1. The <a href="http://sequenceontology" class="external text"
+ rel="nofollow">SO</a> term is _match_.
+ - Note: _featureloc.locgroup_ is not used.
 - Store the HSPs in both the
-  [feature](/wiki/Chado_Tables#Table:_feature) and
-  [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
-  tables, as well as in the
-  [featureloc](/wiki/Chado_Tables#Table:_featureloc) table,
-  where the featureloc entry for the query sequence has a
-  featureloc.rank of 0 and the featureloc.rank of the target sequence
-  is 1. The <a href="http://sequenceontology" class="external text"
-  rel="nofollow">SO</a> term is _match_part_.
-  - Note: _featureloc.locgroup_ is not used.
+ [feature](/wiki/Chado_Tables#Table:_feature) and
+ [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
+ tables, as well as in the
+ [featureloc](/wiki/Chado_Tables#Table:_featureloc) table,
+ where the featureloc entry for the query sequence has a
+ featureloc.rank of 0 and the featureloc.rank of the target sequence
+ is 1. The <a href="http://sequenceontology" class="external text"
+ rel="nofollow">SO</a> term is _match_part_.
+ - Note: _featureloc.locgroup_ is not used.
 - Map the hits and the HSPs to each other _via_ entries in the
-  [feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship)
-  tables.
+ [feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship)
+ tables.
 - Standard scores (rawscore, normscore, significance, identity) are
-  stored in the
-  [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
-  table. For BLAST searches those would correspond to bits, score,
-  e-value and frac_identical.
+ stored in the
+ [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
+ table. For BLAST searches those would correspond to bits, score,
+ e-value and frac_identical.
 
 #### xxx Multiple Sequence Alignments
 

@@ -3,19 +3,19 @@ title: "Calendar"
 ---
 # Calendar
 
-  Galaxy Calendars</span>](#GMOD_and_Galaxy_Calendars)
+ Galaxy Calendars</span>](#GMOD_and_Galaxy_Calendars)
 - [Other
-  Calendars](#Other_Calendars)
+ Calendars](#Other_Calendars)
 - [GMOD Event
-  List](#GMOD_Event_List)
-  - [2013
-    Events](#2013_Events)
-  - [2012
-    Events](#2012_Events)
-  - [2011
-    Events](#2011_Events)
-  - [2002
-    through 2010 Events](#2002_through_2010_Events)
+ List](#GMOD_Event_List)
+ - [2013
+ Events](#2013_Events)
+ - [2012
+ Events](#2012_Events)
+ - [2011
+ Events](#2011_Events)
+ - [2002
+ through 2010 Events](#2002_through_2010_Events)
 
 ## GMOD and Galaxy Calendars
 
@@ -29,17 +29,17 @@ This shows both the GMOD Project calendar and the
 available as RSS feeds:
 
 - <a
-  href="https://www.google.com/calendar/feeds/0ajv0bm32ue3c2o2v1c8i889hk%40group.calendar.google.com/public/basic"
-  class="external text" rel="nofollow">GMOD Calendar</a>
-  <img
-  src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/47/RSSIcon16x16.gif" width="16" height="16"
-  alt="GMOD Calendar Feed" />
+ href="https://www.google.com/calendar/feeds/0ajv0bm32ue3c2o2v1c8i889hk%40group.calendar.google.com/public/basic"
+ class="external text" rel="nofollow">GMOD Calendar</a>
+ <img
+ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/47/RSSIcon16x16.gif" width="16" height="16"
+ alt="GMOD Calendar Feed" />
 - <a
-  href="https://www.google.com/calendar/feeds/mq93blfvdoosh5unpmivu4kh1c%40group.calendar.google.com/public/basic"
-  class="external text" rel="nofollow">Galaxy Calendar</a>
-  <img
-  src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/47/RSSIcon16x16.gif" width="16" height="16"
-  alt="Galaxy Calendar Feed" />
+ href="https://www.google.com/calendar/feeds/mq93blfvdoosh5unpmivu4kh1c%40group.calendar.google.com/public/basic"
+ class="external text" rel="nofollow">Galaxy Calendar</a>
+ <img
+ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/47/RSSIcon16x16.gif" width="16" height="16"
+ alt="Galaxy Calendar Feed" />
 
 ## Other Calendars
 
@@ -134,7 +134,7 @@ class="external text" rel="nofollow">2013 Galaxy Community Conference
 The <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> project's annual
 meeting.</td>
 <td>Oslo, Norway</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 <td></td>
 <td></td>
 <td></td>
@@ -155,7 +155,7 @@ class="external text" rel="nofollow">Biocuration 2013</a></strong></td>
 Colocated with and immediately before <a
 href="http://www.ebi.ac.uk/biocuration2013/home" class="external text"
 
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td></td>
 <td></td>
 <td></td>
@@ -166,7 +166,7 @@ href="http://www.ebi.ac.uk/biocuration2013/home" class="external text"
 See <a href="/wiki/PAG_2013" title="PAG 2013">PAG 2013</a> for details of GMOD
 at PAGXXI</td>
 <td>San Diego, CA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td></td>
 <td></td>
 <td></td>
@@ -215,7 +215,7 @@ title="2012 GMOD Summer School">2012 GMOD Summer
 School</a></strong></td>
 <td><a href="http://nescent.org" class="external text"
 
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td></td>
 <td></td>
 <td></td>
@@ -228,7 +228,7 @@ class="external text" rel="nofollow">2012 Galaxy Community Conference
 The <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> project's annual
 meeting.</td>
 <td>Chicago, Illinois, United States</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 <td></td>
 <td></td>
 <td></td>
@@ -242,7 +242,7 @@ Colocated with and immediately following <a
 href="http://pir.georgetown.edu/biocuration2012/" class="external text"
 
 <td rowspan="2">Washington, DC, United States</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td></td>
 <td></td>
 <td></td>
@@ -263,7 +263,7 @@ class="external text" rel="nofollow">GMOD Workshop</a></strong></td>
 <td rowspan="2"><a href="http://www.ckrumlov.info/php/"
 class="external text" rel="nofollow">Český Krumlov, Czech
 Republic</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td></td>
 <td></td>
 <td></td>
@@ -276,8 +276,8 @@ class="external text" rel="nofollow">Workshop on
 Genomics</a></strong><br />
 Covers a plethora of topics, including <a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a></td>
-<td><a href="/wiki/User%253AJamesTaylor" title="User%253AJamesTaylor">James
-Taylor</a></td>
+<td>James
+Taylor</td>
 <td></td>
 <td></td>
 <td></td>
@@ -291,7 +291,7 @@ GMOD presence</a> at <a href="http://www.intl-pag.org/"
 class="external text" rel="nofollow">PAG</a>, including a <em>dedicated
 all-day GMOD Workshop</em>.</td>
 <td>San Diego, California, United States</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td></td>
 <td></td>
 <td></td>
@@ -353,7 +353,7 @@ Meeting</a></strong></td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 Toronto, Canada</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td>September 28-30</td>
@@ -363,7 +363,7 @@ Annotation</a></strong><br />
 Genome annotation using <a href="/wiki/MAKER" title="MAKER">MAKER</a> and <a href="/wiki/Apollo" title="Apollo">Apollo</a>.</td>
 <td><a href="http://bioinformatics.ucdavis.edu/" class="external text"
 
-<td><a href="/wiki/User%253ABmoore" title="User%253ABmoore">Barry Moore</a></td>
+<td>Barry Moore</td>
 </tr>
 <tr class="even">
 <td>September 19-22</td>
@@ -371,7 +371,7 @@ Genome annotation using <a href="/wiki/MAKER" title="MAKER">MAKER</a> and <a hre
 class="external text" rel="nofollow">Genome Informatics Workshop @
 Beyond the Genome 2011</a></strong></td>
 <td>Washington, DC, United States</td>
-<td><a href="/wiki/User%253ALstein" title="User%253ALstein">Lincoln Stein</a>, <a href="/wiki/User%253AJamesTaylor" title="User%253AJamesTaylor">James Taylor</a></td>
+<td>Lincoln Stein, James Taylor</td>
 </tr>
 <tr class="odd">
 <td>July 15-19</td>
@@ -380,7 +380,7 @@ Beyond the Genome 2011</a></strong></td>
 Included the Bioinformatics Open Source Conference (BOSC) and plenty of
 GMOD-related content.</td>
 <td>Vienna, Austria</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td>July 10-23</td>
@@ -391,7 +391,7 @@ North America</a></strong><br />
 Sessions on <a href="/wiki/BioPerl" title="BioPerl">BioPerl</a>, <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> and <a href="/wiki/GBrowse_syn"
 title="GBrowse syn">GBrowse_syn</a></td>
 <td>Fort Collins, Colorado, United States</td>
-<td><a href="/wiki/User%253AStajich" title="User%253AStajich">Jason Stajich</a>, <a href="/wiki/User%253ADanB" title="User%253ADanB">Dan Blankenberg</a>, <a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+<td>Jason Stajich, Dan Blankenberg, Sheldon McKay</td>
 </tr>
 <tr class="odd">
 <td>June 21-22</td>
@@ -414,7 +414,7 @@ workshops:<br />
 and display of various co-linearity data types</strong>, June 11,
 10:30-Noon</td>
 <td>Kansas City, Missouri, United States</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a>, <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a>, <a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+<td>Scott Cain, Dave Clements, Sheldon McKay</td>
 </tr>
 <tr class="odd">
 <td>May 28-31</td>
@@ -423,7 +423,7 @@ class="external text" rel="nofollow">European Human Genetics Conference
 2011</a></strong><br />
 <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> Workshop</td>
 <td>Amsterdam, The Netherlands</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td>May 25-26</td>
@@ -438,7 +438,7 @@ practices for using Galaxy to further your research.</td>
 <td><a href="http://galaxy.psu.edu/gcc2011/Logistics.html"
 class="external text" rel="nofollow">Conference Centre De Werelt,
 Lunteren, The Netherlands</a></td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="odd">
 <td>April 13-14</td>
@@ -478,7 +478,7 @@ title="2011 GMOD Spring Training">2011 GMOD Spring Training</a>
 (application deadline January 7)</td>
 <td><a href="http://www.nescent.org/" class="external text"
 
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a>, <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Scott Cain, Dave Clements</td>
 </tr>
 <tr class="even">
 <td>February 19-22</td>
@@ -510,7 +510,7 @@ at <a href="http://www.intl-pag.org/" class="external text"
 href="http://www.intl-pag.org/19/19-gmod.html" class="external text"
 rel="nofollow"><em>dedicated all-day GMOD Workshop</em></a>.</td>
 <td>San Diego, California, United States</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a>, <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Scott Cain, Dave Clements</td>
 </tr>
 <tr class="odd">
 <td>January 9-21</td>
@@ -562,7 +562,7 @@ class="external text" rel="nofollow">InterMine
 Workshop</a></strong></td>
 <td><a href="http://genetics.cam.ac.uk/" class="external text"
 
-<td><a href="/wiki/User%253ARsmith" title="User%253ARsmith">Richard Smith</a></td>
+<td>Richard Smith</td>
 </tr>
 <tr class="odd">
 <td>November 8-12</td>
@@ -570,7 +570,7 @@ Workshop</a></strong></td>
 Tools For Evolutionary Biology Hackathon</a></strong></td>
 <td><a href="http://nescent.org" class="external text"
 
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td>November 3-9</td>
@@ -634,25 +634,25 @@ Europe 2010</a></strong><br />
 This <a href="/wiki/GMOD_Europe_2010" title="GMOD Europe 2010">4 day event</a>
 included:</td>
 <td rowspan="5">University of Cambridge, Cambridge, UK</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a>, <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Scott Cain, Dave Clements</td>
 </tr>
 <tr class="even">
 <td><strong><a href="/wiki/September_2010_GMOD_Meeting"
 title="September 2010 GMOD Meeting">September 2010 GMOD
 Meeting</a></strong></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td><strong><a href="/wiki/Satellite_Meetings_-_GMOD_Europe_2010"
 title="Satellite Meetings - GMOD Europe 2010">Satellite
 Meetings</a></strong></td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td><strong><a href="/wiki/InterMine_Workshop_-_GMOD_Europe_2010"
 title="InterMine Workshop - GMOD Europe 2010">InterMine
 Workshop</a></strong></td>
-<td><a href="/wiki/User%253ARsmith" title="User%253ARsmith">Richard Smith</a></td>
+<td>Richard Smith</td>
 </tr>
 <tr class="odd">
 <td><strong><a href="/wiki/BioMart_Workshop_-_GMOD_Europe_2010"
@@ -668,7 +668,7 @@ the <a href="/wiki/ISMB_2010" title="ISMB 2010">ISMB 2010 page</a> and <a href="
 list.</td>
 <td><a href="/wiki/ISMB_2010" title="ISMB 2010">ISMB 2010</a>, Boston, MA,
 USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td>June 29-30</td>
@@ -677,7 +677,7 @@ class="internal" title="GMODForIEvoBio2010.pdf">GMOD for Evolutionary
 Biology</a></strong></td>
 <td><a href="http://ievobio.org" class="external text"
 
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td>June 10-13</td>
@@ -687,8 +687,8 @@ easy</a></strong></td>
 <td><a href="http://www.k-state.edu/agc/symp2010/" class="external text"
 
 USA</td>
-<td><a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson
-Holt</a></td>
+<td>Carson
+Holt</td>
 </tr>
 <tr class="odd">
 <td>May 15-17</td>
@@ -705,7 +705,7 @@ title="2010 GMOD Summer School - Americas">2010 GMOD Summer School -
 Americas</a></strong></td>
 <td><a href="http://nescent.org" class="external text"
 
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="odd">
 <td>March 20-23</td>
@@ -713,8 +713,8 @@ Americas</a></strong></td>
 Browser Tools and Exercises Workshop</a></strong></td>
 <td><a href="http://www.abrf2010.org/" class="external text"
 
-<td><a href="/wiki/User%253AMitchSkinner" title="User%253AMitchSkinner">Mitch
-Skinner</a></td>
+<td>Mitch
+Skinner</td>
 </tr>
 <tr class="even">
 <td>March 3-5</td>
@@ -745,7 +745,7 @@ title="DAS">DAS</a>.</p></td>
 title="January 2010 GMOD Meeting">January 2010 GMOD
 Meeting</a></strong></td>
 <td>San Diego, California, United States</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td rowspan="3">January 9-13</td>
@@ -757,21 +757,21 @@ GBrowse</a></strong></td>
 Genome XVII Conference (PAG 2010)</a>, San Diego, CA, USA<br />
 <strong>See <a href="/wiki/PAG_2010" title="PAG 2010">PAG 2010</a> for links
 to <em>many</em> talks and presentations.</strong></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td><strong><a href="/wiki/GBrowse_syn_PAG_2010_Workshop"
 title="GBrowse syn PAG 2010 Workshop">Comparative Genomics with
 GBrowse_syn: A hands on workshop for visualizing your comparative
 genomics data with GBrowse_syn</a></strong></td>
-<td><a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+<td>Sheldon McKay</td>
 </tr>
 <tr class="odd">
 <td><strong><a href="/wiki/MAKER_PAG_2010_Workshop"
 title="MAKER PAG 2010 Workshop">MAKER: An easy to use genome annotation
 pipeline</a></strong></td>
-<td><a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson
-Holt</a></td>
+<td>Carson
+Holt</td>
 </tr>
 <tr class="even">
 <td colspan="5" data-bgcolor="#cccccc"></td>
@@ -788,13 +788,13 @@ style="font-size: 180%; line-height: 140%; vertical-align: top"><br />
 title="File:GMODTAMUWorkshop.pdf">Database Tools for
 Biologists</a></strong></td>
 <td>Texas A&amp;M University, College Station, Texas, US</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td rowspan="2">November 16-17</td>
 <td><strong>InterMine Data Warehouse Workshop</strong></td>
 <td>Cambridge, UK</td>
-<td><a href="/wiki/User%253ARsmith" title="User%253ARsmith">Richard Smith</a></td>
+<td>Richard Smith</td>
 </tr>
 <tr class="odd">
 <td><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf"
@@ -803,7 +803,7 @@ Genomics</a></strong></td>
 <td><a href="http://colloque.inra.fr/isyip" class="external text"
 
 France</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td rowspan="2">October 28-30</td>
@@ -812,8 +812,8 @@ Biologists: A Half-Day GMOD Workshop</a></strong></td>
 <td rowspan="2"><a href="http://www.ausbiotech2009.com.au/bia/bia-home"
 class="external text" rel="nofollow">Bioinformatics Australia 2009
 (BA2009)</a>, Melbourne, Australia</td>
-<td rowspan="2"><a href="/wiki/User%253AClements" title="User%253AClements">Dave
-Clements</a></td>
+<td rowspan="2">Dave
+Clements</td>
 </tr>
 <tr class="odd">
 <td><strong>Visualizing Next Generation Sequence Data with GBrowse and
@@ -826,7 +826,7 @@ title="File:GBrowse nextgen poster.pdf">GBrowse and Next Generation
 Sequencing Data</a></strong></td>
 <td rowspan="2">Genome Informatics, Cold Spring Harbor, New York,
 USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/CMapGenomeInformatics2009.pdf"
@@ -851,7 +851,7 @@ Session on <a href="/wiki/GBrowse" title="GBrowse">GBrowse</a>.</td>
 <td><a href="http://www.cshl.edu" class="external text"
 
 NY, USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td rowspan="3">August 3-7</td>
@@ -859,19 +859,19 @@ NY, USA</td>
 Europe 2009</a></strong><br />
 This week-long event included:</td>
 <td rowspan="3">University of Oxford, Oxford, United Kingdom</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a>, <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Scott Cain, Dave Clements</td>
 </tr>
 <tr class="odd">
 <td><strong><a href="/wiki/2009_GMOD_Summer_School_-_Europe"
 title="2009 GMOD Summer School - Europe">2009 GMOD Summer School -
 Europe</a></strong></td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td><strong><a href="/wiki/August_2009_GMOD_Meeting"
 title="August 2009 GMOD Meeting">August 2009 GMOD
 Meeting</a></strong></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td>July 20-23</td>
@@ -891,7 +891,7 @@ title="2009 GMOD Summer School - Americas">2009 GMOD Summer School -
 Americas</a></strong></td>
 <td><a href="http://nescent.org" class="external text"
 
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="odd">
 <td>June 11</td>
@@ -900,7 +900,7 @@ Databases and Integration with GMOD Tools</strong></td>
 <td><a href="http://www.k-state.edu/agc/symp2009/" class="external text"
 
 USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td>June 11-13</td>
@@ -909,7 +909,7 @@ title="File:AGA NGS 2009.pdf"><strong>Seeing the forest <em>and</em> the
 trees: visualizing next generation sequence data</strong></a></td>
 <td>Next Generation Genome Analysis in Non-Model Organisms, Storrs, CT,
 USA</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="odd">
 <td rowspan="5">June 6</td>
@@ -922,26 +922,26 @@ See below for links to individual talks.</td>
 <td rowspan="5"><a href="http://ccg.biology.uiowa.edu/smbe/"
 class="external text" rel="nofollow">SMBE 2009</a>, Iowa City, IA,
 USA</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/GMODGBrowseSMBE2009.pdf"
 title="File:GMODGBrowseSMBE2009.pdf">Using GMOD for evolutionary
 genomics and next generation sequence data</a></strong></td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="odd">
 <td><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/CMapGBrowseSMBE2009.pdf"
 title="File:CMapGBrowseSMBE2009.pdf">The CMap Comparative Map Browser
 and Displaying Population distributions with GBrowse and
 PhyloGeoViz</a></strong></td>
-<td><a href="/wiki/User%253AFaga" title="User%253AFaga">Ben Faga</a></td>
+<td>Ben Faga</td>
 </tr>
 <tr class="even">
 <td><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GBrowse_synSMBE2009.pdf"
 title="File:GBrowse synSMBE2009.pdf">Comparative genomics with
 GBrowse_syn</a></strong></td>
-<td><a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+<td>Sheldon McKay</td>
 </tr>
 <tr class="odd">
 <td><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/MAKERSMBE2009.pdf"
@@ -960,7 +960,7 @@ Generation Sequence Data using GMOD</a></strong></td>
 class="internal" title="EvolutionaryGeneticsNGSPoster.pdf">Evolutionary
 Genetics - the impact of next generation sequencing technologies</a>,
 Lutherstadt-Wittenberg, Germany</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="odd">
 <td>January 15-16</td>
@@ -968,7 +968,7 @@ Lutherstadt-Wittenberg, Germany</td>
 title="January 2010 GMOD Meeting">January 2010 GMOD
 Meeting</a></strong></td>
 <td>San Diego, CA, USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td rowspan="3">January 10-14</td>
@@ -983,14 +983,14 @@ Genome XVII Conference (PAG 2009)</a>, San Diego, CA, USA</td>
 title="GBrowse syn PAG 2009 Workshop">Comparative Genomics with
 GBrowse_syn: A hands on workshop for visualizing your syntenic data with
 GBrowse_syn</a></strong></td>
-<td><a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+<td>Sheldon McKay</td>
 </tr>
 <tr class="even">
 <td><strong><a href="/wiki/GBrowse_PAG_2009_Workshop"
 title="GBrowse PAG 2009 Workshop">The Generic Genome Browser: A Hands on
 Workshop for Installing, Configuring and Using Your Own
 GBrowse</a></strong></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td colspan="5" data-bgcolor="#cccccc"></td>
@@ -1041,7 +1041,7 @@ Canada</td>
 <td><strong><a href="/wiki/July_2008_GMOD_Meeting"
 title="July 2008 GMOD Meeting">July 2008 GMOD Meeting</a></strong></td>
 <td>University of Toronto, Toronto, ON, Canada</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td>July 11-13</td>
@@ -1050,7 +1050,7 @@ title="2008 GMOD Summer School">2008 GMOD Summer
 School</a></strong></td>
 <td><a href="http://nescent.org" class="external text"
 
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td>June 4-7</td>
@@ -1059,7 +1059,7 @@ href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/image
 title="File:GenomicsResourcesForEmergingModelOrganismsPoster.pdf">GMOD:
 Genomics Resources for Emerging Model Organisms</a></strong></td>
 <td>American Genetic Association Annual Symposium, Raleigh, NC, USA</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="odd">
 <td rowspan="3">April 10-13</td>
@@ -1078,14 +1078,14 @@ class="external text" rel="nofollow">Christine Elsik</a></td>
 <td><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4a/ChadoWorkshopArthopod2008.pdf"
 title="File:ChadoWorkshopArthopod2008.pdf">Chado - A Database Schema for
 Integrating Biological Data</a></strong></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td><strong><a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/DatabaseResourcesForEmergingModelOrganismsPoster.pdf"
 title="File:DatabaseResourcesForEmergingModelOrganismsPoster.pdf">GMOD:
 Database Resources for Emerging Model Organisms</a></strong></td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td rowspan="2">April 4-6</td>
@@ -1096,8 +1096,8 @@ Informatics Resources for Evolutionary Research</a></strong></td>
 <td rowspan="2"><a href="http://evodevo.uoregon.edu/symposium.html"
 class="external text" rel="nofollow">IGERT Symposium on Evolution,
 Development, and Genomics</a>, Eugene, OR, USA</td>
-<td rowspan="2"><a href="/wiki/User%253AClements" title="User%253AClements">Dave
-Clements</a></td>
+<td rowspan="2">Dave
+Clements</td>
 </tr>
 <tr class="odd">
 <td><strong><a
@@ -1114,7 +1114,7 @@ GBrowse</a></strong></td>
 <td><a href="http://www.intl-pag.org/16/16-pag.html"
 class="external text" rel="nofollow">Plant and Animal Genome XVII
 Conference (PAG 2008)</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td colspan="5" data-bgcolor="#cccccc"></td>
@@ -1131,7 +1131,7 @@ style="font-size: 180%; line-height: 140%; vertical-align: top"><br />
 title="November 2007 GMOD Meeting">November 2007 GMOD
 Meeting</a></strong></td>
 <td>Cold Spring Harbor, NY, USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td>November 1-5</td>
@@ -1140,14 +1140,14 @@ title="File:2007GenomeInformaticsGMODPoster.pdf">Digesting the Genome
 Glut: Promoting the Use and Extension of GMOD To Emerging Model
 Organisms</a></strong></td>
 <td>Genome Informatics 2007, Cold Spring Harbor, NY, USA</td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 </tr>
 <tr class="even">
 <td>August 23-24</td>
 <td><strong><a href="/wiki/Hackathon_2007_info"
 title="Hackathon 2007 info">Hackathon 2007</a></strong></td>
 <td>Northwestern University, Chicago, Illinois, USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td>July 9</td>
@@ -1156,7 +1156,7 @@ title="File:Gmod OCCBio 2007.ppt">The GMOD Project: Creating Reusable
 Software Components for Genome Data</a></strong></td>
 <td>Ohio Collaborative Conference on Bioinformatics at Miami University,
 Oxford, OH, USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td>January 18-19</td>
@@ -1164,7 +1164,7 @@ Oxford, OH, USA</td>
 title="January 2007 GMOD Meeting">January 2007 GMOD
 Meeting</a></strong></td>
 <td>San Diego, CA, USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td colspan="5" data-bgcolor="#cccccc"></td>
@@ -1176,7 +1176,7 @@ Meeting</a></strong></td>
 title="June 2006 GMOD Meeting">June 2006 GMOD Meeting</a></strong></td>
 <td><a href="http://nescent.org" class="external text"
 
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td>May 10-14</td>
@@ -1184,7 +1184,7 @@ title="June 2006 GMOD Meeting">June 2006 GMOD Meeting</a></strong></td>
 Example Comparative Genome Database for Yeasts Using GMOD
 Tools</a></strong></td>
 <td>The Biology of Genomes, Cold Spring Harbor, NY, USA</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td colspan="5" data-bgcolor="#cccccc"></td>
@@ -1196,14 +1196,14 @@ Tools</a></strong></td>
 title="October 2005 GMOD Meeting">October 2005 GMOD
 Meeting</a></strong></td>
 <td>Cold Spring Harbor, New York, before Genome Informatics</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td>May 16-17</td>
 <td><strong><a href="/wiki/May_2005_GMOD_Meeting"
 title="May 2005 GMOD Meeting">May 2005 GMOD Meeting</a></strong></td>
 <td>Menlo Park, California, at SRI</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td colspan="5" data-bgcolor="#cccccc"></td>
@@ -1215,7 +1215,7 @@ title="May 2005 GMOD Meeting">May 2005 GMOD Meeting</a></strong></td>
 title="October 2004 GMOD Meeting">October 2004 GMOD
 Meeting</a></strong></td>
 <td>Cold Spring Harbor, New York</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td>April 26-28</td>
@@ -1223,7 +1223,7 @@ Meeting</a></strong></td>
 title="April 2004 GMOD Meeting">April 2004 GMOD
 Meeting</a></strong></td>
 <td>Cambridge, Massachusetts</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td colspan="5" data-bgcolor="#cccccc"></td>
@@ -1234,7 +1234,7 @@ Meeting</a></strong></td>
 <td><strong><a href="/wiki/May_2003_GMOD_Meeting"
 title="May 2003 GMOD Meeting">May 2003 GMOD Meeting</a></strong></td>
 <td>Cold Spring Harbor, New York, before Genome Informatics</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="even">
 <td>February 5</td>
@@ -1243,7 +1243,7 @@ title="February 2003 GMOD Meeting">February 2003 GMOD
 Meeting</a></strong></td>
 <td>San Diego, California, coinciding with the O'Reilly Bioinformatics
 Technology Conference</td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 </tr>
 <tr class="odd">
 <td colspan="5" data-bgcolor="#cccccc"></td>

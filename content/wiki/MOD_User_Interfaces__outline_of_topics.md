@@ -14,21 +14,21 @@ from their
 organism/genome database project's perspective:
 
 - **How to search for name of gene, view information (gene page)**
-  -- How do we handle the most common use of genome databases?
+ -- How do we handle the most common use of genome databases?
 - **Search for genes that cause a phenotype or GO association (ie, by
-  some attribute)**
-  -- How does a scientist best find genome information related to
-  various biological concepts.
+ some attribute)**
+ -- How does a scientist best find genome information related to
+ various biological concepts.
 - **Generate a customized report on selected aspects of a gene**
-  -- How can a scientist distill those portions of interest from fuller
-  gene and genomic information?
+ -- How can a scientist distill those portions of interest from fuller
+ gene and genomic information?
 - **Generate bulk output based on a query**
-  -- How can a scientist answer a question involving hundreds or
-  thousands of genes, perhaps with a table suited to spreadsheet use.
+ -- How can a scientist answer a question involving hundreds or
+ thousands of genes, perhaps with a table suited to spreadsheet use.
 - **Combine the results at your MOD with information from other data
-  sources**
-  -- Many scientists work with several genome websites to answer a
-  research question. How do MODs facilitate this?
+ sources**
+ -- Many scientists work with several genome websites to answer a
+ research question. How do MODs facilitate this?
 
 Here is a more general list of topics that these presentations might
 touch on:

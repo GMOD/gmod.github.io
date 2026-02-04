@@ -24,11 +24,11 @@ continue, including:
 
 - [User help](../GMOD_Help_Desk#User_Help)
 - [Web site and
-  documentation](../GMOD_Help_Desk#GMOD_Web_Site_and_Documentation)
+ documentation](../GMOD_Help_Desk#GMOD_Web_Site_and_Documentation)
 - [Training, outreach, and community
-  building](../GMOD_Help_Desk#Training_and_Outreach)
+ building](../GMOD_Help_Desk#Training_and_Outreach)
 - [Developer
-  support](../GMOD_Help_Desk#Developer_support)
+ support](../GMOD_Help_Desk#Developer_support)
 
 What should the balance be between these tasks? What additional tasks
 should be added to the mix? If you have any suggestions on how the

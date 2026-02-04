@@ -9,11 +9,11 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/ModwareLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/ModwareLogo.png 2x"
 width="300" height="158" alt="Modware" /></a>
 
-  Status](#Status)
+ Status](#Status)
 - [Getting
-  Started](#Getting_Started)
+ Started](#Getting_Started)
 - [Feedback
-  Wanted](#Feedback_Wanted)
+ Wanted](#Feedback_Wanted)
 - [Acknowledgments](#Acknowledgments)
 - [Support](#Support)
 
@@ -39,20 +39,20 @@ class="external text" rel="nofollow">SourceForge</a> to report bugs and
 feature requests.
 
 - For a wiki-ized version of a presentation done at the GMOD meeting in
-  January 2007: [Modware
-  Presentation](/wiki/Modware_Presentation)
+ January 2007: [Modware
+ Presentation](/wiki/Modware_Presentation)
 - For a VERY quick tour of the kinds of things you can do with Modware,
-  check out the
-  <a href="http://gmod-ware.sourceforge.net/some_use_cases.html"
-  class="external text" rel="nofollow">Examples Page</a>
+ check out the
+ <a href="http://gmod-ware.sourceforge.net/some_use_cases.html"
+ class="external text" rel="nofollow">Examples Page</a>
 - For detailed documentation on the API, check out the
-  <a href="http://gmod-ware.sourceforge.net/doc/" class="external text"
-  rel="nofollow">API docs</a>.
+ <a href="http://gmod-ware.sourceforge.net/doc/" class="external text"
+ rel="nofollow">API docs</a>.
 - To download Modware and [CVS](/wiki/Glossary#CVS) access, go to
-  the <a href="http://sourceforge.net/projects/gmod-ware"
-  class="external text" rel="nofollow">Project page</a>.
+ the <a href="http://sourceforge.net/projects/gmod-ware"
+ class="external text" rel="nofollow">Project page</a>.
 - For a general discussion of GMOD Middleware: [GMOD
-  Middleware](/wiki/GMOD_Middleware)
+ Middleware](/wiki/GMOD_Middleware)
 
 ## Status
 
@@ -86,11 +86,11 @@ The first CPAN release is expected to be early next year.
 
 - Install [Chado](/wiki/Chado_-_Getting_Started)
 - Install Modware, and there is an option to `make install_sample` that
-  will install the Dictyostelium Genome
+ will install the Dictyostelium Genome
 - Explore the API documentation and ask questions to
-  <a href="mailto:gmod-ware-users@lists.sourceforge.net"
-  class="external text"
-  rel="nofollow">gmod-ware-users@lists.sourceforge.net</a>.
+ <a href="mailto:gmod-ware-users@lists.sourceforge.net"
+ class="external text"
+ rel="nofollow">gmod-ware-users@lists.sourceforge.net</a>.
 
 ## Feedback Wanted
 
@@ -117,8 +117,8 @@ GM64426 and HG0022.
 
 |
 |----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| **Modware** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ware-users" |  |  |
+| | Mailing List Link | Description | Archive(s) |
+| **Modware** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ware-users" | | |
 class="external text" rel="nofollow">gmod-ware-users</a> | **Modware** support and developer mailing list. | <a href="http://gmod.827538.n3.nabble.com/Modware-f887754.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="https://sourceforge.net/mailarchive/forum.php?forum_name=gmod-ware-users"

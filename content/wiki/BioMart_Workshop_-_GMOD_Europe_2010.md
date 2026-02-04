@@ -31,13 +31,13 @@ Part of <a href="/wiki/GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
 </tbody>
 </table>
 
-  Mining genomic data</span>](#BioMart:_Mining_genomic_data)
+ Mining genomic data</span>](#BioMart:_Mining_genomic_data)
 - [Instructors](#Instructors)
 - [Registration](#Registration)
 - [Schedule](#Schedule)
 - [Sponsor](#Sponsor)
 - [Lodging and
-  Other Logistics](#Lodging_and_Other_Logistics)
+ Other Logistics](#Lodging_and_Other_Logistics)
 
 ## [BioMart](/wiki/BioMart): Mining genomic data
 
@@ -79,18 +79,18 @@ programming techniques and familiarity with databases
 
 ## Instructors
 
-- [Syed Haider](/wiki/User:SyedHaider)
-  (<a href="http://oicr.on.ca" class="external text"
-  rel="nofollow">OICR</a> and University of Cambridge)
+- Syed Haider
+ (<a href="http://oicr.on.ca" class="external text"
+ rel="nofollow">OICR</a> and University of Cambridge)
 - <a href="http://www.ebi.ac.uk/~damian" class="external text"
-  rel="nofollow">Damian Smedley</a>
-  (<a href="http://www.ebi.ac.uk/" class="external text"
-  rel="nofollow">EBI</a>)
-- [Junjun Zhang](/wiki/User:Junjun)
-  (<a href="http://oicr.on.ca" class="external text"
-  rel="nofollow">OICR</a>)
+ rel="nofollow">Damian Smedley</a>
+ (<a href="http://www.ebi.ac.uk/" class="external text"
+ rel="nofollow">EBI</a>)
+- Junjun Zhang
+ (<a href="http://oicr.on.ca" class="external text"
+ rel="nofollow">OICR</a>)
 - Arek Kasprzyk (<a href="http://oicr.on.ca" class="external text"
-  rel="nofollow">OICR</a>)
+ rel="nofollow">OICR</a>)
 
 ## Registration
 

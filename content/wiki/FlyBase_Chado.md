@@ -3,13 +3,13 @@ title: "FlyBase Chado"
 ---
 # FlyBase Chado
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Public Chado
-  Access](#Public_Chado_Access)
+ Access](#Public_Chado_Access)
 - [Data
-  Implementation Documents](#Data_Implementation_Documents)
+ Implementation Documents](#Data_Implementation_Documents)
 - [Questions or
-  comments](#Questions_or_comments)
+ comments](#Questions_or_comments)
 
 ## Introduction
 
@@ -32,9 +32,9 @@ Databases](/wiki/Public_Chado_Databases).
 ## Data Implementation Documents
 
 - [FlyBase Comparative Genomics
-  Data](/wiki/FlyBase_Comparative_Genomics_Data)
+ Data](/wiki/FlyBase_Comparative_Genomics_Data)
 - [FlyBase Field Mapping
-  Tables](/wiki/FlyBase_Field_Mapping_Tables)
+ Tables](/wiki/FlyBase_Field_Mapping_Tables)
 
 ## Questions or comments
 

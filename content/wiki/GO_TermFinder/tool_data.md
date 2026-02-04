@@ -33,9 +33,9 @@ getting_started_preamble = \| req = \| install = \| config = \| doc = \|
 papers =
 
 - GO::TermFinder--open source software for accessing Gene Ontology
-  information and finding significantly enriched Gene Ontology terms
-  associated with a list of genes.
-  <sup>[\[1\]](#cite_note-PMID:15297299-1)</sup>
+ information and finding significantly enriched Gene Ontology terms
+ associated with a list of genes.
+ <sup>[\[1\]](#cite_note-PMID:15297299-1)</sup>
 
 \| presentations = \| tutorials = \| wild_urls = \| mail = \| logo_info
 = \| dev_ppl = Mike Cherry, David Botstein, John Matese \| dev_status =
@@ -44,6 +44,6 @@ papers =
 
 \| demo_server = \|release date=2003 \| survey_link =
 
-1.  <span id="cite_note-PMID:15297299"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:15297299_0)</span>
-    **Cite error: Invalid `<ref>` tag; no text was provided for refs
-    named `PMID:15297299`**</span>
+1. <span id="cite_note-PMID:15297299"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:15297299_0)</span>
+ **Cite error: Invalid `<ref>` tag; no text was provided for refs
+ named `PMID:15297299`**</span>

@@ -16,7 +16,7 @@ tether various types of mappable data to a genomic sequence, including
 gene structure, mutation sites, polymorphic sites, insertion sites,
 regulatory elements, and rescue fragments.
 
-  Screenshots</span>](#Demo_.26_Screenshots)
+ Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)

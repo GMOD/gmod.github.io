@@ -11,34 +11,34 @@ They use a [schema](../Glossary#Schema) custom built to
 represent GFF data. GFF is [frequently used in GMOD](#GFF_in_GMOD) for
 data exchange and representation of genomic data.
 
-  Versions](#Versions)
+ Versions](#Versions)
 - [GFF3](#GFF3)
-  - [GFF3
-    Annotation Section](#GFF3_Annotation_Section)
-    - [GFF3
-      Format](#GFF3_Format)
-    - [Nesting Features](#Nesting_Features)
-    - [Discontinuous
-      Features](#Discontinuous_Features)
-    - [Protein-Coding
-      Genes](#Protein-Coding_Genes)
-    - [Alignments](#Alignments)
-    - [Quantitative
-      Data](#Quantitative_Data)
-  - [GFF3
-    Sequence Section](#GFF3_Sequence_Section)
-  - [GFF3
-    Validation](#GFF3_Validation)
+ - [GFF3
+ Annotation Section](#GFF3_Annotation_Section)
+ - [GFF3
+ Format](#GFF3_Format)
+ - [Nesting Features](#Nesting_Features)
+ - [Discontinuous
+ Features](#Discontinuous_Features)
+ - [Protein-Coding
+ Genes](#Protein-Coding_Genes)
+ - [Alignments](#Alignments)
+ - [Quantitative
+ Data](#Quantitative_Data)
+ - [GFF3
+ Sequence Section](#GFF3_Sequence_Section)
+ - [GFF3
+ Validation](#GFF3_Validation)
 - [GFF2](#GFF2)
 - [GTF](#GTF)
 - [GFF in
-  GMOD](#GFF_in_GMOD)
-  - [Apollo](#Apollo)
-  - [Chado](#Chado)
-  - [CMap](#CMap)
-  - [GBrowse](#GBrowse)
+ GMOD](#GFF_in_GMOD)
+ - [Apollo](#Apollo)
+ - [Chado](#Chado)
+ - [CMap](#CMap)
+ - [GBrowse](#GBrowse)
 - [See
-  Also](#See_Also)
+ Also](#See_Also)
 
 # Versions
 
@@ -96,12 +96,12 @@ a comment that identifies the file format and version. This is followed
 by a series of data lines, each one of which corresponds to an
 annotation.Here is a miniature GFF3 file:
 
-    ##gff-version 3
-    ctg123  .  exon  1300  1500  .  +  .  ID=exon00001
-    ctg123  .  exon  1050  1500  .  +  .  ID=exon00002
-    ctg123  .  exon  3000  3902  .  +  .  ID=exon00003
-    ctg123  .  exon  5000  5500  .  +  .  ID=exon00004
-    ctg123  .  exon  7000  9000  .  +  .  ID=exon00005
+ ##gff-version 3
+ ctg123 . exon 1300 1500 . + . ID=exon00001
+ ctg123 . exon 1050 1500 . + . ID=exon00002
+ ctg123 . exon 3000 3902 . + . ID=exon00003
+ ctg123 . exon 5000 5500 . + . ID=exon00004
+ ctg123 . exon 7000 9000 . + . ID=exon00005
 
 The `##gff-version 3` line is required and *must* be the first line of
 the file. It introduces the annotation section of the file.
@@ -252,7 +252,7 @@ information.
 Multiple attributes of the same type are indicated by separating the
 values with the comma "," character, as in:
 
-    Parent=AF2312,AB2812,abc-3
+ Parent=AF2312,AB2812,abc-3
 
 Note that attribute names are case sensitive. "Parent" is not the same
 as "parent".
@@ -269,13 +269,13 @@ represents such features by linking the parts together with the Parent
 tag. For example, to represent an mRNA transcript that has five exons,
 we could write this:
 
-    ##gff-version 3
-    ctg123 . mRNA            1300  9000  .  +  .  ID=mrna0001;Name=sonichedgehog
-    ctg123 . exon            1300  1500  .  +  .  ID=exon00001;Parent=mrna0001
-    ctg123 . exon            1050  1500  .  +  .  ID=exon00002;Parent=mrna0001
-    ctg123 . exon            3000  3902  .  +  .  ID=exon00003;Parent=mrna0001
-    ctg123 . exon            5000  5500  .  +  .  ID=exon00004;Parent=mrna0001
-    ctg123 . exon            7000  9000  .  +  .  ID=exon00005;Parent=mrna0001
+ ##gff-version 3
+ ctg123 . mRNA 1300 9000 . + . ID=mrna0001;Name=sonichedgehog
+ ctg123 . exon 1300 1500 . + . ID=exon00001;Parent=mrna0001
+ ctg123 . exon 1050 1500 . + . ID=exon00002;Parent=mrna0001
+ ctg123 . exon 3000 3902 . + . ID=exon00003;Parent=mrna0001
+ ctg123 . exon 5000 5500 . + . ID=exon00004;Parent=mrna0001
+ ctg123 . exon 7000 9000 . + . ID=exon00005;Parent=mrna0001
 
 The first feature is an mRNA that extends from position 1300 to 9000 in
 genomic coordinates. It has an ID of "mrna0001" and a human-readable
@@ -290,28 +290,28 @@ The ID is really only important for linking features together. If a
 feature does not have any subparts, then it does not formally need an
 ID. Thus, we could simplify this by removing all the exon IDs:
 
-    ##gff-version 3
-    ctg123 . mRNA            1300  9000  .  +  .  ID=mrna0001;Name=sonichedgehog
-    ctg123 . exon            1300  1500  .  +  .  Parent=mrna0001
-    ctg123 . exon            1050  1500  .  +  .  Parent=mrna0001
-    ctg123 . exon            3000  3902  .  +  .  Parent=mrna0001
-    ctg123 . exon            5000  5500  .  +  .  Parent=mrna0001
-    ctg123 . exon            7000  9000  .  +  .  Parent=mrna0001
+ ##gff-version 3
+ ctg123 . mRNA 1300 9000 . + . ID=mrna0001;Name=sonichedgehog
+ ctg123 . exon 1300 1500 . + . Parent=mrna0001
+ ctg123 . exon 1050 1500 . + . Parent=mrna0001
+ ctg123 . exon 3000 3902 . + . Parent=mrna0001
+ ctg123 . exon 5000 5500 . + . Parent=mrna0001
+ ctg123 . exon 7000 9000 . + . Parent=mrna0001
 
 Multiple levels of nesting are allowed. If this transcript is part of an
 operon, then we can add another level of nesting:
 
-    ##gff-version 3
-    ctg123 . operon          1300 15000  .  +  .  ID=operon001;Name=superOperon
-    ctg123 . mRNA            1300  9000  .  +  .  ID=mrna0001;Parent=operon001;Name=sonichedgehog
-    ctg123 . exon            1300  1500  .  +  .  Parent=mrna0001
-    ctg123 . exon            1050  1500  .  +  .  Parent=mrna0001
-    ctg123 . exon            3000  3902  .  +  .  Parent=mrna0001
-    ctg123 . exon            5000  5500  .  +  .  Parent=mrna0001
-    ctg123 . exon            7000  9000  .  +  .  Parent=mrna0001
-    ctg123 . mRNA           10000 15000  .  +  .  ID=mrna0002;Parent=operon001;Name=subsonicsquirrel
-    ctg123 . exon           10000 12000  .  +  .  Parent=mrna0002
-    ctg123 . exon           14000 15000  .  +  .  Parent=mrna0002
+ ##gff-version 3
+ ctg123 . operon 1300 15000 . + . ID=operon001;Name=superOperon
+ ctg123 . mRNA 1300 9000 . + . ID=mrna0001;Parent=operon001;Name=sonichedgehog
+ ctg123 . exon 1300 1500 . + . Parent=mrna0001
+ ctg123 . exon 1050 1500 . + . Parent=mrna0001
+ ctg123 . exon 3000 3902 . + . Parent=mrna0001
+ ctg123 . exon 5000 5500 . + . Parent=mrna0001
+ ctg123 . exon 7000 9000 . + . Parent=mrna0001
+ ctg123 . mRNA 10000 15000 . + . ID=mrna0002;Parent=operon001;Name=subsonicsquirrel
+ ctg123 . exon 10000 12000 . + . Parent=mrna0002
+ ctg123 . exon 14000 15000 . + . Parent=mrna0002
 
 ### Discontinuous Features
 
@@ -323,11 +323,11 @@ genomic sequence. GFF3 deals with these features by representing each
 continuous segment as a distinct row, and then giving each segment the
 same ID to tie them together. For example:
 
-    ctg123 example match 26122 26126 . + . ID=match001
-    ctg123 example match 26497 26869 . + . ID=match001
-    ctg123 example match 27201 27325 . + . ID=match001
-    ctg123 example match 27372 27433 . + . ID=match001
-    ctg123 example match 27565 27565 . + . ID=match001
+ ctg123 example match 26122 26126 . + . ID=match001
+ ctg123 example match 26497 26869 . + . ID=match001
+ ctg123 example match 27201 27325 . + . ID=match001
+ ctg123 example match 27372 27433 . + . ID=match001
+ ctg123 example match 27565 27565 . + . ID=match001
 
 Note that this is distinct from the nested features we looked at in the
 previous section. In the former case, there is a single parent feature
@@ -354,30 +354,30 @@ third level are the components of the mRNA transcripts, most commonly
 CDS coding segments and UTRs. This example shows how to represent a gene
 named "EDEN" which has three alternatively-spliced mRNA transcripts:
 
-    ctg123 example gene            1050 9000 . + . ID=EDEN;Name=EDEN;Note=protein kinase
+ ctg123 example gene 1050 9000 . + . ID=EDEN;Name=EDEN;Note=protein kinase
 
-    ctg123 example mRNA            1050 9000 . + . ID=EDEN.1;Parent=EDEN;Name=EDEN.1;Index=1
-    ctg123 example five_prime_UTR  1050 1200 . + . Parent=EDEN.1
-    ctg123 example CDS             1201 1500 . + 0 Parent=EDEN.1
-    ctg123 example CDS             3000 3902 . + 0 Parent=EDEN.1
-    ctg123 example CDS             5000 5500 . + 0 Parent=EDEN.1
-    ctg123 example CDS             7000 7608 . + 0 Parent=EDEN.1
-    ctg123 example three_prime_UTR 7609 9000 . + . Parent=EDEN.1
+ ctg123 example mRNA 1050 9000 . + . ID=EDEN.1;Parent=EDEN;Name=EDEN.1;Index=1
+ ctg123 example five_prime_UTR 1050 1200 . + . Parent=EDEN.1
+ ctg123 example CDS 1201 1500 . + 0 Parent=EDEN.1
+ ctg123 example CDS 3000 3902 . + 0 Parent=EDEN.1
+ ctg123 example CDS 5000 5500 . + 0 Parent=EDEN.1
+ ctg123 example CDS 7000 7608 . + 0 Parent=EDEN.1
+ ctg123 example three_prime_UTR 7609 9000 . + . Parent=EDEN.1
 
-    ctg123 example mRNA            1050 9000 . + . ID=EDEN.2;Parent=EDEN;Name=EDEN.2;Index=1
-    ctg123 example five_prime_UTR  1050 1200 . + . Parent=EDEN.2
-    ctg123 example CDS             1201 1500 . + 0 Parent=EDEN.2
-    ctg123 example CDS             5000 5500 . + 0 Parent=EDEN.2
-    ctg123 example CDS             7000 7608 . + 0 Parent=EDEN.2
-    ctg123 example three_prime_UTR 7609 9000 . + . Parent=EDEN.2
+ ctg123 example mRNA 1050 9000 . + . ID=EDEN.2;Parent=EDEN;Name=EDEN.2;Index=1
+ ctg123 example five_prime_UTR 1050 1200 . + . Parent=EDEN.2
+ ctg123 example CDS 1201 1500 . + 0 Parent=EDEN.2
+ ctg123 example CDS 5000 5500 . + 0 Parent=EDEN.2
+ ctg123 example CDS 7000 7608 . + 0 Parent=EDEN.2
+ ctg123 example three_prime_UTR 7609 9000 . + . Parent=EDEN.2
 
-    ctg123 example mRNA            1300 9000 . + . ID=EDEN.3;Parent=EDEN;Name=EDEN.3;Index=1
-    ctg123 example five_prime_UTR  1300 1500 . + . Parent=EDEN.3
-    ctg123 example five_prime_UTR  3000 3300 . + . Parent=EDEN.3
-    ctg123 example CDS             3301 3902 . + 0 Parent=EDEN.3
-    ctg123 example CDS             5000 5500 . + 1 Parent=EDEN.3
-    ctg123 example CDS             7000 7600 . + 1 Parent=EDEN.3
-    ctg123 example three_prime_UTR 7601 9000 . + . Parent=EDEN.3
+ ctg123 example mRNA 1300 9000 . + . ID=EDEN.3;Parent=EDEN;Name=EDEN.3;Index=1
+ ctg123 example five_prime_UTR 1300 1500 . + . Parent=EDEN.3
+ ctg123 example five_prime_UTR 3000 3300 . + . Parent=EDEN.3
+ ctg123 example CDS 3301 3902 . + 0 Parent=EDEN.3
+ ctg123 example CDS 5000 5500 . + 1 Parent=EDEN.3
+ ctg123 example CDS 7000 7600 . + 1 Parent=EDEN.3
+ ctg123 example three_prime_UTR 7601 9000 . + . Parent=EDEN.3
 
 We start with a feature of type "gene" with the ID "EDEN". This has
 three alternative splice forms named EDEN.1, EDEN.2 and EDEN.3. To tell
@@ -418,15 +418,15 @@ coordinates of the cDNA, EST or protein (known as the "target"
 coordinates). In GFF3, the target coordinates are specified using the
 **Target** tag.
 
-    ctg123 est EST_match 1050 1500 . + . ID=Match1;Name=agt830.5;Target=agt830.5 1 451
-    ctg123 est EST_match 3000 3202 . + . ID=Match1;Name=agt830.5;Target=agt830.5 452 654
+ ctg123 est EST_match 1050 1500 . + . ID=Match1;Name=agt830.5;Target=agt830.5 1 451
+ ctg123 est EST_match 3000 3202 . + . ID=Match1;Name=agt830.5;Target=agt830.5 452 654
 
-    ctg123 est EST_match 5410 5500 . - . ID=Match2;Name=agt830.3;Target=agt830.3 505 595
-    ctg123 est EST_match 7000 7503 . - . ID=Match2;Name=agt830.3;Target=agt830.3 1 504
+ ctg123 est EST_match 5410 5500 . - . ID=Match2;Name=agt830.3;Target=agt830.3 505 595
+ ctg123 est EST_match 7000 7503 . - . ID=Match2;Name=agt830.3;Target=agt830.3 1 504
 
-    ctg123 est EST_match 1050 1500 . + . ID=Match3;Name=agt221.5;Target=agt221.5 1 451
-    ctg123 est EST_match 5000 5500 . + . ID=Match3;Name=agt221.5;Target=agt221.5 452 952
-    ctg123 est EST_match 7000 7300 . + . ID=Match3;Name=agt221.5;Target=agt221.5 953 1253
+ ctg123 est EST_match 1050 1500 . + . ID=Match3;Name=agt221.5;Target=agt221.5 1 451
+ ctg123 est EST_match 5000 5500 . + . ID=Match3;Name=agt221.5;Target=agt221.5 452 952
+ ctg123 est EST_match 7000 7300 . + . ID=Match3;Name=agt221.5;Target=agt221.5 953 1253
 
 This example shows three different alignment features of type
 "EST_match". Each alignment has a distinct ID, and all the discontinuous
@@ -456,12 +456,12 @@ designed for very high-density quantitative data such as tiling arrays.
 
 We first look at the simple format:
 
-    ctg123 affy microarray_oligo   1 100 281 . . Name=Expt1
-    ctg123 affy microarray_oligo 101 200 183 . . Name=Expt1
-    ctg123 affy microarray_oligo 201 300 213 . . Name=Expt1
-    ctg123 affy microarray_oligo 301 400 191 . . Name=Expt1
-    ctg123 affy microarray_oligo 401 500 288 . . Name=Expt1
-    ctg123 affy microarray_oligo 501 600 184 . . Name=Expt1
+ ctg123 affy microarray_oligo 1 100 281 . . Name=Expt1
+ ctg123 affy microarray_oligo 101 200 183 . . Name=Expt1
+ ctg123 affy microarray_oligo 201 300 213 . . Name=Expt1
+ ctg123 affy microarray_oligo 301 400 191 . . Name=Expt1
+ ctg123 affy microarray_oligo 401 500 288 . . Name=Expt1
+ ctg123 affy microarray_oligo 501 600 184 . . Name=Expt1
 
 In this format, which can be embedded directly in the GFF3 file, each
 data point is a distinct feature with a start and end point. The
@@ -475,7 +475,7 @@ outside of the main database in a special-purpose binary file that is
 kept somewhere on the file system. In this case the GFF3 file contains a
 single line per experiment like this one:
 
-    ctg123 . microarray_oligo 1 50000 . . . Name=example;wigfile=/usr/data/ctg123.Expt1.wig
+ ctg123 . microarray_oligo 1 50000 . . . Name=example;wigfile=/usr/data/ctg123.Expt1.wig
 
 The .wig file is created and managed using a script called
 `wiggle2gff3.pl` that comes with [GBrowse](../GBrowse.1).
@@ -491,21 +491,21 @@ line. This sequence section is optional. If present, the sequence
 section can define sequence for any landmark used in column 1 (the frame
 of reference). For example: For example:
 
-    ##gff-version 3
-    ctg123 . exon            1300  1500  .  +  .  ID=exon00001
-    ctg123 . exon            1050  1500  .  +  .  ID=exon00002
-    ctg123 . exon            3000  3902  .  +  .  ID=exon00003
-    ctg123 . exon            5000  5500  .  +  .  ID=exon00004
-    ctg123 . exon            7000  9000  .  +  .  ID=exon00005
-    ##FASTA
-    >ctg123
-    cttctgggcgtacccgattctcggagaacttgccgcaccattccgccttg
-    tgttcattgctgcctgcatgttcattgtctacctcggctacgtgtggcta
-    tctttcctcggtgccctcgtgcacggagtcgagaaaccaaagaacaaaaa
-    aagaaattaaaatatttattttgctgtggtttttgatgtgtgttttttat
-    aatgatttttgatgtgaccaattgtacttttcctttaaatgaaatgtaat
-    cttaaatgtatttccgacgaattcgaggcctgaaaagtgtgacgccattc
-    ...
+ ##gff-version 3
+ ctg123 . exon 1300 1500 . + . ID=exon00001
+ ctg123 . exon 1050 1500 . + . ID=exon00002
+ ctg123 . exon 3000 3902 . + . ID=exon00003
+ ctg123 . exon 5000 5500 . + . ID=exon00004
+ ctg123 . exon 7000 9000 . + . ID=exon00005
+ ##FASTA
+ >ctg123
+ cttctgggcgtacccgattctcggagaacttgccgcaccattccgccttg
+ tgttcattgctgcctgcatgttcattgtctacctcggctacgtgtggcta
+ tctttcctcggtgccctcgtgcacggagtcgagaaaccaaagaacaaaaa
+ aagaaattaaaatatttattttgctgtggtttttgatgtgtgttttttat
+ aatgatttttgatgtgaccaattgtacttttcctttaaatgaaatgtaat
+ cttaaatgtatttccgacgaattcgaggcctgaaaagtgtgacgccattc
+ ...
 
 When the GFF3 file is processed the IDs on the header line of FASTA
 entries are matched with IDs used in column 1 in the annotation section

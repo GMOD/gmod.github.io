@@ -15,7 +15,7 @@ rather than on specific components:
 
 | Name | List Link | Topics | Archive(s) |
 |----|----|----|----|
-| CoGePhy | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cogephy" |  |  |
+| CoGePhy | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cogephy" | | |
 class="external text" rel="nofollow">gmod-cogephy</a> | Discussion of **co**mparative **ge**nomics, **phy**logeny, and related topics. | <a href="http://gmod.827538.n3.nabble.com/CoGePhy-f2036734.html"
 class="external text" rel="nofollow">Nabble</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cogephy"

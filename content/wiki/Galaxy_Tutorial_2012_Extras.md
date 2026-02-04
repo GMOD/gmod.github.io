@@ -9,44 +9,44 @@ They were moved here either in the interests of time, or because they no
 longer fit well with other content. However, these sections are still
 informative.
 
-  Genomes to Trackster</span>](#Defining_Genomes_to_Trackster)
+ Genomes to Trackster</span>](#Defining_Genomes_to_Trackster)
 - [Adding a new
-  tool](#Adding_a_new_tool)
-  - [The tool
-    command (script)](#The_tool_command_.28script.29)
-  - [The tool
-    wrapper](#The_tool_wrapper)
-  - [Running
-    the new tool](#Running_the_new_tool)
+ tool](#Adding_a_new_tool)
+ - [The tool
+ command (script)](#The_tool_command_.28script.29)
+ - [The tool
+ wrapper](#The_tool_wrapper)
+ - [Running
+ the new tool](#Running_the_new_tool)
 - [Configuring
-  Galaxy (2)](#Configuring_Galaxy_.282.29)
-  - [Tool
-    dependencies](#Tool_dependencies)
+ Galaxy (2)](#Configuring_Galaxy_.282.29)
+ - [Tool
+ dependencies](#Tool_dependencies)
 - [A second
-  example with NGS data](#A_second_example_with_NGS_data)
-  - [1. Upload
-    datasets](#1._Upload_datasets)
-  - [2. Run BWA
-    to map reads](#2._Run_BWA_to_map_reads)
+ example with NGS data](#A_second_example_with_NGS_data)
+ - [1. Upload
+ datasets](#1._Upload_datasets)
+ - [2. Run BWA
+ to map reads](#2._Run_BWA_to_map_reads)
 - [Making genome
-  / alignment data available to
-  Galaxy](#Making_genome_.2F_alignment_data_available_to_Galaxy)
-  - [Python
-    package management tools](#Python_package_management_tools)
-  - [bx-python](#bx-python)
-  - [Get
-    datasets for our genome](#Get_datasets_for_our_genome)
-  - [Edit
-    configuration files](#Edit_configuration_files)
-  - [Create
-    dataset using new genome
-    build](#Create_dataset_using_new_genome_build)
-  - [Extract
-    sequence corresponding to these
-    intervals](#Extract_sequence_corresponding_to_these_intervals)
-  - [Extract
-    multiple alignments corresponding to these
-    intervals](#Extract_multiple_alignments_corresponding_to_these_intervals)
+ / alignment data available to
+ Galaxy](#Making_genome_.2F_alignment_data_available_to_Galaxy)
+ - [Python
+ package management tools](#Python_package_management_tools)
+ - [bx-python](#bx-python)
+ - [Get
+ datasets for our genome](#Get_datasets_for_our_genome)
+ - [Edit
+ configuration files](#Edit_configuration_files)
+ - [Create
+ dataset using new genome
+ build](#Create_dataset_using_new_genome_build)
+ - [Extract
+ sequence corresponding to these
+ intervals](#Extract_sequence_corresponding_to_these_intervals)
+ - [Extract
+ multiple alignments corresponding to these
+ intervals](#Extract_multiple_alignments_corresponding_to_these_intervals)
 
 ## Defining Genomes to Trackster
 
@@ -61,18 +61,18 @@ Trackster looks for the `.len` files in the
 `tool-data/shared/ucsc/chrom/` directory by default, but this location
 can be configured in the `universe_wsgi.ini` file:
 
-    # Directory where chrom len files are kept, currently mainly used by trackster
-    #len_file_path = tool-data/shared/ucsc/chrom
+ # Directory where chrom len files are kept, currently mainly used by trackster
+ #len_file_path = tool-data/shared/ucsc/chrom
 
 For example, to enable visualization of hg18, a file called hg18.len
 must exist in the previously specified folder. The contents of the
 `.len` file is tab-delimited and specifies the length of each
 chrom/contig of that build, each on a separate line, eg:
 
-    chr1    27473282
-    chr2    38882233
-    ...
-    chrX    28883322
+ chr1 27473282
+ chr2 38882233
+ ...
+ chrX 28883322
 
 To populate this directory with common UCSC builds, run the following
 commands:
@@ -116,7 +116,7 @@ tool in Python (or perl, or awk, or...) to do this.
 
 Let's first create a directory for our new tool:
 
-    $ mkdir tools/gmod_2012
+ $ mkdir tools/gmod_2012
 
 ### The tool command (script)
 
@@ -135,17 +135,17 @@ import sys
 out = open( sys.argv[2], "w" )
 
 for line in open( sys.argv[1] ):
-    # Strip end of line and split on tabs
-    fields = line.rstrip( "\r\n" ).split( "\t" )
-    # Look only at optional fields
-    write_line = False
-    for field in fields[12:]:
-        flag, type, value = field.split( ":" )
-        if flag == sys.argv[3] and value == sys.argv[4]:
-            write_line = True
-    # If any optional field matched, keep the read
-    if write_line:
-        out.write( line )
+ # Strip end of line and split on tabs
+ fields = line.rstrip( "\r\n" ).split( "\t" )
+ # Look only at optional fields
+ write_line = False
+ for field in fields[12:]:
+ flag, type, value = field.split( ":" )
+ if flag == sys.argv[3] and value == sys.argv[4]:
+ write_line = True
+ # If any optional field matched, keep the read
+ if write_line:
+ out.write( line )
 ```
 
 ### The tool wrapper
@@ -155,15 +155,15 @@ Next, we need to create the tool configuration. Edit the file
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
-    <command interpreter="python">
+ <command interpreter="python">
 
-    </command>
-    <inputs>
+ </command>
+ <inputs>
 
-    </inputs>
-    <outputs>
+ </inputs>
+ <outputs>
 
-    </outputs>
+ </outputs>
 </tool>
 ```
 
@@ -172,15 +172,15 @@ First, let's define the output. This tool has a single output, of type
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
-    <command interpreter="python">
+ <command interpreter="python">
 
-    </command>
-    <inputs>
+ </command>
+ <inputs>
 
-    </inputs>
-    <outputs>
-        <data name="output1" format="sam" />
-    </outputs>
+ </inputs>
+ <outputs>
+ <data name="output1" format="sam" />
+ </outputs>
 </tool>
 ```
 
@@ -196,21 +196,21 @@ The resulting configuration:
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
-    <command interpreter="python">
+ <command interpreter="python">
 
-    </command>
-    <inputs>
-        <param type="data" format="sam" name="input1" label="File to filter"/>
-        <param type="select" name="flag" label="Optional field to filter on">
-            <option value="NM">Edit Distance</option>
-            <option value="MD">Mismatching positions / bases</option>
-        <option value="AS">Alignment score</option>
-        </param>
-    <param type="text" name="value" label="Value to require for flag"/>
-    </inputs>
-    <outputs>
-        <data name="output1" format="sam" />
-    </outputs>
+ </command>
+ <inputs>
+ <param type="data" format="sam" name="input1" label="File to filter"/>
+ <param type="select" name="flag" label="Optional field to filter on">
+ <option value="NM">Edit Distance</option>
+ <option value="MD">Mismatching positions / bases</option>
+ <option value="AS">Alignment score</option>
+ </param>
+ <param type="text" name="value" label="Value to require for flag"/>
+ </inputs>
+ <outputs>
+ <data name="output1" format="sam" />
+ </outputs>
 </tool>
 ```
 
@@ -221,21 +221,21 @@ final tool configuration is:
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
-    <command interpreter="python">
-        sam_filter.py $input1 $output1 $flag $value
-    </command>
-    <inputs>
-        <param type="data" format="sam" name="input1" label="File to filter"/>
-        <param type="select" name="flag" label="Optional field to filter on">
-            <option value="NM">Edit Distance</option>
-            <option value="MD">Mismatching positions / bases</option>
-        <option value="AS">Alignment score</option>
-        </param>
-    <param type="text" name="value" label="Value to require for flag"/>
-    </inputs>
-    <outputs>
-        <data name="output1" format="sam" />
-    </outputs>
+ <command interpreter="python">
+ sam_filter.py $input1 $output1 $flag $value
+ </command>
+ <inputs>
+ <param type="data" format="sam" name="input1" label="File to filter"/>
+ <param type="select" name="flag" label="Optional field to filter on">
+ <option value="NM">Edit Distance</option>
+ <option value="MD">Mismatching positions / bases</option>
+ <option value="AS">Alignment score</option>
+ </param>
+ <param type="text" name="value" label="Value to require for flag"/>
+ </inputs>
+ <outputs>
+ <data name="output1" format="sam" />
+ </outputs>
 </tool>
 ```
 
@@ -245,15 +245,15 @@ Galaxy. Modify the top of `tool_conf.xml` to look like:
 ``` de1
 <?xml version="1.0"?>
 <toolbox>
-  <section name="GMOD 2012 Course Tools" id="gmod_2012">
-    <tool file="gmod_2012/sam_filter.xml"/>
-  </section>
-  ...
+ <section name="GMOD 2012 Course Tools" id="gmod_2012">
+ <tool file="gmod_2012/sam_filter.xml"/>
+ </section>
+ ...
 ```
 
 and run Galaxy using
 
-    $ sh run.sh --reload
+ $ sh run.sh --reload
 
 ### Running the new tool
 
@@ -295,27 +295,27 @@ Suppose we'd like to analyze some Illumina datasets. We see that the
 
 compiled on the AMI, so let's copy it to a location on the `PATH`:
 
-    $ sudo cp /home/ubuntu/Galaxy/BWA/bwa-0.6.2/bwa /usr/local/bin
+ $ sudo cp /home/ubuntu/Galaxy/BWA/bwa-0.6.2/bwa /usr/local/bin
 
 Now `bwa` can be run from the command line:
 
-    $ bwa
+ $ bwa
 
-    Program: bwa (alignment via Burrows-Wheeler transformation)
-    Version: 0.6.2-r126
-    Contact: Heng Li <lh3@sanger.ac.uk>
+ Program: bwa (alignment via Burrows-Wheeler transformation)
+ Version: 0.6.2-r126
+ Contact: Heng Li <lh3@sanger.ac.uk>
 
-    ...
+ ...
 
 The Galaxy tool also requires a `loc` file which contains the locations
 of indexes for locally stored genome builds. We don't have any, so we
 can just use the empty sample:
 
-    $ cp tool-data/bwa_index.loc.sample tool-data/bwa_index.loc
+ $ cp tool-data/bwa_index.loc.sample tool-data/bwa_index.loc
 
 and then start Galaxy
 
-    $ sh run.sh --reload
+ $ sh run.sh --reload
 
 ## A second example with NGS data
 
@@ -331,8 +331,8 @@ We will again use the **Get Data → Upload File** tool to upload data
 into Galaxy. You can enter multiple URLs into the **URL / Text** box.
 *Enter:*
 
-    ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/phiX174_genome.fa
-    ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/phiX174_reads.fastqsanger
+ ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/phiX174_genome.fa
+ ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/phiX174_reads.fastqsanger
 
 and *click* **Execute**:
 
@@ -419,10 +419,10 @@ Python libraries for working with genomic and comparative genomic data.
 
 Now, we will download the datasets for our example genome:
 
-    $ mkdir tool-data/a_example_1
-    $ cd tool-data/a_example_1
-    $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/a_example_1.maf
-    $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/a_example_1.2bit
+ $ mkdir tool-data/a_example_1
+ $ cd tool-data/a_example_1
+ $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/a_example_1.maf
+ $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/a_example_1.2bit
 
 Note: These files are also available on the image in
 `/home/ubuntu/Galaxy/Data/`.
@@ -431,10 +431,10 @@ Next, we will use the script `maf_build_index.py` (put in
 `/usr/local/bin/` when `bx-python` was installed) to create a binary
 index that allows fast selection of alignments from a MAF file:
 
-    $ maf_build_index.py a_example_1.maf
-    $ ls
-    a_example_1.2bit  a_example_1.maf  a_example_1.maf.index
-    $ cd ~/Galaxy/galaxy-dist
+ $ maf_build_index.py a_example_1.maf
+ $ ls
+ a_example_1.2bit a_example_1.maf a_example_1.maf.index
+ $ cd ~/Galaxy/galaxy-dist
 
 ### Edit configuration files
 
@@ -445,7 +445,7 @@ existence of our genome, and of these associated datasets.
 tabs are in the right places. If you have trouble cutting and pasting
 from the wiki, you can cut and paste from this text file instead:
 
-    ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/info.txt
+ ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/info.txt
 
 Add this line to `tool-data/shared/ucsc/builds.txt`
 
@@ -462,13 +462,13 @@ seq a_example_1 /home/ubuntu/Galaxy/galaxy-dist/tool-data/a_example_1/a_example_
 Add this to `tool-data/maf_index.loc`
 
 ``` enter
-a_example_1 with 3 other species    a_example_1_3way    a_example_1 a_example_1,apiMel2,n_vitripennis_20100409,dm3  /home/ubuntu/Galaxy/galaxy-dist/tool-data/a_example_1/a_example_1.maf
+a_example_1 with 3 other species a_example_1_3way a_example_1 a_example_1,apiMel2,n_vitripennis_20100409,dm3 /home/ubuntu/Galaxy/galaxy-dist/tool-data/a_example_1/a_example_1.maf
 ```
 
 Now, stop and start your running Galaxy with
 
-    <Control-C>
-    $ sh run.sh --reload
+ <Control-C>
+ $ sh run.sh --reload
 
 ### Create dataset using new genome build
 
@@ -477,8 +477,8 @@ Upload File**.
 
 Paste the following into the **URL/Text** box:
 
-    scaffold0   450 650
-    scaffold0   2000    3000
+ scaffold0 450 650
+ scaffold0 2000 3000
 
 Set the **File Format** to **bed**, make sure **Convert spaces to tabs**
 is **selected**, and click in the **Genome:** box. You should be able to

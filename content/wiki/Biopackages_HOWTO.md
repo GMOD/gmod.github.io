@@ -3,15 +3,15 @@ title: "Biopackages HOWTO"
 ---
 # Biopackages HOWTO
 
-  Biopackages](#Biopackages)
+ Biopackages](#Biopackages)
 - [Preliminaries](#Preliminaries)
 - [Installing
-  Packages](#Installing_Packages)
+ Packages](#Installing_Packages)
 - [Help! Package
-  Foo on Platform X Does Not Work/Is Not
-  Available](#Help.21_Package_Foo_on_Platform_X_Does_Not_Work.2FIs_Not_Available)
+ Foo on Platform X Does Not Work/Is Not
+ Available](#Help.21_Package_Foo_on_Platform_X_Does_Not_Work.2FIs_Not_Available)
 - [Source vs. RPM
-  Installs](#Source_vs._RPM_Installs)
+ Installs](#Source_vs._RPM_Installs)
 - [Authors](#Authors)
 
 # Biopackages
@@ -51,32 +51,32 @@ Biopackages.net hosts a yum repository for distribution of Linux
 packages. To configure yum to be aware of the Biopackages.net
 repository, install one of the following configuration RPMs:
 
-       * Fedora Core 2
-       * Fedora Core 5
-       * CentOS 4 (the recommended Linux distribution)
+ * Fedora Core 2
+ * Fedora Core 5
+ * CentOS 4 (the recommended Linux distribution)
 
 A simple way to do this is, as root, execute the following command. Make
 sure you substitute the URL below with the correct one for your
 distribution:
 
-    rpm -Uvh http://biopackages.net/biopackages/stable/centos/4/noarch/biopackages-client-config-1.0-1.2.bp.centos4.noarch.rpm
+ rpm -Uvh http://biopackages.net/biopackages/stable/centos/4/noarch/biopackages-client-config-1.0-1.2.bp.centos4.noarch.rpm
 
 Alternatively you can manually add the following to your /etc/yum.conf
 file (customize as appropriate):
 
-    [biopackages-stable]
-    name=BioPackages (Stable) for Fedora Core $releasever - $basearch
-    enabled=1
-    gpgkey=file:///etc/pki/rpm-gpg/BIOPACKAGES-RPM-GPG-KEY
-    gpgcheck=1
-    baseurl=http://yum.biopackages.net/biopackages/stable/fedora/$releasever/$basearch/
+ [biopackages-stable]
+ name=BioPackages (Stable) for Fedora Core $releasever - $basearch
+ enabled=1
+ gpgkey=file:///etc/pki/rpm-gpg/BIOPACKAGES-RPM-GPG-KEY
+ gpgcheck=1
+ baseurl=http://yum.biopackages.net/biopackages/stable/fedora/$releasever/$basearch/
 
-    [biopackages-stable-noarch]
-    name=BioPackages (Stable) for Fedora Core $releasever - noarch
-    enabled=1
-    gpgkey=file:///etc/pki/rpm-gpg/BIOPACKAGES-RPM-GPG-KEY
-    gpgcheck=1
-    baseurl=http://yum.biopackages.net/biopackages/stable/fedora/$releasever/noarch/
+ [biopackages-stable-noarch]
+ name=BioPackages (Stable) for Fedora Core $releasever - noarch
+ enabled=1
+ gpgkey=file:///etc/pki/rpm-gpg/BIOPACKAGES-RPM-GPG-KEY
+ gpgcheck=1
+ baseurl=http://yum.biopackages.net/biopackages/stable/fedora/$releasever/noarch/
 
 And import the public key from
 <a href="http://biopackages.net/BIOPACKAGES-RPM-GPG-KEY"
@@ -88,19 +88,19 @@ class="external text" rel="nofollow">here</a>, saving it to
 First, as root, freshen your local cache of yum header files. Yum will
 print something similar to what is below:
 
-    % yum update
-    Gathering header information file(s) from server(s)
-    Server: Fedora Core 2 - x86_64 - Base
-    Server: BioPackages (Stable x86_64) for Fedora Core 2 - x86_64
-    Server: BioPackages (Stable noarch) for Fedora Core 2 - x86_64
-    Server: Fedora Core 2 - x86_64 - Released Updates
-    Finding updated packages
-    Downloading needed headers
-    genome-Sce-annotation-gen 100% |=========================| 1.1 kB    00:00
-    genome-Sce-nib-0-S228C-3. 100% |=========================| 1.7 kB    00:00
-    chado-Sce-0-S228C.0.003-2 100% |=========================| 2.0 kB    00:00
-    genome-Sce-annotation-aff 100% |=========================| 1.2 kB    00:00
-    genome-Sce-0-S228C-3.2005 100% |=========================| 1.7 kB    00:00
+ % yum update
+ Gathering header information file(s) from server(s)
+ Server: Fedora Core 2 - x86_64 - Base
+ Server: BioPackages (Stable x86_64) for Fedora Core 2 - x86_64
+ Server: BioPackages (Stable noarch) for Fedora Core 2 - x86_64
+ Server: Fedora Core 2 - x86_64 - Released Updates
+ Finding updated packages
+ Downloading needed headers
+ genome-Sce-annotation-gen 100% |=========================| 1.1 kB 00:00
+ genome-Sce-nib-0-S228C-3. 100% |=========================| 1.7 kB 00:00
+ chado-Sce-0-S228C.0.003-2 100% |=========================| 2.0 kB 00:00
+ genome-Sce-annotation-aff 100% |=========================| 1.2 kB 00:00
+ genome-Sce-0-S228C-3.2005 100% |=========================| 1.7 kB 00:00
 
 You can then install any RPM package available through Biopackages. For
 a list of RPMs please see the build status
@@ -111,8 +111,8 @@ a list of RPMs please see the build status
 There are many GMOD RPMs available including:
 
 - chado, chado-Sce, chado-Hsa, chado-Mmu (base empty chado with
-  ontologies, chado for yeast, chado for human, chado for mouse
-  respectively)
+ ontologies, chado for yeast, chado for human, chado for mouse
+ respectively)
 - gmod-web, gmod-web-Sce, gmod-web-Hsa (GMODWeb pre-configured)
 - gbrowse
 - textpresso
@@ -127,7 +127,7 @@ There are many GMOD RPMs available including:
 Use the following command as root to install one, or more, of these
 packages:
 
-    % yum install <package_name>
+ % yum install <package_name>
 
 # Help! Package Foo on Platform X Does Not Work/Is Not Available
 

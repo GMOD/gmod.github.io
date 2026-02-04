@@ -15,47 +15,47 @@ changes:
 New features & enhancements
 
 - The <a href="../DAS" class="mw-redirect" title="DAS">DAS</a> server
-  and client are now functional. You will need
-  <a href="http://search.cpan.org/perldoc?Bio::Das" class="external text"
-  rel="nofollow">Bio::Das</a> version 1.17 and
-  <a href="http://search.cpan.org/perldoc?Bio::Graphics"
-  class="external text" rel="nofollow">Bio::Graphics</a> version 2.11
-  for best results.
+ and client are now functional. You will need
+ <a href="http://search.cpan.org/perldoc?Bio::Das" class="external text"
+ rel="nofollow">Bio::Das</a> version 1.17 and
+ <a href="http://search.cpan.org/perldoc?Bio::Graphics"
+ class="external text" rel="nofollow">Bio::Graphics</a> version 2.11
+ for best results.
 - The "import track" function now allows you to specify the URL of
-  either a [BAM](../Glossary#BAM) or a BigWig file. The track
-  will be displayed without physically copying the file onto the GBrowse
-  server. You will need
-  <a href="http://search.cpan.org/perldoc?Bio::DB::Sam"
-  class="external text" rel="nofollow">Bio::DB::Sam</a> and
-  <a href="http://search.cpan.org/perldoc?Bio::DB::BigWig"
-  class="external text" rel="nofollow">Bio::DB::BigWig</a> for these
-  features to work.
+ either a [BAM](../Glossary#BAM) or a BigWig file. The track
+ will be displayed without physically copying the file onto the GBrowse
+ server. You will need
+ <a href="http://search.cpan.org/perldoc?Bio::DB::Sam"
+ class="external text" rel="nofollow">Bio::DB::Sam</a> and
+ <a href="http://search.cpan.org/perldoc?Bio::DB::BigWig"
+ class="external text" rel="nofollow">Bio::DB::BigWig</a> for these
+ features to work.
 - Uploading a Wig file now generates a BigWig database for improved
-  performance and scalability. This requires Bio::DB::BigWig to be
-  installed.
+ performance and scalability. This requires Bio::DB::BigWig to be
+ installed.
 - There is now a **Get chromosome sizes** entry in the File menu.
 - Calling GBrowse with the CGI argument `action=scan` will generate a
-  quick summary of track contents.
+ quick summary of track contents.
 - Improved performance when working with truly huge (\>1000 track
-  definition) configuration files.
+ definition) configuration files.
 - Fasta, [GFF3](../GFF3), [SAM](../Glossary#SAM) and
-  wiggle dumps now include the genome build ID if that information is
-  provided in the data source "metadata" configuration variable.
+ wiggle dumps now include the genome build ID if that information is
+ provided in the data source "metadata" configuration variable.
 
 Bug fixes
 
 - When [MySQL](../MySQL) is used as the back end for user
-  uploads, it will no longer fail on long filenames.
+ uploads, it will no longer fail on long filenames.
 - Fixed the "eurl" CGI parameter for importing data sets by their URLs.
 - Fasta and GFF3 dumps are now working when invoked from the File menu.
 - Fixed SAM file processing so as not to die when presented with a SAM
-  @SQ header. This requires
-  <a href="http://search.cpan.org/perldoc?Bio::DB::Sam"
-  class="external text" rel="nofollow">Bio::DB::Sam</a> 1.20 to work
-  properly.
+ @SQ header. This requires
+ <a href="http://search.cpan.org/perldoc?Bio::DB::Sam"
+ class="external text" rel="nofollow">Bio::DB::Sam</a> 1.20 to work
+ properly.
 - Fixed upload listing table so as not to duplicate track labels.
 - Fixed track importation via the eurl parameter so that it works when
-  the user's uploadid is empty (due to clearing cache of cookies).
+ the user's uploadid is empty (due to clearing cache of cookies).
 - Fixed DAS server handling of the link option.
 
 Please use the <a href="https://sourceforge.net/tracker/?group_id=27707"

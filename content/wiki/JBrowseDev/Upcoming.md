@@ -3,60 +3,60 @@ title: "JBrowse Configuration Guide"
 ---
 # JBrowse Configuration Guide
 - track-specific options (i.e. tracks.conf
-  [\[2\]](#Example_SNPCoverage_Configuration))
+ [\[2\]](#Example_SNPCoverage_Configuration))
 - standalone files with extra code (i.e. functions.conf
-  [\[3\]](#Including_external_files_and_functions_in_trackList.json)).
+ [\[3\]](#Including_external_files_and_functions_in_trackList.json)).
 
 The text format has several benefits, including the ability to specify
 multi-line callbacks. Example:
 
-    # BAM track with a new callback
-    [tracks.mytrack]
-    storeClass  = JBrowse/Store/SeqFeature/BAM
-    type        = JBrowse/View/Track/Alignments2
-    urlTemplate = myfile.bam
-    key         = My BAM track
-    style.color = function(feature) {
-       /* comment */
-       return 'red';
-     }
+ # BAM track with a new callback
+ [tracks.mytrack]
+ storeClass = JBrowse/Store/SeqFeature/BAM
+ type = JBrowse/View/Track/Alignments2
+ urlTemplate = myfile.bam
+ key = My BAM track
+ style.color = function(feature) {
+ /* comment */
+ return 'red';
+ }
 
 #### Considerations for the text-based .conf format
 
 - Comments should start with \#
 - The section labels, e.g. \[tracks.testtrack\] defines an identifier
-  for the track named testtrack, so you should not have dots in your
-  identifier, e.g. don't use something like this \[tracks.test.track\]
+ for the track named testtrack, so you should not have dots in your
+ identifier, e.g. don't use something like this \[tracks.test.track\]
 - Don't quote the values in the file, e.g key=My BAM track, not key="My
-  BAM track"
+ BAM track"
 - Nested values can specified using 'dot' notation, e.g. "style.color"
 - A "section" can be specified with square brackets, e.g.
-  \[trackMetadata\] will create the config variable trackMetadata and
-  the values in the section are added to it.
+ \[trackMetadata\] will create the config variable trackMetadata and
+ the values in the section are added to it.
 - Extra JSON values can be specified in the conf file using the syntax
-  json:{...} (see [\[4\]](#Customizing_Right-click_Context_Menus) for
-  example)
+ json:{...} (see [\[4\]](#Customizing_Right-click_Context_Menus) for
+ example)
 - Very large .conf files (thousands of lines) files can take longer to
-  parse than equivalent JSON
+ parse than equivalent JSON
 - An array of values can be built up over multiple lines. NOTE: A quirk
-  of the format is that there cannot be more than 4 spaces before the +
-  sign in each item. Example:
-        [trackMetadata]
-        sources =
-           + data/mymeta.csv
-           + data/more_meta.csv
+ of the format is that there cannot be more than 4 spaces before the +
+ sign in each item. Example:
+ [trackMetadata]
+ sources =
+ + data/mymeta.csv
+ + data/more_meta.csv
 
 #### Callback-function specific considerations for the text-based .conf format
 
 - Comments inside callbacks can use the /\* \*/ format but not the //
-  format
+ format
 - All lines of a multi-line callback should be spaced away from the
-  left-most column, including the closing bracket (see the style.color
-  example above)
+ left-most column, including the closing bracket (see the style.color
+ example above)
 - There should be no blank lines inside a multi-line callback
 - Refer to
-  [\[5\]](#Including_external_files_and_functions_in_trackList.json) for
-  more info on multi-line functions
+ [\[5\]](#Including_external_files_and_functions_in_trackList.json) for
+ more info on multi-line functions
 
 ### Configuration loading details
 
@@ -64,16 +64,16 @@ When your web browser loads a page containing JBrowse, and JBrowse
 starts, the following steps are done
 
 - In index.html, read the URL params (e.g. query params like &data= and
-  &tracks, &loc=, etc.)
+ &tracks, &loc=, etc.)
 - In index.html, create a JSON blob using URL params and pass them to
-  the Browser.js constructor which you can see on index.html
+ the Browser.js constructor which you can see on index.html
 - In Browser.js, the constructor is a JSON blob that becomes the "root
-  configuration object"
+ configuration object"
 - In Browser.js, mix the root config with the \_defaultConfig object
 - In \_defaultConfig, the default is to include both jbrowse_conf.json
-  and jbrowse.conf config files
+ and jbrowse.conf config files
 - In jbrowse.conf, the default is to include {dataRoot}/trackList.json
-  {dataRoot}/tracks.conf
+ {dataRoot}/tracks.conf
 
 This is how you eventually get the trackList.json and tracks.conf files
 from your data directory loaded. Note that the &data=blah URL parameter
@@ -139,7 +139,7 @@ Supported values for refSeqOrder include
 - `length descending`
 - `false/null/0` to disable any sorting
 - `by_list` to manually specify a list of reference sequences in the
-  selector
+ selector
 
 One instance in which refSeqOrder is particularly useful is in
 displaying annotations on early-stage, incomplete genomic assemblies: to
@@ -154,14 +154,14 @@ If you set `refSeqOrder` to `by_list`, you can then set
 
 Example (in data/tracks.conf)
 
-    [GENERAL]
-    refSeqOrder = by_list
-    refSeqOrderList =
-      + ctgB
-      + ctgA
-      + ctgAprime
-      + bethsCrazyBananasContig
-      + ctgAZed
+ [GENERAL]
+ refSeqOrder = by_list
+ refSeqOrderList =
+ + ctgB
+ + ctgA
+ + ctgAprime
+ + bethsCrazyBananasContig
+ + ctgAZed
 
 ## prepare-refseqs.pl
 
@@ -172,7 +172,7 @@ the reference sequence. The simplest way to use it is with the --fasta
 option, which uses a single sequence or set of reference sequences from
 a [FASTA](../Glossary#FASTA) file:
 
-    bin/prepare-refseqs.pl --fasta <fasta file> [options]
+ bin/prepare-refseqs.pl --fasta <fasta file> [options]
 
 If the file has multiple sequences (e.g. multiple chromosomes), each
 sequence will become a reference sequence by default. You may switch
@@ -195,16 +195,16 @@ sequences from a database, a config file must be used.
 
 Syntax used to import sequences from gff files:
 
-    bin/prepare-refseqs.pl --gff <gff file with sequence information> [options]
+ bin/prepare-refseqs.pl --gff <gff file with sequence information> [options]
 
 Syntax used to import sequences with a config file:
 
-    bin/prepare-refseqs.pl --conf <config file that references a database with sequence information> --[refs|refid] <reference sequences> [options]
+ bin/prepare-refseqs.pl --conf <config file that references a database with sequence information> --[refs|refid] <reference sequences> [options]
 
 Syntax used to import a indexed fasta(i.e. a fasta file where you run
 \`samtools faidx yourfile.fa\` which outputs yourfile.fa.fai)
 
-    bin/prepare-refseqs.pl --indexed_fasta yourfile.fa
+ bin/prepare-refseqs.pl --indexed_fasta yourfile.fa
 
 This will copy yourfile.fa and yourfile.fa.fai to the data directory
 
@@ -232,12 +232,12 @@ of these tools also adds a track configuration stanza to the
 `trackList.json` configuration file in its output directory.
 
 - [flatfile-to-json.pl](#flatfile-to-json.pl) - import GFF3 and BED
-  files (**recommended for new users**)
+ files (**recommended for new users**)
 - [biodb-to-json.pl](#biodb-to-json.pl) - import from a
-  Bio::DB::SeqFeature::Store database (recommended for users with
-  existing databases)
+ Bio::DB::SeqFeature::Store database (recommended for users with
+ existing databases)
 - [ucsc-to-json.pl](#ucsc-to-json.pl) - import UCSC database dumps (.sql
-  and .txt.gz)
+ and .txt.gz)
 
 ### flatfile-to-json.pl
 
@@ -249,36 +249,36 @@ class="external text" rel="nofollow">BED</a>, or GenBank text file.
 
 Basic usage:
 
-       bin/flatfile-to-json.pl --[gff|gbk|bed] <flat file> --tracklabel <track name> [options]
+ bin/flatfile-to-json.pl --[gff|gbk|bed] <flat file> --tracklabel <track name> [options]
 
 For a full list of the options supported by flatfile-to-json.pl, run it
 with the --help option
 
-       bin/flatfile-to-json.pl --help
+ bin/flatfile-to-json.pl --help
 
 Example
 
-            flatfile-to-json.pl                                                         \
-                ( --gff <GFF3 file> | --bed <BED file> | --gbk <GenBank file> )         \
-                --trackLabel <track identifier>                                         \
-                [ --trackType <JS Class> ]                                              \
-                [ --out <output directory> ]                                            \
-                [ --key <human-readable track name> ]                                   \
-                [ --className <CSS class name for displaying features> ]                \
-                [ --urltemplate "http://example.com/idlookup?id={id}" ]                 \
-                [ --arrowheadClass <CSS class> ]                                        \
-                [ --noSubfeatures ]                                                     \
-                [ --subfeatureClasses '{ JSON-format subfeature class map }' ]          \
-                [ --clientConfig '{ JSON-format style configuration for this track }' ] \
-                [ --config '{ JSON-format extra configuration for this track }' ]       \
-                [ --thinType <BAM -thin_type> ]                                         \
-                [ --thicktype <BAM -thick_type>]                                        \
-                [ --type <feature types to process> ]                                   \
-                [ --nclChunk <chunk size for generated NCLs> ]                          \
-                [ --compress ]                                                          \
-                [ --sortMem <memory in bytes to use for sorting> ]                      \
-                [ --maxLookback <maximum number of features to buffer in gff3 files> ]  \
-                [ --nameAttributes "name,alias,id" ]                                    \
+ flatfile-to-json.pl \
+ ( --gff <GFF3 file> | --bed <BED file> | --gbk <GenBank file> ) \
+ --trackLabel <track identifier> \
+ [ --trackType <JS Class> ] \
+ [ --out <output directory> ] \
+ [ --key <human-readable track name> ] \
+ [ --className <CSS class name for displaying features> ] \
+ [ --urltemplate "http://example.com/idlookup?id={id}" ] \
+ [ --arrowheadClass <CSS class> ] \
+ [ --noSubfeatures ] \
+ [ --subfeatureClasses '{ JSON-format subfeature class map }' ] \
+ [ --clientConfig '{ JSON-format style configuration for this track }' ] \
+ [ --config '{ JSON-format extra configuration for this track }' ] \
+ [ --thinType <BAM -thin_type> ] \
+ [ --thicktype <BAM -thick_type>] \
+ [ --type <feature types to process> ] \
+ [ --nclChunk <chunk size for generated NCLs> ] \
+ [ --compress ] \
+ [ --sortMem <memory in bytes to use for sorting> ] \
+ [ --maxLookback <maximum number of features to buffer in gff3 files> ] \
+ [ --nameAttributes "name,alias,id" ] \
 
 The --trackLabel parameter is the only required parameter, and is the
 "id" to refer to your track by. The displayed name is also whatever
@@ -305,12 +305,12 @@ is useful for large-scale feature data entry into JBrowse.
 
 Basic usage:
 
-       bin/biodb-to-json.pl --conf <config file> [options]
+ bin/biodb-to-json.pl --conf <config file> [options]
 
 For a full list of the options supported by biodb-to-json.pl, run it
 with the --help option, like:
 
-       bin/biodb-to-json.pl --help
+ bin/biodb-to-json.pl --help
 
 ### ucsc-to-json.pl
 
@@ -337,7 +337,7 @@ trackDb.txt.gz files for the organism of interest.
 
 Basic usage:
 
-      bin/ucsc-to-json.pl --in <directory with files from UCSC> --track <database table name> [options]
+ bin/ucsc-to-json.pl --in <directory with files from UCSC> --track <database table name> [options]
 
 Hint: If you're using this approach, it might be convenient to also
 download the sequence(s) from UCSC. These are usually available from the
@@ -347,7 +347,7 @@ server.
 For a full list of the options supported by ucsc-to-json.pl, run it with
 the --help option, like:
 
-       bin/ucsc-to-json.pl --help
+ bin/ucsc-to-json.pl --help
 
 # Feature Tracks (HTMLFeatures and CanvasFeatures)
 
@@ -423,32 +423,32 @@ modify and create hooks. Instead, the `glyph` variable, and all of the
 
 All style callbacks are like:
 
-       function( featureObject, variableName, glyphObject, trackObject ) {  return '#ffcccc'; }
+ function( featureObject, variableName, glyphObject, trackObject ) { return '#ffcccc'; }
 
 And the glyph callback is like:
 
-       function( featureObject ) { return 'JBrowse/View/FeatureGlyph/<glyphclassname>'; }
+ function( featureObject ) { return 'JBrowse/View/FeatureGlyph/<glyphclassname>'; }
 
 So, for example, if you wanted to customize a CanvasVariants track to
 color all homozygous variants blue, and all heterozygous variants red,
 you could set something like:
 
-    [tracks.myvcf]
-    ...
-    variantIsHeterozygous = function( feature ) {
-        var genotypes = feature.get('genotypes');
-        for( var sampleName in genotypes ) {
-          try {
-              var gtString = genotypes[sampleName].GT.values[0];
-              if( ! /^1([\|\/]1)*$/.test( gtString) && ! /^0([\|\/]0)*$/.test( gtString ) )
-                  return true;
-          } catch(e) {}
-        }
-        return false;
-      }
-    style.color = function( feature, variableName, glyphObject, track ) {
-        return track.config.variantIsHeterozygous(feature) ? 'red' : 'blue';
-      }
+ [tracks.myvcf]
+ ...
+ variantIsHeterozygous = function( feature ) {
+ var genotypes = feature.get('genotypes');
+ for( var sampleName in genotypes ) {
+ try {
+ var gtString = genotypes[sampleName].GT.values[0];
+ if( ! /^1([\|\/]1)*$/.test( gtString) && ! /^0([\|\/]0)*$/.test( gtString ) )
+ return true;
+ } catch(e) {}
+ }
+ return false;
+ }
+ style.color = function( feature, variableName, glyphObject, track ) {
+ return track.config.variantIsHeterozygous(feature) ? 'red' : 'blue';
+ }
 
 Note: the multiline callbacks are only enabled in the tracks.conf form.
 See [Text Configuration Format
@@ -474,23 +474,23 @@ of an attribute in the config.
 Here is an example in tracks.conf format for formatting the "Name" field
 by adding a link to it:
 
-    [tracks.mygff]
-    key = My Gene Track
-    storeClass = JBrowse/Store/SeqFeature/NCList
-    type = FeatureTrack
-    fmtDetailValue_Name = function(name) {
-       return "<a href='http://www.example.com?featurename="+name+"'>"+name+"</a>";
-     }
+ [tracks.mygff]
+ key = My Gene Track
+ storeClass = JBrowse/Store/SeqFeature/NCList
+ type = FeatureTrack
+ fmtDetailValue_Name = function(name) {
+ return "<a href='http://www.example.com?featurename="+name+"'>"+name+"</a>";
+ }
 
 Note: It is also easy to specify these methods in trackList.json format.
 
-    {
-     "key": "My Gene Track",
-     "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-     "type" : "FeatureTrack",
-     "label": "mygff",
-     "fmtDetailValue_Name": "function(name) { return '<a href=\"http://www.example.com?featurename='+name+'\">'+name+'</a>'; }"
-    }
+ {
+ "key": "My Gene Track",
+ "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+ "type" : "FeatureTrack",
+ "label": "mygff",
+ "fmtDetailValue_Name": "function(name) { return '<a href=\"http://www.example.com?featurename='+name+'\">'+name+'</a>'; }"
+ }
 
 Addendum: If the field has multiple values (e.g. multiple DBXrefs or GO
 terms), then the callback will receive an array as it's argument, and
@@ -499,7 +499,7 @@ be formatted inside its own \ In this case you will check that the
 input is an array, because it will also be called on the individual
 elements too. For example
 
-     "fmtDetailValue_links": "function(links) { if(Array.isArray(links)) { return links; } else return `<a href=\"${link}\">${link}</a>`; }"
+ "fmtDetailValue_links": "function(links) { if(Array.isArray(links)) { return links; } else return `<a href=\"${link}\">${link}</a>`; }"
 
 This shows that you could, in essence, pre-process the array if you
 wanted, but the same callback is then called on the individual elements,
@@ -513,12 +513,12 @@ were added.
 1\. The ability to access the feature data was added to the callback
 signature of the fmtDetailValue\_\* functions. Example:
 
-    fmtDetailValue_Name = function(name, feature) {
-        /* only add links to the top-level feature */
-        if(feature.get('type')=='mRNA') {
-            return name + ' [<a href=http://www.ncbi.nlm.nih.gov/gquery/?term='+name+'>Search NCBI</a>]';
-        }
-      }
+ fmtDetailValue_Name = function(name, feature) {
+ /* only add links to the top-level feature */
+ if(feature.get('type')=='mRNA') {
+ return name + ' [<a href=http://www.ncbi.nlm.nih.gov/gquery/?term='+name+'>Search NCBI</a>]';
+ }
+ }
 
 2\. The ability to customize the 'About track' popups was added. These
 callbacks are named fmtMetaValue\_\* and fmtMetaField\_\*
@@ -544,18 +544,18 @@ feature's name in NCBI's global search, and "search at NCBI" will show
 in a tooltip when the user hovers over a feature with the mouse:
 
 ``` de1
-   "tracks": [
-      {
-         "label"    : "ReadingFrame",
-         "category" : "Genes",
-         "class"    : "dblhelix",
-         "key"      : "Frame usage",
-         "onClick"  : {
-             "label": "search at NCBI",
-             "url": "http://www.ncbi.nlm.nih.gov/gquery/?term={name}"
-         }
-      }
-   ...
+ "tracks": [
+ {
+ "label" : "ReadingFrame",
+ "category" : "Genes",
+ "class" : "dblhelix",
+ "key" : "Frame usage",
+ "onClick" : {
+ "label": "search at NCBI",
+ "url": "http://www.ncbi.nlm.nih.gov/gquery/?term={name}"
+ }
+ }
+ ...
 ```
 
 For details on all the options supported by **onClick**, see [Click
@@ -578,11 +578,11 @@ Example for CanvasFeatures, allows full HTML tooltips. Here the {name}
 template is automatically filled in with the feature info:
 
 ``` de1
-    "onClick": {
-        "label" : "Feature name: {name}",
-        "title" : "{name} {type}",
-        "action": "defaultDialog"
-    }
+ "onClick": {
+ "label" : "Feature name: {name}",
+ "title" : "{name} {type}",
+ "action": "defaultDialog"
+ }
 ```
 
 Example for HTMLFeatures, which only allows plain text descriptions but
@@ -590,22 +590,22 @@ can support newlines (essentially uses \ for
 mouseover).
 
 ``` de1
-    "onClick": {
-        "label": "Feature name {name}\nFeature start {start}\nFeature end {end}",
-        "title" : "{name} {type}",
-        "action": "defaultDialog"
-    }
+ "onClick": {
+ "label": "Feature name {name}\nFeature start {start}\nFeature end {end}",
+ "title" : "{name} {type}",
+ "action": "defaultDialog"
+ }
 ```
 
 Example using a callback (for either HTMLFeatures or CanvasFeatures),
 using this.feature to access the feature details
 
 ``` de1
-    "onClick": {
-        "label": "function() { return 'Feature name: '+this.feature.get('name'); }",
-        "title" : "{name} {type}",
-        "action": "defaultDialog"
-    }
+ "onClick": {
+ "label": "function() { return 'Feature name: '+this.feature.get('name'); }",
+ "title" : "{name} {type}",
+ "action": "defaultDialog"
+ }
 ```
 
 Note: on CanvasFeatures, the action "defaultDialog" isn't necessary, but
@@ -632,12 +632,12 @@ is often used for BAM coverage on Alignments2 tracks using the
 
 Example track
 
-    [ tracks.mytrack ]
-    histograms.storeClass = JBrowse/Store/SeqFeature/BigWig
-    histograms.urlTemplate = coverage.bw
-    storeClass = JBrowse/Store/SeqFeature/BAM
-    urlTemplate = file.bam
-    type = Alignments2
+ [ tracks.mytrack ]
+ histograms.storeClass = JBrowse/Store/SeqFeature/BigWig
+ histograms.urlTemplate = coverage.bw
+ storeClass = JBrowse/Store/SeqFeature/BAM
+ urlTemplate = file.bam
+ type = Alignments2
 
 ## Customizing Right-click Context Menus
 
@@ -645,79 +645,79 @@ Feature tracks can be configured to display a context menu of options
 when a user right-clicks a feature item. Here is an example of a track
 configured with a multi-level right-click context menu:
 
-         {
-            "feature" : [
-               "match"
-            ],
-            "track" : "Alignments",
-            "category" : "Alignments",
-            "class" : "feature4",
-            "key" : "Example alignments",
-            "hooks": {
-                "modify": "function( track, feature, div ) { div.style.height = (Math.random()*10+8)+'px';  div.style.backgroundColor = ['green','blue','red','orange','purple'][Math.round(Math.random()*5)];}"
-            },
-            "menuTemplate" : [
-                {
-                  "label" : "Item with submenu",
-                  # hello this is a comment
-                  "children" : [
-                  {
-                    "label" : "Check gene on databases",
-                    "children" : [
-                    {
-                      "label" : "Query trin for {name}",
-                      "iconClass" : "dijitIconBookmark",
-                      "action": "newWindow",
-                      "url" : "http://wiki.trin.org.au/{name}-{start}-{end}"
-                    },
-                    {
-                    "label" : "Query example.com for {name}",
-                    "iconClass" : "dijitIconSearch",
-                    "url" : "http://example.com/{name}-{start}-{end}"
-                    }
-                    ]
-                  },
-                  { "label" : "2nd child of demo" },
-                  { "label" : "3rd child: this is a track" }
-                ]
-                },
-                {
-                  "label" : "Open example.com in an iframe popup",
-                  "title" : "The magnificent example.com (feature {name})",
-                  "iconClass" : "dijitIconDatabase",
-                  "action": "iframeDialog",
-                  "url" : "http://www.example.com?featurename={name}"
-                },
-                {
-                  "label" : "Open popup with XHR HTML snippet (btw this is feature {name})",
-                  "title": "function(track,feature,div) { return 'Random XHR HTML '+Math.random()+' title!'; }",
-                  "iconClass" : "dijitIconDatabase",
-                  "action": "xhrDialog",
-                  "url" : "sample_data/test_snippet.html?featurename={name}:{start}-{end}"
-                },
-                {
-                  "label" : "Open popup with content snippet (btw this is feature {name})",
-                  "title": "function(track,feature,div) { return 'Random content snippet '+Math.random()+' title!'; }",
-                  "iconClass" : "dijitIconDatabase",
-                  "action": "contentDialog",
-                  "content" : "function(track,feature,div) { return '<h2>{name}</h2><p>This is some test content about feature {name}!</p><p>This message brought to you by the number <span style=\"font-size: 300%\">'+Math.round(Math.random()*100)+'</span>.</p>
-                },
-                {
-                  "label" : "function(track,feature,div) { return 'Run a JS callback '+Math.random()+' title!'; }",
-                  "iconClass" : "dijitIconDatabase",
-                  "action": "function( evt ){ alert('Hi there! Ran the callback on feature '+this.feature.get('name')); }"
-                },
-                {
-                  "label": "Create a url with a callback",
-                  "action": "iframeDialog",
-                  "iconClass": "dijitIconDatabase",
-                  "title": "Create a url with a callback",
-                  "url": "function(track,feature) { return
-                      'http://www.example.com?refseq='+track.refSeq.name
-                      +'&featurename='+feature.get('name')+'&start='+feature.get('start')+'&end='+feature.get('end'); }"
-                 },
-            ]
-         }
+ {
+ "feature" : [
+ "match"
+ ],
+ "track" : "Alignments",
+ "category" : "Alignments",
+ "class" : "feature4",
+ "key" : "Example alignments",
+ "hooks": {
+ "modify": "function( track, feature, div ) { div.style.height = (Math.random()*10+8)+'px'; div.style.backgroundColor = ['green','blue','red','orange','purple'][Math.round(Math.random()*5)];}"
+ },
+ "menuTemplate" : [
+ {
+ "label" : "Item with submenu",
+ # hello this is a comment
+ "children" : [
+ {
+ "label" : "Check gene on databases",
+ "children" : [
+ {
+ "label" : "Query trin for {name}",
+ "iconClass" : "dijitIconBookmark",
+ "action": "newWindow",
+ "url" : "http://wiki.trin.org.au/{name}-{start}-{end}"
+ },
+ {
+ "label" : "Query example.com for {name}",
+ "iconClass" : "dijitIconSearch",
+ "url" : "http://example.com/{name}-{start}-{end}"
+ }
+ ]
+ },
+ { "label" : "2nd child of demo" },
+ { "label" : "3rd child: this is a track" }
+ ]
+ },
+ {
+ "label" : "Open example.com in an iframe popup",
+ "title" : "The magnificent example.com (feature {name})",
+ "iconClass" : "dijitIconDatabase",
+ "action": "iframeDialog",
+ "url" : "http://www.example.com?featurename={name}"
+ },
+ {
+ "label" : "Open popup with XHR HTML snippet (btw this is feature {name})",
+ "title": "function(track,feature,div) { return 'Random XHR HTML '+Math.random()+' title!'; }",
+ "iconClass" : "dijitIconDatabase",
+ "action": "xhrDialog",
+ "url" : "sample_data/test_snippet.html?featurename={name}:{start}-{end}"
+ },
+ {
+ "label" : "Open popup with content snippet (btw this is feature {name})",
+ "title": "function(track,feature,div) { return 'Random content snippet '+Math.random()+' title!'; }",
+ "iconClass" : "dijitIconDatabase",
+ "action": "contentDialog",
+ "content" : "function(track,feature,div) { return '<h2>{name}</h2><p>This is some test content about feature {name}!</p><p>This message brought to you by the number <span style=\"font-size: 300%\">'+Math.round(Math.random()*100)+'</span>.</p>
+ },
+ {
+ "label" : "function(track,feature,div) { return 'Run a JS callback '+Math.random()+' title!'; }",
+ "iconClass" : "dijitIconDatabase",
+ "action": "function( evt ){ alert('Hi there! Ran the callback on feature '+this.feature.get('name')); }"
+ },
+ {
+ "label": "Create a url with a callback",
+ "action": "iframeDialog",
+ "iconClass": "dijitIconDatabase",
+ "title": "Create a url with a callback",
+ "url": "function(track,feature) { return
+ 'http://www.example.com?refseq='+track.refSeq.name
+ +'&featurename='+feature.get('name')+'&start='+feature.get('start')+'&end='+feature.get('end'); }"
+ },
+ ]
+ }
 
 This configuration results in a context menu like the one pictured
 below. For details on what each of the options supported by menu items
@@ -739,27 +739,27 @@ A stripped down puppeteer example is as follows
 First run "npm install puppeteer" in a new directory, then create a file
 screenshot.js
 
-       const puppeteer = require('puppeteer');
-       function delay(ms) {
-           return new Promise(r => setTimeout(r, ms));
-       }
-       (async () => {
-         const browser = await puppeteer.launch();
-         const page = await browser.newPage();
-         const argv=process.argv;
-         await page.goto(argv[2]);
-         //debug
-         //page.on('console', msg => console.log('PAGE LOG:', msg.text()));
-         await page.setViewport({
-           width:+argv[4]|1000,
-           height:+argv[5]|600,
-           deviceScaleFactor:argv[6]|2
-         });
-         // wait five seconds for rendering, add or remove time as needed
-         await delay(5000);
-         await page.screenshot({path: argv[3]|"example.png"});
-         await browser.close();
-       })();
+ const puppeteer = require('puppeteer');
+ function delay(ms) {
+ return new Promise(r => setTimeout(r, ms));
+ }
+ (async () => {
+ const browser = await puppeteer.launch();
+ const page = await browser.newPage();
+ const argv=process.argv;
+ await page.goto(argv[2]);
+ //debug
+ //page.on('console', msg => console.log('PAGE LOG:', msg.text()));
+ await page.setViewport({
+ width:+argv[4]|1000,
+ height:+argv[5]|600,
+ deviceScaleFactor:argv[6]|2
+ });
+ // wait five seconds for rendering, add or remove time as needed
+ await delay(5000);
+ await page.screenshot({path: argv[3]|"example.png"});
+ await browser.close();
+ })();
 
 Then you can run "node screenshot.js
 <a href="http://localhost/jbrowse/" class="external free"
@@ -771,7 +771,7 @@ make it higher resolution
 # External Links
 
 - <a href="http://genome.cshlp.org/content/19/9/1630.full"
-  class="external text" rel="nofollow">JBrowse: A Next Generation Genome
-  Browser</a> paper
+ class="external text" rel="nofollow">JBrowse: A Next Generation Genome
+ Browser</a> paper
 
 - [JBrowse](../Category:JBrowse)

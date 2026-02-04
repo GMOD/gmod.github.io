@@ -37,9 +37,9 @@ Corporation and the White House (see
 The following software currently exist for biosciences.
 
 - GMOD-compatible
-  - [Tripal](/wiki/Tripal)
-  - [GMOD-DBSF](/wiki/Gmod-dbsf),
-    [genes4all](/wiki/Genes4all) and [Bioinformatics Software
-    Bench](/wiki/Biosoftware_bench)
+ - [Tripal](/wiki/Tripal)
+ - [GMOD-DBSF](/wiki/Gmod-dbsf),
+ [genes4all](/wiki/Genes4all) and [Bioinformatics Software
+ Bench](/wiki/Biosoftware_bench)
 - Others
-  - Scratchpads
+ - Scratchpads

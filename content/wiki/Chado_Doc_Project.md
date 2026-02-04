@@ -14,36 +14,36 @@ now is material that is very practical and specific.
 There are 2 basic tasks:
 
 - Document all the Best Practices. Sometimes this means writing up a
-  description of a Best Practice, sometimes this means reviewing what's
-  been written.
+ description of a Best Practice, sometimes this means reviewing what's
+ been written.
 - Review all the dedicated module pages. Sometimes this also means
-  providing introductory material and an example of how the module is
-  used in practice.
+ providing introductory material and an example of how the module is
+ used in practice.
 
 There are about 25 Best Practices topics currently and 17 module pages.
 This topics and pages have been divided into 8 work packages, whenever
 possible related topics and pages have been gathered into one work
 package.
 
-  Important</span>](#Why_This_is_Important)
+ Important</span>](#Why_This_is_Important)
 - [Work
-  Packages](#Work_Packages)
-  - [Package
-    1](#Package_1)
-  - [Package
-    2](#Package_2)
-  - [Package
-    3](#Package_3)
-  - [Package
-    4](#Package_4)
-  - [Package
-    5](#Package_5)
-  - [Package
-    6](#Package_6)
-  - [Package
-    7](#Package_7)
-  - [Package
-    8](#Package_8)
+ Packages](#Work_Packages)
+ - [Package
+ 1](#Package_1)
+ - [Package
+ 2](#Package_2)
+ - [Package
+ 3](#Package_3)
+ - [Package
+ 4](#Package_4)
+ - [Package
+ 5](#Package_5)
+ - [Package
+ 6](#Package_6)
+ - [Package
+ 7](#Package_7)
+ - [Package
+ 8](#Package_8)
 
 ## Why This is Important
 
@@ -55,7 +55,7 @@ its comrades in terms of its expressiveness, logic and coherence, and
 extensibility. It is truly a work of conceptual art. It is also not the
 easiest schema to use, compared to its comrades. Let us complete this
 work that needs to be done on Chado so that the largest number of people
-can benefit from it. [Bosborne](/wiki/User:Bosborne) 11:24, 8
+can benefit from it. Bosborne 11:24, 8
 May 2007 (EDT)
 
 ## Work Packages
@@ -68,7 +68,7 @@ Contributor:
 
 - [Audit](/wiki/Chado_Audit_Module) - needs review
 - [Companalysis](/wiki/Chado_Companalysis_Module) -
-  needs review
+ needs review
 - [Chado_Best_Practices#Genomic_Rearrangements](/wiki/Chado_Best_Practices#Genomic_Rearrangements)
 - [Chado_Best_Practices#Inversions](/wiki/Chado_Best_Practices#Inversions)
 - [Chado_Best_Practices#Translocations](/wiki/Chado_Best_Practices#Translocations)
@@ -80,9 +80,9 @@ Contributor:
 Contributor: Sohel Merchant
 
 - [Contact](/wiki/Chado_Contact_Module) - needs
-  introduction and examples
+ introduction and examples
 - [Controlled Vocabulary (cv)](/wiki/Chado_CV_Module) -
-  needs review
+ needs review
 - [General](/wiki/Chado_General_Module) - needs review
 - [Chado_Best_Practices#Canonical_Gene_Model](/wiki/Chado_Best_Practices#Canonical_Gene_Model)
 - [Chado_Best_Practices#Querying_for_Canonical_Genes](/wiki/Chado_Best_Practices#Querying_for_Canonical_Genes)
@@ -98,7 +98,7 @@ Contributor: Sohel Merchant
 Contributor:
 
 - [Expression](/wiki/Chado_Expression_Module) -
-  needs introduction and examples
+ needs introduction and examples
 - [Mage](/wiki/Chado_Mage_Module) - needs review
 - [Chado_Best_Practices#Feature_Localization](/wiki/Chado_Best_Practices#Feature_Localization)
 - [Chado_Best_Practices#Feature_Localization_to_Contigs_in_Assembly](/wiki/Chado_Best_Practices#Feature_Localization_to_Contigs_in_Assembly)
@@ -111,9 +111,9 @@ Contributor:
 Contributor:pinglei zhou
 
 - [Genetic](/wiki/Chado_Genetic_Module) - needs
-  introduction and examples
+ introduction and examples
 - [Phenotype](/wiki/Chado_Phenotype_Module) - needs
-  introduction and examples
+ introduction and examples
 - [Chado_Best_Practices#Immature_or_Primary_RNA](/wiki/Chado_Best_Practices#Immature_or_Primary_RNA)
 - [Chado_Best_Practices#Genotypes](/wiki/Chado_Best_Practices#Genotypes)
 - [Chado_Best_Practices#Phenotypes](/wiki/Chado_Best_Practices#Phenotypes)
@@ -124,7 +124,7 @@ Contributor:
 
 - [Library](/wiki/Chado_Library_Module) - needs review
 - [Map](/wiki/Chado_Map_Module) - needs introduction and
-  examples
+ examples
 - [Chado_Best_Practices#Operon](/wiki/Chado_Best_Practices#Operon)
 - [Chado_Best_Practices#Protein_Complexes](/wiki/Chado_Best_Practices#Protein_Complexes)
 - [Chado_Best_Practices#Trans-spliced_Gene](/wiki/Chado_Best_Practices#Trans-spliced_Gene)
@@ -134,9 +134,9 @@ Contributor:
 Contributor:
 
 - [Organism](/wiki/Chado_Organism_Module) - needs
-  introduction and examples
+ introduction and examples
 - [Phylogeny](/wiki/Chado_Phylogeny_Module) - needs
-  more introduction and examples
+ more introduction and examples
 - [Chado_Best_Practices#Transposons](/wiki/Chado_Best_Practices#Transposons)
 - [Chado_Best_Practices#Gene_with_Implicit_Features_Manifested](/wiki/Chado_Best_Practices#Gene_with_Implicit_Features_Manifested)
 - [Chado_Best_Practices#Unlocalized_Gene](/wiki/Chado_Best_Practices#Unlocalized_Gene)
@@ -147,9 +147,9 @@ Contributor:
 Contributor: Eric Just
 
 - [Publication](/wiki/Chado_Publication_Module) -
-  needs introduction and examples
+ needs introduction and examples
 - [Sequence](/wiki/Chado_Sequence_Module) - needs
-  review
+ review
 - [Chado_Best_Practices#Sequence_Alignments](/wiki/Chado_Best_Practices#Sequence_Alignments)
 - [Chado_Best_Practices#Results_from_BLAST](/wiki/Chado_Best_Practices#Results_from_BLAST)
 - [Chado_Best_Practices#Multiple_Sequence_Alignments](/wiki/Chado_Best_Practices#Multiple_Sequence_Alignments)
@@ -159,9 +159,9 @@ Contributor: Eric Just
 Contributor:
 
 - [Stock](/wiki/Chado_Stock_Module) - needs introduction
-  and examples
+ and examples
 - [WWW](/wiki/Chado_WWW_Module) - needs introduction and
-  examples
+ examples
 - [Chado_Best_Practices#Pseudogene](/wiki/Chado_Best_Practices#Pseudogene)
 - [Chado_Best_Practices#Singleton_Feature](/wiki/Chado_Best_Practices#Singleton_Feature)
 - [Chado_Best_Practices#Dicistronic_Gene](/wiki/Chado_Best_Practices#Dicistronic_Gene)

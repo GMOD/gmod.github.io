@@ -10,18 +10,18 @@ class="external text" rel="nofollow">Arthropod Genomics Symposium</a>,
 April 10-13, 2008, in Kansas City.
 
 - *Community Contributions to Genome Annotation* - Christine Elsik of
-  <a href="http://racerx00.tamu.edu/bee_resources.html"
-  class="external text" rel="nofollow">BeeBase</a> will discuss how to
-  install and use the [Apollo](../Apollo.1) genome annotation
-  tool.
+ <a href="http://racerx00.tamu.edu/bee_resources.html"
+ class="external text" rel="nofollow">BeeBase</a> will discuss how to
+ install and use the [Apollo](../Apollo.1) genome annotation
+ tool.
 - *Chado: A Database Schema for Integrating Biological Data* - [Scott
-  Cain](../User:Scott) and [Dave
-  Clements](../User:Clements) will cover
-  <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>'s
-  logical concepts, the types of data it can represent, how to import
-  and export data, and how Chado integrates with other GMOD components
-  such as [Apollo](../Apollo.1) and
-  [GBrowse](../GBrowse.1).
+ Cain](../User:Scott) and [Dave
+ Clements](../User:Clements) will cover
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>'s
+ logical concepts, the types of data it can represent, how to import
+ and export data, and how Chado integrates with other GMOD components
+ such as [Apollo](../Apollo.1) and
+ [GBrowse](../GBrowse.1).
 
 GMOD has a particularly strong presence in the arthropod community
 (e.g., <a href="http://bioinformatics.ksu.edu/BeetleBase/"

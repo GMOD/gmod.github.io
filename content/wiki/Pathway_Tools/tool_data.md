@@ -21,42 +21,42 @@ system that supports several use cases in bioinformatics and systems
 biology:
 
 - Development of organism-specific databases called Pathway/Genome
-  Databases (PGDBs) that integrate many bioinformatics datatypes, from
-  genomes to pathways to regulatory networks.
+ Databases (PGDBs) that integrate many bioinformatics datatypes, from
+ genomes to pathways to regulatory networks.
 - Development of metabolic-flux models using flux-balance analysis
 - Scientific visualization, web publishing, and dissemination of those
-  organism-specific databases, including:
-  - Automatic display of metabolic pathways and full metabolic networks;
-    generation of metabolic map diagram and of metabolic map poster
-    (<a href="http://bioinformatics.ai.sri.com/posters/ecoli-metab.pdf"
-    class="external text" rel="nofollow">example</a>).
-  - Genome browser; comparative genome browser; generation of genome
-    poster
-    (<a href="http://bioinformatics.ai.sri.com/posters/ecoli-genome.pdf"
-    class="external text" rel="nofollow">example</a>).
-  - Display of operons, regulons, and full transcriptional regulatory
-    networks
+ organism-specific databases, including:
+ - Automatic display of metabolic pathways and full metabolic networks;
+ generation of metabolic map diagram and of metabolic map poster
+ (<a href="http://bioinformatics.ai.sri.com/posters/ecoli-metab.pdf"
+ class="external text" rel="nofollow">example</a>).
+ - Genome browser; comparative genome browser; generation of genome
+ poster
+ (<a href="http://bioinformatics.ai.sri.com/posters/ecoli-genome.pdf"
+ class="external text" rel="nofollow">example</a>).
+ - Display of operons, regulons, and full transcriptional regulatory
+ networks
 - Analysis of omics datasets, including painting omics data on to
-  diagrams of the full metabolic network, enrichment analysis.
+ diagrams of the full metabolic network, enrichment analysis.
 - Computational inferences including prediction of metabolic pathways,
-  prediction of metabolic pathway hole fillers, prediction of operons
+ prediction of metabolic pathway hole fillers, prediction of operons
 - Comparative analyses of model-organism databases.
 - Analysis of biological networks:
-  - Interactively tracing metabolites through the metabolic network
-  - Finding dead-end metabolites in metabolic networks
-  - Identifying choke points (potential drug targets) in metabolic
-    networks
+ - Interactively tracing metabolites through the metabolic network
+ - Finding dead-end metabolites in metabolic networks
+ - Identifying choke points (potential drug targets) in metabolic
+ networks
 
 Pathway Tools has four components:
 
 - PathoLogic: Creates a new PGDB containing the predicted metabolic
-  pathways of an organism, given a Genbank entry as input.
+ pathways of an organism, given a Genbank entry as input.
 - Pathway/Genome Navigator: Supports query, visualization, and analysis
-  of PGDBs. The Navigator powers the BioCyc web site at BioCyc.org.
+ of PGDBs. The Navigator powers the BioCyc web site at BioCyc.org.
 - MetaFlux: Supports development of metabolic flux models from
-  Pathway/Genome Databases.
+ Pathway/Genome Databases.
 - Pathway/Genome Editors: Provide interactive editing capabilities for
-  PGDBs.
+ PGDBs.
 
 \| screenshot = \| public_server =
 <a href="http://biocyc.org/" class="external free"
@@ -74,14 +74,14 @@ integrated software for pathway/genome informatics and systems
 biology</a> <sup>[\[1\]](#cite_note-PMID:19955237-1)</sup> \| papers =
 
 - Pathway Tools version 13.0: integrated software for pathway/genome
-  informatics and systems biology.
-  <sup>[\[1\]](#cite_note-PMID:19955237-1)</sup>
+ informatics and systems biology.
+ <sup>[\[1\]](#cite_note-PMID:19955237-1)</sup>
 - An advanced web query interface for biological databases.
-  <sup>[\[2\]](#cite_note-PMID:20624715-2)</sup>
+ <sup>[\[2\]](#cite_note-PMID:20624715-2)</sup>
 - The pathway tools pathway prediction algorithm.
-  <sup>[\[3\]](#cite_note-PMID:22675592-3)</sup>
+ <sup>[\[3\]](#cite_note-PMID:22675592-3)</sup>
 - Regulatory network operations in the Pathway Tools software.
-  <sup>[\[4\]](#cite_note-PMID:22998532-4)</sup>
+ <sup>[\[4\]](#cite_note-PMID:22998532-4)</sup>
 
 \| presentations = \| tutorials =
 
@@ -101,7 +101,7 @@ website</a>, e.g. the
 
 <a href="http://biocyc.org/otherpgdbs.shtml" class="external text"
 
-|                         | --------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------- |                                                     | Mailing List Link       | Description                                                                                                                             | Archive(s) | [Pathway Tools](../Pathway_Tools.1) | ptools-users@ai.sri.com | [Pathway Tools](../Pathway_Tools.1) users list. To subscribe to this list, send a request to ptools-support@ai.sri.com. | _None_     |
+| | --------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------- | | Mailing List Link | Description | Archive(s) | [Pathway Tools](../Pathway_Tools.1) | ptools-users@ai.sri.com | [Pathway Tools](../Pathway_Tools.1) users list. To subscribe to this list, send a request to ptools-support@ai.sri.com. | _None_ |
 
 \| logo_info = \| dev_ppl = Pathway Tools was developed by
 <a href="http://www.ai.sri.com/pkarp/" class="external text"

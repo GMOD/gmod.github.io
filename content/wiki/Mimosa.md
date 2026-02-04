@@ -3,16 +3,16 @@ title: "Mimosa"
 ---
 # Mimosa
 
-  Miniature Model Organism Sequence
-  Aligner</span>](#Mimosa_-_Miniature_Model_Organism_Sequence_Aligner)
-  - [Integration With GMOD
-    Components](#Integration_With_GMOD_Components)
-  - [Mimosa on
-    CPAN](#Mimosa_on_CPAN)
-  - [Mailing
-    List](#Mailing_List)
-  - [Bug
-    Tracker](#Bug_Tracker)
+ Miniature Model Organism Sequence
+ Aligner</span>](#Mimosa_-_Miniature_Model_Organism_Sequence_Aligner)
+ - [Integration With GMOD
+ Components](#Integration_With_GMOD_Components)
+ - [Mimosa on
+ CPAN](#Mimosa_on_CPAN)
+ - [Mailing
+ List](#Mailing_List)
+ - [Bug
+ Tracker](#Bug_Tracker)
 
 ## Mimosa - Miniature Model Organism Sequence Aligner
 
@@ -40,8 +40,8 @@ You can view App::Mimosa documentation online at
 
 command-line with CPAN.pm or cpanminus:
 
-     cpan  App::Mimosa
-     cpanm App::Mimosa
+ cpan App::Mimosa
+ cpanm App::Mimosa
 
 ### Mailing List
 

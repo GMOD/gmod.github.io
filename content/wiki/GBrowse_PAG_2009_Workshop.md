@@ -35,19 +35,19 @@ class="external text" rel="nofollow">GBrowse workshop</a> at the
 2009](/wiki/PAG_2009)) held in San Diego on January 10-14, 2009.
 This workshop was attended by over 60 people.
 
-  Installation</span>](#Note_on_Installation)
+ Installation</span>](#Note_on_Installation)
 - [Overview](#Overview)
 - [Tutorial
-  Level](#Tutorial_Level)
+ Level](#Tutorial_Level)
 - [Intended
-  Audience](#Intended_Audience)
+ Audience](#Intended_Audience)
 - [Outline](#Outline)
 - [Workshop
-  Instructor](#Workshop_Instructor)
+ Instructor](#Workshop_Instructor)
 - [Datasets](#Datasets)
 - [Other GMOD
-  Presentations and
-  Meetings](#Other_GMOD_Presentations_and_Meetings)
+ Presentations and
+ Meetings](#Other_GMOD_Presentations_and_Meetings)
 
 ## Note on Installation
 
@@ -56,9 +56,9 @@ An installer package for Microsoft Windows can be downloaded
 
 - download the zip file and double-click to unpack
 - enter the directory 'a' and double-click the executable file
-  'install_gbrowse'
+ 'install_gbrowse'
 - This will install Perl, Apache Web server, and other requirements to
-  run GBrowse on your system
+ run GBrowse on your system
 
 Also, see the [Windows
 installation](/wiki/GBrowse_Windows_HOWTO) guide and
@@ -102,14 +102,14 @@ intended to help them over those hurdles.
 - Showing Quantitative Data
 - Displaying DNA and 3-frame translations
 - Features added in latest release, including draggable and collapsible
-  tracks, and [popup
-  balloons](/wiki/GBrowse_Popup_Balloons)
+ tracks, and [popup
+ balloons](/wiki/GBrowse_Popup_Balloons)
 
 ## Workshop Instructor
 
-- [Scott Cain](/wiki/User:Scott), GMOD Project Coordinator,
-  <a href="http://www.oicr.on.ca/" class="external text"
-  rel="nofollow">Ontario Institute for Cancer Research</a>
+- Scott Cain, GMOD Project Coordinator,
+ <a href="http://www.oicr.on.ca/" class="external text"
+ rel="nofollow">Ontario Institute for Cancer Research</a>
 
 ## Datasets
 

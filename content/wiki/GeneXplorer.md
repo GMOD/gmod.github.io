@@ -9,9 +9,9 @@ browsed interactively via the web, and can be used either for research
 purposes, or for providing web supplements to accompany microarray
 publication.
 
-  Status](#Status)
+ Status](#Status)
 - [Demo &
-  Screenshots](#Demo_.26_Screenshots)
+ Screenshots](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
@@ -55,9 +55,9 @@ capable of running Perl. GeneXplorer also requires the following Perl
 modules:
 
 - <a href="http://search.cpan.org/dist/GD/" class="external text"
-  rel="nofollow">GD</a>
+ rel="nofollow">GD</a>
 - <a href="http://search.cpan.org/dist/Getopt-Long/" class="external text"
-  rel="nofollow">Getopt::Long</a>
+ rel="nofollow">Getopt::Long</a>
 
 In addition, GeneXplorer requires the C-program, correlations, which is
 included in the distribution. This must be compiled with an ANSI

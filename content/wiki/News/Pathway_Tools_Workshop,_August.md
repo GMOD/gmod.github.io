@@ -37,16 +37,16 @@ abstract-submission process), tutorials by SRI International staff, and
 a hackathon. Suggested topics include but are not limited to:
 
 - Share expertise on how to develop new organism-specific databases with
-  [Pathway Tools](../Pathway_Tools.1)
+ [Pathway Tools](../Pathway_Tools.1)
 - Present new scientific results achieved with Pathway Tools and BioCyc
 - Share experiences on how to make the most of Pathway Tools
 - Presentations by users on extensions they have developed to Pathway
-  Tools
+ Tools
 - Presentations by SRI International on recent and planned developments
-  to the software, and on software APIs and the database schema, to
-  educate users on how to compute with PGDBs
+ to the software, and on software APIs and the database schema, to
+ educate users on how to compute with PGDBs
 - Discussions of requested future enhancements to Pathway Tools and
-  BioCyc
+ BioCyc
 - Ideas for other software tools to integrate with Pathway Tools
 - Group development of new Pathway Tools enhancements
 

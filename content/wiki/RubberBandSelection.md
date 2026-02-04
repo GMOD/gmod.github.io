@@ -17,8 +17,8 @@ GBrowse 2.0
 ## User interface
 
 - To activate rubber-band selection, click and drag (without releasing
-  the mouse button) on the ruler for the overview, regionview, or
-  details panel.
+ the mouse button) on the ruler for the overview, regionview, or
+ details panel.
 - A highlighted region, as depicted above, will appear.
 - If configured, the menu appears when the mouse button is release.
 
@@ -92,119 +92,119 @@ or hex code is accepted.</p></td>
 </tbody>
 </table>
 
-    # Advanced feature: an example of a customized popup menu for rubber band selection
-    [OVERVIEW SELECT MENU]
-    width = 100
-    html  =  <table style="width:100%">
-             <tr>
-               <th style="background:lightgrey">
-                 Overview
-                 </span>
-               </th>
-             </tr>
-             <tr>
-               <td>
-                 <span style="color:blue;cursor:pointer" onclick="SelectArea.prototype.clearAndSubmit()">
-                  Zoom
-                 </span>
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <span style="color:blue;cursor:pointer" onclick="SelectArea.prototype.cancelRubber()">
-                   Cancel
-                 </span>
-               </td>
-             </tr>
-            </table>
+ # Advanced feature: an example of a customized popup menu for rubber band selection
+ [OVERVIEW SELECT MENU]
+ width = 100
+ html = <table style="width:100%">
+ <tr>
+ <th style="background:lightgrey">
+ Overview
+ </span>
+ </th>
+ </tr>
+ <tr>
+ <td>
+ <span style="color:blue;cursor:pointer" onclick="SelectArea.prototype.clearAndSubmit()">
+ Zoom
+ </span>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <span style="color:blue;cursor:pointer" onclick="SelectArea.prototype.cancelRubber()">
+ Cancel
+ </span>
+ </td>
+ </tr>
+ </table>
 
-    [DETAIL SELECT MENU]
-    width = 250
-    html  = <table style="width:100%">
-             <tr>
-               <th style="background:lightgrey;cell-padding:5">
-                 SELECTION
-                 <span style="right:0px;position:absolute;color:blue;cursor:pointer"
-                       onclick="SelectArea.prototype.cancelRubber()">
-                   [X]
-                 </span>
-               </th>
-             </tr>
-             <tr>
-               <td>
-                 <span style="color:blue;cursor:pointer" onclick="SelectArea.prototype.clearAndSubmit()">
-                  Zoom in
-                 </span>
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <span style="color:blue;cursor:pointer" onclick="SelectArea.prototype.clearAndRecenter()">
-                   Recenter on this region
-                 </span>
-               </td>
-             </tr>
-             <tr>
-               <td onmouseup="SelectArea.prototype.cancelRubber()">
-                 <a href="/wiki/?plugin=FastaDumper;plugin_action=Go;name=SELECTION" target="_BLANK">
-                  Dump selection as FASTA
-                 </a>
-               </td>
-             </tr>
-             <tr>
-               <td onmouseup="SelectArea.prototype.cancelRubber()">
-                 <a href="/wiki/?name=SELECTION;plugin=Submitter;plugin_do=Go;Submitter.target=UCSC_BLAT" target="_BLANK">
-                   Submit selection to UCSC BLAT
-                 </a>
-               </td>
-             </tr>
-             <tr>
-               <td onmouseup="SelectArea.prototype.cancelRubber()">
-                 <a href="/wiki/?name=SELECTION;plugin=Submitter;plugin_do=Go;Submitter.target=NCBI_BLAST" target="_BLANK">
-                   Submit selection to NCBI BLAST
-                 </a>
-               </td>
-             </tr>
-           </table>
+ [DETAIL SELECT MENU]
+ width = 250
+ html = <table style="width:100%">
+ <tr>
+ <th style="background:lightgrey;cell-padding:5">
+ SELECTION
+ <span style="right:0px;position:absolute;color:blue;cursor:pointer"
+ onclick="SelectArea.prototype.cancelRubber()">
+ [X]
+ </span>
+ </th>
+ </tr>
+ <tr>
+ <td>
+ <span style="color:blue;cursor:pointer" onclick="SelectArea.prototype.clearAndSubmit()">
+ Zoom in
+ </span>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <span style="color:blue;cursor:pointer" onclick="SelectArea.prototype.clearAndRecenter()">
+ Recenter on this region
+ </span>
+ </td>
+ </tr>
+ <tr>
+ <td onmouseup="SelectArea.prototype.cancelRubber()">
+ <a href="/wiki/?plugin=FastaDumper;plugin_action=Go;name=SELECTION" target="_BLANK">
+ Dump selection as FASTA
+ </a>
+ </td>
+ </tr>
+ <tr>
+ <td onmouseup="SelectArea.prototype.cancelRubber()">
+ <a href="/wiki/?name=SELECTION;plugin=Submitter;plugin_do=Go;Submitter.target=UCSC_BLAT" target="_BLANK">
+ Submit selection to UCSC BLAT
+ </a>
+ </td>
+ </tr>
+ <tr>
+ <td onmouseup="SelectArea.prototype.cancelRubber()">
+ <a href="/wiki/?name=SELECTION;plugin=Submitter;plugin_do=Go;Submitter.target=NCBI_BLAST" target="_BLANK">
+ Submit selection to NCBI BLAST
+ </a>
+ </td>
+ </tr>
+ </table>
 
 Configuration for submitter plugin (used in above menu).
 
 - the key/value pairs can be anything (that corresponds to the remote
-  web services' parameters)
+ web services' parameters)
 - the ***url*** option is required to handle the submission
 - the ***extra_html*** option can be used to specify form elements, etc
-    [Submitter:plugin]
-    submitter = [UCSC_BLAT]
-                url        = http://genome.ucsc.edu/cgi-bin/hgBlat
-                seq_label  = userSeq
-                output     = hyperlink
-                type       = DNA
-                extra_html = Genome:
-                             <SELECT name=org>
-                             <OPTION VALUE="Human">Human</OPTION>
-                             <OPTION VALUE="Chimp">Chimp</OPTION>
-                             <OPTION VALUE="Rhesus">Rhesus</OPTION>
-                             <OPTION VALUE="Mouse">Mouse</OPTION>
-                             <OPTION VALUE="Stickleback">Stickleback</OPTION>
-                             <OPTION VALUE="Medaka">Medaka</OPTION>
-                             <OPTION VALUE="C. intestinalis">C. intestinalis</OPTION>
-                             <OPTION VALUE="S. purpuratus">S. purpuratus</OPTION>
-                             <OPTION VALUE="D. persimilis">D. persimilis</OPTION>
-                             <OPTION VALUE="D. virilis">D. virilis</OPTION>
-                             <OPTION VALUE="D. mojavensis">D. mojavensis</OPTION>
-                             <OPTION VALUE="D. grimshawi">D. grimshawi</OPTION>
-                             <OPTION VALUE="A. gambiae">A. gambiae</OPTION>
-                             <OPTION VALUE="A. mellifera">A. mellifera</OPTION>
-                             <OPTION SELECTED VALUE="S. cerevisiae">S. cerevisiae</OPTION>
-                             <OPTION VALUE="SARS">SARS</OPTION>
-                             </SELECT>
+ [Submitter:plugin]
+ submitter = [UCSC_BLAT]
+ url = http://genome.ucsc.edu/cgi-bin/hgBlat
+ seq_label = userSeq
+ output = hyperlink
+ type = DNA
+ extra_html = Genome:
+ <SELECT name=org>
+ <OPTION VALUE="Human">Human</OPTION>
+ <OPTION VALUE="Chimp">Chimp</OPTION>
+ <OPTION VALUE="Rhesus">Rhesus</OPTION>
+ <OPTION VALUE="Mouse">Mouse</OPTION>
+ <OPTION VALUE="Stickleback">Stickleback</OPTION>
+ <OPTION VALUE="Medaka">Medaka</OPTION>
+ <OPTION VALUE="C. intestinalis">C. intestinalis</OPTION>
+ <OPTION VALUE="S. purpuratus">S. purpuratus</OPTION>
+ <OPTION VALUE="D. persimilis">D. persimilis</OPTION>
+ <OPTION VALUE="D. virilis">D. virilis</OPTION>
+ <OPTION VALUE="D. mojavensis">D. mojavensis</OPTION>
+ <OPTION VALUE="D. grimshawi">D. grimshawi</OPTION>
+ <OPTION VALUE="A. gambiae">A. gambiae</OPTION>
+ <OPTION VALUE="A. mellifera">A. mellifera</OPTION>
+ <OPTION SELECTED VALUE="S. cerevisiae">S. cerevisiae</OPTION>
+ <OPTION VALUE="SARS">SARS</OPTION>
+ </SELECT>
 
-                [NCBI_BLAST]
-                confirm   = 1
-                url       = http://www.ncbi.nlm.nih.gov/blast/Blast.cgi
-                seq_label = QUERY
-                PAGE      = Nucleotides
-                PROGRAM   = blastn
-                DATABASE  = nr
-                CLIENT    = web
-                CMD       = put
+ [NCBI_BLAST]
+ confirm = 1
+ url = http://www.ncbi.nlm.nih.gov/blast/Blast.cgi
+ seq_label = QUERY
+ PAGE = Nucleotides
+ PROGRAM = blastn
+ DATABASE = nr
+ CLIENT = web
+ CMD = put

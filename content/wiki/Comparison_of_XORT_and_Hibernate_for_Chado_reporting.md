@@ -44,16 +44,16 @@ experience can prove to be useful in this respect.
 **Tools Used**
 
 - <a href="http://hibernate.org/" class="external text"
-  rel="nofollow">Hibernate 3.0</a>
+ rel="nofollow">Hibernate 3.0</a>
 - <a
-  href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=148718"
-  class="external text" rel="nofollow">XORT 0.001</a>
+ href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=148718"
+ class="external text" rel="nofollow">XORT 0.001</a>
 - <a href="http://eclipse.org/" class="external text"
-  rel="nofollow">Eclipse Java IDE 3.1.1</a>
+ rel="nofollow">Eclipse Java IDE 3.1.1</a>
 - <a href="http://www.jboss.com/products/jbosside/downloads"
-  class="external text" rel="nofollow">JBOSS Eclipse plugin v1.5</a>
+ class="external text" rel="nofollow">JBOSS Eclipse plugin v1.5</a>
 - <a href="http://www.postgresql.org/" class="external text"
-  rel="nofollow">Postgres 8.0</a>
+ rel="nofollow">Postgres 8.0</a>
 
 **Setting up Hibernate**
 In order to use Hibernate you need two things, the Hibernate XML mapping

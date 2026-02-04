@@ -46,124 +46,124 @@ previous [meetings](/wiki/Meetings) were the [January
 meetings are an excellent way to meet GMOD developers and users, and to
 learn (and affect) what's coming in the project.
 
-  Schedule](#Schedule)
+ Schedule](#Schedule)
 - [Presentations](#Presentations)
-  - [GMOD
-    Project Talks](#GMOD_Project_Talks)
-    - [HHMI
-      Science Education
-      Alliance](#HHMI_Science_Education_Alliance)
-    - [What's
-      new](#What.27s_new)
-    - [GMOD
-      Summer School](#GMOD_Summer_School)
-    - [Outreach](#Outreach)
-    - [GMOD
-      Community Surveys](#GMOD_Community_Surveys)
-    - [Upcoming GMOD
-      Hackathon ?](#Upcoming_GMOD_Hackathon_.3F)
-  - [Linked
-    Data for GMOD Databases](#Linked_Data_for_GMOD_Databases)
-    - [OpenFlyData](#OpenFlyData)
-    - [Open-BioMed](#Open-BioMed)
-    - [RDF &
-      SPARQL: Benefits &
-      Risks](#RDF_.26_SPARQL:_Benefits_.26_Risks)
-  - [GMOD in
-    the Trenches](#GMOD_in_the_Trenches)
-    - [GBrowse at CBRG](#GBrowse_at_CBRG)
-    - [Extending
-      GBrowse](#Extending_GBrowse)
-    - [Make
-      Existing GBrowse More Useful to External
-      Developers](#Make_Existing_GBrowse_More_Useful_to_External_Developers)
-  - [A DBIx
-    Class layer for Chado](#A_DBIx_Class_layer_for_Chado)
-  - [GMOD
-    Biological Object Layer](#GMOD_Biological_Object_Layer)
-    - [GBOL
-      Architecture](#GBOL_Architecture)
-    - [Biological Layer
-      Configuration](#Biological_Layer_Configuration)
-    - [Future
-      Developments](#Future_Developments)
-  - [A Restful
-    interface for MODs](#A_Restful_interface_for_MODs)
-  - [Quest for
-    Standard: Sequence alignment/map format (SAM) and
-    SAMtools](#Quest_for_Standard:_Sequence_alignment.2Fmap_format_.28SAM.29_and_SAMtools)
-    - [Quest
-      for Standards](#Quest_for_Standards)
-    - [SAM
-      Format](#SAM_Format)
-    - [BAM
-      Format](#BAM_Format)
-    - [APIs,
-      Implementations and Supported
-      Platforms](#APIs.2C_Implementations_and_Supported_Platforms)
-    - [Displaying
-      Alignments](#Displaying_Alignments)
-  - [Visualising NGS Data in GBrowse
-    2](#Visualising_NGS_Data_in_GBrowse_2)
-  - [GBrowse:
-    Lessons Learned and Statement of
-    Interest](#GBrowse:_Lessons_Learned_and_Statement_of_Interest)
-    - [History and Current GBrowse
-      Infrastructure](#History_and_Current_GBrowse_Infrastructure)
-    - [Statement of Interest: Requirements and
-      Needs](#Statement_of_Interest:_Requirements_and_Needs)
-      - [GBrowse Database
-        Adaptors](#GBrowse_Database_Adaptors)
-      - [GBrowse User
-        Interaction](#GBrowse_User_Interaction)
-      - [GBrowse Configuration
-        Files](#GBrowse_Configuration_Files)
-      - [Metadata Web
-        Services](#Metadata_Web_Services)
-    - [Conclusion /
-      Discussion](#Conclusion_.2F_Discussion)
-  - [JBrowse](#JBrowse)
-  - [GBrowse_syn](#GBrowse_syn)
-    - [Other
-      GMOD Synteny Viewers](#Other_GMOD_Synteny_Viewers)
-    - [GBrowse_syn](#GBrowse_syn_2)
-    - [Where
-      do I get data for
-      GBrowse_syn?](#Where_do_I_get_data_for_GBrowse_syn.3F)
-    - [Using
-      GBrowse_syn](#Using_GBrowse_syn)
-    - [Future
-      Developments](#Future_Developments_2)
-  - [GBrowse.org](#GBrowse.org)
-  - [DAS
-    update](#DAS_update)
-    - [DAS
-      1.6E](#DAS_1.6E)
-    - [DAS
-      Registry](#DAS_Registry)
-    - [Current and Future
-      Work](#Current_and_Future_Work)
-    - [*Some*
-      Implementations](#Some_Implementations)
-  - [InterMine
-    update](#InterMine_update)
-    - [Mines4Mods](#Mines4Mods)
-  - [Show and
-    Tell, Discussion](#Show_and_Tell.2C_Discussion)
+ - [GMOD
+ Project Talks](#GMOD_Project_Talks)
+ - [HHMI
+ Science Education
+ Alliance](#HHMI_Science_Education_Alliance)
+ - [What's
+ new](#What.27s_new)
+ - [GMOD
+ Summer School](#GMOD_Summer_School)
+ - [Outreach](#Outreach)
+ - [GMOD
+ Community Surveys](#GMOD_Community_Surveys)
+ - [Upcoming GMOD
+ Hackathon ?](#Upcoming_GMOD_Hackathon_.3F)
+ - [Linked
+ Data for GMOD Databases](#Linked_Data_for_GMOD_Databases)
+ - [OpenFlyData](#OpenFlyData)
+ - [Open-BioMed](#Open-BioMed)
+ - [RDF &
+ SPARQL: Benefits &
+ Risks](#RDF_.26_SPARQL:_Benefits_.26_Risks)
+ - [GMOD in
+ the Trenches](#GMOD_in_the_Trenches)
+ - [GBrowse at CBRG](#GBrowse_at_CBRG)
+ - [Extending
+ GBrowse](#Extending_GBrowse)
+ - [Make
+ Existing GBrowse More Useful to External
+ Developers](#Make_Existing_GBrowse_More_Useful_to_External_Developers)
+ - [A DBIx
+ Class layer for Chado](#A_DBIx_Class_layer_for_Chado)
+ - [GMOD
+ Biological Object Layer](#GMOD_Biological_Object_Layer)
+ - [GBOL
+ Architecture](#GBOL_Architecture)
+ - [Biological Layer
+ Configuration](#Biological_Layer_Configuration)
+ - [Future
+ Developments](#Future_Developments)
+ - [A Restful
+ interface for MODs](#A_Restful_interface_for_MODs)
+ - [Quest for
+ Standard: Sequence alignment/map format (SAM) and
+ SAMtools](#Quest_for_Standard:_Sequence_alignment.2Fmap_format_.28SAM.29_and_SAMtools)
+ - [Quest
+ for Standards](#Quest_for_Standards)
+ - [SAM
+ Format](#SAM_Format)
+ - [BAM
+ Format](#BAM_Format)
+ - [APIs,
+ Implementations and Supported
+ Platforms](#APIs.2C_Implementations_and_Supported_Platforms)
+ - [Displaying
+ Alignments](#Displaying_Alignments)
+ - [Visualising NGS Data in GBrowse
+ 2](#Visualising_NGS_Data_in_GBrowse_2)
+ - [GBrowse:
+ Lessons Learned and Statement of
+ Interest](#GBrowse:_Lessons_Learned_and_Statement_of_Interest)
+ - [History and Current GBrowse
+ Infrastructure](#History_and_Current_GBrowse_Infrastructure)
+ - [Statement of Interest: Requirements and
+ Needs](#Statement_of_Interest:_Requirements_and_Needs)
+ - [GBrowse Database
+ Adaptors](#GBrowse_Database_Adaptors)
+ - [GBrowse User
+ Interaction](#GBrowse_User_Interaction)
+ - [GBrowse Configuration
+ Files](#GBrowse_Configuration_Files)
+ - [Metadata Web
+ Services](#Metadata_Web_Services)
+ - [Conclusion /
+ Discussion](#Conclusion_.2F_Discussion)
+ - [JBrowse](#JBrowse)
+ - [GBrowse_syn](#GBrowse_syn)
+ - [Other
+ GMOD Synteny Viewers](#Other_GMOD_Synteny_Viewers)
+ - [GBrowse_syn](#GBrowse_syn_2)
+ - [Where
+ do I get data for
+ GBrowse_syn?](#Where_do_I_get_data_for_GBrowse_syn.3F)
+ - [Using
+ GBrowse_syn](#Using_GBrowse_syn)
+ - [Future
+ Developments](#Future_Developments_2)
+ - [GBrowse.org](#GBrowse.org)
+ - [DAS
+ update](#DAS_update)
+ - [DAS
+ 1.6E](#DAS_1.6E)
+ - [DAS
+ Registry](#DAS_Registry)
+ - [Current and Future
+ Work](#Current_and_Future_Work)
+ - [*Some*
+ Implementations](#Some_Implementations)
+ - [InterMine
+ update](#InterMine_update)
+ - [Mines4Mods](#Mines4Mods)
+ - [Show and
+ Tell, Discussion](#Show_and_Tell.2C_Discussion)
 - [Agenda
-  Suggestions](#Agenda_Suggestions)
+ Suggestions](#Agenda_Suggestions)
 - [Location](#Location)
 - [Lodging](#Lodging)
 - [Cost and
-  Registration](#Cost_and_Registration)
+ Registration](#Cost_and_Registration)
 - [Mailing
-  List](#Mailing_List)
+ List](#Mailing_List)
 - [Sponsor](#Sponsor)
 - [Attendees](#Attendees)
 - [Feedback](#Feedback)
 - [Next Meeting:
-  January 2010 in San Diego
-  California](#Next_Meeting:_January_2010_in_San_Diego_California)
+ January 2010 in San Diego
+ California](#Next_Meeting:_January_2010_in_San_Diego_California)
 
 # Schedule
 
@@ -221,8 +221,7 @@ style="color: #aaaaff">2009 GMOD Summer School - Europe</span></a></td>
 </tr>
 <tr class="even">
 <td>13:30-14:30</td>
-<td style="text-align: center;"><a href="/wiki/User%253AScott"
-title="User%253AScott">Scott Cain</a> - Introductions and the State of
+<td style="text-align: center;">Scott Cain - Introductions and the State of
 GMOD</td>
 <td><a href="http://prezi.com/143773/" class="external text"
 
@@ -234,5 +233,4 @@ href="#GMOD_Project_Talks">Summary</a></td>
 </tr>
 <tr class="odd">
 <td>14:30-15:00</td>
-<td style="text-align: center;"><a href="/wiki/User%253AClements"
-title="User%253AClements">Dave Clements</a>
+<td style="text-align: center;">Dave Clements

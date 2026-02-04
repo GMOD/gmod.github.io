@@ -16,49 +16,49 @@ The reference document is currently the [Chado Best
 Practices](/wiki/Chado_Best_Practices) page, into which
 much of this information may become merged at some point.
 
-  (scope)</span>](#What_we_store_.28scope.29)
+ (scope)</span>](#What_we_store_.28scope.29)
 - [Feature naming
-  convention](#Feature_naming_convention)
+ convention](#Feature_naming_convention)
 - [Structural
-  annotation](#Structural_annotation)
-  - [Gene
-    models](#Gene_models)
-    - [Canonical gene
-      model](#Canonical_gene_model)
+ annotation](#Structural_annotation)
+ - [Gene
+ models](#Gene_models)
+ - [Canonical gene
+ model](#Canonical_gene_model)
 - [Functional
-  annotation](#Functional_annotation)
-  - [Gene
-    product name](#Gene_product_name)
-  - [Gene
-    symbol](#Gene_symbol)
-  - [GO
-    terms](#GO_terms)
-    - [Representation of the GO
-      ontology](#Representation_of_the_GO_ontology)
-    - [Assigning GO terms to
-      features](#Assigning_GO_terms_to_features)
-  - [Enzyme
-    Commission (EC) number](#Enzyme_Commission_.28EC.29_number)
+ annotation](#Functional_annotation)
+ - [Gene
+ product name](#Gene_product_name)
+ - [Gene
+ symbol](#Gene_symbol)
+ - [GO
+ terms](#GO_terms)
+ - [Representation of the GO
+ ontology](#Representation_of_the_GO_ontology)
+ - [Assigning GO terms to
+ features](#Assigning_GO_terms_to_features)
+ - [Enzyme
+ Commission (EC) number](#Enzyme_Commission_.28EC.29_number)
 - [Storing
-  Analyses](#Storing_Analyses)
-  - [BLAST
-    data](#BLAST_data)
-  - [HMM
-    alignments](#HMM_alignments)
-  - [Comparative data](#Comparative_data)
+ Analyses](#Storing_Analyses)
+ - [BLAST
+ data](#BLAST_data)
+ - [HMM
+ alignments](#HMM_alignments)
+ - [Comparative data](#Comparative_data)
 - [Versioning of
-  features](#Versioning_of_features)
-  - [Background](#Background)
-  - [Start site
-    edits](#Start_site_edits)
-  - [Deleting a
-    gene](#Deleting_a_gene)
+ features](#Versioning_of_features)
+ - [Background](#Background)
+ - [Start site
+ edits](#Start_site_edits)
+ - [Deleting a
+ gene](#Deleting_a_gene)
 - [Data
-  de-normalization](#Data_de-normalization)
-  - [Materialized views (chado
-    marts)](#Materialized_views_.28chado_marts.29)
-  - [Disk
-    Caching](#Disk_Caching)
+ de-normalization](#Data_de-normalization)
+ - [Materialized views (chado
+ marts)](#Materialized_views_.28chado_marts.29)
+ - [Disk
+ Caching](#Disk_Caching)
 
 ## What we store (scope)
 
@@ -107,19 +107,19 @@ their relationships. The example query is for a transcript feature
 'hsn.transcript.39176.1'
 
 ``` de1
-    SELECT f1.name AS subject, c.name AS relationship, f2.name AS object
-      FROM feature f1
-          JOIN feature_relationship fr ON f1.feature_id = fr.subject_id
-          JOIN feature f2 ON fr.object_id = f2.feature_id
-          JOIN cvterm c ON fr.type_id = c.cvterm_id
-     WHERE f1.uniquename = 'hsn.transcript.39176.1'
-        OR f2.uniquename = 'hsn.transcript.39176.1';
+ SELECT f1.name AS subject, c.name AS relationship, f2.name AS object
+ FROM feature f1
+ JOIN feature_relationship fr ON f1.feature_id = fr.subject_id
+ JOIN feature f2 ON fr.object_id = f2.feature_id
+ JOIN cvterm c ON fr.type_id = c.cvterm_id
+ WHERE f1.uniquename = 'hsn.transcript.39176.1'
+ OR f2.uniquename = 'hsn.transcript.39176.1';
 
-    +-------------------------+--------------+------------------------+
-    | subject                 | relationship | object                 |
-    +-------------------------+--------------+------------------------+
-    | hsn.transcript.39176.1  | derives_from | hsn.gene.39416.1       | hsn.polypeptide.39176.1 | part_of      | hsn.transcript.39176.1 | hsn.CDS.39416.1         | derives_from | hsn.transcript.39176.1 | hsn.exon.39416.1        | part_of      | hsn.transcript.39176.1 |
-    +-------------------------+--------------+------------------------+
+ +-------------------------+--------------+------------------------+
+ | subject | relationship | object |
+ +-------------------------+--------------+------------------------+
+ | hsn.transcript.39176.1 | derives_from | hsn.gene.39416.1 | hsn.polypeptide.39176.1 | part_of | hsn.transcript.39176.1 | hsn.CDS.39416.1 | derives_from | hsn.transcript.39176.1 | hsn.exon.39416.1 | part_of | hsn.transcript.39176.1 |
+ +-------------------------+--------------+------------------------+
 ```
 
 ## Functional annotation
@@ -144,20 +144,20 @@ properties of the transcript. To query both:
 
 ``` de1
 SELECT f.uniquename, product.VALUE AS product, sym.VALUE AS symbol
-  FROM feature f
-      JOIN featureprop product ON f.feature_id = product.feature_id
-      JOIN featureprop sym ON f.feature_id = sym.feature_id
-      JOIN cvterm cvt ON product.type_id = cvt.cvterm_id
-      JOIN cvterm cvt2 ON sym.type_id = cvt2.cvterm_id
+ FROM feature f
+ JOIN featureprop product ON f.feature_id = product.feature_id
+ JOIN featureprop sym ON f.feature_id = sym.feature_id
+ JOIN cvterm cvt ON product.type_id = cvt.cvterm_id
+ JOIN cvterm cvt2 ON sym.type_id = cvt2.cvterm_id
  WHERE cvt.name = 'gene_product_name'
-   AND cvt2.name = 'gene_product_name_source'
-   AND f.uniquename = 'hsn.transcript.39176.1';
+ AND cvt2.name = 'gene_product_name_source'
+ AND f.uniquename = 'hsn.transcript.39176.1';
 
-    +------------------------+--------------------+-----------+
-    | uniquename             | product            | symbol    |
-    +------------------------+--------------------+-----------+
-    | hsn.transcript.39176.1 | cytidine deaminase | TIGR01354 |
-    +------------------------+--------------------+-----------+
+ +------------------------+--------------------+-----------+
+ | uniquename | product | symbol |
+ +------------------------+--------------------+-----------+
+ | hsn.transcript.39176.1 | cytidine deaminase | TIGR01354 |
+ +------------------------+--------------------+-----------+
 ```
 
 This means that the name of this product was assigned because of a hit
@@ -181,15 +181,15 @@ features.
 
 The source of the data is an entry within an OBO file, such as:
 
-       [Term]
-       id: GO:0004126
-       name: cytidine deaminase activity
-       namespace: function
-       def: "Catalysis of the reaction\: cytidine + H2O = uridine + NH3." [EC:3.5.4.5]
-       xref_analog: EC:3.5.4.5
-       xref_analog: MetaCyc:CYTIDEAM2-RXN
-       xref_analog: Reactome:83524
-       is_a: GO:0019239
+ [Term]
+ id: GO:0004126
+ name: cytidine deaminase activity
+ namespace: function
+ def: "Catalysis of the reaction\: cytidine + H2O = uridine + NH3." [EC:3.5.4.5]
+ xref_analog: EC:3.5.4.5
+ xref_analog: MetaCyc:CYTIDEAM2-RXN
+ xref_analog: Reactome:83524
+ is_a: GO:0019239
 
 GO is stored as a controlled vocabulary, which has an entry in the 'cv'
 table. Here we already run into a contentious point on how this should
@@ -198,15 +198,15 @@ different ones, since it contains three separate namespaces (process,
 function, component)? For this example I'll use the single 'GO' entry:
 
 ``` de1
-    SELECT *
-      FROM cv
-     WHERE name = 'GO';
+ SELECT *
+ FROM cv
+ WHERE name = 'GO';
 
-    +-------+------+------------+
-    | cv_id | name | definition |
-    +-------+------+------------+
-    |    10 | GO   | NULL       |
-    +-------+------+------------+
+ +-------+------+------------+
+ | cv_id | name | definition |
+ +-------+------+------------+
+ | 10 | GO | NULL |
+ +-------+------+------------+
 ```
 
 Whether to respect the namespaces within GO and create three distinct
@@ -217,60 +217,60 @@ Next, there's a entry in 'cvterm' for this term but not by the
 GO:NNNNNNNN value. Instead, we can look it up by the name:
 
 ``` de1
-    SELECT cvterm_id, name, SUBSTRING(definition,1,20), dbxref_id, is_obsolete
-      FROM cvterm
-     WHERE cv_id = 10
-       AND name = 'cytidine deaminase activity';
+ SELECT cvterm_id, name, SUBSTRING(definition,1,20), dbxref_id, is_obsolete
+ FROM cvterm
+ WHERE cv_id = 10
+ AND name = 'cytidine deaminase activity';
 
-    +-----------+-----------------------------+----------------------------+-----------+-------------+
-    | cvterm_id | name                        | SUBSTRING(definition,1,20) | dbxref_id | is_obsolete |
-    +-----------+-----------------------------+----------------------------+-----------+-------------+
-    |      6657 | cytidine deaminase activity | "Catalysis of the re       |     12389 |           0 |
-    +-----------+-----------------------------+----------------------------+-----------+-------------+
+ +-----------+-----------------------------+----------------------------+-----------+-------------+
+ | cvterm_id | name | SUBSTRING(definition,1,20) | dbxref_id | is_obsolete |
+ +-----------+-----------------------------+----------------------------+-----------+-------------+
+ | 6657 | cytidine deaminase activity | "Catalysis of the re | 12389 | 0 |
+ +-----------+-----------------------------+----------------------------+-----------+-------------+
 ```
 
 The actual GO:NNNNNNN value is a database reference (dbxref_id returned
 in last query):
 
 ``` de1
-    SELECT *
-      FROM dbxref
-     WHERE dbxref_id = 12389;
+ SELECT *
+ FROM dbxref
+ WHERE dbxref_id = 12389;
 
-    +-----------+-------+------------+---------+-------------+
-    | dbxref_id | db_id | accession  | version | description |
-    +-----------+-------+------------+---------+-------------+
-    |     12389 |    12 | GO:0004126 | 1.0     | NULL        |
-    +-----------+-------+------------+---------+-------------+
+ +-----------+-------+------------+---------+-------------+
+ | dbxref_id | db_id | accession | version | description |
+ +-----------+-------+------------+---------+-------------+
+ | 12389 | 12 | GO:0004126 | 1.0 | NULL |
+ +-----------+-------+------------+---------+-------------+
 ```
 
 Which, of course, means there's a GO entry in the 'db' table too:
 
 ``` de1
-    SELECT *
-      FROM db
-     WHERE name = 'GO';
+ SELECT *
+ FROM db
+ WHERE name = 'GO';
 
-    +-------+------+-------------+-----------+------+
-    | db_id | name | description | urlprefix | url  |
-    +-------+------+-------------+-----------+------+
-    |    12 | GO   | NULL        | NULL      | NULL |
-    +-------+------+-------------+-----------+------+
+ +-------+------+-------------+-----------+------+
+ | db_id | name | description | urlprefix | url |
+ +-------+------+-------------+-----------+------+
+ | 12 | GO | NULL | NULL | NULL |
+ +-------+------+-------------+-----------+------+
 ```
 
 So, reviewing, to get the basic annotation for a GO term:
 
 ``` de1
-    SELECT dbx.accession, cvt.name, cvt.definition
-      FROM cvterm cvt
-        JOIN dbxref dbx ON cvt.dbxref_id = dbx.dbxref_id
-     WHERE dbx.accession = 'GO:0004126';
+ SELECT dbx.accession, cvt.name, cvt.definition
+ FROM cvterm cvt
+ JOIN dbxref dbx ON cvt.dbxref_id = dbx.dbxref_id
+ WHERE dbx.accession = 'GO:0004126';
 
-    +------------+-----------------------------+---------------------------------------------------------------------------+
-    | accession  | name                        | definition                                                                |
-    +------------+-----------------------------+---------------------------------------------------------------------------+
-    | GO:0004126 | cytidine deaminase activity | "Catalysis of the reaction: cytidine + H2O = uridine + NH3." [EC:3.5.4.5] |
-    +------------+-----------------------------+---------------------------------------------------------------------------+
+ +------------+-----------------------------+---------------------------------------------------------------------------+
+ | accession | name | definition |
+ +------------+-----------------------------+---------------------------------------------------------------------------+
+ | GO:0004126 | cytidine deaminase activity | "Catalysis of the reaction: cytidine + H2O = uridine + NH3." [EC:3.5.4.5] |
+ +------------+-----------------------------+---------------------------------------------------------------------------+
 ```
 
 What about the xref_analog entries we saw in the OBO definition? The
@@ -282,24 +282,24 @@ A more narrative description has yet to be written, but here's a query
 to get all assigned GO terms for a given transcript, with evidence.
 
 ``` de1
-    SELECT f.uniquename, d.accession, c2.name "evidence type",
-           cs.synonym "evidence code", fcp.VALUE
-    FROM feature f
-        JOIN feature_cvterm fc ON f.feature_id = fc.feature_id
-        JOIN cvterm c ON fc.cvterm_id = c.cvterm_id
-        JOIN cv ON c.cv_id = cv.cv_id
-        JOIN dbxref d ON c.dbxref_id = d.dbxref_id
-        JOIN feature_cvtermprop fcp ON fc.feature_cvterm_id = fcp.feature_cvterm_id
-        JOIN cvterm c2 ON fcp.type_id = c2.cvterm_id
-        JOIN cvtermsynonym cs ON c2.cvterm_id = cs.cvterm_id
-    WHERE f.uniquename = 'hsn.transcript.39176.1'
-      AND cv.name = 'GO';
+ SELECT f.uniquename, d.accession, c2.name "evidence type",
+ cs.synonym "evidence code", fcp.VALUE
+ FROM feature f
+ JOIN feature_cvterm fc ON f.feature_id = fc.feature_id
+ JOIN cvterm c ON fc.cvterm_id = c.cvterm_id
+ JOIN cv ON c.cv_id = cv.cv_id
+ JOIN dbxref d ON c.dbxref_id = d.dbxref_id
+ JOIN feature_cvtermprop fcp ON fc.feature_cvterm_id = fcp.feature_cvterm_id
+ JOIN cvterm c2 ON fcp.type_id = c2.cvterm_id
+ JOIN cvtermsynonym cs ON c2.cvterm_id = cs.cvterm_id
+ WHERE f.uniquename = 'hsn.transcript.39176.1'
+ AND cv.name = 'GO';
 
-    +------------------------+-------------+-------------------------------------+---------------+-----------+
-    | uniquename             | ROLE id     | evidence TYPE                       | evidence code | VALUE     |
-    +------------------------+-------------+-------------------------------------+---------------+-----------+
-    | hsn.transcript.39176.1 | GO:0008655  | inferred FROM electronic annotation | IEA           | TIGR01354 | hsn.transcript.39176.1 | GO:0005737  | inferred FROM electronic annotation | IEA           | TIGR01354 | hsn.transcript.39176.1 | GO:0004126  | inferred FROM electronic annotation | IEA           | TIGR01354 |
-    +------------------------+-------------+-------------------------------------+---------------+-----------+
+ +------------------------+-------------+-------------------------------------+---------------+-----------+
+ | uniquename | ROLE id | evidence TYPE | evidence code | VALUE |
+ +------------------------+-------------+-------------------------------------+---------------+-----------+
+ | hsn.transcript.39176.1 | GO:0008655 | inferred FROM electronic annotation | IEA | TIGR01354 | hsn.transcript.39176.1 | GO:0005737 | inferred FROM electronic annotation | IEA | TIGR01354 | hsn.transcript.39176.1 | GO:0004126 | inferred FROM electronic annotation | IEA | TIGR01354 |
+ +------------------------+-------------+-------------------------------------+---------------+-----------+
 ```
 
 ### Enzyme Commission (EC) number
@@ -354,10 +354,10 @@ We don't delete any features from the database. Instead, we toggle the
 feature.is_obsolete field value to TRUE for those features that are no
 longer 'current.' The overall steps are as follows:
 
-1.  Mark the features in the hsn.gene.39416.1 gene graph as obsolete
-2.  Create new features, hsn.gene.39416.2 and other graph features, each
-    incrementing the version number portion of each obsolete feature.
-3.  Copy/reattach functional annotation from obsolete to new feature
+1. Mark the features in the hsn.gene.39416.1 gene graph as obsolete
+2. Create new features, hsn.gene.39416.2 and other graph features, each
+ incrementing the version number portion of each obsolete feature.
+3. Copy/reattach functional annotation from obsolete to new feature
 
 It's important to note here that we do not copy the analyses (like
 blastp and hmmpfam), since those are based on the older sequences. This
@@ -387,21 +387,21 @@ query all the BLAST results for a given polypeptide you might do this:
 
 ``` de1
 SELECT q.uniquename AS query, s.uniquename AS subject, af.rawscore, af.pidentity,
-       af.significance, flq.fmin AS qstart, flq.fmax AS qstop, flq.strand AS qstrand
-  FROM feature m, feature q, feature s, analysisfeature af, analysis a, cvterm c,
-       featureloc flq, featureloc fls
+ af.significance, flq.fmin AS qstart, flq.fmax AS qstop, flq.strand AS qstrand
+ FROM feature m, feature q, feature s, analysisfeature af, analysis a, cvterm c,
+ featureloc flq, featureloc fls
  WHERE m.feature_id=af.feature_id
-   AND m.type_id=c.cvterm_id
-   AND af.analysis_id=a.analysis_id
-   AND m.feature_id=flq.feature_id
-   AND m.feature_id=fls.feature_id
-   AND flq.srcfeature_id=q.feature_id
-   AND flq.rank = 0
-   AND fls.srcfeature_id=s.feature_id
-   AND fls.rank = 1
-   AND a.name = 'wu-blastp'
-   AND c.name = 'match_part'
-   AND q.uniquename = 'nfa1.polypeptide.9292';
+ AND m.type_id=c.cvterm_id
+ AND af.analysis_id=a.analysis_id
+ AND m.feature_id=flq.feature_id
+ AND m.feature_id=fls.feature_id
+ AND flq.srcfeature_id=q.feature_id
+ AND flq.rank = 0
+ AND fls.srcfeature_id=s.feature_id
+ AND fls.rank = 1
+ AND a.name = 'wu-blastp'
+ AND c.name = 'match_part'
+ AND q.uniquename = 'nfa1.polypeptide.9292';
 ```
 
 That's just nasty isn't it? Not only do developers not want to write
@@ -423,15 +423,15 @@ definition for one of these to support BLAST results is:
 
 ``` de1
 CREATE TABLE cm_blast (
-  cm_blast_id         INT NOT NULL,
-  qfeature_id         INT NOT NULL,
-  qorganism_id        INT NOT NULL,
-  hfeature_id         INT NOT NULL,
-  horganism_id        INT NOT NULL,
-  per_id              DOUBLE PRECISION NULL,
-  per_sim             DOUBLE PRECISION NULL,
-  p_value             DOUBLE PRECISION NULL,
-  mfeature_id         INT NOT NULL
+ cm_blast_id INT NOT NULL,
+ qfeature_id INT NOT NULL,
+ qorganism_id INT NOT NULL,
+ hfeature_id INT NOT NULL,
+ horganism_id INT NOT NULL,
+ per_id DOUBLE PRECISION NULL,
+ per_sim DOUBLE PRECISION NULL,
+ p_value DOUBLE PRECISION NULL,
+ mfeature_id INT NOT NULL
 );
 ```
 

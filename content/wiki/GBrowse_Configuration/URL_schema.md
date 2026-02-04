@@ -20,9 +20,9 @@ useful things:
 The last component of the GBrowse path is the symbolic name of the data
 source. For example:
 
-      http://www.your.site/cgi-bin/gbrowse/volvox
-      http://www.your.site/cgi-bin/gbrowse/yeast
-      http://www.your.site/cgi-bin/gbrowse/my_testing_database
+ http://www.your.site/cgi-bin/gbrowse/volvox
+ http://www.your.site/cgi-bin/gbrowse/yeast
+ http://www.your.site/cgi-bin/gbrowse/my_testing_database
 
 These will correspond to config files named volvox.pm, yeast.pm and
 my_testing_database.pm respectively. As noted earlier, you can place
@@ -33,7 +33,7 @@ order in which they appear in the data source menu.
 GBrowse will add an extra slash to the end of the URL, resulting in URLs
 that look like:*
 
-     http://www.your.site/cgi-bin/gbrowse/yeast/?q=NAB2
+ http://www.your.site/cgi-bin/gbrowse/yeast/?q=NAB2
 
 Don't worry about this. The URL works the same with and without the
 terminal slash.
@@ -42,23 +42,23 @@ terminal slash.
 
 The argument "q" will set the landmark or search string:
 
-       http://www.your.site/cgi-bin/gbrowse/yeast?q=NAB2
+ http://www.your.site/cgi-bin/gbrowse/yeast?q=NAB2
 
 This will have the same effect as typing "NAB2" into the GBrowse search
 box. To go immediately to the multiple hits page (which shows hits on
 several overview panels), use multiple q arguments:
 
-      http://www.your.site/cgi-bin/gbrowse/yeast?q=NAB2;q=NPY1
+ http://www.your.site/cgi-bin/gbrowse/yeast?q=NAB2;q=NPY1
 
 Alternatively, you can use a single q parameter and separate each
 landmark name with a dash:
 
-      http://www.your.site/cgi-bin/gbrowse/yeast?q=NAB2-NPY1
+ http://www.your.site/cgi-bin/gbrowse/yeast?q=NAB2-NPY1
 
 The rules for specifying relative offsets and object classes are the
 same as in the main search field:
 
-      http://www.your.site/cgi-bin/gbrowse/yeast?q=Gene:NAB2:1..5000
+ http://www.your.site/cgi-bin/gbrowse/yeast?q=Gene:NAB2:1..5000
 
 **ref, start, stop, end**
 
@@ -73,11 +73,11 @@ The tracks to display. This parameter must contain the track names (i.e.
 the names in \[brackets\] in the config file) separated by "+" or "-"
 characters. For example:
 
-      http://www.your.site/cgi-bin/gbrowse/yeast?label=ORFs-tRNAs
+ http://www.your.site/cgi-bin/gbrowse/yeast?label=ORFs-tRNAs
 
 To use the "+" character you may have to URL escape it:
 
-      http://www.your.site/cgi-bin/gbrowse/yeast?label=ORFs%2BtRNAs
+ http://www.your.site/cgi-bin/gbrowse/yeast?label=ORFs%2BtRNAs
 
 All tracks not explicitly given by the label parameter will be closed
 (disabled).
@@ -88,7 +88,7 @@ Tracks to enable. The tracks indicated by this parameter will be opened
 in addition to any tracks that were previously opened by the user. The
 format is the same as label:
 
-      http://www.your.site/cgi-bin/gbrowse/yeast?enable=ORFs-tRNAs
+ http://www.your.site/cgi-bin/gbrowse/yeast?enable=ORFs-tRNAs
 
 **disable**
 
@@ -96,7 +96,7 @@ Tracks to close. The tracks indicated by this parameter will be
 disabled. Tracks not mentioned by this parameter will keep their
 previous state. The format is the same as label:
 
-      http://www.your.site/cgi-bin/gbrowse/yeast?disable=ORFs-tRNAs
+ http://www.your.site/cgi-bin/gbrowse/yeast?disable=ORFs-tRNAs
 
 When modifying track state, the "label" parameter is processed first,
 followed by the "enable" parameter and the "disable" parameter.
@@ -122,7 +122,7 @@ pairs.
 The name of a feature to highlight in the format
 "\<feature_name\>@\<color_name\>". Example:
 
-         h_feat=SKT5@blue
+ h_feat=SKT5@blue
 
 You may omit "@color", in which case the highlight will default to
 yellow. You can specify multiple h_feat arguments in order to highlight
@@ -134,7 +134,7 @@ h_feature=\_clear\_ will clear all feature highlighting.
 The name of a region to highlight in the format
 "\<seq_id\>:start..end@color". Example:
 
-         h_region=Chr3:200000..250000@wheat
+ h_region=Chr3:200000..250000@wheat
 
 You may omit "@color" in which case the highlight will default to
 lightgrey. You can specify multiple h_region arguments in order to
@@ -161,7 +161,7 @@ the feature, name is the name of the feature, and start..end are the
 start and end coordinates. For a feature that has multiple segments, you
 may use multiple start..end ranges, separated by commas. Example:
 
-     add=chr3+miRNA+mir144+2309229..2309300,2309501..2309589
+ add=chr3+miRNA+mir144+2309229..2309300,2309501..2309589
 
 Pass multiple "add" parameters to upload several features. "add" can be
 abbreviated to "a" for terseness.
@@ -176,7 +176,7 @@ Subsequent option=value pairs control the glyph and glyph options. For
 example, if you have added a "miRNA" annotation, then you can tell the
 renderer to use a red arrow for this glyph in this way:
 
-      style=miRNA+glyph=arrow+fgcolor=red
+ style=miRNA+glyph=arrow+fgcolor=red
 
 "style" can be abbreviated to "s" for terseness.
 
@@ -246,8 +246,8 @@ example, the FastaDumper plugin has a parameter named "format" which
 controls the output format. So to invoke this plugin and make the output
 plain text, one would provide the arguments:
 
-    http://www.your.site/cgi-bin/gbrowse/yeast?q=NUT21;plugin=FastaDumper;
-                plugin_do=Go;FastaDumper.format=text
+ http://www.your.site/cgi-bin/gbrowse/yeast?q=NUT21;plugin=FastaDumper;
+ plugin_do=Go;FastaDumper.format=text
 
 Plugins tend not to be well documented, so you may have to read through
 the source code to figure out their arguments.

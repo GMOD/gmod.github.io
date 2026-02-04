@@ -16,7 +16,7 @@ VMware images still exist in GMOD in several places. See:
 - [VMware HOWTO](/wiki/VMware_HOWTO)
 
 - [Community Annotation
-  System](/wiki/Community_Annotation_System)
+ System](/wiki/Community_Annotation_System)
 
 Initial versions of GMOD virtual machines have been uploaded/documented
 at the
@@ -50,40 +50,40 @@ Second, I want to get feedback on what should be installed. There is
 both the question of sample data and software. Here are my thoughts so
 far:
 
-     Chado and related core components (version 0.5 when released)*
-     XORT                              (0.5 when released)*
-     GBrowse                           (1.68 when released)**
-     Apollo                            (1.6.5)
-     CMap                              (? Most recent?)
-     Turnkey/gmod-web                  (? most recent?)
-     BLAST graphic viewer              (? most recent?)
+ Chado and related core components (version 0.5 when released)*
+ XORT (0.5 when released)*
+ GBrowse (1.68 when released)**
+ Apollo (1.6.5)
+ CMap (? Most recent?)
+ Turnkey/gmod-web (? most recent?)
+ BLAST graphic viewer (? most recent?)
 
 Also, there are some things 'on the bubble' that I haven't decided
 whether they should be installed:
 
-     Sybil
-     Flash GViewer
-     Textpresso
-     BioMart
-     DAS2 server
+ Sybil
+ Flash GViewer
+ Textpresso
+ BioMart
+ DAS2 server
 
 Any thoughts on these?
 
 Thanks for your time, Scott
 
 - Ian Holmes suggested their extensions to GBrowse
-  ( and wiki).
+ ( and wiki).
 - Eric Just suggested [Modware](/wiki/Modware).
 
 ## About 'when released'
 
 - Work is on going on Chado core components, notably getting a conversion
-  from GFF3 to [chadoxml](/wiki/Chado_XML) which will require
-  changes to XORT.
+ from GFF3 to [chadoxml](/wiki/Chado_XML) which will require
+ changes to XORT.
 - There have been a few fixes to the
-  <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
-  title="GBrowse adaptors">chado adaptor in GBrowse</a>, so it should
-  get a new release soon
+ <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
+ title="GBrowse adaptors">chado adaptor in GBrowse</a>, so it should
+ get a new release soon
 
 Also see [Community Annotation
 System](/wiki/Community_Annotation_System).

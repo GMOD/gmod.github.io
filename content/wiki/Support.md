@@ -3,15 +3,15 @@ title: "Support"
 ---
 # Support
 
-  Site</span>](#GMOD_Web_Site)
+ Site</span>](#GMOD_Web_Site)
 - [GMOD Mailing
-  Lists](#GMOD_Mailing_Lists)
-  - [Which
-    List?](#Which_List.3F)
+ Lists](#GMOD_Mailing_Lists)
+ - [Which
+ List?](#Which_List.3F)
 - [GMOD Help
-  Desk](#GMOD_Help_Desk)
+ Desk](#GMOD_Help_Desk)
 - [Meetings and
-  Training and Outreach](#Meetings_and_Training_and_Outreach)
+ Training and Outreach](#Meetings_and_Training_and_Outreach)
 
 Because GMOD is a large and diverse collection of projects, it can be
 difficult to find the right place to ask a question. GMOD support is
@@ -21,17 +21,17 @@ for your question.
 
 ## GMOD Web Site
 
-Many questions about GMOD can be answered by  or exploring it through
+Many questions about GMOD can be answered by or exploring it through
 [category tags](/wiki/Categories). Some pages that are
 particularly useful places to start for support questions:
 
 - [Overview](/wiki/Overview) - an introduction to GMOD.
--  - List of Frequently Asked
-  Questions pages.
+- - List of Frequently Asked
+ Questions pages.
 - [GMOD Components](/wiki/GMOD_Components) - Links to pages
-  about each of the GMOD components.
+ about each of the GMOD components.
 - [Glossary](/wiki/Glossary) - List of commonly used terms in GMOD.
--  - List of HOWTO pages
+- - List of HOWTO pages
 
 ## [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists)
 

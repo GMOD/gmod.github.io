@@ -10,13 +10,13 @@ only major change as a result of this move is with respect to the RSS
 feed that this news item is a part of. The main differences are two
 fold:
 
-1.  The News page is now a collection of individual news items on the
-    site, whereas the old News page was really one very long page,
-    making editing it somewhat fragile. The new system should be much
-    more robust.
-2.  The URL for the RSS news feed has changed, though mod_rewrite is
-    being used on the server to transparently translate requests for the
-    old feed into the new one. The URL for the new News feed is The procedure for creating a news entry is described at the [bottom of
+1. The News page is now a collection of individual news items on the
+ site, whereas the old News page was really one very long page,
+ making editing it somewhat fragile. The new system should be much
+ more robust.
+2. The URL for the RSS news feed has changed, though mod_rewrite is
+ being used on the server to transparently translate requests for the
+ old feed into the new one. The URL for the new News feed is The procedure for creating a news entry is described at the [bottom of
 the News page](../GMOD_News#Adding_a_News_Item).
 
 I would like to sincerely thank [Dave

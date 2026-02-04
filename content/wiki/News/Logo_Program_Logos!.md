@@ -30,22 +30,22 @@ not chosen.
 I would like to thank
 
 - The **[design
-  students](../Spring_2010_Logo_Program#Linn-Benton_Community_College)**
-  who worked with the participants to understand their projects and
-  produce an excellent [set of
-  logos](../Spring_2010_Logo_Program#Other_Logos)
-  to pick from.
+ students](../Spring_2010_Logo_Program#Linn-Benton_Community_College)**
+ who worked with the participants to understand their projects and
+ produce an excellent [set of
+ logos](../Spring_2010_Logo_Program#Other_Logos)
+ to pick from.
 - **John Aikman** of the
-  <a href="http://www.linnbenton.edu/go/graphic-arts"
-  class="external text" rel="nofollow">Graphic Arts Department</a> at
-  <a href="http://www.linnbenton.edu/" class="external text"
-  rel="nofollow">Linn-Benton Community College (LBCC)</a> for being
-  willing to take a chance on this program, and for being willing to
-  work with to hammer out the details.
+ <a href="http://www.linnbenton.edu/go/graphic-arts"
+ class="external text" rel="nofollow">Graphic Arts Department</a> at
+ <a href="http://www.linnbenton.edu/" class="external text"
+ rel="nofollow">Linn-Benton Community College (LBCC)</a> for being
+ willing to take a chance on this program, and for being willing to
+ work with to hammer out the details.
 - And the
-  **[participants](../Spring_2010_Logo_Program#Projects)**
-  for being willing to work the students to help them gain experience
-  and to understand the projects they were creating logos for.
+ **[participants](../Spring_2010_Logo_Program#Projects)**
+ for being willing to work the students to help them gain experience
+ and to understand the projects they were creating logos for.
 
 The [GMOD Logo Program](../GMOD_Logo_Program) might
 return in the future. Please watch the [GMOD

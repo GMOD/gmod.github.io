@@ -3,15 +3,15 @@ title: "Visualization"
 ---
 # Visualization
 
-  Visualization</span>](#Genome_Visualization)
+ Visualization</span>](#Genome_Visualization)
 - [Comparative
-  Genomics Visualization](#Comparative_Genomics_Visualization)
+ Genomics Visualization](#Comparative_Genomics_Visualization)
 - [Gene
-  Expression Visualization](#Gene_Expression_Visualization)
+ Expression Visualization](#Gene_Expression_Visualization)
 - [Pathway
-  Visualization](#Pathway_Visualization)
+ Visualization](#Pathway_Visualization)
 - [Ontology
-  Visualization](#Ontology_Visualization)
+ Visualization](#Ontology_Visualization)
 
 One of GMOD's strength is visualization of different types of biological
 data.
@@ -41,7 +41,7 @@ GMOD offers several possibilities specifically for visualizing
 
 ## Gene Expression Visualization
 
-Components for visualizing  results;
+Components for visualizing results;
 currently focused on microarray based experiments.
 
 - [Caryoscope](/wiki/Caryoscope)

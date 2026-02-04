@@ -17,7 +17,7 @@ stanza as usual but instead of specifying the feature type using the
 "feature" option, give the desired DAS URL using the "remote feature"
 option:
 
-    remote feature = http://dev.hapmap.org/cgi-perl/das/t2d_testing?type=ldblock
+ remote feature = http://dev.hapmap.org/cgi-perl/das/t2d_testing?type=ldblock
 
 Because DAS sources specify the glyph and visualization options, most of
 the settings such as bgcolor will be ignored. However, the track key and
@@ -33,11 +33,11 @@ support, you must use Bio::Das version 0.90 or higher, available from
 
 A sample \[GENERAL\] configuration section looks like this:
 
-    [GENERAL]
-    description   = Das Example Database (dicty)
-    db_adaptor    = Bio::Das
-    db_args       = -source http://www.biodas.org/cgi-bin/das
-                    -dsn    dicty
+ [GENERAL]
+ description = Das Example Database (dicty)
+ db_adaptor = Bio::Das
+ db_args = -source http://www.biodas.org/cgi-bin/das
+ -dsn dicty
 
 The db_adaptor option must be set to "Bio::Das". The db_args option must
 contain a -source pointing to the base of the remote DAS server, and a

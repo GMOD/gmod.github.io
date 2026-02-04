@@ -8,25 +8,25 @@ addition to making the code base more maintainable, GBrowse 2.0 adds the
 following major features:
 
 - **User Interface:** The user interface uses
-  [AJAX](/wiki/Glossary#AJAX) to provide a smoother user
-  experience. Tracks turn on and off immediately, and updates affect
-  only the tracks that have changed.
+ [AJAX](/wiki/Glossary#AJAX) to provide a smoother user
+ experience. Tracks turn on and off immediately, and updates affect
+ only the tracks that have changed.
 - **More rational configuration:** Most configuration options have been
-  moved into a single shared configuration file. This allows data
-  source-specific files to be shorter and more concise. This also
-  increases the performance for sites that use hundreds of configuration
-  files to display annotations on multiple species because only the
-  global configuration file and the source-specific configuration file
-  need to be read.
+ moved into a single shared configuration file. This allows data
+ source-specific files to be shorter and more concise. This also
+ increases the performance for sites that use hundreds of configuration
+ files to display annotations on multiple species because only the
+ global configuration file and the source-specific configuration file
+ need to be read.
 - **Multiple database support:** You can now declare multiple databases
-  for each data source and attach them to different tracks. This allows
-  you to add and remove genome annotation data sets far more easily than
-  in earlier versions.
+ for each data source and attach them to different tracks. This allows
+ you to add and remove genome annotation data sets far more easily than
+ in earlier versions.
 - **Slave renderer support:** If you have a multi-CPU processor, or
-  access to several machines, you can distribute the tasks of reading
-  the databases and rendering tracks across multiple processes and
-  machines via a series of "slave" renderers. This greatly increases
-  performance.
+ access to several machines, you can distribute the tasks of reading
+ the databases and rendering tracks across multiple processes and
+ machines via a series of "slave" renderers. This greatly increases
+ performance.
 
 This document describes how to install and configure GBrowse 2.0 on your
 system. Readers familiar with GBrowse 1.70 or earlier should start with
@@ -34,128 +34,128 @@ the next section, which is a quick summary of what is different. Readers
 who have not installed or configured GBrowse before should skip to
 [GBrowse Installation](#GBrowse_Installation).
 
-  Installation</span>](#GBrowse_Installation)
-  - [GBrowse
-    Virtual Machines](#GBrowse_Virtual_Machines)
-  - [Ubuntu
-    11.10 and higher Binary
-    Installs](#Ubuntu_11.10_and_higher_Binary_Installs)
-  - [Debian
-    "sid" Binary Installs](#Debian_.22sid.22_Binary_Installs)
-  - [Debian
-    "wheezy" Binary
-    Installs](#Debian_.22wheezy.22_Binary_Installs)
-  - [Installation on Older Ubuntu and Debian
-    Systems](#Installation_on_Older_Ubuntu_and_Debian_Systems)
-  - [Installation on RedHat, CentOS and other RPM
-    Systems](#Installation_on_RedHat.2C_CentOS_and_other_RPM_Systems)
-  - [Installation on MacOSX
-    Systems](#Installation_on_MacOSX_Systems)
-  - [Installation from Source
-    Code](#Installation_from_Source_Code)
-  - [Users of
-    GBrowse 1.X](#Users_of_GBrowse_1.X)
+ Installation</span>](#GBrowse_Installation)
+ - [GBrowse
+ Virtual Machines](#GBrowse_Virtual_Machines)
+ - [Ubuntu
+ 11.10 and higher Binary
+ Installs](#Ubuntu_11.10_and_higher_Binary_Installs)
+ - [Debian
+ "sid" Binary Installs](#Debian_.22sid.22_Binary_Installs)
+ - [Debian
+ "wheezy" Binary
+ Installs](#Debian_.22wheezy.22_Binary_Installs)
+ - [Installation on Older Ubuntu and Debian
+ Systems](#Installation_on_Older_Ubuntu_and_Debian_Systems)
+ - [Installation on RedHat, CentOS and other RPM
+ Systems](#Installation_on_RedHat.2C_CentOS_and_other_RPM_Systems)
+ - [Installation on MacOSX
+ Systems](#Installation_on_MacOSX_Systems)
+ - [Installation from Source
+ Code](#Installation_from_Source_Code)
+ - [Users of
+ GBrowse 1.X](#Users_of_GBrowse_1.X)
 - [Configuring
-  GBrowse](#Configuring_GBrowse)
-  - [GBrowse.conf](#GBrowse.conf)
-    - [The
-      GBrowse.conf \[GENERAL\]
-      Section](#The_GBrowse.conf_.5BGENERAL.5D_Section)
-      - [Paths and
-        Directories](#Paths_and_Directories)
-      - [Session
-        Settings](#Session_Settings)
-      - [Performance
-        Settings](#Performance_Settings)
-      - [Appearance
-        Settings](#Appearance_Settings)
-      - [Fast Track Panning (new in version
-        2.20)](#Fast_Track_Panning_.28new_in_version_2.20.29)
-      - [Cleanup
-        Settings](#Cleanup_Settings)
-      - [Upload Database
-        Settings](#Upload_Database_Settings)
-      - [Debug Settings](#Debug_Settings)
-      - [Configuring Genomic
-        Regions](#Configuring_Genomic_Regions)
-      - [HTML Customization
-        Settings](#HTML_Customization_Settings)
-    - [Configured Data Source
-      Sections](#Configured_Data_Source_Sections)
-    - [Themes](#Themes)
-  - [Data
-    Source Configuration Files](#Data_Source_Configuration_Files)
-    - [The
-      GENERAL Section](#The_GENERAL_Section)
-    - [Database
-      Definitions](#Database_Definitions)
-      - [Database Search
-        Options](#Database_Search_Options)
-    - [Track
-      Definitions](#Track_Definitions)
-      - [Database and Rendering Backend
-        Options](#Database_and_Rendering_Backend_Options)
-      - [Glyph and Appearance
-        Options](#Glyph_and_Appearance_Options)
-      - [Track Table
-        Options](#Track_Table_Options)
-      - [Linking Options](#Linking_Options)
-      - [Grouping
-        Options](#Grouping_Options)
-      - [Subtrack Creation
-        Options](#Subtrack_Creation_Options)
-    - [Adding
-      Tracks to the Overview and Region
-      Panels](#Adding_Tracks_to_the_Overview_and_Region_Panels)
-    - [Semantic Zooming](#Semantic_Zooming)
-    - [Summary Mode (new in version
-      2.09)](#Summary_Mode_.28new_in_version_2.09.29)
-      - [Install the development version of
-        BioPerl](#Install_the_development_version_of_BioPerl)
-      - [Upgrade preexisting
-        Bio::DB::SeqFeature::Store
-        databases](#Upgrade_preexisting_Bio::DB::SeqFeature::Store_databases)
-      - [Enable summary mode in your datasource
-        configuration
-        file(s)](#Enable_summary_mode_in_your_datasource_configuration_file.28s.29)
-    - [Creating Subtracks (new in version
-      2.09)](#Creating_Subtracks_.28new_in_version_2.09.29)
+ GBrowse](#Configuring_GBrowse)
+ - [GBrowse.conf](#GBrowse.conf)
+ - [The
+ GBrowse.conf \[GENERAL\]
+ Section](#The_GBrowse.conf_.5BGENERAL.5D_Section)
+ - [Paths and
+ Directories](#Paths_and_Directories)
+ - [Session
+ Settings](#Session_Settings)
+ - [Performance
+ Settings](#Performance_Settings)
+ - [Appearance
+ Settings](#Appearance_Settings)
+ - [Fast Track Panning (new in version
+ 2.20)](#Fast_Track_Panning_.28new_in_version_2.20.29)
+ - [Cleanup
+ Settings](#Cleanup_Settings)
+ - [Upload Database
+ Settings](#Upload_Database_Settings)
+ - [Debug Settings](#Debug_Settings)
+ - [Configuring Genomic
+ Regions](#Configuring_Genomic_Regions)
+ - [HTML Customization
+ Settings](#HTML_Customization_Settings)
+ - [Configured Data Source
+ Sections](#Configured_Data_Source_Sections)
+ - [Themes](#Themes)
+ - [Data
+ Source Configuration Files](#Data_Source_Configuration_Files)
+ - [The
+ GENERAL Section](#The_GENERAL_Section)
+ - [Database
+ Definitions](#Database_Definitions)
+ - [Database Search
+ Options](#Database_Search_Options)
+ - [Track
+ Definitions](#Track_Definitions)
+ - [Database and Rendering Backend
+ Options](#Database_and_Rendering_Backend_Options)
+ - [Glyph and Appearance
+ Options](#Glyph_and_Appearance_Options)
+ - [Track Table
+ Options](#Track_Table_Options)
+ - [Linking Options](#Linking_Options)
+ - [Grouping
+ Options](#Grouping_Options)
+ - [Subtrack Creation
+ Options](#Subtrack_Creation_Options)
+ - [Adding
+ Tracks to the Overview and Region
+ Panels](#Adding_Tracks_to_the_Overview_and_Region_Panels)
+ - [Semantic Zooming](#Semantic_Zooming)
+ - [Summary Mode (new in version
+ 2.09)](#Summary_Mode_.28new_in_version_2.09.29)
+ - [Install the development version of
+ BioPerl](#Install_the_development_version_of_BioPerl)
+ - [Upgrade preexisting
+ Bio::DB::SeqFeature::Store
+ databases](#Upgrade_preexisting_Bio::DB::SeqFeature::Store_databases)
+ - [Enable summary mode in your datasource
+ configuration
+ file(s)](#Enable_summary_mode_in_your_datasource_configuration_file.28s.29)
+ - [Creating Subtracks (new in version
+ 2.09)](#Creating_Subtracks_.28new_in_version_2.09.29)
 - [Advanced
-  Datasource Configuration
-  Topics](#Advanced_Datasource_Configuration_Topics)
-  - [Computed
-    Options](#Computed_Options)
-    - [Named
-      Subroutine References](#Named_Subroutine_References)
-    - [Using
-      Pipes in the GBrowse.conf Data Source
-      Name](#Using_Pipes_in_the_GBrowse.conf_Data_Source_Name)
-  - [Controlling the gbrowse_details
-    page](#Controlling_the_gbrowse_details_page)
-  - [Linking
-    out from gbrowse_details](#Linking_out_from_gbrowse_details)
-  - [Restricting Access to Data Sources and Tracks
-    with Usernames and
-    Passwords](#Restricting_Access_to_Data_Sources_and_Tracks_with_Usernames_and_Passwords)
-  - [Configuring Balloon
-    Tooltips](#Configuring_Balloon_Tooltips)
-  - [Generating
-    Static Images: PNGs, SVGs and
-    PDFs](#Generating_Static_Images:_PNGs.2C_SVGs_and_PDFs)
-  - [Describing
-    a GBrowse data source using structured
-    meta-data](#Describing_a_GBrowse_data_source_using_structured_meta-data)
+ Datasource Configuration
+ Topics](#Advanced_Datasource_Configuration_Topics)
+ - [Computed
+ Options](#Computed_Options)
+ - [Named
+ Subroutine References](#Named_Subroutine_References)
+ - [Using
+ Pipes in the GBrowse.conf Data Source
+ Name](#Using_Pipes_in_the_GBrowse.conf_Data_Source_Name)
+ - [Controlling the gbrowse_details
+ page](#Controlling_the_gbrowse_details_page)
+ - [Linking
+ out from gbrowse_details](#Linking_out_from_gbrowse_details)
+ - [Restricting Access to Data Sources and Tracks
+ with Usernames and
+ Passwords](#Restricting_Access_to_Data_Sources_and_Tracks_with_Usernames_and_Passwords)
+ - [Configuring Balloon
+ Tooltips](#Configuring_Balloon_Tooltips)
+ - [Generating
+ Static Images: PNGs, SVGs and
+ PDFs](#Generating_Static_Images:_PNGs.2C_SVGs_and_PDFs)
+ - [Describing
+ a GBrowse data source using structured
+ meta-data](#Describing_a_GBrowse_data_source_using_structured_meta-data)
 - [Advanced
-  Configuration Topics](#Advanced_Configuration_Topics)
-  - [Maintaining the User Accounts
-    Database](#Maintaining_the_User_Accounts_Database)
-  - [Removing
-    Unused Sessions, Uploads and Cached
-    Images](#Removing_Unused_Sessions.2C_Uploads_and_Cached_Images)
-  - [Other
-    Advanced Topics](#Other_Advanced_Topics)
+ Configuration Topics](#Advanced_Configuration_Topics)
+ - [Maintaining the User Accounts
+ Database](#Maintaining_the_User_Accounts_Database)
+ - [Removing
+ Unused Sessions, Uploads and Cached
+ Images](#Removing_Unused_Sessions.2C_Uploads_and_Cached_Images)
+ - [Other
+ Advanced Topics](#Other_Advanced_Topics)
 - [The GBrowse2
-  REST API](#The_GBrowse2_REST_API)
+ REST API](#The_GBrowse2_REST_API)
 
 # GBrowse Installation
 
@@ -185,13 +185,13 @@ includes example data files and tutorials.
 
 From the command line, run the following:
 
-    > apt-get install gbrowse gbrowse_data
+ > apt-get install gbrowse gbrowse_data
 
 ## Debian "sid" Binary Installs
 
 In Debian and Debian-related systems, run the following command:
 
-    >aptitude install gbrowse gbrowse_data
+ >aptitude install gbrowse gbrowse_data
 
 You might also wish to browse the
 <a href="http://packages.debian.org/source/sid/gbrowse"
@@ -278,148 +278,148 @@ configuration file in the directory you specified at configure time. The
 default location of this directory is /etc/gbrowse2. This file contains
 two types of information:
 
-1.  Global configuration options to apply to all data sources that you
-    want to make available to users.
-2.  A list of the data sources, including their names and their
-    source-specific configuration files.
+1. Global configuration options to apply to all data sources that you
+ want to make available to users.
+2. A list of the data sources, including their names and their
+ source-specific configuration files.
 
 Here is the default **GBrowse.conf**:
 
-    # This is the global configuration for gbrowse
-    # It contains setting common to all data sources as well
-    # as the various constants formerly scattered amongst scripts and libraries
+ # This is the global configuration for gbrowse
+ # It contains setting common to all data sources as well
+ # as the various constants formerly scattered amongst scripts and libraries
 
-    [GENERAL]
-    config_base            = /etc/gbrowse2   # overridden by environment variable GBROWSE_CONF
-    htdocs_base            = /var/www/gbrowse2
-    url_base               = /gbrowse2
-    db_base                = /var/www/gbrowse2/databases
-    tmp_base               = /var/tmp/gbrowse2
+ [GENERAL]
+ config_base = /etc/gbrowse2 # overridden by environment variable GBROWSE_CONF
+ htdocs_base = /var/www/gbrowse2
+ url_base = /gbrowse2
+ db_base = /var/www/gbrowse2/databases
+ tmp_base = /var/tmp/gbrowse2
 
-    # These paths are relative to the url base
-    buttons       = images/buttons
-    balloons      = images/balloons
-    gbrowse_help  = .
-    js            = js
+ # These paths are relative to the url base
+ buttons = images/buttons
+ balloons = images/balloons
+ gbrowse_help = .
+ js = js
 
-    # These paths are relative to the config base
-    plugin_path    = plugins
-    language_path  = languages
-    templates_path = templates
-    moby_path      = MobyServices
+ # These paths are relative to the config base
+ plugin_path = plugins
+ language_path = languages
+ templates_path = templates
+ moby_path = MobyServices
 
-    # session settings
-    session lock type = default
-    session driver = driver:file;serializer:default
-    session args   = Directory /var/tmp/gbrowse2/sessions
+ # session settings
+ session lock type = default
+ session driver = driver:file;serializer:default
+ session args = Directory /var/tmp/gbrowse2/sessions
 
-    # to use the berkeley DB driver comment out the previous
-    # line and uncomment these two
-    #session driver = driver:db_file;serializer:default
-    #session args   = FileName /var/tmp/gbrowse2/sessions.db
+ # to use the berkeley DB driver comment out the previous
+ # line and uncomment these two
+ #session driver = driver:db_file;serializer:default
+ #session args = FileName /var/tmp/gbrowse2/sessions.db
 
-    # Debug settings
-    debug                  = 0
-    debug_external         = 0
-    debug_plugins          = 0
+ # Debug settings
+ debug = 0
+ debug_external = 0
+ debug_plugins = 0
 
-    # Performance settings
-    renderfarm             = 1
-    slave_timeout          = 45
-    global_timeout         = 60
+ # Performance settings
+ renderfarm = 1
+ slave_timeout = 45
+ global_timeout = 60
 
-    # Clean up settings (used by the gbrowse_clean script)
-    expire session  = 1M  # expire unused sessions after a month
-    expire cache    = 2h  # expire cached data if unmodified for >2 hours
-    expire uploads  = 6w  # expire uploaded data if unused for >6 weeks
+ # Clean up settings (used by the gbrowse_clean script)
+ expire session = 1M # expire unused sessions after a month
+ expire cache = 2h # expire cached data if unmodified for >2 hours
+ expire uploads = 6w # expire uploaded data if unused for >6 weeks
 
-    # Appearance settings
-    truecolor     =  1    # better appearance at the expense of larger image files
-    #truetype      = 1    # use truetype fonts for rendering tracks; disabled by default.
+ # Appearance settings
+ truecolor = 1 # better appearance at the expense of larger image files
+ #truetype = 1 # use truetype fonts for rendering tracks; disabled by default.
 
-    # The #include line following this one defines a transparent theme.
-    # Replace "transparent_colors" with "solid_gray_colors"
-    # or "warm_colors" for different themes.
+ # The #include line following this one defines a transparent theme.
+ # Replace "transparent_colors" with "solid_gray_colors"
+ # or "warm_colors" for different themes.
 
-    #include "themes/transparent_colors"
+ #include "themes/transparent_colors"
 
-    balloon tips        = 1
-    titles are balloons = 1
-    plugins             = FastaDumper RestrictionAnnotator SequenceDumper TrackDumper
-    overview grid       = 0
-    region grid         = 0
-    detail grid         = 1
-    image widths        = 450 640 800 1024
-    default width       = 800
-    pad_left            = 60
-    pad_right           = 30
-    too many landmarks  = 100
+ balloon tips = 1
+ titles are balloons = 1
+ plugins = FastaDumper RestrictionAnnotator SequenceDumper TrackDumper
+ overview grid = 0
+ region grid = 0
+ detail grid = 1
+ image widths = 450 640 800 1024
+ default width = 800
+ pad_left = 60
+ pad_right = 30
+ too many landmarks = 100
 
-    instructions section   = open
-    upload_tracks section  = closed
-    search section         = open
-    overview section       = open
-    region section         = open
-    detail section         = open
-    tracks section         = open
-    display_settings section = closed
+ instructions section = open
+ upload_tracks section = closed
+ search section = open
+ overview section = open
+ region section = open
+ detail section = open
+ tracks section = open
+ display_settings section = closed
 
-    # where to link to when user clicks in detailed view
-    link          = AUTO
+ # where to link to when user clicks in detailed view
+ link = AUTO
 
-    # HTML to insert inside the <head></head> section
-    head =
+ # HTML to insert inside the <head></head> section
+ head =
 
-    # At the top of the HTML...
-    header =
+ # At the top of the HTML...
+ header =
 
-    # At the footer
-    footer = <hr />
-             <p style="font-size:small">Generic Genome Browser version 1.99. For questions about the data
-             at this site, please contact its webmaster. For support of the
-             browser software <i>only</i>, send email to
-             <a href="mailto:gmod-gbrowse@lists.sourceforge.net">gmod-gbrowse@lists.sourceforge.net</a>
-             or visit the <a href="http://www.gmod.org">GMOD Project</a> web pages.
-             </p>
+ # At the footer
+ footer = <hr />
+ <p style="font-size:small">Generic Genome Browser version 1.99. For questions about the data
+ at this site, please contact its webmaster. For support of the
+ browser software <i>only</i>, send email to
+ <a href="mailto:gmod-gbrowse@lists.sourceforge.net">gmod-gbrowse@lists.sourceforge.net</a>
+ or visit the <a href="http://www.gmod.org">GMOD Project</a> web pages.
+ </p>
 
-    # Various places where you can insert your own HTML -- see configuration docs
-    html1 =
-    html2 =
-    html3 =
-    html4 =
-    html5 =
-    html6 =
+ # Various places where you can insert your own HTML -- see configuration docs
+ html1 =
+ html2 =
+ html3 =
+ html4 =
+ html5 =
+ html6 =
 
-    # Limits on genomic regions (can be overridden in datasource config files)
-    region segment         = 200000
-    max segment            = 5000000
-    default segment        = 5000
-    zoom levels            = 100 200 1000 2000 5000 10000 20000 50000 100000 200000 5000000 1000000
-    region sizes           = 1000 5000 10000 20000
-    default region         = 5000
-    fine zoom              = 10%
+ # Limits on genomic regions (can be overridden in datasource config files)
+ region segment = 200000
+ max segment = 5000000
+ default segment = 5000
+ zoom levels = 100 200 1000 2000 5000 10000 20000 50000 100000 200000 5000000 1000000
+ region sizes = 1000 5000 10000 20000
+ default region = 5000
+ fine zoom = 10%
 
-    # keyword search maxima
-    max keyword results    = 1000
+ # keyword search maxima
+ max keyword results = 1000
 
-    ###############################################################################################
-    #
-    # One stanza for each configured data source
-    #
-    ###############################################################################################
-    default source = yeast
+ ###############################################################################################
+ #
+ # One stanza for each configured data source
+ #
+ ###############################################################################################
+ default source = yeast
 
-    [yeast]
-    description   = Yeast chromosomes 1+2 (basic)
-    path          = yeast_simple.conf
+ [yeast]
+ description = Yeast chromosomes 1+2 (basic)
+ path = yeast_simple.conf
 
-    [yeast_advanced]
-    description   = Yeast chromosomes 1+2 (advanced)
-    path          = yeast_chr1+2.conf
+ [yeast_advanced]
+ description = Yeast chromosomes 1+2 (advanced)
+ path = yeast_chr1+2.conf
 
-    [renderfarm]
-    description  = Renderfarm demo (gbrowse_slave must be running!)
-    path         = yeast_renderfarm.conf
+ [renderfarm]
+ description = Renderfarm demo (gbrowse_slave must be running!)
+ path = yeast_renderfarm.conf
 
 **GBrowse.conf** consists of several sections. The \[GENERAL\] section
 is the largest, and describes options that apply to GBrowse globally.
@@ -430,7 +430,7 @@ a genome datasource which you will make available for browsing.
 There are two **include** directives that allow you to break up GBrowse
 configuration files into smaller logically-related bits. The directive:
 
-     #include "path/to/file"
+ #include "path/to/file"
 
 will import the file at the named path into the configuration file.
 Relative path names are treated as relative to the location of the
@@ -441,7 +441,7 @@ of GBrowse "themes" that set page background patterns and colors.*
 
 The directive:
 
-    #exec "/usr/bin/script_to_execute"
+ #exec "/usr/bin/script_to_execute"
 
 will cause the command "script_to_execute" to be executed each time the
 configuration file is loaded. The output of this script will be included
@@ -518,8 +518,8 @@ additional arguments to the selected driver. The default is to use the
 standard "file" driver. To use the faster (but not universally
 available) DB_File driver, the options might look like this:
 
-     session driver = driver:db_file;serializer:default
-     session args   = FileName /var/tmp/gbrowse2/sessions.db
+ session driver = driver:db_file;serializer:default
+ session args = FileName /var/tmp/gbrowse2/sessions.db
 
 session lock type
 
@@ -542,7 +542,7 @@ Use the locking in the [MySQL](/wiki/MySQL) database. It is handy if
 you already have a MySQL database up and running. The full format of
 this value is:
 
-    session lock type = mysql:dbi:mysql:my_db;host=hostname;port=portnum;user=user;password=pass
+ session lock type = mysql:dbi:mysql:my_db;host=hostname;port=portnum;user=user;password=pass
 
 for simplicity, you can leave off the initial "mysql:".
 
@@ -563,7 +563,7 @@ By default this support is enabled, but there no particular performance
 penalty if you choose not to take advantage of it. If you plan never to
 use the feature, set it to a false (zero) value:
 
-     renderfarm = 0
+ renderfarm = 0
 
 slave_timeout
 When [running a GBrowse2 render
@@ -595,7 +595,7 @@ wish to adjust this upward on a system with 4 or more CPUs. A good
 choice is between one and two times the number of CPUs/cores on the
 server system:
 
-    max_render_processes = 8
+ max_render_processes = 8
 
 #### Appearance Settings
 
@@ -643,9 +643,9 @@ or newlines. To associate specific stylesheets with different media
 types, place the media type(s) in parentheses and append them to the
 stylesheet, as in the following example:
 
-     stylesheet = css/gbrowse.css(screen)
-                  http://www.example.com/hires.css(paper,projection)
-                  http://www.example.com/audio.css(audio)
+ stylesheet = css/gbrowse.css(screen)
+ http://www.example.com/hires.css(paper,projection)
+ http://www.example.com/audio.css(audio)
 
 truecolor
 If set to a true value, then the tracks will be rendered as full-color
@@ -683,8 +683,8 @@ browser. In this example, the browser assumes a default width of 1024
 pixels, but offers the user a menu of five widths ranging from 450 to
 1280 pixels.
 
-    image widths    = 450 640 800 1024 1280
-    default width   = 1024
+ image widths = 450 640 800 1024 1280
+ default width = 1024
 
 pad_left, pad_right
 These options control how much additional whitespace (in pixels) to
@@ -751,9 +751,9 @@ This option controls whether a category or subcategory is open or closed
 when the user first visits the page, or resets his state with the
 "Reset" menu choice. The format is as shown in this example:
 
-    category state = Genes           open
-                     Genes:Coding    open
-                     Genes:Noncoding closed
+ category state = Genes open
+ Genes:Coding open
+ Genes:Noncoding closed
 
 Categories are identified by their names; subcategories and
 sub-subcategories are indicated by dividing the subcategories by ":"
@@ -891,7 +891,7 @@ header, footer
 
 These two options place HTML at the top or bottom of the page. Example:
 
-     header =
+ header =
 
 You can create an unlimited number of subtracks within a single major
 track in order to group a series of datasets that are logically linked,
@@ -922,11 +922,11 @@ You need to know the Perl programming language to take advantage of this
 feature. The general format of this type of option is:
 
 ``` de1
-  option name = sub {
-              some perl code;
-              some more perl code;
-              even more perl code;
-              }
+ option name = sub {
+ some perl code;
+ some more perl code;
+ even more perl code;
+ }
 ```
 
 The value must begin with the sequence "sub {" in order to be recognized
@@ -954,11 +954,11 @@ this bgcolor subroutine will call the feature's primary_tag() method,
 and return "blue" if it is an exon, "orange" otherwise:
 
 ``` de1
-  bgcolor = sub {
-          my $feature = shift;
-          return "blue" if $feature->primary_tag eq 'exon';
-          return "orange";
-          }
+ bgcolor = sub {
+ my $feature = shift;
+ return "blue" if $feature->primary_tag eq 'exon';
+ return "orange";
+ }
 ```
 
 See the manual page for
@@ -974,24 +974,24 @@ example that draws the first and last parts of a feature in blue and the
 rest in red:
 
 ``` de1
-   sub {
-         my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
-         return 'blue' if $part_no == 0;                # zero-based indexing!
-         return 'blue' if $part_no == $total_parts-1;   # zero-based indexing!
-         return 'red';
-         }
+ sub {
+ my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
+ return 'blue' if $part_no == 0; # zero-based indexing!
+ return 'blue' if $part_no == $total_parts-1; # zero-based indexing!
+ return 'red';
+ }
 ```
 
 If you need access to information in the parent of the feature (e.g. in
 a multipart feature), you can call the glyph's parent_feature() method:
 
 ``` de1
-  sub {
-         my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
-         my $parent = $glyph->parent_feature;
-         return 'blue' if $parent->name =~ /Blue\d+/;
-         return 'red';
-         }
+ sub {
+ my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
+ my $parent = $glyph->parent_feature;
+ return 'blue' if $parent->name =~ /Blue\d+/;
+ return 'red';
+ }
 ```
 
 The parent_feature() method was added to Bioperl on 17 April 2008. If
@@ -1007,10 +1007,10 @@ Bio::Graphics::Glyph object corresponding to the current track within
 the panel:
 
 ``` de1
-  link = sub {
-             my ($feature, $panel, $track) = @_;
-             ... do something
-             }
+ link = sub {
+ my ($feature, $panel, $track) = @_;
+ ... do something
+ }
 ```
 
 Ordinarily you will only need to use the feature object. The other
@@ -1018,11 +1018,11 @@ arguments are useful to look up panel-specific settings such as the
 pixel width of the panel or the state of the "flip" setting:
 
 ``` de1
-  title = sub {
-          my ($feature,$panel,$track) = @_;
-          my $name = $feature->display_name;
-          return $panel->flip ? "$name (flipped)" : $name;
-       }
+ title = sub {
+ my ($feature,$panel,$track) = @_;
+ my $name = $feature->display_name;
+ return $panel->flip ? "$name (flipped)" : $name;
+ }
 ```
 
 ### Named Subroutine References
@@ -1034,46 +1034,46 @@ configuration file. init_code should contain nothing but subroutine
 definitions and other initialization routines. For example:
 
 ``` de1
-  init_code = sub score_color {
-                my $feature = shift;
-                if ($feature->score > 50) {
-                  return 'red';
-                } else {
-                  return 'green';
-                }
-              }
-              sub score_height {
-                my $feature = shift;
-                if ($feature->score > 50) {
-                  return 10;
-                } else {
-                  return 5;
-                }
-              }
+ init_code = sub score_color {
+ my $feature = shift;
+ if ($feature->score > 50) {
+ return 'red';
+ } else {
+ return 'green';
+ }
+ }
+ sub score_height {
+ my $feature = shift;
+ if ($feature->score > 50) {
+ return 10;
+ } else {
+ return 5;
+ }
+ }
 ```
 
 Then simply refer to these subroutines using the \\name syntax:
 
-       [EST_ALIGNMENTS]
-       glyph = generic
-       bgcolor = \&score_color
-       height  = \&score_height
+ [EST_ALIGNMENTS]
+ glyph = generic
+ bgcolor = \&score_color
+ height = \&score_height
 
 You can declare global variables in the init_code subroutine if you use
 "no strict 'vars';" at the top of the section:
 
 ``` de1
-    init_code = no strict 'vars';
-                $HEIGHT = 10;
-                sub score_height {
-                  my $feature = shift;
-                  $HEIGHT++;
-                  if ($feature->score > 50) {
-                    return $HEIGHT*2;
-                  } else {
-                    return $HEIGHT;
-                  }
-                }
+ init_code = no strict 'vars';
+ $HEIGHT = 10;
+ sub score_height {
+ my $feature = shift;
+ $HEIGHT++;
+ if ($feature->score > 50) {
+ return $HEIGHT*2;
+ } else {
+ return $HEIGHT;
+ }
+ }
 ```
 
 Due to the way the configuration file is parsed, there must be no empty
@@ -1085,10 +1085,10 @@ anonymous subroutines, will go into a package that changes unpredictably
 each time you load the page. If you need a predictable package name, you
 can define it this way:
 
-       init_code = package My; sub score_height { .... }
+ init_code = package My; sub score_height { .... }
 
-       [EST_ALIGNMENTS]
-       height = \&My::score_height
+ [EST_ALIGNMENTS]
+ height = \&My::score_height
 
 ### Using Pipes in the GBrowse.conf Data Source Name
 
@@ -1097,10 +1097,10 @@ rather than using a static file. To do this, you can give GBrowse.conf a
 "path" option that uses Perl's "piped open" syntax to read the output of
 a script. For example:
 
-     # this is in GBrowse.conf
-     [modENCODE_preview]
-     description = modENCODE preview database
-     path        = /usr/local/modencode/bin/preview.pl |
+ # this is in GBrowse.conf
+ [modENCODE_preview]
+ description = modENCODE preview database
+ path = /usr/local/modencode/bin/preview.pl |
 
 The script (preview.pl in this example) must print a correctly formatted
 GBrowse datasource configuration file to its standard output.
@@ -1109,24 +1109,24 @@ GBrowse datasource configuration file to its standard output.
 you can use a regular expression as the stanza datasource name, allowing
 you to pass extracted subexpressions to the script. For example:
 
-    [=~modENCODE_preview_v(\d+)]
-     description = modENCODE preview database
-     path        = /usr/local/modencode/bin/preview.pl $1 |
+ [=~modENCODE_preview_v(\d+)]
+ description = modENCODE preview database
+ path = /usr/local/modencode/bin/preview.pl $1 |
 
 The "=~" prefix is required to turn on regular expression scanning. This
 will match any data source of the format "modENCODE_preview_v123" where
 "123" is a series of digits. The digits will be extracted using the
 regular expression and passed to preview.pl as an argument:
 
-    /usr/local/modencode/bin/preview.pl 123 |
+ /usr/local/modencode/bin/preview.pl 123 |
 
 You can then invoke GBrowse with any of the following URLs and have the
 indicated script return the appropriate data source configuration data
 on its standard output:
 
-    http: //your.host/gb2/gbrowse/modENCODE_preview_v1
-    http: //your.host/gb2/gbrowse/modENCODE_preview_v2
-    http: //your.host/gb2/gbrowse/modENCODE_preview_v42
+ http: //your.host/gb2/gbrowse/modENCODE_preview_v1
+ http: //your.host/gb2/gbrowse/modENCODE_preview_v2
+ http: //your.host/gb2/gbrowse/modENCODE_preview_v42
 
 ## Controlling the gbrowse_details page
 
@@ -1140,10 +1140,10 @@ user-defined tag/value attributes set in Column 9 of the
 You can control, to some extent, the formatting of the tag value table
 by providing a configuration stanza with the following format:
 
-     [feature_type:details]
-     tag1 = formatting rule
-     tag2 = formatting rule
-     tag3 = formatting rule
+ [feature_type:details]
+ tag1 = formatting rule
+ tag2 = formatting rule
+ tag3 = formatting rule
 
 "feature_type" is the type of the feature you wish to control. For
 example, "gene:sgd" or simply "gene". You may also specify a
@@ -1170,20 +1170,20 @@ through.
 For example, here is a simple way to boldface the Type field, italicize
 the Length field, and turn the Notes into a Google search:
 
-     [gene:details]
-     Type   = <b>$value</b>
-     Length = <b>$value</b>
-     Note  = <a href="http://www.google.com/search?q=$value">$value</a>
+ [gene:details]
+ Type = <b>$value</b>
+ Length = <b>$value</b>
+ Note = <a href="http://www.google.com/search?q=$value">$value</a>
 
 If you provide a callback, the callback subroutine will be invoked with
 three arguments. WARNING: the three arguments are different from the
 ones passed to other callbacks, and consist of the tag value, the tag
 name, and the current feature:
 
-     Note = sub {
-                my($value,$tag_name,$feature) = @_;
-                do something....
-                }
+ Note = sub {
+ my($value,$tag_name,$feature) = @_;
+ do something....
+ }
 
 You can use this feature to format sequence attributes nicely. For
 example, if your features have a Translation attribute which contains
@@ -1192,12 +1192,12 @@ default formatting of these features. You can modify this with a
 callback that word-wraps the value into lines of at most 60 characters,
 and puts the whole thing in a \<pre\> section.
 
-    [gene:details]
-    Translation = sub {
-                   my $value = shift;
-                   $value =~ s/(\S{1,60})/$1\n/g;
-                   "<pre>$value</pre>";
-                }
+ [gene:details]
+ Translation = sub {
+ my $value = shift;
+ $value =~ s/(\S{1,60})/$1\n/g;
+ "<pre>$value</pre>";
+ }
 
 ## Linking out from gbrowse_details
 
@@ -1214,20 +1214,20 @@ containing a string to be transformed into the URL.
 For example, to link to a local cgi script from the following
 [GFF2](/wiki/GFF2) line:
 
-    IV     curated exon    518     550     . + .   Transcript B0273.1; local_id 11723
+ IV curated exon 518 550 . + . Transcript B0273.1; local_id 11723
 
 one might add the following stanza to the configuration file:
 
-       [local_id:DETAILS]
-       URL   = http://localhost/cgi-bin/localLookup.cgi?tag=$tag;id=$value
+ [local_id:DETAILS]
+ URL = http://localhost/cgi-bin/localLookup.cgi?tag=$tag;id=$value
 
 The URL option's value should be a URL containing one or more variables.
 Variables begin with a dollar sign (\$), and are replaced at run time
 with the information relating to the selected feature attribute.
 Recognized variables are:
 
-        $tag        The "tag" of the tag/value pair
-        $value      The "value" of the tag/value pair
+ $tag The "tag" of the tag/value pair
+ $value The "value" of the tag/value pair
 
 The value of URL can also be an anonymous subroutine, in which case the
 subroutine will be invoked with a two-element argument list consisting
@@ -1235,14 +1235,14 @@ of the name of the tag and its value. This example, provided by Cyril
 Pommier, will convert Dbxref tags into links to NCBI, provided that the
 value of the tag looks like an NCBI GI number:
 
-    [Dbxref:DETAILS]
-    URL = sub {
-          my ($tag,$value)=@_;
-          if ($value =~ /NCBI_gi:(.+)/){
-           return "http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi?term=$1";
-           }
-           return;
-         }
+ [Dbxref:DETAILS]
+ URL = sub {
+ my ($tag,$value)=@_;
+ if ($value =~ /NCBI_gi:(.+)/){
+ return "http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi?term=$1";
+ }
+ return;
+ }
 
 ## Restricting Access to Data Sources and Tracks with Usernames and Passwords
 
@@ -1276,19 +1276,19 @@ To enter metadata about a particular data source, go to the \[GENERAL\]
 section of its configuration file and enter a **metadata** option
 formatted like this one:
 
-     metadata =
-            -description             Example GBrowse database containing information from WormBase
-                     (www.wormbase.org) and modENCODE (www.modencode.org).
-            -maintainer              Lincoln Stein <lincoln.stein@gmail.com>
-            -created                 2010-1-4
-            -modified                2009-9-1
-            -authority               WS
-            -coordinates_version     180
-            -coordinates             http://www.dasregistry.org/coordsys/CS_DS109
-            -source                  Chromosome
-            -testrange               I:7385068..7387651
-            -species                 Caenorhabditis elegans
-            -taxid                   6239
+ metadata =
+ -description Example GBrowse database containing information from WormBase
+ (www.wormbase.org) and modENCODE (www.modencode.org).
+ -maintainer Lincoln Stein <lincoln.stein@gmail.com>
+ -created 2010-1-4
+ -modified 2009-9-1
+ -authority WS
+ -coordinates_version 180
+ -coordinates http://www.dasregistry.org/coordsys/CS_DS109
+ -source Chromosome
+ -testrange I:7385068..7387651
+ -species Caenorhabditis elegans
+ -taxid 6239
 
 The **metadata** option has multiple suboptions (note the required
 leading whitespace in front of them):
@@ -1355,8 +1355,8 @@ affects custom tracks (uploaded files) and cached images.
 
 You can clean up these files using the Unix "find" command:
 
-        cd /var/tmp/gbrowse2
-        sudo -u www-data find . -type f -atime +20 -print -exec rm {} \;
+ cd /var/tmp/gbrowse2
+ sudo -u www-data find . -type f -atime +20 -print -exec rm {} \;
 
 This will remove all files that have not been accessed for more than 20
 days. Note that the command should run as the Apache web user

@@ -3,20 +3,20 @@ title: "Load GFF Into Chado"
 ---
 # Load GFF Into Chado
 
-This  describes a method for
+This describes a method for
 loading sequence annotation data in [GFF3](/wiki/GFF3) format into a
 [Chado database](/wiki/Chado_-_Getting_Started).
 
-  GFF3 Files</span>](#Download_the_GFF3_Files)
+ GFF3 Files</span>](#Download_the_GFF3_Files)
 - [Add an Entry
-  for Your Organism](#Add_an_Entry_for_Your_Organism)
+ for Your Organism](#Add_an_Entry_for_Your_Organism)
 - [Load the
-  GFF3](#Load_the_GFF3)
+ GFF3](#Load_the_GFF3)
 - [Creating GFF3
-  from UniProt/SwissProt
-  Files](#Creating_GFF3_from_UniProt.2FSwissProt_Files)
+ from UniProt/SwissProt
+ Files](#Creating_GFF3_from_UniProt.2FSwissProt_Files)
 - [More
-  Information](#More_Information)
+ Information](#More_Information)
 - [Authors](#Authors)
 
 ## Download the GFF3 Files
@@ -46,12 +46,12 @@ organism, run the tool that came with Chado, `gmod_add_organism.pl`
 
 This script will ask you what information about your organism:
 
-     Both genus and species are required; please provide them below
+ Both genus and species are required; please provide them below
 
-     Organism's genus?
-     Organism's species?
-     Organism's abbreviation? []
-     Comment (can be empty)?
+ Organism's genus?
+ Organism's species?
+ Organism's abbreviation? []
+ Comment (can be empty)?
 
 ## Load the GFF3
 
@@ -60,11 +60,11 @@ models (gene, mRNA, CDS/exon/UTR), you must first do this. Use this <a
 href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/schema/chado/bin/gmod_gff3_preprocessor.pl"
 class="external text" rel="nofollow">gmod_gff3_preprocessor.pl</a>.
 
-    > gmod_gff3_preprocessor.pl --gfffile saccharomyces_cerevisiae.gff --outfile saccharomyces_cerevisiae.sorted.gff
+ > gmod_gff3_preprocessor.pl --gfffile saccharomyces_cerevisiae.gff --outfile saccharomyces_cerevisiae.sorted.gff
 
 Then execute `gmod_bulk_load_gff3.pl`:
 
-    >gmod_bulk_load_gff3.pl --organism yeast  --gfffile saccharomyces_cerevisiae.sorted.gff
+ >gmod_bulk_load_gff3.pl --organism yeast --gfffile saccharomyces_cerevisiae.sorted.gff
 
 This loads the [GFF3](/wiki/GFF3) file. The loading script requires
 [GFF3](/wiki/GFF3) as it has tighter control of the syntax and requires
@@ -100,8 +100,8 @@ most of the protein description, Dbxref, and related fields useful in
 annotating genome matches. Use the `--format Uniprot` flag to specify
 this input format (`--format EMBL` can also be useful).
 
-      >bp_genbank2gff3.pl --noCDS --in uniprot-subset.dat --format Uniprot
-      >gmod_bulk_load_gff3.pl --database mygenome --gff  uniprot-subset.dat.gff --organism fromdata
+ >bp_genbank2gff3.pl --noCDS --in uniprot-subset.dat --format Uniprot
+ >gmod_bulk_load_gff3.pl --database mygenome --gff uniprot-subset.dat.gff --organism fromdata
 
 Use the `--organism fromdata` flag to load UniProt with many organisms.
 
@@ -118,6 +118,6 @@ Or contact the [GMOD Help Desk](/wiki/GMOD_Help_Desk)
 
 ## Authors
 
-- [Scott Cain](/wiki/User:Scott)
+- Scott Cain
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
-  title="bp:Brian Osborne">Brian Osborne</a>
+ title="bp:Brian Osborne">Brian Osborne</a>

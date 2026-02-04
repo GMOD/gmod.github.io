@@ -19,14 +19,14 @@ In addition to the Chado schema, this release includes:
 
 - Tools for creating a new database.
 - Tools for populating it with
-  [ontology](../Category:Ontologies) data (using
-  go-perl).
+ [ontology](../Category:Ontologies) data (using
+ go-perl).
 - A fairly new tool for updating ontologies contributed by the
-  developers of [SGN](../Category:SGN), the Sol Genomics
-  Network.
+ developers of [SGN](../Category:SGN), the Sol Genomics
+ Network.
 - Tools for loading sequence feature (i.e. [GFF3](../GFF3)) data.
 - GMODTools for creating bulk download files like GFF and Fasta (See
-  [GMODTools](../GMODTools) for more information).
+ [GMODTools](../GMODTools) for more information).
 
 Other data can be loaded using [XORT](../XORT.1). This release of
 Chado works well with the upcoming release of

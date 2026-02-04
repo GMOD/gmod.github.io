@@ -36,19 +36,19 @@ class="external text" rel="nofollow">GBrowse_syn workshop</a> at the
 
 2010](/wiki/PAG_2010)) held in San Diego on January 9-13, 2009.
 
-  Overview](#Overview)
+ Overview](#Overview)
 - [Tutorial
-  Level](#Tutorial_Level)
+ Level](#Tutorial_Level)
 - [Workshop
-  Instructor](#Workshop_Instructor)
+ Instructor](#Workshop_Instructor)
 - [Syllabus](#Syllabus)
 - [Workshop
-  Tutorial](#Workshop_Tutorial)
+ Tutorial](#Workshop_Tutorial)
 - [Other GMOD
-  Presentations and
-  Meetings](#Other_GMOD_Presentations_and_Meetings)
+ Presentations and
+ Meetings](#Other_GMOD_Presentations_and_Meetings)
 - [Workshop
-  Evaluation](#Workshop_Evaluation)
+ Evaluation](#Workshop_Evaluation)
 
 ## Overview
 
@@ -72,7 +72,7 @@ scientists working with multiple sequence alignment data.
 
 ## Workshop Instructor
 
-[Sheldon McKay](/wiki/User:Mckays),
+Sheldon McKay,
 <a href="http://modencode.org" class="external text"
 
 <a href="http://www.iplantcollaborative.org/" class="external text"
@@ -109,13 +109,13 @@ GMOD will have a [strong presence](/wiki/PAG_2010) at PAG 2010,
 including
 
 - A [workshop](/wiki/GBrowse_PAG_2010_Workshop) on
-  [GBrowse](/wiki/GBrowse), a genome viewer that
-  [GBrowse_syn](/wiki/GBrowse_syn) is built on.
+ [GBrowse](/wiki/GBrowse), a genome viewer that
+ [GBrowse_syn](/wiki/GBrowse_syn) is built on.
 - A [workshop](/wiki/MAKER_PAG_2010_Workshop) on
-  [MAKER](/wiki/MAKER), a genome annotation pipeline.
+ [MAKER](/wiki/MAKER), a genome annotation pipeline.
 - The <a href="http://www.intl-pag.org/18/18-gramene.html"
-  class="external text" rel="nofollow">Gramene Workshop</a> will include
-  a section on the [CMap](/wiki/CMap) comparative map viewer.
+ class="external text" rel="nofollow">Gramene Workshop</a> will include
+ a section on the [CMap](/wiki/CMap) comparative map viewer.
 
 See [PAG 2010](/wiki/PAG_2010) for a more complete list of
 GMOD-related presentations at PAG XVIII.

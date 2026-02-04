@@ -64,6 +64,6 @@ Friday:
 | 3:00-3:45 | Report on progress |
 
 - Note: the Tripal steering committee will meet on Friday from 12:00 -
-  3:00 pm at the Postcard Bistro in the Handlery.
+ 3:00 pm at the Postcard Bistro in the Handlery.
 
 *Posted to the [GMOD News](/wiki/GMOD_News) on 2020/01/08*

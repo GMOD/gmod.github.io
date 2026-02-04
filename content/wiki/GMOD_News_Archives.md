@@ -980,12 +980,12 @@ there is some functionality still under development. However, this
 release is made to help early adopters of Tripal for Drupal 7. Reports
 of bugs or other issues are highly welcomed. Below are available
 resources for Tripal 2.0a</p>
-<pre><code>   Download Instructions
-   New Functionality
-   Installation and Tutorial
-   Tripal 2.0 API site
-   Tripal Mailing List
-   Tripal Developer&#39;s Mailing List</code></pre>
+<pre><code> Download Instructions
+ New Functionality
+ Installation and Tutorial
+ Tripal 2.0 API site
+ Tripal Mailing List
+ Tripal Developer&#39;s Mailing List</code></pre>
 <p>The Installation tutorial is still under development but should have
 enough information for complete installation of Tripal v2.0a as well as
 loading of organisms and features.</p>
@@ -2880,8 +2880,7 @@ support of the community, and we would like to demonstrate that by
 submitting many letters of support from users. We would be very grateful
 if you could take a couple of minutes to write such a letter; it should
 include information about how you use or plan to use GMOD software.
-There are <a href="/wiki/User%253AScott#Support_letter_templates"
-title="User%253AScott">some template paragraphs</a> provided for
+There are some template paragraphs provided for
 inspiration.</p>
 <p>The letters should be on institutional letterhead, signed, and then
 scanned to a PDF, or you could mail the original to Scott Cain and he
@@ -2895,8 +2894,7 @@ class="external text" rel="nofollow">email Scott directly</a> if you're
 willing to write a letter or if you need any help.</p>
 <p>This grant would help to secure the future of important parts of the
 GMOD project, so we would be very grateful for your help!</p>
-<p><em>Via <a href="/wiki/User%253AScott"
-title="User%253AScott">Scott Cain</a></em></p>
+<p><em>Via Scott Cain</em></p>
 <p><br />
 </p>
 
@@ -2936,7 +2934,7 @@ title="Tripal Tutorial v1.1">Tripal</a></li>
 class="mw-redirect" title="WebApollo Tutorial">WebApollo</a></li>
 </ul>
 <p>The full set of GMOD tutorials, featuring all the material from this
-year's summer school and more, is available from the  section of the wiki.</p>
+year's summer school and more, is available from the section of the wiki.</p>
 <p><br />
 </p>
 
@@ -2954,9 +2952,7 @@ href="http://jbrowse.org/jbrowse-1-10-0/"
 <p><a href="/wiki/JBrowse_Configuration_Guide"
 title="JBrowse Configuration Guide">JBrowse Configuration Guide</a> for
 documentation on how to use the new features.</p>
-<p><a href="/wiki/User%253ARobertBuels"
-title="User%253ARobertBuels">RobertBuels</a> (<a href="/wiki/User_talk%253ARobertBuels"
-title="User talk:RobertBuels">talk</a>)</p>
+<p>RobertBuels (talk)</p>
 <p><br />
 </p>
 

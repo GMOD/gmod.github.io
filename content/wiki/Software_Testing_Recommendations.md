@@ -25,7 +25,7 @@ It won't hurt you to read the following up front:
 Recommendations
 
 - [Java Testing - by Jon
-  Slenk](/wiki/Java_Testing_-_by_Jon_Slenk)
+ Slenk](/wiki/Java_Testing_-_by_Jon_Slenk)
 - [Perl Testing - by Gavin
-  Sherlock](/wiki/Perl_Testing_-_by_Gavin_Sherlock)
+ Sherlock](/wiki/Perl_Testing_-_by_Gavin_Sherlock)
 - [Questions on Testing](/wiki/Questions_on_Testing)

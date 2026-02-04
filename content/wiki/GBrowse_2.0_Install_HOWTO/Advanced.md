@@ -10,36 +10,36 @@ upload system, and restricting access to certain databases and tracks
 via user authentication.
 
 - For basic GBrowse 2.0 install instructions, see [GBrowse 2.0 Install
-  HOWTO](../GBrowse_2.0_Install_HOWTO.1)
+ HOWTO](../GBrowse_2.0_Install_HOWTO.1)
 - *For the main GBrowse 2.0 HOWTO article, see: [GBrowse 2.0
-  HOWTO](../GBrowse_2.0_HOWTO).*
+ HOWTO](../GBrowse_2.0_HOWTO).*
 - *See also: [GBrowse Install
-  HOWTO](../GBrowse_Install_HOWTO).*
+ HOWTO](../GBrowse_Install_HOWTO).*
 
-  GBrowse under FastCGI</span>](#Running_GBrowse_under_FastCGI)
+ GBrowse under FastCGI</span>](#Running_GBrowse_under_FastCGI)
 - [Running
-  GBrowse under modperl](#Running_GBrowse_under_modperl)
+ GBrowse under modperl](#Running_GBrowse_under_modperl)
 - [Configuring
-  the User Account
-  Database](#Configuring_the_User_Account_Database)
-  - [Creating
-    and configuring the user account
-    database](#Creating_and_configuring_the_user_account_database)
-  - [Configuring outgoing
-    email](#Configuring_outgoing_email)
-  - [The Admin
-    Interface](#The_Admin_Interface)
-    - [WebGBrowse](#WebGBrowse)
+ the User Account
+ Database](#Configuring_the_User_Account_Database)
+ - [Creating
+ and configuring the user account
+ database](#Creating_and_configuring_the_user_account_database)
+ - [Configuring outgoing
+ email](#Configuring_outgoing_email)
+ - [The Admin
+ Interface](#The_Admin_Interface)
+ - [WebGBrowse](#WebGBrowse)
 - [Displaying
-  Next Generation Sequencing
-  Data](#Displaying_Next_Generation_Sequencing_Data)
+ Next Generation Sequencing
+ Data](#Displaying_Next_Generation_Sequencing_Data)
 - [Configuring
-  the Uploaded Track
-  Database](#Configuring_the_Uploaded_Track_Database)
-  - [Using the
-    DBI::mysql backend](#Using_the_DBI::mysql_backend)
+ the Uploaded Track
+ Database](#Configuring_the_Uploaded_Track_Database)
+ - [Using the
+ DBI::mysql backend](#Using_the_DBI::mysql_backend)
 - [Authentication
-  and Authorization](#Authentication_and_Authorization)
+ and Authorization](#Authentication_and_Authorization)
 
 ## Running GBrowse under FastCGI
 
@@ -86,11 +86,11 @@ that is generated will look something like this:
 
 ``` de1
  <IfModule mod_fastcgi.c>
-   Alias /fgb2 "/usr/lib/cgi-bin/gb2"
-   <Location /fgb2>
-     SetHandler   fastcgi-script
-   </Location>
-   FastCgiConfig -initial-env GBROWSE_CONF=/etc/gbrowse2
+ Alias /fgb2 "/usr/lib/cgi-bin/gb2"
+ <Location /fgb2>
+ SetHandler fastcgi-script
+ </Location>
+ FastCgiConfig -initial-env GBROWSE_CONF=/etc/gbrowse2
  </IfModule>
 ```
 
@@ -202,10 +202,10 @@ To create and initialize a mysql login database run the script
 **gbrowse_create_useraccount_db.pl** which should have been installed
 when you installed GBrowse:
 
-     gbrowse_create_useraccount_db.pl \
-          -dsn DBI:mysql:gbrowse_login;user=gbrowse;password=gbrowse \
-          -admin root \
-          -p
+ gbrowse_create_useraccount_db.pl \
+ -dsn DBI:mysql:gbrowse_login;user=gbrowse;password=gbrowse \
+ -admin root \
+ -p
 
 **-dsn** specifies the full Perl-style path to a Mysql database named
 "gbrowse_login". GBrowse will access the newly-created database using a
@@ -223,9 +223,9 @@ line.
 To create a SQLite database you can use the same script with options
 like these:
 
-    gbrowse_create_useraccount_db.pl \
-          -dsn DBI:SQLite:/var/tmp/gbrowse2/users.sqlite \
-          -owner www-data:www-data
+ gbrowse_create_useraccount_db.pl \
+ -dsn DBI:SQLite:/var/tmp/gbrowse2/users.sqlite \
+ -owner www-data:www-data
 
 This creates a user database at /var/tmp/gbrowse2/users.sqlite. This
 database has to be readable and writable by the web user and/or group,
@@ -237,8 +237,8 @@ Once the database has been created, you need to tell GBrowse about it,
 by setting the following options in the GBrowse.conf \[GENERAL\]
 section:
 
-    user accounts   = 1
-    user_account_db = DBI:SQLite:/var/tmp/gbrowse2/users.sqlite
+ user accounts = 1
+ user_account_db = DBI:SQLite:/var/tmp/gbrowse2/users.sqlite
 
 **user accounts = 1** activates the login system. Change
 **user_account_db** to the DBI path specified when you created the
@@ -270,22 +270,22 @@ option in GBrowse.conf. The full format is
 optional. Here is a config that is appropriate for a simple SMTP server
 that does not require authentication:
 
-    smtp_gateway = smtp.res.oicr.on.ca
+ smtp_gateway = smtp.res.oicr.on.ca
 
 Here is a config that is appropriate for a server listening on an
 unusual port (port 75 rather than the usual 25):
 
-    smtp_gateway = smtp.res.oicr.on.ca:75
+ smtp_gateway = smtp.res.oicr.on.ca:75
 
 Here is a config for a server that requires SSL encryption and listens
 on the standard ssl-mail port 465:
 
-    smtp_gateway = smtp.res.oicr.on.ca:465:ssl
+ smtp_gateway = smtp.res.oicr.on.ca:465:ssl
 
 And here is a config for GMail's gateway, which requires SSL encryption
 as well as the name and password of a user with a GMail account:
 
-    smtp_gateway = smtp.gmail.com:465:ssl:joe.user:joespasswd
+ smtp_gateway = smtp.gmail.com:465:ssl:joe.user:joespasswd
 
 The "encryption" field is one of "plain" or "ssl", defaulting to "plain"
 (no encryption). The port field defaults to 25 for plain encryption, and
@@ -316,9 +316,9 @@ This value will change the reply-to address on the confirmation email.
 
 Here is a fully worked example:
 
-    application_name = Arabidopsis Genome Browser
-    application_name_long = The Arabidopsis Information Resource
-    email_address = help@arabidopsis.org
+ application_name = Arabidopsis Genome Browser
+ application_name_long = The Arabidopsis Information Resource
+ email_address = help@arabidopsis.org
 
 The email will now appear to come from a user named "Arabidopsis Genome
 Browser" and the letter will be signed by "The Arabidopsis Information
@@ -344,12 +344,12 @@ GBrowse. It does not need any arguments. Simply run it from the command
 line, and it will prompt you for a password to use for the admin
 account:
 
-    bin/gbrowse_set_admin_passwd.pl
-    Not running as www-data. Trying to use sudo to remedy. You may be asked for your login password.
-    New password for admin: ******
-    Confirm password for admin: ******
-    admin userid set to 38bc6f6c526f390c1422d1fd1476b2f7
-    Admin account "admin" is now registered.
+ bin/gbrowse_set_admin_passwd.pl
+ Not running as www-data. Trying to use sudo to remedy. You may be asked for your login password.
+ New password for admin: ******
+ Confirm password for admin: ******
+ admin userid set to 38bc6f6c526f390c1422d1fd1476b2f7
+ Admin account "admin" is now registered.
 
 The only potentially confusing aspect of this script is that it needs to
 run with the same permissions as the web server. If it detects that it
@@ -402,22 +402,22 @@ To work with Next Generation Sequencing data in BAM or SAM format, you
 will need to install the following:
 
 - Bio::DB::Sam from CPAN
-  - This requires the C Samtools library. See
-    <a href="http://cpansearch.perl.org/src/LDS/Bio-SamTools-1.35/README"
-    class="external free"
-    rel="nofollow">http://cpansearch.perl.org/src/LDS/Bio-SamTools-1.35/README</a>
-    for details.
+ - This requires the C Samtools library. See
+ <a href="http://cpansearch.perl.org/src/LDS/Bio-SamTools-1.35/README"
+ class="external free"
+ rel="nofollow">http://cpansearch.perl.org/src/LDS/Bio-SamTools-1.35/README</a>
+ for details.
 - Bio::DB::BigFile from CPAN
-  - This requires the Jim Kent source tree. See
-    <a href="http://cpansearch.perl.org/src/LDS/Bio-BigFile-1.07/README"
-    class="external free"
-    rel="nofollow">http://cpansearch.perl.org/src/LDS/Bio-BigFile-1.07/README</a>
-    for details.
+ - This requires the Jim Kent source tree. See
+ <a href="http://cpansearch.perl.org/src/LDS/Bio-BigFile-1.07/README"
+ class="external free"
+ rel="nofollow">http://cpansearch.perl.org/src/LDS/Bio-BigFile-1.07/README</a>
+ for details.
 - The following binaries installed in your PATH
-  - bedGraphToBigWig, from the Jim Kent source tree.
-  - genomeCoverageBed, from BEDTools
-    <a href="http://code.google.com/p/bedtools/" class="external free"
-    rel="nofollow">http://code.google.com/p/bedtools/</a>
+ - bedGraphToBigWig, from the Jim Kent source tree.
+ - genomeCoverageBed, from BEDTools
+ <a href="http://code.google.com/p/bedtools/" class="external free"
+ rel="nofollow">http://code.google.com/p/bedtools/</a>
 
 Once these are installed, users will be able to upload and view BAM and
 SAM files, as well as to link to indexed BAM files via the URL
@@ -463,7 +463,7 @@ using the db administrator's name and password.
 Now, grant the GBrowse user the ability to create and drop databases
 that begin with the string "userdata\_":
 
-     mysql> grant create on `userdata\_%`.* to 'gbrowse'@'localhost' identified by "secret";
+ mysql> grant create on `userdata\_%`.* to 'gbrowse'@'localhost' identified by "secret";
 
 If you are using a Mysql server running on a different host from the web
 server, replace "localhost" with the name of the web server host, or use
@@ -483,7 +483,7 @@ To limit access to a whole datasource, you can use Apache's standard
 authentication and authorization. GBrowse uses a URL of this form to
 select which datasource it is set to:
 
-         http://your.host/cgi-bin/gb2/gbrowse/your_datasource
+ http://your.host/cgi-bin/gb2/gbrowse/your_datasource
 
 where "your_datasource" is the name of the currently selected database.
 For example, the yeast source is
@@ -493,11 +493,11 @@ To control access to the entire database, create a \<Location\> section
 in httpd.conf. The \<Location\> section should look like this:
 
 ``` de1
-   <Location /cgi-bin/gb2/gbrowse/your_database>
-        Order deny,allow
-        deny from all
-        allow from localhost .cshl.edu .ebi.ac.uk
-   </Location>
+ <Location /cgi-bin/gb2/gbrowse/your_database>
+ Order deny,allow
+ deny from all
+ allow from localhost .cshl.edu .ebi.ac.uk
+ </Location>
 ```
 
 This denies access to everybody except for "localhost" and browsers from
@@ -513,12 +513,12 @@ not appear on the main screen or any of the configuration screens. To
 set this up, add a "restrict" option to the track you wish to make
 off-limits:
 
-           [PROPRIETARY]
-           feature = etc
-           glyph   = etc
-           restrict = Order deny,allow
-                      deny from all
-                      allow from localhost .cshl.edu .ebi.ac.uk
+ [PROPRIETARY]
+ feature = etc
+ glyph = etc
+ restrict = Order deny,allow
+ deny from all
+ allow from localhost .cshl.edu .ebi.ac.uk
 
 The value of the restrict option is identical to the Apache
 authorization directives and can include any of the directives "Order,"
@@ -540,12 +540,12 @@ the user's name sounds female and forbids access if the name sounds
 male. (It might be useful for an X-chromosome annotation site.)
 
 ``` de1
-    restrict = sub {
-               my ($host,$ip,$user) = @_;
-               return unless defined $user;
-               use Text::GenderFromName qw(gender);
-               return gender($user) eq 'f';
-             }
+ restrict = sub {
+ my ($host,$ip,$user) = @_;
+ return unless defined $user;
+ use Text::GenderFromName qw(gender);
+ return gender($user) eq 'f';
+ }
 ```
 
 You should be aware that the username will only be defined if username
@@ -555,8 +555,8 @@ addition, the hostname will only be defined if HostnameLookups have been
 turned on in httpd.conf. In the latter case, you can convert the IP
 address into a hostname using this piece of code:
 
-       use Socket;
-       $host = gethostbyaddr(inet_aton($addr),AF_INET);
+ use Socket;
+ $host = gethostbyaddr(inet_aton($addr),AF_INET);
 
 Note that this may slow down the response time of gbrowse noticeably if
 you have a slow DNS name server.
@@ -568,10 +568,10 @@ be available from the popup "Data Source" menu. If you wish the name to
 be suppressed from view, add the option **hide=1** to the datasource
 configuration stanza of the GBrowse.conf file:
 
-     [example_datasource]
-     description  = Draft annotation of v. volvulus
-     path          = v_volvulus_draft.conf
-     hide          = 1
+ [example_datasource]
+ description = Draft annotation of v. volvulus
+ path = v_volvulus_draft.conf
+ hide = 1
 
 The **restrict** option can also be used in a \[datasource\] section of
 GBrowse.conf to conditionally enable display of the source to certain IP
@@ -579,14 +579,14 @@ addresses or users. For example, to display the V. volvulus source only
 to users in the .ebi.ac.uk domain or to an authenticated user named
 "Admin":
 
-     [example_datasource]
-     description  = Draft annotation of v. volvulus
-     path         = v_volvulus_draft.conf
-     restrict = Satisfy any
-                Order deny,allow
-                deny from all
-                allow from .ebi.ac.uk
-                require user Admin
+ [example_datasource]
+ description = Draft annotation of v. volvulus
+ path = v_volvulus_draft.conf
+ restrict = Satisfy any
+ Order deny,allow
+ deny from all
+ allow from .ebi.ac.uk
+ require user Admin
 
 To completely disable generation of the data sources popup menu, set
 **show sources=0** in the \[GENERAL\] section of GBrowse.conf.

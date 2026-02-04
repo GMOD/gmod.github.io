@@ -6,15 +6,15 @@ title: "GMOD Membership"
 This page describes how [users](#Users), [developers](#Developers), and
 [software](#Software) become a part of GMOD.
 
-  Users](#Users)
+ Users](#Users)
 - [Developers](#Developers)
 - [Software](#Software)
-  - [Nomination](#Nomination)
-  - [Evaluation](#Evaluation)
-  - [Requirements](#Requirements)
-  - [Non-GMOD
-    Software](#Non-GMOD_Software)
-  - [Versions](#Versions)
+ - [Nomination](#Nomination)
+ - [Evaluation](#Evaluation)
+ - [Requirements](#Requirements)
+ - [Non-GMOD
+ Software](#Non-GMOD_Software)
+ - [Versions](#Versions)
 
 ## Users
 
@@ -40,21 +40,21 @@ is no longer true, but every user can still become a developer.
 There are several ways to become a developer:
 
 - You can write fixes or additions to [GMOD
-  Components](/wiki/GMOD_Components) that you already use,
-  and then send the code (or a link to it) to the [mailing
-  list(s)](/wiki/GMOD_Mailing_Lists) for that component.
-  If the update is widely useful, the lead developer(s) for the
-  component will then fold it in to the component and your fix will be
-  included in the next release.
+ Components](/wiki/GMOD_Components) that you already use,
+ and then send the code (or a link to it) to the [mailing
+ list(s)](/wiki/GMOD_Mailing_Lists) for that component.
+ If the update is widely useful, the lead developer(s) for the
+ component will then fold it in to the component and your fix will be
+ included in the next release.
 - You can become a developer with
-  *<a href="/wiki/SVN" class="mw-redirect" title="SVN">commit privileges</a>*
-  and directly submit your updates to the
-  <a href="/wiki/SVN" class="mw-redirect" title="SVN">source code repository</a>
-  for that component. This is a good option if you contribute code
-  frequently. To get commit privileges you need to ask one of the
-  developers already working on the component.
+ *<a href="/wiki/SVN" class="mw-redirect" title="SVN">commit privileges</a>*
+ and directly submit your updates to the
+ <a href="/wiki/SVN" class="mw-redirect" title="SVN">source code repository</a>
+ for that component. This is a good option if you contribute code
+ frequently. To get commit privileges you need to ask one of the
+ developers already working on the component.
 - Finally, you can become a developer by contributing a new component to
-  GMOD. See [Software](#Software) below for how to do that.
+ GMOD. See [Software](#Software) below for how to do that.
 
 Developers are also encouraged to sign up for the
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-devel"
@@ -85,8 +85,8 @@ to the tool.
 
 ### Evaluation
 
-Nominated software is first evaluated by GMOD staff (currently the [GMOD
-Project Coordinator](/wiki/User:Scott) and the [GMOD Help
+Nominated software is first evaluated by GMOD staff (currently the GMOD
+Project Coordinator and the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk)) to see if it meets basic
 [requirements](#Requirements) such as *open source licensing* and *GMOD
 interoperability*. We'll also confirm a *good faith commitment of
@@ -174,17 +174,17 @@ developers over the life of the project.
 Being officially part of GMOD has several advantages:
 
 - It tells users that software meets the [requirements listed
-  above](#Requirements).
+ above](#Requirements).
 - The software gets equal billing with other [GMOD
-  Components](/wiki/GMOD_Components) on the GMOD web site.
+ Components](/wiki/GMOD_Components) on the GMOD web site.
 - The software will be included in GMOD [Training and
-  Outreach](/wiki/Training_and_Outreach) activities,
-  possibly including coverage at [GMOD
-  Schools](/wiki/GMOD_Schools).
+ Outreach](/wiki/Training_and_Outreach) activities,
+ possibly including coverage at [GMOD
+ Schools](/wiki/GMOD_Schools).
 
 However, a component does not need to be officially part of GMOD to have
 a presence in GMOD. Any software that is useful to the GMOD community is
-of interest. See  for a
+of interest. See for a
 list of such software that currently has a page on the GMOD web site.
 GMOD is particularly interested in tools (such as
 [Artemis](/wiki/Artemis)) that interoperate with GMOD components.
@@ -198,6 +198,6 @@ These [Software Membership Requirements](#Software) change over time.
 | Version | Start | End | Comments |
 |----|----|----|----|
 | 2.0 | December 2010 | \- | Added publicly archived mailing list, and publicly accessible source code archive requirements. These revisions were [discussed at the September 2010 GMOD Meeting](/wiki/September_2010_GMOD_Meeting#GMOD_Membership_Requirements), and on the [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists) in December 2010. The proposed changes were favorably received at the meeting and on the mailing lists. The Version 2.0 membership standard became official on 2010/12/21. |
-| <a |  |  |  |
+| <a | | | |
 href="http://gmod.org/w/index.php?title=GMOD_Membership&amp;oldid=15465"
 class="external text" rel="nofollow">1.0</a> | February 2010 | December 2010 | Formalized the nomination process and the previously informal membership requirements. | Informal | Conception | February 2010 | The list of requirements evolved and grew over time, eventually resulting in Version 1. |

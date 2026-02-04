@@ -33,7 +33,7 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 </tbody>
 </table>
 
-  Committee</span>](#Organizing_Committee)
+ Committee</span>](#Organizing_Committee)
 - [Attendees](#Attendees)
 - [Topics](#Topics)
 - [Dates](#Dates)
@@ -47,26 +47,26 @@ hotel room, or in the New England themed bar at the Seven Seas hotel.
 
 ## Organizing Committee
 
-- [Josh Goodman](/wiki/User:Jogoodma)
+- Josh Goodman
 
 ## Attendees
 
 - *Please add your name here*
-- [Josh Goodman](/wiki/User:Jogoodma)
-- [Richard Smith](/wiki/User:Rsmith)
-- [Todd Harris](/wiki/User:Tharris)
-- [Robert Buels](/wiki/User:RobertBuels)
-- [Michael Caudy](/wiki/User:Mcaudy)
-- [Jim Hu](/wiki/User:JimHu.1)
+- Josh Goodman
+- Richard Smith
+- Todd Harris
+- Robert Buels
+- Michael Caudy
+- Jim Hu
 
-- [Chris Childers](/wiki/User:Childers)
-- [Justin Reese](/wiki/User:Justaddcoffee)
+- Chris Childers
+- Justin Reese
 
 ## Topics
 
 - Produce a working version of the
-  <a href="/wiki/GMOD_REST_API" class="mw-redirect" title="GMOD REST API">REST
-  API</a>
+ <a href="/wiki/GMOD_REST_API" class="mw-redirect" title="GMOD REST API">REST
+ API</a>
 
 ## Dates
 

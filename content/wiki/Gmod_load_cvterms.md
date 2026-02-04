@@ -7,17 +7,17 @@ gmod_load_cvterms.pl is a perl script for loading and more importantly,
 updating controlled vocabulary and
  terms in the
 [cvterm table](/wiki/Chado_CV_Module#Table:_cvterm). This
-script was contributed by [Naama
-Menda](/wiki/User:NaamaMenda) and the developers at the
+script was contributed by Naama
+Menda and the developers at the
 <a href="http://www.sgn.cornell.edu/" class="external text"
 
-  it</span>](#Where_to_find_it)
-  - [gmod
-    1.0](#gmod_1.0)
-  - [gmod
-    1.1](#gmod_1.1)
+ it</span>](#Where_to_find_it)
+ - [gmod
+ 1.0](#gmod_1.0)
+ - [gmod
+ 1.1](#gmod_1.1)
 - [Command line
-  options](#Command_line_options)
+ options](#Command_line_options)
 
 ## Where to find it
 
@@ -39,24 +39,24 @@ with the distribution and will typically go in /usr/bin or
 - -D database name \[required if -p isn't used\]
 - -p password (if you need to provide a password to connect to your db)
 - -r username (if you need to provide a username to connect to your
-  database)
+ database)
 - -d driver name (e.g. ’Pg’ for postgres). Driver name can be provided
-  in gmod_config
+ in gmod_config
 - -g GMOD database profile name (can provide host, DB name, password,
-  username, and driver) Default:’default’
+ username, and driver) Default:’default’
 - -s database name for linking (must be in db table)
 - -n controlled vocabulary name (e.g ’biological_process’). optional. If
-  not given, terms of all namespaces related with database name will be
-  handled.
+ not given, terms of all namespaces related with database name will be
+ handled.
 - -F File format. Can be obo or go_flat and others supported by
-  Bio::OntologyIO. Default: obo
+ Bio::OntologyIO. Default: obo
 - -u update all the terms. Without -u, the terms in the database won’t
-  be updated to the contents of the file, in terms of definitions, etc.
-  New terms will still be added.
+ be updated to the contents of the file, in terms of definitions, etc.
+ New terms will still be added.
 - -v verbose output
 - -o outfile for writing errors and verbose messages (optional)
 - -t trial mode. Don't perform any store operations at all. (trial mode
-  cannot test inserting associated data for new terms)
+ cannot test inserting associated data for new terms)
 
 The script parses the ontology in the file and the corresponding
 ontology in the database, if present. It compares which terms are new in

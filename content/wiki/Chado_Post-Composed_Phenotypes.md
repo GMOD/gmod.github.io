@@ -3,17 +3,17 @@ title: "Chado Post-Composed Phenotypes"
 ---
 # Chado Post-Composed Phenotypes
 
-  Overview](#Overview)
+ Overview](#Overview)
 - [Proposal](#Proposal)
 - [New and
-  Modified Tables in Phenotype
-  Module](#New_and_Modified_Tables_in_Phenotype_Module)
+ Modified Tables in Phenotype
+ Module](#New_and_Modified_Tables_in_Phenotype_Module)
 - [Recommended
-  Deprecated Fields](#Recommended_Deprecated_Fields)
+ Deprecated Fields](#Recommended_Deprecated_Fields)
 - [Controlled
-  Vocabularies](#Controlled_Vocabularies)
+ Vocabularies](#Controlled_Vocabularies)
 - [Older
-  proposals](#Older_proposals)
+ proposals](#Older_proposals)
 
 ## Overview
 
@@ -51,50 +51,50 @@ alt="Chado phenotype proposal.clause.jpg" />
 
 ## New and Modified Tables in Phenotype Module
 
-     - Add phenotypeprop table.
-     - Add phenotype_clause table, used for grouping phenotype_cvterm records into clauses within a statement.
-     - Add type_id field to phenotype_cvterm to indicate role of term in a phenotype statement.
-     - Add optional phenotype_clause_id field to phenotype_cvterm to permit grouping phenotype_cvterm records into clauses within a statement.
+ - Add phenotypeprop table.
+ - Add phenotype_clause table, used for grouping phenotype_cvterm records into clauses within a statement.
+ - Add type_id field to phenotype_cvterm to indicate role of term in a phenotype statement.
+ - Add optional phenotype_clause_id field to phenotype_cvterm to permit grouping phenotype_cvterm records into clauses within a statement.
 
-     CREATE TABLE phenotypeprop (
-        phenotypeprop_id SERIAL PRIMARY KEY,
-        phenotype_id INT NOT NULL,
-           FOREIGN KEY (phenotype_id) REFERENCES phenotype (phenotype_id) ON DELETE CASCADE INITIALLY DEFERRED,
-        type_id INT NOT NULL,
-           FOREIGN KEY (type_id) REFERENCES cvterm (cvterm_id) ON DELETE CASCADE INITIALLY DEFERRED,
-        value TEXT NULL,
-        rank INT NOT NULL DEFAULT 0,
+ CREATE TABLE phenotypeprop (
+ phenotypeprop_id SERIAL PRIMARY KEY,
+ phenotype_id INT NOT NULL,
+ FOREIGN KEY (phenotype_id) REFERENCES phenotype (phenotype_id) ON DELETE CASCADE INITIALLY DEFERRED,
+ type_id INT NOT NULL,
+ FOREIGN KEY (type_id) REFERENCES cvterm (cvterm_id) ON DELETE CASCADE INITIALLY DEFERRED,
+ value TEXT NULL,
+ rank INT NOT NULL DEFAULT 0,
 
-        CONSTRAINT phenotypeprop_c1 UNIQUE (phenotypeprop_id,type_id,rank)
-     );
-     COMMENT ON TABLE phenotypeprop IS "This table can be used to attach additional information to a phenotype or trait that is not part of the term or post-composed term. For example, heritability of a trait, dominant/recessive, et cetera.";
+ CONSTRAINT phenotypeprop_c1 UNIQUE (phenotypeprop_id,type_id,rank)
+ );
+ COMMENT ON TABLE phenotypeprop IS "This table can be used to attach additional information to a phenotype or trait that is not part of the term or post-composed term. For example, heritability of a trait, dominant/recessive, et cetera.";
 
-     CREATE TABLE phenotype_clause (
-        phenotype_clause_id SERIAL PRIMARY KEY,
-        uniquename TEXT NOT NULL,
-        type_id INT NOT NULL,
-           FOREIGN KEY (type_id) REFERENCES cvterm (cvterm_id) ON DELETE CASCADE INITIALLY DEFERRED,
-        rank INT NOT NULL DEFAULT 0,
-      );
-     COMMENT ON TABLE phenotype_clause IS "Used to group phenotype_cvterm records into clauses, as are used in EQ statements where, for example, the primary entity may be a clause constructed with up to 3 terms";
+ CREATE TABLE phenotype_clause (
+ phenotype_clause_id SERIAL PRIMARY KEY,
+ uniquename TEXT NOT NULL,
+ type_id INT NOT NULL,
+ FOREIGN KEY (type_id) REFERENCES cvterm (cvterm_id) ON DELETE CASCADE INITIALLY DEFERRED,
+ rank INT NOT NULL DEFAULT 0,
+ );
+ COMMENT ON TABLE phenotype_clause IS "Used to group phenotype_cvterm records into clauses, as are used in EQ statements where, for example, the primary entity may be a clause constructed with up to 3 terms";
 
-     ALTER TABLE phenotype_cvterm
-       ADD COLUMN type_id INT NOT NULL,
-          FOREIGN KEY type_id
-            REFERENCES cvterm (cvterm_id) ON DELETE CASCADE INITIALLY DEFERRED,
-       ADD COLUMN phenotypeclause_id INT,
-          FOREIGN KEY (grp_id) REFERENCES grp (grp_id) ON DELETE CASCADE INITIALLY DEFERRED,
-     ;
-     COMMENT ON COLUMN type_id IS "Name of this cvterm's role in a post-composed term";
-     COMMENT ON COLUMN phenotypeclause_id IS "If this term is part of a clause within a statement, this field identifies the clause.";
+ ALTER TABLE phenotype_cvterm
+ ADD COLUMN type_id INT NOT NULL,
+ FOREIGN KEY type_id
+ REFERENCES cvterm (cvterm_id) ON DELETE CASCADE INITIALLY DEFERRED,
+ ADD COLUMN phenotypeclause_id INT,
+ FOREIGN KEY (grp_id) REFERENCES grp (grp_id) ON DELETE CASCADE INITIALLY DEFERRED,
+  ;
+ COMMENT ON COLUMN type_id IS "Name of this cvterm's role in a post-composed term";
+ COMMENT ON COLUMN phenotypeclause_id IS "If this term is part of a clause within a statement, this field identifies the clause.";
 
 ## Recommended Deprecated Fields
 
-     COMMENT ON TABLE phenotype IS 'Columns observable_id, assay_id
-     are deprecated to break the connection between the phenotype value and the
-     trait. The phenotype table should be used to store precomposed terms and the
-     phenotype value. Use tables phenotype_cvterm to store the trait(s) associated
-     with the phenotype.';
+ COMMENT ON TABLE phenotype IS 'Columns observable_id, assay_id
+ are deprecated to break the connection between the phenotype value and the
+ trait. The phenotype table should be used to store precomposed terms and the
+ phenotype value. Use tables phenotype_cvterm to store the trait(s) associated
+ with the phenotype.';
 
 ## Controlled Vocabularies
 
@@ -118,5 +118,5 @@ Secondary Entity 2
 ## Older proposals
 
 See
-[Talk:Chado_Post-Composed_Phenotypes](/wiki/Talk:Chado_Post-Composed_Phenotypes)
+Talk:Chado_Post-Composed_Phenotypes
 for the older versions of this schema proposal

@@ -54,11 +54,11 @@ at the [January 2010 GMOD
 Meeting](/wiki/January_2010_GMOD_Meeting) proved
 so popular that we decided to hold them again.
 
-  Topics</span>](#Satellite_Topics)
+ Topics</span>](#Satellite_Topics)
 - [Participants](#Participants)
 - [Sponsors](#Sponsors)
 - [Lodging and
-  Other Logistics](#Lodging_and_Other_Logistics)
+ Other Logistics](#Lodging_and_Other_Logistics)
 - [Registration](#Registration)
 
 ## Satellite Topics
@@ -66,11 +66,11 @@ so popular that we decided to hold them again.
 We discussed
 
 - *[Post Reference Genome
-  Tools](/wiki/Post_Reference_Genome_Tools)* in
-  the morning session, and
+ Tools](/wiki/Post_Reference_Genome_Tools)* in
+ the morning session, and
 - *[Community
-  Annotation](/wiki/Community_Annotation_-_September_2010_Satellite)*
-  in the afternoon.
+ Annotation](/wiki/Community_Annotation_-_September_2010_Satellite)*
+ in the afternoon.
 
 There is a nice
 <a href="http://blog.openhelix.eu/?p=5551" class="external text"
@@ -81,7 +81,7 @@ There is a nice
 
 | Participant | Affilliation(s) | URL |
 |----|----|----|
-| [Dave Clements](/wiki/User:Clements) | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
+| Dave Clements | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
 
 href="http://www.mdc-berlin.de/en/research/core_facilities/cf_massspectromety_bimsb/teammember/index.html"
 
@@ -128,7 +128,7 @@ and free to all who might benefit.
 CCBI provided copious organizational and logistical support for this
 event. The Bioinformatics Training Facility is generously providing all
 coffee, tea, and break snacks at no charge. Please thank Gos Micklem,
-[Richard Smith](/wiki/User:Rsmith), Shelley Lawson, and Dave
+Richard Smith, Shelley Lawson, and Dave
 Judge profusely every time you see them.
 
 ## Lodging and Other Logistics

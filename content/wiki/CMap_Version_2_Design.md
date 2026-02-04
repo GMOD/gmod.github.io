@@ -7,17 +7,17 @@ The hopes and dreams for a new generation....
 
 Up to [CMap](/wiki/CMap).
 
-  Interface</span>](#User_Interface)
+ Interface</span>](#User_Interface)
 - [Schema](#Schema)
 - [Visualizations](#Visualizations)
 - [Data
-  Loading](#Data_Loading)
+ Loading](#Data_Loading)
 - [DAS](#DAS)
 
 # User Interface
 
 - The new interface will be all Web 2.0 goodness, using tons of
-  JavaScript/AJAX/CSS (which I so studiously avoided in early versions)
+ JavaScript/AJAX/CSS (which I so studiously avoided in early versions)
 
 # Schema
 
@@ -28,29 +28,29 @@ width="100" height="234" alt="Cmap 2.0 schema.png" />
 
 - No more "cmap\_" table prefix
 - Move to support only [MySQL](/wiki/MySQL) InnoDB tables to get
-  proper foreign keys, not worry about implementing common db functions
-  in Perl
+ proper foreign keys, not worry about implementing common db functions
+ in Perl
 - New, slimmer schema
 - Eschew evidence table
 - In the past, there was a canonical "feature_correspondence" table and
-  the "f1-\>f2" correspondence was duplicated into a
-  "correspondence_lookup" table where "f1-\>f2" and "f2-\>f1" in order
-  to write simple [SQL](/wiki/Glossary#SQL). The new version will
-  remove the lookup table and simply have correspondences be repeated in
-  the one table (making them essentially one-way).
+ the "f1-\>f2" correspondence was duplicated into a
+ "correspondence_lookup" table where "f1-\>f2" and "f2-\>f1" in order
+ to write simple [SQL](/wiki/Glossary#SQL). The new version will
+ remove the lookup table and simply have correspondences be repeated in
+ the one table (making them essentially one-way).
 - Map and feature types originally existed in the database but were
-  moved into configuration files in past versions. They will be restored
-  to there previous tables because any mismatch in configuration files
-  and incoming data can easily cause data to be quietly ignored,
-  creating many headaches for the author. Back in the db, code will be
-  able to instantiate the needed types, and SQL will make cleanup of
-  types easy.
+ moved into configuration files in past versions. They will be restored
+ to there previous tables because any mismatch in configuration files
+ and incoming data can easily cause data to be quietly ignored,
+ creating many headaches for the author. Back in the db, code will be
+ able to instantiate the needed types, and SQL will make cleanup of
+ types easy.
 - Steal the binning idea from
-  <a href="http://genome.cshlp.org/content/12/10/1599.full"
-  class="external text" rel="nofollow">Gbrowse</a> to speed up feature
-  retrieval, group features into chunks for display as
-  <a href="http://en.wikipedia.org/wiki/Sparkline" class="external text"
-  rel="nofollow">sparklines</a>
+ <a href="http://genome.cshlp.org/content/12/10/1599.full"
+ class="external text" rel="nofollow">Gbrowse</a> to speed up feature
+ retrieval, group features into chunks for display as
+ <a href="http://en.wikipedia.org/wiki/Sparkline" class="external text"
+ rel="nofollow">sparklines</a>
 
 # Visualizations
 
@@ -61,23 +61,23 @@ width="100" height="100" alt="CMap circos.png" />
 
 - All output to SVG, convert to other formats as needed
 - Each "slot" holding maps in a comparative view will be generated and
-  cached individually on server side; they will be assembled into a
-  larger SVG container with an additional SVG to show the correspondence
-  lines; changes to one slot will necessitate only changes to that image
+ cached individually on server side; they will be assembled into a
+ larger SVG container with an additional SVG to show the correspondence
+ lines; changes to one slot will necessitate only changes to that image
 - It will be possible to pregenerate all initial map views (e.g., whole
-  chromosomes) for immediate viewing; other images can be labeled and
-  cached as users create views, enabling re-use of images
+ chromosomes) for immediate viewing; other images can be labeled and
+ cached as users create views, enabling re-use of images
 - <a href="http://mkweb.bcgsc.ca/circos" class="external text"
-  rel="nofollow">Circos</a> to be used to generate circular views
+ rel="nofollow">Circos</a> to be used to generate circular views
 - I've written to Dave Edwards and Chris Duran at the Univ. of
-  Queensland (Australia) about including their 3-D Java desktop app as a
-  server-side tool; no word back
+ Queensland (Australia) about including their 3-D Java desktop app as a
+ server-side tool; no word back
 - Investigate
-  <a href="http://code.google.com/apis/o3d/" class="external text"
-  rel="nofollow">Google's O3D</a>
+ <a href="http://code.google.com/apis/o3d/" class="external text"
+ rel="nofollow">Google's O3D</a>
 - Also can investigate using GraphViz, gnuplot and
-  <a href="http://pdl.perl.org/" class="external text"
-  rel="nofollow">PDL</a> for other presentations
+ <a href="http://pdl.perl.org/" class="external text"
+ rel="nofollow">PDL</a> for other presentations
 
 # Data Loading
 
@@ -92,9 +92,9 @@ Write loaders for:
 # DAS
 
 - Will write a module to plug into
-  <a href="http://www.sanger.ac.uk/Software/analysis/proserver/"
-  class="external text" rel="nofollow">Proserver</a> to create
-  <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> server to share
-  directly from [CMap](/wiki/CMap); docs to explain to users how to
-  do this
+ <a href="http://www.sanger.ac.uk/Software/analysis/proserver/"
+ class="external text" rel="nofollow">Proserver</a> to create
+ <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> server to share
+ directly from [CMap](/wiki/CMap); docs to explain to users how to
+ do this
 - As a DAS client to show additional features

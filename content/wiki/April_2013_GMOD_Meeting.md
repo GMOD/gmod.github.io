@@ -19,47 +19,47 @@ href="http://storify.com/gmodproject/2013-gmod-meeting-and-biocuration"
 class="external text" rel="nofollow">Archived tweets from the
 meeting</a>
 
-  Agenda](#Agenda)
-  - [Friday 5th
-    April](#Friday_5th_April)
-  - [Saturday
-    April 6th](#Saturday_April_6th)
+ Agenda](#Agenda)
+ - [Friday 5th
+ April](#Friday_5th_April)
+ - [Saturday
+ April 6th](#Saturday_April_6th)
 - [Remote
-  Attendance](#Remote_Attendance)
+ Attendance](#Remote_Attendance)
 - [Meeting
-  Assessment](#Meeting_Assessment)
+ Assessment](#Meeting_Assessment)
 
 ## Agenda
 
 ### Friday 5th April
 
 **State of the GMOD Project**, including GBrowse and Chado updates
-([Scott](/wiki/User:Scott))
+(Scott)
 
 - <a href="http://www.youtube.com/watch?v=_Q17wcQB5-o"
-  class="external text" rel="nofollow">Video (audio + slides)</a>
+ class="external text" rel="nofollow">Video (audio + slides)</a>
 
-**GMODsurveyome redux** ([Amelia
-Ireland](/wiki/User:Girlwithglasses))
+**GMODsurveyome redux** (Amelia
+Ireland)
 
 - <a href="../tour/tour-0.html" class="external text" rel="nofollow">A
-  tour of the GMOD community</a>
+ tour of the GMOD community</a>
 
 **<a href="http://code.google.com/p/biojs/" class="external text"
 
 (<a href="http://manuelcorpas.com" class="external text"
 
 - <a href="http://youtu.be/NmLeYNFVFRU" class="external text"
-  rel="nofollow">Video</a>
+ rel="nofollow">Video</a>
 - <a href="http://bioinformatics.oxfordjournals.org/content/29/8/1103"
-  class="external text" rel="nofollow">BioJS: an open source JavaScript
-  framework for biological data visualization</a>
+ class="external text" rel="nofollow">BioJS: an open source JavaScript
+ framework for biological data visualization</a>
 
-**Community Building and Maintenance** ([Dave
-Clements](/wiki/User:Clements))
+**Community Building and Maintenance** (Dave
+Clements)
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b8/GMOD2013_CommunityBuilding.pdf"
-  class="internal" title="GMOD2013 CommunityBuilding.pdf">Slides</a>
+ class="internal" title="GMOD2013 CommunityBuilding.pdf">Slides</a>
 
 **<a href="http://oadb.tsl.ac.uk" class="external text"
 
@@ -67,7 +67,7 @@ Clements](/wiki/User:Clements))
 Sainsbury Lab</a>)
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/71/GMOD2013_OpenAshDb.pptx"
-  class="internal" title="GMOD2013 OpenAshDb.pptx">Slides</a>
+ class="internal" title="GMOD2013 OpenAshDb.pptx">Slides</a>
 
 The <a href="http://oadb.tsl.ac.uk/" class="external text"
 
@@ -83,64 +83,64 @@ analyse genetic data from ash and the fungus.
 More information and media coverage of OADB:
 
 - Paper: <a href="http://www.gigasciencejournal.com/content/2/1/2"
-  class="external text" rel="nofollow">Crowdsourcing genomic analyses of
-  ash and ash dieback – power to the people</a>
+ class="external text" rel="nofollow">Crowdsourcing genomic analyses of
+ ash and ash dieback – power to the people</a>
 - <a
-  href="http://www.guardian.co.uk/environment/2012/dec/14/ash-dieback-scientists-crowdsourcing-fungus"
-  class="external text" rel="nofollow">Scientists crowdsource to decode
-  genetic code of ash dieback fungus</a> - from The Guardian
+ href="http://www.guardian.co.uk/environment/2012/dec/14/ash-dieback-scientists-crowdsourcing-fungus"
+ class="external text" rel="nofollow">Scientists crowdsource to decode
+ genetic code of ash dieback fungus</a> - from The Guardian
 - <a
-  href="http://blogs.biomedcentral.com/gigablog/2013/02/13/open-science-versus-ash-dieback-and-the-tweenome-revisited/"
-  class="external text" rel="nofollow">Open Science versus Ash Dieback</a>
+ href="http://blogs.biomedcentral.com/gigablog/2013/02/13/open-science-versus-ash-dieback-and-the-tweenome-revisited/"
+ class="external text" rel="nofollow">Open Science versus Ash Dieback</a>
 
 **<a href="http://iann.pro" class="external text" rel="nofollow">iAnn
 collaborative announcement dissemination</a>**
 (<a href="http://manuelcorpas.com" class="external text"
 
 - <a href="http://youtu.be/adUlnXM2cOA" class="external text"
-  rel="nofollow">Video</a>
+ rel="nofollow">Video</a>
 
 **Drupal at EBI** (Joseph Rossetto/Bren Vaughan)
 
 - <a
-  href="http://www.slideshare.net/josephrossetto/drupal-atemblebi-gmod-18857285"
-  class="external text" rel="nofollow">Slides</a>
+ href="http://www.slideshare.net/josephrossetto/drupal-atemblebi-gmod-18857285"
+ class="external text" rel="nofollow">Slides</a>
 
-**[JBrowse](/wiki/JBrowse)** ([Gregg
-Helt](/wiki/User:GreggHelt2))
+**[JBrowse](/wiki/JBrowse)** (Gregg
+Helt)
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/33/GMOD2013_JBrowse.pdf" class="internal"
-  title="GMOD2013 JBrowse.pdf">Slides</a>
+ title="GMOD2013 JBrowse.pdf">Slides</a>
 
-**[WebApollo](/wiki/WebApollo)** ([Moni
-Munoz-Torres](/wiki/User:Moni))
+**[WebApollo](/wiki/WebApollo)** (Moni
+Munoz-Torres)
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9f/GMOD2013_WebApollo.pptx"
-  class="internal" title="GMOD2013 WebApollo.pptx">Slides</a>
+ class="internal" title="GMOD2013 WebApollo.pptx">Slides</a>
 
-**[Galaxy](/wiki/Galaxy)** Project Update ([Dave
-Clements](/wiki/User:Clements))
+**[Galaxy](/wiki/Galaxy)** Project Update (Dave
+Clements)
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/GMOD2013_GalaxyUpdate.pdf"
-  class="internal" title="GMOD2013 GalaxyUpdate.pdf">Slides</a>
+ class="internal" title="GMOD2013 GalaxyUpdate.pdf">Slides</a>
 
-**[InterMine](/wiki/InterMine)** ([Alex
-Kalderimis](/wiki/User:Alexkalderimis))
+**[InterMine](/wiki/InterMine)** (Alex
+Kalderimis)
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/GMOD2013_InterMine.pdf"
-  class="internal" title="GMOD2013 InterMine.pdf">Slides</a>
+ class="internal" title="GMOD2013 InterMine.pdf">Slides</a>
 
 ### Saturday April 6th
 
 **FlyBase update** (Josh Goodman)
 
-**WormBase - some notes on running a MOD in the cloud** ([Todd
-Harris](/wiki/User:Tharris))
+**WormBase - some notes on running a MOD in the cloud** (Todd
+Harris)
 
 **What <a href="http://geneontology.org" class="external text"
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a7/GMOD2013_GeneOntology.pptx"
-  class="internal" title="GMOD2013 GeneOntology.pptx">Slides</a>
+ class="internal" title="GMOD2013 GeneOntology.pptx">Slides</a>
 
 **[Tripal](/wiki/Tripal)** (Stephen Ficklin)
 
@@ -148,26 +148,25 @@ Harris](/wiki/User:Tharris))
 class="external text" rel="nofollow">TAIR PLAIN</a>** (Bob Muller)
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/ba/GMOD2013_TairPlain.pptx"
-  class="internal" title="GMOD2013 TairPlain.pptx">Slides</a>
+ class="internal" title="GMOD2013 TairPlain.pptx">Slides</a>
 
 **Using CAS-Utils (Community Annotation System Utilities) in real life**
 (Emmet O'Brien)
 
 - <a href="../cam2013/eob/title.html" class="external text"
-  rel="nofollow">Web pages</a>
+ rel="nofollow">Web pages</a>
 
 **<a href="https://github.com/intermine/demeter" class="external text"
 
-([Alex Kalderimis](/wiki/User:Alexkalderimis))
+(Alex Kalderimis)
 
 **Banana Genome Hub** (Delphine Larivière)
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2a/GMOD2013_BananaGenomeHub.pdf"
-  class="internal" title="GMOD2013 BananaGenomeHub.pdf">Slides</a>
+ class="internal" title="GMOD2013 BananaGenomeHub.pdf">Slides</a>
 
 **<a href="http://wiki.galaxyproject.org/CloudMan" class="external text"
 
-Clements](/wiki/User:Clements))
 
 ## Remote Attendance
 

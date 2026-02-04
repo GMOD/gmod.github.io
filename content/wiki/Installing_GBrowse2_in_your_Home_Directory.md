@@ -23,7 +23,7 @@ Once you have local::lib correctly installed...
 
 _I believe there must be a trick to configuring cpan at this point that
 is left out of this narrative. It is probably in the lib::local docs._
-[Scott](/wiki/User:Scott) 18:47, 3 June 2011 (UTC)
+Scott 18:47, 3 June 2011 (UTC)
 
 Test that cpan is working for you as a non-root user (install a random
 module or two).
@@ -42,26 +42,26 @@ Finally, the trick is to specify 'user' locations for all the
 directories that GBrowse expects: Here are some notes I made to help me
 keep track of that:
 
-    conf for example /etc/gbrowse2
-    /home/dan/httpd/conf/gbrowse2
+ conf for example /etc/gbrowse2
+ /home/dan/httpd/conf/gbrowse2
 
-    htdocs for example /var/www/html/gbrowse2
-    /home/dan/httpd/htdocs/gbrowse2
+ htdocs for example /var/www/html/gbrowse2
+ /home/dan/httpd/htdocs/gbrowse2
 
-    tmp for example /var/tmp/gbrowse2
-    /home/dan/httpd/tmp
+ tmp for example /var/tmp/gbrowse2
+ /home/dan/httpd/tmp
 
-    databases for example /var/www/html/gbrowse2/databases
-    /home/dan/httpd/htdocs/gbrowse2/databases
+ databases for example /var/www/html/gbrowse2/databases
+ /home/dan/httpd/htdocs/gbrowse2/databases
 
-    cgibin for example /var/www/cgi-bin/gb2
-    /home/dan/httpd/cgi-bin/gbrowse2
+ cgibin for example /var/www/cgi-bin/gb2
+ /home/dan/httpd/cgi-bin/gbrowse2
 
-    modules for example /etc/httpd/modules
-    /etc/httpd/modules # /homes/dan/httpd/modules
+ modules for example /etc/httpd/modules
+ /etc/httpd/modules # /homes/dan/httpd/modules
 
-    wwwuser for example www-data
-    dan
+ wwwuser for example www-data
+ dan
 
 I forgot to mention, installing Apache is beyond the scope of this
 HOWTO.

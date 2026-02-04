@@ -18,28 +18,28 @@ displaying annotations on genomes. Features include:
 - Simultaneous bird's eye and detailed views of the genome.
 - Scroll, zoom, center.
 - Use a variety of
-  <a href="../GBrowse_Configuration_HOWTO#Glyphs_and_Glyph_Options"
-  class="mw-redirect" title="GBrowse Configuration HOWTO">premade
-  glyphs</a> or create your own.
+ <a href="../GBrowse_Configuration_HOWTO#Glyphs_and_Glyph_Options"
+ class="mw-redirect" title="GBrowse Configuration HOWTO">premade
+ glyphs</a> or create your own.
 - Attach arbitrary URLs to any annotation.
 - Order and appearance of tracks are customizable by administrator and
-  end-user.
+ end-user.
 - Search by annotation ID, name, or comment.
 - Supports third party annotation using [GFF](../GFF) formats.
 - Settings persist across sessions.
 - DNA and [GFF](../GFF) dumps.
 - Connectivity to different databases, including
-  [BioSQL](../BioSQL) and
-  <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
+ [BioSQL](../BioSQL) and
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
 - Multi-language support.
 - Third-party feature loading.
 - Customizable [plug-in](../GBrowse_Plugins)
-  architecture (e.g. run
-  <a href="http://en.wikipedia.org/wiki/BLAST" class="extiw"
-  title="wp:BLAST">BLAST</a>, dump & import many formats, find
-  oligonucleotides, [design
-  primers](../PrimerDesigner.pm), create restriction
-  maps, edit features)
+ architecture (e.g. run
+ <a href="http://en.wikipedia.org/wiki/BLAST" class="extiw"
+ title="wp:BLAST">BLAST</a>, dump & import many formats, find
+ oligonucleotides, [design
+ primers](../PrimerDesigner.pm), create restriction
+ maps, edit features)
 
 Note that the information on this page refers to GBrowse 2; GBrowse 1.x
 is recommended only for applications where legacy browser support is
@@ -75,16 +75,16 @@ install script. In order to use the net installer, you will need to have
 Perl 5.8.6 or higher and the Apache web server installed. \| install =
 
 - [GBrowse 2.x installation
-  guide](../GBrowse_2.0_Install_HOWTO.1)
+ guide](../GBrowse_2.0_Install_HOWTO.1)
 - [Advanced](../GBrowse_2.0_Install_HOWTO/Advanced)
 - [Install
-  Paths](../GBrowse_2.0_Install_Paths)
+ Paths](../GBrowse_2.0_Install_Paths)
 
 \| config =
 
 - [GMOD in the
-  Cloud](../Category:GMOD_in_the_Cloud)
+ Cloud](../Category:GMOD_in_the_Cloud)
 - [GBrowse 2](../Category:GBrowse_2)
 - [GMOD
-  Components](../Category:GMOD_Components)
+ Components](../Category:GMOD_Components)
 - [Tool data](../Category:Tool_data)

@@ -3,20 +3,20 @@ title: "PostgreSQL Performance Tips"
 ---
 # PostgreSQL Performance Tips
 
-  Background](#Background)
+ Background](#Background)
 - [General
-  Tips](#General_Tips)
+ Tips](#General_Tips)
 - [Database
-  initialization](#Database_initialization)
+ initialization](#Database_initialization)
 - [Configuration
-  options](#Configuration_options)
+ options](#Configuration_options)
 - [Vacuuming](#Vacuuming)
-  - [Auto
-    vacuuming](#Auto_vacuuming)
+ - [Auto
+ vacuuming](#Auto_vacuuming)
 - [Powering
-  GBrowse](#Powering_GBrowse)
+ GBrowse](#Powering_GBrowse)
 - [Installing
-  Schema](#Installing_Schema)
+ Schema](#Installing_Schema)
 
 ## Background
 

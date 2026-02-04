@@ -14,13 +14,13 @@ width="80" height="80" alt="GBrowse.org" /></a> | <span class="plainlinks"><a hr
 [GBrowse](../GBrowse.1) genome browsers. The site provides one
 location where biologists and bioinformaticians can find:
 
-1.  Genome browser web sites for any organism that has them. If a
-    species has a genome browser anywhere on the web, then we aim to
-    link to it.
-2.  Links to sequence and annotation files that are available online.
-3.  Links to genome browser configuration files, when available
-4.  An FTP site containing genome annotation and configuration files for
-    each annotated genome that does not have its own web site.
+1. Genome browser web sites for any organism that has them. If a
+ species has a genome browser anywhere on the web, then we aim to
+ link to it.
+2. Links to sequence and annotation files that are available online.
+3. Links to genome browser configuration files, when available
+4. An FTP site containing genome annotation and configuration files for
+ each annotated genome that does not have its own web site.
 
 <a href="http://www.gbrowse.org" class="external text"
 

@@ -15,7 +15,7 @@ modifying, and adding gene, gene-annotation, and literature information.
 
 See the <a href="http://pubsearch.org" class="external text"
 
-  Screenshots</span>](#Demo_.26_Screenshots)
+ Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
@@ -36,9 +36,9 @@ Tomcat 4.0 is an example of a supporting servlet engine.
 ## Documentation
 
 - <a href="http://pubsearch.org/releases/install_guide.pdf"
-  class="external text" rel="nofollow">Install documentation</a>
+ class="external text" rel="nofollow">Install documentation</a>
 - <a href="http://tesuque.stanford.edu/pubsearch.org/pubsearchFrame.html"
-  class="external text" rel="nofollow">Online documentation</a>
+ class="external text" rel="nofollow">Online documentation</a>
 
 ## Contact
 

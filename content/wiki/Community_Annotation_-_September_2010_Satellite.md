@@ -42,35 +42,35 @@ width="200" height="171" alt="part of GMOD Europe 2010" /></a>
 </tbody>
 </table>
 
-  Participants](#Participants)
+ Participants](#Participants)
 - [Some
-  Experiences](#Some_Experiences)
-  - [PomBase](#PomBase)
-  - [UniProt](#UniProt)
-  - [ZFIN](#ZFIN)
-  - [MGI and
-    EMAGE](#MGI_and_EMAGE)
-  - [Genome
-    Annotation](#Genome_Annotation)
-  - [Teaching
-    Annotation](#Teaching_Annotation)
-  - [EcoliWiki](#EcoliWiki)
+ Experiences](#Some_Experiences)
+ - [PomBase](#PomBase)
+ - [UniProt](#UniProt)
+ - [ZFIN](#ZFIN)
+ - [MGI and
+ EMAGE](#MGI_and_EMAGE)
+ - [Genome
+ Annotation](#Genome_Annotation)
+ - [Teaching
+ Annotation](#Teaching_Annotation)
+ - [EcoliWiki](#EcoliWiki)
 - [Discussion](#Discussion)
-  - [Access and
-    Logins](#Access_and_Logins)
-  - [Attribution and
-    Credit](#Attribution_and_Credit)
-  - [Level of
-    Detail](#Level_of_Detail)
-  - [Data
-    Quality and Consistency](#Data_Quality_and_Consistency)
-  - [Journals](#Journals)
-  - [Communities Without a
-    MOD](#Communities_Without_a_MOD)
+ - [Access and
+ Logins](#Access_and_Logins)
+ - [Attribution and
+ Credit](#Attribution_and_Credit)
+ - [Level of
+ Detail](#Level_of_Detail)
+ - [Data
+ Quality and Consistency](#Data_Quality_and_Consistency)
+ - [Journals](#Journals)
+ - [Communities Without a
+ MOD](#Communities_Without_a_MOD)
 - [Analysis](#Analysis)
-  - [Lessons](#Lessons)
+ - [Lessons](#Lessons)
 - [See
-  Also](#See_Also)
+ Also](#See_Also)
 
 This [satellite
 meeting](/wiki/Satellite_Meetings_-_GMOD_Europe_2010)
@@ -87,26 +87,26 @@ proposed by Kim Rutherford.
 ## Participants
 
 - Ellen Adlem, Cambridge University Cambridge Institute of Medical
-  Research, <a href="http://www.t1dbase.org" class="external text"
-  rel="nofollow">T1DBase</a>
+ Research, <a href="http://www.t1dbase.org" class="external text"
+ rel="nofollow">T1DBase</a>
 - Gerd Anders, Max-Delbrueck-Centrum Berlin (MDC)
 - Jerven Bolleman, UniProt Swiss-Prot
-- [Scott Cain](/wiki/User:Scott), GMOD Project Coordinator,
-  <a href="http://www.oicr.on.ca" class="external text"
-  rel="nofollow">OICR</a>
-- [Dave Clements](/wiki/User:Clements), [GMOD Help
-  Desk](/wiki/GMOD_Help_Desk),
-  <a href="http://nescent.org" class="external text"
-  rel="nofollow">NESCent</a>
+- Scott Cain, GMOD Project Coordinator,
+ <a href="http://www.oicr.on.ca" class="external text"
+ rel="nofollow">OICR</a>
+- Dave Clements, [GMOD Help
+ Desk](/wiki/GMOD_Help_Desk),
+ <a href="http://nescent.org" class="external text"
+ rel="nofollow">NESCent</a>
 - Oskana Riba Grognuz, Swiss Institute of Bioinformatics (SIB)
-  Department of Ecology and Evolution, University of Lausanne
-- [Chris Hemmerich](/wiki/User:Chemmeri),
-  <a href="http://cgb.indiana.edu" class="external text"
-  rel="nofollow">CGB, Indiana University</a>
+ Department of Ecology and Evolution, University of Lausanne
+- Chris Hemmerich,
+ <a href="http://cgb.indiana.edu" class="external text"
+ rel="nofollow">CGB, Indiana University</a>
 - Joan Pontius, National Cancer Institute, SAIC
 - Kim Rutherford, Cambridge Systems Biology Centre,
-  <a href="http://www.pombase.org" class="external text"
-  rel="nofollow">PomBase</a>
+ <a href="http://www.pombase.org" class="external text"
+ rel="nofollow">PomBase</a>
 
 ## Some Experiences
 
@@ -484,12 +484,12 @@ sophisticated and more standardised.
 ## See Also
 
 - There is a
-  <a href="http://blog.openhelix.eu/?p=5551" class="external text"
-  rel="nofollow">blog post on this meeting</a> by Mary Mangan on the
-  <a href="http://blog.openhelix.eu/" class="external text"
-  rel="nofollow">OpenHelix blog</a>.
+ <a href="http://blog.openhelix.eu/?p=5551" class="external text"
+ rel="nofollow">blog post on this meeting</a> by Mary Mangan on the
+ <a href="http://blog.openhelix.eu/" class="external text"
+ rel="nofollow">OpenHelix blog</a>.
 - <a href="http://www.biology-direct.com/content/5/1/12"
-  class="external text" rel="nofollow">Community Annotation in Biology</a>,
-  Mazumder R, Natale DA, Julio JA, Yeh LS, Wu CH. *Biol Direct.* 2010
-  Feb 18;5:12. The discussion under "Reviewers' comments" is also
-  interesting.
+ class="external text" rel="nofollow">Community Annotation in Biology</a>,
+ Mazumder R, Natale DA, Julio JA, Yeh LS, Wu CH. *Biol Direct.* 2010
+ Feb 18;5:12. The discussion under "Reviewers' comments" is also
+ interesting.

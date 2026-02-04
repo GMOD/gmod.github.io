@@ -12,62 +12,62 @@ display them. It assumes that you already have a working installation of
 [GBrowse](/wiki/GBrowse) and
 <a href="http://www.mysql.com/" class="external text"
 
-  Prerequisites](#Prerequisites)
+ Prerequisites](#Prerequisites)
 - [UCSC naming
-  conventions and other relevant
-  subtleties](#UCSC_naming_conventions_and_other_relevant_subtleties)
-  - [UCSC
-    database names](#UCSC_database_names)
-  - [Chromosome
-    naming](#Chromosome_naming)
-  - [Naming of
-    database tables for comparative genomics
-    tracks](#Naming_of_database_tables_for_comparative_genomics_tracks)
-  - [Assembly
-    and track meta-info](#Assembly_and_track_meta-info)
+ conventions and other relevant
+ subtleties](#UCSC_naming_conventions_and_other_relevant_subtleties)
+ - [UCSC
+ database names](#UCSC_database_names)
+ - [Chromosome
+ naming](#Chromosome_naming)
+ - [Naming of
+ database tables for comparative genomics
+ tracks](#Naming_of_database_tables_for_comparative_genomics_tracks)
+ - [Assembly
+ and track meta-info](#Assembly_and_track_meta-info)
 - [Installation
-  Overview](#Installation_Overview)
+ Overview](#Installation_Overview)
 - [Installation
-  Details](#Installation_Details)
-  - [Which UCSC
-    database?](#Which_UCSC_database.3F)
-  - [Which
-    tables for my track(s) of
-    interest?](#Which_tables_for_my_track.28s.29_of_interest.3F)
-  - [Download
-    mysql dump files from
-    UCSC](#Download_mysql_dump_files_from_UCSC)
-  - [Create and
-    load the MySQL database](#Create_and_load_the_MySQL_database)
-  - [Conservation track only: download external
-    files](#Conservation_track_only:_download_external_files)
-  - [Download
-    and install the GBrowse
-    plugin(s)](#Download_and_install_the_GBrowse_plugin.28s.29)
-  - [Conservation track only: C extension
-    required](#Conservation_track_only:_C_extension_required)
-  - [Configure
-    plugins in GBrowse](#Configure_plugins_in_GBrowse)
-  - [Conservation track only:
-    conf/UcscTrackImage.cfg
-    file](#Conservation_track_only:_conf.2FUcscTrackImage.cfg_file)
-  - [Test
-    GBrowse](#Test_GBrowse)
+ Details](#Installation_Details)
+ - [Which UCSC
+ database?](#Which_UCSC_database.3F)
+ - [Which
+ tables for my track(s) of
+ interest?](#Which_tables_for_my_track.28s.29_of_interest.3F)
+ - [Download
+ mysql dump files from
+ UCSC](#Download_mysql_dump_files_from_UCSC)
+ - [Create and
+ load the MySQL database](#Create_and_load_the_MySQL_database)
+ - [Conservation track only: download external
+ files](#Conservation_track_only:_download_external_files)
+ - [Download
+ and install the GBrowse
+ plugin(s)](#Download_and_install_the_GBrowse_plugin.28s.29)
+ - [Conservation track only: C extension
+ required](#Conservation_track_only:_C_extension_required)
+ - [Configure
+ plugins in GBrowse](#Configure_plugins_in_GBrowse)
+ - [Conservation track only:
+ conf/UcscTrackImage.cfg
+ file](#Conservation_track_only:_conf.2FUcscTrackImage.cfg_file)
+ - [Test
+ GBrowse](#Test_GBrowse)
 - [Performance
-  tweaks](#Performance_tweaks)
-  - [rsync
-    mysql table binary files](#rsync_mysql_table_binary_files)
+ tweaks](#Performance_tweaks)
+ - [rsync
+ mysql table binary files](#rsync_mysql_table_binary_files)
 - [Bug Reports
-  and Support Requests](#Bug_Reports_and_Support_Requests)
+ and Support Requests](#Bug_Reports_and_Support_Requests)
 - [AUTHORS](#AUTHORS)
 
 ## Prerequisites
 
 - A working installation of [GBrowse](/wiki/GBrowse) (see also
-  [GBrowse_Install_HOWTO](/wiki/GBrowse_Install_HOWTO))
+ [GBrowse_Install_HOWTO](/wiki/GBrowse_Install_HOWTO))
 - A working installation of
-  <a href="http://www.mysql.com/" class="external text"
-  rel="nofollow">MySQL http://www.mysql.com/</a>
+ <a href="http://www.mysql.com/" class="external text"
+ rel="nofollow">MySQL http://www.mysql.com/</a>
 - Plenty of disk space, ideally local to your server.
 - For Conservation plugin: a C compiler and mysql client library.
 
@@ -76,10 +76,10 @@ alignments and types of tracks you would like to install. Things to
 consider:
 
 - Temporary disk space for MySQL dump files used to load the database
-  tables.
+ tables.
 - MySQL server disk space requirements for database tables.
 - If loading a Conservation track, permanent disk space for data files
-  indexed by the MySQL database tables.
+ indexed by the MySQL database tables.
 
 Here are some example approximate sizes for various tracks and organisms
 (note that each genome assembly usually has many Chain and Net tracks,
@@ -193,14 +193,14 @@ that describes all tracks in that database.
 
 ## Installation Overview
 
-1.  Download MySQL table data from UCSC.
-2.  Create mysql database and load tables.
-    - If adding the Conservation track, also download external data
-      files.
-3.  Download the [GBrowse
-    plugin](/wiki/GBrowse_Install_HOWTO#Plugins) and
-    glyph modules
-4.  Install and configure plugin(s).
+1. Download MySQL table data from UCSC.
+2. Create mysql database and load tables.
+ - If adding the Conservation track, also download external data
+ files.
+3. Download the [GBrowse
+ plugin](/wiki/GBrowse_Install_HOWTO#Plugins) and
+ glyph modules
+4. Install and configure plugin(s).
 
 ## Installation Details
 
@@ -271,26 +271,26 @@ different protocols, \$TMPDIR is a local temporary storage directory,
 probably write a script that loops on multiple tables and possibly even
 multiple databases.
 
-    # Example 1: use rsync to fetch .sql and .txt.gz files:
-    mkdir -p $TMPDIR/$DB
-    rsync -avP \
-      rsync://hgdownload.cse.ucsc.edu/genome/goldenPath/$DB/database/$TABLE.{sql,txt.gz} \
-      $TMPDIR/$DB/
-    gunzip $TMPDIR/$DB/$TABLE.txt.gz
+ # Example 1: use rsync to fetch .sql and .txt.gz files:
+ mkdir -p $TMPDIR/$DB
+ rsync -avP \
+ rsync://hgdownload.cse.ucsc.edu/genome/goldenPath/$DB/database/$TABLE.{sql,txt.gz} \
+ $TMPDIR/$DB/
+ gunzip $TMPDIR/$DB/$TABLE.txt.gz
 
-    # Example 2: use wget to fetch files using ftp:// or http:// :
-    mkdir -p $TMPDIR/$DB
-    wget -N -O $TMPDIR/$DB/$TABLE.sql \
-      ftp://hgdownload.cse.ucsc.edu/genome/goldenPath/$DB/database/$TABLE.sql
-    wget -N -O $TMPDIR/$DB/$TABLE.txt.gz \
-      ftp://hgdownload.cse.ucsc.edu/genome/goldenPath/$DB/database/$TABLE.txt.gz
-    gunzip $TMPDIR/$DB/$TABLE.txt.gz
+ # Example 2: use wget to fetch files using ftp:// or http:// :
+ mkdir -p $TMPDIR/$DB
+ wget -N -O $TMPDIR/$DB/$TABLE.sql \
+ ftp://hgdownload.cse.ucsc.edu/genome/goldenPath/$DB/database/$TABLE.sql
+ wget -N -O $TMPDIR/$DB/$TABLE.txt.gz \
+ ftp://hgdownload.cse.ucsc.edu/genome/goldenPath/$DB/database/$TABLE.txt.gz
+ gunzip $TMPDIR/$DB/$TABLE.txt.gz
 
 Also download the central database .sql, which creates and populates
 several assembly metadata tables.
 
-    wget -N -O $TMPDIR/hgcentral.sql \
-      http://hgdownload.cse.ucsc.edu/admin/hgcentral.sql
+ wget -N -O $TMPDIR/hgcentral.sql \
+ http://hgdownload.cse.ucsc.edu/admin/hgcentral.sql
 
 If you encounter any problems while fetching the files, contact
 <a href="mailto:genome-mirror@soe.ucsc.edu" class="external free"
@@ -306,16 +306,16 @@ you are downloading tracks. In order for the Conservation plugin to
 work, your MySQL genome assembly database *must* have the same name as
 the UCSC database (\$DB above).
 
-    mysql -u root -pPassword -e "create database hgcentral;"
-    mysql -u root -pPassword hgcentral < $TMPDIR/hgcentral.sql
+ mysql -u root -pPassword -e "create database hgcentral;"
+ mysql -u root -pPassword hgcentral < $TMPDIR/hgcentral.sql
 
-    mysql -u root -pPassword -e "create database $DB;"
+ mysql -u root -pPassword -e "create database $DB;"
 
 Here is how to create and populate a single table. In practice, you will
 most likely write a script that loops on \$TABLE and possibly on \$DB:
 
-    mysql $DB -u root -pPassword < $TABLE.sql
-    mysql $DB -u root -pPassword -e "load data local infile '$TMPDIR/$DB/$TABLE.txt' into table $TABLE"
+ mysql $DB -u root -pPassword < $TABLE.sql
+ mysql $DB -u root -pPassword -e "load data local infile '$TMPDIR/$DB/$TABLE.txt' into table $TABLE"
 
 ### Conservation track only: download external files
 
@@ -329,16 +329,16 @@ use mysql to determine what files are needed from UCSC.
 Determine the files needed for multiz*N*way and phastCons*N*way by
 running by running these mysql commands:
 
-    select distinct(path) from extFile,multizNway where extFile.id = multizNway.extFile;
-    select distinct(file) from phastConsNway;
+ select distinct(path) from extFile,multizNway where extFile.id = multizNway.extFile;
+ select distinct(file) from phastConsNway;
 
 The paths all start with "/gbdb/", and can be downloaded from
 hgdownload.cse.ucsc.edu using the /gbdb/... path as follows, depending
 on your chosen protocol:
 
-    rsync://hgdownload.cse.ucsc.edu/gbdb/...
-    ftp://hgdownload.cse.ucsc.edu/gbdb/...
-    http://hgdownload.cse.ucsc.edu/gbdb/...
+ rsync://hgdownload.cse.ucsc.edu/gbdb/...
+ ftp://hgdownload.cse.ucsc.edu/gbdb/...
+ http://hgdownload.cse.ucsc.edu/gbdb/...
 
 Ideally, create a local /gbdb/ and install the files in the same paths
 as referenced by the sql tables. If that is not possible, replace the
@@ -350,7 +350,7 @@ files.
 The plugin and glyph modules are available by anonymous
 [Git](/wiki/Glossary#Git):
 
-    git clone git://genome-source.cse.ucsc.edu/gmod-ucsc.git
+ git clone git://genome-source.cse.ucsc.edu/gmod-ucsc.git
 
 The directory structure mirrors that of the main GBrowse repository.
 Copy or link all files from gmod-ucsc/Generic-Genome-Browser/ into the
@@ -419,21 +419,21 @@ plugins setting in the appropriate .conf file(s): for GBrowse 1.52,
 
 Add plugin settings like the following to *datasource*.conf:
 
-    [UcscPlugin:plugin]
-    db = ce4
-    user = mysqlReadOnlyUser
-    pass = mysqlReadOnlyUsersPassword
-    seq_prefix = chr
-    split_prefix = chr
+ [UcscPlugin:plugin]
+ db = ce4
+ user = mysqlReadOnlyUser
+ pass = mysqlReadOnlyUsersPassword
+ seq_prefix = chr
+ split_prefix = chr
 
-    [UcscChain:plugin]
-    default_enable = chainCb3
+ [UcscChain:plugin]
+ default_enable = chainCb3
 
-    [UcscNet:plugin]
-    default_enable = netCb3 netCaeRem2
+ [UcscNet:plugin]
+ default_enable = netCb3 netCaeRem2
 
-    [UcscConservation:plugin]
-    default_enable = multiz5way
+ [UcscConservation:plugin]
+ default_enable = multiz5way
 
 These are the supported `[UcscPlugin:plugin]` settings, shared by all
 Ucsc plugins (but can be overridden in the section for each plugin if
@@ -469,15 +469,15 @@ UcscTrackImage.cfg to exist in the GBrowse configuration directory,
 Generic-Genome-Browser/conf/. The contents of the file have a lot in
 common with the GBrowse .conf settings above:
 
-    db.host=localhost
-    db.user=mysqlReadOnlyUser
-    db.password=mysqlReadOnlyUsersPassword
-    db.trackDb=trackDb
+ db.host=localhost
+ db.user=mysqlReadOnlyUser
+ db.password=mysqlReadOnlyUsersPassword
+ db.trackDb=trackDb
 
-    central.db=hgcentral
-    central.host=localhost
-    central.user=mysqlHgcentralRWUser
-    central.password=mysqlHgcentralRWUser
+ central.db=hgcentral
+ central.host=localhost
+ central.user=mysqlHgcentralRWUser
+ central.password=mysqlHgcentralRWUser
 
 Note that the central.user account, unlike the db.user, needs to have
 write access -- but only to hgcentral.
@@ -489,7 +489,7 @@ watch for errors at the end of the GBrowse web server's error log file,
 and start using GBrowse. Here is an example command to watch the log
 file that might work if you are using Apache:
 
-    tail -f /usr/local/apache/logs/error_log
+ tail -f /usr/local/apache/logs/error_log
 
 In GBrowse, below the image, in the Tracks section, Analysis subsection,
 set the checkboxes by the UCSC plugin track names and click Update
@@ -508,8 +508,8 @@ of track data, you may want to try rsyncing the binary files directly
 from UCSC. That replaces the downloading of \$TABLE.{sql,txt.gz} files
 and loading into MySQL.
 
-    rsync -navP rsync://hgdownload.cse.ucsc.edu/mysql/$DB/$TABLE.\* \
-      /var/lib/mysql/$DB/
+ rsync -navP rsync://hgdownload.cse.ucsc.edu/mysql/$DB/$TABLE.\* \
+ /var/lib/mysql/$DB/
 
 ## Bug Reports and Support Requests
 

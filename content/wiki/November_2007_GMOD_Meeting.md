@@ -10,95 +10,95 @@ Spring Harbor Laboratory</a> following the
 <a href="http://meetings.cshl.edu/meetings/info07.shtml"
 class="external text" rel="nofollow">Genome Informatics</a> meeting.
 
-  Information</span>](#Pre-Meeting_Information)
-  - [Possible
-    topics](#Possible_topics)
-  - [Registration](#Registration)
-  - [Location](#Location)
+ Information</span>](#Pre-Meeting_Information)
+ - [Possible
+ topics](#Possible_topics)
+ - [Registration](#Registration)
+ - [Location](#Location)
 - [Attendees](#Attendees)
 - [Agenda](#Agenda)
-  - [Discussion
-    Topics](#Discussion_Topics)
-  - [November
-    5](#November_5)
-  - [November
-    6](#November_6)
-  - [November
-    7](#November_7)
+ - [Discussion
+ Topics](#Discussion_Topics)
+ - [November
+ 5](#November_5)
+ - [November
+ 6](#November_6)
+ - [November
+ 7](#November_7)
 - [Presentations](#Presentations)
 - [Meeting
-  Minutes](#Meeting_Minutes)
-  - [Big
-    Picture](#Big_Picture)
-    - [GMOD's
-      Role](#GMOD.27s_Role)
-    - [Releases and
-      Bundles](#Releases_and_Bundles)
-    - [Comparative
-      Genomics](#Comparative_Genomics)
-  - [GMOD
-    Components / Functions](#GMOD_Components_.2F_Functions)
-    - [Apollo](#Apollo)
-      - [New Development](#New_Development)
-      - [ID
-        Generation and JDBC
-        Drivers](#ID_Generation_and_JDBC_Drivers)
-    - [BioPerl, GFF](#BioPerl.2C_GFF)
-    - [Chado](#Chado)
-      - [Chado
-        Documentation](#Chado_Documentation)
-      - [Chado Validator](#Chado_Validator)
-      - [DBMS Choice](#DBMS_Choice)
-      - [Postgres
-        Performance](#Postgres_Performance)
-    - [CMap](#CMap)
-    - [Community
-      Annotation](#Community_Annotation)
-      - [Community Annotation at
-        ParameciumDB](#Community_Annotation_at_ParameciumDB)
-      - [Community Annotation at
-        JGI](#Community_Annotation_at_JGI)
-      - [Community Annotation at
-        SGN](#Community_Annotation_at_SGN)
-    - [Community Annotation Server
-      (CAS)](#Community_Annotation_Server_.28CAS.29)
-    - [Distributed Annotation System/2
-      (DAS/2)](#Distributed_Annotation_System.2F2_.28DAS.2F2.29)
-    - [GBrowse](#GBrowse)
-      - [Roadmap](#Roadmap)
-      - [Performance](#Performance)
-    - [Genome
-      Grid](#Genome_Grid)
-    - [Help
-      Desk](#Help_Desk)
-    - [Pathway Tools](#Pathway_Tools)
-    - [SynView](#SynView)
-    - [TableEdit](#TableEdit)
-    - [Turnkey, GMODweb,
-      DrupalFly](#Turnkey.2C_GMODweb.2C_DrupalFly)
-  - [GMOD
-    Participating
-    Organizations](#GMOD_Participating_Organizations)
-    - [ApiDB](#ApiDB)
-      - [Synteny at
-        ApiDB](#Synteny_at_ApiDB)
-    - [Berkeley National
-      Labs](#Berkeley_National_Labs)
-    - [FlyBase](#FlyBase)
-      - [Synteny at
-        FlyBase](#Synteny_at_FlyBase)
-    - [GeneDB, Sanger](#GeneDB.2C_Sanger)
-    - [Imperial College
-      London](#Imperial_College_London)
-    - [JCVI
-      (nee TIGR)](#JCVI_.28nee_TIGR.29)
-    - [MaizeGDB](#MaizeGDB)
-    - [ParameciumDB](#ParameciumDB)
-    - [Riken](#Riken)
-    - [University of Maryland Medical
-      Center](#University_of_Maryland_Medical_Center)
-    - [WormBase / CSHL](#WormBase_.2F_CSHL)
-      - [GBrowse_Syn](#GBrowse_Syn)
+ Minutes](#Meeting_Minutes)
+ - [Big
+ Picture](#Big_Picture)
+ - [GMOD's
+ Role](#GMOD.27s_Role)
+ - [Releases and
+ Bundles](#Releases_and_Bundles)
+ - [Comparative
+ Genomics](#Comparative_Genomics)
+ - [GMOD
+ Components / Functions](#GMOD_Components_.2F_Functions)
+ - [Apollo](#Apollo)
+ - [New Development](#New_Development)
+ - [ID
+ Generation and JDBC
+ Drivers](#ID_Generation_and_JDBC_Drivers)
+ - [BioPerl, GFF](#BioPerl.2C_GFF)
+ - [Chado](#Chado)
+ - [Chado
+ Documentation](#Chado_Documentation)
+ - [Chado Validator](#Chado_Validator)
+ - [DBMS Choice](#DBMS_Choice)
+ - [Postgres
+ Performance](#Postgres_Performance)
+ - [CMap](#CMap)
+ - [Community
+ Annotation](#Community_Annotation)
+ - [Community Annotation at
+ ParameciumDB](#Community_Annotation_at_ParameciumDB)
+ - [Community Annotation at
+ JGI](#Community_Annotation_at_JGI)
+ - [Community Annotation at
+ SGN](#Community_Annotation_at_SGN)
+ - [Community Annotation Server
+ (CAS)](#Community_Annotation_Server_.28CAS.29)
+ - [Distributed Annotation System/2
+ (DAS/2)](#Distributed_Annotation_System.2F2_.28DAS.2F2.29)
+ - [GBrowse](#GBrowse)
+ - [Roadmap](#Roadmap)
+ - [Performance](#Performance)
+ - [Genome
+ Grid](#Genome_Grid)
+ - [Help
+ Desk](#Help_Desk)
+ - [Pathway Tools](#Pathway_Tools)
+ - [SynView](#SynView)
+ - [TableEdit](#TableEdit)
+ - [Turnkey, GMODweb,
+ DrupalFly](#Turnkey.2C_GMODweb.2C_DrupalFly)
+ - [GMOD
+ Participating
+ Organizations](#GMOD_Participating_Organizations)
+ - [ApiDB](#ApiDB)
+ - [Synteny at
+ ApiDB](#Synteny_at_ApiDB)
+ - [Berkeley National
+ Labs](#Berkeley_National_Labs)
+ - [FlyBase](#FlyBase)
+ - [Synteny at
+ FlyBase](#Synteny_at_FlyBase)
+ - [GeneDB, Sanger](#GeneDB.2C_Sanger)
+ - [Imperial College
+ London](#Imperial_College_London)
+ - [JCVI
+ (nee TIGR)](#JCVI_.28nee_TIGR.29)
+ - [MaizeGDB](#MaizeGDB)
+ - [ParameciumDB](#ParameciumDB)
+ - [Riken](#Riken)
+ - [University of Maryland Medical
+ Center](#University_of_Maryland_Medical_Center)
+ - [WormBase / CSHL](#WormBase_.2F_CSHL)
+ - [GBrowse_Syn](#GBrowse_Syn)
 
 ## Pre-Meeting Information
 
@@ -109,15 +109,15 @@ A list of suggested topics, raised in advance by GMOD community members.
 - community annotation - FlyBase seconds this topic
 - Chado standard on ortholog/paralog/synteny storage.
 - The state of [GFF](/wiki/GFF) tools in [BioPerl](/wiki/BioPerl).
-  Some of the auditing and examples are on a
-  <a href="http://bioperl.org/wiki/GFF_code_audit" class="external text"
-  rel="nofollow">Bioperl wiki page</a>.
+ Some of the auditing and examples are on a
+ <a href="http://bioperl.org/wiki/GFF_code_audit" class="external text"
+ rel="nofollow">Bioperl wiki page</a>.
 - GMOD releases and packaging
-  - How hard would it be to heap together specific releases of popular
-    GMOD components into a named/numbered release that has gone through
-    some level of compatibility testing?
-  - How much pain does a lack of such a release currently cause users?
-  - how much might the community annotation server help with this?
+ - How hard would it be to heap together specific releases of popular
+ GMOD components into a named/numbered release that has gone through
+ some level of compatibility testing?
+ - How much pain does a lack of such a release currently cause users?
+ - how much might the community annotation server help with this?
 
 ### Registration
 
@@ -139,68 +139,68 @@ on the main CSHL campus.
 - James Abbott, Imperial College, London
 - Sam Angiuoli, University of Maryland Medical School
 - Tim Burgis, Imperial College, London
-- [Scott Cain](/wiki/User:Scott), GMOD Coordinator
-- [Mike Caudy](/wiki/User:Mcaudy), CSHL
-- [Dave Clements](/wiki/User:Clements), [GMOD Help
-  Desk](/wiki/GMOD_Help_Desk),
-  <a href="http://nescent.org" class="external text"
-  rel="nofollow">NESCent</a>
+- Scott Cain, GMOD Coordinator
+- Mike Caudy, CSHL
+- Dave Clements, [GMOD Help
+ Desk](/wiki/GMOD_Help_Desk),
+ <a href="http://nescent.org" class="external text"
+ rel="nofollow">NESCent</a>
 - Norie de la Cruz, WormBase
 - Quenfen Dong, Indiana University
 - Dave Emmert, <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>
-- [Ben Faga](/wiki/User:Faga), CSHL
+ rel="nofollow">FlyBase</a>
+- Ben Faga, CSHL
 - Kathleen Falls, <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>
-- [Steve Fischer](/wiki/User:Stevef),
-  <a href="http://apidb.org" class="external text"
-  rel="nofollow">ApiDB</a>
-- [Don Gilbert](/wiki/User:Dongilbert)
-- [Josh Goodman](/wiki/User:Jogoodma), FlyBase - Indiana
-  University
-- [Jay Hannah](/wiki/User:Jhannah), University of Nebraska
-- [Todd Harris](/wiki/User:Tharris), WormBase - Cold Spring
-  Harbor Laboratory
+ rel="nofollow">FlyBase</a>
+- Steve Fischer,
+ <a href="http://apidb.org" class="external text"
+ rel="nofollow">ApiDB</a>
+- Don Gilbert
+- Josh Goodman, FlyBase - Indiana
+ University
+- Jay Hannah, University of Nebraska
+- Todd Harris, WormBase - Cold Spring
+ Harbor Laboratory
 - Sven Heinicke, Princeton
 - Kevin Galens, JCVI
-- [Gregg Helt](/wiki/User:GreggHelt2), DAS/2
-- [Chris Hemmerich](/wiki/User:Chemmeri),
-  <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>
+- Gregg Helt, DAS/2
+- Chris Hemmerich,
+ <a href="http://flybase.org" class="external text"
+ rel="nofollow">FlyBase</a>
 - Hideya Kiwaji, <a href="http://www.riken.go.jp/" class="external text"
-  rel="nofollow">Riken</a>
-- [Ed Lee](/wiki/User:Elee), Lawrence Berkeley Labs
+ rel="nofollow">Riken</a>
+- Ed Lee, Lawrence Berkeley Labs
 - Suzi Lewis, <a href="http://bioontology.org/" class="external text"
-  rel="nofollow">National Center for Biomedical Ontology</a>
-- [Sheldon McKay](/wiki/User:Mckays), WormBase/modENCODE - Cold
-  Spring Harbor Laboratory
+ rel="nofollow">National Center for Biomedical Ontology</a>
+- Sheldon McKay, WormBase/modENCODE - Cold
+ Spring Harbor Laboratory
 - Lukas Mueller,
-  <a href="http://soldb.cit.cornell.edu/" class="external text"
-  rel="nofollow">Sol Genomics Network</a>
-- [Joshua Orvis](/wiki/User:Jorvis), University of Maryland
-  Medical Center
+ <a href="http://soldb.cit.cornell.edu/" class="external text"
+ rel="nofollow">Sol Genomics Network</a>
+- Joshua Orvis, University of Maryland
+ Medical Center
 - Suzanne Paley, <a href="http://ecocyc.org" class="external text"
-  rel="nofollow">EcoCyc</a>
+ rel="nofollow">EcoCyc</a>
 - Chinmay Patel, GeneDB, Sanger Institute
 - David Riley, University of Maryland Medical Center
 - Andy Schroeder, <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>
+ rel="nofollow">FlyBase</a>
 - Taner Sen, <a href="http://maizegdb.org" class="external text"
-  rel="nofollow">MaizeGDB</a>
-- [Linda Sperling](/wiki/User:Sperling),
-  [ParameciumDB](/wiki/ParameciumDB) - CNRS
-- [Jason Stajich](/wiki/User:Stajich)
-- [Lincoln Stein](/wiki/User:Lstein), CSHL
+ rel="nofollow">MaizeGDB</a>
+- Linda Sperling,
+ [ParameciumDB](/wiki/ParameciumDB) - CNRS
+- Jason Stajich
+- Lincoln Stein, CSHL
 - Victor Strelets, <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>
+ rel="nofollow">FlyBase</a>
 - Haiming Wang <a href="http://apidb.org" class="external text"
-  rel="nofollow">ApiDB.org</a>
+ rel="nofollow">ApiDB.org</a>
 - Robert Wilson, <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>
+ rel="nofollow">FlyBase</a>
 - Haiyan Zhang, <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>
+ rel="nofollow">FlyBase</a>
 - Pinglei Zhou, <a href="http://flybase.org" class="external text"
-  rel="nofollow">FlyBase</a>
+ rel="nofollow">FlyBase</a>
 
 ## Agenda
 
@@ -211,40 +211,40 @@ would like to discuss. This list of topics helped shape the meeting
 agenda.
 
 - Community Annotation
-  - DAS, Apollo, genome-Wiki
+ - DAS, Apollo, genome-Wiki
 - Comparative Genomics
-  - Synteny viewers
-  - Chado data storage
-  - See [Chado Comparative
-    Schema](/wiki/Chado_Comparative_Schema).
+ - Synteny viewers
+ - Chado data storage
+ - See [Chado Comparative
+ Schema](/wiki/Chado_Comparative_Schema).
 - BioPerl and [GFF(2/3)](/wiki/GFF)
-  - [GFF](/wiki/GFF) Questions
+ - [GFF](/wiki/GFF) Questions
 - Postgres Tuning / [Materialized
-  views](/wiki/Materialized_views)
-  - Performance Strategies
+ views](/wiki/Materialized_views)
+ - Performance Strategies
 - Apollo-Chado Connection
-  - Performance - See [PostgreSQL Performance
-    Tips](/wiki/PostgreSQL_Performance_Tips).
-  - Too many JDBC Adaptors
+ - Performance - See [PostgreSQL Performance
+ Tips](/wiki/PostgreSQL_Performance_Tips).
+ - Too many JDBC Adaptors
 - Chado
-  - ID Generation
-  - Moving away from Postgres
-  - Missing Chado pieces (phylogenetics)
+ - ID Generation
+ - Moving away from Postgres
+ - Missing Chado pieces (phylogenetics)
 - What Should GMOD Focus On (What's Missing)
-  - Genome Analysis ([Galaxy](/wiki/Galaxy),
-    <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
-    ...)
-    - Lightweight annotation
-      <a href="http://www.yandell-lab.org/maker/index.html"
-      class="external text" rel="nofollow">MAKER pipeline</a> from Mark
-      Yandell
-      (*2008/05/13: [MAKER](/wiki/MAKER) has since been folded in to
-      GMOD.*)
-  - MicroArrays
-  - What is the GMOD Community and how best can we serve them?
-  - Is there a need for individual MODs?
+ - Genome Analysis ([Galaxy](/wiki/Galaxy),
+ <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
+ ...)
+ - Lightweight annotation
+ <a href="http://www.yandell-lab.org/maker/index.html"
+ class="external text" rel="nofollow">MAKER pipeline</a> from Mark
+ Yandell
+ (*2008/05/13: [MAKER](/wiki/MAKER) has since been folded in to
+ GMOD.*)
+ - MicroArrays
+ - What is the GMOD Community and how best can we serve them?
+ - Is there a need for individual MODs?
 - What should [GMOD Help Desk](/wiki/GMOD_Help_Desk) do?
-  - UIs: Picture Intensive
+ - UIs: Picture Intensive
 - What should be the outcome of this meeting?
 
 ### November 5
@@ -276,9 +276,9 @@ agenda.
 
 1:00 Standards and applications for storing comparative genome data
 
-- [Steve Fisher](/wiki/User:Stevef) -
-  [GBrowse](/wiki/GBrowse): [SynView](/wiki/SynView) and the
-  Generic database adaptor
+- Steve Fisher -
+ [GBrowse](/wiki/GBrowse): [SynView](/wiki/SynView) and the
+ Generic database adaptor
 - Victor Strelets - FlyBase Orthoview (GBrowse)
 
 2:30 Coffee
@@ -304,38 +304,38 @@ agenda.
 ## Presentations
 
 - <a href="http://eugenes.org/gmod/docs/gmod-update-07nov.ppt"
-  class="external text" rel="nofollow">GMOD Indiana update</a> slides,
-  Don Gilbert
-- WormBase update, [Todd Harris](/wiki/User:Tharris); Slides:
-  <a
-  href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.key.tgz"
-  class="external text" rel="nofollow">Keynote</a>, <a
-  href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.ppt"
-  class="external text" rel="nofollow">Powerpoint</a>, <a
-  href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.pdf"
-  class="external text" rel="nofollow">PDF</a>, <a
-  href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.mov"
-  class="external text" rel="nofollow">Mov</a>
+ class="external text" rel="nofollow">GMOD Indiana update</a> slides,
+ Don Gilbert
+- WormBase update, Todd Harris; Slides:
+ <a
+ href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.key.tgz"
+ class="external text" rel="nofollow">Keynote</a>, <a
+ href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.ppt"
+ class="external text" rel="nofollow">Powerpoint</a>, <a
+ href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.pdf"
+ class="external text" rel="nofollow">PDF</a>, <a
+ href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.mov"
+ class="external text" rel="nofollow">Mov</a>
 - <a
-  href="http://mango.ctegd.uga.edu/jkissingLab/presentations/GMOD_Nov_2007.ppt"
-  class="external text" rel="nofollow">ApiDB GBrowse update</a> slides,
-  Haiming Wang
+ href="http://mango.ctegd.uga.edu/jkissingLab/presentations/GMOD_Nov_2007.ppt"
+ class="external text" rel="nofollow">ApiDB GBrowse update</a> slides,
+ Haiming Wang
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/2007_11_05_CMap_GMOD.ppt"
-  class="internal" title="2007 11 05 CMap GMOD.ppt">CMap/CMAE Progress
-  Report</a>, [Ben Faga](/wiki/User:Faga)
+ class="internal" title="2007 11 05 CMap GMOD.ppt">CMap/CMAE Progress
+ Report</a>, Ben Faga
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Gbrowse_syn.pdf" class="internal"
-  title="Gbrowse syn.pdf">Gbrowse_syn</a> Sheldon McKay
+ title="Gbrowse syn.pdf">Gbrowse_syn</a> Sheldon McKay
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
-  class="internal" title="CommunityAnnotationNov2007.pdf">Community
-  Annotation</a> [Linda Sperling](/wiki/User:Sperling)
+ class="internal" title="CommunityAnnotationNov2007.pdf">Community
+ Annotation</a> Linda Sperling
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/be/Workshop.pdf" class="internal"
-  title="Workshop.pdf">Community Annotation</a> Chinmay Patel
+ title="Workshop.pdf">Community Annotation</a> Chinmay Patel
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/SyntenyModeling.pdf" class="internal"
-  title="SyntenyModeling.pdf">Modeling and Displaying Synteny w/
-  SynView</a> [Steve Fischer](/wiki/User:Stevef)
+ title="SyntenyModeling.pdf">Modeling and Displaying Synteny w/
+ SynView</a> Steve Fischer
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/GMOD-Nov-2007.ppt" class="internal"
-  title="GMOD-Nov-2007.ppt">Recent Developments in Pathway Tools</a>,
-  Suzanne Paley
+ title="GMOD-Nov-2007.ppt">Recent Developments in Pathway Tools</a>,
+ Suzanne Paley
 
 ## Meeting Minutes
 
@@ -415,15 +415,15 @@ Talks on synteny are spread throughout this document.
 
 ##### New Development
 
-Work has resumed on developing [Apollo](/wiki/Apollo). [Ed
-Lee](/wiki/User:Elee) formerly of TIGR/JCVI started working for
+Work has resumed on developing [Apollo](/wiki/Apollo). Ed
+Lee formerly of TIGR/JCVI started working for
 Suzi Lewis at Berkeley this fall and is working on it. Work is being
 done on
 
 - A [GFF3](/wiki/GFF3) adapter
 - Speeding up Apollo when it uses
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> as a
-  backend (or, just speeding up Chado).
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> as a
+ backend (or, just speeding up Chado).
 - Communicating with more than one Chado instance.
 - Undo/Redo support.
 
@@ -435,8 +435,8 @@ the XML approach.
 
 Apollo currently has two choices for database adaptors:
 
-1.  One that uses Postgres database triggers to set IDs.
-2.  One that does not.
+1. One that uses Postgres database triggers to set IDs.
+2. One that does not.
 
 The trigger version is used in the Community Annotation Server and on
 the Dolan-Rice project. We could not think of anywhere else it was used.
@@ -531,18 +531,18 @@ Slow performance of Chado Postgres implementations came up repeatedly.
 Some bits:
 
 - Specify locale. ASCII-US runs fast. UTF-8 is slow and that is the
-  default. Specified for the server, at server start.
+ default. Specified for the server, at server start.
 - A lot of time has been spent on making the queries go fast.
 - RTree indexes are in the core.
 - Allen's FRange functions are in the DB, but aren't used by default
-  queries.
+ queries.
 
 #### CMap
 
 **Presentation:**
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/2007_11_05_CMap_GMOD.ppt"
 class="internal" title="2007 11 05 CMap GMOD.ppt">CMap Progress
-Report</a>, [Ben Faga](/wiki/User:Faga)
+Report</a>, Ben Faga
 
 New CMap release (1.0) is on its way. Will have an assembly editor.
 Includes a dot plot, new glyphs, and an install script based on the
@@ -561,7 +561,7 @@ This was a popular motif in the meeting.
 **Presentation:**
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
 class="internal" title="CommunityAnnotationNov2007.pdf">Community
-Annotation</a>, [Linda Sperling](/wiki/User:Sperling)
+Annotation</a>, Linda Sperling
 
 Linda Sperling discussed ParameciumDB. Paramecium is a small community
 with few resources and no dedicated curators.
@@ -617,22 +617,22 @@ consists of:
 
 - A VMWare image, containing
 - Ubuntu Linux, version 6.10 LTS.
-  - Picked Ubuntu LTS over CentOS because LTS stands for *long term
-    service* and it will be supported for a while.
+ - Picked Ubuntu LTS over CentOS because LTS stands for *long term
+ service* and it will be supported for a while.
 - Postgres
 - A <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
-  with DictyBase data in it.
+ with DictyBase data in it.
 - An empty Chado database
 - [Modware](/wiki/Modware)
 - [Apollo](/wiki/Apollo) - Uses the JDBC adaptor with triggers.
-  This is a Java WebStart version.
+ This is a Java WebStart version.
 - [GBrowse](/wiki/GBrowse)
 - MediaWiki - includes Cite, ProcessCite and TableEdit extensions.
-  - Cite extensions make it easy to provide literature annotations.
-    Provide PubMed ID and it finds and grabs extract from PubMed.
+ - Cite extensions make it easy to provide literature annotations.
+ Provide PubMed ID and it finds and grabs extract from PubMed.
 
 Note that it does not include Turnkey and/or
-[GMODWeb](/wiki/GMODWeb). [Lincoln](/wiki/User:Lstein) would
+[GMODWeb](/wiki/GMODWeb). Lincoln would
 like to add GMODweb, [Textpresso](/wiki/Textpresso) and
 [BioMart](/wiki/BioMart) to that list.
 
@@ -653,17 +653,17 @@ Preserving DAS/1 Strengths in DAS/2
 
 - Keep focus on location-based annotation of biological sequences.
 - Protocol, not an implementation.
-  - HTTP for transport,
-  - URLs for queries
-  - XML for responses
-  - REST-like style.
+ - HTTP for transport,
+ - URLs for queries
+ - XML for responses
+ - REST-like style.
 - No Required central authority.
 - Couple XML response to URL request formats.
 - XML has been shortened, but big gain comes from client-server content
-  format negotiation, including binary. Empty elements dropped.
+ format negotiation, including binary. Empty elements dropped.
 - Uses HTTP caching in the client.
 - [IGB](/wiki/IGB) - reference client for DAS2. Integrated Genome
-  Browser
+ Browser
 
 Allen Day built a DAS2 server on top of
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. That is in
@@ -681,28 +681,28 @@ default. Gregg would like to see GBrowse get a DAS/2 adapter.
 
 ##### Roadmap
 
-[Lincoln Stein](/wiki/User:Lstein) talked about upcoming
+Lincoln Stein talked about upcoming
 releases of [GBrowse](/wiki/GBrowse).
 
 - 1.69
-  - Is in pre-release state.
-  - Has
-    - popups
-    - drag tracks vertically
-    - quantitative data
-    - multiple alignment and conservation tracks.
+ - Is in pre-release state.
+ - Has
+ - popups
+ - drag tracks vertically
+ - quantitative data
+ - multiple alignment and conservation tracks.
 - 1.7
-  - Release by end of year
-  - Rubberbanding (zoom by selecting a rectangle with mouse)
-  - Autocomplete
+ - Release by end of year
+ - Rubberbanding (zoom by selecting a rectangle with mouse)
+ - Autocomplete
 - 2.0
-  - Release in early 2008
-  - Major performance and scalability enhancements.
-    - e.g., each track can be drawn by different server or CPU.
+ - Release in early 2008
+ - Major performance and scalability enhancements.
+ - e.g., each track can be drawn by different server or CPU.
 - 3.0 *(subsequently renamed to [JBrowse](/wiki/JBrowse))*
-  - Released sometime in 2008
-  - Google maps type interface.
-    - e.g., zooming and panning via mouse.
+ - Released sometime in 2008
+ - Google maps type interface.
+ - e.g., zooming and panning via mouse.
 
 Version 3.0 (now called [JBrowse](/wiki/JBrowse)) is a fork of the
 code and version 2 and 3 are expected to co-exist 'forever'. Some shops
@@ -760,7 +760,7 @@ Tools](/wiki/Pathway_Tools), including:
 - Advanced Query Form
 - Richer representation of regulation
 - Pathlogic over-infers pathways. Pathways now have to be tagged to be
-  shown.
+ shown.
 - Dataset diffs and incremental updates.
 
 #### SynView
@@ -768,9 +768,9 @@ Tools](/wiki/Pathway_Tools), including:
 **Presentation:**
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/SyntenyModeling.pdf" class="internal"
 title="SyntenyModeling.pdf">Modeling and Displaying Synteny w/
-SynView</a>, [Steve Fischer](/wiki/User:Stevef)
+SynView</a>, Steve Fischer
 
-[Steve Fischer](/wiki/User:Stevef) of ApiDB (see below) spoke
+Steve Fischer of ApiDB (see below) spoke
 about SynView. SynView is a synteny browser based on GBrowse. It is
 described in a <a
 href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/18/2308"
@@ -792,7 +792,7 @@ These are all web interface layers that lay on top of Chado databases.
 
 [GMODWeb](/wiki/GMODWeb) is currently not working, we think because
 SQLTranslator has not been upgraded to deal with recent versions of
-Postgres. [Ben Faga](/wiki/User:Faga) agreed to actively work on
+Postgres. Ben Faga agreed to actively work on
 this.
 
 Michael Caudy argued that even if GMODWeb did work right now that it is
@@ -802,7 +802,7 @@ framework for providing a web interface to Chado databases. Mike
 demonstrated a prototype called DrupalFly that presents FlyBase data in
 an alternative organization.
 
-[Lincoln](/wiki/User:Lstein) has an opening in Toronto for a
+Lincoln has an opening in Toronto for a
 full time programmer. Lincoln will talk with Brian about
 [GMODWeb](/wiki/GMODWeb)'s future. We will put something on web site
 asking for volunteers to take on GMODweb.
@@ -818,7 +818,7 @@ href="http://mango.ctegd.uga.edu/jkissingLab/presentations/GMOD_Nov_2007.ppt"
 class="external text" rel="nofollow">ApiDB GBrowse update</a>, Haiming
 Wang
 
-[Steve Fischer](/wiki/User:Stevef) talked about ApiDB. ApiDB
+Steve Fischer talked about ApiDB. ApiDB
 uses GUS as their schema. They do multispecies comparative analysis.
 They have a database adapter link from GBrowse to GUS. It is based on
 the Chado adapter. They use materialized views in Oracle 10G and it is
@@ -835,7 +835,7 @@ outside standard GUS schema. In the synteny schema, everything is
 defined relative to the reference sequence. Also need a table to define
 anchors.
 
-[Steve Fischer](/wiki/User:Stevef) showed an 11 track page,
+Steve Fischer showed an 11 track page,
 which has about 5000 popups in it.
 
 ApiDB has a release cycle. They discard and recalculate synteny with
@@ -912,7 +912,7 @@ considering using GBrowse.
 **Presentation:**
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
 class="internal" title="CommunityAnnotationNov2007.pdf">Community
-Annotation</a>, [Linda Sperling](/wiki/User:Sperling)
+Annotation</a>, Linda Sperling
 
 Use GMOD for almost everything:
 
@@ -925,11 +925,11 @@ Paramecium is an odd critter (unicellular eukaryote, ciliate clade):
 
 - 72 Mbp
 - 40K gene models
-  - 12,500 computationally identified potential errors.
+ - 12,500 computationally identified potential errors.
 - At least 3 whole genome duplication events.
 - Nuclear dimorphism. Germline nucleus (not yet sequenced) and somatic
-  nucleus (sequenced) which is a rearranged version of the germline
-  nucleus, streamlined for gene expression.
+ nucleus (sequenced) which is a rearranged version of the germline
+ nucleus, streamlined for gene expression.
 
 Fewer than 20 paramecium molecular biology labs in the world. Database
 supported with 1.5 staff.
@@ -958,8 +958,8 @@ class="external text" rel="nofollow">Powerpoint</a>, <a
 href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.pdf"
 class="external text" rel="nofollow">PDF</a>, <a
 href="http://dev.wormbase.org/presentations/2007/2007.11-GMOD-WormBase/2007.11-GMOD-WormBase.mov"
-class="external text" rel="nofollow">Mov</a>, [Todd
-Harris](/wiki/User:Tharris)
+class="external text" rel="nofollow">Mov</a>, Todd
+Harris
 
 Wormbase is migrating to Chado slowly. There is currently very little
 Chado there.
@@ -968,8 +968,8 @@ Chado there.
 
 **Presentation:**
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Gbrowse_syn.pdf" class="internal"
-title="Gbrowse syn.pdf">Gbrowse_syn</a>, [Sheldon
-McKay](/wiki/User:Mckays)
+title="Gbrowse syn.pdf">Gbrowse_syn</a>, Sheldon
+McKay
 
 Sheldon McKay talked about [GBrowse_syn](/wiki/GBrowse_syn), a
 prototype extension to [GBrowse](/wiki/GBrowse) for viewing

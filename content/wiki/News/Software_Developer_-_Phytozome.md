@@ -41,60 +41,60 @@ and qualifications. Position reports to the Phytozome Group Lead.
 **Essential**
 
 - Work as a member of the Phytozome development team to create, maintain
-  and extend the suite of visualization, backend, and data management
-  tools that support the public interface to the JGI’s Plant Genomics
-  program.
+ and extend the suite of visualization, backend, and data management
+ tools that support the public interface to the JGI’s Plant Genomics
+ program.
 - Create and maintain database-backed web applications for the display
-  and querying of genomic data.
+ and querying of genomic data.
 - Evaluate the suitability of third party open source tools (e.g. GMOD)
-  versus in-house development to provide desired functionality to
-  Phytozome.
+ versus in-house development to provide desired functionality to
+ Phytozome.
 - Optimize the Phytozome user experience by constantly monitoring and
-  improving backend data retrieval performance (as determined by
-  benchmarking) and front-end usability (as determined by user surveys
-  and best practices).
+ improving backend data retrieval performance (as determined by
+ benchmarking) and front-end usability (as determined by user surveys
+ and best practices).
 - Follow best practices for software version control, documentation,
-  testing and release engineering.
+ testing and release engineering.
 
 **Marginal**
 
 - Work with Phytozome/Metazome internal and external user community and
-  Scientific Advisory Board to prioritize new feature requests, and
-  provide accurate estimates of implementation timelines.
+ Scientific Advisory Board to prioritize new feature requests, and
+ provide accurate estimates of implementation timelines.
 - Assist in the preparation of manuscripts, tutorials and conference
-  presentations based on Phytozome.
+ presentations based on Phytozome.
 - Work with JGI’s Systems group to anticipate hardware needs for
-  increasing data set sizes and expanded functionality.
+ increasing data set sizes and expanded functionality.
 
 **Essential duties for the Software Developer 4** - In addition to the
 job duties described above, the Software Developer 4 will:
 
 - Operate at a higher level of independence and responsibility when
-  carrying out assignments.
+ carrying out assignments.
 - Will serve as a technical lead and key contributor called upon to
-  solve highly technical, complex problems.
+ solve highly technical, complex problems.
 
 <span style="font-size: larger;">**Key Success Factors**</span>
 
 **Essential** -
 
 - B.S. in technical or scientific field (or equivalent experience) and a
-  minimum of five years programming experience.
+ minimum of five years programming experience.
 - Minimum five years experience and demonstrated success designing and
-  implementing bioinformatics analysis systems and software in a
-  scientific or technical environment, e.g., University, National
-  Laboratory, corporate R&D.
+ implementing bioinformatics analysis systems and software in a
+ scientific or technical environment, e.g., University, National
+ Laboratory, corporate R&D.
 - Familiarity with standard genomic sequence data repositories (e.g,
-  GenBank, SwissProt) and functional classification databases and
-  ontologies (e.g., KEGG, Panther, Metacyc, GO).
+ GenBank, SwissProt) and functional classification databases and
+ ontologies (e.g., KEGG, Panther, Metacyc, GO).
 - Solid experience programming with object-oriented Perl and Java.
 - Advanced knowledge of SQL and relational database design.
 - High degree of comfort developing on, and for, linux systems.
 - Demonstrated experience developing database-backed applications and
-  experience with web technologies including: Apache, Tomcat, CGI
-  programming, JDBC, JAXB, GWT, AJAX.
+ experience with web technologies including: Apache, Tomcat, CGI
+ programming, JDBC, JAXB, GWT, AJAX.
 - Ability to effectively learn and apply new technical concepts to
-  troubleshoot and solve problems and challenges of a diverse scope.
+ troubleshoot and solve problems and challenges of a diverse scope.
 - Effective interpersonal communication and presentation skills.
 - Effective time management, organization, and planning skills.
 - Ability to work effectively in a diverse team environment.
@@ -103,13 +103,13 @@ job duties described above, the Software Developer 4 will:
 
 - M.S./Ph.D. in Molecular Biology, Genetics or related field.
 - Mathematical sophistication to understand algorithmic concepts behind
-  sequence alignment, gene family clustering, and phylogenetic tree
-  building.
+ sequence alignment, gene family clustering, and phylogenetic tree
+ building.
 - Experience with the management and visualization of gene expression
-  and genomic diversity data.
+ and genomic diversity data.
 - Solid understanding of statistics.
 - Experience developing software that includes or interacts with GMOD
-  and bioperl components.
+ and bioperl components.
 - Working knowledge of Python and PHP.
 
 **Essential Qualifications for the Software Developer 4** - In addition
@@ -117,8 +117,8 @@ to the qualifications listed above, the Software Developer 4 requires:
 
 - A minimum of eight years related experience.
 - Demonstrated ability to solve highly complex problems and work
-  independently on end-to-end implementation and maintenance of software
-  projects through multiple releases.
+ independently on end-to-end implementation and maintenance of software
+ projects through multiple releases.
 
 **How To Apply:** <a
 href="https://lbl.taleo.net/careersection/2/jobdetail.ftl?lang=en&amp;job=74226"

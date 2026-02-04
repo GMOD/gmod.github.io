@@ -30,7 +30,7 @@ leave the phenotype module for later
 phenstatementprop
 
 - wants to add cvalue_id to these prop tables for post-composing terms
-  (type_id=NaCl treatment, value=100 cvalue_id = mM )
+ (type_id=NaCl treatment, value=100 cvalue_id = mM )
 
 --Naama:
 
@@ -58,7 +58,7 @@ deciding whether we add these or not.
 **Decision**
 
 - there's a majority against adding cvalue_id , no strong objection to
-  add the 2 prop table.
+ add the 2 prop table.
 
 Need to send an email to gmod-schema regarding adding the 2 vanilla prop
 tables (Yuri will do this).
@@ -204,14 +204,14 @@ post-composing terms. Will send the email.
 **Decisions:**
 
 - Go back to the schema list with the post-composition of terms in a
-  generic way (Seth)
+ generic way (Seth)
 - Not adding the suggested prop tables, because there is no agreement,
-  and we need to solve first the following major issues:
-    1. decision on post-composing terms . How?
-    2. revisit the phenotype module for breaking the value-phenotype ties
-    3. better definition of how we use the prop tables
+ and we need to solve first the following major issues:
+ 1. decision on post-composing terms . How?
+ 2. revisit the phenotype module for breaking the value-phenotype ties
+ 3. better definition of how we use the prop tables
 
 - Need to change the value fields in the ND module to 'text' (Naama will
-  do this)
-  - Paper is good to go
-  - Chado release is good to go.
+ do this)
+ - Paper is good to go
+ - Chado release is good to go.

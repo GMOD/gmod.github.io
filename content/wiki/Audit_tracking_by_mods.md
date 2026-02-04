@@ -17,11 +17,11 @@ sample listing report page.*
 accurate.*
 *-Jay*
 
-  Examples</span>](#Usage_Examples)
-  - [FlyBase](#FlyBase)
-  - [CIRAD](#CIRAD)
-  - [Bovine
-    Genome Database](#Bovine_Genome_Database)
+ Examples</span>](#Usage_Examples)
+ - [FlyBase](#FlyBase)
+ - [CIRAD](#CIRAD)
+ - [Bovine
+ Genome Database](#Bovine_Genome_Database)
 
 ## Usage Examples
 

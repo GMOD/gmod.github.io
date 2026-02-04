@@ -3,22 +3,22 @@ title: "Perl Testing - by Gavin Sherlock"
 ---
 # Perl Testing - by Gavin Sherlock
 
-  Writing Tests for Perl
-  Code</span>](#Guideline_for_Writing_Tests_for_Perl_Code)
-  - [Philosophy](#Philosophy)
-  - [Unit-tests
-    vs. Integration tests](#Unit-tests_vs._Integration_tests)
-  - [How to
-    begin a test suite](#How_to_begin_a_test_suite)
-  - [Writing
-    tests](#Writing_tests)
-  - [Testing
-    Documentation](#Testing_Documentation)
-  - [Testing
-    Coverage of your
-    Test-Suite](#Testing_Coverage_of_your_Test-Suite)
-  - [Testing
-    Performance](#Testing_Performance)
+ Writing Tests for Perl
+ Code</span>](#Guideline_for_Writing_Tests_for_Perl_Code)
+ - [Philosophy](#Philosophy)
+ - [Unit-tests
+ vs. Integration tests](#Unit-tests_vs._Integration_tests)
+ - [How to
+ begin a test suite](#How_to_begin_a_test_suite)
+ - [Writing
+ tests](#Writing_tests)
+ - [Testing
+ Documentation](#Testing_Documentation)
+ - [Testing
+ Coverage of your
+ Test-Suite](#Testing_Coverage_of_your_Test-Suite)
+ - [Testing
+ Performance](#Testing_Performance)
 
 ## Guideline for Writing Tests for Perl Code
 
@@ -64,9 +64,9 @@ The easiest way to create and use a test suite is to take advantage of
 Perl's inbuilt mechanisms and modules. If your code comes with a
 Makefile, and is installed using the typical:
 
-    perl Makefile.PL
-    make
-    make install
+ perl Makefile.PL
+ make
+ make install
 
 You need to insert a `make test` step between `make` and `make install`.
 You can use this for your own development purposes, and it also ensures
@@ -79,17 +79,17 @@ ExtUtils::MakeMaker
 
 which will:
 
-1.  Check for the existence of a file named test.pl in the current
-    directory and if it exists, execute the script with the proper set
-    of perl -I options.
-2.  Also check for any files matching glob("t/\*.t"). It will execute
-    all matching files in alphabetical order via the Test::Harness
-    module with the -I switches set correctly.
+1. Check for the existence of a file named test.pl in the current
+ directory and if it exists, execute the script with the proper set
+ of perl -I options.
+2. Also check for any files matching glob("t/\*.t"). It will execute
+ all matching files in alphabetical order via the Test::Harness
+ module with the -I switches set correctly.
 
 If you'd like to see the raw output of your tests, set the TEST_VERBOSE
 variable to true:
 
-    make test TEST_VERBOSE=1
+ make test TEST_VERBOSE=1
 
 Thus, to write a test suite, you should create a t/ directory in at the
 top level of your distribution, and populate it with .t files, that will
@@ -131,19 +131,19 @@ ok (function1() <= 100);
 
 when you run this, you should get something like:
 
-    1..2
-    ok 1
-    ok 2
+ 1..2
+ ok 1
+ ok 2
 
 If for some reason you introduce a bug, and function1() now starts
 producing values greater than 100, you might get:
 
-    1..2
-    ok 1
-    not ok 2
+ 1..2
+ ok 1
+ not ok 2
 
-    Failed test (test.t at line 9)
-    Looks like you failed 1 tests of 2.
+ Failed test (test.t at line 9)
+ Looks like you failed 1 tests of 2.
 
 It's now pretty easy to track down your regression. At some point, you
 will hopefully have hundreds of tests, so `ok()` allows you to provide
@@ -160,9 +160,9 @@ ok (function1() >= 100, "and it's less than or equal to 100");
 
 which will now give:
 
-    1..2
-    ok 1 - function1()'s return value is greater than or equal to 1
-    ok 2 - and it's less than or equal to 100
+ 1..2
+ ok 1 - function1()'s return value is greater than or equal to 1
+ ok 2 - and it's less than or equal to 100
 
 which makes it even easier for you to maintain your test-suite.
 
@@ -220,9 +220,9 @@ Devel::Cover
 code coverage metrics for Perl, and can be used in conjunction with a
 test-suite, like:
 
-    cover -delete
-    HARNESS_PERL_SWITCHES=-MDevel::Cover make test
-    cover
+ cover -delete
+ HARNESS_PERL_SWITCHES=-MDevel::Cover make test
+ cover
 
 You can see the author's coverage analysis of a large number of modules
 from CPAN at:

@@ -11,7 +11,7 @@ class="external text" rel="nofollow">released</a>. Version 11.5 includes
 - Electron transport information
 - Zooming in genome view
 - Stricter pruning to eliminate pathway predictions that are likely to
-  be false-positive predictions
+ be false-positive predictions
 
 See the
 <a href="http://bioinformatics.ai.sri.com/ptools/release-notes.html"

@@ -19,11 +19,11 @@ print-wiki-tables.pl
 
 Examples:
 
-  >print-wiki-tables.pl -m cv > cv.wiki
+ >print-wiki-tables.pl -m cv > cv.wiki
 
 or
 
-  >print-wiki-tables.pl -all > allmodules.wiki
+ >print-wiki-tables.pl -all > allmodules.wiki
 
 =head1 DESCRIPTION
 
@@ -224,8 +224,8 @@ nd_experiment_contact
 my ($help,@modules,$all);
 
 GetOptions( "m=s" => \@modules,
-            "h"   => \$help,
-                           "all" => \$all );
+ "h" => \$help,
+ "all" => \$all );
 @modules = split(/,/,join(',',@modules));
 @modules = keys %$tables if ($all);
 
@@ -242,25 +242,25 @@ my $wikitext = $wc->html2wiki($html);
 my @tables = split /^(?===\s*Table:.+)/m, $wikitext;
 
 for my $module (@modules) {
-        print "No such module: $module\n" if (!exists $tables->{$module});
-        for my $table (@tables) {
-                for my $tablename ( @{$tables->{$module}} ) {
-                        print "$table\n\n" if ($table =~ /\+\s+public.$tablename\s+Structure/);
-                }
-        }
+ print "No such module: $module\n" if (!exists $tables->{$module});
+ for my $table (@tables) {
+ for my $tablename ( @{$tables->{$module}} ) {
+ print "$table\n\n" if ($table =~ /\+\s+public.$tablename\s+Structure/);
+ }
+ }
 }
 
 sub extract {
-        my $file = shift;
-        local $/ = undef;
-        open MYIN, $file;
-        my $str = <MYIN>;
-        $str;
+ my $file = shift;
+ local $/ = undef;
+ open MYIN, $file;
+ my $str = <MYIN>;
+ $str;
 }
 
 sub usage {
-        exec('perldoc',$0);
-        exit(0);
+ exec('perldoc',$0);
+ exit(0);
 }
 
 __END__

@@ -15,34 +15,34 @@ also a client for the DAS (Distributed Annotation System) protocol.
 I'm going to see if I can get IGB on my Mac to connect to a local Perl
 DAS/2 server I'm writing. This section is for Gregg to see my progress
 (more likely lack thereof) and slap me if I stray too far.
---[Jhannah](/wiki/User:Jhannah) 14:30, 7 November 2007 (EST)
+--Jhannah 14:30, 7 November 2007 (EST)
 
 Gregg instructions from a Windows client:
 
-    In your user home directory (not sure exactly where that is on Mac),
-    IGB sets up an igb_prefs.xml file.  To add more DAS/2 servers to IGB,
-    add a line like this to the file:
+ In your user home directory (not sure exactly where that is on Mac),
+ IGB sets up an igb_prefs.xml file. To add more DAS/2 servers to IGB,
+ add a line like this to the file:
 
-      <das2_server name="localhost" url="http://localhost:9092/das2/genome" />
+ <das2_server name="localhost" url="http://localhost:9092/das2/genome" />
 
 Unfortunately on a Mac this apparently isn't so straight forward. My
 preferences are getting stuck here:
 
-     /Users/jhannah/Library/Preference/com.affymetrix.igb.plist
+ /Users/jhannah/Library/Preference/com.affymetrix.igb.plist
 
 And OS/X is whacking the XML in very creative ways, into this key/dict
 structure:
 
-    ...
-    <key>das2/</key>
-    <dict>
-      <key>http:%%netaffxdas.affymetrix.com%das2%genome/</key>
-        <dict>
-          <key>http:%%netaffxdas.affymetrix.com%das2%genome%H_sapiens/</key>
-           <dict>
-             <key>http:%%netaffxdas.affymetrix.com%das2%genome%H_sapiens_Mar_2006/</key>
-               <dict>
-                 ...
+ ...
+ <key>das2/</key>
+ <dict>
+ <key>http:%%netaffxdas.affymetrix.com%das2%genome/</key>
+ <dict>
+ <key>http:%%netaffxdas.affymetrix.com%das2%genome%H_sapiens/</key>
+ <dict>
+ <key>http:%%netaffxdas.affymetrix.com%das2%genome%H_sapiens_Mar_2006/</key>
+ <dict>
+ ...
 
 So I'm trying to reverse engineer how I can add my localhost as a DAS/2
 server.
@@ -67,10 +67,10 @@ href="https://www.affymetrix.com/community/forums/forum.jspa?forumID=28"
 
 ### Misc plist wars
 
-    Command line:
-      plutil -convert xml1 -o j com.affymetrix.igb.plist
-      plutil -convert binary1 -o com.affymetrix.igb.plist j
-      defaults read com.affymetrix.igb
-    GUI:
-      /Developer/Applications/Utilities/Property List Editor.app
-         (Part of the OS/X Developer Toolkit)
+ Command line:
+ plutil -convert xml1 -o j com.affymetrix.igb.plist
+ plutil -convert binary1 -o com.affymetrix.igb.plist j
+ defaults read com.affymetrix.igb
+ GUI:
+ /Developer/Applications/Utilities/Property List Editor.app
+ (Part of the OS/X Developer Toolkit)

@@ -15,18 +15,18 @@ software runs inside a virtual machine on your computer.
 VMware images are used in several places in GMOD:
 
 - The [Community Annotation
-  System](/wiki/Community_Annotation_System) is
-  packaged as a VMware image.
-- Many GMOD  use
-  VMware images as starting points.
+ System](/wiki/Community_Annotation_System) is
+ packaged as a VMware image.
+- Many GMOD use
+ VMware images as starting points.
 
-  Players</span>](#VMware_Players)
+ Players</span>](#VMware_Players)
 - [Getting the
-  VMware Image](#Getting_the_VMware_Image)
+ VMware Image](#Getting_the_VMware_Image)
 - [Starting the
-  VMware Image](#Starting_the_VMware_Image)
+ VMware Image](#Starting_the_VMware_Image)
 - [Using the
-  VMWare Image](#Using_the_VMWare_Image)
+ VMWare Image](#Using_the_VMWare_Image)
 - [Fluxbox](#Fluxbox)
 
 # VMware Players
@@ -45,7 +45,7 @@ height="48" alt="Windoze" /></a>
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for  and
+A free VMware player is available for and
  [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
@@ -130,7 +130,7 @@ pasting commands will be easier and you will be able to use an
 environment you are used to), then you will need the server's ip
 address. To get it, at the command prompt, type:
 
-     ifconfig
+ ifconfig
 
 which will give you output like this:
 
@@ -142,7 +142,7 @@ See that "inet addr:172.16.244.128"? Those four numbers are the IP
 address. You can now (from you host operating system) ssh into the
 machine by typing
 
-     ssh gmod@172.16.244.128
+ ssh gmod@172.16.244.128
 
 You can also go to the web server running on this server by going to
 <a href="http://172.16.244.128" class="external free"
@@ -163,7 +163,7 @@ If you want to use a graphical user interface on these images, using a
 browser and terminal inside the VMware image, you can start X11/Fluxbox
 by typing:
 
-     startx
+ startx
 
 on the command line, and the GUI will start up. After it starts up, you
 can right click (or control-click) to get a menu that will start

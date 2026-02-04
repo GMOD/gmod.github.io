@@ -6,26 +6,26 @@ title: "GBrowse Backends"
 This page describes the [GBrowse](/wiki/GBrowse) database back
 ends. It is incomplete.
 
-  Bio::DB::SeqFeature::Store
-  Adaptor</span>](#The_Bio::DB::SeqFeature::Store_Adaptor)
-  - [The GFF3
-    Format](#The_GFF3_Format)
-  - [Using
-    Bio::DB::SeqFeature::Store with Flat
-    Files](#Using_Bio::DB::SeqFeature::Store_with_Flat_Files)
-  - [Using
-    Bio::DB::SeqFeature::Store with the BerkeleyDB
-    Backend](#Using_Bio::DB::SeqFeature::Store_with_the_BerkeleyDB_Backend)
-  - [Using
-    Bio::DB::SeqFeature::Store with the MySQL
-    Backend](#Using_Bio::DB::SeqFeature::Store_with_the_MySQL_Backend)
+ Bio::DB::SeqFeature::Store
+ Adaptor</span>](#The_Bio::DB::SeqFeature::Store_Adaptor)
+ - [The GFF3
+ Format](#The_GFF3_Format)
+ - [Using
+ Bio::DB::SeqFeature::Store with Flat
+ Files](#Using_Bio::DB::SeqFeature::Store_with_Flat_Files)
+ - [Using
+ Bio::DB::SeqFeature::Store with the BerkeleyDB
+ Backend](#Using_Bio::DB::SeqFeature::Store_with_the_BerkeleyDB_Backend)
+ - [Using
+ Bio::DB::SeqFeature::Store with the MySQL
+ Backend](#Using_Bio::DB::SeqFeature::Store_with_the_MySQL_Backend)
 - [The
-  Bio::DB::GFF Adaptor](#The_Bio::DB::GFF_Adaptor)
-  - [Synopsis](#Synopsis)
-  - [Details](#Details)
+ Bio::DB::GFF Adaptor](#The_Bio::DB::GFF_Adaptor)
+ - [Synopsis](#Synopsis)
+ - [Details](#Details)
 - [Bio::DB::Das::Chado](#Bio::DB::Das::Chado)
-  - [Synopsis](#Synopsis_2)
-  - [Performance](#Performance)
+ - [Synopsis](#Synopsis_2)
+ - [Performance](#Performance)
 
 # The Bio::DB::SeqFeature::Store Adaptor
 
@@ -52,10 +52,10 @@ Create a [datasource-specific configuration
 file](/wiki/GBrowse_2.0_HOWTO#Data_Source_Configuration_Files)
 for GBrowse with a \[database\] stanza like this one:
 
-    [my_data:database]
-    db_adaptor = Bio::DB::SeqFeature::Store
-    db_args    = -adaptor memory
-                 -dir     /path/to/your/database/directory
+ [my_data:database]
+ db_adaptor = Bio::DB::SeqFeature::Store
+ db_args = -adaptor memory
+ -dir /path/to/your/database/directory
 
 The **db_adaptor _option loads the Bio::DB::SeqFeature::Store module.
 The_** _db_args'_ option passes arguments to the module, namely to use
@@ -71,18 +71,18 @@ directory. The FASTA files should have one DNA entry for each
 chromosome, contig, or other sequence used as reference points by the
 [GFF3](/wiki/GFF3) files. For example:
 
-    >chr1
-    CCACACCACACCCACACACCCACACACCACACCACACACCACACCACACCCACACACACA
-    CATCCTAACACTACCCTAACACAGCCCTAATCTAACCCTGGCCAACCTGTCTCTCAACTT
-    ACCCTCCATTACCCTGCCTCCACTCGTTACCCTGTCCCATTCAACCATACCACTCCGAAC
-    CACCATCCATCCCTCTACTTACTACCACTCACCCACCGTTACCCTCCAATTACCCATATC
-    ...
-    >chr2
-    ATATTCTATACGGCCCGACGCGACGCGCCAAAAAATGAAAAACGAAGCAGCGACTCATTT
-    TTATTTAAGGACAAAGGTTGCGAAGCCGCACATTTCCAATTTCATTGTTGTTTATTGGAC
-    ATACACTGTTAGCTTTATTACCGTCCACGTTTTTTCTACAATAGTGTAGAAGTTTCTTTC
-    TTATGTTCATCGTATTCATAAAATGCTTCACGAACACCGTCATTGATCAAATAGGTCTAT
-    ...
+ >chr1
+ CCACACCACACCCACACACCCACACACCACACCACACACCACACCACACCCACACACACA
+ CATCCTAACACTACCCTAACACAGCCCTAATCTAACCCTGGCCAACCTGTCTCTCAACTT
+ ACCCTCCATTACCCTGCCTCCACTCGTTACCCTGTCCCATTCAACCATACCACTCCGAAC
+ CACCATCCATCCCTCTACTTACTACCACTCACCCACCGTTACCCTCCAATTACCCATATC
+ ...
+ >chr2
+ ATATTCTATACGGCCCGACGCGACGCGCCAAAAAATGAAAAACGAAGCAGCGACTCATTT
+ TTATTTAAGGACAAAGGTTGCGAAGCCGCACATTTCCAATTTCATTGTTGTTTATTGGAC
+ ATACACTGTTAGCTTTATTACCGTCCACGTTTTTTCTACAATAGTGTAGAAGTTTCTTTC
+ TTATGTTCATCGTATTCATAAAATGCTTCACGAACACCGTCATTGATCAAATAGGTCTAT
+ ...
 
 Because the Bio::DB::SeqFeature::Store adaptor automatically creates an
 index to speed up retrieval of DNA sequence, you will need to make the
@@ -90,18 +90,18 @@ directory that contains the GFF3 and FASTA files writeable by the Apache
 user. For instance, if Apache runs as the user "www-data", then you will
 need to do:
 
-    sudo chown www-data /path/to/your/database/directory
+ sudo chown www-data /path/to/your/database/directory
 
 It might be preferable to create a special group named "gbrowse", add
 yourself and the Apache user to that group, assign the database
 directory to the "gbrowse" group, and then make the directory group
 writeable:
 
-    sudo addgroup gbrowse
-    sudo adduser $USER gbrowse
-    sudo adduser www-data gbrowse
-    sudo chgrp gbrowse /path/to/your/database/directory
-    sudo chmod g+rwx /path/to/your/database/directory
+ sudo addgroup gbrowse
+ sudo adduser $USER gbrowse
+ sudo adduser www-data gbrowse
+ sudo chgrp gbrowse /path/to/your/database/directory
+ sudo chmod g+rwx /path/to/your/database/directory
 
 ## Using Bio::DB::SeqFeature::Store with the BerkeleyDB Backend
 
@@ -113,10 +113,10 @@ writeable by the Apache user and copy into it all the GFF3 and FASTA
 files you wish to add to the database. Set the db_args of the datasource
 database section to read as follows:
 
-    [my_data:database]
-    db_adaptor = Bio::DB::SeqFeature::Store
-    db_args    = -adaptor berkeleydb
-                 -dir     /path/to/your/database/directory
+ [my_data:database]
+ db_adaptor = Bio::DB::SeqFeature::Store
+ db_args = -adaptor berkeleydb
+ -dir /path/to/your/database/directory
 
 The next time you access the datasource, there will be a delay while the
 database indexes are built. This delay may be quite long, so do not
@@ -134,22 +134,22 @@ mysql command-line tool to create a new empty database, grant yourself
 all privileges on the database, and grant the Apache user SELECT access
 to the database:
 
-    mysql -uroot -p password -e 'create database genomegff3'
-    mysql -uroot -p password -e 'grant all privileges on genomegff3.* to me@localhost'
-    mysql -uroot -p password -e 'grant select on genomegff3.* to apache@localhost'
+ mysql -uroot -p password -e 'create database genomegff3'
+ mysql -uroot -p password -e 'grant all privileges on genomegff3.* to me@localhost'
+ mysql -uroot -p password -e 'grant select on genomegff3.* to apache@localhost'
 
 Now you will use the bp_seqfeature_load.pl command (installed when you
 installed BioPerl) to load GFF3 and FASTA files:
 
-    bp_seqfeature_load.pl -d genomegff3 -f -c genome1.gff3 genome2.gff3 genome3.fa
+ bp_seqfeature_load.pl -d genomegff3 -f -c genome1.gff3 genome2.gff3 genome3.fa
 
 In the \[database\] section of the datasource-specific configuration
 file, enter a database configuration like the following:
 
-    db_adaptor    = Bio::DB::SeqFeature::Store
-    db_args       = -adaptor DBI::mysql
-                    -dsn     dbi:mysql:database=genomegff3
-                    -user    apache
+ db_adaptor = Bio::DB::SeqFeature::Store
+ db_args = -adaptor DBI::mysql
+ -dsn dbi:mysql:database=genomegff3
+ -user apache
 
 The database should now be browsable.
 
@@ -161,13 +161,13 @@ small projects.
 
 ## Synopsis
 
-         mysql -uroot -ppassword -e 'create database yeast'
+ mysql -uroot -ppassword -e 'create database yeast'
 
-         mysql -uroot -ppassword -e 'grant all privileges on yeast.* to me@localhost'
-         mysql -uroot -ppassword -e 'grant file on *.* to me@localhost'
-         mysql -uroot -ppassword -e 'grant select on yeast.* to nobody@localhost'
+ mysql -uroot -ppassword -e 'grant all privileges on yeast.* to me@localhost'
+ mysql -uroot -ppassword -e 'grant file on *.* to me@localhost'
+ mysql -uroot -ppassword -e 'grant select on yeast.* to nobody@localhost'
 
-         bp_bulk_load_gff.pl -d yeast sample_data/yeast_data.gff
+ bp_bulk_load_gff.pl -d yeast sample_data/yeast_data.gff
 
 ## Details
 
@@ -240,7 +240,7 @@ href="http://prdownloads.sourceforge.net/gmod/yeast.fasta.gz?download"
 
 Load the file with this command:
 
-      bp_load_gff.pl -d yeast -fasta yeast.fasta.gz
+ bp_load_gff.pl -d yeast -fasta yeast.fasta.gz
 
 You should now be able to browse the yeast genome. Type the following
 URL into your favorite browser:
@@ -264,13 +264,13 @@ Scott needs to fill this in.
 
 ## Synopsis
 
-     db_adaptor    = Bio::DB::Das::Chado
-     db_args       = -dsn dbi:Pg:dbname=chado
-                     -user scott
-                     -srcfeatureslice 1
-                     -organism yeast
-                     -version 1
-                     -inferCDS 1
+ db_adaptor = Bio::DB::Das::Chado
+ db_args = -dsn dbi:Pg:dbname=chado
+ -user scott
+ -srcfeatureslice 1
+ -organism yeast
+ -version 1
+ -inferCDS 1
 
 ## Performance
 

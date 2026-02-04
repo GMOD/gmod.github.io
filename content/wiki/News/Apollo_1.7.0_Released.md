@@ -11,30 +11,30 @@ Changes in this version include
 
 - Added [GFF3](../Glossary#GFF) support
 - Added program source filtering for reading off
-  <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
-  databases
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
+ databases
 - Lots of work on the ensj adapter to allow it to work better with
-  recent ensembl schemas, handle ditags, give finer control of gene
-  loading, increase speed of gene loading, bug fixes to history, cigar
-  parsing in ensj layer, loading of contig features
+ recent ensembl schemas, handle ditags, give finer control of gene
+ loading, increase speed of gene loading, bug fixes to history, cigar
+ parsing in ensj layer, loading of contig features
 - Allow layout of display to be saved to / loaded from a file. Most
-  useful for synteny where initial display set up can take time. The
-  saved layout also includes the current base position and zoom factor,
-  and on loading you can choose to use those.
+ useful for synteny where initial display set up can take time. The
+ saved layout also includes the current base position and zoom factor,
+ and on loading you can choose to use those.
 - Ability to edit settings for a type (new popup menu item in feature
-  popup). The settings which can be edited are the glyph used for
-  drawing the feature and the columns in the table displayed in the
-  evidence panel.
+ popup). The settings which can be edited are the glyph used for
+ drawing the feature and the columns in the table displayed in the
+ evidence panel.
 - New drawing glyph which shades exons darker or lighter depending on
-  their phase (DrawablePhaseHighlightGeneFeatureSet). Also a version of
-  that which uses straight lines to join exons rather than 'hats'
-  (DrawablePhaseHighlightNoHatGeneFeatureSet)
+ their phase (DrawablePhaseHighlightGeneFeatureSet). Also a version of
+ that which uses straight lines to join exons rather than 'hats'
+ (DrawablePhaseHighlightNoHatGeneFeatureSet)
 - Work on ensembl synteny adapter so it works with latest ensembl
-  compara db schema, and basic support for allowing different alignment
-  sets to be selected.
+ compara db schema, and basic support for allowing different alignment
+ sets to be selected.
 - PureJDBCTransactionWriter added. This entailed some changes to other
-  classes, but in almost every case the changes are 1. reverse
-  compatible and 2. invisible to the end user.
+ classes, but in almost every case the changes are 1. reverse
+ compatible and 2. invisible to the end user.
 - Uses of Log4J for generating log files.
 
 Plus many other changes. See the <a

@@ -8,33 +8,33 @@ Wiki page is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/HibernateChadoAPI.pdf"
 class="internal" title="HibernateChadoAPI.pdf">Robert's presentation</a>.
 
-  Overview](#Overview)
+ Overview](#Overview)
 - [Background](#Background)
 - [Hibernate
-  Background](#Hibernate_Background)
+ Background](#Hibernate_Background)
 - [Hibernate
-  Database Connectivity](#Hibernate_Database_Connectivity)
+ Database Connectivity](#Hibernate_Database_Connectivity)
 - [POJO and HBM
-  Example ﬁle - CV](#POJO_and_HBM_Example_.EF.AC.81le_-_CV)
+ Example ﬁle - CV](#POJO_and_HBM_Example_.EF.AC.81le_-_CV)
 - [HBM Example
-  CVTerm](#HBM_Example_CVTerm)
+ CVTerm](#HBM_Example_CVTerm)
 - [Hibernate
-  Object Retrieve](#Hibernate_Object_Retrieve)
+ Object Retrieve](#Hibernate_Object_Retrieve)
 - [Hibernate
-  Object Update](#Hibernate_Object_Update)
+ Object Update](#Hibernate_Object_Update)
 - [Hibernate
-  Save](#Hibernate_Save)
+ Save](#Hibernate_Save)
 - [Inheritance](#Inheritance)
 - [ChadoAPI](#ChadoAPI)
 - [Problem 1 -
-  GMOD Example](#Problem_1_-_GMOD_Example)
+ GMOD Example](#Problem_1_-_GMOD_Example)
 - [Problem 2 -
-  GMOD Example](#Problem_2_-_GMOD_Example)
+ GMOD Example](#Problem_2_-_GMOD_Example)
 - [Problems 3,
-  4, & 5 - GMOD Update &
-  Delete](#Problems_3.2C_4.2C_.26_5_-_GMOD_Update_.26_Delete)
+ 4, & 5 - GMOD Update &
+ Delete](#Problems_3.2C_4.2C_.26_5_-_GMOD_Update_.26_Delete)
 - [What
-  Hibernate Does Well](#What_Hibernate_Does_Well)
+ Hibernate Does Well](#What_Hibernate_Does_Well)
 - [Acknowledgements](#Acknowledgements)
 
 ##### Overview
@@ -50,50 +50,50 @@ Reporting](/wiki/Comparison_of_XORT_and_Hibernate_for_Chado_reporting).
 ##### Background
 
 - VectorBase
-  - A bioinformatic resource center for invertebrate vectors of human
-    pathogens
+ - A bioinformatic resource center for invertebrate vectors of human
+ pathogens
 - Responsible for storage and display of multiple organisms’ genomes
-  - Anopheles gambiae, Aedes aegypti, Ixodes scapularis, Culex pipiens
-    and so on....
+ - Anopheles gambiae, Aedes aegypti, Ixodes scapularis, Culex pipiens
+ and so on....
 - Want to store data for many organisms- Chado a natural choice
 - Ensembl Genome Browser already used for *A. gambiae*
-  - Wrote Ensembl API Database adaptor for Chado... Not maintainable.
+ - Wrote Ensembl API Database adaptor for Chado... Not maintainable.
 - Use Both Databases
-  - Transfer genomic data from Ensembl to Chado
-  - Search Engine and Indexer using Lucene
-  - Run DAS
-  - Export data via ChadoXML and GFF3
+ - Transfer genomic data from Ensembl to Chado
+ - Search Engine and Indexer using Lucene
+ - Run DAS
+ - Export data via ChadoXML and GFF3
 - Need API for Database I/O
 
 ##### Hibernate Background
 
 - They say: “A powerful, high performance object/relational persistence
-  and query service.”
+ and query service.”
 - Automates the persistence of plain old Java objects (POJO)
-  - User maps their POJO properties to database tables via XML (HBM
-    File).
-  - There are Hibernate tools that generate HBMs
-    - Configurable in the sense that one can create get & set tables
-      where the methods map one-to-one to fields.
+ - User maps their POJO properties to database tables via XML (HBM
+ File).
+ - There are Hibernate tools that generate HBMs
+ - Configurable in the sense that one can create get & set tables
+ where the methods map one-to-one to fields.
 - Persist a speciﬁc object by storing it the database.
 - Intelligent Database I/O
-  - Smart detection of *Dirty Properties* when performing Save / Update
-    / Delete.
-  - Cascadable Save / Update / Delete for complex objects.
+ - Smart detection of *Dirty Properties* when performing Save / Update
+ / Delete.
+ - Cascadable Save / Update / Delete for complex objects.
 - Everything's done within the scope of a transaction.
 
 ##### Hibernate Database Connectivity
 
 - Conﬁgure Hibernate in hibernate.cfg.xml
 - Deﬁne a Data Source
-  - We use a simple, single JDBC connection Chado
-  - Can be conﬁgured to use a connection pool or data source accessible
-    by the Java Naming and Directory Interface (JNDI).
-  - Deﬁne a connection “dialect”
-  - org.hibernate.dialect.PostgreSQLDialect
+ - We use a simple, single JDBC connection Chado
+ - Can be conﬁgured to use a connection pool or data source accessible
+ by the Java Naming and Directory Interface (JNDI).
+ - Deﬁne a connection “dialect”
+ - org.hibernate.dialect.PostgreSQLDialect
 - Describe the relationship between Java objects and database tables
-  - Use XML to describe where to store POJO property data in the
-    database
+ - Use XML to describe where to store POJO property data in the
+ database
 - Create a new Hibernate Session based on the conﬁguration
 - Begin a transaction to start performing work
 
@@ -102,43 +102,43 @@ Reporting](/wiki/Comparison_of_XORT_and_Hibernate_for_Chado_reporting).
 ``` de1
  public class CV {
 
-    private int cv_id
-    private String name;
-    private String definition;
+ private int cv_id
+ private String name;
+ private String definition;
 
-    public property gettersandsetters() {
-            ....
-    }
+ public property gettersandsetters() {
+ ....
+ }
 
-    public boolean equals(CV comparaCV) {
-         ....
-    }
-    public int hashCode(){
-         ...
-    }
+ public boolean equals(CV comparaCV) {
+ ....
+ }
+ public int hashCode(){
+ ...
+ }
  }
 ```
 
 ``` de1
  <hibernate-mapping>
 
-    <class name="org.vectorbase.chadoAPI.chadoObjects.CV" table="cv">
+ <class name="org.vectorbase.chadoAPI.chadoObjects.CV" table="cv">
 
-    <id name="cv_id" column="cv_id" unsaved-value="undefined">
+ <id name="cv_id" column="cv_id" unsaved-value="undefined">
 
-    <generator class="sequence">
+ <generator class="sequence">
 
-    <param name="sequence">cv_cv_id_seq</param>
+ <param name="sequence">cv_cv_id_seq</param>
 
-    </generator>
+ </generator>
 
-    </id>
+ </id>
 
-    <property name="name" column=”name” type="java.lang.String” not-null="true"/>
+ <property name="name" column=”name” type="java.lang.String” not-null="true"/>
 
-    <property name="definition" column=”definition” type="java.lang.String”/>
+ <property name="definition" column=”definition” type="java.lang.String”/>
 
-    </class>
+ </class>
  </hibernate-mapping>
 ```
 
@@ -147,21 +147,21 @@ Reporting](/wiki/Comparison_of_XORT_and_Hibernate_for_Chado_reporting).
 ``` de1
  public class CVTerm {
 
-    private int cvterm_id;
+ private int cvterm_id;
 
-    private CV cv;
+ private CV cv;
 
-    private String name;
+ private String name;
 
-    private String definition;
+ private String definition;
 
-    private DBXref dbxref;
+ private DBXref dbxref;
 
-    private int is_obsolete;
+ private int is_obsolete;
 
-    private int is_relationshiptype;
+ private int is_relationshiptype;
 
-   .....
+ .....
 
 }
 ```
@@ -169,33 +169,33 @@ Reporting](/wiki/Comparison_of_XORT_and_Hibernate_for_Chado_reporting).
 ``` de1
  <hibernate-mapping>
 
-    <class name="org.vectorbase.chadoAPI.chadoObjects.CVTerm" table="cvterm">
+ <class name="org.vectorbase.chadoAPI.chadoObjects.CVTerm" table="cvterm">
 
-    <id name="cvterm_id" column="cvterm_id" unsaved-value="undefined">
+ <id name="cvterm_id" column="cvterm_id" unsaved-value="undefined">
 
-    <generator class="sequence">
+ <generator class="sequence">
 
-    <param name="sequence">cvterm_cvterm_id_seq</param>
+ <param name="sequence">cvterm_cvterm_id_seq</param>
 
-    </generator>
+ </generator>
 
-    </id>
+ </id>
 
-    <many-to-one name="cv" class="org.vectorbase.chadoAPI.chadoObjects.CV" column="cv_id"
-            not-null="true" cascade="save-update"/>
+ <many-to-one name="cv" class="org.vectorbase.chadoAPI.chadoObjects.CV" column="cv_id"
+ not-null="true" cascade="save-update"/>
 
-    <property name="name" not-null="true" type="java.lang.String"/>
+ <property name="name" not-null="true" type="java.lang.String"/>
 
-    <property name="definition"/>
+ <property name="definition"/>
 
-    <one-to-one name="dbxref" class="org.vectorbase.chadoAPI.chadoObjects.DBXref" cascade="all"/>
+ <one-to-one name="dbxref" class="org.vectorbase.chadoAPI.chadoObjects.DBXref" cascade="all"/>
 
-    <property name="is_obsolete"/>
+ <property name="is_obsolete"/>
 
-    <property name="is_relationshiptype"/>
+ <property name="is_relationshiptype"/>
 
-    </class>
-  </hibernate-mapping>
+ </class>
+ </hibernate-mapping>
 ```
 
 ##### Hibernate Object Retrieve
@@ -300,36 +300,36 @@ HQL
 ``` de1
  <hibernate-mapping>
 
-     <class name="org.vectorbase.chadoAPI.chadoObjects.Feature" table="feature" discriminator-
-  value="not null">
+ <class name="org.vectorbase.chadoAPI.chadoObjects.Feature" table="feature" discriminator-
+ value="not null">
 
-     <id name="feature_id" column="feature_id" unsaved-value="undefined">
+ <id name="feature_id" column="feature_id" unsaved-value="undefined">
 
-    <generator class="sequence">
+ <generator class="sequence">
 
-    <param name="sequence">feature_feature_id_seq</param>
+ <param name="sequence">feature_feature_id_seq</param>
 
-    </generator>
+ </generator>
 
-     </id>
+ </id>
 
-      <discriminator column="type_id" type="integer" insert="false"/>
+ <discriminator column="type_id" type="integer" insert="false"/>
 
-     <many-to-one name="dbxref" class="org.vectorbase.chadoAPI.chadoObjects.DBXref"
-                  column="dbxref_id" cascade="all"/>
+ <many-to-one name="dbxref" class="org.vectorbase.chadoAPI.chadoObjects.DBXref"
+ column="dbxref_id" cascade="all"/>
 
-     <many-to-one name="organism" class="org.vectorbase.chadoAPI.chadoObjects.Organism"
-                  column="organism_id" not-null="true" cascade="save-update"/>
+ <many-to-one name="organism" class="org.vectorbase.chadoAPI.chadoObjects.Organism"
+ column="organism_id" not-null="true" cascade="save-update"/>
 
-     <property name="name"/>
-                  .....
+ <property name="name"/>
+ .....
 
  <hibernate-mapping>
 
-     <subclass name="org.vectorbase.chadoAPI.chadoFeatures.Gene"
-          extends="org.vectorbase.chadoAPI.chadoObjects.Feature" discriminator-value="767">
+ <subclass name="org.vectorbase.chadoAPI.chadoFeatures.Gene"
+ extends="org.vectorbase.chadoAPI.chadoObjects.Feature" discriminator-value="767">
 
-     </subclass>
+ </subclass>
  </hibernate-mapping>
 ```
 
@@ -338,15 +338,15 @@ Write custom methods for speciﬁc sub-classes
 ##### ChadoAPI
 
 - POJO Mappings
-  - CV, CVTerm, DB, DBXref, Feature, FeatureCVTerm, FeatureDBXref,
-    FeatureLoc, FeatureProp, FeatureRelationship, FeatureSynonym,
-    Organism, Pub, Synonym
+ - CV, CVTerm, DB, DBXref, Feature, FeatureCVTerm, FeatureDBXref,
+ FeatureLoc, FeatureProp, FeatureRelationship, FeatureSynonym,
+ Organism, Pub, Synonym
 - Extended Features
-  - Chromosome, Gene, Transcript, Exon, Protein
+ - Chromosome, Gene, Transcript, Exon, Protein
 - Constants
-  - CVTerms, FeatureFeatureRelationships, Ontologies
+ - CVTerms, FeatureFeatureRelationships, Ontologies
 - Special
-  - ChadoAdapter
+ - ChadoAdapter
 
 ##### Problem 1 - GMOD Example
 
@@ -370,8 +370,8 @@ Write custom methods for speciﬁc sub-classes
  xfile.setDescription("A test gene for GMOD meeting");
 
  /* Set the location of our gene. No need to set coordinates because they'll be updated
-   * based on the exon boundaries.
-   */
+ * based on the exon boundaries.
+ */
  FeatureLoc xfile_loc = new FeatureLoc();
  xfile_loc.setSrcfeature(c);
  xfile_loc.setStrand(1);
@@ -402,20 +402,20 @@ Write custom methods for speciﬁc sub-classes
  System.out.print("synonyms: ");
  for (FeatureSynonym fs : xfile_r.getFeatureSynonyms()){
 
-         System.out.print(fs.getSynonym().getName() + " ");
+ System.out.print(fs.getSynonym().getName() + " ");
  }
 
  System.out.println("description: " + xfile_r.getDescription());
  System.out.println("type: " + xfile_r.getType().getName());
 
  for (Transcript tx : xfile_r.fetchAllTranscripts()){
-     for (Exon e : tx.fetchAllExons()){
-          System.out.println(e.getUniquename() + " Start:\t" + e.getFeatureLoc().getFmin());
-          System.out.println(e.getUniquename() + " End:\t" + e.getFeatureLoc().getFmax());
-          System.out.println("\tSrcFeatureID: " + e.getFeatureLoc().getSrcfeature().getFeature_id());
-     }
-     System.out.println(">" + tx.getUniquename());
-     System.out.println(tx.generateTranscriptSequenceFromExons().toUpperCase());
+ for (Exon e : tx.fetchAllExons()){
+ System.out.println(e.getUniquename() + " Start:\t" + e.getFeatureLoc().getFmin());
+ System.out.println(e.getUniquename() + " End:\t" + e.getFeatureLoc().getFmax());
+ System.out.println("\tSrcFeatureID: " + e.getFeatureLoc().getSrcfeature().getFeature_id());
+ }
+ System.out.println(">" + tx.getUniquename());
+ System.out.println(tx.generateTranscriptSequenceFromExons().toUpperCase());
  }
 ```
 
@@ -432,10 +432,10 @@ Write custom methods for speciﬁc sub-classes
 
  for (Gene g : genes){
 
-    System.out.println(g.getFeature_id() +
-                          "\t" + g.getUniquename() +
-                          "\t" + g.getOrganism().getGenus() +
-                          " " + g.getOrganism().getSpecies());
+ System.out.println(g.getFeature_id() +
+ "\t" + g.getUniquename() +
+ "\t" + g.getOrganism().getGenus() +
+ " " + g.getOrganism().getSpecies());
  }
 
  // Deleting... hmm...
@@ -449,14 +449,14 @@ Write custom methods for speciﬁc sub-classes
 ##### What Hibernate Does Well
 
 - Hibernate can be configured to perform specialized functions
-  - For example, it has its own notion of a cascade
+ - For example, it has its own notion of a cascade
 - Flexible with respect to language
-  - Java, Hibernate Query Language, or SQL
+ - Java, Hibernate Query Language, or SQL
 - Any JDBC driver
 
 ##### Acknowledgements
 
 - VectorBase People
-  - Frank Collins, EO Stinson, Ryan Butler
+ - Frank Collins, EO Stinson, Ryan Butler
 - GMOD
 - NIAID

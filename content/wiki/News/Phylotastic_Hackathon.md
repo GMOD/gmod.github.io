@@ -68,34 +68,34 @@ Before 16 November, 2012 at midnight, EST,
 <a href="http://tinyurl.com/PhyloTastic2" class="external text"
 
 - The application form asks you to describe how you can contribute to
-  Phylotastic. Remember that we are not just looking for expert coders.
-  There are many other ways to contribute.
+ Phylotastic. Remember that we are not just looking for expert coders.
+ There are many other ways to contribute.
 - Support for travel, housing and meals will be available to each
-  successful applicant who indicates need.
+ successful applicant who indicates need.
 - Please understand that your application is not a guarantee of
-  participation in the event. Funds and space are limited: we may not be
-  able to sponsor every individual who is qualified to participate.
+ participation in the event. Funds and space are limited: we may not be
+ able to sponsor every individual who is qualified to participate.
 
 **LEADERSHIP TEAM**
 
 - <a href="mailto:karen.cranston@nescent.org" class="external text"
-  rel="nofollow">Karen Cranston</a>
+ rel="nofollow">Karen Cranston</a>
 - <a href="mailto:brian.sidlauskas@oregonstate.edu" class="external text"
-  rel="nofollow">Brian Sidlauskas</a>
+ rel="nofollow">Brian Sidlauskas</a>
 - <a href="mailto:arlin@umd.edu" class="external text"
-  rel="nofollow">Arlin Stoltzfus</a>
+ rel="nofollow">Arlin Stoltzfus</a>
 - <a href="mailto:mrosenb@asu.edu" class="external text"
-  rel="nofollow">Mike Rosenberg</a>
+ rel="nofollow">Mike Rosenberg</a>
 - <a href="mailto:bomeara@utk.edu" class="external text"
-  rel="nofollow">Brian O’Meara</a>
+ rel="nofollow">Brian O’Meara</a>
 - <a href="mailto:mwestneat@fieldmuseum.org" class="external text"
-  rel="nofollow">Mark Westneat</a>
+ rel="nofollow">Mark Westneat</a>
 - <a href="mailto:epontell@cs.nmsu.edu" class="external text"
-  rel="nofollow">Enrico Pontelli</a>
+ rel="nofollow">Enrico Pontelli</a>
 - <a href="mailto:rutgeraldo@gmail.com" class="external text"
-  rel="nofollow">Rutger Vos</a>
+ rel="nofollow">Rutger Vos</a>
 - <a href="mailto:nmatasci@iplantcollaborative.org" class="external text"
-  rel="nofollow">Naim Matasci</a>
+ rel="nofollow">Naim Matasci</a>
 
 *Posted to the [GMOD News](../GMOD_News) on 2012/10/30*
 

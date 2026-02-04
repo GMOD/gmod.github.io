@@ -3,13 +3,13 @@ title: "LDAPAuthenticate.pm"
 ---
 # LDAPAuthenticate.pm
 
-  NAME](#NAME)
-  - [SYNOPSIS](#SYNOPSIS)
-  - [DESCRIPTION](#DESCRIPTION)
-  - [CONFIGURATION](#CONFIGURATION)
-  - [SEE
-    ALSO](#SEE_ALSO)
-  - [AUTHOR](#AUTHOR)
+ NAME](#NAME)
+ - [SYNOPSIS](#SYNOPSIS)
+ - [DESCRIPTION](#DESCRIPTION)
+ - [CONFIGURATION](#CONFIGURATION)
+ - [SEE
+ ALSO](#SEE_ALSO)
+ - [AUTHOR](#AUTHOR)
 
 # NAME
 
@@ -20,16 +20,16 @@ against an LDAP server
 
 In the GBrowse.conf configuration file:
 
-    authentication plugin = LDAPAuthenticate
+ authentication plugin = LDAPAuthenticate
 
-    [LDAPAuthenticate:plugin]
-    login hint = your foobar corp account
-    ldap server = ldap.foobar.com
-    people base = ou=People,dc=foobar,dc=ny,dc=usa
-    groups base = ou=Groups,dc=foobar,dc=ny,dc=usa
-    # the following only needed if the LDAP server forbids anonymous (unbound) searches:
-    bind dn    = uid=root,ou=People,dc=foobar,dc=ny,dc=usa
-    bind pass  = xyzzy
+ [LDAPAuthenticate:plugin]
+ login hint = your foobar corp account
+ ldap server = ldap.foobar.com
+ people base = ou=People,dc=foobar,dc=ny,dc=usa
+ groups base = ou=Groups,dc=foobar,dc=ny,dc=usa
+ # the following only needed if the LDAP server forbids anonymous (unbound) searches:
+ bind dn = uid=root,ou=People,dc=foobar,dc=ny,dc=usa
+ bind pass = xyzzy
 
 ## DESCRIPTION
 
@@ -44,11 +44,11 @@ For this plugin to work, you must configure an
 \[LDAPAuthenticate:plugin\] section in the main GBrowse.conf file. It
 will look like this:
 
-    [LDAPAuthenticate:plugin]
-    login hint = your foobar corp account
-    ldap server = ldap.foobar.com
-    people base = ou=People,dc=foobar,dc=ny,dc=usa
-    groups base = ou=Groups,dc=foobar,dc=ny,dc=usa
+ [LDAPAuthenticate:plugin]
+ login hint = your foobar corp account
+ ldap server = ldap.foobar.com
+ people base = ou=People,dc=foobar,dc=ny,dc=usa
+ groups base = ou=Groups,dc=foobar,dc=ny,dc=usa
 
 **login hint** (optional) is displayed to the user so that he knows what
 account credentials he or she is being asked for.

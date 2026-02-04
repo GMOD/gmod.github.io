@@ -3,11 +3,11 @@ title: "GBrowse syn PAG tutorial"
 ---
 # GBrowse syn PAG tutorial
 
-This  walks you
+This walks you
 through how to install and configure the
 [GBrowse_syn](/wiki/GBrowse_syn) comparative genomics viewer.
-This tutorial was originally taught by [Sheldon
-McKay](/wiki/User:Mckays) at the 2009 [GMOD
+This tutorial was originally taught by Sheldon
+McKay at the 2009 [GMOD
 Schools](/wiki/GMOD_Schools) -
 [Europe](/wiki/2009_GMOD_Summer_School_-_Europe)
 &
@@ -15,54 +15,54 @@ Schools](/wiki/GMOD_Schools) -
 The notes and [VMware image](#VMware) used on this page are from the
 Europe course.
 
-  VMware](#VMware)
+ VMware](#VMware)
 - [Caveats](#Caveats)
 - [The Generic
-  Synteny Browser](#The_Generic_Synteny_Browser)
-  - [Gbrowse_syn
-    Introduction](#Gbrowse_syn_Introduction)
-  - [GBrowse_syn
-    Documentation](#GBrowse_syn_Documentation)
-  - [Whole
-    Genome Alignments](#Whole_Genome_Alignments)
+ Synteny Browser](#The_Generic_Synteny_Browser)
+ - [Gbrowse_syn
+ Introduction](#Gbrowse_syn_Introduction)
+ - [GBrowse_syn
+ Documentation](#GBrowse_syn_Documentation)
+ - [Whole
+ Genome Alignments](#Whole_Genome_Alignments)
 - [Installing
-  GBrowse_syn](#Installing_GBrowse_syn)
+ GBrowse_syn](#Installing_GBrowse_syn)
 - [Installing
-  Gbrowse_syn](#Installing_Gbrowse_syn_2)
+ Gbrowse_syn](#Installing_Gbrowse_syn_2)
 - [Configuration
-  of GBrowse_syn](#Configuration_of_GBrowse_syn)
-  - [Create a
-    MySQL database](#Create_a_MySQL_database)
-  - [Loading
-    the alignment data](#Loading_the_alignment_data)
-    - [The
-      alignment data file](#The_alignment_data_file)
-      - [**Note on
-        CLUSTALW**](#Note_on_CLUSTALW)
-      - [Note on the sequence ID
-        syntax](#Note_on_the_sequence_ID_syntax)
-    - [The
-      database loading script](#The_database_loading_script)
-      - [Running in the background with the linux
-        *screen*
-        command](#Running_in_the_background_with_the_linux_screen_command)
-  - [Setting up
-    the species' databases](#Setting_up_the_species.27_databases)
-    - [GFF3](#GFF3)
-    - [Loading](#Loading)
-  - [Setting up
-    the Configuration Files](#Setting_up_the_Configuration_Files)
-  - [A Species
-    Config File](#A_Species_Config_File)
-  - [The
-    GBrowse_syn Config File](#The_GBrowse_syn_Config_File)
-  - [Testing
-    the rice and wild_rice data sources in
-    GBrowse](#Testing_the_rice_and_wild_rice_data_sources_in_GBrowse)
-  - [Viewing
-    the data in GBrowse_syn](#Viewing_the_data_in_GBrowse_syn)
+ of GBrowse_syn](#Configuration_of_GBrowse_syn)
+ - [Create a
+ MySQL database](#Create_a_MySQL_database)
+ - [Loading
+ the alignment data](#Loading_the_alignment_data)
+ - [The
+ alignment data file](#The_alignment_data_file)
+ - [**Note on
+ CLUSTALW**](#Note_on_CLUSTALW)
+ - [Note on the sequence ID
+ syntax](#Note_on_the_sequence_ID_syntax)
+ - [The
+ database loading script](#The_database_loading_script)
+ - [Running in the background with the linux
+ *screen*
+ command](#Running_in_the_background_with_the_linux_screen_command)
+ - [Setting up
+ the species' databases](#Setting_up_the_species.27_databases)
+ - [GFF3](#GFF3)
+ - [Loading](#Loading)
+ - [Setting up
+ the Configuration Files](#Setting_up_the_Configuration_Files)
+ - [A Species
+ Config File](#A_Species_Config_File)
+ - [The
+ GBrowse_syn Config File](#The_GBrowse_syn_Config_File)
+ - [Testing
+ the rice and wild_rice data sources in
+ GBrowse](#Testing_the_rice_and_wild_rice_data_sources_in_GBrowse)
+ - [Viewing
+ the data in GBrowse_syn](#Viewing_the_data_in_GBrowse_syn)
 - [Optional
-  Advanced Section](#Optional_Advanced_Section)
+ Advanced Section](#Optional_Advanced_Section)
 
 # VMware
 
@@ -95,7 +95,7 @@ machine.</strong></em></p></td>
 
 **Important Note**
 
-This  describes the
+This describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift

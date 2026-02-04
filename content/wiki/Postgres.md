@@ -13,16 +13,16 @@ GMOD](/wiki/Databases_and_GMOD) for other choices, and
 for an introduction to database terms. This page is in an introduction
 to Postgres for GMOD users.
 
-  GMOD</span>](#Postgres_in_GMOD)
+ GMOD</span>](#Postgres_in_GMOD)
 - [What Do I Need
-  to Know About
-  Postgres?](#What_Do_I_Need_to_Know_About_Postgres.3F)
+ to Know About
+ Postgres?](#What_Do_I_Need_to_Know_About_Postgres.3F)
 - [Postgres
-  Documentation](#Postgres_Documentation)
+ Documentation](#Postgres_Documentation)
 - [Postgres
-  Versions](#Postgres_Versions)
+ Versions](#Postgres_Versions)
 - [What About
-  MySQL?](#What_About_MySQL.3F)
+ MySQL?](#What_About_MySQL.3F)
 
 ## Postgres in GMOD
 
@@ -51,15 +51,15 @@ A wealth of information on Postgres is available at the
 helpful:
 
 - <a href="http://www.postgresql.org/docs/manuals/" class="external text"
-  rel="nofollow">Postgres Manuals page</a> - Includes online and
-  printable versions.
+ rel="nofollow">Postgres Manuals page</a> - Includes online and
+ printable versions.
 - <a href="http://www.postgresql.org/docs/current/interactive/index.html"
-  class="external text" rel="nofollow">Online manual for latest version of
-  Postgres</a>
+ class="external text" rel="nofollow">Online manual for latest version of
+ Postgres</a>
 - <a href="http://www.postgresql.org/docs/current/interactive/admin.html"
-  class="external text" rel="nofollow">Server Administration section</a>
-  of online manual including directions on installation and
-  configuration.
+ class="external text" rel="nofollow">Server Administration section</a>
+ of online manual including directions on installation and
+ configuration.
 
 ## Postgres Versions
 

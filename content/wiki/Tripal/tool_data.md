@@ -26,29 +26,29 @@ Features and advantages of Tripal:
 
 - Allows rapid development of an online genomic database.
 - Site administrators can add non-biological content to their sites and
-  allow editing of content by non-technical users.
+ allow editing of content by non-technical users.
 - Integrates directly with GMOD
-  <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
 - Provides visualizations for Chado "modules" such as
-  [features](../Chado_Sequence_Module),
-  [analyses](../Chado_Companalysis_Module),
-  [libraries](../Chado_Library_Module),
-  [stocks](../Chado_Stock_Module), [and
-  others](../Chado_Modules).
+ [features](../Chado_Sequence_Module),
+ [analyses](../Chado_Companalysis_Module),
+ [libraries](../Chado_Library_Module),
+ [stocks](../Chado_Stock_Module), [and
+ others](../Chado_Modules).
 - Provides an interface for easy editing/updating of data in Chado.
 - Provides full text and categorical search capabilities for Chado
-  content.
+ content.
 - Can integrate GMOD tools such as [CMap](../CMap.1) and
-  [GBrowse](../GBrowse.1).
+ [GBrowse](../GBrowse.1).
 - Integrates with powerful Drupal features like
-  <a href="http://drupal.org/project/views" class="external text"
-  rel="nofollow">Drupal views</a> and
-  <a href="http://drupal.org/project/panels" class="external text"
-  rel="nofollow">panels</a>
+ <a href="http://drupal.org/project/views" class="external text"
+ rel="nofollow">Drupal views</a> and
+ <a href="http://drupal.org/project/panels" class="external text"
+ rel="nofollow">panels</a>
 - Provides fully customizable PHP-based templates to allow users to
-  change the look and feel of their installation
+ change the look and feel of their installation
 - Web-based management of Chado (i.e. installation of Chado v1.11 and
-  loading of ontologies)
+ loading of ontologies)
 - Loaders for GFF3 and FASTA format files.
 - Provides an API to allow for creation of custom extensions by anyone.
 
@@ -70,7 +70,7 @@ page</a>.
 To clone the Tripal development GIT repository, use the following
 command:
 
-     git clone --recursive --branch 6.x-1.x http://git.drupal.org/sandbox/spficklin/1337878.git tripal
+ git clone --recursive --branch 6.x-1.x http://git.drupal.org/sandbox/spficklin/1337878.git tripal
 
 You can also
 <a href="http://drupalcode.org/sandbox/spficklin/1337878.git"
@@ -91,8 +91,8 @@ with Chado, Tripal, and for constructing or editing custom templates for
 a custom look-and-feel. For more information, see the following links:
 
 - [GMOD in the
-  Cloud](../Category:GMOD_in_the_Cloud)
+ Cloud](../Category:GMOD_in_the_Cloud)
 - [Tool data](../Category:Tool_data)
 - [GMOD
-  Components](../Category:GMOD_Components)
+ Components](../Category:GMOD_Components)
 - [Tripal](../Category:Tripal)

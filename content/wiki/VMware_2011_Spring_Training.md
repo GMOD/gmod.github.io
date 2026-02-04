@@ -6,31 +6,31 @@ title: "VMware 2011 Spring Training"
 In this session, we'll get the VMware image up and running on your
 laptop.
 
-  Course Images</span>](#Download_Course_Images)
+ Course Images</span>](#Download_Course_Images)
 - [System
-  Requirements](#System_Requirements)
-  - [VMware on
-    Windows and Linux](#VMware_on_Windows_and_Linux)
-  - [VMware on
-    Mac OS X](#VMware_on_Mac_OS_X)
+ Requirements](#System_Requirements)
+ - [VMware on
+ Windows and Linux](#VMware_on_Windows_and_Linux)
+ - [VMware on
+ Mac OS X](#VMware_on_Mac_OS_X)
 - [System
-  Configuration](#System_Configuration)
-  - [Additional
-    Installed Software](#Additional_Installed_Software)
+ Configuration](#System_Configuration)
+ - [Additional
+ Installed Software](#Additional_Installed_Software)
 - [Getting the
-  VMware Image](#Getting_the_VMware_Image)
+ VMware Image](#Getting_the_VMware_Image)
 - [Unpacking the
-  Image](#Unpacking_the_Image)
+ Image](#Unpacking_the_Image)
 - [Opening the
-  Image](#Opening_the_Image)
+ Image](#Opening_the_Image)
 - [Did you move
-  or copy the image?](#Did_you_move_or_copy_the_image.3F)
+ or copy the image?](#Did_you_move_or_copy_the_image.3F)
 - [Logging In and
-  other useful things](#Logging_In_and_other_useful_things)
+ other useful things](#Logging_In_and_other_useful_things)
 - [Resizing the
-  Display](#Resizing_the_Display)
+ Display](#Resizing_the_Display)
 - [Linux Text
-  Editors](#Linux_Text_Editors)
+ Editors](#Linux_Text_Editors)
 
 ## Download Course Images
 
@@ -392,7 +392,7 @@ idea: copy and pasting commands will be easier and you will be able to
 use an environment you are used to), then you will need the server's ip
 address. To get it, open a terminal and type:
 
-     $ ifconfig
+ $ ifconfig
 
 which will give you output like this:
 
@@ -404,7 +404,7 @@ See that `inet addr:172.16.108.130`? Those four numbers are the IP
 address. You can now (from you host operating system) ssh into the
 machine by typing
 
-     $ ssh gmod@172.16.108.130
+ $ ssh gmod@172.16.108.130
 
 You can also go to the web server running on this server by going to
 <a href="http://172.16.108.130" class="external free"
@@ -420,7 +420,7 @@ browser and terminal inside of VMware/Ubuntu.
 The text console is initially configured to work with a US keyboard. If
 you are not using a US keyboard you can type:
 
-     $ sudo apt-get install console-data
+ $ sudo apt-get install console-data
 
 Select the options for your own machine. Note that this will not affect
 the X environment or any logins via SSH or PuTTY.
@@ -433,20 +433,20 @@ dragging.**
 However, if that doesn't work, you can try the `xrandr` command to
 resize your display.
 
-    $ xrandr
-    ...
-       800x600
-       640x480
-    ...
+ $ xrandr
+ ...
+ 800x600
+ 640x480
+ ...
 
 This lists all the sizes you can resize your screen to. To resize your
 screen
 
-    $ xrandr -s widthxheight
+ $ xrandr -s widthxheight
 
 For example,
 
-    $ xrandr -s 1280x960
+ $ xrandr -s 1280x960
 
 works well on my 15" MacBook Pro.
 
@@ -462,4 +462,4 @@ However, **if you aren't already familiar with one of these then you are
 better off using `gedit`.** It is less powerful, but is also much more
 straightforward to use.
 
-    $ gedit filename &
+ $ gedit filename &

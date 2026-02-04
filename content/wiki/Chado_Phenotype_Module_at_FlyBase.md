@@ -31,64 +31,64 @@ tables.
 **These notes reflect the state of the FlyBase Chado database during the
 first two weeks on November 2010.**
 
-  Tables](#Tables)
-  - [Important
-    Linked Tables](#Important_Linked_Tables)
-  - [**phenotype**](#phenotype)
-    - [What
-      is a Phenotype?](#What_is_a_Phenotype.3F)
-      - [PATO at
-        FlyBase?](#PATO_at_FlyBase.3F)
-    - [**phenotype** @
-      Flybase](#phenotype_.40_Flybase)
-      - [uniquename and
-        observable_id](#uniquename_and_observable_id)
-      - [attr_id and
-        assay_id](#attr_id_and_assay_id)
-      - [cvalue_id](#cvalue_id)
-      - [value](#value)
-  - [**phenotype_comparison**](#phenotype_comparison)
-    - [**phenotype_comparison** @
-      Flybase](#phenotype_comparison_.40_Flybase)
-      - [environment\[12\]\_id](#environment.5B12.5D_id)
-      - [phenotype\[12\]\_id and
-        genotype\[12\]\_id](#phenotype.5B12.5D_id_and_genotype.5B12.5D_id)
-      - [type_id](#type_id)
-  - [**phenotype_cvterm**](#phenotype_cvterm)
-    - [**phenotype_cvterm** @
-      Flybase](#phenotype_cvterm_.40_Flybase)
-      - [rank](#rank)
-      - [cvterm_id](#cvterm_id)
-      - [Semantics?](#Semantics.3F)
-  - [**phenstatement**](#phenstatement)
-    - [**phenstatement** @
-      Flybase](#phenstatement_.40_Flybase)
-  - [**phendesc**](#phendesc)
-    - [**phendesc** @
-      Flybase](#phendesc_.40_Flybase)
-      - [type_id](#type_id_2)
-      - [pub_id](#pub_id)
-      - [environment_id](#environment_id)
-      - [genotype_id](#genotype_id)
-      - [Description](#Description)
-  - [**environment**](#environment)
-    - [**environment** @
-      Flybase](#environment_.40_Flybase)
-  - [**environment_cvterm**](#environment_cvterm)
-    - [**environment_cvterm** @
-      Flybase](#environment_cvterm_.40_Flybase)
-  - [**genotype**](#genotype)
-    - [**genotype** @
-      Flybase](#genotype_.40_Flybase)
-      - [uniquename](#uniquename)
-      - [name](#name)
-  - [**feature_genotype**](#feature_genotype)
-    - [**feature_genotype** @
-      Flybase](#feature_genotype_.40_Flybase)
-      - [cvterm_id](#cvterm_id_2)
-      - [cgroup](#cgroup)
-      - [chromosome_id](#chromosome_id)
-      - [rank](#rank_2)
+ Tables](#Tables)
+ - [Important
+ Linked Tables](#Important_Linked_Tables)
+ - [**phenotype**](#phenotype)
+ - [What
+ is a Phenotype?](#What_is_a_Phenotype.3F)
+ - [PATO at
+ FlyBase?](#PATO_at_FlyBase.3F)
+ - [**phenotype** @
+ Flybase](#phenotype_.40_Flybase)
+ - [uniquename and
+ observable_id](#uniquename_and_observable_id)
+ - [attr_id and
+ assay_id](#attr_id_and_assay_id)
+ - [cvalue_id](#cvalue_id)
+ - [value](#value)
+ - [**phenotype_comparison**](#phenotype_comparison)
+ - [**phenotype_comparison** @
+ Flybase](#phenotype_comparison_.40_Flybase)
+ - [environment\[12\]\_id](#environment.5B12.5D_id)
+ - [phenotype\[12\]\_id and
+ genotype\[12\]\_id](#phenotype.5B12.5D_id_and_genotype.5B12.5D_id)
+ - [type_id](#type_id)
+ - [**phenotype_cvterm**](#phenotype_cvterm)
+ - [**phenotype_cvterm** @
+ Flybase](#phenotype_cvterm_.40_Flybase)
+ - [rank](#rank)
+ - [cvterm_id](#cvterm_id)
+ - [Semantics?](#Semantics.3F)
+ - [**phenstatement**](#phenstatement)
+ - [**phenstatement** @
+ Flybase](#phenstatement_.40_Flybase)
+ - [**phendesc**](#phendesc)
+ - [**phendesc** @
+ Flybase](#phendesc_.40_Flybase)
+ - [type_id](#type_id_2)
+ - [pub_id](#pub_id)
+ - [environment_id](#environment_id)
+ - [genotype_id](#genotype_id)
+ - [Description](#Description)
+ - [**environment**](#environment)
+ - [**environment** @
+ Flybase](#environment_.40_Flybase)
+ - [**environment_cvterm**](#environment_cvterm)
+ - [**environment_cvterm** @
+ Flybase](#environment_cvterm_.40_Flybase)
+ - [**genotype**](#genotype)
+ - [**genotype** @
+ Flybase](#genotype_.40_Flybase)
+ - [uniquename](#uniquename)
+ - [name](#name)
+ - [**feature_genotype**](#feature_genotype)
+ - [**feature_genotype** @
+ Flybase](#feature_genotype_.40_Flybase)
+ - [cvterm_id](#cvterm_id_2)
+ - [cgroup](#cgroup)
+ - [chromosome_id](#chromosome_id)
+ - [rank](#rank_2)
 
 # Tables
 
@@ -106,7 +106,7 @@ And those are the only tables that have "phen" in their name.
 ## Important Linked Tables
 
 - [**`environment`**](/wiki/Chado_Genetic_Module#Table:_environment)
-  (Doc: "The environmental component of a phenotype description.")
+ (Doc: "The environmental component of a phenotype description.")
 - [**`genotype`**](/wiki/Chado_Genetic_Module#Table:_genotype)
 
 And that's it?
@@ -227,9 +227,9 @@ Does this table implement PATO at FlyBase?
 No
 
 - observable_id is the Entity. Usually points to anatomy or
-  cellular_component CVs.
+ cellular_component CVs.
 - But attr_id is not used and cvalue_id points to compound terms in the
-  FlyBase Miscellaneous CV.
+ FlyBase Miscellaneous CV.
 
 ### [**`phenotype`**](/wiki/Chado_Phenotype_Module#Table:_phenotype) @ Flybase
 
@@ -260,23 +260,23 @@ There are 1473 of these (every one of them unspecified).
 
 ``` de1
 SELECT COUNT(*), c.name
-  FROM phenotype p, cvterm t, cv c
+ FROM phenotype p, cvterm t, cv c
  WHERE t.cvterm_id = p.observable_id
-   AND t.cv_id = c.cv_id
+ AND t.cv_id = c.cv_id
  GROUP BY 2
  ORDER BY 1 DESC
  LIMIT 50;
 ```
 
-    count |           name
-    ------+--------------------------
-     8914 | FlyBase anatomy CV
-     1473 | FlyBase miscellaneous CV
-      436 | cellular_component
-       91 | biological_process
-        9 | property type
-        1 | SO
-    (6 rows)
+ count | name
+ ------+--------------------------
+ 8914 | FlyBase anatomy CV
+ 1473 | FlyBase miscellaneous CV
+ 436 | cellular_component
+ 91 | biological_process
+ 9 | property type
+ 1 | SO
+ (6 rows)
 
 #### attr_id and assay_id
 
@@ -571,19 +571,19 @@ Find rows that use rank in the unique constraint.
 ``` de1
 SELECT * FROM phenotype_cvterm pcv1
  WHERE EXISTS (
-    SELECT * FROM phenotype_cvterm pcv2
-     WHERE pcv1.phenotype_cvterm_id <> pcv2.phenotype_cvterm_id
-       AND pcv1.phenotype_id = pcv2.phenotype_id
-       AND pcv1.cvterm_id = pcv2.cvterm_id) LIMIT 10;
+ SELECT * FROM phenotype_cvterm pcv2
+ WHERE pcv1.phenotype_cvterm_id <> pcv2.phenotype_cvterm_id
+ AND pcv1.phenotype_id = pcv2.phenotype_id
+ AND pcv1.cvterm_id = pcv2.cvterm_id) LIMIT 10;
 ```
 
-    phenotype_cvterm_id | phenotype_id | cvterm_id | rank
-    --------------------+--------------+-----------+------
-                   8763 |        15842 |     60843 |    0
-                   8764 |        15842 |     60843 |    1
-                  12006 |        19433 |     60843 |    1
-                  12007 |        19433 |     60843 |    2
-    (4 rows)
+ phenotype_cvterm_id | phenotype_id | cvterm_id | rank
+ --------------------+--------------+-----------+------
+ 8763 | 15842 | 60843 | 0
+ 8764 | 15842 | 60843 | 1
+ 12006 | 19433 | 60843 | 1
+ 12007 | 19433 | 60843 | 2
+ (4 rows)
 
 So, what does that mean?
 
@@ -809,7 +809,7 @@ This table establishes two things:
 
 - A general comment about a set of phenstatement's.
 - A general type for the overall phenotype. See below for options at
-  FlyBase.
+ FlyBase.
 
 This table means there can only be one phendesc for each
 environment/genotype/pub publication. I think that makes sense.
@@ -835,22 +835,22 @@ lethal" making up ~1% of records.
 
 ``` de1
 SELECT COUNT(*), t.name, c.name
-  FROM phendesc p, cvterm t, cv c
+ FROM phendesc p, cvterm t, cv c
  WHERE p.type_id = t.cvterm_id
-   AND t.cv_id = c.cv_id
+ AND t.cv_id = c.cv_id
  GROUP BY 2,3
  ORDER BY 1 DESC
  LIMIT 50;
 ```
 
-    count |           name            |     name
-    ------+---------------------------+---------------
-    71688 | single_mutant_pheno       | phendesc type
-    18648 | genetic_interaction_pheno | phendesc type
-    12809 | aberr_pheno               | phendesc type
-     7662 | interallele_comp          | phendesc type
-     1583 | xeno_interaction_pheno    | phendesc type
-    (5 rows)
+ count | name | name
+ ------+---------------------------+---------------
+ 71688 | single_mutant_pheno | phendesc type
+ 18648 | genetic_interaction_pheno | phendesc type
+ 12809 | aberr_pheno | phendesc type
+ 7662 | interallele_comp | phendesc type
+ 1583 | xeno_interaction_pheno | phendesc type
+ (5 rows)
 
 #### pub_id
 
@@ -945,21 +945,21 @@ description is null in all rows.
 
 Uniquename choice are:
 
-    unspecified
-    conditional qualifier
-    temperature conditional
-    drug conditional
-    conditional tetracycline
-    conditional RU486
-    Drosophila cell culture
-    In transgenic Drosophila (intraspecific)
-    In transgenic Drosophila (allele of one drosophilid species in genome of another drosophilid)
-    In transgenic Drosophila (allele of foreign species in genome of drosophilid)
-    Whole-organism transient assay (intraspecific)
-    Whole-organism transient assay (allele from one drosophilid species assayed in another drosophilid)
-    Whole-organism transient assay (allele of foreign species assayed in drosophilid)
-    conditional - heat sensitive
-    conditional - cold sensitive
+ unspecified
+ conditional qualifier
+ temperature conditional
+ drug conditional
+ conditional tetracycline
+ conditional RU486
+ Drosophila cell culture
+ In transgenic Drosophila (intraspecific)
+ In transgenic Drosophila (allele of one drosophilid species in genome of another drosophilid)
+ In transgenic Drosophila (allele of foreign species in genome of drosophilid)
+ Whole-organism transient assay (intraspecific)
+ Whole-organism transient assay (allele from one drosophilid species assayed in another drosophilid)
+ Whole-organism transient assay (allele of foreign species assayed in drosophilid)
+ conditional - heat sensitive
+ conditional - cold sensitive
 
 ## [**`environment_cvterm`**](/wiki/Chado_Genetic_Module#Table:_environment_cvterm)
 

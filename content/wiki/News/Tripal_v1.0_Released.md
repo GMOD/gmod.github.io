@@ -19,19 +19,19 @@ We are happy to announce that Tripal v1.0 is officially released!
 Here are some useful links:
 
 - <a href="http://tripal.info/documentation/tripal_v1.0_functionality"
-  class="external text" rel="nofollow">A list of new features and
-  functionality</a>
+ class="external text" rel="nofollow">A list of new features and
+ functionality</a>
 - <a href="http://tripal.info/download" class="external text"
-  rel="nofollow">Download Instructions</a>
+ rel="nofollow">Download Instructions</a>
 - <a href="http://tripal.info/documentation/upgrade_0.3.1b_to_1.0"
-  class="external text" rel="nofollow">Upgrade Instructions</a>
+ class="external text" rel="nofollow">Upgrade Instructions</a>
 - <a href="http://tripal.info/extensions" class="external text"
-  rel="nofollow">Compatible Extension modules</a>
+ rel="nofollow">Compatible Extension modules</a>
 - <a href="http://www.gmod.org/wiki/Tripal_Tutorial_(v1.0)"
-  class="external text" rel="nofollow">The updated v1.0 Tutorial</a>
+ class="external text" rel="nofollow">The updated v1.0 Tutorial</a>
 - <a
-  href="http://tripal.info/sites/default/files/tripal_v1.0_api/index.html"
-  class="external text" rel="nofollow">Updated API</a>
+ href="http://tripal.info/sites/default/files/tripal_v1.0_api/index.html"
+ class="external text" rel="nofollow">Updated API</a>
 
 If you have been using the v1.0 development version you should update
 your version of Tripal and perform database updates (e.g. 'drush

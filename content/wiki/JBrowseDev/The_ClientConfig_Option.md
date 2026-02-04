@@ -6,18 +6,18 @@ title: "JBrowseDev/The ClientConfig Option"
 The `--clientConfig` option can be used to customize the appearance of a
 non-quantitative feature tracks.
 
-  Representations of Non-Quantitative Tracks in
-  JBrowse](#Representations_of_Non-Quantitative_Tracks_in_JBrowse)
+ Representations of Non-Quantitative Tracks in
+ JBrowse](#Representations_of_Non-Quantitative_Tracks_in_JBrowse)
 - [Argument
-  Structure](#Argument_Structure)
+ Structure](#Argument_Structure)
 - [Descriptions
-  of clientConfig Options](#Descriptions_of_clientConfig_Options)
+ of clientConfig Options](#Descriptions_of_clientConfig_Options)
 - [Relevant CSS
-  Attributes to be used with featureCss and
-  histCss](#Relevant_CSS_Attributes_to_be_used_with_featureCss_and_histCss)
+ Attributes to be used with featureCss and
+ histCss](#Relevant_CSS_Attributes_to_be_used_with_featureCss_and_histCss)
 - [Examples](#Examples)
 - [See
-  also](#See_also)
+ also](#See_also)
 
 # Representations of Non-Quantitative Tracks in JBrowse
 
@@ -39,14 +39,14 @@ visible.
 
 The structure of the argument to clientConfig looks something like this:
 
-    '{
-       "featureCss" : <string of css settings>,
-       "histCss" : <string of css settings>,
-       "histScale" : <pixels per feature>,
-       "labelScale" : <pixels per feature>,
-       "subfeatureScale" : <pixels per feature>,
-       "featureCallback": <string of javascript code>
-     }'
+ '{
+ "featureCss" : <string of css settings>,
+ "histCss" : <string of css settings>,
+ "histScale" : <pixels per feature>,
+ "labelScale" : <pixels per feature>,
+ "subfeatureScale" : <pixels per feature>,
+ "featureCallback": <string of javascript code>
+ }'
 
 See
 [JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks](../JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks)
@@ -86,11 +86,11 @@ with both featureCss and histCss:
 If you would like to follow along, please begin by switching to your
 jbrowse directory and inputting the reference sequence:
 
-    $ bin/prepare-refseqs.pl --fasta docs/tutorial/data_files/volvox.fa
+ $ bin/prepare-refseqs.pl --fasta docs/tutorial/data_files/volvox.fa
 
 **Example 1:** Change the colors in an existing CSS class.
 
-    $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel PurpleFeatures --type mRNA --cssClass exon --clientConfig '{ "featureCss": "background-color:#9A61CF;border-color:#440D78"}'
+ $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel PurpleFeatures --type mRNA --cssClass exon --clientConfig '{ "featureCss": "background-color:#9A61CF;border-color:#440D78"}'
 
 Example explained: If the color of the features hadn't changed, they
 would have been blue, as defined by the 'exon' class in genome.css. This
@@ -100,7 +100,7 @@ characteristics of a CSS class.
 **Example 2:** Force a histogram to be displayed at low zoom levels.
 Also, use a background image for the features.
 
-    $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel AllFeatures --cssClass basic --clientConfig '{"histScale": 30, "histCss": "background-color:#11A""featureCss": "height:12px;background-image:url(img/helix2-green.png);background-repeat:repeat-x"}'
+ $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel AllFeatures --cssClass basic --clientConfig '{"histScale": 30, "histCss": "background-color:#11A""featureCss": "height:12px;background-image:url(img/helix2-green.png);background-repeat:repeat-x"}'
 
 Example explained: Increasing histScale (from the default value 4)
 causes the histogram to appear. The histogram is made blue by editing
@@ -110,7 +110,7 @@ example demonstrates the use of several clientConfig options at once.
 
 **Example 3:** Cause the subfeatures to appear at all zoom levels.
 
-    $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel SubfeaturesEverywhere --cssclass transcript --getSubs --subfeatureClasses '{"CDS": "transcript-CDS", "UTR": "transcript-UTR"}' --clientConfig '{"subfeatureScale": 0}'
+ $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel SubfeaturesEverywhere --cssclass transcript --getSubs --subfeatureClasses '{"CDS": "transcript-CDS", "UTR": "transcript-UTR"}' --clientConfig '{"subfeatureScale": 0}'
 
 Example explained: In order to make the subfeatures appear at all
 levels, the value associated with subfeatureScale must be reduced. In
@@ -122,13 +122,13 @@ every zoom level) and histScale (making the histogram never appear).
 **Example 4:** Cause the names to appear at the two highest zoom levels
 only.
 
-    $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel FewerZoomsWithNames --type match --getLabel --clientConfig '{"labelScale": 1600}'
+ $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel FewerZoomsWithNames --type match --getLabel --clientConfig '{"labelScale": 1600}'
 
 Example explained: By default, the names appear at the seven highest
 levels. This is demonstrated by counting the zoom levels with feature
 labels from the track generated by:
 
-    $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel MoreZoomsWithNames --type match --getLabel
+ $ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel MoreZoomsWithNames --type match --getLabel
 
 Thus, the value of labelScale must be increased from the default value.
 Assuming that each zoom-in operation with the smaller magnifying glass
@@ -142,6 +142,6 @@ subfeatureScale and histScale.
 # See also
 
 - <a href="/wiki/General_Usage" class="mw-redirect"
-  title="JBrowseDev/General Usage">General Usage Notes</a>
+ title="JBrowseDev/General Usage">General Usage Notes</a>
 
 - [JBrowse](../Category:JBrowse)

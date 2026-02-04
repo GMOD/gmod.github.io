@@ -3,125 +3,125 @@ title: "InterMine Tutorial 2011"
 ---
 # InterMine Tutorial 2011
 
-  OOOPS!](#OOOPS.21)
+ OOOPS!](#OOOPS.21)
 - [Introduction](#Introduction)
 - [Overview](#Overview)
 - [Loading Data
-  Into Your Database](#Loading_Data_Into_Your_Database)
-  - [The
-    tutorial data](#The_tutorial_data)
-  - [The
-    MineManager Graphical
-    Installer](#The_MineManager_Graphical_Installer)
-    - [Running it from the command
-      line](#Running_it_from_the_command_line)
-    - [Running it from a clickable
-      launcher](#Running_it_from_a_clickable_launcher)
-    - [Welcome Screen](#Welcome_Screen)
-  - [Starting a
-    new Mine](#Starting_a_new_Mine)
-    - [Setting up the new Mine's
-      properties](#Setting_up_the_new_Mine.27s_properties)
-    - [The
-      Mine project directory](#The_Mine_project_directory)
-  - [Adding
-    Sources to a Project](#Adding_Sources_to_a_Project)
-    - [Importing Protein Data From
-      Uniprot](#Importing_Protein_Data_From_Uniprot)
-      - [Side Note: Model
-        Additions](#Side_Note:_Model_Additions)
-    - [The
-      GFF3 source](#The_GFF3_source)
-    - [FASTA
-      files](#FASTA_files)
-    - [Entrez
-      Organism](#Entrez_Organism)
-    - [Loading Custom Data
-      Sources](#Loading_Custom_Data_Sources)
-      - [Tool-chain
-        details](#Tool-chain_details)
-      - [Installing the Perl
-        tool-chain](#Installing_the_Perl_tool-chain)
-      - [Our example
-        dataset](#Our_example_dataset)
-      - [Our parsing
-        strategy](#Our_parsing_strategy)
-      - [Adding The
-        Source](#Adding_The_Source)
-      - [An
-        Example Implementation of this
-        Strategy](#An_Example_Implementation_of_this_Strategy)
-      - [Additions](#Additions)
-        - [Gene](#Gene)
-        - [Pathway](#Pathway)
-      - [Dealing With
-        Integration](#Dealing_With_Integration)
-      - [Generating the
-        XML](#Generating_the_XML)
-  - [Running a
-    Build](#Running_a_Build)
+ Into Your Database](#Loading_Data_Into_Your_Database)
+ - [The
+ tutorial data](#The_tutorial_data)
+ - [The
+ MineManager Graphical
+ Installer](#The_MineManager_Graphical_Installer)
+ - [Running it from the command
+ line](#Running_it_from_the_command_line)
+ - [Running it from a clickable
+ launcher](#Running_it_from_a_clickable_launcher)
+ - [Welcome Screen](#Welcome_Screen)
+ - [Starting a
+ new Mine](#Starting_a_new_Mine)
+ - [Setting up the new Mine's
+ properties](#Setting_up_the_new_Mine.27s_properties)
+ - [The
+ Mine project directory](#The_Mine_project_directory)
+ - [Adding
+ Sources to a Project](#Adding_Sources_to_a_Project)
+ - [Importing Protein Data From
+ Uniprot](#Importing_Protein_Data_From_Uniprot)
+ - [Side Note: Model
+ Additions](#Side_Note:_Model_Additions)
+ - [The
+ GFF3 source](#The_GFF3_source)
+ - [FASTA
+ files](#FASTA_files)
+ - [Entrez
+ Organism](#Entrez_Organism)
+ - [Loading Custom Data
+ Sources](#Loading_Custom_Data_Sources)
+ - [Tool-chain
+ details](#Tool-chain_details)
+ - [Installing the Perl
+ tool-chain](#Installing_the_Perl_tool-chain)
+ - [Our example
+ dataset](#Our_example_dataset)
+ - [Our parsing
+ strategy](#Our_parsing_strategy)
+ - [Adding The
+ Source](#Adding_The_Source)
+ - [An
+ Example Implementation of this
+ Strategy](#An_Example_Implementation_of_this_Strategy)
+ - [Additions](#Additions)
+ - [Gene](#Gene)
+ - [Pathway](#Pathway)
+ - [Dealing With
+ Integration](#Dealing_With_Integration)
+ - [Generating the
+ XML](#Generating_the_XML)
+ - [Running a
+ Build](#Running_a_Build)
 - [Deployment](#Deployment)
-  - [Configuration](#Configuration)
-  - [UserProfile
-    Initialisation](#UserProfile_Initialisation)
-  - [Starting
-    the Tomcat Webserver](#Starting_the_Tomcat_Webserver)
-  - [Deploying
-    the Webapp to Tomcat](#Deploying_the_Webapp_to_Tomcat)
+ - [Configuration](#Configuration)
+ - [UserProfile
+ Initialisation](#UserProfile_Initialisation)
+ - [Starting
+ the Tomcat Webserver](#Starting_the_Tomcat_Webserver)
+ - [Deploying
+ the Webapp to Tomcat](#Deploying_the_Webapp_to_Tomcat)
 - [Accessing Your
-  Data Through the
-  Webapp](#Accessing_Your_Data_Through_the_Webapp)
-  - [Single
-    Objects (Report Pages)](#Single_Objects_.28Report_Pages.29)
-  - [Multiple
-    Objects (Lists)](#Multiple_Objects_.28Lists.29)
-  - [Exporting
-    Data and Summarising
-    Columns](#Exporting_Data_and_Summarising_Columns)
-    - [Exporting Data](#Exporting_Data)
-    - [Viewing Column
-      Summaries](#Viewing_Column_Summaries)
-  - [Running
-    Queries](#Running_Queries)
-  - [Making
-    Lists from Query Results](#Making_Lists_from_Query_Results)
-  - [Running
-    Templates](#Running_Templates)
-  - [Making
-    Templates](#Making_Templates)
+ Data Through the
+ Webapp](#Accessing_Your_Data_Through_the_Webapp)
+ - [Single
+ Objects (Report Pages)](#Single_Objects_.28Report_Pages.29)
+ - [Multiple
+ Objects (Lists)](#Multiple_Objects_.28Lists.29)
+ - [Exporting
+ Data and Summarising
+ Columns](#Exporting_Data_and_Summarising_Columns)
+ - [Exporting Data](#Exporting_Data)
+ - [Viewing Column
+ Summaries](#Viewing_Column_Summaries)
+ - [Running
+ Queries](#Running_Queries)
+ - [Making
+ Lists from Query Results](#Making_Lists_from_Query_Results)
+ - [Running
+ Templates](#Running_Templates)
+ - [Making
+ Templates](#Making_Templates)
 - [Accessing Your
-  Data through the
-  Webservice](#Accessing_Your_Data_through_the_Webservice)
-  - [Raw
-    URLs](#Raw_URLs)
-    - [Asking
-      the Webapp to generate them for
-      you](#Asking_the_Webapp_to_generate_them_for_you)
-  - [The
-    Command-Line utilities](#The_Command-Line_utilities)
-    - [Getting XML from the
-      Webapp](#Getting_XML_from_the_Webapp)
-    - [Running
-      Templates](#Running_Templates_2)
-  - [Access
-    from Perl & Java
-    programs](#Access_from_Perl_.26_Java_programs)
-    - [Webapp/Webservice
-      Integration](#Webapp.2FWebservice_Integration)
-    - [Accessing
-      Templates](#Accessing_Templates)
-    - [Accessing
-      Queries](#Accessing_Queries)
-  - [Data
-    Formats](#Data_Formats)
-    - [Row
-      Based Formats](#Row_Based_Formats)
-    - [Record
-      Based Formats](#Record_Based_Formats)
-    - [Getting the
-      Total](#Getting_the_Total)
-  - [Access
-    From Within the Browser](#Access_From_Within_the_Browser)
+ Data through the
+ Webservice](#Accessing_Your_Data_through_the_Webservice)
+ - [Raw
+ URLs](#Raw_URLs)
+ - [Asking
+ the Webapp to generate them for
+ you](#Asking_the_Webapp_to_generate_them_for_you)
+ - [The
+ Command-Line utilities](#The_Command-Line_utilities)
+ - [Getting XML from the
+ Webapp](#Getting_XML_from_the_Webapp)
+ - [Running
+ Templates](#Running_Templates_2)
+ - [Access
+ from Perl & Java
+ programs](#Access_from_Perl_.26_Java_programs)
+ - [Webapp/Webservice
+ Integration](#Webapp.2FWebservice_Integration)
+ - [Accessing
+ Templates](#Accessing_Templates)
+ - [Accessing
+ Queries](#Accessing_Queries)
+ - [Data
+ Formats](#Data_Formats)
+ - [Row
+ Based Formats](#Row_Based_Formats)
+ - [Record
+ Based Formats](#Record_Based_Formats)
+ - [Getting the
+ Total](#Getting_the_Total)
+ - [Access
+ From Within the Browser](#Access_From_Within_the_Browser)
 
 # OOOPS!
 
@@ -136,7 +136,7 @@ title: "InterMine Tutorial 2011"
 - **You need to run a command:**
 
 ``` enter
- cp -r /home/gmod/Documents/Software/intermine/bio/sources/example-sources/malaria-gff  /home/gmod/Documents/Software/intermine/bio/sources/
+ cp -r /home/gmod/Documents/Software/intermine/bio/sources/example-sources/malaria-gff /home/gmod/Documents/Software/intermine/bio/sources/
 ```
 
 # Introduction
@@ -171,14 +171,14 @@ makes the straightforward simple, and the difficult possible.
 
 We aim to demonstrate three strengths of InterMine:
 
-1.  It's ~~effortless~~ straightforward to integrate data from different
-    datasets (even your own data!) into one database.
-2.  Once you get your data into the database, you get a powerful,
-    works-out-of-the-box webapp that makes it easy and fun to access
-    your data.
-3.  Once you get your webapp up on the server, you get a sophisticated
-    webservice that enables you or others to access the data via
-    scripts, Java programs and other web-pages.
+1. It's ~~effortless~~ straightforward to integrate data from different
+ datasets (even your own data!) into one database.
+2. Once you get your data into the database, you get a powerful,
+ works-out-of-the-box webapp that makes it easy and fun to access
+ your data.
+3. Once you get your webapp up on the server, you get a sophisticated
+ webservice that enables you or others to access the data via
+ scripts, Java programs and other web-pages.
 
 To do this, we will set up a stand-alone InterMine. This consists of a
 PostgreSQL database and a Java web-app sitting on top of it. Setting up
@@ -194,16 +194,16 @@ contains code which manages *integration*, or the procedure of loading
 data into the scheme once it has been defined. Therefore the outline of
 this section is:
 
-1.  Setting up the project structure
-2.  Configuring the data sources and the associated schema
-3.  Running the build process
+1. Setting up the project structure
+2. Configuring the data sources and the associated schema
+3. Running the build process
 
 ## The tutorial data
 
 We will use the sample data set we distribute with our source. This is
 located at:
 
-    ~/Documents/Software/intermine/bio/tutorial/malariamine/malaria-data.tar.gz
+ ~/Documents/Software/intermine/bio/tutorial/malariamine/malaria-data.tar.gz
 
 Place this data in the the data directory, and extract it for use in the
 tutorial:
@@ -231,7 +231,7 @@ The MineManager is located in our source tree at
 To run it open a terminal and type the command:
 
 ``` enter
-  /home/gmod/Documents/Software/intermine/intermine/MineManager/run
+ /home/gmod/Documents/Software/intermine/intermine/MineManager/run
 ```
 
 ### Running it from a clickable launcher
@@ -240,7 +240,7 @@ If you would prefer a point and click interface, on standard Linux
 desktops, you can run the launcher installer to obtain a runnable icon:
 
 ``` enter
-  /home/gmod/Documents/Software/intermine/intermine/MineManager/install_launcher
+ /home/gmod/Documents/Software/intermine/intermine/MineManager/install_launcher
 ```
 
 You should then find a MineManager icon on your desktop, which you can
@@ -271,7 +271,7 @@ source tree we are using is located. This is referred to here as
 **InterMine Home**. You can use the browse button on the top right of
 the Mine Information tab to select the appropriate directory:
 
-     /home/gmod/Documents/Software/intermine
+ /home/gmod/Documents/Software/intermine
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/MineManager-minesettings-info.png"
@@ -287,15 +287,15 @@ project directories in the appropriate places, and then builds an
 initial version of the data model. The structure of the mine's project
 directory is:
 
-     SVN_ROOT/your_mine
-             |
-             + -- dbmodel/
-             + -- integrate/
-             + -- postprocess/
-             + -- webapp/
-             + -- project.xml
-             + -- default.intermine.webapp.properties
-             + -- default.intermine.integrate.properties
+ SVN_ROOT/your_mine
+ |
+ + -- dbmodel/
+ + -- integrate/
+ + -- postprocess/
+ + -- webapp/
+ + -- project.xml
+ + -- default.intermine.webapp.properties
+ + -- default.intermine.integrate.properties
 
 The four sub directories are each separate Java projects that manage the
 different stages of building and running a mine, pretty much in the
@@ -340,7 +340,7 @@ alt="MineManager-sourcesettings-uniprot.png" />
 
 For uniprot the appropriate settings are:
 
-| Field                      | Value |
+| Field | Value |
 |----------------------------|-------------------------------------------|
 | List of Organisms | 36329 |
 | Create protein domains | TICKED |
@@ -385,9 +385,9 @@ mRNA features, there is one file per chromosome. Look at an example:
 
 To add the GFF3 source to your MalariaMine:
 
-1.  Select the **Add source** option on the Sources menu.
-2.  Choose **malaria-gff**
-3.  Click the **add** button and **save** your sources.
+1. Select the **Add source** option on the Sources menu.
+2. Choose **malaria-gff**
+3. Click the **add** button and **save** your sources.
 
 The properties set for malaria-gff are:
 
@@ -415,13 +415,13 @@ chromosome. Look at an example of the files we will load:
 
 Add a fasta source to your Mine by following these steps:
 
-1.  Select **Add source** option from the Sources menu
-2.  Select the **fasta** type and name your source
-    **malaria-chromosome-fasta**. <span style="color:grey">*Note: you
-    must use this name as there is an integration keys set of this name
-    predefined for you. We will deal with keys in more detail in the
-    custom source section.*</span>
-3.  Click the **add** button and **save** your changes.
+1. Select **Add source** option from the Sources menu
+2. Select the **fasta** type and name your source
+ **malaria-chromosome-fasta**. <span style="color:grey">*Note: you
+ must use this name as there is an integration keys set of this name
+ predefined for you. We will deal with keys in more detail in the
+ custom source section.*</span>
+3. Click the **add** button and **save** your changes.
 
 The following properties should be defined for malaria-chromosome-fasta:
 
@@ -452,35 +452,35 @@ using the Perl data loading API.
 #### Tool-chain details
 
 - **Java** - data loaders are written by sub-classing one of a set of
-  basic data loading classes (eg.
-  `org.intermine.bio.dataconversion.BioFileConverter`), which provide a
-  scaffold.
+ basic data loading classes (eg.
+ `org.intermine.bio.dataconversion.BioFileConverter`), which provide a
+ scaffold.
 - **Perl** - data is loaded in a two stage process, by first using a set
-  of Perl modules to convert your data into our
-  <a href="http://intermine.org/wiki/ItemsXmlFormat" class="external text"
-  rel="nofollow">XML format</a>, which is then loaded into the database
-  using a core dataloader.
+ of Perl modules to convert your data into our
+ <a href="http://intermine.org/wiki/ItemsXmlFormat" class="external text"
+ rel="nofollow">XML format</a>, which is then loaded into the database
+ using a core dataloader.
 
 #### Installing the Perl tool-chain
 
 The Perl modules are located in our source tree at:
 
-     SVN_ROOT/intermine/perl/InterMine-Item
+ SVN_ROOT/intermine/perl/InterMine-Item
 
 and can be installed in the standard manner with the commands:
 
 ``` enter
-  perl Build.PL
-  sudo ./Build installdeps [if you don't have the pre-requisites]
-  ./Build test [optional]
-  sudo ./Build install
+ perl Build.PL
+ sudo ./Build installdeps [if you don't have the pre-requisites]
+ ./Build test [optional]
+ sudo ./Build install
 ```
 
 Or the entire procedure above can be automated with your preferred CPAN
 client by installing `InterMine::Item`. eg:
 
 ``` enter
-  cpan InterMine::Item
+ cpan InterMine::Item
 ```
 
 #### Our example dataset
@@ -499,26 +499,26 @@ KEGG pathways. It takes the form of two files in
 **/home/gmod/Documents/Data/malaria/kegg**, look at these now.
 
 - `pfa_gene_map.tab` - this has two tab delimited columns:
-  - the first is the identifier of a malaria gene, note these are the
-    same ids we have used for \`Gene.primaryIdentifier\` in other
-    sources.
-  - the second is a space separated list of KEGG pathway ids that the
-    gene is involved in
+ - the first is the identifier of a malaria gene, note these are the
+ same ids we have used for \`Gene.primaryIdentifier\` in other
+ sources.
+ - the second is a space separated list of KEGG pathway ids that the
+ gene is involved in
 - `map_title.tab` - also has two tab delimited columns:
-  - the first is a KEGG pathway identifier
-  - the second the descriptive name of the pathway
+ - the first is a KEGG pathway identifier
+ - the second the descriptive name of the pathway
 
 #### Our parsing strategy
 
 We will
 
-1.  Create data items for the data source, data set, and organism
-2.  Read in the pathways file
-    1.  Create a data item for each pathway in the file
-    2.  Remember which item was made for each id
-3.  Read in the gene mappings file
-    1.  Create a data item for each gene in the file, linked to the
-        pathway items made earlier
+1. Create data items for the data source, data set, and organism
+2. Read in the pathways file
+ 1. Create a data item for each pathway in the file
+ 2. Remember which item was made for each id
+3. Read in the gene mappings file
+ 1. Create a data item for each gene in the file, linked to the
+ pathway items made earlier
 
 #### Adding The Source
 
@@ -545,9 +545,9 @@ my ( $model_file, $out_file, $pathway_file, $gene_mappings_file ) = @ARGV;
 # Create the writing apparatus
 my $model = InterMine::Model->new( file => $model_file );
 my $document = InterMine::Item::Document->new(
-    model      => $model,
-    output     => $out_file,
-    auto_write => 1,
+ model => $model,
+ output => $out_file,
+ auto_write => 1,
 );
 
 my $data_source = 'Kegg';
@@ -557,52 +557,52 @@ my %pathway_with;
 # Create data items for the data source, data set, and organism
 
 my $datasource_item = $document->add_item(
-    'DataSource',
-    'name' => $data_source,
+ 'DataSource',
+ 'name' => $data_source,
 );
 
 my $dataset_item = $document->add_item(
-    'DataSet',
-    name       => $data_source . ' data set for taxon id: ' . $taxon_id,
-    dataSource => $datasource_item,
+ 'DataSet',
+ name => $data_source . ' data set for taxon id: ' . $taxon_id,
+ dataSource => $datasource_item,
 );
 
 my $org_item = $document->add_item(
-    'Organism',
-    taxonId  => $taxon_id,
+ 'Organism',
+ taxonId => $taxon_id,
 );
 
 # Read in the pathways file
 open(my $pathways, '<', $pathway_file) or die "Could not open $pathway_file, $!";
 for (<$pathways>) {
-    chomp;
-    my ($id, $title) = split(/\t/);
+ chomp;
+ my ($id, $title) = split(/\t/);
 
-    ## Create a data item for each pathway in the file
-    ## Remember which item was made for each id
-    $pathway_with{$id} = $document->add_item(
-        'Pathway',
-        identifier => $id,
-        name       => $title,
-    );
+ ## Create a data item for each pathway in the file
+ ## Remember which item was made for each id
+ $pathway_with{$id} = $document->add_item(
+ 'Pathway',
+ identifier => $id,
+ name => $title,
+ );
 }
 close $pathways or die "Could not close $pathway_file, $!";
 
 # Read in the gene mappings file
 open(my $gene_mappings, '<', $gene_mappings_file) or die "Couldn't open $gene_mappings_file, $!";
 for (<$gene_mappings>) {
-    chomp;
-    my ($gene_id, $pathway_string) = split(/\t/);
-    my @pathway_ids = split(/\s/, $pathway_string);
-    my $pathway_items = [@pathway_with{@pathway_ids}];
+ chomp;
+ my ($gene_id, $pathway_string) = split(/\t/);
+ my @pathway_ids = split(/\s/, $pathway_string);
+ my $pathway_items = [@pathway_with{@pathway_ids}];
 
-    ## Create a data item for each gene in the file, linked to the pathway items made earlier
-    $document->add_item('Gene',
-       primaryIdentifier => $gene_id,
-       organism          => $org_item,
-       pathways          => $pathway_items,
-       dataSets          => [$dataset_item],
-    );
+ ## Create a data item for each gene in the file, linked to the pathway items made earlier
+ $document->add_item('Gene',
+ primaryIdentifier => $gene_id,
+ organism => $org_item,
+ pathways => $pathway_items,
+ dataSets => [$dataset_item],
+ );
 }
 close $gene_mappings or die "Could not close $gene_mappings_file, $!";
 
@@ -618,29 +618,29 @@ Our Model currently has no class "Pathway" (as you can confirm by
 browsing the model). We need to add it, and the Gene ↔ Pathway link. We
 can do this by using the **Source Model Additions** editor.
 
-1.  Add a new class and name it **Pathway**
-2.  Add an attribute in this class and name it **name**, with the type
-    set to **String**
-3.  Add an attribute in this class and name it **identifier**, with the
-    type set to **String**
-4.  Add a collection in this class and name it **genes**, with the type
-    set to **Gene** and a reverse reference named **pathways**
-5.  Click **yes** when asked if you want to make the reverse reference
-6.  Change the field-type of the new reverse reference in the Gene class
-    to **collection**
-7.  Click **no** when asked if you want to make the reverse reference.
+1. Add a new class and name it **Pathway**
+2. Add an attribute in this class and name it **name**, with the type
+ set to **String**
+3. Add an attribute in this class and name it **identifier**, with the
+ type set to **String**
+4. Add a collection in this class and name it **genes**, with the type
+ set to **Gene** and a reverse reference named **pathways**
+5. Click **yes** when asked if you want to make the reverse reference
+6. Change the field-type of the new reverse reference in the Gene class
+ to **collection**
+7. Click **no** when asked if you want to make the reverse reference.
 
 You should end up with:
 
 ##### Gene
 
-| FieldType  | Name     | Type    | Reverse-Reference |
+| FieldType | Name | Type | Reverse-Reference |
 |------------|----------|---------|-------------------|
 | Collection | pathways | Pathway | genes |
 
 ##### Pathway
 
-| FieldType  | Name       | Type   | Reverse-Reference |
+| FieldType | Name | Type | Reverse-Reference |
 |------------|------------|--------|-------------------|
 | Attribute | name | String | \- |
 | Attribute | identifier | String | \- |
@@ -664,7 +664,7 @@ panel, click on **Open keys file** to edit the integration keys.
 We already have keys defined for DataSet and DataSource: we only need to
 add the following line:
 
-    Gene.key = primaryIdentifier
+ Gene.key = primaryIdentifier
 
 We do not need to add a key for Pathway, as we are not adding pathways
 data from any other source.
@@ -675,18 +675,18 @@ Now we are ready to generate the XML using our parser. First we need to
 generate the model:
 
 ``` enter
-  cd ~/Documents/Software/intermine/malariamine/dbmodel
-  ant build-db
+ cd ~/Documents/Software/intermine/malariamine/dbmodel
+ ant build-db
 ```
 
 And now we can run our parser and generate XML
 
 ``` enter
-  perl ~/Documents/Software/intermine/bio/sources/kegg-pathways/kegg-pathways_parser.pl \
-    ~/Documents/Software/intermine/malariamine/dbmodel/build/model/genomic_model.xml \
-    ~/Documents/Data/intermine/malaria/kegg/pathways.xml \
-    ~/Documents/Data/intermine/malaria/kegg/map_title.tab \
-    ~/Documents/Data/intermine/malaria/kegg/pfa_gene_map.tab
+ perl ~/Documents/Software/intermine/bio/sources/kegg-pathways/kegg-pathways_parser.pl \
+ ~/Documents/Software/intermine/malariamine/dbmodel/build/model/genomic_model.xml \
+ ~/Documents/Data/intermine/malaria/kegg/pathways.xml \
+ ~/Documents/Data/intermine/malaria/kegg/map_title.tab \
+ ~/Documents/Data/intermine/malaria/kegg/pfa_gene_map.tab
 ```
 
 And then finally tell our mine where the data is by filling in the Data
@@ -817,7 +817,7 @@ will have a report page that can display:
 - Links to sites that contain information about the objects
 - Homologues of the object in other organisms/mines
 - Templates that you can run on the given object, and the number of
-  results you can expect.
+ results you can expect.
 
 In the top right there is a search box which uses the Lucene
 quick-search. Enter **ald** to find the *Aldolase* gene.
@@ -840,13 +840,13 @@ display:
 - The properties of the objects in the list
 - Links to tools in other sites
 - Tools that convert a list into:
-  - A list of a different type: (eg. *gene* → *exon*)
-  - A list of orthologues
+ - A list of a different type: (eg. *gene* → *exon*)
+ - A list of orthologues
 - Tools that aggregate data over the list:
-  - Enrichment
-  - Distribution
-  - Expression
-  - Localisation
+ - Enrichment
+ - Distribution
+ - Expression
+ - Localisation
 - Queries run on all objects in the list
 
 Click the **Lists** tab to see the lists section. Here you can either:
@@ -904,25 +904,25 @@ Queries in the webapp are created and run using the *QueryBuilder*
 interface, which helps you build queries using the data model as a
 guide.
 
-1.  Click on the **QueryBuilder** tab
-    <img
-    src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Query-builder-tab.png" width="486"
-    height="102" alt="Query-builder-tab.png" />
-2.  Select **gene** as the type of object we want to query for
-    <img
-    src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bb/Query-select-gene.png" width="493"
-    height="258" alt="Query-select-gene.png" />
-3.  Click **summary** next to **gene** in the Model browser
-4.  Scroll down to pathways
-    1.  Expand the pathways collection
-    2.  Click **constrain** next to **name**
-    3.  Type in **p** into the value box in the pop-up
-    4.  Select **Pentose Phosphate Pathway** from the autocomplete
-        drop-down
-        <img
-        src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Query-built-query.png" width="822"
-        height="654" alt="Query-built-query.png" />
-5.  Select **Show results**
+1. Click on the **QueryBuilder** tab
+ <img
+ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Query-builder-tab.png" width="486"
+ height="102" alt="Query-builder-tab.png" />
+2. Select **gene** as the type of object we want to query for
+ <img
+ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bb/Query-select-gene.png" width="493"
+ height="258" alt="Query-select-gene.png" />
+3. Click **summary** next to **gene** in the Model browser
+4. Scroll down to pathways
+ 1. Expand the pathways collection
+ 2. Click **constrain** next to **name**
+ 3. Type in **p** into the value box in the pop-up
+ 4. Select **Pentose Phosphate Pathway** from the autocomplete
+ drop-down
+ <img
+ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Query-built-query.png" width="822"
+ height="654" alt="Query-built-query.png" />
+5. Select **Show results**
 
 You should see results like this:
 <img
@@ -1013,7 +1013,7 @@ requests to urls, and the clients we provide are simply ways to generate
 and validate urls, and manage the results they return. An example of a
 websevice url is:
 
-    http://preview.flymine.org/preview/service/template/results?name=Gene_Protein&constraint1=Gene&op1=LOOKUP&value1=big&extra1=&size=10&format=jsonobjects
+ http://preview.flymine.org/preview/service/template/results?name=Gene_Protein&constraint1=Gene&op1=LOOKUP&value1=big&extra1=&size=10&format=jsonobjects
 
 Here the different parts are:
 
@@ -1069,18 +1069,18 @@ Which in the case of our pathways query would look like this:
 
 ``` de1
 <query name="" model="genomic" view="Pathway.identifier Pathway.name Pathway.genes.primaryIdentifier Pathway.genes.symbol"
-  longDescription="For a specified KEGG, REACTOME or FlyReactome pathway, list all the genes that are involved for a particular organism"
-  sortOrder="Pathway.identifier asc" constraintLogic="B and C and A">
-  <pathDescription pathString="Pathway.genes" description="Gene"/>
-  <constraint path="Pathway.name" code="A" op="=" value="Pentose phosphate pathway"/>
-  <constraint path="Pathway.dataSets.name" code="B" op="=" value="KEGG pathways data set"/>
-  <constraint path="Pathway.genes.organism.name" code="C" op="=" value="Drosophila melanogaster"/>
+ longDescription="For a specified KEGG, REACTOME or FlyReactome pathway, list all the genes that are involved for a particular organism"
+ sortOrder="Pathway.identifier asc" constraintLogic="B and C and A">
+ <pathDescription pathString="Pathway.genes" description="Gene"/>
+ <constraint path="Pathway.name" code="A" op="=" value="Pentose phosphate pathway"/>
+ <constraint path="Pathway.dataSets.name" code="B" op="=" value="KEGG pathways data set"/>
+ <constraint path="Pathway.genes.organism.name" code="C" op="=" value="Drosophila melanogaster"/>
 </query>
 ```
 
 To run the xml you got, then use the *run-im-query* program:
 
-    run-im-query --url www.flymine.org/query path/to/query.xml
+ run-im-query --url www.flymine.org/query path/to/query.xml
 
 ### Running Templates
 
@@ -1090,7 +1090,7 @@ query string part of the webservice url. For example, to make a command
 line request for the pathways → genes template we can run the following
 command:
 
-    run-im-template --url www.flymine.org/query --title Pathway_Genes value1="Pentose phosphate pathway" value2="Drosophila melanogaster" value3="KEGG pathways data set"
+ run-im-template --url www.flymine.org/query --title Pathway_Genes value1="Pentose phosphate pathway" value2="Drosophila melanogaster" value3="KEGG pathways data set"
 
 ## Access from Perl & Java programs
 
@@ -1104,10 +1104,10 @@ our source tree:
 But the easiest way to install these clients is respectively:
 
 - **Perl**: install with a cpan client:
-    cpan Webservice::InterMine
+ cpan Webservice::InterMine
 
 - **Java**: download the client package from the appropriate webapp, by
-  visiting the API tab
+ visiting the API tab
 
 ### Webapp/Webservice Integration
 
@@ -1136,7 +1136,7 @@ Additional help is provided at the CPAN:
 
 or though the use of the `perldoc` command:
 
-    perldoc Webservice::InterMine
+ perldoc Webservice::InterMine
 
 ### Accessing Templates
 
@@ -1153,21 +1153,21 @@ use Webservice::InterMine 0.9412 'http://www.flymine.org/release-27.0/service';
 # template description - For a specified KEGG, REACTOME or FlyReactome pathway, list all the genes that are involved for a particular organism
 
 my $template = Webservice::InterMine->template('Pathway_Genes')
-    or die 'Could not find template';
+ or die 'Could not find template';
 
 # You can edit the constraint values below
-# A    Pathway.name    Show genes in pathway:
-# B    Pathway.dataSets.name    From dataset (KEGG, Reactome or FlyReactome):
-# C    Pathway.genes.organism.name    For organism:
+# A Pathway.name Show genes in pathway:
+# B Pathway.dataSets.name From dataset (KEGG, Reactome or FlyReactome):
+# C Pathway.genes.organism.name For organism:
 
 my $results = $template->results_with(
-    opA    => '=',
-    valueA => 'Pentose phosphate pathway',
-    opB    => '=',
-    valueB => 'KEGG pathways data set',
-    opC    => '=',
-    valueC => 'Drosophila melanogaster',
-    as     => 'string',
+ opA => '=',
+ valueA => 'Pentose phosphate pathway',
+ opB => '=',
+ valueB => 'KEGG pathways data set',
+ opC => '=',
+ valueC => 'Drosophila melanogaster',
+ as => 'string',
 );
 
 print $results."\n";
@@ -1195,39 +1195,39 @@ import org.intermine.webservice.client.template.TemplateParameter;
  */
 public class TemplatePathwayGenes
 {
-    private static String serviceRootUrl = "http://www.flymine.org/release-27.0/service";
+ private static String serviceRootUrl = "http://www.flymine.org/release-27.0/service";
 
-    /**
-     * @param args command line arguments
-     */
-    public static void main(String[] args) {
+ /**
+ * @param args command line arguments
+ */
+ public static void main(String[] args) {
 
-        TemplateService service = new ServiceFactory(serviceRootUrl, "TemplateService").getTemplateService();
+ TemplateService service = new ServiceFactory(serviceRootUrl, "TemplateService").getTemplateService();
 
-        List<TemplateParameter> parameters = new ArrayList<TemplateParameter>();
+ List<TemplateParameter> parameters = new ArrayList<TemplateParameter>();
 
-        // You can edit the constraint values below
-        // Constraint description - Show genes in pathway:
-        parameters.add(new TemplateParameter("Pathway.name", "eq", "Pentose phosphate pathway"));
-        // Constraint description - From dataset (KEGG, Reactome or FlyReactome):
-        parameters.add(new TemplateParameter("Pathway.dataSets.name", "eq", "KEGG pathways data set"));
-        // Constraint description - For organism:
-        parameters.add(new TemplateParameter("Pathway.genes.organism.name", "eq", "Drosophila melanogaster"));
+ // You can edit the constraint values below
+ // Constraint description - Show genes in pathway:
+ parameters.add(new TemplateParameter("Pathway.name", "eq", "Pentose phosphate pathway"));
+ // Constraint description - From dataset (KEGG, Reactome or FlyReactome):
+ parameters.add(new TemplateParameter("Pathway.dataSets.name", "eq", "KEGG pathways data set"));
+ // Constraint description - For organism:
+ parameters.add(new TemplateParameter("Pathway.genes.organism.name", "eq", "Drosophila melanogaster"));
 
-        // Name of a public template, private templates are not supported at the moment
-        String templateName = "Pathway_Genes";
+ // Name of a public template, private templates are not supported at the moment
+ String templateName = "Pathway_Genes";
 
-        // Number of results are fetched
-        int maxCount = 10000;
-        List<List<String>> result = service.getResult(templateName, parameters, maxCount);
-        System.out.print("Results: \n");
-        for (List<String> row : result) {
-            for (String cell : row) {
-                System.out.print(cell + " ");
-            }
-            System.out.print("\n");
-        }
-    }
+ // Number of results are fetched
+ int maxCount = 10000;
+ List<List<String>> result = service.getResult(templateName, parameters, maxCount);
+ System.out.print("Results: \n");
+ for (List<String> row : result) {
+ for (String cell : row) {
+ System.out.print(cell + " ");
+ }
+ System.out.print("\n");
+ }
+ }
 }
 ```
 
@@ -1248,10 +1248,10 @@ my $query = Webservice::InterMine->new_query;
 
 # The view specifies the output columns
 $query->add_view(qw/
-    Pathway.identifier
-    Pathway.name
-    Pathway.genes.primaryIdentifier
-    Pathway.genes.symbol
+ Pathway.identifier
+ Pathway.name
+ Pathway.genes.primaryIdentifier
+ Pathway.genes.symbol
 /);
 
 # Sort by
@@ -1259,24 +1259,24 @@ $query->set_sort_order('Pathway.identifier' => 'ASC');
 
 # You can edit the constraint values below
 $query->add_constraint(
-    path  => 'Pathway.name',
-    op    => '=',
-    value => 'Pentose phosphate pathway',
-    code => 'A',
+ path => 'Pathway.name',
+ op => '=',
+ value => 'Pentose phosphate pathway',
+ code => 'A',
 );
 
 $query->add_constraint(
-    path  => 'Pathway.dataSets.name',
-    op    => '=',
-    value => 'KEGG pathways data set',
-    code => 'B',
+ path => 'Pathway.dataSets.name',
+ op => '=',
+ value => 'KEGG pathways data set',
+ code => 'B',
 );
 
 $query->add_constraint(
-    path  => 'Pathway.genes.organism.name',
-    op    => '=',
-    value => 'Drosophila melanogaster',
-    code => 'C',
+ path => 'Pathway.genes.organism.name',
+ op => '=',
+ value => 'Drosophila melanogaster',
+ code => 'C',
 );
 
 # Constraint Logic
@@ -1309,53 +1309,53 @@ import org.intermine.pathquery.Constraints;
  */
 public class QueryClient
 {
-    private static String serviceRootUrl = "http://www.flymine.org/release-27.0/service";
+ private static String serviceRootUrl = "http://www.flymine.org/release-27.0/service";
 
-    /**
-     * @param args command line arguments
-     * @throws IOException
-     */
-    public static void main(String[] args) {
-        QueryService service =
-            new ServiceFactory(serviceRootUrl, "QueryService").getQueryService();
-        Model model = getModel();
-        PathQuery query = new PathQuery(model);
+ /**
+ * @param args command line arguments
+ * @throws IOException
+ */
+ public static void main(String[] args) {
+ QueryService service =
+ new ServiceFactory(serviceRootUrl, "QueryService").getQueryService();
+ Model model = getModel();
+ PathQuery query = new PathQuery(model);
 
-        // Add views
-        query.addViews("Pathway.identifier",
-                "Pathway.name",
-                "Pathway.genes.primaryIdentifier",
-                "Pathway.genes.symbol");
+ // Add views
+ query.addViews("Pathway.identifier",
+ "Pathway.name",
+ "Pathway.genes.primaryIdentifier",
+ "Pathway.genes.symbol");
 
-        // Add orderby
-        query.addOrderBy("Pathway.identifier", OrderDirection.ASC);
+ // Add orderby
+ query.addOrderBy("Pathway.identifier", OrderDirection.ASC);
 
-        // Add constraints and you can edit the constraint values below
-        query.addConstraint(Constraints.eq("Pathway.name", "Pentose phosphate pathway"), "A");
+ // Add constraints and you can edit the constraint values below
+ query.addConstraint(Constraints.eq("Pathway.name", "Pentose phosphate pathway"), "A");
 
-        query.addConstraint(Constraints.eq("Pathway.dataSets.name", "KEGG pathways data set"), "B");
+ query.addConstraint(Constraints.eq("Pathway.dataSets.name", "KEGG pathways data set"), "B");
 
-        query.addConstraint(Constraints.eq("Pathway.genes.organism.name", "Drosophila melanogaster"), "C");
+ query.addConstraint(Constraints.eq("Pathway.genes.organism.name", "Drosophila melanogaster"), "C");
 
-        // Add constraintLogic
-        query.setConstraintLogic("B and C and A");
+ // Add constraintLogic
+ query.setConstraintLogic("B and C and A");
 
-        // Number of results are fetched
-        int maxCount = 10000;
-        List<List<String>> result = service.getResult(query, maxCount);
-        System.out.print("Results: \n");
-        for (List<String> row : result) {
-            for (String cell : row) {
-                System.out.print(cell + " ");
-            }
-            System.out.print("\n");
-        }
-    }
+ // Number of results are fetched
+ int maxCount = 10000;
+ List<List<String>> result = service.getResult(query, maxCount);
+ System.out.print("Results: \n");
+ for (List<String> row : result) {
+ for (String cell : row) {
+ System.out.print(cell + " ");
+ }
+ System.out.print("\n");
+ }
+ }
 
-    private static Model getModel() {
-        ModelService service = new ServiceFactory(serviceRootUrl, "ModelService").getModelService();
-        return service.getModel();
-    }
+ private static Model getModel() {
+ ModelService service = new ServiceFactory(serviceRootUrl, "ModelService").getModelService();
+ return service.getModel();
+ }
 }
 ```
 
@@ -1394,38 +1394,38 @@ can see an example of the results in this format below:
 
 ``` de1
 {
-  'rootClass': 'Gene',
-  'modelName': 'genomic',
-  'views':     ["Gene.primaryIdentifier", "Gene.symbol", "Gene.proteins.primaryAccession", "Gene.proteins.primaryIdentifier"],
-  'executionTime':  '2011.01.14 13:32::14',
-  'results':   [
-    {
-      "primaryIdentifier": null,
-      "symbol":            null,
-      "objectId":          1719268932,
-      "class":             "Gene",
-      "proteins":          [
-        {
-          "primaryAccession":  "A2AKB2",
-          "primaryIdentifier": "A2AKB2_MOUSE",
-          "objectId":          1719574559,
-          "class":             "Protein"
-        },
-        {
-          "primaryAccession":  "P61965",
-          "primaryIdentifier": "WDR5_MOUSE",
-          "objectId":          1719268927,
-          "class":             "Protein"
-        },
-        {
-          "primaryAccession":  "Q3UNQ3",
-          "primaryIdentifier": "Q3UNQ3_MOUSE",
-          "objectId":          1719447174,
-          "class":             "Protein"
-        }
-      ]
-    }
-  ]
+ 'rootClass': 'Gene',
+ 'modelName': 'genomic',
+ 'views': ["Gene.primaryIdentifier", "Gene.symbol", "Gene.proteins.primaryAccession", "Gene.proteins.primaryIdentifier"],
+ 'executionTime': '2011.01.14 13:32::14',
+ 'results': [
+ {
+ "primaryIdentifier": null,
+ "symbol": null,
+ "objectId": 1719268932,
+ "class": "Gene",
+ "proteins": [
+ {
+ "primaryAccession": "A2AKB2",
+ "primaryIdentifier": "A2AKB2_MOUSE",
+ "objectId": 1719574559,
+ "class": "Protein"
+ },
+ {
+ "primaryAccession": "P61965",
+ "primaryIdentifier": "WDR5_MOUSE",
+ "objectId": 1719268927,
+ "class": "Protein"
+ },
+ {
+ "primaryAccession": "Q3UNQ3",
+ "primaryIdentifier": "Q3UNQ3_MOUSE",
+ "objectId": 1719447174,
+ "class": "Protein"
+ }
+ ]
+ }
+ ]
 }
 ```
 
@@ -1444,32 +1444,32 @@ example is included below as a demonstration:
 
 ``` de1
  <head>
-    <!-- jQuery is hosted by Google -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
-        type="text/javascript">
-    </script>
-    <!-- jquery-jsonp is likewise available from an online repository -->
-    <script src="http://jquery-jsonp.googlecode.com/files/jquery.jsonp-2.1.4.min.js"
-        type="text/javascript">
-    </script>
-    <!-- Similarly imbedding.js is hosted on intermine.org -->
-    <script src="http://www.intermine.org/lib/imbedding/0.1/imbedding.min.js"
-        type="text/javascript">
-    </script>
+ <!-- jQuery is hosted by Google -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
+ type="text/javascript">
+ </script>
+ <!-- jquery-jsonp is likewise available from an online repository -->
+ <script src="http://jquery-jsonp.googlecode.com/files/jquery.jsonp-2.1.4.min.js"
+ type="text/javascript">
+ </script>
+ <!-- Similarly imbedding.js is hosted on intermine.org -->
+ <script src="http://www.intermine.org/lib/imbedding/0.1/imbedding.min.js"
+ type="text/javascript">
+ </script>
  </head>
 
  <script type="text/javascript">
-    IMBedding.setBaseUrl("http://preview.flymine.org/preview");
-    IMBedding.loadTemplate(
-        {
-            name:           "Gene_RegionOverlappingTFbindingsite",
+ IMBedding.setBaseUrl("http://preview.flymine.org/preview");
+ IMBedding.loadTemplate(
+ {
+ name: "Gene_RegionOverlappingTFbindingsite",
 
-            constraint1:    "Gene",
-            op1:            "LOOKUP",
-            value1:         "CG2328",
-            code1:          "A",
-        },
-        '#some-placeholder',
-    );
+ constraint1: "Gene",
+ op1: "LOOKUP",
+ value1: "CG2328",
+ code1: "A",
+ },
+ '#some-placeholder',
+ );
  </script>
 ```

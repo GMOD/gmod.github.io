@@ -10,27 +10,27 @@ viewer. This page describes the database that GBrowse_syn uses, and how
 to get syntenic data into that database.
 
 - Sample data and configuration files can be downloaded from the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2009/SummerSchoolEurope/rice.tar.bz2"
-  class="external text" rel="nofollow">GMOD FTP site</a>; the sample
-  data are for two rice species (courtesy of Bonnie Hurwitz)
+ class="external text" rel="nofollow">GMOD FTP site</a>; the sample
+ data are for two rice species (courtesy of Bonnie Hurwitz)
 
-  Alignment Data</span>](#Example_Alignment_Data)
-  - [Note on
-    formats](#Note_on_formats)
-  - [Note on
-    the sequence ID syntax](#Note_on_the_sequence_ID_syntax)
+ Alignment Data</span>](#Example_Alignment_Data)
+ - [Note on
+ formats](#Note_on_formats)
+ - [Note on
+ the sequence ID syntax](#Note_on_the_sequence_ID_syntax)
 - [Loading the
-  alignment database](#Loading_the_alignment_database)
-  - [Create a
-    MySQL database](#Create_a_MySQL_database)
-  - [Loading
-    from multiple sequence
-    alignments](#Loading_from_multiple_sequence_alignments)
-  - [Loading
-    from other sources](#Loading_from_other_sources)
-    - [Data
-      loading format](#Data_loading_format)
+ alignment database](#Loading_the_alignment_database)
+ - [Create a
+ MySQL database](#Create_a_MySQL_database)
+ - [Loading
+ from multiple sequence
+ alignments](#Loading_from_multiple_sequence_alignments)
+ - [Loading
+ from other sources](#Loading_from_other_sources)
+ - [Data
+ loading format](#Data_loading_format)
 - [GBrowse_syn
-  Database Schema](#GBrowse_syn_Database_Schema)
+ Database Schema](#GBrowse_syn_Database_Schema)
 
 # Example Alignment Data
 
@@ -43,24 +43,24 @@ shown in the example below contains meta-data about the alignment that
 is essential for the data to be loaded correctly with strand and
 coordinate information
 
-    CLUSTAL W(1.81) multiple sequence alignment
+ CLUSTAL W(1.81) multiple sequence alignment
 
-    c_briggsae-chrII(+)/43862-46313           ATGAGCTTCCACAAAAGCATGAGCTTTCTCAGCTTCTGCCACATCAGCATTCAAATGATC
-    c_remanei-Crem_Contig172(-)/123228-124941 ATGAGCCTCTACAACCGCATGATTCTTTTCAGCCTCTGCCACGTCCGCATTCAAATGCTC
-    c_brenneri-Cbre_Contig60(+)/627772-630087 ATGAGCCTCCACAACAGCATGATTTTTCTCGGCTTCCGCCACATCCGCATTCAAATGATC
-    c_elegans-II(+)/9706834-9708803           ATGAGCCTCTACTACAGCATGATTCTTCTCAGCTTCTGCAACGTCAGCATTCAGATGATC
-                                              ****** ** ** *  ******   ** ** ** ** ** ** ** ******* *** **
+ c_briggsae-chrII(+)/43862-46313 ATGAGCTTCCACAAAAGCATGAGCTTTCTCAGCTTCTGCCACATCAGCATTCAAATGATC
+ c_remanei-Crem_Contig172(-)/123228-124941 ATGAGCCTCTACAACCGCATGATTCTTTTCAGCCTCTGCCACGTCCGCATTCAAATGCTC
+ c_brenneri-Cbre_Contig60(+)/627772-630087 ATGAGCCTCCACAACAGCATGATTTTTCTCGGCTTCCGCCACATCCGCATTCAAATGATC
+ c_elegans-II(+)/9706834-9708803 ATGAGCCTCTACTACAGCATGATTCTTCTCAGCTTCTGCAACGTCAGCATTCAGATGATC
+ ****** ** ** * ****** ** ** ** ** ** ** ** ******* *** **
 
-    c_briggsae-chrII(+)/43862-46313           CGCACAAATATGATGCACAAATCCACAACCTAAAGCATCTCCGATAACGTTGACCGAAGT
-    c_remanei-Crem_Contig172(-)/123228-124941 AGCACAAATGTAATGAACGAATCCGCATCCCAACGCATCGCCAATCACATTCACAGATGT
-    c_brenneri-Cbre_Contig60(+)/627772-630087 CGCACAAATGTAGTGGACAAATCCGCATCCCAAAGCGTCTCCGATAACATTTACCGAAGT
-    c_elegans-II(+)/9706834-9708803           TGCACAAATGTGATGAACGAATCCACATCCCAATGCATCACCGATCACATTGACAGATGT
-                                               ******** *  ** ** ***** ** ** ** ** ** ** ** ** ** ** ** **
-    c_briggsae-chrII(+)/43862-46313           CCGGAGTCGATCCCTGAAT-----------------------------------------
-    c_remanei-Crem_Contig172(-)/123228-124941 ACGAAGTCGGTCCCTATAAGGTATGATTTTATATGA----TGTACCATAAGGAAATAGTC
-    c_brenneri-Cbre_Contig60(+)/627772-630087 ACGAAGTCGATCCCTGAAA---------TCAGATGAGCGGTTGACCA---GAGAACAACC
-    c_elegans-II(+)/9706834-9708803           ACGAAGTCGGTCCCTGAAC--AATTATTT----TGA----TATA---GAAAGAAACGGTA
-                                               ** ***** *****  *
+ c_briggsae-chrII(+)/43862-46313 CGCACAAATATGATGCACAAATCCACAACCTAAAGCATCTCCGATAACGTTGACCGAAGT
+ c_remanei-Crem_Contig172(-)/123228-124941 AGCACAAATGTAATGAACGAATCCGCATCCCAACGCATCGCCAATCACATTCACAGATGT
+ c_brenneri-Cbre_Contig60(+)/627772-630087 CGCACAAATGTAGTGGACAAATCCGCATCCCAAAGCGTCTCCGATAACATTTACCGAAGT
+ c_elegans-II(+)/9706834-9708803 TGCACAAATGTGATGAACGAATCCACATCCCAATGCATCACCGATCACATTGACAGATGT
+ ******** * ** ** ***** ** ** ** ** ** ** ** ** ** ** ** **
+ c_briggsae-chrII(+)/43862-46313 CCGGAGTCGATCCCTGAAT-----------------------------------------
+ c_remanei-Crem_Contig172(-)/123228-124941 ACGAAGTCGGTCCCTATAAGGTATGATTTTATATGA----TGTACCATAAGGAAATAGTC
+ c_brenneri-Cbre_Contig60(+)/627772-630087 ACGAAGTCGATCCCTGAAA---------TCAGATGAGCGGTTGACCA---GAGAACAACC
+ c_elegans-II(+)/9706834-9708803 ACGAAGTCGGTCCCTGAAC--AATTATTT----TGA----TATA---GAAAGAAACGGTA
+ ** ***** ***** *
 
 ## Note on formats
 
@@ -73,14 +73,14 @@ not mean that clustalw is the program used to generate the alignment
 data***.
 
 - This particular alignment file in clustalw *format* was generated
-  using a part of the <span class="pops"><a
-  href="http://feb2006.archive.ensembl.org/info/software/compara/compara_tutorial.html"
-  class="external text" rel="nofollow">compara pipeline</a></span>.
+ using a part of the <span class="pops"><a
+ href="http://feb2006.archive.ensembl.org/info/software/compara/compara_tutorial.html"
+ class="external text" rel="nofollow">compara pipeline</a></span>.
 - See <span class="pops"><a
-  href="https://www.nescent.org/wg/courses_gmod_09/images/c/cf/WGA_data.png"
-  class="external text" rel="nofollow">this generalized hierarchical whole
-  genome alignment workflow</a></span> for general information on how
-  whole genome alignment data can be generated.
+ href="https://www.nescent.org/wg/courses_gmod_09/images/c/cf/WGA_data.png"
+ class="external text" rel="nofollow">this generalized hierarchical whole
+ genome alignment workflow</a></span> for general information on how
+ whole genome alignment data can be generated.
 
 ## Note on the sequence ID syntax
 
@@ -88,7 +88,7 @@ The sequence ID is this clustal file is overloaded to contain
 information about the species, strand and coordinates. This information
 is essential:
 
-     rice-3(+)/16598648-16600199
+ rice-3(+)/16598648-16600199
 
 The general format is species-refseq(strand)/start-end
 
@@ -112,8 +112,8 @@ end coordinate of the alignment relative to the reference sequence
 
 Examples:
 
-       c_elegans-I(+)/1..2300
-       myco_bovis-chr1(-)/15000..25000
+ c_elegans-I(+)/1..2300
+ myco_bovis-chr1(-)/15000..25000
 
 # Loading the alignment database
 
@@ -123,7 +123,7 @@ Before you load the database, make sure that a database of that name
 already exists; if not, create one from scratch using the following
 MySQL command:
 
-    mysql -uroot -ppassword -e 'create database my_database'
+ mysql -uroot -ppassword -e 'create database my_database'
 
 ## Loading from multiple sequence alignments
 
@@ -139,9 +139,9 @@ genome alignments for multiple species are generally more complex than
 simple multiple sequence alignments with clustalw.
 
 - More information on
-  [load_alignments_msa.pl](/wiki/GBrowse_syn_Scripts#load_alignments_msa.pl)
+ [load_alignments_msa.pl](/wiki/GBrowse_syn_Scripts#load_alignments_msa.pl)
 - See the GBrowse_syn page for more on [whole genome alignment
-  approaches](/wiki/GBrowse_syn#See_also)
+ approaches](/wiki/GBrowse_syn#See_also)
 
 ## Loading from other sources
 
@@ -156,7 +156,7 @@ format requires start and end coordinates for each reference sequence.
 Any features that have start end and strand information can be used.
 
 - More information on
-  [load_alignment_database.pl](/wiki/GBrowse_syn_Scripts#load_alignment_database.pl)
+ [load_alignment_database.pl](/wiki/GBrowse_syn_Scripts#load_alignment_database.pl)
 
 ### Data loading format
 
@@ -166,20 +166,20 @@ alignment (to facilitate accurate grid-lines in GBrowse_syn). Each
 record is a single line (wrapped here for display only). Note that a
 reciprocal alignment is also created during database loading.
 
-    #species1       seqid1  start1   end1   strand1  reserved  species2      seqid2         start2   end2  strand2 reserved \
-    # pos1-1  pos1-2  ...  posn-1  posn-2  |  pos1-2  pos1-1  ...  posn-2  posn-1
-    c_briggsae      chrI    1583997 1590364 +       .       c_remanei       Crem_Contig24   631879  634679  -       .       \
-    1584000 634676  1584100 634584  (truncated...)  |     631900  1590333 632000  1590233  (truncated ...)
+ #species1 seqid1 start1 end1 strand1 reserved species2 seqid2 start2 end2 strand2 reserved \
+ # pos1-1 pos1-2 ... posn-1 posn-2 | pos1-2 pos1-1 ... posn-2 posn-1
+ c_briggsae chrI 1583997 1590364 + . c_remanei Crem_Contig24 631879 634679 - . \
+ 1584000 634676 1584100 634584 (truncated...) | 631900 1590333 632000 1590233 (truncated ...)
 
 # GBrowse_syn Database Schema
 
 - The alignment database [schema](/wiki/Glossary#Schema) is very
-  simple; it has a tables for all reciprocal 'hits,' or alignment
-  features, and a table for (optional) 1:1 coordinate maps
+ simple; it has a tables for all reciprocal 'hits,' or alignment
+ features, and a table for (optional) 1:1 coordinate maps
 - The alignments table contains coordinate information and also support
-  cigar-line representations and the alignment to facilitate future
-  reconstruction of the alignment within
-  [GBrowse_syn](/wiki/GBrowse_syn).
+ cigar-line representations and the alignment to facilitate future
+ reconstruction of the alignment within
+ [GBrowse_syn](/wiki/GBrowse_syn).
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/GBS_Schema.png" class="thumbborder"

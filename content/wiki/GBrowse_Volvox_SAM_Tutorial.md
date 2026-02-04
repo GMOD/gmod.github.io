@@ -13,20 +13,20 @@ This is based on the [NGS
 tutorial](/wiki/GBrowse_NGS_Tutorial) that Dave
 Clements wrote.
 
-  file</span>](#Create_the_BAM_file)
+ file</span>](#Create_the_BAM_file)
 - [Add a database
-  stanza to the volvox
-  config](#Add_a_database_stanza_to_the_volvox_config)
+ stanza to the volvox
+ config](#Add_a_database_stanza_to_the_volvox_config)
 - [Add a coverage
-  track](#Add_a_coverage_track)
+ track](#Add_a_coverage_track)
 - [Add individual
-  reads](#Add_individual_reads)
+ reads](#Add_individual_reads)
 - [Semantic
-  zooming](#Semantic_zooming)
+ zooming](#Semantic_zooming)
 - [Read
-  pairs](#Read_pairs)
+ pairs](#Read_pairs)
 - [Coloring reads
-  according to quality](#Coloring_reads_according_to_quality)
+ according to quality](#Coloring_reads_according_to_quality)
 
 ## Create the BAM file
 
@@ -41,20 +41,20 @@ title="Volvox sam.zip">Volvox_sam.zip</a> file that has a directory with
 all of the files in it. Now convert the SAM file to a BAM file and index
 it:
 
-     samtools faidx volvox.fa
-     samtools import volvox.fa.fai volvox.sam volvox.bam
-     samtools sort volvox.bam volvox.sort
-     samtools index volvox.sort.bam
+ samtools faidx volvox.fa
+ samtools import volvox.fa.fai volvox.sam volvox.bam
+ samtools sort volvox.bam volvox.sort
+ samtools index volvox.sort.bam
 
 ## Add a database stanza to the volvox config
 
 The database stanza goes just above the "TRACK DEFAULTS" stanza:
 
-    [samdb:database]
-    db_adaptor     = Bio::DB::Sam
-    db_args        = -fasta /var/lib/gbrowse2/databases/volvox/volvox.fa
-                     -bam  /var/lib/gbrowse2/databases/volvox/volvox.sort.bam
-    search options = none
+ [samdb:database]
+ db_adaptor = Bio::DB::Sam
+ db_args = -fasta /var/lib/gbrowse2/databases/volvox/volvox.fa
+ -bam /var/lib/gbrowse2/databases/volvox/volvox.sort.bam
+ search options = none
 
 It's not a bad idea to move the data adaptor information from the top of
 the conf file (that points at the volvox database directory) down here
@@ -66,17 +66,17 @@ points at that database name so that the other tracks continue to work.
 
 Now add a stanza that will create a coverage density track.
 
-    [CoverageDensity]
-    feature        = coverage
-    glyph          = wiggle_density
-    database       = samdb
-    height         = 20
-    bicolor_pivot  = 15
-    pos_color      = blue
-    neg_color      = red
-    key            = Coverage (density)
-    category       = Reads
-    label          = 0
+ [CoverageDensity]
+ feature = coverage
+ glyph = wiggle_density
+ database = samdb
+ height = 20
+ bicolor_pivot = 15
+ pos_color = blue
+ neg_color = red
+ key = Coverage (density)
+ category = Reads
+ label = 0
 
 Note that the value of the `database` is `samdb`, which is the name it
 was given in the database stanza above. The `bicolor_pivot` value is the
@@ -88,20 +88,20 @@ neg_color).
 This stanza will show the individual reads as glyphs, though there will
 be a lot of them:
 
-    [Reads]
-    feature        = match
-    glyph          = segments
-    draw_target    = 1
-    show_mismatch  = 1
-    mismatch_color = red
-    database       = samdb
-    bgcolor        = blue
-    fgcolor        = white
-    height         = 5
-    label density  = 50
-    bump           = fast
-    key            = Reads
-    category       = Reads
+ [Reads]
+ feature = match
+ glyph = segments
+ draw_target = 1
+ show_mismatch = 1
+ mismatch_color = red
+ database = samdb
+ bgcolor = blue
+ fgcolor = white
+ height = 5
+ label density = 50
+ bump = fast
+ key = Reads
+ category = Reads
 
 The `draw_target` option tells the glyph to put the sequence of the read
 in the glyph when zoomed in far enough to see it and the `show_mismatch`
@@ -122,14 +122,14 @@ name, and then we add to the coverage track name (the one we want to
 appear as we zoom out) the base pair level at which we want it to "turn
 on", like this:
 
-    [Reads:1500]
-    feature        = coverage
-    glyph          = wiggle_density
-    database       = samdb
-    height         = 20
-    bicolor_pivot  = 15
-    pos_color      = blue
-    neg_color      = red
+ [Reads:1500]
+ feature = coverage
+ glyph = wiggle_density
+ database = samdb
+ height = 20
+ bicolor_pivot = 15
+ pos_color = blue
+ neg_color = red
 
 so that if you look at a range that is 1499 bp wide, you'll see
 individual reads, then if you move out a little bit and look at a
@@ -141,28 +141,28 @@ Bio::DB::Sam tools will also show read pairs matched up. To do this you
 use the "read_pair" feature type along with the segments glyph, like
 this:
 
-    [Pairs]
-    feature        = read_pair
-    glyph          = segments
-    draw_target    = 1
-    show_mismatch  = 1
-    mismatch_color = red
-    database       = samdb
-    bgcolor        = violet
-    height         = 5
-    label density  = 50
-    bump           = fast
-    key            = Read pairs
-    category       = Reads
+ [Pairs]
+ feature = read_pair
+ glyph = segments
+ draw_target = 1
+ show_mismatch = 1
+ mismatch_color = red
+ database = samdb
+ bgcolor = violet
+ height = 5
+ label density = 50
+ bump = fast
+ key = Read pairs
+ category = Reads
 
-    [Pairs:1000]
-    feature        = coverage
-    glyph          = wiggle_density
-    database       = samdb
-    height         = 20
-    bicolor_pivot  = 15
-    pos_color      = purple
-    neg_color      = red
+ [Pairs:1000]
+ feature = coverage
+ glyph = wiggle_density
+ database = samdb
+ height = 20
+ bicolor_pivot = 15
+ pos_color = purple
+ neg_color = red
 
 ## Coloring reads according to quality
 
@@ -171,13 +171,13 @@ score of the read. Since this tutorial is using fake data with uniform
 quality, it is somewhat boring, but if you have your own data, you can
 do this for bgcolor:
 
-    bgcolor = sub {
-            my $feature = shift;
-            my $blueness = 255 - int($feature->qual * 2.40);
-            my $colour = chr(35) . sprintf("%X", $blueness) .
-                                   sprintf("%X", $blueness) . "FF";
-            return $colour;
-            }
+ bgcolor = sub {
+ my $feature = shift;
+ my $blueness = 255 - int($feature->qual * 2.40);
+ my $colour = chr(35) . sprintf("%X", $blueness) .
+ sprintf("%X", $blueness) . "FF";
+ return $colour;
+ }
 
 where the callback will make the feature background more blue the higher
 the quality. How do you suppose it does that?

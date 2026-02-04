@@ -8,50 +8,50 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/375px-ApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/500px-ApolloLogo.png 2x"
 width="250" height="91" alt="Apollo" />
 
-This [Apollo](/wiki/Apollo) tutorial was presented by [Ed
-Lee](/wiki/User:Elee) at the [2010 GMOD Summer School -
+This [Apollo](/wiki/Apollo) tutorial was presented by Ed
+Lee at the [2010 GMOD Summer School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent Apollo tutorial can be found at the
 <a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo Tutorial</a> page.
 
-  VMware](#VMware)
+ VMware](#VMware)
 - [Caveats](#Caveats)
 - [Introduction](#Introduction)
-  - [Overview](#Overview)
-  - [Architecture](#Architecture)
-    - [Presentation
-      Layer](#Presentation_Layer)
-    - [Logic
-      Layer](#Logic_Layer)
-    - [Data
-      Layer](#Data_Layer)
+ - [Overview](#Overview)
+ - [Architecture](#Architecture)
+ - [Presentation
+ Layer](#Presentation_Layer)
+ - [Logic
+ Layer](#Logic_Layer)
+ - [Data
+ Layer](#Data_Layer)
 - [Installation](#Installation)
-  - [Pre-built
-    Installers](#Pre-built_Installers)
-  - [Checking
-    Out the Code From SVN](#Checking_Out_the_Code_From_SVN)
-  - [Getting
-    the Source Tarball](#Getting_the_Source_Tarball)
+ - [Pre-built
+ Installers](#Pre-built_Installers)
+ - [Checking
+ Out the Code From SVN](#Checking_Out_the_Code_From_SVN)
+ - [Getting
+ the Source Tarball](#Getting_the_Source_Tarball)
 - [Using
-  Apollo](#Using_Apollo)
+ Apollo](#Using_Apollo)
 - [Configuring
-  Apollo](#Configuring_Apollo)
-  - [apollo.cfg](#apollo.cfg)
-  - [data_source.style](#data_source.style)
-  - [data_source.tiers](#data_source.tiers)
+ Apollo](#Configuring_Apollo)
+ - [apollo.cfg](#apollo.cfg)
+ - [data_source.style](#data_source.style)
+ - [data_source.tiers](#data_source.tiers)
 - [Setting Up
-  Custom Chado
-  Configurations](#Setting_Up_Custom_Chado_Configurations)
-  - [chado-adapter.xml](#chado-adapter.xml)
-    - [chadoInstance
-      Element](#chadoInstance_Element)
-    - [chadodb Element](#chadodb_Element)
+ Custom Chado
+ Configurations](#Setting_Up_Custom_Chado_Configurations)
+ - [chado-adapter.xml](#chado-adapter.xml)
+ - [chadoInstance
+ Element](#chadoInstance_Element)
+ - [chadodb Element](#chadodb_Element)
 - [Setting Up a
-  Custom WebStart
-  Instance](#Setting_Up_a_Custom_WebStart_Instance)
+ Custom WebStart
+ Instance](#Setting_Up_a_Custom_WebStart_Instance)
 - [Writing Custom
-  Data Adapters](#Writing_Custom_Data_Adapters)
+ Data Adapters](#Writing_Custom_Data_Adapters)
 
 ## VMware
 
@@ -76,7 +76,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This  describes the
+This describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -167,8 +167,8 @@ the common application locations (such as `/usr/local/bin`), we'll need
 root access. We'll do everything from the command line since it's easier
 that way. Open up a terminal window and type the following:
 
-    $ cd ~/Documents/Software/installers
-    $ sudo /bin/sh Apollo_unix.sh
+ $ cd ~/Documents/Software/installers
+ $ sudo /bin/sh Apollo_unix.sh
 
 We'll just install everything with the default options.
 
@@ -180,7 +180,7 @@ Apollo code. Note that you'll be getting the development version and as
 such might not be fully stable. The following commands apply to Unix
 based command line SVN clients for an anonymous checkout.
 
-    $ svn co https://gmod.svn.sourceforge.net/svnroot/gmod/apollo/trunk Apollo
+ $ svn co https://gmod.svn.sourceforge.net/svnroot/gmod/apollo/trunk Apollo
 
 If you're using an IDE, chances are that your IDE will have SVN support
 (or have a plugin available).
@@ -207,7 +207,7 @@ configurations](#Setting_Up_Custom_Chado_Configurations).
 Let's first start by launching Apollo. Type the following in your
 terminal:
 
-    $ apollo
+ $ apollo
 
 We'll see an option for which data we want to load. We'll choose **Chado
 database** as our data source. Since we still don't have annotations on
@@ -283,11 +283,11 @@ genes, right? Apollo handles overlaps the following ways (which is
 configurable):
 
 - `ORF_Overlap`: If the transcript has any in-frame overlaps with
-  existing transcripts, it gets assigned as a splice variant to the
-  existing gene; otherwise a new gene is created.
+ existing transcripts, it gets assigned as a splice variant to the
+ existing gene; otherwise a new gene is created.
 - `SimpleOverlap`: If the transcript has any overlap (regardless of
-  frame) with existing transcripts, it gets assigned as a splice variant
-  to the existing gene; otherwise a new gene is created.
+ frame) with existing transcripts, it gets assigned as a splice variant
+ to the existing gene; otherwise a new gene is created.
 
 You'll notice that the newly created genes have an ID of the form
 `GMOD:temp#` and the transcripts have an ID of the form
@@ -413,12 +413,12 @@ particularly useful as since we're searching against NCBI's nr database
 following options:
 
 - Run options
-  - Filter out low complexity sequence
-  - Filter out masked sequence
+ - Filter out low complexity sequence
+ - Filter out masked sequence
 - Post processing options
-  - Remove hits with an expect above threshold
-  - Remove hits with a score below threshold
-  - Remove HSPs with a percent identity below threshold
+ - Remove hits with an expect above threshold
+ - Remove hits with a score below threshold
+ - Remove HSPs with a percent identity below threshold
 
 We can leave the default values for those options. Click **Run** to run
 the analysis. After a few seconds, a popup window will appear.
@@ -466,9 +466,9 @@ do, let's talk about how to configure Apollo. First of all, be aware
 that all configuration files can live in two places:
 
 - The global Apollo configuration directory in `$APOLLO_ROOT/conf` where
-  `$APOLLO_ROOT` is where Apollo was installed
+ `$APOLLO_ROOT` is where Apollo was installed
 - User specific configurations, are stored in `~/.apollo` where ~ is the
-  user home directory (different OS's handle it differently)
+ user home directory (different OS's handle it differently)
 
 The configurations in the user directory take precedence over the global
 ones. Depending on the configuration, it will either fully overwrite the
@@ -539,34 +539,34 @@ displayed together as a group. They will be displayed in the same row if
 possible when the features are expanded but on separate rows if they
 overlap. A `Tier` record will look something like this:
 
-    [Tier]
-    tiername : Annotation
-    visible : true
-    expanded : true
-    maxrows : 0
-    labeled : true
-    curated : true
-    warnonedit : false
+ [Tier]
+ tiername : Annotation
+ visible : true
+ expanded : true
+ maxrows : 0
+ labeled : true
+ curated : true
+ warnonedit : false
 
 Following the `Tier` record is one or more `Type` records. A `Type`
 record specifies which different types should appear in a given `Tier`.
 The `Type` record will look something like this:
 
-    [Type]
-    tiername : Gene Prediction
-    typename : Genscan
-    resulttype : genscan:dummy
-    resulttype : genscan
-    color : 204,153,255
-    usescore : true
-    minscore : - 1
-    maxscore : 50
-    glyph : DrawableResultFeatureSet
-    column : SCORE
-    column : GENOMIC_RANGE
-    column : query_frame
-    sortbycolumn : GENOMIC_RANGE
-    weburl : http://genes.mit.edu/GENSCAN.html#
+ [Type]
+ tiername : Gene Prediction
+ typename : Genscan
+ resulttype : genscan:dummy
+ resulttype : genscan
+ color : 204,153,255
+ usescore : true
+ minscore : - 1
+ maxscore : 50
+ glyph : DrawableResultFeatureSet
+ column : SCORE
+ column : GENOMIC_RANGE
+ column : query_frame
+ sortbycolumn : GENOMIC_RANGE
+ weburl : http://genes.mit.edu/GENSCAN.html#
 
 Again, there are many options supported by the tiers file and it can get
 quite overwhelming. The current `fly.tiers` file is over 1500 lines
@@ -606,13 +606,13 @@ skeleton for the XML file will look something like this:
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <chado-adapter>
-  <chadoInstance>
-    ...
-  </chadoInstance>
-   ...
-  <chadodb>
-    ...
-  </chadodb>
+ <chadoInstance>
+ ...
+ </chadoInstance>
+ ...
+ <chadodb>
+ ...
+ </chadodb>
 </chado-adapter>
 ```
 
@@ -624,72 +624,72 @@ like this:
 ``` de1
 <chadoInstance id="gmodSummerSchoolInstance" default="true">
 
-  <!-- associated Java class with this instance -->
-  <clsName>apollo.dataadapter.chado.jdbc.RiceChadoInstance</clsName>
+ <!-- associated Java class with this instance -->
+ <clsName>apollo.dataadapter.chado.jdbc.RiceChadoInstance</clsName>
 
-  <!-- database fields corresponding to top-level entries - will appear in the pulldown menu -->
-  <sequenceTypes>
-    <type>gene</type>
-    <type>
-      <name>contig</name>
-      <!-- give start and end input box for this region -->
-      <useStartAndEnd>true</useStartAndEnd>
-      <!-- query the database for valid ids for contigs -->
-      <queryForValueList>true</queryForValueList>
-      <!-- whether the feature is top level -->
-      <isTopLevel>true</isTopLevel>
-    </type>
-  </sequenceTypes>
+ <!-- database fields corresponding to top-level entries - will appear in the pulldown menu -->
+ <sequenceTypes>
+ <type>gene</type>
+ <type>
+ <name>contig</name>
+ <!-- give start and end input box for this region -->
+ <useStartAndEnd>true</useStartAndEnd>
+ <!-- query the database for valid ids for contigs -->
+ <queryForValueList>true</queryForValueList>
+ <!-- whether the feature is top level -->
+ <isTopLevel>true</isTopLevel>
+ </type>
+ </sequenceTypes>
 
-  <!-- CV information stored in the Chado instance -->
-  <partOfCvTerm>part_of</partOfCvTerm>
-  <featureCV>sequence</featureCV>
-  <relationshipCV>relationship</relationshipCV>
-  <propertyTypeCV>feature_property</propertyTypeCV>
+ <!-- CV information stored in the Chado instance -->
+ <partOfCvTerm>part_of</partOfCvTerm>
+ <featureCV>sequence</featureCV>
+ <relationshipCV>relationship</relationshipCV>
+ <propertyTypeCV>feature_property</propertyTypeCV>
 
-  <!-- list of gene predictions to retrieve -->
-  <genePredictionPrograms>
-    <program>maker</program>
-  </genePredictionPrograms>
+ <!-- list of gene predictions to retrieve -->
+ <genePredictionPrograms>
+ <program>maker</program>
+ </genePredictionPrograms>
 
-  <!-- list of search hits to retrieve -->
-  <searchHitPrograms>
-    <program>blastn</program>
-    <program>blastx</program>
-    <program>tblastx</program>
-    <program>est2genome</program>
-    <program>protein2genome</program>
-    <program>repeatmasker</program>
-    <program>fgenesh</program>
-    <program>fgenesh_masked</program>
-    <program>genemark</program>
-    <program>genemark_masked</program>
-    <program>snap</program>
-    <program>snap_masked</program>
-  </searchHitPrograms>
+ <!-- list of search hits to retrieve -->
+ <searchHitPrograms>
+ <program>blastn</program>
+ <program>blastx</program>
+ <program>tblastx</program>
+ <program>est2genome</program>
+ <program>protein2genome</program>
+ <program>repeatmasker</program>
+ <program>fgenesh</program>
+ <program>fgenesh_masked</program>
+ <program>genemark</program>
+ <program>genemark_masked</program>
+ <program>snap</program>
+ <program>snap_masked</program>
+ </searchHitPrograms>
 
-  <!-- will most likely be set to true; exists for backward support for non-standard Chado -->
-  <searchHitsHaveFeatLocs>true</searchHitsHaveFeatLocs>
+ <!-- will most likely be set to true; exists for backward support for non-standard Chado -->
+ <searchHitsHaveFeatLocs>true</searchHitsHaveFeatLocs>
 
-  <!-- list of one-level annotations to retrieve -->
-  <oneLevelAnnotTypes>
-    <type>promoter</type>
-    <type>transposable_element</type>
-    <type>remark</type>
-    <type>repeat_region</type>
-  </oneLevelAnnotTypes>
+ <!-- list of one-level annotations to retrieve -->
+ <oneLevelAnnotTypes>
+ <type>promoter</type>
+ <type>transposable_element</type>
+ <type>remark</type>
+ <type>repeat_region</type>
+ </oneLevelAnnotTypes>
 
-  <!-- list of three-level annotations to retrieve -->
-  <threeLevelAnnotTypes>
-    <type>gene</type>
-    <type>pseudogene</type>
-    <type>tRNA</type>
-    <type>snRNA</type>
-    <type>snoRNA</type>
-    <type>ncRNA</type>
-    <type>rRNA</type>
-    <type>miRNA</type>
-  </threeLevelAnnotTypes>
+ <!-- list of three-level annotations to retrieve -->
+ <threeLevelAnnotTypes>
+ <type>gene</type>
+ <type>pseudogene</type>
+ <type>tRNA</type>
+ <type>snRNA</type>
+ <type>snoRNA</type>
+ <type>ncRNA</type>
+ <type>rRNA</type>
+ <type>miRNA</type>
+ </threeLevelAnnotTypes>
 
 </chadoInstance>
 ```
@@ -705,29 +705,29 @@ ones). The XML will look something like this:
 ``` de1
 <chadodb>
 
-  <!-- label that will appear in the dropdown list of databases -->
-  <name>GMOD Summer School</name>
+ <!-- label that will appear in the dropdown list of databases -->
+ <name>GMOD Summer School</name>
 
-  <!-- the Apollo class to use for your database -->
-  <adapter>apollo.dataadapter.chado.jdbc.PostgresChadoAdapter</adapter>
+ <!-- the Apollo class to use for your database -->
+ <adapter>apollo.dataadapter.chado.jdbc.PostgresChadoAdapter</adapter>
 
-  <!-- the URL for the database server -->
-  <url>jdbc:postgresql://localhost:5432/chado</url>
+ <!-- the URL for the database server -->
+ <url>jdbc:postgresql://localhost:5432/chado</url>
 
-  <!-- database name -->
-  <dbName>chado</dbName>
+ <!-- database name -->
+ <dbName>chado</dbName>
 
-  <!-- database user / login -->
-  <dbUser>gmod</dbUser>
+ <!-- database user / login -->
+ <dbUser>gmod</dbUser>
 
-  <!-- identifies the type of Chado database -->
-  <dbInstance>gmodSummerSchoolInstance</dbInstance>
+ <!-- identifies the type of Chado database -->
+ <dbInstance>gmodSummerSchoolInstance</dbInstance>
 
-  <!-- style configuration for this database -->
-  <style>gmod_summer_school.style</style>
+ <!-- style configuration for this database -->
+ <style>gmod_summer_school.style</style>
 
-  <!-- if set to true, will be database used when launching Apollo using command line arguments -->
-  <default-command-line-db>true</default-command-line-db>
+ <!-- if set to true, will be database used when launching Apollo using command line arguments -->
+ <default-command-line-db>true</default-command-line-db>
 
 </chadodb>
 ```
@@ -749,7 +749,7 @@ We've already checked out the code from SVN in our virtual machines. The
 code is located in `~/Documents/Software/Apollo`. The code is the up to
 date so we don't need to update it. Change into the `Apollo` directory.
 
-    $ cd ~/Documents/Software/Apollo
+ $ cd ~/Documents/Software/Apollo
 
 Now we'll need to create our Apollo jar file for deployment. Before we
 do that, we want to make sure that our custom configurations are in the
@@ -757,7 +757,7 @@ do that, we want to make sure that our custom configurations are in the
 let's copy our modified `chado-adapter.xml` and the style and tiers
 files to the `conf` directory.
 
-    $ cp ~/.apollo/chado-adapter.xml ~/.apollo/gmod_summer_school.* conf
+ $ cp ~/.apollo/chado-adapter.xml ~/.apollo/gmod_summer_school.* conf
 
 Now we're ready to build our updated Apollo jar. We'll use
 <a href="http://ant.apache.org" class="external text"
@@ -765,8 +765,8 @@ Now we're ready to build our updated Apollo jar. We'll use
 `make` but has a lot of native support for Java. Like `make`, we can
 have multiple targets. We're interested in the `jar` target.
 
-    $ cd src/java
-    $ ant jar
+ $ cd src/java
+ $ ant jar
 
 So traditionally, setting up a WebStart instance is quite a bit of work.
 Luckily, we have a very nice Perl script that does a lot of the magic
@@ -777,71 +777,71 @@ template XML file that is used for this script.
 <?xml version="1.0" encoding="UTF-8"?>
 <webstart>
 
-  <!-- all this stuff is required for signing jars, shouldn't take too long to run -->
-  <jarsigner>
-    <alias>apollo</alias>
-    <keypass>apollo</keypass>
-    <storepass>apollo</storepass>
-    <keystore>apollo_store</keystore>
-    <validity>700</validity>
-    <!-- you might want to put your name -->
-    <commonName>GMOD Summer School 2010</commonName>
-    <!-- you might want to put your department name -->
-    <organizationUnit>GMOD Summer School 2010</organizationUnit>
-    <!-- you might want to put your organization's name -->
-    <organizationName>GMOD</organizationName>
-    <!-- you might want to put your organization's city -->
-    <localityName>Durham</localityName>
-    <!-- you might want to put your organization's state -->
-    <stateName>NC</stateName>
-    <!-- you might want to put your organization's country -->
-    <country>USA</country>
-  </jarsigner>
+ <!-- all this stuff is required for signing jars, shouldn't take too long to run -->
+ <jarsigner>
+ <alias>apollo</alias>
+ <keypass>apollo</keypass>
+ <storepass>apollo</storepass>
+ <keystore>apollo_store</keystore>
+ <validity>700</validity>
+ <!-- you might want to put your name -->
+ <commonName>GMOD Summer School 2010</commonName>
+ <!-- you might want to put your department name -->
+ <organizationUnit>GMOD Summer School 2010</organizationUnit>
+ <!-- you might want to put your organization's name -->
+ <organizationName>GMOD</organizationName>
+ <!-- you might want to put your organization's city -->
+ <localityName>Durham</localityName>
+ <!-- you might want to put your organization's state -->
+ <stateName>NC</stateName>
+ <!-- you might want to put your organization's country -->
+ <country>USA</country>
+ </jarsigner>
 
-  <!-- now we need to populate our jnlp information -->
-  <jnlp spec="1.0+">
-    <information>
-      <title>Apollo</title>
-      <vendor>GMOD Summer School 2010</vendor>
-      <description>Apollo Webstart</description>
-      <!-- location of your project's web page -->
-      <homepage href="http://localhost/apollo" />
-      <!-- if you want to have WebStart add a specific image as your icon,
-            point to the location of the image -->
-      <icon href="images/head-of-apollo.gif" kind="shortcut" />
-      <!-- create a shortcut on your desktop -->
-      <shortcut online="true">
-        <desktop />
-      </shortcut>
-      <!-- allow users to launch Apollo when offline -->
-      <offline-allowed />
-    </information>
-    <!-- request all permissions - might be needed since Apollo will access the local
-          file system -->
-    <security>
-      <all-permissions />
-    </security>
-    <!-- we require at least Java 1.5, set to start using 64m and up to 500m -->
-    <resources>
-      <j2se version="1.5+" initial-heap-size="64m" max-heap-size="500m" />
-    </resources>
-    <!-- where the main method is located - don't change this -->
-    <application-desc main-class="apollo.main.Apollo">
-        <!-- we can add arguments when launching Apollo - this particular one allows us to
-              load chromosome 1, from 11650000 to 11685000 - great way to have Apollo load
-              specific regions -->
-        <argument>-i</argument>
-        <argument>chadodb</argument>
-        <argument>-l</argument>
-        <argument>scf1117875582023:523000-532000</argument>
-    </application-desc>
-  </jnlp>
-  <webserver>
-    <!-- URL where the webstart instance will reside -->
-    <url>http://localhost/apollo/webstart</url>
-    <!-- relative location to <url> where jars are located -->
-    <jar_location>jars</jar_location>
-  </webserver>
+ <!-- now we need to populate our jnlp information -->
+ <jnlp spec="1.0+">
+ <information>
+ <title>Apollo</title>
+ <vendor>GMOD Summer School 2010</vendor>
+ <description>Apollo Webstart</description>
+ <!-- location of your project's web page -->
+ <homepage href="http://localhost/apollo" />
+ <!-- if you want to have WebStart add a specific image as your icon,
+ point to the location of the image -->
+ <icon href="images/head-of-apollo.gif" kind="shortcut" />
+ <!-- create a shortcut on your desktop -->
+ <shortcut online="true">
+ <desktop />
+ </shortcut>
+ <!-- allow users to launch Apollo when offline -->
+ <offline-allowed />
+ </information>
+ <!-- request all permissions - might be needed since Apollo will access the local
+ file system -->
+ <security>
+ <all-permissions />
+ </security>
+ <!-- we require at least Java 1.5, set to start using 64m and up to 500m -->
+ <resources>
+ <j2se version="1.5+" initial-heap-size="64m" max-heap-size="500m" />
+ </resources>
+ <!-- where the main method is located - don't change this -->
+ <application-desc main-class="apollo.main.Apollo">
+ <!-- we can add arguments when launching Apollo - this particular one allows us to
+ load chromosome 1, from 11650000 to 11685000 - great way to have Apollo load
+ specific regions -->
+ <argument>-i</argument>
+ <argument>chadodb</argument>
+ <argument>-l</argument>
+ <argument>scf1117875582023:523000-532000</argument>
+ </application-desc>
+ </jnlp>
+ <webserver>
+ <!-- URL where the webstart instance will reside -->
+ <url>http://localhost/apollo/webstart</url>
+ <!-- relative location to <url> where jars are located -->
+ <jar_location>jars</jar_location>
+ </webserver>
 </webstart>
 ```
 
@@ -852,17 +852,17 @@ The Apache web pages reside at `/var/www`. We'll create an Apollo
 directory. The directory is only writable by root, so we'll need to be
 root.
 
-    $ sudo -s
-    $ cd /var/www
-    $ mkdir -p apollo/webstart
-    $ cd apollo/webstart
+ $ sudo -s
+ $ cd /var/www
+ $ mkdir -p apollo/webstart
+ $ cd apollo/webstart
 
 Let's create the file `apollo_webstart.xml` in the `webstart` directory
 we just created. Now we'll run the magical script. Note that you'll need
 to have the `XML::Twig` module installed.
 
-    $ ~/Documents/Software/Apollo/bin/webstart_generator.pl -i apollo_webstart.xml \
-       -d ~/Documents/Software/Apollo/jars -o apollo.jnlp -D jars
+ $ ~/Documents/Software/Apollo/bin/webstart_generator.pl -i apollo_webstart.xml \
+ -d ~/Documents/Software/Apollo/jars -o apollo.jnlp -D jars
 
 Voila, it was THAT easy. This script took care of signing all the jars
 and generating the appropriate `jnlp` file. Next time, when you make a
@@ -874,9 +874,9 @@ WebStart instance. Let's call it `index.html`.
 
 ``` enter
  <html>
-   <body>
-     <a href="/wiki/apollo.jnlp">Launch Apollo!!!</a>
-   </body>
+ <body>
+ <a href="/wiki/apollo.jnlp">Launch Apollo!!!</a>
+ </body>
  </html>
 ```
 
@@ -884,7 +884,7 @@ One last note, you'll want to make sure that your web server has support
 for `jnlp` files. With our Apache install, you'll need to make sure that
 you have the following line in your `/etc/mime.types` file:
 
-    application/x-java-jnlp-file    jnlp
+ application/x-java-jnlp-file jnlp
 
 Now we can test out our Java Web Start instance by going to
 `http://localhost/apollo/webstart` and clicking on the link.
@@ -918,7 +918,7 @@ code. So all we need to do is tell Apollo to load the data adapter
 plugin. We'll add the following to `apollo.cfg`:
 
 ``` enter
- DataAdapterInstall      "apollo.dataadapter.sample.SampleAdapter"   "gmod_summer_school.style"     "Sample data adapter"
+ DataAdapterInstall "apollo.dataadapter.sample.SampleAdapter" "gmod_summer_school.style" "Sample data adapter"
 ```
 
 The first column tells Apollo that we'll be loading a new data adapter.

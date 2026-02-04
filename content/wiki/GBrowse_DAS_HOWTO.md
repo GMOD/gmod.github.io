@@ -22,12 +22,12 @@ Perl Archive Network
 
 Unix users can install Bio::Das with this command:
 
-    % perl -MCPAN -e 'install Bio::Das'
-    Windows users can use the PPM tool:
+ % perl -MCPAN -e 'install Bio::Das'
+ Windows users can use the PPM tool:
 
-    C:\Windows> ppm
-    ppm> install Bio::Das
-    ppm> quit
+ C:\Windows> ppm
+ ppm> install Bio::Das
+ ppm> quit
 
 You may need to issue the command "rep add gmod
 <a href="http://www.gmod.org/ggb/ppm" class="external free"
@@ -51,15 +51,15 @@ To start, find the elegans_core.conf configuration file in the tutorial
 configuration file to load this file by adding the following to the end
 (if it is not there already from previous tutorials):
 
-    [elegans_core]
-    description = Core C. elegans annotations
-    path        = elegans_core.conf
+ [elegans_core]
+ description = Core C. elegans annotations
+ path = elegans_core.conf
 
 To enable the DAS server, add the following somewhere within the
 \[GENERAL\] section of the elegans_core.conf file:
 
-    # DAS reference server
-    das mapmaster      = SELF
+ # DAS reference server
+ das mapmaster = SELF
 
 What this line is doing is to declare to the DAS system that our server
 is authoritative for the coordinates on the current C. elegans genome
@@ -90,14 +90,14 @@ include:
 Find the \[Genes\] stanza and modify it to to have a das category of
 "transcription" as shown here:
 
-    [Genes]
-    feature      = gene
-    glyph        = gene
-    height       = 8
-    bgcolor      = blue
-    description  = 1
-    das category = transcription
-    key          = Protein-coding genes
+ [Genes]
+ feature = gene
+ glyph = gene
+ height = 8
+ bgcolor = blue
+ description = 1
+ das category = transcription
+ key = Protein-coding genes
 
 Similarly, modify the \[Alignments\] track to have a das category of
 "similarity." You do not need to add a category to the DNA track, as it
@@ -110,28 +110,28 @@ Using a web browser fetch the URL
 return an XML document giving information about each of the data sources
 that you have configured.
 
-    <?xml version="1.0" standalone="yes"?>
-    <!DOCTYPE DASDSN SYSTEM "http://www.biodas.org/dtd/dasdsn.dtd">
-    <DASDSN>
-      <DSN>
+ <?xml version="1.0" standalone="yes"?>
+ <!DOCTYPE DASDSN SYSTEM "http://www.biodas.org/dtd/dasdsn.dtd">
+ <DASDSN>
+ <DSN>
 
 ``` de1
 elegans_core|Genes
 ```
 
-         <MAPMASTER>http://localhost/cgi-bin/gb2/das/elegans_core</MAPMASTER>
-         <DESCRIPTION>Core C. elegans annotations; Genes track; Protein-coding genes</DESCRIPTION>
-      </DSN>
-      <DSN>
+ <MAPMASTER>http://localhost/cgi-bin/gb2/das/elegans_core</MAPMASTER>
+ <DESCRIPTION>Core C. elegans annotations; Genes track; Protein-coding genes</DESCRIPTION>
+ </DSN>
+ <DSN>
 
 ``` de1
 elegans_core|Alignments
 ```
 
-         <MAPMASTER>http://localhost/cgi-bin/gb2/das/elegans_core</MAPMASTER>
-         <DESCRIPTION>elegans_core; Alignments track; ESTs</DESCRIPTION>
-      </DSN>
-    </DASDSN>
+ <MAPMASTER>http://localhost/cgi-bin/gb2/das/elegans_core</MAPMASTER>
+ <DESCRIPTION>elegans_core; Alignments track; ESTs</DESCRIPTION>
+ </DSN>
+ </DASDSN>
 
 This is showing that there is one configured DAS source, the
 "elegans_core" data set. Next test that the DAS "types" request is

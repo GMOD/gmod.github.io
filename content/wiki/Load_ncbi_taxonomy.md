@@ -7,8 +7,8 @@ title: "Load ncbi taxonomy"
 in the
 [**`phylotree`**](/wiki/Chado_Phylogeny_Module#Table:_phylotree)[phylotree
 table](/wiki/Chado_Phylogeny_Module#Table:_phylotree).
-This script was contributed by [Naama
-Menda](/wiki/User:NaamaMenda) at
+This script was contributed by Naama
+Menda at
 <a href="http://www.sgn.cornell.edu/" class="external text"
 
 ## Where to find it
@@ -24,14 +24,14 @@ with the distribution and will typically go in /usr/bin or
 - `-H hostname` for database \[required if `-g` isn't used\]
 - `-D database name</t> [required if <tt>-g` isn't used\]
 - `-g GMOD database profile name` (can provide host and DB name)
-  Default: `default`
+ Default: `default`
 - `-p phylotree name` (optional - defaults to `NCBI taxonomy tree`. You
-  want to set this if you plan to load more than one tree)
+ want to set this if you plan to load more than one tree)
 - `-i input file` - list of taxonomy ids to be stored (optional- without
-  this the entire NCBI taxonomy will be loaded)
+ this the entire NCBI taxonomy will be loaded)
 - `-v` verbose output
 - `-t` trial mode. Don't perform any store operations at all. (trial
-  mode cannot test inserting associated data for new terms)
+ mode cannot test inserting associated data for new terms)
 
 For storing phylonodes a new phylotree will be stored with the name
 'NCBI taxonomy tree'. Each organism will get a phylonode id and will be

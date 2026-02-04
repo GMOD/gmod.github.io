@@ -26,44 +26,44 @@ uses GMOD, and what challenges they faced.
 **See also:**
 
 - <a href="http://paramecium.cgm.cnrs-gif.fr/" class="external text"
-  rel="nofollow">ParameciumDB website</a>:
+ rel="nofollow">ParameciumDB website</a>:
 - <a href="http://nar.oxfordjournals.org/cgi/content/full/35/suppl_1/D439"
-  class="external text" rel="nofollow">ParameciumDB: a community resource
-  that integrates the Paramecium tetraurelia genome sequence with genetic
-  data</a>, in the January 2007 Database Issue of
-  <a href="http://nar.oxfordjournals.org/" class="external text"
-  rel="nofollow"><em>Nucleic Acids Research</em></a>.
+ class="external text" rel="nofollow">ParameciumDB: a community resource
+ that integrates the Paramecium tetraurelia genome sequence with genetic
+ data</a>, in the January 2007 Database Issue of
+ <a href="http://nar.oxfordjournals.org/" class="external text"
+ rel="nofollow"><em>Nucleic Acids Research</em></a>.
 
-  Biology</span>](#Paramecium_Biology)
-  - [*Paramecium tetraurelia*
-    Genome](#Paramecium_tetraurelia_Genome)
+ Biology</span>](#Paramecium_Biology)
+ - [*Paramecium tetraurelia*
+ Genome](#Paramecium_tetraurelia_Genome)
 - [ParameciumDB](#ParameciumDB)
 - [Implementation](#Implementation)
-  - [Database](#Database)
-    - [Design
-      Overview](#Design_Overview)
-    - [Chado
-      Modules](#Chado_Modules)
-      - [General Module](#General_Module)
-      - [Pub Module](#Pub_Module)
-      - [Sequence Module](#Sequence_Module)
-      - [Controlled Vocabulary
-        Module](#Controlled_Vocabulary_Module)
-      - [Genetic Module](#Genetic_Module)
-      - [Stock Module](#Stock_Module)
-  - [Web
-    Site](#Web_Site)
-    - [Turnkey /
-      GMODWeb](#Turnkey_.2F_GMODWeb)
-    - [GBrowse](#GBrowse)
-  - [Annotation](#Annotation)
-  - [Middleware](#Middleware)
-    - [Bio::Chado API](#Bio::Chado_API)
-  - [Comments](#Comments)
-    - [Issues](#Issues)
-    - [Feedback](#Feedback)
+ - [Database](#Database)
+ - [Design
+ Overview](#Design_Overview)
+ - [Chado
+ Modules](#Chado_Modules)
+ - [General Module](#General_Module)
+ - [Pub Module](#Pub_Module)
+ - [Sequence Module](#Sequence_Module)
+ - [Controlled Vocabulary
+ Module](#Controlled_Vocabulary_Module)
+ - [Genetic Module](#Genetic_Module)
+ - [Stock Module](#Stock_Module)
+ - [Web
+ Site](#Web_Site)
+ - [Turnkey /
+ GMODWeb](#Turnkey_.2F_GMODWeb)
+ - [GBrowse](#GBrowse)
+ - [Annotation](#Annotation)
+ - [Middleware](#Middleware)
+ - [Bio::Chado API](#Bio::Chado_API)
+ - [Comments](#Comments)
+ - [Issues](#Issues)
+ - [Feedback](#Feedback)
 - [Related
-  Reading](#Related_Reading)
+ Reading](#Related_Reading)
 
 # Paramecium Biology
 
@@ -78,23 +78,23 @@ rearrangements of the genome.
 Paramecium is a model for studying
 
 - complex functions characteristic of multi-cellular organisms
-  - somatic differentiation involving programmed rearrangements of the
-    genome at each sexual generation
-  - biogenesis of cilia and ciliary basal bodies (equivalent to
-    centrioles)
-  - regulated secretion
-  - receptor- and ion channel-mediated cell signaling in response to
-    environmental stimuli
+ - somatic differentiation involving programmed rearrangements of the
+ genome at each sexual generation
+ - biogenesis of cilia and ciliary basal bodies (equivalent to
+ centrioles)
+ - regulated secretion
+ - receptor- and ion channel-mediated cell signaling in response to
+ environmental stimuli
 - cytoplasmic non-Mendelian heredity and underlying homology-dependent
-  mechanisms that involve non-coding RNA
-  - mating type and other characters are inherited maternally
-  - cortical pattern: related to prion heredity
+ mechanisms that involve non-coding RNA
+ - mating type and other characters are inherited maternally
+ - cortical pattern: related to prion heredity
 - evolutionary consequences of whole genome duplication
-  - at least 3 whole genome duplications and an unprecedented number of
-    paralogs related by whole genome duplication
-  - explosive speciation followed the most recent whole genome
-    duplication (15 sibling species of the P aurelia complex)
-  - dosage constraints seem to shape the gene repertoire
+ - at least 3 whole genome duplications and an unprecedented number of
+ paralogs related by whole genome duplication
+ - explosive speciation followed the most recent whole genome
+ duplication (15 sibling species of the P aurelia complex)
+ - dosage constraints seem to shape the gene repertoire
 
 ## *Paramecium tetraurelia* Genome
 
@@ -109,8 +109,8 @@ assembly and subsequent analysis have resulted in:
 
 # ParameciumDB
 
-ParameciumDB is maintained by two people, [Linda
-Sperling](/wiki/User:Sperling) and Olivier Arnaiz at the
+ParameciumDB is maintained by two people, Linda
+Sperling and Olivier Arnaiz at the
 <a href="http://www.cgm.cnrs-gif.fr/version_gb/index_gb.html"
 class="external text" rel="nofollow">Centre de Genetique Moleculaire</a>,
 a part of the
@@ -130,12 +130,12 @@ implemented, but also touches on toher technologies as well.
 **See also:**
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt" class="internal"
-  title="Cain-050516.ppt">Setting up ParameciumDB</a> in Scott Cain's
-  presentation at the [May 2005 GMOD
-  Meeting](/wiki/May_2005_GMOD_Meeting).
+ title="Cain-050516.ppt">Setting up ParameciumDB</a> in Scott Cain's
+ presentation at the [May 2005 GMOD
+ Meeting](/wiki/May_2005_GMOD_Meeting).
 - <a href="http://paramecium.cgm.cnrs-gif.fr/parawiki/ParameciumDB"
-  class="external text" rel="nofollow">About ParameciumDB</a> on the
-  ParameciumDB web site.
+ class="external text" rel="nofollow">About ParameciumDB</a> on the
+ ParameciumDB web site.
 
 ## Database
 
@@ -183,8 +183,8 @@ represented in the sequence module using the `feature, featureloc`, and
 **See also:**
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/ParameciumDB_synteny.pdf"
-  class="internal" title="ParameciumDB synteny.pdf">Synteny data in
-  ParameciumDB</a> working document
+ class="internal" title="ParameciumDB synteny.pdf">Synteny data in
+ ParameciumDB</a> working document
 
 #### Controlled Vocabulary Module
 
@@ -192,14 +192,14 @@ The core [Chado CV Module](/wiki/Chado_CV_Module) is used to
 store these ontologies:
 
 - <a href="http://www.sequenceontology.org/" class="external text"
-  rel="nofollow">Sequence Ontology (SO)</a>
+ rel="nofollow">Sequence Ontology (SO)</a>
 - <a href="http://www.geneontology.org/" class="external text"
-  rel="nofollow">Gene Ontology (GO)</a>
+ rel="nofollow">Gene Ontology (GO)</a>
 - <a href="http://www.obofoundry.org/ro/" class="external text"
-  rel="nofollow">Relation Ontology (RO)</a>
+ rel="nofollow">Relation Ontology (RO)</a>
 - <a href="http://obofoundry.org/cgi-bin/detail.cgi?quality"
-  class="external text" rel="nofollow">Phenotype and Trait Ontology
-  (PATO)</a>
+ class="external text" rel="nofollow">Phenotype and Trait Ontology
+ (PATO)</a>
 - Paramecium Anatomy Ontology
 - Paramecium Assay Ontology
 
@@ -266,15 +266,15 @@ community for annotation of the gene models. They use
 **See also:**
 
 - <a
-  href="http://paramecium.cgm.cnrs-gif.fr/parawiki/Community_Annotation_Project"
-  class="external text" rel="nofollow">Community Annotation Project</a>
-  from ParameciumDB web site
+ href="http://paramecium.cgm.cnrs-gif.fr/parawiki/Community_Annotation_Project"
+ class="external text" rel="nofollow">Community Annotation Project</a>
+ from ParameciumDB web site
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
-  class="internal" title="CommunityAnnotationNov2007.pdf">Community
-  Annotation at ParameciumDB</a> - [Linda
-  Sperling's](/wiki/User:Sperling) presentation at the
-  [November 2007 GMOD
-  Meeting](/wiki/November_2007_GMOD_Meeting).
+ class="internal" title="CommunityAnnotationNov2007.pdf">Community
+ Annotation at ParameciumDB</a> - Linda
+ Sperling's presentation at the
+ [November 2007 GMOD
+ Meeting](/wiki/November_2007_GMOD_Meeting).
 
 ## Middleware
 
@@ -296,59 +296,59 @@ opposed to an EnsEMBL database) and for ParameciumDB.
 
 - Content control - moved to [CVS](/wiki/Glossary#CVS)
 - Incorporation of the custom [Chado Stock
-  Module](/wiki/Chado_Stock_Module)
+ Module](/wiki/Chado_Stock_Module)
 - Getting [Turnkey](/wiki/Turnkey)/[GMODWeb](/wiki/GMODWeb) to
-  work
+ work
 - Logical Chado issues
-  - Making all features part-of chromosome
-  - Making results children of genes
+ - Making all features part-of chromosome
+ - Making results children of genes
 - <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
-  title="GBrowse adaptors">GBrowse Chado adapter</a> bugs
+ title="GBrowse adaptors">GBrowse Chado adapter</a> bugs
 - Getting parsers and loaders bug free.
 - Making [Apollo and Chado](/wiki/Apollo-Chado) data models
-  compatible
+ compatible
 - Maintenance of data, schema and new software versions
 
 ### Feedback
 
 - [GBrowse](/wiki/GBrowse) documentation is very good for
-  Bio::DB::GFF but a little less so for Bio::DB::Das::Chado.
+ Bio::DB::GFF but a little less so for Bio::DB::Das::Chado.
 - Chado's install documentation is not bad but requires investment.
 - [Turnkey](/wiki/Turnkey) is a wonderful tool and it should
-  continue to be developed.
+ continue to be developed.
 - [Apollo](/wiki/Apollo) is a beautiful genome editor, though it is
-  complicated for a naive user.
+ complicated for a naive user.
 - [BioMart](/wiki/BioMart) seems to be a very powerful tool and is
-  an invaluable addition to any MOD.
+ an invaluable addition to any MOD.
 - [Chado Mage Module](/wiki/Chado_Mage_Module) is being
-  successfully used for transcriptome data, but it is not yet visible to
-  the public.
+ successfully used for transcriptome data, but it is not yet visible to
+ the public.
 
 # Related Reading
 
 - <a href="http://paramecium.cgm.cnrs-gif.fr/" class="external text"
-  rel="nofollow">ParameciumDB website</a>:
-  - <a href="http://paramecium.cgm.cnrs-gif.fr/parawiki/ParameciumDB"
-    class="external text" rel="nofollow">About ParameciumDB</a>
-  - <a
-    href="http://paramecium.cgm.cnrs-gif.fr/parawiki/Community_Annotation_Project"
-    class="external text" rel="nofollow">Community Annotation</a>
+ rel="nofollow">ParameciumDB website</a>:
+ - <a href="http://paramecium.cgm.cnrs-gif.fr/parawiki/ParameciumDB"
+ class="external text" rel="nofollow">About ParameciumDB</a>
+ - <a
+ href="http://paramecium.cgm.cnrs-gif.fr/parawiki/Community_Annotation_Project"
+ class="external text" rel="nofollow">Community Annotation</a>
 - <a href="http://nar.oxfordjournals.org/cgi/content/full/35/suppl_1/D439"
-  class="external text" rel="nofollow">ParameciumDB: a community resource
-  that integrates the Paramecium tetraurelia genome sequence with genetic
-  data</a>, in the January 2007 Database Issue of
-  <a href="http://nar.oxfordjournals.org/" class="external text"
-  rel="nofollow"><em>Nucleic Acids Research</em></a>.
+ class="external text" rel="nofollow">ParameciumDB: a community resource
+ that integrates the Paramecium tetraurelia genome sequence with genetic
+ data</a>, in the January 2007 Database Issue of
+ <a href="http://nar.oxfordjournals.org/" class="external text"
+ rel="nofollow"><em>Nucleic Acids Research</em></a>.
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt" class="internal"
-  title="Cain-050516.ppt">Scott Cain's presentation</a> (the "Setting up
-  ParameciumDB" section) from the [May 2005 GMOD
-  Meeting](/wiki/May_2005_GMOD_Meeting).
+ title="Cain-050516.ppt">Scott Cain's presentation</a> (the "Setting up
+ ParameciumDB" section) from the [May 2005 GMOD
+ Meeting](/wiki/May_2005_GMOD_Meeting).
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
-  class="internal" title="CommunityAnnotationNov2007.pdf">Community
-  Annotation at ParameciumDB</a> - [Linda
-  Sperling's](/wiki/User:Sperling) presentation at the
-  [November 2007 GMOD
-  Meeting](/wiki/November_2007_GMOD_Meeting).
+ class="internal" title="CommunityAnnotationNov2007.pdf">Community
+ Annotation at ParameciumDB</a> - Linda
+ Sperling's presentation at the
+ [November 2007 GMOD
+ Meeting](/wiki/November_2007_GMOD_Meeting).
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/ParameciumDB_synteny.pdf"
-  class="internal" title="ParameciumDB synteny.pdf">Synteny data in
-  ParameciumDB</a> working document.
+ class="internal" title="ParameciumDB synteny.pdf">Synteny data in
+ ParameciumDB</a> working document.

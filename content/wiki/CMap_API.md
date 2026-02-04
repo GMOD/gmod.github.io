@@ -9,119 +9,119 @@ href="http://gmod.svn.sourceforge.net/viewvc/gmod/cmap/trunk/docs/CMAP_API.pod"
 class="external text" rel="nofollow">SourceForge</a>. Editing will not
 result in long term changes.
 
-  API</span>](#CMap_API)
+ API</span>](#CMap_API)
 - [VERSION](#VERSION)
 - [Introduction](#Introduction)
 - [Overview](#Overview)
 - [Important
-  Notes](#Important_Notes)
-  - [Accession
-    IDs](#Accession_IDs)
-  - [Purge the
-    Cache](#Purge_the_Cache)
-    - [Inside
-      a Program](#Inside_a_Program)
-    - [Command line](#Command_line)
-    - [Cache
-      Level](#Cache_Level)
-  - [CMap
-    Assembly Editor Plug-ins](#CMap_Assembly_Editor_Plug-ins)
+ Notes](#Important_Notes)
+ - [Accession
+ IDs](#Accession_IDs)
+ - [Purge the
+ Cache](#Purge_the_Cache)
+ - [Inside
+ a Program](#Inside_a_Program)
+ - [Command line](#Command_line)
+ - [Cache
+ Level](#Cache_Level)
+ - [CMap
+ Assembly Editor Plug-ins](#CMap_Assembly_Editor_Plug-ins)
 - [Importing
-  Data](#Importing_Data)
-  - [Creating a
-    Species](#Creating_a_Species)
-    - [Returns
-      species_id](#Returns_species_id)
-    - [Parameters](#Parameters)
-  - [Creating a
-    Map Set](#Creating_a_Map_Set)
-    - [Returns
-      map_set_id](#Returns_map_set_id)
-    - [Parameters](#Parameters_2)
-  - [Creating a
-    Map](#Creating_a_Map)
-    - [Returns map_id](#Returns_map_id)
-    - [Parameters](#Parameters_3)
-  - [Creating a
-    Features](#Creating_a_Features)
-    - [Returns
-      feature_id](#Returns_feature_id)
-    - [Parameters](#Parameters_4)
-  - [Creating a
-    Correspondence](#Creating_a_Correspondence)
-    - [Returns
-      feature_correspondence_id](#Returns_feature_correspondence_id)
-    - [Threshold](#Threshold)
-    - [Parameters](#Parameters_5)
-  - [Creating
-    an Attribute](#Creating_an_Attribute)
-    - [Returns 1](#Returns_1)
-    - [Parameters](#Parameters_6)
-  - [Creating
-    an External Reference](#Creating_an_External_Reference)
-    - [Returns 1](#Returns_1_2)
-    - [Parameters](#Parameters_7)
-  - [Creating a
-    Map to Feature Link](#Creating_a_Map_to_Feature_Link)
-    - [Returns 1](#Returns_1_3)
-    - [Parameters](#Parameters_8)
+ Data](#Importing_Data)
+ - [Creating a
+ Species](#Creating_a_Species)
+ - [Returns
+ species_id](#Returns_species_id)
+ - [Parameters](#Parameters)
+ - [Creating a
+ Map Set](#Creating_a_Map_Set)
+ - [Returns
+ map_set_id](#Returns_map_set_id)
+ - [Parameters](#Parameters_2)
+ - [Creating a
+ Map](#Creating_a_Map)
+ - [Returns map_id](#Returns_map_id)
+ - [Parameters](#Parameters_3)
+ - [Creating a
+ Features](#Creating_a_Features)
+ - [Returns
+ feature_id](#Returns_feature_id)
+ - [Parameters](#Parameters_4)
+ - [Creating a
+ Correspondence](#Creating_a_Correspondence)
+ - [Returns
+ feature_correspondence_id](#Returns_feature_correspondence_id)
+ - [Threshold](#Threshold)
+ - [Parameters](#Parameters_5)
+ - [Creating
+ an Attribute](#Creating_an_Attribute)
+ - [Returns 1](#Returns_1)
+ - [Parameters](#Parameters_6)
+ - [Creating
+ an External Reference](#Creating_an_External_Reference)
+ - [Returns 1](#Returns_1_2)
+ - [Parameters](#Parameters_7)
+ - [Creating a
+ Map to Feature Link](#Creating_a_Map_to_Feature_Link)
+ - [Returns 1](#Returns_1_3)
+ - [Parameters](#Parameters_8)
 - [Querying the
-  CMap Database](#Querying_the_CMap_Database)
-  - [Getting
-    Species Information](#Getting_Species_Information)
-    - [Parameters](#Parameters_9)
-    - [Structure
-      Returned](#Structure_Returned)
-  - [Getting
-    Map Set Information](#Getting_Map_Set_Information)
-    - [Parameters](#Parameters_10)
-    - [Structure
-      Returned](#Structure_Returned_2)
-    - [See
-      also](#See_also)
-  - [Getting
-    Map Information](#Getting_Map_Information)
-    - [Parameters](#Parameters_11)
-    - [Structure
-      Returned](#Structure_Returned_3)
-    - [See
-      also](#See_also_2)
-  - [Getting
-    Feature Information](#Getting_Feature_Information)
-    - [Parameters](#Parameters_12)
-    - [Structure
-      Returned](#Structure_Returned_4)
-    - [See
-      also](#See_also_3)
-  - [Getting
-    Correspondence
-    Information](#Getting_Correspondence_Information)
-    - [Parameters](#Parameters_13)
-    - [Structure
-      Returned](#Structure_Returned_5)
-    - [See
-      also](#See_also_4)
-  - [Getting
-    Attribute Information](#Getting_Attribute_Information)
-    - [Parameters](#Parameters_14)
-    - [Structure
-      Returned](#Structure_Returned_6)
-  - [Getting
-    External Reference
-    Information](#Getting_External_Reference_Information)
-    - [Parameters](#Parameters_15)
-    - [Structure
-      Returned](#Structure_Returned_7)
-  - [Getting
-    Map to Feature
-    Information](#Getting_Map_to_Feature_Information)
-    - [Parameters](#Parameters_16)
-    - [Structure
-      Returned](#Structure_Returned_8)
-  - [Final
-    information](#Final_information)
+ CMap Database](#Querying_the_CMap_Database)
+ - [Getting
+ Species Information](#Getting_Species_Information)
+ - [Parameters](#Parameters_9)
+ - [Structure
+ Returned](#Structure_Returned)
+ - [Getting
+ Map Set Information](#Getting_Map_Set_Information)
+ - [Parameters](#Parameters_10)
+ - [Structure
+ Returned](#Structure_Returned_2)
+ - [See
+ also](#See_also)
+ - [Getting
+ Map Information](#Getting_Map_Information)
+ - [Parameters](#Parameters_11)
+ - [Structure
+ Returned](#Structure_Returned_3)
+ - [See
+ also](#See_also_2)
+ - [Getting
+ Feature Information](#Getting_Feature_Information)
+ - [Parameters](#Parameters_12)
+ - [Structure
+ Returned](#Structure_Returned_4)
+ - [See
+ also](#See_also_3)
+ - [Getting
+ Correspondence
+ Information](#Getting_Correspondence_Information)
+ - [Parameters](#Parameters_13)
+ - [Structure
+ Returned](#Structure_Returned_5)
+ - [See
+ also](#See_also_4)
+ - [Getting
+ Attribute Information](#Getting_Attribute_Information)
+ - [Parameters](#Parameters_14)
+ - [Structure
+ Returned](#Structure_Returned_6)
+ - [Getting
+ External Reference
+ Information](#Getting_External_Reference_Information)
+ - [Parameters](#Parameters_15)
+ - [Structure
+ Returned](#Structure_Returned_7)
+ - [Getting
+ Map to Feature
+ Information](#Getting_Map_to_Feature_Information)
+ - [Parameters](#Parameters_16)
+ - [Structure
+ Returned](#Structure_Returned_8)
+ - [Final
+ information](#Final_information)
 - [Questions or
-  Comments](#Questions_or_Comments)
+ Comments](#Questions_or_Comments)
 - [AUTHOR](#AUTHOR)
 
 ## CMap API
@@ -185,19 +185,19 @@ Purging inside your program is simple. Use a Bio%253A%253AGMOD::CMap::Admin
 object (see "Importing Data" for creating this object) to call the
 purge_cache method.
 
-       $admin->purge_cache( );
+ $admin->purge_cache( );
 
 A cache level can be specified. See the section below on cache levels
 for more information.
 
-       $admin->purge_cache( $cache_level );
+ $admin->purge_cache( $cache_level );
 
 #### Command line
 
 To purge the cache on the command line use cmap/bin/cmap_admin.pl. You
 can either use the menu system or by command line:
 
-     $ cmap_admin.pl [-d data_source] [--cache_level level] --action purge_query_cache
+ $ cmap_admin.pl [-d data_source] [--cache_level level] --action purge_query_cache
 
 #### Cache Level
 
@@ -235,20 +235,20 @@ To create data in the CMap database, a CMap admin object needs to be
 created. In the following example, \$data_source stores the data source
 name that identifies which configuration file to use.
 
-       use Bio%253A%253AGMOD::CMap::Admin;
+ use Bio%253A%253AGMOD::CMap::Admin;
 
-       my $data_source = 'CMAP_DEMO';
-       my $cmap_admin
-           = Bio%253A%253AGMOD::CMap::Admin->new( data_source => $data_source, );
+ my $data_source = 'CMAP_DEMO';
+ my $cmap_admin
+ = Bio%253A%253AGMOD::CMap::Admin->new( data_source => $data_source, );
 
 ### Creating a Species
 
-       my $species_id = $admin->species_create(
-           species_full_name   => $species_full_name,
-           species_common_name => $species_common_name,
-           display_order       => $display_order,
-           species_acc         => $species_acc,
-       );
+ my $species_id = $admin->species_create(
+ species_full_name => $species_full_name,
+ species_common_name => $species_common_name,
+ display_order => $display_order,
+ species_acc => $species_acc,
+ );
 
 #### Returns species_id
 
@@ -269,19 +269,19 @@ See "Accession IDs" for more information about accession IDs.
 
 ### Creating a Map Set
 
-       my $map_set_id = $admin->map_set_create(
-           map_set_name       => $map_set_name,
-           map_set_acc        => $map_set_acc,
-           map_type_acc       => $map_type_acc,
-           width              => $width,
-           is_relational_map  => $is_relational_map,
-           published_on       => $published_on,
-           map_set_short_name => $map_set_short_name,
-           display_order      => $display_order,
-           species_id         => $species_id,
-           color              => $color,
-           shape              => $shape,
-       );
+ my $map_set_id = $admin->map_set_create(
+ map_set_name => $map_set_name,
+ map_set_acc => $map_set_acc,
+ map_type_acc => $map_type_acc,
+ width => $width,
+ is_relational_map => $is_relational_map,
+ published_on => $published_on,
+ map_set_short_name => $map_set_short_name,
+ display_order => $display_order,
+ species_id => $species_id,
+ color => $color,
+ shape => $shape,
+ );
 
 #### Returns map_set_id
 
@@ -326,14 +326,14 @@ The shape of the maps. This can be "I-beam", "box" or "dumbbell".
 
 ### Creating a Map
 
-       my $map_id = $admin->map_create(
-           map_name      => $map_name,
-           map_set_id    => $map_set_id,
-           map_acc       => $map_acc,
-           map_start     => $map_start,
-           map_stop      => $map_stop,
-           display_order => $display_order,
-       );
+ my $map_id = $admin->map_create(
+ map_name => $map_name,
+ map_set_id => $map_set_id,
+ map_acc => $map_acc,
+ map_start => $map_start,
+ map_stop => $map_stop,
+ display_order => $display_order,
+ );
 
 #### Returns map_id
 
@@ -362,17 +362,17 @@ displayed in map lists.
 
 ### Creating a Features
 
-       my $feature_id = $admin->feature_create(
-           map_id           => $map_id,
-           feature_name     => $feature_name,
-           feature_acc      => $feature_acc,
-           feature_start    => $feature_start,
-           feature_stop     => $feature_stop,
-           is_landmark      => $is_landmark,
-           feature_type_acc => $feature_type_acc,
-           direction        => $direction,
-           #gclass => $gclass, # not likely to be used
-       );
+ my $feature_id = $admin->feature_create(
+ map_id => $map_id,
+ feature_name => $feature_name,
+ feature_acc => $feature_acc,
+ feature_start => $feature_start,
+ feature_stop => $feature_stop,
+ is_landmark => $is_landmark,
+ feature_type_acc => $feature_type_acc,
+ direction => $direction,
+ #gclass => $gclass, # not likely to be used
+ );
 
 #### Returns feature_id
 
@@ -411,16 +411,16 @@ integrated with GBrowse and should not be used otherwise.
 
 ### Creating a Correspondence
 
-       my $feature_correspondence_id = $admin->feature_correspondence_create(
-           feature_id1                => $feature_id1,
-           feature_id2                => $feature_id2,
-           feature_acc1               => $feature_acc1,
-           feature_acc2               => $feature_acc2,
-           is_enabled                 => $is_enabled,
-           evidence_type_acc          => $evidence_type_acc, # Alt: correspondence_evidence
-           score                      => $score, # used in conjunction with evidence_type_acc
-           feature_correspondence_acc => $feature_correspondence_acc,
-       );
+ my $feature_correspondence_id = $admin->feature_correspondence_create(
+ feature_id1 => $feature_id1,
+ feature_id2 => $feature_id2,
+ feature_acc1 => $feature_acc1,
+ feature_acc2 => $feature_acc2,
+ is_enabled => $is_enabled,
+ evidence_type_acc => $evidence_type_acc, # Alt: correspondence_evidence
+ score => $score, # used in conjunction with evidence_type_acc
+ feature_correspondence_acc => $feature_correspondence_acc,
+ );
 
 #### Returns feature_correspondence_id
 
@@ -436,7 +436,7 @@ play around with it.
 To finish creating the correspondences in the queue, simply run the
 method again with no arguments.
 
-     $admin->feature_correspondence_create();
+ $admin->feature_correspondence_create();
 
 #### Parameters
 
@@ -466,11 +466,11 @@ List of evidence hashes that correspond to the evidence types that this
 correspondence should have. The hashes must have a "evidence_type_acc"
 key. It can also have a "score" value.
 
-       my $evidences = [
-           {   evidence_type_acc => $evidence_type_acc,
-               score             => $score,
-           },
-       ];
+ my $evidences = [
+ { evidence_type_acc => $evidence_type_acc,
+ score => $score,
+ },
+ ];
 
 \- feature_correspondence_acc
 See "Accession IDs" for more information about accession IDs.
@@ -480,14 +480,14 @@ See the Threshold section above.
 
 ### Creating an Attribute
 
-       $admin->attribute_create(
-           object_id       => $object_id,
-           attribute_name  => $attribute_name,
-           attribute_value => $attribute_value,
-           object_type     => $object_type,
-           display_order   => $display_order,
-           is_public       => $is_public,
-       );
+ $admin->attribute_create(
+ object_id => $object_id,
+ attribute_name => $attribute_name,
+ attribute_value => $attribute_value,
+ object_type => $object_type,
+ display_order => $display_order,
+ is_public => $is_public,
+ );
 
 See also \$admin-\>set_attribute() for a slightly faster (but more
 complicated) version.
@@ -517,14 +517,14 @@ If 1 (default), the attribute will be displayed on the CMap web page.
 
 ### Creating an External Reference
 
-       $admin->xref_create(
-           object_id     => $object_id,
-           xref_name     => $xref_name,
-           xref_url      => $xref_url,
-           object_type   => $object_type,
-           display_order => $display_order,
-           is_public     => $is_public,
-       );
+ $admin->xref_create(
+ object_id => $object_id,
+ xref_name => $xref_name,
+ xref_url => $xref_url,
+ object_type => $object_type,
+ display_order => $display_order,
+ is_public => $is_public,
+ );
 
 See also \$admin-\>set_xref() for a slightly faster (but more
 complicated) version.
@@ -551,12 +551,12 @@ displayed in xref lists.
 
 ### Creating a Map to Feature Link
 
-       $admin->map_to_feature_create(
-           feature_id  => $feature_id,
-           feature_acc => $feature_acc,
-           map_id      => $map_id,
-           map_acc     => $map_acc,
-       );
+ $admin->map_to_feature_create(
+ feature_id => $feature_id,
+ feature_acc => $feature_acc,
+ map_id => $map_id,
+ map_acc => $map_acc,
+ );
 
 #### Returns 1
 
@@ -581,14 +581,14 @@ To query the data, another object is needed which we will call the
 the following examble, we'll use the \$cmap_admin object from the
 "Importing Data" section.
 
-     my $sql_object = $cmap_admin->sql();
+ my $sql_object = $cmap_admin->sql();
 
 When you have the \$sql_object, you can then call any of the methods in
 Bio/GMOD/CMap/Data/Generic.pm.
 
 ### Getting Species Information
 
-       my $species = $sql_object->get_species();
+ my $species = $sql_object->get_species();
 
 #### Parameters
 
@@ -610,17 +610,17 @@ Is this enabled (is_enabled) :
 
 #### Structure Returned
 
-       [   {   species_id          => $species_id,
-               species_acc         => $species_acc,
-               species_common_name => $species_common_name,
-               species_full_name   => $species_full_name,
-               display_order       => $display_order,
-           },
-       ]
+ [ { species_id => $species_id,
+ species_acc => $species_acc,
+ species_common_name => $species_common_name,
+ species_full_name => $species_full_name,
+ display_order => $display_order,
+ },
+ ]
 
 ### Getting Map Set Information
 
-       my $map_sets = $sql_object->get_map_sets();
+ my $map_sets = $sql_object->get_map_sets();
 
 #### Parameters
 
@@ -657,30 +657,30 @@ Add a map count to the return object
 
 #### Structure Returned
 
-       [   {   map_set_id             => $map_set_id,
-               map_set_acc            => $map_set_acc,
-               map_set_name           => $map_set_name,
-               map_set_short_name     => $map_set_short_name,
-               map_type_acc           => $map_type_acc,
-               published_on           => $published_on,
-               is_enabled             => $is_enabled,
-               is_relational_map      => $is_relational_map,
-               map_units              => $map_units,
-               map_set_display_order  => $map_set_display_order,
-               shape                  => $shape,
-               color                  => $color,
-               width                  => $width,
-               species_id             => $species_id,
-               species_acc            => $species_acc,
-               species_common_name    => $species_common_name,
-               species_full_name      => $species_full_name,
-               species_display_order  => $species_display_order,
-               map_type               => $map_type,
-               map_type_display_order => $map_type_display_order,
-               epoch_published_on     => $epoch_published_on,
-               map_count => $map_count,    # (Only if count_maps is specified)
-           },
-       ]
+ [ { map_set_id => $map_set_id,
+ map_set_acc => $map_set_acc,
+ map_set_name => $map_set_name,
+ map_set_short_name => $map_set_short_name,
+ map_type_acc => $map_type_acc,
+ published_on => $published_on,
+ is_enabled => $is_enabled,
+ is_relational_map => $is_relational_map,
+ map_units => $map_units,
+ map_set_display_order => $map_set_display_order,
+ shape => $shape,
+ color => $color,
+ width => $width,
+ species_id => $species_id,
+ species_acc => $species_acc,
+ species_common_name => $species_common_name,
+ species_full_name => $species_full_name,
+ species_display_order => $species_display_order,
+ map_type => $map_type,
+ map_type_display_order => $map_type_display_order,
+ epoch_published_on => $epoch_published_on,
+ map_count => $map_count, # (Only if count_maps is specified)
+ },
+ ]
 
 #### See also
 
@@ -689,7 +689,7 @@ Bio%253A%253AGMOD::CMap::Data::Generic";
 
 ### Getting Map Information
 
-       my $maps = $sql_object->get_maps();
+ my $maps = $sql_object->get_maps();
 
 #### Parameters
 
@@ -729,37 +729,37 @@ Add a feature count to the return object
 
 #### Structure Returned
 
-       [   {   map_id                 => $map_id,
-               map_acc                => $map_acc,
-               map_name               => $map_name,
-               map_start              => $map_start,
-               map_stop               => $map_stop,
-               display_order          => $display_order,
-               map_set_id             => $map_set_id,
-               map_set_acc            => $map_set_acc,
-               map_set_name           => $map_set_name,
-               map_set_short_name     => $map_set_short_name,
-               published_on           => $published_on,
-               shape                  => $shape,
-               width                  => $width,
-               color                  => $color,
-               map_type_acc           => $map_type_acc,
-               map_units              => $map_units,
-               is_relational_map      => $is_relational_map,
-               species_id             => $species_id,
-               species_acc            => $species_acc,
-               species_common_name    => $species_common_name,
-               species_full_name      => $species_full_name,
-               map_type_display_order => $map_type_display_order,
-               map_type               => $map_type,
-               epoch_published_on     => $epoch_published_on,
-               default_shape          => $default_shape,
-               default_color          => $default_color,
-               default_width          => $default_width,
-               feature_count          =>
-                   $feature_count,    # (Only if count_features is specified)
-           },
-       ]
+ [ { map_id => $map_id,
+ map_acc => $map_acc,
+ map_name => $map_name,
+ map_start => $map_start,
+ map_stop => $map_stop,
+ display_order => $display_order,
+ map_set_id => $map_set_id,
+ map_set_acc => $map_set_acc,
+ map_set_name => $map_set_name,
+ map_set_short_name => $map_set_short_name,
+ published_on => $published_on,
+ shape => $shape,
+ width => $width,
+ color => $color,
+ map_type_acc => $map_type_acc,
+ map_units => $map_units,
+ is_relational_map => $is_relational_map,
+ species_id => $species_id,
+ species_acc => $species_acc,
+ species_common_name => $species_common_name,
+ species_full_name => $species_full_name,
+ map_type_display_order => $map_type_display_order,
+ map_type => $map_type,
+ epoch_published_on => $epoch_published_on,
+ default_shape => $default_shape,
+ default_color => $default_color,
+ default_width => $default_width,
+ feature_count =>
+ $feature_count, # (Only if count_features is specified)
+ },
+ ]
 
 #### See also
 
@@ -768,7 +768,7 @@ Bio%253A%253AGMOD::CMap::Data::Generic";
 
 ### Getting Feature Information
 
-       my $features = $sql_object->get_features();
+ my $features = $sql_object->get_features();
 
 #### Parameters
 
@@ -824,37 +824,37 @@ aliases.
 
 #### Structure Returned
 
-       [   {   feature_id          => $feature_id,
-               feature_acc         => $feature_acc,
-               feature_type_acc    => $feature_type_acc,
-               feature_type        => $feature_type,
-               feature_name        => $feature_name,
-               feature_start       => $feature_start,
-               feature_stop        => $feature_stop,
-               direction           => $direction,
-               map_id              => $map_id,
-               is_landmark         => $is_landmark,
-               map_acc             => $map_acc,
-               map_name            => $map_name,
-               map_start           => $map_start,
-               map_stop            => $map_stop,
-               map_set_id          => $map_set_id,
-               map_set_acc         => $map_set_acc,
-               map_set_name        => $map_set_name,
-               map_set_short_name  => $map_set_short_name,
-               is_relational_map   => $is_relational_map,
-               map_type_acc        => $map_type_acc,
-               map_type            => $map_type,
-               map_units           => $map_units,
-               species_id          => $species_id,
-               species_acc         => $species_acc,
-               species_common_name => $species_common_name,
-               feature_type        => $feature_type,
-               default_rank        => $default_rank,
-               aliases => $aliases, # a list of aliases (Unless $aliases_get_rows
-                                    #or $ignore_aliases are specified),
-           },
-       ]
+ [ { feature_id => $feature_id,
+ feature_acc => $feature_acc,
+ feature_type_acc => $feature_type_acc,
+ feature_type => $feature_type,
+ feature_name => $feature_name,
+ feature_start => $feature_start,
+ feature_stop => $feature_stop,
+ direction => $direction,
+ map_id => $map_id,
+ is_landmark => $is_landmark,
+ map_acc => $map_acc,
+ map_name => $map_name,
+ map_start => $map_start,
+ map_stop => $map_stop,
+ map_set_id => $map_set_id,
+ map_set_acc => $map_set_acc,
+ map_set_name => $map_set_name,
+ map_set_short_name => $map_set_short_name,
+ is_relational_map => $is_relational_map,
+ map_type_acc => $map_type_acc,
+ map_type => $map_type,
+ map_units => $map_units,
+ species_id => $species_id,
+ species_acc => $species_acc,
+ species_common_name => $species_common_name,
+ feature_type => $feature_type,
+ default_rank => $default_rank,
+ aliases => $aliases, # a list of aliases (Unless $aliases_get_rows
+ #or $ignore_aliases are specified),
+ },
+ ]
 
 #### See also
 
@@ -863,7 +863,7 @@ Bio%253A%253AGMOD::CMap::Data::Generic";
 
 ### Getting Correspondence Information
 
-       my $correspondences = $sql_object->get_feature_correspondence_details()
+ my $correspondences = $sql_object->get_feature_correspondence_details()
 
 #### Parameters
 
@@ -904,36 +904,36 @@ parameter must be set to true, otherwise, no data will be returned.
 
 #### Structure Returned
 
-       [   {   feature_name2              => $feature_name2,
-               feature_id2                => $feature_id2,
-               feature_id2                => $feature_id2,
-               feature_acc1               => $feature_acc1,
-               feature_acc2               => $feature_acc2,
-               feature_start2             => $feature_start2,
-               feature_stop2              => $feature_stop2,
-               feature_type_acc2          => $feature_type_acc2,
-               map_id2                    => $map_id2,
-               map_acc2                   => $map_acc2,
-               map_name2                  => $map_name2,
-               map_display_order2         => $map_display_order2,
-               map_set_id2                => $map_set_id2,
-               map_set_acc2               => $map_set_acc2,
-               map_set_short_name2        => $map_set_short_name2,
-               ms_display_order2          => $ms_display_order2,
-               published_on2              => $published_on2,
-               map_type_acc2              => $map_type_acc2,
-               map_units2                 => $map_units2,
-               species_common_name2       => $species_common_name2,
-               species_display_order2     => $species_display_order2,
-               feature_correspondence_id  => $feature_correspondence_id,
-               feature_correspondence_acc => $feature_correspondence_acc,
-               is_enabled                 => $is_enabled,
-               evidence_type_acc          => $evidence_type_acc,
-               map_type2                  => $map_type2,
-               feature_type2              => $feature_type2,
-               evidence_type              => $evidence_type,
-           },
-       ]
+ [ { feature_name2 => $feature_name2,
+ feature_id2 => $feature_id2,
+ feature_id2 => $feature_id2,
+ feature_acc1 => $feature_acc1,
+ feature_acc2 => $feature_acc2,
+ feature_start2 => $feature_start2,
+ feature_stop2 => $feature_stop2,
+ feature_type_acc2 => $feature_type_acc2,
+ map_id2 => $map_id2,
+ map_acc2 => $map_acc2,
+ map_name2 => $map_name2,
+ map_display_order2 => $map_display_order2,
+ map_set_id2 => $map_set_id2,
+ map_set_acc2 => $map_set_acc2,
+ map_set_short_name2 => $map_set_short_name2,
+ ms_display_order2 => $ms_display_order2,
+ published_on2 => $published_on2,
+ map_type_acc2 => $map_type_acc2,
+ map_units2 => $map_units2,
+ species_common_name2 => $species_common_name2,
+ species_display_order2 => $species_display_order2,
+ feature_correspondence_id => $feature_correspondence_id,
+ feature_correspondence_acc => $feature_correspondence_acc,
+ is_enabled => $is_enabled,
+ evidence_type_acc => $evidence_type_acc,
+ map_type2 => $map_type2,
+ feature_type2 => $feature_type2,
+ evidence_type => $evidence_type,
+ },
+ ]
 
 #### See also
 
@@ -942,7 +942,7 @@ Bio%253A%253AGMOD::CMap::Data::Generic";
 
 ### Getting Attribute Information
 
-       my $attributes = $sql_object->get_attributes();
+ my $attributes = $sql_object->get_attributes();
 
 #### Parameters
 
@@ -973,20 +973,20 @@ generally to all of a type.Specifying an object_id overrides this.
 
 #### Structure Returned
 
-       [   {   attribute_id    => $attribute_id,
-               object_id       => $object_id,
-               table_name      => $table_name,
-               display_order   => $display_order,
-               is_public       => $is_public,
-               attribute_name  => $attribute_name,
-               attribute_value => $attribute_value,
-               object_type     => $object_type,
-           },
-       ]
+ [ { attribute_id => $attribute_id,
+ object_id => $object_id,
+ table_name => $table_name,
+ display_order => $display_order,
+ is_public => $is_public,
+ attribute_name => $attribute_name,
+ attribute_value => $attribute_value,
+ object_type => $object_type,
+ },
+ ]
 
 ### Getting External Reference Information
 
-       my $xrefs = $sql_object->get_xrefs();
+ my $xrefs = $sql_object->get_xrefs();
 
 #### Parameters
 
@@ -1010,18 +1010,18 @@ database.
 
 #### Structure Returned
 
-       [   {   xref_id       => $xref_id,
-               object_id     => $object_id,
-               display_order => $display_order,
-               xref_name     => $xref_name,
-               xref_url      => $xref_url,
-               object_type   => $object_type,
-           },
-       ]
+ [ { xref_id => $xref_id,
+ object_id => $object_id,
+ display_order => $display_order,
+ xref_name => $xref_name,
+ xref_url => $xref_url,
+ object_type => $object_type,
+ },
+ ]
 
 ### Getting Map to Feature Information
 
-       my $map_to_features = $sql_object->get_map_to_features()
+ my $map_to_features = $sql_object->get_map_to_features()
 
 #### Parameters
 
@@ -1041,12 +1041,12 @@ database.
 
 #### Structure Returned
 
-       [   {   map_id      => $map_id,
-               map_acc     => $map_acc,
-               feature_id  => $feature_id,
-               feature_acc => $feature_acc,
-           },
-       ]
+ [ { map_id => $map_id,
+ map_acc => $map_acc,
+ feature_id => $feature_id,
+ feature_acc => $feature_acc,
+ },
+ ]
 
 ### Final information
 

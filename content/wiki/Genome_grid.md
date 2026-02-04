@@ -3,14 +3,14 @@ title: "Genome grid"
 ---
 # Genome grid
 
-  Aims</span>](#Genome_Grid_Aims)
+ Aims</span>](#Genome_Grid_Aims)
 - [Genome
-  analysis and annotation via Grid
-  computing](#Genome_analysis_and_annotation_via_Grid_computing)
+ analysis and annotation via Grid
+ computing](#Genome_analysis_and_annotation_via_Grid_computing)
 - [Target
-  customer and tasks](#Target_customer_and_tasks)
+ customer and tasks](#Target_customer_and_tasks)
 - [Genome Grid
-  components](#Genome_Grid_components)
+ components](#Genome_Grid_components)
 - [Downloads](#Downloads)
 - [References](#References)
 - [Contact](#Contact)
@@ -48,7 +48,7 @@ class="external text" rel="nofollow">Google: genome teragrid</a>
 
 # Genome analysis and annotation via Grid computing
 
-This subproject builds re-usable tools and workflows for  and
+This subproject builds re-usable tools and workflows for and
 , using shared
 cyberinfrastructure (Grids or clusters). Here within are collections of
 scripts, documents and workflows for employing existing genome analysis
@@ -96,41 +96,41 @@ Collecting and documenting the best practices, with working examples for
 genome analyses is a goal. These include in no particular order
 
 - <a
-  href="http://www.teragridforum.org/mediawiki/index.php?title=TG07_Gateway_Tutorial"
-  class="external text" rel="nofollow">TeraGrid Science Gateway</a>
-  tutorials and simple gateway code sources
+ href="http://www.teragridforum.org/mediawiki/index.php?title=TG07_Gateway_Tutorial"
+ class="external text" rel="nofollow">TeraGrid Science Gateway</a>
+ tutorials and simple gateway code sources
 - <a href="http://evidencemodeler.sourceforge.net/" class="external text"
-  rel="nofollow">EvidenceModeler</a> : Perl package with good basic
-  genome data splitting methods
+ rel="nofollow">EvidenceModeler</a> : Perl package with good basic
+ genome data splitting methods
 - <a href="http://www.biomart.org" class="external text"
-  rel="nofollow">BioMart</a> : a transaction oriented bio-datatabase
-  ([MySQL](/wiki/MySQL), others) that understands range of biodata,
-  selecting subsets, and has interfacing with the Taverna workflow
-  project (Taverna is java-based; BioMart a mix of perl, java and
-  various RDBMS methods).
+ rel="nofollow">BioMart</a> : a transaction oriented bio-datatabase
+ ([MySQL](/wiki/MySQL), others) that understands range of biodata,
+ selecting subsets, and has interfacing with the Taverna workflow
+ project (Taverna is java-based; BioMart a mix of perl, java and
+ various RDBMS methods).
 - Lucene and
-  <a href="http://www.gmod.org/LuceGene" class="external text"
-  rel="nofollow">Lucegene</a> : Bio-data indexer that understands
-  various genome data formats, now in use for grid data splitting.
-  Lucene/Lucegene are in java. Advantange is that nothing needs be
-  compiled, indices and software can be distributed with data to compute
-  nodes rather easily.
+ <a href="http://www.gmod.org/LuceGene" class="external text"
+ rel="nofollow">Lucegene</a> : Bio-data indexer that understands
+ various genome data formats, now in use for grid data splitting.
+ Lucene/Lucegene are in java. Advantange is that nothing needs be
+ compiled, indices and software can be distributed with data to compute
+ nodes rather easily.
 - SDSC <a href="http://www.sdsc.edu/srb/index.php/Main_Page"
-  class="external text" rel="nofollow">Storage Resource Broker</a>:
-  file-oriented database with metadata, already part of TeraGrid
-  standard services. Has some workflow methods for data selection.
+ class="external text" rel="nofollow">Storage Resource Broker</a>:
+ file-oriented database with metadata, already part of TeraGrid
+ standard services. Has some workflow methods for data selection.
 - <a href="http://www.ogsadai.org.uk/" class="external text"
-  rel="nofollow">OGSA-DAI</a> : a Grid data access project, mostly
-  revolving around relational data access, and maybe too heavy-weight
-  for genome informatics needs.
+ rel="nofollow">OGSA-DAI</a> : a Grid data access project, mostly
+ revolving around relational data access, and maybe too heavy-weight
+ for genome informatics needs.
 - A <a href="http://www.realitygrid.org/AHE/" class="external text"
-  rel="nofollow">Grid Application Hosting Environment</a> : This looked
-  like an interesting and practical package for a grid gateway suited to
-  bioinformaticians when I saw it in 2006, but haven't evaluated it in
-  detail.
+ rel="nofollow">Grid Application Hosting Environment</a> : This looked
+ like an interesting and practical package for a grid gateway suited to
+ bioinformaticians when I saw it in 2006, but haven't evaluated it in
+ detail.
 - <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> and
-  [Galaxy](/wiki/Galaxy) are GMOD related projects with genome
-  analysis workflow systems that are relevant to this.
+ [Galaxy](/wiki/Galaxy) are GMOD related projects with genome
+ analysis workflow systems that are relevant to this.
 
 # Downloads
 
@@ -145,25 +145,25 @@ used successfully on TeraGrid clusters for analyzing several arthropod
 genomes (Daphnia, Pea aphid, 12 Drosophila, and others). It should work
 "as-is" on computer clusters with PBS or LoadLeveler batch queues
 (TeraGrid is not required).
-[Dongilbert](/wiki/User:Dongilbert) 19:56, 26 June 2008
+Dongilbert 19:56, 26 June 2008
 (EDT)
 
 # References
 
 - Gilbert, D. 2008. <a
-  href="http://insects.eugenes.org/species/about/genome-grid-ismb08-poster.pdf"
-  class="external text" rel="nofollow">A Genome Grid for Finding new Bug
-  Genes</a>, Poster,
-  <a href="http://www.iscb.org/ismb2008/poster_list.php?cat=I"
-  class="external text" rel="nofollow">ISMB 2008</a>
+ href="http://insects.eugenes.org/species/about/genome-grid-ismb08-poster.pdf"
+ class="external text" rel="nofollow">A Genome Grid for Finding new Bug
+ Genes</a>, Poster,
+ <a href="http://www.iscb.org/ismb2008/poster_list.php?cat=I"
+ class="external text" rel="nofollow">ISMB 2008</a>
 - Gilbert, D. 2006. <a
-  href="http://iubio.bio.indiana.edu/biogrid/genome-on-teragrid-poster.html"
-  class="external text" rel="nofollow">Using TeraGrid for Genome Assembly,
-  Annotation and Analysis</a>, Poster, Indy Bioinformatics Conference.
+ href="http://iubio.bio.indiana.edu/biogrid/genome-on-teragrid-poster.html"
+ class="external text" rel="nofollow">Using TeraGrid for Genome Assembly,
+ Annotation and Analysis</a>, Poster, Indy Bioinformatics Conference.
 
 # Contact
 
-[Don Gilbert](/wiki/User:Dongilbert)
+Don Gilbert
 
 Support provided by a grant from <a
 href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0640462"

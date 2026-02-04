@@ -4,24 +4,24 @@ title: "GMOD FAQ"
 # GMOD FAQ
 
 A list of **F**requently **A**sked **Q**questions about the GMOD project.
-See  for a list of FAQ pages on
+See for a list of FAQ pages on
 specific [GMOD Components](/wiki/GMOD_Components). See the
 [Glossary](/wiki/Glossary) for definitions of commonly used terms
 in GMOD.
 
-  FAQ</span>](#About_this_FAQ)
-  - [What is
-    this FAQ?](#What_is_this_FAQ.3F)
-  - [How is it
-    maintained?](#How_is_it_maintained.3F)
+ FAQ</span>](#About_this_FAQ)
+ - [What is
+ this FAQ?](#What_is_this_FAQ.3F)
+ - [How is it
+ maintained?](#How_is_it_maintained.3F)
 - [About
-  GMOD](#About_GMOD)
-  - [What does
-    GMOD stand for?](#What_does_GMOD_stand_for.3F)
-  - [What is
-    GMOD?](#What_is_GMOD.3F)
-  - [How do I
-    learn more about GMOD?](#How_do_I_learn_more_about_GMOD.3F)
+ GMOD](#About_GMOD)
+ - [What does
+ GMOD stand for?](#What_does_GMOD_stand_for.3F)
+ - [What is
+ GMOD?](#What_is_GMOD.3F)
+ - [How do I
+ learn more about GMOD?](#How_do_I_learn_more_about_GMOD.3F)
 
 ## About this FAQ
 

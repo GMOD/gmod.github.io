@@ -55,111 +55,111 @@ See the discussion page for issues arising.
 Methods below should be overridden by each GenericGenePage
 implementation.
 
-     name
-         Usage: my $name = $genepage->name();
-         Desc : get the string name of this gene
-         Args : none
-         Ret  : string gene name, e.g. 'Pax6'
-         Side Effects: none
+ name
+ Usage: my $name = $genepage->name();
+ Desc : get the string name of this gene
+ Args : none
+ Ret  : string gene name, e.g. 'Pax6'
+ Side Effects: none
 
-     accessions
-         Usage: my @accessions = $genepage->accessions();
-         Desc : get a list of local accession values
-         Args : none
-         Ret  : a list of local accessions
-         Side Effects: none
-       Note that these are the accessions that are used by the MOD providing
-       the information, not accessions in external databases like GenBank.
+ accessions
+ Usage: my @accessions = $genepage->accessions();
+ Desc : get a list of local accession values
+ Args : none
+ Ret  : a list of local accessions
+ Side Effects: none
+ Note that these are the accessions that are used by the MOD providing
+ the information, not accessions in external databases like GenBank.
 
-     data_provider
-         Usage: my $data_provider = $genepage->data_provider();
-         Desc : The name of the data providing authority (ie, WormBase, SGD, etc)
-         Args : none
-         Ret  : string, name of the data provider
-         Side Effects: none
+ data_provider
+ Usage: my $data_provider = $genepage->data_provider();
+ Desc : The name of the data providing authority (ie, WormBase, SGD, etc)
+ Args : none
+ Ret  : string, name of the data provider
+ Side Effects: none
 
-     synonyms
-         Usage: my @syn = $genepage->synonyms();
-         Desc : get a list of synonyms for this gene
-         Args : none
-         Ret : list of strings,
-               e.g. (  '1500038E17Rik',
-                       'AEY11',
-                       'Dey',
-                       "Dickie's small eye",
-                       'Gsfaey11',
-                       'Pax-6',
-                    )
-         Side Effects: none
+ synonyms
+ Usage: my @syn = $genepage->synonyms();
+ Desc : get a list of synonyms for this gene
+ Args : none
+ Ret : list of strings,
+ e.g. ( '1500038E17Rik',
+ 'AEY11',
+ 'Dey',
+ "Dickie's small eye",
+ 'Gsfaey11',
+ 'Pax-6',
+ )
+ Side Effects: none
 
-     map_locations
-         Usage: my @locs = $genepage->map_locations()
-         Desc : get a list of known map locations for this gene
-         Args : none
-         Ret  : list of map locations, each a hashref as:
-                {  map_name => string map name,
-                   chromosome => string chromosome name,
-                   marker     => (optional) associated marker name,
-                   position   => numerical position on the map,
-                   units      => map units, either 'cm', for centimorgans,
-                                 or 'b', for bases
-                }
-         Side Effects: none
+ map_locations
+ Usage: my @locs = $genepage->map_locations()
+ Desc : get a list of known map locations for this gene
+ Args : none
+ Ret  : list of map locations, each a hashref as:
+ { map_name => string map name,
+ chromosome => string chromosome name,
+ marker => (optional) associated marker name,
+ position => numerical position on the map,
+ units => map units, either 'cm', for centimorgans,
+ or 'b', for bases
+ }
+ Side Effects: none
 
-     ontology_terms
-         Usage: my @terms = $genepage->ontology_terms();
-         Desc : get a list of ontology terms
-         Args : none
-         Ret  : hash-style list as:
-                  termname => human-readable description,
-         Side Effects: none
-         Example:
-            my %terms = $genepage->ontology_terms()
-            # and %terms is now
-            (  GO:0016711 => 'F:flavonoid 3'-monooxygenase activity',
-               ...
-            )
-       Note that the value in that has is the the concatenation of F:, B: or C:
-       for molecular_function, biological_process, or cellular_component GO
-       terms respectively. If the term does not belong to GO, there is no
-       prepended identifier.
+ ontology_terms
+ Usage: my @terms = $genepage->ontology_terms();
+ Desc : get a list of ontology terms
+ Args : none
+ Ret  : hash-style list as:
+ termname => human-readable description,
+ Side Effects: none
+ Example:
+ my %terms = $genepage->ontology_terms()
+ # and %terms is now
+ ( GO:0016711 => 'F:flavonoid 3'-monooxygenase activity',
+ ...
+ )
+ Note that the value in that has is the the concatenation of F:, B: or C:
+ for molecular_function, biological_process, or cellular_component GO
+ terms respectively. If the term does not belong to GO, there is no
+ prepended identifier.
 
-     dbxrefs
-         Usage: my @dbxrefs = $genepage->dbxrefs();
-         Desc : get a list of database cross-references for info related to this gene
-         Args : none
-         Ret  : list of strings, like type:id e.g. ('PFAM:00012')
-         Side Effects: none
+ dbxrefs
+ Usage: my @dbxrefs = $genepage->dbxrefs();
+ Desc : get a list of database cross-references for info related to this gene
+ Args : none
+ Ret  : list of strings, like type:id e.g. ('PFAM:00012')
+ Side Effects: none
 
-     comments
-         Usage: my @comments = $genepage->comments();
-         Desc : get a list of comments with types
-         Args : none
-         Ret  : a hash of comment=>type, where type is optional (empty string)
-         Side Effects: none
+ comments
+ Usage: my @comments = $genepage->comments();
+ Desc : get a list of comments with types
+ Args : none
+ Ret  : a hash of comment=>type, where type is optional (empty string)
+ Side Effects: none
 
-     literature_references
-         Usage: my @refs = $genepage->lit_refs();
-         Desc : get a list of literature references for this gene
-         Args : none
-         Ret  : list of literature reference identifiers, as type:id,
-                like ('PMID:0023423',...)
-         Side Effects: none
+ literature_references
+ Usage: my @refs = $genepage->lit_refs();
+ Desc : get a list of literature references for this gene
+ Args : none
+ Ret  : list of literature reference identifiers, as type:id,
+ like ('PMID:0023423',...)
+ Side Effects: none
 
-     summary_text
-         Usage: my $summary = $page->summary_text();
-         Desc : get a text string of plain-English summary text for this gene
-         Args : none
-         Ret  : string of summary text
-         Side Effects: none
+ summary_text
+ Usage: my $summary = $page->summary_text();
+ Desc : get a text string of plain-English summary text for this gene
+ Args : none
+ Ret  : string of summary text
+ Side Effects: none
 
-     organism
-         Usage: my $species_info = $genepage->organism
-         Desc : get a handful of species-related information
-         Args : none
-         Ret  : hashref as:
-                { ncbi_taxon_id => ncbi taxon id, (e.g. 3702),
-                  binomial      => e.g. 'Arabidopsis thaliana',
-                  common        => e.g. 'Mouse-ear cress',
-                }
-         Side Effects: none
+ organism
+ Usage: my $species_info = $genepage->organism
+ Desc : get a handful of species-related information
+ Args : none
+ Ret  : hashref as:
+ { ncbi_taxon_id => ncbi taxon id, (e.g. 3702),
+ binomial => e.g. 'Arabidopsis thaliana',
+ common => e.g. 'Mouse-ear cress',
+ }
+ Side Effects: none

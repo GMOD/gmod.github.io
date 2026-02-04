@@ -12,13 +12,13 @@ site, downloadable data files, and downloadable [Pathway
 Tools](../Pathway_Tools.1) software/database bundle.
 Version 17.0 of BioCyc contains 2,920 Pathway/Genome Databases.
 
-  Changes</span>](#General_Changes)
+ Changes</span>](#General_Changes)
 - [Navigator --
-  Web](#Navigator_--_Web)
+ Web](#Navigator_--_Web)
 - [Navigator --
-  Desktop](#Navigator_--_Desktop)
+ Desktop](#Navigator_--_Desktop)
 - [RouteSearch --
-  Metabolic Route Search](#RouteSearch_--_Metabolic_Route_Search)
+ Metabolic Route Search](#RouteSearch_--_Metabolic_Route_Search)
 - [PathoLogic](#PathoLogic)
 
 ### General Changes

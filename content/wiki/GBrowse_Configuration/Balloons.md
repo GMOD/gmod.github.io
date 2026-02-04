@@ -9,23 +9,23 @@ This article describes **popup balloons** and how to configure them in
 For the main GBrowse configuration article, see:
 
 - <a href="../GBrowse_Configuration" class="mw-redirect"
-  title="GBrowse Configuration">GBrowse Configuration</a> or
+ title="GBrowse Configuration">GBrowse Configuration</a> or
 - [GBrowse 2.0 HOWTO](../GBrowse_2.0_HOWTO).
 
 See also:
 
 - <a href="../Popup_balloons" class="mw-redirect"
-  title="Popup balloons">popup balloons</a>!
+ title="Popup balloons">popup balloons</a>!
 - [GBrowse Popup
-  Balloons](../GBrowse_Popup_Balloons)!!
+ Balloons](../GBrowse_Popup_Balloons)!!
 
 See also:
 
 - See the <a
-  href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/htdocs/tutorial/tutorial.html#balloon#balloon"
-  class="external text" rel="nofollow">Balloons section</a> of the <a
-  href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/htdocs/tutorial/tutorial.html"
-  class="external text" rel="nofollow">Administrators Tutorial</a>.
+ href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/htdocs/tutorial/tutorial.html#balloon#balloon"
+ class="external text" rel="nofollow">Balloons section</a> of the <a
+ href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/htdocs/tutorial/tutorial.html"
+ class="external text" rel="nofollow">Administrators Tutorial</a>.
 
 ## Configuring Balloon Tooltips
 
@@ -40,9 +40,9 @@ embedded query forms. See
 In the config file for the database you wish to modify, set "balloon
 tips" to a true value:
 
-         [GENERAL]
-         ...
-         balloon tips = 1
+ [GENERAL]
+ ...
+ balloon tips = 1
 
 Then add "balloon hover" and/or "balloon click" options to the track
 stanzas that you wish to add buttons to. You can also place these
@@ -53,10 +53,10 @@ user hovers over a feature. "balloon click" specifies HTML or a URL that
 will appear when the user clicks on a feature. The HTML can contain
 images, formatted text, and even controls. Examples:
 
-     balloon hover = <h2>Gene $name</h2>
-     balloon click = <h2>Gene $name</h2>
-                     <a href='http://www.google.com/search?q=$name'>Search Google</a><br>
-                     <a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&term=$name'>Search NCBI</a><br>
+ balloon hover = <h2>Gene $name</h2>
+ balloon click = <h2>Gene $name</h2>
+ <a href='http://www.google.com/search?q=$name'>Search Google</a><br>
+ <a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&term=$name'>Search NCBI</a><br>
 
 Alternatively, you can populate the balloon using data from an HTML page
 or dynamic CGI script running on the same server as GBrowse. This uses
@@ -65,7 +65,7 @@ that must be downloaded by the client. To dynamically load the balloon
 contents from the server, use a balloon hover or balloon click option
 like this:
 
-     balloon click = /cgi-bin/get_gene_data?gene=$name
+ balloon click = /cgi-bin/get_gene_data?gene=$name
 
 In this case, when the user clicks on the feature, it creates a balloon
 whose content contains the HTML returned by the CGI script
@@ -74,17 +74,17 @@ contents of the balloon by looking for the leading slash. However, to
 reduce ambiguity, we recommend that you prefix the URL with "url:" as
 so:
 
-     balloon click = url:/cgi-bin/get_gene_data?gene=$name
+ balloon click = url:/cgi-bin/get_gene_data?gene=$name
 
 This also allows you to refer to relative URLs:
 
-     balloon click = url:../../get_gene_data?gene=$name
+ balloon click = url:../../get_gene_data?gene=$name
 
 It is also possible to fill the balloon with content from a remote
 source. Simply specify a full URL beginning with "http:" "https:" or
 "ftp:"
 
-    balloon hover = http://www.wormbase.org/db/get?name=$name;class=gene
+ balloon hover = http://www.wormbase.org/db/get?name=$name;class=gene
 
 Note that the balloon library uses an internal \<iframe\> to populate
 the balloon with the content of external URLs. This means that vertical
@@ -102,8 +102,8 @@ them messing up the HTML.
 You might also wish to specify "titles are balloons" in the \[GENERAL\]
 section:
 
-     [GENERAL]
-     titles are balloons = 1
+ [GENERAL]
+ titles are balloons = 1
 
 This will generate balloons on all mouse hover events, using the content
 that would otherwise have been placed in the built-in browser tooltip.
@@ -113,7 +113,7 @@ within the \[track\] section. If you wish the balloon to be sticky
 (require the user to press the close button) even if it is a hover
 balloon, then place this option in the \[track section\]:
 
-     balloon sticky = 1
+ balloon sticky = 1
 
 Setting "balloon sticky" to 0 will have the effect of making balloons
 disappear as soon as the mouse leaves them, even if it was created by a
@@ -123,7 +123,7 @@ If you are displaying content from a remote web or FTP server and you do
 not like the height of the balloon, you can adjust the height with the
 "balloon height" option:
 
-     balloon height = 400
+ balloon height = 400
 
 ### Customizing Balloons
 
@@ -135,13 +135,13 @@ configure any number of custom balloons.
 To declare two new balloons, create a "custom balloons" option in the
 \[GENERAL\] section:
 
-    custom balloons = [blue_balloon]
-                      images   =  /gbrowse/images/blue_balloons
-                      maxWidth = 300
-                      shadow   = 0
+ custom balloons = [blue_balloon]
+ images = /gbrowse/images/blue_balloons
+ maxWidth = 300
+ shadow = 0
 
-                      [wide_balloon]
-                      maxWidth = 800
+ [wide_balloon]
+ maxWidth = 800
 
 This creates two new balloons. The first, named "blue_balloon" will look
 for its images and icons at the local URL /gbrowse/images/blue_balloons.
@@ -155,14 +155,14 @@ Balloons](../Popup_Balloons) page.
 To use the blue balloon rather than the standard one, format the
 "balloon hover" and/or "balloon click" options like this:
 
-     balloon click = [blue_balloon] /cgi-bin/get_gene_data?gene=$name
+ balloon click = [blue_balloon] /cgi-bin/get_gene_data?gene=$name
 
 The \[blue_balloon\] keyword tells gbrowse to use the blue balloon for
 clicks on these features. The standard balloon is called "balloon", and
 so the following two options are equivalent:
 
-     balloon click = /cgi-bin/get_gene_data?gene=$name
-     balloon click = [balloon] /cgi-bin/get_gene_data?gene=$name
+ balloon click = /cgi-bin/get_gene_data?gene=$name
+ balloon click = [balloon] /cgi-bin/get_gene_data?gene=$name
 
 The images for custom balloons reside in the default location of
 /gbrowse/images/balloons, unless indicated otherwise using the "images"
@@ -172,9 +172,9 @@ PNG images described on the [Popup
 Balloons](../Popup_Balloons) page. These images must be
 named as follows:
 
-     balloon.png     down_right.png  up_right.png
-     balloon_ie.png  down_left.png   up_left.png
-     close.png
+ balloon.png down_right.png up_right.png
+ balloon_ie.png down_left.png up_left.png
+ close.png
 
 Tips for creating these images can be found on [Popup
 Balloons](../Popup_Balloons).

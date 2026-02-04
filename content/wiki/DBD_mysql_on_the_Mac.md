@@ -16,9 +16,9 @@ described in the post, and making a symlink to the config as described
 in the comments.
 
 - *Typically, installing DBD\* modules via the cpan shell is difficult,
-  as tests will frequently require a connection to the database via a
-  non-root account (that is, your real account that has permission to
-  read, write and create databases). The stuff that Jay Allen mentioned
-  about having to set lib and include directories should be handled
-  properly by the* perl Makefile.PL *command, but apparently not in this
-  case.* [Scott](/wiki/User:Scott) 13:49, 6 August 2007 (EDT)
+ as tests will frequently require a connection to the database via a
+ non-root account (that is, your real account that has permission to
+ read, write and create databases). The stuff that Jay Allen mentioned
+ about having to set lib and include directories should be handled
+ properly by the* perl Makefile.PL *command, but apparently not in this
+ case.* Scott 13:49, 6 August 2007 (EDT)

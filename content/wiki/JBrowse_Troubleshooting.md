@@ -6,17 +6,17 @@ title: "JBrowse Troubleshooting"
 This page collects solutions to problems that people sometimes encounter
 when installing JBrowse.
 
-  prerequisites - libpng, zlib, libgd,
-  etc</span>](#Installing_prerequisites_-_libpng.2C_zlib.2C_libgd.2C_etc)
-  - [Linux -
-    Ubuntu / Debian](#Linux_-_Ubuntu_.2F_Debian)
-  - [Linux -
-    Red Hat / Fedora /
-    CentOS](#Linux_-_Red_Hat_.2F_Fedora_.2F_CentOS)
-  - [Mac OS
-    X](#Mac_OS_X)
+ prerequisites - libpng, zlib, libgd,
+ etc</span>](#Installing_prerequisites_-_libpng.2C_zlib.2C_libgd.2C_etc)
+ - [Linux -
+ Ubuntu / Debian](#Linux_-_Ubuntu_.2F_Debian)
+ - [Linux -
+ Red Hat / Fedora /
+ CentOS](#Linux_-_Red_Hat_.2F_Fedora_.2F_CentOS)
+ - [Mac OS
+ X](#Mac_OS_X)
 - [Other
-  Problems](#Other_Problems)
+ Problems](#Other_Problems)
 
 # Installing prerequisites - libpng, zlib, libgd, etc
 
@@ -28,14 +28,14 @@ compiler.
 
 These commands, or similar, should install what you need:
 
-     sudo apt-get install build-essential libpng-dev zlib1g-dev libgd2-xpm-dev
+ sudo apt-get install build-essential libpng-dev zlib1g-dev libgd2-xpm-dev
 
 ## Linux - Red Hat / Fedora / CentOS
 
 These commands, or similar, should install what you need:
 
-     sudo yum groupinstall "Development Tools"
-     sudo yum install libpng-devel gd-devel zlib-devel perl-ExtUtils-MakeMaker
+ sudo yum groupinstall "Development Tools"
+ sudo yum install libpng-devel gd-devel zlib-devel perl-ExtUtils-MakeMaker
 
 ## Mac OS X
 

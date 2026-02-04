@@ -26,10 +26,10 @@ dl_dev_url = \| getting_started_preamble = \| req = \| install = \|
 config = \| doc = <a href="http://biodig.org" class="external free"
 
 - Andrew T. Oberlin, Dominika A. Jurkovic, Mitchell F. Balish, Iddo
-  Friedberg (2013) Biological Database of Images and Genomes: tools for
-  community annotations linking image and genomic information
-  <a href="http://arxiv.org/abs/1212.0447" class="external autonumber"
-  rel="nofollow">[1]</a> (Database, in press)
+ Friedberg (2013) Biological Database of Images and Genomes: tools for
+ community annotations linking image and genomic information
+ <a href="http://arxiv.org/abs/1212.0447" class="external autonumber"
+ rel="nofollow">[1]</a> (Database, in press)
 
 \| presentations = \| tutorials = \| wild_urls = \| mail = <a
 href="https://groups.google.com/forum/?fromgroups#!forum/biodig#!forum/biodig"

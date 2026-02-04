@@ -20,7 +20,7 @@ URL and new region selection sliders can be used to select a specific
 chromosome region and then link out to a genome browser for higher
 resolution information.
 
-  Screenshots</span>](#Demo_.26_Screenshots)
+ Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
@@ -86,13 +86,13 @@ height="54" alt="Gviewer example hs-01.jpg" />
 ## Requirements
 
 - Macromedia Flash Plugin version 7, it can be downloaded from
-  Macromedia <a
-  href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&amp;promoid=BIOW"
-  class="external text" rel="nofollow">here</a>. To edit the source code
-  (the `.fla` file in
-  <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a>) and publish
-  modified versions of the `.swf` requires Macromedia Flash Professional
-  v7.
+ Macromedia <a
+ href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&amp;promoid=BIOW"
+ class="external text" rel="nofollow">here</a>. To edit the source code
+ (the `.fla` file in
+ <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a>) and publish
+ modified versions of the `.swf` requires Macromedia Flash Professional
+ v7.
 
 ## Documentation
 

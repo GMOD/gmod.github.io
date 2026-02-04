@@ -53,7 +53,7 @@ The course covered the following topics in detail:
 <tr class="odd">
 <td>Amazon Web Services set up</td>
 <td><a href="/wiki/AWS_walkthrough" title="AWS walkthrough">Tutorial</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
@@ -64,7 +64,7 @@ title="GBrowse">GBrowse</a></td>
 <td><a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a></td>
 <td><a href="/wiki/Chado_Tutorial_2012"
 title="Chado Tutorial 2012">Tutorial</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
@@ -75,7 +75,7 @@ title="GBrowse">GBrowse</a></td>
 <td><a href="/wiki/Galaxy" title="Galaxy">Galaxy</a></td>
 <td><a href="/wiki/Galaxy_Tutorial_2012"
 title="Galaxy Tutorial 2012">Tutorial</a></td>
-<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td>Dave Clements</td>
 <td><a href="http://galaxyproject.org/" class="external text"
 
 class="external text" rel="nofollow">Emory University</a><br />
@@ -85,7 +85,7 @@ class="external text" rel="nofollow">Emory University</a><br />
 <td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 <td><a href="/wiki/GBrowse_Tutorial_2012"
 title="GBrowse Tutorial 2012">Tutorial</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
@@ -96,7 +96,7 @@ title="GBrowse">GBrowse</a></td>
 <td><a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse syn</a></td>
 <td><a href="/wiki/GBrowse_syn_Tutorial_2012"
 title="GBrowse syn Tutorial 2012">Tutorial</a></td>
-<td><a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+<td>Sheldon McKay</td>
 <td><a href="http://iplantcollaborative.org" class="external text"
 
 class="external text" rel="nofollow">CSHL</a><br />
@@ -106,7 +106,7 @@ class="external text" rel="nofollow">CSHL</a><br />
 <td><a href="/wiki/GFF3" title="GFF3">GFF3</a></td>
 <td><a href="/wiki/GFF_Tutorial_2012"
 title="GFF Tutorial 2012">Tutorial</a></td>
-<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td>Scott Cain</td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
@@ -117,8 +117,8 @@ title="GBrowse">GBrowse</a></td>
 <td><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></td>
 <td><a href="/wiki/JBrowse_Tutorial_2012" class="mw-redirect"
 title="JBrowse Tutorial 2012">Tutorial</a></td>
-<td><a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
-Buels</a></td>
+<td>Robert
+Buels</td>
 <td><a href="http://berkeley.edu" class="external text"
 
 <a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></td>
@@ -127,7 +127,7 @@ Buels</a></td>
 <td><a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 <td><a href="/wiki/MAKER_Tutorial_2012"
 title="MAKER Tutorial 2012">Tutorial</a></td>
-<td><a href="/wiki/User%253ABmoore" title="User%253ABmoore">Barry Moore</a></td>
+<td>Barry Moore</td>
 <td><a href="http://utah.edu" class="external text"
 
 <a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
@@ -136,7 +136,7 @@ title="MAKER Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/SOBA" title="SOBA">SOBA</a></td>
 <td><a href="/wiki/SOBA_Tutorial_2012"
 title="SOBA Tutorial 2012">Tutorial</a></td>
-<td><a href="/wiki/User%253ABmoore" title="User%253ABmoore">Barry Moore</a></td>
+<td>Barry Moore</td>
 <td><a href="http://www.utah.edu" class="external text"
 
 <a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
@@ -145,8 +145,8 @@ title="SOBA Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/Tripal" title="Tripal">Tripal</a></td>
 <td><a href="/wiki/Tripal_Tutorial_(v1.0)"
 title="Tripal Tutorial (v1.0)">Tutorial</a></td>
-<td><a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen
-Ficklin</a></td>
+<td>Stephen
+Ficklin</td>
 <td><a href="http://www.wsu.edu" class="external text"
 
 <a href="/wiki/Tripal" title="Tripal">Tripal</a></td>
@@ -155,7 +155,7 @@ Ficklin</a></td>
 <td><a href="/wiki/WebApollo" title="WebApollo">WebApollo</a></td>
 <td><a href="/wiki/WebApollo_Tutorial_2012"
 title="WebApollo Tutorial 2012">Tutorial</a></td>
-<td><a href="/wiki/User%253AElee" title="User%253AElee">Ed Lee</a></td>
+<td>Ed Lee</td>
 <td><a href="http://www.berkeleybop.org/" class="external text"
 
 <a href="/wiki/Apollo" title="Apollo">Apollo</a>, <a href="/wiki/WebApollo"

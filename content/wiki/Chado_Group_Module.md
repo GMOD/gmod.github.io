@@ -6,15 +6,15 @@ title: "Chado Group Module"
 This module will facilitate comparative methods and analyses in Chado.
 It mainly consists of the *grp* (group) table and supporting tables.
 
-  Discussion](#Discussion)
-  - [Use
-    cases](#Use_cases)
-  - [Potential
-    issues](#Potential_issues)
+ Discussion](#Discussion)
+ - [Use
+ cases](#Use_cases)
+ - [Potential
+ issues](#Potential_issues)
 - [Integration
-  with Chado](#Integration_with_Chado)
+ with Chado](#Integration_with_Chado)
 - [SQL
-  Implementation](#SQL_Implementation)
+ Implementation](#SQL_Implementation)
 - [Resources](#Resources)
 
 ## Discussion
@@ -30,8 +30,8 @@ It mainly consists of the *grp* (group) table and supporting tables.
 - Metabolic pathways
 - Functional sets
 - Gene sets (a la
-  <a href="http://www.broadinstitute.org/gsea/msigdb/index.jsp"
-  class="external text" rel="nofollow">MSigDB</a>)
+ <a href="http://www.broadinstitute.org/gsea/msigdb/index.jsp"
+ class="external text" rel="nofollow">MSigDB</a>)
 - Collections of genes/organisms (a la Entrez)
 
 ### Potential issues

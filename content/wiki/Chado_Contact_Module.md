@@ -3,12 +3,12 @@ title: "Chado Contact Module"
 ---
 # Chado Contact Module
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Tables](#Tables)
-  - [Table:
-    contact](#Table:_contact)
-  - [Table:
-    contact_relationship](#Table:_contact_relationship)
+ - [Table:
+ contact](#Table:_contact)
+ - [Table:
+ contact_relationship](#Table:_contact_relationship)
 
 # Introduction
 

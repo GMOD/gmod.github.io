@@ -9,13 +9,13 @@ title: "Citrina"
 
 See [Status](#Status) below for more information.
 
-  Status](#Status)
+ Status](#Status)
 - [Description](#Description)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Downloads](#Downloads)
 - [Mailing
-  List](#Mailing_List)
+ List](#Mailing_List)
 - [Contact](#Contact)
 
 ## Status
@@ -52,21 +52,21 @@ already developed.
 ## Requirements
 
 - Java 1.4.x (<a href="http://java.sun.com/j2se/" class="external free"
-  rel="nofollow">http://java.sun.com/j2se/</a>)
+ rel="nofollow">http://java.sun.com/j2se/</a>)
 - Ant 1.6.x (<a href="http://ant.apache.org" class="external text"
-  rel="nofollow">http://ant.apache.org/</a>)
+ rel="nofollow">http://ant.apache.org/</a>)
 - Wget 1.6 or higher
-  (<a href="http://www.gnu.org/software/wget/wget.html"
-  class="external free"
-  rel="nofollow">http://www.gnu.org/software/wget/wget.html</a>)
+ (<a href="http://www.gnu.org/software/wget/wget.html"
+ class="external free"
+ rel="nofollow">http://www.gnu.org/software/wget/wget.html</a>)
 - GNU Tar 1.13 or higher
-  (<a href="http://www.gnu.org/software/tar/tar.html" class="external free"
-  rel="nofollow">http://www.gnu.org/software/tar/tar.html</a>)
+ (<a href="http://www.gnu.org/software/tar/tar.html" class="external free"
+ rel="nofollow">http://www.gnu.org/software/tar/tar.html</a>)
 - Gzip 1.3.3 or higher
-  (<a href="http://www.gzip.org/" class="external free"
-  rel="nofollow">http://www.gzip.org/</a>) or Bzip2 0.9.0 or higher
-  (<a href="http://sources.redhat.com/bzip2/" class="external free"
-  rel="nofollow">http://sources.redhat.com/bzip2/</a>)
+ (<a href="http://www.gzip.org/" class="external free"
+ rel="nofollow">http://www.gzip.org/</a>) or Bzip2 0.9.0 or higher
+ (<a href="http://sources.redhat.com/bzip2/" class="external free"
+ rel="nofollow">http://sources.redhat.com/bzip2/</a>)
 
 Tar, Gzip, and Bzip2 are only needed if you need to extract files that
 use those compression formats.
@@ -99,5 +99,5 @@ class="external text" rel="nofollow">Citrina discussion list</a>
 
 ## Contact
 
-[Josh Goodman](/wiki/User:Jogoodma) (jogoodma A\*T indiana
+Josh Goodman (jogoodma A\*T indiana
 D\*O\*T edu )

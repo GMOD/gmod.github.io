@@ -38,13 +38,13 @@ Here is the abstract:
 > displayed. Here, we report additional tools and functionality that are
 > part of release v1.1 of Tripal. These include
 >
-> 1.  a new bulk loader that allows a site curator to import data stored
->     in a custom tab delimited format;
-> 2.  full support of every Chado table for Drupal Views (a powerful
->     tool allowing site developers to construct novel displays and
->     search pages);
-> 3.  new modules including 'Feature Map', 'Genetic', 'Publication',
->     'Project', 'Contact' and the 'Natural Diversity' modules.
+> 1. a new bulk loader that allows a site curator to import data stored
+> in a custom tab delimited format;
+> 2. full support of every Chado table for Drupal Views (a powerful
+> tool allowing site developers to construct novel displays and
+> search pages);
+> 3. new modules including 'Feature Map', 'Genetic', 'Publication',
+> 'Project', 'Contact' and the 'Natural Diversity' modules.
 >
 > Tutorials, mailing lists, download and set-up instructions, extension
 > modules and other documentation can be found at the Tripal website

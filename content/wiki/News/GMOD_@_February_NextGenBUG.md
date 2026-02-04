@@ -19,21 +19,21 @@ User Group (NextGenBUG) meeting</a> being held at the
 with GMOD related content.
 
 - **<a href="http://insectacentral.org" class="external text"
-  rel="nofollow">InsectaCentral</a> - assembling and annotating insect
-  transcriptomes**, Alexie Papanicolau, Exeter
-  <a href="http://insectacentral.org" class="external text"
-  rel="nofollow">InsectaCentral</a> uses [GMOD
-  Components](../GMOD_Components) (including
-  <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> and
-  [GBrowse](../GBrowse.1)) extensively in its infrastructure.
+ rel="nofollow">InsectaCentral</a> - assembling and annotating insect
+ transcriptomes**, Alexie Papanicolau, Exeter
+ <a href="http://insectacentral.org" class="external text"
+ rel="nofollow">InsectaCentral</a> uses [GMOD
+ Components](../GMOD_Components) (including
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> and
+ [GBrowse](../GBrowse.1)) extensively in its infrastructure.
 - **[Galaxy](../Galaxy.1): a stairway to
-  [NGS](../Next_Generation_Sequencing)
-  heaven**, Chris Cole, Dundee
-  Chris will be discussing how Dundee uses
-  [Galaxy](../Galaxy.1) to process their
-  <a href="../Next_generation_sequencing" class="mw-redirect"
-  title="Next generation sequencing">next generation sequencing</a>
-  data.
+ [NGS](../Next_Generation_Sequencing)
+ heaven**, Chris Cole, Dundee
+ Chris will be discussing how Dundee uses
+ [Galaxy](../Galaxy.1) to process their
+ <a href="../Next_generation_sequencing" class="mw-redirect"
+ title="Next generation sequencing">next generation sequencing</a>
+ data.
 
 There will also be talks by [Dan
 Bolser](../User:DanBolser) of Dundee and Darrol Baker

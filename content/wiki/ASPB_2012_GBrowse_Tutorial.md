@@ -6,25 +6,25 @@ title: "ASPB 2012 GBrowse Tutorial"
 Registration for the GBrowse tutorial at ASPB is now closed, with 97
 registered attendees.
 
-  Interest</span>](#Other_Items_of_Interest)
+ Interest</span>](#Other_Items_of_Interest)
 - [VirtualBox
-  Appliance](#VirtualBox_Appliance)
+ Appliance](#VirtualBox_Appliance)
 - [Tutorial
-  Flow](#Tutorial_Flow)
-  - [Next Gen
-    Sequence](#Next_Gen_Sequence)
+ Flow](#Tutorial_Flow)
+ - [Next Gen
+ Sequence](#Next_Gen_Sequence)
 - [Thoughts after
-  the workshop](#Thoughts_after_the_workshop)
+ the workshop](#Thoughts_after_the_workshop)
 
 ## Other Items of Interest
 
 - [GMOD Summer
-  School](/wiki/2012_GMOD_Summer_School) -
-  Applications are officially closed, but if you indicate you were at
-  this workshop, you might get in on "stand by".
+ School](/wiki/2012_GMOD_Summer_School) -
+ Applications are officially closed, but if you indicate you were at
+ this workshop, you might get in on "stand by".
 - [GMOD in the Cloud](/wiki/Cloud) - An Amazon Web Services (AWS),
-  aka "the Cloud", instance with lots of GMOD software preinstalled and
-  configured.
+ aka "the Cloud", instance with lots of GMOD software preinstalled and
+ configured.
 
 ## VirtualBox Appliance
 
@@ -75,11 +75,11 @@ page](/wiki/GBrowse_Volvox_SAM_Tutorial).
 If we go to ASPB again, there are a few things I'd do differently:
 
 - Try to figure out some way to get "compliance" on having VirtualBox
-  and the tutorial appliance installed before we start--debugging
-  problems with these during the class is a real "drag".
+ and the tutorial appliance installed before we start--debugging
+ problems with these during the class is a real "drag".
 - Present a poster too to have a place to discuss with passers by.
 - Rope somebody (CSHL people?) into being TAs to help the course move
-  more smoothly.
+ more smoothly.
 - Charge a small fee to encourage registered attendees to attended (The
-  workshop started at 7:30pm on Saturday night in Austin--which would
-  you choose: GBrowse workshop or Austin night life?)
+ workshop started at 7:30pm on Saturday night in Austin--which would
+ you choose: GBrowse workshop or Austin night life?)

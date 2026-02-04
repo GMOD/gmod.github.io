@@ -33,13 +33,13 @@ browsing and annotation.
 In that context, the purpose of this workshop will be:
 
 - To exchange within an international panel of attendants our views on
-  the present and future of insect genome databases
+ the present and future of insect genome databases
 - To settle an international community that will form a functional
-  network for insect genome and database development
+ network for insect genome and database development
 - To discuss strategies to meet the demand of increasing number of new
-  insect genomes
+ insect genomes
 - To prepare a new road map for integration of genomes databases for
-  insects relevant to agriculture
+ insects relevant to agriculture
 
 The perimeter of that discussion encompasses insect species related to
 agriculture, either harmful (pests) or beneficial as controllers of pest

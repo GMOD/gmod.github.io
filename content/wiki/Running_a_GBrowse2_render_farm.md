@@ -13,22 +13,22 @@ particular track, a particular set of tracks, or to all tracks. In
 addition, you may assign multiple slaves to tracks, in which case the
 load will be distributed across each slave in a round-robin fashion.
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Common
-  Configurations](#Common_Configurations)
+ Configurations](#Common_Configurations)
 - [Slave
-  Setup](#Slave_Setup)
-  - [Installing
-    the GBrowse Slave
-    Software](#Installing_the_GBrowse_Slave_Software)
-  - [Running
-    the Render Slave Daemon](#Running_the_Render_Slave_Daemon)
+ Setup](#Slave_Setup)
+ - [Installing
+ the GBrowse Slave
+ Software](#Installing_the_GBrowse_Slave_Software)
+ - [Running
+ the Render Slave Daemon](#Running_the_Render_Slave_Daemon)
 - [Master
-  Setup](#Master_Setup)
-  - [Using
-    \[TRACK DEFAULTS\]](#Using_.5BTRACK_DEFAULTS.5D)
-  - [The
-    slave_preload.conf file](#The_slave_preload.conf_file)
+ Setup](#Master_Setup)
+ - [Using
+ \[TRACK DEFAULTS\]](#Using_.5BTRACK_DEFAULTS.5D)
+ - [The
+ slave_preload.conf file](#The_slave_preload.conf_file)
 - [Troubleshooting](#Troubleshooting)
 
 ## Introduction
@@ -137,10 +137,10 @@ configuration files, sample databases, javascript libraries and other
 elements that are not needed. For these machines, the build and install
 procedure is as follows:
 
-    % cd Generic-Genome-Browser
-    % perl Build.PL
-    % ./Build test  (optional)
-    % sudo ./Build install_slave
+ % cd Generic-Genome-Browser
+ % perl Build.PL
+ % ./Build test (optional)
+ % sudo ./Build install_slave
 
 The last step, which should be performed as root, will install the
 required Perl libraries, manual pages and gbrowse_slave script, as well
@@ -157,7 +157,7 @@ The slave usually runs as a daemon, listening on a designated server
 port and logging its output to a log file. You may run it by hand using
 an invocation like the following:
 
-    /usr/local/bin/gbrowse_slave --verbose=3 --log=`pwd`/slave.log --pid=`pwd`/slave.pid --port=8100
+ /usr/local/bin/gbrowse_slave --verbose=3 --log=`pwd`/slave.log --pid=`pwd`/slave.pid --port=8100
 
 This will launch the slave with maximum (level 3) verbosity, write its
 output to the file *slave.log*, leave its process ID in the file named
@@ -166,12 +166,12 @@ launches successfully, the slave.log and slave.pid files will be created
 in the current directory and the log file will contain lines like the
 following:
 
-    [Thu Jan 22 17:58:45 2009] [info]   [pid=8128]  GBrowse render slave starting on port 8100
-    [Thu Jan 22 17:58:45 2009] [debug]  [pid=8128]  Waiting for connection...
+ [Thu Jan 22 17:58:45 2009] [info] [pid=8128] GBrowse render slave starting on port 8100
+ [Thu Jan 22 17:58:45 2009] [debug] [pid=8128] Waiting for connection...
 
 To kill the server, run the following command:
 
-    % /usr/local/bin/gbrowse_slave -k --pid=`pwd`/slave.pid
+ % /usr/local/bin/gbrowse_slave -k --pid=`pwd`/slave.pid
 
 A more convenient way to start and stop the slave is using its init
 script, which was installed during **./Build install_slave**. This init
@@ -181,7 +181,7 @@ edit this if you are able to confirm that it works or doesn't). The
 script will not work with Windows as it requires the bash shell.
 
 To start the slave
-    sudo /etc/init.d/gbrowse-slave start
+ sudo /etc/init.d/gbrowse-slave start
 
 If successful, you will see a message that three slave renderers have
 been started on ports 8101, 8102 and 8103. The slaves will log their
@@ -189,22 +189,22 @@ activities to /var/log/gbrowse/gbrowse_slave, and write their process
 IDs to /var/run/gbrowse/
 
 To stop the slave
-    sudo /etc/init.d/gbrowse-slave stop
+ sudo /etc/init.d/gbrowse-slave stop
 
 The number of slave servers to launch, the network ports they listen on,
 and the location of their log and pid files are controlled by a defaults
 file located in */etc/default/gbrowse-slave*. This file looks like this:
 
-     #!/bin/sh
+ #!/bin/sh
 
-     DAEMON=/usr/local/bin/gbrowse_slave
-     USER=www-data
-     PRELOAD=/etc/gbrowse2/slave_preload.conf
-     RUNDIR=/var/run/gbrowse
-     LOGDIR=/var/log/gbrowse
-     PORT="8101 8102 8103"
-     VERBOSITY=3
-     NICE=0
+ DAEMON=/usr/local/bin/gbrowse_slave
+ USER=www-data
+ PRELOAD=/etc/gbrowse2/slave_preload.conf
+ RUNDIR=/var/run/gbrowse
+ LOGDIR=/var/log/gbrowse
+ PORT="8101 8102 8103"
+ VERBOSITY=3
+ NICE=0
 
 Adjust this file as needed to meet your preferences. **DAEMON** gives
 the path to the gbrowse_slave script. **USER** indicates which user
@@ -228,8 +228,8 @@ For example, if the machine usually runs at runlevel 2 (which you can
 determine using the *runlevel* command), then run the following
 commands:
 
-    % cd /etc/rc2.d
-    % sudo ln -s ../init.d/gbrowse-slave S99gbrowse-slave
+ % cd /etc/rc2.d
+ % sudo ln -s ../init.d/gbrowse-slave S99gbrowse-slave
 
 You may prefer to use your distribution's GUI for configuring startup
 services.
@@ -245,10 +245,10 @@ the main GBrowse.conf configuration file, or the \[GENERAL\] section of
 one or more datasource-specific configuration files. Set this option to
 a true value (non-zero) to activate slave rendering support:
 
-    [GENERAL]
-    ...other options...
-    renderfarm = 1
-    ...
+ [GENERAL]
+ ...other options...
+ renderfarm = 1
+ ...
 
 It is safe to set renderfarm to 1 even for a datasource that does not
 use slaves. It is most often used as a convenient way to disable remote
@@ -258,23 +258,23 @@ Place the **remote renderer** option into datasource-specific \[TRACK\]
 sections to enable remote rendering for that track. Here is a simple
 example:
 
-    # in a datasource-specific config file, such as yeast_renderfarm.conf
-    [Genes]
-    feature         = gene
-    database        = volvox_annotations
-    remote renderer = http://slavehost1.example.org:8101
-    glyph           = gene
-    bgcolor         = yellow
-    key             = Protein-coding genes
+ # in a datasource-specific config file, such as yeast_renderfarm.conf
+ [Genes]
+ feature = gene
+ database = volvox_annotations
+ remote renderer = http://slavehost1.example.org:8101
+ glyph = gene
+ bgcolor = yellow
+ key = Protein-coding genes
 
-    [tRNAs]
-    feature         = tRNA
-    database        = volvox_annotations
-    remote renderer = http://slavehost2.example.org:8101
-    glyph           = generic
-    bgcolor         = lightgray
-    height          = 6
-    key             = tRNAs
+ [tRNAs]
+ feature = tRNA
+ database = volvox_annotations
+ remote renderer = http://slavehost2.example.org:8101
+ glyph = generic
+ bgcolor = lightgray
+ height = 6
+ key = tRNAs
 
 This defines two tracks named Genes and tRNAs respectively. The Genes
 track fetches features of type "gene" from the database
@@ -295,7 +295,7 @@ path part of the URL (e.g. /path/to/index.html) is not needed and is
 ignored if present. If you list multiple render slaves, then requests
 will be distributed across them in a round-robin fashion. For example:
 
-    remote renderer = http://slavehost1.example.org:8101 http://slavehost1.example.org:8102 http://slavehost2.example.org:8101
+ remote renderer = http://slavehost1.example.org:8101 http://slavehost1.example.org:8102 http://slavehost2.example.org:8101
 
 This will distribute requests across the two slave processes running on
 slavehost1 at ports 8101 and 8102, and across the slave running on
@@ -319,10 +319,10 @@ appropriate for the slave.
 In many cases you will wish to use the \[TRACK DEFAULTS\] stanza to
 assign a set of slaves to all tracks by default:
 
-    [TRACK DEFAULTS]
-    remote renderer = http://localhost:8101  http://localhost:8102
-                      http://slavehost1:8101 http://slavehost2:8101
-    database        = volvox_annotations
+ [TRACK DEFAULTS]
+ remote renderer = http://localhost:8101 http://localhost:8102
+ http://slavehost1:8101 http://slavehost2:8101
+ database = volvox_annotations
 
 This make two slaves running on the local machine and two additional
 slaves running on slavehost1 and slavehost2 the defaults. It also makes
@@ -331,11 +331,11 @@ you can override the choice of slaves for individual tracks by placing
 "remote renderer" option in those tracks' stanzas. Use a value of "none"
 or "local" to turn off slave rendering for a particular track:
 
-    [TRANSL]
-    remote renderer = none
-    global feature = 1
-    glyph          = translation
-    database       = chromosomes
+ [TRANSL]
+ remote renderer = none
+ global feature = 1
+ glyph = translation
+ database = chromosomes
 
 ### The slave_preload.conf file
 
@@ -351,15 +351,15 @@ directory, typically /etc/gbrowse2. It consists of a series of database
 stanzas that follow the same format as the stanzas in the data source
 configuration file. For example:
 
-    [yeast12:database]
-    db_adaptor    = Bio::DB::SeqFeature::Store
-    db_args       = -adaptor memory
-                    -dir    /var/www/gbrowse2/databases/yeast_chr1+2
+ [yeast12:database]
+ db_adaptor = Bio::DB::SeqFeature::Store
+ db_args = -adaptor memory
+ -dir /var/www/gbrowse2/databases/yeast_chr1+2
 
-    [scaffolds:database]
-    db_adaptor    = Bio::DB::SeqFeature::Store
-    db_args       = -adaptor memory
-                    -dir    /var/www/gbrowse2/databases/yeast_scaffolds
+ [scaffolds:database]
+ db_adaptor = Bio::DB::SeqFeature::Store
+ db_args = -adaptor memory
+ -dir /var/www/gbrowse2/databases/yeast_scaffolds
 
 You can name the stanzas the same as you name them in the data source
 configuration file (\[yeast12:database\]) or leave off the :database

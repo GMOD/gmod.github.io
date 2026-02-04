@@ -5,63 +5,63 @@ title: "Galaxy Tutorial 2013"
 
 This walks you through setting up and running a
 [Galaxy](/wiki/Galaxy) server. This tutorial will be taught by
-[Dave Clements](/wiki/User:Clements) at the [2013 GMOD Summer
+Dave Clements at the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School).
 
-  20-21, 8081</span>](#Open_Ports_20-21.2C_8081)
+ 20-21, 8081</span>](#Open_Ports_20-21.2C_8081)
 - [Starting
-  AMI](#Starting_AMI)
+ AMI](#Starting_AMI)
 - [Galaxy
-  Project](#Galaxy_Project)
-  - [Some
-    General Galaxy Resources](#Some_General_Galaxy_Resources)
+ Project](#Galaxy_Project)
+ - [Some
+ General Galaxy Resources](#Some_General_Galaxy_Resources)
 - [Create a
-  Galaxy instance](#Create_a_Galaxy_instance)
-  - [Prerequisites](#Prerequisites)
-    - [Galaxy
-      needs a newer version of
-      bedtools](#Galaxy_needs_a_newer_version_of_bedtools)
-  - [Clone the
-    Galaxy repository](#Clone_the_Galaxy_repository)
-  - [Update
-    Galaxy Configuration File](#Update_Galaxy_Configuration_File)
-  - [Use a more
-    robust database](#Use_a_more_robust_database)
-  - [Run,
-    Galaxy, Run!](#Run.2C_Galaxy.2C_Run.21)
+ Galaxy instance](#Create_a_Galaxy_instance)
+ - [Prerequisites](#Prerequisites)
+ - [Galaxy
+ needs a newer version of
+ bedtools](#Galaxy_needs_a_newer_version_of_bedtools)
+ - [Clone the
+ Galaxy repository](#Clone_the_Galaxy_repository)
+ - [Update
+ Galaxy Configuration File](#Update_Galaxy_Configuration_File)
+ - [Use a more
+ robust database](#Use_a_more_robust_database)
+ - [Run,
+ Galaxy, Run!](#Run.2C_Galaxy.2C_Run.21)
 - [Running
-  analyses with Galaxy](#Running_analyses_with_Galaxy)
-  - [1. Access
-    your new Galaxy
-    instance](#1._Access_your_new_Galaxy_instance)
-  - [2. Create
-    a user](#2._Create_a_user)
-  - [3. Lets
-    answer a question](#3._Lets_answer_a_question)
-  - [4. Get the
-    data into Galaxy](#4._Get_the_data_into_Galaxy)
-  - [5.
-    Identify genes and TFBSs that
-    overlap](#5._Identify_genes_and_TFBSs_that_overlap)
-  - [6. Group
-    and Count](#6._Group_and_Count)
-  - [7. Get
-    Gene Info back](#7._Get_Gene_Info_back)
-  - [8.
-    Visualize Your Analysis](#8._Visualize_Your_Analysis)
-    - [Define
-      this assembly to Galaxy](#Define_this_assembly_to_Galaxy)
+ analyses with Galaxy](#Running_analyses_with_Galaxy)
+ - [1. Access
+ your new Galaxy
+ instance](#1._Access_your_new_Galaxy_instance)
+ - [2. Create
+ a user](#2._Create_a_user)
+ - [3. Lets
+ answer a question](#3._Lets_answer_a_question)
+ - [4. Get the
+ data into Galaxy](#4._Get_the_data_into_Galaxy)
+ - [5.
+ Identify genes and TFBSs that
+ overlap](#5._Identify_genes_and_TFBSs_that_overlap)
+ - [6. Group
+ and Count](#6._Group_and_Count)
+ - [7. Get
+ Gene Info back](#7._Get_Gene_Info_back)
+ - [8.
+ Visualize Your Analysis](#8._Visualize_Your_Analysis)
+ - [Define
+ this assembly to Galaxy](#Define_this_assembly_to_Galaxy)
 - [Administering
-  Galaxy](#Administering_Galaxy)
-  - [1. Make
-    yourself an admin](#1._Make_yourself_an_admin)
-  - [2. Enable
-    Tool Shed](#2._Enable_Tool_Shed)
-  - [3. Find
-    and install a Venn Diagram drawing
-    tool](#3._Find_and_install_a_Venn_Diagram_drawing_tool)
+ Galaxy](#Administering_Galaxy)
+ - [1. Make
+ yourself an admin](#1._Make_yourself_an_admin)
+ - [2. Enable
+ Tool Shed](#2._Enable_Tool_Shed)
+ - [3. Find
+ and install a Venn Diagram drawing
+ tool](#3._Find_and_install_a_Venn_Diagram_drawing_tool)
 - [Running Galaxy
-  on the Cloud](#Running_Galaxy_on_the_Cloud)
+ on the Cloud](#Running_Galaxy_on_the_Cloud)
 
 <a href="http://galaxyproject.org/" class="external text"
 
@@ -147,7 +147,7 @@ Results from searches are often further broken down into categories
 - **Source code**: show Galaxy source code related to my search
 - **Shared**: Show published Galaxy objects related to my search
 - **Documentation**: Show documentation (e.g. wiki pages, tool doc, ...)
-  related to my search.
+ related to my search.
 - **Abstracts**: Show papers related to my search.
 - **Requests**: Should feature requests related to my search.
 
@@ -180,8 +180,8 @@ different language and is currently not supported. The Amazon Machine
 Image (AMI) used for this course includes version 2.7.3 of the
 interpreter.
 
-    $ python --version
-    Python 2.7.3
+ $ python --version
+ Python 2.7.3
 
 Galaxy is distributed (and developed) using a distributed version
 control system called
@@ -189,9 +189,9 @@ control system called
 
 2:0.2:
 
-    $ hg --version
-    Mercurial Distributed SCM (version 2.0.2)
-    ...
+ $ hg --version
+ Mercurial Distributed SCM (version 2.0.2)
+ ...
 
 #### Galaxy needs a newer version of bedtools
 
@@ -244,17 +244,17 @@ created at initialization time by copying `universe_wsgi.ini.sample`.
 However, if the file already exists it is not copied over. Copy the file
 and update it:
 
-    $ cd ~/Galaxy/galaxy-dist
-    $ cp universe_wsgi.ini.sample universe_wsgi.ini
-    $ nano universe_wsgi.ini
+ $ cd ~/Galaxy/galaxy-dist
+ $ cp universe_wsgi.ini.sample universe_wsgi.ini
+ $ nano universe_wsgi.ini
 
 Change the port from
 
-    #port = 8080
+ #port = 8080
 
 to this:
 
-    port = 8081
+ port = 8081
 
 Galaxy, like [WebApollo](/wiki/WebApollo) and several other
 components that are also covered at the course, will listen to port 8080
@@ -263,11 +263,11 @@ Galaxy to listen to a different port.
 
 Change the host from
 
-    #host = 127.0.0.1
+ #host = 127.0.0.1
 
 to:
 
-    host = 0.0.0.0
+ host = 0.0.0.0
 
 This makes Galaxy visible to remote hosts, such as your laptop
 
@@ -276,11 +276,11 @@ instance
 
 Change this:
 
-    #brand = None
+ #brand = None
 
 to this:
 
-    brand = My Super Cool Brand
+ brand = My Super Cool Brand
 
 Actually use something shorter.
 
@@ -304,52 +304,52 @@ databases are known to work. Postgres is already installed on our AMI
 Update `universe_wsgi.ini` file to use Postgres. Update the
 `database_connection` in your Galaxy config file to look like:
 
-    # -- Database
+ # -- Database
 
-    # By default, Galaxy uses a SQLite database at 'database/universe.sqlite'.  You
-    # may use a SQLAlchemy connection string to specify an external database
-    # instead.  This string takes many options which are explained in detail in the
-    # config file documentation.
-    #database_connection = sqlite:///./database/universe.sqlite?isolation_level=IMMEDIATE
-    database_connection = postgres://ubuntu:@localhost:5432/galaxydb
+ # By default, Galaxy uses a SQLite database at 'database/universe.sqlite'. You
+ # may use a SQLAlchemy connection string to specify an external database
+ # instead. This string takes many options which are explained in detail in the
+ # config file documentation.
+ #database_connection = sqlite:///./database/universe.sqlite?isolation_level=IMMEDIATE
+ database_connection = postgres://ubuntu:@localhost:5432/galaxydb
 
 Save the file.
 
 The `ubuntu` user has permission to create databases, so let's create
 the database that we told Galaxy to connect to:
 
-    $ createdb galaxydb
+ $ createdb galaxydb
 
 ### Run, Galaxy, Run!
 
 Galaxy includes a script to run it. This script also performs the Galaxy
 initialization the first time it is run. Run it now:
 
-    $ sh run.sh
-    Initializing external_service_types_conf.xml from external_service_types_conf.xml.sample
-    Initializing migrated_tools_conf.xml from migrated_tools_conf.xml.sample
-    Initializing reports_wsgi.ini from reports_wsgi.ini.sample
-    Initializing shed_tool_conf.xml from shed_tool_conf.xml.sample
-    Initializing tool_conf.xml from tool_conf.xml.sample
-    ... (several minutes pass while install rolls through database changes) ...
-    galaxy.webapps.galaxy.buildapp DEBUG 2013-07-15 18:52:06,052 Enabling 'x-forwarded-host' middleware
-    galaxy.webapps.galaxy.buildapp DEBUG 2013-07-15 18:52:06,053 Enabling 'Request ID' middleware
-    Starting server in PID 7158.
-    serving on 0.0.0.0:8081 view at http://127.0.0.1:8081
+ $ sh run.sh
+ Initializing external_service_types_conf.xml from external_service_types_conf.xml.sample
+ Initializing migrated_tools_conf.xml from migrated_tools_conf.xml.sample
+ Initializing reports_wsgi.ini from reports_wsgi.ini.sample
+ Initializing shed_tool_conf.xml from shed_tool_conf.xml.sample
+ Initializing tool_conf.xml from tool_conf.xml.sample
+ ... (several minutes pass while install rolls through database changes) ...
+ galaxy.webapps.galaxy.buildapp DEBUG 2013-07-15 18:52:06,052 Enabling 'x-forwarded-host' middleware
+ galaxy.webapps.galaxy.buildapp DEBUG 2013-07-15 18:52:06,053 Enabling 'Request ID' middleware
+ Starting server in PID 7158.
+ serving on 0.0.0.0:8081 view at http://127.0.0.1:8081
 
 This script performs several significant actions the first time it is
 run:
 
 - Creates initial configuration files and empty directories for storing
-  data files
+ data files
 - Fetches all of the Galaxy framework's
-  <a href="https://wiki.galaxyproject.org/Admin/Config/Eggs"
-  class="external text" rel="nofollow">dependencies</a>, packaged as
-  Python eggs, for the current platform.
+ <a href="https://wiki.galaxyproject.org/Admin/Config/Eggs"
+ class="external text" rel="nofollow">dependencies</a>, packaged as
+ Python eggs, for the current platform.
 - Initializes its database. Galaxy uses a database migration system to
-  automatically handle any changes to the database schema. On first load
-  it runs all migrations to ensure the database is in a known state,
-  which may take a little time.
+ automatically handle any changes to the database schema. On first load
+ it runs all migrations to ensure the database is in a known state,
+ which may take a little time.
 
 Once the database is initialized, the normal startup process proceeds,
 loading tool configurations, starting the job runner, and finally
@@ -381,9 +381,9 @@ In the top bar, *select* **User → Register**. *Enter* your
 
 - Email address
 - Password (use a low-security password, it's going over the net
-  unencrypted)
+ unencrypted)
 - Public name: Public names must be at least four characters in length
-  and contain only lower-case letters, numbers, and the '-' character.
+ and contain only lower-case letters, numbers, and the '-' character.
 
 and *click* **Submit**.
 
@@ -415,14 +415,14 @@ data form from which you can
 - upload data from one or more URLs
 - cut and paste data directly
 - bring files into your workspace that you have previously send to
-  Galaxy via FTP.
+ Galaxy via FTP.
 
 We are going to use the URL option. *Cut and paste* these URLs into the
 **URL/Text** box
 
-    http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.TFBs.bed
-    http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.sequence.fasta
-    http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.wholegene.bed
+ http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.TFBs.bed
+ http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.sequence.fasta
+ http://bx.psu.edu/~clements/Events/GMOD2013/m.vannielli.wholegene.bed
 
 and *click* **Execute**.
 
@@ -432,9 +432,9 @@ data. For each dataset,
 - *Click on the dataset name* for a preview.
 - *Poke the eye* to see the full dataset.
 - *Click on pencil icon* and give each dataset a better name (like
-  `M vannielli Exons`). *Click* **Save**.
+ `M vannielli Exons`). *Click* **Save**.
 - Change the history name from `unnamed history` (which is true, but not
-  useful) to something more meaningful.
+ useful) to something more meaningful.
 
 #### 5. Identify genes and TFBSs that overlap
 
@@ -577,16 +577,16 @@ And ...
 
 Our hopes are crushed:
 
-    Trackster Error
-     /bin/sh: 1: bedGraphToBigWig: not found
+ Trackster Error
+ /bin/sh: 1: bedGraphToBigWig: not found
 
 Do a web search for bedGraphToBigWig. Eventually that will lead you to
 UCSC, where you can download it and install it.
 
-    cd ~/Galaxy
-    curl http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bedGraphToBigWig > bedGraphToBigWig
-    chmod 555 bedGraphToBigWig
-    sudo cp bedGraphToBigWig /usr/bin/
+ cd ~/Galaxy
+ curl http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bedGraphToBigWig > bedGraphToBigWig
+ chmod 555 bedGraphToBigWig
+ sudo cp bedGraphToBigWig /usr/bin/
 
 *Click* **Try again**. *Voillà.*
 
@@ -597,12 +597,12 @@ UCSC, where you can download it and install it.
 On the command line, stop Galaxy by entering \<ctrl-c\>. Then edit
 `universe_wsgi.ini` file and add yourself as an administrator:
 
-    # users (email addresses).  These users will have access to the Admin section
-    # of the server, and will have access to create users, groups, roles,
-    # libraries, and more.  For more information, see:
-    # http://wiki.g2.bx.psu.edu/Admin/Interface
-    #admin_users = None
-    admin_users = your@email.adr
+ # users (email addresses). These users will have access to the Admin section
+ # of the server, and will have access to create users, groups, roles,
+ # libraries, and more. For more information, see:
+ # http://wiki.g2.bx.psu.edu/Admin/Interface
+ #admin_users = None
+ admin_users = your@email.adr
 
 ### 2. Enable Tool Shed
 
@@ -611,25 +611,25 @@ the Galaxy Tool Shed.
 
 Define:
 
-    # Tool config files, defines what tools are available in Galaxy.
-    # Tools can be locally developed or installed from Galaxy tool sheds.
-    #tool_config_file = tool_conf.xml,shed_tool_conf.xml
-    tool_config_file = tool_conf.xml,shed_tool_conf.xml
+ # Tool config files, defines what tools are available in Galaxy.
+ # Tools can be locally developed or installed from Galaxy tool sheds.
+ #tool_config_file = tool_conf.xml,shed_tool_conf.xml
+ tool_config_file = tool_conf.xml,shed_tool_conf.xml
 
-    # Default path to the directory containing the tools defined in tool_conf.xml.
-    # Other tool config files must include the tool_path as an attribute in the <toolbox> tag.
-    #tool_path = tools
-    tool_path = tools
+ # Default path to the directory containing the tools defined in tool_conf.xml.
+ # Other tool config files must include the tool_path as an attribute in the <toolbox> tag.
+ #tool_path = tools
+ tool_path = tools
 
 Save the changes and then in the shell enter
 
-    $ mkdir ../shed_tools
+ $ mkdir ../shed_tools
 
 This is the default location for tools installed through the tool shed.
 
 Now, restart Galaxy:
 
-    $ sh run.sh
+ $ sh run.sh
 
 ### 3. Find and install a Venn Diagram drawing tool
 
@@ -645,8 +645,8 @@ line 13, in import rpy ImportError: No module named rpy
 
 Do a web search for rpy debian package
 
-    apt-get -s install python-rpy
-    sudo apt-get install python-rpy
+ apt-get -s install python-rpy
+ sudo apt-get install python-rpy
 
 An error occurred with this dataset: Requires the R library limma (for
 vennDiagram function)
@@ -654,7 +654,7 @@ vennDiagram function)
 Do a web search for limma debian package. Pick the one that involves R
 and biology.
 
-    sudo apt-get install r-bioc-limma
+ sudo apt-get install r-bioc-limma
 
 Success.
 

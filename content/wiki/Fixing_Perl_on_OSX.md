@@ -7,12 +7,12 @@ One of the Security Updates to Mac OSX 10.5 caused problems for Perl.
 See
 
 - <a
-  href="http://www.theregister.co.uk/2009/02/16/apple_update_perl_breakage/"
-  class="external free"
-  rel="nofollow">http://www.theregister.co.uk/2009/02/16/apple_update_perl_breakage/</a>
+ href="http://www.theregister.co.uk/2009/02/16/apple_update_perl_breakage/"
+ class="external free"
+ rel="nofollow">http://www.theregister.co.uk/2009/02/16/apple_update_perl_breakage/</a>
 - <a href="http://www.macosxhints.com/article.php?story=20090219082024982"
-  class="external free"
-  rel="nofollow">http://www.macosxhints.com/article.php?story=20090219082024982</a>
+ class="external free"
+ rel="nofollow">http://www.macosxhints.com/article.php?story=20090219082024982</a>
 
 What seems to have happened is that Apple replaced some Perl modules
 with their older versions. These need to be reinstalled from source to
@@ -25,14 +25,14 @@ distributions.
 
 The general process is illustrated by how to reinstall IO
 
-      mkdir -p /SourceCache
-      cd /SourceCache
-      curl -O http://cpan.mirror.solnet.ch/authors/id/G/GB/GBARR/IO-1.2301.tar.gz
-      tar xzf IO-1.2301.tar.gz
-      cd IO-1.2301
-      perl Makefile.PL
-      make
-      make install
+ mkdir -p /SourceCache
+ cd /SourceCache
+ curl -O http://cpan.mirror.solnet.ch/authors/id/G/GB/GBARR/IO-1.2301.tar.gz
+ tar xzf IO-1.2301.tar.gz
+ cd IO-1.2301
+ perl Makefile.PL
+ make
+ make install
 
 This was copied from an Apple discussion forum. There's nothing special
 about using /SourceCache as the directory for the downloaded modules. I
@@ -42,4 +42,4 @@ code modules via curl. In most cases you can get these via ftp.
 See:
 
 - <a href="http://www.cpan.org/SITES.html" class="external free"
-  rel="nofollow">http://www.cpan.org/SITES.html</a>
+ rel="nofollow">http://www.cpan.org/SITES.html</a>

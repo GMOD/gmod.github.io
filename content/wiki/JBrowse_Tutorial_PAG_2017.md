@@ -3,8 +3,8 @@ title: "JBrowse Tutorial PAG 2017"
 ---
 # JBrowse Tutorial PAG 2017
 
-This [JBrowse](/wiki/JBrowse) tutorial was presented by [Scott
-Cain](/wiki/User:Scott) at the
+This [JBrowse](/wiki/JBrowse) tutorial was presented by Scott
+Cain at the
 <a href="http://www.intlpag.org" class="external text"
 
 1.12.1.
@@ -17,64 +17,64 @@ href="https://s3.amazonaws.com/jbrowse-tutorials/JBrowse+PAG+2017.ova.bz2"
 class="external text" rel="nofollow">JBrowse PAG 2017.ova.bz2</a> (about
 3GB).
 
-  Prerequisites](#Prerequisites)
+ Prerequisites](#Prerequisites)
 - [JBrowse
-  Introduction](#JBrowse_Introduction)
+ Introduction](#JBrowse_Introduction)
 - [Setting up
-  JBrowse](#Setting_up_JBrowse)
-  - [Getting
-    JBrowse](#Getting_JBrowse)
-  - [Starting
-    Point](#Starting_Point)
-  - [Basic
-    Steps](#Basic_Steps)
-  - [A Short
-    Detour for GFF](#A_Short_Detour_for_GFF)
-  - [Features
-    from a directory of
-    files](#Features_from_a_directory_of_files)
-    - [Specify reference
-      sequences](#Specify_reference_sequences)
-    - [Load
-      Feature Data](#Load_Feature_Data)
-    - [Index
-      feature names](#Index_feature_names)
-  - [Features
-    from GFF3 or BED files](#Features_from_GFF3_or_BED_files)
-  - [BAM
-    alignments](#BAM_alignments)
-  - [BAM
-    coverage](#BAM_coverage)
-  - [Quantitative data](#Quantitative_data)
-    - [BigWig](#BigWig)
-  - [Variation
-    Data](#Variation_Data)
-    - [VCF
-      tracks](#VCF_tracks)
-  - [Faceted
-    Track Selection](#Faceted_Track_Selection)
+ JBrowse](#Setting_up_JBrowse)
+ - [Getting
+ JBrowse](#Getting_JBrowse)
+ - [Starting
+ Point](#Starting_Point)
+ - [Basic
+ Steps](#Basic_Steps)
+ - [A Short
+ Detour for GFF](#A_Short_Detour_for_GFF)
+ - [Features
+ from a directory of
+ files](#Features_from_a_directory_of_files)
+ - [Specify reference
+ sequences](#Specify_reference_sequences)
+ - [Load
+ Feature Data](#Load_Feature_Data)
+ - [Index
+ feature names](#Index_feature_names)
+ - [Features
+ from GFF3 or BED files](#Features_from_GFF3_or_BED_files)
+ - [BAM
+ alignments](#BAM_alignments)
+ - [BAM
+ coverage](#BAM_coverage)
+ - [Quantitative data](#Quantitative_data)
+ - [BigWig](#BigWig)
+ - [Variation
+ Data](#Variation_Data)
+ - [VCF
+ tracks](#VCF_tracks)
+ - [Faceted
+ Track Selection](#Faceted_Track_Selection)
 - [Changing the
-  way tracks look](#Changing_the_way_tracks_look)
-  - [Making
-    changes based on the data](#Making_changes_based_on_the_data)
-  - [Making
-    links open something else](#Making_links_open_something_else)
+ way tracks look](#Changing_the_way_tracks_look)
+ - [Making
+ changes based on the data](#Making_changes_based_on_the_data)
+ - [Making
+ links open something else](#Making_links_open_something_else)
 - [Using
-  Plugins](#Using_Plugins)
+ Plugins](#Using_Plugins)
 - [JBrowse
-  Features](#JBrowse_Features)
-  - [Highlighting interesting
-    things](#Highlighting_interesting_things)
-  - [Opening
-    local files](#Opening_local_files)
-  - [Combination
-    tracks](#Combination_tracks)
+ Features](#JBrowse_Features)
+ - [Highlighting interesting
+ things](#Highlighting_interesting_things)
+ - [Opening
+ local files](#Opening_local_files)
+ - [Combination
+ tracks](#Combination_tracks)
 - [Upgrading an
-  Existing JBrowse](#Upgrading_an_Existing_JBrowse)
+ Existing JBrowse](#Upgrading_an_Existing_JBrowse)
 - [Common
-  Problems](#Common_Problems)
+ Problems](#Common_Problems)
 - [Other
-  links](#Other_links)
+ links](#Other_links)
 
 ## Prerequisites
 
@@ -109,23 +109,23 @@ title="JBrowse PAG 2017.pdf">JBrowse presentation</a>
 ### Getting JBrowse
 
 - download the demo bundle from Amazon and unzip it
-    cd html
-    ##curl -O https://s3.amazonaws.com/jbrowse-tutorials/PAG_2017_JBrowse.zip #that's a capital dash"O" not a zero/zed.
-    cp ~/PAG_2017_JBrowse.zip . ## if we don't need to update the zip file
-    unzip PAG_2017_JBrowse.zip
-    cd PAG_2017_JBrowse
-    unzip JBrowse-1.12.1.zip
-    mv JBrowse-1.12.1 jbrowse
+ cd html
+ ##curl -O https://s3.amazonaws.com/jbrowse-tutorials/PAG_2017_JBrowse.zip #that's a capital dash"O" not a zero/zed.
+ cp ~/PAG_2017_JBrowse.zip . ## if we don't need to update the zip file
+ unzip PAG_2017_JBrowse.zip
+ cd PAG_2017_JBrowse
+ unzip JBrowse-1.12.1.zip
+ mv JBrowse-1.12.1 jbrowse
 
 - run `setup.sh` to configure this copy of JBrowse
-    cd jbrowse
-    ./setup.sh
+ cd jbrowse
+ ./setup.sh
 
 ### Starting Point
 
 Visit in web browser:
 
-    http://localhost/PAG_2017_JBrowse/jbrowse/index.html
+ http://localhost/PAG_2017_JBrowse/jbrowse/index.html
 
 You should see a "Congratulations" page.
 
@@ -133,10 +133,10 @@ You should see a "Congratulations" page.
 
 There are four basic steps to setting up an instance of JBrowse:
 
-1.  Load and format reference sequences
-2.  Format data for tracks
-3.  Configure direct-access tracks
-4.  Index feature names
+1. Load and format reference sequences
+2. Format data for tracks
+3. Configure direct-access tracks
+4. Index feature names
 
 ### A Short Detour for GFF
 
@@ -157,14 +157,14 @@ class="external text" rel="nofollow">Bio::DB::GFF</a>.
 
 Config file: `pythium-1.conf`
 
-    {
-      "description": "PAG 2017 P. ultima Example",
-      "db_adaptor": "Bio::DB::SeqFeature::Store",
-      "db_args" : {
-          "-adaptor" : "memory",
-          "-dir" : ".."
-       },
-    ...
+ {
+ "description": "PAG 2017 P. ultima Example",
+ "db_adaptor": "Bio::DB::SeqFeature::Store",
+ "db_args" : {
+ "-adaptor" : "memory",
+ "-dir" : ".."
+ },
+ ...
 
 #### Specify reference sequences
 
@@ -176,8 +176,8 @@ Run this from within the `jbrowse` directory (you could run it
 elsewhere, but you'd have to explicitly specify the location of the data
 directory on the command line).
 
-    cd ~/html/PAG_2017_JBrowse/jbrowse
-    bin/prepare-refseqs.pl --gff ../scf1117875582023.gff
+ cd ~/html/PAG_2017_JBrowse/jbrowse
+ bin/prepare-refseqs.pl --gff ../scf1117875582023.gff
 
 Refresh it in your web browser, you should new see the JBrowse UI and a
 sequence track, which will show you the DNA base pairs if you zoom in
@@ -195,23 +195,23 @@ In this case, we have specified all of our track configurations in
 ``` de1
 ...
 
-  "TRACK DEFAULTS": {
-    "class": "feature"
-  },
+ "TRACK DEFAULTS": {
+ "class": "feature"
+ },
 
  "tracks": [
-    {
-      "track": "Genes",
-      "key": "Genes",
-      "feature": ["mRNA"],
-      "autocomplete": "all",
-      "class": "transcript",
-      "subfeature_classes" : {
-            "CDS" : "transcript-CDS",
-            "UTR" : "transcript-UTR"
-      }
-    },
-   ...
+ {
+ "track": "Genes",
+ "key": "Genes",
+ "feature": ["mRNA"],
+ "autocomplete": "all",
+ "class": "transcript",
+ "subfeature_classes" : {
+ "CDS" : "transcript-CDS",
+ "UTR" : "transcript-UTR"
+ }
+ },
+ ...
 ]
 ```
 
@@ -239,7 +239,7 @@ class.
 Run the `bin/biodb-to-json.pl` script with this config file to format
 this track, and the others in the file:
 
-    bin/biodb-to-json.pl --conf ../pythium-1.conf
+ bin/biodb-to-json.pl --conf ../pythium-1.conf
 
 Refresh JBrowse in your web browser. You should now see a bunch of
 annotation tracks.
@@ -255,7 +255,7 @@ The `bin/generate-names.pl` script collects those lists of names from
 all the tracks and combines them into one big tree that the client uses
 to search.
 
-    bin/generate-names.pl -v
+ bin/generate-names.pl -v
 
 Visit in web browser, try typing a feature name, such as
 **maker-scf1117875582023-snap-gene-0.26-mRNA-1**. Notice that JBrowse
@@ -268,18 +268,18 @@ We're going to add a couple more tracks that come from a flat file,
 `flatfile-to-json.pl`.
 
 - We'll add a RepeatMasker track:
-    bin/flatfile-to-json.pl --trackLabel "repeat masker" \
-        --trackType CanvasFeatures \
-        --type match:repeatmasker --key RepeatMasker \
-        --className generic_parent \
-        --subfeatureClasses '{"match_part" : "feature"}' --gff ../repeats.gff
+ bin/flatfile-to-json.pl --trackLabel "repeat masker" \
+ --trackType CanvasFeatures \
+ --type match:repeatmasker --key RepeatMasker \
+ --className generic_parent \
+ --subfeatureClasses '{"match_part" : "feature"}' --gff ../repeats.gff
 
 - And then a RepeatRunner track:
-    bin/flatfile-to-json.pl --trackLabel "repeat runner" \
-        --trackType CanvasFeatures \
-        --type protein_match:repeatrunner \
-        --key RepeatRunner --className generic_parent \
-        --subfeatureClasses '{"match_part" : "feature"}' --gff ../repeats.gff
+ bin/flatfile-to-json.pl --trackLabel "repeat runner" \
+ --trackType CanvasFeatures \
+ --type protein_match:repeatrunner \
+ --key RepeatRunner --className generic_parent \
+ --subfeatureClasses '{"match_part" : "feature"}' --gff ../repeats.gff
 
 Visit in web browser; you should see the two new RepeatMasker and
 RepeatRunner tracks.
@@ -292,46 +292,46 @@ server, and add a snippet of configuration to JBrowse to add the track,
 similar to:
 
 ``` de1
-     {
-        "label" : "bam_alignments",
-        "key" : "BAM alignments",
-        "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-        "urlTemplate" : "../../simulated-sorted.bam",
-        "type" : "Alignments2"
-      }
+ {
+ "label" : "bam_alignments",
+ "key" : "BAM alignments",
+ "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+ "urlTemplate" : "../../simulated-sorted.bam",
+ "type" : "Alignments2"
+ }
 ```
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
 inject the track configuration:
 
-    echo '{
-           "label" : "bam_alignments",
-           "key" : "BAM alignments",
-           "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-           "urlTemplate" : "../../simulated-sorted.bam",
-           "type" : "Alignments2"
-         }' | bin/add-track-json.pl data/trackList.json
+ echo '{
+ "label" : "bam_alignments",
+ "key" : "BAM alignments",
+ "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+ "urlTemplate" : "../../simulated-sorted.bam",
+ "type" : "Alignments2"
+ }' | bin/add-track-json.pl data/trackList.json
 
 ### BAM coverage
 
 This time we'll use a text editor and will edit the track configuration
 file directly. Type
 
-      gedit data/trackList.json
+ gedit data/trackList.json
 
 and insert the text below in the "tracks" array (the easiest thing to do
 is find the "\[" after "tracks", paste there and then add a comma after
 the "}").
 
 ``` de1
-     {
-        "label" : "bam_coverage",
-        "key" : "BAM Coverage",
-        "storeClass" : "JBrowse/Store/SeqFeature/BAM",
-        "urlTemplate" : "../../simulated-sorted.bam",
-        "type" : "SNPCoverage"
-      }
+ {
+ "label" : "bam_coverage",
+ "key" : "BAM Coverage",
+ "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+ "urlTemplate" : "../../simulated-sorted.bam",
+ "type" : "SNPCoverage"
+ }
 ```
 
 and then press the Save button.
@@ -346,28 +346,28 @@ to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
 
 ``` de1
-     {
-        "label" : "bigwig_bam_coverage",
-        "key" : "BigWig - BAM coverage",
-        "storeClass" : "BigWig",
-        "urlTemplate" : "../../simulated-sorted.bam.coverage.bw",
-        "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-        "variance_band" : true
-      }
+ {
+ "label" : "bigwig_bam_coverage",
+ "key" : "BigWig - BAM coverage",
+ "storeClass" : "BigWig",
+ "urlTemplate" : "../../simulated-sorted.bam.coverage.bw",
+ "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+ "variance_band" : true
+ }
 ```
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
 inject the track configuration:
 
-    echo ' {
-           "label" : "bigwig_bam_coverage",
-           "key" : "BigWig - BAM coverage",
-           "storeClass" : "BigWig",
-           "urlTemplate" : "../../simulated-sorted.bam.coverage.bw",
-           "type" : "JBrowse/View/Track/Wiggle/XYPlot",
-           "variance_band" : true
-         } ' | bin/add-track-json.pl data/trackList.json
+ echo ' {
+ "label" : "bigwig_bam_coverage",
+ "key" : "BigWig - BAM coverage",
+ "storeClass" : "BigWig",
+ "urlTemplate" : "../../simulated-sorted.bam.coverage.bw",
+ "type" : "JBrowse/View/Track/Wiggle/XYPlot",
+ "variance_band" : true
+ } ' | bin/add-track-json.pl data/trackList.json
 
 ### Variation Data
 
@@ -380,26 +380,26 @@ to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
 
 ``` de1
-      {
-        "label" : "bam_variation",
-        "key" : "VCF simulated variation",
-        "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
-        "urlTemplate" : "../../simulated-sorted.vcf.gz",
-        "type" : "HTMLVariants"
-      }
+ {
+ "label" : "bam_variation",
+ "key" : "VCF simulated variation",
+ "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+ "urlTemplate" : "../../simulated-sorted.vcf.gz",
+ "type" : "HTMLVariants"
+ }
 ```
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
 inject the track configuration:
 
-    echo ' {
-           "label" : "bam_variation",
-           "key" : "VCF simulated variation",
-           "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
-           "urlTemplate" : "../../simulated-sorted.vcf.gz",
-           "type" : "HTMLVariants"
-         } ' | bin/add-track-json.pl data/trackList.json
+ echo ' {
+ "label" : "bam_variation",
+ "key" : "VCF simulated variation",
+ "storeClass" : "JBrowse/Store/SeqFeature/VCFTabix",
+ "urlTemplate" : "../../simulated-sorted.vcf.gz",
+ "type" : "HTMLVariants"
+ } ' | bin/add-track-json.pl data/trackList.json
 
 ### Faceted Track Selection
 
@@ -413,19 +413,19 @@ track labels in the JBrowse configuration.
 The demo bundle contains an example `trackMetadata.csv` file, which can
 be copied into the `data` directory for use with this configuration.
 
-    cp ../trackMetadata.csv data/
+ cp ../trackMetadata.csv data/
 
 Then a simple faceted track selection configuration might look like:
 
 ``` de1
-   "trackSelector": {
-       "type": 'Faceted',
-   },
-   "trackMetadata": {
-       "sources": [
-          { "type": 'csv', "url": 'data/trackMetadata.csv' }
-       ]
-   }
+ "trackSelector": {
+ "type": 'Faceted',
+ },
+ "trackMetadata": {
+ "sources": [
+ { "type": 'csv', "url": 'data/trackMetadata.csv' }
+ ]
+ }
 ```
 
 Copy the section above and put it in the empty curly braces in the
@@ -442,21 +442,21 @@ tracks created above).
 The configuration for the RepeatMasker track looks like this:
 
 ``` de1
-      {
-         "key" : "RepeatMasker",
-         "trackType" : "CanvasFeatures",
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "urlTemplate" : "tracks/repeat masker/{refseq}/trackData.json",
-         "style" : {
-            "subfeatureClasses" : {
-               "match_part" : "feature"
-            },
-            "className" : "generic_parent"
-         },
-         "type" : "CanvasFeatures",
-         "compress" : 0,
-         "label" : "repeat masker"
-      }
+ {
+ "key" : "RepeatMasker",
+ "trackType" : "CanvasFeatures",
+ "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+ "urlTemplate" : "tracks/repeat masker/{refseq}/trackData.json",
+ "style" : {
+ "subfeatureClasses" : {
+ "match_part" : "feature"
+ },
+ "className" : "generic_parent"
+ },
+ "type" : "CanvasFeatures",
+ "compress" : 0,
+ "label" : "repeat masker"
+ }
 ```
 
 Open the `data/trackList.json` file in your favorite editor and
@@ -465,7 +465,7 @@ change we can make is to the color; in the line starting with "style",
 add:
 
 ``` de1
-  "color" : "black",
+ "color" : "black",
 ```
 
 save the changes and select the RepeatMasker track or reload the browser
@@ -486,7 +486,7 @@ complexity repeat, where we'll color it red. A function to do that would
 look like this:
 
 ``` de1
-  "color" : "function(feature) { var name = feature.get('Name'); if (name.match('Low_complexity') ) { return 'red'; } return 'black';  }",
+ "color" : "function(feature) { var name = feature.get('Name'); if (name.match('Low_complexity') ) { return 'red'; } return 'black'; }",
 ```
 
 When editing the trackList.json file directly in this way, the function
@@ -510,42 +510,42 @@ In the RepeatMasker section of the JBrowse configuration, we'll add a
 section that looks like this after the style section:
 
 ``` de1
-        "onClick" : {
-           "iconClass" : "dijitIconDatabase",
-           "action" : "newWindow",
-           "url" : "http://www.google.com/search?q={name}",
-           "label" : "Search for {name} at Google",
-           "title" : "function(track,feature,div) { return 'Searching for '+feature.get('name')+' at Google'; }"
-        },
+ "onClick" : {
+ "iconClass" : "dijitIconDatabase",
+ "action" : "newWindow",
+ "url" : "http://www.google.com/search?q={name}",
+ "label" : "Search for {name} at Google",
+ "title" : "function(track,feature,div) { return 'Searching for '+feature.get('name')+' at Google'; }"
+ },
 ```
 
 If you're having difficulties, the RepeatMasker section of the
 configuration file should now look something like this:
 
 ``` de1
-      {
-         "type" : "CanvasFeatures",
-         "trackType" : "CanvasFeatures",
-         "style" : {
-            "color" : "function(feature) { var name = feature.get('Name'); if (name.match('Low_complexity') ) { return 'red'; } return 'black';  }",
-            "subfeatureClasses" : {
-               "match_part" : "feature"
-            },
-            "className" : "generic_parent"
-         },
-         "onClick" : {
-           "iconClass" : "dijitIconDatabase",
-           "action" : "newWindow",
-           "url" : "http://www.google.com/search?q={name}",
-           "label" : "Search for {name} at Google",
-           "title" : "function(track,feature,div) { return 'Searching for '+feature.get('name')+' at Google'; }"
-         },
-         "compress" : 0,
-         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
-         "label" : "repeatmasker",
-         "urlTemplate" : "tracks/repeatmasker/{refseq}/trackData.json",
-         "key" : "RepeatMasker"
-      },
+ {
+ "type" : "CanvasFeatures",
+ "trackType" : "CanvasFeatures",
+ "style" : {
+ "color" : "function(feature) { var name = feature.get('Name'); if (name.match('Low_complexity') ) { return 'red'; } return 'black'; }",
+ "subfeatureClasses" : {
+ "match_part" : "feature"
+ },
+ "className" : "generic_parent"
+ },
+ "onClick" : {
+ "iconClass" : "dijitIconDatabase",
+ "action" : "newWindow",
+ "url" : "http://www.google.com/search?q={name}",
+ "label" : "Search for {name} at Google",
+ "title" : "function(track,feature,div) { return 'Searching for '+feature.get('name')+' at Google'; }"
+ },
+ "compress" : 0,
+ "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+ "label" : "repeatmasker",
+ "urlTemplate" : "tracks/repeatmasker/{refseq}/trackData.json",
+ "key" : "RepeatMasker"
+ },
 ```
 
 ## Using Plugins
@@ -566,12 +566,12 @@ but isn't turned on by default. JBrowse plugins are typically stored in
 the `plugins` directory, and in 1.12.1's plugin directory there are 6
 plugins:
 
-     CategoryUrl
-     DebugEvents
-     HideTrackLabels
-     NeatCanvasFeatures
-     NeatHTMLFeatures
-     RegexSequenceSearch
+ CategoryUrl
+ DebugEvents
+ HideTrackLabels
+ NeatCanvasFeatures
+ NeatHTMLFeatures
+ RegexSequenceSearch
 
 and the RegexSequenceSearch plugin is already activated (look under the
 "Track" menu for it). We will turn on the NeatHTMLFeatures plugin. Right
@@ -579,9 +579,9 @@ now the Genes track has relatively "boring" glyphs composed of pink
 rectangles connected by black lines. To turn on NeatHTMLFeatures, just
 add
 
-       "plugins": [
-          'NeatHTMLFeatures'
-       ],
+ "plugins": [
+ 'NeatHTMLFeatures'
+ ],
 
 to the top of `data/trackList.json`, just inside the first open curly
 brace. Reload JBrowse and turn on the Genes track if it isn't already
@@ -633,12 +633,12 @@ running the `setup.sh` script.
 ## Common Problems
 
 - JSON syntax errors in configuration files (2.x series will stop this
-  madness!)
+ madness!)
 
 ## Other links
 
 - Config file ref: [JBrowse Configuration
-  Guide](/wiki/JBrowse_Configuration_Guide)
+ Guide](/wiki/JBrowse_Configuration_Guide)
 - DIV test: <a href="http://jbrowse.org/test/boatdiv/boat.html"
-  class="external free"
-  rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
+ class="external free"
+ rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>

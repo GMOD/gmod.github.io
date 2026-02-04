@@ -3,72 +3,72 @@ title: "MWAS Tutorial"
 ---
 # MWAS Tutorial
 
-  Annotation Service</span>](#Maker_Web_Annotation_Service)
+ Annotation Service</span>](#Maker_Web_Annotation_Service)
 - [Understanding
-  MWAS](#Understanding_MWAS)
-  - [Introduction to Genome
-    Annotation](#Introduction_to_Genome_Annotation)
-    - [What
-      Are Annotations?](#What_Are_Annotations.3F)
-    - [Importance of Genome
-      Annotations](#Importance_of_Genome_Annotations)
-    - [Effect
-      of Next Generation Sequencing on the Annotation
-      Process](#Effect_of_Next_Generation_Sequencing_on_the_Annotation_Process)
-  - [What does
-    MWAS do?](#What_does_MWAS_do.3F)
-  - [What sets
-    MAKER and MWAS apart from other tools (_ab initio_ gene predictors
-    etc.)?](#What_sets_MAKER_and_MWAS_apart_from_other_tools_.28ab_initio_gene_predictors_etc..29.3F)
-    - [Emerging vs. Model
-      Genomes](#Emerging_vs._Model_Genomes)
-    - [Comparison of Algorithm Performance on Model
-      vs. Emerging
-      Genomes](#Comparison_of_Algorithm_Performance_on_Model_vs._Emerging_Genomes)
+ MWAS](#Understanding_MWAS)
+ - [Introduction to Genome
+ Annotation](#Introduction_to_Genome_Annotation)
+ - [What
+ Are Annotations?](#What_Are_Annotations.3F)
+ - [Importance of Genome
+ Annotations](#Importance_of_Genome_Annotations)
+ - [Effect
+ of Next Generation Sequencing on the Annotation
+ Process](#Effect_of_Next_Generation_Sequencing_on_the_Annotation_Process)
+ - [What does
+ MWAS do?](#What_does_MWAS_do.3F)
+ - [What sets
+ MAKER and MWAS apart from other tools (_ab initio_ gene predictors
+ etc.)?](#What_sets_MAKER_and_MWAS_apart_from_other_tools_.28ab_initio_gene_predictors_etc..29.3F)
+ - [Emerging vs. Model
+ Genomes](#Emerging_vs._Model_Genomes)
+ - [Comparison of Algorithm Performance on Model
+ vs. Emerging
+ Genomes](#Comparison_of_Algorithm_Performance_on_Model_vs._Emerging_Genomes)
 - [Getting
-  Started with MWAS](#Getting_Started_with_MWAS)
-  - [Registration](#Registration)
-  - [Running
-    MWAS with Example Data](#Running_MWAS_with_Example_Data)
-  - [Details of
-    What is Going on Inside of
-    MWAS](#Details_of_What_is_Going_on_Inside_of_MWAS)
-    - [Repeat
-      Masking](#Repeat_Masking)
-    - [_Ab
-      Initio_ Gene Prediction](#Ab_Initio_Gene_Prediction)
-    - [EST
-      and Protein Evidence
-      Alignment](#EST_and_Protein_Evidence_Alignment)
-    - [Polishing Evidence
-      Alignments](#Polishing_Evidence_Alignments)
-    - [Integrating Evidence to Synthesize Final
-      Annotations](#Integrating_Evidence_to_Synthesize_Final_Annotations)
-  - [Running
-    MWAS with your Own Data](#Running_MWAS_with_your_Own_Data)
-  - [MWAS Job
-    Configuration](#MWAS_Job_Configuration)
-    - [Basic
-      Input Files](#Basic_Input_Files)
-    - [Repeat
-      Masking Options](#Repeat_Masking_Options)
-    - [Gene
-      Prediction Options](#Gene_Prediction_Options)
-    - [Other
-      MAKER Options](#Other_MAKER_Options)
-  - [MWAS
-    Results](#MWAS_Results)
-  - [Viewing
-    MAKER Annotations](#Viewing_MAKER_Annotations)
-    - [Apollo](#Apollo)
-  - [Training
-    _ab initio_ Gene
-    Predictors](#Training_ab_initio_Gene_Predictors)
-  - [GFF3
-    Pass-through](#GFF3_Pass-through)
-  - [mRNAseq](#mRNAseq)
-  - [Merge/Resolve Legacy
-    Annotations](#Merge.2FResolve_Legacy_Annotations)
+ Started with MWAS](#Getting_Started_with_MWAS)
+ - [Registration](#Registration)
+ - [Running
+ MWAS with Example Data](#Running_MWAS_with_Example_Data)
+ - [Details of
+ What is Going on Inside of
+ MWAS](#Details_of_What_is_Going_on_Inside_of_MWAS)
+ - [Repeat
+ Masking](#Repeat_Masking)
+ - [_Ab
+ Initio_ Gene Prediction](#Ab_Initio_Gene_Prediction)
+ - [EST
+ and Protein Evidence
+ Alignment](#EST_and_Protein_Evidence_Alignment)
+ - [Polishing Evidence
+ Alignments](#Polishing_Evidence_Alignments)
+ - [Integrating Evidence to Synthesize Final
+ Annotations](#Integrating_Evidence_to_Synthesize_Final_Annotations)
+ - [Running
+ MWAS with your Own Data](#Running_MWAS_with_your_Own_Data)
+ - [MWAS Job
+ Configuration](#MWAS_Job_Configuration)
+ - [Basic
+ Input Files](#Basic_Input_Files)
+ - [Repeat
+ Masking Options](#Repeat_Masking_Options)
+ - [Gene
+ Prediction Options](#Gene_Prediction_Options)
+ - [Other
+ MAKER Options](#Other_MAKER_Options)
+ - [MWAS
+ Results](#MWAS_Results)
+ - [Viewing
+ MAKER Annotations](#Viewing_MAKER_Annotations)
+ - [Apollo](#Apollo)
+ - [Training
+ _ab initio_ Gene
+ Predictors](#Training_ab_initio_Gene_Predictors)
+ - [GFF3
+ Pass-through](#GFF3_Pass-through)
+ - [mRNAseq](#mRNAseq)
+ - [Merge/Resolve Legacy
+ Annotations](#Merge.2FResolve_Legacy_Annotations)
 
 ## Maker Web Annotation Service
 
@@ -103,8 +103,8 @@ Examples:
 
 - Structural Annotations: exons, introns, UTRs, splice forms etc.
 - Functional Annotations: process a gene is involved in (metabolism),
-  molecular function (hydrolase), location of expression (expressed in
-  the mitochondria), etc.
+ molecular function (hydrolase), location of expression (expressed in
+ the mitochondria), etc.
 
 It is especially important that all genome annotations include with
 themselves an evidence trail that describes in detail the evidence that
@@ -135,12 +135,12 @@ if an annotation is incorrect these experiments are bound to fail. Which
 brings up a major point:
 
 - **Incorrect and incomplete genome annotations poison every experiment
-  that uses them.**
+ that uses them.**
 
 Quality control and evidence management are therefore essential
 components to any annotation process.
 
-#### Effect of [Next Generation Sequencing](/wiki/Next_Generation_Sequencing) on the Annotation Process
+#### Effect of Next Generation Sequencing on the Annotation Process
 
 It’s generally accepted that within the next few years it will be
 possible to sequence even human sized genomes for as little as \$1,000
@@ -153,18 +153,18 @@ rapidly becoming a major bottleneck affecting modern genomics research.
 For example:
 
 - As of October 2009, 222 eukaryotic genomes were fully sequenced yet
-  unpublished (this is an ever growing backlog).
+ unpublished (this is an ever growing backlog).
 - Currently _(Jan 2010)_ there are over 900 eukaryotic genome projects
-  underway, assuming 10,000 genes per genome, that’s 9,000,000 new
-  annotations (with this many new annotations, quality control and
-  maintenance become an issue).
+ underway, assuming 10,000 genes per genome, that’s 9,000,000 new
+ annotations (with this many new annotations, quality control and
+ maintenance become an issue).
 - While there are organizations dedicated to producing and distributing
-  genome annotations (i.e ENSEMBL and VectorBase), the shear volume of
-  newly sequenced genomes exceeds both their capacity and stated
-  purview.
+ genome annotations (i.e ENSEMBL and VectorBase), the shear volume of
+ newly sequenced genomes exceeds both their capacity and stated
+ purview.
 - Many small research groups (which often lack bioinformatics
-  experience) must therefore confront the difficulties associated with
-  genome annotation on their own.
+ experience) must therefore confront the difficulties associated with
+ genome annotation on their own.
 
 The MAKER Web Annotation Service is a tool to assist research groups in
 converting the mountain of genomic data provided by next generation
@@ -180,7 +180,7 @@ MAKER.
 - Produces _ab initio_ gene predictions
 - Synthesizes these data into final annotations
 - Produces evidence-based quality values for downstream annotation
-  management
+ management
 
 MAKER generated annotations, shown in [Apollo](/wiki/Apollo).
 
@@ -196,8 +196,8 @@ gene prediction ≠ gene annotation
 
 - gene predictions are gene models.
 - gene annotations are gene models but should include a documented
-  evidence trail supporting the model in addition to quality control
-  metrics.
+ evidence trail supporting the model in addition to quality control
+ metrics.
 
 This may seem like just a matter of semantics since the primary output
 for both _ab initio_ gene predictors and the MAKER pipeline is the same,

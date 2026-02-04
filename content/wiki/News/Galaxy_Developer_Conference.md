@@ -33,11 +33,11 @@ on these features of the [Galaxy](../Galaxy.1) framework:
 
 - tool integration and distributed job management
 - deployment of private Galaxy instances on local resources and on the
-  cloud
+ cloud
 - management of large datasets with the Galaxy Library System
 - using the Galaxy LIMS functionality for managing sample submission at
-  [NGS](../Next_Generation_Sequencing)
-  sequencing facilities.
+ [NGS](../Next_Generation_Sequencing)
+ sequencing facilities.
 
 Please <a
 href="http://meetings.cshl.edu/meetings/meetingsregistration_galaxy10.asp"

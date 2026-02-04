@@ -6,19 +6,19 @@ title: "Chado for Prokaryotes"
 This page was started as a stub for producing a set of best practices
 for using Chado for prokaryotes.
 
-  adapting Chado for
-  prokaryotes</span>](#Problems_in_adapting_Chado_for_prokaryotes)
-  - [Representation of
-    features](#Representation_of_features)
-  - [Circular
-    genomes](#Circular_genomes)
-  - [Pan
-    genomes](#Pan_genomes)
+ adapting Chado for
+ prokaryotes</span>](#Problems_in_adapting_Chado_for_prokaryotes)
+ - [Representation of
+ features](#Representation_of_features)
+ - [Circular
+ genomes](#Circular_genomes)
+ - [Pan
+ genomes](#Pan_genomes)
 - [Bacterial MODs
-  using or planning to use
-  Chado](#Bacterial_MODs_using_or_planning_to_use_Chado)
+ using or planning to use
+ Chado](#Bacterial_MODs_using_or_planning_to_use_Chado)
 - [See
-  also](#See_also)
+ also](#See_also)
 
 ## Problems in adapting Chado for prokaryotes
 
@@ -34,7 +34,7 @@ Chado features are instances of ontology nodes. Genome features should
 be instances of types in the Sequence Ontology (SO). However
 
 - SO uses a eukaryotic definition of gene that is not well suited to
-  bacterial genomes
+ bacterial genomes
 - Feature relationships in SO are based on eukaryotic models
 - Feature types not in SO
 
@@ -63,4 +63,4 @@ bacterial species. How should this be represented this in Chado?
 ## See also
 
 - [IGS Data
-  Representation](/wiki/IGS_Data_Representation)
+ Representation](/wiki/IGS_Data_Representation)

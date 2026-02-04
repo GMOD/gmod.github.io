@@ -37,15 +37,15 @@ partition; the new partition will be something like /dev/sdb1 or
 
 8\. Shut down any services that rely on the data in the data partition:
 
-    sudo /etc/init.d/apache2 stop
-    sudo /etc/init.d/postgresql stop
-    sudo /etc/init.d/tomcat7 stop
+ sudo /etc/init.d/apache2 stop
+ sudo /etc/init.d/postgresql stop
+ sudo /etc/init.d/tomcat7 stop
 
 9\. Unmount the old data partition and mount the new one (assuming the
 device name is /dev/sdc):
 
-    sudo umount /data
-    sudo mount -v -t ext4 /dev/sdc1 /data
+ sudo umount /data
+ sudo mount -v -t ext4 /dev/sdc1 /data
 
 Verify that the drive was correctly mounted by doing "ls /data".
 
@@ -55,9 +55,9 @@ that the new version of GiaB requires.
 
 10\. Restart the services stopped above:
 
-    sudo /etc/init.d/apache2 start
-    sudo /etc/init.d/postgresql start
-    sudo /etc/init.d/tomcat7 start
+ sudo /etc/init.d/apache2 start
+ sudo /etc/init.d/postgresql start
+ sudo /etc/init.d/tomcat7 start
 
 11\. After verifying that the services (GBrowse, JBrowse, WebApollo and
 Tripal) are working correctly, edit /etc/fstab to make sure the new

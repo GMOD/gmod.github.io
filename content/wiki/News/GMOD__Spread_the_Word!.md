@@ -24,12 +24,12 @@ ideas.
 Increasing GMOD's visibility has many benefits:
 
 - It introduces biologists to tools that can help them learn from and
-  exploit their data.
+ exploit their data.
 - Increased visibility will lead to increased adoption of GMOD tools.
 - Increased adoption leads to more people contributing back to the
-  project.
+ project.
 - Increased adoption and development helps GMOD and GMOD components get
-  grant funding.
+ grant funding.
 
 Finally, GMOD can also help raise the profile of your GMOD-related talk
 or event by [advertising it on GMOD

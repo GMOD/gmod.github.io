@@ -13,9 +13,9 @@ Genome (PAG)](../PAG_2011) in San Diego this month. Three of
 them,
 
 - [Dan Blankenberg](../User:DanB) of the
-  [Galaxy](../Galaxy.1) project,
+ [Galaxy](../Galaxy.1) project,
 - [Mitch Skinner](../User:MitchSkinner), lead
-  [JBrowse](../JBrowse.1) developer, and
+ [JBrowse](../JBrowse.1) developer, and
 - [Scott Cain](../User:Scott), GMOD Project Coordinator
 
 are available to visit organizations in the San Diego area during the

@@ -3,21 +3,21 @@ title: "GBrowse Cygwin HOWTO"
 ---
 # GBrowse Cygwin HOWTO
 
-  Abstract](#Abstract)
+ Abstract](#Abstract)
 - [Installing
-  Cygwin](#Installing_Cygwin)
+ Cygwin](#Installing_Cygwin)
 - [Preparing the
-  environment](#Preparing_the_environment)
+ environment](#Preparing_the_environment)
 - [Installing
-  GBrowse](#Installing_GBrowse)
-  - [Rebaseall](#Rebaseall)
+ GBrowse](#Installing_GBrowse)
+ - [Rebaseall](#Rebaseall)
 - [Configuring
-  and Running Apache](#Configuring_and_Running_Apache)
-  - [Setting up
-    Windows environment and
-    services](#Setting_up_Windows_environment_and_services)
-  - [Start
-    Apache](#Start_Apache)
+ and Running Apache](#Configuring_and_Running_Apache)
+ - [Setting up
+ Windows environment and
+ services](#Setting_up_Windows_environment_and_services)
+ - [Start
+ Apache](#Start_Apache)
 
 ## Abstract
 
@@ -65,11 +65,11 @@ want to change it to "/home/scott". First, change every occurrence of
 "Scott Cain" in the file /etc/passwd to scott. Do this by executing this
 perl command on the Cygwin shell command line:
 
-     perl -pi.bak -e 's/Scott Cain/scott/g' /etc/passwd
+ perl -pi.bak -e 's/Scott Cain/scott/g' /etc/passwd
 
 Then you need to rename the home directory like this:
 
-     mv "/home/Scott Cain" /home/scott
+ mv "/home/Scott Cain" /home/scott
 
 Then you need to quit Cygwin and restart so that the changes take
 effect.
@@ -78,11 +78,11 @@ effect.
 
 Download the net install script:
 
-     wget http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/bin/gbrowse_netinstall.pl
+ wget http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/bin/gbrowse_netinstall.pl
 
 and run it:
 
-     perl gbrowse_netinstall.pl
+ perl gbrowse_netinstall.pl
 
 This will set up cpan if you haven't already done that before. It is
 generally safe to accept the defaults when asked questions.
@@ -91,7 +91,7 @@ generally safe to accept the defaults when asked questions.
 
 If during the installation, you see messages like
 
-     ... *** fatal error - unable to remap C:/gywin/bin/cygz.dd to same address as parent ...
+ ... *** fatal error - unable to remap C:/gywin/bin/cygz.dd to same address as parent ...
 
 you need to execute the rebaseall application. In order to run this, you
 need to execute the ash shell from OUTSIDE Cygwin. To do this, quit
@@ -99,15 +99,15 @@ Cygwin and open a Windows cmd shell (select Run... from the Start menu
 and type 'cmd'). In the cmd shell, change directories to the Cygwin bin
 directory:
 
-     cd C:\cygwin\bin
+ cd C:\cygwin\bin
 
 and start the ash shell:
 
-     ash.exe
+ ash.exe
 
 and then rebaseall:
 
-     /usr/bin/rebaseall
+ /usr/bin/rebaseall
 
 This will take a few minutes to run. When you are done, you can exit out
 of the ash shell, restart Cygwin and rerun the GBrowse netinstaller.
@@ -120,7 +120,7 @@ The Windows environment needs to be set up to allow Apache to run under
 Cygwin. First, run /usr/bin/cygserver-config. Answer yes to the question
 about installing it as a Windows service. Then run
 
-    net start cygserver
+ net start cygserver
 
 to start the Windows service.
 
@@ -135,4 +135,4 @@ variable and Windows server are both running.
 
 Finally, you can start Apache:
 
-     /usr/sbin/apachectl2 start
+ /usr/sbin/apachectl2 start

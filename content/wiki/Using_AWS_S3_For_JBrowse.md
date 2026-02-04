@@ -3,18 +3,18 @@ title: "Using AWS S3 For JBrowse"
 ---
 # Using AWS S3 For JBrowse
 
-  JBbrowse?</span>](#Why_use_S3_for_JBbrowse.3F)
+ JBbrowse?</span>](#Why_use_S3_for_JBbrowse.3F)
 - [Setting it up
-  with management
-  scripts](#Setting_it_up_with_management_scripts)
-  - [upload_to_S3.pl](#upload_to_S3.pl)
-  - [upload_jbrowse_static.pl](#upload_jbrowse_static.pl)
+ with management
+ scripts](#Setting_it_up_with_management_scripts)
+ - [upload_to_S3.pl](#upload_to_S3.pl)
+ - [upload_jbrowse_static.pl](#upload_jbrowse_static.pl)
 - [S3 for all of
-  JBrowse](#S3_for_all_of_JBrowse)
-  - [Build
-    pattern](#Build_pattern)
+ JBrowse](#S3_for_all_of_JBrowse)
+ - [Build
+ pattern](#Build_pattern)
 - [Storing just
-  track data on S3](#Storing_just_track_data_on_S3)
+ track data on S3](#Storing_just_track_data_on_S3)
 
 ## Why use S3 for JBbrowse?
 
@@ -68,30 +68,30 @@ The options are:
 - --bucket \<name\> The name of the S3 bucket
 - --local \<path\> The path on the local machine to the data directory
 - --remote \<path\> the path in S3 where the files will go (note that
-  there should not be a trailing slash)
+ there should not be a trailing slash)
 - --notcompressed to indicate that the track and names files are not
-  compressed (but why aren't they?)
+ compressed (but why aren't they?)
 - --cors to indicate that CORS should be set to allow public access of
-  the data
+ the data
 - --create to create the S3 bucket before uploading data to it.
 
 A few notes:
 
-1.  Setting up will be easier if you upload the track data with CORS
-    turned on, and then edit your local JBrowse instance to use the S3
-    bucket for its data. That way you can verify that the data are all
-    in the right place and everything is working before continuing on.
-    If you will configure JBrowse to serve it's JavaScript and html
-    files out of the same bucket, you can turn CORS off after everything
-    is configured and working. See
-    [\#Storing_just_track_data_on_S3](#Storing_just_track_data_on_S3)
-    below for setting CORS with the `aws s3api` command.
-2.  This script will copy all data with the ACL (read permission) set to
-    "public-read"; this is required for running a website from S3.
-3.  The script will also create a "dummy" index.html file for S3 to be
-    configured to serve files via a web service. If you configure
-    JBrowse to be served from the same bucket, this dummy file will be
-    overwritten by JBrowse's index.html file.
+1. Setting up will be easier if you upload the track data with CORS
+ turned on, and then edit your local JBrowse instance to use the S3
+ bucket for its data. That way you can verify that the data are all
+ in the right place and everything is working before continuing on.
+ If you will configure JBrowse to serve it's JavaScript and html
+ files out of the same bucket, you can turn CORS off after everything
+ is configured and working. See
+ [\#Storing_just_track_data_on_S3](#Storing_just_track_data_on_S3)
+ below for setting CORS with the `aws s3api` command.
+2. This script will copy all data with the ACL (read permission) set to
+ "public-read"; this is required for running a website from S3.
+3. The script will also create a "dummy" index.html file for S3 to be
+ configured to serve files via a web service. If you configure
+ JBrowse to be served from the same bucket, this dummy file will be
+ overwritten by JBrowse's index.html file.
 
 ### upload_jbrowse_static.pl
 
@@ -100,7 +100,7 @@ Options:
 - --aws \<path\> Path to the aws command line tool
 - --bucket \<name\> Name of the S3 bucket
 - --local \<path\> Path to the local JBrowse instance that is being
-  copied to S3
+ copied to S3
 - --cors
 - --create
 - --delete-existing
@@ -108,9 +108,9 @@ Options:
 
 Notes:
 
-1.  No remote option
-2.  CORS
-3.  no-cache
+1. No remote option
+2. CORS
+3. no-cache
 
 ## S3 for all of JBrowse
 
@@ -137,7 +137,7 @@ JBrowse working on a “normal” server with at least some of the data and
 configuration in place to make sure it works. Once that is the case,
 create an S3 bucket and issue a command like this:
 
-     aws s3 cp --exclude tracks --recursive --acl public-read jbrowse/ s3://bucketname
+ aws s3 cp --exclude tracks --recursive --acl public-read jbrowse/ s3://bucketname
 
 where jbrowse is the name of the directory that contains the top level
 JBrowse directory (the one with the index.html file in it) and
@@ -154,17 +154,17 @@ instance, if your tracks directory in in jbrowse/data/tracks, the
 command would look like this (if issued from the same place as the above
 copy):
 
-     aws s3 cp --recursive --acl public-read --content-encoding gzip jbrowse/data/tracks s3://bucketname/data/tracks #DOUBLE CHECK THIS!
+ aws s3 cp --recursive --acl public-read --content-encoding gzip jbrowse/data/tracks s3://bucketname/data/tracks #DOUBLE CHECK THIS!
 
 Finally, set the website index file as above:
 
-     aws s3 website s3://bucketname --index-document index.html
+ aws s3 website s3://bucketname --index-document index.html
 
 This is telling S3 that the index.html file copied in the s3 cp command
 is to be treated as the index file when serving content as a web page.
 JBrowse will be accessible from a URL like
 
-     http://bucketname.s3-website-us-east-1.amazonaws.com/
+ http://bucketname.s3-website-us-east-1.amazonaws.com/
 
 That’s all that’s required to run JBrowse from S3--the two additional
 steps that are used when just storing JBrowse data on S3 (modifying the
@@ -183,7 +183,7 @@ brief outline of what you need to do.
 Using the aws command line tool, recursively copy the track data for a
 track, using a command like this:
 
-     aws s3 cp --recursive --acl public-read --content-encoding gzip local-directory s3://bucketname
+ aws s3 cp --recursive --acl public-read --content-encoding gzip local-directory s3://bucketname
 
 Where local-directory is a directory containing files and
 subdirectories. At the top level there should be a file called
@@ -199,7 +199,7 @@ will cause problems with the range requests. As a result, the command
 for transferring these sorts of indexed files should look something like
 this:
 
-     aws s3 cp --recursive --acl public-read  binary_directory s3://bucketname/WormBase/worm/tracks/binary_directory
+ aws s3 cp --recursive --acl public-read binary_directory s3://bucketname/WormBase/worm/tracks/binary_directory
 
 Where binary_directory is the local directory containing binary indexed
 files, which can have subdirectories.
@@ -207,7 +207,7 @@ files, which can have subdirectories.
 Next, the S3 bucket has to be configured to operate as a website. Use
 this aws command to accomplish this:
 
-     aws s3 website s3://bucketname --index-document index.html
+ aws s3 website s3://bucketname --index-document index.html
 
 Here, the contents of the index.html file don’t matter but the file is
 required, so you could put a brief comment about the data being served..
@@ -221,14 +221,14 @@ entry with the url of your server. Also note that the first argument of
 the aws command is slightly different that previous commands, using
 “s3api” rather than “s3”:
 
-     aws s3api put-bucket-cors --bucket bucketname --cors-configuration '{"CORSRules": [{"AllowedOrigins": ["*"],"AllowedHeaders": ["*" ],"AllowedMethods": ["GET"],"MaxAgeSeconds": 3000}]}'
+ aws s3api put-bucket-cors --bucket bucketname --cors-configuration '{"CORSRules": [{"AllowedOrigins": ["*"],"AllowedHeaders": ["*" ],"AllowedMethods": ["GET"],"MaxAgeSeconds": 3000}]}'
 
 After S3 is configured, you need to modify your JBrowse track
 configuration to find the track data on S3. Before modifying
 trackList.json, you need to understand how to write S3 website URLs.
 They look like this:
 
-     http://bucketname.s3-website-us-east-1.amazonaws.com/...
+ http://bucketname.s3-website-us-east-1.amazonaws.com/...
 
 Where the first part of the domain name is the bucket name, and the
 “us-east-1” has to be replaced with the AWS region your bucket is in.
@@ -236,12 +236,12 @@ Where the first part of the domain name is the bucket name, and the
 A typical JBrowse trackList.json has a urlTemplate parameter that looks
 like this:
 
-     "urlTemplate" : "tracks/Curated_Genes/{refseq}/trackData.jsonz"
+ "urlTemplate" : "tracks/Curated_Genes/{refseq}/trackData.jsonz"
 
 which is a relative URL. We’ll change it to be an absolute url that
 points at our new S3 bucket:
 
-     "urlTemplate":"http://bucketname.s3-website-us-east-1.amazonaws.com/WormBase/worm/tracks/Curated_Genes/{refseq}/trackData.jsonz"
+ "urlTemplate":"http://bucketname.s3-website-us-east-1.amazonaws.com/WormBase/worm/tracks/Curated_Genes/{refseq}/trackData.jsonz"
 
 After making this change to your trackList.json file, a reload of
 JBrowse will have it pulling track data from S3.

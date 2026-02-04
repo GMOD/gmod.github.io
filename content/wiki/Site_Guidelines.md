@@ -6,41 +6,41 @@ title: "Site Guidelines"
 This page discusses editorial policies and best practices to follow when
 updating or creating content in the GMOD web site.
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Meta-Guidelines](#Meta-Guidelines)
-  - [Ignoring](#Ignoring)
-  - [Updating](#Updating)
-  - [Enforcing](#Enforcing)
+ - [Ignoring](#Ignoring)
+ - [Updating](#Updating)
+ - [Enforcing](#Enforcing)
 - [Guidelines](#Guidelines)
-  - [Page
-    Names](#Page_Names)
-    - [Capitalization](#Capitalization)
-    - [Redirects](#Redirects)
-  - [Minor vs
-    Major Edits](#Minor_vs_Major_Edits)
-  - [Tags /
-    Categories](#Tags_.2F_Categories)
-    - [New
-      Categories](#New_Categories)
-  - [Uploading
-    Files](#Uploading_Files)
-    - [Destination
-      Filenames](#Destination_Filenames)
-    - [File
-      Categories](#File_Categories)
-    - [Diagrams and
-      Cartoons](#Diagrams_and_Cartoons)
-  - [Format](#Format)
+ - [Page
+ Names](#Page_Names)
+ - [Capitalization](#Capitalization)
+ - [Redirects](#Redirects)
+ - [Minor vs
+ Major Edits](#Minor_vs_Major_Edits)
+ - [Tags /
+ Categories](#Tags_.2F_Categories)
+ - [New
+ Categories](#New_Categories)
+ - [Uploading
+ Files](#Uploading_Files)
+ - [Destination
+ Filenames](#Destination_Filenames)
+ - [File
+ Categories](#File_Categories)
+ - [Diagrams and
+ Cartoons](#Diagrams_and_Cartoons)
+ - [Format](#Format)
 - [Embedding
-  Media](#Embedding_Media)
-  - [Flash](#Flash)
+ Media](#Embedding_Media)
+ - [Flash](#Flash)
 - [Writing
-  Code](#Writing_Code)
+ Code](#Writing_Code)
 - [Adding
-  References](#Adding_References)
-  - [Example](#Example)
+ References](#Adding_References)
+ - [Example](#Example)
 - [Component
-  Information Pages](#Component_Information_Pages)
+ Information Pages](#Component_Information_Pages)
 
 ## Introduction
 
@@ -195,15 +195,15 @@ You can create a new category by typing the new category name in the
 When creating a new category please:
 
 - Check that the new category is not redundant with an existing
-  category.
+ category.
 - Create a category only if it will apply to more than one page.
 - Add the category to other pages that it applies to.
 - Create the category page for the new category.
-  - Include a description of the category in the page.
-  - Also, make the new category a subcategory of any existing categories
-    it could be a subcategory of.
-    - You do this by using, you guessed it, the **Categories** form on
-      the edit page when creating the category page.
+ - Include a description of the category in the page.
+ - Also, make the new category a subcategory of any existing categories
+ it could be a subcategory of.
+ - You do this by using, you guessed it, the **Categories** form on
+ the edit page when creating the category page.
 
 Or, just send your new category suggestion to the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk) and we will add it.
@@ -224,7 +224,7 @@ For example, the file
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/Gkl777.pdf" class="internal"
 title="Gkl777.pdf">Gkl777.pdf</a> is an article on
 [ParameciumDB](/wiki/ParameciumDB) from _Nucleic Acids
-Research_, but if you look at the file's listing in the  all you see is
+Research_, but if you look at the file's listing in the all you see is
 "Gkl777.pdf". You have to follow the link to find out what the file is
 about.
 
@@ -252,13 +252,13 @@ future rather than recreate them from scratch.
 
 **Please Note:**
 
-1.  These guidelines were first developed for the
-    <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
-    title="GMOD Summer School">GMOD Courses</a>, where these were used
-    to format the [Tutorial
-    pages](/wiki/Training_and_Outreach#Online_Tutorials).
-2.  If this seems daunting, please see Meta-Guideline \#1:
-    [Ignoring](#Ignoring), and hopefully feel better.
+1. These guidelines were first developed for the
+ <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
+ title="GMOD Summer School">GMOD Courses</a>, where these were used
+ to format the [Tutorial
+ pages](/wiki/Training_and_Outreach#Online_Tutorials).
+2. If this seems daunting, please see Meta-Guideline \#1:
+ [Ignoring](#Ignoring), and hopefully feel better.
 
 Descriptions of what formatting is desired and how to achieve it. For
 each type of text, this shows a minimum desired formatting, and, in most
@@ -292,7 +292,7 @@ Use fixed width font
 <hr />
 <p>Check the thingy.conf file.</p></td>
 <td><pre><code>
-Check the &lt;tt&gt;thingy.conf&lt;/tt&gt; file.  </code></pre>
+Check the &lt;tt&gt;thingy.conf&lt;/tt&gt; file. </code></pre>
 <hr />
 <p>Check the <code>thinigy.conf</code> file.</p></td>
 </tr>
@@ -387,40 +387,40 @@ this wiki.
 </dl></td>
 <td><pre><code>&lt;pre&gt;
 &lt;tool id=&quot;get_flanks1&quot; name=&quot;Get flanks&quot;&gt;
-  &lt;description&gt;
-    returns flanking region/s for genes
-  &lt;/description&gt;
-  &lt;command interpreter=&quot;python&quot;&gt;
-    get_flanks.py $input ...
-  &lt;/command&gt;
+ &lt;description&gt;
+ returns flanking region/s for genes
+ &lt;/description&gt;
+ &lt;command interpreter=&quot;python&quot;&gt;
+ get_flanks.py $input ...
+ &lt;/command&gt;
 ...&lt;/pre&gt;</code></pre>
 <hr />
 <pre><code>&lt;tool id=&quot;get_flanks1&quot; name=&quot;Get flanks&quot;&gt;
-  &lt;description&gt;
-    returns flanking region/s for genes
-  &lt;/description&gt;
-  &lt;command interpreter=&quot;python&quot;&gt;
-    get_flanks.py $input ...
-  &lt;/command&gt;
+ &lt;description&gt;
+ returns flanking region/s for genes
+ &lt;/description&gt;
+ &lt;command interpreter=&quot;python&quot;&gt;
+ get_flanks.py $input ...
+ &lt;/command&gt;
 ...</code></pre></td>
 <td><pre><code>&lt;syntaxhighlight lang=&quot;xml&quot;&gt;
 &lt;tool id=&quot;get_flanks1&quot; name=&quot;Get flanks&quot;&gt;
-  &lt;description&gt;
-    returns flanking region/s for genes
-  &lt;/description&gt;
-  &lt;command interpreter=&quot;python&quot;&gt;
-    get_flanks.py $input ...
-  &lt;/command&gt;
+ &lt;description&gt;
+ returns flanking region/s for genes
+ &lt;/description&gt;
+ &lt;command interpreter=&quot;python&quot;&gt;
+ get_flanks.py $input ...
+ &lt;/command&gt;
 ...&lt;/syntaxhighlight&gt;</code></pre>
 <hr />
 
 <pre class="de1"><code>&lt;tool id=&quot;get_flanks1&quot; name=&quot;Get flanks&quot;&gt;
-  &lt;description&gt;
-    returns flanking region/s for genes
-  &lt;/description&gt;
-  &lt;command interpreter=&quot;python&quot;&gt;
-    get_flanks.py $input ...
-  &lt;/command&gt;
+ &lt;description&gt;
+ returns flanking region/s for genes
+ &lt;/description&gt;
+ &lt;command interpreter=&quot;python&quot;&gt;
+ get_flanks.py $input ...
+ &lt;/command&gt;
 ...</code></pre>
 
 </td>
@@ -438,7 +438,7 @@ before the course.
 Here&#39;s an example of what &#39;&#39;not&#39;&#39; to do:
  cd /;
  sudo rm -rf *
-&lt;/div&gt;  </code></pre>
+&lt;/div&gt; </code></pre>
 <hr />
 
 <p>Here's an example of what <em>not</em> to do:</p>
@@ -483,7 +483,7 @@ of file.
 
 To embed Flash into a page, use the following syntax:
 
-    <oflash file="File:Movie.swf" caption="A cool flash movie that I made" width=500 height=900 />
+ <oflash file="File:Movie.swf" caption="A cool flash movie that I made" width=500 height=900 />
 
 More documentation on the
 <a href="http://www.mediawiki.org/wiki/Extension:OFlash"
@@ -496,11 +496,11 @@ The GMOD wiki employs the extension
 class="external text">Syntax Highlight GeSHi</a> to produce code with
 highlighting. For coloured code, use the ` <syntaxhighlight>` tag:
 
-    <syntaxhighlight lang="perl">
-    #!/usr/bin/perl
-    my $life = "over";
-    die("Goodbye, cruel world!");
-    </syntaxhighlight>
+ <syntaxhighlight lang="perl">
+ #!/usr/bin/perl
+ my $life = "over";
+ die("Goodbye, cruel world!");
+ </syntaxhighlight>
 
 ```de1
  #!/usr/bin/perl
@@ -535,11 +535,11 @@ in place of the `<references />` tag.
 
 **Wikitext**
 
-    The 2013 paper by Leite ''et al.'' on the grooved shell carpet clam <ref name="DOI:10.1186/1471-2164-14-741" />
-    represents a first attempt to characterize ''Ruditapes decussatus'' transcriptome; it cites the classic Ficklin
-    ''et al.'' Tripal paper <ref name="PMID:21959868" />.
+ The 2013 paper by Leite ''et al.'' on the grooved shell carpet clam <ref name="DOI:10.1186/1471-2164-14-741" />
+ represents a first attempt to characterize ''Ruditapes decussatus'' transcriptome; it cites the classic Ficklin
+ ''et al.'' Tripal paper <ref name="PMID:21959868" />.
 
-    <references />
+ <references />
 
 **Result**
 
@@ -549,12 +549,12 @@ represents a first attempt to characterize _Ruditapes decussatus_
 transcriptome; it cites the classic Ficklin _et al._ Tripal paper
 <sup>[\[2\]](#cite_note-PMID:21959868-2)</sup>.
 
-1.  <span id="cite_note-DOI:10.1186.2F1471-2164-14-741"><span class="mw-cite-backlink">[↑](#cite_ref-DOI:10.1186.2F1471-2164-14-741_0)</span>
-    **Cite error: Invalid `<ref>` tag; no text was provided for refs
-    named `DOI:10.1186.2F1471-2164-14-741`**</span>
-2.  <span id="cite_note-PMID:21959868"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:21959868_0)</span>
-    **Cite error: Invalid `<ref>` tag; no text was provided for refs
-    named `PMID:21959868`**</span>
+1. <span id="cite_note-DOI:10.1186.2F1471-2164-14-741"><span class="mw-cite-backlink">[↑](#cite_ref-DOI:10.1186.2F1471-2164-14-741_0)</span>
+ **Cite error: Invalid `<ref>` tag; no text was provided for refs
+ named `DOI:10.1186.2F1471-2164-14-741`**</span>
+2. <span id="cite_note-PMID:21959868"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:21959868_0)</span>
+ **Cite error: Invalid `<ref>` tag; no text was provided for refs
+ named `PMID:21959868`**</span>
 
 ## Component Information Pages
 
@@ -565,19 +565,19 @@ appears on the component page, you need to edit the corresponding
 
 Tool data is stored in tag-value pairs in the format
 
-     | tag = value
+ | tag = value
 
 The value can be formatted wiki text or a wiki template, and may span
 numerous lines. For example:
 
-    | tag = value
-    | tag = '''value'''
-    | tag = [[Main Page|A link to a page]]
+ | tag = value
+ | tag = '''value'''
+ | tag = [[Main Page|A link to a page]]
 
-    Some more wikitext here
+ Some more wikitext here
 
-    [[Site Guidelines|A link to another page]]
-    | tag = Include A Template
+ [[Site Guidelines|A link to another page]]
+ | tag = Include A Template
 
 The `tool_data` pages essentially act as a data store, and the page
 [Template:ToolDisplay](/wiki/Template:ToolDisplay)

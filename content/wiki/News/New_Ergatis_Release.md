@@ -14,13 +14,13 @@ This version includes
 
 - Interface improvements
 - New components, notably:
-  - RNAmmer - RNA identification on genomic sequence
-  - p_func - Derives gene function assertions based on tiers of provided
-    evidence, such as BLAST, HMM, etc..
-  - 454_mplex_seq_bin_trim - A binning and trimming script for multiplex
-    454 sequence data
-  - phylip_dnadist - A wrapper for a parallelized version of PHYLIP's
-    dnadist
+ - RNAmmer - RNA identification on genomic sequence
+ - p_func - Derives gene function assertions based on tiers of provided
+ evidence, such as BLAST, HMM, etc..
+ - 454_mplex_seq_bin_trim - A binning and trimming script for multiplex
+ 454 sequence data
+ - phylip_dnadist - A wrapper for a parallelized version of PHYLIP's
+ dnadist
 - New pipeline templates
 - Bug fixes
 

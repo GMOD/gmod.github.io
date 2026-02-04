@@ -14,12 +14,12 @@ improvements, including the following features:
 
 - Web-based Data Loaders (OBO, [GFF](../GFF), FASTA)
 - Web-based
-  <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
-  Installation
+ <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
+ Installation
 - Support for the [Chado Stock
-  Module](../Chado_Stock_Module)
+ Module](../Chado_Stock_Module)
 - Support for Feature/Stock Properties, Synonyms, Database References
-  and Relationships
+ and Relationships
 - Integration of Tripal with [Drupal](../Drupal) Views
 - Fully customizable Page Layouts (Little to No HTML or PHP needed)
 - Change in the default layout of Chado content pages
@@ -32,17 +32,17 @@ class="external text" rel="nofollow">Tripal website</a>.
 There is also
 
 - <a href="http://tripal.sourceforge.net/?q=node/17" class="external text"
-  rel="nofollow">A more detailed list of new functionality</a>
+ rel="nofollow">A more detailed list of new functionality</a>
 - analysis modules that previously were packaged with Tripal are now
-  <a href="http://tripal.sourceforge.net/?q=extensions"
-  class="external text" rel="nofollow">downloadable as separate
-  extensions</a>.
+ <a href="http://tripal.sourceforge.net/?q=extensions"
+ class="external text" rel="nofollow">downloadable as separate
+ extensions</a>.
 - <a href="http://tripal.sourceforge.net/?q=node/19" class="external text"
-  rel="nofollow">Installation instructions</a>
+ rel="nofollow">Installation instructions</a>
 - <a href="http://tripal.sourceforge.net/?q=node/16" class="external text"
-  rel="nofollow">upgrade instructions</a>
+ rel="nofollow">upgrade instructions</a>
 - [A tutorial based on a pre-release version of
-  v0.3b](../Tripal_Tutorial_(pre_version_0.3b) "Tripal Tutorial (pre version 0.3b)")
+ v0.3b](../Tripal_Tutorial_(pre_version_0.3b) "Tripal Tutorial (pre version 0.3b)")
 
 Please post any issues or questions about this new version to the
 [Tripal Mailing List](../Tripal.1#Mailing_Lisgts)

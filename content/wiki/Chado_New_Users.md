@@ -6,43 +6,43 @@ title: "Chado New Users"
 This page, and it's associated discussion page follow the learning curve
 for new Chado users learning the system at CSHL.
 
-  empty Chado PostgreSQL on our
-  machines</span>](#Getting_an_empty_Chado_PostgreSQL_on_our_machines)
-  - [Installation
-    Notes](#Installation_Notes)
+ empty Chado PostgreSQL on our
+ machines</span>](#Getting_an_empty_Chado_PostgreSQL_on_our_machines)
+ - [Installation
+ Notes](#Installation_Notes)
 - [Loading the
-  Ontologies](#Loading_the_Ontologies)
+ Ontologies](#Loading_the_Ontologies)
 - [Getting the
-  Sequence Module Working](#Getting_the_Sequence_Module_Working)
+ Sequence Module Working](#Getting_the_Sequence_Module_Working)
 - [Migration from
-  other databases](#Migration_from_other_databases)
+ other databases](#Migration_from_other_databases)
 - [Sample
-  Data](#Sample_Data)
+ Data](#Sample_Data)
 - [Understanding
-  how things are represented in
-  Chado](#Understanding_how_things_are_represented_in_Chado)
-  - [Central
-    Dogma](#Central_Dogma)
-    - [Gene](#Gene)
-    - [mRNA](#mRNA)
-      - [Polycistronic transcription
-        units](#Polycistronic_transcription_units)
-    - [other
-      RNAs](#other_RNAs)
-    - [Polypeptides](#Polypeptides)
-    - [Proteins](#Proteins)
+ how things are represented in
+ Chado](#Understanding_how_things_are_represented_in_Chado)
+ - [Central
+ Dogma](#Central_Dogma)
+ - [Gene](#Gene)
+ - [mRNA](#mRNA)
+ - [Polycistronic transcription
+ units](#Polycistronic_transcription_units)
+ - [other
+ RNAs](#other_RNAs)
+ - [Polypeptides](#Polypeptides)
+ - [Proteins](#Proteins)
 - [See
-  also](#See_also)
+ also](#See_also)
 
 ## Getting an empty Chado PostgreSQL on our machines
 
 - Zheng - on PC with Fedora. See [Zheng's installation
-  notes](/wiki/Zheng's_installation_notes)
+ notes](/wiki/Zheng's_installation_notes)
 - Mike - on Intel Mac running Fedora partition
 - Jim -
-  - on PPC Mac the hard way See [Jim's installation
-    notes](/wiki/Jim's_installation_notes)
-  - on CentOS server in Texas
+ - on PPC Mac the hard way See [Jim's installation
+ notes](/wiki/Jim's_installation_notes)
+ - on CentOS server in Texas
 
 ### Installation Notes
 
@@ -63,9 +63,9 @@ denormalized view of Chado.
 ## Migration from other databases
 
 - [Zheng's notes on wormbase
-  migration](/wiki/Zheng's_notes_on_wormbase_migration)
+ migration](/wiki/Zheng's_notes_on_wormbase_migration)
 - [Jim's notes on E. coli
-  migration](/wiki/Jim's_notes_on_E._coli_migration)
+ migration](/wiki/Jim's_notes_on_E._coli_migration)
 
 ## Sample Data
 
@@ -76,10 +76,10 @@ of Chado data in use. Things we've looked at so far, and comments on
 them:
 
 - Sample yeast data from GFF3 bulk loader. The problem with this is that
-  it doesn't reflect a real use case for Chado, since SGD does not use
-  the Chado Schema
+ it doesn't reflect a real use case for Chado, since SGD does not use
+ the Chado Schema
 - FlyBase SQL dump. Zheng got this and loaded it. One problem.
-  - It's huge
+ - It's huge
 
 ## Understanding how things are represented in Chado
 
@@ -97,9 +97,9 @@ genomic DNA outside of the part that codes for the mRNA. To represent a
 gene, there needs to be:
 
 - A \[<a
-  href="http://gmod.cshl.edu/wiki/index.php/Chado_Tables#Table:_feature#Table:_feature"
-  class="external text" rel="nofollow">feature</a>\]
-  - Note that the field seqlen could be problematic - added a note.
+ href="http://gmod.cshl.edu/wiki/index.php/Chado_Tables#Table:_feature#Table:_feature"
+ class="external text" rel="nofollow">feature</a>\]
+ - Note that the field seqlen could be problematic - added a note.
 - If the gene is mapped to the sequence, there should be a featureloc
 
 Completing the representation of the gene seems to require additional
@@ -124,11 +124,11 @@ very clear. Based on the
 class="external text" rel="nofollow">GFF3 spec</a>:
 
 - Parenting a CDS/polypeptide directly on a gene is deprecated because
-  the gene (sensu eukaryota) includes nontranscribed regions
+ the gene (sensu eukaryota) includes nontranscribed regions
 - A solution is to give the mRNA feature multiple parents. Thus *lacZ*,
-  *lacY* and *lacA* would all be parents of *lacZYA*, which in turn
-  would be parent via a derives_from relationship to the LacZ, LacY and
-  LacA polypeptides.
+ *lacY* and *lacA* would all be parents of *lacZYA*, which in turn
+ would be parent via a derives_from relationship to the LacZ, LacY and
+ LacA polypeptides.
 
 #### other RNAs
 
@@ -147,7 +147,7 @@ Note that proteins ≠ polypeptides. Hemoglobin is a heterotetramer of two
 ## See also
 
 - [Chado -
-  Getting_Started](/wiki/Chado_-_Getting_Started) -
-  and documentation links from there.
--  - the Category page
-  for all pages about Chado in this wiki
+ Getting_Started](/wiki/Chado_-_Getting_Started) -
+ and documentation links from there.
+- - the Category page
+ for all pages about Chado in this wiki

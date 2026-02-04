@@ -51,21 +51,21 @@ It was held at the <a href="http://nescent.org" class="external text"
 
 Durham, North Carolina, USA, July 11-13, 2008.
 
-  Program](#Program)
-  - [Instructors](#Instructors)
+ Program](#Program)
+ - [Instructors](#Instructors)
 - [Who
-  Attended?](#Who_Attended.3F)
+ Attended?](#Who_Attended.3F)
 - [Prerequisites](#Prerequisites)
-  - [System
-    Requirements](#System_Requirements)
+ - [System
+ Requirements](#System_Requirements)
 - [Cost and
-  Registration](#Cost_and_Registration)
+ Registration](#Cost_and_Registration)
 - [Transportation, Lodging, and
-  Meals](#Transportation.2C_Lodging.2C_and_Meals)
+ Meals](#Transportation.2C_Lodging.2C_and_Meals)
 - [Posters and
-  Fliers](#Posters_and_Fliers)
+ Fliers](#Posters_and_Fliers)
 - [Acknowledgments and
-  Feedback](#Acknowledgments_and_Feedback)
+ Feedback](#Acknowledgments_and_Feedback)
 
 # Program
 
@@ -94,7 +94,7 @@ data-cellspacing="0">
 <td style="background-color: #FFCCBB">9am - 10:30am</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong>GMOD
 Overview</strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
+Scott Cain and Dave Clements<br />
 Participant and instructor introductions, how the GMOD project works,
 what software tools are available in GMOD, how they interoperate, what
 resources are needed to get a GMOD installation up and running, course
@@ -104,7 +104,7 @@ overview, and installing VMware appliances on student computers.</td>
 <td style="background-color: #FFCCBB">10:30am - Noon</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>:
 Theory</strong><br />
-<a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
+Dave Clements<br />
 Architecture and logical design of the Chado database <a href="/wiki/Glossary#Schema" title="Glossary">schema</a>: Chado's modules and
 extensibility, how IDs and database cross references are handled, the
 central role of , and
@@ -125,14 +125,14 @@ rel="nofollow">Durham's 9<sup>th</sup> Street District</a>.</td>
 <td style="background-color: #FFCCBB">1pm - 3pm</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>:
 Practice</strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
+Scott Cain<br />
 Using Chado: Installation, importing and exporting data, and a complete
 worked example of loading example sequence data.</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #FFCCBB">3pm - 5pm</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> 1</strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
+Scott Cain<br />
 Overview, GBrowse installation and using <a href="/wiki/GBrowse_adaptors"
 class="mw-redirect" title="GBrowse adaptors">GBrowse adaptors</a></td>
 </tr>
@@ -157,8 +157,7 @@ Break</strong><br />
 <td style="background-color: #FFCCBB">7:30pm - 9:30pm</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong>Open
 Discussion</strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott</a>, <a href="/wiki/User%253AClements" title="User%253AClements">Dave</a>, <a href="/wiki/User%253AFaga"
-title="User%253AFaga">Ben</a>, Ed, and <em><strong>You!</strong></em><br />
+Scott, Dave, Ben, Ed, and <em><strong>You!</strong></em><br />
 This <em>optional</em> session is open to any and all questions you have
 on the GMOD Project, GMOD components, and GMOD users. The instructors
 will come with their knowledge of GMOD and their opinions on the
@@ -171,7 +170,7 @@ to be lively.</td>
 <tr class="even">
 <td style="background-color: #FFE5BB">9am - 11:30pm</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> 2</strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
+Scott Cain<br />
 GBrowse Configuration: Changing defaults and displays, adding tracks,
 and performance tuning</td>
 </tr>
@@ -192,7 +191,7 @@ a Java WebStart instance.</td>
 <tr class="odd">
 <td style="background-color: #FFE5BB">4pm - 5pm</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/CMap" title="CMap">CMap</a> 1</strong><br />
-<a href="/wiki/User%253AFaga" title="User%253AFaga">Ben Faga</a><br />
+Ben Faga<br />
 Overview, installation, configuration and data importation.</td>
 </tr>
 <tr class="even">
@@ -206,7 +205,7 @@ Break</strong><br />
 <tr class="odd">
 <td style="background-color: #FFE5BB">6:30pm - 9pm</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/CMap" title="CMap">CMap</a> 2</strong><br />
-<a href="/wiki/User%253AFaga" title="User%253AFaga">Ben Faga</a><br />
+Ben Faga<br />
 Overview, installation, configuration and data importation.</td>
 </tr>
 <tr class="even">
@@ -217,7 +216,7 @@ Overview, installation, configuration and data importation.</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/Community_Annotation_System"
 title="Community Annotation System">Community Annotation
 System</a></strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
+Scott Cain<br />
 How to install and configure the GMOD Community Annotation System, an
 integrated package of GMOD components (including all the ones covered in
 this course) that reduces much of the installation, integration, and
@@ -228,7 +227,7 @@ configuration work of doing each component individually.</td>
 <td
 style="text-align: center; background-color: #d6fff5;"><strong>Wrapup
 and Resources</strong><br />
-<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
+Scott Cain and Dave Clements<br />
 Describe the resources available to GMOD users and attempt to bring the
 course to a coherent close.</td>
 </tr>
@@ -239,11 +238,11 @@ course to a coherent close.</td>
 
 Sessions were taught by experienced GMOD personnel, including:
 
-- [Scott Cain](/wiki/User:Scott) - GMOD Project Coordinator
-- [Dave Clements](/wiki/User:Clements) - [GMOD Help
-  Desk](/wiki/GMOD_Help_Desk)
-- [Ben Faga](/wiki/User:Faga) - [CMap](/wiki/CMap) and
-  [GBrowse](/wiki/GBrowse) developer
+- Scott Cain - GMOD Project Coordinator
+- Dave Clements - [GMOD Help
+ Desk](/wiki/GMOD_Help_Desk)
+- Ben Faga - [CMap](/wiki/CMap) and
+ [GBrowse](/wiki/GBrowse) developer
 - Ed Lee - [Apollo](/wiki/Apollo) developer
 
 # Who Attended?
@@ -261,7 +260,7 @@ people who actually implement and manage a GMOD installation on a day to
 day basis. This course was for organizations either planning to use GMOD
 components, or in the early phases of implementing GMOD.
 
-| Participant                                        | Affiliation                                | -------------------------------------------------- | ------------------------------------------ | Feseha Abebe-Akele                                 | University of New Hampshire                | Parker Antin                                       | University of Arizona                      | Burcu Bakir-Gungor                                 | Medical College of Wisconsin, RGD          | [Scott Cain](/wiki/User:Scott)          | CSHL                                       | [Dave Clements](/wiki/User:Clements) | NESCent                                    | Matthew Conte                                      | Howard Hughes Medical Institute            | Sean Davey                                         | University of Arizona, BirdBase            | Victor de Jager                                    | Radboud University Nijmegen Medical Centre | Jason Dzurisin                                     | University of Notre Dame                   | [Ben Faga](/wiki/User:Faga)              | CSHL                                       | Bob Freeman                                        | Harvard University Medical School          | Jean-Pierre Gauthier                               | INRA                                       | Glenn Harris                                       | Virgina State University                   | Erik Hom                                           | Harvard University                         | Zhiliang Hu                                        | Iowa State University                      | Li Jin                                             | University of Delaware                     | Ed Johnson                                         | University of Georgia                      | Ed Lee                                             | BBOP                                       | Fabrice Legeai                                     | INRA                                       | Xianhua Liu                                        | NESCent                                    | Prashanti Manda                                    | Mississippi State University               | Tom McNeill                                        | Syngenta Biotechnology                     | Christos Noutsos                                   | University of Chicago                      | Jason Phillips                                     | University of North Carolina               | Joan Pontius                                       | National Cancer Institute                  | Sarah Richardson                                   | Johns Hopkins University                   | Stéphanie Sidibe-Bocs                              | CIRAD                                      | Brett Whitty                                       | Michigan State University                  | Andy Wu                                            | Washington State University                |
+| Participant | Affiliation | -------------------------------------------------- | ------------------------------------------ | Feseha Abebe-Akele | University of New Hampshire | Parker Antin | University of Arizona | Burcu Bakir-Gungor | Medical College of Wisconsin, RGD | Scott Cain | CSHL | Dave Clements | NESCent | Matthew Conte | Howard Hughes Medical Institute | Sean Davey | University of Arizona, BirdBase | Victor de Jager | Radboud University Nijmegen Medical Centre | Jason Dzurisin | University of Notre Dame | Ben Faga | CSHL | Bob Freeman | Harvard University Medical School | Jean-Pierre Gauthier | INRA | Glenn Harris | Virgina State University | Erik Hom | Harvard University | Zhiliang Hu | Iowa State University | Li Jin | University of Delaware | Ed Johnson | University of Georgia | Ed Lee | BBOP | Fabrice Legeai | INRA | Xianhua Liu | NESCent | Prashanti Manda | Mississippi State University | Tom McNeill | Syngenta Biotechnology | Christos Noutsos | University of Chicago | Jason Phillips | University of North Carolina | Joan Pontius | National Cancer Institute | Sarah Richardson | Johns Hopkins University | Stéphanie Sidibe-Bocs | CIRAD | Brett Whitty | Michigan State University | Andy Wu | Washington State University |
 
 # Prerequisites
 
@@ -289,7 +288,7 @@ height="48" alt="Windoze" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for  and
+A free VMware player is available for and
  [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"

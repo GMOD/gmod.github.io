@@ -3,21 +3,21 @@ title: "Load GenBank into Chado"
 ---
 # Load GenBank into Chado
 
-  Abstract](#Abstract)
+ Abstract](#Abstract)
 - [Summary](#Summary)
 - [Fetch Genbank
-  Genome Files](#Fetch_Genbank_Genome_Files)
+ Genome Files](#Fetch_Genbank_Genome_Files)
 - [Create GFF3
-  from the Genbank Files](#Create_GFF3_from_the_Genbank_Files)
+ from the Genbank Files](#Create_GFF3_from_the_Genbank_Files)
 - [Load GFF3 into
-  Chado](#Load_GFF3_into_Chado)
+ Chado](#Load_GFF3_into_Chado)
 - [Possible
-  Errors](#Possible_Errors)
+ Errors](#Possible_Errors)
 - [Authors](#Authors)
 
 ## Abstract
 
-This  describes how to load
+This describes how to load
 GenBank format files into
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. For a
 thorough discussion of this topic, including all the files that will
@@ -28,25 +28,25 @@ allow you to set up a complete test environment see:
 ## Summary
 
 - Install prerequisites: latest versions of
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
-  [GBrowse](/wiki/GBrowse)
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
+ [GBrowse](/wiki/GBrowse)
 - Fetch Genbank genome/chromosomes
 - Run <a
-  href="http://code.open-bio.org/svnweb/index.cgi/bioperl/view/bioperl-live/trunk/scripts/Bio-DB-GFF/genbank2gff3.PLS"
-  class="external text" rel="nofollow"><code>genbank2gff3</code></a>
-  script from [BioPerl](/wiki/BioPerl) (Important: use a version of
-  the script created April 2007 or later)
+ href="http://code.open-bio.org/svnweb/index.cgi/bioperl/view/bioperl-live/trunk/scripts/Bio-DB-GFF/genbank2gff3.PLS"
+ class="external text" rel="nofollow"><code>genbank2gff3</code></a>
+ script from [BioPerl](/wiki/BioPerl) (Important: use a version of
+ the script created April 2007 or later)
 - Run `gmod_bulk_load_gff3.pl` script (from GMOD)
 - View genome(s) with [GBrowse](/wiki/GBrowse) (see an <a
-  href="http://server3.eugenes.org/cgi-bin/gmod01/gbrowse/dev_chado_ggb/"
-  class="external text" rel="nofollow">example at eugenes.org</a>).
+ href="http://server3.eugenes.org/cgi-bin/gmod01/gbrowse/dev_chado_ggb/"
+ class="external text" rel="nofollow">example at eugenes.org</a>).
 
 In summary, to load *Saccharomyces* chromosome X to Chado database
 'mychado', from a Unix command-line, do:
 
-     curl ftp://ftp.ncbi.nih.gov/genomes/Saccharomyces_cerevisiae/CHR_X/NC_001142.gbk \
-     | perl bp_genbank2gff3.pl -noCDS -in stdin -out stdout \
-     | perl gmod_bulk_load_gff3.pl -dbname mychado -organism fromdata
+ curl ftp://ftp.ncbi.nih.gov/genomes/Saccharomyces_cerevisiae/CHR_X/NC_001142.gbk \
+ | perl bp_genbank2gff3.pl -noCDS -in stdin -out stdout \
+ | perl gmod_bulk_load_gff3.pl -dbname mychado -organism fromdata
 
 ## Fetch Genbank Genome Files
 
@@ -55,12 +55,12 @@ Genbank genome data is available from NCBI genomes section,
 
 mirror at <a href="/wiki/ftp://bio-mirror.net/biomirror/ncbigenomes/"
 
-     mkdir data; cd data
+ mkdir data; cd data
 
 Fetch from NCBI, or this Indiana mirror
 
-     curl ftp://bio-mirror.net/biomirror/ncbigenomes/
-     curl -RO ftp://bio-mirror.net/biomirror/ncbigenomes/Saccharomyces_cerevisiae/CHR_X/NC_001142.gbk.gz
+ curl ftp://bio-mirror.net/biomirror/ncbigenomes/
+ curl -RO ftp://bio-mirror.net/biomirror/ncbigenomes/Saccharomyces_cerevisiae/CHR_X/NC_001142.gbk.gz
 
 Other sample genomes of interest:
 
@@ -81,7 +81,7 @@ The [BioPerl](/wiki/BioPerl) script `bp_genbank2gff3.pl`
 The new `-noCDS` flag is required for this. Use `-s` flag to summarize
 features found.
 
-     bp_genbank2gff3.pl -noCDS -s -o . data/NC_001142.gbk.gz
+ bp_genbank2gff3.pl -noCDS -s -o . data/NC_001142.gbk.gz
 
 ## Load GFF3 into Chado
 
@@ -91,16 +91,16 @@ the best `--dbxref` per organism (WormBase, SGD, MGI, FLYBASE),
 depending on contents of GenBank annotations. The 'GeneID' dbxref is
 standard for most GenBank genomes.
 
-     gmod_bulk_load_gff3.pl  --dbname dev_chado_01c --dbxref GeneID --organism fromdata --gff data/NC_004353.gbk.gz.gff
+ gmod_bulk_load_gff3.pl --dbname dev_chado_01c --dbxref GeneID --organism fromdata --gff data/NC_004353.gbk.gz.gff
 
 Check data:
 
-     psql -d dev_chado_01c -c 'select count(f.*), \
-      (select common_name from organism where organism_id = f.organism_id) as species \
-      from feature f group by f.organism_id;'
-     psql -d dev_chado_01c -c 'select count(f.*), \
-      (select common_name from organism where organism_id = f.organism_id) as species \
-      from feature f where f.seqlen>0 group by f.organism_id;'
+ psql -d dev_chado_01c -c 'select count(f.*), \
+ (select common_name from organism where organism_id = f.organism_id) as species \
+ from feature f group by f.organism_id;'
+ psql -d dev_chado_01c -c 'select count(f.*), \
+ (select common_name from organism where organism_id = f.organism_id) as species \
+ from feature f where f.seqlen>0 group by f.organism_id;'
 
 ## Possible Errors
 
@@ -113,11 +113,11 @@ directory**
 Make sure the environmental variable GMOD_ROOT is set to where gmod was
 installed, for example:
 
-     setenv GMOD_ROOT /usr/local/gmod/ # tcsh
+ setenv GMOD_ROOT /usr/local/gmod/ # tcsh
 
 or
 
-     set GMOD_ROOT=/usr/local/gmod/ # bash
+ set GMOD_ROOT=/usr/local/gmod/ # bash
 
 **Your [GFF3](/wiki/GFF3) file uses a tag called \<term\>, but this
 term is not already in the cvterm and dbxref tables so that its value
@@ -140,6 +140,6 @@ these errors by hand and reload.
 
 ## Authors
 
-- [Don Gilbert](/wiki/User:Dongilbert)
+- Don Gilbert
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
-  title="bp:Brian Osborne">Brian Osborne</a>
+ title="bp:Brian Osborne">Brian Osborne</a>

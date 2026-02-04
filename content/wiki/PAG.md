@@ -20,14 +20,14 @@ There is plenty of GMOD content at the
 posters and presentations from many GMOD users, as well as from
 developers of GMOD tools.
 
-  Content</span>](#Core_GMOD_Content)
+ Content</span>](#Core_GMOD_Content)
 - [Tripal
-  Database Network and Initiatives
-  Workshop](#Tripal_Database_Network_and_Initiatives_Workshop)
+ Database Network and Initiatives
+ Workshop](#Tripal_Database_Network_and_Initiatives_Workshop)
 - [GMOD
-  Workshop](#GMOD_Workshop)
+ Workshop](#GMOD_Workshop)
 - [GMOD Consumers
-  and Providers](#GMOD_Consumers_and_Providers)
+ and Providers](#GMOD_Consumers_and_Providers)
 
 ## Core GMOD Content
 
@@ -36,17 +36,17 @@ provides. These are:
 
 | Date | Time | Session | Component(s) | Presenter / Organizer | Location | Links |
 |----|----|----|----|----|----|----|
-| Jan 10 (Sat) | 1:50 - 2:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14951.html" |  |  |  |  |
+| Jan 10 (Sat) | 1:50 - 2:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14951.html" | | | | |
 class="external text" rel="nofollow">Web Apollo 2.0: A Scalable,
 Distributed Sequence Annotation Editor</a> | [WebApollo](/wiki/WebApollo) | Nathan Dunn | California Room | <a href="http://genomearchitect.org/pag-2015" class="external text"
 
-class="external text" rel="nofollow">W367</a>: [JBrowse](/wiki/JBrowse) Installation and Configuration | [JBrowse](/wiki/JBrowse) | [Scott Cain](/wiki/User:Scott) | California Room | [Tutorial page](/wiki/JBrowse_Tutorial_PAG_2015) | Jan 12 (Mon) | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14964.html"
+class="external text" rel="nofollow">W367</a>: [JBrowse](/wiki/JBrowse) Installation and Configuration | [JBrowse](/wiki/JBrowse) | Scott Cain | California Room | [Tutorial page](/wiki/JBrowse_Tutorial_PAG_2015) | Jan 12 (Mon) | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14964.html"
 class="external text" rel="nofollow">P1154: WebApollo 2.0: A Scalable,
 Distributed Sequence Annotation Editor for Multiple Genomes</a> | [WebApollo](/wiki/WebApollo) | Nathan Dunn | Poster Session | <a href="http://genomearchitect.org/pag-2015" class="external text"
 
-class="external text" rel="nofollow">W354</a>: [Galaxy](/wiki/Galaxy) for SNP and Variant Data Analysis | [Galaxy](/wiki/Galaxy) | [Dave Clements](/wiki/User:Clements) | California Room | <a
+class="external text" rel="nofollow">W354</a>: [Galaxy](/wiki/Galaxy) for SNP and Variant Data Analysis | [Galaxy](/wiki/Galaxy) | Dave Clements | California Room | <a
 href="https://wiki.galaxyproject.org/Documents/Presentations?action=AttachFile&amp;do=view&amp;target=2015_PAG_Variant.pdf"
-class="external text" rel="nofollow">Slides</a> | Jan 14 (Wed) | 10:30 - 2:30 | [GMOD Workshop](#GMOD_Workshop) | GMOD | [Scott Cain](/wiki/User:Scott) | California Room | [See below](#GMOD_Workshop) |
+class="external text" rel="nofollow">Slides</a> | Jan 14 (Wed) | 10:30 - 2:30 | [GMOD Workshop](#GMOD_Workshop) | GMOD | Scott Cain | California Room | [See below](#GMOD_Workshop) |
 
 ## Tripal Database Network and Initiatives Workshop
 
@@ -58,7 +58,7 @@ California Room.
 
 | Time | Topic | Presenter | Links |
 |----|----|----|----|
-| 4:00-4:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14953.html" |  |  |
+| 4:00-4:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14953.html" | | |
 class="external text" rel="nofollow">W872</a>: [Tripal](/wiki/Tripal) Overview & Future Developments | Stephen Ficklin | <a
 href="http://www.rosaceae.org/sites/default/files/files/Tripal_Workshop_PAG2015.pdf"
 class="external text" rel="nofollow">Slides</a> | 4:30 - 5:00 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14948.html"
@@ -85,8 +85,8 @@ January 14th will be held in the Golden West room. The schedule is:
 
 | Time | Topic | Presenter | Links |
 |----|----|----|----|
-| 10:30 - 10:50 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17188.html" |  |  |
-class="external text" rel="nofollow">W407</a> - The Future of GMOD and <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> | [Scott Cain](/wiki/User:Scott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/97/The_future_of_GMOD_and_Chado.pdf"
+| 10:30 - 10:50 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17188.html" | | |
+class="external text" rel="nofollow">W407</a> - The Future of GMOD and <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> | Scott Cain | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/97/The_future_of_GMOD_and_Chado.pdf"
 class="internal" title="The future of GMOD and Chado.pdf">Slides</a> | 10:50 - 11:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17190.html"
 class="external text" rel="nofollow">W408</a> - KnowPulse: A Breeder-Focused Web Portal That Integrates Genetics and Genomics of Pulse Crops with Model Genomes | Lacey-Anne Sanderson | 11:10 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17187.html"
 class="external text" rel="nofollow">W409</a> - Phytozome Population Diversity Visualization in [JBrowse](/wiki/JBrowse): A very large Dataset Case Study | Richard Hayes | 11:30 - 11:50 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17189.html"
@@ -103,7 +103,7 @@ giving presentations and workshops; here is a small selection:
 | <span id="Saturday">**Saturday January 10**</span> |
 |----|----|----|----|----|
 | Time | Title | Presenter | Location | Links |
-| 9:00 - 9:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Session2680.html" |  |  |  |
+| 9:00 - 9:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Session2680.html" | | | |
 class="external text" rel="nofollow">W569</a>: Sugar Pine Annotation | Jill Wegrzyn | Pacific Salon 6-7 | 9:35 - 9:55 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17320.html"
 class="external text" rel="nofollow">W68</a>: Progress on the I5K Pilot at the Baylor College of Medicine Human Genome Sequencing Center | Kim Worley | Esquire | 10:30 - 11:00 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17295.html"
 class="external text" rel="nofollow">W258</a>: Simplifying Genome Annotation and Examples of Large-Scale Projects in DNA Barcoding (Red and Blue Lines) | Dave Micklos | California | 10:30 - 11:00 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper15662.html"
@@ -117,7 +117,7 @@ href="http://www.rosaceae.org/sites/default/files/files/GenSAS_PAG2015_demo_0108
 class="external text" rel="nofollow">Slides</a> | 4:00 - 6:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Session2856.html"
 class="external text" rel="nofollow">W377</a>: Genome management and analysis with CoGe | Haibao Tang and Eric Lyons | California | <a
 href="https://genomevolution.org/wiki/index.php/2015_PAG_Computer_Demo"
-class="external text" rel="nofollow">Slides, instructions, manual</a> | <span id="Sunday">**Sunday January 11**</span> |  | 8:15 - 9:15 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14232.html"
+class="external text" rel="nofollow">Slides, instructions, manual</a> | <span id="Sunday">**Sunday January 11**</span> | | 8:15 - 9:15 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14232.html"
 class="external text" rel="nofollow">W369</a>: Browsing Genes and Genomes with Ensembl and Ensembl Genomes | Emily Perry | California | <a
 href="http://www.ebi.ac.uk/~emily/Workshops/2015/PAG/ensembl_presentation.pdf"
 class="external text" rel="nofollow">Slides</a> ([BioMart](/wiki/BioMart) slides 24-29), <a
@@ -130,7 +130,7 @@ class="external text" rel="nofollow">W311</a>: TreeGenes: A Comprehensive Resour
 href="http://loblolly.ucdavis.edu/bipod/ftp/Presentations/PAG2015/W311_TreeGenes_2015.pdf"
 class="external text" rel="nofollow">Slides</a> | 2:30- 2:50 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper16049.html"
 class="external text" rel="nofollow">W421</a>: Overview of the GnpIS Grape Genomics and Genetic Integrative Resource for Diversity Studies | Nacer Mohellibi | Pacific Salon 6-7 | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/MohellibiGrapevine_PAG2015.pdf"
-class="internal" title="MohellibiGrapevine PAG2015.pdf">Slides</a> | <span id="Monday">**Monday January 12**</span> |  | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper16367.html"
+class="internal" title="MohellibiGrapevine PAG2015.pdf">Slides</a> | <span id="Monday">**Monday January 12**</span> | | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper16367.html"
 class="external text" rel="nofollow">P268</a>: New Data Mining Interfaces at the Bovine Genome Database | Colin Diesh | Poster session | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/09/BovineMine_PAG2015.pdf"
 class="internal" title="BovineMine PAG2015.pdf">Poster</a> | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper15302.html"
 class="external text" rel="nofollow">P346</a>: PeanutBase: A Resource for Peanut Genetic, Genomic, and Trait Information | Ethalinda Cannon | Poster session | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf"
@@ -172,7 +172,7 @@ href="http://de.iplantcollaborative.org/dl/d/5774899A-02E1-4075-91C2-9D7D8E30D42
 class="external text" rel="nofollow">Poster</a> | 3:00 - 4:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper15379.html"
 class="external text" rel="nofollow">P1153</a>: GenSAS: A Web-Based Platform for Automated and Manual Curation of Genomic Sequence | Jodi Humann | Poster session | 3:00 - 4:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17285.html"
 class="external text" rel="nofollow">P839</a>: Accessing SGN Genomes through Tools | Susan Strickler | Poster session | 6:35 - 6:40 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17298.html"
-class="external text" rel="nofollow">W481</a>: Flash Demo: Annotating genomes with MAKER-P and the iPlant Discovery Environment | Sabarinath Subramaniam | California | <span id="Tuesday">**Tuesday January 13**</span> |  | 11:00 - 11:15 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14431.html"
+class="external text" rel="nofollow">W481</a>: Flash Demo: Annotating genomes with MAKER-P and the iPlant Discovery Environment | Sabarinath Subramaniam | California | <span id="Tuesday">**Tuesday January 13**</span> | | 11:00 - 11:15 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14431.html"
 class="external text" rel="nofollow">C17</a>: Wheat3BMine, a Data Warehouse Dedicated to Wheat Chromosome 3B | Thomas Letellier | California | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9f/Wheat3bMineDemo_PAG2015.pdf"
 class="internal" title="Wheat3bMineDemo PAG2015.pdf">Slides</a> | 11:15 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper16265.html"
 class="external text" rel="nofollow">C18</a>: Using the Wheat Tilling Database to Search Mutants of Interest | Hans Vasquez-Gross | California | <a
@@ -191,6 +191,6 @@ href="http://de.iplantcollaborative.org/dl/d/9B849155-14AD-4B33-A339-7F6EEB496CE
 class="external text" rel="nofollow">Slides</a> | 1:50 - 2:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper15323.html"
 class="external text" rel="nofollow">Programmatic Interfaces to Plant
 Genomic Data</a> | Paul Kersey | California | 4:00 - 6:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Session2641.html"
-class="external text" rel="nofollow">W354</a>: [Galaxy](/wiki/Galaxy) for SNP and Variant Data Analysis | [Dave Clements](/wiki/User:Clements) | California | <a
+class="external text" rel="nofollow">W354</a>: [Galaxy](/wiki/Galaxy) for SNP and Variant Data Analysis | Dave Clements | California | <a
 href="https://wiki.galaxyproject.org/Documents/Presentations?action=AttachFile&amp;do=view&amp;target=2015_PAG_Variant.pdf"
-class="external text" rel="nofollow">Slides</a> | <span id="Wednesday">**Wednesday January 14**</span> |  | 10:30 - 2:30 | [GMOD Workshop](#GMOD_Workshop) | [Scott Cain](/wiki/User:Scott) and the GMOD Community | Golden West | [See above](#GMOD_Workshop) |
+class="external text" rel="nofollow">Slides</a> | <span id="Wednesday">**Wednesday January 14**</span> | | 10:30 - 2:30 | [GMOD Workshop](#GMOD_Workshop) | Scott Cain and the GMOD Community | Golden West | [See above](#GMOD_Workshop) |

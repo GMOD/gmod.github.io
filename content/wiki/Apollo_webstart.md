@@ -3,19 +3,19 @@ title: "Apollo webstart"
 ---
 # Apollo webstart
 
-  Introduction](#Introduction)
+ Introduction](#Introduction)
 - [Building from
-  source](#Building_from_source)
-  - [Editing
-    the ant xml file](#Editing_the_ant_xml_file)
-  - [Signing
-    the jars](#Signing_the_jars)
+ source](#Building_from_source)
+ - [Editing
+ the ant xml file](#Editing_the_ant_xml_file)
+ - [Signing
+ the jars](#Signing_the_jars)
 - [Setting up the
-  server](#Setting_up_the_server)
-  - [Placing
-    the jar files](#Placing_the_jar_files)
-  - [Creating
-    jnlp files](#Creating_jnlp_files)
+ server](#Setting_up_the_server)
+ - [Placing
+ the jar files](#Placing_the_jar_files)
+ - [Creating
+ jnlp files](#Creating_jnlp_files)
 
 ## Introduction
 

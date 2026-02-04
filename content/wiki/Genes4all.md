@@ -3,11 +3,11 @@ title: "Genes4all"
 ---
 # Genes4all
 
-  Overview](#Overview)
+ Overview](#Overview)
 - [Dependencies](#Dependencies)
 - [Features](#Features)
 - [Demos and
-  Screenshots](#Demos_and_Screenshots)
+ Screenshots](#Demos_and_Screenshots)
 - [License](#License)
 
 # Overview
@@ -44,24 +44,24 @@ retrieve data. The Drupal database offers a bidirectional interface with
 the users.
 
 - Currently these two are publicly available:
-  - genes4all_experiment - RNAi experiment databasing module is an
-    ontology-driven system which was built for the Lepidoptera RNAi
-    Working Group and can be adapted for other types of experiments.
-  - genes4all_download - Download est2assembly data which have been
-    stored in Chado.
+ - genes4all_experiment - RNAi experiment databasing module is an
+ ontology-driven system which was built for the Lepidoptera RNAi
+ Working Group and can be adapted for other types of experiments.
+ - genes4all_download - Download est2assembly data which have been
+ stored in Chado.
 - Other modules deployed in InsectaCentral but not available to
-  developers yet:
-  - genes4all_explore - Create gene pages for sequence features directly
-    from Chado
-  - genes4all_curation - Provide a community curation system where web
-    users write to the Drupal database and curators can visually 'save'
-    accepted annotations to Chado.
+ developers yet:
+ - genes4all_explore - Create gene pages for sequence features directly
+ from Chado
+ - genes4all_curation - Provide a community curation system where web
+ users write to the Drupal database and curators can visually 'save'
+ accepted annotations to Chado.
 - - These modules are currently being developed.
-  - genes4all_upload - upload your est2assembly transcriptome assembly
-    for integration into a genes4all database.
-  - Integration with the
-    <a href="http://geneious.com" class="external text"
-    rel="nofollow">Geneious</a> software and provide other web services
+ - genes4all_upload - upload your est2assembly transcriptome assembly
+ for integration into a genes4all database.
+ - Integration with the
+ <a href="http://geneious.com" class="external text"
+ rel="nofollow">Geneious</a> software and provide other web services
 
 For the 2011-2012 season we are planning to go beyond transcriptome data
 and support genomes as well as ecological and geographical characters.
@@ -69,12 +69,12 @@ and support genomes as well as ecological and geographical characters.
 # Demos and Screenshots
 
 - A <a href="http://www.scivee.tv/node/20326" class="external text"
-  rel="nofollow">screencast on how to use the RNAi experiment module</a>.
+ rel="nofollow">screencast on how to use the RNAi experiment module</a>.
 
 # License
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
-currently supported by [Alexie
-Papanicolaou](/wiki/User:Alpapan) while at CSIRO, the
+currently supported by Alexie
+Papanicolaou while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"

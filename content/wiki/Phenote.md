@@ -15,7 +15,7 @@ phenotypes using ontologies. It provides an interface to record
 genotype-phenotype pairs, together with the provenance for the
 annotation.
 
-  Requirements](#Requirements)
+ Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
 - [Logo](#Logo)
@@ -34,8 +34,8 @@ See <a href="http://www.phenote.org/help.shtml" class="external free"
 See
 
 - <a href="http://www.phenote.org/contact.shtml" class="external free"
-  rel="nofollow">http://www.phenote.org/contact.shtml</a>
-- [Nicole Washington](/wiki/User:NLWashington)
+ rel="nofollow">http://www.phenote.org/contact.shtml</a>
+- Nicole Washington
 
 ## Logo
 

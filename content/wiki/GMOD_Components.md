@@ -10,7 +10,7 @@ providing the functionality that is needed by all organism databases.
 The table below classifies GMOD components according to their functional
 categories.
 
-See  for
+See for
 software mentioned in the GMOD web site (and possibly used by GMOD
 components) that is not part of the GMOD project.
 

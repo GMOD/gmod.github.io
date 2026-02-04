@@ -3,24 +3,24 @@ title: "Chado XML"
 ---
 # Chado XML
 
-  Chado-XML](#Chado-XML)
+ Chado-XML](#Chado-XML)
 - [Scope](#Scope)
 - [Description](#Description)
 - [Generating
-  Chado-XML](#Generating_Chado-XML)
-  - [Database
-    retrieval: XORT
-    Dumpspecs](#Database_retrieval:_XORT_Dumpspecs)
-  - [BioPerl -
-    **Bio::SeqIO::chadoxml**](#BioPerl_-_Bio::SeqIO::chadoxml)
+ Chado-XML](#Generating_Chado-XML)
+ - [Database
+ retrieval: XORT
+ Dumpspecs](#Database_retrieval:_XORT_Dumpspecs)
+ - [BioPerl -
+ **Bio::SeqIO::chadoxml**](#BioPerl_-_Bio::SeqIO::chadoxml)
 - [Saving
-  Chado-XML](#Saving_Chado-XML)
+ Chado-XML](#Saving_Chado-XML)
 - [Chado-XML
-  forms](#Chado-XML_forms)
-  - [Standard
-    Mapping](#Standard_Mapping)
-  - [Generic
-    Mapping](#Generic_Mapping)
+ forms](#Chado-XML_forms)
+ - [Standard
+ Mapping](#Standard_Mapping)
+ - [Generic
+ Mapping](#Generic_Mapping)
 - [Macros](#Macros)
 - [Transactional-Chado-XML](#Transactional-Chado-XML)
 - [Terminology](#Terminology)
@@ -89,7 +89,7 @@ means that any file format which
 If you are not familiar with the bioperl _SeqIO_ system, you can do it
 on the command line, like this:
 
-    >bp_seqconvert --from genbank --to chadoxml < NT_021877.gbk
+ >bp_seqconvert --from genbank --to chadoxml < NT_021877.gbk
 
 This will generate _expanded_ (no macros) Chado-XML.
 
@@ -179,14 +179,14 @@ a database unique key (genus and species in the case of organisms)
 
 ```de1
  <feature>
-   ..
-   <organism_id>
-     <organism>
-       <genus>Drosophila</genus>
-       <species>Melanogaster</species>
-       ..other optional organismal data..
-     </organism>
-   </organism_id>
+ ..
+ <organism_id>
+ <organism>
+ <genus>Drosophila</genus>
+ <species>Melanogaster</species>
+ ..other optional organismal data..
+ </organism>
+ </organism_id>
  </feature>
 ```
 
@@ -206,15 +206,15 @@ The document can be normalised using **Macros**.
 
 ```de1
  <chado>
-  <organism id="Drosophila__Melanogaster">
-    <genus>Drosophila</genus>
-    <species>Melanogaster</species>
-    ..other optional organismal data..
-  </organism>
-  ...
-  <feature>
-    <organism_id>Drosophila__Melanogaster</organism_id>
-    ..
+ <organism id="Drosophila__Melanogaster">
+ <genus>Drosophila</genus>
+ <species>Melanogaster</species>
+ ..other optional organismal data..
+ </organism>
+ ...
+ <feature>
+ <organism_id>Drosophila__Melanogaster</organism_id>
+ ..
 ```
 
 The algorithm for using macros is fairly simple - simply replace any

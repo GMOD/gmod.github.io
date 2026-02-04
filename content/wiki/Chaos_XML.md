@@ -3,34 +3,34 @@ title: "Chaos XML"
 ---
 # Chaos XML
 
-  Chado</span>](#Chaos-XML_and_Chado)
+ Chado</span>](#Chaos-XML_and_Chado)
 - [The Chaos
-  Model](#The_Chaos_Model)
+ Model](#The_Chaos_Model)
 - [Library
-  Contents](#Library_Contents)
-  - [DTD](#DTD)
-  - [XSL
-    Stylesheets](#XSL_Stylesheets)
-  - [Example
-    Chaos XML](#Example_Chaos_XML)
-  - [Scripts](#Scripts)
-  - [Chaos Perl
-    Module](#Chaos_Perl_Module)
+ Contents](#Library_Contents)
+ - [DTD](#DTD)
+ - [XSL
+ Stylesheets](#XSL_Stylesheets)
+ - [Example
+ Chaos XML](#Example_Chaos_XML)
+ - [Scripts](#Scripts)
+ - [Chaos Perl
+ Module](#Chaos_Perl_Module)
 - [Converting
-  between Chaos-XML and
-  Chado-XML](#Converting_between_Chaos-XML_and_Chado-XML)
+ between Chaos-XML and
+ Chado-XML](#Converting_between_Chaos-XML_and_Chado-XML)
 - [Future
-  Extensions](#Future_Extensions)
+ Extensions](#Future_Extensions)
 - [Differences
-  between Chaos XML and the Chado Relational Database
-  Schema](#Differences_between_Chaos_XML_and_the_Chado_Relational_Database_Schema)
-  - [Coordinates](#Coordinates)
-  - [Dbxref
-    Flattening](#Dbxref_Flattening)
-  - [Type
-    Flattening](#Type_Flattening)
-  - [Organism
-    Flattening](#Organism_Flattening)
+ between Chaos XML and the Chado Relational Database
+ Schema](#Differences_between_Chaos_XML_and_the_Chado_Relational_Database_Schema)
+ - [Coordinates](#Coordinates)
+ - [Dbxref
+ Flattening](#Dbxref_Flattening)
+ - [Type
+ Flattening](#Type_Flattening)
+ - [Organism
+ Flattening](#Organism_Flattening)
 
 ## Chaos-XML and Chado
 

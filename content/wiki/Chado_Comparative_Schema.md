@@ -3,12 +3,12 @@ title: "Chado Comparative Schema"
 ---
 # Chado Comparative Schema
 
-  Overview](#Overview)
+ Overview](#Overview)
 - [Goal](#Goal)
 - [Strategies](#Strategies)
-  - [Sybil/IGS](#Sybil.2FIGS)
-  - [FlyBase](#FlyBase)
-  - [ParameciumDB](#ParameciumDB)
+ - [Sybil/IGS](#Sybil.2FIGS)
+ - [FlyBase](#FlyBase)
+ - [ParameciumDB](#ParameciumDB)
 
 # Overview
 

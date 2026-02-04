@@ -18,7 +18,7 @@ know if you'd like to make changes now.
 
 - phenotype table
 - drop the Unique constraint from phenotype.unique? - problem with
-  calling a column 'uniquename' but have it non-unique
+ calling a column 'uniquename' but have it non-unique
 
 also tables should have natural key that is not the PK
 
@@ -60,7 +60,7 @@ module is beyond its scope
 **decisions**
 
 - leaving uniquename as is. Those of us who are using it non-uniquely
-  would have to concatenate something to this field
+ would have to concatenate something to this field
 - Add name column to the phenotype table
 
 --Bob: Flybase does not store quantitative terms, and they don't use
@@ -81,16 +81,16 @@ is a good place for it.
 **Suggestion**
 
 - add a type_id to phenotype_cvterm (solve the post-composed terms
-  issue). Need this to specify the relationship between the phenotype
-  and the cvterm.
+ issue). Need this to specify the relationship between the phenotype
+ and the cvterm.
 - think over adding phenotypeprop, but as a standard prop table (without
-  cvalue_id)
+ cvalue_id)
 
 **Decision**
 
 - do not change the schema, and test the above suggestion.
 - Yuri will add use case to the wiki, and possibly others. This is
-  important for the next phase of the phenotype module.
+ important for the next phase of the phenotype module.
 
 The suggested changes seem small, but they will change completely the
 way we store phenotype, measurements, re-use phenotypes, etc.
@@ -108,11 +108,11 @@ the phenotype moule (Naama will add this to the paper)
 **Agreed**
 
 - fill the Doodle for a meeting next week, because we need to talk about
-  Yuri's proposed changes first. This is important for the Chado release
-  and the ND paper.
+ Yuri's proposed changes first. This is important for the Chado release
+ and the ND paper.
 - Commit the schema changes to the genotype and phenotype modules
 - Work on the wiki with the proposal for using phenotype_cvterm for
-  post-composed cvterms (with type_id column). If this does not work,
-  need to consider another linking table specific for phenotypes.
+ post-composed cvterms (with type_id column). If this does not work,
+ need to consider another linking table specific for phenotypes.
 
 ------------------------------------------------------------------------

@@ -6,37 +6,37 @@ title: "Stock Relationship Ontology"
 This page serves as an initial draft of the nascent Stock Relationship
 Ontology.
 
-  page</span>](#Talk_page)
+ page</span>](#Talk_page)
 - [stock
-  types](#stock_types)
+ types](#stock_types)
 - [Proposed
-  relations (by Pantelis Topalis 28 May
-  2010)](#Proposed_relations_.28by_Pantelis_Topalis_28_May_2010.29)
+ relations (by Pantelis Topalis 28 May
+ 2010)](#Proposed_relations_.28by_Pantelis_Topalis_28_May_2010.29)
 - [stock_relationship
-  types](#stock_relationship_types)
-  - [individual
-    -\> individual](#individual_-.3E_individual)
-  - [individual
-    -\> group](#individual_-.3E_group)
-  - [group -\>
-    individual](#group_-.3E_individual)
-  - [group -\>
-    group](#group_-.3E_group)
+ types](#stock_relationship_types)
+ - [individual
+ -\> individual](#individual_-.3E_individual)
+ - [individual
+ -\> group](#individual_-.3E_group)
+ - [group -\>
+ individual](#group_-.3E_individual)
+ - [group -\>
+ group](#group_-.3E_group)
 - [nd_assay_stock
-  types](#nd_assay_stock_types)
+ types](#nd_assay_stock_types)
 - [nd_assay
-  types](#nd_assay_types)
+ types](#nd_assay_types)
 
 ## Talk page
 
 If you are too shy to edit this page, then please add your suggested
-terms or comments on the [talk
-page](/wiki/Talk:Stock_Relationship_Ontology).
+terms or comments on the talk
+page.
 
 ## stock types
 
 - term
-  - is_a subterm
+ - is_a subterm
 
 ## Proposed relations (by Pantelis
 Topalis 28 May 2010)
@@ -74,7 +74,7 @@ delete / alter / extend as required) Sethnr 13:12,
 ### group -\> individual
 
 - individual from pool (e.g. single sequenced individual from field
-  collection)
+ collection)
 - individual under gen. modification (e.g. RNAi?)
 
 ### group -\> group

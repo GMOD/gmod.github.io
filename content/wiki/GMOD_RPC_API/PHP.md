@@ -5,28 +5,28 @@ title: "GMOD RPC API/PHP"
 
 Plans/Architecture for the PHP tools for implementing gmod-rpc
 
-  Components](#Components)
-  - [index.php](#index.php)
-  - [class.myDomDocument.php](#class.myDomDocument.php)
-  - [version
-    directories](#version_directories)
-    - [gmod-rpc/v1/rpc.php](#gmod-rpc.2Fv1.2Frpc.php)
-    - [gmod-rpc/v1/sources/](#gmod-rpc.2Fv1.2Fsources.2F)
-    - [gmod-rpc/v1/services/](#gmod-rpc.2Fv1.2Fservices.2F)
-    - [gmod-rpc/v1/class.View.php](#gmod-rpc.2Fv1.2Fclass.View.php)
+ Components](#Components)
+ - [index.php](#index.php)
+ - [class.myDomDocument.php](#class.myDomDocument.php)
+ - [version
+ directories](#version_directories)
+ - [gmod-rpc/v1/rpc.php](#gmod-rpc.2Fv1.2Frpc.php)
+ - [gmod-rpc/v1/sources/](#gmod-rpc.2Fv1.2Fsources.2F)
+ - [gmod-rpc/v1/services/](#gmod-rpc.2Fv1.2Fservices.2F)
+ - [gmod-rpc/v1/class.View.php](#gmod-rpc.2Fv1.2Fclass.View.php)
 
 ## Components
 
 ### index.php
 
-    gmod-rpc/index.php
+ gmod-rpc/index.php
 
 Use mod_rewrite so that gmod-rpc URLs all go to this script
 
-    <IfModule mod_rewrite.c>
-    RewriteEngine on
-    RewriteRule ^/gmod-rpc/.*$ /gmod-rpc/index.php
-    </IfModule>
+ <IfModule mod_rewrite.c>
+ RewriteEngine on
+ RewriteRule ^/gmod-rpc/.*$ /gmod-rpc/index.php
+ </IfModule>
 
 index.php looks for a version directory based on the URL.
 
@@ -53,7 +53,7 @@ This will be where data source adaptors live class.SourceName.php/
 
 This directory holds a file defining a base class
 
-    class.Service.php
+ class.Service.php
 
 implement additional services by adding object classes that extend this
 base class e.g. class.Organisms.php:

@@ -69,177 +69,177 @@ what's coming up, and what others are doing. The [January 2010 GMOD
 Meeting](/wiki/January_2010_GMOD_Meeting) was the
 previous event. The next meeting is likely to be held in spring 2011.
 
-  Agenda](#Agenda)
-  - [Monday, 13
-    September](#Monday.2C_13_September)
-  - [Tuesday,
-    14 September](#Tuesday.2C_14_September)
-  - [Wednesday
-    & Thursday, 15-16
-    September](#Wednesday_.26_Thursday.2C_15-16_September)
+ Agenda](#Agenda)
+ - [Monday, 13
+ September](#Monday.2C_13_September)
+ - [Tuesday,
+ 14 September](#Tuesday.2C_14_September)
+ - [Wednesday
+ & Thursday, 15-16
+ September](#Wednesday_.26_Thursday.2C_15-16_September)
 - [Presentations](#Presentations)
-  - [By
-    Topic](#By_Topic)
-  - [The State
-    of GMOD](#The_State_of_GMOD)
-    - [What's
-      New](#What.27s_New)
-    - [Next
-      GMOD Meeting?](#Next_GMOD_Meeting.3F)
-  - [Help Desk
-    Update](#Help_Desk_Update)
-    - [Mailing List
-      Archives](#Mailing_List_Archives)
-    - [GMOD
-      Membership Requirements](#GMOD_Membership_Requirements)
-    - [GMOD
-      Promotion](#GMOD_Promotion)
-    - [GMOD
-      Logo Program](#GMOD_Logo_Program)
-    - [2010
-      GMOD Community Survey](#2010_GMOD_Community_Survey)
-    - [Events](#Events)
-    - [JBrowse
-      Development](#JBrowse_Development)
-    - [JBrowse Grant
-      Proposal](#JBrowse_Grant_Proposal)
-    - [New
-      Components](#New_Components)
-    - [Some
-      Interesting Documents](#Some_Interesting_Documents)
-    - [GMOD
-      on the Web](#GMOD_on_the_Web)
-  - [The Open
-    Microscopy Environment: Open Informatics for Biological
-    Imaging](#The_Open_Microscopy_Environment:_Open_Informatics_for_Biological_Imaging)
-    - [Data
-      Standards and Formats](#Data_Standards_and_Formats)
-    - [Imaging Culture and
-      Sustainability](#Imaging_Culture_and_Sustainability)
-  - [PSICQUIC:
-    The PSI Common QUery
-    Interface](#PSICQUIC:_The_PSI_Common_QUery_Interface)
-    - [PSICQUIC Web
-      Services](#PSICQUIC_Web_Services)
-    - [Formats](#Formats)
-    - [MIQL](#MIQL)
-    - [Creating a PSICQUIC
-      Service](#Creating_a_PSICQUIC_Service)
-    - [PSICQUIC
-      Applications](#PSICQUIC_Applications)
-    - [PSICQUIC
-      Development](#PSICQUIC_Development)
-  - [MolGenIS
-    and XGAP](#MolGenIS_and_XGAP)
-    - [MolGenIS](#MolGenIS)
-    - [XGAP](#XGAP)
-    - [GMOD
-      Link Ideas](#GMOD_Link_Ideas)
-    - [OntoCAT](#OntoCAT)
-  - [The GMOD
-    Chado Natural Diversity
-    Module](#The_GMOD_Chado_Natural_Diversity_Module)
-    - [Motivation](#Motivation)
-    - [Developmental
-      History](#Developmental_History)
-    - [Schema](#Schema)
-    - [CV
-      Terms and APIs](#CV_Terms_and_APIs)
-  - [Cosmic
-    GBrowse: Visualising cancer mutations in genomic
-    context](#Cosmic_GBrowse:_Visualising_cancer_mutations_in_genomic_context)
-    - [Data](#Data)
-    - [Configuration and
-      Setup](#Configuration_and_Setup)
-    - [Display](#Display)
-    - [Future
-      Development](#Future_Development)
-  - [GMOD
-    Projects at the Center for Genomics and
-    Bioinformatics](#GMOD_Projects_at_the_Center_for_Genomics_and_Bioinformatics)
-    - [A
-      Simple Web Interface for Configuring GBrowse:
-      WebGBrowse](#A_Simple_Web_Interface_for_Configuring_GBrowse:_WebGBrowse)
-    - [Web-based Bioinformatics Pipelines for
-      Biologists:
-      ISGA](#Web-based_Bioinformatics_Pipelines_for_Biologists:_ISGA)
-      - [Why develop ISGA as a separate
-        package?](#Why_develop_ISGA_as_a_separate_package.3F)
-      - [Present and
-        Future](#Present_and_Future)
-  - [GMOD RPC
-    API: The almost RESTful GMOD
-    API](#GMOD_RPC_API:_The_almost_RESTful_GMOD_API)
-    - [Perl
-      Implementation](#Perl_Implementation)
-      - [Goals](#Goals)
-    - [How
-      to participate](#How_to_participate)
-    - [Discussion](#Discussion)
-  - [Overview
-    of current resources and update on DAS Meeting Cambridge
-    2010](#Overview_of_current_resources_and_update_on_DAS_Meeting_Cambridge_2010)
-    - [Some
-      DAS 1.5/1.6 Commands](#Some_DAS_1.5.2F1.6_Commands)
-    - [Why
-      use DAS 1.6 over 1.5?](#Why_use_DAS_1.6_over_1.5.3F)
-    - [Easy
-      DAS](#Easy_DAS)
-    - [1.6E
-      Proposals](#1.6E_Proposals)
-    - [DAS
-      Clients](#DAS_Clients)
-  - [InterMine: new Mines and new
-    features](#InterMine:_new_Mines_and_new_features)
-    - [Mines
-      for MODs](#Mines_for_MODs)
-    - [metabolicMine](#metabolicMine)
-    - [InterMine 0.94
-      Release](#InterMine_0.94_Release)
-  - [Literature Curation in
-    GMOD](#Literature_Curation_in_GMOD)
-  - [Towards a
-    GO Annotation Tool: Curation Accelerator
-    Software](#Towards_a_GO_Annotation_Tool:_Curation_Accelerator_Software)
-    - [The
-      Challenge](#The_Challenge)
-    - [The
-      Tool](#The_Tool)
-  - [BioPivot](#BioPivot)
-    - [Deep
-      Zoom Technology](#Deep_Zoom_Technology)
-  - [CRAWL
-    (Chado RESTful Access Web-service
-    Layer)](#CRAWL_.28Chado_RESTful_Access_Web-service_Layer.29)
-    - [Challenges](#Challenges)
-    - [Solutions](#Solutions)
-    - [Collaborative Interfaces and Rich Internet
-      Applications](#Collaborative_Interfaces_and_Rich_Internet_Applications)
-    - [The
-      way of CRAWL](#The_way_of_CRAWL)
-    - [GMOD
-      Rest](#GMOD_Rest)
-  - [Lessons
-    from the Apache
-    Community](#Lessons_from_the_Apache_Community)
-  - [Lightning
-    Talks](#Lightning_Talks)
-    - [GBrowse 2 and JBrowse
-      Features](#GBrowse_2_and_JBrowse_Features)
-    - [CpG
-      Island and STR Annotator
-      Plugins](#CpG_Island_and_STR_Annotator_Plugins)
-    - [GMOD
-      Sustainability and
-      Organization](#GMOD_Sustainability_and_Organization)
+ - [By
+ Topic](#By_Topic)
+ - [The State
+ of GMOD](#The_State_of_GMOD)
+ - [What's
+ New](#What.27s_New)
+ - [Next
+ GMOD Meeting?](#Next_GMOD_Meeting.3F)
+ - [Help Desk
+ Update](#Help_Desk_Update)
+ - [Mailing List
+ Archives](#Mailing_List_Archives)
+ - [GMOD
+ Membership Requirements](#GMOD_Membership_Requirements)
+ - [GMOD
+ Promotion](#GMOD_Promotion)
+ - [GMOD
+ Logo Program](#GMOD_Logo_Program)
+ - [2010
+ GMOD Community Survey](#2010_GMOD_Community_Survey)
+ - [Events](#Events)
+ - [JBrowse
+ Development](#JBrowse_Development)
+ - [JBrowse Grant
+ Proposal](#JBrowse_Grant_Proposal)
+ - [New
+ Components](#New_Components)
+ - [Some
+ Interesting Documents](#Some_Interesting_Documents)
+ - [GMOD
+ on the Web](#GMOD_on_the_Web)
+ - [The Open
+ Microscopy Environment: Open Informatics for Biological
+ Imaging](#The_Open_Microscopy_Environment:_Open_Informatics_for_Biological_Imaging)
+ - [Data
+ Standards and Formats](#Data_Standards_and_Formats)
+ - [Imaging Culture and
+ Sustainability](#Imaging_Culture_and_Sustainability)
+ - [PSICQUIC:
+ The PSI Common QUery
+ Interface](#PSICQUIC:_The_PSI_Common_QUery_Interface)
+ - [PSICQUIC Web
+ Services](#PSICQUIC_Web_Services)
+ - [Formats](#Formats)
+ - [MIQL](#MIQL)
+ - [Creating a PSICQUIC
+ Service](#Creating_a_PSICQUIC_Service)
+ - [PSICQUIC
+ Applications](#PSICQUIC_Applications)
+ - [PSICQUIC
+ Development](#PSICQUIC_Development)
+ - [MolGenIS
+ and XGAP](#MolGenIS_and_XGAP)
+ - [MolGenIS](#MolGenIS)
+ - [XGAP](#XGAP)
+ - [GMOD
+ Link Ideas](#GMOD_Link_Ideas)
+ - [OntoCAT](#OntoCAT)
+ - [The GMOD
+ Chado Natural Diversity
+ Module](#The_GMOD_Chado_Natural_Diversity_Module)
+ - [Motivation](#Motivation)
+ - [Developmental
+ History](#Developmental_History)
+ - [Schema](#Schema)
+ - [CV
+ Terms and APIs](#CV_Terms_and_APIs)
+ - [Cosmic
+ GBrowse: Visualising cancer mutations in genomic
+ context](#Cosmic_GBrowse:_Visualising_cancer_mutations_in_genomic_context)
+ - [Data](#Data)
+ - [Configuration and
+ Setup](#Configuration_and_Setup)
+ - [Display](#Display)
+ - [Future
+ Development](#Future_Development)
+ - [GMOD
+ Projects at the Center for Genomics and
+ Bioinformatics](#GMOD_Projects_at_the_Center_for_Genomics_and_Bioinformatics)
+ - [A
+ Simple Web Interface for Configuring GBrowse:
+ WebGBrowse](#A_Simple_Web_Interface_for_Configuring_GBrowse:_WebGBrowse)
+ - [Web-based Bioinformatics Pipelines for
+ Biologists:
+ ISGA](#Web-based_Bioinformatics_Pipelines_for_Biologists:_ISGA)
+ - [Why develop ISGA as a separate
+ package?](#Why_develop_ISGA_as_a_separate_package.3F)
+ - [Present and
+ Future](#Present_and_Future)
+ - [GMOD RPC
+ API: The almost RESTful GMOD
+ API](#GMOD_RPC_API:_The_almost_RESTful_GMOD_API)
+ - [Perl
+ Implementation](#Perl_Implementation)
+ - [Goals](#Goals)
+ - [How
+ to participate](#How_to_participate)
+ - [Discussion](#Discussion)
+ - [Overview
+ of current resources and update on DAS Meeting Cambridge
+ 2010](#Overview_of_current_resources_and_update_on_DAS_Meeting_Cambridge_2010)
+ - [Some
+ DAS 1.5/1.6 Commands](#Some_DAS_1.5.2F1.6_Commands)
+ - [Why
+ use DAS 1.6 over 1.5?](#Why_use_DAS_1.6_over_1.5.3F)
+ - [Easy
+ DAS](#Easy_DAS)
+ - [1.6E
+ Proposals](#1.6E_Proposals)
+ - [DAS
+ Clients](#DAS_Clients)
+ - [InterMine: new Mines and new
+ features](#InterMine:_new_Mines_and_new_features)
+ - [Mines
+ for MODs](#Mines_for_MODs)
+ - [metabolicMine](#metabolicMine)
+ - [InterMine 0.94
+ Release](#InterMine_0.94_Release)
+ - [Literature Curation in
+ GMOD](#Literature_Curation_in_GMOD)
+ - [Towards a
+ GO Annotation Tool: Curation Accelerator
+ Software](#Towards_a_GO_Annotation_Tool:_Curation_Accelerator_Software)
+ - [The
+ Challenge](#The_Challenge)
+ - [The
+ Tool](#The_Tool)
+ - [BioPivot](#BioPivot)
+ - [Deep
+ Zoom Technology](#Deep_Zoom_Technology)
+ - [CRAWL
+ (Chado RESTful Access Web-service
+ Layer)](#CRAWL_.28Chado_RESTful_Access_Web-service_Layer.29)
+ - [Challenges](#Challenges)
+ - [Solutions](#Solutions)
+ - [Collaborative Interfaces and Rich Internet
+ Applications](#Collaborative_Interfaces_and_Rich_Internet_Applications)
+ - [The
+ way of CRAWL](#The_way_of_CRAWL)
+ - [GMOD
+ Rest](#GMOD_Rest)
+ - [Lessons
+ from the Apache
+ Community](#Lessons_from_the_Apache_Community)
+ - [Lightning
+ Talks](#Lightning_Talks)
+ - [GBrowse 2 and JBrowse
+ Features](#GBrowse_2_and_JBrowse_Features)
+ - [CpG
+ Island and STR Annotator
+ Plugins](#CpG_Island_and_STR_Annotator_Plugins)
+ - [GMOD
+ Sustainability and
+ Organization](#GMOD_Sustainability_and_Organization)
 - [Participants](#Participants)
 - [Logistics](#Logistics)
 - [Sponsor:
-  Cambridge Computational Biology
-  Institute](#Sponsor:_Cambridge_Computational_Biology_Institute)
+ Cambridge Computational Biology
+ Institute](#Sponsor:_Cambridge_Computational_Biology_Institute)
 - [Feedback](#Feedback)
 - [The Next
-  Meeting](#The_Next_Meeting)
+ Meeting](#The_Next_Meeting)
 
 # Agenda
 
@@ -256,14 +256,14 @@ _The <a href="http://www.openmicroscopy.org/" class="external text"
 Biological Imaging_
 
 - Professor,
-  <a href="http://gre.lifesci.dundee.ac.uk/staff/jason_swedlow.html"
-  class="external text" rel="nofollow">Wellcome Trust Centre for Gene
-  Regulation and Expression</a>,
-  <a href="http://www.dundee.ac.uk/" class="external text"
-  rel="nofollow">University of Dundee</a>
+ <a href="http://gre.lifesci.dundee.ac.uk/staff/jason_swedlow.html"
+ class="external text" rel="nofollow">Wellcome Trust Centre for Gene
+ Regulation and Expression</a>,
+ <a href="http://www.dundee.ac.uk/" class="external text"
+ rel="nofollow">University of Dundee</a>
 - Principal Investigator,
-  <a href="http://www.openmicroscopy.org/" class="external text"
-  rel="nofollow">Open Microscopy Environment (OME)</a>
+ <a href="http://www.openmicroscopy.org/" class="external text"
+ rel="nofollow">Open Microscopy Environment (OME)</a>
 
 The meeting's guest speaker was Prof Jason Swedlow, who discussed his
 work with with the
@@ -284,7 +284,7 @@ division.
 
 ## Monday, 13 September
 
-| Time                                                                                       | Topic                                               | Presenter(s)                                           | Links                                                                                                                            | ------------------------------------------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | 09:15                                                                                      | Introductions                                       | [Scott Cain](/wiki/User:Scott)          | 10:00                                                                                      | The State of GMOD                                   | [Scott Cain](/wiki/User:Scott)          | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/TheStateofGMODSept2010.pdf"            | class="internal" title="TheStateofGMODSept2010.pdf">PDF</a>, [Summary](#The_State_of_GMOD) | 10:30                                                                                      | Break                                               | 11:00                                                                                      | [Help Desk](/wiki/GMOD_Help_Desk) Update | [Dave Clements](/wiki/User:Clements) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf" class="internal" |
+| Time | Topic | Presenter(s) | Links | ------------------------------------------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | 09:15 | Introductions | Scott Cain | 10:00 | The State of GMOD | Scott Cain | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/TheStateofGMODSept2010.pdf" | class="internal" title="TheStateofGMODSept2010.pdf">PDF</a>, [Summary](#The_State_of_GMOD) | 10:30 | Break | 11:00 | [Help Desk](/wiki/GMOD_Help_Desk) Update | Dave Clements | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf" class="internal" |
 
 title="HelpDeskSept2010.pdf">PDF</a>, <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODSeptember/HelpDeskSept2010.ppt"
 class="external text" rel="nofollow">PPT</a>, [Summary](#Help_Desk_Update) | 11:30 | Keynote: The <a href="http://www.openmicroscopy.org/" class="external text"
@@ -299,26 +299,26 @@ title="ChadoNDSept2010.ppt">PPT</a>, <a
 href="https://docs.google.com/present/edit?id=0ASHJk7ao3qFUZGo2ODJydl8xMjNmZGh3eDVnNg&amp;hl=en"
 class="external text" rel="nofollow">gdoc</a>, [Summary](#The_GMOD_Chado_Natural_Diversity_Module) | 15:15 | Break | 15:45 | Cosmic [GBrowse](/wiki/GBrowse): Visualising cancer mutations in genomic context | David Beare | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/CosmicGBrowseSept2010.pdf"
 class="internal" title="CosmicGBrowseSept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/CosMicGBrowseSept2010.ppt"
-class="internal" title="CosMicGBrowseSept2010.ppt">PPT</a>, [Summary](#Cosmic_GBrowse:_Visualising_cancer_mutations_in_genomic_context) | 16:15 | GMOD Projects at the Center for Genomics and Bioinformatics | [Chris Hemmerich](/wiki/User:Chemmeri) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/ISGAWebGBrowseSept2010.pdf"
+class="internal" title="CosMicGBrowseSept2010.ppt">PPT</a>, [Summary](#Cosmic_GBrowse:_Visualising_cancer_mutations_in_genomic_context) | 16:15 | GMOD Projects at the Center for Genomics and Bioinformatics | Chris Hemmerich | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/ISGAWebGBrowseSept2010.pdf"
 class="internal" title="ISGAWebGBrowseSept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/ISGAWebGBrowseSept2010.pptx"
 class="internal" title="ISGAWebGBrowseSept2010.pptx">PPT</a>, [Summary](#GMOD_Projects_at_the_Center_for_Genomics_and_Bioinformatics) |
 
 ## Tuesday, 14 September
 
-| Time                                                                                                           | Topic                                                                                                                    | Presenter(s)                                          | Links                                                                                                                        | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | 09:15                                                                                                          | [GMOD RPC API](/wiki/GMOD_RPC_API): The almost RESTful GMOD API                                                 | [Josh Goodman](/wiki/User:Jogoodma) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ee/GMOD_RPC_Sept_2010.pdf"            | class="internal" title="GMOD RPC Sept 2010.pdf">PDF</a>, [Summary](#GMOD_RPC_API:_The_almost_RESTful_GMOD_API) | 09:45                                                                                                          | Overview of current resources and update on <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> Meeting Cambridge 2010 | Jonathan Warren                                       | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/DAS_Sept2010.pdf" class="internal" |
+| Time | Topic | Presenter(s) | Links | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | 09:15 | [GMOD RPC API](/wiki/GMOD_RPC_API): The almost RESTful GMOD API | Josh Goodman | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ee/GMOD_RPC_Sept_2010.pdf" | class="internal" title="GMOD RPC Sept 2010.pdf">PDF</a>, [Summary](#GMOD_RPC_API:_The_almost_RESTful_GMOD_API) | 09:45 | Overview of current resources and update on <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> Meeting Cambridge 2010 | Jonathan Warren | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/DAS_Sept2010.pdf" class="internal" |
 
 title="DAS Sept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/DAS_Sept2010.pptx" class="internal"
-title="DAS Sept2010.pptx">PPT</a>, [Summary](#Overview_of_current_resources_and_update_on_DAS_Meeting_Cambridge_2010) | 10:15 | [InterMine](/wiki/InterMine): new Mines and new features | [Richard Smith](/wiki/User:Rsmith) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1c/InterMine_Sept2010.pdf"
-class="internal" title="InterMine Sept2010.pdf">PDF</a>, [Summary](#InterMine:_new_Mines_and_new_features) | 10:40 | Break | 11:00 | Literature Curation in GMOD | [Daniel Renfro](/wiki/User:DanielRenfro) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/62/Literature_Curation_Sept2010.pdf"
+title="DAS Sept2010.pptx">PPT</a>, [Summary](#Overview_of_current_resources_and_update_on_DAS_Meeting_Cambridge_2010) | 10:15 | [InterMine](/wiki/InterMine): new Mines and new features | Richard Smith | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1c/InterMine_Sept2010.pdf"
+class="internal" title="InterMine Sept2010.pdf">PDF</a>, [Summary](#InterMine:_new_Mines_and_new_features) | 10:40 | Break | 11:00 | Literature Curation in GMOD | Daniel Renfro | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/62/Literature_Curation_Sept2010.pdf"
 class="internal" title="Literature Curation Sept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Literature_Curation_Sept2010.ppt"
 class="internal" title="Literature Curation Sept2010.ppt">PPT</a>, [Summary](#Literature_Curation_in_GMOD) | 11:30 | Towards a GO Annotation Tool: Curation Accelerator Software | Helen Field | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/70/GO_Curation_Sept2010.pdf"
 class="internal" title="GO Curation Sept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/GO_Curation_Sept2010.key"
 class="internal" title="GO Curation Sept2010.key">KEY</a>, [Summary](#Towards_a_GO_Annotation_Tool:_Curation_Accelerator_Software) | 12:00 | BioPivot: Applying Microsoft Live Labs Pivot to Problems in Bioinformatics | Steve Taylor | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ae/BioPivot_Sept2010.pdf"
 class="internal" title="BioPivot Sept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a2/BioPivot_Sept2010.ppt"
-class="internal" title="BioPivot Sept2010.ppt">PPT</a>, [Summary](#BioPivot) | 12:30 | Catered Lunch | 13:45 | CRAWL (<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> RESTful Access Web-service Layer) | [Giles Verlarde](/wiki/User:Buggy) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/CRAWL_Sept2010.pdf" class="internal"
+class="internal" title="BioPivot Sept2010.ppt">PPT</a>, [Summary](#BioPivot) | 12:30 | Catered Lunch | 13:45 | CRAWL (<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> RESTful Access Web-service Layer) | Giles Verlarde | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/CRAWL_Sept2010.pdf" class="internal"
 title="CRAWL Sept2010.pdf">PDF</a>, [Summary](#CRAWL_.28Chado_RESTful_Access_Web-service_Layer.29_-_a_programmatic_interface_for_querying_pathogen_genomics_data) | 14:15 | Lessons the GMOD community can glean from the <a
 href="http://www.slideshare.net/bosc2010/gardler-bosc2010-communitydevelopmentattheasf"
-class="external text" rel="nofollow">Apache Software Foundation</a> | [Summary](#Lessons_from_the_Apache_Community) | 14:45 | Lightning talks | [Summary](#Lightning_Talks) | | [GBrowse 2 and JBrowse Features](#GBrowse_2_and_JBrowse_Features) | [Scott Cain](/wiki/User:Scott) | [Summary](#GBrowse_2_and_JBrowse_Features) | | [CpG Island and STR Annotator Plugins](#CpG_Island_and_STR_Annotator_Plugins) | Joan Pontius | [Summary](#CpG_Island_and_STR_Annotator_Plugins) | | [GMOD Sustainability and Organization](#GMOD_Sustainability_and_Organization) | [Dave Clements](/wiki/User:Clements) | [Summary](#GMOD_Sustainability_and_Organization) | 15:15 | Break | ## Wednesday & Thursday, 15-16 September
+class="external text" rel="nofollow">Apache Software Foundation</a> | [Summary](#Lessons_from_the_Apache_Community) | 14:45 | Lightning talks | [Summary](#Lightning_Talks) | | [GBrowse 2 and JBrowse Features](#GBrowse_2_and_JBrowse_Features) | Scott Cain | [Summary](#GBrowse_2_and_JBrowse_Features) | | [CpG Island and STR Annotator Plugins](#CpG_Island_and_STR_Annotator_Plugins) | Joan Pontius | [Summary](#CpG_Island_and_STR_Annotator_Plugins) | | [GMOD Sustainability and Organization](#GMOD_Sustainability_and_Organization) | Dave Clements | [Summary](#GMOD_Sustainability_and_Organization) | 15:15 | Break | ## Wednesday & Thursday, 15-16 September
 
 [GMOD Europe 2010](/wiki/GMOD_Europe_2010) continued after
 the GMOD meeting, starting with the [Satellite
@@ -496,19 +496,19 @@ of current resources and update on DAS Meeting Cambridge 2010</a></li>
 
 ## The State of GMOD
 
-[<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c0/ScottSept2010.jpg" width="100"
-height="135" alt="Scott Cain" />](/wiki/User:Scott)
+<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c0/ScottSept2010.jpg" width="100"
+height="135" alt="Scott Cain" />
 
-[Scott Cain](/wiki/User:Scott),
+Scott Cain,
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/TheStateofGMODSept2010.pdf"
 class="internal" title="TheStateofGMODSept2010.pdf">PDF</a>
 
 GMOD is:
 
 - A set of interoperable open-source **software** components for
-  visualizing, annotating, and managing biological data.
+ visualizing, annotating, and managing biological data.
 - An active **community** of developers and users asking diverse
-  questions, and facing common challenges, with their biological data.
+ questions, and facing common challenges, with their biological data.
 
 These two things are equally important.
 
@@ -525,30 +525,30 @@ GMOD is used by
 [GBrowse](/wiki/GBrowse)
 
 - Releases
-  - 1.70, 2.14
+ - 1.70, 2.14
 - Features
-  - Rubberband region selection
-  - Drag and drop track ordering
-  - Collapsible tracks
-  - Popup balloons
-  - Allele/gentotype frequency
-  - Geolocation popups
-  - Circular genome support (1.71)
-  - Asynchronous updates (2.0)
-  - User authentication
-  - Multiple server support (2.0)
-  - SQLite, SAMtools (NGS) adaptors
+ - Rubberband region selection
+ - Drag and drop track ordering
+ - Collapsible tracks
+ - Popup balloons
+ - Allele/gentotype frequency
+ - Geolocation popups
+ - Circular genome support (1.71)
+ - Asynchronous updates (2.0)
+ - User authentication
+ - Multiple server support (2.0)
+ - SQLite, SAMtools (NGS) adaptors
 
 [JBrowse](/wiki/JBrowse)
 
 - GMOD's 2nd Generation Genome Browser
 - It's _fast_
 - Completely new genome browser implementation:
-  - Client side rendering
-  - Heavy use of [AJAX](/wiki/Glossary#AJAX)
-  - Uses [JSON](/wiki/Glossary#JSON) and <a
-    href="http://bioinformatics.oxfordjournals.org/cgi/content/short/23/11/1386"
-    class="external text" rel="nofollow">Nested Containment Lists</a>
+ - Client side rendering
+ - Heavy use of [AJAX](/wiki/Glossary#AJAX)
+ - Uses [JSON](/wiki/Glossary#JSON) and <a
+ href="http://bioinformatics.oxfordjournals.org/cgi/content/short/23/11/1386"
+ class="external text" rel="nofollow">Nested Containment Lists</a>
 
 [GBrowse_syn](/wiki/GBrowse_syn)
 
@@ -561,23 +561,23 @@ GMOD is used by
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 
 - Chado is the GMOD [schema](/wiki/Glossary#Schema); it is modular
-  and extensible, allowing the addition of new data types “easily.”
-  Covered data types in ontologies, organisms, sequence features,
-  genotypes, phenotypes, libraries, stocks, microarrays, with natural
-  diversity recently being rolled into the schema (but not yet
-  released).
+ and extensible, allowing the addition of new data types “easily.”
+ Covered data types in ontologies, organisms, sequence features,
+ genotypes, phenotypes, libraries, stocks, microarrays, with natural
+ diversity recently being rolled into the schema (but not yet
+ released).
 - 1.0 Release solidified the Chado that most people were already using
-  from source.
+ from source.
 - 1.1 Introduced support for GBrowse to use full text searching and
-  “summary statistics” (i.e., feature density plots). Version 0.30 of
-  <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
-  class="external text" rel="nofollow">Bio::DB::Das::Chado</a> is needed
-  for these functions.
+ “summary statistics” (i.e., feature density plots). Version 0.30 of
+ <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
+ class="external text" rel="nofollow">Bio::DB::Das::Chado</a> is needed
+ for these functions.
 
 [Tripal](/wiki/Tripal)
 
 - New (2009) web front end for
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases
 - Set of Drupal modules
 - Modules approximately correspond to Chado modules
 - Easy to create new modules
@@ -589,10 +589,10 @@ GMOD is used by
 - Provides graphical user interface (GUI) to wiki tables
 - Can also provide GUI to database tables
 - Work in progress to use this with
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 - Potential to give wiki access to a Chado database
 - See <a href="http://ecoliwiki.net" class="external free"
-  rel="nofollow">http://ecoliwiki.net</a>
+ rel="nofollow">http://ecoliwiki.net</a>
 
 [BioMart](/wiki/BioMart)
 
@@ -600,8 +600,8 @@ GMOD is used by
 - Provides a web based query interface
 - Strong data federation
 - [BioMart
-  Workshop](/wiki/BioMart_Workshop_-_GMOD_Europe_2010)
-  on Thursday.
+ Workshop](/wiki/BioMart_Workshop_-_GMOD_Europe_2010)
+ on Thursday.
 
 [InterMine](/wiki/InterMine)
 
@@ -609,18 +609,18 @@ GMOD is used by
 - Provides a web based query interface
 - Very flexible queries and query optimization
 - [InterMine
-  Workshop](/wiki/InterMine_Workshop_-_GMOD_Europe_2010)
-  on Wednesday
+ Workshop](/wiki/InterMine_Workshop_-_GMOD_Europe_2010)
+ on Wednesday
 
 [MAKER](/wiki/MAKER)
 
 - Genome annotation pipeline for creating gene models
 - Output can be loaded into [GBrowse](/wiki/GBrowse),
-  [Apollo](/wiki/Apollo),
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, …
+ [Apollo](/wiki/Apollo),
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, …
 - Incorporates
-  - SNAP, RepeatMasker, exonerate, BLAST, Augustus, FGENESH, GeneMark,
-    MPI
+ - SNAP, RepeatMasker, exonerate, BLAST, Augustus, FGENESH, GeneMark,
+ MPI
 - Other capabilities
 - Map existing annotation onto new assemblies
 - Merge multiple legacy annotation sets into a consensus set
@@ -631,11 +631,11 @@ GMOD is used by
 [Apollo](/wiki/Apollo)
 
 - Java-based GUI application for browsing and annotating genomic
-  sequences
+ sequences
 - Can be installed via WebStart (i.e., by clicking on a link)
 - Can read/write to
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
-  [GFF3](/wiki/GFF3), GenBank, GAME XML
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+ [GFF3](/wiki/GFF3), GenBank, GAME XML
 
 ### Next [GMOD Meeting](/wiki/Meetings)?
 
@@ -646,9 +646,9 @@ width="100" height="100" alt="March 2011 GMOD Meeting" />](/wiki/GMOD_Americas_2
 
 - Next Spring Sometime:
 - ABRF: Association of Biomolecular Resource Facilities
-  - Feb. 19-22, San Antonio, TX
+ - Feb. 19-22, San Antonio, TX
 - Biology of Genomes
-  - May 10-14, Cold Spring Harbor Lab, NY
+ - May 10-14, Cold Spring Harbor Lab, NY
 - Suggestions?
 
 **Note: The next meeting is the [March 2011 GMOD
@@ -659,7 +659,7 @@ part of [GMOD Americas 2011](/wiki/GMOD_Americas_2011).**
 
 ## [Help Desk](/wiki/GMOD_Help_Desk) Update
 
-[Dave Clements](/wiki/User:Clements),
+Dave Clements,
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf" class="internal"
 title="HelpDeskSept2010.pdf">PDF</a>, <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODSeptember/HelpDeskSept2010.ppt"
 class="external text" rel="nofollow">PPT</a>
@@ -695,13 +695,13 @@ Version 1 Requirements:
 - Configurable and Extensible
 - Open source license for all users
 - Interoperable with existing [GMOD
-  Components](/wiki/GMOD_Components)
+ Components](/wiki/GMOD_Components)
 - Commitment of support
 
 For next version, want to add:
 
 - Support [mailing list](/wiki/GMOD_Mailing_Lists) that
-  is publicly archived
+ is publicly archived
 - Publicly accessible code repository
 
 Discussion favored these additions. The issue of incompatible open
@@ -721,28 +721,28 @@ Help spread the word about GMOD components and the GMOD project.
 Why?
 
 - Increased visibility leads to
-  → Increased adoption, which leads to
-  → more projects contributing back
+ → Increased adoption, which leads to
+ → more projects contributing back
 - Increased adoption & development leads to
-  → increased funding
+ → increased funding
 
 How?
 
 - [Cite](/wiki/GMOD_Promotion#Citing_GMOD) GMOD, GMOD
-  Components in your papers, presentations, grants
+ Components in your papers, presentations, grants
 - [Powered by GMOD](/wiki/Powered_by_GMOD) icons
 - [Speakers](/wiki/GMOD_Promotion#Speakers) at [your
-  event](/wiki/Calendar#GMOD_Event_List); not just
-  [Scott](/wiki/User:Scott) and
-  [Dave](/wiki/User:Clements). PIs and developers are also
-  available.
+ event](/wiki/Calendar#GMOD_Event_List); not just
+ Scott and
+ Dave. PIs and developers are also
+ available.
 - [Graphics &
-  slides](/wiki/GMOD_Promotion#Presentation_Material) for
-  your presentations, posters
+ slides](/wiki/GMOD_Promotion#Presentation_Material) for
+ your presentations, posters
 - [Presentation and event
-  promotion](/wiki/GMOD_Promotion#Presentation_and_Event_Promotion)
+ promotion](/wiki/GMOD_Promotion#Presentation_and_Event_Promotion)
 - [Brochures](/wiki/GMOD_Promotion#Brochures) (GMOD project,
-  events)
+ events)
 - [Bling!](/wiki/GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_...)
 
 The [GMOD Promotion](/wiki/GMOD_Promotion) page launched in
@@ -750,7 +750,7 @@ July 2010.
 
 ### [GMOD Logo Program](/wiki/GMOD_Logo_Program)
 
-|     |     |     |     | --- | --- | --- | --- | --- | --- | --- | --- | --- | <img
+| | | | | --- | --- | --- | --- | --- | --- | --- | --- | --- | <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/100px-ApolloLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/150px-ApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/200px-ApolloLogo.png 2x"
 width="100" height="36" alt="ApolloLogo.png" /> | <img
@@ -815,9 +815,9 @@ of a feather_ discussions where participants with a common interest
 discuss that topic. The satellites at this meeting were:
 
 - [Post Reference Genome
-  Tools](/wiki/Post_Reference_Genome_Tools)
+ Tools](/wiki/Post_Reference_Genome_Tools)
 - [Community
-  Annotation](/wiki/Community_Annotation_-_September_2010_Satellite)
+ Annotation](/wiki/Community_Annotation_-_September_2010_Satellite)
 
 See the satellite meeting pages for summaries of the discussion.
 

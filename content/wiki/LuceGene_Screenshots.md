@@ -3,18 +3,18 @@ title: "LuceGene Screenshots"
 ---
 # LuceGene Screenshots
 
-  Screenshots](#Screenshots)
-  - [Index](#Index)
-  - [Basic
-    Search: UniProt](#Basic_Search:_UniProt)
-  - [Results:
-    UniProt](#Results:_UniProt)
-  - [Batch
-    Search: Sequences](#Batch_Search:_Sequences)
-  - [Results:
-    Sequences](#Results:_Sequences)
-  - [Data
-    Library](#Data_Library)
+ Screenshots](#Screenshots)
+ - [Index](#Index)
+ - [Basic
+ Search: UniProt](#Basic_Search:_UniProt)
+ - [Results:
+ UniProt](#Results:_UniProt)
+ - [Batch
+ Search: Sequences](#Batch_Search:_Sequences)
+ - [Results:
+ Sequences](#Results:_Sequences)
+ - [Data
+ Library](#Data_Library)
 
 ## Screenshots
 

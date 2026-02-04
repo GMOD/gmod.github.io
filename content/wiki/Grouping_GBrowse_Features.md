@@ -19,7 +19,7 @@ or "3" depending on whether the read was from the 5' or 3' ends of the
 insert. To group these pairs by a dotted line, specify the
 "group_pattern" option in the appropriate track section:
 
-         group_pattern =  /\.[53]$/
+ group_pattern = /\.[53]$/
 
 At render time, GBrowse will strip off this pattern from the names of
 all features in the EST track and group those that have a common base
@@ -32,7 +32,7 @@ pattern results in related features sharing the same name. For example,
 if the convention were "est.for.501283" and "est.rev.501283", then this
 grouping pattern would have the desired effect:
 
-         group_pattern = /\.(for|rev)\./
+ group_pattern = /\.(for|rev)\./
 
 Don't forget to escape regular expression meta-characters and to
 consider the various ways in which the regular expression might break.
@@ -53,14 +53,14 @@ in which each quantitative data point is a separate feature, but at run
 time related features are grouped together to create a composite feature
 that can be graphed. The syntax is:
 
-    group_on = grouping_field
+ group_on = grouping_field
 
 Where *grouping_field* is one of the feature's methods. Typically, you
 will group on the **display_name** field in order to group features
 together by their human-readable name. In this case, the **group_on**
 field would read:
 
-    group_on = display_name
+ group_on = display_name
 
 For very dense quantitative data, you should use
 <a href="http://genome.ucsc.edu/goldenPath/help/wiggle.html"

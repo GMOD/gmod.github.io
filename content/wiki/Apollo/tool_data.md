@@ -48,11 +48,11 @@ title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%25
 <sup>[\[1\]](#cite_note-PMID:19439563-1)</sup>
 
 - [Apollo](../Apollo.1): a sequence annotation editor.
-  <span class="Z3988"
-  title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F12537571">PMID:12537571</span>
-  <sup>[\[2\]](#cite_note-PMID:12537571-2)</sup>
-  <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/Gb-2002-3-12-research0082.pdf"
-  class="internal" title="Gb-2002-3-12-research0082.pdf">PDF</a>
+ <span class="Z3988"
+ title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F12537571">PMID:12537571</span>
+ <sup>[\[2\]](#cite_note-PMID:12537571-2)</sup>
+ <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/Gb-2002-3-12-research0082.pdf"
+ class="internal" title="Gb-2002-3-12-research0082.pdf">PDF</a>
 
 \| presentations = \*
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
@@ -65,19 +65,19 @@ process at the [November 2007 GMOD
 Meeting](../November_2007_GMOD_Meeting).
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Apollo.ppt" class="internal"
-  title="Apollo.ppt">Progress Report</a> - from [May 2005 GMOD
-  Meeting](../May_2005_GMOD_Meeting)
+ title="Apollo.ppt">Progress Report</a> - from [May 2005 GMOD
+ Meeting](../May_2005_GMOD_Meeting)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/Harris_040527.ppt" class="internal"
-  title="Harris 040527.ppt">Future Plans</a> - from [April 2004 GMOD
-  Meeting](../April_2004_GMOD_Meeting)
+ title="Harris 040527.ppt">Future Plans</a> - from [April 2004 GMOD
+ Meeting](../April_2004_GMOD_Meeting)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/Apollo.GMOD.ppt" class="internal"
-  title="Apollo.GMOD.ppt">Progress Report</a> - from [September 2003
-  GMOD
-  Meeting](../September_2003_GMOD_Meeting)
+ title="Apollo.GMOD.ppt">Progress Report</a> - from [September 2003
+ GMOD
+ Meeting](../September_2003_GMOD_Meeting)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Apollo.GMOD.May2003.ppt"
-  class="internal" title="Apollo.GMOD.May2003.ppt">Progress Report</a> -
-  from [May 2003 GMOD
-  Meeting](../May_2003_GMOD_Meeting)
+ class="internal" title="Apollo.GMOD.May2003.ppt">Progress Report</a> -
+ from [May 2003 GMOD
+ Meeting](../May_2003_GMOD_Meeting)
 
 \| tutorials =
 
@@ -95,11 +95,11 @@ Flash based tutorials on how to use Apollo, using rice as an example.
 Sections of particular interest are
 
 - <a href="http://dynamicgene.dnalc.org/annotation/annotation.html"
-  class="external text" rel="nofollow">Annotation</a> - how to use
-  Apollo
+ class="external text" rel="nofollow">Annotation</a> - how to use
+ Apollo
 - <a href="http://dynamicgene.dnalc.org/resources/resources.html"
-  class="external text" rel="nofollow">Resources</a> - how to download
-  sample data and install Apollo on an MS Windows system.
+ class="external text" rel="nofollow">Resources</a> - how to download
+ sample data and install Apollo on an MS Windows system.
 <a href="http://apollo.berkeleybop.org/current/userguide.html"
 class="external text" rel="nofollow">Apollo user guide</a>
 The current user guide, which has comprehensive instructions for
@@ -109,11 +109,11 @@ installation and usage of Apollo.
 
 |
 |----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| [Apollo](../Apollo.1) and [WebApollo](../WebApollo.1) | <a href="https://lists.lbl.gov/sympa/info/apollo" class="external text" |  |  |
+| | Mailing List Link | Description | Archive(s) |
+| [Apollo](../Apollo.1) and [WebApollo](../WebApollo.1) | <a href="https://lists.lbl.gov/sympa/info/apollo" class="external text" | | |
 
 class="external text" rel="nofollow">Gmane</a> (2008/04-2010/10), <a href="http://gmod.827538.n3.nabble.com/Apollo-f815553.html"
-class="external text" rel="nofollow">Nabble</a> (2010/05+) |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts"
+class="external text" rel="nofollow">Nabble</a> (2010/05+) | | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts"
 class="external text" rel="nofollow">gmod-apollo-cmts</a> | [Apollo](../Apollo.1) and [WebApollo](../WebApollo.1) code updates. Please submit bug reports to the <a
 href="http://sourceforge.net/tracker/?atid=462763&amp;group_id=27707&amp;func=browse"
 class="external text" rel="nofollow">Apollo bug tracker at

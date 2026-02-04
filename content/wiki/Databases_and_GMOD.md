@@ -8,43 +8,43 @@ This introduces the broad topic of databases in GMOD. It introduces some
 databases. It also covers how databases are implemented and used in
 GMOD, and what database management system choices are available.
 
-  Terminology</span>](#Database_Terminology)
-  - [What's a
-    Database?](#What.27s_a_Database.3F)
-    - [Database](#Database)
-    - [Database Management
-      System](#Database_Management_System)
-    - [Database Schema](#Database_Schema)
-    - [Database Web
-      Site](#Database_Web_Site)
-  - [Relational
-    Database Terminology](#Relational_Database_Terminology)
+ Terminology</span>](#Database_Terminology)
+ - [What's a
+ Database?](#What.27s_a_Database.3F)
+ - [Database](#Database)
+ - [Database Management
+ System](#Database_Management_System)
+ - [Database Schema](#Database_Schema)
+ - [Database Web
+ Site](#Database_Web_Site)
+ - [Relational
+ Database Terminology](#Relational_Database_Terminology)
 - [GMOD Database
-  Components](#GMOD_Database_Components)
-  - [Chado](#Chado)
-  - [BioMart](#BioMart)
-  - [InterMine](#InterMine)
-  - [Database
-    Tools](#Database_Tools)
-  - [GMOD
-    Components that Require a
-    DBMS](#GMOD_Components_that_Require_a_DBMS)
+ Components](#GMOD_Database_Components)
+ - [Chado](#Chado)
+ - [BioMart](#BioMart)
+ - [InterMine](#InterMine)
+ - [Database
+ Tools](#Database_Tools)
+ - [GMOD
+ Components that Require a
+ DBMS](#GMOD_Components_that_Require_a_DBMS)
 - [GMOD DBMS
-  Choices](#GMOD_DBMS_Choices)
-  - [Can I Use
-    Something Besides the Default
-    DBMS?](#Can_I_Use_Something_Besides_the_Default_DBMS.3F)
-  - [DBMSs in
-    Use in the GMOD
-    Community](#DBMSs_in_Use_in_the_GMOD_Community)
-    - [PostgreSQL](#PostgreSQL)
-    - [MySQL](#MySQL)
-    - [SQLite](#SQLite)
-    - [DB2](#DB2)
-    - [Oracle](#Oracle)
-    - [Sybase](#Sybase)
+ Choices](#GMOD_DBMS_Choices)
+ - [Can I Use
+ Something Besides the Default
+ DBMS?](#Can_I_Use_Something_Besides_the_Default_DBMS.3F)
+ - [DBMSs in
+ Use in the GMOD
+ Community](#DBMSs_in_Use_in_the_GMOD_Community)
+ - [PostgreSQL](#PostgreSQL)
+ - [MySQL](#MySQL)
+ - [SQLite](#SQLite)
+ - [DB2](#DB2)
+ - [Oracle](#Oracle)
+ - [Sybase](#Sybase)
 - [See
-  Also](#See_Also)
+ Also](#See_Also)
 
 ## Database Terminology
 
@@ -151,25 +151,25 @@ Many aspects of the web app can be configured and branded.
 ### Database Tools
 
 - [Argos](/wiki/Argos), a.k.a. Flybase-NG, a.k.a. biodb, is designed
-  to provide automatic replication, installation and updates of genome
-  and organism databases and information servers, including FlyBase and
-  euGenes. It should be not too difficult to add other organism/genome
-  services to this replication structure.
+ to provide automatic replication, installation and updates of genome
+ and organism databases and information servers, including FlyBase and
+ euGenes. It should be not too difficult to add other organism/genome
+ services to this replication structure.
 - [GMODTools](/wiki/GMODTools) is a Perl package that generates
-  Fasta, [GFF](/wiki/GFF), DNA and other bulk genome annotation files
-  from <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-  databases.
+ Fasta, [GFF](/wiki/GFF), DNA and other bulk genome annotation files
+ from <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+ databases.
 - [Modware](/wiki/Modware) is an object-oriented Perl API for
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. It allows
-  object-oriented querying and loading of a Chado database and returns
-  data structures that a programmer can readily use without knowing the
-  details of how the object is stored in the relational schema.
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. It allows
+ object-oriented querying and loading of a Chado database and returns
+ data structures that a programmer can readily use without knowing the
+ details of how the object is stored in the relational schema.
 - [XORT](/wiki/XORT) is a utility written in Perl that can be used to
-  read to and write from a [relational
-  schema](/wiki/Glossary#Schema) using
-  [XML](/wiki/Glossary#XML) as an interchange format. In GMOD XORT
-  is frequently used to transfer data to and from
-  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
+ read to and write from a [relational
+ schema](/wiki/Glossary#Schema) using
+ [XML](/wiki/Glossary#XML) as an interchange format. In GMOD XORT
+ is frequently used to transfer data to and from
+ <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 ### GMOD Components that Require a DBMS
 

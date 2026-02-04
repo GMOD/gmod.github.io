@@ -16,7 +16,7 @@ the type, Identify the file for the data disk on the host machine; for
 2.04, it is probably "GMOD in a Box 2.04-disk2.vmdk". Run this command
 on that file:
 
-     VBoxManage clonehd GMOD\ in\ a\ Box\ 2.04-disk2.vmdk GMOD\ in\ a\ Box\ 2.05-data-disk.vdi --format VDI --variant Standard
+ VBoxManage clonehd GMOD\ in\ a\ Box\ 2.04-disk2.vmdk GMOD\ in\ a\ Box\ 2.05-data-disk.vdi --format VDI --variant Standard
 
 This creates a VDI file that we can resize.
 
@@ -25,7 +25,7 @@ This creates a VDI file that we can resize.
 To resize, run this command on the host machine on the disk that you
 want to resize:
 
-     VBoxManage modifyhd GMOD\ in\ a\ Box\ 2.05-data-disk.vdi --resize 10000
+ VBoxManage modifyhd GMOD\ in\ a\ Box\ 2.05-data-disk.vdi --resize 10000
 
 where the "10000" is the number of megabytes of the resized disk (so
 this is approximately 10GB). Now you can continue with adding this disk

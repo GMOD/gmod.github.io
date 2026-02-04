@@ -6,7 +6,7 @@ By default this support is enabled, but there no particular performance
 penalty if you choose not to take advantage of it. If you plan never to
 use the feature, set it to a false (zero) value:
 
-     renderfarm = 0
+ renderfarm = 0
 
 slave_timeout
 When [running a GBrowse2 render
@@ -38,7 +38,7 @@ wish to adjust this upward on a system with 4 or more CPUs. A good
 choice is between one and two times the number of CPUs/cores on the
 server system:
 
-    max_render_processes = 8
+ max_render_processes = 8
 
 #### Appearance Settings
 
@@ -86,9 +86,9 @@ or newlines. To associate specific stylesheets with different media
 types, place the media type(s) in parentheses and append them to the
 stylesheet, as in the following example:
 
-     stylesheet = css/gbrowse.css(screen)
-                  http://www.example.com/hires.css(paper,projection)
-                  http://www.example.com/audio.css(audio)
+ stylesheet = css/gbrowse.css(screen)
+ http://www.example.com/hires.css(paper,projection)
+ http://www.example.com/audio.css(audio)
 
 truecolor
 If set to a true value, then the tracks will be rendered as full-color
@@ -126,8 +126,8 @@ browser. In this example, the browser assumes a default width of 1024
 pixels, but offers the user a menu of five widths ranging from 450 to
 1280 pixels.
 
-    image widths    = 450 640 800 1024 1280
-    default width   = 1024
+ image widths = 450 640 800 1024 1280
+ default width = 1024
 
 pad_left, pad_right
 These options control how much additional whitespace (in pixels) to
@@ -194,9 +194,9 @@ This option controls whether a category or subcategory is open or closed
 when the user first visits the page, or resets his state with the
 "Reset" menu choice. The format is as shown in this example:
 
-    category state = Genes           open
-                     Genes:Coding    open
-                     Genes:Noncoding closed
+ category state = Genes open
+ Genes:Coding open
+ Genes:Noncoding closed
 
 Categories are identified by their names; subcategories and
 sub-subcategories are indicated by dividing the subcategories by ":"
@@ -334,7 +334,7 @@ header, footer
 
 These two options place HTML at the top or bottom of the page. Example:
 
-     header =
+ header =
 
 You can create an unlimited number of subtracks within a single major
 track in order to group a series of datasets that are logically linked,
@@ -365,11 +365,11 @@ You need to know the Perl programming language to take advantage of this
 feature. The general format of this type of option is:
 
 ``` de1
-  option name = sub {
-              some perl code;
-              some more perl code;
-              even more perl code;
-              }
+ option name = sub {
+ some perl code;
+ some more perl code;
+ even more perl code;
+ }
 ```
 
 The value must begin with the sequence "sub {" in order to be recognized
@@ -397,11 +397,11 @@ this bgcolor subroutine will call the feature's primary_tag() method,
 and return "blue" if it is an exon, "orange" otherwise:
 
 ``` de1
-  bgcolor = sub {
-          my $feature = shift;
-          return "blue" if $feature->primary_tag eq 'exon';
-          return "orange";
-          }
+ bgcolor = sub {
+ my $feature = shift;
+ return "blue" if $feature->primary_tag eq 'exon';
+ return "orange";
+ }
 ```
 
 See the manual page for
@@ -417,24 +417,24 @@ example that draws the first and last parts of a feature in blue and the
 rest in red:
 
 ``` de1
-   sub {
-         my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
-         return 'blue' if $part_no == 0;                # zero-based indexing!
-         return 'blue' if $part_no == $total_parts-1;   # zero-based indexing!
-         return 'red';
-         }
+ sub {
+ my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
+ return 'blue' if $part_no == 0; # zero-based indexing!
+ return 'blue' if $part_no == $total_parts-1; # zero-based indexing!
+ return 'red';
+ }
 ```
 
 If you need access to information in the parent of the feature (e.g. in
 a multipart feature), you can call the glyph's parent_feature() method:
 
 ``` de1
-  sub {
-         my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
-         my $parent = $glyph->parent_feature;
-         return 'blue' if $parent->name =~ /Blue\d+/;
-         return 'red';
-         }
+ sub {
+ my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
+ my $parent = $glyph->parent_feature;
+ return 'blue' if $parent->name =~ /Blue\d+/;
+ return 'red';
+ }
 ```
 
 The parent_feature() method was added to Bioperl on 17 April 2008. If
@@ -450,10 +450,10 @@ Bio::Graphics::Glyph object corresponding to the current track within
 the panel:
 
 ``` de1
-  link = sub {
-             my ($feature, $panel, $track) = @_;
-             ... do something
-             }
+ link = sub {
+ my ($feature, $panel, $track) = @_;
+ ... do something
+ }
 ```
 
 Ordinarily you will only need to use the feature object. The other
@@ -461,11 +461,11 @@ arguments are useful to look up panel-specific settings such as the
 pixel width of the panel or the state of the "flip" setting:
 
 ``` de1
-  title = sub {
-          my ($feature,$panel,$track) = @_;
-          my $name = $feature->display_name;
-          return $panel->flip ? "$name (flipped)" : $name;
-       }
+ title = sub {
+ my ($feature,$panel,$track) = @_;
+ my $name = $feature->display_name;
+ return $panel->flip ? "$name (flipped)" : $name;
+ }
 ```
 
 ### Named Subroutine References
@@ -477,46 +477,46 @@ configuration file. init_code should contain nothing but subroutine
 definitions and other initialization routines. For example:
 
 ``` de1
-  init_code = sub score_color {
-                my $feature = shift;
-                if ($feature->score > 50) {
-                  return 'red';
-                } else {
-                  return 'green';
-                }
-              }
-              sub score_height {
-                my $feature = shift;
-                if ($feature->score > 50) {
-                  return 10;
-                } else {
-                  return 5;
-                }
-              }
+ init_code = sub score_color {
+ my $feature = shift;
+ if ($feature->score > 50) {
+ return 'red';
+ } else {
+ return 'green';
+ }
+ }
+ sub score_height {
+ my $feature = shift;
+ if ($feature->score > 50) {
+ return 10;
+ } else {
+ return 5;
+ }
+ }
 ```
 
 Then simply refer to these subroutines using the \\name syntax:
 
-       [EST_ALIGNMENTS]
-       glyph = generic
-       bgcolor = \&score_color
-       height  = \&score_height
+ [EST_ALIGNMENTS]
+ glyph = generic
+ bgcolor = \&score_color
+ height = \&score_height
 
 You can declare global variables in the init_code subroutine if you use
 "no strict 'vars';" at the top of the section:
 
 ``` de1
-    init_code = no strict 'vars';
-                $HEIGHT = 10;
-                sub score_height {
-                  my $feature = shift;
-                  $HEIGHT++;
-                  if ($feature->score > 50) {
-                    return $HEIGHT*2;
-                  } else {
-                    return $HEIGHT;
-                  }
-                }
+ init_code = no strict 'vars';
+ $HEIGHT = 10;
+ sub score_height {
+ my $feature = shift;
+ $HEIGHT++;
+ if ($feature->score > 50) {
+ return $HEIGHT*2;
+ } else {
+ return $HEIGHT;
+ }
+ }
 ```
 
 Due to the way the configuration file is parsed, there must be no empty
@@ -528,10 +528,10 @@ anonymous subroutines, will go into a package that changes unpredictably
 each time you load the page. If you need a predictable package name, you
 can define it this way:
 
-       init_code = package My; sub score_height { .... }
+ init_code = package My; sub score_height { .... }
 
-       [EST_ALIGNMENTS]
-       height = \&My::score_height
+ [EST_ALIGNMENTS]
+ height = \&My::score_height
 
 ### Using Pipes in the GBrowse.conf Data Source Name
 
@@ -540,10 +540,10 @@ rather than using a static file. To do this, you can give GBrowse.conf a
 "path" option that uses Perl's "piped open" syntax to read the output of
 a script. For example:
 
-     # this is in GBrowse.conf
-     [modENCODE_preview]
-     description = modENCODE preview database
-     path        = /usr/local/modencode/bin/preview.pl |
+ # this is in GBrowse.conf
+ [modENCODE_preview]
+ description = modENCODE preview database
+ path = /usr/local/modencode/bin/preview.pl |
 
 The script (preview.pl in this example) must print a correctly formatted
 GBrowse datasource configuration file to its standard output.
@@ -552,24 +552,24 @@ GBrowse datasource configuration file to its standard output.
 you can use a regular expression as the stanza datasource name, allowing
 you to pass extracted subexpressions to the script. For example:
 
-    [=~modENCODE_preview_v(\d+)]
-     description = modENCODE preview database
-     path        = /usr/local/modencode/bin/preview.pl $1 |
+ [=~modENCODE_preview_v(\d+)]
+ description = modENCODE preview database
+ path = /usr/local/modencode/bin/preview.pl $1 |
 
 The "=~" prefix is required to turn on regular expression scanning. This
 will match any data source of the format "modENCODE_preview_v123" where
 "123" is a series of digits. The digits will be extracted using the
 regular expression and passed to preview.pl as an argument:
 
-    /usr/local/modencode/bin/preview.pl 123 |
+ /usr/local/modencode/bin/preview.pl 123 |
 
 You can then invoke GBrowse with any of the following URLs and have the
 indicated script return the appropriate data source configuration data
 on its standard output:
 
-    http: //your.host/gb2/gbrowse/modENCODE_preview_v1
-    http: //your.host/gb2/gbrowse/modENCODE_preview_v2
-    http: //your.host/gb2/gbrowse/modENCODE_preview_v42
+ http: //your.host/gb2/gbrowse/modENCODE_preview_v1
+ http: //your.host/gb2/gbrowse/modENCODE_preview_v2
+ http: //your.host/gb2/gbrowse/modENCODE_preview_v42
 
 ## Controlling the gbrowse_details page
 
@@ -583,10 +583,10 @@ user-defined tag/value attributes set in Column 9 of the
 You can control, to some extent, the formatting of the tag value table
 by providing a configuration stanza with the following format:
 
-     [feature_type:details]
-     tag1 = formatting rule
-     tag2 = formatting rule
-     tag3 = formatting rule
+ [feature_type:details]
+ tag1 = formatting rule
+ tag2 = formatting rule
+ tag3 = formatting rule
 
 "feature_type" is the type of the feature you wish to control. For
 example, "gene:sgd" or simply "gene". You may also specify a
@@ -613,20 +613,20 @@ through.
 For example, here is a simple way to boldface the Type field, italicize
 the Length field, and turn the Notes into a Google search:
 
-     [gene:details]
-     Type   = <b>$value</b>
-     Length = <b>$value</b>
-     Note  = <a href="http://www.google.com/search?q=$value">$value</a>
+ [gene:details]
+ Type = <b>$value</b>
+ Length = <b>$value</b>
+ Note = <a href="http://www.google.com/search?q=$value">$value</a>
 
 If you provide a callback, the callback subroutine will be invoked with
 three arguments. WARNING: the three arguments are different from the
 ones passed to other callbacks, and consist of the tag value, the tag
 name, and the current feature:
 
-     Note = sub {
-                my($value,$tag_name,$feature) = @_;
-                do something....
-                }
+ Note = sub {
+ my($value,$tag_name,$feature) = @_;
+ do something....
+ }
 
 You can use this feature to format sequence attributes nicely. For
 example, if your features have a Translation attribute which contains
@@ -635,12 +635,12 @@ default formatting of these features. You can modify this with a
 callback that word-wraps the value into lines of at most 60 characters,
 and puts the whole thing in a \<pre\> section.
 
-    [gene:details]
-    Translation = sub {
-                   my $value = shift;
-                   $value =~ s/(\S{1,60})/$1\n/g;
-                   "<pre>$value</pre>";
-                }
+ [gene:details]
+ Translation = sub {
+ my $value = shift;
+ $value =~ s/(\S{1,60})/$1\n/g;
+ "<pre>$value</pre>";
+ }
 
 ## Linking out from gbrowse_details
 
@@ -657,20 +657,20 @@ containing a string to be transformed into the URL.
 For example, to link to a local cgi script from the following
 [GFF2](/wiki/GFF2) line:
 
-    IV     curated exon    518     550     . + .   Transcript B0273.1; local_id 11723
+ IV curated exon 518 550 . + . Transcript B0273.1; local_id 11723
 
 one might add the following stanza to the configuration file:
 
-       [local_id:DETAILS]
-       URL   = http://localhost/cgi-bin/localLookup.cgi?tag=$tag;id=$value
+ [local_id:DETAILS]
+ URL = http://localhost/cgi-bin/localLookup.cgi?tag=$tag;id=$value
 
 The URL option's value should be a URL containing one or more variables.
 Variables begin with a dollar sign (\$), and are replaced at run time
 with the information relating to the selected feature attribute.
 Recognized variables are:
 
-        $tag        The "tag" of the tag/value pair
-        $value      The "value" of the tag/value pair
+ $tag The "tag" of the tag/value pair
+ $value The "value" of the tag/value pair
 
 The value of URL can also be an anonymous subroutine, in which case the
 subroutine will be invoked with a two-element argument list consisting
@@ -678,14 +678,14 @@ of the name of the tag and its value. This example, provided by Cyril
 Pommier, will convert Dbxref tags into links to NCBI, provided that the
 value of the tag looks like an NCBI GI number:
 
-    [Dbxref:DETAILS]
-    URL = sub {
-          my ($tag,$value)=@_;
-          if ($value =~ /NCBI_gi:(.+)/){
-           return "http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi?term=$1";
-           }
-           return;
-         }
+ [Dbxref:DETAILS]
+ URL = sub {
+ my ($tag,$value)=@_;
+ if ($value =~ /NCBI_gi:(.+)/){
+ return "http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi?term=$1";
+ }
+ return;
+ }
 
 ## Restricting Access to Data Sources and Tracks with Usernames and Passwords
 
@@ -719,19 +719,19 @@ To enter metadata about a particular data source, go to the \[GENERAL\]
 section of its configuration file and enter a **metadata** option
 formatted like this one:
 
-     metadata =
-            -description             Example GBrowse database containing information from WormBase
-                     (www.wormbase.org) and modENCODE (www.modencode.org).
-            -maintainer              Lincoln Stein <lincoln.stein@gmail.com>
-            -created                 2010-1-4
-            -modified                2009-9-1
-            -authority               WS
-            -coordinates_version     180
-            -coordinates             http://www.dasregistry.org/coordsys/CS_DS109
-            -source                  Chromosome
-            -testrange               I:7385068..7387651
-            -species                 Caenorhabditis elegans
-            -taxid                   6239
+ metadata =
+ -description Example GBrowse database containing information from WormBase
+ (www.wormbase.org) and modENCODE (www.modencode.org).
+ -maintainer Lincoln Stein <lincoln.stein@gmail.com>
+ -created 2010-1-4
+ -modified 2009-9-1
+ -authority WS
+ -coordinates_version 180
+ -coordinates http://www.dasregistry.org/coordsys/CS_DS109
+ -source Chromosome
+ -testrange I:7385068..7387651
+ -species Caenorhabditis elegans
+ -taxid 6239
 
 The **metadata** option has multiple suboptions (note the required
 leading whitespace in front of them):
@@ -798,8 +798,8 @@ affects custom tracks (uploaded files) and cached images.
 
 You can clean up these files using the Unix "find" command:
 
-        cd /var/tmp/gbrowse2
-        sudo -u www-data find . -type f -atime +20 -print -exec rm {} \;
+ cd /var/tmp/gbrowse2
+ sudo -u www-data find . -type f -atime +20 -print -exec rm {} \;
 
 This will remove all files that have not been accessed for more than 20
 days. Note that the command should run as the Apache web user

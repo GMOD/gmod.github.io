@@ -10,7 +10,7 @@ title: "Bio%253A%253AGMOD"
 Perl modules initially developed for general use, now maintained at
 <a href="http://www.wormbase.org" class="external text"
 
-  Screenshots</span>](#Demo_.26_Screenshots)
+ Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)

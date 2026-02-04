@@ -3,57 +3,57 @@ title: "Chado Manual"
 ---
 # Chado Manual
 
-  Introduction](#Introduction)
-  - [The Chado
-    Documentation's
-    Vocabulary](#The_Chado_Documentation.27s_Vocabulary)
-  - [Modularity](#Modularity)
-  - [Ontologies](#Ontologies)
-  - [Associated
-    Software](#Associated_Software)
-  - [Complexity
-    and Detail](#Complexity_and_Detail)
-  - [Data
-    Integration](#Data_Integration)
-  - [Support](#Support)
+ Introduction](#Introduction)
+ - [The Chado
+ Documentation's
+ Vocabulary](#The_Chado_Documentation.27s_Vocabulary)
+ - [Modularity](#Modularity)
+ - [Ontologies](#Ontologies)
+ - [Associated
+ Software](#Associated_Software)
+ - [Complexity
+ and Detail](#Complexity_and_Detail)
+ - [Data
+ Integration](#Data_Integration)
+ - [Support](#Support)
 - [Modules](#Modules)
-  - [Module
-    Dependencies](#Module_Dependencies)
-  - [Inter-module Linking
-    Tables](#Inter-module_Linking_Tables)
+ - [Module
+ Dependencies](#Module_Dependencies)
+ - [Inter-module Linking
+ Tables](#Inter-module_Linking_Tables)
 - [Chado Naming
-  Conventions](#Chado_Naming_Conventions)
-  - [Case
-    sensitivity](#Case_sensitivity)
-  - [Table
-    names](#Table_names)
-  - [Column
-    names](#Column_names)
-  - [Primary
-    and foreign key names](#Primary_and_foreign_key_names)
-  - [Constraints](#Constraints)
-  - [Indexes](#Indexes)
-  - [Views](#Views)
+ Conventions](#Chado_Naming_Conventions)
+ - [Case
+ sensitivity](#Case_sensitivity)
+ - [Table
+ names](#Table_names)
+ - [Column
+ names](#Column_names)
+ - [Primary
+ and foreign key names](#Primary_and_foreign_key_names)
+ - [Constraints](#Constraints)
+ - [Indexes](#Indexes)
+ - [Views](#Views)
 - [Design
-  Patterns](#Design_Patterns)
-  - [Module
-    System](#Module_System)
-  - [Module
-    Metadata](#Module_Metadata)
-  - [View
-    Layers](#View_Layers)
-  - [Inter-schema
-    Bridges](#Inter-schema_Bridges)
-    - [GODB
-      Bridge](#GODB_Bridge)
-    - [BioSQL
-      Bridge](#BioSQL_Bridge)
+ Patterns](#Design_Patterns)
+ - [Module
+ System](#Module_System)
+ - [Module
+ Metadata](#Module_Metadata)
+ - [View
+ Layers](#View_Layers)
+ - [Inter-schema
+ Bridges](#Inter-schema_Bridges)
+ - [GODB
+ Bridge](#GODB_Bridge)
+ - [BioSQL
+ Bridge](#BioSQL_Bridge)
 - [DBMS
-  Functions](#DBMS_Functions)
-  - [Function
-    Interface Definitions](#Function_Interface_Definitions)
-  - [Function
-    Implementations](#Function_Implementations)
+ Functions](#DBMS_Functions)
+ - [Function
+ Interface Definitions](#Function_Interface_Definitions)
+ - [Function
+ Implementations](#Function_Implementations)
 - [Glossary](#Glossary)
 
 ## Introduction
@@ -244,7 +244,7 @@ example, <a href="http://obofoundry.org" class="external text"
 There is also Chado Documentation in this Wiki:
 
 - [Chado - Getting
-  Started](/wiki/Chado_-_Getting_Started)
+ Started](/wiki/Chado_-_Getting_Started)
 - [Introduction to Chado](/wiki/Introduction_to_Chado)
 - [FAQ for Chado](/wiki/Chado_FAQ)
 - [Chado Tables](/wiki/Chado_Tables)
@@ -264,39 +264,39 @@ their own table variants within specific modules, or add modules of
 their own.
 
 - [Audit](/wiki/Chado_Audit_Module) - for database audit
-  trails
+ trails
 - [Companalysis](/wiki/Chado_Companalysis_Module) -
-  for data from computational analysis
+ for data from computational analysis
 - [Contact](/wiki/Chado_Contact_Module) - for people,
-  groups, and organizations
+ groups, and organizations
 - [Controlled Vocabulary (cv)](/wiki/Chado_CV_Module) - for
-  controlled vocabularies and ontologies
+ controlled vocabularies and ontologies
 - [Expression](/wiki/Chado_Expression_Module) - for
-  summaries of RNA and protein expression
+ summaries of RNA and protein expression
 - [General](/wiki/Chado_General_Module) - for
-  identifiers
+ identifiers
 - [Genetic](/wiki/Chado_Genetic_Module) - for genetic
-  data and genotypes
+ data and genotypes
 - [Library](/wiki/Chado_Library_Module) - for
-  descriptions of molecular libraries
+ descriptions of molecular libraries
 - [Mage](/wiki/Chado_Mage_Module) - for microarray data
 - [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](/wiki/Chado_Natural_Diversity_Module) -
-  for multiple experiments, such as phenotyping and genotyping
+ (ND)](/wiki/Chado_Natural_Diversity_Module) -
+ for multiple experiments, such as phenotyping and genotyping
 - [Organism](/wiki/Chado_Organism_Module) - for
-  taxonomic data
+ taxonomic data
 - [Phenotype](/wiki/Chado_Phenotype_Module) - for
-  phenotypic data
+ phenotypic data
 - [Phylogeny](/wiki/Chado_Phylogeny_Module) - for
-  organisms and phylogenetic trees
+ organisms and phylogenetic trees
 - [Publication
-  (pub)](/wiki/Chado_Publication_Module) - for
-  publications and references
+ (pub)](/wiki/Chado_Publication_Module) - for
+ publications and references
 - [Sequence](/wiki/Chado_Sequence_Module) - for
-  sequences and sequence features
+ sequences and sequence features
 - [Stock](/wiki/Chado_Stock_Module) - for specimens and
-  biological collections
+ biological collections
 - [WWW](/wiki/Chado_WWW_Module) -
 
 ### Module Dependencies
@@ -309,7 +309,7 @@ module. Many modules require the [sequence
 module](/wiki/Chado_Sequence_Module) or the [cv
 module](/wiki/Chado_CV_Module), or both.
 
-| Module       | Depends on                                                    | ------------ | ------------------------------------------------------------- | general      | _none_                                                        | organism     | general cv                                                    | pub          | general cv                                                    | cv           | general                                                       | sequence     | cv general pub organism                                       | genetic      | sequence cv general pub phenotype                             | expression   | sequence cv pub                                               | map          | sequence cv pub                                               | rad          | sequence cv pub organism contact general companalysis         | companalysis | sequence cv                                                   | contact      | cv                                                            | library      | sequence cv pub organism                                      | phenotype    | cv sequence                                                   | phylogeny    | sequence cv pub organism general                              | stock        | cv pub general organism genetic                               | www          | sequence cv pub phenotype organism expression general genetic |
+| Module | Depends on | ------------ | ------------------------------------------------------------- | general | _none_ | organism | general cv | pub | general cv | cv | general | sequence | cv general pub organism | genetic | sequence cv general pub phenotype | expression | sequence cv pub | map | sequence cv pub | rad | sequence cv pub organism contact general companalysis | companalysis | sequence cv | contact | cv | library | sequence cv pub organism | phenotype | cv sequence | phylogeny | sequence cv pub organism general | stock | cv pub general organism genetic | www | sequence cv pub phenotype organism expression general genetic |
 
 ### Inter-module Linking Tables
 
@@ -317,7 +317,7 @@ These can be thought of as floating outside of the respective modules
 they bridge, although they are generally bundled with one or the other
 module.
 
-| Linking Table                | Module    | Module     | ---------------------------- | --------- | ---------- | biomaterial_dbxref           | rad       | general    | cvterm_dbxref                | cv        | general    | environment_cvterm           | phenotype | cv         | expression_cvterm            | cv        | expression | expression_pub               | pub       | expression | feature_cvterm               | cv        | sequence   | feature_cvterm_dbxref        | sequence  | general    | feature_cvterm_pub           | sequence  | pub        | feature_dbxref               | general   | sequence   | feature_expression           | sequence  | expression | feature_genotype             | sequence  | genetic    | feature_organism             | organism  | sequence   | feature_phenotype            | sequence  | phenotype  | feature_pub                  | sequence  | pub        | feature_relationship_pub     | sequence  | pub        | feature_relationshipprop_pub | sequence  | pub        | feature_synonym              | general   | sequence   | featureloc_pub               | sequence  | pub        | featuremap_pub               | sequence  | pub        | featureprop_pub              | pub       | sequence   | gene_synonym                 | general   | sequence   | journal_dbxref               | general   | pub        | library_cvterm               | library   | cv         | library_feature              | library   | sequence   | library_pub                  | library   | pub        | organism_dbxref              | general   | organism   | phenotype_cvterm             | cv        | genetic    | phylonode_dbxref             | phylogeny | general    | phylonode_organism           | phylogeny | organism   | phylonode_pub                | phylogeny | pub        | phylotree_pub                | phylogeny | pub        | pub_dbxref                   | general   | pub        | stock_cvterm                 | stock     | cv         | stock_dbxref                 | stock     | general    | stock_genotype               | stock     | genetic    | stock_pub                    | stock     | pub        | stock_relationship_pub       | stock     | pub        | stockprop_pub                | stock     | pub        | wwwuser_author               | www       | pub        | wwwuser_cvterm               | www       | cv         | wwwuser_expression           | www       | expression | wwwuser_feature              | www       | sequence   | wwwuser_genotype             | www       | genetic    | wwwuser_organism             | www       | organism   | wwwuser_phenotype            | www       | phenotype  | wwwuser_project              | www       | general    | wwwuser_pub                  | www       | pub        |
+| Linking Table | Module | Module | ---------------------------- | --------- | ---------- | biomaterial_dbxref | rad | general | cvterm_dbxref | cv | general | environment_cvterm | phenotype | cv | expression_cvterm | cv | expression | expression_pub | pub | expression | feature_cvterm | cv | sequence | feature_cvterm_dbxref | sequence | general | feature_cvterm_pub | sequence | pub | feature_dbxref | general | sequence | feature_expression | sequence | expression | feature_genotype | sequence | genetic | feature_organism | organism | sequence | feature_phenotype | sequence | phenotype | feature_pub | sequence | pub | feature_relationship_pub | sequence | pub | feature_relationshipprop_pub | sequence | pub | feature_synonym | general | sequence | featureloc_pub | sequence | pub | featuremap_pub | sequence | pub | featureprop_pub | pub | sequence | gene_synonym | general | sequence | journal_dbxref | general | pub | library_cvterm | library | cv | library_feature | library | sequence | library_pub | library | pub | organism_dbxref | general | organism | phenotype_cvterm | cv | genetic | phylonode_dbxref | phylogeny | general | phylonode_organism | phylogeny | organism | phylonode_pub | phylogeny | pub | phylotree_pub | phylogeny | pub | pub_dbxref | general | pub | stock_cvterm | stock | cv | stock_dbxref | stock | general | stock_genotype | stock | genetic | stock_pub | stock | pub | stock_relationship_pub | stock | pub | stockprop_pub | stock | pub | wwwuser_author | www | pub | wwwuser_cvterm | www | cv | wwwuser_expression | www | expression | wwwuser_feature | www | sequence | wwwuser_genotype | www | genetic | wwwuser_organism | www | organism | wwwuser_phenotype | www | phenotype | wwwuser_project | www | general | wwwuser_pub | www | pub |
 
 ## Chado Naming Conventions
 
@@ -438,9 +438,9 @@ IMPORT get_feature_relationship_type_id(TEXT) FROM 'sequence-cv-helper';
 -----------------------------------
 
 DECLARE FUNCTION subsequence(
-srcfeature_id  INT REFERENCES feature(feature_id),
-fmin  INT,
-fmax  INT,
+srcfeature_id INT REFERENCES feature(feature_id),
+fmin INT,
+fmax INT,
 strandINT
 )
  RETURNS TEXT;
