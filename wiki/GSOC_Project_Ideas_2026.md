@@ -98,7 +98,6 @@ self-motivation are great traits for open-source programmers.
 - *Project Time:* 175-hour approximately 8 weeks
 - *Mentors:* Adam Wright \<adam.wright@oicr.on.ca\>
 
-
 ## <span id="Reactome-MCP_.2F_Stein_Lab" class="mw-headline">Reactome MCP / Stein Lab</span>
 
 - *Brief explanation:* Reactome provides users with various computational
@@ -118,6 +117,30 @@ self-motivation are great traits for open-source programmers.
 - *Skill level:* Medium
 - *Project Time:* 175-hour approximately 8 weeks
 - *Mentors:* Adam Wright \<adam.wright@oicr.on.ca\>
+
+## <span id="AI_Social_Media_Project" class="mw-headline">Development and Validation of an AI System for Real-Time Detection of Pediatric ENT Health Trends on Social Media (Pediatric Otolaryngology Lab / AI in Digital Health) / Courtot Lab</span>
+
+- *Brief explanation:* This project will develop and validate a real-time artificial intelligence (AI) application that continuously monitors major social media platforms (TikTok, YouTube, Instagram, X, and Reddit) to identify emerging health-related trends involving ear, nose, and throat (ENT) issues among children and adolescents. The system will classify and rank viral behaviors based on engagement metrics and notify pediatric otolaryngologists about potentially harmful trends or misinformation. The goal is to explore how automated social media surveillance can support early awareness and clinical decision-making in pediatric otolaryngology. 
+- *Expected results:* expected outcomes include:
+    - A working prototype of a real-time social media monitoring pipeline.
+    - Automated collection of public data via platform APIs.
+    - NLP/LLM-based classification and ranking of pediatric ENT-related trends.
+    - A reporting dashboard visualizing trends, engagement metrics, and risk flags for clinicians.
+Evaluation of model performance (precision, recall, accuracy) and preliminary assessment of clinical usefulness with pediatric otolaryngologists.
+Documentation and open-source code suitable for further research and extension. 
+- *Project Home Page URL:*
+  <a href="https://courtotlab.genomeinformatics.org/" class="external text"
+  rel="nofollow">Host lab webpage, no specific project page yet</a>
+- *Project paper reference and URL: No existing paper yet; this project will contribute to future publications on AI-driven social media surveillance in pediatric otolaryngology.*
+- *Knowledge prerequisites:* Programming languages: Python (for AI/NLP and data pipelines), JavaScript/TypeScript (for frontend)
+Experience with:
+    - REST APIs and social media data extraction
+    - NLP and/or LLM integration
+    - Basic machine learning workflows
+    - Full-stack development (backend services + frontend dashboards)
+- *Skill level:* Advanced
+- *Project Time:* 350-hour approximately 8 weeks
+- *Mentors:* Melanie Courtot, OICR and UoT \<mcourtot@oicr.on.ca\>; Jochen Weile, OICR, \<jweile@oicr.on.ca\> 
 
 # <span id="Project_template" class="mw-headline">Project template</span>
 
