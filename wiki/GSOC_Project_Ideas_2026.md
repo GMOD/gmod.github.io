@@ -64,6 +64,16 @@ self-motivation are great traits for open-source programmers.
 - *Project Time:* 175-hour approximately 8 weeks
 - *Mentors:* Adam Wright \<adam.wright@oicr.on.ca\>
 
+## <span id="Clinical_Trial_Finder_.2F_Stein_Lab" class="mw-headline">Patient-Facing Clinical Trial Chatbot with Interactive Map / Stein and Pai Labs</span>
+
+- *Brief explanation:* Cancer patients are often left on their own to find clinical trials of cutting-edge therapies. This project seeks to develop an LLM-driven chatbot and interactive map that lets patients describe their situation and find nearby clinical trial sites that they may be eligible for.
+- *Expected results:* As a result of this project, patients will be able to more effectively discover clinical trials, learn more about them, and contact the study doctors to seek enrollment.
+- *Project Home Page URL:* There is no project web page at the moment, but you can get an idea of the type of underlying database we will be using at <a href="https://www.cancertrialscanada.ca/" >the Cancer Trials Canada</a> website.
+- *Knowledge prerequisites:* SQL, Python, React (TypeScript), familiarity with Chainlit (LLM) and Mapbox (Geomapping) APIs
+- *Skill level:* Medium
+- *Project Time:* 175-hour approximately 8 weeks
+- *Mentors:* Lincoln Stein \<lincoln.stein@gmail.com\>, Shraddha Pai \<spai@oicr.on.ca\>.
+
 ## <span id="Pathway_Reasoning_with_LLM_.2F_Stein_Lab" class="mw-headline">Pathway Reasoning with LLM / Stein Lab</span>
 
 - *Brief explanation:* Reactome houses a meticulously curated repository
