@@ -61,7 +61,7 @@ self-motivation are great traits for open-source programmers.
   of curated biological pathways in a public knowledgebase"</a>
 - *Knowledge prerequisites:* Python, R, Julia
 - *Skill level:* Medium
-- *Project Time:* 175-hour approximately 8 weeks
+- *Project Time:* 175-hour approximately 10 weeks
 - *Mentors:* Adam Wright \<adam.wright@oicr.on.ca\>
 
 ## <span id="Clinical_Trial_Finder_.2F_Stein_Lab" class="mw-headline">Patient-Facing Clinical Trial Chatbot with Interactive Map / Stein and Pai Labs</span>
@@ -71,7 +71,7 @@ self-motivation are great traits for open-source programmers.
 - *Project Home Page URL:* There is no project web page at the moment, but you can get an idea of the type of underlying database we will be using at <a href="https://www.cancertrialscanada.ca/" >the Cancer Trials Canada</a> website.
 - *Knowledge prerequisites:* SQL, Python, React (TypeScript), familiarity with Chainlit (LLM) and Mapbox (Geomapping) APIs
 - *Skill level:* Medium
-- *Project Time:* 175-hour approximately 8 weeks
+- *Project Time:* 175-hour approximately 10 weeks
 - *Mentors:* Lincoln Stein \<lincoln.stein@gmail.com\>, Shraddha Pai \<spai@oicr.on.ca\>.
 
 ## <span id="Pathway_Reasoning_with_LLM_.2F_Stein_Lab" class="mw-headline">Pathway Reasoning with LLM / Stein Lab</span>
@@ -95,7 +95,7 @@ self-motivation are great traits for open-source programmers.
 - *Project paper reference and URL:*
 - *Knowledge prerequisites:* Python, RAG
 - *Skill level:* Medium
-- *Project Time:* 175-hour approximately 8 weeks
+- *Project Time:* 175-hour approximately 10 weeks
 - *Mentors:* Adam Wright \<adam.wright@oicr.on.ca\>
 
 ## <span id="Reactome-MCP_.2F_Stein_Lab" class="mw-headline">Reactome MCP / Stein Lab</span>
@@ -115,7 +115,7 @@ self-motivation are great traits for open-source programmers.
 - *Project paper reference and URL:*
 - *Knowledge prerequisites:* Python, RAG, MCP
 - *Skill level:* Medium
-- *Project Time:* 175-hour approximately 8 weeks
+- *Project Time:* 175-hour approximately 10 weeks
 - *Mentors:* Adam Wright \<adam.wright@oicr.on.ca\>
 
 ## <span id="AI_Social_Media_Project" class="mw-headline">Development and Validation of an AI System for Real-Time Detection of Pediatric ENT Health Trends on Social Media (Pediatric Otolaryngology Lab / AI in Digital Health) / Courtot Lab</span>
@@ -139,7 +139,7 @@ Experience with:
     - Basic machine learning workflows
     - Full-stack development (backend services + frontend dashboards)
 - *Skill level:* Advanced
-- *Project Time:* 350-hour approximately 8 weeks
+- *Project Time:* 350-hour approximately 12 weeks
 - *Mentors:* Melanie Courtot, OICR and UoT \<mcourtot@oicr.on.ca\>; Jochen Weile, OICR, \<jweile@oicr.on.ca\> 
 
 # <span id="Project_template" class="mw-headline">Project template</span>
@@ -155,7 +155,7 @@ Experience with:
 - *Knowledge prerequisites:* programming language(s) to be used, plus
   any other particular computer science skills needed.
 - *Skill level:* Basic, Medium or Advanced.
-- *Project Time:* 90-hour, 90, 175 or 350 hours that are a standard 8
+- *Project Time:* 90-hour, 90, 175 or 350 hours that are a standard 10
   weeks long and no longer than 12 weeks.
 - *Mentors:* name + contact details of the lead mentor, name + contact
   details of 1 or 2 backup mentors.
