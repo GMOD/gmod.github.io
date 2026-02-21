@@ -153,7 +153,6 @@ Experience with:
     - Network-style visualization of pathway relationships
     - AI-generated summaries explaining enriched pathways in natural language
     - Option to export a summary report
-    - Documented open-source implementation
 
 - *Project Home Page URL:*
   <a href="https://reactome.org" class="external text"
