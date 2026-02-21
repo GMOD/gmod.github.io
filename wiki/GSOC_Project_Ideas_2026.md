@@ -140,7 +140,34 @@ Experience with:
     - Full-stack development (backend services + frontend dashboards)
 - *Skill level:* Advanced
 - *Project Time:* 350-hour approximately 12 weeks
-- *Mentors:* Melanie Courtot, OICR and UoT \<mcourtot@oicr.on.ca\>; Jochen Weile, OICR, \<jweile@oicr.on.ca\> 
+- *Mentors:* Melanie Courtot, OICR and UoT \<mcourtot@oicr.on.ca\>; Jochen Weile, OICR, \<jweile@oicr.on.ca\>
+
+## <span id="AI_Reactome_Visualization_Interface" class="mw-headline">Improving Reactome Pathway Analysis with an Interactive Visualization and AI Explanation Layer (Reactome / Stein Lab)</span>
+
+- *Brief explanation:* Reactome provides pathway analysis tools through its web interface and REST APIs, but interpreting the results (pathways, p-values, associated gene sets) can be challenging for students and non-expert users. This project proposes building a user-friendly web interface on top of Reactome’s existing analysis APIs where users can upload a gene list (e.g., from RNA-seq differential expression output), run pathway analysis, and explore the results through interactive visualizations. An AI-based explanation layer will summarize enriched pathways in plain language to improve accessibility and interpretation. The project will focus on usability and integration rather than reimplementing statistical enrichment methods.
+
+- *Expected results:*
+    - Upload interface for gene list files (CSV/TSV)
+    - Backend integration with Reactome pathway analysis REST API
+    - Interactive dashboard to explore enriched pathways (sorting, filtering, viewing p-values and associated genes)
+    - Network-style visualization of pathway relationships
+    - AI-generated summaries explaining enriched pathways in natural language
+    - Option to export a summary report
+    - Documented open-source implementation
+
+- *Project Home Page URL:*
+  <a href="https://reactome.org" class="external text"
+  rel="nofollow">Reactome</a>
+
+- *Project paper reference and URL:* None specific; this project focuses on improving usability and interpretability of existing Reactome analysis tools.
+
+- *Knowledge prerequisites:* Python (backend/API integration), React + TypeScript (frontend development), REST APIs, basic understanding of pathway enrichment, familiarity with LLM integration.
+
+- *Skill level:* Medium
+
+- *Project Time:* 175-hour approximately 10 weeks
+
+- *Mentors:* To be discussed with the Reactome / Stein Lab team
 
 # <span id="Project_template" class="mw-headline">Project template</span>
 
