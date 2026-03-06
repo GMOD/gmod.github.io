@@ -68,7 +68,7 @@ self-motivation are great traits for open-source programmers.
 
 - *Brief explanation:* Cancer patients are often left on their own to find clinical trials of cutting-edge therapies. This project seeks to develop an LLM-driven chatbot and interactive map that lets patients describe their situation and find nearby clinical trial sites that they may be eligible for.
 - *Expected results:* As a result of this project, patients will be able to more effectively discover clinical trials, learn more about them, and contact the study doctors to seek enrollment.
-- *Project Home Page URL:* There is no project web page at the moment, but you can get an idea of the type of underlying database we will be using at <a href="https://www.cancertrialscanada.ca/" >the Cancer Trials Canada</a> website.
+- *Project Home Page URL:* Please see our <a href="https://docs.google.com/document/d/1bJSYzTpMVU4jGn6UcIeDYuxiaRSZ4LTrdY7BR3jHdU8/edit?usp=sharing">Project Concept Page and FAQ</a> for more information.
 - *Knowledge prerequisites:* SQL, Python, React (TypeScript), familiarity with Chainlit (LLM) and Mapbox (Geomapping) APIs
 - *Skill level:* Medium
 - *Project Time:* 175-hour approximately 10 weeks
