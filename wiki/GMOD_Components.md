@@ -43,6 +43,7 @@ component](GMOD_Membership#Software "GMOD Membership").
 <tr class="odd">
 <td data-valign="top"><p><strong>Community Annotation</strong></p>
 <p><a href="Apollo.1" title="Apollo">Apollo</a></p>
+<p><a href="Apollo3" title="Apollo 3">Apollo 3</a></p>
 <p><a href="BioDIG.1" title="BioDIG">BioDIG</a></p>
 <p><a href="Canto" title="Canto">Canto</a></p>
 <p><a href="WebApollo.1" title="WebApollo">WebApollo</a></p>

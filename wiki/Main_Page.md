@@ -110,6 +110,10 @@ components](/wiki/GMOD_Components "GMOD Components")
 
 JBrowse 2: New super-fast genome annotation viewer
 
+[![Apollo 3 logo](/mediawiki/images/1/1b/Apollo3Logo.png)](/wiki/Apollo3 "Apollo 3")
+
+Apollo 3: Collaborative, customizable, and scalable graphical genome annotation
+
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/250px-GBrowseLogo.png"
 class="thumbimage"
