@@ -166,7 +166,7 @@ Experience with:
 
 - *Project Time:* 175-hour approximately 10 weeks
 
-- *Mentors:* To be discussed with the Reactome / Stein Lab team
+- *Mentors:* Lincoln Stein <lincoln.stein@gmail.com>
 
 # <span id="Project_template" class="mw-headline">Project template</span>
 
